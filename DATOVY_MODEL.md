@@ -1,4 +1,4 @@
-# Datový model (koncept 0.1)
+# Datový model (koncept 0.2)
 
 Formát: JSON/CSV v `data/`, jeden soubor na typ entity (nebo na entitu u projektů). Stabilní ID, vazby přes ID.
 
@@ -42,6 +42,9 @@ Krok časové osy projektu. `datum`, `typ` (zamer / usneseni / soutez / smlouva 
 
 ### sprm_opatreni
 Ze Strategického plánu 2021–2030. `id`, `oblast`, `cil`, `nazev`, `stav_dle_trebonaci` (z endpointu `/projekty`)
+
+### podnet
+Z mapy na trebonaci.cz (`/wp-json/trebonaci/v1/podnety`). `id` (WP ID), `typ` (prani / zavada), `stav`, `souradnice`, `kategorie`, `datum`, `usneseni_ids[]`, `projekt_ids[]`. Bez jmen a kontaktů podatelů.
 
 ### parcela
 `katastralni_uzemi`, `cislo`, `ruian_id`, `geometrie` (z ČÚZK)

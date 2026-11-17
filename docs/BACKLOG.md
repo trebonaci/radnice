@@ -1,63 +1,54 @@
-# Backlog: fáze 0 a 1
+# Backlog
 
-Každou položku převést na GitHub issue (nadpis = název, tělo = text pod ním). Pořadí odpovídá závislostem.
+Každou položku převést na GitHub issue. Pořadí odpovídá závislostem.
 
 ---
 
-## 1. Kostra repozitáře a pipeline
-**Kdo:** Claude · **Review:** Codex
-- Adresáře `pipeline/`, `raw/`, `data/`, `web/`, `tests/`, `requirements.txt`.
-- `pipeline/subjekty.py`: seznam sledovaných subjektů (IČO) z jednoho konfiguračního souboru `config/subjekty.yaml`.
-- GitHub Actions: `ci.yml` (testy na PR).
+## 1. Zpracování jednoho nejnovějšího zápisu podle metodiky (první issue)
+**Kdo:** Claude zpracuje · **Kontrola:** Codex · **Schvaluje:** Ondřej
 
-**Hotovo, když:** `pytest` běží zeleně v CI.
+**Vstup:** nejnovější zveřejněný zápis rady v období 2026–2030 a zápis z ustavujícího ZM 2. 11. 2026 (`Z-01-26-11-02.pdf`). Dva dokumenty proto, že rada a ZM mají odlišnou strukturu.
 
-## 2. Ověření zdrojů pro smlouvy a zakázky (spike)
-**Kdo:** Codex · **Review:** Claude
-Zjistit a zapsat do `docs/ZDROJE.md`:
-- Registr smluv: otevřená data (formát, URL, frekvence, struktura, jak poznat dodatek a jeho vazbu na původní smlouvu, znečištění duplicitami/verzemi).
-- E-ZAK `zakazky.mesto-trebon.cz`: existuje XML export profilu podle vyhl. 345/2023 Sb.? Pokud ne, struktura HTML (seznam, detail, stavy, dokumenty), stránkování, robots.txt.
-- ISVZ open data: co pokryje navíc.
-- Hlídač státu API: co dává navíc (směr peněz, kategorie), podmínky použití.
+**Postup:**
+1. Uložit PDF do `raw/` (manifest: URL, datum stažení, sha256). Zjistit, zda jde o text, nebo sken.
+2. Vyextrahovat text po stranách.
+3. Rozložit na `jednani` a `usneseni` podle `DATOVY_MODEL.md`: číslo, text, výsledek, hlasování (pro/proti/zdržel; jmenovitě jen pokud je v zápisu).
+4. Ke každému usnesení navrhnout `tema`, `kategorie[]`, `shrnuti` (AI, příznak `shrnuti_ai`) a doslovnou `citace`.
+5. Skriptem ověřit, že každá citace doslova existuje v textu dané strany.
+6. Vytáhnout strukturované údaje: částky (s druhem a DPH), IČO a názvy protistran, parcely. Fyzické osoby anonymizovat.
+7. Zapsat `data/jednani.json`, `data/usneseni.json`.
+8. Do PR zapsat: časovou náročnost, co v datovém modelu chybí nebo přebývá, návrh číselníku `kategorie`.
 
-**Hotovo, když:** pro každý zdroj je vzorový záznam pro Město Třeboň a doporučení, který zdroj je primární.
+**Kontrola (Codex):** porovnat každé usnesení s PDF: úplnost (nic nechybí), čísla, výsledky hlasování, citace, anonymizace, výstižnost shrnutí.
 
-## 3. Stahování registru smluv
-**Kdo:** Claude · **Review:** Codex · **Závisí na:** 1, 2
-- Stáhnout smlouvy všech subjektů z `config/subjekty.yaml` od 7/2016.
-- Normalizace do `data/smlouvy.json` podle `DATOVY_MODEL.md` (verze → poslední platná, dodatky navázané, DPH dopočtené s příznakem).
-- Testy: deduplikace verzí, výpočet DPH.
+**Hotovo, když:** obě kontroly prošly, datový model a číselník kategorií jsou upravené podle zjištění a Ondřej potvrdil metodiku.
 
-**Hotovo, když:** počty smluv na subjekt odpovídají vyhledávání na smlouvy.gov.cz (ruční kontrola 1 subjektu, zapsat do PR).
+## 2. Ověření zdrojů a současného webu
+**Kdo:** Codex · **Kontrola:** Claude
+Do `docs/ZDROJE.md`:
+- `trebonaci.cz/wp-json/trebonaci/v1/podnety` a `/projekty`: dostupnost, struktura, osobní údaje, jak spárovat podnět/projekt s usnesením.
+- Šablona `Trebonaci-web`: jak přidat novou stránku (šablona + JSON), jak řešit WP Super Cache.
+- Stránky se zápisy rady a ZM: seznam období, formát, od kterého roku jsou zápisy, zda obsahují jmenovité hlasování.
+- Registr smluv, E-ZAK (XML export?), ISVZ, Hlídač státu: formát, přístup, vzorový záznam.
 
-## 4. Stahování zakázek z E-ZAK
-**Kdo:** Claude · **Review:** Codex · **Závisí na:** 1, 2
-- Všech 5 profilů, všechny stavy, včetně ukončených.
-- `data/zakazky.json`: název, druh, režim, předpokládaná hodnota, stav, termíny, vítěz, cena, odkazy na dokumenty.
-- Šetrné stahování (pauzy, cache, identifikace v User-Agent).
+## 3. Zbytek zápisů 2026–2030
+Po schválení metodiky z issue 1.
 
-**Hotovo, když:** počet zakázek odpovídá profilu, 5 náhodných zakázek ručně zkontrolováno.
+## 4. Smlouvy všech subjektů
+Z `config/subjekty.yaml`; dodatky navázané, DPH s příznakem.
 
-## 5. Propojení zakázka ↔ smlouva ↔ dodavatel
-**Kdo:** Codex · **Review:** Claude · **Závisí na:** 3, 4
-- Párování podle IČO dodavatele, data a předmětu. Každá vazba nese `jistota`: `doloženo` (číslo zakázky ve smlouvě) / `naše propojení` (heuristika).
-- `data/dodavatele.json`: souhrn podle IČO (počet, součet smluvních cen s DPH, roky). Finanční smlouvy (úvěry, pojištění) zvlášť.
-- Názvy dodavatelů z ARES.
+## 5. Zakázky z 5 profilů E-ZAK
+Všechny stavy, šetrné stahování.
 
-## 6. Web: kostra a nasazení
-**Kdo:** Claude · **Review:** Codex · **Závisí na:** 1
-- Statický generátor (návrh: Astro), čte `data/`.
-- Stránky: úvod, Smlouvy, Zakázky, Dodavatelé, Metodika. Patička se značkou Třeboňáků a větou, že nejde o web města.
-- GitHub Actions: build → náhled na Cloudflare Pages pro PR → nasazení `main` přes FTPS na Vedos (přístupy v GitHub Secrets nastaví Ondřej).
+## 6. Propojení zakázka ↔ smlouva ↔ dodavatel ↔ usnesení
+Každá vazba s `jistota`.
 
-**Hotovo, když:** web z `main` běží na zvolené doméně.
+## 7. Datový přehled na trebonaci.cz
+Šablona stránky čtoucí JSON; náhled ke schválení; zveřejnění až po souhlasu.
 
-## 7. Noční aktualizace
-**Kdo:** Claude · **Review:** Codex · **Závisí na:** 3, 4, 6
-- Plánovaný workflow: stáhnout → přepočítat → otevřít PR s rozdílem dat (ne přímý push), aby nová data prošla schválením.
+---
 
-## 8. Analýza: výměna oken po etapách
-**Kdo:** Codex (rešerše) + Claude (data) · **Závisí na:** 5
-- Najít zakázky a smlouvy k výměně oken (všechny etapy, objekty, dodavatelé, ceny, roky).
-- Doplnit z usnesení důvody etapizace.
-- Výstup `analyzy/okna.md` podle ZADANI.md kap. 6. Před zveřejněním schvaluje Ondřej.
+## Náměty (bez termínu)
+- **Etapizace výměny oken**: zakázky a smlouvy všech etap, důvody z usnesení, srovnání s limity. Formulace bez právních verdiktů.
+- **Přepis videí ZM**: změřit cenu za hodinu a ověřit, zda z videa jde určit jmenovité hlasování.
+- **Automatizace**: noční stahování a nasazení přes FTPS, až bude ruční postup změřený.

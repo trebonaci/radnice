@@ -9,7 +9,8 @@ Tento soubor čtou všichni agenti pracující v repozitáři. Platí pro Claude
 
 ## Jak pracujeme
 - Jeden issue = jedna větev = jeden PR. Větev `<agent>/<cislo-issue>-<kratky-popis>`, např. `claude/3-registr-smluv`.
-- Nikdy necommituj přímo do `main`. Merguje jen Ondřej; merge = zveřejnění.
+- Nikdy necommituj přímo do `main`. Merguje jen Ondřej.
+- Merge ≠ zveřejnění. Na web jde jen to, co Ondřej výslovně schválí („schváleno ke zveřejnění“).
 - Kdo PR napsal, ten ho nereviewuje. PR od Clauda kontroluje Codex a obráceně.
 - PR popis: co se změnilo, jak to ověřit, co zůstává otevřené, zdroje dat použité v PR.
 - Pokud zadání v issue nestačí nebo je v rozporu se `ZADANI.md`, zastav se a napiš otázku do issue místo dohadu.
