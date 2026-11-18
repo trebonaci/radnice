@@ -3,7 +3,8 @@ name: Kontrola
 on:
   pull_request:
   push:
-    branches: [main]
+    # main + větve agentů (PR otevřený přes GITHUB_TOKEN sám CI nespustí, výsledek z push se ale v PR zobrazí)
+    branches: [main, "claude/**", "codex/**"]
 
 permissions:
   contents: read
