@@ -1,4 +1,5 @@
 # Sledované subjekty. Přidání IČO nevyžaduje změnu kódu.
+# smlouvy=true zahrnuje i vyhledávání podle IČO protistrany.
 - ico: "00247618"
   nazev: Město Třeboň
   typ: mesto
@@ -19,9 +20,49 @@
   typ: sro
   smlouvy: true
   ezak_profil: https://zakazky.mesto-trebon.cz/profile_display_132.html
+# Historické IČO zaniklé společnosti po fúzi se Slatinnými lázněmi (rozhodný den 1. 1. 2017); ponechat jen pro vyhledávání historických smluv.
 - ico: "60067837"
   nazev: Bertiny lázně Třeboň s. r. o.
   typ: sro
   smlouvy: true
   ezak_profil: https://zakazky.mesto-trebon.cz/profile_display_126.html
-# TODO: příspěvkové organizace (např. Městská sportovní Třeboň, ZŠ Sokolská 296) – doplnit IČO
+- ico: "60838256"
+  nazev: Třeboňské lesy a rybníky s.r.o.
+  typ: sro
+  smlouvy: true
+  ezak_profil: null
+- ico: "60851422"
+  nazev: Autokemp Třeboňský ráj, s.r.o.
+  typ: sro
+  smlouvy: true
+  ezak_profil: null
+- ico: "06457665"
+  nazev: Městská sportovní Třeboň, příspěvková organizace
+  typ: prispevkova
+  smlouvy: true
+  ezak_profil: null
+- ico: "21551464"
+  nazev: Městská knihovna Třeboň
+  typ: prispevkova
+  smlouvy: true
+  ezak_profil: null
+- ico: "60818174"
+  nazev: Základní škola Třeboň, Sokolská 296
+  typ: prispevkova
+  smlouvy: true
+  ezak_profil: null
+- ico: "60816872"
+  nazev: Základní škola Třeboň, Na Sadech 375
+  typ: prispevkova
+  smlouvy: true
+  ezak_profil: null
+- ico: "70989907"
+  nazev: 3. mateřská škola Třeboň, Jeronýmova 183
+  typ: prispevkova
+  smlouvy: true
+  ezak_profil: null
+- ico: "63263777"
+  nazev: Mateřská škola Sluníčko, Třeboň
+  typ: prispevkova
+  smlouvy: true
+  ezak_profil: null
