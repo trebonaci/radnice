@@ -1,55 +1,71 @@
-# Datový model (koncept 0.2)
+# Datový model (verze 0.3)
 
-Formát: JSON/CSV v `data/`, jeden soubor na typ entity (nebo na entitu u projektů). Stabilní ID, vazby přes ID.
+Sjednoceno z návrhu Clauda, návrhu Codexu (PR #1) a zjištění z pilotu zápisů.
+
+## Zásady
+
+- Formát JSON v `data/`, jeden soubor na typ entity; ručně spravované projekty jako `data/projekty/<slug>.yaml`. Stabilní ID, vazby přes ID. Názvy polí česky bez diakritiky.
+- Oddělujeme dlouhodobý **projekt**, jednotlivé **události**, **zdrojové dokumenty**, **částky** a **ukazatele přehledu**. Usnesení, zakázka ani smlouva samy o sobě nejsou projektem.
+- **Každé pole navržené AI** má vedle sebe příznak `<pole>_ai: true` a údaj je doložen citací (`citace`). Platí pro téma, kategorie, shrnutí i navržené vazby.
+- **Stav ověření** (`overeni`) u každého záznamu, který prošel AI: `navrh` → `overeno_kodem` (citace doslova ve zdroji) → `zkontrolovano` (nezávislý kontrolor proti originálu) → `schvaleno` (Ondřej). Automatické ověření citace nenahrazuje kontrolu kontextu.
+- **Jistota vazby** (`jistota`): `dolozeno` / `nase_propojeni` / `nevime`. Není to pravděpodobnost a není to povolení ke zveřejnění.
+- Neznámá hodnota je `null`, nikdy nula.
+- Automatická shoda názvů vytváří jen návrh vazby; potvrdit ji lze přímým identifikátorem nebo ruční kontrolou.
+- Surová data (`raw/`) se neupravují; vše odvozené je reprodukovatelné skriptem.
+- Osobní údaje fyzických osob, které nejsou volenými zástupci, se do `data/` nezapisují (anonymizace při sestavení). Členy komisí neuvádíme; podnikatele (fyzické osoby) anonymizujeme vždy.
 
 ## Entity
 
 ### subjekt
-`id` (IČO), `nazev`, `typ` (mesto / sro / po), `zdroj`
+`id` (IČO), `nazev`, `typ` (mesto / sro / prispevkova / jina), `rozsah` (smlouvy / zakazky / oboje / nezarazeno), `ezak_profil`. Seznam v `config/subjekty.yaml`.
 
 ### dokument
-Každý zdrojový soubor nebo záznam.
-`id`, `typ` (zapis_zm / zapis_rada / smlouva / zakazka / rozpocet / jine), `url`, `datum_zverejneni`, `stazeno`, `sha256`, `ocr` (bool), `subjekt_id`
+Zdrojový soubor nebo záznam (manifest v `raw/manifest.json`).
+`dokument_id`, `typ` (zapis_rada / zapis_zm / smlouva / zakazka / rozpocet / csu / monitor / sprm / jine), `nazev`, `vydavatel`, `url`, `stranka_zdroje`, `datum_dokumentu`, `vyveseno`, `stazeno`, `sha256`, `pocet_stran`, `metoda_textu` (html / textove_pdf / ocr / rucni_prepis / dataset), `omezeni`
+
+### citace
+Vnořená struktura: `dokument_id`, `strany[]` nebo jiný lokátor (bod, ID smlouvy), `text` (doslovný úryvek).
 
 ### jednani
-`id` (např. `zm-2026-01`), `organ` (zm / rada), `cislo`, `datum`, `dokument_id`
+`id` = `<organ>-<datum>` (např. `rm-2026-11-04`), `organ` (rada / zastupitelstvo), `druh` (radne / ustavujici / mimoradne), `cislo` (v rámci období), `datum`, `obdobi`, `pritomno_na_zacatku`, `clenu`, `pritomnost_zmeny[]` {`cas`, `udalost`, `osoba`}, `dokument`, `body[]`
+
+### bod_programu (vnořený v jednání)
+`cislo`, `nazev`, `strana`, `text` (jen u bodů bez usnesení, zobrazuje se v detailu), `nazev_anonymizovan`, `text_anonymizovan`
 
 ### usneseni
-`id` (např. `rm-2026-03-045`), `jednani_id`, `cislo`, `text`, `vysledek` (schvaleno / zamitnuto / vzato_na_vedomi / odlozeno), `kategorie[]`, `tema` (krátký titulek), `shrnuti` + `shrnuti_ai` (bool), `citace` {`dokument_id`, `strana`, `text`}, `castky[]`, `subjekty_ico[]`, `parcely[]`, `projekt_ids[]`, `overeni` (navrh / overeno_kodem / overeno_modelem_b / schvaleno)
+`id` = `<organ>-<rok>-j<jednání>-u<číslo>` (např. `rm-2026-j1-u7` pro „RM č. 7/2026-1“), `cislo` (původní označení), `jednani_id`, `bod`, `vysledek` (schvaleno / neschvaleno / vzato_na_vedomi / odlozeno / neuvedeno), `text` (+ `text_anonymizovan`), `tema` + `tema_ai`, `kategorie[]` + `kategorie_ai` (číselník `config/kategorie.yaml`), `shrnuti` + `shrnuti_ai`, `citace`, `castky[]`, `parcely[]`, `subjekty_ico[]`, `projekt_ids[]`, `overeni`, `poznamka`
 
 ### hlasovani
-`usneseni_id`, `pro`, `proti`, `zdrzel`, `nehlasoval`, `jmenovite` [{`osoba_id`, `hlas`}], `zdroj`
+`typ` (usneseni / protinavrh / volba_kandidata), `usneseni_id` (u protinávrhu null), `cast` (I., II. – jen u usnesení s více hlasováními), `predmet` (text protinávrhu / jméno kandidáta), `pro`, `proti`, `zdrzel`, `hlasu_celkem`, `vysledek` (u protinávrhu), `jmenovite` (null = zdroj neuvádí; jinak [{`osoba_id`, `hlas`}]), `jednani_id`, `bod`, `strana`
 
 ### osoba
-Jen volení zástupci. `id`, `jmeno`, `klub`, `obdobi[]`
+Jen volení zástupci. `id`, `jmeno`, `klub`, `obdobi[]`, `funkce[]`
 
 ### zakazka
-`id` (ID z E-ZAK), `subjekt_id`, `nazev`, `druh` (stavebni / dodavky / sluzby), `rezim` (VZMR / zjednodušené podlimitní / …), `predpokladana_hodnota`, `stav`, `datum_zahajeni`, `datum_zadani`, `vitez_ico`, `vysoutezena_cena`, `url`, `projekt_ids[]`
+`id` (ID z E-ZAK), `subjekt_id`, `nazev`, `druh` (stavebni / dodavky / sluzby), `rezim`, `stav`, `datum_zahajeni`, `datum_zadani`, `vitez_ico`, `castky[]`, `url`, `projekt_ids[]` + `jistota`
 
 ### smlouva
-`id` (ID verze z registru smluv), `subjekt_id`, `protistrana_ico`, `predmet`, `hodnota_bez_dph`, `hodnota_s_dph`, `dph_dopocteno` (bool), `datum_uzavreni`, `typ` (smlouva / dodatek), `navazuje_na` (u dodatku), `zakazka_id`, `projekt_ids[]`, `url`
+`id` (ID verze z registru smluv), `subjekt_id`, `protistrana_ico` (u fyzických osob null), `predmet`, `castky[]`, `datum_uzavreni`, `typ` (smlouva / dodatek), `navazuje_na`, `zakazka_id` + `jistota`, `projekt_ids[]` + `jistota`, `url`
 
 ### castka
-Jednotný zápis peněz kvůli rozlišení druhů.
-`hodnota`, `mena`, `s_dph` (bool / null = neuvedeno), `druh` (odhad / rozpocet_schvaleny / rozpocet_upraveny / predpokladana_hodnota / vysoutezena / smluvni / dodatek / zaplaceno / dotace_prislib / dotace_prijata), `datum`, `zdroj`
+`hodnota`, `mena`, `jednotka` (Kč, Kč/m2/rok…), `s_dph` (true / false / null = neuvedeno), `druh` (odhad / rozpocet_schvaleny / rozpocet_upraveny / rozpoctove_opatreni / predpokladana_hodnota / vysoutezena / smluvni / dodatek / zaplaceno / najemne_sazba / dar_prijaty / dar_poskytnuty / dotace_pozadovana / dotace_priznana / jine), `obdobi`, `k_datu`, `citace`, `poznamka`. Částky různých druhů se nesčítají ani přímo neporovnávají.
 
 ### projekt
 Ručně spravovaný soubor `data/projekty/<slug>.yaml`.
-`id`, `nazev`, `oblast` (investice / sport / kultura / social / skolstvi / doprava / zivotni_prostredi / …), `sprm_opatreni[]`, `stav` (namet / priprava / rozhodnuto / soutez / realizace / dokonceno / zastaveno), `popis`, `castky[]`, `udalosti[]`, `usneseni_ids[]`, `zakazka_ids[]`, `smlouva_ids[]`, `parcely[]`, `plan` [{`krok`, `planovano`, `skutecnost`}], `jistota_vazeb` (doloženo / naše propojení)
+`id`, `nazev`, `popis`, `oblast` (investice / sport / kultura / socialni / skolstvi / doprava / zivotni_prostredi / sprava / …), `druh` (investicni / neinvesticni / smiseny), `stav` (pripravuje_se / schvaleno / soutezi_se / smluvne_zajisteno / probiha / dokonceno / pozastaveno / zruseno / nevime) + `stav_k_datu` (redakční stav, ne úřední), `sprm_opatreni[]`, `vlastnik_subjekt_id`, `castky[]`, `udalost_ids[]`, `parcely[]`, `plan` [{`krok`, `planovano`, `skutecnost`}], `aktualizovano`
 
 ### udalost
-Krok časové osy projektu. `datum`, `typ` (zamer / usneseni / soutez / smlouva / zahajeni / dodatek / dokonceni / kolaudace / jine), `popis`, `zdroj`, `jistota`
+Jeden ověřitelný krok projektu nebo téma, které zatím nemá potvrzenou vazbu na projekt.
+`id`, `projekt_id` (null, není-li vazba potvrzena) + `jistota`, `datum` + `druh_data`, `typ` (projednano / navrzeno / doporuceno / rozhodnuto / soutez_vyhlasena / smlouva_uzavrena / dodatek / zahajeni / prubezna_informace / dokonceni / jine), `nazev`, `co_rika_zdroj`, `shrnuti` + `shrnuti_ai`, `vysledek`, `zdroje` (usnesení, smlouvy, zakázky – ID), `citace[]`, `overeni`
+
+### ukazatel (datový přehled)
+`id`, `nazev`, `hodnota` (číslo nebo řada), `jednotka`, `obdobi`, `definice`, `vypocet` (skript), `zdroj`, `zkontrolovano`, `srovnatelnost`
 
 ### sprm_opatreni
-Ze Strategického plánu 2021–2030. `id`, `oblast`, `cil`, `nazev`, `stav_dle_trebonaci` (z endpointu `/projekty`)
+Ze Strategického plánu 2021–2030. Zdroj: existující WordPress evidence `trebonaci_projekt` na trebonaci.cz (endpoint `/projekty`). Před rozšířením se její pole zmapují; druhý katalog SPRM nevytvářet bez rozhodnutí.
 
 ### podnet
-Z mapy na trebonaci.cz (`/wp-json/trebonaci/v1/podnety`). `id` (WP ID), `typ` (prani / zavada), `stav`, `souradnice`, `kategorie`, `datum`, `usneseni_ids[]`, `projekt_ids[]`. Bez jmen a kontaktů podatelů.
+Z mapy na trebonaci.cz. **Jen omezený veřejný výstup**: `id`, `typ` (prani / zavada), `stav`, `poloha`, `kategorie`, `datum`, upravený popis. Bez jména podatele, kontaktů a diskuse (současný endpoint `/podnety` je vrací, proto se přímo nepoužije). Vazba na projekt/usnesení s `jistota`; občanský návrh se vizuálně odlišuje od projektu, který město připravuje.
 
 ### parcela
-`katastralni_uzemi`, `cislo`, `ruian_id`, `geometrie` (z ČÚZK)
-
-## Zásady
-- Surová data (`raw/`) se neupravují; vše odvozené je reprodukovatelné skriptem.
-- Každé pole odvozené AI má příznak a stav ověření.
-- Osobní údaje fyzických osob se do `data/` nezapisují (anonymizace už v extrakci).
+`katastralni_uzemi`, `cislo`, `cast` (bool), `ruian_id`, `geometrie`, `citace`
