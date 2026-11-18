@@ -329,3 +329,57 @@ def test_beh_po_padu_obnovi_stav_a_upozorni(koren):
     assert usneseni.read_text(encoding="utf-8") == puvodni
     assert any("spadl uprostřed zápisu" in u for u in json.loads(cti(koren, "data/beh.json"))["upozorneni"])
     assert not (koren / "data" / beh.DENIK).exists()
+
+
+def test_pad_pri_mazani_zaloh_nevyvola_obnovu(tmp_path, monkeypatch):
+    """Regrese (2. review Codexu): po dokončení zápisu (smazaný deník) pád během mazání záloh
+    nesmí vést k částečné obnově – nová data platí, osiřelé zálohy se jen uklidí."""
+    a, b, c = _tri_soubory(tmp_path)
+
+    class Pad(BaseException):
+        pass
+
+    puvodni_rmtree = shutil.rmtree
+    volani = {"n": 0}
+
+    def rmtree(*args, **kwargs):
+        volani["n"] += 1
+        if volani["n"] == 2:                  # 1. volání = úklid před zápisem, 2. = úklid po dokončení
+            raise Pad()
+        return puvodni_rmtree(*args, **kwargs)
+
+    monkeypatch.setattr(beh.shutil, "rmtree", rmtree)
+    with pytest.raises(Pad):
+        beh.zapis_atomicky({a: "nove-a", b: "nove-b", c: "nove-c"}, tmp_path)
+    monkeypatch.undo()
+    assert not (tmp_path / "data" / beh.DENIK).exists()           # zápis byl dokončen
+    assert (tmp_path / "data" / beh.ZALOHY).exists()              # zálohy osiřely
+    (next((tmp_path / "data" / beh.ZALOHY).iterdir())).unlink()   # a jsou neúplné
+    assert beh.obnov_ze_zalohy(tmp_path / "data") is False
+    assert [p.read_text(encoding="utf-8") for p in (a, b, c)] == ["nove-a", "nove-b", "nove-c"]
+    assert not (tmp_path / "data" / beh.ZALOHY).exists()
+
+
+def test_denik_s_chybejici_zalohou_obnovu_odmitne(tmp_path):
+    a, b, c = _tri_soubory(tmp_path)
+    data = tmp_path / "data"
+    (data / beh.DENIK).write_text(json.dumps({"soubory": [
+        {"cil": str(a), "zaloha": str(data / beh.ZALOHY / "0-a.json")},
+        {"cil": str(c), "zaloha": None}]}), encoding="utf-8")
+    c.write_text("nove-c", encoding="utf-8")
+    with pytest.raises(beh.NeuplnaZaloha):
+        beh.obnov_ze_zalohy(data)
+    assert c.read_text(encoding="utf-8") == "nove-c"              # nic se nezměnilo
+    assert (data / beh.DENIK).exists()
+    with pytest.raises(beh.NeuplnaZaloha):                        # ani nový zápis nepřepíše důkazy
+        beh.zapis_atomicky({a: "x"}, tmp_path)
+    assert a.read_text(encoding="utf-8") == "stare-a"
+
+
+def test_beh_s_neuplnou_zalohou_nic_nezmeni(koren):
+    data = koren / "data"
+    (data / beh.DENIK).write_text(json.dumps({"soubory": [
+        {"cil": str(data / "usneseni.json"), "zaloha": str(data / beh.ZALOHY / "chybi.json")}]}), encoding="utf-8")
+    pred = stav(koren)
+    assert spust(koren, Web()) == 1
+    assert stav(koren) == pred

@@ -79,25 +79,38 @@ def _denik_adresar(soubory: dict[Path, str], koren: Path | None) -> Path:
     return (koren / "data") if koren is not None else next(iter(soubory)).parent
 
 
+class NeuplnaZaloha(RuntimeError):
+    """Deník existuje, ale některá záloha chybí – stav nejde bezpečně obnovit, rozhoduje člověk."""
+
+
 def obnov_ze_zalohy(adresar: Path) -> bool:
     """Když v `adresar` zůstal deník nedokončeného zápisu (pád uprostřed nahrazování),
     vrátí všechny cílové soubory do stavu před zápisem. Lze bezpečně opakovat.
-    Vrací True, pokud se obnovovalo."""
+    Vrací True, pokud se obnovovalo.
+
+    Pořadí je podstatné: deník je značka „transakce nedokončena“. Zálohy se mažou až po
+    smazání deníku, takže deník nikdy neexistuje vedle neúplných záloh. Když přesto některá
+    záloha chybí, obnova se nespustí vůbec (vyhodí `NeuplnaZaloha`) – částečná obnova by
+    vytvořila směs starých a nových dat."""
     denik = adresar / DENIK
+    zalohy = adresar / ZALOHY
     if not denik.exists():
+        # osiřelé zálohy po pádu během úklidu dokončeného zápisu: zápis platí, jen uklidit
+        shutil.rmtree(zalohy, ignore_errors=True)
         return False
     zaznam = json.loads(denik.read_text(encoding="utf-8"))
+    chybi = [p["zaloha"] for p in zaznam["soubory"] if p["zaloha"] is not None and not Path(p["zaloha"]).exists()]
+    if chybi:
+        raise NeuplnaZaloha(f"deník {denik} odkazuje na chybějící zálohy: {chybi}")
     for polozka in zaznam["soubory"]:
         cil = Path(polozka["cil"])
         if polozka["zaloha"] is not None:
-            zaloha = Path(polozka["zaloha"])
-            if zaloha.exists():
-                shutil.copy2(zaloha, cil)
+            shutil.copy2(Path(polozka["zaloha"]), cil)
         else:
             cil.unlink(missing_ok=True)          # soubor předtím neexistoval
         cil.with_name(cil.name + ".tmp").unlink(missing_ok=True)
-    shutil.rmtree(adresar / ZALOHY, ignore_errors=True)
-    denik.unlink()                                # deník mizí jako poslední
+    denik.unlink()                                # nejdřív zrušit značku nedokončené transakce …
+    shutil.rmtree(zalohy, ignore_errors=True)     # … pak teprve zálohy
     return True
 
 
@@ -106,8 +119,9 @@ def zapis_atomicky(soubory: dict[Path, str], koren: Path | None = None) -> None:
     1. všechny soubory se zapíšou vedle cíle jako `.tmp` (při chybě se smažou, cíle beze změny);
     2. původní obsah cílů se zazálohuje a zapíše se deník (`data/.beh-zapis.json`);
     3. cíle se nahradí; když nahrazení selže, všechny cíle se vrátí ze zálohy;
-    4. po úspěchu se smažou zálohy a nakonec deník.
-    Když proces spadne mezi 2. a 4., deník zůstane a `obnov_ze_zalohy` stav vrátí na začátku dalšího běhu."""
+    4. po úspěchu se nejdřív smaže deník (tím je zápis dokončen) a teprve pak zálohy.
+    Když proces spadne mezi 2. a smazáním deníku, deník zůstane a `obnov_ze_zalohy` stav vrátí na začátku
+    dalšího běhu; po smazání deníku platí nová data a osiřelé zálohy se jen uklidí."""
     tmp: list[tuple[Path, Path]] = []
     try:
         for cil, obsah in soubory.items():
@@ -122,6 +136,11 @@ def zapis_atomicky(soubory: dict[Path, str], koren: Path | None = None) -> None:
 
     adresar = _denik_adresar(soubory, koren)
     adresar.mkdir(parents=True, exist_ok=True)
+    denik = adresar / DENIK
+    if denik.exists():
+        for t, _ in tmp:
+            t.unlink(missing_ok=True)
+        raise NeuplnaZaloha(f"nedokončený předchozí zápis ({denik}); nejdřív obnov stav (obnov_ze_zalohy)")
     zalohy = adresar / ZALOHY
     shutil.rmtree(zalohy, ignore_errors=True)
     zalohy.mkdir()
@@ -132,7 +151,6 @@ def zapis_atomicky(soubory: dict[Path, str], koren: Path | None = None) -> None:
             zaloha = zalohy / f"{i}-{cil.name}"
             shutil.copy2(cil, zaloha)
         polozky.append({"cil": str(cil), "zaloha": str(zaloha) if zaloha else None})
-    denik = adresar / DENIK
     with open(denik, "w", encoding="utf-8") as f:
         json.dump({"soubory": polozky}, f, ensure_ascii=False)
         f.flush()
@@ -144,8 +162,8 @@ def zapis_atomicky(soubory: dict[Path, str], koren: Path | None = None) -> None:
     except BaseException:
         obnov_ze_zalohy(adresar)
         raise
-    shutil.rmtree(zalohy, ignore_errors=True)
-    denik.unlink()
+    denik.unlink()                                # dokončení transakce (commit) …
+    shutil.rmtree(zalohy, ignore_errors=True)     # … teprve potom úklid záloh
 
 
 def _nacti_json(cesta: Path, vychozi):
@@ -238,8 +256,13 @@ def _beh(koren: Path, zdroje: list[Zdroj], dnes: date, ted: datetime) -> int:
     predchozi = _nacti_json(cesta_beh, {})
     zaznam = {"zacatek": ted.isoformat(timespec="seconds"), "stav": "bezi", "zdroje": [], "chyby": [],
               "upozorneni": [], "pocty": None, "posledni_uspesny": predchozi.get("posledni_uspesny")}
-    if obnov_ze_zalohy(koren / "data"):
-        zaznam["upozorneni"].append("předchozí běh spadl uprostřed zápisu; stav byl obnoven ze zálohy")
+    try:
+        if obnov_ze_zalohy(koren / "data"):
+            zaznam["upozorneni"].append("předchozí běh spadl uprostřed zápisu; stav byl obnoven ze zálohy")
+    except NeuplnaZaloha as e:
+        # nic nezapisovat (ani beh.json): deník a zálohy jsou důkaz pro ruční řešení
+        print("CHYBA:", e, "– stav je nutné vyřešit ručně, běh nic nezměnil", file=sys.stderr)
+        return 1
     prvni_beh = not predchozi.get("posledni_uspesny")
     manifest_cesta = koren / "raw" / "manifest.json"
     manifest = copy.deepcopy(_nacti_json(manifest_cesta, []))
