@@ -55,13 +55,13 @@ https://<adresa-profilu>/XMLdataVZ?od=DDMMRRRR&do=DDMMRRRR
 
 Parametry `od` a `do` omezují období změn; jeden dotaz smí pokrývat nejvýše 366 dní. Export je GET a zahrnuje zakázky, u nichž v daném období došlo ke změně na profilu. Schéma XML/XSD stanovuje příloha vyhlášky. [§ 11 vyhlášky na e‑Sbírce](https://e-sbirka.gov.cz/sb/2023/345).
 
-Příklad adresy odvozený pro profil města (samotnou XML odpověď v tomto auditu nebylo možné spolehlivě načíst a validovat):
+Příklad adresy pro profil města, kterou jsem živě ověřil níže:
 
 ```text
 https://zakazky.mesto-trebon.cz/profile_display_2.html/XMLdataVZ?od=01112026&do=18112026
 ```
 
-První implementační krok musí ověřit HTTP odpověď pro čtyři současné profily a samostatně pro historický profil Bertiných lázní, dekódování, XSD a chování při prázdném období. `robots.txt` se v tomto ověření nepodařilo načíst; před automatickým stahováním ho ověřit běžným HTTP klientem. Zatím nepoužívat HTML jako primární zdroj, dokud tento pokus neproběhne. Výsledek je nutné porovnat s veřejnou stránkou E‑ZAK.
+Živý výsledek kontroly jednotlivých profilů, prázdného období a `robots.txt` je uveden v následující části. Pro implementaci ještě zbývá validace XML proti XSD a porovnání výstupu s veřejnou stránkou E‑ZAK.
 
 ### Výsledek živého ověření exportu (18. 11. 2026)
 
@@ -125,7 +125,7 @@ Nevystavovat jméno, e-mail, původní nepročištěný text, diskusi, obrázky,
 
 ## Co ještě ověřit v navazující implementační práci
 
-1. Stáhnout a validovat XML export E‑ZAK pro město a každý existující profil; potvrdit také identitu profilu Bertiných lázní v ARES a zda jde pouze o historický profil.
+1. Validovat XML exporty E‑ZAK proti XSD a ověřit, zda se problém s profilem Technických služeb dá vyřešit přes administrátora systému; právní identitu Bertiných lázní ještě křížově ověřit v ARES.
 2. Stáhnout měsíční XML Registru smluv, ověřit XSD a nalézt kontrolní vzorek ID smlouvy 37878325 / verze 40272565.
 3. Ověřit, zda lze u WordPress endpointů přidat omezený parametrický výstup a verzi schématu bez změny současných map.
 4. Jednou ročně porovnat seznam IČO s aktuálním závěrečným účtem, zřizovacími listinami a ARES. Oddělovat městské právnické osoby, příspěvkové organizace, historické subjekty a partnerské organizace.
