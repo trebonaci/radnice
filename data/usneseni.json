@@ -1,0 +1,844 @@
+[
+  {
+    "id": "rm-2026-j1-u1",
+    "cislo": "RM 1/2026-1",
+    "jednani_id": "rm-2026-11-04",
+    "bod": 2,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      }
+    ],
+    "text": "I. schvaluje\nprogram 1. jednání rady města a schválení zveřejnění zápisů.",
+    "text_anonymizovan": false,
+    "tema": "Program jednání a zveřejňování zápisů",
+    "tema_ai": true,
+    "kategorie": [
+      "samosprava"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Rada schválila program svého prvního jednání a zveřejňování zápisů.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-rm-2026-11-04",
+      "strany": [
+        1
+      ],
+      "text": "program 1. jednání rady města a schválení zveřejnění zápisů."
+    },
+    "castky": [],
+    "parcely": [],
+    "poznamka": null,
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "rm-2026-j1-u2",
+    "cislo": "RM 2/2026-1",
+    "jednani_id": "rm-2026-11-04",
+    "bod": 3,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "II",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "I. schvaluje\nsložení komise pro otevírání a hodnocení nabídek na akci „Prodej pozemku v k. ú. Holičky u St. Hlíny“ ve\nsložení:\nčlenové komise: [jména členů komise neuvádíme]\nnáhradníci: [jména náhradníků neuvádíme]\nII. ukládá\nodboru finančnímu a majetkovému předložit starostovi města jmenovací dekrety k podpisu.",
+    "text_anonymizovan": true,
+    "tema": "Komise pro prodej části pozemku v k. ú. Holičky u Staré Hlíny",
+    "tema_ai": true,
+    "kategorie": [
+      "majetek_prevod",
+      "verejne_zakazky"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Rada jmenovala komisi pro otevírání a hodnocení nabídek na prodej pozemku v k. ú. Holičky u Staré Hlíny.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-rm-2026-11-04",
+      "strany": [
+        1,
+        2
+      ],
+      "text": "složení komise pro otevírání a hodnocení nabídek na akci „Prodej pozemku v k. ú. Holičky u St. Hlíny“"
+    },
+    "castky": [],
+    "parcely": [
+      {
+        "ku": "Holičky u Staré Hlíny",
+        "cislo": "1/1",
+        "cast": true,
+        "zdroj": "nazev_bodu",
+        "citace": "prodej části pozemku p. č. 1/1 k. ú. Holičky u Staré Hlíny"
+      }
+    ],
+    "poznamka": "Jména členů a náhradníků komisí neuvádíme (rozhodnutí 18. 11. 2026).",
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "rm-2026-j1-u3",
+    "cislo": "RM 3/2026-1",
+    "jednani_id": "rm-2026-11-04",
+    "bod": 4,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "II",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "I. schvaluje\nuzavření smlouvy o výpůjčce nebytového prostoru v budově čp. 3 Přeseka, 379 01 Třeboň, která je součástí\npozemku p. č. st. KN 17 k. ú. Přeseka o celkové výměře podlahové plochy 43,27 m2 (místnost 42,29 m2 +\nWC 0,98 m2), mezi městem Třeboň (jako půjčitelem) a XXXXXXXX, XXXXXXXX XXXXXXXX (jako\nvypůjčitelem), a to na dobu určitou od 01.01.2027 do 31.03.2027 a dále pak od 01.11.2027 do 30.11.2027 za\núčelem provozování sportovních a kulturních aktivit včetně společenských setkání. Náklady na služby\nsouvisející s užíváním nebytových prostor bude hradit vypůjčitel paušálně, a to ve výši stanovené dle důvodové\nzprávy.\nII. ukládá\nodboru finančnímu a majetkovému ve spolupráci s právníkem města vyhotovit smlouvu a předložit k podpisu",
+    "text_anonymizovan": false,
+    "tema": "Výpůjčka nebytového prostoru v Přesece na rok 2027",
+    "tema_ai": true,
+    "kategorie": [
+      "majetek_najem",
+      "sport",
+      "kultura"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Rada schválila bezplatnou výpůjčku prostoru v budově čp. 3 v Přesece na sportovní, kulturní a společenské aktivity v obdobích leden–březen a listopad 2027; služby hradí vypůjčitel paušálem.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-rm-2026-11-04",
+      "strany": [
+        2
+      ],
+      "text": "za účelem provozování sportovních a kulturních aktivit včetně společenských setkání"
+    },
+    "castky": [],
+    "parcely": [
+      {
+        "ku": "Přeseka",
+        "cislo": "st. 17",
+        "citace": "pozemku p. č. st. KN 17 k. ú. Přeseka"
+      }
+    ],
+    "poznamka": "Vypůjčitel je v zápisu anonymizován městem (XXXXXXXX).",
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "rm-2026-j1-u4",
+    "cislo": "RM 4/2026-1",
+    "jednani_id": "rm-2026-11-04",
+    "bod": 5,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "bere_na_vedomi",
+        "sloveso": "bere na vědomí"
+      }
+    ],
+    "text": "I. bere na vědomí\nvýpověď XXXXXXXX XXXXXXXX, IČO: [fyzická osoba] (XXXXXXXX XXXXXXXX) z nájemní smlouvy v objektu č.\np. 42, Přeseka, 379 01 Třeboň (smlouva ze dne 01.03.2024). Nájemní vztah bude ukončen k 31.01.2027.",
+    "text_anonymizovan": true,
+    "tema": "Výpověď nájmu nebytového prostoru č. p. 42 v Přesece",
+    "tema_ai": true,
+    "kategorie": [
+      "majetek_najem"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Rada vzala na vědomí výpověď nájemce prostoru v č. p. 42 v Přesece; nájem skončí 31. 1. 2027.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-rm-2026-11-04",
+      "strany": [
+        2
+      ],
+      "text": "Nájemní vztah bude ukončen k 31.01.2027."
+    },
+    "castky": [],
+    "parcely": [],
+    "poznamka": "Nájemce je fyzická osoba podnikající; město zveřejnilo IČO, jméno anonymizovalo. IČO fyzické osoby nezveřejňujeme.",
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "rm-2026-j1-u5",
+    "cislo": "RM 5/2026-1",
+    "jednani_id": "rm-2026-11-04",
+    "bod": 6,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "II",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "I. schvaluje\nuzavření nájemní smlouvy mezi městem Třeboň (jako pronajímatelem) a [fyzická osoba], IČO: [fyzická osoba]\n(se sídlem [fyzická osoba]) na nebytové prostory v budově č. p. 106/II, která je součástí pozemku\np. č. KN 862/9 v k. ú. Třeboň. Jedná se o nebytový prostor v 2. NP o výměře podlahové plochy 16,34 m2.\nSmlouva se uzavírá na dobu neurčitou s tříměsíční výpovědní lhůtou za účelem zřízení kanceláře finančních\na pojistných služeb Allianz pojišťovny v Třeboni. Nájemné se stanovuje ve výši 2.100,00 Kč/m2/rok a bude\nkaždoročně valorizováno počínaje rokem 2028 o míru inflace za předcházející rok. Náklady na služby\nsouvisející s užíváním nebytových prostor bude hradit nájemce. Nájemní smlouva bude uzavřena s účinností\nod protokolárního předání nebytových prostor, nejpozději však od 01.01.2027.\nII. ukládá\nodboru finančnímu a majetkovému ve spolupráci s právníkem města vyhotovit nájemní smlouvu a předložit\nji starostovi města k podpisu.",
+    "text_anonymizovan": true,
+    "tema": "Pronájem kanceláře v 2. NP domu č. p. 106/II",
+    "tema_ai": true,
+    "kategorie": [
+      "majetek_najem"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Rada schválila pronájem prostoru 16,34 m2 v č. p. 106/II na dobu neurčitou pro kancelář finančních a pojišťovacích služeb za 2 100 Kč/m2/rok s valorizací od roku 2028.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-rm-2026-11-04",
+      "strany": [
+        2,
+        3
+      ],
+      "text": "Nájemné se stanovuje ve výši 2.100,00 Kč/m2/rok"
+    },
+    "castky": [
+      {
+        "hodnota": 2100.0,
+        "jednotka": "Kč/m2/rok",
+        "druh": "najemne_sazba",
+        "s_dph": null,
+        "citace": "Nájemné se stanovuje ve výši 2.100,00 Kč/m2/rok",
+        "mena": "CZK"
+      }
+    ],
+    "parcely": [
+      {
+        "ku": "Třeboň",
+        "cislo": "862/9",
+        "citace": "p. č. KN 862/9 v k. ú. Třeboň"
+      }
+    ],
+    "poznamka": "Nájemce je fyzická osoba podnikající; jméno, IČO a adresu sídla nezveřejňujeme. Město je v zápisu ponechalo i v názvu bodu.",
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "rm-2026-j1-u6",
+    "cislo": "RM 6/2026-1",
+    "jednani_id": "rm-2026-11-04",
+    "bod": 7,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "bere_na_vedomi",
+        "sloveso": "bere na vědomí"
+      }
+    ],
+    "text": "I. bere na vědomí\nhospodaření příspěvkové organizace Městská sportovní Třeboň a mezitímní účetní závěrku sestavenou k\n30.09.2026.",
+    "text_anonymizovan": false,
+    "tema": "Hospodaření Městské sportovní Třeboň k 30. 9. 2026",
+    "tema_ai": true,
+    "kategorie": [
+      "prispevkove_organizace",
+      "sport"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Rada vzala na vědomí hospodaření příspěvkové organizace Městská sportovní Třeboň a její mezitímní účetní závěrku k 30. 9. 2026.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-rm-2026-11-04",
+      "strany": [
+        3
+      ],
+      "text": "hospodaření příspěvkové organizace Městská sportovní Třeboň a mezitímní účetní závěrku sestavenou k 30.09.2026."
+    },
+    "castky": [],
+    "parcely": [],
+    "poznamka": null,
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "rm-2026-j1-u7",
+    "cislo": "RM 7/2026-1",
+    "jednani_id": "rm-2026-11-04",
+    "bod": 8,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "II",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "I. schvaluje\nprovedení rozpočtového opatření č. 60, které spočívá v přesunutí finančních prostředků ve výdajové části\nrozpisu rozpočtu fondu VHI\n-z položky 5171 „Opravy vodovodů (hydranty, šoupata, armatury)“, § 2310, ORJ 750, ORG 5020005020, UZ\n0 v částce Kč 223.850,00,\n-do položky 5171 „Opravy ČOV“, § 2321, ORJ 750, ORG 5020005022, UZ 0 v částce Kč 223.850,00.\nRozpočet\nRozpočet\nod\nSchválený      po       Rozpočtové\nČís.   RM      ÚZ          ORG         ORJ   Paragraf   Položka                                          počátku\nrozpočet   schválení    opatření\nroku po\nRO\nRO\nRozpočtové výdaje fondu VHI (Kč):\n60.             0       5020005020     750    2310       5171     1 246 300   1 246 300     - 223 850   1 022 450\n0       5020005022     750    2321       5171       302 500    302 500     + 223 850     526 350\nII. ukládá\nodboru rozvoje a investic a odboru finančnímu a majetkovému provést a evidovat RO v IS GINIS.",
+    "text_anonymizovan": false,
+    "tema": "Rozpočtové opatření č. 60 – vzduchování ČOV",
+    "tema_ai": true,
+    "kategorie": [
+      "rozpocet",
+      "voda_odpady"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Rada přesunula 223 850 Kč ve fondu vodohospodářské infrastruktury z oprav vodovodů na opravy ČOV (obnova systému dodávky vzduchu).",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-rm-2026-11-04",
+      "strany": [
+        3
+      ],
+      "text": "v částce Kč 223.850,00"
+    },
+    "castky": [
+      {
+        "hodnota": 223850.0,
+        "jednotka": "Kč",
+        "druh": "rozpoctove_opatreni",
+        "s_dph": null,
+        "citace": "-do položky 5171 „Opravy ČOV“, § 2321, ORJ 750, ORG 5020005022, UZ 0 v částce Kč 223.850,00.",
+        "mena": "CZK"
+      }
+    ],
+    "parcely": [],
+    "poznamka": null,
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "rm-2026-j1-u8",
+    "cislo": "RM 8/2026-1",
+    "jednani_id": "rm-2026-11-04",
+    "bod": 9,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "II",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "I. schvaluje\npřijetí věcného daru 10 párů dětských bruslí v celkové hodnotě 25.000 Kč Základní školou Sokolská 296,\nTřeboň od organizace Děti do bruslí, z.s.\nII. ukládá\nodboru školství a sociálních věcí zajistit výpis usnesení a předat ředitelce školy.",
+    "text_anonymizovan": false,
+    "tema": "Dar bruslí pro ZŠ Sokolská",
+    "tema_ai": true,
+    "kategorie": [
+      "skolstvi",
+      "dotace_dary",
+      "prispevkove_organizace"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Rada jako zřizovatel souhlasila, aby ZŠ Sokolská přijala od spolku Děti do bruslí 10 párů dětských bruslí v hodnotě 25 000 Kč.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-rm-2026-11-04",
+      "strany": [
+        3,
+        4
+      ],
+      "text": "přijetí věcného daru 10 párů dětských bruslí v celkové hodnotě 25.000 Kč"
+    },
+    "castky": [
+      {
+        "hodnota": 25000,
+        "jednotka": "Kč",
+        "druh": "dar_prijaty",
+        "s_dph": null,
+        "citace": "v celkové hodnotě 25.000 Kč",
+        "mena": "CZK"
+      }
+    ],
+    "parcely": [],
+    "poznamka": null,
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "rm-2026-j1-u9",
+    "cislo": "RM 9/2026-1",
+    "jednani_id": "rm-2026-11-04",
+    "bod": 10,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "II",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "I. schvaluje\nprovedení rozpočtového opatření č. 61, které spočívá v přesunutí finančních prostředků ve výdajové části\nrozpočtu takto:\n-z položky 5164 „Nájemné“, § 3319, ORJ 770, ORG 9770000000, UZ 0 v částce Kč 30.000,00,\n-do položky 5173 „Cestovné – tuzemské cesty“, § 6171, ORJ 770, ORG 9770000201, UZ 0 v částce Kč\n30.000,00.\nRozpočet\nSchválen                             Rozpočet od\nParagra   Položk                 po       Rozpočtové\nČís.   RM       ÚZ           ORG       ORJ                          ý                                  počátku\nf        a                 schválení    opatření\nrozpočet                             roku po RO\nRO\nRozpočtové výdaje (Kč):\n61.             0         9770000000   770    3319     5164      185 000     185 000      - 30 000      155 000\n0         9770000201   770    6171     5173      150 000     150 000     + 30 000       180 000\nII. ukládá\nútvar tajemníka a odboru finančnímu a majetkovému provést a evidovat RO v IS GINIS.",
+    "text_anonymizovan": false,
+    "tema": "Rozpočtové opatření č. 61 – cestovné",
+    "tema_ai": true,
+    "kategorie": [
+      "rozpocet"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Rada přesunula 30 000 Kč z položky nájemné na tuzemské cestovné.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-rm-2026-11-04",
+      "strany": [
+        4
+      ],
+      "text": "-do položky 5173 „Cestovné – tuzemské cesty“, § 6171, ORJ 770, ORG 9770000201, UZ 0 v částce Kč 30.000,00."
+    },
+    "castky": [
+      {
+        "hodnota": 30000.0,
+        "jednotka": "Kč",
+        "druh": "rozpoctove_opatreni",
+        "s_dph": null,
+        "citace": "-do položky 5173 „Cestovné – tuzemské cesty“, § 6171, ORJ 770, ORG 9770000201, UZ 0 v částce Kč 30.000,00.",
+        "mena": "CZK"
+      }
+    ],
+    "parcely": [],
+    "poznamka": null,
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "zm-2026-j1-u1",
+    "cislo": "ZM 1/2026-1",
+    "jednani_id": "zm-2026-11-02",
+    "bod": 3,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      }
+    ],
+    "text": "I. schvaluje\nověřovatele zápisu pana Petra Kohouta a Bc. Vladana Pikla, MPA.",
+    "text_anonymizovan": false,
+    "tema": "Ověřovatelé zápisu",
+    "tema_ai": true,
+    "kategorie": [
+      "samosprava"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Zastupitelstvo schválilo ověřovatele zápisu.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-zm-2026-11-02",
+      "strany": [
+        1
+      ],
+      "text": "ověřovatele zápisu pana Petra Kohouta a Bc. Vladana Pikla, MPA."
+    },
+    "castky": [],
+    "parcely": [],
+    "poznamka": null,
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "zm-2026-j1-u2",
+    "cislo": "ZM 2/2026-1",
+    "jednani_id": "zm-2026-11-02",
+    "bod": 4,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      }
+    ],
+    "text": "I. schvaluje\nnávrh programu jednání ustavujícího zastupitelstva se změnou předloženou panem Mgr. Alešem Kolářem.",
+    "text_anonymizovan": false,
+    "tema": "Program ustavujícího zasedání",
+    "tema_ai": true,
+    "kategorie": [
+      "samosprava"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Zastupitelstvo schválilo program se změnou, podle níž se o způsobu volby všech funkcí rozhodovalo jedním hlasováním.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-zm-2026-11-02",
+      "strany": [
+        2
+      ],
+      "text": "návrh programu jednání ustavujícího zastupitelstva se změnou předloženou panem Mgr. Alešem Kolářem."
+    },
+    "castky": [],
+    "parcely": [],
+    "poznamka": null,
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "zm-2026-j1-u3",
+    "cislo": "ZM 3/2026-1",
+    "jednani_id": "zm-2026-11-02",
+    "bod": 5,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      }
+    ],
+    "text": "I. schvaluje\nmandátovou komisi ve složení: Ing. Ondřej Hlinka, Petr Kohout a Ing. Petr Čížek.",
+    "text_anonymizovan": false,
+    "tema": "Mandátová komise",
+    "tema_ai": true,
+    "kategorie": [
+      "samosprava"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Zastupitelstvo zvolilo tříčlennou mandátovou komisi.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-zm-2026-11-02",
+      "strany": [
+        2
+      ],
+      "text": "mandátovou komisi ve složení: Ing. Ondřej Hlinka, Petr Kohout a Ing. Petr Čížek."
+    },
+    "castky": [],
+    "parcely": [],
+    "poznamka": null,
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "zm-2026-j1-u4",
+    "cislo": "ZM 4/2026-1",
+    "jednani_id": "zm-2026-11-02",
+    "bod": 6,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      }
+    ],
+    "text": "I. schvaluje\nvolební a návrhovou komisi ve složení: Mgr. Bc. Jana Polčáková, Vít Zavadil a MUDr. František Pfeifer.",
+    "text_anonymizovan": false,
+    "tema": "Volební a návrhová komise",
+    "tema_ai": true,
+    "kategorie": [
+      "samosprava"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Zastupitelstvo zvolilo tříčlennou volební a návrhovou komisi.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-zm-2026-11-02",
+      "strany": [
+        3
+      ],
+      "text": "volební a návrhovou komisi ve složení: Mgr. Bc. Jana Polčáková, Vít Zavadil a MUDr. František Pfeifer."
+    },
+    "castky": [],
+    "parcely": [],
+    "poznamka": null,
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "zm-2026-j1-u5",
+    "cislo": "ZM 5/2026-1",
+    "jednani_id": "zm-2026-11-02",
+    "bod": 7,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      }
+    ],
+    "text": "I. schvaluje\n2 místostarosty.",
+    "text_anonymizovan": false,
+    "tema": "Počet místostarostů",
+    "tema_ai": true,
+    "kategorie": [
+      "samosprava"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Město bude mít dva místostarosty.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-zm-2026-11-02",
+      "strany": [
+        3
+      ],
+      "text": "2 místostarosty."
+    },
+    "castky": [],
+    "parcely": [],
+    "poznamka": null,
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "zm-2026-j1-u6",
+    "cislo": "ZM 6/2026-1",
+    "jednani_id": "zm-2026-11-02",
+    "bod": 8,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      }
+    ],
+    "text": "I. schvaluje\nsedmičlennou radu města.",
+    "text_anonymizovan": false,
+    "tema": "Počet členů rady",
+    "tema_ai": true,
+    "kategorie": [
+      "samosprava"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Rada města bude sedmičlenná.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-zm-2026-11-02",
+      "strany": [
+        3
+      ],
+      "text": "sedmičlennou radu města."
+    },
+    "castky": [],
+    "parcely": [],
+    "poznamka": null,
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "zm-2026-j1-u7",
+    "cislo": "ZM 7/2026-1",
+    "jednani_id": "zm-2026-11-02",
+    "bod": 9,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "urcuje",
+        "sloveso": "určuje"
+      }
+    ],
+    "text": "I. určuje\nv souladu s § 84 odst. 2 písm. k) zákona o obcích, že pro výkon funkce starosty a dvou místostarostů budou\nčlenové zastupitelstva dlouhodobě uvolněni.",
+    "text_anonymizovan": false,
+    "tema": "Uvolnění starosty a místostarostů",
+    "tema_ai": true,
+    "kategorie": [
+      "samosprava",
+      "personalni"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Starosta a oba místostarostové budou funkci vykonávat jako dlouhodobě uvolnění.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-zm-2026-11-02",
+      "strany": [
+        4
+      ],
+      "text": "pro výkon funkce starosty a dvou místostarostů budou členové zastupitelstva dlouhodobě uvolněni."
+    },
+    "castky": [],
+    "parcely": [],
+    "poznamka": null,
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "zm-2026-j1-u8",
+    "cislo": "ZM 8/2026-1",
+    "jednani_id": "zm-2026-11-02",
+    "bod": 10,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      }
+    ],
+    "text": "I. schvaluje\nvolbu starosty, místostarostů a dalších členů rady veřejným hlasováním.",
+    "text_anonymizovan": false,
+    "tema": "Veřejná volba vedení města",
+    "tema_ai": true,
+    "kategorie": [
+      "samosprava"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Starosta, místostarostové a radní byli voleni veřejným hlasováním; návrh na tajnou volbu neprošel.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-zm-2026-11-02",
+      "strany": [
+        4
+      ],
+      "text": "volbu starosty, místostarostů a dalších členů rady veřejným hlasováním."
+    },
+    "castky": [],
+    "parcely": [],
+    "poznamka": null,
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "zm-2026-j1-u9",
+    "cislo": "ZM 9/2026-1",
+    "jednani_id": "zm-2026-11-02",
+    "bod": 11,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "voli",
+        "sloveso": "volí"
+      }
+    ],
+    "text": "I. volí\nstarostou města Třeboně Mgr. Aleše Koláře.",
+    "text_anonymizovan": false,
+    "tema": "Volba starosty",
+    "tema_ai": true,
+    "kategorie": [
+      "samosprava"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Starostou byl zvolen Mgr. Aleš Kolář.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-zm-2026-11-02",
+      "strany": [
+        4
+      ],
+      "text": "starostou města Třeboně Mgr. Aleše Koláře."
+    },
+    "castky": [],
+    "parcely": [],
+    "poznamka": null,
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "zm-2026-j1-u10",
+    "cislo": "ZM 10/2026-1",
+    "jednani_id": "zm-2026-11-02",
+    "bod": 12,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "voli",
+        "sloveso": "volí"
+      },
+      {
+        "cast": "II",
+        "ukon": "voli",
+        "sloveso": "volí"
+      }
+    ],
+    "text": "I. volí\n1. místostarostou města Třeboně Mgr. Petra Koubu.\nII. volí\n2. místostarostu města Třeboně Ing. Ondřeje Zbudila.",
+    "text_anonymizovan": false,
+    "tema": "Volba místostarostů",
+    "tema_ai": true,
+    "kategorie": [
+      "samosprava"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "1. místostarostou byl zvolen Mgr. Petr Kouba, 2. místostarostou Ing. Ondřej Zbudil.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-zm-2026-11-02",
+      "strany": [
+        5
+      ],
+      "text": "1. místostarostou města Třeboně Mgr. Petra Koubu."
+    },
+    "castky": [],
+    "parcely": [],
+    "poznamka": null,
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "zm-2026-j1-u11",
+    "cislo": "ZM 11/2026-1",
+    "jednani_id": "zm-2026-11-02",
+    "bod": 13,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "voli",
+        "sloveso": "volí"
+      }
+    ],
+    "text": "I. volí\ndalší členy Rady města Třeboně: Ing. Lenka Blažková, Petr Kohout, Mgr. Stanislav Ojíř Musil a Ing. Jiří\nVopátek, Ph.D.",
+    "text_anonymizovan": false,
+    "tema": "Volba dalších členů rady",
+    "tema_ai": true,
+    "kategorie": [
+      "samosprava"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Dalšími členy rady byli zvoleni Ing. Lenka Blažková, Petr Kohout, Mgr. Stanislav Ojíř Musil a Ing. Jiří Vopátek, Ph.D.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-zm-2026-11-02",
+      "strany": [
+        5
+      ],
+      "text": "další členy Rady města Třeboně: Ing. Lenka Blažková, Petr Kohout, Mgr. Stanislav Ojíř Musil a Ing. Jiří Vopátek, Ph.D."
+    },
+    "castky": [],
+    "parcely": [],
+    "poznamka": null,
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  }
+]

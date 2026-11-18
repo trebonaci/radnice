@@ -1,0 +1,244 @@
+[
+  {
+    "id": "rm-2026-11-04",
+    "organ": "rada",
+    "druh": "radne",
+    "cislo": 1,
+    "datum": "2026-11-04",
+    "obdobi": "2026-2030",
+    "pritomno_na_zacatku": 5,
+    "clenu": 7,
+    "pritomnost_zmeny": [],
+    "dokument": {
+      "dokument_id": "zapis-rm-2026-11-04",
+      "url": "https://www.mesto-trebon.cz/uploads/news/id15223/Z-1-26-11-04-A.pdf",
+      "stranka_zdroje": "https://www.mesto-trebon.cz/cz/mestsky-urad-trebon/samosprava-mesta/rada-mesta/zapisy-z-jednani-rady-mesta/volebni-obdobi-2026---2030.html",
+      "vyveseno": "2026-11-11",
+      "sha256": "30b5102ad0155734a998dfe8330f6b5ecd69b06843480d51138616d604dc78cc",
+      "pocet_stran": 4
+    },
+    "body": [
+      {
+        "cislo": 1,
+        "nazev": "Zahájení",
+        "strana": 1,
+        "text": "Jednání rady zahájil pan starosta Mgr. Aleš Kolář v 15.00 hodin.\nV úvodu jednání bylo přítomno 5 členů rady města.",
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 2,
+        "nazev": "Program 1. jednání a schválení zveřejnění zápisů",
+        "strana": 1,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 3,
+        "nazev": "Komise pro otevírání a hodnocení nabídek - prodej části pozemku p. č. 1/1 k. ú. Holičky u Staré Hlíny",
+        "strana": 1,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 4,
+        "nazev": "Nebytový prostor čp. 3 Přeseka – výpůjčka 2027",
+        "strana": 2,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 5,
+        "nazev": "Výpověď - nebytový prostor č. p. 42, Přeseka",
+        "strana": 2,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 6,
+        "nazev": "Nájem nebytového prostoru v 2. NP, č. p. 106/II (16,34 m2)",
+        "strana": 2,
+        "text": null,
+        "nazev_anonymizovan": true,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 7,
+        "nazev": "Hospodaření příspěvkové organizace Městská sportovní Třeboň a mezitímní účetní závěrka k 30.09.2026",
+        "strana": 3,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 8,
+        "nazev": "Rozpočtové opatření č. 60 - Obnova systému dodávky vzduchu na ČOV Třeboň",
+        "strana": 3,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 9,
+        "nazev": "Předchozí souhlas zřizovatele s přijetím daru Základní školou Sokolská 296, Třeboň",
+        "strana": 3,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 10,
+        "nazev": "Rozpočtové opatření č. 61 – Cestovné – navýšení výdajové položky převodem z položky Nájemné",
+        "strana": 4,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 11,
+        "nazev": "Různé",
+        "strana": 4,
+        "text": "Rada města projednala podnět občana a rozhodla o dalším postupu\nk vyřízení.\nJednání rady města ukončil pan starosta v 15.45 hodin.\nMgr. Aleš Kolář v. r.                                                    Mgr. Petr Kouba v. r.\nstarosta města Třeboně                                                   místostarosta města Třeboně\nZapsala: zapisovatelka\nZápis byl zpracován dne 10.11.2026",
+        "text_anonymizovan": true
+      }
+    ],
+    "upozorneni_parseru": []
+  },
+  {
+    "id": "zm-2026-11-02",
+    "organ": "zastupitelstvo",
+    "druh": "ustavujici",
+    "cislo": 1,
+    "datum": "2026-11-02",
+    "obdobi": "2026-2030",
+    "pritomno_na_zacatku": 25,
+    "clenu": 25,
+    "pritomnost_zmeny": [
+      {
+        "cas": "17:32",
+        "udalost": "odchod",
+        "osoba": "PaedDr. Jan Váňa"
+      },
+      {
+        "cas": "17:35",
+        "udalost": "odchod",
+        "osoba": "Ing. Jana Grammetbauerová"
+      }
+    ],
+    "dokument": {
+      "dokument_id": "zapis-zm-2026-11-02",
+      "url": "https://www.mesto-trebon.cz/uploads/news/id15220/Z-01-26-11-02.pdf",
+      "stranka_zdroje": "https://www.mesto-trebon.cz/cz/mestsky-urad-trebon/samosprava-mesta/zastupitelstvo-mesta/zapisy-zastupitelstva-mesta/volebni-obdobi-2026---2030-2.html",
+      "vyveseno": "2026-11-10",
+      "sha256": "29715c1e41887c7c387c65fa89e7095991b5124fed57c962b714ff1c2d5572aa",
+      "pocet_stran": 6
+    },
+    "body": [
+      {
+        "cislo": 1,
+        "nazev": "Zahájení",
+        "strana": 1,
+        "text": "Dosavadní místostarostka Ing. Jana Grammetbaurová zahájila jednání v 17:00 hodin, přivítala členy\nzastupitelstva, pracovníky městského úřadu, organizací města a občany města. USTAVUJÍCÍ ZASEDÁNÍ\nZASTUPITELSTVA MĚSTA bylo řádně a včas svoláno dle zákona o obcích. Předsedající požádala zastupitele\no vypnutí mobilních telefonů, aby bylo umožněno zvukové nahrávání jednání zastupitelstva.\nPřed zahájením zasedání bylo členům zastupitelstva města předáno osvědčení o zvolení členem\nzastupitelstva města podle § 53 zákona č. 491/2001 Sb., o volbách do zastupitelstev obcí a o změně některých\nzákonů, v platném znění.\nPodle prezenční listiny byla v úvodu přítomna nadpoloviční většina volených členů 25. Zastupitelstvo města\nTřeboně bylo schopné se právoplatně usnášet. Průběh a záznam jednání je zaznamenán a je k dispozici na\nwebových stránkách města na http://www.mesto-trebon.cz/cz/lm/online-prenosy-zastupitelstva.html.",
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 2,
+        "nazev": "Složení slibu členů zastupitelstva města",
+        "strana": 1,
+        "text": "Předsedající v souladu s § 69 odst. 2 zákona o obcích vyzvala přítomné členy zastupitelstva ke složení slibu.\nPřed složením slibu předsedající upozornila zastupitele, že odmítnutí složit slib nebo složení slibu s výhradou\nmá za následek zánik mandátu (§ 55 zákona č. 491/2001 Sb., o volbách do zastupitelstev obcí a o změně\nněkterých zákonů, v platném znění).\nSložení slibu proběhlo tak, že tajemnice přečetla slib stanovený v § 69 odst. 2 zákona\no obcích:\n„Slibuji věrnost České republice. Slibuji na svou čest a svědomí, že svoji funkci budu vykonávat svědomitě,\nv zájmu města a jeho občanů a řídit se Ústavou a zákony České republiky.“\nNejprve složila slib sama předsedající Ing. Jana Grammetbauerová a poté tajemnice města vyzvala jmenovitě\na v abecedním pořadí přítomné členy zastupitelstva ke složení slibu pronesením slova „slibuji“ a stvrzení této\nskutečnosti svým podpisem na připravenou listinu.\nPředsedající konstatovala, že žádný člen zastupitelstva neodmítl složit slib ani nesložil slib s výhradou.",
+        "text_anonymizovan": true
+      },
+      {
+        "cislo": 3,
+        "nazev": "Určení skrutátora, zapisovatele, volba ověřovatelů zápisu",
+        "strana": 1,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 4,
+        "nazev": "Schválení programu",
+        "strana": 2,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 5,
+        "nazev": "Volba mandátové komise",
+        "strana": 2,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 6,
+        "nazev": "Volba volební a návrhové komise",
+        "strana": 3,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 7,
+        "nazev": "Stanovení počtu místostarostů",
+        "strana": 3,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 8,
+        "nazev": "Stanovení počtu členů rady města",
+        "strana": 3,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 9,
+        "nazev": "Určení, které funkce budou členové zastupitelstva vykonávat jako dlouhodobě uvolnění",
+        "strana": 4,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 10,
+        "nazev": "Určení způsobu volby starosty, místostarostů a členů rady města",
+        "strana": 4,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 11,
+        "nazev": "Volba starosty",
+        "strana": 4,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 12,
+        "nazev": "Volba místostarosty/ů",
+        "strana": 5,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 13,
+        "nazev": "Volba dalších členů rady města",
+        "strana": 5,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 16,
+        "nazev": "Diskuze",
+        "strana": 5,
+        "text": "Nově zvolený starosta Mgr. Aleš Kolář poděkoval volební komisi za provedené volby, přednesl proslov a\nnásledně oznámil, že další jednání zastupitelstva města se bude konat dne 14.12.2026 od 17:00 hodin\nv zasedací místnosti č. 118 Městského úřadu Třeboň.\nStarosta dále pozval zastupitele i občany na slavnostní shromáždění u příležitosti Dne boje za svobodu a\ndemokracii dne 17. listopadu v 10:00 na Masarykově náměstí.\nMístostarosta Ing. Ondřej Zbudil rozdal členům zastupitelstva metodické materiály týkající se správy majetku\na finančních záležitostí pro usnadnění orientace v této komplexní agendě. Starosta zároveň upozornil, že\nzastupitelé obdrželi brožuru „Jsem zastupitel“, která je seznámí se všemi aspekty funkce.",
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 17,
+        "nazev": "Závěr",
+        "strana": 6,
+        "text": "Jednání zastupitelstva města ukončil starosta v 17:52 hodin.\nMgr. Aleš Kolář v.r.\nstarosta města Třeboně\nOvěřili:\nPetr Kohout v.r. dne: 9.11.2026\nBc. Vladan Pikl,MPA v.r. dne: 9.11.2026\nZapsala: zapisovatelka\nZápis byl zpracován dne 06.11.2026",
+        "text_anonymizovan": true
+      }
+    ],
+    "upozorneni_parseru": [
+      "ZM 11/2026-1: bez souhrnného hlasování; navázána hlasování o jednotlivých kandidátech (4)",
+      "bod 16: není v programu, název vzat z prvního řádku ('Diskuze')",
+      "bod 17: není v programu, název vzat z prvního řádku ('Závěr')"
+    ]
+  }
+]

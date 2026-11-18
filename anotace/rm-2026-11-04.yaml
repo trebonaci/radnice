@@ -1,0 +1,124 @@
+# Anotace usnesení navržené AI (model A: Claude), stav: navrh.
+# Struktura, čísla usnesení a hlasování NEJSOU zde – ty vytváří deterministicky pipeline/zapisy.py.
+# Každá citace musí doslova (po sjednocení mezer) existovat v textu usnesení.
+jednani:
+  organ: rada
+  cislo: 1
+  datum: "2026-11-04"
+  obdobi: "2026-2030"
+  pritomno: 5
+  clenu: 7
+  citace: "V úvodu jednání bylo přítomno 5 členů rady města."
+  dokument_id: zapis-rm-2026-11-04
+
+body:
+  6:
+    nazev: "Nájem nebytového prostoru v 2. NP, č. p. 106/II (16,34 m2)"
+  11:
+    anonymizace:
+      - retezec: "pana Ing. Mgr. Michala Petříka, MBA, DiS.,"
+        nahrada: "občana"
+
+usneseni:
+  rm-2026-j1-u1:
+    tema: Program jednání a zveřejňování zápisů
+    kategorie: [samosprava]
+    shrnuti: Rada schválila program svého prvního jednání a zveřejňování zápisů.
+    citace: "program 1. jednání rady města a schválení zveřejnění zápisů."
+
+  rm-2026-j1-u2:
+    tema: Komise pro prodej části pozemku v k. ú. Holičky u Staré Hlíny
+    kategorie: [majetek_prevod, verejne_zakazky]
+    shrnuti: Rada jmenovala komisi pro otevírání a hodnocení nabídek na prodej pozemku v k. ú. Holičky u Staré Hlíny.
+    citace: "složení komise pro otevírání a hodnocení nabídek na akci „Prodej pozemku v k. ú. Holičky u St. Hlíny“"
+    parcely:
+      - ku: Holičky u Staré Hlíny
+        cislo: "1/1"
+        cast: true
+        zdroj: nazev_bodu
+        citace: "prodej části pozemku p. č. 1/1 k. ú. Holičky u Staré Hlíny"
+    anonymizace:
+      - retezec: "Mgr. Aleš Kolář, Ing. Lenka Blažková, Ing. Helena Zavadilová,"
+        nahrada: "[jména členů komise neuvádíme]"
+      - retezec: "Jitka Filípková, Ing. Alena Baštová, Vladislava Bicková."
+        nahrada: "[jména náhradníků neuvádíme]"
+    poznamka: Jména členů a náhradníků komisí neuvádíme (rozhodnutí 18. 11. 2026).
+
+  rm-2026-j1-u3:
+    tema: Výpůjčka nebytového prostoru v Přesece na rok 2027
+    kategorie: [majetek_najem, sport, kultura]
+    shrnuti: Rada schválila bezplatnou výpůjčku prostoru v budově čp. 3 v Přesece na sportovní, kulturní a společenské aktivity v obdobích leden–březen a listopad 2027; služby hradí vypůjčitel paušálem.
+    citace: "za účelem provozování sportovních a kulturních aktivit včetně společenských setkání"
+    parcely:
+      - ku: Přeseka
+        cislo: "st. 17"
+        citace: "pozemku p. č. st. KN 17 k. ú. Přeseka"
+    poznamka: Vypůjčitel je v zápisu anonymizován městem (XXXXXXXX).
+
+  rm-2026-j1-u4:
+    tema: Výpověď nájmu nebytového prostoru č. p. 42 v Přesece
+    kategorie: [majetek_najem]
+    shrnuti: Rada vzala na vědomí výpověď nájemce prostoru v č. p. 42 v Přesece; nájem skončí 31. 1. 2027.
+    citace: "Nájemní vztah bude ukončen k 31.01.2027."
+    anonymizace: ["01267647"]
+    poznamka: Nájemce je fyzická osoba podnikající; město zveřejnilo IČO, jméno anonymizovalo. IČO fyzické osoby nezveřejňujeme.
+
+  rm-2026-j1-u5:
+    tema: Pronájem kanceláře v 2. NP domu č. p. 106/II
+    kategorie: [majetek_najem]
+    shrnuti: Rada schválila pronájem prostoru 16,34 m2 v č. p. 106/II na dobu neurčitou pro kancelář finančních a pojišťovacích služeb za 2 100 Kč/m2/rok s valorizací od roku 2028.
+    citace: "Nájemné se stanovuje ve výši 2.100,00 Kč/m2/rok"
+    castky:
+      - hodnota: 2100.00
+        jednotka: Kč/m2/rok
+        druh: najemne_sazba
+        s_dph: null
+        citace: "Nájemné se stanovuje ve výši 2.100,00 Kč/m2/rok"
+    parcely:
+      - ku: Třeboň
+        cislo: "862/9"
+        citace: "p. č. KN 862/9 v k. ú. Třeboň"
+    anonymizace: ["Pavlou Sojkovou", "71996117", "Svobody č. p. 272, Třeboň"]
+    poznamka: Nájemce je fyzická osoba podnikající; jméno, IČO a adresu sídla nezveřejňujeme. Město je v zápisu ponechalo i v názvu bodu.
+
+  rm-2026-j1-u6:
+    tema: Hospodaření Městské sportovní Třeboň k 30. 9. 2026
+    kategorie: [prispevkove_organizace, sport]
+    shrnuti: Rada vzala na vědomí hospodaření příspěvkové organizace Městská sportovní Třeboň a její mezitímní účetní závěrku k 30. 9. 2026.
+    citace: "hospodaření příspěvkové organizace Městská sportovní Třeboň a mezitímní účetní závěrku sestavenou k 30.09.2026."
+
+  rm-2026-j1-u7:
+    tema: Rozpočtové opatření č. 60 – vzduchování ČOV
+    kategorie: [rozpocet, voda_odpady]
+    shrnuti: Rada přesunula 223 850 Kč ve fondu vodohospodářské infrastruktury z oprav vodovodů na opravy ČOV (obnova systému dodávky vzduchu).
+    citace: "v částce Kč 223.850,00"
+    castky:
+      - hodnota: 223850.00
+        jednotka: Kč
+        druh: rozpoctove_opatreni
+        s_dph: null
+        citace: "-do položky 5171 „Opravy ČOV“, § 2321, ORJ 750, ORG 5020005022, UZ 0 v částce Kč 223.850,00."
+
+  rm-2026-j1-u8:
+    tema: Dar bruslí pro ZŠ Sokolská
+    kategorie: [skolstvi, dotace_dary, prispevkove_organizace]
+    shrnuti: Rada jako zřizovatel souhlasila, aby ZŠ Sokolská přijala od spolku Děti do bruslí 10 párů dětských bruslí v hodnotě 25 000 Kč.
+    citace: "přijetí věcného daru 10 párů dětských bruslí v celkové hodnotě 25.000 Kč"
+    castky:
+      - hodnota: 25000
+        jednotka: Kč
+        druh: dar_prijaty
+        s_dph: null
+        citace: "v celkové hodnotě 25.000 Kč"
+
+  rm-2026-j1-u9:
+    tema: Rozpočtové opatření č. 61 – cestovné
+    kategorie: [rozpocet]
+    shrnuti: Rada přesunula 30 000 Kč z položky nájemné na tuzemské cestovné.
+    citace: "-do položky 5173 „Cestovné – tuzemské cesty“, § 6171, ORJ 770, ORG 9770000201, UZ 0 v částce Kč 30.000,00."
+    castky:
+      - hodnota: 30000.00
+        jednotka: Kč
+        druh: rozpoctove_opatreni
+        s_dph: null
+        citace: "-do položky 5173 „Cestovné – tuzemské cesty“, § 6171, ORJ 770, ORG 9770000201, UZ 0 v částce Kč 30.000,00."
