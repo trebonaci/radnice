@@ -71,4 +71,4 @@ Spuštění: `python -m pipeline.sestav` a `python -m pytest`.
 ## Historie ověření
 
 - Text zápisu ZM byl při zpracování získán z originálního PDF v prohlížeči (pdf.js), PDF samotné nebylo v pracovním prostředí uložené; sha256 spočten z originálu.
-- 18. 11. 2026 Codex porovnal extrahovaný text obou zápisů s oficiálními PDF (odkazy v `raw/manifest.json`) – bez rozdílů v textu; připomínky k výsledku hlasování a jménům úředníků zapracovány.
+- 18. 11. 2026 Codex porovnal extrahovaný text obou zápisů s oficiálními PDF (odkazy v `raw/manifest.json`) a rozdíly v textu nenahlásil; připomínky k výsledku hlasování a jménům úředníků zapracovány.
