@@ -20,7 +20,7 @@
   typ: sro
   smlouvy: true
   ezak_profil: https://zakazky.mesto-trebon.cz/profile_display_132.html
-# Historický subjekt / profil; před samostatným vykazováním ověřit v ARES a proti Slatinným lázním.
+# Historické IČO zaniklé společnosti po fúzi se Slatinnými lázněmi (rozhodný den 1. 1. 2017); ponechat jen pro vyhledávání historických smluv.
 - ico: "60067837"
   nazev: Bertiny lázně Třeboň s. r. o.
   typ: sro
