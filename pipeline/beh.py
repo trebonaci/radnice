@@ -253,16 +253,25 @@ def spust(koren: Path = KOREN, zdroje: list[Zdroj] | None = None, dnes: date | N
 
 def _beh(koren: Path, zdroje: list[Zdroj], dnes: date, ted: datetime) -> int:
     cesta_beh = koren / "data" / "beh.json"
-    predchozi = _nacti_json(cesta_beh, {})
-    zaznam = {"zacatek": ted.isoformat(timespec="seconds"), "stav": "bezi", "zdroje": [], "chyby": [],
-              "upozorneni": [], "pocty": None, "posledni_uspesny": predchozi.get("posledni_uspesny")}
+    # obnova je první krok: po pádu může být beh.json poškozený, a ten se čte až po ní
     try:
-        if obnov_ze_zalohy(koren / "data"):
-            zaznam["upozorneni"].append("předchozí běh spadl uprostřed zápisu; stav byl obnoven ze zálohy")
+        obnoveno = obnov_ze_zalohy(koren / "data")
     except NeuplnaZaloha as e:
         # nic nezapisovat (ani beh.json): deník a zálohy jsou důkaz pro ruční řešení
         print("CHYBA:", e, "– stav je nutné vyřešit ručně, běh nic nezměnil", file=sys.stderr)
         return 1
+    upozorneni = []
+    if obnoveno:
+        upozorneni.append("předchozí běh spadl uprostřed zápisu; stav byl obnoven ze zálohy")
+    try:
+        predchozi = _nacti_json(cesta_beh, {})
+        if not isinstance(predchozi, dict):
+            raise ValueError("beh.json není objekt")
+    except (ValueError, OSError):      # JSONDecodeError i UnicodeDecodeError jsou ValueError
+        predchozi = {}
+        upozorneni.append("předchozí záznam běhu (data/beh.json) byl nečitelný; pokračuji bez něj")
+    zaznam = {"zacatek": ted.isoformat(timespec="seconds"), "stav": "bezi", "zdroje": [], "chyby": [],
+              "upozorneni": upozorneni, "pocty": None, "posledni_uspesny": predchozi.get("posledni_uspesny")}
     prvni_beh = not predchozi.get("posledni_uspesny")
     manifest_cesta = koren / "raw" / "manifest.json"
     manifest = copy.deepcopy(_nacti_json(manifest_cesta, []))
