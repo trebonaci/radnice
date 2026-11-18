@@ -66,7 +66,7 @@ Plánované kroky: jeden běh `pipeline/beh.py` se zámkem (#16), verze dokument
 | Zdroj | Co víme | Ověřeno |
 |---|---|---|
 | Zápisy rady: `mesto-trebon.cz/.../rada-mesta/zapisy-z-jednani-rady-mesta/volebni-obdobi-2026---2030.html` | PDF v `/uploads/news/id<N>/<soubor>.pdf`, textová vrstva (ne sken), přípona `-A` = verze s anonymizací (nekonzistentní: u RM 5/2026-1 ponecháno jméno, IČO i adresa podnikatelky) | pilot 18. 11. 2026 |
-| Zápisy ZM: `.../zastupitelstvo-mesta/zapisy-zastupitelstva-mesta/volebni-obdobi-2026---2030-2.html` | stejný formát; **jmenovité hlasování neobsahují**, jen součty; číslování bodů může nesedět s programem | pilot 18. 11. 2026 |
+| Zápisy ZM: `.../zastupitelstvo-mesta/zapisy-zastupitelstva-mesta/volebni-obdobi-2026---2030-2.html` | stejný formát; **pilotní zápis z 2. 11. 2026 neobsahuje jmenovité hlasování**, jen součty – u každého dalšího zápisu ověřit zvlášť; číslování bodů může nesedět s programem | pilot 18. 11. 2026 |
 | Struktura zápisu | `k bodu N` → `Usnesení RM/ZM č. X/RRRR-J` → části `I. schvaluje…` → `Výsledek hlasování: Pro/Proti/Zdrželi se` → `SCHVÁLENO`; protinávrhy a volby kandidátů mají vlastní hlasování | pilot |
 | Členové ZM: `mesto-trebon.cz/text/cz/mestsky-urad-trebon/samosprava-mesta/zastupitelstvo-mesta/clenove-zastupitelstva-mesta.html` | 25 členů se stranou; funkce jen u starosty → ostatní ze zápisu ZM | 18. 11. 2026 |
 | Registr smluv, E-ZAK (5 profilů), ISVZ | viz issue #9 / PR #14 a `docs/ZDROJE.md` | probíhá |
