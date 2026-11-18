@@ -73,7 +73,7 @@ Dotaz na změny v období 1.–18. 11. 2026 byl proveden přes uvedenou adresu p
 | Městská Vodohospodářská (IČO 28136853) | HTTP 200, `text/xml; charset=UTF-8`, IČO odpovídá, 0 záznamů v tomto období |
 | Slatinné lázně (IČO 25179896) | HTTP 200, `text/xml; charset=UTF-8`, IČO odpovídá, 5 záznamů zakázek |
 | Technické služby (profil 132) | HTTP 212, `text/html`; tělo odpovídá: „Zadavatel nemá vyplněn evidenční číslo profilu ve VVZ, není tudíž možné sestavit validní XML.“ |
-| Bertiny lázně (profil 126, historický) | Stejná odpověď HTTP 212; společnost zanikla po fúzi z rozhodným dnem 1. 1. 2017. |
+| Bertiny lázně (profil 126, historický) | Stejná odpověď HTTP 212; společnost zanikla v důsledku fúze s rozhodným dnem 1. 1. 2017. |
 
 Kontrolní dotaz na prázdné historické období pro profil města (1.–2. 1. 2000) vrátil HTTP 200 a validní prázdný XML dokument (`<profil>`, 0 zakázek). Obsah `https://zakazky.mesto-trebon.cz/robots.txt` vrátil HTTP 200, `text/plain`, prázdné tělo. XML bylo ověřeno jako dobře utvořené a se správným kořenovým elementem; validaci proti XSD přílohy vyhlášky jsem neprovedl.
 
