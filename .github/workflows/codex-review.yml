@@ -1,0 +1,28 @@
+name: Žádost o Codex review
+
+# Automatická kontrola Codexu se nespouští sama, reaguje jen na komentář „@codex review“.
+# U PR z větví Clauda ho proto napíšeme při otevření a po každém novém commitu.
+# Neběží u PR z větví Codexu (Codex nekontroluje vlastní práci).
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize, ready_for_review]
+
+permissions:
+  pull-requests: write
+
+concurrency:
+  group: codex-review-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  pozadat:
+    if: startsWith(github.head_ref, 'claude/') && !github.event.pull_request.draft
+    runs-on: ubuntu-latest
+    steps:
+      - name: Komentář @codex review
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh pr comment "${{ github.event.pull_request.number }}" --repo "${{ github.repository }}" \
+            --body "@codex review – zkontroluj prosím podle pravidel kontroly v AGENTS.md a SECURITY.md (commit ${{ github.event.pull_request.head.sha }})."

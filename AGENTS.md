@@ -24,7 +24,7 @@ Píšeme pro běžného čtenáře, ne pro úředníky: krátce, bez zkratek a �
 - Pokud zadání v issue nestačí nebo je v rozporu se `ZADANI.md`, zastav se a napiš otázku do issue místo dohadu.
 
 ## Automatická orchestrace
-- Orchestrátorem je GitHub: issue se štítkem `agent:claude` (nebo komentář `@claude` od Ondřeje) spustí Claude v GitHub Actions (`.github/workflows/claude.yml`). Codex kontroluje PR automaticky nebo na `@codex review`.
+- Orchestrátorem je GitHub: issue se štítkem `agent:claude` (nebo komentář `@claude` od Ondřeje) spustí Claude v GitHub Actions (`.github/workflows/claude.yml`). Codex kontroluje PR na komentář `@codex review`, který u PR z větví `claude/**` píše automaticky workflow `.github/workflows/codex-review.yml` (při otevření a po každém commitu).
 - Štítky: `agent:claude`, `agent:codex` = kdo úkol dělá; `ke-kontrole` = PR čeká na druhého agenta; `potrebuje-cloveka` = rozhoduje Ondřej.
 - Agent spuštěný štítkem po dokončení sám otevře PR (`Closes #N`), přidá mu štítek `ke-kontrole` a do issue napíše odkaz na PR.
 - **Nejvýš 2 kola oprav** na jednom PR. Když se agenti ani pak neshodnou nebo chybí rozhodnutí, autor PR přidá `potrebuje-cloveka`, shrne spor v komentáři a skončí.
