@@ -3,28 +3,43 @@
 # zastupitele: volení zástupci – uvádějí se jménem. `tvary` jsou úplné tvary jména
 #   (jméno + příjmení) v pádech, jak se vyskytují v zápisech; porovnává se přesně po celých
 #   slovech, ne podřetězcem. Nový tvar ze zápisu je třeba doplnit (kontrola ho jinak zastaví).
-#   Seznam zatím obsahuje jen ty, kdo se objevili v pilotních zápisech; doplnit podle
-#   výsledků voleb 2026 (volby.gov.cz). "František Pfeifera" je tvar s chybou ze zápisu ZM.
+#   Všech 25 členů ZM 2026–2030 podle webu města (viz zastupitele_zdroj). "František
+#   Pfeifera" a "Jana Grammetbaurová" jsou tvary s chybou ze zápisu ZM.
 # urednici: zaměstnanci města a jiné osoby, které nejsou volenými zástupci – nahrazují se
 #   funkcí (nebo vlastní náhradou u varianty s kontextem). Varianty se hledají bez ohledu
 #   na zalomení řádku. Delší varianty první.
+zastupitele_zdroj:
+  url: https://www.mesto-trebon.cz/text/cz/mestsky-urad-trebon/samosprava-mesta/zastupitelstvo-mesta/clenove-zastupitelstva-mesta.html
+  overeno: "2026-11-18 – 25 členů, jména a strany shodné se seznamem níže"
+  stazeno: "2026-11-18"
+  obdobi: "2026-2030"
+  funkce_zdroj: zápis z ustavujícího ZM 2. 11. 2026 (usnesení ZM 9–11/2026-1)
 zastupitele:
-  - {jmeno: Aleš Kolář, tvary: [Aleš Kolář, Aleše Koláře, Alešem Kolářem, Aleši Kolářovi]}
-  - {jmeno: Petr Kouba, tvary: [Petr Kouba, Petra Kouby, Petra Koubu, Petrem Koubou, Petru Koubovi]}
-  - {jmeno: Ondřej Zbudil, tvary: [Ondřej Zbudil, Ondřeje Zbudila, Ondřejem Zbudilem, Ondřeji Zbudilovi]}
-  - {jmeno: Lenka Blažková, tvary: [Lenka Blažková, Lenky Blažkové, Lenku Blažkovou, Lence Blažkové]}
-  - {jmeno: Petr Kohout, tvary: [Petr Kohout, Petra Kohouta, Petrem Kohoutem, Petru Kohoutovi]}
-  - {jmeno: Jiří Vopátek, tvary: [Jiří Vopátek, Jiřího Vopátka, Jiřím Vopátkem, Jiřímu Vopátkovi]}
-  - {jmeno: Stanislav Ojíř Musil, tvary: [Stanislav Ojíř Musil, Stanislava Ojíře Musila, Stanislavem Ojířem Musilem]}
-  - {jmeno: Ondřej Hlinka, tvary: [Ondřej Hlinka, Ondřeje Hlinku, Ondřeje Hlinky, Ondřejem Hlinkou]}
-  - {jmeno: Petr Čížek, tvary: [Petr Čížek, Petra Čížka, Petrem Čížkem, Petru Čížkovi]}
-  - {jmeno: Jana Polčáková, tvary: [Jana Polčáková, Janu Polčákovou, Janě Polčákové, Jany Polčákové]}
-  - {jmeno: Vít Zavadil, tvary: [Vít Zavadil, Víta Zavadila, Vítem Zavadilem]}
-  - {jmeno: František Pfeifer, tvary: [František Pfeifer, Františka Pfeifera, František Pfeifera, Františkem Pfeiferem]}
-  - {jmeno: Vladan Pikl, tvary: [Vladan Pikl, Vladana Pikla, Vladanem Piklem]}
-  - {jmeno: Jan Váňa, tvary: [Jan Váňa, Jana Váni, Janem Váňou, Janu Váňovi]}
-  - {jmeno: Jana Grammetbauerová, tvary: [Jana Grammetbauerová, Jana Grammetbaurová, Jany Grammetbauerové]}
-  - {jmeno: Petr Michal, tvary: [Petr Michal, Petra Michala, Petrem Michalem]}
+  - {jmeno: Lenka Blažková, strana: "Naše Česko / BEZPP", funkce: "radní", tvary: [Lenka Blažková, Lenky Blažkové, Lenku Blažkovou, Lence Blažkové, Lenkou Blažkovou]}
+  - {jmeno: Petr Čížek, strana: "KDU-ČSL", funkce: null, tvary: [Petr Čížek, Petra Čížka, Petrem Čížkem, Petru Čížkovi]}
+  - {jmeno: Jan Gráf, strana: "TŘEBOŇÁCI S PODPOROU STAROSTŮ / BEZPP", funkce: null, tvary: [Jan Gráf, Jana Gráfa, Janem Gráfem, Janu Gráfovi]}
+  - {jmeno: Jana Grammetbauerová, strana: "ODS", funkce: null, tvary: [Jana Grammetbauerová, Jana Grammetbaurová, Jany Grammetbauerové, Janu Grammetbauerovou, Janě Grammetbauerové]}
+  - {jmeno: Ondřej Hlinka, strana: "Společně pro Třeboň - koalice SZ a OMMO / BEZPP", funkce: null, tvary: [Ondřej Hlinka, Ondřeje Hlinku, Ondřeje Hlinky, Ondřejem Hlinkou, Ondřeji Hlinkovi]}
+  - {jmeno: Radka Kaiseršatová, strana: "Naše Česko / BEZPP", funkce: null, tvary: [Radka Kaiseršatová, Radky Kaiseršatové, Radku Kaiseršatovou, Radce Kaiseršatové, Radkou Kaiseršatovou]}
+  - {jmeno: Petr Kohout, strana: "Naše Česko", funkce: "radní", tvary: [Petr Kohout, Petra Kohouta, Petrem Kohoutem, Petru Kohoutovi]}
+  - {jmeno: Aleš Kolář, strana: "Naše Česko", funkce: "starosta", tvary: [Aleš Kolář, Aleše Koláře, Alešem Kolářem, Aleši Kolářovi]}
+  - {jmeno: Petr Kouba, strana: "Společně pro Třeboň - koalice SZ a OMMO / BEZPP", funkce: "1. místostarosta", tvary: [Petr Kouba, Petra Kouby, Petra Koubu, Petrem Koubou, Petru Koubovi]}
+  - {jmeno: Vítězslav Lamač, strana: "TŘEBOŇÁCI S PODPOROU STAROSTŮ / BEZPP", funkce: null, tvary: [Vítězslav Lamač, Vítězslava Lamače, Vítězslavem Lamačem, Vítězslavu Lamačovi]}
+  - {jmeno: Lukáš Lexa, strana: "Naše Česko / BEZPP", funkce: null, tvary: [Lukáš Lexa, Lukáše Lexy, Lukáše Lexu, Lukášem Lexou, Lukáši Lexovi]}
+  - {jmeno: Viktor Ludvík, strana: "ODS", funkce: null, tvary: [Viktor Ludvík, Viktora Ludvíka, Viktorem Ludvíkem, Viktoru Ludvíkovi]}
+  - {jmeno: Petr Michal, strana: "SOCDEM / BEZPP", funkce: null, tvary: [Petr Michal, Petra Michala, Petrem Michalem, Petru Michalovi]}
+  - {jmeno: Petr Müller, strana: "Společně pro Třeboň - koalice SZ a OMMO / BEZPP", funkce: null, tvary: [Petr Müller, Petra Müllera, Petrem Müllerem, Petru Müllerovi]}
+  - {jmeno: Stanislav Ojíř Musil, strana: "TŘEBOŇÁCI S PODPOROU STAROSTŮ / Piráti", funkce: "radní", tvary: [Stanislav Ojíř Musil, Stanislava Ojíře Musila, Stanislavem Ojířem Musilem, Stanislavu Ojířovi Musilovi]}
+  - {jmeno: František Pfeifer, strana: "TŘEBOŇÁCI S PODPOROU STAROSTŮ / BEZPP", funkce: null, tvary: [František Pfeifer, Františka Pfeifera, František Pfeifera, Františkem Pfeiferem, Františku Pfeiferovi]}
+  - {jmeno: Vladan Pikl, strana: "ODS", funkce: null, tvary: [Vladan Pikl, Vladana Pikla, Vladanem Piklem, Vladanu Piklovi]}
+  - {jmeno: Jana Polčáková, strana: "Naše Česko / BEZPP", funkce: null, tvary: [Jana Polčáková, Janu Polčákovou, Janě Polčákové, Jany Polčákové, Janou Polčákovou]}
+  - {jmeno: Pavel Pumpr, strana: "KDU-ČSL / BEZPP", funkce: null, tvary: [Pavel Pumpr, Pavla Pumpra, Pavlem Pumprem, Pavlu Pumprovi]}
+  - {jmeno: Martin Smolek, strana: "Společně pro Třeboň - koalice SZ a OMMO / SZ", funkce: null, tvary: [Martin Smolek, Martina Smolka, Martinem Smolkem, Martinu Smolkovi]}
+  - {jmeno: Martin Trubač, strana: "ODS", funkce: null, tvary: [Martin Trubač, Martina Trubače, Martinem Trubačem, Martinu Trubačovi]}
+  - {jmeno: Jan Váňa, strana: "ODS", funkce: null, tvary: [Jan Váňa, Jana Váni, Jana Váňu, Janem Váňou, Janu Váňovi]}
+  - {jmeno: Jiří Vopátek, strana: "Společně pro Třeboň - koalice SZ a OMMO / SZ", funkce: "radní", tvary: [Jiří Vopátek, Jiřího Vopátka, Jiřím Vopátkem, Jiřímu Vopátkovi]}
+  - {jmeno: Vít Zavadil, strana: "Společně pro Třeboň - koalice SZ a OMMO / SZ", funkce: null, tvary: [Vít Zavadil, Víta Zavadila, Vítem Zavadilem, Vítu Zavadilovi]}
+  - {jmeno: Ondřej Zbudil, strana: "TŘEBOŇÁCI S PODPOROU STAROSTŮ / BEZPP", funkce: "2. místostarosta", tvary: [Ondřej Zbudil, Ondřeje Zbudila, Ondřejem Zbudilem, Ondřeji Zbudilovi]}
 
 urednici:
   - funkce: tajemnice
