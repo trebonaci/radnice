@@ -108,6 +108,6 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: pr.number,
-              body: `@codex review\\n\\n${marker}`,
+              body: `@codex review\n\n${marker}`,
             });
             core.notice(`Requested Codex review for PR #${pr.number} at ${pr.head.sha}.`);
