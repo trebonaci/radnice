@@ -19,6 +19,7 @@ from pathlib import Path
 
 import yaml
 
+from pipeline.verze import zkontroluj as zkontroluj_verze
 from pipeline.zapisy import normalizuj, rozloz
 
 KOREN = Path(__file__).resolve().parent.parent
@@ -236,8 +237,9 @@ def zpracuj_jednani(jednani_id: str, manifest: dict, chyby: list[str], osoby: di
 
 
 def main() -> int:
-    manifest = {d["jednani_id"]: d for d in json.loads((KOREN / "raw" / "manifest.json").read_text(encoding="utf-8"))}
-    chyby: list[str] = []
+    seznam = json.loads((KOREN / "raw" / "manifest.json").read_text(encoding="utf-8"))
+    manifest = {d["jednani_id"]: d for d in seznam}
+    chyby: list[str] = zkontroluj_verze(seznam)
     osoby = nacti_osoby()
     jednani, usneseni, hlasovani = [], [], []
     for jednani_id in sorted(manifest):

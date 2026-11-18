@@ -23,6 +23,8 @@ Sjednoceno z návrhu Clauda, návrhu Codexu (PR #1) a zjištění z pilotu zápi
 Zdrojový soubor nebo záznam (manifest v `raw/manifest.json`).
 `dokument_id`, `typ` (zapis_rada / zapis_zm / smlouva / zakazka / rozpocet / csu / monitor / sprm / jine), `nazev`, `vydavatel`, `url`, `stranka_zdroje`, `datum_dokumentu`, `vyveseno`, `stazeno`, `sha256`, `pocet_stran`, `metoda_textu` (html / textove_pdf / ocr / rucni_prepis / dataset), `omezeni`
 
+Verze (`pipeline/verze.py`): `verze[]` {`cislo`, `zjisteno`, `sha256`, `bytes`, `zmena`, `texty`}, `posledni_kontrola`, `dalsi_kontrola`. `sha256` dokumentu je vždy otisk poslední verze; při změně otisku přibude nová verze, stará zůstane a odvozená data se přegenerují. Interval další kontroly podle stáří dokumentu (od vyvěšení): do 14 dní denně, do 60 dní týdně, do roku měsíčně, starší po 90 dnech.
+
 ### citace
 Vnořená struktura: `dokument_id`, `strany[]` nebo jiný lokátor (bod, ID smlouvy), `text` (doslovný úryvek).
 
