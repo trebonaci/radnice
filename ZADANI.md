@@ -1,6 +1,6 @@
 # Zadání: Přehled radnice Třeboň (pracovní název)
 
-Verze 0.4 · 18. 11. 2026 · sjednoceno s Codexem (PR #1) a rozhodnutím Ondřeje
+Verze 0.5 · 18. 11. 2026 · sjednoceno s Codexem (PR #1) a rozhodnutím Ondřeje
 
 ## 0. Rozhodnutí
 
@@ -11,7 +11,7 @@ Verze 0.4 · 18. 11. 2026 · sjednoceno s Codexem (PR #1) a rozhodnutím Ondřej
 | Značka | otevřeně projekt Třeboňáků; nesmí působit jako oficiální web města |
 | Základ | datový model; první veřejný výstup = datový přehled |
 | První pracovní úloha | zpracování zápisů rady a zastupitelstva podle metodiky |
-| Období | pilot 2026–2030 → 2022–2026 → postupně zpět do 2012 |
+| Období | plošně se zpracovávají zápisy volebního období 2026–2030. Starší zápisy (až do 2012) se doplňují **jen výběrově**, když vysvětlují vývoj konkrétního projektu (např. předchozí rozhodnutí, změny ceny, termínů). Plošné zpětné zpracování se neplánuje. |
 | Subjekty | Město Třeboň, 4 městské obchodní společnosti (Městská Vodohospodářská, Slatinné lázně, Technické služby, Bertiny lázně) a další městské organizace včetně příspěvkových. Kompletní seznam IČO je první zdrojový úkol. |
 | Zakázky | všech 5 profilů E-ZAK, další podle zjištění |
 | Hlasování | jmenovitě jen to, co je doložené zdrojem. Video se přepisuje, pokud se to ukáže nákladově výhodné; jinak se vychází ze zápisů ZM |
@@ -128,7 +128,7 @@ zpracování → data/*.json  ───────────▶   čte JSON a
 | 2 | Všechny zápisy 2026–2030 + smlouvy a zakázky všech subjektů | data kompletní pro období |
 | 3 | **Datový přehled** na trebonaci.cz (první veřejný výstup) | schváleno Ondřejem a zveřejněno |
 | 4 | Projektové karty: SPRM + ruční projekty + vazby + podněty | 10 pilotních karet |
-| 5 | Zpětně 2022–2026, pak postupně do 2012 | |
+| 5 | Výběrové doplnění starších zápisů k projektovým kartám | u každé pilotní karty jsou dohledána klíčová starší rozhodnutí, na která navazuje |
 | 6 | Mapy, termínové plány, automatizace podle potřeby | |
 
 Backlog námětů: analýza etapizace oken, přepis videa ZM.
