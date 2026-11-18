@@ -134,6 +134,15 @@ jobs:
             --max-turns 40
             --allowedTools "Read,Edit,Write,Glob,Grep,Bash(python -m pipeline:*),Bash(python3 -m pipeline:*),Bash(python -m pytest:*),Bash(python3 -m pytest:*),Bash(git:*),Bash(gh pr:*),Bash(gh issue:*),Bash(gh api:*)"
 
+      - name: Hand off when Claude run fails
+        if: failure() && steps.cycle.outputs.run_claude == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          gh pr edit "$PR_NUMBER" --add-label potrebuje-cloveka || true
+          gh pr comment "$PR_NUMBER" --body "Automatická oprava Claudem selhala ještě před dokončením. Smyčku zastavuji a předávám PR Ondřejovi k ruční kontrole."
+
       - name: Request Codex to review Claude's new commit
         if: steps.cycle.outputs.run_claude == 'true' && success()
         env:
