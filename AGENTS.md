@@ -77,7 +77,7 @@ data/*.json  ──►  PR  ──►  CI „Kontrola“ + Codex review  ──�
                                          WordPress na trebonaci.cz (Vedos)
 ```
 
-Plánované kroky: jeden běh `pipeline/beh.py` se zámkem (#16), verze dokumentů (#17), štítky věcné relevance (#18), Claude spouštěný štítkem `agent:claude` (#13).
+Hotovo: jeden běh `pipeline/beh.py` se zámkem, kontrolou před zápisem a atomickým zápisem (#16, `python -m pipeline.beh`). Plánované kroky: štítky věcné relevance (#18), další zdroje (smlouvy, zakázky) jako moduly v `pipeline/zdroje/`.
 
 ## Zdroje dat – technické poznámky
 | Zdroj | Co víme | Ověřeno |
@@ -95,10 +95,10 @@ Přístup: web města z cloudového prostředí Clauda nedostupný (omezení sí
 ## Stav a další kroky
 **Hotovo:** zadání a datový model (#4), pilot zápisů RM 4. 11. a ZM 2. 11. 2026 (#5), CI (#7), 25 zastupitelů (#11), ověření zdrojů a IČO (#14, `docs/ZDROJE.md`), AGENTS.md (#19), orchestrace (#13).
 
-**Na řadě:** jeden běh pipeline (#16), verze dokumentů (#17), štítky věcné relevance (#18), AI nezávislá na poskytovateli (#20).
+**Na řadě:** štítky věcné relevance (#18), AI nezávislá na poskytovateli (#20), nasazení běhu v GitHub Actions.
 
 **Neověřeno / TODO:**
-1. Automatické stahování z webu města v GitHub Actions.
+1. Automatické stahování z webu města v GitHub Actions (modul `pipeline/zdroje/zapisy_mesta.py` je otestován jen na vzorcích HTML a PDF; skutečná struktura stránky a `pdftotext` v Actions ověřeny nebyly; workflow pro běh zatím není).
 2. Tabulky rozpočtových opatření jsou v datech jen jako surový text.
 3. Jméno nevolené osoby bez titulu, které není v `config/osoby.yaml`, kontrola nezachytí – nové zápisy vyžadují lidskou kontrolu.
 4. Výstup do WordPressu (šablona stránky, JSON) zatím neexistuje.

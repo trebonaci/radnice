@@ -11,7 +11,7 @@ Při změně otisku vznikne nová verze. Odvozená data se přegenerují
 Použití:
     python -m pipeline.verze              # doplní verze a plán, vypíše dokumenty k dnešní kontrole
     python -m pipeline.verze --dnes 2026-12-01
-Stažení nového otisku zaznamenává `zaznamenej_kontrolu` (volá ho běh pipeline, #16).
+Stažení nového otisku zaznamenává `zaznamenej_kontrolu` (volá ho běh pipeline, `pipeline/beh.py`).
 """
 from __future__ import annotations
 
@@ -54,8 +54,9 @@ def naplanuj(zaznam: dict, kontrola: date) -> None:
     zaznam["dalsi_kontrola"] = (kontrola + timedelta(days=interval_kontroly(stari))).isoformat()
 
 
-def doplni_historii(zaznam: dict) -> bool:
-    """Starý záznam bez `verze` dostane první verzi z aktuálního otisku. Vrací True při změně."""
+def doplni_historii(zaznam: dict, texty: str | None = None) -> bool:
+    """Starý nebo nový záznam bez `verze` dostane první verzi z aktuálního otisku. Vrací True při změně.
+    `texty`: cesta k textu první verze (výchozí raw/texty/<jednani_id>)."""
     if zaznam.get("verze"):
         return False
     zaznam["verze"] = [{
@@ -64,7 +65,7 @@ def doplni_historii(zaznam: dict) -> bool:
         "sha256": zaznam["sha256"],
         "bytes": zaznam.get("bytes"),
         "zmena": "první zjištěná verze",
-        "texty": f"raw/texty/{zaznam['jednani_id']}" if zaznam.get("jednani_id") else None,
+        "texty": texty or (f"raw/texty/{zaznam['jednani_id']}" if zaznam.get("jednani_id") else None),
     }]
     naplanuj(zaznam, _datum(zaznam["stazeno"]))
     return True
