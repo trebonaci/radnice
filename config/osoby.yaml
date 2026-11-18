@@ -9,7 +9,8 @@
 #   funkcí (nebo vlastní náhradou u varianty s kontextem). Varianty se hledají bez ohledu
 #   na zalomení řádku. Delší varianty první.
 zastupitele_zdroj:
-  url: https://www.mesto-trebon.cz/clenove-zastupitelstva-mesta.html
+  url: https://www.mesto-trebon.cz/text/cz/mestsky-urad-trebon/samosprava-mesta/zastupitelstvo-mesta/clenove-zastupitelstva-mesta.html
+  overeno: "2026-11-18 – 25 členů, jména a strany shodné se seznamem níže"
   stazeno: "2026-11-18"
   obdobi: "2026-2030"
   funkce_zdroj: zápis z ustavujícího ZM 2. 11. 2026 (usnesení ZM 9–11/2026-1)
