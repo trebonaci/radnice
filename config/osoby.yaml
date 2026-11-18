@@ -1,28 +1,30 @@
 # Osoby v zápisech a jak se zobrazují v odvozených datech (data/).
 #
-# zastupitele: volení zástupci – uvádějí se jménem. Kmeny příjmení pokrývají skloňování
-#   (např. "Koubu", "Koláře"). Seznam zatím obsahuje jen ty, kdo se objevili v pilotních
-#   zápisech; doplnit podle výsledků voleb 2026 (volby.gov.cz).
+# zastupitele: volení zástupci – uvádějí se jménem. `tvary` jsou úplné tvary jména
+#   (jméno + příjmení) v pádech, jak se vyskytují v zápisech; porovnává se přesně po celých
+#   slovech, ne podřetězcem. Nový tvar ze zápisu je třeba doplnit (kontrola ho jinak zastaví).
+#   Seznam zatím obsahuje jen ty, kdo se objevili v pilotních zápisech; doplnit podle
+#   výsledků voleb 2026 (volby.gov.cz). "František Pfeifera" je tvar s chybou ze zápisu ZM.
 # urednici: zaměstnanci města a jiné osoby, které nejsou volenými zástupci – nahrazují se
 #   funkcí (nebo vlastní náhradou u varianty s kontextem). Varianty se hledají bez ohledu
 #   na zalomení řádku. Delší varianty první.
 zastupitele:
-  - {jmeno: Aleš Kolář, kmeny: [Kolář]}
-  - {jmeno: Petr Kouba, kmeny: [Koub]}
-  - {jmeno: Ondřej Zbudil, kmeny: [Zbudil]}
-  - {jmeno: Lenka Blažková, kmeny: [Blažkov]}
-  - {jmeno: Petr Kohout, kmeny: [Kohout]}
-  - {jmeno: Jiří Vopátek, kmeny: [Vopát]}
-  - {jmeno: Stanislav Ojíř Musil, kmeny: [Ojíř]}
-  - {jmeno: Ondřej Hlinka, kmeny: [Hlink]}
-  - {jmeno: Petr Čížek, kmeny: [Čížek, Čížk]}
-  - {jmeno: Jana Polčáková, kmeny: [Polčákov]}
-  - {jmeno: Vít Zavadil, kmeny: [Zavadil]}
-  - {jmeno: František Pfeifer, kmeny: [Pfeifer]}
-  - {jmeno: Vladan Pikl, kmeny: [Pikl]}
-  - {jmeno: Jan Váňa, kmeny: [Váňa, Váni]}
-  - {jmeno: Jana Grammetbauerová, kmeny: [Grammetbauerov, Grammetbaurov]}
-  - {jmeno: Petr Michal, kmeny: [Michal]}
+  - {jmeno: Aleš Kolář, tvary: [Aleš Kolář, Aleše Koláře, Alešem Kolářem, Aleši Kolářovi]}
+  - {jmeno: Petr Kouba, tvary: [Petr Kouba, Petra Kouby, Petra Koubu, Petrem Koubou, Petru Koubovi]}
+  - {jmeno: Ondřej Zbudil, tvary: [Ondřej Zbudil, Ondřeje Zbudila, Ondřejem Zbudilem, Ondřeji Zbudilovi]}
+  - {jmeno: Lenka Blažková, tvary: [Lenka Blažková, Lenky Blažkové, Lenku Blažkovou, Lence Blažkové]}
+  - {jmeno: Petr Kohout, tvary: [Petr Kohout, Petra Kohouta, Petrem Kohoutem, Petru Kohoutovi]}
+  - {jmeno: Jiří Vopátek, tvary: [Jiří Vopátek, Jiřího Vopátka, Jiřím Vopátkem, Jiřímu Vopátkovi]}
+  - {jmeno: Stanislav Ojíř Musil, tvary: [Stanislav Ojíř Musil, Stanislava Ojíře Musila, Stanislavem Ojířem Musilem]}
+  - {jmeno: Ondřej Hlinka, tvary: [Ondřej Hlinka, Ondřeje Hlinku, Ondřeje Hlinky, Ondřejem Hlinkou]}
+  - {jmeno: Petr Čížek, tvary: [Petr Čížek, Petra Čížka, Petrem Čížkem, Petru Čížkovi]}
+  - {jmeno: Jana Polčáková, tvary: [Jana Polčáková, Janu Polčákovou, Janě Polčákové, Jany Polčákové]}
+  - {jmeno: Vít Zavadil, tvary: [Vít Zavadil, Víta Zavadila, Vítem Zavadilem]}
+  - {jmeno: František Pfeifer, tvary: [František Pfeifer, Františka Pfeifera, František Pfeifera, Františkem Pfeiferem]}
+  - {jmeno: Vladan Pikl, tvary: [Vladan Pikl, Vladana Pikla, Vladanem Piklem]}
+  - {jmeno: Jan Váňa, tvary: [Jan Váňa, Jana Váni, Janem Váňou, Janu Váňovi]}
+  - {jmeno: Jana Grammetbauerová, tvary: [Jana Grammetbauerová, Jana Grammetbaurová, Jany Grammetbauerové]}
+  - {jmeno: Petr Michal, tvary: [Petr Michal, Petra Michala, Petrem Michalem]}
 
 urednici:
   - funkce: tajemnice

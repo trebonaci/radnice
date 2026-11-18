@@ -54,13 +54,13 @@ Spuštění: `python -m pipeline.sestav` a `python -m pytest`.
 
 ## Výsledek hlasování vs. obsah usnesení
 
-„SCHVÁLENO“ v zápisu znamená, že návrh usnesení prošel hlasováním – ne, že orgán věc schválil. Usnesení RM 4/2026-1 a RM 6/2026-1 rada „bere na vědomí“. Proto `vysledek_hlasovani` (prijato / neprijato) a zvlášť `ukony[]` po částech (schvaluje, bere na vědomí, volí, ukládá…). Neznámé sloveso parser hlásí jako upozornění.
+„SCHVÁLENO“ v zápisu znamená, že návrh usnesení prošel hlasováním – ne, že orgán věc schválil. Usnesení RM 4/2026-1 a RM 6/2026-1 rada „bere na vědomí“. Proto `vysledek_hlasovani` (prijato / neprijato) a zvlášť `ukony[]` po částech (schvaluje, bere na vědomí, volí, ukládá…). Sloveso se porovnává bez ohledu na velikost písmen; neznámé parser hlásí jako upozornění.
 
 ## Osoby
 
 - Volení zástupci jménem (`config/osoby.yaml`, seznam zastupitelů zatím jen z pilotních zápisů – doplnit podle výsledků voleb).
 - Úředníci funkcí (tajemnice, zapisovatelka, pracovnice/pracovník úřadu).
-- Kontrola výstupu hledá jména s akademickým titulem, která nepatří zastupitelům, známá jména úředníků a podpis „Zapsal(a):“. **Omezení:** jméno bez titulu, které není v seznamu, kontrola nezachytí – nové zápisy proto vyžadují doplnění `config/osoby.yaml` a lidskou kontrolu.
+- Kontrola výstupu hledá jména s akademickým titulem, která nepatří zastupitelům, známá jména úředníků a podpis „Zapsal(a):“. Zastupitel se pozná přesnou shodou celých slov s některým tvarem jména v `config/osoby.yaml` (ne podřetězcem), takže např. „Piklová“ neprojde jako „Pikl“. Nový pádový tvar jména zastupitele kontrola zastaví a je třeba ho doplnit. Na zdrojových textech pilotu kontrola označí právě a jen nevolené osoby. **Omezení:** jméno bez titulu, které není v seznamu, kontrola nezachytí – nové zápisy proto vyžadují doplnění `config/osoby.yaml` a lidskou kontrolu.
 
 ## Rozhodnutí (18. 11. 2026)
 

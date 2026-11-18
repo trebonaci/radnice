@@ -5,7 +5,7 @@ import pytest
 
 from pipeline import sestav
 from pipeline.sestav import anonymizuj, anonymizuj_urednici, cisla_v_textu, nacti_osoby, najdi_osobni_udaje
-from pipeline.zapisy import normalizuj, rozloz
+from pipeline.zapisy import normalizuj, rozloz, urci_ukon
 
 KOREN = Path(__file__).resolve().parent.parent
 TEXTY = KOREN / "raw" / "texty"
@@ -130,3 +130,37 @@ def test_vystup_bez_jmen_uredniku():
             assert najdi_osobni_udaje(r, osoby) == [], (nazev, r[:120])
             for jmeno in ("Pikna Jánská", "Burešová", "Bohuslávková", "Baštová", "Hajna", "Karásková"):
                 assert jmeno not in r, (nazev, jmeno)
+
+
+@pytest.mark.parametrize("jmeno", [
+    "Ing. Jana Piklová",          # začíná kmenem zastupitele Pikl
+    "Mgr. Petra Koubová",         # začíná kmenem Koub
+    "Bc. Vladan Piklík",          # stejné křestní jméno, jiné příjmení
+    "Ing. Ondřej Zbudilík",
+    "Mgr. Aleš Kolářský",
+])
+def test_kontrola_nepropusti_podobne_jmeno(jmeno):
+    """Regrese: dřívější podřetězcová shoda kmene by tato jména propustila."""
+    assert najdi_osobni_udaje(f"Předkladatel: {jmeno}", nacti_osoby()) == [jmeno]
+
+
+@pytest.mark.parametrize("text", [
+    "starostou města Třeboně Mgr. Aleše Koláře.",
+    "ověřovatele zápisu Bc. Vladana Pikla, MPA.",
+    "Ing. Jiří\nVopátek, Ph.D. navrhl",
+    "Ing. Lenka Blažková\nPro: 17",
+])
+def test_kontrola_propusti_zastupitele(text):
+    assert najdi_osobni_udaje(text, nacti_osoby()) == []
+
+
+@pytest.mark.parametrize("text,kod", [
+    ("bere na vědomí", "bere_na_vedomi"),
+    ("Bere na vědomí", "bere_na_vedomi"),
+    ("SCHVALUJE", "schvaluje"),
+    ("Volí", "voli"),
+    ("neschvaluje", "neschvaluje"),
+    ("projednala", "jiny"),
+])
+def test_urci_ukon_bez_ohledu_na_velikost(text, kod):
+    assert urci_ukon(text)[0] == kod

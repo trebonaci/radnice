@@ -75,14 +75,29 @@ def anonymizuj_urednici(text: str, osoby: dict) -> str:
     return text
 
 
+RE_TITULY = re.compile(r"^(?:(?:Ing|Mgr|Bc|MUDr|MVDr|PaedDr|JUDr|PhDr|RNDr|doc|prof)\.\s*)+")
+
+
+def je_zastupitel(jmeno_s_titulem: str, osoby: dict) -> bool:
+    """Přesná shoda po celých slovech: jméno (bez titulů) musí začínat některým
+    povoleným tvarem jména zastupitele. Regex může zachytit i slovo z dalšího řádku
+    ("Lenka Blažková Pro"), proto se porovnává začátek, nikoli celý zachycený řetězec."""
+    slova = RE_TITULY.sub("", jmeno_s_titulem).split()
+    for z in osoby["zastupitele"]:
+        for tvar in z["tvary"]:
+            t = tvar.split()
+            if slova[:len(t)] == t:
+                return True
+    return False
+
+
 def najdi_osobni_udaje(text: str, osoby: dict) -> list[str]:
     """Kontrola výstupu: jména s titulem, která nepatří zastupitelům, známá jména úředníků
     a podpis zapisovatele. Vrací nalezené problémy."""
     nalezy = []
-    kmeny = [k for z in osoby["zastupitele"] for k in z["kmeny"]]
     for m in RE_TITUL_JMENO.finditer(text):
-        if not any(k in m.group(0) for k in kmeny):
-            nalezy.append(m.group(0))
+        if not je_zastupitel(m.group(0), osoby):
+            nalezy.append(" ".join(m.group(0).split()))
     for u in osoby["urednici"]:
         for v in u["varianty"]:
             hledat = v if isinstance(v, str) else v["text"]

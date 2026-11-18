@@ -49,8 +49,9 @@ UKONY = [
 
 def urci_ukon(text: str) -> tuple[str, str]:
     """Z řádku části usnesení (bez římské číslice) určí věcný úkon."""
+    porovnat = text.strip().lower()
     for sloveso, kod in UKONY:
-        if text == sloveso or text.startswith(sloveso + " "):
+        if porovnat == sloveso or porovnat.startswith(sloveso + " "):
             return kod, sloveso
     return "jiny", text
 HLAVICKY_ORGANU = {"Zastupitelstvo města Třeboně", "Rada města Třeboně"}
