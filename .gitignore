@@ -3,3 +3,5 @@ __pycache__/
 .pytest_cache/
 data/.beh.lock
 *.tmp
+data/.beh-zapis.json
+data/.beh-zaloha/

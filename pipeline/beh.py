@@ -7,7 +7,8 @@ Postup:
    (`pipeline.verze`) a text do `raw/texty/<jednani_id>/v<N>`, změněný otisk novou verzi a nový text;
 4. nad kopií proběhne `pipeline.sestav` (citace, částky, osoby, vazby na anotace) a kontrola
    poklesu počtů proti dosavadním datům;
-5. teprve když vše projde, zapíše se všechno najednou (dočasné soubory + `os.replace`);
+5. teprve když vše projde, zapíše se všechno najednou (dočasné soubory, záloha + deník, `os.replace`,
+   při selhání návrat ze zálohy; po pádu uprostřed obnoví stav další běh);
    jinak se běh zastaví, v repozitáři zůstanou poslední správná data a do `data/beh.json`
    se zapíše důvod.
 
@@ -70,9 +71,43 @@ def zamek(koren: Path, ted: float | None = None):
         cesta.unlink(missing_ok=True)
 
 
-def zapis_atomicky(soubory: dict[Path, str]) -> None:
-    """Celý nebo nic: všechny soubory se nejdřív zapíšou vedle cíle jako `.tmp`;
-    teprve když se to povede u všech, nahradí se cíle. Při chybě se dočasné soubory smažou."""
+DENIK = ".beh-zapis.json"
+ZALOHY = ".beh-zaloha"
+
+
+def _denik_adresar(soubory: dict[Path, str], koren: Path | None) -> Path:
+    return (koren / "data") if koren is not None else next(iter(soubory)).parent
+
+
+def obnov_ze_zalohy(adresar: Path) -> bool:
+    """Když v `adresar` zůstal deník nedokončeného zápisu (pád uprostřed nahrazování),
+    vrátí všechny cílové soubory do stavu před zápisem. Lze bezpečně opakovat.
+    Vrací True, pokud se obnovovalo."""
+    denik = adresar / DENIK
+    if not denik.exists():
+        return False
+    zaznam = json.loads(denik.read_text(encoding="utf-8"))
+    for polozka in zaznam["soubory"]:
+        cil = Path(polozka["cil"])
+        if polozka["zaloha"] is not None:
+            zaloha = Path(polozka["zaloha"])
+            if zaloha.exists():
+                shutil.copy2(zaloha, cil)
+        else:
+            cil.unlink(missing_ok=True)          # soubor předtím neexistoval
+        cil.with_name(cil.name + ".tmp").unlink(missing_ok=True)
+    shutil.rmtree(adresar / ZALOHY, ignore_errors=True)
+    denik.unlink()                                # deník mizí jako poslední
+    return True
+
+
+def zapis_atomicky(soubory: dict[Path, str], koren: Path | None = None) -> None:
+    """Celý nebo nic:
+    1. všechny soubory se zapíšou vedle cíle jako `.tmp` (při chybě se smažou, cíle beze změny);
+    2. původní obsah cílů se zazálohuje a zapíše se deník (`data/.beh-zapis.json`);
+    3. cíle se nahradí; když nahrazení selže, všechny cíle se vrátí ze zálohy;
+    4. po úspěchu se smažou zálohy a nakonec deník.
+    Když proces spadne mezi 2. a 4., deník zůstane a `obnov_ze_zalohy` stav vrátí na začátku dalšího běhu."""
     tmp: list[tuple[Path, Path]] = []
     try:
         for cil, obsah in soubory.items():
@@ -84,8 +119,33 @@ def zapis_atomicky(soubory: dict[Path, str]) -> None:
         for t, _ in tmp:
             t.unlink(missing_ok=True)
         raise
-    for t, cil in tmp:
-        os.replace(t, cil)
+
+    adresar = _denik_adresar(soubory, koren)
+    adresar.mkdir(parents=True, exist_ok=True)
+    zalohy = adresar / ZALOHY
+    shutil.rmtree(zalohy, ignore_errors=True)
+    zalohy.mkdir()
+    polozky = []
+    for i, (_, cil) in enumerate(tmp):
+        zaloha = None
+        if cil.exists():
+            zaloha = zalohy / f"{i}-{cil.name}"
+            shutil.copy2(cil, zaloha)
+        polozky.append({"cil": str(cil), "zaloha": str(zaloha) if zaloha else None})
+    denik = adresar / DENIK
+    with open(denik, "w", encoding="utf-8") as f:
+        json.dump({"soubory": polozky}, f, ensure_ascii=False)
+        f.flush()
+        os.fsync(f.fileno())
+
+    try:
+        for t, cil in tmp:
+            os.replace(t, cil)
+    except BaseException:
+        obnov_ze_zalohy(adresar)
+        raise
+    shutil.rmtree(zalohy, ignore_errors=True)
+    denik.unlink()
 
 
 def _nacti_json(cesta: Path, vychozi):
@@ -178,6 +238,8 @@ def _beh(koren: Path, zdroje: list[Zdroj], dnes: date, ted: datetime) -> int:
     predchozi = _nacti_json(cesta_beh, {})
     zaznam = {"zacatek": ted.isoformat(timespec="seconds"), "stav": "bezi", "zdroje": [], "chyby": [],
               "upozorneni": [], "pocty": None, "posledni_uspesny": predchozi.get("posledni_uspesny")}
+    if obnov_ze_zalohy(koren / "data"):
+        zaznam["upozorneni"].append("předchozí běh spadl uprostřed zápisu; stav byl obnoven ze zálohy")
     prvni_beh = not predchozi.get("posledni_uspesny")
     manifest_cesta = koren / "raw" / "manifest.json"
     manifest = copy.deepcopy(_nacti_json(manifest_cesta, []))
@@ -185,7 +247,7 @@ def _beh(koren: Path, zdroje: list[Zdroj], dnes: date, ted: datetime) -> int:
     def zastav(chyby: list[str]) -> int:
         zaznam.update(stav="zastaveno", chyby=zaznam["chyby"] + chyby,
                       konec=datetime.now(timezone.utc).isoformat(timespec="seconds"))
-        zapis_atomicky({cesta_beh: modul_sestav.serializuj(zaznam)})
+        zapis_atomicky({cesta_beh: modul_sestav.serializuj(zaznam)}, koren)
         for c in zaznam["chyby"]:
             print("CHYBA:", c, file=sys.stderr)
         return 1
@@ -238,7 +300,7 @@ def _beh(koren: Path, zdroje: list[Zdroj], dnes: date, ted: datetime) -> int:
     soubory[koren / "data" / "udalosti.json"] = modul_sestav.serializuj(udalosti)
     soubory[manifest_cesta] = modul_sestav.serializuj(manifest)
     soubory[cesta_beh] = modul_sestav.serializuj(zaznam)       # nakonec
-    zapis_atomicky(soubory)
+    zapis_atomicky(soubory, koren)
     print(f"běh hotov: {zaznam['pocty']}, nové dokumenty {zaznam['nove_dokumenty']}, nové verze {zaznam['nove_verze']}")
     return 0
 

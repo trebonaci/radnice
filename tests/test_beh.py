@@ -3,6 +3,7 @@ výpadek zdroje, chybová stránka místo PDF, prázdná stránka, zámek, atomi
 import copy
 import hashlib
 import json
+import os
 import shutil
 from datetime import date, datetime, timezone
 from pathlib import Path
@@ -243,3 +244,88 @@ def test_zapis_atomicky_pri_chybe_nezapise_nic(tmp_path):
         beh.zapis_atomicky({tmp_path / "a.json": "nove", blokace / "b.json": "nove"})
     assert (tmp_path / "a.json").read_text(encoding="utf-8") == "stare"
     assert not list(tmp_path.glob("*.tmp"))
+
+
+def _tri_soubory(tmp_path):
+    a, b, c = tmp_path / "data" / "a.json", tmp_path / "data" / "b.json", tmp_path / "data" / "c.json"
+    a.parent.mkdir(parents=True)
+    a.write_text("stare-a", encoding="utf-8")
+    b.write_text("stare-b", encoding="utf-8")
+    return a, b, c                                  # c předtím neexistuje
+
+
+def test_selhani_druheho_replace_vrati_vse(tmp_path, monkeypatch):
+    """Regrese (review Codexu k PR #24): selhání uprostřed nahrazování nesmí nechat mix nových a starých souborů."""
+    a, b, c = _tri_soubory(tmp_path)
+    puvodni = os.replace
+    volani = {"n": 0}
+
+    def replace(src, dst):
+        volani["n"] += 1
+        if volani["n"] == 2:
+            raise OSError("simulovaná chyba disku")
+        return puvodni(src, dst)
+
+    monkeypatch.setattr(beh.os, "replace", replace)
+    with pytest.raises(OSError):
+        beh.zapis_atomicky({a: "nove-a", b: "nove-b", c: "nove-c"}, tmp_path)
+    assert a.read_text(encoding="utf-8") == "stare-a"
+    assert b.read_text(encoding="utf-8") == "stare-b"
+    assert not c.exists()
+    assert not (tmp_path / "data" / beh.DENIK).exists()
+    assert not (tmp_path / "data" / beh.ZALOHY).exists()
+    assert not list((tmp_path / "data").glob("*.tmp"))
+
+
+def test_pad_uprostred_zapisu_obnovi_dalsi_beh(tmp_path, monkeypatch):
+    """Simulovaný pád procesu po nahrazení části souborů: deník a zálohy zůstanou, obnova vrátí původní stav."""
+    a, b, c = _tri_soubory(tmp_path)
+    puvodni = os.replace
+    volani = {"n": 0}
+
+    class Pad(BaseException):
+        pass
+
+    def replace(src, dst):
+        volani["n"] += 1
+        if volani["n"] == 2:
+            raise Pad()
+        return puvodni(src, dst)
+
+    monkeypatch.setattr(beh.os, "replace", replace)
+    monkeypatch.setattr(beh, "obnov_ze_zalohy", lambda adresar: False)   # pád = obnova neproběhne
+    with pytest.raises(Pad):
+        beh.zapis_atomicky({a: "nove-a", b: "nove-b", c: "nove-c"}, tmp_path)
+    monkeypatch.undo()
+    assert a.read_text(encoding="utf-8") == "nove-a"          # mix po pádu
+    assert (tmp_path / "data" / beh.DENIK).exists()
+    assert beh.obnov_ze_zalohy(tmp_path / "data") is True
+    assert a.read_text(encoding="utf-8") == "stare-a"
+    assert b.read_text(encoding="utf-8") == "stare-b"
+    assert not c.exists()
+    assert not (tmp_path / "data" / beh.DENIK).exists()
+    assert beh.obnov_ze_zalohy(tmp_path / "data") is False   # opakování je bezpečné
+
+
+def test_uspesny_zapis_uklidi_denik_a_zalohy(tmp_path):
+    a, b, c = _tri_soubory(tmp_path)
+    beh.zapis_atomicky({a: "nove-a", b: "nove-b", c: "nove-c"}, tmp_path)
+    assert [p.read_text(encoding="utf-8") for p in (a, b, c)] == ["nove-a", "nove-b", "nove-c"]
+    assert not (tmp_path / "data" / beh.DENIK).exists()
+    assert not (tmp_path / "data" / beh.ZALOHY).exists()
+
+
+def test_beh_po_padu_obnovi_stav_a_upozorni(koren):
+    """Zbylý deník z předchozího pádu: běh nejdřív vrátí data ze zálohy a zapíše upozornění."""
+    usneseni = koren / "data" / "usneseni.json"
+    puvodni = usneseni.read_text(encoding="utf-8")
+    zalohy = koren / "data" / beh.ZALOHY
+    zalohy.mkdir()
+    (zalohy / "0-usneseni.json").write_text(puvodni, encoding="utf-8")
+    usneseni.write_text("rozbito pádem", encoding="utf-8")
+    (koren / "data" / beh.DENIK).write_text(json.dumps(
+        {"soubory": [{"cil": str(usneseni), "zaloha": str(zalohy / "0-usneseni.json")}]}), encoding="utf-8")
+    assert spust(koren, Web()) == 0
+    assert usneseni.read_text(encoding="utf-8") == puvodni
+    assert any("spadl uprostřed zápisu" in u for u in json.loads(cti(koren, "data/beh.json"))["upozorneni"])
+    assert not (koren / "data" / beh.DENIK).exists()
