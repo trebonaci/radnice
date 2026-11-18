@@ -12,6 +12,7 @@ Tento soubor čtou všichni agenti pracující v repozitáři. Platí pro Claude
 - Nikdy necommituj přímo do `main`. Merguje jen Ondřej.
 - Merge ≠ zveřejnění. Na web jde jen to, co Ondřej výslovně schválí („schváleno ke zveřejnění“).
 - Kdo PR napsal, ten ho nereviewuje. PR od Clauda kontroluje Codex a obráceně.
+- PR lze sloučit jen se zelenou automatickou kontrolou (`.github/workflows/ci.yml`: sestavení dat, shoda `data/` se sestavením, testy). Před pushem spusť `python -m pipeline.sestav` a `python -m pytest` lokálně.
 - PR popis: co se změnilo, jak to ověřit, co zůstává otevřené, zdroje dat použité v PR.
 - Pokud zadání v issue nestačí nebo je v rozporu se `ZADANI.md`, zastav se a napiš otázku do issue místo dohadu.
 
