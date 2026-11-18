@@ -1,2 +1,10 @@
 # radnice
-Co se děje na radnici v Třeboni
+
+Co se děje na radnici v Třeboni: rozhodnutí rady a zastupitelstva, zakázky, smlouvy a projekty města a jeho organizací. Projekt Třeboňáků.
+
+- [Zadání](ZADANI.md)
+- [Datový model](DATOVY_MODEL.md)
+- [Metodika](METODIKA.md)
+- [Prompty](PROMPTY.md)
+- [Pravidla pro AI agenty](AGENTS.md)
+- [Backlog prvních úkolů](docs/BACKLOG.md)
