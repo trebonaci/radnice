@@ -56,8 +56,8 @@ RE_TITUL_JMENO = re.compile(
 RE_ZAPSAL = re.compile(r"Zapsal[a]?:\s*([A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]\S*\s+\S+)")
 
 
-def nacti_osoby() -> dict:
-    return yaml.safe_load((KOREN / "config" / "osoby.yaml").read_text(encoding="utf-8"))
+def nacti_osoby(koren: Path | None = None) -> dict:
+    return yaml.safe_load(((koren or KOREN) / "config" / "osoby.yaml").read_text(encoding="utf-8"))
 
 
 def _vzor(text: str) -> re.Pattern:
@@ -122,12 +122,21 @@ def _retezce(obj):
             yield from _retezce(v)
 
 
-def zpracuj_jednani(jednani_id: str, manifest: dict, chyby: list[str], osoby: dict) -> tuple[dict, list, list]:
-    adresar = KOREN / "raw" / "texty" / jednani_id
-    rozlozeno = rozloz(jednani_id, adresar)
-    anot = yaml.safe_load((KOREN / "anotace" / f"{jednani_id}.yaml").read_text(encoding="utf-8"))
-    dokument = normalizuj(" ".join(p.read_text(encoding="utf-8") for p in sorted(adresar.glob("strana-*.txt"))))
+def adresar_textu(koren: Path, dok: dict) -> Path:
+    """Text AKTUÁLNÍ verze dokumentu: cesta z poslední položky `verze[].texty` (starší záznamy bez ní
+    mají text přímo v raw/texty/<jednani_id>)."""
+    texty = (dok.get("verze") or [{}])[-1].get("texty")
+    return koren / (texty or f"raw/texty/{dok['jednani_id']}")
+
+
+def zpracuj_jednani(jednani_id: str, manifest: dict, chyby: list[str], osoby: dict,
+                    koren: Path | None = None) -> tuple[dict, list, list]:
+    koren = koren or KOREN
     dok = manifest[jednani_id]
+    adresar = adresar_textu(koren, dok)
+    rozlozeno = rozloz(jednani_id, adresar)
+    anot = yaml.safe_load((koren / "anotace" / f"{jednani_id}.yaml").read_text(encoding="utf-8"))
+    dokument = normalizuj(" ".join(p.read_text(encoding="utf-8") for p in sorted(adresar.glob("strana-*.txt"))))
 
     def over(citace: str, kde: str, kontext: str) -> bool:
         if normalizuj(citace) not in normalizuj(kde):
@@ -236,29 +245,42 @@ def zpracuj_jednani(jednani_id: str, manifest: dict, chyby: list[str], osoby: di
     return jednani_out, usneseni_out, hlasovani_out
 
 
-def main() -> int:
-    seznam = json.loads((KOREN / "raw" / "manifest.json").read_text(encoding="utf-8"))
+def sestav(koren: Path | None = None) -> tuple[dict[str, list], list[str]]:
+    """Sestaví výstupy z `koren` (raw/, anotace/, config/) bez zápisu na disk.
+    Vrací ({"jednani": [...], "usneseni": [...], "hlasovani": [...]}, chyby)."""
+    koren = koren or KOREN
+    seznam = json.loads((koren / "raw" / "manifest.json").read_text(encoding="utf-8"))
     manifest = {d["jednani_id"]: d for d in seznam}
     chyby: list[str] = zkontroluj_verze(seznam)
-    osoby = nacti_osoby()
+    osoby = nacti_osoby(koren)
     jednani, usneseni, hlasovani = [], [], []
     for jednani_id in sorted(manifest):
-        if not (KOREN / "anotace" / f"{jednani_id}.yaml").exists():
+        if not (koren / "anotace" / f"{jednani_id}.yaml").exists():
             continue
-        j, u, h = zpracuj_jednani(jednani_id, manifest, chyby, osoby)
+        j, u, h = zpracuj_jednani(jednani_id, manifest, chyby, osoby, koren)
         jednani.append(j)
         usneseni += u
         hlasovani += h
+    vystup = {"jednani": jednani, "usneseni": usneseni, "hlasovani": hlasovani}
     # kontrola osobních údajů v celém výstupu (kromě doslovných citací, ty kontroluje sestavení)
-    for nazev, obsah in (("jednani", jednani), ("usneseni", usneseni), ("hlasovani", hlasovani)):
+    for nazev, obsah in vystup.items():
         for r in _retezce(obsah):
             for n in najdi_osobni_udaje(r, osoby):
                 chyby.append(f"{nazev}: osobní údaj ve výstupu: {n!r}")
+    return vystup, chyby
+
+
+def serializuj(obsah) -> str:
+    return json.dumps(obsah, ensure_ascii=False, indent=2) + "\n"
+
+
+def main() -> int:
+    vystup, chyby = sestav(KOREN)
     data = KOREN / "data"
     data.mkdir(exist_ok=True)
-    for nazev, obsah in (("jednani", jednani), ("usneseni", usneseni), ("hlasovani", hlasovani)):
-        (data / f"{nazev}.json").write_text(json.dumps(obsah, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"jednání {len(jednani)}, usnesení {len(usneseni)}, hlasování {len(hlasovani)}")
+    for nazev, obsah in vystup.items():
+        (data / f"{nazev}.json").write_text(serializuj(obsah), encoding="utf-8")
+    print(f"jednání {len(vystup['jednani'])}, usnesení {len(vystup['usneseni'])}, hlasování {len(vystup['hlasovani'])}")
     for c in chyby:
         print("CHYBA:", c, file=sys.stderr)
     return 1 if chyby else 0
