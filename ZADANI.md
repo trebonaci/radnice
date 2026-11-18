@@ -12,8 +12,8 @@ Verze 0.5 · 18. 11. 2026 · sjednoceno s Codexem (PR #1) a rozhodnutím Ondřej
 | Základ | datový model; první veřejný výstup = datový přehled |
 | První pracovní úloha | zpracování zápisů rady a zastupitelstva podle metodiky |
 | Období | plošně se zpracovávají zápisy volebního období 2026–2030. Starší zápisy (až do 2012) se doplňují **jen výběrově**, když vysvětlují vývoj konkrétního projektu (např. předchozí rozhodnutí, změny ceny, termínů). Plošné zpětné zpracování se neplánuje. |
-| Subjekty | Město Třeboň, 4 městské obchodní společnosti (Městská Vodohospodářská, Slatinné lázně, Technické služby, Bertiny lázně) a další městské organizace včetně příspěvkových. Kompletní seznam IČO je první zdrojový úkol. |
-| Zakázky | všech 5 profilů E-ZAK, další podle zjištění |
+| Subjekty | Město Třeboň, městské obchodní společnosti (Městská Vodohospodářská, Slatinné lázně, Technické služby, Třeboňské lesy a rybníky, Autokemp Třeboňský ráj) a příspěvkové organizace města. Bertiny lázně jsou od 1. 1. 2017 součástí SLT. Seznam IČO v `config/subjekty.yaml`. |
+| Zakázky | profily E-ZAK města a společností (XML export, u Technických služeb HTML); historický profil Bertiných lázní jen pro starší záznamy |
 | Hlasování | jmenovitě jen to, co je doložené zdrojem. Video se přepisuje, pokud se to ukáže nákladově výhodné; jinak se vychází ze zápisů ZM |
 | Automatizace | až podle skutečné časové náročnosti ručního postupu; zatím žádný noční běh ani nový generátor webu |
 | Merge vs. zveřejnění | merge do `main` = schválený pracovní stav; zveřejnění na webu je samostatný krok, který schvaluje Ondřej |
@@ -40,10 +40,14 @@ Signál navenek: autoři věcem rozumí a informují přesně. Správnost má p�
 |---|---|---|---|
 | Město Třeboň | 00247618 | ano | ano |
 | Městská Vodohospodářská s.r.o. | 28136853 | ano | ano |
-| Slatinné lázně Třeboň s.r.o. | 25179896 | ano | ano |
-| Technické služby Třeboň, s.r.o. | 62502735 | ano | ano |
-| Bertiny lázně Třeboň s. r. o. | 60067837 | ano | ano |
-| Další městské organizace (příspěvkové aj.) | doplnit | ano | dle vlastních profilů |
+| Slatinné lázně Třeboň s.r.o. (vč. lázeňských domů Bertiny lázně a Aurora) | 25179896 | ano | ano |
+| Technické služby Třeboň, s.r.o. | 62502735 | ano | ano (HTML) |
+| Třeboňské lesy a rybníky s.r.o. | viz `config/subjekty.yaml` | ano | dle profilu |
+| Autokemp Třeboňský ráj, s.r.o. | viz `config/subjekty.yaml` | ano | dle profilu |
+| Městská sportovní Třeboň, p. o., školy a školky zřizované městem | viz `config/subjekty.yaml` | ano | dle profilu |
+| Bertiny lázně Třeboň s. r. o. – **zaniklá** fúzí se SLT k 1. 1. 2017 | 60067837 | jen historické smlouvy | historický profil |
+
+Výčet vychází ze stránek města (městské organizace, základní a mateřské školy) a ověření v PR #14.
 
 Seznam subjektů žije v jednom konfiguračním souboru (`config/subjekty.yaml`); přidání IČO nesmí vyžadovat změnu kódu.
 
