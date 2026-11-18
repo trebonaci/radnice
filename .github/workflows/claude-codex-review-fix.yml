@@ -60,7 +60,7 @@ jobs:
             const botMarkers = issueComments
               .filter(comment => comment.user?.login === 'github-actions[bot]')
               .map(comment => comment.body || '')
-              .filter(body => /<!-- codex-fix-round:\\d+ review:\\d+ -->/.test(body));
+              .filter(body => /<!-- codex-fix-round:\d+ review:\d+ -->/.test(body));
             const markerForReview = `review:${review.id} -->`;
             if (botMarkers.some(body => body.includes(markerForReview))) {
               core.notice('This Codex review was already processed.');
@@ -89,7 +89,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: pr.number,
-              body: `<!-- codex-fix-round:${round} review:${review.id} -->\\nCodex našel připomínky. Claude zahajuje automatické kolo oprav ${round}/2.`,
+              body: `<!-- codex-fix-round:${round} review:${review.id} -->\nCodex našel připomínky. Claude zahajuje automatické kolo oprav ${round}/2.`,
             });
             core.setOutput('run_claude', 'true');
             core.setOutput('round', String(round));
