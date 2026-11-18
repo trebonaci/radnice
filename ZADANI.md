@@ -1,20 +1,20 @@
 # Zadání: Přehled radnice Třeboň (pracovní název)
 
-Verze 0.3 · 18. 11. 2026 · sjednoceno s připomínkami Codexu a rozhodnutím Ondřeje
+Verze 0.4 · 18. 11. 2026 · sjednoceno s Codexem (PR #1) a rozhodnutím Ondřeje
 
 ## 0. Rozhodnutí
 
 | Téma | Rozhodnutí |
 |---|---|
 | Veřejný výstup | nová sekce na **trebonaci.cz** (WordPress, hosting Vedos). Repozitář `trebonaci/radnice` = zadání, metodika, data, kód. |
-| Mapa podnětů | součást přehledu: podněty z mapy na trebonaci.cz se propojují s rozhodnutími a projekty (kap. 6) |
+| Mapa podnětů | součást rozhraní jako samostatná vrstva vedle projektů. Pro přehled vznikne omezený veřejný výstup podnětů (poloha, kategorie, stav, upravený popis), současný endpoint se přímo nepoužije. Občanský návrh se odlišuje od projektu, který město připravuje. |
 | Značka | otevřeně projekt Třeboňáků; nesmí působit jako oficiální web města |
 | Základ | datový model; první veřejný výstup = datový přehled |
 | První pracovní úloha | zpracování zápisů rady a zastupitelstva podle metodiky |
 | Období | pilot 2026–2030 → 2022–2026 → postupně zpět do 2012 |
-| Smlouvy | město, 4 obchodní společnosti a příspěvkové organizace (IČO doplnit) |
-| Zakázky | všech 5 profilů E-ZAK včetně Bertiných lázní |
-| Hlasování | jen to, co je doložené zdrojem (zápisy ZM). Přepis videa jen pokud se ověří, že je nákladově výhodný a dává jmenovité údaje |
+| Subjekty | Město Třeboň, 4 městské obchodní společnosti (Městská Vodohospodářská, Slatinné lázně, Technické služby, Bertiny lázně) a další městské organizace včetně příspěvkových. Kompletní seznam IČO je první zdrojový úkol. |
+| Zakázky | všech 5 profilů E-ZAK, další podle zjištění |
+| Hlasování | jmenovitě jen to, co je doložené zdrojem. Video se přepisuje, pokud se to ukáže nákladově výhodné; jinak se vychází ze zápisů ZM |
 | Automatizace | až podle skutečné časové náročnosti ručního postupu; zatím žádný noční běh ani nový generátor webu |
 | Merge vs. zveřejnění | merge do `main` = schválený pracovní stav; zveřejnění na webu je samostatný krok, který schvaluje Ondřej |
 | Etapizace oken | námět v backlogu, ne slíbený výstup |
@@ -43,7 +43,7 @@ Signál navenek: autoři věcem rozumí a informují přesně. Správnost má p�
 | Slatinné lázně Třeboň s.r.o. | 25179896 | ano | ano |
 | Technické služby Třeboň, s.r.o. | 62502735 | ano | ano |
 | Bertiny lázně Třeboň s. r. o. | 60067837 | ano | ano |
-| Příspěvkové organizace města | doplnit | ano | dle vlastních profilů |
+| Další městské organizace (příspěvkové aj.) | doplnit | ano | dle vlastních profilů |
 
 Seznam subjektů žije v jednom konfiguračním souboru (`config/subjekty.yaml`); přidání IČO nesmí vyžadovat změnu kódu.
 
@@ -108,12 +108,13 @@ zpracování → data/*.json  ───────────▶   čte JSON a
 ## 7. Hlasování
 
 - Zdrojem jsou zápisy ZM. Zveřejňuje se jen jmenovité hlasování, které zápis přímo obsahuje.
-- Přepis videa: samostatné ověření (náklady na hodinu záznamu, a hlavně zda z videa vůbec jde určit, kdo jak hlasoval; přepis zvuku jména nedá, pokud se nehlasuje nahlas).
+- Přepis videa: ověřit náklady na hodinu záznamu a přínos (průběh diskuse, případně jmenovité hlasování). Přepisovat, pokud je to nákladově výhodné.
 - Systémově: navrhnout městu zveřejňování usnesení a jmenovitých hlasování jako otevřených dat.
 
 ## 8. Spolupráce Claude ↔ Codex
 
 - Repozitář je jediný zdroj pravdy. `AGENTS.md` (Codex) a `CLAUDE.md` (Claude) mají stejná pravidla.
+- Postup práce se zdroji: `METODIKA.md`; opakovatelné prompty pro analytika a kontrolora: `PROMPTY.md`.
 - Úkoly = GitHub issues; každá změna přes PR; kdo napsal, ten nereviewuje; merguje Ondřej.
 - **Merge ≠ zveřejnění.** Zveřejnění je samostatný krok s výslovným souhlasem Ondřeje (komentář „schváleno ke zveřejnění“ v PR nebo issue).
 - Dělba se určuje u každého issue; výchozí: Claude zpracování a kód, Codex kontrola faktů a review.
@@ -135,5 +136,5 @@ Backlog námětů: analýza etapizace oken, přepis videa ZM.
 ## 10. Otevřené otázky
 
 1. Název a URL sekce na trebonaci.cz.
-2. Seznam příspěvkových organizací (IČO).
+2. Kompletní seznam městských organizací a IČO (první zdrojový úkol).
 3. Zda zápisy ZM obsahují jmenovité hlasování a od kterého roku.
