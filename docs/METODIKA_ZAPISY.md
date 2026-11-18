@@ -10,7 +10,7 @@ Pilot: zápis z 1. jednání rady 4. 11. 2026 a zápis z ustavujícího zastupit
 | 2. Text po stranách | `pdftotext -layout` (textové PDF), OCR jen u skenů | `raw/texty/<jednani>/strana-N.txt` |
 | 3. Struktura: body programu, usnesení, hlasování, protinávrhy | `pipeline/zapisy.py`, **bez AI** | čísla a výsledky opsané z textu |
 | 4. Anotace: téma, kategorie, shrnutí, citace, částky, parcely, co anonymizovat | AI (model A) | `anotace/<jednani>.yaml` |
-| 5. Kontroly kódem: citace doslova ve zdroji, částka v citaci, anonymizované údaje nejsou v citacích, součty hlasů ≤ přítomní | `pipeline/sestav.py` | `data/*.json`, stav `overeno_kodem` |
+| 5. Anonymizace úředníků (funkce místo jména, `config/osoby.yaml`) a kontroly kódem: citace doslova ve zdroji, částka v citaci, anonymizované údaje nejsou v citacích, součty hlasů ≤ přítomní, ve výstupu není jméno nevolené osoby | `pipeline/sestav.py` | `data/*.json`, stav `overeno_kodem` |
 | 6. Nezávislá kontrola | model B (Codex) | připomínky v PR |
 | 7. Schválení | Ondřej | merge; zveřejnění zvlášť |
 
@@ -52,12 +52,23 @@ Spuštění: `python -m pipeline.sestav` a `python -m pytest`.
 - Lidská kontrola anotací: odhad 10–20 minut na zápis rady s ~10 usneseními. **Tohle je jediná část, která roste s počtem zápisů** – změřit při zpracování dalších zápisů.
 - Největší zdržení pilotu bylo stažení PDF: web města blokuje automatické stahování (robots.txt) a prohlížeč povolil jen jedno stažení. Pro další zápisy: stahovat skriptem z GitHub Actions, nebo ručně.
 
+## Výsledek hlasování vs. obsah usnesení
+
+„SCHVÁLENO“ v zápisu znamená, že návrh usnesení prošel hlasováním – ne, že orgán věc schválil. Usnesení RM 4/2026-1 a RM 6/2026-1 rada „bere na vědomí“. Proto `vysledek_hlasovani` (prijato / neprijato) a zvlášť `ukony[]` po částech (schvaluje, bere na vědomí, volí, ukládá…). Neznámé sloveso parser hlásí jako upozornění.
+
+## Osoby
+
+- Volení zástupci jménem (`config/osoby.yaml`, seznam zastupitelů zatím jen z pilotních zápisů – doplnit podle výsledků voleb).
+- Úředníci funkcí (tajemnice, zapisovatelka, pracovnice/pracovník úřadu).
+- Kontrola výstupu hledá jména s akademickým titulem, která nepatří zastupitelům, známá jména úředníků a podpis „Zapsal(a):“. **Omezení:** jméno bez titulu, které není v seznamu, kontrola nezachytí – nové zápisy proto vyžadují doplnění `config/osoby.yaml` a lidskou kontrolu.
+
 ## Rozhodnutí (18. 11. 2026)
 
 1. **Členy komisí neuvádíme** (jména nahrazena textem „[jména členů komise neuvádíme]“). Platí pro komise složené z jiných osob než zastupitelů; mandátová a volební komise ZM jsou složené ze zastupitelů, ty jménem uvádíme.
 2. **Podnikatele (fyzické osoby) anonymizujeme vždy**, i když je město v zápisu ponechalo.
 3. **Body bez usnesení (Různé, Diskuze)** se ukazují v detailu jednání s textem ze zápisu; jména občanů se nahrazují (např. „podnět občana“).
 
-## Otevřená otázka
+## Historie ověření
 
-PDF zápisu ZM není uložené (prohlížeč zablokoval druhé stažení); text byl získán v prohlížeči. Codex by měl při kontrole porovnat s originálem.
+- Text zápisu ZM byl při zpracování získán z originálního PDF v prohlížeči (pdf.js), PDF samotné nebylo v pracovním prostředí uložené; sha256 spočten z originálu.
+- 18. 11. 2026 Codex porovnal extrahovaný text obou zápisů s oficiálními PDF (odkazy v `raw/manifest.json`) – bez rozdílů v textu; připomínky k výsledku hlasování a jménům úředníků zapracovány.

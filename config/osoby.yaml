@@ -1,0 +1,48 @@
+# Osoby v zápisech a jak se zobrazují v odvozených datech (data/).
+#
+# zastupitele: volení zástupci – uvádějí se jménem. Kmeny příjmení pokrývají skloňování
+#   (např. "Koubu", "Koláře"). Seznam zatím obsahuje jen ty, kdo se objevili v pilotních
+#   zápisech; doplnit podle výsledků voleb 2026 (volby.gov.cz).
+# urednici: zaměstnanci města a jiné osoby, které nejsou volenými zástupci – nahrazují se
+#   funkcí (nebo vlastní náhradou u varianty s kontextem). Varianty se hledají bez ohledu
+#   na zalomení řádku. Delší varianty první.
+zastupitele:
+  - {jmeno: Aleš Kolář, kmeny: [Kolář]}
+  - {jmeno: Petr Kouba, kmeny: [Koub]}
+  - {jmeno: Ondřej Zbudil, kmeny: [Zbudil]}
+  - {jmeno: Lenka Blažková, kmeny: [Blažkov]}
+  - {jmeno: Petr Kohout, kmeny: [Kohout]}
+  - {jmeno: Jiří Vopátek, kmeny: [Vopát]}
+  - {jmeno: Stanislav Ojíř Musil, kmeny: [Ojíř]}
+  - {jmeno: Ondřej Hlinka, kmeny: [Hlink]}
+  - {jmeno: Petr Čížek, kmeny: [Čížek, Čížk]}
+  - {jmeno: Jana Polčáková, kmeny: [Polčákov]}
+  - {jmeno: Vít Zavadil, kmeny: [Zavadil]}
+  - {jmeno: František Pfeifer, kmeny: [Pfeifer]}
+  - {jmeno: Vladan Pikl, kmeny: [Pikl]}
+  - {jmeno: Jan Váňa, kmeny: [Váňa, Váni]}
+  - {jmeno: Jana Grammetbauerová, kmeny: [Grammetbauerov, Grammetbaurov]}
+  - {jmeno: Petr Michal, kmeny: [Michal]}
+
+urednici:
+  - funkce: tajemnice
+    varianty:
+      - "Ing. Petra Pikna Jánská, tajemnice"
+      - {text: "tajemnice úřadu Ing. Petra Pikna Jánská", nahrada: "tajemnice úřadu"}
+      - {text: "tajemnice Ing. Petra Pikna Jánská", nahrada: "tajemnice"}
+      - "Ing. Petra Pikna Jánská"
+  - funkce: zapisovatelka
+    varianty:
+      - {text: "zpracovatelem zápisu Mgr. Hana Burešová", nahrada: "zpracovatelkou zápisu pracovnice úřadu"}
+      - "Mgr. Hana Burešová"
+      - "Pavlína Bohuslávková"
+  - funkce: pracovnice úřadu
+    varianty:
+      - "Ing. Alena Baštová"
+      - "Mgr. Kateřina Karásková Nováčková"
+      - "Ing. Helena Zavadilová"
+      - "Jitka Filípková"
+      - "Vladislava Bicková"
+  - funkce: pracovník úřadu
+    varianty:
+      - "Ing. Pavel Hajna"

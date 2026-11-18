@@ -12,7 +12,7 @@ Sjednoceno z návrhu Clauda, návrhu Codexu (PR #1) a zjištění z pilotu zápi
 - Neznámá hodnota je `null`, nikdy nula.
 - Automatická shoda názvů vytváří jen návrh vazby; potvrdit ji lze přímým identifikátorem nebo ruční kontrolou.
 - Surová data (`raw/`) se neupravují; vše odvozené je reprodukovatelné skriptem.
-- Osobní údaje fyzických osob, které nejsou volenými zástupci, se do `data/` nezapisují (anonymizace při sestavení). Členy komisí neuvádíme; podnikatele (fyzické osoby) anonymizujeme vždy.
+- Osobní údaje fyzických osob, které nejsou volenými zástupci, se do `data/` nezapisují (anonymizace při sestavení). Úředníky nahrazujeme funkcí podle `config/osoby.yaml`; členy komisí neuvádíme; podnikatele (fyzické osoby) anonymizujeme vždy. Sestavení selže, pokud výstup obsahuje jméno s titulem, které nepatří zastupiteli, nebo známé jméno úředníka.
 
 ## Entity
 
@@ -33,7 +33,7 @@ Vnořená struktura: `dokument_id`, `strany[]` nebo jiný lokátor (bod, ID smlo
 `cislo`, `nazev`, `strana`, `text` (jen u bodů bez usnesení, zobrazuje se v detailu), `nazev_anonymizovan`, `text_anonymizovan`
 
 ### usneseni
-`id` = `<organ>-<rok>-j<jednání>-u<číslo>` (např. `rm-2026-j1-u7` pro „RM č. 7/2026-1“), `cislo` (původní označení), `jednani_id`, `bod`, `vysledek` (schvaleno / neschvaleno / vzato_na_vedomi / odlozeno / neuvedeno), `text` (+ `text_anonymizovan`), `tema` + `tema_ai`, `kategorie[]` + `kategorie_ai` (číselník `config/kategorie.yaml`), `shrnuti` + `shrnuti_ai`, `citace`, `castky[]`, `parcely[]`, `subjekty_ico[]`, `projekt_ids[]`, `overeni`, `poznamka`
+`id` = `<organ>-<rok>-j<jednání>-u<číslo>` (např. `rm-2026-j1-u7` pro „RM č. 7/2026-1“), `cislo` (původní označení), `jednani_id`, `bod`, `vysledek_hlasovani` (prijato / neprijato / neuvedeno – zda návrh usnesení prošel), `vysledek_zapis` (doslovně ze zápisu, např. „SCHVÁLENO“), `ukony[]` {`cast`, `ukon` (schvaluje / bere_na_vedomi / voli / urcuje / uklada / souhlasi / jmenuje / doporucuje / … / jiny), `sloveso`} – věcný obsah usnesení; „SCHVÁLENO“ u usnesení „bere na vědomí“ neznamená, že orgán věc schválil, `text` (+ `text_anonymizovan`), `tema` + `tema_ai`, `kategorie[]` + `kategorie_ai` (číselník `config/kategorie.yaml`), `shrnuti` + `shrnuti_ai`, `citace`, `castky[]`, `parcely[]`, `subjekty_ico[]`, `projekt_ids[]`, `overeni`, `poznamka`
 
 ### hlasovani
 `typ` (usneseni / protinavrh / volba_kandidata), `usneseni_id` (u protinávrhu null), `cast` (I., II. – jen u usnesení s více hlasováními), `predmet` (text protinávrhu / jméno kandidáta), `pro`, `proti`, `zdrzel`, `hlasu_celkem`, `vysledek` (u protinávrhu), `jmenovite` (null = zdroj neuvádí; jinak [{`osoba_id`, `hlas`}]), `jednani_id`, `bod`, `strana`

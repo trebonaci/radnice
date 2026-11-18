@@ -49,7 +49,64 @@ def anonymizuj(text: str, retezce: list) -> str:
     return text
 
 
-def zpracuj_jednani(jednani_id: str, manifest: dict, chyby: list[str]) -> tuple[dict, list, list]:
+RE_TITUL_JMENO = re.compile(
+    r"(?:(?:Ing|Mgr|Bc|MUDr|MVDr|PaedDr|JUDr|PhDr|RNDr|doc|prof)\.\s*)+"
+    r"[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ][a-záčďéěíňóřšťúůýž]+(?:\s+[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ][a-záčďéěíňóřšťúůýž]+){1,2}")
+RE_ZAPSAL = re.compile(r"Zapsal[a]?:\s*([A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]\S*\s+\S+)")
+
+
+def nacti_osoby() -> dict:
+    return yaml.safe_load((KOREN / "config" / "osoby.yaml").read_text(encoding="utf-8"))
+
+
+def _vzor(text: str) -> re.Pattern:
+    """Regex z textu, který toleruje libovolné mezery a zalomení řádků."""
+    return re.compile(r"\s+".join(re.escape(c) for c in text.split()))
+
+
+def anonymizuj_urednici(text: str, osoby: dict) -> str:
+    """Nahradí jména úředníků a dalších nevolených osob funkcí."""
+    if not text:
+        return text
+    for u in osoby["urednici"]:
+        for v in u["varianty"]:
+            hledat, nahrada = (v, u["funkce"]) if isinstance(v, str) else (v["text"], v["nahrada"])
+            text = _vzor(hledat).sub(nahrada, text)
+    return text
+
+
+def najdi_osobni_udaje(text: str, osoby: dict) -> list[str]:
+    """Kontrola výstupu: jména s titulem, která nepatří zastupitelům, známá jména úředníků
+    a podpis zapisovatele. Vrací nalezené problémy."""
+    nalezy = []
+    kmeny = [k for z in osoby["zastupitele"] for k in z["kmeny"]]
+    for m in RE_TITUL_JMENO.finditer(text):
+        if not any(k in m.group(0) for k in kmeny):
+            nalezy.append(m.group(0))
+    for u in osoby["urednici"]:
+        for v in u["varianty"]:
+            hledat = v if isinstance(v, str) else v["text"]
+            prijmeni = hledat.split()[-1]
+            if prijmeni[0].isupper() and prijmeni in text:
+                nalezy.append(prijmeni)
+    for m in RE_ZAPSAL.finditer(text):
+        if not m.group(1).startswith(("pracovn", "zapisovatel")):
+            nalezy.append("Zapsal(a): " + m.group(1))
+    return nalezy
+
+
+def _retezce(obj):
+    if isinstance(obj, str):
+        yield obj
+    elif isinstance(obj, dict):
+        for v in obj.values():
+            yield from _retezce(v)
+    elif isinstance(obj, list):
+        for v in obj:
+            yield from _retezce(v)
+
+
+def zpracuj_jednani(jednani_id: str, manifest: dict, chyby: list[str], osoby: dict) -> tuple[dict, list, list]:
     adresar = KOREN / "raw" / "texty" / jednani_id
     rozlozeno = rozloz(jednani_id, adresar)
     anot = yaml.safe_load((KOREN / "anotace" / f"{jednani_id}.yaml").read_text(encoding="utf-8"))
@@ -100,9 +157,11 @@ def zpracuj_jednani(jednani_id: str, manifest: dict, chyby: list[str]) -> tuple[
             "cislo": u["cislo"],
             "jednani_id": jednani_id,
             "bod": u["bod"],
-            "vysledek": u["vysledek"],
-            "text": anonymizuj(u["text"], anon),
-            "text_anonymizovan": bool(anon),
+            "vysledek_hlasovani": u["vysledek_hlasovani"],
+            "vysledek_zapis": u["vysledek_zapis"],
+            "ukony": u["ukony"],
+            "text": (verejny := anonymizuj_urednici(anonymizuj(u["text"], anon), osoby)),
+            "text_anonymizovan": verejny != u["text"],
             "tema": a["tema"],
             "tema_ai": True,
             "kategorie": a["kategorie"],
@@ -122,7 +181,10 @@ def zpracuj_jednani(jednani_id: str, manifest: dict, chyby: list[str]) -> tuple[
         soucet = h["pro"] + h["proti"] + h["zdrzel"]
         if soucet > meta["pritomno"]:
             chyby.append(f"{jednani_id}: hlasování {h['zdroj_radek']} má víc hlasů ({soucet}) než přítomných")
-        hlasovani_out.append({k: v for k, v in h.items() if k != "zdroj_radek"} | {"hlasu_celkem": soucet})
+        zaznam = {k: v for k, v in h.items() if k != "zdroj_radek"} | {"hlasu_celkem": soucet}
+        if zaznam.get("predmet"):
+            zaznam["predmet"] = anonymizuj_urednici(zaznam["predmet"], osoby)
+        hlasovani_out.append(zaznam)
 
     body = rozlozeno["body"]
     for b in body:
@@ -135,8 +197,11 @@ def zpracuj_jednani(jednani_id: str, manifest: dict, chyby: list[str]) -> tuple[
             for r, _ in _polozky(anon):
                 if r not in b["text"]:
                     chyby.append(f"{jednani_id}: bod {b['cislo']} řetězec k anonymizaci nenalezen: {r!r}")
-            b["text"] = anonymizuj(b["text"], anon)
-        b["text_anonymizovan"] = bool(anon)
+        puvodni = b["text"]
+        if b["text"]:
+            b["text"] = anonymizuj_urednici(anonymizuj(b["text"], anon), osoby)
+        b["nazev"] = anonymizuj_urednici(b["nazev"], osoby)
+        b["text_anonymizovan"] = b["text"] != puvodni
 
     jednani_out = {
         "id": jednani_id,
@@ -158,14 +223,20 @@ def zpracuj_jednani(jednani_id: str, manifest: dict, chyby: list[str]) -> tuple[
 def main() -> int:
     manifest = {d["jednani_id"]: d for d in json.loads((KOREN / "raw" / "manifest.json").read_text(encoding="utf-8"))}
     chyby: list[str] = []
+    osoby = nacti_osoby()
     jednani, usneseni, hlasovani = [], [], []
     for jednani_id in sorted(manifest):
         if not (KOREN / "anotace" / f"{jednani_id}.yaml").exists():
             continue
-        j, u, h = zpracuj_jednani(jednani_id, manifest, chyby)
+        j, u, h = zpracuj_jednani(jednani_id, manifest, chyby, osoby)
         jednani.append(j)
         usneseni += u
         hlasovani += h
+    # kontrola osobních údajů v celém výstupu (kromě doslovných citací, ty kontroluje sestavení)
+    for nazev, obsah in (("jednani", jednani), ("usneseni", usneseni), ("hlasovani", hlasovani)):
+        for r in _retezce(obsah):
+            for n in najdi_osobni_udaje(r, osoby):
+                chyby.append(f"{nazev}: osobní údaj ve výstupu: {n!r}")
     data = KOREN / "data"
     data.mkdir(exist_ok=True)
     for nazev, obsah in (("jednani", jednani), ("usneseni", usneseni), ("hlasovani", hlasovani)):

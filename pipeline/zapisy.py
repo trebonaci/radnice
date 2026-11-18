@@ -17,12 +17,42 @@ RE_USNESENI = re.compile(r"^Usnesení (ZM|RM) č\. (\d+)/(\d{4})-(\d+)$")
 RE_HLASY = re.compile(r"^Pro:\s*(\d+)\s+Proti:\s*(\d+)\s+Zdrželi se:\s*(\d+)$")
 RE_CAST = re.compile(r"^(I{1,3}|IV|V|VI{0,3})\.\s+(\S.*)$")
 RE_PROGRAM_POLOZKA = re.compile(r"^(\d+)\.\s+(\S.*)$")
+# Výsledek hlasování (zda návrh usnesení prošel). Neříká nic o věcném obsahu –
+# „SCHVÁLENO“ u usnesení „bere na vědomí“ znamená jen, že usnesení bylo přijato.
 VYSLEDKY = {
-    "SCHVÁLENO": "schvaleno",
-    "NESCHVÁLENO": "neschvaleno",
+    "SCHVÁLENO": "prijato",
+    "NESCHVÁLENO": "neprijato",
     "USNESENÍ PŘIJATO": "prijato",
     "USNESENÍ NEPŘIJATO": "neprijato",
 }
+# Věcný úkon v části usnesení (I. bere na vědomí, II. ukládá …). Delší výrazy dřív.
+UKONY = [
+    ("bere na vědomí", "bere_na_vedomi"),
+    ("neschvaluje", "neschvaluje"),
+    ("schvaluje", "schvaluje"),
+    ("nesouhlasí", "nesouhlasi"),
+    ("souhlasí", "souhlasi"),
+    ("volí", "voli"),
+    ("odvolává", "odvolava"),
+    ("jmenuje", "jmenuje"),
+    ("určuje", "urcuje"),
+    ("ukládá", "uklada"),
+    ("pověřuje", "poveruje"),
+    ("doporučuje", "doporucuje"),
+    ("zřizuje", "zrizuje"),
+    ("ruší", "rusi"),
+    ("revokuje", "revokuje"),
+    ("vydává", "vydava"),
+    ("rozhoduje", "rozhoduje"),
+]
+
+
+def urci_ukon(text: str) -> tuple[str, str]:
+    """Z řádku části usnesení (bez římské číslice) určí věcný úkon."""
+    for sloveso, kod in UKONY:
+        if text == sloveso or text.startswith(sloveso + " "):
+            return kod, sloveso
+    return "jiny", text
 HLAVICKY_ORGANU = {"Zastupitelstvo města Třeboně", "Rada města Třeboně"}
 
 
@@ -132,7 +162,9 @@ def _zpracuj_bod(jednani_id: str, bod: dict, out: dict) -> None:
                 "jednani_id": jednani_id,
                 "bod": bod["cislo"],
                 "strany": [r.strana],
-                "vysledek": None,
+                "vysledek_hlasovani": None,
+                "vysledek_zapis": None,
+                "ukony": [],
                 "_radky": [],
             }
             cast = None
@@ -172,7 +204,8 @@ def _zpracuj_bod(jednani_id: str, bod: dict, out: dict) -> None:
             ceka_hlasy = False
         elif t in VYSLEDKY:
             if usn is not None:
-                usn["vysledek"] = VYSLEDKY[t]
+                usn["vysledek_hlasovani"] = VYSLEDKY[t]
+                usn["vysledek_zapis"] = t
                 if r.strana not in usn["strany"]:
                     usn["strany"].append(r.strana)
                 uzavri()
@@ -186,6 +219,10 @@ def _zpracuj_bod(jednani_id: str, bod: dict, out: dict) -> None:
                 m_cast = RE_CAST.match(t)
                 if m_cast:
                     cast = m_cast.group(1)
+                    kod, sloveso = urci_ukon(m_cast.group(2))
+                    usn["ukony"].append({"cast": cast, "ukon": kod, "sloveso": sloveso})
+                    if kod == "jiny":
+                        out["upozorneni"].append(f"{usn['cislo']} část {cast}: neznámý úkon {sloveso!r}")
                 usn["_radky"].append(t)
                 if r.strana not in usn["strany"]:
                     usn["strany"].append(r.strana)
