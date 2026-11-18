@@ -69,7 +69,7 @@ Plánované kroky: jeden běh `pipeline/beh.py` se zámkem (#16), verze dokument
 | Zápisy ZM: `.../zastupitelstvo-mesta/zapisy-zastupitelstva-mesta/volebni-obdobi-2026---2030-2.html` | stejný formát; **pilotní zápis z 2. 11. 2026 neobsahuje jmenovité hlasování**, jen součty – u každého dalšího zápisu ověřit zvlášť; číslování bodů může nesedět s programem | pilot 18. 11. 2026 |
 | Struktura zápisu | `k bodu N` → `Usnesení RM/ZM č. X/RRRR-J` → části `I. schvaluje…` → `Výsledek hlasování: Pro/Proti/Zdrželi se` → `SCHVÁLENO`; protinávrhy a volby kandidátů mají vlastní hlasování | pilot |
 | Členové ZM: `mesto-trebon.cz/text/cz/mestsky-urad-trebon/samosprava-mesta/zastupitelstvo-mesta/clenove-zastupitelstva-mesta.html` | 25 členů se stranou; funkce jen u starosty → ostatní ze zápisu ZM | 18. 11. 2026 |
-| Registr smluv, E-ZAK (5 profilů), ISVZ | viz issue #9 / PR #14 a `docs/ZDROJE.md` | probíhá |
+| Registr smluv, E-ZAK (profily města a společností), ISVZ | viz issue #9 / PR #14 a `docs/ZDROJE.md` | probíhá |
 | trebonaci.cz `/wp-json/trebonaci/v1/projekty` | evidence SPRM (`trebonaci_projekt`) | neověřeno |
 | trebonaci.cz `/wp-json/trebonaci/v1/podnety` | vrací i jména podatelů a diskusi → **přímo nepoužívat**, jen omezený výstup | dle Codexu |
 
