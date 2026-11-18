@@ -85,16 +85,16 @@ Plánované kroky: jeden běh `pipeline/beh.py` se zámkem (#16), verze dokument
 | Zápisy ZM: `.../zastupitelstvo-mesta/zapisy-zastupitelstva-mesta/volebni-obdobi-2026---2030-2.html` | stejný formát; **pilotní zápis z 2. 11. 2026 neobsahuje jmenovité hlasování**, jen součty – u každého dalšího zápisu ověřit zvlášť; číslování bodů může nesedět s programem | pilot 18. 11. 2026 |
 | Struktura zápisu | `k bodu N` → `Usnesení RM/ZM č. X/RRRR-J` → části `I. schvaluje…` → `Výsledek hlasování: Pro/Proti/Zdrželi se` → `SCHVÁLENO`; protinávrhy a volby kandidátů mají vlastní hlasování | pilot |
 | Členové ZM: `mesto-trebon.cz/text/cz/mestsky-urad-trebon/samosprava-mesta/zastupitelstvo-mesta/clenove-zastupitelstva-mesta.html` | 25 členů se stranou; funkce jen u starosty → ostatní ze zápisu ZM | 18. 11. 2026 |
-| Registr smluv, E-ZAK (profily města a společností), ISVZ | viz issue #9 / PR #14 a `docs/ZDROJE.md` | probíhá |
+| Registr smluv, E-ZAK (profily města a společností), ISVZ | viz `docs/ZDROJE.md`; E-ZAK XML export funguje u města, MV a SLT, Technické služby jen HTML | 18. 11. 2026 (Codex) |
 | trebonaci.cz `/wp-json/trebonaci/v1/projekty` | evidence SPRM (`trebonaci_projekt`) | neověřeno |
-| trebonaci.cz `/wp-json/trebonaci/v1/podnety` | vrací i jména podatelů a diskusi → **přímo nepoužívat**, jen omezený výstup | dle Codexu |
+| trebonaci.cz `/wp-json/trebonaci/v1/podnety` | veřejně: téma, popis, stav, kategorie, oblast, nepovinné jméno/přezdívka, diskuse; interní údaje o vyřizování od 18. 11. 2026 jen pro redaktory → pro přehled radnice používat jen omezený výstup | šablona 18. 11. 2026 |
 
 Přístup: web města z cloudového prostředí Clauda nedostupný (omezení sítě); stahování přes prohlížeč fungovalo, ale prohlížeč blokuje opakované stahování. Z GitHub Actions zatím neověřeno.
 
 ## Stav a další kroky
-**Hotovo:** zadání a datový model (#4), pilot zápisů RM 4. 11. a ZM 2. 11. 2026 (#5), CI (#7), 25 zastupitelů (#11).
+**Hotovo:** zadání a datový model (#4), pilot zápisů RM 4. 11. a ZM 2. 11. 2026 (#5), CI (#7), 25 zastupitelů (#11), ověření zdrojů a IČO (#14, `docs/ZDROJE.md`), AGENTS.md (#19), orchestrace (#13).
 
-**Rozpracováno:** orchestrace (#13), zdroje a IČO (#9, PR #14).
+**Na řadě:** jeden běh pipeline (#16), verze dokumentů (#17), štítky věcné relevance (#18), AI nezávislá na poskytovateli (#20).
 
 **Neověřeno / TODO:**
 1. Automatické stahování z webu města v GitHub Actions.
