@@ -34,8 +34,8 @@
     "jednani_id": "rm-2026-11-04",
     "bod": 3,
     "vysledek": "schvaleno",
-    "text": "I. schvaluje\nsložení komise pro otevírání a hodnocení nabídek na akci „Prodej pozemku v k. ú. Holičky u St. Hlíny“ ve\nsložení:\nčlenové komise: Mgr. Aleš Kolář, Ing. Lenka Blažková, Ing. Helena Zavadilová,\nnáhradníci: Jitka Filípková, Ing. Alena Baštová, Vladislava Bicková.\nII. ukládá\nodboru finančnímu a majetkovému předložit starostovi města jmenovací dekrety k podpisu.",
-    "text_anonymizovan": false,
+    "text": "I. schvaluje\nsložení komise pro otevírání a hodnocení nabídek na akci „Prodej pozemku v k. ú. Holičky u St. Hlíny“ ve\nsložení:\nčlenové komise: [jména členů komise neuvádíme]\nnáhradníci: [jména náhradníků neuvádíme]\nII. ukládá\nodboru finančnímu a majetkovému předložit starostovi města jmenovací dekrety k podpisu.",
+    "text_anonymizovan": true,
     "tema": "Komise pro prodej části pozemku v k. ú. Holičky u Staré Hlíny",
     "tema_ai": true,
     "kategorie": [
@@ -63,10 +63,8 @@
         "citace": "prodej části pozemku p. č. 1/1 k. ú. Holičky u Staré Hlíny"
       }
     ],
-    "poznamka": null,
-    "otazky": [
-      "Členové a náhradníci komise kromě starosty a radní nejsou volení zástupci. Uvádět jménem, funkcí, nebo vůbec?"
-    ],
+    "poznamka": "Jména členů a náhradníků komisí neuvádíme (rozhodnutí 18. 11. 2026).",
+    "otazky": [],
     "overeni": "overeno_kodem"
   },
   {

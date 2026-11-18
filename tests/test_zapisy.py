@@ -66,6 +66,9 @@ def test_sestaveni_bez_chyb():
     jednani = json.loads((KOREN / "data" / "jednani.json").read_text(encoding="utf-8"))
     nazvy = " ".join(b["nazev"] for j in jednani for b in j["body"])
     assert "Sojkov" not in nazvy
+    detaily = " ".join(b["text"] or "" for j in jednani for b in j["body"])
+    assert "Petřík" not in detaily and "podnět občana" in detaily
+    assert "Zavadilová" not in texty and "Filípková" not in texty
 
 
 def test_spatna_citace_selze(tmp_path, monkeypatch):

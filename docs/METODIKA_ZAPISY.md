@@ -52,9 +52,12 @@ Spuštění: `python -m pipeline.sestav` a `python -m pytest`.
 - Lidská kontrola anotací: odhad 10–20 minut na zápis rady s ~10 usneseními. **Tohle je jediná část, která roste s počtem zápisů** – změřit při zpracování dalších zápisů.
 - Největší zdržení pilotu bylo stažení PDF: web města blokuje automatické stahování (robots.txt) a prohlížeč povolil jen jedno stažení. Pro další zápisy: stahovat skriptem z GitHub Actions, nebo ručně.
 
-## Otevřené otázky pro Ondřeje
+## Rozhodnutí (18. 11. 2026)
 
-1. Členové komisí a další osoby jmenované v usneseních, kteří nejsou volení zástupci (např. komise pro prodej pozemku): uvádět jménem, funkcí, nebo je vynechat?
-2. Fyzické osoby podnikající (nájemci): anonymizovat vždy, i když je město v zápisu ponechalo? Pilot je anonymizuje.
-3. Body „Různé“ bez usnesení (např. projednání podnětu občana): zobrazovat jen název bodu?
-4. PDF zápisu ZM není uložené (prohlížeč zablokoval druhé stažení); text byl získán v prohlížeči. Codex by měl při kontrole porovnat s originálem.
+1. **Členy komisí neuvádíme** (jména nahrazena textem „[jména členů komise neuvádíme]“). Platí pro komise složené z jiných osob než zastupitelů; mandátová a volební komise ZM jsou složené ze zastupitelů, ty jménem uvádíme.
+2. **Podnikatele (fyzické osoby) anonymizujeme vždy**, i když je město v zápisu ponechalo.
+3. **Body bez usnesení (Různé, Diskuze)** se ukazují v detailu jednání s textem ze zápisu; jména občanů se nahrazují (např. „podnět občana“).
+
+## Otevřená otázka
+
+PDF zápisu ZM není uložené (prohlížeč zablokoval druhé stažení); text byl získán v prohlížeči. Codex by měl při kontrole porovnat s originálem.

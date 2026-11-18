@@ -93,8 +93,13 @@ def rozloz(jednani_id: str, adresar: Path) -> dict:
             nazev = prvni
             vysledek["upozorneni"].append(
                 f"bod {bod['cislo']}: není v programu, název vzat z prvního řádku ('{prvni}')")
-        vysledek["body"].append({"cislo": bod["cislo"], "nazev": nazev, "strana": bod["strana"]})
+        zaznam = {"cislo": bod["cislo"], "nazev": nazev, "strana": bod["strana"], "text": None}
+        vysledek["body"].append(zaznam)
+        pred = len(vysledek["usneseni"])
         _zpracuj_bod(jednani_id, bod, vysledek)
+        if len(vysledek["usneseni"]) == pred:
+            # bod bez usnesení (Různé, Diskuze…): text se ukazuje v detailu
+            zaznam["text"] = "\n".join(r.text for r in bod["radky"][1:] if r.text != nazev) or None
     return vysledek
 
 

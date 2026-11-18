@@ -38,9 +38,14 @@ def cisla_v_textu(text: str) -> list[float]:
     return vysledek
 
 
-def anonymizuj(text: str, retezce: list[str]) -> str:
-    for r in retezce:
-        text = text.replace(r, ANONYM)
+def _polozky(retezce: list) -> list[tuple[str, str]]:
+    """Položka anonymizace je řetězec (nahradí se [fyzická osoba]) nebo {retezec, nahrada}."""
+    return [(r, ANONYM) if isinstance(r, str) else (r["retezec"], r["nahrada"]) for r in retezce]
+
+
+def anonymizuj(text: str, retezce: list) -> str:
+    for r, nahrada in _polozky(retezce):
+        text = text.replace(r, nahrada)
     return text
 
 
@@ -83,12 +88,12 @@ def zpracuj_jednani(jednani_id: str, manifest: dict, chyby: list[str]) -> tuple[
         for p in a.get("parcely", []):
             ok &= over(p["citace"], dokument, f"{u['id']} parcela")
         for cit in [a["citace"]] + [c["citace"] for c in a.get("castky", [])] + [p["citace"] for p in a.get("parcely", [])]:
-            for r in anon:
+            for r, _ in _polozky(anon):
                 if r in cit:
                     chyby.append(f"{jednani_id}: {u['id']} citace obsahuje anonymizovaný údaj {r!r}")
                     ok = False
-        for r in anon:
-            if r not in u["text"]:
+        for r, _ in _polozky(anon):
+            if r not in normalizuj(u["text"]) and r not in u["text"]:
                 chyby.append(f"{jednani_id}: {u['id']} řetězec k anonymizaci nenalezen: {r!r}")
         usneseni_out.append({
             "id": u["id"],
@@ -120,11 +125,18 @@ def zpracuj_jednani(jednani_id: str, manifest: dict, chyby: list[str]) -> tuple[
         hlasovani_out.append({k: v for k, v in h.items() if k != "zdroj_radek"} | {"hlasu_celkem": soucet})
 
     body = rozlozeno["body"]
-    for cislo, nazev in (anot.get("body_anonymizace") or {}).items():
-        for b in body:
-            if b["cislo"] == int(cislo):
-                b["nazev"] = nazev
-                b["nazev_anonymizovan"] = True
+    for b in body:
+        upr = (anot.get("body") or {}).get(b["cislo"]) or {}
+        if "nazev" in upr:
+            b["nazev"] = upr["nazev"]
+            b["nazev_anonymizovan"] = True
+        anon = upr.get("anonymizace", [])
+        if b["text"]:
+            for r, _ in _polozky(anon):
+                if r not in b["text"]:
+                    chyby.append(f"{jednani_id}: bod {b['cislo']} řetězec k anonymizaci nenalezen: {r!r}")
+            b["text"] = anonymizuj(b["text"], anon)
+        b["text_anonymizovan"] = bool(anon)
 
     jednani_out = {
         "id": jednani_id,

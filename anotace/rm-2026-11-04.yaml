@@ -11,8 +11,13 @@ jednani:
   citace: "V úvodu jednání bylo přítomno 5 členů rady města."
   dokument_id: zapis-rm-2026-11-04
 
-body_anonymizace:
-  6: "Nájem nebytového prostoru v 2. NP, č. p. 106/II (16,34 m2)"
+body:
+  6:
+    nazev: "Nájem nebytového prostoru v 2. NP, č. p. 106/II (16,34 m2)"
+  11:
+    anonymizace:
+      - retezec: "pana Ing. Mgr. Michala Petříka, MBA, DiS.,"
+        nahrada: "občana"
 
 usneseni:
   rm-2026-j1-u1:
@@ -32,8 +37,12 @@ usneseni:
         cast: true
         zdroj: nazev_bodu
         citace: "prodej části pozemku p. č. 1/1 k. ú. Holičky u Staré Hlíny"
-    otazky:
-      - "Členové a náhradníci komise kromě starosty a radní nejsou volení zástupci. Uvádět jménem, funkcí, nebo vůbec?"
+    anonymizace:
+      - retezec: "Mgr. Aleš Kolář, Ing. Lenka Blažková, Ing. Helena Zavadilová,"
+        nahrada: "[jména členů komise neuvádíme]"
+      - retezec: "Jitka Filípková, Ing. Alena Baštová, Vladislava Bicková."
+        nahrada: "[jména náhradníků neuvádíme]"
+    poznamka: Jména členů a náhradníků komisí neuvádíme (rozhodnutí 18. 11. 2026).
 
   rm-2026-j1-u3:
     tema: Výpůjčka nebytového prostoru v Přesece na rok 2027
