@@ -63,6 +63,22 @@ https://zakazky.mesto-trebon.cz/profile_display_2.html/XMLdataVZ?od=01112026&do=
 
 První implementační krok musí ověřit HTTP odpověď pro čtyři současné profily a samostatně pro historický profil Bertiných lázní, dekódování, XSD a chování při prázdném období. `robots.txt` se v tomto ověření nepodařilo načíst; před automatickým stahováním ho ověřit běžným HTTP klientem. Zatím nepoužívat HTML jako primární zdroj, dokud tento pokus neproběhne. Výsledek je nutné porovnat s veřejnou stránkou E‑ZAK.
 
+### Výsledek živého ověření exportu (18. 11. 2026)
+
+Dotaz na změny v období 1.–18. 11. 2026 byl proveden přes uvedenou adresu pro všechny profily v konfiguraci. Ověřil jsem HTTP stav, Content-Type, XML parser, IČO u úspěšné odpovědi a počet vrácených uzlů zakázek. Jde o zakázky změněné v dotazovaném období, nikoli o celkový počet zakázek profilu.
+
+| Profil | Výsledek |
+|---|---|
+| Město Třeboň (IČO 00247618) | HTTP 200, `text/xml; charset=UTF-8`, XML root `profil`, IČO odpovídá, 4 záznamy zakázek |
+| Městská Vodohospodářská (IČO 28136853) | HTTP 200, `text/xml; charset=UTF-8`, IČO odpovídá, 0 záznamů v tomto období |
+| Slatinné lázně (IČO 25179896) | HTTP 200, `text/xml; charset=UTF-8`, IČO odpovídá, 5 záznamů zakázek |
+| Technické služby (profil 132) | HTTP 212, `text/html`; tělo odpovídá: „Zadavatel nemá vyplněn evidenční číslo profilu ve VVZ, není tudíž možné sestavit validní XML.“ |
+| Bertiny lázně (profil 126, historický) | Stejná odpověď HTTP 212; společnost zanikla po fúzi z rozhodným dnem 1. 1. 2017. |
+
+Kontrolní dotaz na prázdné historické období pro profil města (1.–2. 1. 2000) vrátil HTTP 200 a validní prázdný XML dokument (`<profil>`, 0 zakázek). Obsah `https://zakazky.mesto-trebon.cz/robots.txt` vrátil HTTP 200, `text/plain`, prázdné tělo. XML bylo ověřeno jako dobře utvořené a se správným kořenovým elementem; validaci proti XSD přílohy vyhlášky jsem neprovedl.
+
+**Doporučení:** XML použít pro město, MV a Slatinné lázně. U Technických služeb zůstat u HTML profilu, dokud zadavatel nedoplní evidenční číslo profilu ve VVZ nebo správce E‑ZAK nepotvrdí alternativní export. Historický profil Bertiných lázní držet jen kvůli starším záznamům; neplánovat jeho pravidelné sledování jako aktivního zadavatele. Kontrolovat, zda se stav profilu nebo jeho export v budoucnu nezmění.
+
 ### Fallback HTML
 
 Profil města uvádí název, IČO a ID profilu VVZ `Z2019-003053`; stránkování přehledu používá parametr `page` (např. `?page=2`). Veřejná stránka obsahuje fázi, režim, datum zahájení a lhůtu pro nabídky; kontrolní vzorek je zadávací řízení [Sdružené služby dodávky elektrické energie pro období 2026–2028](https://zakazky.mesto-trebon.cz/profile_display_2.html?page=2). Detail zakázky doplňuje smlouvu, vybraného dodavatele a případnou skutečně uhrazenou cenu, pokud je zadavatel doplnil. [Profil města](https://zakazky.mesto-trebon.cz/profile_display_2.html).
