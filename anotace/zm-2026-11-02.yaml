@@ -1,0 +1,77 @@
+# Anotace usnesení navržené AI (model A: Claude), stav: navrh.
+jednani:
+  organ: zastupitelstvo
+  cislo: 1
+  druh: ustavujici
+  datum: "2026-11-02"
+  obdobi: "2026-2030"
+  pritomno: 25
+  clenu: 25
+  citace: "Přítomni: dle prezenční listiny přítomno 25 členů ZM."
+  dokument_id: zapis-zm-2026-11-02
+  pritomnost_zmeny:
+    - cas: "17:32"
+      udalost: odchod
+      osoba: PaedDr. Jan Váňa
+      citace: "17:32 odchod PaedDr. Jan Váňa"
+    - cas: "17:35"
+      udalost: odchod
+      osoba: Ing. Jana Grammetbauerová
+      citace: "17:35 odchod Ing. Jana Grammetbauerová"
+
+usneseni:
+  zm-2026-j1-u1:
+    tema: Ověřovatelé zápisu
+    kategorie: [samosprava]
+    shrnuti: Zastupitelstvo schválilo ověřovatele zápisu.
+    citace: "ověřovatele zápisu pana Petra Kohouta a Bc. Vladana Pikla, MPA."
+  zm-2026-j1-u2:
+    tema: Program ustavujícího zasedání
+    kategorie: [samosprava]
+    shrnuti: Zastupitelstvo schválilo program se změnou, podle níž se o způsobu volby všech funkcí rozhodovalo jedním hlasováním.
+    citace: "návrh programu jednání ustavujícího zastupitelstva se změnou předloženou panem Mgr. Alešem Kolářem."
+  zm-2026-j1-u3:
+    tema: Mandátová komise
+    kategorie: [samosprava]
+    shrnuti: Zastupitelstvo zvolilo tříčlennou mandátovou komisi.
+    citace: "mandátovou komisi ve složení: Ing. Ondřej Hlinka, Petr Kohout a Ing. Petr Čížek."
+  zm-2026-j1-u4:
+    tema: Volební a návrhová komise
+    kategorie: [samosprava]
+    shrnuti: Zastupitelstvo zvolilo tříčlennou volební a návrhovou komisi.
+    citace: "volební a návrhovou komisi ve složení: Mgr. Bc. Jana Polčáková, Vít Zavadil a MUDr. František Pfeifer."
+  zm-2026-j1-u5:
+    tema: Počet místostarostů
+    kategorie: [samosprava]
+    shrnuti: Město bude mít dva místostarosty.
+    citace: "2 místostarosty."
+  zm-2026-j1-u6:
+    tema: Počet členů rady
+    kategorie: [samosprava]
+    shrnuti: Rada města bude sedmičlenná.
+    citace: "sedmičlennou radu města."
+  zm-2026-j1-u7:
+    tema: Uvolnění starosty a místostarostů
+    kategorie: [samosprava, personalni]
+    shrnuti: Starosta a oba místostarostové budou funkci vykonávat jako dlouhodobě uvolnění.
+    citace: "pro výkon funkce starosty a dvou místostarostů budou členové zastupitelstva dlouhodobě uvolněni."
+  zm-2026-j1-u8:
+    tema: Veřejná volba vedení města
+    kategorie: [samosprava]
+    shrnuti: Starosta, místostarostové a radní byli voleni veřejným hlasováním; návrh na tajnou volbu neprošel.
+    citace: "volbu starosty, místostarostů a dalších členů rady veřejným hlasováním."
+  zm-2026-j1-u9:
+    tema: Volba starosty
+    kategorie: [samosprava]
+    shrnuti: Starostou byl zvolen Mgr. Aleš Kolář.
+    citace: "starostou města Třeboně Mgr. Aleše Koláře."
+  zm-2026-j1-u10:
+    tema: Volba místostarostů
+    kategorie: [samosprava]
+    shrnuti: 1. místostarostou byl zvolen Mgr. Petr Kouba, 2. místostarostou Ing. Ondřej Zbudil.
+    citace: "1. místostarostou města Třeboně Mgr. Petra Koubu."
+  zm-2026-j1-u11:
+    tema: Volba dalších členů rady
+    kategorie: [samosprava]
+    shrnuti: Dalšími členy rady byli zvoleni Ing. Lenka Blažková, Petr Kohout, Mgr. Stanislav Ojíř Musil a Ing. Jiří Vopátek, Ph.D.
+    citace: "další členy Rady města Třeboně: Ing. Lenka Blažková, Petr Kohout, Mgr. Stanislav Ojíř Musil a Ing. Jiří Vopátek, Ph.D."

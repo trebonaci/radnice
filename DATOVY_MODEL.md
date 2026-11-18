@@ -1,4 +1,4 @@
-# Datový model (koncept 0.2)
+# Datový model (koncept 0.3 (upraveno podle pilotu zápisů))
 
 Formát: JSON/CSV v `data/`, jeden soubor na typ entity (nebo na entitu u projektů). Stabilní ID, vazby přes ID.
 
@@ -12,13 +12,16 @@ Každý zdrojový soubor nebo záznam.
 `id`, `typ` (zapis_zm / zapis_rada / smlouva / zakazka / rozpocet / jine), `url`, `datum_zverejneni`, `stazeno`, `sha256`, `ocr` (bool), `subjekt_id`
 
 ### jednani
-`id` (např. `zm-2026-01`), `organ` (zm / rada), `cislo`, `datum`, `dokument_id`
+`id` = `<organ>-<datum>` (např. `rm-2026-11-04`), `organ` (rada / zastupitelstvo), `druh` (radne / ustavujici / mimoradne), `cislo` (v rámci období), `datum`, `obdobi`, `pritomno_na_zacatku`, `clenu`, `pritomnost_zmeny[]` {`cas`, `udalost`, `osoba`}, `dokument`, `body[]`
+
+### bod_programu (vnořený v jednání)
+`cislo`, `nazev`, `strana`, `nazev_anonymizovan`. Body bez usnesení (Různé, Diskuze) se evidují také.
 
 ### usneseni
-`id` (např. `rm-2026-03-045`), `jednani_id`, `cislo`, `text`, `vysledek` (schvaleno / zamitnuto / vzato_na_vedomi / odlozeno), `kategorie[]`, `tema` (krátký titulek), `shrnuti` + `shrnuti_ai` (bool), `citace` {`dokument_id`, `strana`, `text`}, `castky[]`, `subjekty_ico[]`, `parcely[]`, `projekt_ids[]`, `overeni` (navrh / overeno_kodem / overeno_modelem_b / schvaleno)
+`id` = `<organ>-<rok>-j<jednání>-u<číslo>` (např. `rm-2026-j1-u7` pro „RM č. 7/2026-1“), `jednani_id`, `cislo` (původní označení), `bod`, `text` (+ `text_anonymizovan`), `vysledek` (schvaleno / zamitnuto / vzato_na_vedomi / odlozeno), `kategorie[]`, `tema` (krátký titulek), `shrnuti` + `shrnuti_ai` (bool), `citace` {`dokument_id`, `strana`, `text`}, `castky[]`, `subjekty_ico[]`, `parcely[]`, `projekt_ids[]`, `overeni` (navrh / overeno_kodem / overeno_modelem_b / schvaleno)
 
 ### hlasovani
-`usneseni_id`, `pro`, `proti`, `zdrzel`, `nehlasoval`, `jmenovite` [{`osoba_id`, `hlas`}], `zdroj`
+`typ` (usneseni / protinavrh / volba_kandidata), `usneseni_id` (u protinávrhu null), `cast` (I., II. – jen u usnesení s více hlasováními), `predmet` (text protinávrhu / jméno kandidáta), `pro`, `proti`, `zdrzel`, `hlasu_celkem`, `vysledek` (u protinávrhu), `jmenovite` (null = zdroj neuvádí) [{`osoba_id`, `hlas`}], `jednani_id`, `bod`, `strana`
 
 ### osoba
 Jen volení zástupci. `id`, `jmeno`, `klub`, `obdobi[]`
@@ -31,7 +34,7 @@ Jen volení zástupci. `id`, `jmeno`, `klub`, `obdobi[]`
 
 ### castka
 Jednotný zápis peněz kvůli rozlišení druhů.
-`hodnota`, `mena`, `s_dph` (bool / null = neuvedeno), `druh` (odhad / rozpocet_schvaleny / rozpocet_upraveny / predpokladana_hodnota / vysoutezena / smluvni / dodatek / zaplaceno / dotace_prislib / dotace_prijata), `datum`, `zdroj`
+`hodnota`, `mena`, `s_dph` (bool / null = neuvedeno), `jednotka` (Kč, Kč/m2/rok, …), `druh` (odhad / rozpocet_schvaleny / rozpocet_upraveny / rozpoctove_opatreni / predpokladana_hodnota / vysoutezena / smluvni / dodatek / zaplaceno / najemne_sazba / dar_prijaty / dar_poskytnuty / dotace_prislib / dotace_prijata), `citace`, `datum`, `zdroj`
 
 ### projekt
 Ručně spravovaný soubor `data/projekty/<slug>.yaml`.

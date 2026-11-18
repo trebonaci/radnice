@@ -1,0 +1,192 @@
+[
+  {
+    "id": "rm-2026-11-04",
+    "organ": "rada",
+    "druh": "radne",
+    "cislo": 1,
+    "datum": "2026-11-04",
+    "obdobi": "2026-2030",
+    "pritomno_na_zacatku": 5,
+    "clenu": 7,
+    "pritomnost_zmeny": [],
+    "dokument": {
+      "dokument_id": "zapis-rm-2026-11-04",
+      "url": "https://www.mesto-trebon.cz/uploads/news/id15223/Z-1-26-11-04-A.pdf",
+      "stranka_zdroje": "https://www.mesto-trebon.cz/cz/mestsky-urad-trebon/samosprava-mesta/rada-mesta/zapisy-z-jednani-rady-mesta/volebni-obdobi-2026---2030.html",
+      "vyveseno": "2026-11-11",
+      "sha256": "30b5102ad0155734a998dfe8330f6b5ecd69b06843480d51138616d604dc78cc",
+      "pocet_stran": 4
+    },
+    "body": [
+      {
+        "cislo": 1,
+        "nazev": "Zahájení",
+        "strana": 1
+      },
+      {
+        "cislo": 2,
+        "nazev": "Program 1. jednání a schválení zveřejnění zápisů",
+        "strana": 1
+      },
+      {
+        "cislo": 3,
+        "nazev": "Komise pro otevírání a hodnocení nabídek - prodej části pozemku p. č. 1/1 k. ú. Holičky u Staré Hlíny",
+        "strana": 1
+      },
+      {
+        "cislo": 4,
+        "nazev": "Nebytový prostor čp. 3 Přeseka – výpůjčka 2027",
+        "strana": 2
+      },
+      {
+        "cislo": 5,
+        "nazev": "Výpověď - nebytový prostor č. p. 42, Přeseka",
+        "strana": 2
+      },
+      {
+        "cislo": 6,
+        "nazev": "Nájem nebytového prostoru v 2. NP, č. p. 106/II (16,34 m2)",
+        "strana": 2,
+        "nazev_anonymizovan": true
+      },
+      {
+        "cislo": 7,
+        "nazev": "Hospodaření příspěvkové organizace Městská sportovní Třeboň a mezitímní účetní závěrka k 30.09.2026",
+        "strana": 3
+      },
+      {
+        "cislo": 8,
+        "nazev": "Rozpočtové opatření č. 60 - Obnova systému dodávky vzduchu na ČOV Třeboň",
+        "strana": 3
+      },
+      {
+        "cislo": 9,
+        "nazev": "Předchozí souhlas zřizovatele s přijetím daru Základní školou Sokolská 296, Třeboň",
+        "strana": 3
+      },
+      {
+        "cislo": 10,
+        "nazev": "Rozpočtové opatření č. 61 – Cestovné – navýšení výdajové položky převodem z položky Nájemné",
+        "strana": 4
+      },
+      {
+        "cislo": 11,
+        "nazev": "Různé",
+        "strana": 4
+      }
+    ],
+    "upozorneni_parseru": []
+  },
+  {
+    "id": "zm-2026-11-02",
+    "organ": "zastupitelstvo",
+    "druh": "ustavujici",
+    "cislo": 1,
+    "datum": "2026-11-02",
+    "obdobi": "2026-2030",
+    "pritomno_na_zacatku": 25,
+    "clenu": 25,
+    "pritomnost_zmeny": [
+      {
+        "cas": "17:32",
+        "udalost": "odchod",
+        "osoba": "PaedDr. Jan Váňa"
+      },
+      {
+        "cas": "17:35",
+        "udalost": "odchod",
+        "osoba": "Ing. Jana Grammetbauerová"
+      }
+    ],
+    "dokument": {
+      "dokument_id": "zapis-zm-2026-11-02",
+      "url": "https://www.mesto-trebon.cz/uploads/news/id15220/Z-01-26-11-02.pdf",
+      "stranka_zdroje": "https://www.mesto-trebon.cz/cz/mestsky-urad-trebon/samosprava-mesta/zastupitelstvo-mesta/zapisy-zastupitelstva-mesta/volebni-obdobi-2026---2030-2.html",
+      "vyveseno": "2026-11-10",
+      "sha256": "29715c1e41887c7c387c65fa89e7095991b5124fed57c962b714ff1c2d5572aa",
+      "pocet_stran": 6
+    },
+    "body": [
+      {
+        "cislo": 1,
+        "nazev": "Zahájení",
+        "strana": 1
+      },
+      {
+        "cislo": 2,
+        "nazev": "Složení slibu členů zastupitelstva města",
+        "strana": 1
+      },
+      {
+        "cislo": 3,
+        "nazev": "Určení skrutátora, zapisovatele, volba ověřovatelů zápisu",
+        "strana": 1
+      },
+      {
+        "cislo": 4,
+        "nazev": "Schválení programu",
+        "strana": 2
+      },
+      {
+        "cislo": 5,
+        "nazev": "Volba mandátové komise",
+        "strana": 2
+      },
+      {
+        "cislo": 6,
+        "nazev": "Volba volební a návrhové komise",
+        "strana": 3
+      },
+      {
+        "cislo": 7,
+        "nazev": "Stanovení počtu místostarostů",
+        "strana": 3
+      },
+      {
+        "cislo": 8,
+        "nazev": "Stanovení počtu členů rady města",
+        "strana": 3
+      },
+      {
+        "cislo": 9,
+        "nazev": "Určení, které funkce budou členové zastupitelstva vykonávat jako dlouhodobě uvolnění",
+        "strana": 4
+      },
+      {
+        "cislo": 10,
+        "nazev": "Určení způsobu volby starosty, místostarostů a členů rady města",
+        "strana": 4
+      },
+      {
+        "cislo": 11,
+        "nazev": "Volba starosty",
+        "strana": 4
+      },
+      {
+        "cislo": 12,
+        "nazev": "Volba místostarosty/ů",
+        "strana": 5
+      },
+      {
+        "cislo": 13,
+        "nazev": "Volba dalších členů rady města",
+        "strana": 5
+      },
+      {
+        "cislo": 16,
+        "nazev": "Diskuze",
+        "strana": 5
+      },
+      {
+        "cislo": 17,
+        "nazev": "Závěr",
+        "strana": 6
+      }
+    ],
+    "upozorneni_parseru": [
+      "ZM 11/2026-1: bez souhrnného hlasování; navázána hlasování o jednotlivých kandidátech (4)",
+      "bod 16: není v programu, název vzat z prvního řádku ('Diskuze')",
+      "bod 17: není v programu, název vzat z prvního řádku ('Závěr')"
+    ]
+  }
+]
