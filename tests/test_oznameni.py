@@ -23,8 +23,10 @@ class FakeGh:
                    if stav == "all" or (stav == "open" and "potrebuje-cloveka" in i["labels"])]
             return json.dumps(res)
         if args[:2] == ["issue", "create"]:
-            self.issues.append({"number": len(self.issues) + 1, "title": args[args.index("--title") + 1],
+            self.issues.append({"number": len(self.issues) + 41, "title": args[args.index("--title") + 1],
                                 "body": args[args.index("--body") + 1], "labels": [args[args.index("--label") + 1]]})
+            return f"https://github.com/trebonaci/radnice/issues/{self.issues[-1]['number']}\n"
+        if args[:2] == ["workflow", "run"]:
             return ""
         if args[:2] == ["issue", "comment"]:
             self.komentare.append((args[2], args[args.index("--body") + 1]))
@@ -91,3 +93,23 @@ def test_shrnuti_obsahuje_pocty_a_zapisy_bez_anotace(koren):
          "nove_dokumenty": 1, "nove_verze": 0}), encoding="utf-8")
     t = oznameni.shrnuti(koren)
     assert "nové dokumenty 1" in t and "usnesení 20" in t and "rm-2026-11-18" in t
+
+
+def test_nove_issue_spusti_clauda_prave_jednou(koren):
+    """Issue založené přes GITHUB_TOKEN štítkem Clauda nespustí – běh ho proto spustí přes workflow_dispatch."""
+    pridej_novy_zapis(koren)
+    f = FakeGh()
+    for _ in range(2):
+        cisla: list[int] = []
+        oznameni.zaloz_issue_zapisu(oznameni.zapisy_bez_anotace(koren), f, cisla=cisla)
+        oznameni.spust_claude(cisla, f)
+    spusteni = [a for a in f.volani if a[:2] == ["workflow", "run"]]
+    assert spusteni == [["workflow", "run", "claude.yml", "-f", "issue=41"]]
+
+
+def test_bez_noveho_zapisu_se_claude_nespousti(koren):
+    f = FakeGh()
+    cisla: list[int] = []
+    oznameni.zaloz_issue_zapisu(oznameni.zapisy_bez_anotace(koren), f, cisla=cisla)
+    assert oznameni.spust_claude(cisla, f) == []
+    assert not [a for a in f.volani if a[:2] == ["workflow", "run"]]

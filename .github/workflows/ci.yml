@@ -5,6 +5,8 @@ on:
   push:
     # main + větve agentů (PR otevřený přes GITHUB_TOKEN sám CI nespustí, výsledek z push se ale v PR zobrazí)
     branches: [main, "claude/**", "codex/**"]
+  # spouští beh.yml a claude.yml na větvích, které vytvořily přes GITHUB_TOKEN (to samo CI nespustí)
+  workflow_dispatch:
 
 permissions:
   contents: read

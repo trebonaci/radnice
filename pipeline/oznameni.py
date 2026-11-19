@@ -14,6 +14,7 @@ Použití: python -m pipeline.oznameni zapisy [větev-s-texty] | selhani [odkaz-
 from __future__ import annotations
 
 import json
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -75,8 +76,9 @@ def telo_zapisu(z: dict, vetev: str | None = None) -> str:
 
 
 def zaloz_issue_zapisu(zaznamy: list[dict], spust: Callable[[list[str]], str] = gh,
-                       vetev: str | None = None) -> list[str]:
-    """Pro každý zápis založí issue, pokud ještě neexistuje (otevřené ani zavřené). Vrací klíče nově založených."""
+                       vetev: str | None = None, cisla: list[int] | None = None) -> list[str]:
+    """Pro každý zápis založí issue, pokud ještě neexistuje (otevřené ani zavřené). Vrací klíče nově založených;
+    do `cisla` (pokud je zadané) přidá čísla nově založených issue."""
     existujici = json.loads(spust(["issue", "list", "--state", "all", "--limit", "500",
                                    "--search", "Nový zápis in:title", "--json", "number,title,body"]) or "[]")
     zalozeno = []
@@ -84,10 +86,21 @@ def zaloz_issue_zapisu(zaznamy: list[dict], spust: Callable[[list[str]], str] = 
         klic = klic_zapisu(z["jednani_id"])
         if any(f"radnice-klic: {klic} " in (i.get("body") or "") + " " for i in existujici):
             continue
-        spust(["issue", "create", "--title", nadpis_zapisu(z["jednani_id"]), "--label", STITEK_NOVY,
-               "--body", telo_zapisu(z, vetev)])
+        url = spust(["issue", "create", "--title", nadpis_zapisu(z["jednani_id"]), "--label", STITEK_NOVY,
+                     "--body", telo_zapisu(z, vetev)])
         zalozeno.append(klic)
+        m = re.search(r"/issues/(\d+)\s*$", (url or "").strip())
+        if cisla is not None and m:
+            cisla.append(int(m.group(1)))
     return zalozeno
+
+
+def spust_claude(cisla: list[int], spust: Callable[[list[str]], str] = gh) -> list[int]:
+    """Spustí workflow Claude (`workflow_dispatch`) pro každé issue. Nutné, protože issue založené
+    přes GITHUB_TOKEN samo žádné workflow nespustí (štítek `agent:claude` by nezabral)."""
+    for cislo in cisla:
+        spust(["workflow", "run", "claude.yml", "-f", f"issue={cislo}"])
+    return cisla
 
 
 def _kratce(text: str) -> str:
@@ -144,8 +157,12 @@ def main(argv: list[str] | None = None) -> int:
     args = sys.argv[1:] if argv is None else argv
     prikaz = args[0] if args else ""
     if prikaz == "zapisy":
-        for klic in zaloz_issue_zapisu(zapisy_bez_anotace(), vetev=args[1] if len(args) > 1 else None):
+        cisla: list[int] = []
+        for klic in zaloz_issue_zapisu(zapisy_bez_anotace(), vetev=args[1] if len(args) > 1 and args[1] else None,
+                                       cisla=cisla):
             print("issue založeno:", klic)
+        for cislo in spust_claude(cisla):
+            print("Claude spuštěn pro issue", cislo)
         return 0
     if prikaz == "selhani":
         print("Běh selhal →", oznam_selhani(args[1] if len(args) > 1 else "odkaz neuveden"))
