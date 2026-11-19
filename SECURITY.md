@@ -10,6 +10,7 @@ Repozitář zpracovává veřejné dokumenty města a spouští AI agenty v GitH
 - Změna v `.github/workflows/` nesmí bez zadání v issue rozšířit `permissions`, povolené nástroje agenta (`--allowedTools`) ani okruh, kdo může agenta spustit.
 - Agent nesmí dostat možnost mergovat, měnit ochranu větví, nastavení repozitáře nebo secrets.
 - Nespouštět workflow s přístupem k secrets na kódu z cizích forků (`pull_request_target` s checkoutem cizího kódu je zakázaný).
+- `restrict_untrusted_prs: "false"` v `claude.yml` a `claude-codex-review-fix.yml` (#69) je přípustné jen proto, že repozitář je soukromý, zapisovat může jen Ondřej a PR vznikají jen z větví tohoto repozitáře. Pokud se repozitář zveřejní nebo přibude další spolupracovník, nastavení vrátit (nebo omezit podmínkou na autora PR).
 - Akce třetích stran jen z ověřených zdrojů s pevnou verzí.
 
 ## Podvržené pokyny (prompt injection)

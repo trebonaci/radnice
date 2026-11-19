@@ -38,7 +38,8 @@ jobs:
       - name: Kontrola workflow souborů (actionlint)
         run: |
           pip install actionlint-py
-          actionlint .github/workflows/*.yml
+          # actionlint zná starší seznam vstupů claude-code-action; restrict_untrusted_prs ve v1 existuje (action.yml)
+          actionlint -ignore 'input "restrict_untrusted_prs" is not defined' .github/workflows/*.yml
 
       - name: Testy
         run: python -m pytest -v

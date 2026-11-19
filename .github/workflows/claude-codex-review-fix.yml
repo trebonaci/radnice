@@ -127,6 +127,10 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          # PR otevřené našimi workflow mají autora github-actions[bot] a akce je bere jako nedůvěryhodné:
+          # zakáže python/pytest, takže Claude na nich nemůže ověřit opravu (#69). Repozitář je soukromý,
+          # zapisovat může jen Ondřej a PR vznikají jen z větví tohoto repozitáře (ne z cizích forků).
+          restrict_untrusted_prs: "false"
           allowed_bots: 'chatgpt-codex-connector[bot]'
           additional_permissions: |
             actions: read
