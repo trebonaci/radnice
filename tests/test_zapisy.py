@@ -168,17 +168,30 @@ def test_urci_ukon_bez_ohledu_na_velikost(text, kod):
 
 def test_seznam_zastupitelu_uplny():
     osoby = nacti_osoby()
-    z = osoby["zastupitele"]
-    assert len(z) == 25
-    assert len({x["jmeno"] for x in z}) == 25
-    assert all(x["tvary"][0] == x["jmeno"] and x["strana"] for x in z)
+    vse = osoby["zastupitele"]
+    assert len({x["jmeno"] for x in vse}) == len(vse)
+    assert all(x["tvary"][0] == x["jmeno"] for x in vse)
+    z = [x for x in vse if "2026-2030" in x["obdobi"]]
+    assert len(z) == 25 and all(x["strana"] for x in z)
+    z22 = [x for x in vse if "2022-2026" in x["obdobi"]]
+    assert len(z22) == 25 and all(x["strana_2022"] for x in z22)
     funkce = sorted(x["funkce"] for x in z if x["funkce"])
     assert funkce == sorted(["starosta", "1. místostarosta", "2. místostarosta", "radní", "radní", "radní", "radní"])
     # žádný tvar jména zastupitele nesmí být zároveň jménem úředníka
     urednici = {(v if isinstance(v, str) else v["text"]) for u in osoby["urednici"] for v in u["varianty"]}
-    assert not any(t in u for x in z for t in x["tvary"] for u in urednici)
+    assert not any(t in u for x in vse for t in x["tvary"] for u in urednici)
 
 
-@pytest.mark.parametrize("text", ["Mgr. Bc. Petr Michal", "JUDr. Pavel Pumpr", "Ing. Martina Trubače", "Bc. Radku Kaiseršatovou"])
+@pytest.mark.parametrize("text", ["Mgr. Bc. Petr Michal", "JUDr. Pavel Pumpr", "Ing. Martina Trubače", "Bc. Radku Kaiseršatovou",
+                                  "PaedDr. Jan Váňa", "Ing. Zdeňka Kukačky", "Mgr. Terezii Jenisovou"])
 def test_novi_zastupitele_projdou(text):
     assert najdi_osobni_udaje(text, nacti_osoby()) == []
+
+
+def test_zastupitel_jen_ve_svem_obdobi():
+    """Bývalý zastupitel (jen 2022–2026) v zápisu nového období neprojde jako volený zástupce."""
+    osoby = nacti_osoby()
+    assert najdi_osobni_udaje("Ing. Zdeněk Kukačka", osoby, "2022-2026") == []
+    assert najdi_osobni_udaje("Ing. Zdeněk Kukačka", osoby, "2026-2030") == ["Ing. Zdeněk Kukačka"]
+    assert najdi_osobni_udaje("PaedDr. Jan Váňa", osoby, "2026-2030") == []
+    assert najdi_osobni_udaje("JUDr. Pavel Pumpr", osoby, "2022-2026") == ["JUDr. Pavel Pumpr"]

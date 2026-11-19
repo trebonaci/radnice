@@ -11,7 +11,7 @@ Verze 0.5 · 18. 11. 2026 · sjednoceno s Codexem (PR #1) a rozhodnutím Ondřej
 | Značka | otevřeně projekt Třeboňáků; nesmí působit jako oficiální web města |
 | Základ | datový model; první veřejný výstup = datový přehled |
 | První pracovní úloha | zpracování zápisů rady a zastupitelstva podle metodiky |
-| Období | plošně se zpracovávají zápisy volebního období 2026–2030. Starší zápisy (až do 2012) se doplňují **jen výběrově**, když vysvětlují vývoj konkrétního projektu (např. předchozí rozhodnutí, změny ceny, termínů). Plošné zpětné zpracování se neplánuje. |
+| Období | plošně se zpracovávají zápisy volebního období 2026–2030. Starší zápisy (až do 2012) se doplňují **jen výběrově**, když vysvětlují vývoj konkrétního projektu (např. předchozí rozhodnutí, změny ceny, termínů). Plošné zpětné zpracování se neplánuje. Výjimka (rozhodnutí 19. 11. 2026, #38): plošně i zápisy RM a ZM období 2022–2026 **od 1. 9. 2026** (konec období; rozhodnutí před volbami). |
 | Subjekty | Město Třeboň, městské obchodní společnosti (Městská Vodohospodářská, Slatinné lázně, Technické služby, Třeboňské lesy a rybníky, Autokemp Třeboňský ráj) a příspěvkové organizace města. Bertiny lázně jsou od 1. 1. 2017 součástí SLT. Seznam IČO v `config/subjekty.yaml`. |
 | Zakázky | profily E-ZAK města a společností (XML export, u Technických služeb HTML); historický profil Bertiných lázní jen pro starší záznamy |
 | Hlasování | jmenovitě jen to, co je doložené zdrojem. Video se přepisuje, pokud se to ukáže nákladově výhodné; jinak se vychází ze zápisů ZM |
