@@ -47,6 +47,16 @@ def test_udaje_se_opisuji_ze_zdroje(koren):
                       ("zaplaceno", True, "2026"): 287980.0, ("zaplaceno", False, "2026"): 238000.0}
 
 
+def test_citace_castky_je_ve_zdroji(koren):
+    zz = s_vzorky(koren)
+    z = {x["id"]: x for x in zz}["ezak-VZ-957"]
+    k = z["casti"][0]["vitezove"][0]["castky"][0]
+    assert k["citace"].startswith("<smluvni_cena_s_DPH>") and "VZ-957" in k["poznamka"]
+    assert zakazky.zkontroluj(zz, koren) == []
+    k["citace"] = "<smluvni_cena_s_DPH>1</smluvni_cena_s_DPH>"
+    assert any("citace" in ch for ch in zakazky.zkontroluj(zz, koren))
+
+
 def test_fyzicka_osoba_je_anonymizovana(koren):
     z = {x["id"]: x for x in s_vzorky(koren)}["ezak-VZ-960"]
     v = z["casti"][0]["vitezove"][0]

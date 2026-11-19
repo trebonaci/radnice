@@ -57,11 +57,15 @@ def _cislo(v: str | None) -> float | None:
         return None
 
 
-def _castka(hodnota, s_dph, druh, zdroj, obdobi=None) -> dict | None:
+def _castka(e: ET.Element, tag: str, s_dph, druh, zdroj, misto, obdobi=None) -> dict | None:
+    """Částka z prvku `tag`; citace = doslovný prvek XML, poznámka = umístění (soubor, zakázka, část, dodavatel)."""
+    raw = _t(e, tag)
+    hodnota = _cislo(raw)
     if hodnota is None:
         return None
     return {"hodnota": hodnota, "mena": "CZK", "jednotka": "Kč", "s_dph": s_dph, "druh": druh,
-            "obdobi": obdobi, "k_datu": None, "citace": zdroj, "poznamka": None}
+            "obdobi": obdobi, "k_datu": None, "citace": f"<{tag}>{raw}</{tag}>",
+            "poznamka": f"{zdroj}; {misto}"}
 
 
 def subjekt(e: ET.Element | None) -> dict:
@@ -76,7 +80,7 @@ def subjekt(e: ET.Element | None) -> dict:
     return {"nazev": nazev, "ico": _t(e, "ico"), "fyzicka_osoba": False}
 
 
-def _cast(c: ET.Element, zdroj: str) -> dict:
+def _cast(c: ET.Element, zdroj: str, zid: str | None = None) -> dict:
     p = c.find(f"{NS}zadavaci_postup_casti")
     lhuta = None
     for l in (p.findall(f"{NS}lhuty_zadavaciho_postupu/{NS}lhuta") if p is not None else []):
@@ -84,15 +88,16 @@ def _cast(c: ET.Element, zdroj: str) -> dict:
             lhuta = _t(l, "datum_konce_lhuty")
     vitezove = []
     for v in (p.findall(f"{NS}vybrani_dodavatele/{NS}vybrany_dodavatel") if p is not None else []):
+        misto = f"zakázka {zid}, část {_t(c, 'id_objektu')}, dodavatel č. {len(vitezove) + 1}"
         castky = [x for x in (
-            _castka(_cislo(_t(v, "smluvni_cena_s_DPH")), True, "smluvni", zdroj),
-            _castka(_cislo(_t(v, "smluvni_cena_bez_DPH")), False, "smluvni", zdroj),
+            _castka(v, "smluvni_cena_s_DPH", True, "smluvni", zdroj, misto),
+            _castka(v, "smluvni_cena_bez_DPH", False, "smluvni", zdroj, misto),
         ) if x]
         for pl in v.findall(f"{NS}plneni_dodavateli/{NS}plneni"):
             rok = _t(pl, "rok_smlouvy")
             castky += [x for x in (
-                _castka(_cislo(_t(pl, "cena_za_rok_s_dph")), True, "zaplaceno", zdroj, rok),
-                _castka(_cislo(_t(pl, "cena_za_rok_bez_dph")), False, "zaplaceno", zdroj, rok),
+                _castka(pl, "cena_za_rok_s_dph", True, "zaplaceno", zdroj, misto, rok),
+                _castka(pl, "cena_za_rok_bez_dph", False, "zaplaceno", zdroj, misto, rok),
             ) if x]
         vitezove.append({**subjekt(v.find(f"{NS}subjekt")), "smlouva_uzavrena": _t(v, "uzavrena_smlouva_nebo_rd") == "1",
                          "castky": castky})
@@ -123,7 +128,7 @@ def rozloz_soubor(cesta: Path, ico: str, rel: str) -> list[dict]:
     for z in koren.findall(f"{NS}zakazka"):
         zid = _t(z, "id_objektu")
         cislo = zid.split("-")[-1] if zid else None
-        casti = [_cast(c, rel) for c in z.findall(f"{NS}casti_vz/{NS}cast_zakazky")]
+        casti = [_cast(c, rel, zid) for c in z.findall(f"{NS}casti_vz/{NS}cast_zakazky")]
         vysledek.append({
             "id": f"ezak-{zid}",
             "subjekt_ico": ico,
@@ -153,8 +158,10 @@ def nacti_zakazky(koren: Path) -> list[dict]:
     return sorted(zakazky.values(), key=lambda z: (z["datum_zahajeni"] or "", z["id"]), reverse=True)
 
 
-def zkontroluj(zakazky: list[dict]) -> list[str]:
+def zkontroluj(zakazky: list[dict], koren: Path | None = None) -> list[str]:
+    """Kontrola anonymizace, druhu a DPH částek; s `koren` i doslovná shoda citace se zdrojovým XML."""
     chyby = []
+    texty: dict[str, str] = {}
     for z in zakazky:
         for c in z["casti"]:
             for v in c["vitezove"]:
@@ -163,4 +170,12 @@ def zkontroluj(zakazky: list[dict]) -> list[str]:
                 for k in v["castky"]:
                     if k["druh"] not in ("smluvni", "zaplaceno") or k["s_dph"] not in (True, False):
                         chyby.append(f"zakazky: {z['id']}: částka bez druhu nebo DPH")
+                    if not k.get("citace") or not k.get("poznamka"):
+                        chyby.append(f"zakazky: {z['id']}: částka bez citace nebo umístění")
+                    elif koren is not None:
+                        if z["zdroj"] not in texty:
+                            f = koren / "raw" / "ezak" / z["zdroj"]
+                            texty[z["zdroj"]] = f.read_text(encoding="utf-8") if f.exists() else ""
+                        if k["citace"] not in texty[z["zdroj"]]:
+                            chyby.append(f"zakazky: {z['id']}: citace částky není ve zdroji")
     return chyby

@@ -279,7 +279,7 @@ def sestav(koren: Path | None = None) -> tuple[dict[str, list], list[str]]:
         usneseni += u
         hlasovani += h
     zakazky = modul_zakazky.nacti_zakazky(koren)
-    chyby += modul_zakazky.zkontroluj(zakazky)
+    chyby += modul_zakazky.zkontroluj(zakazky, koren)
     vystup = {"jednani": jednani, "usneseni": usneseni, "hlasovani": hlasovani, "zakazky": zakazky}
     # kontrola osobních údajů v celém výstupu (kromě doslovných citací, ty kontroluje sestavení)
     # (zastupitelé jen z období daného jednání)
