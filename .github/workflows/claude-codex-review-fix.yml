@@ -135,7 +135,7 @@ jobs:
             Run `python -m pipeline.sestav` and `python -m pytest`. Do not use Git or GitHub commands, do not open or merge a PR, and do not add comments or labels. After your edits, the workflow will commit and push changes only to this PR's existing `claude/*` branch. If there are no safe changes to make, leave the worktree unchanged so the workflow can hand the PR to Ondřej.
           claude_args: >-
             --max-turns 40
-            --allowedTools "Read,Edit,Write,Glob,Grep,Bash(python:*),Bash(python3:*),Bash(pytest:*)"
+            --allowedTools "Read,Edit,Write,Glob,Grep,Bash(python:*),Bash(python3:*),Bash(pytest:*),Bash(cd:*),Bash(ls:*),Bash(cat:*),Bash(head:*),Bash(tail:*),Bash(grep:*),Bash(wc:*),Bash(diff:*),Bash(sort:*)"
 
       - name: Commit and push Claude changes to this PR branch
         if: steps.cycle.outputs.run_claude == 'true' && success()
