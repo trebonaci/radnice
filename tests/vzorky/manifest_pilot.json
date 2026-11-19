@@ -1,0 +1,58 @@
+[
+  {
+    "dokument_id": "zapis-rm-2026-11-04",
+    "typ": "zapis_rada",
+    "jednani_id": "rm-2026-11-04",
+    "nazev": "Zápis z 1. jednání Rady města Třeboně ze dne 04.11.2026",
+    "url": "https://www.mesto-trebon.cz/uploads/news/id15223/Z-1-26-11-04-A.pdf",
+    "stranka_zdroje": "https://www.mesto-trebon.cz/cz/mestsky-urad-trebon/samosprava-mesta/rada-mesta/zapisy-z-jednani-rady-mesta/volebni-obdobi-2026---2030.html",
+    "vyveseno": "2026-11-11",
+    "stazeno": "2026-11-18",
+    "sha256": "30b5102ad0155734a998dfe8330f6b5ecd69b06843480d51138616d604dc78cc",
+    "bytes": 327771,
+    "pocet_stran": 4,
+    "textova_vrstva": true,
+    "extrakce": "pdftotext -layout (poppler), po stranách",
+    "poznamka": "Přípona -A: verze zveřejněná s anonymizací (část jmen nahrazena XXXXXXXX).",
+    "verze": [
+      {
+        "cislo": 1,
+        "zjisteno": "2026-11-18",
+        "sha256": "30b5102ad0155734a998dfe8330f6b5ecd69b06843480d51138616d604dc78cc",
+        "bytes": 327771,
+        "zmena": "první zjištěná verze",
+        "texty": "raw/texty/rm-2026-11-04"
+      }
+    ],
+    "posledni_kontrola": "2026-11-18",
+    "dalsi_kontrola": "2026-11-19"
+  },
+  {
+    "dokument_id": "zapis-zm-2026-11-02",
+    "typ": "zapis_zm",
+    "jednani_id": "zm-2026-11-02",
+    "nazev": "Zápis z ustavujícího zasedání Zastupitelstva města Třeboně dne 02.11.2026",
+    "url": "https://www.mesto-trebon.cz/uploads/news/id15220/Z-01-26-11-02.pdf",
+    "stranka_zdroje": "https://www.mesto-trebon.cz/cz/mestsky-urad-trebon/samosprava-mesta/zastupitelstvo-mesta/zapisy-zastupitelstva-mesta/volebni-obdobi-2026---2030-2.html",
+    "vyveseno": "2026-11-10",
+    "stazeno": "2026-11-18",
+    "sha256": "29715c1e41887c7c387c65fa89e7095991b5124fed57c962b714ff1c2d5572aa",
+    "bytes": null,
+    "pocet_stran": 6,
+    "textova_vrstva": true,
+    "extrakce": "pdf.js 4.4 getTextContent v prohlížeči, po stranách",
+    "poznamka": "PDF není v pracovním prostředí uložené (prohlížeč zablokoval druhé stažení); text získán v prohlížeči z originálu, sha256 spočten tamtéž. Ověřit proti PDF.",
+    "verze": [
+      {
+        "cislo": 1,
+        "zjisteno": "2026-11-18",
+        "sha256": "29715c1e41887c7c387c65fa89e7095991b5124fed57c962b714ff1c2d5572aa",
+        "bytes": null,
+        "zmena": "první zjištěná verze",
+        "texty": "raw/texty/zm-2026-11-02"
+      }
+    ],
+    "posledni_kontrola": "2026-11-18",
+    "dalsi_kontrola": "2026-11-19"
+  }
+]
