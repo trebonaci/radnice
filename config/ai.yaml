@@ -1,0 +1,27 @@
+# Role AI kroků -> pořadí poskytovatelů (issue #20). Prvnímu, který je dostupný (je nastaven secret),
+# se zadá úkol; chybí-li secret, přeskočí se na dalšího. Když není dostupný žádný, AI krok se přeskočí.
+# `overeni` musí být od jiného výrobce než `anotace` (ZADANI kap. 4.5) – hlídá to kód (viz pipeline/ai/__init__.py).
+# Secrets se přidávají až s konkrétní potřebou; bez API klíče je dnes k dispozici jen claude_cli.
+max_volani_za_beh: 50        # strop počtu volání na jeden běh (běh je denní, tedy i denní strop)
+casovy_limit_s: 300
+
+poskytovatele:
+  claude_cli:       {vyrobce: anthropic, secret: CLAUDE_CODE_OAUTH_TOKEN}
+  anthropic_api:    {vyrobce: anthropic, secret: ANTHROPIC_API_KEY}
+  openai_api:       {vyrobce: openai,    secret: OPENAI_API_KEY}
+  openai_compatible:
+    vyrobce: jiny
+    secret: OPENAI_COMPATIBLE_API_KEY
+    url_env: OPENAI_COMPATIBLE_BASE_URL   # např. https://openrouter.ai/api/v1 (hodnota mimo repozitář)
+
+role:
+  anotace:
+    - {poskytovatel: claude_cli, model: sonnet}
+    - {poskytovatel: anthropic_api, model: claude-sonnet-5-5}
+    - {poskytovatel: openai_api, model: gpt-5}
+  overeni:
+    - {poskytovatel: openai_api, model: gpt-5}
+    - {poskytovatel: claude_cli, model: opus}
+  stitky:
+    - {poskytovatel: claude_cli, model: haiku}
+    - {poskytovatel: anthropic_api, model: claude-haiku-5-5}
