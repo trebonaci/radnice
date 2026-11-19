@@ -45,9 +45,12 @@ def _openai_chat(url, klic, prompt, model, limit):
     d = _post(url.rstrip("/") + "/chat/completions", {"Authorization": f"Bearer {klic}"},
               {"model": model, "messages": [{"role": "user", "content": prompt}]}, limit)
     try:
-        return d["choices"][0]["message"]["content"]
+        text = d["choices"][0]["message"]["content"]
     except (KeyError, IndexError, TypeError):
         raise AIChyba("neočekávaná odpověď chat API")
+    if not isinstance(text, str) or not text.strip():
+        raise AIChyba("odpověď chat API bez textu")
+    return text
 
 
 def openai_api(prompt, model, env, k):

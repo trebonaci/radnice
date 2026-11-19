@@ -54,7 +54,7 @@ def zkontroluj_konfig(k: dict) -> list[str]:
     if not chyby and "anotace" in role and "overeni" in role:
         va = {p[s["poskytovatel"]]["vyrobce"] for s in role["anotace"]}
         vo = {p[s["poskytovatel"]]["vyrobce"] for s in role["overeni"]}
-        if va & vo and len(role["overeni"]) == 1:
+        if va & vo and len(vo) == 1:  # počítají se různí výrobci, ne kroky
             chyby.append("overeni má jen výrobce, který je i u anotace (ZADANI 4.5)")
     return chyby
 
