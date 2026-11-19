@@ -67,6 +67,9 @@ jobs:
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           label_trigger: "agent:claude"
+          # přímé spuštění z beh.yml má aktéra github-actions[bot]; bota povolíme jen pro workflow_dispatch
+          # (spustit ho může jen kdo má zápis do repozitáře), štítky a komentáře od botů dál nic nespustí
+          allowed_bots: ${{ github.event_name == 'workflow_dispatch' && 'github-actions[bot]' || '' }}
           # při přímém spuštění nemá akce kontext issue → úkol předáme promptem (jinak prázdné = běžný režim)
           prompt: >-
             ${{ github.event_name == 'workflow_dispatch' && format('Vyřeš issue #{0} v repozitáři {1}. Nejdřív si ho přečti příkazem gh issue view {0} --comments a řiď se jím a AGENTS.md. Pracuj v nové větvi claude/issue-{0}-{2} (git checkout -b). Po dokončení a zelených kontrolách větev pushni, otevři PR s Closes #{0}, přidej štítek ke-kontrole a do issue napiš odkaz na PR. Když zadání nestačí, napiš otázku do issue a skonči.', inputs.issue, github.repository, github.run_id) || '' }}
