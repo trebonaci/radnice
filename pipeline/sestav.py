@@ -21,6 +21,7 @@ from pathlib import Path
 import yaml
 
 from pipeline import stitky as modul_stitky
+from pipeline import zakazky as modul_zakazky
 from pipeline.verze import zkontroluj as zkontroluj_verze
 from pipeline.zapisy import normalizuj, rozloz
 
@@ -260,7 +261,7 @@ def zpracuj_jednani(jednani_id: str, manifest: dict, chyby: list[str], osoby: di
 
 def sestav(koren: Path | None = None) -> tuple[dict[str, list], list[str]]:
     """Sestaví výstupy z `koren` (raw/, anotace/, config/) bez zápisu na disk.
-    Vrací ({"jednani": [...], "usneseni": [...], "hlasovani": [...]}, chyby)."""
+    Vrací ({"jednani": [...], "usneseni": [...], "hlasovani": [...], "zakazky": [...]}, chyby)."""
     koren = koren or KOREN
     seznam = json.loads((koren / "raw" / "manifest.json").read_text(encoding="utf-8"))
     manifest = {d["jednani_id"]: d for d in seznam}
@@ -277,7 +278,9 @@ def sestav(koren: Path | None = None) -> tuple[dict[str, list], list[str]]:
         jednani.append(j)
         usneseni += u
         hlasovani += h
-    vystup = {"jednani": jednani, "usneseni": usneseni, "hlasovani": hlasovani}
+    zakazky = modul_zakazky.nacti_zakazky(koren)
+    chyby += modul_zakazky.zkontroluj(zakazky)
+    vystup = {"jednani": jednani, "usneseni": usneseni, "hlasovani": hlasovani, "zakazky": zakazky}
     # kontrola osobních údajů v celém výstupu (kromě doslovných citací, ty kontroluje sestavení)
     # (zastupitelé jen z období daného jednání)
     obdobi_jednani = {j["id"]: j["obdobi"] for j in jednani}
@@ -300,7 +303,8 @@ def main() -> int:
     data.mkdir(exist_ok=True)
     for nazev, obsah in vystup.items():
         (data / f"{nazev}.json").write_text(serializuj(obsah), encoding="utf-8")
-    print(f"jednání {len(vystup['jednani'])}, usnesení {len(vystup['usneseni'])}, hlasování {len(vystup['hlasovani'])}")
+    print(f"jednání {len(vystup['jednani'])}, usnesení {len(vystup['usneseni'])}, hlasování {len(vystup['hlasovani'])}, "
+          f"zakázky {len(vystup['zakazky'])}")
     for c in chyby:
         print("CHYBA:", c, file=sys.stderr)
     return 1 if chyby else 0
