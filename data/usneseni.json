@@ -423,21 +423,6 @@
       {
         "stitek": "socialni",
         "skupina": "mekka",
-        "zdroj": "kat-socialni",
-        "duvod": "Usnesení je zařazeno do kategorie Sociální služby a zdravotnictví.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-09-09",
-          "strany": [
-            4
-          ],
-          "text": "předmětem dodatku bude prodloužení doby výprůjčky do 31.12.2030"
-        },
-        "stitek_ai": true,
-        "faze": null
-      },
-      {
-        "stitek": "socialni",
-        "skupina": "mekka",
         "zdroj": "txt-socialni",
         "duvod": "Text usnesení zmiňuje sociální služby nebo seniory.",
         "citace": {
@@ -451,10 +436,10 @@
         "faze": null
       },
       {
-        "stitek": "spolky",
+        "stitek": "komunity_spolky",
         "skupina": "mekka",
-        "zdroj": "txt-spolky",
-        "duvod": "Text usnesení zmiňuje spolek.",
+        "zdroj": "txt-komunity-spolky",
+        "duvod": "Text usnesení zmiňuje spolek nebo komunitní či společenské aktivity.",
         "citace": {
           "dokument_id": "zapis-rm-2026-09-09",
           "strany": [
@@ -808,38 +793,6 @@
       {
         "stitek": "sport",
         "skupina": "mekka",
-        "zdroj": "kat-sport",
-        "duvod": "Usnesení je zařazeno do kategorie Sport a volný čas.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-09-09",
-          "strany": [
-            6,
-            7
-          ],
-          "text": "jehož předmětem je změna termínu dokončení díla."
-        },
-        "stitek_ai": true,
-        "faze": null
-      },
-      {
-        "stitek": "investice",
-        "skupina": "tvrda",
-        "zdroj": "kat-investice",
-        "duvod": "Usnesení je zařazeno do kategorie Stavby, rekonstrukce, opravy, projektová dokumentace.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-09-09",
-          "strany": [
-            6,
-            7
-          ],
-          "text": "jehož předmětem je změna termínu dokončení díla."
-        },
-        "stitek_ai": true,
-        "faze": null
-      },
-      {
-        "stitek": "sport",
-        "skupina": "mekka",
         "zdroj": "txt-sport",
         "duvod": "Text usnesení zmiňuje sport nebo sportoviště.",
         "citace": {
@@ -1187,22 +1140,6 @@
     "shrnuti": "Rada jako valná hromada společnosti Slatinné lázně Třeboň souhlasila s převodem čtyř technických zhodnocení Lázeňského domu Aurora na město za úplatu. Jde o kotelnu a zásobníky TUV, plynový kotel, modernizaci Balnea a vodní prvek v atriu.",
     "shrnuti_ai": true,
     "stitky": [
-      {
-        "stitek": "investice",
-        "skupina": "tvrda",
-        "zdroj": "kat-investice",
-        "duvod": "Usnesení je zařazeno do kategorie Stavby, rekonstrukce, opravy, projektová dokumentace.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-09-09",
-          "strany": [
-            8,
-            9
-          ],
-          "text": "Modernizace a rozšíření Balneo – Etapa I, LDA"
-        },
-        "stitek_ai": true,
-        "faze": null
-      },
       {
         "stitek": "investice",
         "skupina": "tvrda",
@@ -2094,36 +2031,6 @@
       {
         "stitek": "investice",
         "skupina": "tvrda",
-        "zdroj": "kat-investice",
-        "duvod": "Usnesení je zařazeno do kategorie Stavby, rekonstrukce, opravy, projektová dokumentace.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-09-23",
-          "strany": [
-            5
-          ],
-          "text": "s předpokládaným spolufinancováním z IROP 21-27, výzvy č. 120"
-        },
-        "stitek_ai": true,
-        "faze": null
-      },
-      {
-        "stitek": "investice",
-        "skupina": "tvrda",
-        "zdroj": "txt-investice",
-        "duvod": "Text usnesení zmiňuje stavbu, rekonstrukci nebo projektovou dokumentaci.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-09-23",
-          "strany": [
-            5
-          ],
-          "text": "projektové dokumentace"
-        },
-        "stitek_ai": false,
-        "faze": null
-      },
-      {
-        "stitek": "investice",
-        "skupina": "tvrda",
         "zdroj": "faze-planovana",
         "duvod": "Text usnesení zmiňuje projektovou přípravu.",
         "citace": {
@@ -2199,10 +2106,10 @@
         "faze": null
       },
       {
-        "stitek": "spolky",
+        "stitek": "komunity_spolky",
         "skupina": "mekka",
-        "zdroj": "txt-spolky",
-        "duvod": "Text usnesení zmiňuje spolek.",
+        "zdroj": "txt-komunity-spolky",
+        "duvod": "Text usnesení zmiňuje spolek nebo komunitní či společenské aktivity.",
         "citace": {
           "dokument_id": "zapis-rm-2026-09-23",
           "strany": [
@@ -2270,21 +2177,6 @@
     "shrnuti": "Rada schválila dodatek č. 1 ke smlouvě o dílo se společností K–BUILDING CB, a. s. Cena díla se zvyšuje o 100 815,78 Kč bez DPH (121 987,09 Kč s DPH) na celkem 12 078 592,78 Kč bez DPH (14 615 097,26 Kč s DPH).",
     "shrnuti_ai": true,
     "stitky": [
-      {
-        "stitek": "investice",
-        "skupina": "tvrda",
-        "zdroj": "kat-investice",
-        "duvod": "Usnesení je zařazeno do kategorie Stavby, rekonstrukce, opravy, projektová dokumentace.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-09-23",
-          "strany": [
-            6
-          ],
-          "text": "jehož předmětem je Změnový list č. 1"
-        },
-        "stitek_ai": true,
-        "faze": null
-      },
       {
         "stitek": "investice",
         "skupina": "tvrda",
@@ -2384,36 +2276,6 @@
       {
         "stitek": "investice",
         "skupina": "tvrda",
-        "zdroj": "kat-investice",
-        "duvod": "Usnesení je zařazeno do kategorie Stavby, rekonstrukce, opravy, projektová dokumentace.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-09-23",
-          "strany": [
-            6
-          ],
-          "text": "změna (prodloužení) termínu dokončení díla o 7 kalendářních dnů"
-        },
-        "stitek_ai": true,
-        "faze": null
-      },
-      {
-        "stitek": "investice",
-        "skupina": "tvrda",
-        "zdroj": "txt-investice",
-        "duvod": "Text usnesení zmiňuje stavbu, rekonstrukci nebo projektovou dokumentaci.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-09-23",
-          "strany": [
-            6
-          ],
-          "text": "Stavební"
-        },
-        "stitek_ai": false,
-        "faze": null
-      },
-      {
-        "stitek": "investice",
-        "skupina": "tvrda",
         "zdroj": "faze-dokoncena",
         "duvod": "Text usnesení zmiňuje dokončení nebo kolaudaci.",
         "citace": {
@@ -2508,22 +2370,6 @@
       {
         "stitek": "investice",
         "skupina": "tvrda",
-        "zdroj": "txt-investice",
-        "duvod": "Text usnesení zmiňuje stavbu, rekonstrukci nebo projektovou dokumentaci.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-09-23",
-          "strany": [
-            6,
-            7
-          ],
-          "text": "stavební"
-        },
-        "stitek_ai": false,
-        "faze": null
-      },
-      {
-        "stitek": "investice",
-        "skupina": "tvrda",
         "zdroj": "faze-dokoncena",
         "duvod": "Text usnesení zmiňuje dokončení nebo kolaudaci.",
         "citace": {
@@ -2603,36 +2449,6 @@
       {
         "stitek": "sport",
         "skupina": "mekka",
-        "zdroj": "kat-sport",
-        "duvod": "Usnesení je zařazeno do kategorie Sport a volný čas.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-09-23",
-          "strany": [
-            7
-          ],
-          "text": "jehož předmětem je změna termínu dokončení díla"
-        },
-        "stitek_ai": true,
-        "faze": null
-      },
-      {
-        "stitek": "investice",
-        "skupina": "tvrda",
-        "zdroj": "kat-investice",
-        "duvod": "Usnesení je zařazeno do kategorie Stavby, rekonstrukce, opravy, projektová dokumentace.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-09-23",
-          "strany": [
-            7
-          ],
-          "text": "jehož předmětem je změna termínu dokončení díla"
-        },
-        "stitek_ai": true,
-        "faze": null
-      },
-      {
-        "stitek": "sport",
-        "skupina": "mekka",
         "zdroj": "txt-sport",
         "duvod": "Text usnesení zmiňuje sport nebo sportoviště.",
         "citace": {
@@ -2641,21 +2457,6 @@
             7
           ],
           "text": "sportovní"
-        },
-        "stitek_ai": false,
-        "faze": null
-      },
-      {
-        "stitek": "investice",
-        "skupina": "tvrda",
-        "zdroj": "txt-investice",
-        "duvod": "Text usnesení zmiňuje stavbu, rekonstrukci nebo projektovou dokumentaci.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-09-23",
-          "strany": [
-            7
-          ],
-          "text": "STAVEBNÍ"
         },
         "stitek_ai": false,
         "faze": null
@@ -2723,16 +2524,16 @@
       {
         "stitek": "sport",
         "skupina": "mekka",
-        "zdroj": "kat-sport",
-        "duvod": "Usnesení je zařazeno do kategorie Sport a volný čas.",
+        "zdroj": "txt-sport",
+        "duvod": "Text usnesení zmiňuje sport nebo sportoviště.",
         "citace": {
           "dokument_id": "zapis-rm-2026-09-23",
           "strany": [
             7
           ],
-          "text": "jehož předmětem je změna ceny díla a změna termínu dodání zboží"
+          "text": "Sportovní"
         },
-        "stitek_ai": true,
+        "stitek_ai": false,
         "faze": null
       },
       {
@@ -2748,21 +2549,6 @@
           "text": "jehož předmětem je změna ceny díla a změna termínu dodání zboží"
         },
         "stitek_ai": true,
-        "faze": null
-      },
-      {
-        "stitek": "sport",
-        "skupina": "mekka",
-        "zdroj": "txt-sport",
-        "duvod": "Text usnesení zmiňuje sport nebo sportoviště.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-09-23",
-          "strany": [
-            7
-          ],
-          "text": "Sportovní"
-        },
-        "stitek_ai": false,
         "faze": null
       }
     ],
@@ -2882,21 +2668,6 @@
     "shrnuti": "Rada přesunula 53 000 Kč ve výdajích rozpočtu z položky vybavení ubytování sportovní haly do položky vybavení přístavby tělocvičen.",
     "shrnuti_ai": true,
     "stitky": [
-      {
-        "stitek": "sport",
-        "skupina": "mekka",
-        "zdroj": "kat-sport",
-        "duvod": "Usnesení je zařazeno do kategorie Sport a volný čas.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-09-23",
-          "strany": [
-            8
-          ],
-          "text": "-do položky 5137 „Přístavba tělocvičen - vybavení“, § 3412, ORJ 750, ORG 9750000000, UZ 0 v částce Kč 53.000,00."
-        },
-        "stitek_ai": true,
-        "faze": null
-      },
       {
         "stitek": "sport",
         "skupina": "mekka",
@@ -3052,36 +2823,6 @@
       {
         "stitek": "sport",
         "skupina": "mekka",
-        "zdroj": "kat-sport",
-        "duvod": "Usnesení je zařazeno do kategorie Sport a volný čas.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-10-07",
-          "strany": [
-            2
-          ],
-          "text": "za účelem provozování sportovních a kulturních aktivit včetně společenských setkání"
-        },
-        "stitek_ai": true,
-        "faze": null
-      },
-      {
-        "stitek": "kultura",
-        "skupina": "mekka",
-        "zdroj": "kat-kultura",
-        "duvod": "Usnesení je zařazeno do kategorie Kultura a cestovní ruch.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-10-07",
-          "strany": [
-            2
-          ],
-          "text": "za účelem provozování sportovních a kulturních aktivit včetně společenských setkání"
-        },
-        "stitek_ai": true,
-        "faze": null
-      },
-      {
-        "stitek": "sport",
-        "skupina": "mekka",
         "zdroj": "txt-sport",
         "duvod": "Text usnesení zmiňuje sport nebo sportoviště.",
         "citace": {
@@ -3110,10 +2851,10 @@
         "faze": null
       },
       {
-        "stitek": "komunity",
+        "stitek": "komunity_spolky",
         "skupina": "mekka",
-        "zdroj": "txt-komunity",
-        "duvod": "Text usnesení zmiňuje komunitní nebo společenské aktivity.",
+        "zdroj": "txt-komunity-spolky",
+        "duvod": "Text usnesení zmiňuje spolek nebo komunitní či společenské aktivity.",
         "citace": {
           "dokument_id": "zapis-rm-2026-10-07",
           "strany": [
@@ -3307,21 +3048,6 @@
       {
         "stitek": "socialni",
         "skupina": "mekka",
-        "zdroj": "kat-socialni",
-        "duvod": "Usnesení je zařazeno do kategorie Sociální služby a zdravotnictví.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-10-07",
-          "strany": [
-            3
-          ],
-          "text": "uzavření nájemní smlouvy na dobu určitou jeden rok s možností prodloužení na byt č. 9 v domě čp. 2/II v ulici Chelčického"
-        },
-        "stitek_ai": true,
-        "faze": null
-      },
-      {
-        "stitek": "socialni",
-        "skupina": "mekka",
         "zdroj": "txt-socialni",
         "duvod": "Text usnesení zmiňuje sociální služby nebo seniory.",
         "citace": {
@@ -3401,21 +3127,6 @@
       {
         "stitek": "socialni",
         "skupina": "mekka",
-        "zdroj": "kat-socialni",
-        "duvod": "Usnesení je zařazeno do kategorie Sociální služby a zdravotnictví.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-10-07",
-          "strany": [
-            3
-          ],
-          "text": "uzavření nájemní smlouvy na dobu určitou jeden rok s možností prodloužení na byt č. 18 v domě čp. 2/II v ulici Chelčického"
-        },
-        "stitek_ai": true,
-        "faze": null
-      },
-      {
-        "stitek": "socialni",
-        "skupina": "mekka",
         "zdroj": "txt-socialni",
         "duvod": "Text usnesení zmiňuje sociální služby nebo seniory.",
         "citace": {
@@ -3492,22 +3203,6 @@
     "shrnuti": "Rada schválila nájemní smlouvu na byt 1+0 (29 m2) v domě s pečovatelskou službou na jeden rok s možností prodloužení.",
     "shrnuti_ai": true,
     "stitky": [
-      {
-        "stitek": "socialni",
-        "skupina": "mekka",
-        "zdroj": "kat-socialni",
-        "duvod": "Usnesení je zařazeno do kategorie Sociální služby a zdravotnictví.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-10-07",
-          "strany": [
-            3,
-            4
-          ],
-          "text": "uzavření nájemní smlouvy na dobu určitou jeden rok s možností prodloužení na byt č. 20 v domě čp. 2/II v ulici Chelčického"
-        },
-        "stitek_ai": true,
-        "faze": null
-      },
       {
         "stitek": "socialni",
         "skupina": "mekka",
@@ -3698,22 +3393,6 @@
       {
         "stitek": "sport",
         "skupina": "mekka",
-        "zdroj": "kat-sport",
-        "duvod": "Usnesení je zařazeno do kategorie Sport a volný čas.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-10-07",
-          "strany": [
-            4,
-            5
-          ],
-          "text": "výsledek veřejnosprávní kontroly v příspěvkové organizaci Městská sportovní Třeboň"
-        },
-        "stitek_ai": true,
-        "faze": null
-      },
-      {
-        "stitek": "sport",
-        "skupina": "mekka",
         "zdroj": "txt-sport",
         "duvod": "Text usnesení zmiňuje sport nebo sportoviště.",
         "citace": {
@@ -3844,21 +3523,6 @@
       {
         "stitek": "investice",
         "skupina": "tvrda",
-        "zdroj": "kat-investice",
-        "duvod": "Usnesení je zařazeno do kategorie Stavby, rekonstrukce, opravy, projektová dokumentace.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-10-07",
-          "strany": [
-            5
-          ],
-          "text": "nejvýhodnější nabídkou je nabídka s nejnižší nabídkovou cenou podaná společností VKB stavby s.r.o."
-        },
-        "stitek_ai": true,
-        "faze": null
-      },
-      {
-        "stitek": "investice",
-        "skupina": "tvrda",
         "zdroj": "txt-investice",
         "duvod": "Text usnesení zmiňuje stavbu, rekonstrukci nebo projektovou dokumentaci.",
         "citace": {
@@ -3935,21 +3599,6 @@
     "shrnuti": "Rada schválila dodatek č. 4 ke smlouvě o dílo se společností VKB stavby, jehož předmětem je změna ceny díla.",
     "shrnuti_ai": true,
     "stitky": [
-      {
-        "stitek": "investice",
-        "skupina": "tvrda",
-        "zdroj": "kat-investice",
-        "duvod": "Usnesení je zařazeno do kategorie Stavby, rekonstrukce, opravy, projektová dokumentace.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-10-07",
-          "strany": [
-            6
-          ],
-          "text": "jehož předmětem je změna ceny díla."
-        },
-        "stitek_ai": true,
-        "faze": null
-      },
       {
         "stitek": "investice",
         "skupina": "tvrda",
@@ -4244,21 +3893,6 @@
     "shrnuti": "Rada schválila příkazní smlouvu, jejímž předmětem je zajištění provozu Muzea města Třeboně.",
     "shrnuti_ai": true,
     "stitky": [
-      {
-        "stitek": "kultura",
-        "skupina": "mekka",
-        "zdroj": "kat-kultura",
-        "duvod": "Usnesení je zařazeno do kategorie Kultura a cestovní ruch.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-10-07",
-          "strany": [
-            7
-          ],
-          "text": "kdy předmětem smlouvy bude zajištění provozu Muzea města Třeboně"
-        },
-        "stitek_ai": true,
-        "faze": null
-      },
       {
         "stitek": "kultura",
         "skupina": "mekka",
@@ -4651,38 +4285,6 @@
       {
         "stitek": "investice",
         "skupina": "tvrda",
-        "zdroj": "kat-investice",
-        "duvod": "Usnesení je zařazeno do kategorie Stavby, rekonstrukce, opravy, projektová dokumentace.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-10-21",
-          "strany": [
-            3,
-            4
-          ],
-          "text": "Tento souhlas se vydává s omezenou platností 5 let."
-        },
-        "stitek_ai": true,
-        "faze": null
-      },
-      {
-        "stitek": "investice",
-        "skupina": "tvrda",
-        "zdroj": "txt-investice",
-        "duvod": "Text usnesení zmiňuje stavbu, rekonstrukci nebo projektovou dokumentaci.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-10-21",
-          "strany": [
-            3,
-            4
-          ],
-          "text": "projektovou dokumentací"
-        },
-        "stitek_ai": false,
-        "faze": null
-      },
-      {
-        "stitek": "investice",
-        "skupina": "tvrda",
         "zdroj": "faze-planovana",
         "duvod": "Text usnesení zmiňuje projektovou přípravu.",
         "citace": {
@@ -4695,22 +4297,6 @@
         },
         "stitek_ai": false,
         "faze": "planovana"
-      },
-      {
-        "stitek": "investice",
-        "skupina": "tvrda",
-        "zdroj": "faze-dokoncena",
-        "duvod": "Text usnesení zmiňuje dokončení nebo kolaudaci.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-10-21",
-          "strany": [
-            3,
-            4
-          ],
-          "text": "kolaudací"
-        },
-        "stitek_ai": false,
-        "faze": "dokoncena"
       }
     ],
     "citace": {
@@ -4887,21 +4473,6 @@
       {
         "stitek": "kultura",
         "skupina": "mekka",
-        "zdroj": "kat-kultura",
-        "duvod": "Usnesení je zařazeno do kategorie Kultura a cestovní ruch.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-10-21",
-          "strany": [
-            5
-          ],
-          "text": "předmětem daru je domácí loutkové divadlo v rozsahu 26 loutek, souboru kulis a náhradních dílů loutek."
-        },
-        "stitek_ai": true,
-        "faze": null
-      },
-      {
-        "stitek": "kultura",
-        "skupina": "mekka",
         "zdroj": "txt-kultura",
         "duvod": "Text usnesení zmiňuje kulturu.",
         "citace": {
@@ -5022,16 +4593,16 @@
       {
         "stitek": "sport",
         "skupina": "mekka",
-        "zdroj": "kat-sport",
-        "duvod": "Usnesení je zařazeno do kategorie Sport a volný čas.",
+        "zdroj": "txt-sport",
+        "duvod": "Text usnesení zmiňuje sport nebo sportoviště.",
         "citace": {
           "dokument_id": "zapis-rm-2026-10-21",
           "strany": [
             6
           ],
-          "text": "Maximální částka čerpání prostředků"
+          "text": "sportovní"
         },
-        "stitek_ai": true,
+        "stitek_ai": false,
         "faze": null
       },
       {
@@ -5047,21 +4618,6 @@
           "text": "Maximální částka čerpání prostředků"
         },
         "stitek_ai": true,
-        "faze": null
-      },
-      {
-        "stitek": "sport",
-        "skupina": "mekka",
-        "zdroj": "txt-sport",
-        "duvod": "Text usnesení zmiňuje sport nebo sportoviště.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-10-21",
-          "strany": [
-            6
-          ],
-          "text": "sportovní"
-        },
-        "stitek_ai": false,
         "faze": null
       }
     ],
@@ -5119,21 +4675,6 @@
     "shrnuti": "Rada přesunula 60 000 Kč z položky služeb cestovního ruchu do položky služeb na trzích.",
     "shrnuti_ai": true,
     "stitky": [
-      {
-        "stitek": "kultura",
-        "skupina": "mekka",
-        "zdroj": "kat-kultura",
-        "duvod": "Usnesení je zařazeno do kategorie Kultura a cestovní ruch.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-10-21",
-          "strany": [
-            6
-          ],
-          "text": "-do položky 5169 „Ostatní služby - trhy“, § 2141, ORJ 900, ORG 9900000000, UZ 0 v částce Kč 60.000,00."
-        },
-        "stitek_ai": true,
-        "faze": null
-      },
       {
         "stitek": "kultura",
         "skupina": "mekka",
@@ -5339,16 +4880,16 @@
       {
         "stitek": "sport",
         "skupina": "mekka",
-        "zdroj": "kat-sport",
-        "duvod": "Usnesení je zařazeno do kategorie Sport a volný čas.",
+        "zdroj": "txt-sport",
+        "duvod": "Text usnesení zmiňuje sport nebo sportoviště.",
         "citace": {
           "dokument_id": "zapis-rm-2026-10-21",
           "strany": [
             8
           ],
-          "text": "jehož předmětem je změna ceny díla."
+          "text": "sportovní"
         },
-        "stitek_ai": true,
+        "stitek_ai": false,
         "faze": null
       },
       {
@@ -5364,21 +4905,6 @@
           "text": "jehož předmětem je změna ceny díla."
         },
         "stitek_ai": true,
-        "faze": null
-      },
-      {
-        "stitek": "sport",
-        "skupina": "mekka",
-        "zdroj": "txt-sport",
-        "duvod": "Text usnesení zmiňuje sport nebo sportoviště.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-10-21",
-          "strany": [
-            8
-          ],
-          "text": "sportovní"
-        },
-        "stitek_ai": false,
         "faze": null
       }
     ],
@@ -5437,21 +4963,6 @@
     "shrnuti": "Rada schválila dodatek č. 2 ke smlouvě o dílo; cena díla se zvyšuje o 92 819,29 Kč bez DPH a celková cena je 12 171 412,07 Kč bez DPH.",
     "shrnuti_ai": true,
     "stitky": [
-      {
-        "stitek": "investice",
-        "skupina": "tvrda",
-        "zdroj": "kat-investice",
-        "duvod": "Usnesení je zařazeno do kategorie Stavby, rekonstrukce, opravy, projektová dokumentace.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-10-21",
-          "strany": [
-            9
-          ],
-          "text": "celková cena díla se mění na částku 12.171.412,07 Kč bez DPH (14.727.408,60 Kč vč. DPH)."
-        },
-        "stitek_ai": true,
-        "faze": null
-      },
       {
         "stitek": "investice",
         "skupina": "tvrda",
@@ -5610,16 +5121,16 @@
       {
         "stitek": "sport",
         "skupina": "mekka",
-        "zdroj": "kat-sport",
-        "duvod": "Usnesení je zařazeno do kategorie Sport a volný čas.",
+        "zdroj": "txt-sport",
+        "duvod": "Text usnesení zmiňuje sport nebo sportoviště.",
         "citace": {
           "dokument_id": "zapis-rm-2026-10-21",
           "strany": [
             9
           ],
-          "text": "jehož předmětem je změna ceny díla."
+          "text": "Sportovní"
         },
-        "stitek_ai": true,
+        "stitek_ai": false,
         "faze": null
       },
       {
@@ -5635,21 +5146,6 @@
           "text": "jehož předmětem je změna ceny díla."
         },
         "stitek_ai": true,
-        "faze": null
-      },
-      {
-        "stitek": "sport",
-        "skupina": "mekka",
-        "zdroj": "txt-sport",
-        "duvod": "Text usnesení zmiňuje sport nebo sportoviště.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-10-21",
-          "strany": [
-            9
-          ],
-          "text": "Sportovní"
-        },
-        "stitek_ai": false,
         "faze": null
       }
     ],
@@ -5812,16 +5308,16 @@
       {
         "stitek": "kultura",
         "skupina": "mekka",
-        "zdroj": "kat-kultura",
-        "duvod": "Usnesení je zařazeno do kategorie Kultura a cestovní ruch.",
+        "zdroj": "txt-kultura",
+        "duvod": "Text usnesení zmiňuje kulturu.",
         "citace": {
           "dokument_id": "zapis-rm-2026-10-21",
           "strany": [
             10
           ],
-          "text": "Předmětem spolupráce je realizace vzdělávacího kurzu."
+          "text": "kultury"
         },
-        "stitek_ai": true,
+        "stitek_ai": false,
         "faze": null
       },
       {
@@ -5837,21 +5333,6 @@
           "text": "Předmětem spolupráce je realizace vzdělávacího kurzu."
         },
         "stitek_ai": true,
-        "faze": null
-      },
-      {
-        "stitek": "kultura",
-        "skupina": "mekka",
-        "zdroj": "txt-kultura",
-        "duvod": "Text usnesení zmiňuje kulturu.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-10-21",
-          "strany": [
-            10
-          ],
-          "text": "kultury"
-        },
-        "stitek_ai": false,
         "faze": null
       }
     ],
@@ -6226,22 +5707,6 @@
     "shrnuti": "Rada schválila dodatek č. 9 k dohodě o provozování sportovišť a nájemní smlouvu na 860,98 m2 ve Sportovní hale (Hotel Sport) s příspěvkovou organizací Městská sportovní Třeboň od 1. 11. 2026 do 31. 12. 2036; nájemné 50 000 Kč za listopad–prosinec 2026 a 800 000 Kč za rok 2027, obojí bez DPH, od roku 2028 s inflační valorizací.",
     "shrnuti_ai": true,
     "stitky": [
-      {
-        "stitek": "sport",
-        "skupina": "mekka",
-        "zdroj": "kat-sport",
-        "duvod": "Usnesení je zařazeno do kategorie Sport a volný čas.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-10-21",
-          "strany": [
-            12,
-            13
-          ],
-          "text": "pro rok 2027 činí roční nájemné částka 800 000,00 Kč + DPH dle platných právních předpisů"
-        },
-        "stitek_ai": true,
-        "faze": null
-      },
       {
         "stitek": "sport",
         "skupina": "mekka",
@@ -6632,21 +6097,6 @@
       {
         "stitek": "socialni",
         "skupina": "mekka",
-        "zdroj": "kat-socialni",
-        "duvod": "Usnesení je zařazeno do kategorie Sociální služby a zdravotnictví.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-10-30",
-          "strany": [
-            2
-          ],
-          "text": "poskytnutí dotací žadatelům v oblasti sociálních služeb a zdravotnictví takto:"
-        },
-        "stitek_ai": true,
-        "faze": null
-      },
-      {
-        "stitek": "socialni",
-        "skupina": "mekka",
         "zdroj": "txt-socialni",
         "duvod": "Text usnesení zmiňuje sociální služby nebo seniory.",
         "citace": {
@@ -6660,25 +6110,10 @@
         "faze": null
       },
       {
-        "stitek": "komunity",
+        "stitek": "komunity_spolky",
         "skupina": "mekka",
-        "zdroj": "txt-komunity",
-        "duvod": "Text usnesení zmiňuje komunitní nebo společenské aktivity.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-10-30",
-          "strany": [
-            2
-          ],
-          "text": "Komunitní"
-        },
-        "stitek_ai": false,
-        "faze": null
-      },
-      {
-        "stitek": "spolky",
-        "skupina": "mekka",
-        "zdroj": "txt-spolky",
-        "duvod": "Text usnesení zmiňuje spolek.",
+        "zdroj": "txt-komunity-spolky",
+        "duvod": "Text usnesení zmiňuje spolek nebo komunitní či společenské aktivity.",
         "citace": {
           "dokument_id": "zapis-rm-2026-10-30",
           "strany": [
@@ -6747,22 +6182,6 @@
       {
         "stitek": "sport",
         "skupina": "mekka",
-        "zdroj": "kat-sport",
-        "duvod": "Usnesení je zařazeno do kategorie Sport a volný čas.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-10-30",
-          "strany": [
-            2,
-            3
-          ],
-          "text": "poskytnutí dotací žadatelům v oblasti tělovýchovy a sportu takto:"
-        },
-        "stitek_ai": true,
-        "faze": null
-      },
-      {
-        "stitek": "sport",
-        "skupina": "mekka",
         "zdroj": "txt-sport",
         "duvod": "Text usnesení zmiňuje sport nebo sportoviště.",
         "citace": {
@@ -6793,10 +6212,10 @@
         "faze": null
       },
       {
-        "stitek": "spolky",
+        "stitek": "komunity_spolky",
         "skupina": "mekka",
-        "zdroj": "txt-spolky",
-        "duvod": "Text usnesení zmiňuje spolek.",
+        "zdroj": "txt-komunity-spolky",
+        "duvod": "Text usnesení zmiňuje spolek nebo komunitní či společenské aktivity.",
         "citace": {
           "dokument_id": "zapis-rm-2026-10-30",
           "strany": [
@@ -6983,36 +6402,6 @@
     "shrnuti": "Rada schválila uzavření Dodatku č. 5 ke smlouvě o dílo na stavbu Přístavba dvou tělocvičen sportovní haly Třeboň; předmětem dodatku je změna ceny díla.",
     "shrnuti_ai": true,
     "stitky": [
-      {
-        "stitek": "sport",
-        "skupina": "mekka",
-        "zdroj": "kat-sport",
-        "duvod": "Usnesení je zařazeno do kategorie Sport a volný čas.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-10-30",
-          "strany": [
-            4
-          ],
-          "text": "uzavření Dodatku č. 5 ke smlouvě o dílo č. 750/9262/26 ze dne 14.01.2026 na zhotovení stavby „Přístavba dvou tělocvičen sportovní haly Třeboň“"
-        },
-        "stitek_ai": true,
-        "faze": null
-      },
-      {
-        "stitek": "investice",
-        "skupina": "tvrda",
-        "zdroj": "kat-investice",
-        "duvod": "Usnesení je zařazeno do kategorie Stavby, rekonstrukce, opravy, projektová dokumentace.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-10-30",
-          "strany": [
-            4
-          ],
-          "text": "uzavření Dodatku č. 5 ke smlouvě o dílo č. 750/9262/26 ze dne 14.01.2026 na zhotovení stavby „Přístavba dvou tělocvičen sportovní haly Třeboň“"
-        },
-        "stitek_ai": true,
-        "faze": null
-      },
       {
         "stitek": "sport",
         "skupina": "mekka",
@@ -7343,36 +6732,6 @@
       {
         "stitek": "sport",
         "skupina": "mekka",
-        "zdroj": "kat-sport",
-        "duvod": "Usnesení je zařazeno do kategorie Sport a volný čas.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-11-04",
-          "strany": [
-            2
-          ],
-          "text": "za účelem provozování sportovních a kulturních aktivit včetně společenských setkání"
-        },
-        "stitek_ai": true,
-        "faze": null
-      },
-      {
-        "stitek": "kultura",
-        "skupina": "mekka",
-        "zdroj": "kat-kultura",
-        "duvod": "Usnesení je zařazeno do kategorie Kultura a cestovní ruch.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-11-04",
-          "strany": [
-            2
-          ],
-          "text": "za účelem provozování sportovních a kulturních aktivit včetně společenských setkání"
-        },
-        "stitek_ai": true,
-        "faze": null
-      },
-      {
-        "stitek": "sport",
-        "skupina": "mekka",
         "zdroj": "txt-sport",
         "duvod": "Text usnesení zmiňuje sport nebo sportoviště.",
         "citace": {
@@ -7401,10 +6760,10 @@
         "faze": null
       },
       {
-        "stitek": "komunity",
+        "stitek": "komunity_spolky",
         "skupina": "mekka",
-        "zdroj": "txt-komunity",
-        "duvod": "Text usnesení zmiňuje komunitní nebo společenské aktivity.",
+        "zdroj": "txt-komunity-spolky",
+        "duvod": "Text usnesení zmiňuje spolek nebo komunitní či společenské aktivity.",
         "citace": {
           "dokument_id": "zapis-rm-2026-11-04",
           "strany": [
@@ -7561,21 +6920,6 @@
       {
         "stitek": "sport",
         "skupina": "mekka",
-        "zdroj": "kat-sport",
-        "duvod": "Usnesení je zařazeno do kategorie Sport a volný čas.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-11-04",
-          "strany": [
-            3
-          ],
-          "text": "hospodaření příspěvkové organizace Městská sportovní Třeboň a mezitímní účetní závěrku sestavenou k 30.09.2026."
-        },
-        "stitek_ai": true,
-        "faze": null
-      },
-      {
-        "stitek": "sport",
-        "skupina": "mekka",
         "zdroj": "txt-sport",
         "duvod": "Text usnesení zmiňuje sport nebo sportoviště.",
         "citace": {
@@ -7704,10 +7048,10 @@
         "faze": null
       },
       {
-        "stitek": "spolky",
+        "stitek": "komunity_spolky",
         "skupina": "mekka",
-        "zdroj": "txt-spolky",
-        "duvod": "Text usnesení zmiňuje spolek.",
+        "zdroj": "txt-komunity-spolky",
+        "duvod": "Text usnesení zmiňuje spolek nebo komunitní či společenské aktivity.",
         "citace": {
           "dokument_id": "zapis-rm-2026-11-04",
           "strany": [

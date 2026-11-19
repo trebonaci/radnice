@@ -64,6 +64,19 @@ def test_ai_stitek_spatny_vstup(navrh):
 
 def test_ai_stitek_bez_anonymizovaneho_udaje():
     chyby = []
-    assert ai_stitky(CFG, [{"stitek": "spolky", "duvod": "x", "citace": "Jan Novák"}],
+    assert ai_stitky(CFG, [{"stitek": "komunity_spolky", "duvod": "x", "citace": "Jan Novák"}],
                      "spolek Jan Novák", CIT, ["Jan Novák"], "t", chyby) == []
     assert chyby
+
+
+def test_stitek_u_usneseni_jen_jednou():
+    from pipeline.stitky import jeden_na_stitek
+    z = [{"stitek": "sport", "stitek_ai": True, "faze": None, "zdroj": "kat-sport"},
+         {"stitek": "sport", "stitek_ai": False, "faze": None, "zdroj": "txt-sport"},
+         {"stitek": "investice", "stitek_ai": False, "faze": None, "zdroj": "txt-investice"},
+         {"stitek": "investice", "stitek_ai": False, "faze": "planovana", "zdroj": "faze-planovana"}]
+    assert [(x["stitek"], x["zdroj"]) for x in jeden_na_stitek(z)] == [("sport", "txt-sport"), ("investice", "faze-planovana")]
+
+
+def test_komunity_a_spolky_jeden_stitek():
+    assert "komunity_spolky" in CFG["stitky"] and "komunity" not in CFG["stitky"] and "spolky" not in CFG["stitky"]

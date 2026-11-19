@@ -205,7 +205,7 @@ def zpracuj_jednani(jednani_id: str, manifest: dict, chyby: list[str], osoby: di
             "kategorie_ai": True,
             "shrnuti": a["shrnuti"],
             "shrnuti_ai": True,
-            "stitky": stitky,
+            "stitky": modul_stitky.jeden_na_stitek(stitky),
             "citace": citace_usn,
             "castky": [{**c, "mena": "CZK"} for c in a.get("castky", [])],
             "parcely": a.get("parcely", []),

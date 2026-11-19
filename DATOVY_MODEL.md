@@ -38,7 +38,7 @@ Vnořená struktura: `dokument_id`, `strany[]` nebo jiný lokátor (bod, ID smlo
 `id` = `<organ>-<rok>-j<jednání>-u<číslo>` (např. `rm-2026-j1-u7` pro „RM č. 7/2026-1“), `cislo` (původní označení), `jednani_id`, `bod`, `vysledek_hlasovani` (prijato / neprijato / neuvedeno – zda návrh usnesení prošel), `vysledek_zapis` (doslovně ze zápisu, např. „SCHVÁLENO“), `ukony[]` {`cast`, `ukon` (schvaluje / bere_na_vedomi / voli / urcuje / uklada / souhlasi / jmenuje / doporucuje / … / jiny), `sloveso`} – věcný obsah usnesení; „SCHVÁLENO“ u usnesení „bere na vědomí“ neznamená, že orgán věc schválil, `text` (+ `text_anonymizovan`), `tema` + `tema_ai`, `kategorie[]` + `kategorie_ai` (číselník `config/kategorie.yaml`), `shrnuti` + `shrnuti_ai`, `stitky[]` (věcná relevance, viz níže), `citace`, `castky[]`, `parcely[]`, `subjekty_ico[]`, `projekt_ids[]`, `overeni`, `poznamka`
 
 ### stitek (věcná relevance)
-Vnořený v usnesení (později ve smlouvě a projektu). Říká, čeho se věc týká; nehodnotí a nevykládá právo. Číselník a pravidla v `config/stitky.yaml`.
+Vnořený v usnesení (později ve smlouvě a projektu). Říká, čeho se věc týká; nehodnotí a nevykládá právo. Číselník a pravidla v `config/stitky.yaml`. Každý štítek je u usnesení nejvýš jednou (přednost: s fází, z textu, z kategorie/AI).
 `stitek` (kód), `skupina` (mekka / tvrda / obecna), `zdroj` (id pravidla nebo `ai`), `duvod` (věta pro čtenáře), `citace` {`dokument_id`, `strany`, `text` – doslova ve zdroji}, `stitek_ai` (true u štítků z kategorií a z AI návrhu), `faze` (jen u `investice`: planovana / probiha / dokoncena, jinak null = nevíme). AI návrh je v anotaci `stitky: [{stitek, duvod, citace, faze}]`; sestavení ověří číselník a doslovnou citaci.
 
 ### hlasovani

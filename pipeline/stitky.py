@@ -86,3 +86,15 @@ def ai_stitky(cfg: dict, navrhy: list[dict], text: str, citace: dict, anon_retez
         c = {"dokument_id": citace["dokument_id"], "strany": citace["strany"], "text": n["citace"]}
         vysledek.append(_zaznam(cfg, kod, "ai", n["duvod"], c, True, faze))
     return vysledek
+
+
+def jeden_na_stitek(zaznamy: list[dict]) -> list[dict]:
+    """Každý štítek u usnesení jen jednou. Přednost má záznam s fází, pak pravidlo z textu
+    (doslovná citace, ne AI), pak ostatní v pořadí pravidel."""
+    def poradi(z):
+        return (z.get("faze") is None, z.get("stitek_ai", True))
+    vybrane: dict[str, dict] = {}
+    for z in zaznamy:
+        if z["stitek"] not in vybrane or poradi(z) < poradi(vybrane[z["stitek"]]):
+            vybrane[z["stitek"]] = z
+    return [vybrane[k] for k in dict.fromkeys(z["stitek"] for z in zaznamy)]

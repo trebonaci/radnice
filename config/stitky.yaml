@@ -1,4 +1,4 @@
-# Číselník štítků věcné relevance pro občany (návrh, čeká na schválení Ondřejem, issue #18).
+# Číselník štítků věcné relevance pro občany (issue #18; komunity + spolky sloučeny 19. 11. 2026 Ondřejem).
 # Štítek jen říká, ČEHO SE věc týká, a vždy má vypsaný důvod a citaci. Nehodnotí, neposuzuje dopad
 # a není právní výklad (to patří do podepsaných analýz).
 # Skupiny: mekka = sport, kultura, sociální a komunitní služby; tvrda = investice; obecna = ostatní.
@@ -15,14 +15,10 @@ stitky:
     skupina: mekka
     nazev: Sociální služby
     popis: Týká se sociálních služeb, seniorů nebo zdravotnictví.
-  komunity:
+  komunity_spolky:
     skupina: mekka
-    nazev: Komunitní život
-    popis: Týká se společenských a komunitních aktivit.
-  spolky:
-    skupina: mekka
-    nazev: Spolky
-    popis: Týká se spolků a jejich činnosti.
+    nazev: Komunitní život a spolky
+    popis: Týká se spolků, společenských a komunitních aktivit (sloučeno rozhodnutím Ondřeje 19. 11. 2026).
   investice:
     skupina: tvrda
     nazev: Investice
@@ -45,8 +41,7 @@ pravidla:
   - {id: txt-sport, stitek: sport, vzor: '\bsportov\w*|\bhřišt\w*|\bbrusl\w*', duvod: "Text usnesení zmiňuje sport nebo sportoviště."}
   - {id: txt-kultura, stitek: kultura, vzor: '\bkultur\w*|\bdivadl\w*|\bmuze\w*|\bkoncert\w*|\bfestival\w*', duvod: "Text usnesení zmiňuje kulturu."}
   - {id: txt-socialni, stitek: socialni, vzor: '\bsociáln\w+ (?:služ\w*|péč\w*|bydlen\w*)|\bpečovatel\w*|\bsenior\w*', duvod: "Text usnesení zmiňuje sociální služby nebo seniory."}
-  - {id: txt-komunity, stitek: komunity, vzor: '\bkomunitn\w*|\bspolečensk\w+ (?:setkán\w*|akc\w*)', duvod: "Text usnesení zmiňuje komunitní nebo společenské aktivity."}
-  - {id: txt-spolky, stitek: spolky, vzor: '\bspolk\w*|\bz\. ?s\.', duvod: "Text usnesení zmiňuje spolek."}
+  - {id: txt-komunity-spolky, stitek: komunity_spolky, vzor: '\bkomunitn\w*|\bspolečensk\w+ (?:setkán\w*|akc\w*)|\bspolk\w*|\bz\. ?s\.', duvod: "Text usnesení zmiňuje spolek nebo komunitní či společenské aktivity."}
   - {id: txt-investice, stitek: investice, vzor: '\brekonstrukc\w*|\bvýstavb\w*|\bstavebn\w*|\bprojektov\w+ dokumentac\w*', duvod: "Text usnesení zmiňuje stavbu, rekonstrukci nebo projektovou dokumentaci."}
   - {id: faze-planovana, stitek: investice, faze: planovana, vzor: '\bprojektov\w+ dokumentac\w*|\bstudi[ei]\w*', duvod: "Text usnesení zmiňuje projektovou přípravu."}
   - {id: faze-probiha, stitek: investice, faze: probiha, vzor: '\bpředání staveniště|\bzahájení (?:stavby|prací)', duvod: "Text usnesení zmiňuje zahájení stavby."}
