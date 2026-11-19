@@ -35,5 +35,10 @@ jobs:
             exit 1
           fi
 
+      - name: Kontrola workflow souborů (actionlint)
+        run: |
+          pip install actionlint-py
+          actionlint .github/workflows/*.yml
+
       - name: Testy
         run: python -m pytest -v
