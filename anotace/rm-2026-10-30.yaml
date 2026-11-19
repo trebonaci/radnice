@@ -1,0 +1,93 @@
+# Anotace usnesení navržené AI (model A: Claude), stav: navrh.
+# Struktura, čísla usnesení a hlasování NEJSOU zde – ty vytváří deterministicky pipeline/zapisy.py.
+# Každá citace musí doslova (po sjednocení mezer) existovat v textu usnesení.
+# 114. jednání RM volebního období 2022–2026 (mimořádné), zdroj: issue #49.
+jednani:
+  organ: rada
+  druh: mimoradne
+  cislo: 114
+  datum: "2026-10-30"
+  obdobi: "2022-2026"
+  pritomno: 6
+  clenu: 7
+  citace: "V úvodu jednání bylo přítomno 6 členů rady města."
+  dokument_id: zapis-rm-2026-10-30
+
+usneseni:
+  rm-2026-j114-u546:
+    tema: Program jednání a zveřejňování zápisů
+    kategorie: [samosprava]
+    shrnuti: Rada schválila program svého 114. jednání a zveřejnění zápisů.
+    citace: "program 114. jednání rady města a schválení zveřejnění zápisů."
+
+  rm-2026-j114-u547:
+    tema: Dotace v oblasti sociálních služeb a zdravotnictví 2026
+    kategorie: [dotace_dary, socialni]
+    shrnuti: Rada schválila dotace pěti žadatelům v oblasti sociálních služeb a zdravotnictví a uzavření veřejnoprávních smluv o jejich poskytnutí na celoroční činnost.
+    citace: "poskytnutí dotací žadatelům v oblasti sociálních služeb a zdravotnictví takto:"
+    poznamka: Výše dotací jednotlivým žadatelům jsou v tabulce v textu usnesení; v anotaci je nerozepisujeme a nesčítáme (tabulky jsou zatím jen surový text).
+
+  rm-2026-j114-u548:
+    tema: Dotace v oblasti tělovýchovy a sportu 2026
+    kategorie: [dotace_dary, sport]
+    shrnuti: Rada schválila dotace na činnost, jednorázové akce a reprezentaci města v oblasti tělovýchovy a sportu, uzavření veřejnoprávních smluv a vzala na vědomí zápis komise mládeže a sportu z 19. 10. 2026.
+    citace: "poskytnutí dotací žadatelům v oblasti tělovýchovy a sportu takto:"
+    anonymizace: ["Pavel Klejna,"]
+    poznamka: Výše dotací jsou v tabulce v textu usnesení; v anotaci je nerozepisujeme a nesčítáme. Žadatel – fyzická osoba je anonymizován. U dvou akcí je dotace 0,00 Kč.
+
+  rm-2026-j114-u549:
+    tema: Dotace v oblasti ostatních zájmových činností 2026
+    kategorie: [dotace_dary]
+    shrnuti: Rada schválila dotace třem žadatelům na jednorázové akce (dopravní výuka, burza dětského ošacení, Mikulášská nadílka) a uzavření veřejnoprávních smluv.
+    citace: "poskytnutí dotací žadatelům v oblasti ostatních zájmových činností takto:"
+    anonymizace: ["Mgr. Martin Ille, Třeboň"]
+    poznamka: Výše dotací jsou v tabulce v textu usnesení; v anotaci je nerozepisujeme a nesčítáme. Žadatel – fyzická osoba je anonymizován.
+
+  rm-2026-j114-u550:
+    tema: Rozpočtové opatření č. 59 – znalecké posudky
+    kategorie: [rozpocet]
+    shrnuti: Rada zvýšila příjmy z pronájmu pozemků i výdaje na znalecké posudky, každé o 50 000 Kč.
+    citace: "provedení rozpočtového opatření č. 59, které spočívá v:"
+    castky:
+      - hodnota: 50000.00
+        jednotka: Kč
+        druh: rozpoctove_opatreni
+        s_dph: null
+        poznamka: navýšení příjmové položky 2131
+        citace: "navýšení příjmové položky 2131 „Pronájem - pozemky - ostatní“, § 3639, ORJ 800, ORG 0, UZ 0 o částku 50.000,00 Kč,"
+      - hodnota: 50000.00
+        jednotka: Kč
+        druh: rozpoctove_opatreni
+        s_dph: null
+        poznamka: navýšení výdajové položky 5166
+        citace: "navýšení výdajové položky 5166 „Znalecké posudky“, § 3639, ORJ 800, ORG 9800004004, UZ 0 o částku 50.000,00 Kč."
+
+  rm-2026-j114-u551:
+    tema: Dodatek č. 5 ke smlouvě o dílo – přístavba dvou tělocvičen sportovní haly
+    kategorie: [investice, sport, verejne_zakazky]
+    shrnuti: Rada schválila uzavření Dodatku č. 5 ke smlouvě o dílo na stavbu Přístavba dvou tělocvičen sportovní haly Třeboň; předmětem dodatku je změna ceny díla.
+    citace: "uzavření Dodatku č. 5 ke smlouvě o dílo č. 750/9262/26 ze dne 14.01.2026 na zhotovení stavby „Přístavba dvou tělocvičen sportovní haly Třeboň“"
+    poznamka: Zápis neuvádí původní ani novou cenu díla, jen že dodatek mění cenu. Částku nedoplňujeme.
+    otazky: ["Jaká je cena díla před a po Dodatku č. 5? (zápis ji neuvádí; hledat v registru smluv)"]
+
+  rm-2026-j114-u552:
+    tema: Platové ohodnocení ředitele Městské sportovní Třeboň
+    kategorie: [personalni, prispevkove_organizace]
+    shrnuti: Rada od 1. 11. 2026 schválila řediteli příspěvkové organizace Městská sportovní Třeboň zvýšení tarifní třídy a příplatku za vedení; výše je v neveřejné příloze.
+    citace: "zvýšení tarifní třídy a příplatku za vedení ve výši dle neveřejné přílohy."
+    poznamka: Výše platu zápis neuvádí (neveřejná příloha).
+
+  rm-2026-j114-u553:
+    tema: Prodej vyřazeného drobného majetku města
+    kategorie: [ostatni]
+    shrnuti: Rada schválila prodej vyřazeného drobného hmotného majetku města dvěma členům rady města (starostovi notebook s dokovací stanicí, monitor a mobilní telefon, místostarostce mobilní telefon); kupní smlouvy za město podepíše tajemnice.
+    citace: "kdy předmětem smlouvy je drobný hmotný majetek (notebook s dokovací stanicí, monitor a mobilní telefon) zařazený do majetkové evidence města Třeboně"
+    poznamka: Kupující jsou volení zástupci (starosta a místostarostka), uvedeni v zápise. Kupní cena v zápise není.
+    otazky: ["Za jakou cenu byl majetek prodán? (zápis ji neuvádí)"]
+
+  rm-2026-j114-u554:
+    tema: Dodatek č. 1 ke smlouvě o publikování otevřených dat
+    kategorie: [samosprava]
+    shrnuti: Rada schválila uzavření Dodatku č. 1 ke smlouvě o zřízení a provozu publikování otevřených dat (výroba a provoz) se společností Galileo Corporation s. r. o.
+    citace: "uzavření Dodatku č. 1 ke Smlouvě o zřízení a provozu publikování otevřených dat - výroba a provoz"
+    poznamka: Zápis neuvádí obsah dodatku ani cenu.

@@ -1,0 +1,242 @@
+# Anotace usnesení navržené AI (model A: Claude), stav: navrh.
+# Struktura, čísla usnesení a hlasování NEJSOU zde – ty vytváří deterministicky pipeline/zapisy.py.
+# Každá citace musí doslova (po sjednocení mezer) existovat v textu usnesení.
+jednani:
+  organ: zastupitelstvo
+  cislo: 31
+  druh: radne
+  datum: "2026-09-21"
+  obdobi: "2022-2026"
+  pritomno: 21
+  clenu: 25
+  citace: "Přítomni: dle prezenční listiny přítomno 21 členů ZM."
+  dokument_id: zapis-zm-2026-09-21
+
+usneseni:
+  zm-2026-j31-u73:
+    tema: Program jednání, návrhová komise a ověřovatelé zápisu
+    kategorie: [samosprava]
+    shrnuti: Zastupitelstvo schválilo program 31. jednání, návrhovou komisi a ověřovatele zápisu.
+    citace: "a) program jednání."
+
+  zm-2026-j31-u74:
+    tema: Plnění usnesení zastupitelstva a požadavků zastupitelů
+    kategorie: [samosprava]
+    shrnuti: Zastupitelstvo vzalo na vědomí zprávy o plnění svých usnesení a požadavků zastupitelů z jednání 22. 6. 2026.
+    citace: "zprávu o plnění usnesení zastupitelstva města přijatých na jednání zastupitelstva města dne 22.06.2026."
+
+  zm-2026-j31-u75:
+    tema: Rozpočtová opatření provedená radou od 10. 6. do 26. 8. 2026
+    kategorie: [rozpocet]
+    shrnuti: Zastupitelstvo vzalo na vědomí přehled rozpočtových opatření, která provedla rada města.
+    citace: "přehled rozpočtových opatření provedených radou města od 10.06.2026 do 26.08.2026"
+
+  zm-2026-j31-u76:
+    tema: Plnění rozpočtu města k 30. 6. 2026 a mezitímní účetní závěrka
+    kategorie: [rozpocet]
+    shrnuti: Zastupitelstvo vzalo na vědomí informaci o plnění a čerpání rozpočtu města k 30. 6. 2026 a mezitímní účetní závěrku.
+    citace: "informaci o plnění a čerpání rozpočtu města k 30.06.2026 a mezitímní účetní závěrku"
+
+  zm-2026-j31-u77:
+    tema: Rozpočtové opatření č. 48 – 20 milionů Kč pro Lázeňský investiční fond
+    kategorie: [rozpocet, investice, lazne_spolecnosti]
+    shrnuti: Zastupitelstvo schválilo přesun 20 000 000 Kč z rezervy kapitálových výdajů do Lázeňského investičního fondu na technické zhodnocení budov pronajatých společnosti Slatinné lázně Třeboň.
+    citace: "snížení výdajové položky 6901 „Rezervy kapitálových výdajů“, § 6409, ORJ 800, ORG 6093000000, UZ 0 o částku 20.000.000,00 Kč"
+    castky:
+      - hodnota: 20000000.00
+        jednotka: Kč
+        druh: rozpoctove_opatreni
+        s_dph: null
+        citace: "snížení výdajové položky 6901 „Rezervy kapitálových výdajů“, § 6409, ORJ 800, ORG 6093000000, UZ 0 o částku 20.000.000,00 Kč"
+    poznamka: Částka je přesun mezi rozpočtovými položkami, ne cena zakázky ani výdaj. Tabulka rozpočtu je v datech jen jako surový text.
+
+  zm-2026-j31-u78:
+    tema: Záměr prodeje částí pozemků p. č. 484/1 a 484/3 v Třeboni
+    kategorie: [majetek_prevod]
+    shrnuti: Zastupitelstvo schválilo zveřejnění záměru prodeje částí dvou pozemků (cca 15 m2 a cca 4 m2) za 3 000 Kč/m2.
+    citace: "části pozemku p. č. 484/1 o výměře cca 15 m2, části pozemku p. č. 484/3 o výměře cca 4 m2 k. ú. Třeboň"
+    castky:
+      - hodnota: 3000.00
+        jednotka: Kč/m2
+        druh: jine
+        s_dph: null
+        citace: "za cenu 3.000,- Kč/m2"
+        poznamka: Cena za m2 v záměru prodeje; zda je s DPH, zdroj neuvádí.
+    parcely:
+      - ku: Třeboň
+        cislo: "484/1"
+        cast: true
+        citace: "části pozemku p. č. 484/1 o výměře cca 15 m2"
+      - ku: Třeboň
+        cislo: "484/3"
+        cast: true
+        citace: "části pozemku p. č. 484/3 o výměře cca 4 m2"
+    poznamka: Jde o záměr (zveřejnění na úřední desce), ne o schválený prodej. Výměra se upřesní geometrickým plánem.
+
+  zm-2026-j31-u79:
+    tema: Záměr prodeje části pozemku p. č. 1/1 v Holičkách u Staré Hlíny obálkovou metodou
+    kategorie: [majetek_prevod]
+    shrnuti: Zastupitelstvo schválilo zveřejnění záměru prodeje části pozemku o výměře 510 m2 obálkovou metodou s minimální nabídkovou cenou 2 000 Kč/m2 plus DPH.
+    citace: "části pozemku p. č. 1/1 o výměře 510 m2 k. ú. Holičky u Staré Hlíny"
+    castky:
+      - hodnota: 2000.00
+        jednotka: Kč/m2
+        druh: jine
+        s_dph: false
+        citace: "minimální nabídková cena činí 2.000,00 Kč/m2 + DPH dle platných právních předpisů"
+        poznamka: Minimální nabídková cena v obálkové metodě; DPH se k ceně přičítá.
+    parcely:
+      - ku: Holičky u Staré Hlíny
+        cislo: "1/1"
+        cast: true
+        citace: "části pozemku p. č. 1/1 o výměře 510 m2 k. ú. Holičky u Staré Hlíny"
+    poznamka: Jde o záměr prodeje, ne o schválený prodej.
+
+  zm-2026-j31-u80:
+    tema: Záměr prodeje pozemků ve Staré Hlíně
+    kategorie: [majetek_prevod]
+    shrnuti: Zastupitelstvo schválilo záměr prodeje části pozemku p. č. 484 (34 m2) a pozemku p. č. 1118 (53 m2) za 500 Kč/m2 a pozemku p. č. 508 (76 m2) za 800 Kč/m2.
+    citace: "záměr prodeje části pozemku p. č. 484 o výměře 34 m2"
+    castky:
+      - hodnota: 500.00
+        jednotka: Kč/m2
+        druh: jine
+        s_dph: null
+        citace: "p. č. 1118 o výměře 53 m2 vše v k. ú. Stará Hlína za cenu 500,00 Kč/m2"
+        poznamka: Cena za m2 v záměru prodeje (části pozemku p. č. 484 a pozemek p. č. 1118); zda je s DPH, zdroj neuvádí.
+      - hodnota: 800.00
+        jednotka: Kč/m2
+        druh: jine
+        s_dph: null
+        citace: "pozemku p. č. 508 o výměře 76 m2 v k. ú. Stará Hlína za cenu 800,00 Kč/m2"
+        poznamka: Cena za m2 v záměru prodeje (pozemek p. č. 508); zda je s DPH, zdroj neuvádí.
+    parcely:
+      - ku: Stará Hlína
+        cislo: "484"
+        cast: true
+        citace: "části pozemku p. č. 484 o výměře 34 m2"
+      - ku: Stará Hlína
+        cislo: "1118"
+        citace: "p. č. 1118 o výměře 53 m2 vše v k. ú. Stará Hlína"
+      - ku: Stará Hlína
+        cislo: "508"
+        citace: "pozemku p. č. 508 o výměře 76 m2 v k. ú. Stará Hlína"
+    poznamka: Jde o záměr prodeje, ne o schválený prodej.
+
+  zm-2026-j31-u81:
+    tema: Prodej dvou malých pozemků v Třeboni
+    kategorie: [majetek_prevod]
+    shrnuti: Zastupitelstvo schválilo prodej pozemků p. č. 1915/585 (4 m2) a p. č. 1915/535 (13 m2) za 500 Kč/m2; kupující jsou v zápisu anonymizováni.
+    citace: "prodej pozemků p. č. 1915/585 (ostatní plocha) o výměře 4 m2, p. č. 1915/535 (zahrada) o výměře 13 m2 v k. ú. Třeboň"
+    castky:
+      - hodnota: 500.00
+        jednotka: Kč/m2
+        druh: jine
+        s_dph: null
+        citace: "za cenu 500,00 Kč/m2"
+        poznamka: Prodejní cena za m2; zda je s DPH, zdroj neuvádí.
+    parcely:
+      - ku: Třeboň
+        cislo: "1915/585"
+        citace: "p. č. 1915/585 (ostatní plocha) o výměře 4 m2"
+      - ku: Třeboň
+        cislo: "1915/535"
+        citace: "p. č. 1915/535 (zahrada) o výměře 13 m2"
+    poznamka: Kupující (manželé) jsou fyzické osoby, jejich údaje město v zápisu anonymizovalo.
+
+  zm-2026-j31-u82:
+    tema: Dar pozemku s torzem seníku v Třeboni
+    kategorie: [majetek_prevod, dotace_dary]
+    shrnuti: Zastupitelstvo schválilo přijetí daru pozemku p. č. 3878 (40 m2) i s torzem seníku od tří vlastníků spolu s bezúplatným zřízením práva cesty k seníku; náklady spojené s darem hradí město.
+    citace: "kdy předmětem daru bude pozemek p. č. 3878 (zastavěná plocha a nádvoří) o výměře 40 m2 vč. torza seníku"
+    parcely:
+      - ku: Třeboň
+        cislo: "3878"
+        citace: "pozemek p. č. 3878 (zastavěná plocha a nádvoří) o výměře 40 m2"
+      - ku: Třeboň
+        cislo: "3879"
+        zdroj: sluzebnost
+        citace: "v právu stezky, cesty na pozemku p. č. 3879 k. ú. Třeboň"
+    poznamka: Dárci jsou fyzické osoby, jejich údaje město v zápisu anonymizovalo. Hodnota daru v zápisu neuvedena.
+
+  zm-2026-j31-u83:
+    tema: Bezúplatný převod pozemků od Státního pozemkového úřadu
+    kategorie: [majetek_prevod]
+    shrnuti: Zastupitelstvo schválilo tři smlouvy o bezúplatném převodu pozemků v Třeboni a v Břilicích od Státního pozemkového úřadu na město.
+    citace: "uzavření Smlouvy o bezúplatném převodu pozemku č. 1009992617 mezi Českou republikou – Státním pozemkovým úřadem"
+    parcely:
+      - ku: Třeboň
+        cislo: "1742/2"
+        citace: "pozemek p. č. 1742/2 (trvalý travní porost) k. ú. Třeboň"
+      - ku: Břilice
+        cislo: "134/1"
+        citace: "pozemky p. č. 134/1 (orná půda)"
+      - ku: Břilice
+        cislo: "134/2"
+        citace: "p. č. 134/2 (trvalý travní porost)"
+      - ku: Břilice
+        cislo: "1933/1"
+        citace: "p. č. 1933/1 (orná půda, nově vytvořeno GP"
+      - ku: Břilice
+        cislo: "1933/3"
+        citace: "p. č. 1933/3 (trvalý travní porost), vše v k. ú. Břilice"
+      - ku: Břilice
+        cislo: "1926/3"
+        citace: "pozemek p. č. 1926/3 (orná půda) v k. ú. Břilice"
+
+  zm-2026-j31-u84:
+    tema: Převod družstevních nebytových prostor od Stavebního bytového družstva
+    kategorie: [majetek_prevod]
+    shrnuti: Zastupitelstvo schválilo dvě smlouvy o převodu vlastnictví družstevních nebytových prostor (jednotka v č. p. 566 a čtyři jednotky v č. p. 11) na město podle dohody o narovnání ze 6. 5. 2026.
+    citace: "uzavření Smlouvy o převodu vlastnictví družstevního nebytového prostoru a pozemku mezi městem Třeboň"
+    parcely:
+      - ku: Třeboň
+        cislo: "1178/4"
+        zdroj: usneseni
+        citace: "pozemku p. č. KN 1178/4 - zastavěná plocha a nádvoří, jehož součástí je budova č. p. 566"
+      - ku: Třeboň
+        cislo: "762/4"
+        zdroj: usneseni
+        citace: "pozemku p. č. KN 762/4 - zastavěná plocha a nádvoří, o výměře 476 m2"
+    poznamka: Cena převodu v zápisu neuvedena.
+
+  zm-2026-j31-u85:
+    tema: Založení Společenství vlastníků pro dům čp. 127
+    kategorie: [majetek_prevod, samosprava]
+    shrnuti: Město se stalo spoluzakladatelem Společenství vlastníků pro dům čp. 127, Třeboň I, schválilo svou účast a stanovy a delegovalo starostu jako svého zástupce.
+    citace: "o založení společenství vlastníků s názvem „Společenství vlastníků pro dům čp. 127, Třeboň I“"
+    poznamka: Členové prvního výboru jsou fyzické osoby, jejich údaje město v zápisu anonymizovalo.
+
+  zm-2026-j31-u86:
+    tema: Rozdělení Změny č. 9 územního plánu na Změnu č. 9a a 9b
+    kategorie: [ostatni]
+    shrnuti: Zastupitelstvo schválilo rozdělení Změny č. 9 územního plánu na dvě změny; 9a prověří čtyři podněty (č. 2, 29, 32 a 38), 9b ostatní podněty.
+    citace: "rozdělení Změny č. 9 územního plánu Třeboň na Změnu č. 9a územního plánu Třeboň a Změnu č. 9b"
+    poznamka: Hlasování 20 pro, 1 se zdržel.
+
+  zm-2026-j31-u87:
+    tema: Vydání Změny č. 3 regulačního plánu Třeboň (plochy BM1, BV6, OS4)
+    kategorie: [ostatni]
+    shrnuti: Zastupitelstvo po částech hlasovalo o vydání Změny č. 3 regulačního plánu; v části II. nevyhovělo třem připomínkám (osadní výbor Břilice, vlastníci pozemků p. č. 124/1 a 179/13 v Břilicích) a změnu vydalo.
+    citace: "vydání Změny č. 3 regulačního plánu Třeboň."
+    parcely:
+      - ku: Břilice
+        cislo: "124/1"
+        zdroj: pripominka
+        citace: "p. č. 124/1 v k. ú. Břilice"
+      - ku: Břilice
+        cislo: "179/13"
+        zdroj: pripominka
+        citace: "p. č. 179/13 v k. ú. Břilice"
+    anonymizace:
+      - retezec: "P. M., Břilice"
+        nahrada: "občan, Břilice"
+      - retezec: "P. M."
+        nahrada: "občan"
+    poznamka: Text usnesení obsahuje vyhodnocení tří připomínek (u všech „NEVYHOVĚT“). Podatelé jsou fyzické osoby, jejich údaje jsou v textu anonymizovány; iniciály občana jsme nahradili slovem „občan“.
+
+  zm-2026-j31-u88:
+    tema: Dodatek č. 13 ke Zřizovací listině Základní školy Na Sadech
+    kategorie: [skolstvi, prispevkove_organizace]
+    shrnuti: Zastupitelstvo schválilo Dodatek č. 13 ke Zřizovací listině Základní školy Třeboň, Na Sadech 375, který se týká předání majetku škole k hospodaření.
+    citace: "Dodatek č. 13 ke Zřizovací listině ze dne 05.12.1994"

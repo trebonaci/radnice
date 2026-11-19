@@ -1,5 +1,911 @@
 [
   {
+    "id": "rm-2026-09-09",
+    "organ": "rada",
+    "druh": "radne",
+    "cislo": 110,
+    "datum": "2026-09-09",
+    "obdobi": "2022-2026",
+    "pritomno_na_zacatku": 5,
+    "clenu": 7,
+    "pritomnost_zmeny": [],
+    "dokument": {
+      "dokument_id": "zapis-rm-2026-09-09",
+      "url": "https://www.mesto-trebon.cz/uploads/news/id15037/Z-110-26-09-09-A.pdf",
+      "stranka_zdroje": "https://www.mesto-trebon.cz/cz/mestsky-urad-trebon/samosprava-mesta/rada-mesta/zapisy-z-jednani-rady-mesta/volebni-obdobi-2022---2026-2.html",
+      "vyveseno": null,
+      "sha256": "7ad145ae985ae95ac1b5b918de3a87563dc72b432d3ee3b98e14424f771d6591",
+      "pocet_stran": 11
+    },
+    "body": [
+      {
+        "cislo": 1,
+        "nazev": "Zahájení",
+        "strana": 1,
+        "text": "Jednání rady zahájil pan starosta PaedDr. Jan Váňa v 15.00 hodin.\nV úvodu jednání bylo přítomno 5 členů rady města.\nZápis ze 110. jednání RM ze dne 09.09.2026",
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 2,
+        "nazev": "Program 110. jednání a schválení zveřejnění zápisů",
+        "strana": 2,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 3,
+        "nazev": "Záměr prodeje části pozemku p. č. 484, pozemku p.č. 1118 a pozemku p. č. 508 vše v k. ú. Stará Hlína",
+        "strana": 2,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 4,
+        "nazev": "Souhlasné prohlášení o shodě na průběhu hranic pozemků – k. ú. Stará Hlína",
+        "strana": 2,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 5,
+        "nazev": "Žádost o změnu smluvního modelu převodu staveb a pozemků v rámci \"ZTV Třeboň 2. etapa- Líbalova ulice\" - V1 - projekt s.r.o.",
+        "strana": 3,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 6,
+        "nazev": "Zřízení služebnosti pro uložení optického kabelu v k. ú. Třeboň",
+        "strana": 3,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 7,
+        "nazev": "Souhlas s přesahem zateplení obvodových stěn u domu čp. 672 a čp. 1050 na p.č. 1679/4 k. ú. Třeboň a provedení stavební úpravy betonových ploch na p.č. 1679/4, p. č. 1695/148 k. ú. Třeboň",
+        "strana": 3,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 8,
+        "nazev": "Dodatky č. 1 ke smlouvám o výpůjčce - nebytové prostory č. p. 2/II, Třeboň (klub důchodců)",
+        "strana": 4,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 9,
+        "nazev": "CETIN a.s. – záměr uzavření dodatku č. 4 k nájemní smlouvě",
+        "strana": 4,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 10,
+        "nazev": "Žádost o prodloužení nájemní smlouvy – XXXXXXXXX",
+        "strana": 5,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 11,
+        "nazev": "Záměr pronájmu bytů č. 9, č. 18 a č. 20 v DPS 2",
+        "strana": 5,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 12,
+        "nazev": "Rozpočtové opatření č. 50 – Dům dětí a mládeže - opravy",
+        "strana": 6,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 13,
+        "nazev": "Schválení Dodatku č. 4 ke smlouvě o dílo akce          Sportovní hala Třeboň – nástavba a přístavba ubytování",
+        "strana": 6,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 14,
+        "nazev": "Veřejnosprávní kontrola hospodaření ke dni 31.03.2026 na Základní škole Třeboň, Na Sadech 375",
+        "strana": 7,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 15,
+        "nazev": "Hospodaření příspěvkových organizací ve školství ke dni 30.06.2026",
+        "strana": 7,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 16,
+        "nazev": "Dodatek č. 13 ke Zřizovací listině - ZŠ Třeboň, Na Sadech 375",
+        "strana": 7,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 17,
+        "nazev": "Souhlas se jmenováním členů do školské rady při ZŠ Třeboň, Na Sadech 375",
+        "strana": 7,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 18,
+        "nazev": "Dohoda o ukončení Smlouvy o spolupráci při zavedení a používání jízdenky JIKORD plus a JIKORD plus Bavorsko",
+        "strana": 8,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 19,
+        "nazev": "Statut interního auditu města Třeboň - změna č. 1.",
+        "strana": 8,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 20,
+        "nazev": "Převod technického zhodnocení nemovitého majetku na město Třeboň – I/2026",
+        "strana": 8,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 21,
+        "nazev": "Dodatek č. 2 ke Smlouvě o zajištění investorsko-inženýrských činností – FVE – Slatinné lázně Třeboň",
+        "strana": 9,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 22,
+        "nazev": "Zadávací řízení – Dodávka a montáž nábytku předsíní (mobiliář – budova G-LDA)",
+        "strana": 9,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 23,
+        "nazev": "Smlouvy o převodu vlastnictví družstevního nebytového prostoru a pozemku - č. p. 11 v ul. Jiráskova a č. p. 566 v ul. Táboritská",
+        "strana": 10,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 24,
+        "nazev": "Smlouvy o bezúplatném převodu – pozemek p. č. 1742/2 k. ú. Třeboň, pozemky p. č. 134/1, 134/2, 1933/1, 1933/3 k. ú. Břilice, pozemek p. č. 1926/3 k. ú. Břilice",
+        "strana": 10,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 25,
+        "nazev": "Různé",
+        "strana": 11,
+        "text": "Jednání rady města ukončil starosta v 16.15 hodin.\nPaedDr. Jan Váňa v. r.                                                    Mgr. Aleš Kolář v. r.\nstarosta města Třeboně                                                    místostarosta města Třeboně\nZapsala: zapisovatelka\nZápis byl zpracován dne 15.09.2026\nZápis ze 110. jednání RM ze dne 09.09.2026",
+        "text_anonymizovan": true
+      }
+    ],
+    "upozorneni_parseru": []
+  },
+  {
+    "id": "rm-2026-09-23",
+    "organ": "rada",
+    "druh": "radne",
+    "cislo": 111,
+    "datum": "2026-09-23",
+    "obdobi": "2022-2026",
+    "pritomno_na_zacatku": 7,
+    "clenu": 7,
+    "pritomnost_zmeny": [],
+    "dokument": {
+      "dokument_id": "zapis-rm-2026-09-23",
+      "url": "https://www.mesto-trebon.cz/uploads/news/id15072/Z-111-26-09-23-A.pdf",
+      "stranka_zdroje": "https://www.mesto-trebon.cz/cz/mestsky-urad-trebon/samosprava-mesta/rada-mesta/zapisy-z-jednani-rady-mesta/volebni-obdobi-2022---2026-2.html",
+      "vyveseno": null,
+      "sha256": "cdf3708c368f4c9c79e2ad884acab4b7f2747a5664ed7e8c5725b76bfcf72daf",
+      "pocet_stran": 9
+    },
+    "body": [
+      {
+        "cislo": 1,
+        "nazev": "Zahájení",
+        "strana": 1,
+        "text": "Jednání rady zahájil pan starosta PaedDr. Jan Váňa v 15.00 hodin.\nV úvodu jednání bylo přítomno 7 členů rady města.",
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 2,
+        "nazev": "Program 111. jednání a schválení zveřejnění zápisů",
+        "strana": 1,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 3,
+        "nazev": "Nabídka ÚZSVM – pozemek p. č. 1915/260 k. ú. Třeboň",
+        "strana": 2,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 4,
+        "nazev": "Pronájem části pozemku p. č. 575 k. ú. Třeboň, souhlas s užíváním části pozemku p. č. 500 k. ú. Třeboň",
+        "strana": 2,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 5,
+        "nazev": "Zřízení služebnosti pro uložení optického kabelu v k. ú. Stará Hlína",
+        "strana": 3,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 6,
+        "nazev": "Zřízení služebnosti pro uložení kabelu VN, telekomunikačního vedení na pozemcích p. č. 2168/8, p. č. 4485, p. č. 4530, p. č. 4540, p. č. 4542, p. č. 4543 k. ú. Třeboň",
+        "strana": 3,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 7,
+        "nazev": "Uzavření smlouvy o zřízení služebnosti pro uložení vodovodní přípojky na pozemcích p. č. 2049/52, p. č. 2054/3 k. ú. Branná",
+        "strana": 4,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 8,
+        "nazev": "Stanovení výše nájemného za provozovaný vodohospodářský infrastrukturní majetek (vodovody a kanalizace) pro rok 2027",
+        "strana": 4,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 9,
+        "nazev": "Dohoda o umístění monitorovacího bodu dopravního systému PČR",
+        "strana": 4,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 10,
+        "nazev": "Prodej vozidla Škoda Fabia RZ 5C2 8202 – prodej prostřednictvím spol. Veacom s.r.o.",
+        "strana": 5,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 11,
+        "nazev": "Revokace části usnesení č. 369/2026-107 ze dne 15.07.2026",
+        "strana": 5,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 12,
+        "nazev": "Smlouva o dílo - zpracování projektové dokumentace a žádosti o podporu týkající se projektu kybernetické bezpečnosti",
+        "strana": 5,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 13,
+        "nazev": "Předchozí souhlas zřizovatele s přijetím daru Základní školou Na Sadech 375, Třeboň",
+        "strana": 5,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 14,
+        "nazev": "Stavební úpravy MK v ul. Budějovické v Třeboni – dodatek č. 1 ke smlouvě o dílo",
+        "strana": 6,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 15,
+        "nazev": "Stavební úpravy MK v ul. Souběžná v Třeboni – dodatek č. 1 ke smlouvě o dílo",
+        "strana": 6,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 16,
+        "nazev": "Pronájem části pozemku p. č. 1087/17 k. ú. Třeboň",
+        "strana": 6,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 17,
+        "nazev": "Schválení Dodatku č. 4 ke smlouvě o dílo akce Přístavba dvou tělocvičen sportovní haly Třeboň",
+        "strana": 7,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 18,
+        "nazev": "Schválení Dodatku č. 1 ke kupní smlouvě akce Sportovní hala Třeboň – nástavba a přístavba ubytování – vybavení interiéru",
+        "strana": 7,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 19,
+        "nazev": "Páteřní dešťová kanalizace v úseku Nový Dvůr – Jablonského ulice, Třeboň – Smlouva o smlouvě budoucí o zřízení služebnosti č. PVL-1867/2026/SML",
+        "strana": 7,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 20,
+        "nazev": "Rozpočtové opatření č. 51 - Přístavba tělocvičen - vybavení",
+        "strana": 8,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 21,
+        "nazev": "Osobní příplatek ředitele ZŠ Třeboň, Sokolská 296",
+        "strana": 8,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 22,
+        "nazev": "Různé",
+        "strana": 9,
+        "text": "Jednání rady města ukončil pan starosta v 16:25 hodin.\nPaedDr. Jan Váňa v. r.                                   Ing. Jana Grammetbauerová v. r.\nstarosta města Třeboně                                   místostarostka města Třeboně\nZapsala: zapisovatelka\nZápis byl zpracován dne 29.09.2026\nZápis ze 111. jednání RM ze dne 23.09.2026",
+        "text_anonymizovan": true
+      }
+    ],
+    "upozorneni_parseru": []
+  },
+  {
+    "id": "rm-2026-10-07",
+    "organ": "rada",
+    "druh": "radne",
+    "cislo": 112,
+    "datum": "2026-10-07",
+    "obdobi": "2022-2026",
+    "pritomno_na_zacatku": 7,
+    "clenu": 7,
+    "pritomnost_zmeny": [],
+    "dokument": {
+      "dokument_id": "zapis-rm-2026-10-07",
+      "url": "https://www.mesto-trebon.cz/uploads/news/id15132/Z-112-26-10-07-A.pdf",
+      "stranka_zdroje": "https://www.mesto-trebon.cz/cz/mestsky-urad-trebon/samosprava-mesta/rada-mesta/zapisy-z-jednani-rady-mesta/volebni-obdobi-2022---2026-2.html",
+      "vyveseno": null,
+      "sha256": "c8ab066b0a87ae5ff1cf1d1ada4f34f819522ecda60cbffd421d8f581a825d86",
+      "pocet_stran": 8
+    },
+    "body": [
+      {
+        "cislo": 1,
+        "nazev": "Zahájení",
+        "strana": 1,
+        "text": "Jednání rady zahájil pan starosta PaedDr. Jan Váňa v 15.00 hodin.\nV úvodu jednání bylo přítomno 7 členů rady města.",
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 2,
+        "nazev": "Program 112. jednání a schválení zveřejnění zápisů",
+        "strana": 1,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 3,
+        "nazev": "Nebytový prostor č. p. 3 Přeseka – záměr výpůjčky",
+        "strana": 2,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 4,
+        "nazev": "Výpověď - nebytový prostor čp. 20/II, Svatopluka Čecha, Třeboň",
+        "strana": 2,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 5,
+        "nazev": "Byt č. 7 v čp. 86/I na Masarykovo nám. - záměr pronájmu",
+        "strana": 2,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 6,
+        "nazev": "Byt č. 9 v čp. 2/II (DPS 2) v ulici Chelčického, Třeboň",
+        "strana": 3,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 7,
+        "nazev": "Byt č. 18 v čp. 2/II (DPS 2) v ulici Chelčického, Třeboň",
+        "strana": 3,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 8,
+        "nazev": "Byt č. 20 v čp. 2/II (DPS 2) v ulici Chelčického, Třeboň",
+        "strana": 3,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 9,
+        "nazev": "Ústřední inventarizační komise dne 15.09.2026",
+        "strana": 4,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 10,
+        "nazev": "Ústav výzkumu globální změny AV ČR, v.v.i. – 2. NP",
+        "strana": 4,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 11,
+        "nazev": "Veřejnosprávní kontrola hospodaření s veřejnými prostředky zřizovatele - Městská sportovní Třeboň",
+        "strana": 4,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 12,
+        "nazev": "RO č. 52 – Navýšení pojištění majetku + spoluúčast (náhrady)",
+        "strana": 5,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 13,
+        "nazev": "Veřejná zakázka „Stavební úpravy MK v ul. Heřmánkova a Daskabát v Třeboni“ – výběr dodavatele stavby",
+        "strana": 5,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 14,
+        "nazev": "Schválení Dodatku č. 4 ke smlouvě o dílo akce Stavební úpravy části MK ul. Sídliště v Třeboni – v úseku od silnice III/15512 po čp. 1158",
+        "strana": 6,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 15,
+        "nazev": "Veřejná zakázka „Instalace FVE 38,7 kWp na střeše přístavby ZŠ Na Sadech,Třeboň“ – Dodatek č. 1 ke smlouvě o dílo",
+        "strana": 6,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 16,
+        "nazev": "Slatinné lázně Třeboň s.r.o. – schválení smlouvy o vypořádání technických zhodnocení 1/2026",
+        "strana": 6,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 17,
+        "nazev": "Prodej dřevní hmoty vzniklé kácením stromů na pozemcích města Třeboně",
+        "strana": 6,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 18,
+        "nazev": "Příkazní smlouva - Muzeum města Třeboně",
+        "strana": 7,
+        "text": null,
+        "nazev_anonymizovan": true,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 19,
+        "nazev": "Zápis z 23. jednání BK dne 29.09.2026",
+        "strana": 7,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 20,
+        "nazev": "Smlouvy o vypořádání závazků",
+        "strana": 7,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 21,
+        "nazev": "Různé",
+        "strana": 8,
+        "text": "Jednání rady města ukončil starosta v 16.45 hodin.\nPaedDr. Jan Váňa v. r.                                             Mgr. Aleš Kolář v. r.\nstarosta města Třeboně                                             místostarosta města Třeboně\nZapsala: zapisovatelka\nZápis byl zpracován dne 13.10.2026\nZápis ze 112. jednání RM ze dne 07.10.2026",
+        "text_anonymizovan": true
+      }
+    ],
+    "upozorneni_parseru": [
+      "RM 506/2026-112 část I: neznámý úkon 'rozhodla'"
+    ]
+  },
+  {
+    "id": "rm-2026-10-21",
+    "organ": "rada",
+    "druh": "radne",
+    "cislo": 113,
+    "datum": "2026-10-21",
+    "obdobi": "2022-2026",
+    "pritomno_na_zacatku": 7,
+    "clenu": 7,
+    "pritomnost_zmeny": [],
+    "dokument": {
+      "dokument_id": "zapis-rm-2026-10-21",
+      "url": "https://www.mesto-trebon.cz/uploads/news/id15164/Z-113-26-10-21-A.pdf",
+      "stranka_zdroje": "https://www.mesto-trebon.cz/cz/mestsky-urad-trebon/samosprava-mesta/rada-mesta/zapisy-z-jednani-rady-mesta/volebni-obdobi-2022---2026-2.html",
+      "vyveseno": null,
+      "sha256": "060d6bf56efbd248384a531317daaa5a60d2b6fdb46fa56e3b4f2b5a9c112501",
+      "pocet_stran": 15
+    },
+    "body": [
+      {
+        "cislo": 1,
+        "nazev": "Zahájení",
+        "strana": 2,
+        "text": "Jednání rady zahájil pan starosta PaedDr. Jan Váňa v 8.00 hodin.\nV úvodu jednání bylo přítomno 7 členů rady města.",
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 2,
+        "nazev": "Program 113. jednání a schválení zveřejnění zápisů",
+        "strana": 2,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 3,
+        "nazev": "Pronájem části pozemku p. č. 575 k. ú. Třeboň",
+        "strana": 2,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 4,
+        "nazev": "Zřízení služebnosti pro uložení kabelového vedení NN na pozemku p. č. 3030 k. ú. Třeboň",
+        "strana": 2,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 5,
+        "nazev": "Zřízení služebnosti pro uložení kabelu VN, HDPE trubky na pozemcích p. č. 2292/3, p. č. 2503/11, p. č. 3692, p. č. 3789, p. č. 3831 k. ú. Třeboň, p. č. 1125, p. č. 168/80, p. č. 722/8, p. č. 722/9, p. č. 736/2, p. č. 736/5, p. č. 736/6 k. ú. Holičky u Staré Hlíny",
+        "strana": 3,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 6,
+        "nazev": "Novostavba objektu zubních ordinací pro účely lázní na pozemku p. č. 1918/22 k. ú. Třeboň – komunikace, VHI (nabídka)",
+        "strana": 3,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 7,
+        "nazev": "CETIN a.s. – uzavření dodatku č. 4 k nájemní smlouvě",
+        "strana": 4,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 8,
+        "nazev": "Smlouva o připojení zařízení elektrické zvoničky kaple ve Staré Hlíně k odběrnému místu elektrické energie",
+        "strana": 5,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 9,
+        "nazev": "Darovací smlouva – domácí loutkové divadlo z první republiky",
+        "strana": 5,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 10,
+        "nazev": "Prodej vozidla Škoda Fabia RZ 5C2 8202",
+        "strana": 5,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 11,
+        "nazev": "Městská sportovní Třeboň - čerpání prostředků z fondu investic příspěvkové organizace v roce 2026 - pořízení kamerového systému, mycího stroje a vybavení na úklid do přístaveb ubytování a tělocvičen",
+        "strana": 6,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 12,
+        "nazev": "Rozpočtové opatření č. 53 – Přesun finančních prostředků mezi výdajovými položkami – posílení položky ostatních služeb na trzích",
+        "strana": 6,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 13,
+        "nazev": "Poskytnutí finančního daru Základní škole Třeboň, Sokolská 296 Rozpočtové opatření č. 54",
+        "strana": 7,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 14,
+        "nazev": "Rozpočtové opatření č. 55 – Zapojení prostředků z prodeje služebních zbraní a přesun mezi výdajovými položkami",
+        "strana": 7,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 15,
+        "nazev": "Rozpočtové opatření č. 56 - schválení Dodatku č. 5 ke smlouvě o dílo akce Sportovní hala Třeboň – nástavba a přístavba ubytování",
+        "strana": 8,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 16,
+        "nazev": "Stavební úpravy MK v ul. Budějovické v Třeboni – dodatek č. 2 ke smlouvě o dílo",
+        "strana": 9,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 17,
+        "nazev": "Revokace usnesení RM č. 68/2026-95 ze dne 04.02.2026 - Plán oprav nad rámec běžné údržby na rok 2026 - podání žádosti o změnu čerpání finančních prostředků",
+        "strana": 9,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 18,
+        "nazev": "Schválení Dodatku č. 2 ke kupní smlouvě akce Sportovní hala Třeboň – nástavba a přístavba ubytování – vybavení interiéru",
+        "strana": 9,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 19,
+        "nazev": "Zápis z 3. zasedání Komise sociální města Třeboně konané ze dne 30.09.2026",
+        "strana": 9,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 20,
+        "nazev": "Hospodaření příspěvkové organizace Městská knihovna Třeboň a mezitimní účetní závěrka k 30.09.2026",
+        "strana": 10,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 21,
+        "nazev": "Uzavření Smlouvy o spolupráci mezi Městskou knihovnou Třeboň a Hospicovou péčí sv. Kleofáše, o. p. s.",
+        "strana": 10,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 22,
+        "nazev": "Žádost o poskytnutí účelové neinvestiční dotace na výdaje JSDHO Třeboň - Branná",
+        "strana": 10,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 23,
+        "nazev": "Žádost o zahájení projednání majetkového převodu areálu Autokempu Třeboň",
+        "strana": 10,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 24,
+        "nazev": "Závěrečná zpráva o zjištěních z vykonaného interního auditu č. 2/2026.",
+        "strana": 11,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 25,
+        "nazev": "Souhlas se jmenováním členů do školské rady při ZŠ Třeboň, Sokolská 296",
+        "strana": 11,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 26,
+        "nazev": "Zápis z jednání Komise ochrany veřejného pořádku a BESIP ze dne 22.09.2026",
+        "strana": 11,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 27,
+        "nazev": "Převod bytů z družstva do vlastnictví společnosti",
+        "strana": 11,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 28,
+        "nazev": "Dodatek č. 1 ke Smlouvě o dílo na dodání a parametrizaci Informačního systému pro Slatinné lázně Třeboň",
+        "strana": 12,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 29,
+        "nazev": "Dodatek č. 9 k Dohodě o provozování sportovišť ze dne 01.01.2018 + nájemní smlouva na pronájem nebytových prostor (HOTEL SPORT)",
+        "strana": 12,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 30,
+        "nazev": "Rozpočtové opatření č. 57 - Přístavba tělocvičen - vybavení",
+        "strana": 13,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 31,
+        "nazev": "Rozpočtové opatření č. 58 - Platy zaměstnanců v pracovním poměru - úřad",
+        "strana": 13,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 32,
+        "nazev": "Výjimka z počtu dětí ve třídách MŠ Sluníčko, Svobody 1018 na školní rok 2026/2027",
+        "strana": 14,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 33,
+        "nazev": "Program regenerace MPR Třeboň - udělení plné moci",
+        "strana": 14,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 34,
+        "nazev": "Různé Zápis ze 113. jednání RM ze dne 21.10.2026",
+        "strana": 15,
+        "text": "Jednání rady města ukončil pan starosta v 09.05 hodin.\nPaedDr. Jan Váňa v. r.                                   Ing. Jana Grammetbauerová v. r.\nstarosta města Třeboně                                   místostarostka města Třeboně\nZapsala: zapisovatelka\nZápis byl zpracován dne 26.10.2026\nZápis ze 113. jednání RM ze dne 21.10.2026",
+        "text_anonymizovan": true
+      }
+    ],
+    "upozorneni_parseru": [
+      "RM 535/2026-113 část II: neznámý úkon 'konstatuje'"
+    ]
+  },
+  {
+    "id": "rm-2026-10-30",
+    "organ": "rada",
+    "druh": "mimoradne",
+    "cislo": 114,
+    "datum": "2026-10-30",
+    "obdobi": "2022-2026",
+    "pritomno_na_zacatku": 6,
+    "clenu": 7,
+    "pritomnost_zmeny": [],
+    "dokument": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "url": "https://www.mesto-trebon.cz/uploads/news/id15198/Z-114-26-10-30-A.pdf",
+      "stranka_zdroje": "https://www.mesto-trebon.cz/cz/mestsky-urad-trebon/samosprava-mesta/rada-mesta/zapisy-z-jednani-rady-mesta/volebni-obdobi-2022---2026-2.html",
+      "vyveseno": null,
+      "sha256": "667542b87792a903bd9b3355905a2536fb17600a6391bbb88651549f46121037",
+      "pocet_stran": 6
+    },
+    "body": [
+      {
+        "cislo": 1,
+        "nazev": "Zahájení",
+        "strana": 1,
+        "text": "Jednání rady zahájila paní místostarostka Ing. Jana Grammetbauerová v 9.00 hodin.\nV úvodu jednání bylo přítomno 6 členů rady města.",
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 2,
+        "nazev": "Program 114. jednání a schválení zveřejnění zápisů",
+        "strana": 1,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 3,
+        "nazev": "Dotace v oblasti sociálních služeb a zdravotnictví v roce 2026",
+        "strana": 1,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 4,
+        "nazev": "Dotace v oblasti tělovýchovy a sportu v roce 2026",
+        "strana": 2,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 5,
+        "nazev": "Dotace v oblasti ostatních zájmových činností v roce 2026",
+        "strana": 3,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 6,
+        "nazev": "RO č. 59 – Znalecké posudky",
+        "strana": 4,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 7,
+        "nazev": "Schválení Dodatku č. 5 ke smlouvě o dílo akce Přístavba dvou tělocvičen sportovní haly Třeboň",
+        "strana": 4,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 8,
+        "nazev": "Stanovení výše platového ohodnocení řediteli příspěvkové organizace",
+        "strana": 5,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 9,
+        "nazev": "Vyřazení majetku z evidence - prodej",
+        "strana": 5,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 10,
+        "nazev": "Smlouva o zřízení a provozu publikování otevřených dat - výroba a provoz - Dodatek č. 1",
+        "strana": 5,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 11,
+        "nazev": "Různé",
+        "strana": 6,
+        "text": "Jednání rady města ukončila paní místostarostka v 10.00 hodin.\nIng. Jana Grammetbauerová v. r.                                  Mgr. Aleš Kolář v. r.\nmístostarostka města Třeboně                                     místostarosta města Třeboně\nPaedDr. Jan Váňa v. r.\nstarosta města Třeboně\nZapsala: zapisovatelka\nZápis byl zpracován dne 02.11.2026\nZápis ze 114. jednání RM ze dne 30.10.2026",
+        "text_anonymizovan": true
+      }
+    ],
+    "upozorneni_parseru": []
+  },
+  {
     "id": "rm-2026-11-04",
     "organ": "rada",
     "druh": "radne",
@@ -94,6 +1000,154 @@
         "nazev": "Různé",
         "strana": 4,
         "text": "Rada města projednala podnět občana a rozhodla o dalším postupu\nk vyřízení.\nJednání rady města ukončil pan starosta v 15.45 hodin.\nMgr. Aleš Kolář v. r.                                                    Mgr. Petr Kouba v. r.\nstarosta města Třeboně                                                   místostarosta města Třeboně\nZapsala: zapisovatelka\nZápis byl zpracován dne 10.11.2026",
+        "text_anonymizovan": true
+      }
+    ],
+    "upozorneni_parseru": []
+  },
+  {
+    "id": "zm-2026-09-21",
+    "organ": "zastupitelstvo",
+    "druh": "radne",
+    "cislo": 31,
+    "datum": "2026-09-21",
+    "obdobi": "2022-2026",
+    "pritomno_na_zacatku": 21,
+    "clenu": 25,
+    "pritomnost_zmeny": [],
+    "dokument": {
+      "dokument_id": "zapis-zm-2026-09-21",
+      "url": "https://www.mesto-trebon.cz/uploads/news/id15066/Z-31-26-09-21-A.pdf",
+      "stranka_zdroje": "https://www.mesto-trebon.cz/cz/mestsky-urad-trebon/samosprava-mesta/zastupitelstvo-mesta/zapisy-zastupitelstva-mesta/volebni-obdobi-2022---2026.html",
+      "vyveseno": null,
+      "sha256": "850db080d19d9fffa6e7bf7ecded95ece14a36a0d6f7787ab2ed696b5f69033a",
+      "pocet_stran": 12
+    },
+    "body": [
+      {
+        "cislo": 1,
+        "nazev": "Zahájení, schválení programu, volba návrhové komise a ověřovatelů zápisu",
+        "strana": 1,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 2,
+        "nazev": "Zpráva o plnění usnesení zastupitelstva města",
+        "strana": 2,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 3,
+        "nazev": "Přehled rozpočtových opatření provedených radou města od 10.06.2026 do 26.08.2026 (vč. opatření schvalovaných ZM)",
+        "strana": 2,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 4,
+        "nazev": "Přehled plnění a čerpání rozpočtu města k 30.06.2026 a mezitímní účetní závěrka sestavená ke dni 30.06.2026",
+        "strana": 2,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 5,
+        "nazev": "Rozpočtové opatření č. 48 – přesun prostředků z rezervy kapitálových výdajů do Lázeňského investičního fondu – technické zhodnocení budov v pronájmu společnosti Slatinné lázně Třeboň, s.r.o.",
+        "strana": 3,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 6,
+        "nazev": "Záměr prodeje části pozemků p. č. 484/1, p. č. 484/3 k. ú. Třeboň",
+        "strana": 3,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 7,
+        "nazev": "Záměr prodeje části pozemku p. č. 1/1 k. ú. Holičky u Staré Hlíny",
+        "strana": 4,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 8,
+        "nazev": "Záměr prodeje části pozemku p. č. 484, pozemku p.č. 1118 a pozemku p. č. 508 vše v k. ú. Stará Hlína",
+        "strana": 4,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 9,
+        "nazev": "Prodej pozemků p. č. 1915/585, p. č. 1915/535 k. ú. Třeboň",
+        "strana": 4,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 10,
+        "nazev": "Přijetí daru pozemku p. č. 3878 o výměře 40 m2 vč. torza seníku, vše v k. ú. Třeboň",
+        "strana": 5,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 11,
+        "nazev": "Smlouvy o bezúplatném převodu – pozemek p. č. 1742/2 k. ú. Třeboň, pozemky p. č. 134/1, 134/2, 1933/1, 1933/3 k. ú. Břilice, pozemek p. č. 1926/3 k. ú. Břilice",
+        "strana": 5,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 12,
+        "nazev": "Smlouvy o převodu vlastnictví družstevního nebytového prostoru a pozemku - č. p. 11 v ul. Jiráskova a č. p. 566 v ul. Táboritská",
+        "strana": 5,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 13,
+        "nazev": "Založení „Společenství vlastníků pro dům čp. 127, Třeboň I“",
+        "strana": 6,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 14,
+        "nazev": "Rozdělení Změny č. 9 územního plánu Třeboň na Změnu č. 9a územního plánu Třeboň a Změnu č. 9b územního plánu Třeboň",
+        "strana": 7,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 15,
+        "nazev": "Vydání Změny č. 3 regulačního plánu Třeboň – zastavitelné plochy BM1 (Z.26), BV6 (Z.24), OS4 (Z.27)",
+        "strana": 7,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 16,
+        "nazev": "Dodatek č. 13 ke Zřizovací listině - ZŠ Třeboň, Na Sadech 375",
+        "strana": 11,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 17,
+        "nazev": "Diskuze",
+        "strana": 12,
+        "text": "- diskutující: Mgr. Bc. Petr Michal, PaedDr. Jan Váňa, Mgr. Petr Werner, Mgr. Aleš Kolář, Ing. Ondřej Zbudil,\nIng. Jiří Vopátek, Ph.D.\nMgr. Bc. Petr Michal – poděkoval zaměstnancům ORI za spolupráci s Osadním výborem Břilice a rychlé řešení\npodnětů; dotaz na bývalý těžební prostor v Rašelině Branná – jak je to s revitalizací, zda se na ní podílela i\nspolečnost; v současné době je na jednom pozemku ohradník pro dobytek, dotaz, kdo to schválil, příp. zda k\ntomu existuje smlouva.\nMgr. Petr Werner – výsadba nových stromů by byla finančně náročná, proto se přistoupilo k zalesnění\nprostřednictvím náletů.\nPaedDr. Jan Váňa – ve smlouvě nebylo stanoveno, že je za revitalizaci zodpovědná firma. Bude prověřeno a\nodpovězeno písemně.\n.",
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 18,
+        "nazev": "Závěr Pro: 21 Proti: 0 Zdrželi se: 0",
+        "strana": 12,
+        "text": "Jednání zastupitelstva města ukončil starosta v 19:30 hodin.\nPaedDr. Jan Váňa v.r.\nstarosta města Třeboně\nOvěřili:\nMgr. Terezie Jenisová v.r.             dne: 30.09.2026\nIng. Zdeněk Kukačka v.r.               dne: 30.09.2026\nZapsala: zapisovatelka\nZápis byl zpracován dne 24.09.2026",
         "text_anonymizovan": true
       }
     ],
