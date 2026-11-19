@@ -331,6 +331,37 @@ def test_beh_po_padu_obnovi_stav_a_upozorni(koren):
     assert not (koren / "data" / beh.DENIK).exists()
 
 
+def test_denik_a_poskozeny_beh_json_obnova_probehne_a_beh_dobehne(koren):
+    """Pád rozbil i beh.json: obnova z deníku musí proběhnout dřív, než se beh.json čte."""
+    beh_json = koren / "data" / "beh.json"
+    puvodni_beh = beh_json.read_text(encoding="utf-8") if beh_json.exists() else None
+    usneseni = koren / "data" / "usneseni.json"
+    puvodni = usneseni.read_text(encoding="utf-8")
+    zalohy = koren / "data" / beh.ZALOHY
+    zalohy.mkdir()
+    (zalohy / "0-usneseni.json").write_text(puvodni, encoding="utf-8")
+    (zalohy / "1-beh.json").write_text(puvodni_beh or "{}", encoding="utf-8")
+    usneseni.write_text("rozbito pádem", encoding="utf-8")
+    beh_json.write_text('{"zacatek": "2026-11-1', encoding="utf-8")       # neúplný JSON
+    (koren / "data" / beh.DENIK).write_text(json.dumps({"soubory": [
+        {"cil": str(usneseni), "zaloha": str(zalohy / "0-usneseni.json")},
+        {"cil": str(beh_json), "zaloha": str(zalohy / "1-beh.json")}]}), encoding="utf-8")
+    assert spust(koren, Web()) == 0
+    assert usneseni.read_text(encoding="utf-8") == puvodni
+    b = json.loads(cti(koren, "data/beh.json"))
+    assert b["stav"] == "ok"
+    assert any("spadl uprostřed zápisu" in u for u in b["upozorneni"])
+    assert not (koren / "data" / beh.DENIK).exists()
+
+
+def test_poskozeny_beh_json_bez_deniku_upozorni_a_beh_dobehne(koren):
+    (koren / "data" / "beh.json").write_text("{nesmysl", encoding="utf-8")
+    assert spust(koren, Web()) == 0
+    b = json.loads(cti(koren, "data/beh.json"))
+    assert b["stav"] == "ok"
+    assert any("nečitelný" in u for u in b["upozorneni"])
+
+
 def test_pad_pri_mazani_zaloh_nevyvola_obnovu(tmp_path, monkeypatch):
     """Regrese (2. review Codexu): po dokončení zápisu (smazaný deník) pád během mazání záloh
     nesmí vést k částečné obnově – nová data platí, osiřelé zálohy se jen uklidí."""
