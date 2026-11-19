@@ -5,6 +5,7 @@ from pathlib import Path
 
 import pytest
 
+from conftest import jen_pilot
 from pipeline import oznameni
 
 KOREN = Path(__file__).resolve().parent.parent
@@ -49,6 +50,7 @@ class FakeGh:
 def koren(tmp_path):
     for d in ("raw", "anotace", "data"):
         shutil.copytree(KOREN / d, tmp_path / d)
+    jen_pilot(tmp_path)
     return tmp_path
 
 

@@ -12,6 +12,7 @@ import pytest
 
 from pipeline import beh, verze
 from pipeline.zdroje import ChybaZdroje
+from conftest import jen_pilot
 from pipeline.zdroje.zapisy_mesta import STRANKY, ZapisyMesta, datum_zapisu, parsuj_stranku
 
 KOREN = Path(__file__).resolve().parent.parent
@@ -59,6 +60,7 @@ def koren(tmp_path):
     for d in ("raw/texty", "anotace", "config", "data"):
         shutil.copytree(KOREN / d, tmp_path / d)
     shutil.copy(KOREN / "raw" / "manifest.json", tmp_path / "raw" / "manifest.json")
+    jen_pilot(tmp_path)
     # otisky v manifestu odpovídají našim vzorkům PDF
     manifest = json.loads((tmp_path / "raw" / "manifest.json").read_text(encoding="utf-8"))
     for z in manifest:
