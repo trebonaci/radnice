@@ -37,7 +37,7 @@ DUMP = (f'<?xml version="1.0" encoding="UTF-8"?><dump xmlns="{NS}"><mesic>10</me
         + zaznam(1, 12, "2026-10-05T08:00:00+02:00", "00247618", ("VH-TRES spol. s r. o.", "15771822"),
                  "Oprava chodníku – opravená verze", bez="110000", s="133100")
         + zaznam(2, 21, "2026-10-03T08:00:00+02:00", "00247618", ("Jan Novák", "87654321"),
-                 "Nájem pozemku – Ing. Jan Novák", bez="5000")
+                 "Nájem pozemku – Jan Novák, IČO 87654321, Ulice 1, 37901 Třeboň", bez="5000")
         + zaznam(3, 31, "2026-10-04T08:00:00+02:00", "00247618", ("Firma a.s.", "11111111"), "Zrušená", platny=0)
         + zaznam(4, 41, "2026-10-04T09:00:00+02:00", "99999999", ("Cizí s.r.o.", "22222222"), "Nesledovaný subjekt")
         + zaznam(5, 51, "2026-10-06T08:00:00+02:00", "99999999", ("Město Třeboň", "00247618"), "Město jako strana",
@@ -111,11 +111,13 @@ def test_castky_s_druhem_a_dph(koren):
     s = nactene(koren)
     assert {(k["s_dph"], k["hodnota"]) for k in s["1"]["castky"]} == {(False, 110000.0), (True, 133100.0)}
     assert all(k["druh"] == "smluvni" for k in s["1"]["castky"])
-    assert {k["citace"] for k in s["1"]["castky"]} == {"<hodnotaBezDph>110000</hodnotaBezDph>",
-                                                       "<hodnotaVcetneDph>133100</hodnotaVcetneDph>"}
+    assert {k["citace"] for k in s["1"]["castky"]} == {'"hodnotaBezDph": "110000"',
+                                                       '"hodnotaVcetneDph": "133100"'}
     assert all(k["poznamka"] == "2026-10.json; záznam idVerze 12" for k in s["1"]["castky"])
     assert s["5"]["castky"] == [] and s["5"]["cena_neuvedena"] is True
-    assert smlouvy.zkontroluj(list(s.values())) == []
+    assert smlouvy.zkontroluj(list(s.values()), koren) == []
+    s["1"]["castky"][0]["citace"] = '"hodnotaBezDph": "1"'
+    assert any("citace" in c for c in smlouvy.zkontroluj(list(s.values()), koren))
 
 
 def test_fyzicka_osoba_bez_jmena_ico_a_adresy(koren):
@@ -129,5 +131,19 @@ def test_sestaveni_maskuje_jmena_v_predmetu(koren):
     nactene(koren)
     vystup, chyby = sestav(koren)
     s = {x["id_smlouvy"]: x for x in vystup["smlouvy"]}
-    assert s["2"]["predmet"] == "Nájem pozemku – [jméno]"
+    assert s["2"]["predmet"] == "Nájem pozemku – [jméno], IČO [údaj], [údaj]"
     assert not [c for c in chyby if "smlouvy" in c]
+
+
+def test_sledovana_pravnicka_osoba_bez_pravni_formy_zustava():
+    s = smlouvy.strana({"nazev": "Městská knihovna Třeboň", "ico": "21551464"}, frozenset({"21551464"}))
+    assert s["fyzicka_osoba"] is False and s["ico"] == "21551464"
+
+
+def test_zmena_sledovanych_ico_vynuti_nove_zpracovani(koren):
+    web = {rs.INDEX_URL: INDEX, "https://data.smlouvy.gov.cz/dump_2026_10.xml": DUMP.encode()}
+    rs.stahni(koren, otevri_z(web, []), max_dumpu=1)
+    m = json.loads((koren / "raw/smlouvy/manifest.json").read_text(encoding="utf-8"))
+    d = {"klic": "2026-10", "hash": "h10"}
+    assert rs._zastarale(m, d, rs.sledovana_ico(koren)) is False
+    assert rs._zastarale(m, d, {"123"}) is True

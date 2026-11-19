@@ -286,7 +286,7 @@ def sestav(koren: Path | None = None) -> tuple[dict[str, list], list[str]]:
         # jména osob s titulem v předmětu (mimo zastupitele) se maskují; adresy a IČO FO vynechal už převod
         for n in najdi_osobni_udaje(sm["predmet"] or "", osoby):
             sm["predmet"] = sm["predmet"].replace(n, "[jméno]")
-    chyby += modul_smlouvy.zkontroluj(smlouvy)
+    chyby += modul_smlouvy.zkontroluj(smlouvy, koren)
     vystup = {"jednani": jednani, "usneseni": usneseni, "hlasovani": hlasovani, "zakazky": zakazky,
               "smlouvy": smlouvy}
     # kontrola osobních údajů v celém výstupu (kromě doslovných citací, ty kontroluje sestavení)

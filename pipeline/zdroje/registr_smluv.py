@@ -94,6 +94,12 @@ def vyber_zaznamy(soubor: IO[bytes], ico: set[str]) -> tuple[list[dict], int]:
     return vybrane, celkem
 
 
+def _zastarale(manifest: dict, d: dict, ico: set[str]) -> bool:
+    """Dump je třeba zpracovat znovu, když se změnil hash nebo množina sledovaných IČO."""
+    m = manifest.get(d["klic"], {})
+    return m.get("hash") != d["hash"] or m.get("ico") != sorted(ico)
+
+
 def stahni(koren: Path = KOREN, otevri: Callable[[str], IO[bytes]] = otevri_http,
            max_dumpu: int = MAX_DUMPU) -> tuple[list[str], list[str]]:
     adresar = koren / "raw" / "smlouvy"
@@ -108,7 +114,7 @@ def stahni(koren: Path = KOREN, otevri: Callable[[str], IO[bytes]] = otevri_http
         return [], [f"index: {e}"]
     if not dumpy:
         return [], ["index: žádné měsíční dumpy"]
-    k_zpracovani = [d for d in reversed(dumpy) if manifest.get(d["klic"], {}).get("hash") != d["hash"]][:max_dumpu]
+    k_zpracovani = [d for d in reversed(dumpy) if _zastarale(manifest, d, ico)][:max_dumpu]
     for d in k_zpracovani:
         try:
             with tempfile.TemporaryFile() as tmp:
@@ -132,10 +138,10 @@ def stahni(koren: Path = KOREN, otevri: Callable[[str], IO[bytes]] = otevri_http
             tmp_cil.replace(cil)
             zmeny.append(cil.name)
         manifest[d["klic"]] = {"url": d["url"], "hash": d["hash"], "dokonceny": d["dokonceny"],
-                               "zaznamu_celkem": celkem, "zaznamu_sledovanych": len(zaznamy)}
+                               "ico": sorted(ico), "zaznamu_celkem": celkem, "zaznamu_sledovanych": len(zaznamy)}
         cesta_manifestu.write_text(json.dumps(dict(sorted(manifest.items())), ensure_ascii=False, indent=2) + "\n",
                                    encoding="utf-8")
-    zbyva = sum(1 for d in dumpy if manifest.get(d["klic"], {}).get("hash") != d["hash"])
+    zbyva = sum(1 for d in dumpy if _zastarale(manifest, d, ico))
     if zbyva:
         print(f"Registr smluv: zbývá zpracovat {zbyva} dumpů (příští běhy)")
     return zmeny, chyby
