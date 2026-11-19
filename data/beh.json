@@ -1,0 +1,25 @@
+{
+  "zacatek": "2026-11-19T21:22:05+00:00",
+  "stav": "ok",
+  "zdroje": [
+    {
+      "nazev": "zapisy_mesta",
+      "stav": "ok",
+      "odkazu": 8,
+      "stazeno": 8
+    }
+  ],
+  "chyby": [],
+  "upozorneni": [
+    "odkaz bez data jednání přeskočen: https://www.mesto-trebon.cz/uploads/news/id14782/Z-30-26-06-22A.pdf"
+  ],
+  "pocty": {
+    "jednani": 2,
+    "usneseni": 20,
+    "hlasovani": 26
+  },
+  "posledni_uspesny": "2026-11-19T21:22:23+00:00",
+  "nove_dokumenty": 6,
+  "nove_verze": 0,
+  "konec": "2026-11-19T21:22:23+00:00"
+}

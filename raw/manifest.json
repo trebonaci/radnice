@@ -24,8 +24,8 @@
         "texty": "raw/texty/rm-2026-11-04"
       }
     ],
-    "posledni_kontrola": "2026-11-18",
-    "dalsi_kontrola": "2026-11-19"
+    "posledni_kontrola": "2026-11-19",
+    "dalsi_kontrola": "2026-11-20"
   },
   {
     "dokument_id": "zapis-zm-2026-11-02",
@@ -52,7 +52,169 @@
         "texty": "raw/texty/zm-2026-11-02"
       }
     ],
-    "posledni_kontrola": "2026-11-18",
-    "dalsi_kontrola": "2026-11-19"
+    "posledni_kontrola": "2026-11-19",
+    "dalsi_kontrola": "2026-11-20"
+  },
+  {
+    "dokument_id": "zapis-rm-2026-10-30",
+    "typ": "zapis_rada",
+    "jednani_id": "rm-2026-10-30",
+    "nazev": "Z-114-26-10-30-A.pdf",
+    "url": "https://www.mesto-trebon.cz/uploads/news/id15198/Z-114-26-10-30-A.pdf",
+    "stranka_zdroje": "https://www.mesto-trebon.cz/cz/mestsky-urad-trebon/samosprava-mesta/rada-mesta/zapisy-z-jednani-rady-mesta/volebni-obdobi-2022---2026-2.html",
+    "vyveseno": null,
+    "stazeno": "2026-11-19",
+    "sha256": "667542b87792a903bd9b3355905a2536fb17600a6391bbb88651549f46121037",
+    "bytes": 281616,
+    "pocet_stran": 6,
+    "textova_vrstva": true,
+    "extrakce": "pdftotext -layout (poppler), po stranách",
+    "verze": [
+      {
+        "cislo": 1,
+        "zjisteno": "2026-11-19",
+        "sha256": "667542b87792a903bd9b3355905a2536fb17600a6391bbb88651549f46121037",
+        "bytes": 281616,
+        "zmena": "první zjištěná verze",
+        "texty": "raw/texty/rm-2026-10-30/v1"
+      }
+    ],
+    "posledni_kontrola": "2026-11-19",
+    "dalsi_kontrola": "2026-11-20"
+  },
+  {
+    "dokument_id": "zapis-rm-2026-10-21",
+    "typ": "zapis_rada",
+    "jednani_id": "rm-2026-10-21",
+    "nazev": "Z-113-26-10-21-A.pdf",
+    "url": "https://www.mesto-trebon.cz/uploads/news/id15164/Z-113-26-10-21-A.pdf",
+    "stranka_zdroje": "https://www.mesto-trebon.cz/cz/mestsky-urad-trebon/samosprava-mesta/rada-mesta/zapisy-z-jednani-rady-mesta/volebni-obdobi-2022---2026-2.html",
+    "vyveseno": null,
+    "stazeno": "2026-11-19",
+    "sha256": "060d6bf56efbd248384a531317daaa5a60d2b6fdb46fa56e3b4f2b5a9c112501",
+    "bytes": 387374,
+    "pocet_stran": 15,
+    "textova_vrstva": true,
+    "extrakce": "pdftotext -layout (poppler), po stranách",
+    "verze": [
+      {
+        "cislo": 1,
+        "zjisteno": "2026-11-19",
+        "sha256": "060d6bf56efbd248384a531317daaa5a60d2b6fdb46fa56e3b4f2b5a9c112501",
+        "bytes": 387374,
+        "zmena": "první zjištěná verze",
+        "texty": "raw/texty/rm-2026-10-21/v1"
+      }
+    ],
+    "posledni_kontrola": "2026-11-19",
+    "dalsi_kontrola": "2026-11-20"
+  },
+  {
+    "dokument_id": "zapis-rm-2026-10-07",
+    "typ": "zapis_rada",
+    "jednani_id": "rm-2026-10-07",
+    "nazev": "Z-112-26-10-07-A.pdf",
+    "url": "https://www.mesto-trebon.cz/uploads/news/id15132/Z-112-26-10-07-A.pdf",
+    "stranka_zdroje": "https://www.mesto-trebon.cz/cz/mestsky-urad-trebon/samosprava-mesta/rada-mesta/zapisy-z-jednani-rady-mesta/volebni-obdobi-2022---2026-2.html",
+    "vyveseno": null,
+    "stazeno": "2026-11-19",
+    "sha256": "c8ab066b0a87ae5ff1cf1d1ada4f34f819522ecda60cbffd421d8f581a825d86",
+    "bytes": 365300,
+    "pocet_stran": 8,
+    "textova_vrstva": true,
+    "extrakce": "pdftotext -layout (poppler), po stranách",
+    "verze": [
+      {
+        "cislo": 1,
+        "zjisteno": "2026-11-19",
+        "sha256": "c8ab066b0a87ae5ff1cf1d1ada4f34f819522ecda60cbffd421d8f581a825d86",
+        "bytes": 365300,
+        "zmena": "první zjištěná verze",
+        "texty": "raw/texty/rm-2026-10-07/v1"
+      }
+    ],
+    "posledni_kontrola": "2026-11-19",
+    "dalsi_kontrola": "2026-11-20"
+  },
+  {
+    "dokument_id": "zapis-rm-2026-09-23",
+    "typ": "zapis_rada",
+    "jednani_id": "rm-2026-09-23",
+    "nazev": "Z-111-26-09-23-A.pdf",
+    "url": "https://www.mesto-trebon.cz/uploads/news/id15072/Z-111-26-09-23-A.pdf",
+    "stranka_zdroje": "https://www.mesto-trebon.cz/cz/mestsky-urad-trebon/samosprava-mesta/rada-mesta/zapisy-z-jednani-rady-mesta/volebni-obdobi-2022---2026-2.html",
+    "vyveseno": null,
+    "stazeno": "2026-11-19",
+    "sha256": "cdf3708c368f4c9c79e2ad884acab4b7f2747a5664ed7e8c5725b76bfcf72daf",
+    "bytes": 374120,
+    "pocet_stran": 9,
+    "textova_vrstva": true,
+    "extrakce": "pdftotext -layout (poppler), po stranách",
+    "verze": [
+      {
+        "cislo": 1,
+        "zjisteno": "2026-11-19",
+        "sha256": "cdf3708c368f4c9c79e2ad884acab4b7f2747a5664ed7e8c5725b76bfcf72daf",
+        "bytes": 374120,
+        "zmena": "první zjištěná verze",
+        "texty": "raw/texty/rm-2026-09-23/v1"
+      }
+    ],
+    "posledni_kontrola": "2026-11-19",
+    "dalsi_kontrola": "2026-11-20"
+  },
+  {
+    "dokument_id": "zapis-rm-2026-09-09",
+    "typ": "zapis_rada",
+    "jednani_id": "rm-2026-09-09",
+    "nazev": "Z-110-26-09-09-A.pdf",
+    "url": "https://www.mesto-trebon.cz/uploads/news/id15037/Z-110-26-09-09-A.pdf",
+    "stranka_zdroje": "https://www.mesto-trebon.cz/cz/mestsky-urad-trebon/samosprava-mesta/rada-mesta/zapisy-z-jednani-rady-mesta/volebni-obdobi-2022---2026-2.html",
+    "vyveseno": null,
+    "stazeno": "2026-11-19",
+    "sha256": "7ad145ae985ae95ac1b5b918de3a87563dc72b432d3ee3b98e14424f771d6591",
+    "bytes": 390634,
+    "pocet_stran": 11,
+    "textova_vrstva": true,
+    "extrakce": "pdftotext -layout (poppler), po stranách",
+    "verze": [
+      {
+        "cislo": 1,
+        "zjisteno": "2026-11-19",
+        "sha256": "7ad145ae985ae95ac1b5b918de3a87563dc72b432d3ee3b98e14424f771d6591",
+        "bytes": 390634,
+        "zmena": "první zjištěná verze",
+        "texty": "raw/texty/rm-2026-09-09/v1"
+      }
+    ],
+    "posledni_kontrola": "2026-11-19",
+    "dalsi_kontrola": "2026-11-20"
+  },
+  {
+    "dokument_id": "zapis-zm-2026-09-21",
+    "typ": "zapis_zm",
+    "jednani_id": "zm-2026-09-21",
+    "nazev": "Z-31-26-09-21-A.pdf",
+    "url": "https://www.mesto-trebon.cz/uploads/news/id15066/Z-31-26-09-21-A.pdf",
+    "stranka_zdroje": "https://www.mesto-trebon.cz/cz/mestsky-urad-trebon/samosprava-mesta/zastupitelstvo-mesta/zapisy-zastupitelstva-mesta/volebni-obdobi-2022---2026.html",
+    "vyveseno": null,
+    "stazeno": "2026-11-19",
+    "sha256": "850db080d19d9fffa6e7bf7ecded95ece14a36a0d6f7787ab2ed696b5f69033a",
+    "bytes": 803661,
+    "pocet_stran": 12,
+    "textova_vrstva": true,
+    "extrakce": "pdftotext -layout (poppler), po stranách",
+    "verze": [
+      {
+        "cislo": 1,
+        "zjisteno": "2026-11-19",
+        "sha256": "850db080d19d9fffa6e7bf7ecded95ece14a36a0d6f7787ab2ed696b5f69033a",
+        "bytes": 803661,
+        "zmena": "první zjištěná verze",
+        "texty": "raw/texty/zm-2026-09-21/v1"
+      }
+    ],
+    "posledni_kontrola": "2026-11-19",
+    "dalsi_kontrola": "2026-11-20"
   }
 ]
