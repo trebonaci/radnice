@@ -21,11 +21,15 @@ from urllib.parse import urljoin
 from pipeline import verze
 from pipeline.zdroje import ChybaZdroje, Dokument, Stazeno, Zdroj
 
+ZAKLAD_RM = "https://www.mesto-trebon.cz/cz/mestsky-urad-trebon/samosprava-mesta/rada-mesta/zapisy-z-jednani-rady-mesta/"
+ZAKLAD_ZM = "https://www.mesto-trebon.cz/cz/mestsky-urad-trebon/samosprava-mesta/zastupitelstvo-mesta/zapisy-zastupitelstva-mesta/"
+# (typ, orgán, výpis zápisů, nejstarší datum jednání nebo None = vše). Období 2022–2026 jen od 1. 9. 2026
+# (rozhodnutí 19. 11. 2026, #38); starší zápisy se zpracovávají jen výběrově (ZADANI.md).
 STRANKY = (
-    ("zapis_rada", "rm", "https://www.mesto-trebon.cz/cz/mestsky-urad-trebon/samosprava-mesta/rada-mesta/"
-                         "zapisy-z-jednani-rady-mesta/volebni-obdobi-2026---2030.html"),
-    ("zapis_zm", "zm", "https://www.mesto-trebon.cz/cz/mestsky-urad-trebon/samosprava-mesta/zastupitelstvo-mesta/"
-                       "zapisy-zastupitelstva-mesta/volebni-obdobi-2026---2030-2.html"),
+    ("zapis_rada", "rm", ZAKLAD_RM + "volebni-obdobi-2026---2030.html", None),
+    ("zapis_zm", "zm", ZAKLAD_ZM + "volebni-obdobi-2026---2030-2.html", None),
+    ("zapis_rada", "rm", ZAKLAD_RM + "volebni-obdobi-2022---2026-2.html", "2026-09-01"),
+    ("zapis_zm", "zm", ZAKLAD_ZM + "volebni-obdobi-2022---2026.html", "2026-09-01"),
 )
 USER_AGENT = "radnice-pipeline/1.0"
 MIN_ZNAKU = 200            # méně textu v celém PDF = pravděpodobně sken nebo prázdný dokument
@@ -124,10 +128,10 @@ class ZapisyMesta(Zdroj):
     def stahni(self, manifest: list[dict], dnes) -> Stazeno:
         nabidka: list[Dokument] = []
         upozorneni: list[str] = []
-        for typ, organ, url in self.stranky:
+        for typ, organ, url, od in self.stranky:
             html = self.ziskej(url).decode("utf-8", "replace")
             d, u = parsuj_stranku(html, url, typ, organ)
-            nabidka += d
+            nabidka += [x for x in d if od is None or x.jednani_id.split("-", 1)[1] >= od]
             upozorneni += u
         mame = {z["dokument_id"]: z for z in manifest}
         splatne = {z["dokument_id"] for z in verze.k_kontrole(manifest, dnes)}
