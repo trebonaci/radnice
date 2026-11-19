@@ -26,6 +26,7 @@ VYSLEDKY = {
     "NESCHVÁLENO": "neprijato",
     "USNESENÍ PŘIJATO": "prijato",
     "USNESENÍ NEPŘIJATO": "neprijato",
+    "NÁVRH NESCHVÁLEN – USNESENÍ NEPŘIJATO": "neprijato",
 }
 # Věcný úkon v části usnesení (I. bere na vědomí, II. ukládá …). Delší výrazy dřív.
 UKONY = [
@@ -93,11 +94,17 @@ def _program(radky: list[Radek]) -> dict[int, str]:
     if start is None:
         return program
     posledni = None
-    for r in radky[start + 1:]:
+    zbytek = radky[start + 1:]
+    for i, r in enumerate(zbytek):
         m = RE_PROGRAM_POLOZKA.match(r.text)
         if m and (posledni is None or int(m.group(1)) == posledni + 1):
             posledni = int(m.group(1))
             program[posledni] = m.group(2)
+        elif posledni is not None and r.text in VYSLEDKY and i + 1 < len(zbytek) and (
+                (n := RE_PROGRAM_POLOZKA.match(zbytek[i + 1].text)) and int(n.group(1)) == posledni + 1):
+            # značka výsledku přímo v programu (RM 111: „NÁVRH NESCHVÁLEN – USNESENÍ NEPŘIJATO“ pod bodem 3);
+            # program pokračuje dalším bodem → značku přeskočit, nepřipojovat
+            continue
         elif posledni is not None and not RE_BOD.match(r.text) and r.text not in VYSLEDKY and not r.text.startswith("Návrh na usnesení"):
             program[posledni] += " " + r.text
         else:
