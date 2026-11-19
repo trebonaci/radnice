@@ -41,8 +41,8 @@ pravidla:
   - {id: txt-sport, stitek: sport, vzor: '\bsportov\w*|\bhřišt\w*|\bbrusl\w*', duvod: "Text usnesení zmiňuje sport nebo sportoviště."}
   - {id: txt-kultura, stitek: kultura, vzor: '\bkultur\w*|\bdivadl\w*|\bmuze\w*|\bkoncert\w*|\bfestival\w*', duvod: "Text usnesení zmiňuje kulturu."}
   - {id: txt-socialni, stitek: socialni, vzor: '\bsociáln\w+ (?:služ\w*|péč\w*|bydlen\w*)|\bpečovatel\w*|\bsenior\w*', duvod: "Text usnesení zmiňuje sociální služby nebo seniory."}
-  - {id: txt-komunity-spolky, stitek: komunity_spolky, vzor: '\bkomunitn\w*|\bspolečensk\w+ (?:setkán\w*|akc\w*)|\bspolk\w*|\bz\. ?s\.', duvod: "Text usnesení zmiňuje spolek nebo komunitní či společenské aktivity."}
-  - {id: txt-investice, stitek: investice, vzor: '\brekonstrukc\w*|\bvýstavb\w*|\bstavebn\w*|\bprojektov\w+ dokumentac\w*', duvod: "Text usnesení zmiňuje stavbu, rekonstrukci nebo projektovou dokumentaci."}
+  - {id: txt-komunity-spolky, stitek: komunity_spolky, vzor: '\bkomunitn\w*|\bspolečensk\w+ (?:setkán\w*|akc\w*)|\bspolk\w*|\bspolek\b|\bz\. ?s\.', duvod: "Text usnesení zmiňuje spolek nebo komunitní či společenské aktivity."}
+  - {id: txt-investice, stitek: investice, vzor: '\brekonstrukc\w*|\bvýstavb\w*|\bstavebn\w*\b(?! řád| bytov)|\bprojektov\w+ dokumentac\w*', duvod: "Text usnesení zmiňuje stavbu, rekonstrukci nebo projektovou dokumentaci."}
   - {id: faze-planovana, stitek: investice, faze: planovana, vzor: '\bprojektov\w+ dokumentac\w*|\bstudi[ei]\w*', duvod: "Text usnesení zmiňuje projektovou přípravu."}
   - {id: faze-probiha, stitek: investice, faze: probiha, vzor: '\bpředání staveniště|\bzahájení (?:stavby|prací)', duvod: "Text usnesení zmiňuje zahájení stavby."}
   - {id: faze-dokoncena, stitek: investice, faze: dokoncena, vzor: '\bkolaudac\w*|\bdokončen\w*', duvod: "Text usnesení zmiňuje dokončení nebo kolaudaci."}
