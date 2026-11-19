@@ -1,8 +1,5 @@
 name: Běh
 
-# NÁVRH: tento soubor patří do .github/workflows/beh.yml. Claude (GitHub App) nemá právo workflow
-# soubory zapisovat, proto leží zde; Ondřej ho zkopíruje: cp docs/workflows/beh.yml .github/workflows/beh.yml
-#
 # Pravidelný běh `python -m pipeline.beh`: stáhne nové zápisy města, zkontroluje je a výsledek
 # nabídne jako PR (nikdy přímý zápis do main). Chyba = červený běh + issue „Běh selhal“.
 # Vyžaduje v Settings → Actions → General: „Allow GitHub Actions to create and approve pull requests“.
