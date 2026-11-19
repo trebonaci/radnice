@@ -35,16 +35,22 @@ jobs:
             const pr = context.payload.pull_request;
             const review = context.payload.review;
             const findingMarker = '<!-- codex-code-review-finding:v1 -->';
-            const reviewComments = await github.paginate(github.rest.pulls.listComments, {
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              pull_number: pr.number,
-              per_page: 100,
-            });
-            const findings = reviewComments.filter(comment =>
-              comment.pull_request_review_id === review.id &&
-              (comment.body || '').includes(findingMarker)
-            );
+            // Komentáře k recenzi API někdy vrací až s několikasekundovým zpožděním (19. 11. 2026, PR #57:
+            // nález existoval, ale dotaz 11 s po recenzi vrátil nic) → ptáme se přímo na komentáře této recenze
+            // a při prázdném výsledku to několikrát zkusíme znovu.
+            let findings = [];
+            for (let pokus = 1; pokus <= 5; pokus++) {
+              const reviewComments = await github.paginate(github.rest.pulls.listCommentsForReview, {
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                pull_number: pr.number,
+                review_id: review.id,
+                per_page: 100,
+              });
+              findings = reviewComments.filter(comment => (comment.body || '').includes(findingMarker));
+              if (findings.length > 0) break;
+              if (pokus < 5) await new Promise(r => setTimeout(r, 15000));
+            }
             core.setOutput('run_claude', 'false');
             core.setOutput('findings', JSON.stringify(findings.map(({ path, line, body, diff_hunk }) => ({ path, line, body, diff_hunk }))));
             if (findings.length === 0) {
