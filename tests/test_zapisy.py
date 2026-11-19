@@ -57,6 +57,16 @@ def test_zastupitelstvo_hlasovani():
     assert (protinavrhy[1]["pro"], protinavrhy[1]["proti"], protinavrhy[1]["zdrzel"]) == (6, 17, 2)
 
 
+def test_neprijate_usneseni_rm_111():
+    """RM 476/2026-111: „NÁVRH NESCHVÁLEN – USNESENÍ NEPŘIJATO“ = návrh neprošel (2 pro, 5 proti)."""
+    r = rozloz("rm-2026-09-23", TEXTY / "rm-2026-09-23" / "v1")
+    u = next(x for x in r["usneseni"] if x["cislo"] == "RM 476/2026-111")
+    assert u["vysledek_hlasovani"] == "neprijato"
+    h = next(x for x in r["hlasovani"] if x.get("usneseni_id") == u["id"])
+    assert (h["pro"], h["proti"], h["zdrzel"]) == (2, 5, 0)
+    assert not any("476/2026-111" in w for w in r["upozorneni"])
+
+
 def test_sestaveni_bez_chyb():
     assert sestav.main() == 0
     usneseni = json.loads((KOREN / "data" / "usneseni.json").read_text(encoding="utf-8"))

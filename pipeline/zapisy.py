@@ -24,6 +24,7 @@ VYSLEDKY = {
     "NESCHVÁLENO": "neprijato",
     "USNESENÍ PŘIJATO": "prijato",
     "USNESENÍ NEPŘIJATO": "neprijato",
+    "NÁVRH NESCHVÁLEN – USNESENÍ NEPŘIJATO": "neprijato",
 }
 # Věcný úkon v části usnesení (I. bere na vědomí, II. ukládá …). Delší výrazy dřív.
 UKONY = [

@@ -1,0 +1,285 @@
+# Anotace usnesení navržené AI (model A: Claude), stav: navrh.
+# Struktura, čísla usnesení a hlasování NEJSOU zde – ty vytváří deterministicky pipeline/zapisy.py.
+# Každá citace musí doslova (po sjednocení mezer) existovat v textu usnesení.
+jednani:
+  organ: rada
+  cislo: 111
+  datum: "2026-09-23"
+  obdobi: "2022-2026"
+  pritomno: 7
+  clenu: 7
+  citace: "V úvodu jednání bylo přítomno 7 členů rady města."
+  dokument_id: zapis-rm-2026-09-23
+
+body:
+  13:
+    anonymizace:
+      - retezec: "Zdeňkem Ondřejem"
+        nahrada: "[fyzická osoba]"
+
+usneseni:
+  rm-2026-j111-u475:
+    tema: Program jednání a zveřejňování zápisů
+    kategorie: [samosprava]
+    shrnuti: Rada schválila program 111. jednání a zveřejňování zápisů.
+    citace: "program 111. jednání rady města a schválení zveřejnění zápisů."
+
+  rm-2026-j111-u476:
+    tema: Zájem o převod pozemku od státu v Třeboni (návrh nepřijat)
+    kategorie: [majetek_prevod]
+    shrnuti: Rada neschválila návrh, aby město projevilo zájem o převod pozemku p. č. 1915/260 v k. ú. Třeboň od Úřadu pro zastupování státu ve věcech majetkových. Usnesení nebylo přijato.
+    citace: "projevení zájmu o převod pozemku p. č. 1915/260 v k. ú. Třeboň"
+    parcely:
+      - ku: Třeboň
+        cislo: "1915/260"
+        citace: "pozemku p. č. 1915/260 v k. ú. Třeboň"
+    poznamka: Výsledek hlasování je v zápisu uveden jako „NÁVRH NESCHVÁLEN – USNESENÍ NEPŘIJATO“; návrh usnesení („schvaluje“) tedy neprošel.
+
+  rm-2026-j111-u477:
+    tema: Pronájem části pozemku p. č. 575 pro staveniště a užívání části pozemku p. č. 500 v Třeboni
+    kategorie: [majetek_najem]
+    shrnuti: Rada schválila krátkodobý pronájem části pozemku p. č. 575 (cca 30 m2) od 24. 9. do 22. 10. 2026 za 4 350 Kč + DPH, záměr dalšího pronájmu do 31. 12. 2026 za 10 500 Kč + DPH a bezplatné užívání části pozemku p. č. 500 (cca 150 m2) do 31. 12. 2026. Pozemky mají sloužit jako staveniště a vstup pro rekonstrukci objektu Husova 140.
+    citace: "Smlouva bude uzavřena na dobu určitou od 24.09.2026 do 22.10.2026."
+    castky:
+      - hodnota: 4350
+        jednotka: Kč
+        druh: najemne_sazba
+        s_dph: false
+        citace: "Nájemné bude hrazeno ve výši 4.350,- Kč + DPH"
+        poznamka: Nájemné za celou dobu pronájmu 24. 9.–22. 10. 2026, DPH se připočte.
+      - hodnota: 10500
+        jednotka: Kč
+        druh: najemne_sazba
+        s_dph: false
+        citace: "Nájemné bude hrazeno ve výši 10.500,- Kč + DPH"
+        poznamka: Nájemné za celou dobu 23. 10.–31. 12. 2026 (zatím jen záměr nájmu), DPH se připočte.
+      - hodnota: 10000
+        jednotka: Kč
+        druh: jine
+        s_dph: null
+        citace: "složena vratná kauce ve výši 10.000,00 Kč"
+        poznamka: Vratná kauce, nejde o nájemné.
+    parcely:
+      - ku: Třeboň
+        cislo: "575"
+        cast: true
+        citace: "p. č. 575 o výměře cca 30 m2 k. ú. Třeboň"
+    poznamka: Dohoda o užívání pozemku p. č. 500 je v zápisu již anonymizována městem (XXXXXXXXXXXXX); osoby neuvádíme.
+
+  rm-2026-j111-u478:
+    tema: Služebnost pro optický kabel ve Staré Hlíně
+    kategorie: [majetek_najem]
+    shrnuti: Rada schválila zřízení služebnosti (práva uložit a udržovat optický kabel) na pozemcích města v k. ú. Stará Hlína ve prospěch společnosti CETIN a.s. Služebnost je úplatná podle ceníku města, výše částky v zápisu není.
+    citace: "které bude spočívat v právu uložení, vedení, údržby a oprav optického kabelu"
+    poznamka: Číselník nemá kategorii pro věcná břemena; zvolena nejbližší (užívání majetku města třetí stranou).
+
+  rm-2026-j111-u479:
+    tema: Služebnost pro kabel VN a telekomunikační vedení v Třeboni
+    kategorie: [majetek_najem]
+    shrnuti: Rada schválila zřízení služebnosti (práva uložit a udržovat kabel VN) na pozemcích města v k. ú. Třeboň ve prospěch společnosti EG.D, s.r.o. Služebnost je úplatná podle dohody Svazu měst a obcí Jihočeského kraje, výše částky v zápisu není.
+    citace: "které bude spočívat v právu uložení, vedení, údržby a oprav kabelu VN"
+
+  rm-2026-j111-u480:
+    tema: Služebnost pro vodovodní přípojku v Branné
+    kategorie: [majetek_najem, voda_odpady]
+    shrnuti: Rada schválila zřízení služebnosti (práva uložit a udržovat vodovodní přípojku) na pozemcích města v k. ú. Branná ve prospěch vlastníka sousedního pozemku. Služebnost je úplatná podle ceníku města, výše částky v zápisu není.
+    citace: "Služebnost bude spočívat v právu uložení, vedení, údržby a oprav vodovodní přípojky."
+    poznamka: Oprávněná osoba je v zápisu již anonymizována městem (XXXXXXXXXXXXX); neuvádíme.
+
+  rm-2026-j111-u481:
+    tema: Nájemné za vodovody a kanalizace pro rok 2027
+    kategorie: [voda_odpady, majetek_najem]
+    shrnuti: Rada stanovila nájemné za vodovody a kanalizace, které provozuje společnost Městská Vodohospodářská s.r.o., na rok 2027 na 19,5 mil. Kč bez DPH, z toho 3 mil. Kč za vodovody a 16,5 mil. Kč za kanalizace.
+    citace: "pro rok 2027 ve výši 19.500.000,00 Kč bez DPH"
+    castky:
+      - hodnota: 19500000.00
+        jednotka: Kč
+        druh: najemne_sazba
+        s_dph: false
+        obdobi: "2027"
+        citace: "pro rok 2027 ve výši 19.500.000,00 Kč bez DPH"
+      - hodnota: 3000000.00
+        jednotka: Kč
+        druh: najemne_sazba
+        s_dph: false
+        obdobi: "2027"
+        citace: "nájemné za vodovody činí 3.000.000,00 Kč bez DPH"
+        poznamka: Část celkového nájemného výše („z toho“); nesčítat s celkem.
+      - hodnota: 16500000.00
+        jednotka: Kč
+        druh: najemne_sazba
+        s_dph: false
+        obdobi: "2027"
+        citace: "nájemné za kanalizace činí 16.500.000,00 Kč bez DPH"
+        poznamka: Část celkového nájemného výše („z toho“); nesčítat s celkem.
+
+  rm-2026-j111-u482:
+    tema: Monitorovací bod dopravního systému Policie ČR na stožáru osvětlení
+    kategorie: [doprava]
+    shrnuti: Rada schválila dohodu s Krajským ředitelstvím policie Jihočeského kraje o umístění monitorovacího bodu dopravního systému PČR na stožár veřejného osvětlení na pozemku p. č. 1607/3 v k. ú. Třeboň.
+    citace: "souhlas s umístěním monitorovacího bodu dopravního systému PČR na stožár veřejného osvětlení na pozemku p. č. 1607/3 k. ú. Třeboň"
+    parcely:
+      - ku: Třeboň
+        cislo: "1607/3"
+        citace: "pozemku p. č. 1607/3 k. ú. Třeboň"
+
+  rm-2026-j111-u483:
+    tema: Prodej služebního vozidla Škoda Fabia přes aukční portál
+    kategorie: [majetek_prevod]
+    shrnuti: Rada vzala na vědomí, že v obálkové soutěži nebyl o vozidlo zájem, a schválila jeho prodej přes aukční portál s minimální nabídkovou cenou 7 000 Kč bez DPH.
+    citace: "o předmětné vozidlo nebyl projeven zájem"
+    castky:
+      - hodnota: 7000.00
+        jednotka: Kč
+        druh: jine
+        s_dph: false
+        citace: "minimální výše nabídkové ceny činí 7.000,00 Kč bez DPH"
+        poznamka: Minimální nabídková cena v aukci, nikoli dosažená prodejní cena.
+
+  rm-2026-j111-u484:
+    tema: Oprava čísla pozemku v dřívějším usnesení
+    kategorie: [ostatni]
+    shrnuti: Rada změnila dřívější usnesení č. 369/2026-107 z 15. 7. 2026 tak, že místo pozemku p. č. 1915/564 se uvádí p. č. 1915/594 v k. ú. Třeboň.
+    citace: "kdy se p. č. 1915/564 k. ú. Třeboň nahrazuje p."
+    poznamka: Zápis neuvádí, čeho se původní usnesení týkalo.
+
+  rm-2026-j111-u485:
+    tema: Projektová dokumentace a žádost o podporu pro kybernetickou bezpečnost města
+    kategorie: [investice, verejne_zakazky]
+    shrnuti: Rada schválila smlouvu o dílo se společností TENOSOL group s.r.o. na zpracování projektové dokumentace a žádosti o podporu k projektu kybernetické bezpečnosti II. s předpokládaným spolufinancováním z IROP 21-27. Cena ve zdroji není.
+    citace: "s předpokládaným spolufinancováním z IROP 21-27, výzvy č. 120"
+
+  rm-2026-j111-u486:
+    tema: Dar dětských bruslí pro ZŠ Na Sadech
+    kategorie: [skolstvi, dotace_dary, prispevkove_organizace]
+    shrnuti: Rada jako zřizovatel souhlasila, aby ZŠ Na Sadech přijala od spolku Děti do bruslí 10 párů dětských bruslí v hodnotě 25 000 Kč.
+    citace: "přijetí věcného daru 10 párů dětských bruslí v celkové hodnotě 25.000 Kč"
+    castky:
+      - hodnota: 25000
+        jednotka: Kč
+        druh: dar_prijaty
+        s_dph: null
+        citace: "v celkové hodnotě 25.000 Kč"
+    anonymizace:
+      - retezec: "Zdeňkem Ondřejem"
+        nahrada: "[fyzická osoba]"
+    poznamka: Zástupce spolku (fyzická osoba) neuvádíme.
+
+  rm-2026-j111-u487:
+    tema: Stavební úpravy ulice Budějovické – dodatek č. 1
+    kategorie: [investice, doprava, verejne_zakazky]
+    shrnuti: Rada schválila dodatek č. 1 ke smlouvě o dílo se společností K–BUILDING CB, a. s. Cena díla se zvyšuje o 100 815,78 Kč bez DPH (121 987,09 Kč s DPH) na celkem 12 078 592,78 Kč bez DPH (14 615 097,26 Kč s DPH).
+    citace: "jehož předmětem je Změnový list č. 1"
+    castky:
+      - hodnota: 100815.78
+        jednotka: Kč
+        druh: dodatek
+        s_dph: false
+        citace: "se cena díla zvyšuje o 100.815,78 Kč bez DPH"
+      - hodnota: 121987.09
+        jednotka: Kč
+        druh: dodatek
+        s_dph: true
+        citace: "121.987,09 Kč vč. DPH"
+      - hodnota: 12078592.78
+        jednotka: Kč
+        druh: smluvni
+        s_dph: false
+        citace: "celková cena díla se mění na částku 12.078.592,78 Kč bez DPH"
+        poznamka: Celková cena díla po dodatku.
+      - hodnota: 14615097.26
+        jednotka: Kč
+        druh: smluvni
+        s_dph: true
+        citace: "14.615.097,26 Kč vč. DPH"
+        poznamka: Celková cena díla po dodatku.
+
+  rm-2026-j111-u488:
+    tema: Stavební úpravy ulice Souběžné – dodatek č. 1
+    kategorie: [investice, doprava, verejne_zakazky]
+    shrnuti: Rada schválila dodatek č. 1 ke smlouvě o dílo se společností VKB stavby s.r.o. Cena díla se zvyšuje o 181 382,70 Kč bez DPH (219 473,07 Kč s DPH) na celkem 9 319 009,86 Kč bez DPH (11 276 001,93 Kč s DPH) a termín dokončení se prodlužuje o 7 dnů do 30. 10. 2026.
+    citace: "změna (prodloužení) termínu dokončení díla o 7 kalendářních dnů"
+    castky:
+      - hodnota: 181382.70
+        jednotka: Kč
+        druh: dodatek
+        s_dph: false
+        citace: "se cena díla zvyšuje o 181.382,70 Kč bez DPH"
+      - hodnota: 219473.07
+        jednotka: Kč
+        druh: dodatek
+        s_dph: true
+        citace: "219.473,07 Kč vč. DPH"
+      - hodnota: 9319009.86
+        jednotka: Kč
+        druh: smluvni
+        s_dph: false
+        citace: "celková cena díla se mění na částku 9.319.009,86 Kč bez DPH"
+        poznamka: Celková cena díla po dodatku.
+      - hodnota: 11276001.93
+        jednotka: Kč
+        druh: smluvni
+        s_dph: true
+        citace: "11.276.001,93 Kč vč. DPH"
+        poznamka: Celková cena díla po dodatku.
+
+  rm-2026-j111-u489:
+    tema: Pronájem části pozemku p. č. 1087/17 pro stavbu Nová Cihelna
+    kategorie: [majetek_najem]
+    shrnuti: Rada schválila pronájem části pozemku p. č. 1087/17 (cca 530 m2) od 30. 9. do 31. 12. 2026 za 246 450 Kč + DPH jako staveniště a stavební jámu pro novostavbu „Nová Cihelna“.
+    citace: "za účelem zřízení staveniště a stavební jámy pro novostavbu „Nová Cihelna“"
+    castky:
+      - hodnota: 246450
+        jednotka: Kč
+        druh: najemne_sazba
+        s_dph: false
+        citace: "Nájemné bude hrazeno ve výši 246.450,- Kč + DPH"
+        poznamka: Nájemné za celou dobu pronájmu 30. 9.–31. 12. 2026, DPH se připočte.
+    parcely:
+      - ku: Třeboň
+        cislo: "1087/17"
+        cast: true
+        citace: "p. č. KN 1087/17 o výměře cca 530 m2 k. ú. Třeboň"
+
+  rm-2026-j111-u490:
+    tema: Přístavba dvou tělocvičen sportovní haly – dodatek č. 4 (termín)
+    kategorie: [investice, sport]
+    shrnuti: Rada schválila dodatek č. 4 ke smlouvě o dílo se společností MANE STAVEBNÍ s. r. o. na stavbu přístavby dvou tělocvičen sportovní haly; mění se termín dokončení díla. Nový termín zápis neuvádí.
+    citace: "jehož předmětem je změna termínu dokončení díla"
+
+  rm-2026-j111-u491:
+    tema: Vybavení interiéru ubytování sportovní haly – dodatek č. 1 ke kupní smlouvě
+    kategorie: [investice, sport]
+    shrnuti: Rada schválila dodatek č. 1 ke kupní smlouvě se společností Artspect, a. s. na vybavení interiéru ubytování ve sportovní hale; mění se cena a termín dodání. Nová cena ani termín nejsou v zápisu.
+    citace: "jehož předmětem je změna ceny díla a změna termínu dodání zboží"
+
+  rm-2026-j111-u492:
+    tema: Služebnost pro výustní objekt dešťové kanalizace na Spolském potoce
+    kategorie: [voda_odpady, investice]
+    shrnuti: Rada schválila smlouvu o smlouvě budoucí se státním podnikem Povodí Vltavy o zřízení služebnosti pro výustní objekt dešťové kanalizace na Spolském potoce v rámci stavby páteřní dešťové kanalizace Nový Dvůr – Jablonského ulice. Cena služebnosti je 8 000 Kč bez DPH.
+    citace: "Služebnost bude zřízena úplatně za cenu 8.000,00 Kč bez DPH."
+    castky:
+      - hodnota: 8000.00
+        jednotka: Kč
+        druh: jine
+        s_dph: false
+        citace: "Služebnost bude zřízena úplatně za cenu 8.000,00 Kč bez DPH."
+        poznamka: Cena služebnosti, kterou má město zaplatit státnímu podniku.
+
+  rm-2026-j111-u493:
+    tema: Rozpočtové opatření č. 51 – vybavení přístavby tělocvičen
+    kategorie: [rozpocet, sport]
+    shrnuti: Rada přesunula 53 000 Kč ve výdajích rozpočtu z položky vybavení ubytování sportovní haly do položky vybavení přístavby tělocvičen.
+    citace: "-do položky 5137 „Přístavba tělocvičen - vybavení“, § 3412, ORJ 750, ORG 9750000000, UZ 0 v částce Kč 53.000,00."
+    castky:
+      - hodnota: 53000.00
+        jednotka: Kč
+        druh: rozpoctove_opatreni
+        s_dph: null
+        citace: "-do položky 5137 „Přístavba tělocvičen - vybavení“, § 3412, ORJ 750, ORG 9750000000, UZ 0 v částce Kč 53.000,00."
+
+  rm-2026-j111-u494:
+    tema: Osobní příplatek ředitele ZŠ Třeboň, Sokolská
+    kategorie: [skolstvi, personalni]
+    shrnuti: Rada stanovila řediteli Základní školy Třeboň, Sokolská 296 osobní příplatek od 1. 10. 2026. Výše příplatku není v zápisu.
+    citace: "stanovení osobního příplatku řediteli Základní školy Třeboň, Sokolská 296 k 1. říjnu 2026."
