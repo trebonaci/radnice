@@ -1,0 +1,290 @@
+# Anotace usnesení navržené AI (model A: Claude), stav: navrh.
+# Struktura, čísla usnesení a hlasování NEJSOU zde – ty vytváří deterministicky pipeline/zapisy.py.
+# Každá citace musí doslova (po sjednocení mezer) existovat v textu usnesení.
+jednani:
+  organ: rada
+  cislo: 112
+  datum: "2026-10-07"
+  obdobi: "2022-2026"
+  pritomno: 7
+  clenu: 7
+  citace: "V úvodu jednání bylo přítomno 7 členů rady města."
+  dokument_id: zapis-rm-2026-10-07
+
+body:
+  18:
+    nazev: "Příkazní smlouva - Muzeum města Třeboně"
+  19:
+    anonymizace:
+      - retezec: "Radka Bicková"
+        nahrada: "pracovnice úřadu"
+
+usneseni:
+  rm-2026-j112-u495:
+    tema: Program jednání a zveřejňování zápisů
+    kategorie: [samosprava]
+    shrnuti: Rada schválila program 112. jednání a zveřejňování zápisů.
+    citace: "program 112. jednání rady města a schválení zveřejnění zápisů."
+
+  rm-2026-j112-u496:
+    tema: Záměr výpůjčky nebytového prostoru v Přesece na rok 2027
+    kategorie: [majetek_najem, sport, kultura]
+    shrnuti: Rada schválila zveřejnění záměru půjčit prostor v budově čp. 3 v Přesece na sportovní, kulturní a společenské aktivity v obdobích leden–březen a listopad 2027; služby by hradil vypůjčitel paušálem.
+    citace: "za účelem provozování sportovních a kulturních aktivit včetně společenských setkání"
+    castky:
+      - hodnota: 2000.00
+        jednotka: Kč/měsíc
+        druh: jine
+        s_dph: null
+        citace: "paušální částkou 2.000,00 Kč/měsíc"
+        poznamka: Paušál za služby související s užíváním prostoru, hradí vypůjčitel.
+    parcely:
+      - ku: Přeseka
+        cislo: "st. 17"
+        citace: "pozemku p. č. st. KN 17 v k. ú. Přeseka"
+    poznamka: Jde o schválení zveřejnění záměru, ne o uzavření výpůjčky.
+
+  rm-2026-j112-u497:
+    tema: Výpověď nájmu nebytového prostoru č. p. 20/II v ulici Svatopluka Čecha
+    kategorie: [majetek_najem, socialni]
+    shrnuti: Rada vzala na vědomí výpověď nájmu nebytových prostor v č. p. 20/II, který měla organizace Hospicová péče sv. Kleofáše Třeboň; nájem skončí 31. 12. 2026.
+    citace: "Nájemní vztah bude ukončen k 31.12.2026."
+
+  rm-2026-j112-u498:
+    tema: Záměr pronájmu bytu č. 7 na Masarykově náměstí a komise pro obálkovou soutěž
+    kategorie: [majetek_najem, verejne_zakazky]
+    shrnuti: Rada schválila zveřejnění záměru pronájmu bytu 3+1 (89,09 m2) v čp. 86/I formou obálkové soutěže s minimální cenou 150 Kč/m2 měsíčně a jmenovala komisi pro hodnocení nabídek.
+    citace: "zveřejnění záměru nájmu bytu č. 7 o velikosti 3+1 (89,09 m2) v čp. 86/I na Masarykovo nám."
+    castky:
+      - hodnota: 150
+        jednotka: Kč/m2/měsíc
+        druh: najemne_sazba
+        s_dph: null
+        citace: "ve výši 150 Kč/m2/měsíčně"
+        poznamka: Minimální cena pro obálkovou soutěž.
+    anonymizace:
+      - retezec: "členové: Ing. Jana Grammetbauerová, Mgr. Aleš Kolář, Ing. Lucie Gabrielová, Ing. Jan Cába, pí Radka\nBicková"
+        nahrada: "členové: [jména členů komise neuvádíme]"
+      - retezec: "náhradníci: Ing. Lenka Blažková, pí Jitka Filípková, pí Vladislava Bicková"
+        nahrada: "náhradníci: [jména náhradníků neuvádíme]"
+    poznamka: Jména členů a náhradníků komisí neuvádíme (rozhodnutí 18. 11. 2026).
+
+  rm-2026-j112-u499:
+    tema: Pronájem bytu č. 9 v domě s pečovatelskou službou (Chelčického)
+    kategorie: [majetek_najem, socialni]
+    shrnuti: Rada schválila nájemní smlouvu na byt 1+0 (30,60 m2) v domě s pečovatelskou službou na jeden rok s možností prodloužení a ukončení dosavadního nájmu jiného bytu dohodou k 31. 10. 2026.
+    citace: "uzavření nájemní smlouvy na dobu určitou jeden rok s možností prodloužení na byt č. 9 v domě čp. 2/II v ulici Chelčického"
+    castky:
+      - hodnota: 2448
+        jednotka: Kč
+        druh: najemne_sazba
+        s_dph: null
+        citace: "nájemným podlahové plochy bytu v částce 2.448 Kč"
+        poznamka: Zápis neuvádí období, nájemné je splatné předem do pátého dne kalendářního měsíce.
+      - hodnota: 336
+        jednotka: Kč/měsíc
+        druh: jine
+        s_dph: null
+        citace: "v částce 336 Kč/měsíc"
+        poznamka: Úhrada za vybavení bytu (kuchyňská linka, digestoř, vestavěná skříň, větrák, vařič).
+    poznamka: Nájemce a dosavadní nájemci jiného bytu jsou fyzické osoby, město je v zápisu anonymizovalo.
+
+  rm-2026-j112-u500:
+    tema: Pronájem bytu č. 18 v domě s pečovatelskou službou (Chelčického)
+    kategorie: [majetek_najem, socialni]
+    shrnuti: Rada schválila nájemní smlouvu na byt 1+0 (29 m2) v domě s pečovatelskou službou na jeden rok s možností prodloužení.
+    citace: "uzavření nájemní smlouvy na dobu určitou jeden rok s možností prodloužení na byt č. 18 v domě čp. 2/II v ulici Chelčického"
+    castky:
+      - hodnota: 2320
+        jednotka: Kč
+        druh: najemne_sazba
+        s_dph: null
+        citace: "nájemným podlahové plochy bytu v částce 2.320 Kč"
+        poznamka: Zápis neuvádí období, nájemné je splatné předem do pátého dne kalendářního měsíce.
+      - hodnota: 333
+        jednotka: Kč/měsíc
+        druh: jine
+        s_dph: null
+        citace: "v částce 333 Kč/měsíc"
+        poznamka: Úhrada za vybavení bytu (kuchyňská linka s digestoří, vestavěná skříň, vařič).
+    poznamka: Nájemce je fyzická osoba, město ji v zápisu anonymizovalo.
+
+  rm-2026-j112-u501:
+    tema: Pronájem bytu č. 20 v domě s pečovatelskou službou (Chelčického)
+    kategorie: [majetek_najem, socialni]
+    shrnuti: Rada schválila nájemní smlouvu na byt 1+0 (29 m2) v domě s pečovatelskou službou na jeden rok s možností prodloužení.
+    citace: "uzavření nájemní smlouvy na dobu určitou jeden rok s možností prodloužení na byt č. 20 v domě čp. 2/II v ulici Chelčického"
+    castky:
+      - hodnota: 2320
+        jednotka: Kč
+        druh: najemne_sazba
+        s_dph: null
+        citace: "nájemným podlahové plochy bytu v částce 2.320 Kč"
+        poznamka: Zápis neuvádí období, nájemné je splatné předem do pátého dne kalendářního měsíce.
+      - hodnota: 336
+        jednotka: Kč/měsíc
+        druh: jine
+        s_dph: null
+        citace: "v částce 336 Kč/měsíc"
+        poznamka: Úhrada za vybavení bytu (kuchyňská linka, digestoř, vestavěná skříň, větrák, vařič).
+    poznamka: Nájemce je fyzická osoba, město ji v zápisu anonymizovalo.
+
+  rm-2026-j112-u502:
+    tema: Vyřazení majetku po inventarizaci
+    kategorie: [ostatni]
+    shrnuti: Rada schválila vyřazení majetku pod pořadovými čísly 1–33 z evidence města; majetek má odborná firma zlikvidovat.
+    citace: "vyřazení majetku pod pořadovým číslem 1-33 z majetkové a účetní evidence dle důvodové zprávy."
+    poznamka: Seznam majetku je v důvodové zprávě, která není součástí zápisu.
+
+  rm-2026-j112-u503:
+    tema: Nájem kanceláře v 2. NP domu č. p. 106/II pro Ústav výzkumu globální změny AV ČR
+    kategorie: [majetek_najem]
+    shrnuti: Rada schválila ukončení dosavadní smlouvy s Ústavem výzkumu globální změny k 30. 11. 2026 a novou smlouvu na kancelář 30,14 m2 na dobu neurčitou za 2 200 Kč/m2/rok s valorizací od roku 2028.
+    citace: "Nájemné se stanovuje ve výši 2.200,00 Kč/m2/rok"
+    castky:
+      - hodnota: 2200.00
+        jednotka: Kč/m2/rok
+        druh: najemne_sazba
+        s_dph: null
+        citace: "Nájemné se stanovuje ve výši 2.200,00 Kč/m2/rok"
+    parcely:
+      - ku: Třeboň
+        cislo: "862/9"
+        citace: "p. č. KN 862/9 v k. ú. Třeboň"
+
+  rm-2026-j112-u504:
+    tema: Veřejnosprávní kontrola v Městské sportovní Třeboň
+    kategorie: [prispevkove_organizace, sport]
+    shrnuti: Rada vzala na vědomí výsledek veřejnosprávní kontroly v příspěvkové organizaci Městská sportovní Třeboň.
+    citace: "výsledek veřejnosprávní kontroly v příspěvkové organizaci Městská sportovní Třeboň"
+    poznamka: Zápis výsledek kontroly neuvádí.
+
+  rm-2026-j112-u505:
+    tema: Rozpočtové opatření č. 52 – pojištění majetku
+    kategorie: [rozpocet]
+    shrnuti: Rada zvýšila o 50 000 Kč příjmy z pronájmu pozemků i výdaje na pojištění majetku a spoluúčast.
+    citace: "provedení rozpočtového opatření č. 52"
+    castky:
+      - hodnota: 50000.00
+        jednotka: Kč
+        druh: rozpoctove_opatreni
+        s_dph: null
+        citace: "navýšení příjmové položky 2131 „Pronájem - pozemky - ostatní“, § 3639, ORJ 800, ORG 0, UZ 0 o částku 50.000,00 Kč"
+        poznamka: Zvýšení příjmů.
+      - hodnota: 50000.00
+        jednotka: Kč
+        druh: rozpoctove_opatreni
+        s_dph: null
+        citace: "navýšení výdajové položky 5163 „Pojištění majetku + spoluúčast (náhrady)“, § 6320, ORJ 800, ORG 9800000201, UZ 0 o částku 50.000,00 Kč"
+        poznamka: Zvýšení výdajů.
+
+  rm-2026-j112-u506:
+    tema: Stavební úpravy místních komunikací Heřmánkova a Daskabát – výběr zhotovitele
+    kategorie: [verejne_zakazky, investice, doprava]
+    shrnuti: Rada rozhodla, že nejvýhodnější nabídku na stavební úpravy komunikací v ulicích Heřmánkova a Daskabát podala společnost VKB stavby s.r.o., a schválila s ní smlouvu o dílo.
+    citace: "nejvýhodnější nabídkou je nabídka s nejnižší nabídkovou cenou podaná společností VKB stavby s.r.o."
+    castky:
+      - hodnota: 21849088.69
+        jednotka: Kč
+        druh: vysoutezena
+        s_dph: false
+        citace: "s cenou 21.849.088,69 Kč bez DPH"
+      - hodnota: 26437397.31
+        jednotka: Kč
+        druh: vysoutezena
+        s_dph: true
+        citace: "26.437.397,31 Kč včetně DPH"
+        poznamka: Tatáž nabídková cena s DPH, nesčítá se s cenou bez DPH.
+
+  rm-2026-j112-u507:
+    tema: Dodatek č. 4 ke smlouvě o stavbě komunikace v ulici Sídliště
+    kategorie: [investice, doprava, verejne_zakazky]
+    shrnuti: Rada schválila dodatek č. 4 ke smlouvě o dílo se společností VKB stavby, jehož předmětem je změna ceny díla.
+    citace: "jehož předmětem je změna ceny díla."
+    poznamka: Usnesení neuvádí, o kolik se cena mění.
+
+  rm-2026-j112-u508:
+    tema: Dodatek č. 1 ke smlouvě o instalaci fotovoltaiky na přístavbě ZŠ Na Sadech
+    kategorie: [investice, verejne_zakazky, skolstvi]
+    shrnuti: Rada schválila dodatek, kterým se mění rozsah díla a cena stoupá o 25 685,72 Kč bez DPH na 1 024 446,81 Kč bez DPH.
+    citace: "cena díla se zvyšuje o částku 25 685,72 Kč bez DPH na částku 1 024 446,81 Kč bez DPH."
+    castky:
+      - hodnota: 25685.72
+        jednotka: Kč
+        druh: dodatek
+        s_dph: false
+        citace: "o částku 25 685,72 Kč bez DPH"
+        poznamka: Zvýšení ceny díla.
+      - hodnota: 1024446.81
+        jednotka: Kč
+        druh: smluvni
+        s_dph: false
+        citace: "na částku 1 024 446,81 Kč bez DPH"
+        poznamka: Cena díla po dodatku.
+
+  rm-2026-j112-u509:
+    tema: Vypořádání technických zhodnocení majetku města v areálu Aurora
+    kategorie: [lazne_spolecnosti, investice]
+    shrnuti: Rada schválila smlouvu se Slatinnými lázněmi Třeboň o vypořádání technických zhodnocení majetku města v areálu Aurora ve výši 57 177 151,44 Kč bez DPH.
+    citace: "vypořádání technických zhodnocení majetku města Třeboň v areálu Aurora Slatinných lázní Třeboň"
+    castky:
+      - hodnota: 57177151.44
+        jednotka: Kč
+        druh: jine
+        s_dph: false
+        citace: "ve výši 57.177.151,44 Kč bez DPH"
+        poznamka: Částka vypořádání podle smlouvy.
+      - hodnota: 69184353.24
+        jednotka: Kč
+        druh: jine
+        s_dph: true
+        citace: "69.184.353,24 Kč vč. DPH"
+        poznamka: Tatáž částka vypořádání s DPH, nesčítá se s částkou bez DPH.
+
+  rm-2026-j112-u510:
+    tema: Prodej dřeva z kácení stromů na pozemcích města
+    kategorie: [majetek_prevod, verejne_zakazky]
+    shrnuti: Rada schválila prodej šesti hrání palivového dřeva z kácení stromů obálkovou soutěží s minimální cenou 200 Kč za prostorový metr bez DPH a jmenovala komisi pro hodnocení nabídek.
+    citace: "prodej dřevní hmoty vzniklé kácením stromů na pozemcích města Třeboně"
+    castky:
+      - hodnota: 200.00
+        jednotka: Kč/prm
+        druh: jine
+        s_dph: false
+        citace: "minimální výše kupní ceny činí 200,00 Kč/prm bez DPH"
+        poznamka: Minimální kupní cena v obálkové soutěži.
+    parcely:
+      - ku: Třeboň
+        cislo: "91/1"
+        citace: "parc. č. 91/1 v k. ú. Třeboň"
+    anonymizace:
+      - retezec: "členové: Karel Bleha, Jitka Filípková, Bc. Alexandra Jelínková"
+        nahrada: "členové: [jména členů komise neuvádíme]"
+      - retezec: "náhradníci: Ing. Radim Filípek, Ing. Lenka Blažková, Ing. Jan Cába,"
+        nahrada: "náhradníci: [jména náhradníků neuvádíme]"
+      - retezec: "vedoucího odboru rozvoje a investic Ing. Pavla\nHajnu"
+        nahrada: "vedoucího odboru rozvoje a investic"
+    poznamka: Jména členů a náhradníků komisí neuvádíme (rozhodnutí 18. 11. 2026).
+
+  rm-2026-j112-u511:
+    tema: Příkazní smlouva na zajištění provozu Muzea města Třeboně
+    kategorie: [kultura]
+    shrnuti: Rada schválila příkazní smlouvu, jejímž předmětem je zajištění provozu Muzea města Třeboně.
+    citace: "kdy předmětem smlouvy bude zajištění provozu Muzea města Třeboně"
+    anonymizace:
+      - retezec: "Pavlem Hofmanem"
+        nahrada: "fyzickou osobou"
+    poznamka: Příkazník je fyzická osoba, jméno neuvádíme. Usnesení neuvádí odměnu.
+
+  rm-2026-j112-u512:
+    tema: Zápis z 23. jednání bytové komise
+    kategorie: [majetek_najem, socialni]
+    shrnuti: Rada vzala na vědomí zápis z 23. jednání bytové komise rady města ze dne 29. 9. 2026.
+    citace: "Zápis z 23. jednání Bytové komise Rady města Třeboně konaného dne 29.09.2026."
+
+  rm-2026-j112-u513:
+    tema: Smlouvy o vypořádání závazků se společností Galileo Corporation
+    kategorie: [ostatni]
+    shrnuti: Rada schválila uzavření smluv o vypořádání závazků mezi městem a společností Galileo Corporation s.r.o.; smlouvy mají být zveřejněny v registru smluv.
+    citace: "uzavření smluv o vypořádání závazků mezi Městem Třeboň"
+    poznamka: Usnesení neuvádí předmět závazků ani částky.
