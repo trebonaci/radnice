@@ -83,3 +83,10 @@ urednici:
   - funkce: pracovník úřadu
     varianty:
       - "Ing. Pavel Hajna"
+      - "Ing. Pavel Zajíček"
+  - funkce: jednatel společnosti Slatinné lázně Třeboň
+    varianty:
+      - {text: "379 01 Třeboň, prof. JUDr. Vilémovi Kahounovi, Ph.D., uzavřít", nahrada: "379 01 Třeboň, uzavřít"}
+      - {text: "379 01 Třeboň, prof. JUDr. Vilémovi Kahounovi, Ph.D., zahájit", nahrada: "379 01 Třeboň, zahájit"}
+      - {text: "jednatele prof. JUDr. Viléma Kahouna, Ph.D. zajistit", nahrada: "jednatele společnosti zajistit"}
+      - "Prof. JUDr. Vilém Kahoun, PhD."
