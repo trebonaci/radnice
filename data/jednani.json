@@ -1,5 +1,177 @@
 [
   {
+    "id": "rm-2026-10-07",
+    "organ": "rada",
+    "druh": "radne",
+    "cislo": 112,
+    "datum": "2026-10-07",
+    "obdobi": "2022-2026",
+    "pritomno_na_zacatku": 7,
+    "clenu": 7,
+    "pritomnost_zmeny": [],
+    "dokument": {
+      "dokument_id": "zapis-rm-2026-10-07",
+      "url": "https://www.mesto-trebon.cz/uploads/news/id15132/Z-112-26-10-07-A.pdf",
+      "stranka_zdroje": "https://www.mesto-trebon.cz/cz/mestsky-urad-trebon/samosprava-mesta/rada-mesta/zapisy-z-jednani-rady-mesta/volebni-obdobi-2022---2026-2.html",
+      "vyveseno": null,
+      "sha256": "c8ab066b0a87ae5ff1cf1d1ada4f34f819522ecda60cbffd421d8f581a825d86",
+      "pocet_stran": 8
+    },
+    "body": [
+      {
+        "cislo": 1,
+        "nazev": "Zahájení",
+        "strana": 1,
+        "text": "Jednání rady zahájil pan starosta PaedDr. Jan Váňa v 15.00 hodin.\nV úvodu jednání bylo přítomno 7 členů rady města.",
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 2,
+        "nazev": "Program 112. jednání a schválení zveřejnění zápisů",
+        "strana": 1,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 3,
+        "nazev": "Nebytový prostor č. p. 3 Přeseka – záměr výpůjčky",
+        "strana": 2,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 4,
+        "nazev": "Výpověď - nebytový prostor čp. 20/II, Svatopluka Čecha, Třeboň",
+        "strana": 2,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 5,
+        "nazev": "Byt č. 7 v čp. 86/I na Masarykovo nám. - záměr pronájmu",
+        "strana": 2,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 6,
+        "nazev": "Byt č. 9 v čp. 2/II (DPS 2) v ulici Chelčického, Třeboň",
+        "strana": 3,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 7,
+        "nazev": "Byt č. 18 v čp. 2/II (DPS 2) v ulici Chelčického, Třeboň",
+        "strana": 3,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 8,
+        "nazev": "Byt č. 20 v čp. 2/II (DPS 2) v ulici Chelčického, Třeboň",
+        "strana": 3,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 9,
+        "nazev": "Ústřední inventarizační komise dne 15.09.2026",
+        "strana": 4,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 10,
+        "nazev": "Ústav výzkumu globální změny AV ČR, v.v.i. – 2. NP",
+        "strana": 4,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 11,
+        "nazev": "Veřejnosprávní kontrola hospodaření s veřejnými prostředky zřizovatele - Městská sportovní Třeboň",
+        "strana": 4,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 12,
+        "nazev": "RO č. 52 – Navýšení pojištění majetku + spoluúčast (náhrady)",
+        "strana": 5,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 13,
+        "nazev": "Veřejná zakázka „Stavební úpravy MK v ul. Heřmánkova a Daskabát v Třeboni“ – výběr dodavatele stavby",
+        "strana": 5,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 14,
+        "nazev": "Schválení Dodatku č. 4 ke smlouvě o dílo akce Stavební úpravy části MK ul. Sídliště v Třeboni – v úseku od silnice III/15512 po čp. 1158",
+        "strana": 6,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 15,
+        "nazev": "Veřejná zakázka „Instalace FVE 38,7 kWp na střeše přístavby ZŠ Na Sadech,Třeboň“ – Dodatek č. 1 ke smlouvě o dílo",
+        "strana": 6,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 16,
+        "nazev": "Slatinné lázně Třeboň s.r.o. – schválení smlouvy o vypořádání technických zhodnocení 1/2026",
+        "strana": 6,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 17,
+        "nazev": "Prodej dřevní hmoty vzniklé kácením stromů na pozemcích města Třeboně",
+        "strana": 6,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 18,
+        "nazev": "Příkazní smlouva - Muzeum města Třeboně",
+        "strana": 7,
+        "text": null,
+        "nazev_anonymizovan": true,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 19,
+        "nazev": "Zápis z 23. jednání BK dne 29.09.2026",
+        "strana": 7,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 20,
+        "nazev": "Smlouvy o vypořádání závazků",
+        "strana": 7,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 21,
+        "nazev": "Různé",
+        "strana": 8,
+        "text": "Jednání rady města ukončil starosta v 16.45 hodin.\nPaedDr. Jan Váňa v. r.                                             Mgr. Aleš Kolář v. r.\nstarosta města Třeboně                                             místostarosta města Třeboně\nZapsala: zapisovatelka\nZápis byl zpracován dne 13.10.2026\nZápis ze 112. jednání RM ze dne 07.10.2026",
+        "text_anonymizovan": true
+      }
+    ],
+    "upozorneni_parseru": [
+      "RM 506/2026-112 část I: neznámý úkon 'rozhodla'"
+    ]
+  },
+  {
     "id": "rm-2026-11-04",
     "organ": "rada",
     "druh": "radne",
