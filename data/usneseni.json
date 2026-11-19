@@ -1,8 +1,8 @@
 [
   {
-    "id": "rm-2026-j111-u475",
-    "cislo": "RM 475/2026-111",
-    "jednani_id": "rm-2026-09-23",
+    "id": "rm-2026-j113-u514",
+    "cislo": "RM 514/2026-113",
+    "jednani_id": "rm-2026-10-21",
     "bod": 2,
     "vysledek_hlasovani": "prijato",
     "vysledek_zapis": "SCHVÁLENO",
@@ -13,7 +13,7 @@
         "sloveso": "schvaluje"
       }
     ],
-    "text": "I. schvaluje\nprogram 111. jednání rady města a schválení zveřejnění zápisů.",
+    "text": "I. schvaluje\nprogram 113. jednání rady města a schválení zveřejnění zápisů.",
     "text_anonymizovan": false,
     "tema": "Program jednání a zveřejňování zápisů",
     "tema_ai": true,
@@ -21,14 +21,14 @@
       "samosprava"
     ],
     "kategorie_ai": true,
-    "shrnuti": "Rada schválila program 111. jednání a zveřejňování zápisů.",
+    "shrnuti": "Rada schválila program 113. jednání a zveřejňování zápisů.",
     "shrnuti_ai": true,
     "citace": {
-      "dokument_id": "zapis-rm-2026-09-23",
+      "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
-        1
+        2
       ],
-      "text": "program 111. jednání rady města a schválení zveřejnění zápisů."
+      "text": "program 113. jednání rady města a schválení zveřejnění zápisů."
     },
     "castky": [],
     "parcely": [],
@@ -37,12 +37,12 @@
     "overeni": "overeno_kodem"
   },
   {
-    "id": "rm-2026-j111-u476",
-    "cislo": "RM 476/2026-111",
-    "jednani_id": "rm-2026-09-23",
+    "id": "rm-2026-j113-u515",
+    "cislo": "RM 515/2026-113",
+    "jednani_id": "rm-2026-10-21",
     "bod": 3,
-    "vysledek_hlasovani": "neprijato",
-    "vysledek_zapis": "NÁVRH NESCHVÁLEN – USNESENÍ NEPŘIJATO",
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
     "ukony": [
       {
         "cast": "I",
@@ -55,40 +55,525 @@
         "sloveso": "ukládá"
       }
     ],
-    "text": "I. schvaluje\nprojevení zájmu o převod pozemku p. č. 1915/260 v k. ú. Třeboň od Úřadu pro zastupování státu ve věcech\nmajetkových prostřednictvím aplikace na stránkách www.nabidkamajetku.gov.cz\nII. ukládá\nodboru finančnímu a majetkovému učinit projevení zájmu prostřednictvím aplikace na stránkách UZSVM.",
+    "text": "I. schvaluje\nuzavření Smlouvy o nájmu mezi městem Třeboň a společností L.M. electric s.r.o., IČ 05533821, (Jarošovská\n840, Jindřichův Hradec). Smlouva bude uzavřena na dobu určitou od 23.10.2026 do 31.12.2026. Nájemné\nbude hrazeno ve výši 10.500,- Kč + DPH dle platných právních předpisů. Předmětem nájmu bude část\npozemku p. č. 575 o výměře cca 30 m2 k. ú. Třeboň za účelem zřízení staveniště (závoz stavebního materiálu)\nv rámci stavby „Rekonstrukce objektu Husova 140, Třeboň“ za dodržení podmínek:\n- stavba bude provedena v souladu s žádostí ze dne 07.09.2026 (METRP00EZA0I),\n- zařízení staveniště bude opatřeno mobilním oplocením, které bude ve vzdálenosti minimálně 3 m od jilmu\nhabrolistého a 2 m od dřezovce trojtrnného a dubu letního,\n- na staveništi bude zajištěno co nejmenší zatížení hlukem a nadměrným prachem,\n- nájemce uvede travní porost předmětu nájmu do původního stavu a předá jej zpět pronajímateli po splnění\npodmínky provedení první seče obnoveného porostu trávníku. Pro zajištění splnění této podmínky bude\nsložena vratná kauce ve výši 10.000,00 Kč.\n- dotčené povrchy budou uvedeny do původního stavu.\nPokuta za porušení závazku je stanovena ve výši 50.000,- Kč.\nII. ukládá\nodboru finančnímu a majetkovému předložit starostovi města smlouvu k podpisu.",
     "text_anonymizovan": false,
-    "tema": "Zájem o převod pozemku od státu v Třeboni (návrh nepřijat)",
+    "tema": "Pronájem části pozemku u Husovy ulice pro staveniště",
+    "tema_ai": true,
+    "kategorie": [
+      "majetek_najem"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Rada schválila pronájem části pozemku p. č. 575 v Třeboni (cca 30 m2) společnosti pro zařízení staveniště při rekonstrukci objektu Husova 140, od 23. 10. do 31. 12. 2026.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-21",
+      "strany": [
+        2
+      ],
+      "text": "Nájemné bude hrazeno ve výši 10.500,- Kč + DPH dle platných právních předpisů."
+    },
+    "castky": [
+      {
+        "hodnota": 10500,
+        "jednotka": "Kč",
+        "druh": "najemne_sazba",
+        "s_dph": false,
+        "citace": "Nájemné bude hrazeno ve výši 10.500,- Kč + DPH dle platných právních předpisů.",
+        "mena": "CZK"
+      },
+      {
+        "hodnota": 10000,
+        "jednotka": "Kč",
+        "druh": "jine",
+        "s_dph": null,
+        "citace": "bude složena vratná kauce ve výši 10.000,00 Kč.",
+        "poznamka": "Vratná kauce za uvedení trávníku do původního stavu.",
+        "mena": "CZK"
+      }
+    ],
+    "parcely": [
+      {
+        "ku": "Třeboň",
+        "cislo": "575",
+        "cast": true,
+        "citace": "část pozemku p. č. 575 o výměře cca 30 m2 k. ú. Třeboň"
+      }
+    ],
+    "poznamka": null,
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "rm-2026-j113-u516",
+    "cislo": "RM 516/2026-113",
+    "jednani_id": "rm-2026-10-21",
+    "bod": 4,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "II",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "I. schvaluje\nzřízení služebnosti a uzavření smlouvy o zřízení služebnosti mezi městem Třeboň (povinný) a společností EG.\nD, s.r.o. (oprávněný) na pozemku p. č. 3030 k. ú. Třeboň, když rozsah služebnosti je zpřesněn dle geom.\nplánu č. 4438-323/2026. Služebnost bude spočívat v právu umístění, vedení, údržby a oprav kabelového\nvedení NN. Služebnost bude zřízena úplatně, za cenu dle Dohody o náhradách za zřízení věcných břemen\nna uložení technické infrastruktury (sítí) do pozemků ve vlastnictví měst a obcí a o součinnosti při jednání s\nEnergetickým regulačním úřadem ze dne 20.06.2022 mezi Svazem měst a obcí Jihočeského kraje (Jirsíkova\n243/2, 370 01 České Budějovice) a společností EG. D, a.s. (Lidická 1873/36, Brno), ve prospěch společnosti\nEG. D, s.r.o. (Lidická 1873/36, Brno).\nZápis ze 113. jednání RM ze dne 21.10.2026\nII. ukládá\nodboru finančnímu a majetkovému předložit starostovi města smlouvu k podpisu.",
+    "text_anonymizovan": false,
+    "tema": "Služebnost pro kabelové vedení NN na pozemku p. č. 3030",
     "tema_ai": true,
     "kategorie": [
       "majetek_prevod"
     ],
     "kategorie_ai": true,
-    "shrnuti": "Rada neschválila návrh, aby město projevilo zájem o převod pozemku p. č. 1915/260 v k. ú. Třeboň od Úřadu pro zastupování státu ve věcech majetkových. Usnesení nebylo přijato.",
+    "shrnuti": "Rada schválila zřízení úplatné služebnosti pro uložení kabelového vedení nízkého napětí na pozemku města p. č. 3030 v Třeboni ve prospěch distribuční společnosti.",
     "shrnuti_ai": true,
     "citace": {
-      "dokument_id": "zapis-rm-2026-09-23",
+      "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
-        2
+        2,
+        3
       ],
-      "text": "projevení zájmu o převod pozemku p. č. 1915/260 v k. ú. Třeboň"
+      "text": "Služebnost bude spočívat v právu umístění, vedení, údržby a oprav kabelového"
     },
     "castky": [],
     "parcely": [
       {
         "ku": "Třeboň",
-        "cislo": "1915/260",
-        "citace": "pozemku p. č. 1915/260 v k. ú. Třeboň"
+        "cislo": "3030",
+        "citace": "na pozemku p. č. 3030 k. ú. Třeboň"
       }
     ],
-    "poznamka": "Výsledek hlasování je v zápisu uveden jako „NÁVRH NESCHVÁLEN – USNESENÍ NEPŘIJATO“; návrh usnesení („schvaluje“) tedy neprošel.",
+    "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
   },
   {
-    "id": "rm-2026-j111-u477",
-    "cislo": "RM 477/2026-111",
-    "jednani_id": "rm-2026-09-23",
-    "bod": 4,
+    "id": "rm-2026-j113-u517",
+    "cislo": "RM 517/2026-113",
+    "jednani_id": "rm-2026-10-21",
+    "bod": 5,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "II",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "I. schvaluje\nzřízení služebnosti a uzavření smlouvy o budoucí smlouvě o zřízení služebnosti na pozemcích p. č. 2292/3,\np. č. 2503/11, p. č. 3692, p. č. 3789, p. č. 3831 k. ú. Třeboň, p. č. 1125, p. č. 168/80, p. č. 722/8, p. č. 722/9,\np. č. 736/2, p. č. 736/5, p. č. 736/6 k. ú. Holičky u Staré Hlíny, ve vlastnictví města Třeboně (povinného), které\nbude spočívat v právu uložení, vedení, údržby a oprav kabelu VN, HDPE trubky. Služebnost bude zřízena\núplatně, za cenu dle Dohody o náhradách za zřízení věcných břemen na uložení technické infrastruktury (sítí)\ndo pozemků ve vlastnictví měst a obcí a o součinnosti při jednání s Energetickým regulačním úřadem ze dne\n20.06.2022 mezi Svazem měst a obcí Jihočeského kraje (Jirsíkova 243/2, 370 01 České Budějovice) a\nspolečností EG. D, a.s. (Lidická 1873/36, Brno), ve prospěch společnosti EG. D, s.r.o., Lidická 1873/36, Brno\n(oprávněného) a za dodržení podmínek:\na) stavba bude provedena v souladu se žádostí ze dne 17.08.2026 (METRP00FDO14),\nb) stavba bude provedena dle doložené dokumentace Situace M600 ze dne 14.10.2026,\nc) realizace stavby bude mimo hlavní turistickou sezónu (červenec-srpen) na základě schváleného dopravně\ninženýrského opatření,\nd) uvedení všech dotčených povrchů do původního stavu.\nPokuta za porušení závazku je stanovena ve výši 20.000,- Kč.\nII. ukládá\nodboru finančnímu a majetkovému předložit starostovi města smlouvu k podpisu.",
+    "text_anonymizovan": false,
+    "tema": "Služebnost pro kabel VN a HDPE trubky v Třeboni a Holičkách",
+    "tema_ai": true,
+    "kategorie": [
+      "majetek_prevod"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Rada schválila smlouvu o budoucí smlouvě o zřízení úplatné služebnosti pro kabel vysokého napětí a HDPE trubky na pozemcích města v k. ú. Třeboň a Holičky u Staré Hlíny; stavba mimo červenec a srpen, pokuta za porušení závazku 20 000 Kč.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-21",
+      "strany": [
+        3
+      ],
+      "text": "Pokuta za porušení závazku je stanovena ve výši 20.000,- Kč."
+    },
+    "castky": [
+      {
+        "hodnota": 20000,
+        "jednotka": "Kč",
+        "druh": "jine",
+        "s_dph": null,
+        "citace": "Pokuta za porušení závazku je stanovena ve výši 20.000,- Kč.",
+        "poznamka": "Smluvní pokuta, ne cena ani úplata za služebnost.",
+        "mena": "CZK"
+      }
+    ],
+    "parcely": [],
+    "poznamka": null,
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "rm-2026-j113-u518",
+    "cislo": "RM 518/2026-113",
+    "jednani_id": "rm-2026-10-21",
+    "bod": 6,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "II",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "III",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "I. schvaluje\nuzavření Smlouvy o smlouvě budoucí darovací spojené se smlouvou budoucí o zřízení služebnosti mezi\nměstem Třeboň (jako budoucí obdarovaný nebo budoucí povinný) a XXXXXXXXXX XXXXXXXXXX (jako\nbudoucí dárce nebo budoucí oprávněný, bytem: XXXXXXXXXXXXXXXXXXXX), kdy předmětem smlouvy\nbude závazek budoucího dárce a budoucího oprávněného uzavřít s budoucím obdarovaným a budoucím\npovinným smlouvu darovací spojenou se smlouvou o zřízení služebnosti na:\n1)bezúplatný převod vodohospodářské infrastruktury:\n-vodovodní řad PE 100 RC SDR 11 PN 16 prům. 110x10 mm v délce 49,51 m vč. podzemního hydrantu DN\n80 mm na pozemcích p. č. 1951/2 a p. č. 1917/5 k. ú. Třeboň,\n-splašková kanalizace tlaková PE 100 RC SDR 17 prům. 90x8,2 mmv délce 46,64 m spolu se zakončením v\npodobě proplachovací soupravy, to vše na pozemku p. č. 1951/2 a p. č. 1917/5 k. ú. Třeboň,\nza podmínky, že:\n-veškeré náklady spojené s vybudováním vodohospodářské infrastruktury budou hrazeny vlastníkem pozemků\np. č. 1918/22 a p. č. 1918/3 k. ú. Třeboň,\n-stavba bude provedena v souladu s předloženou projektovou dokumentací z 06/2026 a v souladu s\nvyjádřením spol. Městská Vodohospodářská s.r.o. č. j. 46.MV.2026 ze dne 22.09.2026,\nZápis ze 113. jednání RM ze dne 21.10.2026\n-před kolaudací stavby bude uzavřena dohoda vlastníků provozně souvisejících kanalizací a vodovodů mezi\nměstem Třeboň a XXXXXXXXXX XXXXXXXXXX (bytem XXXXXXXXXX XXXXXXXXXX),\n-odbor rozvoje a investic a zástupce spol. Městská Vodohospodářská s.r.o. budou přizváni ke kontrole\npoložení vodovodního řadu a kanalizační stoky.\nK předání předmětu daru dojde nejpozději do 5 let ode dne podpisu smlouvy o smlouvě budoucí darovací\nspojené se smlouvou budoucí o zřízení služebnosti. Součástí předání nabídnuté infrastruktury bude dokladová\nčást díla (revize, zkoušky, atesty) vč. geometrického zaměření a kamerových zkoušek.\nSlužebnost jako alternativní závazek mezi budoucím povinným a budoucím oprávněným v případě neuzavření\ndarovací smlouvy bude spočívat v právu uložení, vedení, údržby a oprav vodovodního řadu, kanalizační stoky\nna pozemcích p. č. 1951/2 a p. č. 1917/5 k. ú. Třeboň. Tato služebnost jako alternativní závazek bude zřízena\núplatně, za cenu dle platného ceníku pro stanovení jednorázové úhrady za omezení vlastnického práva k\nnemovitostem při umístění podzemních inženýrských sítí do místní komunikací a pozemků veřejné zeleně, k\nceně bude účtováno DPH, ve prospěch vlastníka nemovité věci neevidované v katastru nemovitostí –\nvodovodní řad a kanalizační stoka, a každého dalšího vlastníka nemovité věci neevidované v katastru\nnemovitostí – vodovodní řad a kanalizační stoka.\n2)zřízení služebnosti:\n- 2 ks vodovodní přípojky PE 32 x 3 mm v délce 6,00 m na pozemku p. č. 1951/2 k. ú. Třeboň. Vodovodní\npřípojky budou ukončeny ve sdružené vodoměrné šachtě na pozemku p. č. 1951/2 k. ú. Třeboň, umístěné\nmin. 1 m na hranici pozemku p. č. 1918/3 k. ú. Třeboň.\n-2 ks kanalizační přípojky na pozemku p. č. 1951/2 k. ú. Třeboň, a to v délce cca 7,00 m (potrubí PE prům.\n50 mm) s ukončením na pozemku p. č. 1918/3 k. ú. Třeboň a v délce 36 m (potrubí PE prům. 50 mm) s\nukončením na pozemku p. č. 1918/22 k. ú. Třeboň.\n-2 ks přípojky dešťové kanalizace PVC DN 150 mm v celkové délce 8 m s tím, že napojení bude na stoku\ndešťové kanalizace na pozemku p. č. 2467/2 k. ú. Třeboň a bude končit plastovou revizní šachtou na hranici\npozemku p. č. 1918/22 k. ú. Třeboň.\nSlužebnost mezi městem Třeboň (jako budoucí povinný) a XXXXXXXXXX XXXXXXXXXX (jako budoucí\noprávněný, bytem XXXXXXXXXX XXXXXXXXXX) bude zřízena pro vodovodní přípojky vč. vodoměrné šachty\na kanalizační přípojky na pozemku p. č. 1951/2 v k. ú. Třeboň, pro přípojky dešťové kanalizace na pozemku\np. č. 2467/2 k. ú. Třeboň, když rozsah služebnosti bude zpřesněn dle geometrického plánu. Služebnost bude\nspočívat v právu uložení, vedení, údržby a oprav 2 ks vodovodních přípojek, 2 ks kanalizačních přípojek a 2\nks přípojek dešťové kanalizace. Služebnost bude zřízena úplatně, za cenu dle platného ceníku pro stanovení\njednorázové úhrady za omezení vlastnického práva k nemovitostem při umístění podzemních inženýrských\nsítí do místních komunikací a pozemků veřejné zeleně, k ceně bude účtováno DPH dle platných předpisů, ve\nprospěch vlastníka pozemku p. č. 1918/22 a p. č. 1918/3 k. ú. Třeboň, a každého dalšího vlastníka pozemku\np. č. 1918/22 a p. č. 1918/3 v k. ú. Třeboň.\nStavba bude provedena za podmínky:\n- uvedení dotčených pozemků do původního stavu,\n- v souladu s předloženou projektovou dokumentací a s vyjádřením spol. Městská Vodohospodářská s.r.o. č.\nj. 46.MV.2026 ze dne 22.09.2026.\nII. schvaluje\nzáměr investora stavby „Novostavba objektu zubních ordinací pro účely lázní na pozemku p. č. 1918/22,\nTřeboň“ XXXXXXXXXX XXXXXXXXXX (bytem XXXXXXXXXX XXXXXXXXXX) vybudovat komunikaci na\npozemku p. č. 2467/2 k. ú. Třeboň v částečném rozsahu uvedeném v projektové dokumentaci z 06/2026, a to\nkomunikaci v šíři 3 m s povrchovou úpravou asfaltový recyklát, za podmínky uzavření dohody mezi městem\nTřeboň a XXXXXXXXXX XXXXXXXXXX (bytem XXXXXXXXXX XXXXXXXXXX) o postupu v případě\nstavebního záměru města v ploše žadatelem vybudované komunikace. Tento souhlas se vydává s omezenou\nplatností 5 let.\nIII. ukládá\nodboru finančnímu a majetkovému předložit starostovi města k podpisu smlouvu a dohodu.",
+    "text_anonymizovan": false,
+    "tema": "Zubní ordinace pro lázně – vodovod, kanalizace a komunikace",
+    "tema_ai": true,
+    "kategorie": [
+      "majetek_prevod",
+      "voda_odpady",
+      "investice"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Rada schválila smlouvu o budoucím bezúplatném převodu vodovodu a kanalizace, kterou by investor stavby zubních ordinací vybudoval na vlastní náklady a předal městu, a služebnosti pro přípojky; dále schválila záměr investora vybudovat komunikaci na pozemku p. č. 2467/2 s platností souhlasu 5 let.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-21",
+      "strany": [
+        3,
+        4
+      ],
+      "text": "Tento souhlas se vydává s omezenou platností 5 let."
+    },
+    "castky": [],
+    "parcely": [
+      {
+        "ku": "Třeboň",
+        "cislo": "1918/22",
+        "citace": "pozemku p. č. 1918/22 k. ú. Třeboň"
+      }
+    ],
+    "poznamka": "Investor je fyzická osoba, zápis ji sám anonymizoval (XXXXXXXXXX).",
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "rm-2026-j113-u519",
+    "cislo": "RM 519/2026-113",
+    "jednani_id": "rm-2026-10-21",
+    "bod": 7,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "II",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "Zápis ze 113. jednání RM ze dne 21.10.2026\nI. schvaluje\nuzavření dodatku č. 4 k nájemní smlouvě ze dne 18.05.2012 (ve znění dodatků č. 1 - 3) mezi městem Třeboň\n(jako pronajímatel) a společností CETIN a.s, Českomoravská 2510/19, Libeň, 190 00 Praha 9, IČO:\n04084063, DIČ: CZ 04084063 (jako nájemce), jehož předmětem bude:\n• rozšíření předmětu nájmu v objektu vodárenské věže v Třeboni, která je součástí pozemku p. č. 369 v k. ú.\nTřeboň, o instalaci jednoho dalšího telekomunikačního stožárku dle důvodové zprávy,\n• navýšení ročního nájemného o 8 000,00 Kč + DPH oproti dosavadní sjednané výši (dle důvodové zprávy),\n• prodloužení doby nájmu o 15 let, tj. do 31.05.2042.\nII. ukládá\nodboru finančnímu a majetkovému předložit dodatek k podpisu.",
+    "text_anonymizovan": false,
+    "tema": "CETIN – rozšíření nájmu na vodárenské věži",
+    "tema_ai": true,
+    "kategorie": [
+      "majetek_najem"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Rada schválila dodatek k nájemní smlouvě se společností CETIN – další telekomunikační stožárek na vodárenské věži, nájemné vyšší o 8 000 Kč ročně bez DPH, nájem prodloužen do 31. 5. 2042.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-21",
+      "strany": [
+        4,
+        5
+      ],
+      "text": "navýšení ročního nájemného o 8 000,00 Kč + DPH oproti dosavadní sjednané výši"
+    },
+    "castky": [
+      {
+        "hodnota": 8000,
+        "jednotka": "Kč/rok",
+        "druh": "najemne_sazba",
+        "s_dph": false,
+        "citace": "navýšení ročního nájemného o 8 000,00 Kč + DPH oproti dosavadní sjednané výši",
+        "poznamka": "Navýšení oproti dosavadnímu nájemnému, ne celková výše nájemného.",
+        "mena": "CZK"
+      }
+    ],
+    "parcely": [
+      {
+        "ku": "Třeboň",
+        "cislo": "369",
+        "citace": "součástí pozemku p. č. 369 v k. ú. Třeboň"
+      }
+    ],
+    "poznamka": null,
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "rm-2026-j113-u520",
+    "cislo": "RM 520/2026-113",
+    "jednani_id": "rm-2026-10-21",
+    "bod": 8,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "II",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "I. schvaluje\nuzavření Smlouvy o připojení zařízení elektrické zvoničky kaple ve Staré Hlíně k odběrnému místu elektrické\nenergie mezi XXXXXXXXXX XXXXXXXXXX (jako poskytovatel odběrného místa, bytem XXXXXXXXXX,\nXXXXXXXXXX) a městem Třeboň (jako provozovatel elektrické zvoničky), kdy předmětem smlouvy je úprava\npodmínek provozu elektrické zvoničky kaple ve Staré Hlíně a způsob úhrady spotřebované elektrické energie.\nII. ukládá\nodboru finančnímu a majetkovému předložit smlouvu starostovi města k podpisu.",
+    "text_anonymizovan": false,
+    "tema": "Elektrická zvonička kaple ve Staré Hlíně",
+    "tema_ai": true,
+    "kategorie": [
+      "majetek_najem",
+      "kultura"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Rada schválila smlouvu o připojení elektrické zvoničky kaple ve Staré Hlíně k odběrnému místu a o úhradě spotřebované energie.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-21",
+      "strany": [
+        5
+      ],
+      "text": "úprava podmínek provozu elektrické zvoničky kaple ve Staré Hlíně a způsob úhrady spotřebované elektrické energie."
+    },
+    "castky": [],
+    "parcely": [],
+    "poznamka": "Druhá strana smlouvy je fyzická osoba, zápis ji sám anonymizoval.",
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "rm-2026-j113-u521",
+    "cislo": "RM 521/2026-113",
+    "jednani_id": "rm-2026-10-21",
+    "bod": 9,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "II",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "I. schvaluje\npřijetí daru a uzavření Darovací smlouvy mezi XXXXXXXXXX XXXXXXXXXX (jako dárce, bytem:\nXXXXXXXXXX XXXXXXXXXX) a městem Třeboň (jako obdarovaný), kdy předmětem daru je domácí loutkové\ndivadlo v rozsahu 26 loutek, souboru kulis a náhradních dílů loutek.\nII. ukládá\nodboru finančnímu a majetkovému předložit smlouvu starostovi města k podpisu.",
+    "text_anonymizovan": false,
+    "tema": "Dar domácího loutkového divadla",
+    "tema_ai": true,
+    "kategorie": [
+      "kultura",
+      "dotace_dary"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Rada schválila přijetí daru – domácího loutkového divadla z první republiky (26 loutek, kulisy a náhradní díly).",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-21",
+      "strany": [
+        5
+      ],
+      "text": "předmětem daru je domácí loutkové divadlo v rozsahu 26 loutek, souboru kulis a náhradních dílů loutek."
+    },
+    "castky": [],
+    "parcely": [],
+    "poznamka": "Dárce je fyzická osoba, zápis ji sám anonymizoval. Hodnota daru není uvedena.",
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "rm-2026-j113-u522",
+    "cislo": "RM 522/2026-113",
+    "jednani_id": "rm-2026-10-21",
+    "bod": 10,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "bere_na_vedomi",
+        "sloveso": "bere na vědomí"
+      },
+      {
+        "cast": "II",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "III",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "I. bere na vědomí\nvýsledek prodeje osobního vozidla Škoda Fabia RZ 5C2 8202 prostřednictvím aukčního portálu spol. VeaCom\ns.r.o.\nZápis ze 113. jednání RM ze dne 21.10.2026\nII. schvaluje\nuzavření Kupní smlouvy mezi městem Třeboň (jako prodávající) a spol. VeaCom s.r.o. (jako kupující, se\nsídlem: Praha 5 – Smíchov, Strakonická 3367, 150 00, IČ: 27581063), kdy předmětem prodeje je osobní\nvozidlo Škoda za kupní cenu ve výši 13.700,00 Kč bez DPH.\nIII. ukládá\nodboru finančnímu a majetkovému předložit smlouvu vč. předávacího protokolu – příloha č. 1 k podpisu\nstarostovi města.",
+    "text_anonymizovan": false,
+    "tema": "Prodej služebního vozidla Škoda Fabia",
+    "tema_ai": true,
+    "kategorie": [
+      "majetek_prevod"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Rada vzala na vědomí výsledek aukce a schválila kupní smlouvu na prodej osobního vozidla Škoda za 13 700 Kč bez DPH.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-21",
+      "strany": [
+        5,
+        6
+      ],
+      "text": "osobní vozidlo Škoda za kupní cenu ve výši 13.700,00 Kč bez DPH."
+    },
+    "castky": [
+      {
+        "hodnota": 13700,
+        "jednotka": "Kč",
+        "druh": "smluvni",
+        "s_dph": false,
+        "citace": "osobní vozidlo Škoda za kupní cenu ve výši 13.700,00 Kč bez DPH.",
+        "poznamka": "Kupní cena, kterou město dostane.",
+        "mena": "CZK"
+      }
+    ],
+    "parcely": [],
+    "poznamka": null,
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "rm-2026-j113-u523",
+    "cislo": "RM 523/2026-113",
+    "jednani_id": "rm-2026-10-21",
+    "bod": 11,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "II",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "I. schvaluje\nčerpání prostředků z fondu investic příspěvkové organizace Městská sportovní Třeboň na pořízení\nkamerového systému, mycího stroje a vybavení na úklid do přístaveb sportovní haly (ubytování a tělocvičny)\na dále na pořízení bytového textilu a IT vybavení do objektu ubytování. Maximální částka čerpání prostředků\nz fondu investic k uvedenému účelu bude 900.000 Kč včetně DPH.\nII. ukládá\nodboru finančnímu a majetkovému informovat o přijatém usnesení příspěvkovou organizaci Městská sportovní\nTřeboň.",
+    "text_anonymizovan": false,
+    "tema": "Městská sportovní Třeboň – vybavení přístaveb sportovní haly z fondu investic",
+    "tema_ai": true,
+    "kategorie": [
+      "prispevkove_organizace",
+      "sport",
+      "investice"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Rada schválila čerpání z fondu investic Městské sportovní Třeboň na kamerový systém, mycí stroj, úklid, bytový textil a IT vybavení ubytování; nejvýše 900 000 Kč včetně DPH.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-21",
+      "strany": [
+        6
+      ],
+      "text": "Maximální částka čerpání prostředků"
+    },
+    "castky": [
+      {
+        "hodnota": 900000,
+        "jednotka": "Kč",
+        "druh": "jine",
+        "s_dph": true,
+        "citace": "z fondu investic k uvedenému účelu bude 900.000 Kč včetně DPH.",
+        "poznamka": "Nejvyšší povolené čerpání z fondu investic, ne skutečná ani smluvní cena.",
+        "mena": "CZK"
+      }
+    ],
+    "parcely": [],
+    "poznamka": null,
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "rm-2026-j113-u524",
+    "cislo": "RM 524/2026-113",
+    "jednani_id": "rm-2026-10-21",
+    "bod": 12,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "II",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "I. schvaluje\nprovedení rozpočtového opatření č. 53, které spočívá v přesunutí finančních prostředků ve výdajové části\nrozpočtu\n-z položky 5169 „Ostatní služby - cestovní ruch“, § 2143, ORJ 900, ORG 9900000000, UZ 0 v částce Kč\n60.000,00,\n-do položky 5169 „Ostatní služby - trhy“, § 2141, ORJ 900, ORG 9900000000, UZ 0 v částce Kč 60.000,00.\nRozpočet\nRozpočet\nod\nSchválený      po       Rozpočtové\nČís.   RM      ÚZ          ORG              ORJ   Paragraf   Položka                                          počátku\nrozpočet   schválení    opatření\nroku po\nRO\nRO\nRozpočtové výdaje (Kč):\n53.             0       9900000000          900    2143       5169       300 000    300 000       - 60 000    240 000\n0       9900000000          900    2141       5169       140 000    140 000      + 60 000     200 000\nII. ukládá\nodboru kultury a cestovního ruchu a odboru finančnímu a majetkovému provést a evidovat RO v IS GINIS.",
+    "text_anonymizovan": false,
+    "tema": "Rozpočtové opatření č. 53 – trhy",
+    "tema_ai": true,
+    "kategorie": [
+      "rozpocet",
+      "kultura"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Rada přesunula 60 000 Kč z položky služeb cestovního ruchu do položky služeb na trzích.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-21",
+      "strany": [
+        6
+      ],
+      "text": "-do položky 5169 „Ostatní služby - trhy“, § 2141, ORJ 900, ORG 9900000000, UZ 0 v částce Kč 60.000,00."
+    },
+    "castky": [
+      {
+        "hodnota": 60000,
+        "jednotka": "Kč",
+        "druh": "rozpoctove_opatreni",
+        "s_dph": null,
+        "citace": "-do položky 5169 „Ostatní služby - trhy“, § 2141, ORJ 900, ORG 9900000000, UZ 0 v částce Kč 60.000,00.",
+        "mena": "CZK"
+      }
+    ],
+    "parcely": [],
+    "poznamka": null,
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "rm-2026-j113-u525",
+    "cislo": "RM 525/2026-113",
+    "jednani_id": "rm-2026-10-21",
+    "bod": 13,
     "vysledek_hlasovani": "prijato",
     "vysledek_zapis": "SCHVÁLENO",
     "ukony": [
@@ -113,513 +598,53 @@
         "sloveso": "ukládá"
       }
     ],
-    "text": "I. schvaluje\nuzavření Smlouvy o nájmu mezi městem Třeboň a společností L.M. electric s.r.o., IČ 05533821, (Jarošovská\n840, Jindřichův Hradec). Smlouva bude uzavřena na dobu určitou od 24.09.2026 do 22.10.2026. Nájemné\nbude hrazeno ve výši 4.350,- Kč + DPH dle platných právních předpisů. Předmětem nájmu bude část pozemku\np. č. 575 o výměře cca 30 m2 k. ú. Třeboň za účelem zřízení staveniště (závoz stavebního materiálu) v rámci\nstavby „Rekonstrukce objektu Husova 140, Třeboň“ za dodržení podmínek:\n- stavba bude provedena v souladu s žádostí ze dne 07.09.2026 (METRP00EZA0I),\n- zařízení staveniště bude opatřeno mobilním oplocením, které bude ve vzdálenosti minimálně 3 m od jilmu\nhabrolistého a 2 m od dřezovce trojtrnného a dubu letního,\n- na staveništi bude zajištěno co nejmenší zatížení hlukem a nadměrným prachem,\n- nájemce uvede travní porost předmětu nájmu do původního stavu a předá jej zpět pronajímateli po splnění\npodmínky provedení první seče obnoveného porostu trávníku. Pro zajištění splnění této podmínky bude\nsložena vratná kauce ve výši 10.000,00 Kč.\n- dotčené povrchy budou uvedeny do původního stavu.\nPokuta za porušení závazku je stanovena ve výši 50.000,- Kč.\nII. schvaluje\nzveřejnění záměru nájmu části pozemku p. č. 575 o výměře cca 30 m2 k. ú. Třeboň, na dobu určitou od\n23.10.2026 do 31.12.2026. Nájemné bude hrazeno ve výši 10.500,- Kč + DPH dle platných právních předpisů.\nPozemek bude pronajat za účelem zřízení staveniště (závoz stavebního materiálu) v rámci stavby\n„Rekonstrukce objektu Husova 140, Třeboň“ za dodržení podmínek:\n- stavba bude provedena v souladu s žádostí ze dne 07.09.2026 (METRP00EZA0I),\n- zařízení staveniště bude opatřeno mobilním oplocením, které bude ve vzdálenosti minimálně 3 m od jilmu\nhabrolistého a 2 m od dřezovce trojtrnného a dubu letního,\n- na staveništi bude zajištěno co nejmenší zatížení hlukem a nadměrným prachem,\n- nájemce uvede travní porost předmětu nájmu do původního stavu a předá jej zpět pronajímateli po splnění\npodmínky provedení první seče obnoveného porostu trávníku. Pro zajištění splnění této podmínky bude\nsložena vratná kauce ve výši 10.000,00 Kč.\n- dotčené povrchy budou uvedeny do původního stavu.\nPokuta za porušení závazku je stanovena ve výši 50.000,- Kč.\nIII. schvaluje\nuzavření Dohody o bezúplatném užívání části pozemku p. č. 500 o výměře cca 150 m2 k. ú. Třeboň mezi\nměstem Třeboň, XXXXXXXXXXXXX (XXXXXXXXXXXXX), paní XXXXXXXXXXXXX (XXXXXXXXXXXXX,\nXXXXX), paní XXXXXXXXXXXXX (XXXXXXXXXXXXX) a společností L.M. electric s.r.o., IČ 05533821,\n(XXXXXXXXXXXXX, XXXXXXXXXXXXX). Dohoda bude uzavřena na dobu určitou od 24.09.2026 do\n31.12.2026. Předmětem užívání bude část pozemku p. č. 500 o výměře cca 150 m2 k. ú. Třeboň za účelem\nvstupu a přenášení stavebního materiálu v rámci stavby „Rekonstrukce objektu Husova 140, Třeboň“ a za\ndodržení podmínek, že :\n-zhotovitel stavby předloží pasport stávajícího stavu dotčených prostor před zahájením prací,\nZápis ze 111. jednání RM ze dne 23.09.2026\n-předmětná část užívaného pozemku bude uvedena do původního stavu.\nPokuta za porušení závazku je stanovena ve výši 20.000,- Kč.\nIV. ukládá\nodboru finančnímu a majetkovému předložit starostovi města smlouvu k podpisu a zveřejnit záměr nájmu na\núřední desce.",
+    "text": "I. schvaluje\nposkytnutí finančního daru ve výši 20.000,00 Kč žadateli Základní škola Třeboň, Sokolská 296, IČ 60818174,\nse sídlem Sokolská 296, 379 01 Třeboň za účelem uspořádání oslavy výročí odloučeného pracoviště ZŠ\nBřilice.\nII. schvaluje\nuzavření darovací smlouvy mezi městem Třeboň (dárce) a žadatelem Základní škola Třeboň, Sokolská 296,\nIČ 60818174, se sídlem Sokolská 296, 379 01 Třeboň (obdarovaný). Předmětem smlouvy bude poskytnutí\nfinančního daru ve výši 20.000,00 Kč za účelem uspořádání oslavy výročí odloučeného pracoviště ZŠ Břilice.\nIII. schvaluje\nprovedení rozpočtového opatření č. 54, které spočívá v přesunutí finančních prostředků ve výdajové části\nrozpočtu takto:\n-ponížení výdajové položky 5222 Příspěvky v oblasti ostatních činností, § 3429, ORJ 0800, ORG 9800003147,\nNZUZ 0 o částku 20 000 Kč,\n-navýšení výdajové položky 5331 Příspěvky v oblasti ostatních činností - dar, § 3113, ORJ 0800, ORG\n9800003150, NZUZ 0 o částku 20 000 Kč.\nN\nRozpočet po                Rozpočet od\nR    Z                                                  Schválený                 Rozpočtové\nČís.                 ORG          ORJ     Paragraf   Položka                schválení                 počátku roku\nM    Ú                                                   rozpočet                  opatření\nRO                       po RO\nZ\nRozpočtové výdaje (Kč):\n54.          0     9800003147     0800       3429      5222      300 000       292 000   -   20 000       272 000\n0     9800003150     0800       3113      5331            0         8 000   + 20 000          28 000\nIV. ukládá\nodboru finančnímu a majetkovému zajistit plnění usnesení a předložit darovací smlouvu k podpisu.",
     "text_anonymizovan": false,
-    "tema": "Pronájem části pozemku p. č. 575 pro staveniště a užívání části pozemku p. č. 500 v Třeboni",
-    "tema_ai": true,
-    "kategorie": [
-      "majetek_najem"
-    ],
-    "kategorie_ai": true,
-    "shrnuti": "Rada schválila krátkodobý pronájem části pozemku p. č. 575 (cca 30 m2) od 24. 9. do 22. 10. 2026 za 4 350 Kč + DPH, záměr dalšího pronájmu do 31. 12. 2026 za 10 500 Kč + DPH a bezplatné užívání části pozemku p. č. 500 (cca 150 m2) do 31. 12. 2026. Pozemky mají sloužit jako staveniště a vstup pro rekonstrukci objektu Husova 140.",
-    "shrnuti_ai": true,
-    "citace": {
-      "dokument_id": "zapis-rm-2026-09-23",
-      "strany": [
-        2,
-        3
-      ],
-      "text": "Smlouva bude uzavřena na dobu určitou od 24.09.2026 do 22.10.2026."
-    },
-    "castky": [
-      {
-        "hodnota": 4350,
-        "jednotka": "Kč",
-        "druh": "najemne_sazba",
-        "s_dph": false,
-        "citace": "Nájemné bude hrazeno ve výši 4.350,- Kč + DPH",
-        "poznamka": "Nájemné za celou dobu pronájmu 24. 9.–22. 10. 2026, DPH se připočte.",
-        "mena": "CZK"
-      },
-      {
-        "hodnota": 10500,
-        "jednotka": "Kč",
-        "druh": "najemne_sazba",
-        "s_dph": false,
-        "citace": "Nájemné bude hrazeno ve výši 10.500,- Kč + DPH",
-        "poznamka": "Nájemné za celou dobu 23. 10.–31. 12. 2026 (zatím jen záměr nájmu), DPH se připočte.",
-        "mena": "CZK"
-      },
-      {
-        "hodnota": 10000,
-        "jednotka": "Kč",
-        "druh": "jine",
-        "s_dph": null,
-        "citace": "složena vratná kauce ve výši 10.000,00 Kč",
-        "poznamka": "Vratná kauce, nejde o nájemné.",
-        "mena": "CZK"
-      }
-    ],
-    "parcely": [
-      {
-        "ku": "Třeboň",
-        "cislo": "575",
-        "cast": true,
-        "citace": "p. č. 575 o výměře cca 30 m2 k. ú. Třeboň"
-      }
-    ],
-    "poznamka": "Dohoda o užívání pozemku p. č. 500 je v zápisu již anonymizována městem (XXXXXXXXXXXXX); osoby neuvádíme.",
-    "otazky": [],
-    "overeni": "overeno_kodem"
-  },
-  {
-    "id": "rm-2026-j111-u478",
-    "cislo": "RM 478/2026-111",
-    "jednani_id": "rm-2026-09-23",
-    "bod": 5,
-    "vysledek_hlasovani": "prijato",
-    "vysledek_zapis": "SCHVÁLENO",
-    "ukony": [
-      {
-        "cast": "I",
-        "ukon": "schvaluje",
-        "sloveso": "schvaluje"
-      },
-      {
-        "cast": "II",
-        "ukon": "uklada",
-        "sloveso": "ukládá"
-      }
-    ],
-    "text": "I. schvaluje\nzřízení služebnosti a uzavření smlouvy o budoucí smlouvě o zřízení služebnosti na pozemcích p. č. 49/10, p.\nč. 481, p. č. 274, p. č. 504, p. č. 48/3, p. č. 350/7, p. č. st. 58, p. č. 1262, p. č. 49/14, p. č. 469/4, p. č. 43/1, p.\nč. 1255/1, p. č. 49/1, p. č. 199 vše k. ú. Stará Hlína, ve vlastnictví města Třeboně (povinného), které bude\nspočívat v právu uložení, vedení, údržby a oprav optického kabelu. Služebnost bude zřízena úplatně, za cenu\ndle platného ceníku pro stanovení jednorázové úhrady za omezení vlastnického práva k nemovitostem při\numístění podzemních inženýrských sítí do místních komunikací a pozemků veřejné zeleně, k ceně bude\núčtováno DPH dle platných předpisů, ve prospěch společnosti CETIN a.s., Českomoravská 2510/19, Praha 9\n(oprávněného) a za dodržení podmínek:\na)stavba bude provedena v souladu se žádostí ze dne 17.08.2026 (METRP00FDNZL),\nb)společné realizace s pokládkou kabelů veřejného osvětlení v rámci akce města,\nc)uvedení všech dotčených povrchů do původního stavu.\nPokuta za porušení závazku je stanovena ve výši 10.000,- Kč.\nII. ukládá\nodboru finančnímu a majetkovému předložit starostovi města smlouvu k podpisu.",
-    "text_anonymizovan": false,
-    "tema": "Služebnost pro optický kabel ve Staré Hlíně",
-    "tema_ai": true,
-    "kategorie": [
-      "majetek_najem"
-    ],
-    "kategorie_ai": true,
-    "shrnuti": "Rada schválila zřízení služebnosti (práva uložit a udržovat optický kabel) na pozemcích města v k. ú. Stará Hlína ve prospěch společnosti CETIN a.s. Služebnost je úplatná podle ceníku města, výše částky v zápisu není.",
-    "shrnuti_ai": true,
-    "citace": {
-      "dokument_id": "zapis-rm-2026-09-23",
-      "strany": [
-        3
-      ],
-      "text": "které bude spočívat v právu uložení, vedení, údržby a oprav optického kabelu"
-    },
-    "castky": [],
-    "parcely": [],
-    "poznamka": "Číselník nemá kategorii pro věcná břemena; zvolena nejbližší (užívání majetku města třetí stranou).",
-    "otazky": [],
-    "overeni": "overeno_kodem"
-  },
-  {
-    "id": "rm-2026-j111-u479",
-    "cislo": "RM 479/2026-111",
-    "jednani_id": "rm-2026-09-23",
-    "bod": 6,
-    "vysledek_hlasovani": "prijato",
-    "vysledek_zapis": "SCHVÁLENO",
-    "ukony": [
-      {
-        "cast": "I",
-        "ukon": "schvaluje",
-        "sloveso": "schvaluje"
-      },
-      {
-        "cast": "II",
-        "ukon": "uklada",
-        "sloveso": "ukládá"
-      }
-    ],
-    "text": "I. schvaluje\nzřízení služebnosti a uzavření smlouvy o budoucí smlouvě o zřízení služebnosti na pozemcích p. č. 2168/8,\np. č. 4485, p. č. 4530, p. č. 4540, p. č. 4542, p. č. 4543 k. ú. Třeboň, ve vlastnictví města Třeboně (povinného),\nkteré bude spočívat v právu uložení, vedení, údržby a oprav kabelu VN. Služebnost bude zřízena úplatně, za\ncenu dle Dohody o náhradách za zřízení věcných břemen na uložení technické infrastruktury (sítí) do pozemků\nve vlastnictví měst a obcí a o součinnosti při jednání s Energetickým regulačním úřadem ze dne 20.06.2022\nmezi Svazem měst a obcí Jihočeského kraje (Jirsíkova 243/2, 370 01 České Budějovice) a společností EG.\nD, a.s. (Lidická 1873/36, Brno), ve prospěch společnosti EG. D, s.r.o., Lidická 1873/36, Brno (oprávněného) a\nza dodržení podmínek:\na)stavba bude provedena v souladu se žádostí ze dne 31.07.2026 (METRX00LU5JS),\nb)uvedení všech dotčených povrchů do původního stavu,\nPokuta za porušení závazku je stanovena ve výši 10.000,- Kč.\nII. ukládá\nodboru finančnímu a majetkovému předložit starostovi města smlouvu k podpisu.",
-    "text_anonymizovan": false,
-    "tema": "Služebnost pro kabel VN a telekomunikační vedení v Třeboni",
-    "tema_ai": true,
-    "kategorie": [
-      "majetek_najem"
-    ],
-    "kategorie_ai": true,
-    "shrnuti": "Rada schválila zřízení služebnosti (práva uložit a udržovat kabel VN) na pozemcích města v k. ú. Třeboň ve prospěch společnosti EG.D, s.r.o. Služebnost je úplatná podle dohody Svazu měst a obcí Jihočeského kraje, výše částky v zápisu není.",
-    "shrnuti_ai": true,
-    "citace": {
-      "dokument_id": "zapis-rm-2026-09-23",
-      "strany": [
-        3
-      ],
-      "text": "které bude spočívat v právu uložení, vedení, údržby a oprav kabelu VN"
-    },
-    "castky": [],
-    "parcely": [],
-    "poznamka": null,
-    "otazky": [],
-    "overeni": "overeno_kodem"
-  },
-  {
-    "id": "rm-2026-j111-u480",
-    "cislo": "RM 480/2026-111",
-    "jednani_id": "rm-2026-09-23",
-    "bod": 7,
-    "vysledek_hlasovani": "prijato",
-    "vysledek_zapis": "SCHVÁLENO",
-    "ukony": [
-      {
-        "cast": "I",
-        "ukon": "schvaluje",
-        "sloveso": "schvaluje"
-      },
-      {
-        "cast": "II",
-        "ukon": "uklada",
-        "sloveso": "ukládá"
-      }
-    ],
-    "text": "I. schvaluje\nzřízení služebnosti a uzavření smlouvy o zřízení služebnosti mezi městem Třeboň (povinný) a paní\nXXXXXXXXXXXXX XXXXXXXXXXXXX (XXXXXXXXXXXXX, oprávněný) na pozemcích p. č. 2049/52, p. č.\n2054/3 v k. ú. Branná, když rozsah služebnosti je zpřesněn dle geom. plánu č. 827-133Fi/2026. Služebnost\nbude spočívat v právu uložení, vedení, údržby a oprav vodovodní přípojky. Služebnost bude zřízena úplatně,\nza cenu dle platného ceníku pro stanovení jednorázové úhrady za omezení vlastnického práva k nemovitostem\npři umístění podzemních inženýrských sítí do místních komunikací a pozemků veřejné zeleně, k ceně bude\núčtováno DPH dle platných předpisů, ve prospěch vlastníka pozemku p. č. 2054/15 k. ú. Branná, a každého\ndalšího vlastníka pozemku p. č. 2054/15 v k. ú. Branná.\nII. ukládá\nodboru finančnímu a majetkovému předložit starostovi smlouvu k podpisu.",
-    "text_anonymizovan": false,
-    "tema": "Služebnost pro vodovodní přípojku v Branné",
-    "tema_ai": true,
-    "kategorie": [
-      "majetek_najem",
-      "voda_odpady"
-    ],
-    "kategorie_ai": true,
-    "shrnuti": "Rada schválila zřízení služebnosti (práva uložit a udržovat vodovodní přípojku) na pozemcích města v k. ú. Branná ve prospěch vlastníka sousedního pozemku. Služebnost je úplatná podle ceníku města, výše částky v zápisu není.",
-    "shrnuti_ai": true,
-    "citace": {
-      "dokument_id": "zapis-rm-2026-09-23",
-      "strany": [
-        4
-      ],
-      "text": "Služebnost bude spočívat v právu uložení, vedení, údržby a oprav vodovodní přípojky."
-    },
-    "castky": [],
-    "parcely": [],
-    "poznamka": "Oprávněná osoba je v zápisu již anonymizována městem (XXXXXXXXXXXXX); neuvádíme.",
-    "otazky": [],
-    "overeni": "overeno_kodem"
-  },
-  {
-    "id": "rm-2026-j111-u481",
-    "cislo": "RM 481/2026-111",
-    "jednani_id": "rm-2026-09-23",
-    "bod": 8,
-    "vysledek_hlasovani": "prijato",
-    "vysledek_zapis": "SCHVÁLENO",
-    "ukony": [
-      {
-        "cast": "I",
-        "ukon": "schvaluje",
-        "sloveso": "schvaluje"
-      },
-      {
-        "cast": "II",
-        "ukon": "uklada",
-        "sloveso": "ukládá"
-      }
-    ],
-    "text": "I. schvaluje\nv souladu s ustanovením článku 7.1 písm. a) a b) Smlouvy o provozování vodovodů a kanalizací pro veřejnou\npotřebu uzavřené mezi městem Třeboň (jako vlastníkem) a společností Městská Vodohospodářská s.r.o. (se\nsídlem Na Kopečku 1341, 379 01 Třeboň, IČ: 28136853, jako provozovatelem) výši nájemného za\nprovozovaný majetek pro rok 2027 ve výši 19.500.000,00 Kč bez DPH, z toho nájemné za vodovody činí\n3.000.000,00 Kč bez DPH a nájemné za kanalizace činí 16.500.000,00 Kč bez DPH.\nII. ukládá\nodboru finančnímu a majetkovému sdělit výši nájemného pro rok 2027 společnosti Městská Vodohospodářská\ns.r.o.",
-    "text_anonymizovan": false,
-    "tema": "Nájemné za vodovody a kanalizace pro rok 2027",
-    "tema_ai": true,
-    "kategorie": [
-      "voda_odpady",
-      "majetek_najem"
-    ],
-    "kategorie_ai": true,
-    "shrnuti": "Rada stanovila nájemné za vodovody a kanalizace, které provozuje společnost Městská Vodohospodářská s.r.o., na rok 2027 na 19,5 mil. Kč bez DPH, z toho 3 mil. Kč za vodovody a 16,5 mil. Kč za kanalizace.",
-    "shrnuti_ai": true,
-    "citace": {
-      "dokument_id": "zapis-rm-2026-09-23",
-      "strany": [
-        4
-      ],
-      "text": "pro rok 2027 ve výši 19.500.000,00 Kč bez DPH"
-    },
-    "castky": [
-      {
-        "hodnota": 19500000.0,
-        "jednotka": "Kč",
-        "druh": "najemne_sazba",
-        "s_dph": false,
-        "obdobi": "2027",
-        "citace": "pro rok 2027 ve výši 19.500.000,00 Kč bez DPH",
-        "mena": "CZK"
-      },
-      {
-        "hodnota": 3000000.0,
-        "jednotka": "Kč",
-        "druh": "najemne_sazba",
-        "s_dph": false,
-        "obdobi": "2027",
-        "citace": "nájemné za vodovody činí 3.000.000,00 Kč bez DPH",
-        "poznamka": "Část celkového nájemného výše („z toho“); nesčítat s celkem.",
-        "mena": "CZK"
-      },
-      {
-        "hodnota": 16500000.0,
-        "jednotka": "Kč",
-        "druh": "najemne_sazba",
-        "s_dph": false,
-        "obdobi": "2027",
-        "citace": "nájemné za kanalizace činí 16.500.000,00 Kč bez DPH",
-        "poznamka": "Část celkového nájemného výše („z toho“); nesčítat s celkem.",
-        "mena": "CZK"
-      }
-    ],
-    "parcely": [],
-    "poznamka": null,
-    "otazky": [],
-    "overeni": "overeno_kodem"
-  },
-  {
-    "id": "rm-2026-j111-u482",
-    "cislo": "RM 482/2026-111",
-    "jednani_id": "rm-2026-09-23",
-    "bod": 9,
-    "vysledek_hlasovani": "prijato",
-    "vysledek_zapis": "SCHVÁLENO",
-    "ukony": [
-      {
-        "cast": "I",
-        "ukon": "schvaluje",
-        "sloveso": "schvaluje"
-      },
-      {
-        "cast": "II",
-        "ukon": "uklada",
-        "sloveso": "ukládá"
-      }
-    ],
-    "text": "I. schvaluje\nuzavření Dohody o umístění monitorovacího bodu dopravního systému PČR mezi městem Třeboň (jako\nposkytovatel) a ČR – Krajským ředitelstvím policie Jihočeského kraje (jako uživatel, IČ: 721 51 511, se sídlem:\nLannova 193/26, 370 74 České Budějovice), kdy předmětem dohody je souhlas s umístěním monitorovacího\nbodu dopravního systému PČR na stožár veřejného osvětlení na pozemku p. č. 1607/3 k. ú. Třeboň.\nII. ukládá\nodboru finančnímu a majetkovému předložit dohodu starostovi města k podpisu.",
-    "text_anonymizovan": false,
-    "tema": "Monitorovací bod dopravního systému Policie ČR na stožáru osvětlení",
-    "tema_ai": true,
-    "kategorie": [
-      "doprava"
-    ],
-    "kategorie_ai": true,
-    "shrnuti": "Rada schválila dohodu s Krajským ředitelstvím policie Jihočeského kraje o umístění monitorovacího bodu dopravního systému PČR na stožár veřejného osvětlení na pozemku p. č. 1607/3 v k. ú. Třeboň.",
-    "shrnuti_ai": true,
-    "citace": {
-      "dokument_id": "zapis-rm-2026-09-23",
-      "strany": [
-        4
-      ],
-      "text": "souhlas s umístěním monitorovacího bodu dopravního systému PČR na stožár veřejného osvětlení na pozemku p. č. 1607/3 k. ú. Třeboň"
-    },
-    "castky": [],
-    "parcely": [
-      {
-        "ku": "Třeboň",
-        "cislo": "1607/3",
-        "citace": "pozemku p. č. 1607/3 k. ú. Třeboň"
-      }
-    ],
-    "poznamka": null,
-    "otazky": [],
-    "overeni": "overeno_kodem"
-  },
-  {
-    "id": "rm-2026-j111-u483",
-    "cislo": "RM 483/2026-111",
-    "jednani_id": "rm-2026-09-23",
-    "bod": 10,
-    "vysledek_hlasovani": "prijato",
-    "vysledek_zapis": "SCHVÁLENO",
-    "ukony": [
-      {
-        "cast": "I",
-        "ukon": "bere_na_vedomi",
-        "sloveso": "bere na vědomí"
-      },
-      {
-        "cast": "II",
-        "ukon": "schvaluje",
-        "sloveso": "schvaluje"
-      },
-      {
-        "cast": "III",
-        "ukon": "uklada",
-        "sloveso": "ukládá"
-      }
-    ],
-    "text": "I. bere na vědomí\nvýsledek obálkové soutěže ve věci prodeje vozidla Škoda Fabia RZ 5C2 8202, kdy o předmětné vozidlo nebyl\nprojeven zájem.\nII. schvaluje\nprodej osobního vozidla Škoda Fabia RZ 5C2 8202 prostřednictvím aukčního portálu spol. Veacom s.r.o. (IČ\n275 81 063, se sídlem: Strakonická 3367, Smíchov, Praha 5), když minimální výše nabídkové ceny činí\n7.000,00 Kč bez DPH.\nIII. ukládá\nodboru finančnímu a majetkovému zajistit plnění usnesení.",
-    "text_anonymizovan": false,
-    "tema": "Prodej služebního vozidla Škoda Fabia přes aukční portál",
-    "tema_ai": true,
-    "kategorie": [
-      "majetek_prevod"
-    ],
-    "kategorie_ai": true,
-    "shrnuti": "Rada vzala na vědomí, že v obálkové soutěži nebyl o vozidlo zájem, a schválila jeho prodej přes aukční portál s minimální nabídkovou cenou 7 000 Kč bez DPH.",
-    "shrnuti_ai": true,
-    "citace": {
-      "dokument_id": "zapis-rm-2026-09-23",
-      "strany": [
-        5
-      ],
-      "text": "o předmětné vozidlo nebyl projeven zájem"
-    },
-    "castky": [
-      {
-        "hodnota": 7000.0,
-        "jednotka": "Kč",
-        "druh": "jine",
-        "s_dph": false,
-        "citace": "minimální výše nabídkové ceny činí 7.000,00 Kč bez DPH",
-        "poznamka": "Minimální nabídková cena v aukci, nikoli dosažená prodejní cena.",
-        "mena": "CZK"
-      }
-    ],
-    "parcely": [],
-    "poznamka": null,
-    "otazky": [],
-    "overeni": "overeno_kodem"
-  },
-  {
-    "id": "rm-2026-j111-u484",
-    "cislo": "RM 484/2026-111",
-    "jednani_id": "rm-2026-09-23",
-    "bod": 11,
-    "vysledek_hlasovani": "prijato",
-    "vysledek_zapis": "SCHVÁLENO",
-    "ukony": [
-      {
-        "cast": "I",
-        "ukon": "schvaluje",
-        "sloveso": "schvaluje"
-      },
-      {
-        "cast": "II",
-        "ukon": "uklada",
-        "sloveso": "ukládá"
-      }
-    ],
-    "text": "I. schvaluje\nrevokaci části usnesení č. 369/2026-107 ze dne 15.07.2026, kdy se p. č. 1915/564 k. ú. Třeboň nahrazuje p.\nč. 1915/594 k. ú. Třeboň.\nII. ukládá\nodboru finančnímu a majetkovému předložit vyrozumět žadatele.",
-    "text_anonymizovan": false,
-    "tema": "Oprava čísla pozemku v dřívějším usnesení",
-    "tema_ai": true,
-    "kategorie": [
-      "ostatni"
-    ],
-    "kategorie_ai": true,
-    "shrnuti": "Rada změnila dřívější usnesení č. 369/2026-107 z 15. 7. 2026 tak, že místo pozemku p. č. 1915/564 se uvádí p. č. 1915/594 v k. ú. Třeboň.",
-    "shrnuti_ai": true,
-    "citace": {
-      "dokument_id": "zapis-rm-2026-09-23",
-      "strany": [
-        5
-      ],
-      "text": "kdy se p. č. 1915/564 k. ú. Třeboň nahrazuje p."
-    },
-    "castky": [],
-    "parcely": [],
-    "poznamka": "Zápis neuvádí, čeho se původní usnesení týkalo.",
-    "otazky": [],
-    "overeni": "overeno_kodem"
-  },
-  {
-    "id": "rm-2026-j111-u485",
-    "cislo": "RM 485/2026-111",
-    "jednani_id": "rm-2026-09-23",
-    "bod": 12,
-    "vysledek_hlasovani": "prijato",
-    "vysledek_zapis": "SCHVÁLENO",
-    "ukony": [
-      {
-        "cast": "I",
-        "ukon": "schvaluje",
-        "sloveso": "schvaluje"
-      },
-      {
-        "cast": "II",
-        "ukon": "uklada",
-        "sloveso": "ukládá"
-      }
-    ],
-    "text": "I. schvaluje\nuzavření „Smlouvy o dílo - zpracování projektové dokumentace a žádosti o podporu týkající se projektu\nkybernetické bezpečnosti II. pro město Třeboň s předpokládaným spolufinancováním z IROP 21-27, výzvy č.\n120“ mezi Městem Třeboň, Palackého nám. 46, 390 01 Třeboň, IČ 00247618 a společností TENOSOL group\ns.r.o., Zábranská 199, Sedlčánky, 250 88 Čelákovice, IČ 02255910.\nII. ukládá\nútvaru tajemníka zajistit podepsání a plnění smlouvy.",
-    "text_anonymizovan": false,
-    "tema": "Projektová dokumentace a žádost o podporu pro kybernetickou bezpečnost města",
-    "tema_ai": true,
-    "kategorie": [
-      "investice",
-      "verejne_zakazky"
-    ],
-    "kategorie_ai": true,
-    "shrnuti": "Rada schválila smlouvu o dílo se společností TENOSOL group s.r.o. na zpracování projektové dokumentace a žádosti o podporu k projektu kybernetické bezpečnosti II. s předpokládaným spolufinancováním z IROP 21-27. Cena ve zdroji není.",
-    "shrnuti_ai": true,
-    "citace": {
-      "dokument_id": "zapis-rm-2026-09-23",
-      "strany": [
-        5
-      ],
-      "text": "s předpokládaným spolufinancováním z IROP 21-27, výzvy č. 120"
-    },
-    "castky": [],
-    "parcely": [],
-    "poznamka": null,
-    "otazky": [],
-    "overeni": "overeno_kodem"
-  },
-  {
-    "id": "rm-2026-j111-u486",
-    "cislo": "RM 486/2026-111",
-    "jednani_id": "rm-2026-09-23",
-    "bod": 13,
-    "vysledek_hlasovani": "prijato",
-    "vysledek_zapis": "SCHVÁLENO",
-    "ukony": [
-      {
-        "cast": "I",
-        "ukon": "schvaluje",
-        "sloveso": "schvaluje"
-      },
-      {
-        "cast": "II",
-        "ukon": "uklada",
-        "sloveso": "ukládá"
-      }
-    ],
-    "text": "Zápis ze 111. jednání RM ze dne 23.09.2026\nI. schvaluje\npřijetí věcného daru 10 párů dětských bruslí v celkové hodnotě 25.000 Kč Základní školou Na Sadech 375,\nTřeboň od organizace Děti do bruslí, z.s. zast. [fyzická osoba] se sídlem Rudolfovská tř. 1994/11, 379 01\nČeské Budějovice.\nII. ukládá\nodboru školství a sociálních věcí zajistit výpis usnesení a předat ředitelce školy.",
-    "text_anonymizovan": true,
-    "tema": "Dar dětských bruslí pro ZŠ Na Sadech",
+    "tema": "Dar 20 000 Kč základní škole na oslavu výročí pracoviště v Břilicích",
     "tema_ai": true,
     "kategorie": [
       "skolstvi",
       "dotace_dary",
-      "prispevkove_organizace"
+      "rozpocet"
     ],
     "kategorie_ai": true,
-    "shrnuti": "Rada jako zřizovatel souhlasila, aby ZŠ Na Sadech přijala od spolku Děti do bruslí 10 párů dětských bruslí v hodnotě 25 000 Kč.",
+    "shrnuti": "Rada schválila finanční dar 20 000 Kč Základní škole Třeboň, Sokolská na oslavu výročí odloučeného pracoviště v Břilicích a související rozpočtové opatření č. 54.",
     "shrnuti_ai": true,
     "citace": {
-      "dokument_id": "zapis-rm-2026-09-23",
+      "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
-        5,
-        6
+        7
       ],
-      "text": "přijetí věcného daru 10 párů dětských bruslí v celkové hodnotě 25.000 Kč"
+      "text": "poskytnutí finančního daru ve výši 20.000,00 Kč"
     },
     "castky": [
       {
-        "hodnota": 25000,
+        "hodnota": 20000,
         "jednotka": "Kč",
-        "druh": "dar_prijaty",
+        "druh": "dar_poskytnuty",
         "s_dph": null,
-        "citace": "v celkové hodnotě 25.000 Kč",
+        "citace": "poskytnutí finančního daru ve výši 20.000,00 Kč",
+        "mena": "CZK"
+      },
+      {
+        "hodnota": 20000,
+        "jednotka": "Kč",
+        "druh": "rozpoctove_opatreni",
+        "s_dph": null,
+        "citace": "ponížení výdajové položky 5222 Příspěvky v oblasti ostatních činností, § 3429, ORJ 0800, ORG 9800003147, NZUZ 0 o částku 20 000 Kč",
+        "poznamka": "Rozpočtové opatření č. 54 – přesun 20 000 Kč mezi výdajovými položkami.",
         "mena": "CZK"
       }
     ],
     "parcely": [],
-    "poznamka": "Zástupce spolku (fyzická osoba) neuvádíme.",
+    "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
   },
   {
-    "id": "rm-2026-j111-u487",
-    "cislo": "RM 487/2026-111",
-    "jednani_id": "rm-2026-09-23",
+    "id": "rm-2026-j113-u526",
+    "cislo": "RM 526/2026-113",
+    "jednani_id": "rm-2026-10-21",
     "bod": 14,
     "vysledek_hlasovani": "prijato",
     "vysledek_zapis": "SCHVÁLENO",
@@ -635,58 +660,32 @@
         "sloveso": "ukládá"
       }
     ],
-    "text": "I. schvaluje\nuzavření Dodatku č. 1 ke Smlouvě o dílo č. 750/9305/26 ze dne 13.04.2026 na zhotovení stavby „Stavební\núpravy MK v ul. Budějovické v Třeboni“, se zhotovitelem K–BUILDING CB, a. s., IČ 26105594, Hraniční 2094,\n370 06 České Budějovice, jehož předmětem je Změnový list č. 1, na základě kterého se cena díla zvyšuje o\n100.815,78 Kč bez DPH (121.987,09 Kč vč. DPH), celková cena díla se mění na částku 12.078.592,78 Kč bez\nDPH (14.615.097,26 Kč vč. DPH). Ostatní ustanovení smlouvy o dílo se nemění.\nII. ukládá\nodboru rozvoje a investic zajistit podpis dodatku ke smlouvě o dílo.",
+    "text": "I. schvaluje\nprovedení rozpočtového opatření č. 55, které spočívá v:\n-navýšení příjmové položky 2310 „MP - Prodej zbraní“, § 5311, ORJ 250, ORG 0, UZ 0 o částku 6.900,00 Kč,\n-navýšení výdajové položky 5137 „MP - drobný hmotný dlouhodobý majetek“, § 5311, ORJ 250, ORG\n9250000000, UZ 0 o částku 6.900,00 Kč,\n-navýšení výdajové položky 5162 „MP - služby telekomunikací a radiokomunikací“, § 5311, ORJ 250, ORG\n9250000000, UZ 0 o částku 5.000,00 Kč,\n-navýšení výdajové položky 5011 „MP - náhrady mezd při DPN“, § 5311, ORJ 250, ORG 9250000201, UZ 0\no částku 20.000,00 Kč,\n-snížení výdajové položky 5021 „MP - dohody“, § 5311, ORJ 250, ORG 9250000000, UZ 0 o částku 25.000,00\nKč.\nZápis ze 113. jednání RM ze dne 21.10.2026\nRozpočet\nRozpočet\nod\nSchválený         po        Rozpočtové\nČís.   RM      ÚZ           ORG             ORJ     Paragraf    Položka                                                    počátku\nrozpočet      schválení     opatření\nroku po\nRO\nRO\nRozpočtové příjmy (Kč):\n55.                0           0            250      5311           2310                0        28 920       + 6 900        35 820\nRozpočtové výdaje (Kč):\n55.                0     9250000000         250      5311           5137         230 000        283 920       + 6 900      290 820\n0     9250000000         250      5311           5162         130 000        125 000       + 5 000      130 000\n0     9250000201         250      5311           5011         110 000        110 000      + 20 000      130 000\n0     9250000000         250      5311           5021          60 000         60 000       - 25 000       35 000\nII. ukládá\nměstské policii a odboru finančnímu a majetkovému provést a evidovat rozpočtové opatření v IS GINIS.",
     "text_anonymizovan": false,
-    "tema": "Stavební úpravy ulice Budějovické – dodatek č. 1",
+    "tema": "Rozpočtové opatření č. 55 – městská policie",
     "tema_ai": true,
     "kategorie": [
-      "investice",
-      "doprava",
-      "verejne_zakazky"
+      "rozpocet"
     ],
     "kategorie_ai": true,
-    "shrnuti": "Rada schválila dodatek č. 1 ke smlouvě o dílo se společností K–BUILDING CB, a. s. Cena díla se zvyšuje o 100 815,78 Kč bez DPH (121 987,09 Kč s DPH) na celkem 12 078 592,78 Kč bez DPH (14 615 097,26 Kč s DPH).",
+    "shrnuti": "Rada zapojila 6 900 Kč z prodeje služebních zbraní městské policie a přesunula prostředky mezi výdajovými položkami městské policie.",
     "shrnuti_ai": true,
     "citace": {
-      "dokument_id": "zapis-rm-2026-09-23",
+      "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
-        6
+        7,
+        8
       ],
-      "text": "jehož předmětem je Změnový list č. 1"
+      "text": "provedení rozpočtového opatření č. 55"
     },
     "castky": [
       {
-        "hodnota": 100815.78,
+        "hodnota": 6900,
         "jednotka": "Kč",
-        "druh": "dodatek",
-        "s_dph": false,
-        "citace": "se cena díla zvyšuje o 100.815,78 Kč bez DPH",
-        "mena": "CZK"
-      },
-      {
-        "hodnota": 121987.09,
-        "jednotka": "Kč",
-        "druh": "dodatek",
-        "s_dph": true,
-        "citace": "121.987,09 Kč vč. DPH",
-        "mena": "CZK"
-      },
-      {
-        "hodnota": 12078592.78,
-        "jednotka": "Kč",
-        "druh": "smluvni",
-        "s_dph": false,
-        "citace": "celková cena díla se mění na částku 12.078.592,78 Kč bez DPH",
-        "poznamka": "Celková cena díla po dodatku.",
-        "mena": "CZK"
-      },
-      {
-        "hodnota": 14615097.26,
-        "jednotka": "Kč",
-        "druh": "smluvni",
-        "s_dph": true,
-        "citace": "14.615.097,26 Kč vč. DPH",
-        "poznamka": "Celková cena díla po dodatku.",
+        "druh": "rozpoctove_opatreni",
+        "s_dph": null,
+        "citace": "navýšení příjmové položky 2310 „MP - Prodej zbraní“, § 5311, ORJ 250, ORG 0, UZ 0 o částku 6.900,00 Kč",
+        "poznamka": "Zvýšení příjmu z prodeje zbraní; ostatní položky opatření jsou v textu usnesení.",
         "mena": "CZK"
       }
     ],
@@ -696,9 +695,9 @@
     "overeni": "overeno_kodem"
   },
   {
-    "id": "rm-2026-j111-u488",
-    "cislo": "RM 488/2026-111",
-    "jednani_id": "rm-2026-09-23",
+    "id": "rm-2026-j113-u527",
+    "cislo": "RM 527/2026-113",
+    "jednani_id": "rm-2026-10-21",
     "bod": 15,
     "vysledek_hlasovani": "prijato",
     "vysledek_zapis": "SCHVÁLENO",
@@ -710,74 +709,55 @@
       },
       {
         "cast": "II",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "III",
         "ukon": "uklada",
         "sloveso": "ukládá"
       }
     ],
-    "text": "I. schvaluje\nuzavření Dodatku č. 1 ke Smlouvě o dílo č. 750/9523/26 ze dne 25.05.2026 na zhotovení stavby „Stavební\núpravy MK v ul. Souběžná v Třeboni“, se zhotovitelem VKB stavby s.r.o., IČ 02192012, Buk 51, 383 01 Buk,\njehož předmětem je změna ceny díla podle Změnových listů č. 1 a 2, na základě kterých se cena díla zvyšuje\no 181.382,70 Kč bez DPH (219.473,07 Kč vč. DPH), celková cena díla se mění na částku 9.319.009,86 Kč\nbez DPH (11.276.001,93 Kč vč. DPH), a změna (prodloužení) termínu dokončení díla o 7 kalendářních dnů\ntedy do 30.10.2026. Ostatní ustanovení smlouvy o dílo se nemění.\nII. ukládá\nodboru rozvoje a investic zajistit plnění usnesení a předložit dodatek ke smlouvě starostovi k podpisu.",
+    "text": "I. schvaluje\nprovedení rozpočtového opatření č. 56, které spočívá v přesunutí finančních prostředků ve výdajové části\nrozpočtu\n-z položky 6121, „Snížení energetické náročnosti DPS 3“, § 3612, ORJ 750, ORG 6227000000, UZ 0 v částce\nKč 1.165.000,00,\n-do položky 6121 „Ubytování sportovní hala“, § 2142, ORJ 750, ORG 6219000000, UZ 0 v částce Kč\n1.165.000,00.\nRozpočet\nRozpočet od\nSchválený           po         Rozpočtové\nČís.   RM     ÚZ         ORG          ORJ     Paragraf      Položka                                                        počátku\nrozpočet        schválení      opatření\nroku po RO\nRO\nRozpočtové výdaje (Kč):\n56.            0       6227000000     750         3612       6121          14 000 000       7 250 000     - 1 165 000      6 085 000\n0       6219000000     750         2142       6121          56 000 000      61 860 000     + 1 165 000     63 025 000\nII. schvaluje\nuzavření Dodatku č. 5 ke smlouvě o dílo č. 750/9256/25 ze dne 23.12.2025 na zhotovení stavby „Sportovní\nhala Třeboň – nástavba a přístavba ubytování“ se společností Retherm s. r. o., Na Dolinách 108, 373 72\nZvíkov, jehož předmětem je změna ceny díla.\nIII. ukládá\na) odboru rozvoje a investic a odboru finančnímu a majetkovému provést a evidovat RO v IS GINIS.\nb) odboru rozvoje a investic zajistit plnění usnesení a předložit Dodatek č. 5 starostovi města a zhotoviteli k\npodpisu.",
     "text_anonymizovan": false,
-    "tema": "Stavební úpravy ulice Souběžné – dodatek č. 1",
+    "tema": "Sportovní hala – dodatek č. 5 ke smlouvě o dílo a rozpočtové opatření č. 56",
     "tema_ai": true,
     "kategorie": [
+      "rozpocet",
       "investice",
-      "doprava",
-      "verejne_zakazky"
+      "sport"
     ],
     "kategorie_ai": true,
-    "shrnuti": "Rada schválila dodatek č. 1 ke smlouvě o dílo se společností VKB stavby s.r.o. Cena díla se zvyšuje o 181 382,70 Kč bez DPH (219 473,07 Kč s DPH) na celkem 9 319 009,86 Kč bez DPH (11 276 001,93 Kč s DPH) a termín dokončení se prodlužuje o 7 dnů do 30. 10. 2026.",
+    "shrnuti": "Rada přesunula 1 165 000 Kč z položky Snížení energetické náročnosti DPS 3 do položky Ubytování sportovní hala a schválila dodatek č. 5 ke smlouvě o dílo na nástavbu a přístavbu ubytování, jehož předmětem je změna ceny díla; nová cena v usnesení uvedena není.",
     "shrnuti_ai": true,
     "citace": {
-      "dokument_id": "zapis-rm-2026-09-23",
+      "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
-        6
+        8
       ],
-      "text": "změna (prodloužení) termínu dokončení díla o 7 kalendářních dnů"
+      "text": "jehož předmětem je změna ceny díla."
     },
     "castky": [
       {
-        "hodnota": 181382.7,
+        "hodnota": 1165000,
         "jednotka": "Kč",
-        "druh": "dodatek",
-        "s_dph": false,
-        "citace": "se cena díla zvyšuje o 181.382,70 Kč bez DPH",
-        "mena": "CZK"
-      },
-      {
-        "hodnota": 219473.07,
-        "jednotka": "Kč",
-        "druh": "dodatek",
-        "s_dph": true,
-        "citace": "219.473,07 Kč vč. DPH",
-        "mena": "CZK"
-      },
-      {
-        "hodnota": 9319009.86,
-        "jednotka": "Kč",
-        "druh": "smluvni",
-        "s_dph": false,
-        "citace": "celková cena díla se mění na částku 9.319.009,86 Kč bez DPH",
-        "poznamka": "Celková cena díla po dodatku.",
-        "mena": "CZK"
-      },
-      {
-        "hodnota": 11276001.93,
-        "jednotka": "Kč",
-        "druh": "smluvni",
-        "s_dph": true,
-        "citace": "11.276.001,93 Kč vč. DPH",
-        "poznamka": "Celková cena díla po dodatku.",
+        "druh": "rozpoctove_opatreni",
+        "s_dph": null,
+        "citace": "z položky 6121, „Snížení energetické náročnosti DPS 3“, § 3612, ORJ 750, ORG 6227000000, UZ 0 v částce Kč 1.165.000,00,",
         "mena": "CZK"
       }
     ],
     "parcely": [],
     "poznamka": null,
-    "otazky": [],
+    "otazky": [
+      "Nová cena díla podle dodatku č. 5 není v usnesení uvedena."
+    ],
     "overeni": "overeno_kodem"
   },
   {
-    "id": "rm-2026-j111-u489",
-    "cislo": "RM 489/2026-111",
-    "jednani_id": "rm-2026-09-23",
+    "id": "rm-2026-j113-u528",
+    "cislo": "RM 528/2026-113",
+    "jednani_id": "rm-2026-10-21",
     "bod": 16,
     "vysledek_hlasovani": "prijato",
     "vysledek_zapis": "SCHVÁLENO",
@@ -793,59 +773,75 @@
         "sloveso": "ukládá"
       }
     ],
-    "text": "I. schvaluje\nuzavření Smlouvy o nájmu mezi městem Třeboň a společností Hinton, a. s., IČ: 24160008, (Vinohradská\n1597/174, Praha 3). Smlouva bude uzavřena na dobu určitou od 30.09.2026 do 31.12.2026. Nájemné bude\nhrazeno ve výši 246.450,- Kč + DPH dle platných právních předpisů. Předmětem nájmu bude část pozemku\nZápis ze 111. jednání RM ze dne 23.09.2026\np. č. KN 1087/17 o výměře cca 530 m2 k. ú. Třeboň za účelem zřízení staveniště a stavební jámy pro\nnovostavbu „Nová Cihelna“ za dodržení podmínek:\n- uvedených v zápisu ze schůze konané dne 25.04.2023 na MěÚ Třeboň na akci „Změna stavby před\ndokončením – Nová Cihelna“,\n- dle vyjádření odboru rozvoje a investic č.j. METR 10302/2023 CaJa ze dne 14.06.2023.\nPokuta za porušení závazku je stanovena ve výši 50.000,- Kč.\nII. ukládá\nodboru finančnímu a majetkovému předložit starostovi města smlouvu k podpisu.",
+    "text": "I. schvaluje\nuzavření Dodatku č. 2 ke Smlouvě o dílo č. 750/9305/26 ze dne 13.04.2026 na zhotovení stavby „Stavební\núpravy MK v ul. Budějovické v Třeboni“, se zhotovitelem K–BUILDING CB, a. s., IČ 26105594, Hraniční 2094,\n370 06 České Budějovice, jehož předmětem je Změnový list č. 2, na základě kterého se cena díla zvyšuje o\n92.819,29 Kč bez DPH (112.311,34 Kč vč. DPH), celková cena díla se mění na částku 12.171.412,07 Kč bez\nDPH (14.727.408,60 Kč vč. DPH). Ostatní ustanovení smlouvy o dílo se nemění.\nII. ukládá\nodboru rozvoje a investic zajistit podpis dodatku ke smlouvě o dílo.",
     "text_anonymizovan": false,
-    "tema": "Pronájem části pozemku p. č. 1087/17 pro stavbu Nová Cihelna",
+    "tema": "Stavební úpravy místní komunikace v Budějovické ulici – dodatek č. 2",
     "tema_ai": true,
     "kategorie": [
-      "majetek_najem"
+      "investice",
+      "doprava"
     ],
     "kategorie_ai": true,
-    "shrnuti": "Rada schválila pronájem části pozemku p. č. 1087/17 (cca 530 m2) od 30. 9. do 31. 12. 2026 za 246 450 Kč + DPH jako staveniště a stavební jámu pro novostavbu „Nová Cihelna“.",
+    "shrnuti": "Rada schválila dodatek č. 2 ke smlouvě o dílo; cena díla se zvyšuje o 92 819,29 Kč bez DPH a celková cena je 12 171 412,07 Kč bez DPH.",
     "shrnuti_ai": true,
     "citace": {
-      "dokument_id": "zapis-rm-2026-09-23",
+      "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
-        6,
-        7
+        9
       ],
-      "text": "za účelem zřízení staveniště a stavební jámy pro novostavbu „Nová Cihelna“"
+      "text": "celková cena díla se mění na částku 12.171.412,07 Kč bez DPH (14.727.408,60 Kč vč. DPH)."
     },
     "castky": [
       {
-        "hodnota": 246450,
+        "hodnota": 92819.29,
         "jednotka": "Kč",
-        "druh": "najemne_sazba",
+        "druh": "dodatek",
         "s_dph": false,
-        "citace": "Nájemné bude hrazeno ve výši 246.450,- Kč + DPH",
-        "poznamka": "Nájemné za celou dobu pronájmu 30. 9.–31. 12. 2026, DPH se připočte.",
+        "citace": "92.819,29 Kč bez DPH",
+        "mena": "CZK"
+      },
+      {
+        "hodnota": 112311.34,
+        "jednotka": "Kč",
+        "druh": "dodatek",
+        "s_dph": true,
+        "citace": "112.311,34 Kč vč. DPH",
+        "mena": "CZK"
+      },
+      {
+        "hodnota": 12171412.07,
+        "jednotka": "Kč",
+        "druh": "smluvni",
+        "s_dph": false,
+        "citace": "12.171.412,07 Kč bez DPH",
+        "mena": "CZK"
+      },
+      {
+        "hodnota": 14727408.6,
+        "jednotka": "Kč",
+        "druh": "smluvni",
+        "s_dph": true,
+        "citace": "14.727.408,60 Kč vč. DPH",
         "mena": "CZK"
       }
     ],
-    "parcely": [
-      {
-        "ku": "Třeboň",
-        "cislo": "1087/17",
-        "cast": true,
-        "citace": "p. č. KN 1087/17 o výměře cca 530 m2 k. ú. Třeboň"
-      }
-    ],
+    "parcely": [],
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
   },
   {
-    "id": "rm-2026-j111-u490",
-    "cislo": "RM 490/2026-111",
-    "jednani_id": "rm-2026-09-23",
+    "id": "rm-2026-j113-u529",
+    "cislo": "RM 529/2026-113",
+    "jednani_id": "rm-2026-10-21",
     "bod": 17,
     "vysledek_hlasovani": "prijato",
     "vysledek_zapis": "SCHVÁLENO",
     "ukony": [
       {
         "cast": "I",
-        "ukon": "schvaluje",
-        "sloveso": "schvaluje"
+        "ukon": "revokuje",
+        "sloveso": "revokuje"
       },
       {
         "cast": "II",
@@ -853,34 +849,36 @@
         "sloveso": "ukládá"
       }
     ],
-    "text": "I. schvaluje\nuzavření Dodatku č. 4 ke smlouvě o dílo č. 750/9262/26 ze dne 14.01.2026 na zhotovení stavby „Přístavba\ndvou tělocvičen sportovní haly Třeboň“ se společností MANE STAVEBNÍ s. r. o., Okružní 2615, 370 01 České\nBudějovice, IČ 47239701, jehož předmětem je změna termínu dokončení díla\nII. ukládá\nodboru rozvoje a investic zajistit plnění usnesení a předložit Dodatek č. 4 starostovi města a zhotoviteli k\npodpisu.",
+    "text": "I. revokuje\nusnesení RM č. 68/2026-95 ze dne 04.02.2026 které znělo:\n„RM Třeboně schvaluje plán oprav nad rámec běžné údržby na rybnících ve vlastnictví města Třeboně na rok\n2026“, a to tak, že mění návrh změny plánu čerpání finančních prostředků nad rámec běžné údržby na\nrybnících ve vlastnictví města Třeboň na rok 2026,\nII. ukládá\nodboru rozvoje a investic zajistit plnění usnesení.",
     "text_anonymizovan": false,
-    "tema": "Přístavba dvou tělocvičen sportovní haly – dodatek č. 4 (termín)",
+    "tema": "Změna plánu oprav rybníků na rok 2026",
     "tema_ai": true,
     "kategorie": [
       "investice",
-      "sport"
+      "rozpocet"
     ],
     "kategorie_ai": true,
-    "shrnuti": "Rada schválila dodatek č. 4 ke smlouvě o dílo se společností MANE STAVEBNÍ s. r. o. na stavbu přístavby dvou tělocvičen sportovní haly; mění se termín dokončení díla. Nový termín zápis neuvádí.",
+    "shrnuti": "Rada zrušila své únorové usnesení o plánu oprav na rybnících města a mění návrh změny plánu čerpání prostředků na rok 2026. Hlasování nebylo jednomyslné (5 pro, 1 proti, 1 se zdržel).",
     "shrnuti_ai": true,
     "citace": {
-      "dokument_id": "zapis-rm-2026-09-23",
+      "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
-        7
+        9
       ],
-      "text": "jehož předmětem je změna termínu dokončení díla"
+      "text": "usnesení RM č. 68/2026-95 ze dne 04.02.2026"
     },
     "castky": [],
     "parcely": [],
     "poznamka": null,
-    "otazky": [],
+    "otazky": [
+      "Usnesení neuvádí, v čem změna plánu spočívá."
+    ],
     "overeni": "overeno_kodem"
   },
   {
-    "id": "rm-2026-j111-u491",
-    "cislo": "RM 491/2026-111",
-    "jednani_id": "rm-2026-09-23",
+    "id": "rm-2026-j113-u530",
+    "cislo": "RM 530/2026-113",
+    "jednani_id": "rm-2026-10-21",
     "bod": 18,
     "vysledek_hlasovani": "prijato",
     "vysledek_zapis": "SCHVÁLENO",
@@ -896,23 +894,63 @@
         "sloveso": "ukládá"
       }
     ],
-    "text": "I. schvaluje\nuzavření Dodatku č. 1 ke kupní smlouvě č. 750/9531/26 ze dne 21.05.2026 na dodávku vybavení interiéru\nakce „Sportovní hala Třeboň – nástavba a přístavba ubytování – vybavení interiéru“ se společností Artspect,\na. s., U Plynárny 121/31, 140 00 Praha 4, jehož předmětem je změna ceny díla a změna termínu dodání zboží.\nII. ukládá\nodboru rozvoje a investic zajistit plnění usnesení a předložit Dodatek č. 1 starostovi města a prodávajícímu k\npodpisu.",
+    "text": "I. schvaluje\nuzavření Dodatku č. 2 ke kupní smlouvě č. 750/9531/26 ze dne 21.05.2026 na dodávku vybavení interiéru\nakce „Sportovní hala Třeboň – nástavba a přístavba ubytování – vybavení interiéru“ se společností Artspect,\na. s., U Plynárny 121/31, 140 00 Praha 4, jehož předmětem je změna ceny díla.\nII. ukládá\nodboru rozvoje a investic zajistit plnění usnesení a předložit Dodatek č. 2 starostovi města a prodávajícímu k\npodpisu.",
     "text_anonymizovan": false,
-    "tema": "Vybavení interiéru ubytování sportovní haly – dodatek č. 1 ke kupní smlouvě",
+    "tema": "Sportovní hala – vybavení interiéru, dodatek č. 2 ke kupní smlouvě",
     "tema_ai": true,
     "kategorie": [
       "investice",
       "sport"
     ],
     "kategorie_ai": true,
-    "shrnuti": "Rada schválila dodatek č. 1 ke kupní smlouvě se společností Artspect, a. s. na vybavení interiéru ubytování ve sportovní hale; mění se cena a termín dodání. Nová cena ani termín nejsou v zápisu.",
+    "shrnuti": "Rada schválila dodatek č. 2 ke kupní smlouvě na vybavení interiéru ubytování sportovní haly, jehož předmětem je změna ceny; výše ceny v usnesení uvedena není.",
     "shrnuti_ai": true,
     "citace": {
-      "dokument_id": "zapis-rm-2026-09-23",
+      "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
-        7
+        9
       ],
-      "text": "jehož předmětem je změna ceny díla a změna termínu dodání zboží"
+      "text": "jehož předmětem je změna ceny díla."
+    },
+    "castky": [],
+    "parcely": [],
+    "poznamka": null,
+    "otazky": [
+      "Nová cena podle dodatku není v usnesení uvedena."
+    ],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "rm-2026-j113-u531",
+    "cislo": "RM 531/2026-113",
+    "jednani_id": "rm-2026-10-21",
+    "bod": 19,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "bere_na_vedomi",
+        "sloveso": "bere na vědomí"
+      }
+    ],
+    "text": "I. bere na vědomí\nZápis z 3. zasedání Komise sociální města Třeboně konané dne 30.09.2026.",
+    "text_anonymizovan": false,
+    "tema": "Zápis z jednání sociální komise",
+    "tema_ai": true,
+    "kategorie": [
+      "socialni",
+      "samosprava"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Rada vzala na vědomí zápis z 3. zasedání Komise sociální z 30. 9. 2026.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-21",
+      "strany": [
+        10
+      ],
+      "text": "Zápis z 3. zasedání Komise sociální města Třeboně konané dne 30.09.2026."
     },
     "castky": [],
     "parcely": [],
@@ -921,115 +959,47 @@
     "overeni": "overeno_kodem"
   },
   {
-    "id": "rm-2026-j111-u492",
-    "cislo": "RM 492/2026-111",
-    "jednani_id": "rm-2026-09-23",
-    "bod": 19,
-    "vysledek_hlasovani": "prijato",
-    "vysledek_zapis": "SCHVÁLENO",
-    "ukony": [
-      {
-        "cast": "I",
-        "ukon": "schvaluje",
-        "sloveso": "schvaluje"
-      },
-      {
-        "cast": "II",
-        "ukon": "uklada",
-        "sloveso": "ukládá"
-      }
-    ],
-    "text": "I. schvaluje\nuzavření Smlouvy o smlouvě budoucí o zřízení služebnosti č. PVL-1867/2026/SML mezi Povodí Vltavy, státní\npodnik (budoucí povinný, se sídlem: Holečkova 3178/8, Smíchov, 15000 Praha 5, IČ 70889953) a městem\nTřeboň (budoucí oprávněný). Služebnost (věcné břemeno) bude zřízena na pozemku p. č. KN 613/1, k. ú.\nZápis ze 111. jednání RM ze dne 23.09.2026\nTřeboň, ve vlastnictví České republiky (právo s hospodařením má Povodí Vltavy, státní podnik), které bude\nspočívat v právu umístění, provozování, opravy a údržby výustního objektu dešťové kanalizace na drobném\nvodním toku Spolský potok IDVT 10272911, vstupovat na služebný pozemek v souvislosti s umístěním,\nzřízením, provozováním stavby propustku pod silnicí v rámci stavby „Páteřní dešťové kanalizace v úseku Nový\nDvůr – Jablonského ulice, Třeboň“. Služebnost bude zřízena úplatně za cenu 8.000,00 Kč bez DPH.\nII. ukládá\nodboru rozvoje a investic zajistit plnění usnesení a předložit Smlouvu o smlouvě budoucí starostovi města k\npodpisu.",
-    "text_anonymizovan": false,
-    "tema": "Služebnost pro výustní objekt dešťové kanalizace na Spolském potoce",
-    "tema_ai": true,
-    "kategorie": [
-      "voda_odpady",
-      "investice"
-    ],
-    "kategorie_ai": true,
-    "shrnuti": "Rada schválila smlouvu o smlouvě budoucí se státním podnikem Povodí Vltavy o zřízení služebnosti pro výustní objekt dešťové kanalizace na Spolském potoce v rámci stavby páteřní dešťové kanalizace Nový Dvůr – Jablonského ulice. Cena služebnosti je 8 000 Kč bez DPH.",
-    "shrnuti_ai": true,
-    "citace": {
-      "dokument_id": "zapis-rm-2026-09-23",
-      "strany": [
-        7,
-        8
-      ],
-      "text": "Služebnost bude zřízena úplatně za cenu 8.000,00 Kč bez DPH."
-    },
-    "castky": [
-      {
-        "hodnota": 8000.0,
-        "jednotka": "Kč",
-        "druh": "jine",
-        "s_dph": false,
-        "citace": "Služebnost bude zřízena úplatně za cenu 8.000,00 Kč bez DPH.",
-        "poznamka": "Cena služebnosti, kterou má město zaplatit státnímu podniku.",
-        "mena": "CZK"
-      }
-    ],
-    "parcely": [],
-    "poznamka": null,
-    "otazky": [],
-    "overeni": "overeno_kodem"
-  },
-  {
-    "id": "rm-2026-j111-u493",
-    "cislo": "RM 493/2026-111",
-    "jednani_id": "rm-2026-09-23",
+    "id": "rm-2026-j113-u532",
+    "cislo": "RM 532/2026-113",
+    "jednani_id": "rm-2026-10-21",
     "bod": 20,
     "vysledek_hlasovani": "prijato",
     "vysledek_zapis": "SCHVÁLENO",
     "ukony": [
       {
         "cast": "I",
-        "ukon": "schvaluje",
-        "sloveso": "schvaluje"
-      },
-      {
-        "cast": "II",
-        "ukon": "uklada",
-        "sloveso": "ukládá"
+        "ukon": "bere_na_vedomi",
+        "sloveso": "bere na vědomí"
       }
     ],
-    "text": "I. schvaluje\nprovedení rozpočtového opatření č. 51, které spočívá v přesunutí finančních prostředků ve výdajové části\nrozpočtu\n-z položky 5137 „Ubytování sportovní hala - vybavení“, § 2142, ORJ 750, ORG 9750000000, UZ 0 v částce\nKč 53.000,00,\n-do položky 5137 „Přístavba tělocvičen - vybavení“, § 3412, ORJ 750, ORG 9750000000, UZ 0 v částce Kč\n53.000,00.\nRozpočet\nRozpočet\nod\nSchválený      po       Rozpočtové\nČís.   RM      ÚZ          ORG              ORJ   Paragraf   Položka                                          počátku\nrozpočet   schválení    opatření\nroku po\nRO\nRO\nRozpočtové výdaje (Kč):\n53.             0       9750000000          750    2142       5137     5 000 000   3 309 000      - 53 000   3 256 000\n0       9750000000          750    3412       5137             0    281 000      + 53 000     334 000\nII. ukládá\nodboru rozvoje a investic a odboru finančnímu a majetkovému provést a evidovat RO v IS GINIS.",
+    "text": "I. bere na vědomí\nhospodaření příspěvkové organizace Městská knihovna Třeboň a mezitímní účetní závěrku k 30.09.2026.",
     "text_anonymizovan": false,
-    "tema": "Rozpočtové opatření č. 51 – vybavení přístavby tělocvičen",
+    "tema": "Hospodaření Městské knihovny Třeboň k 30. 9. 2026",
     "tema_ai": true,
     "kategorie": [
-      "rozpocet",
-      "sport"
+      "prispevkove_organizace",
+      "kultura"
     ],
     "kategorie_ai": true,
-    "shrnuti": "Rada přesunula 53 000 Kč ve výdajích rozpočtu z položky vybavení ubytování sportovní haly do položky vybavení přístavby tělocvičen.",
+    "shrnuti": "Rada vzala na vědomí hospodaření příspěvkové organizace Městská knihovna Třeboň a její mezitímní účetní závěrku k 30. 9. 2026.",
     "shrnuti_ai": true,
     "citace": {
-      "dokument_id": "zapis-rm-2026-09-23",
+      "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
-        8
+        10
       ],
-      "text": "-do položky 5137 „Přístavba tělocvičen - vybavení“, § 3412, ORJ 750, ORG 9750000000, UZ 0 v částce Kč 53.000,00."
+      "text": "hospodaření příspěvkové organizace Městská knihovna Třeboň a mezitímní účetní závěrku k 30.09.2026."
     },
-    "castky": [
-      {
-        "hodnota": 53000.0,
-        "jednotka": "Kč",
-        "druh": "rozpoctove_opatreni",
-        "s_dph": null,
-        "citace": "-do položky 5137 „Přístavba tělocvičen - vybavení“, § 3412, ORJ 750, ORG 9750000000, UZ 0 v částce Kč 53.000,00.",
-        "mena": "CZK"
-      }
-    ],
+    "castky": [],
     "parcely": [],
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
   },
   {
-    "id": "rm-2026-j111-u494",
-    "cislo": "RM 494/2026-111",
-    "jednani_id": "rm-2026-09-23",
+    "id": "rm-2026-j113-u533",
+    "cislo": "RM 533/2026-113",
+    "jednani_id": "rm-2026-10-21",
     "bod": 21,
     "vysledek_hlasovani": "prijato",
     "vysledek_zapis": "SCHVÁLENO",
@@ -1045,27 +1015,591 @@
         "sloveso": "ukládá"
       }
     ],
-    "text": "I. schvaluje\nstanovení osobního příplatku řediteli Základní školy Třeboň, Sokolská 296 k 1. říjnu 2026.\nII. ukládá\nútvaru tajemníka vyhotovit platový výměr.",
+    "text": "I. schvaluje\nuzavření smlouvy o spolupráci mezi Městskou knihovnou Třeboň a Hospicovou péčí sv. Kleofáše, o. p.s.,\nNovohradská 226, 379 01 Třeboň, IČ: 22707328. Předmětem spolupráce je realizace vzdělávacího kurzu.\nII. ukládá\nodboru kultury a cestovního ruchu zajistit plnění usnesení.",
     "text_anonymizovan": false,
-    "tema": "Osobní příplatek ředitele ZŠ Třeboň, Sokolská",
+    "tema": "Spolupráce knihovny s Hospicovou péčí sv. Kleofáše",
     "tema_ai": true,
     "kategorie": [
-      "skolstvi",
-      "personalni"
+      "kultura",
+      "socialni"
     ],
     "kategorie_ai": true,
-    "shrnuti": "Rada stanovila řediteli Základní školy Třeboň, Sokolská 296 osobní příplatek od 1. 10. 2026. Výše příplatku není v zápisu.",
+    "shrnuti": "Rada schválila smlouvu o spolupráci Městské knihovny Třeboň s Hospicovou péčí sv. Kleofáše; předmětem je vzdělávací kurz.",
     "shrnuti_ai": true,
     "citace": {
-      "dokument_id": "zapis-rm-2026-09-23",
+      "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
-        8
+        10
       ],
-      "text": "stanovení osobního příplatku řediteli Základní školy Třeboň, Sokolská 296 k 1. říjnu 2026."
+      "text": "Předmětem spolupráce je realizace vzdělávacího kurzu."
     },
     "castky": [],
     "parcely": [],
     "poznamka": null,
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "rm-2026-j113-u534",
+    "cislo": "RM 534/2026-113",
+    "jednani_id": "rm-2026-10-21",
+    "bod": 22,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "II",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "I. schvaluje\npodání žádosti o poskytnutí účelové neinvestiční dotace na výdaje za odbornou přípravu, za uskutečněný\nzásah jednotky SDH mimo územní obvod jejího zřizovatele a na vybavení a opravy neinvestiční povahy.\nII. ukládá\nútvaru tajemníka vypracování žádostí o poskytnutí účelové neinvestiční dotace na výdaje JSDHO Třeboň –\nBranná v období od 01.08.2025 až 31.07.2026",
+    "text_anonymizovan": false,
+    "tema": "Žádost o dotaci pro jednotku hasičů Branná",
+    "tema_ai": true,
+    "kategorie": [
+      "dotace_dary",
+      "socialni"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Rada schválila podání žádosti o neinvestiční dotaci na odbornou přípravu, zásahy mimo území zřizovatele a vybavení jednotky dobrovolných hasičů Třeboň – Branná za období 1. 8. 2025 až 31. 7. 2026.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-21",
+      "strany": [
+        10
+      ],
+      "text": "podání žádosti o poskytnutí účelové neinvestiční dotace na výdaje za odbornou přípravu"
+    },
+    "castky": [],
+    "parcely": [],
+    "poznamka": "Výše požadované dotace v usnesení není uvedena.",
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "rm-2026-j113-u535",
+    "cislo": "RM 535/2026-113",
+    "jednani_id": "rm-2026-10-21",
+    "bod": 23,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "bere_na_vedomi",
+        "sloveso": "bere na vědomí"
+      },
+      {
+        "cast": "II",
+        "ukon": "jiny",
+        "sloveso": "konstatuje"
+      },
+      {
+        "cast": "III",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "Rada města Třeboně, vykonávající podle § 102 odst. 2 písm. c) zák. č. 128/2000 Sb., o obcích a § 12 odst. 1\nzák. č. 90/2012 Sb., o obchodních korporacích, působnost Valné hromady společnosti Autokemp Třeboňský\nráj, s.r.o.\nI. bere na vědomí\nžádost pana XXXXXXXXX XXXXXXXXXX XXXXXXXXXX o zahájení projednání majetkového převodu areálu\nAutokempu Třeboň a o udělení předchozího písemného souhlasu s převodem nájemního a podnájemního\nvztahu v souvislosti s převodem obchodního závodu.\nII. konstatuje\nže, další jednání o majetkovém převodu areálu Autokempu Třeboň bude předloženo valné hromadě až po\nskončení dědického řízení.\nIII. ukládá\njednatelce společnosti Ing. Janě Grammetbauerové vyrozumět žadatele.",
+    "text_anonymizovan": false,
+    "tema": "Prodej areálu Autokempu Třeboň – žádost zájemce",
+    "tema_ai": true,
+    "kategorie": [
+      "lazne_spolecnosti",
+      "majetek_prevod"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Rada jako valná hromada společnosti Autokemp Třeboňský ráj vzala na vědomí žádost o zahájení projednání převodu areálu Autokempu a konstatovala, že věc bude předložena až po skončení dědického řízení.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-21",
+      "strany": [
+        11
+      ],
+      "text": "další jednání o majetkovém převodu areálu Autokempu Třeboň bude předloženo valné hromadě až po skončení dědického řízení."
+    },
+    "castky": [],
+    "parcely": [],
+    "poznamka": "Žadatel je fyzická osoba, zápis ji anonymizoval (XXXXXXXXX).",
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "rm-2026-j113-u536",
+    "cislo": "RM 536/2026-113",
+    "jednani_id": "rm-2026-10-21",
+    "bod": 24,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "bere_na_vedomi",
+        "sloveso": "bere na vědomí"
+      }
+    ],
+    "text": "I. bere na vědomí\nZávěrečnou zprávu o zjištěních z vykonaného interního auditu č. 2/2026.",
+    "text_anonymizovan": false,
+    "tema": "Závěrečná zpráva z interního auditu č. 2/2026",
+    "tema_ai": true,
+    "kategorie": [
+      "samosprava"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Rada vzala na vědomí závěrečnou zprávu o zjištěních z interního auditu č. 2/2026; obsah zprávy v usnesení není.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-21",
+      "strany": [
+        11
+      ],
+      "text": "Závěrečnou zprávu o zjištěních z vykonaného interního auditu č. 2/2026."
+    },
+    "castky": [],
+    "parcely": [],
+    "poznamka": null,
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "rm-2026-j113-u537",
+    "cislo": "RM 537/2026-113",
+    "jednani_id": "rm-2026-10-21",
+    "bod": 25,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "jmenuje",
+        "sloveso": "jmenuje"
+      },
+      {
+        "cast": "II",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "I. jmenuje\npana Viktora Ludvíka a další osobu do školské rady při ZŠ Třeboň, Sokolská 296.\nII. ukládá\nodboru školství a sociálních věcí zajistit plnění usnesení.",
+    "text_anonymizovan": true,
+    "tema": "Členové školské rady při ZŠ Sokolská",
+    "tema_ai": true,
+    "kategorie": [
+      "skolstvi"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Rada jmenovala dva členy školské rady při Základní škole Třeboň, Sokolská.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-21",
+      "strany": [
+        11
+      ],
+      "text": "do školské rady při ZŠ Třeboň, Sokolská 296."
+    },
+    "castky": [],
+    "parcely": [],
+    "poznamka": "Člen školské rady není volený zástupce, jméno neuvádíme.",
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "rm-2026-j113-u538",
+    "cislo": "RM 538/2026-113",
+    "jednani_id": "rm-2026-10-21",
+    "bod": 26,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "bere_na_vedomi",
+        "sloveso": "bere na vědomí"
+      }
+    ],
+    "text": "I. bere na vědomí\nzápis Komise ochrany veřejného pořádku a BESIP ze dne 22.09.2026.",
+    "text_anonymizovan": false,
+    "tema": "Zápis z jednání Komise ochrany veřejného pořádku a BESIP",
+    "tema_ai": true,
+    "kategorie": [
+      "samosprava",
+      "doprava"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Rada vzala na vědomí zápis z jednání Komise ochrany veřejného pořádku a BESIP z 22. 9. 2026.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-21",
+      "strany": [
+        11
+      ],
+      "text": "zápis Komise ochrany veřejného pořádku a BESIP ze dne 22.09.2026."
+    },
+    "castky": [],
+    "parcely": [],
+    "poznamka": null,
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "rm-2026-j113-u539",
+    "cislo": "RM 539/2026-113",
+    "jednani_id": "rm-2026-10-21",
+    "bod": 27,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "souhlasi",
+        "sloveso": "souhlasí"
+      },
+      {
+        "cast": "II",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "Rada města Třeboně, vykonávající podle § 102 odst. 2 písm. c) zák. č. 128/2000 Sb., o obcích a § 12 odst. 1\nzák. č. 90/2012 Sb., o obchodních korporacích, působnost Valné hromady společnosti Slatinné lázně Třeboň\ns.r.o.\nI. souhlasí\ns budoucím uzavřením smlouvy o převodu jednotky č. 1135/22 na adrese U Francouzů 1135, Třeboň a\nsmlouvy o převodu jednotky č. 11/9 na adrese Jiráskova 11, Třeboň do vlastnictví společnosti Slatinné lázně\nTřeboň s.r.o. a se všemi přímo souvisejícími kroky nevyjímaje členství v nově vznikajících SVJ.\nII. ukládá\nútvaru tajemníka zaslat vedení společnosti výpis z usnesení.",
+    "text_anonymizovan": false,
+    "tema": "Slatinné lázně – převod dvou bytových jednotek",
+    "tema_ai": true,
+    "kategorie": [
+      "lazne_spolecnosti",
+      "majetek_prevod"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Rada jako valná hromada Slatinných lázní Třeboň souhlasila s budoucím převodem dvou bytových jednotek (U Francouzů 1135 a Jiráskova 11) z družstva do vlastnictví společnosti.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-21",
+      "strany": [
+        12
+      ],
+      "text": "do vlastnictví společnosti Slatinné lázně Třeboň s.r.o. a se všemi přímo souvisejícími kroky nevyjímaje členství v nově vznikajících SVJ."
+    },
+    "castky": [],
+    "parcely": [],
+    "poznamka": "Kupní cena v usnesení není uvedena.",
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "rm-2026-j113-u540",
+    "cislo": "RM 540/2026-113",
+    "jednani_id": "rm-2026-10-21",
+    "bod": 28,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "II",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      },
+      {
+        "cast": "III",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "Rada města Třeboně, vykonávající podle § 102 odst. 2 písm. c) zák. č. 128/2000 Sb., o obcích a § 12 odst. 1\nzák. č. 90/2012 Sb., o obchodních korporacích, působnost Valné hromady společnosti Slatinné lázně Třeboň\ns.r.o.\nI. schvaluje\nspolečnosti Slatinné lázně Třeboň s.r.o., IČ 25179896, Lázeňská 1001, 379 01 Třeboň, uzavření Dodatku č. 1\nke Smlouvě o dílo na dodání a parametrizaci Informačního systému pro Slatinné lázně Třeboň s dodavatelem\nANETE spol. s r.o., Svatopetrská 35/7, 617 00 Brno, IČ 46970126, přičemž předmětem dodatku smlouvy je\núprava práv a povinností smluvních stran ve vztahu k vymezeným částem díla.\nII. ukládá\njednateli společnosti Slatinné lázně Třeboň s.r.o., IČ 25179896, Lázeňská 1001, 379 01 Třeboň, [jméno jednatele neuvádíme], uzavřít dodatek smlouvy dle bodu I. tohoto usnesení.\nIII. ukládá\nútvaru tajemníka zaslat vedení společnosti výpisy z usnesení.",
+    "text_anonymizovan": true,
+    "tema": "Slatinné lázně – dodatek ke smlouvě o informačním systému",
+    "tema_ai": true,
+    "kategorie": [
+      "lazne_spolecnosti"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Rada jako valná hromada Slatinných lázní Třeboň schválila dodatek č. 1 ke smlouvě o dodání informačního systému; mění práva a povinnosti stran u vymezených částí díla.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-21",
+      "strany": [
+        12
+      ],
+      "text": "předmětem dodatku smlouvy je úprava práv a povinností smluvních stran ve vztahu k vymezeným částem díla."
+    },
+    "castky": [],
+    "parcely": [],
+    "poznamka": "Jednatel společnosti není volený zástupce, jméno neuvádíme. Cena ani změna ceny v usnesení není.",
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "rm-2026-j113-u541",
+    "cislo": "RM 541/2026-113",
+    "jednani_id": "rm-2026-10-21",
+    "bod": 29,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "II",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "III",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "I. schvaluje\nuzavření Dodatku č. 9 k Dohodě o provozování sportovišť ze dne 01.01.2018 mezi městem Třeboň a\npříspěvkovou organizací Městská sportovní Třeboň, Na Sadech 349/II, Třeboň, IČO: 06457665. Předmětem\ndodatku je úprava předmětu výpůjčky nebytových prostor Sportovní haly, Lázeňská ulice čp. 1005/II, Třeboň,\nkterá je součástí pozemku p. č. KN 1085/6, vše v k. ú. Třeboň, včetně veřejných prostor na pozemku p. č. KN\n1085/6 v k. ú. Třeboň, a to dle přílohy č. 1 k tomuto dodatku s účinností od 01.11.2026.\nII. schvaluje\nuzavření Nájemní smlouvy na pronájem nebytových prostor Sportovní haly (HOTEL SPORT), Lázeňská ulice\nčp. 1005/II, Třeboň, která je součástí pozemku p. č. KN 1085/6, vše v k. ú. Třeboň, o celkové výměře podlahové\nplochy 860,98 m2 mezi městem Třeboň (jako pronajímatelem) a příspěvkovou organizací Městská sportovní\nTřeboň, Na Sadech 349/II, Třeboň, IČO: 06457665 (jako nájemcem), za stanovené nájemné ve výši:\n- za období 01.11.2026 – 31.12.2026 částka 50 000,00 Kč + DPH dle platných právních předpisů\n- pro rok 2027 činí roční nájemné částka 800 000,00 Kč + DPH dle platných právních předpisů\nPočínaje dnem 01.01.2028 se výše nájemného za každý uplynulý kalendářní rok automaticky zvyšuje o roční\nmíru inflace (vyjádřenou přírůstkem průměrného ročního indexu spotřebitelských cen) vyhlášenou Českým\nZápis ze 113. jednání RM ze dne 21.10.2026\nstatistickým úřadem za předchozí kalendářní rok. Nájemní smlouva se uzavírá na dobu určitou od 01.11.2026\ndo 31.12.2036.\nIII. ukládá\nodboru finančnímu a majetkovému ve spolupráci s právníkem města vypracovat dodatek č. 9 a nájemní\nsmlouvu a obojí předložit starostovi města k podpisu.",
+    "text_anonymizovan": false,
+    "tema": "Hotel Sport a Sportovní hala – dohoda o provozování a nájemní smlouva s Městskou sportovní Třeboň",
+    "tema_ai": true,
+    "kategorie": [
+      "majetek_najem",
+      "sport",
+      "prispevkove_organizace"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Rada schválila dodatek č. 9 k dohodě o provozování sportovišť a nájemní smlouvu na 860,98 m2 ve Sportovní hale (Hotel Sport) s příspěvkovou organizací Městská sportovní Třeboň od 1. 11. 2026 do 31. 12. 2036; nájemné 50 000 Kč za listopad–prosinec 2026 a 800 000 Kč za rok 2027, obojí bez DPH, od roku 2028 s inflační valorizací.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-21",
+      "strany": [
+        12,
+        13
+      ],
+      "text": "pro rok 2027 činí roční nájemné částka 800 000,00 Kč + DPH dle platných právních předpisů"
+    },
+    "castky": [
+      {
+        "hodnota": 50000,
+        "jednotka": "Kč",
+        "druh": "najemne_sazba",
+        "s_dph": false,
+        "obdobi": "2026-11-01/2026-12-31",
+        "citace": "za období 01.11.2026 – 31.12.2026 částka 50 000,00 Kč + DPH dle platných právních předpisů",
+        "mena": "CZK"
+      },
+      {
+        "hodnota": 800000,
+        "jednotka": "Kč/rok",
+        "druh": "najemne_sazba",
+        "s_dph": false,
+        "obdobi": "2027",
+        "citace": "pro rok 2027 činí roční nájemné částka 800 000,00 Kč + DPH dle platných právních předpisů",
+        "mena": "CZK"
+      }
+    ],
+    "parcely": [],
+    "poznamka": null,
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "rm-2026-j113-u542",
+    "cislo": "RM 542/2026-113",
+    "jednani_id": "rm-2026-10-21",
+    "bod": 30,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "II",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "I. schvaluje\nprovedení rozpočtového opatření č. 57, které spočívá v přesunutí finančních prostředků ve výdajové části\nrozpočtu\n-z položky 6121 „Přístavba tělocvičen“, § 3412, ORJ 750, ORG 6230000000, UZ 0 v částce Kč 253.000,00,\n-do položky 5137 „Přístavba tělocvičen - vybavení“, § 3412, ORJ 750, ORG 9750000000, UZ 0 v částce Kč\n253.000,00.\nRozpočet od\nČís    R                                                     Schválený       Rozpočet po     Rozpočtové\nÚZ       ORG         ORJ    Paragraf   Položka                                                  počátku roku po\n.     M                                                      rozpočet       schválení RO     opatření\nRO\nRozpočtové výdaje (Kč):\n57.          0    6230000000     750        3412    6121     70 000 000,00   59 245 143,49   - 253 000,00    58 992 143,49\n0    9750000000     750        3412    5137              0,00     334 000,00    +253 000,00        587 000,00\nII. ukládá\nodboru rozvoje a investic a odboru finančnímu a majetkovému provést a evidovat RO v IS GINIS.",
+    "text_anonymizovan": false,
+    "tema": "Rozpočtové opatření č. 57 – vybavení přístavby tělocvičen",
+    "tema_ai": true,
+    "kategorie": [
+      "rozpocet",
+      "investice",
+      "sport"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Rada přesunula 253 000 Kč z položky Přístavba tělocvičen do položky Přístavba tělocvičen – vybavení.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-21",
+      "strany": [
+        13
+      ],
+      "text": "-do položky 5137 „Přístavba tělocvičen - vybavení“, § 3412, ORJ 750, ORG 9750000000, UZ 0 v částce Kč 253.000,00."
+    },
+    "castky": [
+      {
+        "hodnota": 253000,
+        "jednotka": "Kč",
+        "druh": "rozpoctove_opatreni",
+        "s_dph": null,
+        "citace": "-do položky 5137 „Přístavba tělocvičen - vybavení“, § 3412, ORJ 750, ORG 9750000000, UZ 0 v částce Kč 253.000,00.",
+        "mena": "CZK"
+      }
+    ],
+    "parcely": [],
+    "poznamka": null,
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "rm-2026-j113-u543",
+    "cislo": "RM 543/2026-113",
+    "jednani_id": "rm-2026-10-21",
+    "bod": 31,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "II",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "I. schvaluje\nprovedení rozpočtového opatření č. 58, které spočívá v přesunutí finančních prostředků ve výdajové části\nrozpočtu\n- z položky 5169 „Nákup ostatních služeb (příkazní smlouvy)“, § 6171, ORJ 770, ORG 9770000001, UZ 0 v\nčástce Kč 200.000,00,\n- z položky 5195 „Odvody za neplnění povinnosti zaměstnávat zdrav.postižené“, § 6171, ORJ 770, ORG\n9770000201, UZ 0 v částce Kč 180.000,00,\n- z položky 5901 „Rezervy běžných výdajů“, § 6409, ORJ 800, ORG 9800000000, UZ 0 v částce Kč\n500.000,00,\n-do položky 5011 „Platy zaměstnanců v prac.poměru - úřad“, § 6171, ORJ 770, ORG 9770000000, UZ 0 v\nčástce Kč 657.934,00,\n-do položky 5031 „Povinné poj.na soc.zabezpečení - zaměst.a OOV“, § 6171, ORJ 770, ORG 9770000000,\nUZ 0 v částce Kč 162.936,00,\n-do položky 5032 „Povinné poj. na zdrav.pojištění - zaměst. a OOV“, § 6171, ORJ 770, ORG 9770000000, UZ\n0 v částce Kč 59.130,00.\nZápis ze 113. jednání RM ze dne 21.10.2026\nRozpočet\nRozpočet od\nSchválený       po        Rozpočtové\nČís.   RM      ÚZ         ORG          ORJ   Paragraf   Položka                                           počátku roku\nrozpočet    schválení     opatření\npo RO\nRO\nRozpočtové výdaje (Kč):\n58.            0       9770000001      770    6171       5169       400 000      400 000      - 200 000       200 000\n0       9770000201      770    6171       5195       350 000      345 000      - 180 000       165 000\n0       9800000000      800    6409       5901      7 680 000    2 325 164     - 500 000     1 825 164\n0       9770000000      770    6171       5011     48 800 000   52 400 000    + 657 934     53 057 934\n0       9770000000      770    6171       5031     12 250 000   13 142 800    + 162 936     13 305 736\n0       9770000000      770    6171       5032      4 420 000    4 744 000     + 59 130      4 803 130\nII. ukládá\nútvaru tajemníka a odboru finančnímu a majetkovému provést a evidovat RO v IS GINIS.",
+    "text_anonymizovan": false,
+    "tema": "Rozpočtové opatření č. 58 – platy zaměstnanců úřadu",
+    "tema_ai": true,
+    "kategorie": [
+      "rozpocet",
+      "personalni"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Rada přesunula prostředky z jiných položek (služby, odvody za neplnění povinnosti zaměstnávat zdravotně postižené, rezerva) na platy zaměstnanců úřadu a související pojistné.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-21",
+      "strany": [
+        13,
+        14
+      ],
+      "text": "provedení rozpočtového opatření č. 58"
+    },
+    "castky": [
+      {
+        "hodnota": 657934,
+        "jednotka": "Kč",
+        "druh": "rozpoctove_opatreni",
+        "s_dph": null,
+        "citace": "v částce Kč 657.934,00,",
+        "poznamka": "Navýšení položky Platy zaměstnanců v pracovním poměru – úřad; další položky opatření jsou v textu usnesení.",
+        "mena": "CZK"
+      }
+    ],
+    "parcely": [],
+    "poznamka": null,
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "rm-2026-j113-u544",
+    "cislo": "RM 544/2026-113",
+    "jednani_id": "rm-2026-10-21",
+    "bod": 32,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "II",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      },
+      {
+        "cast": "III",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "I. schvaluje\nvýjimku z nejvyššího počtu dětí ve třídě příspěvkové organizaci MŠ Sluníčko, Svobody 1018 na školní rok\n2026/2027 za podmínky nepřekročení celkové povolené kapacity dětí takto: 3. třída křesťanská a MŠ Kopeček\n- 1. třída a 2. třída.\nII. ukládá\nředitelce školy zabezpečit, aby navýšení počtu dětí nebylo na újmu kvality výchovné a vzdělávací činnosti\nškoly a dále zajistit podmínky dostatečné bezpečnosti a ochrany zdraví.\nIII. ukládá\nodboru školství a sociálních věcí zajistit výpis usnesení a předání ředitelce školy.",
+    "text_anonymizovan": false,
+    "tema": "Výjimka z počtu dětí ve třídách MŠ Sluníčko",
+    "tema_ai": true,
+    "kategorie": [
+      "skolstvi"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Rada schválila výjimku z nejvyššího počtu dětí ve třídách MŠ Sluníčko pro školní rok 2026/2027 za podmínky nepřekročení celkové povolené kapacity.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-21",
+      "strany": [
+        14
+      ],
+      "text": "výjimku z nejvyššího počtu dětí ve třídě příspěvkové organizaci MŠ Sluníčko"
+    },
+    "castky": [],
+    "parcely": [],
+    "poznamka": null,
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "rm-2026-j113-u545",
+    "cislo": "RM 545/2026-113",
+    "jednani_id": "rm-2026-10-21",
+    "bod": 33,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "II",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "I. schvaluje\nudělení plné moci referentce odboru územního plánování a stavebního řádu.\nII. ukládá\nodboru územního plánování a stavebního řádu zajistit plnění usnesení.",
+    "text_anonymizovan": true,
+    "tema": "Program regenerace MPR Třeboň – plná moc",
+    "tema_ai": true,
+    "kategorie": [
+      "samosprava",
+      "kultura"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Rada schválila udělení plné moci pracovnici odboru územního plánování a stavebního řádu v souvislosti s Programem regenerace městské památkové rezervace.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-21",
+      "strany": [
+        14
+      ],
+      "text": "referentce odboru územního plánování a stavebního řádu."
+    },
+    "castky": [],
+    "parcely": [],
+    "poznamka": "Jméno pracovnice úřadu neuvádíme.",
     "otazky": [],
     "overeni": "overeno_kodem"
   },
