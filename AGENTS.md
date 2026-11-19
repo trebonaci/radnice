@@ -77,7 +77,7 @@ data/*.json  ──►  PR  ──►  CI „Kontrola“ + Codex review  ──�
                                          WordPress na trebonaci.cz (Vedos)
 ```
 
-Hotovo: jeden běh `pipeline/beh.py` se zámkem, kontrolou před zápisem a atomickým zápisem (#16, `python -m pipeline.beh`). Plánované kroky: štítky věcné relevance (#18), další zdroje (smlouvy, zakázky) jako moduly v `pipeline/zdroje/`.
+Hotovo: jeden běh `pipeline/beh.py` se zámkem, kontrolou před zápisem a atomickým zápisem (#16, `python -m pipeline.beh`). Běh v Actions viz oddíl „Automatický běh“. Plánované kroky: štítky věcné relevance (#18), další zdroje (smlouvy, zakázky) jako moduly v `pipeline/zdroje/`.
 
 ## Zdroje dat – technické poznámky
 | Zdroj | Co víme | Ověřeno |
@@ -90,15 +90,22 @@ Hotovo: jeden běh `pipeline/beh.py` se zámkem, kontrolou před zápisem a atom
 | trebonaci.cz `/wp-json/trebonaci/v1/projekty` | evidence SPRM (`trebonaci_projekt`) | neověřeno |
 | trebonaci.cz `/wp-json/trebonaci/v1/podnety` | veřejně: téma, popis, stav, kategorie, oblast, nepovinné jméno/přezdívka, diskuse; interní údaje o vyřizování od 18. 11. 2026 jen pro redaktory → pro přehled radnice používat jen omezený výstup | šablona 18. 11. 2026 |
 
-Přístup: web města z cloudového prostředí Clauda nedostupný (omezení sítě); stahování přes prohlížeč fungovalo, ale prohlížeč blokuje opakované stahování. Z GitHub Actions zatím neověřeno.
+Přístup: web města z cloudového prostředí Clauda dřív nešel; **18. 11. 2026 z runneru GitHub Actions (Claude, #25) ověřeno:** oba seznamy zápisů (HTTP 200) se parsují na 2 PDF, stažená PDF mají shodný sha256 s `raw/manifest.json`, `pdftotext` (balík `poppler-utils`, v runneru se musí doinstalovat) a celý `python -m pipeline.beh` doběhly zeleně a data nezměnily. Ověřeno jen z runneru Claude workflow; první ostrý běh `beh.yml` zatím neproběhl.
 
-## Stav a další kroky
+## Automatický běh (#25)
+Workflow `.github/workflows/beh.yml`: denně 05:17 UTC + `workflow_dispatch`:
+1. `python -m pipeline.beh`; při chybě (kód 1/2) workflow skončí červeně a `pipeline.oznameni selhani` založí nebo doplní jedno otevřené issue „Běh selhal“ (`potrebuje-cloveka`); data se nemění.
+2. Věcná změna = změna v `raw/texty` nebo `data/{jednani,usneseni,hlasovani}.json`. Jen `beh.json` / datum kontroly PR nezakládají. Při věcné změně běh spustí sestavení a testy, založí větev `claude/beh-<datum>` a otevře PR se štítkem `ke-kontrole`; dokud starší PR z běhu čeká, nový se nezakládá.
+3. `pipeline.oznameni zapisy`: každý zápis v manifestu bez `anotace/<jednani_id>.yaml` dostane právě jedno issue „Nový zápis: …“ se štítkem `agent:claude` (klíč v těle, hledá se i mezi zavřenými).
+Nové zápisy bez anotace sestavení nezastaví (jsou jen v `raw/`), do `data/` se dostanou až s anotací.
+**Otevřené:** (a) akce vytvořené `GITHUB_TOKEN` nespouští další workflow, takže `agent:claude` na issue založeném během běhu `claude.yml` nespustí a CI na PR z běhu sama nenaběhne (běh proto kontroly spouští sám); štítek musí přidat Ondřej, nebo je třeba token s jinou identitou (nový secret, mimo zadání #25). (b) V nastavení repozitáře musí být povoleno „Allow GitHub Actions to create pull requests“.
+
 **Hotovo:** zadání a datový model (#4), pilot zápisů RM 4. 11. a ZM 2. 11. 2026 (#5), CI (#7), 25 zastupitelů (#11), ověření zdrojů a IČO (#14, `docs/ZDROJE.md`), AGENTS.md (#19), orchestrace (#13).
 
 **Na řadě:** štítky věcné relevance (#18), AI nezávislá na poskytovateli (#20), nasazení běhu v GitHub Actions.
 
 **Neověřeno / TODO:**
-1. Automatické stahování z webu města v GitHub Actions (modul `pipeline/zdroje/zapisy_mesta.py` je otestován jen na vzorcích HTML a PDF; skutečná struktura stránky a `pdftotext` v Actions ověřeny nebyly; workflow pro běh zatím není).
+1. Ostrý běh `beh.yml` v Actions (stahování a `pdftotext` ověřeny z runneru Claude, samotné workflow ještě nespuštěno).
 2. Tabulky rozpočtových opatření jsou v datech jen jako surový text.
 3. Jméno nevolené osoby bez titulu, které není v `config/osoby.yaml`, kontrola nezachytí – nové zápisy vyžadují lidskou kontrolu.
 4. Výstup do WordPressu (šablona stránky, JSON) zatím neexistuje.

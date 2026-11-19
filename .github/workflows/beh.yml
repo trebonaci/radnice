@@ -1,0 +1,98 @@
+name: Běh
+
+# Pravidelný běh `python -m pipeline.beh`: stáhne nové zápisy města, zkontroluje je a výsledek
+# nabídne jako PR (nikdy přímý zápis do main). Chyba = červený běh + issue „Běh selhal“.
+# Vyžaduje v Settings → Actions → General: „Allow GitHub Actions to create and approve pull requests“.
+
+on:
+  schedule:
+    - cron: "17 5 * * *"        # denně 05:17 UTC (mimo celou hodinu, kdy bývá špička)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: beh
+  cancel-in-progress: false
+
+jobs:
+  beh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      GH_TOKEN: ${{ github.token }}
+      ODKAZ_BEHU: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalace (poppler-utils pro pdftotext, závislosti)
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils
+          pip install -r requirements.txt
+
+      - name: Běh pipeline
+        id: beh
+        run: |
+          set +e
+          python -m pipeline.beh
+          echo "kod=$?" >> "$GITHUB_OUTPUT"
+
+      - name: Chyba běhu → issue „Běh selhal“, data se nemění
+        if: steps.beh.outputs.kod != '0'
+        run: |
+          python -m pipeline.oznameni selhani "$ODKAZ_BEHU" || true
+          git checkout -- . && git clean -fdq -e data/.beh.lock
+          echo "::error::Běh skončil kódem ${{ steps.beh.outputs.kod }} (1 = kontrola před zápisem / zdroj, 2 = zámek)"
+          exit 1
+
+      - name: Změnil běh věcný obsah? (beh.json a datum kontroly samy PR nezakládají)
+        id: zmena
+        if: steps.beh.outputs.kod == '0'
+        run: |
+          if [ -n "$(git status --porcelain -- raw/texty data/jednani.json data/usneseni.json data/hlasovani.json)" ]; then
+            echo "zmena=ano" >> "$GITHUB_OUTPUT"
+          else
+            echo "zmena=ne" >> "$GITHUB_OUTPUT"
+            git checkout -- . && git clean -fdq -e data/.beh.lock
+          fi
+
+      - name: Kontroly jako v CI (PR otevřený přes GITHUB_TOKEN CI sám nespustí)
+        if: steps.zmena.outputs.zmena == 'ano'
+        run: |
+          python -m pipeline.sestav
+          python -m pytest -q
+
+      - name: PR s výsledkem běhu
+        id: pr
+        if: steps.zmena.outputs.zmena == 'ano'
+        run: |
+          if [ -n "$(gh pr list --state open --search 'head:claude/beh-' --json number --jq '.[].number')" ]; then
+            echo "Starší PR z běhu ještě čeká na sloučení; nový se nezakládá."
+            exit 0
+          fi
+          vetev="claude/beh-$(date -u +%F)"
+          git ls-remote --exit-code --heads origin "$vetev" >/dev/null 2>&1 && vetev="$vetev-$GITHUB_RUN_NUMBER"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$vetev"
+          git add raw data
+          git commit -q -m "Běh pipeline $(date -u +%F): nové zápisy / verze"
+          git push -u origin "$vetev"
+          python -m pipeline.oznameni shrnuti > /tmp/telo.md
+          printf '\n\nBěh: %s\n' "$ODKAZ_BEHU" >> /tmp/telo.md
+          url=$(gh pr create --base main --head "$vetev" --title "Běh pipeline $(date -u +%F)" --body-file /tmp/telo.md)
+          gh pr edit "$url" --add-label ke-kontrole
+          echo "vetev=$vetev" >> "$GITHUB_OUTPUT"
+
+      - name: Issue „Nový zápis“ pro zápisy bez anotace (jedno na zápis, bez duplicit)
+        if: steps.beh.outputs.kod == '0'
+        run: python -m pipeline.oznameni zapisy "${{ steps.pr.outputs.vetev }}"
