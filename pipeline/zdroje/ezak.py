@@ -4,7 +4,7 @@ Export `…/profile_display_N.html/XMLdataVZ?od=DDMMRRRR&do=DDMMRRRR` vrací zak
 v daném období něco změnilo (nejvýš 366 dní na dotaz). Stahujeme po kalendářních letech do
 `raw/ezak/<ico>/<rok>.xml`; novější rok obsahuje novější stav zakázky (`pipeline/zakazky.py`).
 
-- Uzavřené roky se stahují jednou (a ještě jednou po skončení roku, aby zachytily prosinec).
+- Uzavřené roky se stahují, dokud nejsou staženy aspoň týden po svém konci (pak `uzavreno: true`).
 - Aktuální rok se stahuje při každém běhu.
 - Kontrola před zápisem: odpověď musí být XML s kořenem `profil` a IČO zadavatele musí sedět;
   jinak zůstane poslední správný soubor a chyba se ohlásí.
@@ -69,22 +69,22 @@ def zkontroluj_xml(obsah: bytes, ico: str) -> int:
 
 
 def potreba_stahnout(rok: int, zaznam: dict | None, dnes: date) -> bool:
-    if rok >= dnes.year:
+    if rok >= dnes.year or zaznam is None:
         return True
-    if zaznam is None:
-        return True
-    # uzavřený rok: jednou ještě po jeho skončení (zachytí změny z konce roku)
-    return zaznam.get("stazeno", "") < f"{rok + 1}-01-08"
+    # uzavřený rok: stahovat, dokud není stažen aspoň týden po svém konci (zachytí změny z konce roku)
+    return not zaznam.get("uzavreno")
 
 
 def stahni(koren: Path = KOREN, dnes: date | None = None,
            ziskej: Callable[[str], bytes] = ziskej_http, pauza: float = PAUZA_S) -> tuple[list[str], list[str]]:
     """Stáhne chybějící a aktuální roky. Vrací (změněné soubory, chyby). Chyba jednoho souboru
-    nezastaví ostatní a nepřepíše poslední správnou verzi."""
+    nezastaví ostatní a nepřepíše poslední správnou verzi. Manifest se mění jen se změnou obsahu
+    (nebo když se rok uzavře), aby samotné stažení beze změny nezakládalo PR (Codex P1, #74)."""
     dnes = dnes or date.today()
     adresar = koren / "raw" / "ezak"
     cesta_manifestu = adresar / "manifest.json"
     manifest = json.loads(cesta_manifestu.read_text(encoding="utf-8")) if cesta_manifestu.exists() else {}
+    puvodni = json.dumps(manifest, sort_keys=True)
     zmeny, chyby = [], []
     for s in profily(koren):
         for rok in range(PRVNI_ROK, dnes.year + 1):
@@ -104,14 +104,18 @@ def stahni(koren: Path = KOREN, dnes: date | None = None,
                     time.sleep(pauza)
             soubor = adresar / rel
             sha = hashlib.sha256(obsah).hexdigest()
-            if not soubor.exists() or hashlib.sha256(soubor.read_bytes()).hexdigest() != sha:
+            stary = manifest.get(rel, {})
+            if not soubor.exists() or stary.get("sha256") != sha:
                 soubor.parent.mkdir(parents=True, exist_ok=True)
                 docasny = soubor.with_suffix(".xml.tmp")
                 docasny.write_bytes(obsah)
                 docasny.replace(soubor)
                 zmeny.append(rel)
-            manifest[rel] = {"url": url, "stazeno": dnes.isoformat(), "sha256": sha, "zakazek": pocet}
-    if manifest:
+                stary = {"url": url_exportu(s["ezak_profil"], od, date(rok, 12, 31)), "sha256": sha,
+                         "zakazek": pocet, "zmeneno": dnes.isoformat()}
+            stary["uzavreno"] = dnes >= date(rok + 1, 1, 8)
+            manifest[rel] = stary
+    if json.dumps(manifest, sort_keys=True) != puvodni:
         adresar.mkdir(parents=True, exist_ok=True)
         cesta_manifestu.write_text(json.dumps(dict(sorted(manifest.items())), ensure_ascii=False, indent=2) + "\n",
                                    encoding="utf-8")

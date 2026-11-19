@@ -57,7 +57,10 @@ def test_fyzicka_osoba_je_anonymizovana(koren):
 
 @pytest.mark.parametrize("nazev, fo", [("Jan Novák", True), ("Petr Svoboda – stavby", True),
                                        ("VH-TRES spol. s r. o.", False), ("EUROVIA CZ a.s.", False),
-                                       ("Lesy České republiky, s. p.", False)])
+                                       ("Lesy České republiky, s. p.", False),
+                                       ("Jan Novák – správa nemovitostí", True), ("Petr Svoboda – stavby obce", True),
+                                       ("STRABAG a.s., odštěpný závod Morava", False),
+                                       ("Správa a údržba silnic Jihočeského kraje", False)])
 def test_podnikajici_fyzicka_osoba_bez_pravni_formy(nazev, fo):
     import xml.etree.ElementTree as ET
     e = ET.fromstring(f'<subjekt xmlns="{zakazky.NS[1:-1]}"><ico>12345678</ico><nazev_subjektu>{nazev}</nazev_subjektu>'
@@ -98,5 +101,15 @@ def test_stahni_jen_potrebne_roky_a_kontroluje_ico(koren):
 
 
 def test_uzavreny_rok_se_po_skonceni_stahne_jeste_jednou():
-    assert ezak.potreba_stahnout(2026, {"stazeno": "2026-12-31"}, date(2027, 1, 3))
-    assert not ezak.potreba_stahnout(2026, {"stazeno": "2027-01-08"}, date(2027, 1, 9))
+    assert ezak.potreba_stahnout(2026, {"uzavreno": False}, date(2027, 1, 3))
+    assert not ezak.potreba_stahnout(2026, {"uzavreno": True}, date(2027, 1, 9))
+
+
+def test_stazeni_beze_zmeny_nemeni_manifest(koren):
+    """Jen nové datum stažení nesmí měnit raw/ezak (jinak by každý běh zakládal PR; Codex P1, #74)."""
+    obsah = (VZORKY / "2026.xml").read_bytes()
+    ezak.stahni(koren, date(2026, 11, 20), lambda u: obsah if "display_2." in u else b"<x/>", pauza=0)
+    m = koren / "raw/ezak/manifest.json"
+    pred = m.read_bytes()
+    ezak.stahni(koren, date(2026, 11, 21), lambda u: obsah if "display_2." in u else b"<x/>", pauza=0)
+    assert m.read_bytes() == pred

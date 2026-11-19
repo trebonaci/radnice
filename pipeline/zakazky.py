@@ -14,12 +14,25 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 NS = "{urn:cz:isvz:mmr:schemas:vz-z-profilu-zadavatele:v100}"
-# Název právnické osoby poznáme podle právní formy nebo typu instituce. Kdo ji nemá, je nejspíš
-# podnikající fyzická osoba → anonymizovat (ZADANI: podnikatele – fyzické osoby vždy anonymizovat).
-RE_PRAVNICKA = re.compile(
-    r"(?<!\w)(?:s\.\s?r\.\s?o|spol\.|a\.\s?s|v\.\s?o\.\s?s|k\.\s?s|z\.\s?s|z\.\s?ú|o\.\s?p\.\s?s|s\.\s?p|"
-    r"družstvo|příspěvková organizace|státní podnik|obec|město|městys|kraj|ministerstvo|správa|úřad|"
-    r"gmbh|ltd|sp\.\s?z\s?o\.\s?o)(?!\w)", re.IGNORECASE)
+# Název právnické osoby poznáme podle právní formy NA KONCI názvu nebo podle typu instituce NA ZAČÁTKU.
+# Kdo ani jedno nemá, je nejspíš podnikající fyzická osoba → anonymizovat (ZADANI: podnikatele – fyzické
+# osoby vždy anonymizovat). Slovo jako „správa“ uprostřed obchodního jména nestačí (Codex P1, #74).
+RE_PRAVNI_FORMA = re.compile(
+    r"(?:s\.\s?r\.\s?o\.?|spol\.\s?s\s?r\.\s?o\.?|a\.\s?s\.?|v\.\s?o\.\s?s\.?|k\.\s?s\.?|z\.\s?s\.?|z\.\s?ú\.?|"
+    r"o\.\s?p\.\s?s\.?|s\.\s?p\.?|družstvo|příspěvková organizace|státní podnik|gmbh|ltd\.?|sp\.\s?z\s?o\.\s?o\.?)\s*$",
+    re.IGNORECASE)
+RE_INSTITUCE = re.compile(r"^(?:město|obec|městys|statutární město|kraj|ministerstvo|správa|úřad|státní|česká republika)\b",
+                          re.IGNORECASE)
+
+
+RE_ODSTEPNY = re.compile(r"(?:a\.\s?s\.?|s\.\s?r\.\s?o\.?)\s*,\s*(?:odštěpný závod|organizační složka)", re.IGNORECASE)
+
+
+def je_pravnicka(nazev: str) -> bool:
+    nazev = nazev.strip().rstrip(",")
+    return bool(RE_PRAVNI_FORMA.search(nazev) or RE_INSTITUCE.search(nazev) or RE_ODSTEPNY.search(nazev))
+
+
 DRUHY = {"stavební práce": "stavebni", "dodávky": "dodavky", "služby": "sluzby"}
 ZAKLAD_URL = "https://zakazky.mesto-trebon.cz/contract_display_{cislo}.html"
 
@@ -57,7 +70,7 @@ def subjekt(e: ET.Element | None) -> dict:
         return {"nazev": None, "ico": None, "fyzicka_osoba": None}
     nazev = _t(e, "nazev_subjektu") or ""
     fo = (e.find(f"{NS}bydliste") is not None and e.find(f"{NS}misto_podnikani") is None
-          and e.find(f"{NS}zeme_sidla") is None) or not RE_PRAVNICKA.search(nazev)
+          and e.find(f"{NS}zeme_sidla") is None) or not je_pravnicka(nazev)
     if fo:
         return {"nazev": "fyzická osoba", "ico": None, "fyzicka_osoba": True}
     return {"nazev": nazev, "ico": _t(e, "ico"), "fyzicka_osoba": False}
