@@ -45,4 +45,5 @@ pravidla:
   - {id: txt-investice, stitek: investice, vzor: '\brekonstrukc\w*|\bvýstavb\w*|\bstavebn\w*\b(?! řád| bytov)|\bprojektov\w+ dokumentac\w*', duvod: "Text usnesení zmiňuje stavbu, rekonstrukci nebo projektovou dokumentaci."}
   - {id: faze-planovana, stitek: investice, faze: planovana, vzor: '\bprojektov\w+ dokumentac\w*|\bstudi[ei]\w*', duvod: "Text usnesení zmiňuje projektovou přípravu."}
   - {id: faze-probiha, stitek: investice, faze: probiha, vzor: '\bpředání staveniště|\bzahájení (?:stavby|prací)', duvod: "Text usnesení zmiňuje zahájení stavby."}
-  - {id: faze-dokoncena, stitek: investice, faze: dokoncena, vzor: '\bkolaudac\w*|\bdokončen\w*', duvod: "Text usnesení zmiňuje dokončení nebo kolaudaci."}
+  # „dokončená“ jen při doložení dokončení; posun termínu dokončení nebo podmínka „před kolaudací“ nestačí (Codex P1, #37)
+  - {id: faze-dokoncena, stitek: investice, faze: dokoncena, vzor: '\bvydán\w* kolaudační\w* souhlas\w*|\bkolaudační\w* souhlas\w* (?:byl )?vydán\w*|\bpřevzetí dokončen\w+ (?:díla|stavby)|\b(?:dílo|stavba) (?:bylo|byla) dokončen\w*', duvod: "Text usnesení dokládá dokončení stavby (kolaudační souhlas, převzetí dokončeného díla)."}

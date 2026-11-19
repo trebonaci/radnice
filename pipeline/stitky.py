@@ -76,7 +76,8 @@ def ai_stitky(cfg: dict, navrhy: list[dict], text: str, citace: dict, anon_retez
         if normalizuj(n["citace"]) not in normalizuj(text):
             chyby.append(f"{kontext}: citace štítku {kod} nenalezena: {n['citace']!r}")
             continue
-        if any(r in n["citace"] or r in n["duvod"] for r in anon_retezce):
+        # stejně jako u citace: porovnání po sjednocení mezer (jinak by jiný zlom řádku propustil chráněný údaj)
+        if any(normalizuj(r) in normalizuj(n["citace"]) or normalizuj(r) in normalizuj(n["duvod"]) for r in anon_retezce):
             chyby.append(f"{kontext}: štítek {kod} obsahuje anonymizovaný údaj")
             continue
         faze = n.get("faze")

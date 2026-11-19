@@ -809,18 +809,18 @@
       {
         "stitek": "investice",
         "skupina": "tvrda",
-        "zdroj": "faze-dokoncena",
-        "duvod": "Text usnesení zmiňuje dokončení nebo kolaudaci.",
+        "zdroj": "kat-investice",
+        "duvod": "Usnesení je zařazeno do kategorie Stavby, rekonstrukce, opravy, projektová dokumentace.",
         "citace": {
           "dokument_id": "zapis-rm-2026-09-09",
           "strany": [
             6,
             7
           ],
-          "text": "dokončení"
+          "text": "jehož předmětem je změna termínu dokončení díla."
         },
-        "stitek_ai": false,
-        "faze": "dokoncena"
+        "stitek_ai": true,
+        "faze": null
       }
     ],
     "citace": {
@@ -1366,23 +1366,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila smlouvy o převodu vlastnictví nebytových jednotek v domech čp. 566 a čp. 11 a podílů na pozemcích od Stavebního bytového družstva Města Třeboň 2000 na město a doporučila je zastupitelstvu. Převod vychází z dohody o narovnání z 6. 5. 2026.",
     "shrnuti_ai": true,
-    "stitky": [
-      {
-        "stitek": "investice",
-        "skupina": "tvrda",
-        "zdroj": "txt-investice",
-        "duvod": "Text usnesení zmiňuje stavbu, rekonstrukci nebo projektovou dokumentaci.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-09-09",
-          "strany": [
-            10
-          ],
-          "text": "Stavebním"
-        },
-        "stitek_ai": false,
-        "faze": null
-      }
-    ],
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-09",
       "strany": [
@@ -2276,17 +2260,17 @@
       {
         "stitek": "investice",
         "skupina": "tvrda",
-        "zdroj": "faze-dokoncena",
-        "duvod": "Text usnesení zmiňuje dokončení nebo kolaudaci.",
+        "zdroj": "txt-investice",
+        "duvod": "Text usnesení zmiňuje stavbu, rekonstrukci nebo projektovou dokumentaci.",
         "citace": {
           "dokument_id": "zapis-rm-2026-09-23",
           "strany": [
             6
           ],
-          "text": "dokončení"
+          "text": "Stavební"
         },
         "stitek_ai": false,
-        "faze": "dokoncena"
+        "faze": null
       }
     ],
     "citace": {
@@ -2370,18 +2354,18 @@
       {
         "stitek": "investice",
         "skupina": "tvrda",
-        "zdroj": "faze-dokoncena",
-        "duvod": "Text usnesení zmiňuje dokončení nebo kolaudaci.",
+        "zdroj": "txt-investice",
+        "duvod": "Text usnesení zmiňuje stavbu, rekonstrukci nebo projektovou dokumentaci.",
         "citace": {
           "dokument_id": "zapis-rm-2026-09-23",
           "strany": [
             6,
             7
           ],
-          "text": "dokončením"
+          "text": "stavební"
         },
         "stitek_ai": false,
-        "faze": "dokoncena"
+        "faze": null
       }
     ],
     "citace": {
@@ -2464,17 +2448,17 @@
       {
         "stitek": "investice",
         "skupina": "tvrda",
-        "zdroj": "faze-dokoncena",
-        "duvod": "Text usnesení zmiňuje dokončení nebo kolaudaci.",
+        "zdroj": "txt-investice",
+        "duvod": "Text usnesení zmiňuje stavbu, rekonstrukci nebo projektovou dokumentaci.",
         "citace": {
           "dokument_id": "zapis-rm-2026-09-23",
           "strany": [
             7
           ],
-          "text": "dokončení"
+          "text": "STAVEBNÍ"
         },
         "stitek_ai": false,
-        "faze": "dokoncena"
+        "faze": null
       }
     ],
     "citace": {
@@ -5990,21 +5974,6 @@
         },
         "stitek_ai": true,
         "faze": null
-      },
-      {
-        "stitek": "investice",
-        "skupina": "tvrda",
-        "zdroj": "txt-investice",
-        "duvod": "Text usnesení zmiňuje stavbu, rekonstrukci nebo projektovou dokumentaci.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-10-21",
-          "strany": [
-            14
-          ],
-          "text": "stavebního"
-        },
-        "stitek_ai": false,
-        "faze": null
       }
     ],
     "citace": {
@@ -6289,6 +6258,22 @@
             4
           ],
           "text": "sportovních"
+        },
+        "stitek_ai": false,
+        "faze": null
+      },
+      {
+        "stitek": "komunity_spolky",
+        "skupina": "mekka",
+        "zdroj": "txt-komunity-spolky",
+        "duvod": "Text usnesení zmiňuje spolek nebo komunitní či společenské aktivity.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-30",
+          "strany": [
+            3,
+            4
+          ],
+          "text": "spolek"
         },
         "stitek_ai": false,
         "faze": null
@@ -7809,23 +7794,7 @@
     "kategorie_ai": true,
     "shrnuti": "Zastupitelstvo schválilo dvě smlouvy o převodu vlastnictví družstevních nebytových prostor (jednotka v č. p. 566 a čtyři jednotky v č. p. 11) na město podle dohody o narovnání ze 6. 5. 2026.",
     "shrnuti_ai": true,
-    "stitky": [
-      {
-        "stitek": "investice",
-        "skupina": "tvrda",
-        "zdroj": "txt-investice",
-        "duvod": "Text usnesení zmiňuje stavbu, rekonstrukci nebo projektovou dokumentaci.",
-        "citace": {
-          "dokument_id": "zapis-zm-2026-09-21",
-          "strany": [
-            6
-          ],
-          "text": "Stavebním"
-        },
-        "stitek_ai": false,
-        "faze": null
-      }
-    ],
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-zm-2026-09-21",
       "strany": [
@@ -7940,23 +7909,7 @@
     "kategorie_ai": true,
     "shrnuti": "Zastupitelstvo schválilo rozdělení Změny č. 9 územního plánu na dvě změny; 9a prověří čtyři podněty (č. 2, 29, 32 a 38), 9b ostatní podněty.",
     "shrnuti_ai": true,
-    "stitky": [
-      {
-        "stitek": "investice",
-        "skupina": "tvrda",
-        "zdroj": "txt-investice",
-        "duvod": "Text usnesení zmiňuje stavbu, rekonstrukci nebo projektovou dokumentaci.",
-        "citace": {
-          "dokument_id": "zapis-zm-2026-09-21",
-          "strany": [
-            7
-          ],
-          "text": "stavebního"
-        },
-        "stitek_ai": false,
-        "faze": null
-      }
-    ],
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-zm-2026-09-21",
       "strany": [

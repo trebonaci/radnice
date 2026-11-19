@@ -37,7 +37,10 @@ def test_nazev_odboru_neni_socialni_sluzba():
 
 
 def test_faze_investice():
+    # budoucí kolaudace dokončení nedokládá (Codex P1, #37) → fáze nevíme
     z = pravidlove_stitky(CFG, "schvaluje rekonstrukci a následnou kolaudaci", [], CIT)
+    assert {(s["stitek"], s["faze"]) for s in z} == {("investice", None)}
+    z = pravidlove_stitky(CFG, "rekonstrukce dokončena, byl vydán kolaudační souhlas", [], CIT)
     assert {(s["stitek"], s["faze"]) for s in z} == {("investice", None), ("investice", "dokoncena")}
 
 
@@ -80,3 +83,29 @@ def test_stitek_u_usneseni_jen_jednou():
 
 def test_komunity_a_spolky_jeden_stitek():
     assert "komunity_spolky" in CFG["stitky"] and "komunity" not in CFG["stitky"] and "spolky" not in CFG["stitky"]
+
+
+@pytest.mark.parametrize("text", [
+    "změna (prodloužení) termínu dokončení díla o 7 kalendářních dnů",
+    "-před kolaudací stavby bude uzavřena dohoda vlastníků",
+    "kolaudační souhlas bude vydán po dokončení",
+])
+def test_dokoncena_jen_pri_dolozeni(text):
+    """Posun termínu dokončení ani podmínka před kolaudací nejsou dokončení (Codex P1, #37)."""
+    c = {"dokument_id": "d", "strany": [1], "text": ""}
+    assert not [s for s in pravidlove_stitky(CFG, text, [], c) if s.get("faze") == "dokoncena"]
+
+
+def test_dokoncena_pri_vydanem_kolaudacnim_souhlasu():
+    c = {"dokument_id": "d", "strany": [1], "text": ""}
+    assert [s["faze"] for s in pravidlove_stitky(CFG, "byl vydán kolaudační souhlas se stavbou", [], c) if s.get("faze")] == ["dokoncena"]
+
+
+def test_ai_stitek_s_anonymizovanym_udajem_jinak_zalomenym():
+    """Chráněný údaj s jinými mezerami nebo zlomem řádku se nesmí dostat do štítku (Codex P1, #37)."""
+    chyby = []
+    text = "nájemce Svobody č. p. 272,\nTřeboň"
+    c = {"dokument_id": "d", "strany": [1], "text": ""}
+    v = ai_stitky(CFG, [{"stitek": "komunity_spolky", "duvod": "x", "citace": "Svobody č. p. 272,\nTřeboň"}],
+                  text, c, ["Svobody č. p. 272, Třeboň"], "k", chyby)
+    assert v == [] and chyby
