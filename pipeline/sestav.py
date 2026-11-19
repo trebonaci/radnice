@@ -6,7 +6,8 @@ Kontroly (selhání = nenulový návratový kód):
 - každá částka se jako číslo vyskytuje ve své citaci;
 - anotace neodkazuje na neexistující usnesení a každé usnesení má anotaci;
 - součet hlasů nepřesahuje počet přítomných na začátku jednání;
-- citace neobsahují řetězce určené k anonymizaci.
+- citace neobsahují řetězce určené k anonymizaci;
+- štítky věcné relevance (`pipeline/stitky.py`): číselník je konzistentní, štítky z AI mají doslovnou citaci.
 
 Spuštění: python -m pipeline.sestav
 """
@@ -19,6 +20,7 @@ from pathlib import Path
 
 import yaml
 
+from pipeline import stitky as modul_stitky
 from pipeline.verze import zkontroluj as zkontroluj_verze
 from pipeline.zapisy import normalizuj, rozloz
 
@@ -134,8 +136,9 @@ def adresar_textu(koren: Path, dok: dict) -> Path:
 
 
 def zpracuj_jednani(jednani_id: str, manifest: dict, chyby: list[str], osoby: dict,
-                    koren: Path | None = None) -> tuple[dict, list, list]:
+                    koren: Path | None = None, stitky_cfg: dict | None = None) -> tuple[dict, list, list]:
     koren = koren or KOREN
+    stitky_cfg = stitky_cfg or modul_stitky.nacti_ciselnik(koren)
     dok = manifest[jednani_id]
     adresar = adresar_textu(koren, dok)
     rozlozeno = rozloz(jednani_id, adresar)
@@ -181,6 +184,11 @@ def zpracuj_jednani(jednani_id: str, manifest: dict, chyby: list[str], osoby: di
         for r, _ in _polozky(anon):
             if r not in normalizuj(u["text"]) and r not in u["text"]:
                 chyby.append(f"{jednani_id}: {u['id']} řetězec k anonymizaci nenalezen: {r!r}")
+        verejny = anonymizuj_urednici(anonymizuj(u["text"], anon), osoby)
+        citace_usn = {"dokument_id": dok["dokument_id"], "strany": u["strany"], "text": a["citace"]}
+        stitky = modul_stitky.pravidlove_stitky(stitky_cfg, verejny, a["kategorie"], citace_usn)
+        stitky += modul_stitky.ai_stitky(stitky_cfg, a.get("stitky"), u["text"], citace_usn,
+                                         [r for r, _ in _polozky(anon)], f"{jednani_id}: {u['id']}", chyby)
         usneseni_out.append({
             "id": u["id"],
             "cislo": u["cislo"],
@@ -189,7 +197,7 @@ def zpracuj_jednani(jednani_id: str, manifest: dict, chyby: list[str], osoby: di
             "vysledek_hlasovani": u["vysledek_hlasovani"],
             "vysledek_zapis": u["vysledek_zapis"],
             "ukony": u["ukony"],
-            "text": (verejny := anonymizuj_urednici(anonymizuj(u["text"], anon), osoby)),
+            "text": verejny,
             "text_anonymizovan": verejny != u["text"],
             "tema": a["tema"],
             "tema_ai": True,
@@ -197,7 +205,8 @@ def zpracuj_jednani(jednani_id: str, manifest: dict, chyby: list[str], osoby: di
             "kategorie_ai": True,
             "shrnuti": a["shrnuti"],
             "shrnuti_ai": True,
-            "citace": {"dokument_id": dok["dokument_id"], "strany": u["strany"], "text": a["citace"]},
+            "stitky": modul_stitky.jeden_na_stitek(stitky),
+            "citace": citace_usn,
             "castky": [{**c, "mena": "CZK"} for c in a.get("castky", [])],
             "parcely": a.get("parcely", []),
             "poznamka": a.get("poznamka"),
@@ -257,11 +266,14 @@ def sestav(koren: Path | None = None) -> tuple[dict[str, list], list[str]]:
     manifest = {d["jednani_id"]: d for d in seznam}
     chyby: list[str] = zkontroluj_verze(seznam)
     osoby = nacti_osoby(koren)
+    stitky_cfg = modul_stitky.nacti_ciselnik(koren)
+    kategorie = yaml.safe_load((koren / "config" / "kategorie.yaml").read_text(encoding="utf-8"))
+    chyby += modul_stitky.zkontroluj_ciselnik(stitky_cfg, kategorie)
     jednani, usneseni, hlasovani = [], [], []
     for jednani_id in sorted(manifest):
         if not (koren / "anotace" / f"{jednani_id}.yaml").exists():
             continue
-        j, u, h = zpracuj_jednani(jednani_id, manifest, chyby, osoby, koren)
+        j, u, h = zpracuj_jednani(jednani_id, manifest, chyby, osoby, koren, stitky_cfg)
         jednani.append(j)
         usneseni += u
         hlasovani += h

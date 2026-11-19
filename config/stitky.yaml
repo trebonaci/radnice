@@ -1,0 +1,49 @@
+# Číselník štítků věcné relevance pro občany (issue #18; komunity + spolky sloučeny 19. 11. 2026 Ondřejem).
+# Štítek jen říká, ČEHO SE věc týká, a vždy má vypsaný důvod a citaci. Nehodnotí, neposuzuje dopad
+# a není právní výklad (to patří do podepsaných analýz).
+# Skupiny: mekka = sport, kultura, sociální a komunitní služby; tvrda = investice; obecna = ostatní.
+stitky:
+  sport:
+    skupina: mekka
+    nazev: Sport
+    popis: Týká se sportu, sportovišť nebo sportovních organizací.
+  kultura:
+    skupina: mekka
+    nazev: Kultura
+    popis: Týká se kultury, kulturních akcí nebo zařízení.
+  socialni:
+    skupina: mekka
+    nazev: Sociální služby
+    popis: Týká se sociálních služeb, seniorů nebo zdravotnictví.
+  komunity_spolky:
+    skupina: mekka
+    nazev: Komunitní život a spolky
+    popis: Týká se spolků, společenských a komunitních aktivit (sloučeno rozhodnutím Ondřeje 19. 11. 2026).
+  investice:
+    skupina: tvrda
+    nazev: Investice
+    popis: Týká se staveb, oprav nebo projektové přípravy.
+
+# Fáze investice (jen u štítku `investice`; když ji pravidla ani anotace nedoloží, je null = nevíme).
+faze_investice:
+  planovana: Plánovaná
+  probiha: Probíhající
+  dokoncena: Dokončená
+
+# Deterministická pravidla. `kategorie`: usnesení má kategorii z config/kategorie.yaml (kategorie samy
+# jsou návrh AI, proto štítek nese `stitek_ai: true`). `vzor`: regulární výraz v textu usnesení
+# (bez ohledu na velikost písmen; citací je přesně nalezený úsek).
+pravidla:
+  - {id: kat-sport, stitek: sport, kategorie: sport, duvod: "Usnesení je zařazeno do kategorie Sport a volný čas."}
+  - {id: kat-kultura, stitek: kultura, kategorie: kultura, duvod: "Usnesení je zařazeno do kategorie Kultura a cestovní ruch."}
+  - {id: kat-socialni, stitek: socialni, kategorie: socialni, duvod: "Usnesení je zařazeno do kategorie Sociální služby a zdravotnictví."}
+  - {id: kat-investice, stitek: investice, kategorie: investice, duvod: "Usnesení je zařazeno do kategorie Stavby, rekonstrukce, opravy, projektová dokumentace."}
+  - {id: txt-sport, stitek: sport, vzor: '\bsportov\w*|\bhřišt\w*|\bbrusl\w*', duvod: "Text usnesení zmiňuje sport nebo sportoviště."}
+  - {id: txt-kultura, stitek: kultura, vzor: '\bkultur\w*|\bdivadl\w*|\bmuze\w*|\bkoncert\w*|\bfestival\w*', duvod: "Text usnesení zmiňuje kulturu."}
+  - {id: txt-socialni, stitek: socialni, vzor: '\bsociáln\w+ (?:služ\w*|péč\w*|bydlen\w*)|\bpečovatel\w*|\bsenior\w*', duvod: "Text usnesení zmiňuje sociální služby nebo seniory."}
+  - {id: txt-komunity-spolky, stitek: komunity_spolky, vzor: '\bkomunitn\w*|\bspolečensk\w+ (?:setkán\w*|akc\w*)|\bspolk\w*|\bspolek\b|\bz\. ?s\.', duvod: "Text usnesení zmiňuje spolek nebo komunitní či společenské aktivity."}
+  - {id: txt-investice, stitek: investice, vzor: '\brekonstrukc\w*|\bvýstavb\w*|\bstavebn\w*\b(?! řád| bytov)|\bprojektov\w+ dokumentac\w*', duvod: "Text usnesení zmiňuje stavbu, rekonstrukci nebo projektovou dokumentaci."}
+  - {id: faze-planovana, stitek: investice, faze: planovana, vzor: '\bprojektov\w+ dokumentac\w*|\bstudi[ei]\w*', duvod: "Text usnesení zmiňuje projektovou přípravu."}
+  - {id: faze-probiha, stitek: investice, faze: probiha, vzor: '\bpředání staveniště|\bzahájení (?:stavby|prací)', duvod: "Text usnesení zmiňuje zahájení stavby."}
+  # „dokončená“ jen při doložení dokončení; posun termínu dokončení nebo podmínka „před kolaudací“ nestačí (Codex P1, #37)
+  - {id: faze-dokoncena, stitek: investice, faze: dokoncena, vzor: '\bvydán\w* kolaudační\w* souhlas\w*|\bkolaudační\w* souhlas\w* (?:byl )?vydán\w*|\bpřevzetí dokončen\w+ (?:díla|stavby)|\b(?:dílo|stavba) (?:bylo|byla) dokončen\w*', duvod: "Text usnesení dokládá dokončení stavby (kolaudační souhlas, převzetí dokončeného díla)."}

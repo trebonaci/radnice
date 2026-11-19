@@ -23,6 +23,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila program 110. jednání a zveřejnění zápisů.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-09",
       "strany": [
@@ -65,6 +66,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila záměr prodeje části pozemku p. č. 484 a pozemků p. č. 1118 a 508 ve Staré Hlíně a doporučila ho zastupitelstvu ke schválení. Cena je 500 Kč/m2 u prvních dvou a 800 Kč/m2 u třetího pozemku.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-09",
       "strany": [
@@ -148,6 +150,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila dvě souhlasná prohlášení o průběhu hranic pozemků mezi městem a vlastníky sousedních pozemků ve Staré Hlíně. Předmětem je zpřesnění vlastnických hranic.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-09",
       "strany": [
@@ -191,6 +194,23 @@
     "kategorie_ai": true,
     "shrnuti": "Rada vzala na vědomí žádost společnosti o změnu smluvního modelu převodu staveb a pozemků v akci ZTV Třeboň 2. etapa – Líbalova ulice. Odboru uložila připravit návrh obecných pravidel pro budoucí přebírání těchto staveb od investorů.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "investice",
+        "skupina": "tvrda",
+        "zdroj": "kat-investice",
+        "duvod": "Usnesení je zařazeno do kategorie Stavby, rekonstrukce, opravy, projektová dokumentace.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-09-09",
+          "strany": [
+            3
+          ],
+          "text": "připravit návrh obecně závazných pravidel pro budoucí nabývání ZTV od investorů ke schválení v orgánech města."
+        },
+        "stitek_ai": true,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-09",
       "strany": [
@@ -233,6 +253,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila zřízení služebnosti pro společnost PODA a.s. na pěti pozemcích v Třeboni – právo umístit, vést a udržovat optický kabel. Služebnost bude zřízena bezúplatně.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-09",
       "strany": [
@@ -301,6 +322,23 @@
     "kategorie_ai": true,
     "shrnuti": "Rada souhlasila s tím, aby zateplení obvodových stěn domů čp. 672 a 1050 přesahovalo na městský pozemek, a s úpravou betonových ploch kolem domů. Souhlas se vydává pro společenství vlastníků bytů.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "investice",
+        "skupina": "tvrda",
+        "zdroj": "kat-investice",
+        "duvod": "Usnesení je zařazeno do kategorie Stavby, rekonstrukce, opravy, projektová dokumentace.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-09-09",
+          "strany": [
+            3
+          ],
+          "text": "s přesahem zateplení obvodových stěn u domu č.p. 672 a č.p. 1050 na pozemek p. č. 1679/4 k. ú. Třeboň"
+        },
+        "stitek_ai": true,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-09",
       "strany": [
@@ -366,6 +404,53 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila dodatky ke čtyřem smlouvám o výpůjčce klubovny v budově čp. 2/II (Chelčického). Výpůjčka se prodlužuje do 31. 12. 2030 pro setkávání seniorů, šachistů, pěveckého sboru a malování. Náklady na užívání prostoru hradí město jako půjčitel.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "kultura",
+        "skupina": "mekka",
+        "zdroj": "kat-kultura",
+        "duvod": "Usnesení je zařazeno do kategorie Kultura a cestovní ruch.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-09-09",
+          "strany": [
+            4
+          ],
+          "text": "předmětem dodatku bude prodloužení doby výprůjčky do 31.12.2030"
+        },
+        "stitek_ai": true,
+        "faze": null
+      },
+      {
+        "stitek": "socialni",
+        "skupina": "mekka",
+        "zdroj": "txt-socialni",
+        "duvod": "Text usnesení zmiňuje sociální služby nebo seniory.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-09-09",
+          "strany": [
+            4
+          ],
+          "text": "seniorů"
+        },
+        "stitek_ai": false,
+        "faze": null
+      },
+      {
+        "stitek": "komunity_spolky",
+        "skupina": "mekka",
+        "zdroj": "txt-komunity-spolky",
+        "duvod": "Text usnesení zmiňuje spolek nebo komunitní či společenské aktivity.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-09-09",
+          "strany": [
+            4
+          ],
+          "text": "Spolkem"
+        },
+        "stitek_ai": false,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-09",
       "strany": [
@@ -408,6 +493,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila zveřejnění záměru dodatku č. 4 k nájemní smlouvě s CETIN a.s. Nájem vodárenské věže se rozšíří o další telekomunikační stožárek, roční nájemné se zvýší o 8 000 Kč bez DPH a nájem se prodlouží o 15 let do 31. 5. 2042.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-09",
       "strany": [
@@ -466,6 +552,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada vzala na vědomí žádost o prodloužení nájmu bytu 1+0 v čp. 2/II (Chelčického) a zrušila své dřívější usnesení o neprodloužení tohoto nájmu.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-09",
       "strany": [
@@ -519,6 +606,24 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila zveřejnění záměru pronájmu bytů č. 9, 18 a 20 v čp. 2/II (Chelčického) pro seniory nebo invalidní důchodce s vazbou na Třeboň. Měsíční nájemné je 2 448 Kč (byt 9) a 2 320 Kč (byty 18 a 20) plus úhrada za vybavení bytu; kauce je ve výši 3měsíčního nájemného.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "socialni",
+        "skupina": "mekka",
+        "zdroj": "kat-socialni",
+        "duvod": "Usnesení je zařazeno do kategorie Sociální služby a zdravotnictví.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-09-09",
+          "strany": [
+            5,
+            6
+          ],
+          "text": "Před uzavřením nájemní smlouvy bude uhrazena kauce ve výši 3měsíčního nájemného."
+        },
+        "stitek_ai": true,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-09",
       "strany": [
@@ -600,6 +705,38 @@
     "kategorie_ai": true,
     "shrnuti": "Rada přesunula 80 000 Kč ve výdajové části rozpočtu z položky Obnova nemovitých kulturních památek na opravy Domu dětí a mládeže.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "investice",
+        "skupina": "tvrda",
+        "zdroj": "kat-investice",
+        "duvod": "Usnesení je zařazeno do kategorie Stavby, rekonstrukce, opravy, projektová dokumentace.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-09-09",
+          "strany": [
+            6
+          ],
+          "text": "do položky 5171 „Dům dětí a mládeže - opravy“, § 3421, ORJ 750, ORG 9750000325, UZ 0 v částce Kč 80.000,00."
+        },
+        "stitek_ai": true,
+        "faze": null
+      },
+      {
+        "stitek": "kultura",
+        "skupina": "mekka",
+        "zdroj": "txt-kultura",
+        "duvod": "Text usnesení zmiňuje kulturu.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-09-09",
+          "strany": [
+            6
+          ],
+          "text": "kulturních"
+        },
+        "stitek_ai": false,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-09",
       "strany": [
@@ -652,6 +789,40 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila dodatek č. 4 ke smlouvě o dílo na stavbu Sportovní hala Třeboň – nástavba a přístavba ubytování. Dodatek mění termín dokončení díla; nový termín zápis neuvádí.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "sport",
+        "skupina": "mekka",
+        "zdroj": "txt-sport",
+        "duvod": "Text usnesení zmiňuje sport nebo sportoviště.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-09-09",
+          "strany": [
+            6,
+            7
+          ],
+          "text": "Sportovní"
+        },
+        "stitek_ai": false,
+        "faze": null
+      },
+      {
+        "stitek": "investice",
+        "skupina": "tvrda",
+        "zdroj": "kat-investice",
+        "duvod": "Usnesení je zařazeno do kategorie Stavby, rekonstrukce, opravy, projektová dokumentace.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-09-09",
+          "strany": [
+            6,
+            7
+          ],
+          "text": "jehož předmětem je změna termínu dokončení díla."
+        },
+        "stitek_ai": true,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-09",
       "strany": [
@@ -691,6 +862,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada vzala na vědomí výsledek veřejnosprávní kontroly hospodaření základní školy Na Sadech k 31. 3. 2026.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-09",
       "strany": [
@@ -729,6 +901,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada vzala na vědomí hospodaření příspěvkových organizací ve školství zřízených městem ke dni 30. 6. 2026.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-09",
       "strany": [
@@ -772,6 +945,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila dodatek č. 13 ke zřizovací listině základní školy Na Sadech (předání majetku k hospodaření) a doporučila ho zastupitelstvu ke schválení.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-09",
       "strany": [
@@ -815,6 +989,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada jmenovala dva členy do školské rady při základní škole Na Sadech.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-09",
       "strany": [
@@ -857,6 +1032,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila dohodu o ukončení smlouvy o spolupráci při zavedení a používání jízdenky JIKORD plus a JIKORD plus Bavorsko.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-09",
       "strany": [
@@ -899,6 +1075,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila změnu č. 1 Statutu interního auditu města a uložila seznámit s ní všechny zaměstnance.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-09",
       "strany": [
@@ -962,6 +1139,24 @@
     "kategorie_ai": true,
     "shrnuti": "Rada jako valná hromada společnosti Slatinné lázně Třeboň souhlasila s převodem čtyř technických zhodnocení Lázeňského domu Aurora na město za úplatu. Jde o kotelnu a zásobníky TUV, plynový kotel, modernizaci Balnea a vodní prvek v atriu.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "investice",
+        "skupina": "tvrda",
+        "zdroj": "txt-investice",
+        "duvod": "Text usnesení zmiňuje stavbu, rekonstrukci nebo projektovou dokumentaci.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-09-09",
+          "strany": [
+            8,
+            9
+          ],
+          "text": "Stavební"
+        },
+        "stitek_ai": false,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-09",
       "strany": [
@@ -1048,6 +1243,23 @@
     "kategorie_ai": true,
     "shrnuti": "Rada jako valná hromada společnosti Slatinné lázně Třeboň schválila uzavření dodatku č. 2 ke smlouvě o zajištění investorsko-inženýrských činností pro fotovoltaickou elektrárnu. Obsah dodatku zápis neuvádí.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "investice",
+        "skupina": "tvrda",
+        "zdroj": "kat-investice",
+        "duvod": "Usnesení je zařazeno do kategorie Stavby, rekonstrukce, opravy, projektová dokumentace.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-09-09",
+          "strany": [
+            9
+          ],
+          "text": "uzavření dodatku č. 2 ke Smlouvě o zajištění investorsko-inženýrských činností „FVE – Slatinné lázně Třeboň“"
+        },
+        "stitek_ai": true,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-09",
       "strany": [
@@ -1096,6 +1308,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada jako valná hromada společnosti Slatinné lázně Třeboň schválila zadávací dokumentaci nadlimitního řízení na dodávku a montáž nábytku předsíní (budova G-LDA) s předpokládanou hodnotou 1 400 000 Kč bez DPH.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-09",
       "strany": [
@@ -1153,6 +1366,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila smlouvy o převodu vlastnictví nebytových jednotek v domech čp. 566 a čp. 11 a podílů na pozemcích od Stavebního bytového družstva Města Třeboň 2000 na město a doporučila je zastupitelstvu. Převod vychází z dohody o narovnání z 6. 5. 2026.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-09",
       "strany": [
@@ -1205,6 +1419,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila tři smlouvy o bezúplatném převodu pozemků z majetku státu (Státní pozemkový úřad) na město v katastrálních územích Třeboň a Břilice a doporučila je zastupitelstvu.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-09",
       "strany": [
@@ -1243,6 +1458,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila program 111. jednání a zveřejňování zápisů.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-23",
       "strany": [
@@ -1285,6 +1501,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada neschválila návrh, aby město projevilo zájem o převod pozemku p. č. 1915/260 v k. ú. Třeboň od Úřadu pro zastupování státu ve věcech majetkových. Usnesení nebylo přijato.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-23",
       "strany": [
@@ -1343,6 +1560,24 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila krátkodobý pronájem části pozemku p. č. 575 (cca 30 m2) od 24. 9. do 22. 10. 2026 za 4 350 Kč + DPH, záměr dalšího pronájmu do 31. 12. 2026 za 10 500 Kč + DPH a bezplatné užívání části pozemku p. č. 500 (cca 150 m2) do 31. 12. 2026. Pozemky mají sloužit jako staveniště a vstup pro rekonstrukci objektu Husova 140.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "investice",
+        "skupina": "tvrda",
+        "zdroj": "txt-investice",
+        "duvod": "Text usnesení zmiňuje stavbu, rekonstrukci nebo projektovou dokumentaci.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-09-23",
+          "strany": [
+            2,
+            3
+          ],
+          "text": "stavebního"
+        },
+        "stitek_ai": false,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-23",
       "strany": [
@@ -1421,6 +1656,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila zřízení služebnosti (práva uložit a udržovat optický kabel) na pozemcích města v k. ú. Stará Hlína ve prospěch společnosti CETIN a.s. Služebnost je úplatná podle ceníku města, výše částky v zápisu není.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-23",
       "strany": [
@@ -1463,6 +1699,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila zřízení služebnosti (práva uložit a udržovat kabel VN) na pozemcích města v k. ú. Třeboň ve prospěch společnosti EG.D, s.r.o. Služebnost je úplatná podle dohody Svazu měst a obcí Jihočeského kraje, výše částky v zápisu není.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-23",
       "strany": [
@@ -1506,6 +1743,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila zřízení služebnosti (práva uložit a udržovat vodovodní přípojku) na pozemcích města v k. ú. Branná ve prospěch vlastníka sousedního pozemku. Služebnost je úplatná podle ceníku města, výše částky v zápisu není.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-23",
       "strany": [
@@ -1549,6 +1787,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada stanovila nájemné za vodovody a kanalizace, které provozuje společnost Městská Vodohospodářská s.r.o., na rok 2027 na 19,5 mil. Kč bez DPH, z toho 3 mil. Kč za vodovody a 16,5 mil. Kč za kanalizace.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-23",
       "strany": [
@@ -1621,6 +1860,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila dohodu s Krajským ředitelstvím policie Jihočeského kraje o umístění monitorovacího bodu dopravního systému PČR na stožár veřejného osvětlení na pozemku p. č. 1607/3 v k. ú. Třeboň.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-23",
       "strany": [
@@ -1674,6 +1914,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada vzala na vědomí, že v obálkové soutěži nebyl o vozidlo zájem, a schválila jeho prodej přes aukční portál s minimální nabídkovou cenou 7 000 Kč bez DPH.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-23",
       "strany": [
@@ -1726,6 +1967,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada změnila dřívější usnesení č. 369/2026-107 z 15. 7. 2026 tak, že místo pozemku p. č. 1915/564 se uvádí p. č. 1915/594 v k. ú. Třeboň.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-23",
       "strany": [
@@ -1769,6 +2011,23 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila smlouvu o dílo se společností TENOSOL group s.r.o. na zpracování projektové dokumentace a žádosti o podporu k projektu kybernetické bezpečnosti II. s předpokládaným spolufinancováním z IROP 21-27. Cena ve zdroji není.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "investice",
+        "skupina": "tvrda",
+        "zdroj": "faze-planovana",
+        "duvod": "Text usnesení zmiňuje projektovou přípravu.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-09-23",
+          "strany": [
+            5
+          ],
+          "text": "projektové dokumentace"
+        },
+        "stitek_ai": false,
+        "faze": "planovana"
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-23",
       "strany": [
@@ -1813,6 +2072,40 @@
     "kategorie_ai": true,
     "shrnuti": "Rada jako zřizovatel souhlasila, aby ZŠ Na Sadech přijala od spolku Děti do bruslí 10 párů dětských bruslí v hodnotě 25 000 Kč.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "sport",
+        "skupina": "mekka",
+        "zdroj": "txt-sport",
+        "duvod": "Text usnesení zmiňuje sport nebo sportoviště.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-09-23",
+          "strany": [
+            5,
+            6
+          ],
+          "text": "bruslí"
+        },
+        "stitek_ai": false,
+        "faze": null
+      },
+      {
+        "stitek": "komunity_spolky",
+        "skupina": "mekka",
+        "zdroj": "txt-komunity-spolky",
+        "duvod": "Text usnesení zmiňuje spolek nebo komunitní či společenské aktivity.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-09-23",
+          "strany": [
+            5,
+            6
+          ],
+          "text": "z.s."
+        },
+        "stitek_ai": false,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-23",
       "strany": [
@@ -1867,6 +2160,23 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila dodatek č. 1 ke smlouvě o dílo se společností K–BUILDING CB, a. s. Cena díla se zvyšuje o 100 815,78 Kč bez DPH (121 987,09 Kč s DPH) na celkem 12 078 592,78 Kč bez DPH (14 615 097,26 Kč s DPH).",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "investice",
+        "skupina": "tvrda",
+        "zdroj": "txt-investice",
+        "duvod": "Text usnesení zmiňuje stavbu, rekonstrukci nebo projektovou dokumentaci.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-09-23",
+          "strany": [
+            6
+          ],
+          "text": "Stavební"
+        },
+        "stitek_ai": false,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-23",
       "strany": [
@@ -1946,6 +2256,23 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila dodatek č. 1 ke smlouvě o dílo se společností VKB stavby s.r.o. Cena díla se zvyšuje o 181 382,70 Kč bez DPH (219 473,07 Kč s DPH) na celkem 9 319 009,86 Kč bez DPH (11 276 001,93 Kč s DPH) a termín dokončení se prodlužuje o 7 dnů do 30. 10. 2026.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "investice",
+        "skupina": "tvrda",
+        "zdroj": "txt-investice",
+        "duvod": "Text usnesení zmiňuje stavbu, rekonstrukci nebo projektovou dokumentaci.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-09-23",
+          "strany": [
+            6
+          ],
+          "text": "Stavební"
+        },
+        "stitek_ai": false,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-23",
       "strany": [
@@ -2023,6 +2350,24 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila pronájem části pozemku p. č. 1087/17 (cca 530 m2) od 30. 9. do 31. 12. 2026 za 246 450 Kč + DPH jako staveniště a stavební jámu pro novostavbu „Nová Cihelna“.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "investice",
+        "skupina": "tvrda",
+        "zdroj": "txt-investice",
+        "duvod": "Text usnesení zmiňuje stavbu, rekonstrukci nebo projektovou dokumentaci.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-09-23",
+          "strany": [
+            6,
+            7
+          ],
+          "text": "stavební"
+        },
+        "stitek_ai": false,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-23",
       "strany": [
@@ -2084,6 +2429,38 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila dodatek č. 4 ke smlouvě o dílo se společností MANE STAVEBNÍ s. r. o. na stavbu přístavby dvou tělocvičen sportovní haly; mění se termín dokončení díla. Nový termín zápis neuvádí.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "sport",
+        "skupina": "mekka",
+        "zdroj": "txt-sport",
+        "duvod": "Text usnesení zmiňuje sport nebo sportoviště.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-09-23",
+          "strany": [
+            7
+          ],
+          "text": "sportovní"
+        },
+        "stitek_ai": false,
+        "faze": null
+      },
+      {
+        "stitek": "investice",
+        "skupina": "tvrda",
+        "zdroj": "txt-investice",
+        "duvod": "Text usnesení zmiňuje stavbu, rekonstrukci nebo projektovou dokumentaci.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-09-23",
+          "strany": [
+            7
+          ],
+          "text": "STAVEBNÍ"
+        },
+        "stitek_ai": false,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-23",
       "strany": [
@@ -2127,6 +2504,38 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila dodatek č. 1 ke kupní smlouvě se společností Artspect, a. s. na vybavení interiéru ubytování ve sportovní hale; mění se cena a termín dodání. Nová cena ani termín nejsou v zápisu.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "sport",
+        "skupina": "mekka",
+        "zdroj": "txt-sport",
+        "duvod": "Text usnesení zmiňuje sport nebo sportoviště.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-09-23",
+          "strany": [
+            7
+          ],
+          "text": "Sportovní"
+        },
+        "stitek_ai": false,
+        "faze": null
+      },
+      {
+        "stitek": "investice",
+        "skupina": "tvrda",
+        "zdroj": "kat-investice",
+        "duvod": "Usnesení je zařazeno do kategorie Stavby, rekonstrukce, opravy, projektová dokumentace.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-09-23",
+          "strany": [
+            7
+          ],
+          "text": "jehož předmětem je změna ceny díla a změna termínu dodání zboží"
+        },
+        "stitek_ai": true,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-23",
       "strany": [
@@ -2170,6 +2579,24 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila smlouvu o smlouvě budoucí se státním podnikem Povodí Vltavy o zřízení služebnosti pro výustní objekt dešťové kanalizace na Spolském potoce v rámci stavby páteřní dešťové kanalizace Nový Dvůr – Jablonského ulice. Cena služebnosti je 8 000 Kč bez DPH.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "investice",
+        "skupina": "tvrda",
+        "zdroj": "kat-investice",
+        "duvod": "Usnesení je zařazeno do kategorie Stavby, rekonstrukce, opravy, projektová dokumentace.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-09-23",
+          "strany": [
+            7,
+            8
+          ],
+          "text": "Služebnost bude zřízena úplatně za cenu 8.000,00 Kč bez DPH."
+        },
+        "stitek_ai": true,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-23",
       "strany": [
@@ -2224,6 +2651,23 @@
     "kategorie_ai": true,
     "shrnuti": "Rada přesunula 53 000 Kč ve výdajích rozpočtu z položky vybavení ubytování sportovní haly do položky vybavení přístavby tělocvičen.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "sport",
+        "skupina": "mekka",
+        "zdroj": "txt-sport",
+        "duvod": "Text usnesení zmiňuje sport nebo sportoviště.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-09-23",
+          "strany": [
+            8
+          ],
+          "text": "sportovní"
+        },
+        "stitek_ai": false,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-23",
       "strany": [
@@ -2276,6 +2720,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada stanovila řediteli Základní školy Třeboň, Sokolská 296 osobní příplatek od 1. 10. 2026. Výše příplatku není v zápisu.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-09-23",
       "strany": [
@@ -2313,6 +2758,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila program 112. jednání a zveřejňování zápisů.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-07",
       "strany": [
@@ -2357,6 +2803,53 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila zveřejnění záměru půjčit prostor v budově čp. 3 v Přesece na sportovní, kulturní a společenské aktivity v obdobích leden–březen a listopad 2027; služby by hradil vypůjčitel paušálem.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "sport",
+        "skupina": "mekka",
+        "zdroj": "txt-sport",
+        "duvod": "Text usnesení zmiňuje sport nebo sportoviště.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-07",
+          "strany": [
+            2
+          ],
+          "text": "sportovních"
+        },
+        "stitek_ai": false,
+        "faze": null
+      },
+      {
+        "stitek": "kultura",
+        "skupina": "mekka",
+        "zdroj": "txt-kultura",
+        "duvod": "Text usnesení zmiňuje kulturu.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-07",
+          "strany": [
+            2
+          ],
+          "text": "kulturních"
+        },
+        "stitek_ai": false,
+        "faze": null
+      },
+      {
+        "stitek": "komunity_spolky",
+        "skupina": "mekka",
+        "zdroj": "txt-komunity-spolky",
+        "duvod": "Text usnesení zmiňuje spolek nebo komunitní či společenské aktivity.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-07",
+          "strany": [
+            2
+          ],
+          "text": "společenských setkání"
+        },
+        "stitek_ai": false,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-07",
       "strany": [
@@ -2411,6 +2904,23 @@
     "kategorie_ai": true,
     "shrnuti": "Rada vzala na vědomí výpověď nájmu nebytových prostor v č. p. 20/II, který měla organizace Hospicová péče sv. Kleofáše Třeboň; nájem skončí 31. 12. 2026.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "socialni",
+        "skupina": "mekka",
+        "zdroj": "kat-socialni",
+        "duvod": "Usnesení je zařazeno do kategorie Sociální služby a zdravotnictví.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-07",
+          "strany": [
+            2
+          ],
+          "text": "Nájemní vztah bude ukončen k 31.12.2026."
+        },
+        "stitek_ai": true,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-07",
       "strany": [
@@ -2459,6 +2969,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila zveřejnění záměru pronájmu bytu 3+1 (89,09 m2) v čp. 86/I formou obálkové soutěže s minimální cenou 150 Kč/m2 měsíčně a jmenovala komisi pro hodnocení nabídek.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-07",
       "strany": [
@@ -2517,6 +3028,23 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila nájemní smlouvu na byt 1+0 (30,60 m2) v domě s pečovatelskou službou na jeden rok s možností prodloužení a ukončení dosavadního nájmu jiného bytu dohodou k 31. 10. 2026.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "socialni",
+        "skupina": "mekka",
+        "zdroj": "txt-socialni",
+        "duvod": "Text usnesení zmiňuje sociální služby nebo seniory.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-07",
+          "strany": [
+            3
+          ],
+          "text": "pečovatelskou"
+        },
+        "stitek_ai": false,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-07",
       "strany": [
@@ -2579,6 +3107,23 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila nájemní smlouvu na byt 1+0 (29 m2) v domě s pečovatelskou službou na jeden rok s možností prodloužení.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "socialni",
+        "skupina": "mekka",
+        "zdroj": "txt-socialni",
+        "duvod": "Text usnesení zmiňuje sociální služby nebo seniory.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-07",
+          "strany": [
+            3
+          ],
+          "text": "pečovatelskou"
+        },
+        "stitek_ai": false,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-07",
       "strany": [
@@ -2641,6 +3186,24 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila nájemní smlouvu na byt 1+0 (29 m2) v domě s pečovatelskou službou na jeden rok s možností prodloužení.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "socialni",
+        "skupina": "mekka",
+        "zdroj": "txt-socialni",
+        "duvod": "Text usnesení zmiňuje sociální služby nebo seniory.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-07",
+          "strany": [
+            3,
+            4
+          ],
+          "text": "pečovatelskou"
+        },
+        "stitek_ai": false,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-07",
       "strany": [
@@ -2703,6 +3266,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila vyřazení majetku pod pořadovými čísly 1–33 z evidence města; majetek má odborná firma zlikvidovat.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-07",
       "strany": [
@@ -2750,6 +3314,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila ukončení dosavadní smlouvy s Ústavem výzkumu globální změny k 30. 11. 2026 a novou smlouvu na kancelář 30,14 m2 na dobu neurčitou za 2 200 Kč/m2/rok s valorizací od roku 2028.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-07",
       "strany": [
@@ -2808,6 +3373,24 @@
     "kategorie_ai": true,
     "shrnuti": "Rada vzala na vědomí výsledek veřejnosprávní kontroly v příspěvkové organizaci Městská sportovní Třeboň.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "sport",
+        "skupina": "mekka",
+        "zdroj": "txt-sport",
+        "duvod": "Text usnesení zmiňuje sport nebo sportoviště.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-07",
+          "strany": [
+            4,
+            5
+          ],
+          "text": "sportovní"
+        },
+        "stitek_ai": false,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-07",
       "strany": [
@@ -2851,6 +3434,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada zvýšila o 50 000 Kč příjmy z pronájmu pozemků i výdaje na pojištění majetku a spoluúčast.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-07",
       "strany": [
@@ -2919,6 +3503,23 @@
     "kategorie_ai": true,
     "shrnuti": "Rada rozhodla, že nejvýhodnější nabídku na stavební úpravy komunikací v ulicích Heřmánkova a Daskabát podala společnost VKB stavby s.r.o., a schválila s ní smlouvu o dílo.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "investice",
+        "skupina": "tvrda",
+        "zdroj": "txt-investice",
+        "duvod": "Text usnesení zmiňuje stavbu, rekonstrukci nebo projektovou dokumentaci.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-07",
+          "strany": [
+            5
+          ],
+          "text": "stavební"
+        },
+        "stitek_ai": false,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-07",
       "strany": [
@@ -2981,6 +3582,23 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila dodatek č. 4 ke smlouvě o dílo se společností VKB stavby, jehož předmětem je změna ceny díla.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "investice",
+        "skupina": "tvrda",
+        "zdroj": "txt-investice",
+        "duvod": "Text usnesení zmiňuje stavbu, rekonstrukci nebo projektovou dokumentaci.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-07",
+          "strany": [
+            6
+          ],
+          "text": "Stavební"
+        },
+        "stitek_ai": false,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-07",
       "strany": [
@@ -3025,6 +3643,23 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila dodatek, kterým se mění rozsah díla a cena stoupá o 25 685,72 Kč bez DPH na 1 024 446,81 Kč bez DPH.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "investice",
+        "skupina": "tvrda",
+        "zdroj": "kat-investice",
+        "duvod": "Usnesení je zařazeno do kategorie Stavby, rekonstrukce, opravy, projektová dokumentace.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-07",
+          "strany": [
+            6
+          ],
+          "text": "cena díla se zvyšuje o částku 25 685,72 Kč bez DPH na částku 1 024 446,81 Kč bez DPH."
+        },
+        "stitek_ai": true,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-07",
       "strany": [
@@ -3087,6 +3722,23 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila smlouvu se Slatinnými lázněmi Třeboň o vypořádání technických zhodnocení majetku města v areálu Aurora ve výši 57 177 151,44 Kč bez DPH.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "investice",
+        "skupina": "tvrda",
+        "zdroj": "kat-investice",
+        "duvod": "Usnesení je zařazeno do kategorie Stavby, rekonstrukce, opravy, projektová dokumentace.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-07",
+          "strany": [
+            6
+          ],
+          "text": "vypořádání technických zhodnocení majetku města Třeboň v areálu Aurora Slatinných lázní Třeboň"
+        },
+        "stitek_ai": true,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-07",
       "strany": [
@@ -3164,6 +3816,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila prodej šesti hrání palivového dřeva z kácení stromů obálkovou soutěží s minimální cenou 200 Kč za prostorový metr bez DPH a jmenovala komisi pro hodnocení nabídek.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-07",
       "strany": [
@@ -3223,6 +3876,23 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila příkazní smlouvu, jejímž předmětem je zajištění provozu Muzea města Třeboně.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "kultura",
+        "skupina": "mekka",
+        "zdroj": "txt-kultura",
+        "duvod": "Text usnesení zmiňuje kulturu.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-07",
+          "strany": [
+            7
+          ],
+          "text": "Muzea"
+        },
+        "stitek_ai": false,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-07",
       "strany": [
@@ -3261,6 +3931,23 @@
     "kategorie_ai": true,
     "shrnuti": "Rada vzala na vědomí zápis z 23. jednání bytové komise rady města ze dne 29. 9. 2026.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "socialni",
+        "skupina": "mekka",
+        "zdroj": "kat-socialni",
+        "duvod": "Usnesení je zařazeno do kategorie Sociální služby a zdravotnictví.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-07",
+          "strany": [
+            7
+          ],
+          "text": "Zápis z 23. jednání Bytové komise Rady města Třeboně konaného dne 29.09.2026."
+        },
+        "stitek_ai": true,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-07",
       "strany": [
@@ -3303,6 +3990,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila uzavření smluv o vypořádání závazků mezi městem a společností Galileo Corporation s.r.o.; smlouvy mají být zveřejněny v registru smluv.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-07",
       "strany": [
@@ -3340,6 +4028,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila program 113. jednání a zveřejňování zápisů.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
@@ -3382,6 +4071,23 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila pronájem části pozemku p. č. 575 v Třeboni (cca 30 m2) společnosti pro zařízení staveniště při rekonstrukci objektu Husova 140, od 23. 10. do 31. 12. 2026.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "investice",
+        "skupina": "tvrda",
+        "zdroj": "txt-investice",
+        "duvod": "Text usnesení zmiňuje stavbu, rekonstrukci nebo projektovou dokumentaci.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-21",
+          "strany": [
+            2
+          ],
+          "text": "stavebního"
+        },
+        "stitek_ai": false,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
@@ -3449,6 +4155,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila zřízení úplatné služebnosti pro uložení kabelového vedení nízkého napětí na pozemku města p. č. 3030 v Třeboni ve prospěch distribuční společnosti.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
@@ -3498,6 +4205,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila smlouvu o budoucí smlouvě o zřízení úplatné služebnosti pro kabel vysokého napětí a HDPE trubky na pozemcích města v k. ú. Třeboň a Holičky u Staré Hlíny; stavba mimo červenec a srpen, pokuta za porušení závazku 20 000 Kč.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
@@ -3557,6 +4265,24 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila smlouvu o budoucím bezúplatném převodu vodovodu a kanalizace, kterou by investor stavby zubních ordinací vybudoval na vlastní náklady a předal městu, a služebnosti pro přípojky; dále schválila záměr investora vybudovat komunikaci na pozemku p. č. 2467/2 s platností souhlasu 5 let.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "investice",
+        "skupina": "tvrda",
+        "zdroj": "faze-planovana",
+        "duvod": "Text usnesení zmiňuje projektovou přípravu.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-21",
+          "strany": [
+            3,
+            4
+          ],
+          "text": "projektovou dokumentací"
+        },
+        "stitek_ai": false,
+        "faze": "planovana"
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
@@ -3606,6 +4332,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila dodatek k nájemní smlouvě se společností CETIN – další telekomunikační stožárek na vodárenské věži, nájemné vyšší o 8 000 Kč ročně bez DPH, nájem prodloužen do 31. 5. 2042.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
@@ -3666,6 +4393,23 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila smlouvu o připojení elektrické zvoničky kaple ve Staré Hlíně k odběrnému místu a o úhradě spotřebované energie.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "kultura",
+        "skupina": "mekka",
+        "zdroj": "kat-kultura",
+        "duvod": "Usnesení je zařazeno do kategorie Kultura a cestovní ruch.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-21",
+          "strany": [
+            5
+          ],
+          "text": "úprava podmínek provozu elektrické zvoničky kaple ve Staré Hlíně a způsob úhrady spotřebované elektrické energie."
+        },
+        "stitek_ai": true,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
@@ -3709,6 +4453,23 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila přijetí daru – domácího loutkového divadla z první republiky (26 loutek, kulisy a náhradní díly).",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "kultura",
+        "skupina": "mekka",
+        "zdroj": "txt-kultura",
+        "duvod": "Text usnesení zmiňuje kulturu.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-21",
+          "strany": [
+            5
+          ],
+          "text": "divadlo"
+        },
+        "stitek_ai": false,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
@@ -3756,6 +4517,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada vzala na vědomí výsledek aukce a schválila kupní smlouvu na prodej osobního vozidla Škoda za 13 700 Kč bez DPH.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
@@ -3811,6 +4573,38 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila čerpání z fondu investic Městské sportovní Třeboň na kamerový systém, mycí stroj, úklid, bytový textil a IT vybavení ubytování; nejvýše 900 000 Kč včetně DPH.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "sport",
+        "skupina": "mekka",
+        "zdroj": "txt-sport",
+        "duvod": "Text usnesení zmiňuje sport nebo sportoviště.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-21",
+          "strany": [
+            6
+          ],
+          "text": "sportovní"
+        },
+        "stitek_ai": false,
+        "faze": null
+      },
+      {
+        "stitek": "investice",
+        "skupina": "tvrda",
+        "zdroj": "kat-investice",
+        "duvod": "Usnesení je zařazeno do kategorie Stavby, rekonstrukce, opravy, projektová dokumentace.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-21",
+          "strany": [
+            6
+          ],
+          "text": "Maximální částka čerpání prostředků"
+        },
+        "stitek_ai": true,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
@@ -3864,6 +4658,23 @@
     "kategorie_ai": true,
     "shrnuti": "Rada přesunula 60 000 Kč z položky služeb cestovního ruchu do položky služeb na trzích.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "kultura",
+        "skupina": "mekka",
+        "zdroj": "txt-kultura",
+        "duvod": "Text usnesení zmiňuje kulturu.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-21",
+          "strany": [
+            6
+          ],
+          "text": "kultury"
+        },
+        "stitek_ai": false,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
@@ -3927,6 +4738,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila finanční dar 20 000 Kč Základní škole Třeboň, Sokolská na oslavu výročí odloučeného pracoviště v Břilicích a související rozpočtové opatření č. 54.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
@@ -3987,6 +4799,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada zapojila 6 900 Kč z prodeje služebních zbraní městské policie a přesunula prostředky mezi výdajovými položkami městské policie.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
@@ -4047,6 +4860,38 @@
     "kategorie_ai": true,
     "shrnuti": "Rada přesunula 1 165 000 Kč z položky Snížení energetické náročnosti DPS 3 do položky Ubytování sportovní hala a schválila dodatek č. 5 ke smlouvě o dílo na nástavbu a přístavbu ubytování, jehož předmětem je změna ceny díla; nová cena v usnesení uvedena není.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "sport",
+        "skupina": "mekka",
+        "zdroj": "txt-sport",
+        "duvod": "Text usnesení zmiňuje sport nebo sportoviště.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-21",
+          "strany": [
+            8
+          ],
+          "text": "sportovní"
+        },
+        "stitek_ai": false,
+        "faze": null
+      },
+      {
+        "stitek": "investice",
+        "skupina": "tvrda",
+        "zdroj": "kat-investice",
+        "duvod": "Usnesení je zařazeno do kategorie Stavby, rekonstrukce, opravy, projektová dokumentace.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-21",
+          "strany": [
+            8
+          ],
+          "text": "jehož předmětem je změna ceny díla."
+        },
+        "stitek_ai": true,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
@@ -4101,6 +4946,23 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila dodatek č. 2 ke smlouvě o dílo; cena díla se zvyšuje o 92 819,29 Kč bez DPH a celková cena je 12 171 412,07 Kč bez DPH.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "investice",
+        "skupina": "tvrda",
+        "zdroj": "txt-investice",
+        "duvod": "Text usnesení zmiňuje stavbu, rekonstrukci nebo projektovou dokumentaci.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-21",
+          "strany": [
+            9
+          ],
+          "text": "Stavební"
+        },
+        "stitek_ai": false,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
@@ -4177,6 +5039,23 @@
     "kategorie_ai": true,
     "shrnuti": "Rada zrušila své únorové usnesení o plánu oprav na rybnících města a mění návrh změny plánu čerpání prostředků na rok 2026. Hlasování nebylo jednomyslné (5 pro, 1 proti, 1 se zdržel).",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "investice",
+        "skupina": "tvrda",
+        "zdroj": "kat-investice",
+        "duvod": "Usnesení je zařazeno do kategorie Stavby, rekonstrukce, opravy, projektová dokumentace.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-21",
+          "strany": [
+            9
+          ],
+          "text": "usnesení RM č. 68/2026-95 ze dne 04.02.2026"
+        },
+        "stitek_ai": true,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
@@ -4222,6 +5101,38 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila dodatek č. 2 ke kupní smlouvě na vybavení interiéru ubytování sportovní haly, jehož předmětem je změna ceny; výše ceny v usnesení uvedena není.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "sport",
+        "skupina": "mekka",
+        "zdroj": "txt-sport",
+        "duvod": "Text usnesení zmiňuje sport nebo sportoviště.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-21",
+          "strany": [
+            9
+          ],
+          "text": "Sportovní"
+        },
+        "stitek_ai": false,
+        "faze": null
+      },
+      {
+        "stitek": "investice",
+        "skupina": "tvrda",
+        "zdroj": "kat-investice",
+        "duvod": "Usnesení je zařazeno do kategorie Stavby, rekonstrukce, opravy, projektová dokumentace.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-21",
+          "strany": [
+            9
+          ],
+          "text": "jehož předmětem je změna ceny díla."
+        },
+        "stitek_ai": true,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
@@ -4262,6 +5173,23 @@
     "kategorie_ai": true,
     "shrnuti": "Rada vzala na vědomí zápis z 3. zasedání Komise sociální z 30. 9. 2026.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "socialni",
+        "skupina": "mekka",
+        "zdroj": "kat-socialni",
+        "duvod": "Usnesení je zařazeno do kategorie Sociální služby a zdravotnictví.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-21",
+          "strany": [
+            10
+          ],
+          "text": "Zápis z 3. zasedání Komise sociální města Třeboně konané dne 30.09.2026."
+        },
+        "stitek_ai": true,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
@@ -4300,6 +5228,23 @@
     "kategorie_ai": true,
     "shrnuti": "Rada vzala na vědomí hospodaření příspěvkové organizace Městská knihovna Třeboň a její mezitímní účetní závěrku k 30. 9. 2026.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "kultura",
+        "skupina": "mekka",
+        "zdroj": "kat-kultura",
+        "duvod": "Usnesení je zařazeno do kategorie Kultura a cestovní ruch.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-21",
+          "strany": [
+            10
+          ],
+          "text": "hospodaření příspěvkové organizace Městská knihovna Třeboň a mezitímní účetní závěrku k 30.09.2026."
+        },
+        "stitek_ai": true,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
@@ -4343,6 +5288,38 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila smlouvu o spolupráci Městské knihovny Třeboň s Hospicovou péčí sv. Kleofáše; předmětem je vzdělávací kurz.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "kultura",
+        "skupina": "mekka",
+        "zdroj": "txt-kultura",
+        "duvod": "Text usnesení zmiňuje kulturu.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-21",
+          "strany": [
+            10
+          ],
+          "text": "kultury"
+        },
+        "stitek_ai": false,
+        "faze": null
+      },
+      {
+        "stitek": "socialni",
+        "skupina": "mekka",
+        "zdroj": "kat-socialni",
+        "duvod": "Usnesení je zařazeno do kategorie Sociální služby a zdravotnictví.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-21",
+          "strany": [
+            10
+          ],
+          "text": "Předmětem spolupráce je realizace vzdělávacího kurzu."
+        },
+        "stitek_ai": true,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
@@ -4386,6 +5363,23 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila podání žádosti o neinvestiční dotaci na odbornou přípravu, zásahy mimo území zřizovatele a vybavení jednotky dobrovolných hasičů Třeboň – Branná za období 1. 8. 2025 až 31. 7. 2026.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "socialni",
+        "skupina": "mekka",
+        "zdroj": "kat-socialni",
+        "duvod": "Usnesení je zařazeno do kategorie Sociální služby a zdravotnictví.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-21",
+          "strany": [
+            10
+          ],
+          "text": "podání žádosti o poskytnutí účelové neinvestiční dotace na výdaje za odbornou přípravu"
+        },
+        "stitek_ai": true,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
@@ -4434,6 +5428,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada jako valná hromada společnosti Autokemp Třeboňský ráj vzala na vědomí žádost o zahájení projednání převodu areálu Autokempu a konstatovala, že věc bude předložena až po skončení dědického řízení.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
@@ -4471,6 +5466,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada vzala na vědomí závěrečnou zprávu o zjištěních z interního auditu č. 2/2026; obsah zprávy v usnesení není.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
@@ -4513,6 +5509,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada jmenovala dva členy školské rady při Základní škole Třeboň, Sokolská.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
@@ -4551,6 +5548,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada vzala na vědomí zápis z jednání Komise ochrany veřejného pořádku a BESIP z 22. 9. 2026.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
@@ -4594,6 +5592,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada jako valná hromada Slatinných lázní Třeboň souhlasila s budoucím převodem dvou bytových jednotek (U Francouzů 1135 a Jiráskova 11) z družstva do vlastnictví společnosti.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
@@ -4641,6 +5640,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada jako valná hromada Slatinných lázní Třeboň schválila dodatek č. 1 ke smlouvě o dodání informačního systému; mění práva a povinnosti stran u vymezených částí díla.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
@@ -4690,6 +5690,24 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila dodatek č. 9 k dohodě o provozování sportovišť a nájemní smlouvu na 860,98 m2 ve Sportovní hale (Hotel Sport) s příspěvkovou organizací Městská sportovní Třeboň od 1. 11. 2026 do 31. 12. 2036; nájemné 50 000 Kč za listopad–prosinec 2026 a 800 000 Kč za rok 2027, obojí bez DPH, od roku 2028 s inflační valorizací.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "sport",
+        "skupina": "mekka",
+        "zdroj": "txt-sport",
+        "duvod": "Text usnesení zmiňuje sport nebo sportoviště.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-21",
+          "strany": [
+            12,
+            13
+          ],
+          "text": "sportovišť"
+        },
+        "stitek_ai": false,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
@@ -4754,6 +5772,38 @@
     "kategorie_ai": true,
     "shrnuti": "Rada přesunula 253 000 Kč z položky Přístavba tělocvičen do položky Přístavba tělocvičen – vybavení.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "sport",
+        "skupina": "mekka",
+        "zdroj": "kat-sport",
+        "duvod": "Usnesení je zařazeno do kategorie Sport a volný čas.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-21",
+          "strany": [
+            13
+          ],
+          "text": "-do položky 5137 „Přístavba tělocvičen - vybavení“, § 3412, ORJ 750, ORG 9750000000, UZ 0 v částce Kč 253.000,00."
+        },
+        "stitek_ai": true,
+        "faze": null
+      },
+      {
+        "stitek": "investice",
+        "skupina": "tvrda",
+        "zdroj": "kat-investice",
+        "duvod": "Usnesení je zařazeno do kategorie Stavby, rekonstrukce, opravy, projektová dokumentace.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-21",
+          "strany": [
+            13
+          ],
+          "text": "-do položky 5137 „Přístavba tělocvičen - vybavení“, § 3412, ORJ 750, ORG 9750000000, UZ 0 v částce Kč 253.000,00."
+        },
+        "stitek_ai": true,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
@@ -4806,6 +5856,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada přesunula prostředky z jiných položek (služby, odvody za neplnění povinnosti zaměstnávat zdravotně postižené, rezerva) na platy zaměstnanců úřadu a související pojistné.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
@@ -4864,6 +5915,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila výjimku z nejvyššího počtu dětí ve třídách MŠ Sluníčko pro školní rok 2026/2027 za podmínky nepřekročení celkové povolené kapacity.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
@@ -4907,6 +5959,23 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila udělení plné moci pracovnici odboru územního plánování a stavebního řádu v souvislosti s Programem regenerace městské památkové rezervace.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "kultura",
+        "skupina": "mekka",
+        "zdroj": "kat-kultura",
+        "duvod": "Usnesení je zařazeno do kategorie Kultura a cestovní ruch.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-21",
+          "strany": [
+            14
+          ],
+          "text": "referentce odboru územního plánování a stavebního řádu."
+        },
+        "stitek_ai": true,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
@@ -4944,6 +6013,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila program svého 114. jednání a zveřejnění zápisů.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-30",
       "strany": [
@@ -4992,6 +6062,38 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila dotace pěti žadatelům v oblasti sociálních služeb a zdravotnictví a uzavření veřejnoprávních smluv o jejich poskytnutí na celoroční činnost.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "socialni",
+        "skupina": "mekka",
+        "zdroj": "txt-socialni",
+        "duvod": "Text usnesení zmiňuje sociální služby nebo seniory.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-30",
+          "strany": [
+            2
+          ],
+          "text": "sociálních služeb"
+        },
+        "stitek_ai": false,
+        "faze": null
+      },
+      {
+        "stitek": "komunity_spolky",
+        "skupina": "mekka",
+        "zdroj": "txt-komunity-spolky",
+        "duvod": "Text usnesení zmiňuje spolek nebo komunitní či společenské aktivity.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-30",
+          "strany": [
+            2
+          ],
+          "text": "z.s."
+        },
+        "stitek_ai": false,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-30",
       "strany": [
@@ -5045,6 +6147,56 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila dotace na činnost, jednorázové akce a reprezentaci města v oblasti tělovýchovy a sportu, uzavření veřejnoprávních smluv a vzala na vědomí zápis komise mládeže a sportu z 19. 10. 2026.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "sport",
+        "skupina": "mekka",
+        "zdroj": "txt-sport",
+        "duvod": "Text usnesení zmiňuje sport nebo sportoviště.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-30",
+          "strany": [
+            2,
+            3
+          ],
+          "text": "Sportovní"
+        },
+        "stitek_ai": false,
+        "faze": null
+      },
+      {
+        "stitek": "socialni",
+        "skupina": "mekka",
+        "zdroj": "txt-socialni",
+        "duvod": "Text usnesení zmiňuje sociální služby nebo seniory.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-30",
+          "strany": [
+            2,
+            3
+          ],
+          "text": "seniorů"
+        },
+        "stitek_ai": false,
+        "faze": null
+      },
+      {
+        "stitek": "komunity_spolky",
+        "skupina": "mekka",
+        "zdroj": "txt-komunity-spolky",
+        "duvod": "Text usnesení zmiňuje spolek nebo komunitní či společenské aktivity.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-30",
+          "strany": [
+            2,
+            3
+          ],
+          "text": "z.s."
+        },
+        "stitek_ai": false,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-30",
       "strany": [
@@ -5093,6 +6245,40 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila dotace třem žadatelům na jednorázové akce (dopravní výuka, burza dětského ošacení, Mikulášská nadílka) a uzavření veřejnoprávních smluv.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "sport",
+        "skupina": "mekka",
+        "zdroj": "txt-sport",
+        "duvod": "Text usnesení zmiňuje sport nebo sportoviště.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-30",
+          "strany": [
+            3,
+            4
+          ],
+          "text": "sportovních"
+        },
+        "stitek_ai": false,
+        "faze": null
+      },
+      {
+        "stitek": "komunity_spolky",
+        "skupina": "mekka",
+        "zdroj": "txt-komunity-spolky",
+        "duvod": "Text usnesení zmiňuje spolek nebo komunitní či společenské aktivity.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-30",
+          "strany": [
+            3,
+            4
+          ],
+          "text": "spolek"
+        },
+        "stitek_ai": false,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-30",
       "strany": [
@@ -5136,6 +6322,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada zvýšila příjmy z pronájmu pozemků i výdaje na znalecké posudky, každé o 50 000 Kč.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-30",
       "strany": [
@@ -5199,6 +6386,38 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila uzavření Dodatku č. 5 ke smlouvě o dílo na stavbu Přístavba dvou tělocvičen sportovní haly Třeboň; předmětem dodatku je změna ceny díla.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "sport",
+        "skupina": "mekka",
+        "zdroj": "txt-sport",
+        "duvod": "Text usnesení zmiňuje sport nebo sportoviště.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-30",
+          "strany": [
+            4
+          ],
+          "text": "sportovní"
+        },
+        "stitek_ai": false,
+        "faze": null
+      },
+      {
+        "stitek": "investice",
+        "skupina": "tvrda",
+        "zdroj": "txt-investice",
+        "duvod": "Text usnesení zmiňuje stavbu, rekonstrukci nebo projektovou dokumentaci.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-30",
+          "strany": [
+            4
+          ],
+          "text": "STAVEBNÍ"
+        },
+        "stitek_ai": false,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-30",
       "strany": [
@@ -5244,6 +6463,23 @@
     "kategorie_ai": true,
     "shrnuti": "Rada od 1. 11. 2026 schválila řediteli příspěvkové organizace Městská sportovní Třeboň zvýšení tarifní třídy a příplatku za vedení; výše je v neveřejné příloze.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "sport",
+        "skupina": "mekka",
+        "zdroj": "txt-sport",
+        "duvod": "Text usnesení zmiňuje sport nebo sportoviště.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-30",
+          "strany": [
+            5
+          ],
+          "text": "sportovní"
+        },
+        "stitek_ai": false,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-30",
       "strany": [
@@ -5296,6 +6532,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila prodej vyřazeného drobného hmotného majetku města dvěma členům rady města (starostovi notebook s dokovací stanicí, monitor a mobilní telefon, místostarostce mobilní telefon); kupní smlouvy za město podepíše tajemnice.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-30",
       "strany": [
@@ -5340,6 +6577,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila uzavření Dodatku č. 1 ke smlouvě o zřízení a provozu publikování otevřených dat (výroba a provoz) se společností Galileo Corporation s. r. o.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-30",
       "strany": [
@@ -5377,6 +6615,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila program svého prvního jednání a zveřejňování zápisů.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-11-04",
       "strany": [
@@ -5420,6 +6659,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada jmenovala komisi pro otevírání a hodnocení nabídek na prodej pozemku v k. ú. Holičky u Staré Hlíny.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-11-04",
       "strany": [
@@ -5473,6 +6713,53 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila bezplatnou výpůjčku prostoru v budově čp. 3 v Přesece na sportovní, kulturní a společenské aktivity v obdobích leden–březen a listopad 2027; služby hradí vypůjčitel paušálem.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "sport",
+        "skupina": "mekka",
+        "zdroj": "txt-sport",
+        "duvod": "Text usnesení zmiňuje sport nebo sportoviště.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-11-04",
+          "strany": [
+            2
+          ],
+          "text": "sportovních"
+        },
+        "stitek_ai": false,
+        "faze": null
+      },
+      {
+        "stitek": "kultura",
+        "skupina": "mekka",
+        "zdroj": "txt-kultura",
+        "duvod": "Text usnesení zmiňuje kulturu.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-11-04",
+          "strany": [
+            2
+          ],
+          "text": "kulturních"
+        },
+        "stitek_ai": false,
+        "faze": null
+      },
+      {
+        "stitek": "komunity_spolky",
+        "skupina": "mekka",
+        "zdroj": "txt-komunity-spolky",
+        "duvod": "Text usnesení zmiňuje spolek nebo komunitní či společenské aktivity.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-11-04",
+          "strany": [
+            2
+          ],
+          "text": "společenských setkání"
+        },
+        "stitek_ai": false,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-11-04",
       "strany": [
@@ -5516,6 +6803,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada vzala na vědomí výpověď nájemce prostoru v č. p. 42 v Přesece; nájem skončí 31. 1. 2027.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-11-04",
       "strany": [
@@ -5558,6 +6846,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada schválila pronájem prostoru 16,34 m2 v č. p. 106/II na dobu neurčitou pro kancelář finančních a pojišťovacích služeb za 2 100 Kč/m2/rok s valorizací od roku 2028.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-11-04",
       "strany": [
@@ -5612,6 +6901,23 @@
     "kategorie_ai": true,
     "shrnuti": "Rada vzala na vědomí hospodaření příspěvkové organizace Městská sportovní Třeboň a její mezitímní účetní závěrku k 30. 9. 2026.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "sport",
+        "skupina": "mekka",
+        "zdroj": "txt-sport",
+        "duvod": "Text usnesení zmiňuje sport nebo sportoviště.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-11-04",
+          "strany": [
+            3
+          ],
+          "text": "sportovní"
+        },
+        "stitek_ai": false,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-11-04",
       "strany": [
@@ -5655,6 +6961,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada přesunula 223 850 Kč ve fondu vodohospodářské infrastruktury z oprav vodovodů na opravy ČOV (obnova systému dodávky vzduchu).",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-11-04",
       "strany": [
@@ -5708,6 +7015,40 @@
     "kategorie_ai": true,
     "shrnuti": "Rada jako zřizovatel souhlasila, aby ZŠ Sokolská přijala od spolku Děti do bruslí 10 párů dětských bruslí v hodnotě 25 000 Kč.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "sport",
+        "skupina": "mekka",
+        "zdroj": "txt-sport",
+        "duvod": "Text usnesení zmiňuje sport nebo sportoviště.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-11-04",
+          "strany": [
+            3,
+            4
+          ],
+          "text": "bruslí"
+        },
+        "stitek_ai": false,
+        "faze": null
+      },
+      {
+        "stitek": "komunity_spolky",
+        "skupina": "mekka",
+        "zdroj": "txt-komunity-spolky",
+        "duvod": "Text usnesení zmiňuje spolek nebo komunitní či společenské aktivity.",
+        "citace": {
+          "dokument_id": "zapis-rm-2026-11-04",
+          "strany": [
+            3,
+            4
+          ],
+          "text": "z.s."
+        },
+        "stitek_ai": false,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-rm-2026-11-04",
       "strany": [
@@ -5760,6 +7101,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada přesunula 30 000 Kč z položky nájemné na tuzemské cestovné.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-11-04",
       "strany": [
@@ -5806,6 +7148,7 @@
     "kategorie_ai": true,
     "shrnuti": "Zastupitelstvo schválilo program 31. jednání, návrhovou komisi a ověřovatele zápisu.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-zm-2026-09-21",
       "strany": [
@@ -5848,6 +7191,7 @@
     "kategorie_ai": true,
     "shrnuti": "Zastupitelstvo vzalo na vědomí zprávy o plnění svých usnesení a požadavků zastupitelů z jednání 22. 6. 2026.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-zm-2026-09-21",
       "strany": [
@@ -5885,6 +7229,7 @@
     "kategorie_ai": true,
     "shrnuti": "Zastupitelstvo vzalo na vědomí přehled rozpočtových opatření, která provedla rada města.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-zm-2026-09-21",
       "strany": [
@@ -5922,6 +7267,7 @@
     "kategorie_ai": true,
     "shrnuti": "Zastupitelstvo vzalo na vědomí informaci o plnění a čerpání rozpočtu města k 30. 6. 2026 a mezitímní účetní závěrku.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-zm-2026-09-21",
       "strany": [
@@ -5966,6 +7312,23 @@
     "kategorie_ai": true,
     "shrnuti": "Zastupitelstvo schválilo přesun 20 000 000 Kč z rezervy kapitálových výdajů do Lázeňského investičního fondu na technické zhodnocení budov pronajatých společnosti Slatinné lázně Třeboň.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "investice",
+        "skupina": "tvrda",
+        "zdroj": "kat-investice",
+        "duvod": "Usnesení je zařazeno do kategorie Stavby, rekonstrukce, opravy, projektová dokumentace.",
+        "citace": {
+          "dokument_id": "zapis-zm-2026-09-21",
+          "strany": [
+            3
+          ],
+          "text": "snížení výdajové položky 6901 „Rezervy kapitálových výdajů“, § 6409, ORJ 800, ORG 6093000000, UZ 0 o částku 20.000.000,00 Kč"
+        },
+        "stitek_ai": true,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-zm-2026-09-21",
       "strany": [
@@ -6017,6 +7380,7 @@
     "kategorie_ai": true,
     "shrnuti": "Zastupitelstvo schválilo zveřejnění záměru prodeje částí dvou pozemků (cca 15 m2 a cca 4 m2) za 3 000 Kč/m2.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-zm-2026-09-21",
       "strany": [
@@ -6082,6 +7446,7 @@
     "kategorie_ai": true,
     "shrnuti": "Zastupitelstvo schválilo zveřejnění záměru prodeje části pozemku o výměře 510 m2 obálkovou metodou s minimální nabídkovou cenou 2 000 Kč/m2 plus DPH.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-zm-2026-09-21",
       "strany": [
@@ -6141,6 +7506,7 @@
     "kategorie_ai": true,
     "shrnuti": "Zastupitelstvo schválilo záměr prodeje části pozemku p. č. 484 (34 m2) a pozemku p. č. 1118 (53 m2) za 500 Kč/m2 a pozemku p. č. 508 (76 m2) za 800 Kč/m2.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-zm-2026-09-21",
       "strany": [
@@ -6219,6 +7585,7 @@
     "kategorie_ai": true,
     "shrnuti": "Zastupitelstvo schválilo prodej pozemků p. č. 1915/585 (4 m2) a p. č. 1915/535 (13 m2) za 500 Kč/m2; kupující jsou v zápisu anonymizováni.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-zm-2026-09-21",
       "strany": [
@@ -6283,6 +7650,7 @@
     "kategorie_ai": true,
     "shrnuti": "Zastupitelstvo schválilo přijetí daru pozemku p. č. 3878 (40 m2) i s torzem seníku od tří vlastníků spolu s bezúplatným zřízením práva cesty k seníku; náklady spojené s darem hradí město.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-zm-2026-09-21",
       "strany": [
@@ -6347,6 +7715,7 @@
     "kategorie_ai": true,
     "shrnuti": "Zastupitelstvo schválilo tři smlouvy o bezúplatném převodu pozemků v Třeboni a v Břilicích od Státního pozemkového úřadu na město.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-zm-2026-09-21",
       "strany": [
@@ -6425,6 +7794,7 @@
     "kategorie_ai": true,
     "shrnuti": "Zastupitelstvo schválilo dvě smlouvy o převodu vlastnictví družstevních nebytových prostor (jednotka v č. p. 566 a čtyři jednotky v č. p. 11) na město podle dohody o narovnání ze 6. 5. 2026.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-zm-2026-09-21",
       "strany": [
@@ -6491,6 +7861,7 @@
     "kategorie_ai": true,
     "shrnuti": "Město se stalo spoluzakladatelem Společenství vlastníků pro dům čp. 127, Třeboň I, schválilo svou účast a stanovy a delegovalo starostu jako svého zástupce.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-zm-2026-09-21",
       "strany": [
@@ -6538,6 +7909,7 @@
     "kategorie_ai": true,
     "shrnuti": "Zastupitelstvo schválilo rozdělení Změny č. 9 územního plánu na dvě změny; 9a prověří čtyři podněty (č. 2, 29, 32 a 38), 9b ostatní podněty.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-zm-2026-09-21",
       "strany": [
@@ -6595,6 +7967,27 @@
     "kategorie_ai": true,
     "shrnuti": "Zastupitelstvo po částech hlasovalo o vydání Změny č. 3 regulačního plánu; v části II. nevyhovělo třem připomínkám (osadní výbor Břilice, vlastníci pozemků p. č. 124/1 a 179/13 v Břilicích) a změnu vydalo.",
     "shrnuti_ai": true,
+    "stitky": [
+      {
+        "stitek": "investice",
+        "skupina": "tvrda",
+        "zdroj": "txt-investice",
+        "duvod": "Text usnesení zmiňuje stavbu, rekonstrukci nebo projektovou dokumentaci.",
+        "citace": {
+          "dokument_id": "zapis-zm-2026-09-21",
+          "strany": [
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "text": "stavebních"
+        },
+        "stitek_ai": false,
+        "faze": null
+      }
+    ],
     "citace": {
       "dokument_id": "zapis-zm-2026-09-21",
       "strany": [
@@ -6655,6 +8048,7 @@
     "kategorie_ai": true,
     "shrnuti": "Zastupitelstvo schválilo Dodatek č. 13 ke Zřizovací listině Základní školy Třeboň, Na Sadech 375, který se týká předání majetku škole k hospodaření.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-zm-2026-09-21",
       "strany": [
@@ -6692,6 +8086,7 @@
     "kategorie_ai": true,
     "shrnuti": "Zastupitelstvo schválilo ověřovatele zápisu.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-zm-2026-11-02",
       "strany": [
@@ -6729,6 +8124,7 @@
     "kategorie_ai": true,
     "shrnuti": "Zastupitelstvo schválilo program se změnou, podle níž se o způsobu volby všech funkcí rozhodovalo jedním hlasováním.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-zm-2026-11-02",
       "strany": [
@@ -6766,6 +8162,7 @@
     "kategorie_ai": true,
     "shrnuti": "Zastupitelstvo zvolilo tříčlennou mandátovou komisi.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-zm-2026-11-02",
       "strany": [
@@ -6803,6 +8200,7 @@
     "kategorie_ai": true,
     "shrnuti": "Zastupitelstvo zvolilo tříčlennou volební a návrhovou komisi.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-zm-2026-11-02",
       "strany": [
@@ -6840,6 +8238,7 @@
     "kategorie_ai": true,
     "shrnuti": "Město bude mít dva místostarosty.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-zm-2026-11-02",
       "strany": [
@@ -6877,6 +8276,7 @@
     "kategorie_ai": true,
     "shrnuti": "Rada města bude sedmičlenná.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-zm-2026-11-02",
       "strany": [
@@ -6915,6 +8315,7 @@
     "kategorie_ai": true,
     "shrnuti": "Starosta a oba místostarostové budou funkci vykonávat jako dlouhodobě uvolnění.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-zm-2026-11-02",
       "strany": [
@@ -6952,6 +8353,7 @@
     "kategorie_ai": true,
     "shrnuti": "Starosta, místostarostové a radní byli voleni veřejným hlasováním; návrh na tajnou volbu neprošel.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-zm-2026-11-02",
       "strany": [
@@ -6989,6 +8391,7 @@
     "kategorie_ai": true,
     "shrnuti": "Starostou byl zvolen Mgr. Aleš Kolář.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-zm-2026-11-02",
       "strany": [
@@ -7031,6 +8434,7 @@
     "kategorie_ai": true,
     "shrnuti": "1. místostarostou byl zvolen Mgr. Petr Kouba, 2. místostarostou Ing. Ondřej Zbudil.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-zm-2026-11-02",
       "strany": [
@@ -7068,6 +8472,7 @@
     "kategorie_ai": true,
     "shrnuti": "Dalšími členy rady byli zvoleni Ing. Lenka Blažková, Petr Kohout, Mgr. Stanislav Ojíř Musil a Ing. Jiří Vopátek, Ph.D.",
     "shrnuti_ai": true,
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-zm-2026-11-02",
       "strany": [
