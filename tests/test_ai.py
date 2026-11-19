@@ -84,6 +84,33 @@ def test_konfig_stejny_vyrobce_overeni():
     assert ai.zkontroluj_konfig(k)
 
 
+def test_konfig_overeni_dva_kroky_stejneho_vyrobce():
+    k = konfig()
+    k["role"]["overeni"] = [{"poskytovatel": "claude_cli", "model": "opus"},
+                            {"poskytovatel": "anthropic_api", "model": "m"}]
+    assert ai.zkontroluj_konfig(k)
+
+
+def test_chat_api_bez_textu_je_aichyba(monkeypatch):
+    from pipeline.ai import adaptery
+    for odpoved in ({"choices": [{"message": {"content": None}}]}, {"choices": [{"message": {"content": ""}}]}):
+        monkeypatch.setattr(adaptery, "_post", lambda *a, o=odpoved: o)
+        with pytest.raises(AIChyba):
+            adaptery.openai_api("p", "m", {"OPENAI_API_KEY": "k"}, {})
+
+
+def test_odpoved_bez_textu_zkusi_dalsiho_poskytovatele(monkeypatch):
+    from pipeline.ai import adaptery
+    monkeypatch.setattr(adaptery, "_post", lambda *a: {"choices": [{"message": {"content": None}}]})
+    ad = {"claude_cli": adapter('{"tema": "x"}'), "anthropic_api": adapter('{"tema": "x"}'),
+          "openai_api": adaptery.openai_api}
+    k = konfig()
+    k["role"]["x"] = [{"poskytovatel": "openai_api", "model": "m"}, {"poskytovatel": "claude_cli", "model": "s"}]
+    env = {"OPENAI_API_KEY": "k", "CLAUDE_CODE_OAUTH_TOKEN": "t"}
+    v = Brana(k, env, ad).zeptej_se("x", "p", SCHEMA)
+    assert v.poskytovatel == "claude_cli"
+
+
 def test_citace_doslovne_po_sjednoceni_mezer():
     assert ai.overit_citace("program  1.\njednání", "Schvaluje program 1. jednání rady")
     assert not ai.overit_citace("program 2. jednání", "Schvaluje program 1. jednání rady")
