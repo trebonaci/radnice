@@ -1,5 +1,438 @@
 [
   {
+    "id": "rm-2026-j114-u546",
+    "cislo": "RM 546/2026-114",
+    "jednani_id": "rm-2026-10-30",
+    "bod": 2,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      }
+    ],
+    "text": "I. schvaluje\nprogram 114. jednání rady města a schválení zveřejnění zápisů.",
+    "text_anonymizovan": false,
+    "tema": "Program jednání a zveřejňování zápisů",
+    "tema_ai": true,
+    "kategorie": [
+      "samosprava"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Rada schválila program svého 114. jednání a zveřejnění zápisů.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "strany": [
+        1
+      ],
+      "text": "program 114. jednání rady města a schválení zveřejnění zápisů."
+    },
+    "castky": [],
+    "parcely": [],
+    "poznamka": null,
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "rm-2026-j114-u547",
+    "cislo": "RM 547/2026-114",
+    "jednani_id": "rm-2026-10-30",
+    "bod": 3,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "II",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "III",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "I. schvaluje\nposkytnutí dotací žadatelům v oblasti sociálních služeb a zdravotnictví takto:\nŽadatel                          Účel                                Dotace 2026 (Kč)\nCharita Třeboň                             Činnost 2026 – Občanská           20.000,00\nporadna\nHospicová péče sv. Kleofáše,               Činnost 2026 – Mobilní            20.000,00\no.p.s.\nspecializovaná paliativní péče\nMístní akční skupina                       Činnost 2026 – Centrum pro        20.000,00\nTřeboňsko o.p.s.\npečující (terapeutické služby)\nOblastní charita Červený                   Činnost 2026 – odlehčovací         5.000,00\nKostelec\npobyty\nFOKUS Tábor, z.s.                          Činnost 2026 – Komunitní tým       5.000,00\nII. schvaluje\nuzavření veřejnoprávních smluv mezi městem Třeboň a jednotlivými žadateli o dotace, kteří jsou uvedeni v\nbodě I. Předmětem smluv bude poskytnutí dotace na celoroční činnost.\nIII. ukládá\nodboru finančnímu a majetkovému zajistit plnění usnesení a smlouvy o poskytnutí dotací předložit k podpisu.",
+    "text_anonymizovan": false,
+    "tema": "Dotace v oblasti sociálních služeb a zdravotnictví 2026",
+    "tema_ai": true,
+    "kategorie": [
+      "dotace_dary",
+      "socialni"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Rada schválila dotace pěti žadatelům v oblasti sociálních služeb a zdravotnictví a uzavření veřejnoprávních smluv o jejich poskytnutí na celoroční činnost.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "strany": [
+        2
+      ],
+      "text": "poskytnutí dotací žadatelům v oblasti sociálních služeb a zdravotnictví takto:"
+    },
+    "castky": [],
+    "parcely": [],
+    "poznamka": "Výše dotací jednotlivým žadatelům jsou v tabulce v textu usnesení; v anotaci je nerozepisujeme a nesčítáme (tabulky jsou zatím jen surový text).",
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "rm-2026-j114-u548",
+    "cislo": "RM 548/2026-114",
+    "jednani_id": "rm-2026-10-30",
+    "bod": 4,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "II",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "III",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      },
+      {
+        "cast": "IV",
+        "ukon": "bere_na_vedomi",
+        "sloveso": "bere na vědomí"
+      }
+    ],
+    "text": "I. schvaluje\nposkytnutí dotací žadatelům v oblasti tělovýchovy a sportu takto:\nŽadatel                          Účel                                      Dotace 2026 (Kč)\nSportovní klub – SK Boxing                 Činnost                           10.500,00\nTŘEBOŇ, z.s.\nSportovní klub – SK Boxing                 Akce Oslava 25. výročí            45.000,00\nTŘEBOŇ, z.s.                               založení oddílu boxu v Třeboni\n[fyzická osoba]                              Akce Běh kolem Světa              10.000,00\nPraha\nTJ Jiskra Třeboň, z.s. – oddíl             Akce Finálový turnaj korfbalové   10.000,00\nkorfbalu                                   přípravky U9 v Třeboni\nTJ Jiskra Třeboň, z.s. – oddíl             Akce Turnaj o pětilistou růži     10.000,00\nházené\nTJ Jiskra Třeboň, z.s. – oddíl             Akce Letní Lázeňský Cup 2026      70.000,00\nfotbalu\nTJ Jiskra Třeboň, z.s. – oddíl             Akce Florbalové turnaje 2026      15.000,00\nflorbalu\nTJ Jiskra Třeboň, z.s. – oddíl             Akce Turnaj 4+1 házená            10.500,00\nházené                                     08.11.2026\nTJ Jiskra Třeboň, z.s. – oddíl             Akce Turnaj mladší žáci           10.000,00\nházené                                     házená v Třeboni\nTJ Jiskra Třeboň, z.s. – oddíl             Akce Turnaj pro děti a mládež –   20.000,00\ntenisu                                     ČTS C-400 starší žactvo\nZápis ze 114. jednání RM ze dne 30.10.2026\nTJ Jiskra Třeboň, z.s. – oddíl             Akce MČR dorostu, juniorů a      10.000,00\nveslování                                  seniorů, Račice\nTJ Jiskra Třeboň, z.s. – oddíl             Akce World Masters regata,       20.000,00\nveslování                                  Bled, Slovinsko\nTJ Jiskra Třeboň, z.s. – oddíl             Akce Olympic Hopes regata        40.000,00\nveslování                                  v Beach sprintu, Bratislava,\nSlovensko\nTJ Jiskra Třeboň, z.s. – oddíl             Akce MČR žactva, Račice          20.000,00\nveslování\nTJ Jiskra Třeboň, z.s. – oddíl             Akce MČR družstev, Račice        30.000,00\nveslování\nTJ Jiskra Třeboň, z.s. – oddíl             Akce Nominační závod, Hořín      0,00\nveslování\nTJ Jiskra Třeboň, z.s. – oddíl             Reprezentace – Turnaj            0,00\nházené                                     Vršovice mladší žáci, Praha\nTJ Jiskra Třeboň, z.s. – oddíl             Reprezentace – Turnaj            15.000,00\nházené                                     v rakouském Linzi mladší\ndorost + muži, Rakousko\nTJ Jiskra Třeboň, z.s. – oddíl             Reprezentace – Turnaj            50.000,00\nházené                                     mladšího a staršího dorostu\nEuroregion Elbe-Labe cup v\nLovosicích\nTJ Jiskra Třeboň, z.s. – oddíl             Reprezentace – Mladší dorost     70.000,00\nházené                                     doprava 1. ligy podzim 2026\nTJ Jiskra Třeboň, z.s. – oddíl             Reprezentace – Starší a mladší   70.000,00\nfotbalu                                    dorost doprava 3. ligy mimo\nJihočeský kraj\nTJ Jiskra Třeboň, z.s. – oddíl             Reprezentace – MČR Pirát         10.000,00\njachtingu                                  2026\nII. schvaluje\nuzavření veřejnoprávních smluv mezi městem Třeboň a žadateli o dotace uvedenými v bodě I. Předmětem\nsmluv bude poskytnutí dotace na celoroční činnost, jednorázovou akci nebo reprezentaci města.\nIII. ukládá\nodboru finančnímu a majetkovému zajistit plnění usnesení a smlouvy o poskytnutí dotací předložit k podpisu.\nIV. bere na vědomí\nzápis z jednání Komise mládeže a sportu ze dne 19.10.2026 včetně přílohy.",
+    "text_anonymizovan": true,
+    "tema": "Dotace v oblasti tělovýchovy a sportu 2026",
+    "tema_ai": true,
+    "kategorie": [
+      "dotace_dary",
+      "sport"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Rada schválila dotace na činnost, jednorázové akce a reprezentaci města v oblasti tělovýchovy a sportu, uzavření veřejnoprávních smluv a vzala na vědomí zápis komise mládeže a sportu z 19. 10. 2026.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "strany": [
+        2,
+        3
+      ],
+      "text": "poskytnutí dotací žadatelům v oblasti tělovýchovy a sportu takto:"
+    },
+    "castky": [],
+    "parcely": [],
+    "poznamka": "Výše dotací jsou v tabulce v textu usnesení; v anotaci je nerozepisujeme a nesčítáme. Žadatel – fyzická osoba je anonymizován. U dvou akcí je dotace 0,00 Kč.",
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "rm-2026-j114-u549",
+    "cislo": "RM 549/2026-114",
+    "jednani_id": "rm-2026-10-30",
+    "bod": 5,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "II",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "III",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "I. schvaluje\nposkytnutí dotací žadatelům v oblasti ostatních zájmových činností takto:\nŽadatel                                    Účel                             Dotace 2026 (v Kč)\n[fyzická osoba]                   Akce Dopravní výuka a výcvik     18.600,00\npro mateřské školky a žáky\n1. – 4. tříd základních škol\nKlub Mája Třeboň-spolek                    Akce Burza dětského ošacení       5.000,00\na sportovních potřeb\nZápis ze 114. jednání RM ze dne 30.10.2026\nDům dětí a mládeže, Jindřichův Akce Mikulášská nadílka            8.000,00\nHradec, Růžová 10, Pracoviště\nDDM Třeboň\nII. schvaluje\nuzavření veřejnoprávních smluv mezi městem Třeboň a jednotlivými žadateli o dotace, kteří jsou uvedeni v\nbodě I. Předmětem smluv bude poskytnutí dotace na jednorázovou akci.\nIII. ukládá\nodboru finančnímu a majetkovému zajistit plnění usnesení a smlouvy o poskytnutí dotací předložit k podpisu.",
+    "text_anonymizovan": true,
+    "tema": "Dotace v oblasti ostatních zájmových činností 2026",
+    "tema_ai": true,
+    "kategorie": [
+      "dotace_dary"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Rada schválila dotace třem žadatelům na jednorázové akce (dopravní výuka, burza dětského ošacení, Mikulášská nadílka) a uzavření veřejnoprávních smluv.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "strany": [
+        3,
+        4
+      ],
+      "text": "poskytnutí dotací žadatelům v oblasti ostatních zájmových činností takto:"
+    },
+    "castky": [],
+    "parcely": [],
+    "poznamka": "Výše dotací jsou v tabulce v textu usnesení; v anotaci je nerozepisujeme a nesčítáme. Žadatel – fyzická osoba je anonymizován.",
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "rm-2026-j114-u550",
+    "cislo": "RM 550/2026-114",
+    "jednani_id": "rm-2026-10-30",
+    "bod": 6,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "II",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "I. schvaluje\nprovedení rozpočtového opatření č. 59, které spočívá v:\n-navýšení příjmové položky 2131 „Pronájem - pozemky - ostatní“, § 3639, ORJ 800, ORG 0, UZ 0 o částku\n50.000,00 Kč,\n-navýšení výdajové položky 5166 „Znalecké posudky“, § 3639, ORJ 800, ORG 9800004004, UZ 0 o částku\n50.000,00 Kč.\nRozpočet\nRozpočet\nod\nSchválený      po       Rozpočtové\nČís.   RM      ÚZ          ORG              ORJ   Paragraf   Položka                                         počátku\nrozpočet   schválení    opatření\nroku po\nRO\nRO\nRozpočtové příjmy (Kč):\n58.             0            0              800    3639       2131       407 000    607 000      + 50 000    657 000\nRozpočtové výdaje (Kč):\n58.             0       9800004004          800    3639       5166       100 000    288 000      + 50 000    338 000\nII. ukládá\nodboru finančnímu a majetkovému provést a evidovat RO v IS GINIS.",
+    "text_anonymizovan": false,
+    "tema": "Rozpočtové opatření č. 59 – znalecké posudky",
+    "tema_ai": true,
+    "kategorie": [
+      "rozpocet"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Rada zvýšila příjmy z pronájmu pozemků i výdaje na znalecké posudky, každé o 50 000 Kč.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "strany": [
+        4
+      ],
+      "text": "provedení rozpočtového opatření č. 59, které spočívá v:"
+    },
+    "castky": [
+      {
+        "hodnota": 50000.0,
+        "jednotka": "Kč",
+        "druh": "rozpoctove_opatreni",
+        "s_dph": null,
+        "poznamka": "navýšení příjmové položky 2131",
+        "citace": "navýšení příjmové položky 2131 „Pronájem - pozemky - ostatní“, § 3639, ORJ 800, ORG 0, UZ 0 o částku 50.000,00 Kč,",
+        "mena": "CZK"
+      },
+      {
+        "hodnota": 50000.0,
+        "jednotka": "Kč",
+        "druh": "rozpoctove_opatreni",
+        "s_dph": null,
+        "poznamka": "navýšení výdajové položky 5166",
+        "citace": "navýšení výdajové položky 5166 „Znalecké posudky“, § 3639, ORJ 800, ORG 9800004004, UZ 0 o částku 50.000,00 Kč.",
+        "mena": "CZK"
+      }
+    ],
+    "parcely": [],
+    "poznamka": null,
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "rm-2026-j114-u551",
+    "cislo": "RM 551/2026-114",
+    "jednani_id": "rm-2026-10-30",
+    "bod": 7,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "II",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "I. schvaluje\nuzavření Dodatku č. 5 ke smlouvě o dílo č. 750/9262/26 ze dne 14.01.2026 na zhotovení stavby „Přístavba\ndvou tělocvičen sportovní haly Třeboň“ se společností MANE STAVEBNÍ s. r. o., Okružní 2615, 370 01 České\nBudějovice, IČ 47239701, jehož předmětem je změna ceny díla.\nII. ukládá\nodboru rozvoje a investic zajistit plnění usnesení a předložit Dodatek č. 5 starostovi města a zhotoviteli k\npodpisu.",
+    "text_anonymizovan": false,
+    "tema": "Dodatek č. 5 ke smlouvě o dílo – přístavba dvou tělocvičen sportovní haly",
+    "tema_ai": true,
+    "kategorie": [
+      "investice",
+      "sport",
+      "verejne_zakazky"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Rada schválila uzavření Dodatku č. 5 ke smlouvě o dílo na stavbu Přístavba dvou tělocvičen sportovní haly Třeboň; předmětem dodatku je změna ceny díla.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "strany": [
+        4
+      ],
+      "text": "uzavření Dodatku č. 5 ke smlouvě o dílo č. 750/9262/26 ze dne 14.01.2026 na zhotovení stavby „Přístavba dvou tělocvičen sportovní haly Třeboň“"
+    },
+    "castky": [],
+    "parcely": [],
+    "poznamka": "Zápis neuvádí původní ani novou cenu díla, jen že dodatek mění cenu. Částku nedoplňujeme.",
+    "otazky": [
+      "Jaká je cena díla před a po Dodatku č. 5? (zápis ji neuvádí; hledat v registru smluv)"
+    ],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "rm-2026-j114-u552",
+    "cislo": "RM 552/2026-114",
+    "jednani_id": "rm-2026-10-30",
+    "bod": 8,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "II",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "I. schvaluje\ns účinností od 01.11.2026 řediteli příspěvkové organizace Městská sportovní Třeboň zvýšení tarifní třídy\na příplatku za vedení ve výši dle neveřejné přílohy.\nII. ukládá\nútvaru tajemníka zajistit předání platového výměru řediteli příspěvkové organizace.",
+    "text_anonymizovan": false,
+    "tema": "Platové ohodnocení ředitele Městské sportovní Třeboň",
+    "tema_ai": true,
+    "kategorie": [
+      "personalni",
+      "prispevkove_organizace"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Rada od 1. 11. 2026 schválila řediteli příspěvkové organizace Městská sportovní Třeboň zvýšení tarifní třídy a příplatku za vedení; výše je v neveřejné příloze.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "strany": [
+        5
+      ],
+      "text": "zvýšení tarifní třídy a příplatku za vedení ve výši dle neveřejné přílohy."
+    },
+    "castky": [],
+    "parcely": [],
+    "poznamka": "Výše platu zápis neuvádí (neveřejná příloha).",
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "rm-2026-j114-u553",
+    "cislo": "RM 553/2026-114",
+    "jednani_id": "rm-2026-10-30",
+    "bod": 9,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "II",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "III",
+        "ukon": "poveruje",
+        "sloveso": "pověřuje"
+      },
+      {
+        "cast": "IV",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "I. schvaluje\nuzavření kupní smlouvy mezi městem Třeboň a PaedDr. Janem Váňou, dat. nar. XXXXXXXX, bytem\nXXXXXXXX, XXXXXXXX, XXXXXXXX, kdy předmětem smlouvy je drobný hmotný majetek (notebook s\ndokovací stanicí, monitor a mobilní telefon) zařazený do majetkové evidence města Třeboně,\nII. schvaluje\nuzavření kupní smlouvy mezi městem Třeboň a Ing. Janou Grammetbauerovou, dat. nar. XXXXXXXX, bytem\nXXXXXXXX, XXXXXXXX, XXXXXXXX, kdy předmětem smlouvy je drobný hmotný majetek (mobilní telefon)\nzařazený do majetkové evidence města Třeboně,\nIII. pověřuje\ntajemnici Městského úřadu Třeboň, zastupováním města Třeboně ve věci podpisu\nkupních smluv uvedených v bodech I. a II. tohoto usnesení,\nIV. ukládá\nútvaru tajemníka a OFM zajistit podepsání smluv, předání uvedeného majetku kupujícímu po uhrazení ceny a\nvyřazení majetku z majetkové evidence města.",
+    "text_anonymizovan": true,
+    "tema": "Prodej vyřazeného drobného majetku města",
+    "tema_ai": true,
+    "kategorie": [
+      "ostatni"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Rada schválila prodej vyřazeného drobného hmotného majetku města dvěma členům rady města (starostovi notebook s dokovací stanicí, monitor a mobilní telefon, místostarostce mobilní telefon); kupní smlouvy za město podepíše tajemnice.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "strany": [
+        5
+      ],
+      "text": "kdy předmětem smlouvy je drobný hmotný majetek (notebook s dokovací stanicí, monitor a mobilní telefon) zařazený do majetkové evidence města Třeboně"
+    },
+    "castky": [],
+    "parcely": [],
+    "poznamka": "Kupující jsou volení zástupci (starosta a místostarostka), uvedeni v zápise. Kupní cena v zápise není.",
+    "otazky": [
+      "Za jakou cenu byl majetek prodán? (zápis ji neuvádí)"
+    ],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "rm-2026-j114-u554",
+    "cislo": "RM 554/2026-114",
+    "jednani_id": "rm-2026-10-30",
+    "bod": 10,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "II",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "I. schvaluje\nuzavření Dodatku č. 1 ke Smlouvě o zřízení a provozu publikování otevřených dat - výroba a provoz uzavřené\nmezi městem Třeboň a společností Galileo Corporation s. r. o., IČO 25448714\nII. ukládá\nútvaru tajemníka předložit dodatek k podpisu a zajistit plnění smlouvy.",
+    "text_anonymizovan": false,
+    "tema": "Dodatek č. 1 ke smlouvě o publikování otevřených dat",
+    "tema_ai": true,
+    "kategorie": [
+      "samosprava"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Rada schválila uzavření Dodatku č. 1 ke smlouvě o zřízení a provozu publikování otevřených dat (výroba a provoz) se společností Galileo Corporation s. r. o.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "strany": [
+        5
+      ],
+      "text": "uzavření Dodatku č. 1 ke Smlouvě o zřízení a provozu publikování otevřených dat - výroba a provoz"
+    },
+    "castky": [],
+    "parcely": [],
+    "poznamka": "Zápis neuvádí obsah dodatku ani cenu.",
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
     "id": "rm-2026-j1-u1",
     "cislo": "RM 1/2026-1",
     "jednani_id": "rm-2026-11-04",
