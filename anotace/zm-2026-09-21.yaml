@@ -18,10 +18,6 @@ usneseni:
     kategorie: [samosprava]
     shrnuti: Zastupitelstvo schválilo program 31. jednání, návrhovou komisi a ověřovatele zápisu.
     citace: "a) program jednání."
-    anonymizace:
-      - retezec: "Viktor Ludvík, Petr Kohout a Mgr. Stanislav Ojíř Musil"
-        nahrada: "[jména členů komise neuvádíme]"
-    poznamka: Jména členů návrhové komise neuvádíme, protože jeden z nich není v seznamu zastupitelů 2022–2026 v `config/osoby.yaml` (zřejmě náhradník); ověřit a případně doplnit.
 
   zm-2026-j31-u74:
     tema: Plnění usnesení zastupitelstva a požadavků zastupitelů
