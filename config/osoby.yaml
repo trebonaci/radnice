@@ -24,7 +24,7 @@ zastupitele:
   - {jmeno: Lenka Blažková, obdobi: ["2026-2030"], strana: "Naše Česko / BEZPP", funkce: "radní", tvary: [Lenka Blažková, Lenky Blažkové, Lenku Blažkovou, Lence Blažkové, Lenkou Blažkovou]}
   - {jmeno: Petr Čížek, obdobi: ["2026-2030", "2022-2026"], strana_2022: "KDU-ČSL / KDU-ČSL", strana: "KDU-ČSL", funkce: null, tvary: [Petr Čížek, Petra Čížka, Petrem Čížkem, Petru Čížkovi]}
   - {jmeno: Jan Gráf, obdobi: ["2026-2030"], strana: "TŘEBOŇÁCI S PODPOROU STAROSTŮ / BEZPP", funkce: null, tvary: [Jan Gráf, Jana Gráfa, Janem Gráfem, Janu Gráfovi]}
-  - {jmeno: Jana Grammetbauerová, obdobi: ["2026-2030", "2022-2026"], strana_2022: "ODS / ODS", strana: "ODS", funkce: null, tvary: [Jana Grammetbauerová, Jana Grammetbaurová, Jany Grammetbauerové, Janu Grammetbauerovou, Janě Grammetbauerové]}
+  - {jmeno: Jana Grammetbauerová, obdobi: ["2026-2030", "2022-2026"], strana_2022: "ODS / ODS", strana: "ODS", funkce: null, tvary: [Jana Grammetbauerová, Jana Grammetbaurová, Jany Grammetbauerové, Janu Grammetbauerovou, Janě Grammetbauerové, Janou Grammetbauerovou]}
   - {jmeno: Ondřej Hlinka, obdobi: ["2026-2030"], strana: "Společně pro Třeboň - koalice SZ a OMMO / BEZPP", funkce: null, tvary: [Ondřej Hlinka, Ondřeje Hlinku, Ondřeje Hlinky, Ondřejem Hlinkou, Ondřeji Hlinkovi]}
   - {jmeno: Radka Kaiseršatová, obdobi: ["2026-2030"], strana: "Naše Česko / BEZPP", funkce: null, tvary: [Radka Kaiseršatová, Radky Kaiseršatové, Radku Kaiseršatovou, Radce Kaiseršatové, Radkou Kaiseršatovou]}
   - {jmeno: Petr Kohout, obdobi: ["2026-2030", "2022-2026"], strana_2022: "Česká str.sociálně demokrat. / BEZPP", strana: "Naše Česko", funkce: "radní", tvary: [Petr Kohout, Petra Kohouta, Petrem Kohoutem, Petru Kohoutovi]}
@@ -63,6 +63,8 @@ urednici:
   - funkce: tajemnice
     varianty:
       - "Ing. Petra Pikna Jánská, tajemnice"
+      - {text: "Ing. Petru Piknu Jánskou, tajemnici", nahrada: "tajemnici"}
+      - {text: "Ing. Petru Piknu Jánskou", nahrada: "tajemnici"}
       - {text: "tajemnice úřadu Ing. Petra Pikna Jánská", nahrada: "tajemnice úřadu"}
       - {text: "tajemnice Ing. Petra Pikna Jánská", nahrada: "tajemnice"}
       - "Ing. Petra Pikna Jánská"

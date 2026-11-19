@@ -1,5 +1,104 @@
 [
   {
+    "id": "rm-2026-10-30",
+    "organ": "rada",
+    "druh": "mimoradne",
+    "cislo": 114,
+    "datum": "2026-10-30",
+    "obdobi": "2022-2026",
+    "pritomno_na_zacatku": 6,
+    "clenu": 7,
+    "pritomnost_zmeny": [],
+    "dokument": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "url": "https://www.mesto-trebon.cz/uploads/news/id15198/Z-114-26-10-30-A.pdf",
+      "stranka_zdroje": "https://www.mesto-trebon.cz/cz/mestsky-urad-trebon/samosprava-mesta/rada-mesta/zapisy-z-jednani-rady-mesta/volebni-obdobi-2022---2026-2.html",
+      "vyveseno": null,
+      "sha256": "667542b87792a903bd9b3355905a2536fb17600a6391bbb88651549f46121037",
+      "pocet_stran": 6
+    },
+    "body": [
+      {
+        "cislo": 1,
+        "nazev": "Zahájení",
+        "strana": 1,
+        "text": "Jednání rady zahájila paní místostarostka Ing. Jana Grammetbauerová v 9.00 hodin.\nV úvodu jednání bylo přítomno 6 členů rady města.",
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 2,
+        "nazev": "Program 114. jednání a schválení zveřejnění zápisů",
+        "strana": 1,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 3,
+        "nazev": "Dotace v oblasti sociálních služeb a zdravotnictví v roce 2026",
+        "strana": 1,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 4,
+        "nazev": "Dotace v oblasti tělovýchovy a sportu v roce 2026",
+        "strana": 2,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 5,
+        "nazev": "Dotace v oblasti ostatních zájmových činností v roce 2026",
+        "strana": 3,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 6,
+        "nazev": "RO č. 59 – Znalecké posudky",
+        "strana": 4,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 7,
+        "nazev": "Schválení Dodatku č. 5 ke smlouvě o dílo akce Přístavba dvou tělocvičen sportovní haly Třeboň",
+        "strana": 4,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 8,
+        "nazev": "Stanovení výše platového ohodnocení řediteli příspěvkové organizace",
+        "strana": 5,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 9,
+        "nazev": "Vyřazení majetku z evidence - prodej",
+        "strana": 5,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 10,
+        "nazev": "Smlouva o zřízení a provozu publikování otevřených dat - výroba a provoz - Dodatek č. 1",
+        "strana": 5,
+        "text": null,
+        "text_anonymizovan": false
+      },
+      {
+        "cislo": 11,
+        "nazev": "Různé",
+        "strana": 6,
+        "text": "Jednání rady města ukončila paní místostarostka v 10.00 hodin.\nIng. Jana Grammetbauerová v. r.                                  Mgr. Aleš Kolář v. r.\nmístostarostka města Třeboně                                     místostarosta města Třeboně\nPaedDr. Jan Váňa v. r.\nstarosta města Třeboně\nZapsala: zapisovatelka\nZápis byl zpracován dne 02.11.2026\nZápis ze 114. jednání RM ze dne 30.10.2026",
+        "text_anonymizovan": true
+      }
+    ],
+    "upozorneni_parseru": []
+  },
+  {
     "id": "rm-2026-11-04",
     "organ": "rada",
     "druh": "radne",
