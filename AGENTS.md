@@ -24,7 +24,7 @@ Píšeme pro běžného čtenáře, ne pro úředníky: krátce, bez zkratek a �
 - Pokud zadání v issue nestačí nebo je v rozporu se `ZADANI.md`, zastav se a napiš otázku do issue místo dohadu.
 
 ## Automatická orchestrace
-- Orchestrátorem je GitHub: issue se štítkem `agent:claude` (nebo komentář `@claude` od Ondřeje) spustí Claude v GitHub Actions (`.github/workflows/claude.yml`). Codex kontroluje PR automaticky nebo na `@codex review`.
+- Orchestrátorem je GitHub: issue se štítkem `agent:claude` (nebo komentář `@claude` od Ondřeje, nebo přímé spuštění `workflow_dispatch` s číslem issue) spustí Claude v GitHub Actions (`.github/workflows/claude.yml`). Codex kontroluje PR automaticky nebo na `@codex review`.
 - Štítky: `agent:claude`, `agent:codex` = kdo úkol dělá; `ke-kontrole` = PR čeká na druhého agenta; `potrebuje-cloveka` = rozhoduje Ondřej.
 - Agent spuštěný štítkem po dokončení sám otevře PR (`Closes #N`), přidá mu štítek `ke-kontrole` a do issue napíše odkaz na PR.
 - **Nejvýš 2 kola oprav** na jednom PR. Když se agenti ani pak neshodnou nebo chybí rozhodnutí, autor PR přidá `potrebuje-cloveka`, shrne spor v komentáři a skončí.
@@ -98,7 +98,7 @@ Workflow `.github/workflows/beh.yml`: denně 05:17 UTC + `workflow_dispatch`:
 2. Věcná změna = změna v `raw/texty` nebo `data/{jednani,usneseni,hlasovani}.json`. Jen `beh.json` / datum kontroly PR nezakládají. Při věcné změně běh spustí sestavení a testy, založí větev `claude/beh-<datum>` a otevře PR se štítkem `ke-kontrole`; dokud starší PR z běhu čeká, nový se nezakládá.
 3. `pipeline.oznameni zapisy`: každý zápis v manifestu bez `anotace/<jednani_id>.yaml` dostane právě jedno issue „Nový zápis: …“ se štítkem `agent:claude` (klíč v těle, hledá se i mezi zavřenými).
 Nové zápisy bez anotace sestavení nezastaví (jsou jen v `raw/`), do `data/` se dostanou až s anotací.
-**Otevřené:** (a) akce vytvořené `GITHUB_TOKEN` nespouští další workflow, takže `agent:claude` na issue založeném během běhu `claude.yml` nespustí a CI na PR z běhu sama nenaběhne (běh proto kontroly spouští sám); štítek musí přidat Ondřej, nebo je třeba token s jinou identitou (nový secret, mimo zadání #25). (b) V nastavení repozitáře musí být povoleno „Allow GitHub Actions to create pull requests“.
+Akce vytvořené `GITHUB_TOKEN` další workflow nespouští (kromě `workflow_dispatch`), proto (#34): běh po založení issue „Nový zápis“ spustí `claude.yml` přímo (`gh workflow run claude.yml -f issue=N`) a úspěšné spuštění označí štítkem `claude-spusten` (issue bez něj zkusí znovu příští běh; v `claude.yml` je bot `github-actions[bot]` povolen jen pro `workflow_dispatch`) a po založení PR spustí `ci.yml` na jeho větvi; `claude.yml` při přímém spuštění po dokončení spustí `ci.yml` na větvi svého PR. V nastavení repozitáře musí být povoleno „Allow GitHub Actions to create and approve pull requests“.
 
 **Hotovo:** zadání a datový model (#4), pilot zápisů RM 4. 11. a ZM 2. 11. 2026 (#5), CI (#7), 25 zastupitelů (#11), ověření zdrojů a IČO (#14, `docs/ZDROJE.md`), AGENTS.md (#19), orchestrace (#13).
 

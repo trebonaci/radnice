@@ -13,6 +13,7 @@ permissions:
   contents: write
   pull-requests: write
   issues: write
+  actions: write        # jen spouštění claude.yml a ci.yml (workflow_dispatch)
 
 concurrency:
   group: beh
@@ -91,8 +92,9 @@ jobs:
           printf '\n\nBěh: %s\n' "$ODKAZ_BEHU" >> /tmp/telo.md
           url=$(gh pr create --base main --head "$vetev" --title "Běh pipeline $(date -u +%F)" --body-file /tmp/telo.md)
           gh pr edit "$url" --add-label ke-kontrole
+          gh workflow run ci.yml --ref "$vetev"      # CI na PR z GITHUB_TOKEN sama nenaběhne
           echo "vetev=$vetev" >> "$GITHUB_OUTPUT"
 
-      - name: Issue „Nový zápis“ pro zápisy bez anotace (jedno na zápis, bez duplicit)
+      - name: Issue „Nový zápis“ pro zápisy bez anotace (jedno na zápis, bez duplicit) + spuštění Clauda
         if: steps.beh.outputs.kod == '0'
         run: python -m pipeline.oznameni zapisy "${{ steps.pr.outputs.vetev }}"

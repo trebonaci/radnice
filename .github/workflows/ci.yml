@@ -5,6 +5,8 @@ on:
   push:
     # main + větve agentů (PR otevřený přes GITHUB_TOKEN sám CI nespustí, výsledek z push se ale v PR zobrazí)
     branches: [main, "claude/**", "codex/**"]
+  # spouští beh.yml a claude.yml na větvích, které vytvořily přes GITHUB_TOKEN (to samo CI nespustí)
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -32,6 +34,11 @@ jobs:
             echo "::error::Soubory v data/ neodpovídají výsledku 'python -m pipeline.sestav'. Spusťte sestavení a commitněte výsledek."
             exit 1
           fi
+
+      - name: Kontrola workflow souborů (actionlint)
+        run: |
+          pip install actionlint-py
+          actionlint .github/workflows/*.yml
 
       - name: Testy
         run: python -m pytest -v

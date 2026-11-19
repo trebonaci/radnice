@@ -2,7 +2,9 @@ name: Claude
 
 # Claude Code se spouští:
 #  - štítkem `agent:claude` na issue,
-#  - komentářem obsahujícím `@claude` v issue nebo PR.
+#  - komentářem obsahujícím `@claude` v issue nebo PR,
+#  - přímým spuštěním (`workflow_dispatch`, vstup `issue`) – používá běh `beh.yml` pro issue
+#    „Nový zápis“, protože issue založené přes GITHUB_TOKEN štítkem nic nespustí.
 # Komentáře jen od vlastníka, člena nebo spolupracovníka; štítek může přidat jen ten, kdo má
 # do repozitáře přístup.
 # Claude pracuje ve vlastní větvi a otevírá PR; nikdy nemerguje (ochrana větve main).
@@ -16,15 +18,22 @@ on:
     types: [created]
   pull_request_review:
     types: [submitted]
+  workflow_dispatch:
+    inputs:
+      issue:
+        description: Číslo issue, které má Claude vyřešit
+        required: true
+        type: number
 
 concurrency:
-  group: claude-${{ github.event.issue.number || github.event.pull_request.number }}
+  group: claude-${{ github.event.issue.number || github.event.pull_request.number || inputs.issue }}
   cancel-in-progress: false
 
 jobs:
   claude:
     if: >-
       (github.event_name == 'issues' && github.event.label.name == 'agent:claude')
+      || github.event_name == 'workflow_dispatch'
       || (github.event_name == 'issue_comment' && contains(github.event.comment.body, '@claude')
         && contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.comment.author_association))
       || (github.event_name == 'pull_request_review_comment' && contains(github.event.comment.body, '@claude')
@@ -58,6 +67,12 @@ jobs:
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           label_trigger: "agent:claude"
+          # přímé spuštění z beh.yml má aktéra github-actions[bot]; bota povolíme jen pro workflow_dispatch
+          # (spustit ho může jen kdo má zápis do repozitáře), štítky a komentáře od botů dál nic nespustí
+          allowed_bots: ${{ github.event_name == 'workflow_dispatch' && 'github-actions[bot]' || '' }}
+          # při přímém spuštění nemá akce kontext issue → úkol předáme promptem (jinak prázdné = běžný režim)
+          prompt: >-
+            ${{ github.event_name == 'workflow_dispatch' && format('Vyřeš issue #{0} v repozitáři {1}. Nejdřív si ho přečti příkazem gh issue view {0} --comments a řiď se jím a AGENTS.md. Pracuj v nové větvi claude/issue-{0}-{2} (git checkout -b). Po dokončení a zelených kontrolách větev pushni, otevři PR s Closes #{0}, přidej štítek ke-kontrole a do issue napiš odkaz na PR. Když zadání nestačí, napiš otázku do issue a skonči.', inputs.issue, github.repository, github.run_id) || '' }}
           additional_permissions: |
             actions: read
           claude_args: >-
@@ -68,13 +83,14 @@ jobs:
       - name: Request the initial Codex review
         if: >-
           (github.event_name == 'issues' && github.event.label.name == 'agent:claude')
+          || github.event_name == 'workflow_dispatch'
           || (github.event_name == 'issue_comment' && !github.event.issue.pull_request
             && contains(github.event.comment.body, '@claude')
             && contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.comment.author_association))
         uses: actions/github-script@v7
         with:
           script: |
-            const issueNumber = context.payload.issue.number;
+            const issueNumber = context.payload.issue ? context.payload.issue.number : Number(context.payload.inputs.issue);
             const closingRef = `Closes #${issueNumber}`;
             const openPullRequests = await github.paginate(github.rest.pulls.list, {
               owner: context.repo.owner,
@@ -111,3 +127,22 @@ jobs:
               body: `@codex review\n\n${marker}`,
             });
             core.notice(`Requested Codex review for PR #${pr.number} at ${pr.head.sha}.`);
+
+  ci_na_pr:
+    # PR otevřený z běhu spuštěného přes GITHUB_TOKEN sám CI nespustí; spustíme ji na jeho větvi.
+    needs: claude
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+      pull-requests: read
+    steps:
+      - name: Spustit Kontrolu na větvi PR, který řeší issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE: ${{ inputs.issue }}
+        run: |
+          vetev=$(gh pr list --repo "$GITHUB_REPOSITORY" --state open --search "Closes #$ISSUE in:body" \
+                  --json headRefName --jq '[.[] | select(.headRefName | startswith("claude/"))][0].headRefName // empty')
+          if [ -z "$vetev" ]; then echo "::warning::PR pro issue #$ISSUE nenalezen, CI nespuštěna"; exit 0; fi
+          gh workflow run ci.yml --repo "$GITHUB_REPOSITORY" --ref "$vetev"

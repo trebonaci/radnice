@@ -2,7 +2,8 @@
 
 - `zapisy`   : pro každý zápis bez `anotace/<jednani_id>.yaml` založí právě jedno issue
                „Nový zápis: …“ se štítkem `agent:claude` (klíč v těle issue brání duplicitám,
-               hledá se i mezi zavřenými);
+               hledá se i mezi zavřenými) a spustí pro něj Clauda (`workflow_dispatch`); úspěšné spuštění
+               označí štítkem `claude-spusten`, takže neúspěšné zkusí znovu příští běh;
 - `selhani`  : při zastaveném běhu založí, nebo když už otevřené je, doplní komentářem jedno issue
                „Běh selhal“ se štítkem `potrebuje-cloveka` (výtah z `data/beh.json`);
 - `shrnuti`  : vytiskne markdown se shrnutím běhu (do popisu PR).
@@ -14,6 +15,7 @@ Použití: python -m pipeline.oznameni zapisy [větev-s-texty] | selhani [odkaz-
 from __future__ import annotations
 
 import json
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -24,6 +26,7 @@ TYPY_ZAPISU = ("zapis_rada", "zapis_zm")
 ORGAN = {"rm": "Rada města", "zm": "Zastupitelstvo města"}
 STITEK_NOVY = "agent:claude"
 STITEK_CLOVEK = "potrebuje-cloveka"
+STITEK_SPUSTENO = "claude-spusten"
 NADPIS_SELHANI = "Běh selhal"
 MAX_CHYB = 20
 MAX_DELKA = 300
@@ -75,8 +78,9 @@ def telo_zapisu(z: dict, vetev: str | None = None) -> str:
 
 
 def zaloz_issue_zapisu(zaznamy: list[dict], spust: Callable[[list[str]], str] = gh,
-                       vetev: str | None = None) -> list[str]:
-    """Pro každý zápis založí issue, pokud ještě neexistuje (otevřené ani zavřené). Vrací klíče nově založených."""
+                       vetev: str | None = None, cisla: list[int] | None = None) -> list[str]:
+    """Pro každý zápis založí issue, pokud ještě neexistuje (otevřené ani zavřené). Vrací klíče nově založených;
+    do `cisla` (pokud je zadané) přidá čísla nově založených issue."""
     existujici = json.loads(spust(["issue", "list", "--state", "all", "--limit", "500",
                                    "--search", "Nový zápis in:title", "--json", "number,title,body"]) or "[]")
     zalozeno = []
@@ -84,10 +88,48 @@ def zaloz_issue_zapisu(zaznamy: list[dict], spust: Callable[[list[str]], str] = 
         klic = klic_zapisu(z["jednani_id"])
         if any(f"radnice-klic: {klic} " in (i.get("body") or "") + " " for i in existujici):
             continue
-        spust(["issue", "create", "--title", nadpis_zapisu(z["jednani_id"]), "--label", STITEK_NOVY,
-               "--body", telo_zapisu(z, vetev)])
+        url = spust(["issue", "create", "--title", nadpis_zapisu(z["jednani_id"]), "--label", STITEK_NOVY,
+                     "--body", telo_zapisu(z, vetev)])
         zalozeno.append(klic)
+        m = re.search(r"/issues/(\d+)\s*$", (url or "").strip())
+        if cisla is not None and m:
+            cisla.append(int(m.group(1)))
     return zalozeno
+
+
+def cekajici_issue(spust: Callable[[list[str]], str] = gh) -> list[int]:
+    """Otevřená issue „Nový zápis“ (štítek `agent:claude`, klíč v těle), pro která Claude ještě nebyl úspěšně
+    spuštěn (chybí štítek `claude-spusten`). Seznam přes issues API (ne vyhledávání → bez zpoždění indexu)."""
+    seznam = json.loads(spust(["issue", "list", "--state", "open", "--label", STITEK_NOVY, "--limit", "200",
+                               "--json", "number,body,labels"]) or "[]")
+    return sorted(i["number"] for i in seznam
+                  if "radnice-klic: novy-zapis:" in (i.get("body") or "")
+                  and STITEK_SPUSTENO not in {s.get("name") for s in i.get("labels") or []})
+
+
+def spust_claude(cisla: list[int], spust: Callable[[list[str]], str] = gh) -> tuple[list[int], list[int]]:
+    """Spustí workflow Claude (`workflow_dispatch`) pro každé issue a po úspěchu mu dá štítek `claude-spusten`.
+    Nutné, protože issue založené přes GITHUB_TOKEN samo žádné workflow nespustí. Selhání jednoho spuštění
+    nezastaví ostatní; issue bez štítku zkusí znovu příští běh. Vrací (spuštěná, nespuštěná)."""
+    ok: list[int] = []
+    chyby: list[int] = []
+    if not cisla:
+        return ok, chyby
+    spust(["label", "create", STITEK_SPUSTENO, "--force", "--color", "ededed",
+           "--description", "Běh pipeline už pro issue spustil Clauda"])
+    for cislo in cisla:
+        try:
+            spust(["workflow", "run", "claude.yml", "-f", f"issue={cislo}"])
+        except Exception as e:  # noqa: BLE001 – zbytek dávky musí proběhnout
+            print(f"Spuštění Clauda pro issue {cislo} selhalo: {e}", file=sys.stderr)
+            chyby.append(cislo)
+            continue
+        ok.append(cislo)
+        try:
+            spust(["issue", "edit", str(cislo), "--add-label", STITEK_SPUSTENO])
+        except Exception as e:  # noqa: BLE001 – Claude běží; bez štítku ho příští běh spustí znovu
+            print(f"Štítek {STITEK_SPUSTENO} u issue {cislo} se nepodařilo přidat: {e}", file=sys.stderr)
+    return ok, chyby
 
 
 def _kratce(text: str) -> str:
@@ -144,9 +186,15 @@ def main(argv: list[str] | None = None) -> int:
     args = sys.argv[1:] if argv is None else argv
     prikaz = args[0] if args else ""
     if prikaz == "zapisy":
-        for klic in zaloz_issue_zapisu(zapisy_bez_anotace(), vetev=args[1] if len(args) > 1 else None):
+        cisla: list[int] = []
+        for klic in zaloz_issue_zapisu(zapisy_bez_anotace(), vetev=args[1] if len(args) > 1 and args[1] else None,
+                                       cisla=cisla):
             print("issue založeno:", klic)
-        return 0
+        # nově založená + dřív založená, u kterých spuštění selhalo (bez štítku claude-spusten)
+        ok, chyby = spust_claude(sorted(set(cisla) | set(cekajici_issue())))
+        for cislo in ok:
+            print("Claude spuštěn pro issue", cislo)
+        return 1 if chyby else 0
     if prikaz == "selhani":
         print("Běh selhal →", oznam_selhani(args[1] if len(args) > 1 else "odkaz neuveden"))
         return 0
