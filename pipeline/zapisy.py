@@ -14,7 +14,9 @@ RE_HLAVICKA = re.compile(r"^(Zápis z \d+\. jednání (ZM|RM)\b.*|Spisová znač
 RE_CISLO_STRANY = re.compile(r"^\d{1,3}$")
 RE_BOD = re.compile(r"^k bodu (\d+)$")
 RE_USNESENI = re.compile(r"^Usnesení (ZM|RM) č\. (\d+)/(\d{4})-(\d+)$")
-RE_HLASY = re.compile(r"^Pro:\s*(\d+)\s+Proti:\s*(\d+)\s+Zdrželi se:\s*(\d+)$")
+# „Pro: 21 Proti: 0 Zdrželi se: 0“ i dílčí „pro: 21 proti: 0 zdržel se: 0“ (ZM 21. 9. 2026, usnesení 87)
+RE_HLASY = re.compile(r"^Pro:\s*(\d+)\s+Proti:\s*(\d+)\s+Zdrž(?:eli|el) se:\s*(\d+)$", re.IGNORECASE)
+RE_PREDMET_POSTUPU = re.compile(r"^(Návrh na .*|Program:)$")
 RE_CAST = re.compile(r"^(I{1,3}|IV|V|VI{0,3})\.\s+(\S.*)$")
 RE_PROGRAM_POLOZKA = re.compile(r"^(\d+)\.\s+(\S.*)$")
 # Výsledek hlasování (zda návrh usnesení prošel). Neříká nic o věcném obsahu –
@@ -24,6 +26,7 @@ VYSLEDKY = {
     "NESCHVÁLENO": "neprijato",
     "USNESENÍ PŘIJATO": "prijato",
     "USNESENÍ NEPŘIJATO": "neprijato",
+    "NÁVRH NESCHVÁLEN – USNESENÍ NEPŘIJATO": "neprijato",
 }
 # Věcný úkon v části usnesení (I. bere na vědomí, II. ukládá …). Delší výrazy dřív.
 UKONY = [
@@ -44,6 +47,7 @@ UKONY = [
     ("revokuje", "revokuje"),
     ("vydává", "vydava"),
     ("rozhoduje", "rozhoduje"),
+    ("deleguje", "deleguje"),
 ]
 
 
@@ -90,11 +94,17 @@ def _program(radky: list[Radek]) -> dict[int, str]:
     if start is None:
         return program
     posledni = None
-    for r in radky[start + 1:]:
+    zbytek = radky[start + 1:]
+    for i, r in enumerate(zbytek):
         m = RE_PROGRAM_POLOZKA.match(r.text)
         if m and (posledni is None or int(m.group(1)) == posledni + 1):
             posledni = int(m.group(1))
             program[posledni] = m.group(2)
+        elif posledni is not None and r.text in VYSLEDKY and i + 1 < len(zbytek) and (
+                (n := RE_PROGRAM_POLOZKA.match(zbytek[i + 1].text)) and int(n.group(1)) == posledni + 1):
+            # značka výsledku přímo v programu (RM 111: „NÁVRH NESCHVÁLEN – USNESENÍ NEPŘIJATO“ pod bodem 3);
+            # program pokračuje dalším bodem → značku přeskočit, nepřipojovat
+            continue
         elif posledni is not None and not RE_BOD.match(r.text) and r.text not in VYSLEDKY and not r.text.startswith("Návrh na usnesení"):
             program[posledni] += " " + r.text
         else:
@@ -181,6 +191,8 @@ def _zpracuj_bod(jednani_id: str, bod: dict, out: dict) -> None:
         elif t.startswith("Hlasování o protinávrhu") or t.startswith("Výsledek hlasování o protinávrhu"):
             mimo_kontext = {"typ": "protinavrh", "predmet": protinavrh_text or t}
             ceka_hlasy = True
+        elif t == "HLASOVÁNÍ" and usn is not None:
+            ceka_hlasy = True  # dílčí hlasování o části usnesení, samotný nadpis do textu nepatří
         elif t.startswith("Výsledek hlasování"):
             ceka_hlasy = True
             if usn is None and mimo_kontext is None:
@@ -191,7 +203,10 @@ def _zpracuj_bod(jednani_id: str, bod: dict, out: dict) -> None:
                       "pro": pro, "proti": proti, "zdrzel": zdrz, "jmenovite": None,
                       "zdroj_radek": t}
             if usn is not None:
-                zaznam.update({"usneseni_id": usn["id"], "cast": cast, "typ": "usneseni"})
+                # druhé hlasování se stejnou částí = souhrnné hlasování o celém usnesení
+                souhrnne = any(h.get("usneseni_id") == usn["id"] and h.get("cast") == cast
+                               for h in out["hlasovani"])
+                zaznam.update({"usneseni_id": usn["id"], "cast": None if souhrnne else cast, "typ": "usneseni"})
                 if r.strana not in usn["strany"]:
                     usn["strany"].append(r.strana)
             elif mimo_kontext and mimo_kontext["typ"] == "protinavrh":
@@ -200,7 +215,10 @@ def _zpracuj_bod(jednani_id: str, bod: dict, out: dict) -> None:
                 kandidat = radky[i - 1].text
                 zaznam.update({"usneseni_id": None, "typ": "volba_kandidata", "predmet": kandidat})
             else:
-                out["upozorneni"].append(f"bod {bod['cislo']}: hlasování bez kontextu: {t}")
+                # hlasování o postupu (program, návrhová komise, ověřovatelé) před návrhem usnesení
+                predmet = next((x.text.rstrip(":") for x in reversed(radky[:i])
+                                if RE_PREDMET_POSTUPU.match(x.text)), None)
+                zaznam.update({"usneseni_id": None, "typ": "postup", "predmet": predmet})
             out["hlasovani"].append(zaznam)
             ceka_hlasy = False
         elif t in VYSLEDKY:
@@ -210,7 +228,7 @@ def _zpracuj_bod(jednani_id: str, bod: dict, out: dict) -> None:
                 if r.strana not in usn["strany"]:
                     usn["strany"].append(r.strana)
                 uzavri()
-            elif out["hlasovani"] and out["hlasovani"][-1]["typ"] == "protinavrh":
+            elif out["hlasovani"] and out["hlasovani"][-1].get("typ") in ("protinavrh", "postup"):
                 out["hlasovani"][-1]["vysledek"] = VYSLEDKY[t]
                 mimo_kontext = None
         elif usn is not None:

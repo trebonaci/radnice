@@ -42,7 +42,7 @@ Vnořený v usnesení (později ve smlouvě a projektu). Říká, čeho se věc 
 `stitek` (kód), `skupina` (mekka / tvrda / obecna), `zdroj` (id pravidla nebo `ai`), `duvod` (věta pro čtenáře), `citace` {`dokument_id`, `strany`, `text` – doslova ve zdroji}, `stitek_ai` (true u štítků z kategorií a z AI návrhu), `faze` (jen u `investice`: planovana / probiha / dokoncena, jinak null = nevíme). AI návrh je v anotaci `stitky: [{stitek, duvod, citace, faze}]`; sestavení ověří číselník a doslovnou citaci.
 
 ### hlasovani
-`typ` (usneseni / protinavrh / volba_kandidata), `usneseni_id` (u protinávrhu null), `cast` (I., II. – jen u usnesení s více hlasováními), `predmet` (text protinávrhu / jméno kandidáta), `pro`, `proti`, `zdrzel`, `hlasu_celkem`, `vysledek` (u protinávrhu), `jmenovite` (null = zdroj neuvádí; jinak [{`osoba_id`, `hlas`}]), `jednani_id`, `bod`, `strana`
+`typ` (usneseni / protinavrh / volba_kandidata / postup = hlasování o programu, komisi či ověřovatelích před návrhem usnesení), `usneseni_id` (u protinávrhu null), `cast` (I., II. – jen u usnesení s více hlasováními), `predmet` (text protinávrhu / jméno kandidáta), `pro`, `proti`, `zdrzel`, `hlasu_celkem`, `vysledek` (u protinávrhu a postupu), `jmenovite` (null = zdroj neuvádí; jinak [{`osoba_id`, `hlas`}]), `jednani_id`, `bod`, `strana`
 
 ### osoba
 Jen volení zástupci. `id`, `jmeno`, `klub`, `obdobi[]`, `funkce[]`

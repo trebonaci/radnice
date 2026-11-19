@@ -1,0 +1,271 @@
+# Anotace usnesení navržené AI (model A: Claude), stav: navrh.
+# Struktura, čísla usnesení a hlasování NEJSOU zde – ty vytváří deterministicky pipeline/zapisy.py.
+# Každá citace musí doslova (po sjednocení mezer) existovat v textu usnesení.
+jednani:
+  organ: rada
+  cislo: 110
+  datum: "2026-09-09"
+  obdobi: "2022-2026"
+  pritomno: 5
+  clenu: 7
+  citace: "V úvodu jednání bylo přítomno 5 členů rady města."
+  dokument_id: zapis-rm-2026-09-09
+
+usneseni:
+  rm-2026-j110-u452:
+    tema: Program jednání a zveřejňování zápisů
+    kategorie: [samosprava]
+    shrnuti: Rada schválila program 110. jednání a zveřejnění zápisů.
+    citace: "program 110. jednání rady města a schválení zveřejnění zápisů."
+
+  rm-2026-j110-u453:
+    tema: Záměr prodeje pozemků ve Staré Hlíně
+    kategorie: [majetek_prevod]
+    shrnuti: Rada schválila záměr prodeje části pozemku p. č. 484 a pozemků p. č. 1118 a 508 ve Staré Hlíně a doporučila ho zastupitelstvu ke schválení. Cena je 500 Kč/m2 u prvních dvou a 800 Kč/m2 u třetího pozemku.
+    citace: "záměr prodeje části pozemku p. č. 484 o výměře 34 m2"
+    castky:
+      - hodnota: 500.00
+        jednotka: Kč/m2
+        druh: jine
+        s_dph: null
+        citace: "za cenu 500,00 Kč/m2"
+        poznamka: Cena za m2 v záměru prodeje pozemků p. č. 484 (část) a 1118.
+      - hodnota: 800.00
+        jednotka: Kč/m2
+        druh: jine
+        s_dph: null
+        citace: "za cenu 800,00 Kč/m2"
+        poznamka: Cena za m2 v záměru prodeje pozemku p. č. 508.
+    parcely:
+      - ku: Stará Hlína
+        cislo: "484"
+        cast: true
+        citace: "záměr prodeje části pozemku p. č. 484 o výměře 34 m2"
+      - ku: Stará Hlína
+        cislo: "1118"
+        citace: "pozemku p. č. 1118 o výměře 53 m2 vše v k. ú. Stará Hlína"
+      - ku: Stará Hlína
+        cislo: "508"
+        citace: "pozemku p. č. 508 o výměře 76 m2 v k. ú. Stará Hlína"
+
+  rm-2026-j110-u454:
+    tema: Souhlasná prohlášení o hranicích pozemků ve Staré Hlíně
+    kategorie: [ostatni]
+    shrnuti: Rada schválila dvě souhlasná prohlášení o průběhu hranic pozemků mezi městem a vlastníky sousedních pozemků ve Staré Hlíně. Předmětem je zpřesnění vlastnických hranic.
+    citace: "Předmětem prohlášení je zpřesnění vlastnické hranice pozemkú p. č. 25/4, p. č. 25/21, p. č. st. 21, p. č. st. 20 vše v k. ú. Stará Hlína."
+    poznamka: Vlastníci sousedních pozemků jsou v zápisu anonymizováni městem (XXXXXXXXX).
+
+  rm-2026-j110-u455:
+    tema: Žádost o změnu smluvního modelu převodu staveb a pozemků – ZTV Líbalova ulice
+    kategorie: [investice, majetek_prevod]
+    shrnuti: Rada vzala na vědomí žádost společnosti o změnu smluvního modelu převodu staveb a pozemků v akci ZTV Třeboň 2. etapa – Líbalova ulice. Odboru uložila připravit návrh obecných pravidel pro budoucí přebírání těchto staveb od investorů.
+    citace: "připravit návrh obecně závazných pravidel pro budoucí nabývání ZTV od investorů ke schválení v orgánech města."
+
+  rm-2026-j110-u456:
+    tema: Služebnost pro optický kabel v Třeboni
+    kategorie: [majetek_najem]
+    shrnuti: Rada schválila zřízení služebnosti pro společnost PODA a.s. na pěti pozemcích v Třeboni – právo umístit, vést a udržovat optický kabel. Služebnost bude zřízena bezúplatně.
+    citace: "Služebnost bude spočívat v právu umístění, vedení, údržby a oprav optického kabelu."
+    parcely:
+      - ku: Třeboň
+        cislo: "1818/55"
+        citace: "p. č. 1818/55, p. č. 1818/56, p. č. 1818/57, p. č. 1818/58, p. č. 1837/51"
+      - ku: Třeboň
+        cislo: "1818/56"
+        citace: "p. č. 1818/55, p. č. 1818/56, p. č. 1818/57, p. č. 1818/58, p. č. 1837/51"
+      - ku: Třeboň
+        cislo: "1818/57"
+        citace: "p. č. 1818/55, p. č. 1818/56, p. č. 1818/57, p. č. 1818/58, p. č. 1837/51"
+      - ku: Třeboň
+        cislo: "1818/58"
+        citace: "p. č. 1818/55, p. č. 1818/56, p. č. 1818/57, p. č. 1818/58, p. č. 1837/51"
+      - ku: Třeboň
+        cislo: "1837/51"
+        citace: "p. č. 1818/55, p. č. 1818/56, p. č. 1818/57, p. č. 1818/58, p. č. 1837/51"
+
+  rm-2026-j110-u457:
+    tema: Zateplení domů čp. 672 a 1050 a úprava betonových ploch
+    kategorie: [investice]
+    shrnuti: Rada souhlasila s tím, aby zateplení obvodových stěn domů čp. 672 a 1050 přesahovalo na městský pozemek, a s úpravou betonových ploch kolem domů. Souhlas se vydává pro společenství vlastníků bytů.
+    citace: "s přesahem zateplení obvodových stěn u domu č.p. 672 a č.p. 1050 na pozemek p. č. 1679/4 k. ú. Třeboň"
+    parcely:
+      - ku: Třeboň
+        cislo: "1679/4"
+        citace: "na pozemek p. č. 1679/4 k. ú. Třeboň"
+
+  rm-2026-j110-u458:
+    tema: Prodloužení výpůjčky klubovny pro seniory v čp. 2/II do roku 2030
+    kategorie: [majetek_najem, socialni, kultura]
+    shrnuti: Rada schválila dodatky ke čtyřem smlouvám o výpůjčce klubovny v budově čp. 2/II (Chelčického). Výpůjčka se prodlužuje do 31. 12. 2030 pro setkávání seniorů, šachistů, pěveckého sboru a malování. Náklady na užívání prostoru hradí město jako půjčitel.
+    citace: "předmětem dodatku bude prodloužení doby výprůjčky do 31.12.2030"
+    poznamka: Dva vypůjčitelé jsou fyzické osoby, město je v zápisu anonymizovalo.
+
+  rm-2026-j110-u459:
+    tema: Záměr dodatku k nájmu s CETIN a.s. – vodárenská věž
+    kategorie: [majetek_najem]
+    shrnuti: Rada schválila zveřejnění záměru dodatku č. 4 k nájemní smlouvě s CETIN a.s. Nájem vodárenské věže se rozšíří o další telekomunikační stožárek, roční nájemné se zvýší o 8 000 Kč bez DPH a nájem se prodlouží o 15 let do 31. 5. 2042.
+    citace: "prodloužení doby nájmu o 15 let, tj. do 31.05.2042."
+    castky:
+      - hodnota: 8000.00
+        jednotka: Kč/rok
+        druh: jine
+        s_dph: false
+        citace: "navýšení ročního nájemného o 8 000,00 Kč + DPH"
+        poznamka: Navýšení ročního nájemného oproti dosavadní výši (ne celkové nájemné).
+
+  rm-2026-j110-u460:
+    tema: Prodloužení nájmu bytu v čp. 2/II
+    kategorie: [majetek_najem]
+    shrnuti: Rada vzala na vědomí žádost o prodloužení nájmu bytu 1+0 v čp. 2/II (Chelčického) a zrušila své dřívější usnesení o neprodloužení tohoto nájmu.
+    citace: "revokaci usnesení č. 309/2026-104 ze dne 10.06.2026 o neprodloužení nájemní smlouvy"
+    poznamka: Nájemce je v zápisu anonymizován městem. Zápis neuvádí, zda se nájem prodlouží.
+
+  rm-2026-j110-u461:
+    tema: Záměr pronájmu tří bytů v DPS 2
+    kategorie: [majetek_najem, socialni]
+    shrnuti: Rada schválila zveřejnění záměru pronájmu bytů č. 9, 18 a 20 v čp. 2/II (Chelčického) pro seniory nebo invalidní důchodce s vazbou na Třeboň. Měsíční nájemné je 2 448 Kč (byt 9) a 2 320 Kč (byty 18 a 20) plus úhrada za vybavení bytu; kauce je ve výši 3měsíčního nájemného.
+    citace: "Před uzavřením nájemní smlouvy bude uhrazena kauce ve výši 3měsíčního nájemného."
+    castky:
+      - hodnota: 2448
+        jednotka: Kč/měsíc
+        druh: najemne_sazba
+        s_dph: null
+        citace: "s nájemným podlahové plochy bytu v částce 2.448 Kč"
+        poznamka: Byt č. 9.
+      - hodnota: 336
+        jednotka: Kč/měsíc
+        druh: jine
+        s_dph: null
+        citace: "vestavnou skříní a větrákem v částce 336 Kč splatným měsíčně"
+        poznamka: Úhrada za vybavení bytu č. 9 nebo č. 20 (v zápisu u obou stejná částka).
+      - hodnota: 2320
+        jednotka: Kč/měsíc
+        druh: najemne_sazba
+        s_dph: null
+        citace: "nájemným podlahové plochy bytu v částce 2.320 Kč"
+        poznamka: Byty č. 18 a č. 20.
+      - hodnota: 333
+        jednotka: Kč/měsíc
+        druh: jine
+        s_dph: null
+        citace: "vestavnou skříní v částce 333 Kč"
+        poznamka: Úhrada za vybavení bytu č. 18.
+
+  rm-2026-j110-u462:
+    tema: Rozpočtové opatření č. 50 – opravy Domu dětí a mládeže
+    kategorie: [rozpocet, investice]
+    shrnuti: Rada přesunula 80 000 Kč ve výdajové části rozpočtu z položky Obnova nemovitých kulturních památek na opravy Domu dětí a mládeže.
+    citace: "do položky 5171 „Dům dětí a mládeže - opravy“, § 3421, ORJ 750, ORG 9750000325, UZ 0 v částce Kč 80.000,00."
+    castky:
+      - hodnota: 80000.00
+        jednotka: Kč
+        druh: rozpoctove_opatreni
+        s_dph: null
+        citace: "do položky 5171 „Dům dětí a mládeže - opravy“, § 3421, ORJ 750, ORG 9750000325, UZ 0 v částce Kč 80.000,00."
+
+  rm-2026-j110-u463:
+    tema: Sportovní hala – dodatek č. 4 ke smlouvě o dílo (termín dokončení)
+    kategorie: [investice, sport]
+    shrnuti: Rada schválila dodatek č. 4 ke smlouvě o dílo na stavbu Sportovní hala Třeboň – nástavba a přístavba ubytování. Dodatek mění termín dokončení díla; nový termín zápis neuvádí.
+    citace: "jehož předmětem je změna termínu dokončení díla."
+
+  rm-2026-j110-u464:
+    tema: Veřejnosprávní kontrola hospodaření ZŠ Na Sadech k 31. 3. 2026
+    kategorie: [skolstvi, prispevkove_organizace]
+    shrnuti: Rada vzala na vědomí výsledek veřejnosprávní kontroly hospodaření základní školy Na Sadech k 31. 3. 2026.
+    citace: "výsledek veřejnosprávní kontroly hospodaření k 31.03.2026"
+
+  rm-2026-j110-u465:
+    tema: Hospodaření školských příspěvkových organizací k 30. 6. 2026
+    kategorie: [skolstvi, prispevkove_organizace]
+    shrnuti: Rada vzala na vědomí hospodaření příspěvkových organizací ve školství zřízených městem ke dni 30. 6. 2026.
+    citace: "Hospodaření příspěvkových organizací ve školství zřízených městem Třeboň ke dni 30.06.2026."
+
+  rm-2026-j110-u466:
+    tema: Dodatek č. 13 ke zřizovací listině ZŠ Na Sadech
+    kategorie: [skolstvi, prispevkove_organizace]
+    shrnuti: Rada schválila dodatek č. 13 ke zřizovací listině základní školy Na Sadech (předání majetku k hospodaření) a doporučila ho zastupitelstvu ke schválení.
+    citace: "jehož předmětem je předání majetku k hospodaření."
+
+  rm-2026-j110-u467:
+    tema: Členové školské rady při ZŠ Na Sadech
+    kategorie: [skolstvi, samosprava]
+    shrnuti: Rada jmenovala dva členy do školské rady při základní škole Na Sadech.
+    citace: "do školské rady při ZŠ Třeboň, Na Sadech 375."
+    anonymizace:
+      - retezec: "Bc. Moniku Plášilovou"
+        nahrada: "další osobu"
+    poznamka: Jméno druhého člena, který není volený zástupce, neuvádíme.
+
+  rm-2026-j110-u468:
+    tema: Ukončení spolupráce při jízdence JIKORD plus
+    kategorie: [doprava]
+    shrnuti: Rada schválila dohodu o ukončení smlouvy o spolupráci při zavedení a používání jízdenky JIKORD plus a JIKORD plus Bavorsko.
+    citace: "uzavření Dohody o ukončení Smlouvy o spolupráci při zavedení a používání jízdenky JIKORD plus a JIKORD plus Bavorsko."
+
+  rm-2026-j110-u469:
+    tema: Statut interního auditu – změna č. 1
+    kategorie: [samosprava]
+    shrnuti: Rada schválila změnu č. 1 Statutu interního auditu města a uložila seznámit s ní všechny zaměstnance.
+    citace: "Statut interního auditu města Třeboň - změnu č. 1."
+
+  rm-2026-j110-u470:
+    tema: Převod technického zhodnocení z majetku lázní na město
+    kategorie: [lazne_spolecnosti, investice]
+    shrnuti: Rada jako valná hromada společnosti Slatinné lázně Třeboň souhlasila s převodem čtyř technických zhodnocení Lázeňského domu Aurora na město za úplatu. Jde o kotelnu a zásobníky TUV, plynový kotel, modernizaci Balnea a vodní prvek v atriu.
+    citace: "Modernizace a rozšíření Balneo – Etapa I, LDA"
+    castky:
+      - hodnota: 5213624.99
+        jednotka: Kč
+        druh: jine
+        s_dph: true
+        citace: "v celkové hodnotě 5.213.624,99 Kč včetně DPH"
+        poznamka: Úplata za převod technického zhodnocení – stavební úpravy kotelny a výměna zásobníků TUV.
+      - hodnota: 478438.84
+        jednotka: Kč
+        druh: jine
+        s_dph: true
+        citace: "v celkové hodnotě 478.438,84 Kč včetně DPH"
+        poznamka: Úplata za převod technického zhodnocení – výměna plynového kotle (zahradnictví).
+      - hodnota: 63215771.84
+        jednotka: Kč
+        druh: jine
+        s_dph: true
+        citace: "v celkové hodnotě 63.215.771,84 Kč včetně DPH"
+        poznamka: Úplata za převod technického zhodnocení – Modernizace a rozšíření Balneo, etapa I.
+      - hodnota: 276517.57
+        jednotka: Kč
+        druh: jine
+        s_dph: true
+        citace: "v celkové hodnotě 276.517,57 Kč včetně DPH"
+        poznamka: Úplata za převod technického zhodnocení – vodní prvek v atriu.
+
+  rm-2026-j110-u471:
+    tema: FVE Slatinné lázně – dodatek č. 2 ke smlouvě o investorsko-inženýrských činnostech
+    kategorie: [lazne_spolecnosti, investice]
+    shrnuti: Rada jako valná hromada společnosti Slatinné lázně Třeboň schválila uzavření dodatku č. 2 ke smlouvě o zajištění investorsko-inženýrských činností pro fotovoltaickou elektrárnu. Obsah dodatku zápis neuvádí.
+    citace: "uzavření dodatku č. 2 ke Smlouvě o zajištění investorsko-inženýrských činností „FVE – Slatinné lázně Třeboň“"
+
+  rm-2026-j110-u472:
+    tema: Zadávací řízení na nábytek předsíní – budova G-LDA
+    kategorie: [lazne_spolecnosti, verejne_zakazky]
+    shrnuti: Rada jako valná hromada společnosti Slatinné lázně Třeboň schválila zadávací dokumentaci nadlimitního řízení na dodávku a montáž nábytku předsíní (budova G-LDA) s předpokládanou hodnotou 1 400 000 Kč bez DPH.
+    citace: "ve výši předpokládané hodnoty 1.400.000, - Kč bez DPH."
+    castky:
+      - hodnota: 1400000
+        jednotka: Kč
+        druh: predpokladana_hodnota
+        s_dph: false
+        citace: "ve výši předpokládané hodnoty 1.400.000, - Kč bez DPH."
+
+  rm-2026-j110-u473:
+    tema: Převod družstevních nebytových prostor a pozemků od bytového družstva městu
+    kategorie: [majetek_prevod]
+    shrnuti: Rada schválila smlouvy o převodu vlastnictví nebytových jednotek v domech čp. 566 a čp. 11 a podílů na pozemcích od Stavebního bytového družstva Města Třeboň 2000 na město a doporučila je zastupitelstvu. Převod vychází z dohody o narovnání z 6. 5. 2026.
+    citace: "Převod jednotky a spoluvlastnického podílu na nemovité věci je činěn v souladu s Dohodou o narovnání a o převodu nemovitých věcí uzavřenou mezi městem Třeboň a SBD dne 06.05.2026."
+
+  rm-2026-j110-u474:
+    tema: Bezúplatný převod pozemků od Státního pozemkového úřadu městu
+    kategorie: [majetek_prevod]
+    shrnuti: Rada schválila tři smlouvy o bezúplatném převodu pozemků z majetku státu (Státní pozemkový úřad) na město v katastrálních územích Třeboň a Břilice a doporučila je zastupitelstvu.
+    citace: "kdy předmětem bezúplatného převodu je pozemek p. č. 1742/2 (trvalý travní porost) k. ú. Třeboň."

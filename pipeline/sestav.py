@@ -81,12 +81,16 @@ def anonymizuj_urednici(text: str, osoby: dict) -> str:
 RE_TITULY = re.compile(r"^(?:(?:Ing|Mgr|Bc|MUDr|MVDr|PaedDr|JUDr|PhDr|RNDr|doc|prof)\.\s*)+")
 
 
-def je_zastupitel(jmeno_s_titulem: str, osoby: dict) -> bool:
+def je_zastupitel(jmeno_s_titulem: str, osoby: dict, obdobi: str | None = None) -> bool:
     """Přesná shoda po celých slovech: jméno (bez titulů) musí začínat některým
     povoleným tvarem jména zastupitele. Regex může zachytit i slovo z dalšího řádku
-    ("Lenka Blažková Pro"), proto se porovnává začátek, nikoli celý zachycený řetězec."""
+    ("Lenka Blažková Pro"), proto se porovnává začátek, nikoli celý zachycený řetězec.
+    Se zadaným `obdobi` platí jen zastupitelé toho období (bývalý zastupitel v zápisu
+    jiného období je soukromá osoba)."""
     slova = RE_TITULY.sub("", jmeno_s_titulem).split()
     for z in osoby["zastupitele"]:
+        if obdobi is not None and obdobi not in z.get("obdobi", []):
+            continue
         for tvar in z["tvary"]:
             t = tvar.split()
             if slova[:len(t)] == t:
@@ -94,12 +98,12 @@ def je_zastupitel(jmeno_s_titulem: str, osoby: dict) -> bool:
     return False
 
 
-def najdi_osobni_udaje(text: str, osoby: dict) -> list[str]:
+def najdi_osobni_udaje(text: str, osoby: dict, obdobi: str | None = None) -> list[str]:
     """Kontrola výstupu: jména s titulem, která nepatří zastupitelům, známá jména úředníků
     a podpis zapisovatele. Vrací nalezené problémy."""
     nalezy = []
     for m in RE_TITUL_JMENO.finditer(text):
-        if not je_zastupitel(m.group(0), osoby):
+        if not je_zastupitel(m.group(0), osoby, obdobi):
             nalezy.append(" ".join(m.group(0).split()))
     for u in osoby["urednici"]:
         for v in u["varianty"]:
@@ -275,10 +279,14 @@ def sestav(koren: Path | None = None) -> tuple[dict[str, list], list[str]]:
         hlasovani += h
     vystup = {"jednani": jednani, "usneseni": usneseni, "hlasovani": hlasovani}
     # kontrola osobních údajů v celém výstupu (kromě doslovných citací, ty kontroluje sestavení)
+    # (zastupitelé jen z období daného jednání)
+    obdobi_jednani = {j["id"]: j["obdobi"] for j in jednani}
     for nazev, obsah in vystup.items():
-        for r in _retezce(obsah):
-            for n in najdi_osobni_udaje(r, osoby):
-                chyby.append(f"{nazev}: osobní údaj ve výstupu: {n!r}")
+        for zaznam in obsah:
+            obdobi = zaznam.get("obdobi") or obdobi_jednani.get(zaznam.get("jednani_id"))
+            for r in _retezce(zaznam):
+                for n in najdi_osobni_udaje(r, osoby, obdobi):
+                    chyby.append(f"{nazev}: osobní údaj ve výstupu: {n!r}")
     return vystup, chyby
 
 

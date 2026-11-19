@@ -24,7 +24,7 @@ Píšeme pro běžného čtenáře, ne pro úředníky: krátce, bez zkratek a �
 - Pokud zadání v issue nestačí nebo je v rozporu se `ZADANI.md`, zastav se a napiš otázku do issue místo dohadu.
 
 ## Automatická orchestrace
-- Orchestrátorem je GitHub: issue se štítkem `agent:claude` (nebo komentář `@claude` od Ondřeje) spustí Claude v GitHub Actions (`.github/workflows/claude.yml`). Codex kontroluje PR automaticky nebo na `@codex review`.
+- Orchestrátorem je GitHub: issue se štítkem `agent:claude` (nebo komentář `@claude` od Ondřeje, nebo přímé spuštění `workflow_dispatch` s číslem issue) spustí Claude v GitHub Actions (`.github/workflows/claude.yml`). Codex kontroluje PR automaticky nebo na `@codex review`.
 - Štítky: `agent:claude`, `agent:codex` = kdo úkol dělá; `ke-kontrole` = PR čeká na druhého agenta; `potrebuje-cloveka` = rozhoduje Ondřej.
 - Agent spuštěný štítkem po dokončení sám otevře PR (`Closes #N`), přidá mu štítek `ke-kontrole` a do issue napíše odkaz na PR.
 - **Nejvýš 2 kola oprav** na jednom PR. Když se agenti ani pak neshodnou nebo chybí rozhodnutí, autor PR přidá `potrebuje-cloveka`, shrne spor v komentáři a skončí.
@@ -84,6 +84,7 @@ Hotovo: jeden běh `pipeline/beh.py` se zámkem, kontrolou před zápisem a atom
 |---|---|---|
 | Zápisy rady: `mesto-trebon.cz/.../rada-mesta/zapisy-z-jednani-rady-mesta/volebni-obdobi-2026---2030.html` | PDF v `/uploads/news/id<N>/<soubor>.pdf`, textová vrstva (ne sken), přípona `-A` = verze s anonymizací (nekonzistentní: u RM 5/2026-1 ponecháno jméno, IČO i adresa podnikatelky) | pilot 18. 11. 2026 |
 | Zápisy ZM: `.../zastupitelstvo-mesta/zapisy-zastupitelstva-mesta/volebni-obdobi-2026---2030-2.html` | stejný formát; **pilotní zápis z 2. 11. 2026 neobsahuje jmenovité hlasování**, jen součty – u každého dalšího zápisu ověřit zvlášť; číslování bodů může nesedět s programem | pilot 18. 11. 2026 |
+| Zápisy 2022–2026 (#38): RM `.../volebni-obdobi-2022---2026-2.html`, ZM `.../volebni-obdobi-2022---2026.html` | stejný formát, stahují se jen jednání od 1. 9. 2026 (RM 110–114, ZM 31); zastupitelé 2022–2026 v `config/osoby.yaml` (`obdobi`), kontrola jmen platí jen pro období daného jednání; náhradníky během období neověřeno | odkazy 19. 11. 2026 (prohlížeč) |
 | Struktura zápisu | `k bodu N` → `Usnesení RM/ZM č. X/RRRR-J` → části `I. schvaluje…` → `Výsledek hlasování: Pro/Proti/Zdrželi se` → `SCHVÁLENO`; protinávrhy a volby kandidátů mají vlastní hlasování | pilot |
 | Členové ZM: `mesto-trebon.cz/text/cz/mestsky-urad-trebon/samosprava-mesta/zastupitelstvo-mesta/clenove-zastupitelstva-mesta.html` | 25 členů se stranou; funkce jen u starosty → ostatní ze zápisu ZM | 18. 11. 2026 |
 | Registr smluv, E-ZAK (profily města a společností), ISVZ | viz `docs/ZDROJE.md`; E-ZAK XML export funguje u města, MV a SLT, Technické služby jen HTML | 18. 11. 2026 (Codex) |
@@ -98,7 +99,7 @@ Workflow `.github/workflows/beh.yml`: denně 05:17 UTC + `workflow_dispatch`:
 2. Věcná změna = změna v `raw/texty` nebo `data/{jednani,usneseni,hlasovani}.json`. Jen `beh.json` / datum kontroly PR nezakládají. Při věcné změně běh spustí sestavení a testy, založí větev `claude/beh-<datum>` a otevře PR se štítkem `ke-kontrole`; dokud starší PR z běhu čeká, nový se nezakládá.
 3. `pipeline.oznameni zapisy`: každý zápis v manifestu bez `anotace/<jednani_id>.yaml` dostane právě jedno issue „Nový zápis: …“ se štítkem `agent:claude` (klíč v těle, hledá se i mezi zavřenými).
 Nové zápisy bez anotace sestavení nezastaví (jsou jen v `raw/`), do `data/` se dostanou až s anotací.
-**Otevřené:** (a) akce vytvořené `GITHUB_TOKEN` nespouští další workflow, takže `agent:claude` na issue založeném během běhu `claude.yml` nespustí a CI na PR z běhu sama nenaběhne (běh proto kontroly spouští sám); štítek musí přidat Ondřej, nebo je třeba token s jinou identitou (nový secret, mimo zadání #25). (b) V nastavení repozitáře musí být povoleno „Allow GitHub Actions to create pull requests“.
+Akce vytvořené `GITHUB_TOKEN` další workflow nespouští (kromě `workflow_dispatch`), proto (#34): běh po založení issue „Nový zápis“ spustí `claude.yml` přímo (`gh workflow run claude.yml -f issue=N`) a úspěšné spuštění označí štítkem `claude-spusten` (issue bez něj zkusí znovu příští běh; v `claude.yml` je bot `github-actions[bot]` povolen jen pro `workflow_dispatch`) a po založení PR spustí `ci.yml` na jeho větvi; `claude.yml` při přímém spuštění po dokončení spustí `ci.yml` na větvi svého PR. V nastavení repozitáře musí být povoleno „Allow GitHub Actions to create and approve pull requests“.
 
 **Hotovo:** zadání a datový model (#4), pilot zápisů RM 4. 11. a ZM 2. 11. 2026 (#5), CI (#7), 25 zastupitelů (#11), ověření zdrojů a IČO (#14, `docs/ZDROJE.md`), AGENTS.md (#19), orchestrace (#13).
 

@@ -12,11 +12,13 @@ import pytest
 
 from pipeline import beh, verze
 from pipeline.zdroje import ChybaZdroje
+from conftest import jen_pilot
 from pipeline.zdroje.zapisy_mesta import STRANKY, ZapisyMesta, datum_zapisu, parsuj_stranku
 
 KOREN = Path(__file__).resolve().parent.parent
 VZORKY = Path(__file__).resolve().parent / "vzorky"
 URL_RM, URL_ZM = STRANKY[0][2], STRANKY[1][2]
+URL_RM_2022, URL_ZM_2022 = STRANKY[2][2], STRANKY[3][2]
 PDF = {  # dokument_id → (URL, obsah „PDF“ – jen hlavička pro test, text bereme z uložených stran)
     "rm-2026-11-04": ("https://www.mesto-trebon.cz/uploads/news/id15223/Z-1-26-11-04-A.pdf", b"%PDF-1.7 vzorek RM"),
     "zm-2026-11-02": ("https://www.mesto-trebon.cz/uploads/news/id15220/Z-01-26-11-02.pdf", b"%PDF-1.7 vzorek ZM"),
@@ -33,7 +35,8 @@ def strany(jednani_id):
 class Web:
     """Falešný web: URL → obsah; extrakce vrací uložené strany podle obsahu PDF."""
     def __init__(self):
-        self.stranky = {URL_RM: (VZORKY / "zapisy_rm.html").read_bytes(), URL_ZM: (VZORKY / "zapisy_zm.html").read_bytes()}
+        self.stranky = {URL_RM: (VZORKY / "zapisy_rm.html").read_bytes(), URL_ZM: (VZORKY / "zapisy_zm.html").read_bytes(),
+                        URL_RM_2022: b"<html></html>", URL_ZM_2022: b"<html></html>"}
         self.pdf = {url: obsah for url, obsah in PDF.values()}
         self.texty = {obsah: strany(j) for j, (_, obsah) in PDF.items()}
         self.vypadek = False
@@ -57,6 +60,7 @@ def koren(tmp_path):
     for d in ("raw/texty", "anotace", "config", "data"):
         shutil.copytree(KOREN / d, tmp_path / d)
     shutil.copy(KOREN / "raw" / "manifest.json", tmp_path / "raw" / "manifest.json")
+    jen_pilot(tmp_path)
     # otisky v manifestu odpovídají našim vzorkům PDF
     manifest = json.loads((tmp_path / "raw" / "manifest.json").read_text(encoding="utf-8"))
     for z in manifest:
@@ -92,6 +96,22 @@ def test_parsuje_vzorek_stranky():
     assert [d.dokument_id for d in dok] == ["zapis-rm-2026-11-04"] and upoz == []
     assert dok[0].url == PDF["rm-2026-11-04"][0]
     assert datum_zapisu("", "https://x/uploads/news/id1/Z-01-26-11-02.pdf") == "2026-11-02"
+
+
+def test_obdobi_2022_2026_jen_od_zari_2026(koren):
+    """Ze stránek minulého období se berou jen jednání od 1. 9. 2026 (#38)."""
+    web = Web()
+    web.stranky[URL_RM_2022] = (
+        '<a href="/uploads/news/id15000/Z-109-26-08-26-A.pdf">Z-109-26-08-26-A.pdf</a>'
+        '<a href="/uploads/news/id15037/Z-110-26-09-09-A.pdf">Z-110-26-09-09-A.pdf</a>').encode()
+    web.stranky[URL_ZM_2022] = b'<a href="/uploads/news/id15066/Z-31-26-09-21-A.pdf">Z-31-26-09-21-A.pdf</a>'
+    for url in ("https://www.mesto-trebon.cz/uploads/news/id15037/Z-110-26-09-09-A.pdf",
+                "https://www.mesto-trebon.cz/uploads/news/id15066/Z-31-26-09-21-A.pdf"):
+        web.pdf[url] = PDF["rm-2026-11-04"][1]
+    stazeno = web.zdroj().stahni(json.loads(cti(koren, "raw/manifest.json")), DNES)
+    jednani = {d.jednani_id for d in stazeno.dokumenty}
+    assert {"rm-2026-09-09", "zm-2026-09-21"} <= jednani and "rm-2026-08-26" not in jednani
+    assert not any("Z-109" in u for u in web.stazeno)
 
 
 def test_beh_beze_zmeny_nic_nemeni_a_posune_plan(koren):
