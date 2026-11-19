@@ -37,18 +37,21 @@ def strana(s: dict) -> dict:
     return {"nazev": nazev, "ico": ico, "fyzicka_osoba": False, "prijemce": s.get("prijemce") == "1"}
 
 
-def castky(sml: dict, zdroj: str) -> list[dict]:
+def castky(sml: dict, zdroj: str, misto: str) -> list[dict]:
+    """Citace = doslovný prvek ze záznamu registru, umístění (soubor, ID verze) v `poznamka`."""
     vysledek = []
     for pole, s_dph in (("hodnotaBezDph", False), ("hodnotaVcetneDph", True)):
         h = _cislo(sml.get(pole))
         if h is not None:
             vysledek.append({"hodnota": h, "mena": "CZK", "jednotka": "Kč", "s_dph": s_dph, "druh": "smluvni",
-                             "obdobi": None, "k_datu": None, "citace": zdroj, "poznamka": None})
+                             "obdobi": None, "k_datu": None, "citace": f"<{pole}>{sml[pole]}</{pole}>",
+                             "poznamka": f"{zdroj}; {misto}"})
     cm = sml.get("ciziMena")
     if isinstance(cm, dict) and _cislo(cm.get("hodnota")) is not None:
         vysledek.append({"hodnota": _cislo(cm["hodnota"]), "mena": cm.get("mena"), "jednotka": cm.get("mena"),
-                         "s_dph": None, "druh": "smluvni", "obdobi": None, "k_datu": None, "citace": zdroj,
-                         "poznamka": "cizí měna; DPH registr neuvádí"})
+                         "s_dph": None, "druh": "smluvni", "obdobi": None, "k_datu": None,
+                         "citace": f"<ciziMena><hodnota>{cm['hodnota']}</hodnota><mena>{cm.get('mena')}</mena></ciziMena>",
+                         "poznamka": f"{zdroj}; {misto}; cizí měna, DPH registr neuvádí"})
     return vysledek
 
 
@@ -67,7 +70,7 @@ def prevod(z: dict, zdroj: str) -> dict:
         "datum_uzavreni": sml.get("datumUzavreni"),
         "datum_zverejneni": (z.get("casZverejneni") or "")[:10] or None,
         "cislo_smlouvy": sml.get("cisloSmlouvy"),
-        "castky": castky(sml, zdroj),
+        "castky": castky(sml, zdroj, f"záznam idVerze {ident.get('idVerze')}"),
         "cena_neuvedena": sml.get("cenaNeuvedena") in ("1", "true"),
         "navazuje_na": sml.get("navazanyZaznam") or z.get("navazanyZaznam"),
         "evidencni_cislo_zakazky": sml.get("evidencniCisloZakazky"),
@@ -103,4 +106,6 @@ def zkontroluj(smlouvy: list[dict]) -> list[str]:
         for k in s["castky"]:
             if k["druh"] != "smluvni" or (k["mena"] == "CZK" and k["s_dph"] not in (True, False)):
                 chyby.append(f"smlouvy: {s['id']}: částka bez druhu nebo DPH")
+            if not k.get("citace") or not k.get("poznamka"):
+                chyby.append(f"smlouvy: {s['id']}: částka bez citace nebo umístění")
     return chyby

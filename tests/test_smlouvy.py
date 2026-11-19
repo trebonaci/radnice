@@ -111,6 +111,9 @@ def test_castky_s_druhem_a_dph(koren):
     s = nactene(koren)
     assert {(k["s_dph"], k["hodnota"]) for k in s["1"]["castky"]} == {(False, 110000.0), (True, 133100.0)}
     assert all(k["druh"] == "smluvni" for k in s["1"]["castky"])
+    assert {k["citace"] for k in s["1"]["castky"]} == {"<hodnotaBezDph>110000</hodnotaBezDph>",
+                                                       "<hodnotaVcetneDph>133100</hodnotaVcetneDph>"}
+    assert all(k["poznamka"] == "2026-10.json; záznam idVerze 12" for k in s["1"]["castky"])
     assert s["5"]["castky"] == [] and s["5"]["cena_neuvedena"] is True
     assert smlouvy.zkontroluj(list(s.values())) == []
 
