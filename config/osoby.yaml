@@ -35,7 +35,7 @@ zastupitele:
   - {jmeno: Viktor Ludvík, obdobi: ["2026-2030", "2022-2026"], strana_2022: "ODS / ODS", strana: "ODS", funkce: null, tvary: [Viktor Ludvík, Viktora Ludvíka, Viktorem Ludvíkem, Viktoru Ludvíkovi]}
   - {jmeno: Petr Michal, obdobi: ["2026-2030", "2022-2026"], strana_2022: "Společně pro Třeboň – SZ+OMMO / BEZPP", strana: "SOCDEM / BEZPP", funkce: null, tvary: [Petr Michal, Petra Michala, Petrem Michalem, Petru Michalovi]}
   - {jmeno: Petr Müller, obdobi: ["2026-2030"], strana: "Společně pro Třeboň - koalice SZ a OMMO / BEZPP", funkce: null, tvary: [Petr Müller, Petra Müllera, Petrem Müllerem, Petru Müllerovi]}
-  - {jmeno: Stanislav Ojíř Musil, obdobi: ["2026-2030"], strana: "TŘEBOŇÁCI S PODPOROU STAROSTŮ / Piráti", funkce: "radní", tvary: [Stanislav Ojíř Musil, Stanislava Ojíře Musila, Stanislavem Ojířem Musilem, Stanislavu Ojířovi Musilovi]}
+  - {jmeno: Stanislav Ojíř Musil, obdobi: ["2026-2030", "2022-2026"], strana_2022: "TŘEBOŇÁCI S PODPOROU STAROSTŮ / BEZPP (1. náhradník, nastoupil za Jana Lukavského)", strana: "TŘEBOŇÁCI S PODPOROU STAROSTŮ / Piráti", funkce: "radní", tvary: [Stanislav Ojíř Musil, Stanislava Ojíře Musila, Stanislavem Ojířem Musilem, Stanislavu Ojířovi Musilovi]}
   - {jmeno: František Pfeifer, obdobi: ["2026-2030", "2022-2026"], strana_2022: "TŘEBOŇÁCI S PODPOROU STAROSTŮ / BEZPP", strana: "TŘEBOŇÁCI S PODPOROU STAROSTŮ / BEZPP", funkce: null, tvary: [František Pfeifer, Františka Pfeifera, František Pfeifera, Františkem Pfeiferem, Františku Pfeiferovi]}
   - {jmeno: Vladan Pikl, obdobi: ["2026-2030", "2022-2026"], strana_2022: "ODS / ODS", strana: "ODS", funkce: null, tvary: [Vladan Pikl, Vladana Pikla, Vladanem Piklem, Vladanu Piklovi]}
   - {jmeno: Jana Polčáková, obdobi: ["2026-2030"], strana: "Naše Česko / BEZPP", funkce: null, tvary: [Jana Polčáková, Janu Polčákovou, Janě Polčákové, Jany Polčákové, Janou Polčákovou]}
@@ -52,6 +52,7 @@ zastupitele:
   - {jmeno: František Korda, obdobi: ["2022-2026"], strana_2022: "Svoboda a př. demokracie (SPD) / KSČM", strana: null, funkce: null, tvary: [František Korda, Františka Kordy, Františka Kordu, Františkem Kordou, Františku Kordovi]}
   - {jmeno: Karel Kročák, obdobi: ["2022-2026"], strana_2022: "ODS / ODS", strana: null, funkce: null, tvary: [Karel Kročák, Karla Kročáka, Karlem Kročákem, Karlu Kročákovi]}
   - {jmeno: Zdeněk Kukačka, obdobi: ["2022-2026"], strana_2022: "ODS / ODS", strana: null, funkce: null, tvary: [Zdeněk Kukačka, Zdeňka Kukačky, Zdeňka Kukačku, Zdeňkem Kukačkou, Zdeňku Kukačkovi]}
+  # Jan Lukavský během období odstoupil, nastoupil 1. náhradník Stanislav Ojíř Musil (Ondřej, 19. 11. 2026; datum neověřeno)
   - {jmeno: Jan Lukavský, obdobi: ["2022-2026"], strana_2022: "TŘEBOŇÁCI S PODPOROU STAROSTŮ / Piráti", strana: null, funkce: null, tvary: [Jan Lukavský, Jana Lukavského, Janem Lukavským, Janu Lukavskému]}
   - {jmeno: Jiří Masojídek, obdobi: ["2022-2026"], strana_2022: "ODS / ODS", strana: null, funkce: null, tvary: [Jiří Masojídek, Jiřího Masojídka, Jiřím Masojídkem, Jiřímu Masojídkovi]}
   - {jmeno: Zdeněk Mráz, obdobi: ["2022-2026"], strana_2022: "Česká str.sociálně demokrat. / SOCDEM", strana: null, funkce: null, tvary: [Zdeněk Mráz, Zdeňka Mráze, Zdeňkem Mrázem, Zdeňku Mrázovi]}

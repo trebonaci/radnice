@@ -174,7 +174,7 @@ def test_seznam_zastupitelu_uplny():
     z = [x for x in vse if "2026-2030" in x["obdobi"]]
     assert len(z) == 25 and all(x["strana"] for x in z)
     z22 = [x for x in vse if "2022-2026" in x["obdobi"]]
-    assert len(z22) == 25 and all(x["strana_2022"] for x in z22)
+    assert len(z22) == 26 and all(x["strana_2022"] for x in z22)   # 25 zvolených + náhradník Musil
     funkce = sorted(x["funkce"] for x in z if x["funkce"])
     assert funkce == sorted(["starosta", "1. místostarosta", "2. místostarosta", "radní", "radní", "radní", "radní"])
     # žádný tvar jména zastupitele nesmí být zároveň jménem úředníka
@@ -195,3 +195,4 @@ def test_zastupitel_jen_ve_svem_obdobi():
     assert najdi_osobni_udaje("Ing. Zdeněk Kukačka", osoby, "2026-2030") == ["Ing. Zdeněk Kukačka"]
     assert najdi_osobni_udaje("PaedDr. Jan Váňa", osoby, "2026-2030") == []
     assert najdi_osobni_udaje("JUDr. Pavel Pumpr", osoby, "2022-2026") == ["JUDr. Pavel Pumpr"]
+    assert najdi_osobni_udaje("Mgr. Stanislav Ojíř Musil", osoby, "2022-2026") == []   # náhradník za J. Lukavského
