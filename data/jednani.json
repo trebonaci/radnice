@@ -55,21 +55,21 @@
       },
       {
         "cislo": 6,
-        "nazev": "Zřízení služebnosti pro uložení kabelu VN, telekomunikačního vedení na pozemcích p. č. 2168/8, p. č.",
+        "nazev": "Zřízení služebnosti pro uložení kabelu VN, telekomunikačního vedení na pozemcích p. č. 2168/8, p. č. 4485, p. č. 4530, p. č. 4540, p. č. 4542, p. č. 4543 k. ú. Třeboň",
         "strana": 3,
         "text": null,
         "text_anonymizovan": false
       },
       {
         "cislo": 7,
-        "nazev": "Uzavření smlouvy o zřízení služebnosti pro uložení vodovodní přípojky na pozemcích p. č. 2049/52, p.",
+        "nazev": "Uzavření smlouvy o zřízení služebnosti pro uložení vodovodní přípojky na pozemcích p. č. 2049/52, p. č. 2054/3 k. ú. Branná",
         "strana": 4,
         "text": null,
         "text_anonymizovan": false
       },
       {
         "cislo": 8,
-        "nazev": "Stanovení výše nájemného za provozovaný vodohospodářský infrastrukturní majetek (vodovody a",
+        "nazev": "Stanovení výše nájemného za provozovaný vodohospodářský infrastrukturní majetek (vodovody a kanalizace) pro rok 2027",
         "strana": 4,
         "text": null,
         "text_anonymizovan": false
@@ -97,7 +97,7 @@
       },
       {
         "cislo": 12,
-        "nazev": "Smlouva o dílo - zpracování projektové dokumentace a žádosti o podporu týkající se projektu",
+        "nazev": "Smlouva o dílo - zpracování projektové dokumentace a žádosti o podporu týkající se projektu kybernetické bezpečnosti",
         "strana": 5,
         "text": null,
         "text_anonymizovan": false
@@ -139,14 +139,14 @@
       },
       {
         "cislo": 18,
-        "nazev": "Schválení Dodatku č. 1 ke kupní smlouvě akce Sportovní hala Třeboň – nástavba a přístavba ubytování",
+        "nazev": "Schválení Dodatku č. 1 ke kupní smlouvě akce Sportovní hala Třeboň – nástavba a přístavba ubytování – vybavení interiéru",
         "strana": 7,
         "text": null,
         "text_anonymizovan": false
       },
       {
         "cislo": 19,
-        "nazev": "Páteřní dešťová kanalizace v úseku Nový Dvůr – Jablonského ulice, Třeboň – Smlouva o smlouvě",
+        "nazev": "Páteřní dešťová kanalizace v úseku Nový Dvůr – Jablonského ulice, Třeboň – Smlouva o smlouvě budoucí o zřízení služebnosti č. PVL-1867/2026/SML",
         "strana": 7,
         "text": null,
         "text_anonymizovan": false
@@ -173,27 +173,7 @@
         "text_anonymizovan": true
       }
     ],
-    "upozorneni_parseru": [
-      "bod 4: není v programu, název vzat z prvního řádku ('Pronájem části pozemku p. č. 575 k. ú. Třeboň, souhlas s užíváním části pozemku p. č. 500 k. ú. Třeboň')",
-      "bod 5: není v programu, název vzat z prvního řádku ('Zřízení služebnosti pro uložení optického kabelu v k. ú. Stará Hlína')",
-      "bod 6: není v programu, název vzat z prvního řádku ('Zřízení služebnosti pro uložení kabelu VN, telekomunikačního vedení na pozemcích p. č. 2168/8, p. č.')",
-      "bod 7: není v programu, název vzat z prvního řádku ('Uzavření smlouvy o zřízení služebnosti pro uložení vodovodní přípojky na pozemcích p. č. 2049/52, p.')",
-      "bod 8: není v programu, název vzat z prvního řádku ('Stanovení výše nájemného za provozovaný vodohospodářský infrastrukturní majetek (vodovody a')",
-      "bod 9: není v programu, název vzat z prvního řádku ('Dohoda o umístění monitorovacího bodu dopravního systému PČR')",
-      "bod 10: není v programu, název vzat z prvního řádku ('Prodej vozidla Škoda Fabia RZ 5C2 8202 – prodej prostřednictvím spol. Veacom s.r.o.')",
-      "bod 11: není v programu, název vzat z prvního řádku ('Revokace části usnesení č. 369/2026-107 ze dne 15.07.2026')",
-      "bod 12: není v programu, název vzat z prvního řádku ('Smlouva o dílo - zpracování projektové dokumentace a žádosti o podporu týkající se projektu')",
-      "bod 13: není v programu, název vzat z prvního řádku ('Předchozí souhlas zřizovatele s přijetím daru Základní školou Na Sadech 375, Třeboň')",
-      "bod 14: není v programu, název vzat z prvního řádku ('Stavební úpravy MK v ul. Budějovické v Třeboni – dodatek č. 1 ke smlouvě o dílo')",
-      "bod 15: není v programu, název vzat z prvního řádku ('Stavební úpravy MK v ul. Souběžná v Třeboni – dodatek č. 1 ke smlouvě o dílo')",
-      "bod 16: není v programu, název vzat z prvního řádku ('Pronájem části pozemku p. č. 1087/17 k. ú. Třeboň')",
-      "bod 17: není v programu, název vzat z prvního řádku ('Schválení Dodatku č. 4 ke smlouvě o dílo akce Přístavba dvou tělocvičen sportovní haly Třeboň')",
-      "bod 18: není v programu, název vzat z prvního řádku ('Schválení Dodatku č. 1 ke kupní smlouvě akce Sportovní hala Třeboň – nástavba a přístavba ubytování')",
-      "bod 19: není v programu, název vzat z prvního řádku ('Páteřní dešťová kanalizace v úseku Nový Dvůr – Jablonského ulice, Třeboň – Smlouva o smlouvě')",
-      "bod 20: není v programu, název vzat z prvního řádku ('Rozpočtové opatření č. 51 - Přístavba tělocvičen - vybavení')",
-      "bod 21: není v programu, název vzat z prvního řádku ('Osobní příplatek ředitele ZŠ Třeboň, Sokolská 296')",
-      "bod 22: není v programu, název vzat z prvního řádku ('Různé')"
-    ]
+    "upozorneni_parseru": []
   },
   {
     "id": "rm-2026-11-04",

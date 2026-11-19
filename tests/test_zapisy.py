@@ -205,3 +205,13 @@ def test_zastupitel_jen_ve_svem_obdobi():
     assert najdi_osobni_udaje("Ing. Zdeněk Kukačka", osoby, "2026-2030") == ["Ing. Zdeněk Kukačka"]
     assert najdi_osobni_udaje("PaedDr. Jan Váňa", osoby, "2026-2030") == []
     assert najdi_osobni_udaje("JUDr. Pavel Pumpr", osoby, "2022-2026") == ["JUDr. Pavel Pumpr"]
+
+
+def test_program_rm_111_pokracuje_za_znackou_vysledku():
+    """RM 111: pod bodem 3 programu je „NÁVRH NESCHVÁLEN – USNESENÍ NEPŘIJATO“; program nesmí skončit (Codex, PR #57)."""
+    from pipeline.zapisy import _program, nacti_radky
+    program = _program(nacti_radky(KOREN / "raw/texty/rm-2026-09-23/v1"))
+    assert len(program) >= 22
+    assert "NEPŘIJATO" not in program[3]
+    assert program[8].endswith("pro rok 2027")
+    assert program[18].endswith("vybavení interiéru")
