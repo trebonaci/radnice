@@ -48,7 +48,7 @@ Vnořený v usnesení (později ve smlouvě a projektu). Říká, čeho se věc 
 Jen volení zástupci. `id`, `jmeno`, `klub`, `obdobi[]`, `funkce[]`
 
 ### zakazka
-`id` (ID z E-ZAK), `subjekt_id`, `nazev`, `druh` (stavebni / dodavky / sluzby), `rezim`, `stav`, `datum_zahajeni`, `datum_zadani`, `vitez_ico`, `castky[]`, `url`, `projekt_ids[]` + `jistota`
+`id` (`ezak-VZ-<číslo>`), `subjekt_ico`, `nazev`, `druh` (stavebni / dodavky / sluzby / jine), `rezim`, `predmet`, `cpv`, `stav` (stav řízení z E-ZAK; u vícedílné zakázky null, stav je u částí), `datum_zahajeni` (první uveřejnění), `casti[]` {`id`, `nazev`, `stav`, `druh_rizeni`, `datum_uverejneni`, `lhuta_nabidek`, `datum_uzavreni_smlouvy`, `datum_zruseni`, `pocet_nabidek`, `vitezove[]` {`nazev`, `ico`, `fyzicka_osoba` (true → „fyzická osoba“, bez IČO), `smlouva_uzavrena`, `castky[]` (druh `smluvni` / `zaplaceno` s `obdobi` = rok)}, `registr_smluv[]` (URL)}, `url` (detail na E-ZAK), `zdroj` (`<ico>/<rok>.xml`), později `projekt_ids[]` + `jistota`. Zdroj: XML export profilu zadavatele (`pipeline/zdroje/ezak.py`, `pipeline/zakazky.py`); nabídkové ceny uchazečů se neukládají.
 
 ### smlouva
 `id` (ID verze z registru smluv), `subjekt_id`, `protistrana_ico` (u fyzických osob null), `predmet`, `castky[]`, `datum_uzavreni`, `typ` (smlouva / dodatek), `navazuje_na`, `zakazka_id` + `jistota`, `projekt_ids[]` + `jistota`, `url`

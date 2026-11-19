@@ -5,16 +5,19 @@
   typ: mesto
   smlouvy: true
   ezak_profil: https://zakazky.mesto-trebon.cz/profile_display_2.html
+  ezak_xml: true          # XML export funguje (docs/ZDROJE.md)
 - ico: "28136853"
   nazev: Městská Vodohospodářská s.r.o.
   typ: sro
   smlouvy: true
   ezak_profil: https://zakazky.mesto-trebon.cz/profile_display_354.html
+  ezak_xml: true          # XML export funguje (docs/ZDROJE.md)
 - ico: "25179896"
   nazev: Slatinné lázně Třeboň s.r.o.
   typ: sro
   smlouvy: true
   ezak_profil: https://zakazky.mesto-trebon.cz/profile_display_190.html
+  ezak_xml: true          # XML export funguje (docs/ZDROJE.md)
 - ico: "62502735"
   nazev: Technické služby Třeboň, s.r.o.
   typ: sro

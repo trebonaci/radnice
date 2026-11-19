@@ -41,7 +41,7 @@ from pipeline.zdroje.zapisy_mesta import ZapisyMesta
 KOREN = Path(__file__).resolve().parent.parent
 ZAMEK_STARY = 2 * 3600     # zámek starší než 2 hodiny považujeme za zbylý po pádu
 POKLES = 0.5               # výstup pod touto částí dosavadního počtu = podezřelý pokles
-VYSTUPY = ("jednani", "usneseni", "hlasovani")
+VYSTUPY = ("jednani", "usneseni", "hlasovani", "zakazky")
 
 
 class ZamekObsazen(Exception):
@@ -229,7 +229,7 @@ def kontrola_poklesu(vystup: dict, koren: Path) -> list[str]:
     chyby = []
     for nazev in VYSTUPY:
         dosud = len(_nacti_json(koren / "data" / f"{nazev}.json", []))
-        ted = len(vystup[nazev])
+        ted = len(vystup.get(nazev, []))
         if dosud >= 2 and ted < dosud * POKLES:
             chyby.append(f"prudký pokles počtu ({nazev}): {ted} proti dosavadním {dosud}")
         elif ted < dosud:
@@ -303,7 +303,7 @@ def _beh(koren: Path, zdroje: list[Zdroj], dnes: date, ted: datetime) -> int:
     # 2. staging: změny a sestavení nad kopií, ostrá data se zatím nedotknou
     with tempfile.TemporaryDirectory() as tmp:
         stage = Path(tmp)
-        for podadresar in ("raw/texty", "anotace", "config"):
+        for podadresar in ("raw/texty", "raw/ezak", "anotace", "config"):
             if (koren / podadresar).exists():
                 shutil.copytree(koren / podadresar, stage / podadresar)
         (stage / "raw").mkdir(exist_ok=True)

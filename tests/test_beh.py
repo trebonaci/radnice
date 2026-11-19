@@ -434,3 +434,13 @@ def test_beh_s_neuplnou_zalohou_nic_nezmeni(koren):
     pred = stav(koren)
     assert spust(koren, Web()) == 1
     assert stav(koren) == pred
+
+
+def test_beh_vidi_zakazky_z_ezak(koren):
+    """Běh sestavuje ve zkušebním adresáři; musí tam mít i raw/ezak, jinak by zakázky zmizely (Codex P1, #74)."""
+    d = koren / "raw" / "ezak" / "00247618"
+    d.mkdir(parents=True)
+    shutil.copy(VZORKY / "ezak" / "2026.xml", d / "2026.xml")
+    assert spust(koren, Web()) == 0
+    assert len(json.loads(cti(koren, "data/zakazky.json"))) == 4
+    assert spust(koren, Web()) == 0                      # druhý běh: žádný „pokles“

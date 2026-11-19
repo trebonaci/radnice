@@ -21,5 +21,6 @@ def jen_pilot(koren: Path) -> None:
         for d in texty.iterdir():
             if d.is_dir() and d.name not in PILOT:
                 shutil.rmtree(d)
-    for nazev in ("beh.json", "udalosti.json", ".beh-zapis.json"):
+    shutil.rmtree(koren / "raw" / "ezak", ignore_errors=True)       # zakázky mají vlastní testy
+    for nazev in ("beh.json", "udalosti.json", ".beh-zapis.json", "zakazky.json"):
         (koren / "data" / nazev).unlink(missing_ok=True)

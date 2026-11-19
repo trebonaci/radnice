@@ -40,6 +40,10 @@ jobs:
           sudo apt-get install -y -qq poppler-utils
           pip install -r requirements.txt
 
+      - name: Zakázky z E-ZAK (chyba nezastaví běh, zůstanou poslední správná data)
+        run: |
+          python -m pipeline.zdroje.ezak || echo "::warning::E-ZAK – některé exporty se nepodařilo stáhnout (viz log)"
+
       - name: Běh pipeline
         id: beh
         run: |
@@ -59,7 +63,7 @@ jobs:
         id: zmena
         if: steps.beh.outputs.kod == '0'
         run: |
-          if [ -n "$(git status --porcelain -- raw/texty data/jednani.json data/usneseni.json data/hlasovani.json)" ]; then
+          if [ -n "$(git status --porcelain -- raw/texty raw/ezak data/jednani.json data/usneseni.json data/hlasovani.json data/zakazky.json)" ]; then
             echo "zmena=ano" >> "$GITHUB_OUTPUT"
           else
             echo "zmena=ne" >> "$GITHUB_OUTPUT"
@@ -86,7 +90,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -b "$vetev"
           git add raw data
-          git commit -q -m "Běh pipeline $(date -u +%F): nové zápisy / verze"
+          git commit -q -m "Běh pipeline $(date -u +%F): nové zápisy / verze / zakázky"
           git push -u origin "$vetev"
           python -m pipeline.oznameni shrnuti > /tmp/telo.md
           printf '\n\nBěh: %s\n' "$ODKAZ_BEHU" >> /tmp/telo.md
