@@ -103,6 +103,7 @@ jobs:
           repository: ${{ github.repository }}
           ref: ${{ github.event.pull_request.head.ref }}
           fetch-depth: 0
+          persist-credentials: false
 
       - name: Set up Python
         if: steps.cycle.outputs.run_claude == 'true'
@@ -139,9 +140,10 @@ jobs:
       - name: Commit and push Claude changes to this PR branch
         if: steps.cycle.outputs.run_claude == 'true' && success()
         env:
+          GH_TOKEN: ${{ github.token }}
           PR_HEAD_REF: ${{ github.event.pull_request.head.ref }}
         run: |
-          if git diff --quiet && git diff --cached --quiet; then
+          if [ -z "$(git status --porcelain)" ]; then
             echo "Claude made no changes."
             exit 0
           fi
@@ -149,6 +151,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
           git commit -m "Address Codex review findings"
+          gh auth setup-git
           git push origin "HEAD:refs/heads/${PR_HEAD_REF}"
 
       - name: Hand off when Claude run fails
