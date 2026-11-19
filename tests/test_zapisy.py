@@ -195,3 +195,17 @@ def test_zastupitel_jen_ve_svem_obdobi():
     assert najdi_osobni_udaje("Ing. Zdeněk Kukačka", osoby, "2026-2030") == ["Ing. Zdeněk Kukačka"]
     assert najdi_osobni_udaje("PaedDr. Jan Váňa", osoby, "2026-2030") == []
     assert najdi_osobni_udaje("JUDr. Pavel Pumpr", osoby, "2022-2026") == ["JUDr. Pavel Pumpr"]
+
+
+def test_zm_2026_09_21_hlasovani_o_postupu_a_dilci_hlasovani():
+    """Hlasování o postupu v bodu 1 nemá kontext; usnesení 87 má dílčí hlasování „pro: … zdržel se: …“."""
+    r = rozloz("zm-2026-09-21", TEXTY / "zm-2026-09-21" / "v1")
+    postup = [h for h in r["hlasovani"] if h["typ"] == "postup"]
+    assert [h["predmet"] for h in postup] == [
+        "Návrh na složení návrhové komise", "Návrh na ověřovatele zápisu", "Program"]
+    assert all(h["vysledek"] == "prijato" and h["pro"] == 21 for h in postup)
+    u87 = [h for h in r["hlasovani"] if h.get("usneseni_id") == "zm-2026-j31-u87"]
+    assert [h["cast"] for h in u87] == ["I", "II", "III", "IV", "V", None]
+    u85 = next(u for u in r["usneseni"] if u["id"] == "zm-2026-j31-u85")
+    assert [x["ukon"] for x in u85["ukony"]][2] == "deleguje"
+    assert r["upozorneni"] == []

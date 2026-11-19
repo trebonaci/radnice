@@ -429,6 +429,892 @@
     "overeni": "overeno_kodem"
   },
   {
+    "id": "zm-2026-j31-u73",
+    "cislo": "ZM 73/2026-31",
+    "jednani_id": "zm-2026-09-21",
+    "bod": 1,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      }
+    ],
+    "text": "I. schvaluje\na) program jednání.\nb) návrhovou komisi ve složení: [jména členů komise neuvádíme].\nc) ověřovatele zápisu: Ing. Zdeněk Kukačka a Mgr. Terezie Jenisová.",
+    "text_anonymizovan": true,
+    "tema": "Program jednání, návrhová komise a ověřovatelé zápisu",
+    "tema_ai": true,
+    "kategorie": [
+      "samosprava"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Zastupitelstvo schválilo program 31. jednání, návrhovou komisi a ověřovatele zápisu.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-zm-2026-09-21",
+      "strany": [
+        2
+      ],
+      "text": "a) program jednání."
+    },
+    "castky": [],
+    "parcely": [],
+    "poznamka": "Jména členů návrhové komise neuvádíme, protože jeden z nich není v seznamu zastupitelů 2022–2026 v `config/osoby.yaml` (zřejmě náhradník); ověřit a případně doplnit.",
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "zm-2026-j31-u74",
+    "cislo": "ZM 74/2026-31",
+    "jednani_id": "zm-2026-09-21",
+    "bod": 2,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "bere_na_vedomi",
+        "sloveso": "bere na vědomí"
+      },
+      {
+        "cast": "II",
+        "ukon": "bere_na_vedomi",
+        "sloveso": "bere na vědomí"
+      }
+    ],
+    "text": "I. bere na vědomí\nzprávu o plnění usnesení zastupitelstva města přijatých na jednání zastupitelstva města dne 22.06.2026.\nII. bere na vědomí\nzprávu o plnění požadavků vznesených zastupiteli na jednání zastupitelstva města dne 22.06.2026, která byla\nzastupitelům zaslána dne 14.07.2026.",
+    "text_anonymizovan": false,
+    "tema": "Plnění usnesení zastupitelstva a požadavků zastupitelů",
+    "tema_ai": true,
+    "kategorie": [
+      "samosprava"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Zastupitelstvo vzalo na vědomí zprávy o plnění svých usnesení a požadavků zastupitelů z jednání 22. 6. 2026.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-zm-2026-09-21",
+      "strany": [
+        2
+      ],
+      "text": "zprávu o plnění usnesení zastupitelstva města přijatých na jednání zastupitelstva města dne 22.06.2026."
+    },
+    "castky": [],
+    "parcely": [],
+    "poznamka": null,
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "zm-2026-j31-u75",
+    "cislo": "ZM 75/2026-31",
+    "jednani_id": "zm-2026-09-21",
+    "bod": 3,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "bere_na_vedomi",
+        "sloveso": "bere na vědomí"
+      }
+    ],
+    "text": "I. bere na vědomí\npřehled rozpočtových opatření provedených radou města od 10.06.2026 do 26.08.2026 (vč. opatření\nschvalovaných ZM).",
+    "text_anonymizovan": false,
+    "tema": "Rozpočtová opatření provedená radou od 10. 6. do 26. 8. 2026",
+    "tema_ai": true,
+    "kategorie": [
+      "rozpocet"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Zastupitelstvo vzalo na vědomí přehled rozpočtových opatření, která provedla rada města.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-zm-2026-09-21",
+      "strany": [
+        2
+      ],
+      "text": "přehled rozpočtových opatření provedených radou města od 10.06.2026 do 26.08.2026"
+    },
+    "castky": [],
+    "parcely": [],
+    "poznamka": null,
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "zm-2026-j31-u76",
+    "cislo": "ZM 76/2026-31",
+    "jednani_id": "zm-2026-09-21",
+    "bod": 4,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "bere_na_vedomi",
+        "sloveso": "bere na vědomí"
+      }
+    ],
+    "text": "I. bere na vědomí\ninformaci o plnění a čerpání rozpočtu města k 30.06.2026 a mezitímní účetní závěrku sestavenou ke dni\n30.06.2026.",
+    "text_anonymizovan": false,
+    "tema": "Plnění rozpočtu města k 30. 6. 2026 a mezitímní účetní závěrka",
+    "tema_ai": true,
+    "kategorie": [
+      "rozpocet"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Zastupitelstvo vzalo na vědomí informaci o plnění a čerpání rozpočtu města k 30. 6. 2026 a mezitímní účetní závěrku.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-zm-2026-09-21",
+      "strany": [
+        2
+      ],
+      "text": "informaci o plnění a čerpání rozpočtu města k 30.06.2026 a mezitímní účetní závěrku"
+    },
+    "castky": [],
+    "parcely": [],
+    "poznamka": null,
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "zm-2026-j31-u77",
+    "cislo": "ZM 77/2026-31",
+    "jednani_id": "zm-2026-09-21",
+    "bod": 5,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "II",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "I. schvaluje\nprovedení rozpočtového opatření č. 48, které spočívá v:\núpravách položek rozpočtu takto:\n-snížení výdajové položky 6901 „Rezervy kapitálových výdajů“, § 6409, ORJ 800, ORG 6093000000, UZ 0 o\nčástku 20.000.000,00 Kč\n-navýšení výdajové položky 5349 „Jednotný příděl do lázeňského investičního fondu“, § 6330, ORJ 800, ORG\n9800000000, UZ 0 o částku 20.000.000,00 Kč a v\núpravách položek rozpočtu Lázeňského investičního fondu takto:\n-navýšení příjmové položky 4134 „Jednotný příděl do lázeňského investičního fondu“, § 6330, ORJ 800, ORG\n5040004040, UZ o částku 20.000.000,00 Kč,\n-navýšení výdajové položky 6121 „TZ nemovitého majetku v pronájmu společnosti SLT“, § 3613, ORJ 750,\nORG 5040005041, UZ 0 o částku 20.000.000,00 Kč.\nRozpočet od\nČís                                                             Schválený    Rozpočet po     Rozpočtové\nRM      ÚZ           ORG        ORJ   Paragr.   Polož.                                               počátku roku po\n.                                                               rozpočet    schválení RO     opatření\nRO\nRozpočtové výdaje (Kč):\n48.             0       6093000000     800    6409     6901     26 000 000   30 227 143,96   - 20 000 000    10 227 143,96\n0       9800000000     800    6330     5349             0               0    + 20 000 000    20 000 000,00\nRozpočtové příjmy LIF (Kč):\n48.             0       5040005040     800    6330     4134             0               0    + 20 000 000    20 000 000,00\nRozpočtové výdaje LIF (Kč):\n48.             0       5040005041     750    3613     6121     54 200 000     54 200 000    + 20 000 000       74 200 000\nII. ukládá\nodboru finančnímu a majetkovému provést a evidovat RO v IS GINIS.",
+    "text_anonymizovan": false,
+    "tema": "Rozpočtové opatření č. 48 – 20 milionů Kč pro Lázeňský investiční fond",
+    "tema_ai": true,
+    "kategorie": [
+      "rozpocet",
+      "investice",
+      "lazne_spolecnosti"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Zastupitelstvo schválilo přesun 20 000 000 Kč z rezervy kapitálových výdajů do Lázeňského investičního fondu na technické zhodnocení budov pronajatých společnosti Slatinné lázně Třeboň.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-zm-2026-09-21",
+      "strany": [
+        3
+      ],
+      "text": "snížení výdajové položky 6901 „Rezervy kapitálových výdajů“, § 6409, ORJ 800, ORG 6093000000, UZ 0 o částku 20.000.000,00 Kč"
+    },
+    "castky": [
+      {
+        "hodnota": 20000000.0,
+        "jednotka": "Kč",
+        "druh": "rozpoctove_opatreni",
+        "s_dph": null,
+        "citace": "snížení výdajové položky 6901 „Rezervy kapitálových výdajů“, § 6409, ORJ 800, ORG 6093000000, UZ 0 o částku 20.000.000,00 Kč",
+        "mena": "CZK"
+      }
+    ],
+    "parcely": [],
+    "poznamka": "Částka je přesun mezi rozpočtovými položkami, ne cena zakázky ani výdaj. Tabulka rozpočtu je v datech jen jako surový text.",
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "zm-2026-j31-u78",
+    "cislo": "ZM 78/2026-31",
+    "jednani_id": "zm-2026-09-21",
+    "bod": 6,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "II",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "I. schvaluje\nzveřejnění záměru prodeje části pozemku p. č. 484/1 o výměře cca 15 m2, části pozemku p. č. 484/3 o výměře\ncca 4 m2 k. ú. Třeboň, když výměra bude zpřesněna geometrickým plánem, za cenu 3.000,- Kč/m2.\nII. ukládá\nodboru finančnímu a majetkovému zveřejnit záměr prodeje na úřední desce.",
+    "text_anonymizovan": false,
+    "tema": "Záměr prodeje částí pozemků p. č. 484/1 a 484/3 v Třeboni",
+    "tema_ai": true,
+    "kategorie": [
+      "majetek_prevod"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Zastupitelstvo schválilo zveřejnění záměru prodeje částí dvou pozemků (cca 15 m2 a cca 4 m2) za 3 000 Kč/m2.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-zm-2026-09-21",
+      "strany": [
+        3
+      ],
+      "text": "části pozemku p. č. 484/1 o výměře cca 15 m2, části pozemku p. č. 484/3 o výměře cca 4 m2 k. ú. Třeboň"
+    },
+    "castky": [
+      {
+        "hodnota": 3000.0,
+        "jednotka": "Kč/m2",
+        "druh": "jine",
+        "s_dph": null,
+        "citace": "za cenu 3.000,- Kč/m2",
+        "poznamka": "Cena za m2 v záměru prodeje; zda je s DPH, zdroj neuvádí.",
+        "mena": "CZK"
+      }
+    ],
+    "parcely": [
+      {
+        "ku": "Třeboň",
+        "cislo": "484/1",
+        "cast": true,
+        "citace": "části pozemku p. č. 484/1 o výměře cca 15 m2"
+      },
+      {
+        "ku": "Třeboň",
+        "cislo": "484/3",
+        "cast": true,
+        "citace": "části pozemku p. č. 484/3 o výměře cca 4 m2"
+      }
+    ],
+    "poznamka": "Jde o záměr (zveřejnění na úřední desce), ne o schválený prodej. Výměra se upřesní geometrickým plánem.",
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "zm-2026-j31-u79",
+    "cislo": "ZM 79/2026-31",
+    "jednani_id": "zm-2026-09-21",
+    "bod": 7,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "II",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "I. schvaluje\nzveřejnění záměru prodeje části pozemku p. č. 1/1 o výměře 510 m2 k. ú. Holičky u Staré Hlíny (dle GP č.\n676-24/2026 pozemek p. č. 1/90), a to formou obálkové metody, když minimální nabídková cena činí 2.000,00\nKč/m2 + DPH dle platných právních předpisů. Kupní smlouva bude ze strany kupujícího podepsána do 30 dnů\node dne schválení prodeje zastupitelstvem města. Kupní cena bude uhrazena kupujícím do 30 dnů od podpisu\nkupní smlouvy na účet města. Veškeré náklady spojené s vkladem do katastru nemovitostí hradí kupující.\nSepsání kupní smlouvy zajistí právní odbor MěÚ Třeboň.\nII. ukládá\nodboru finančnímu a majetkovému zveřejnit záměr na úřední desce.",
+    "text_anonymizovan": false,
+    "tema": "Záměr prodeje části pozemku p. č. 1/1 v Holičkách u Staré Hlíny obálkovou metodou",
+    "tema_ai": true,
+    "kategorie": [
+      "majetek_prevod"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Zastupitelstvo schválilo zveřejnění záměru prodeje části pozemku o výměře 510 m2 obálkovou metodou s minimální nabídkovou cenou 2 000 Kč/m2 plus DPH.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-zm-2026-09-21",
+      "strany": [
+        4
+      ],
+      "text": "části pozemku p. č. 1/1 o výměře 510 m2 k. ú. Holičky u Staré Hlíny"
+    },
+    "castky": [
+      {
+        "hodnota": 2000.0,
+        "jednotka": "Kč/m2",
+        "druh": "jine",
+        "s_dph": false,
+        "citace": "minimální nabídková cena činí 2.000,00 Kč/m2 + DPH dle platných právních předpisů",
+        "poznamka": "Minimální nabídková cena v obálkové metodě; DPH se k ceně přičítá.",
+        "mena": "CZK"
+      }
+    ],
+    "parcely": [
+      {
+        "ku": "Holičky u Staré Hlíny",
+        "cislo": "1/1",
+        "cast": true,
+        "citace": "části pozemku p. č. 1/1 o výměře 510 m2 k. ú. Holičky u Staré Hlíny"
+      }
+    ],
+    "poznamka": "Jde o záměr prodeje, ne o schválený prodej.",
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "zm-2026-j31-u80",
+    "cislo": "ZM 80/2026-31",
+    "jednani_id": "zm-2026-09-21",
+    "bod": 8,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "II",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "I. schvaluje\nzáměr prodeje části pozemku p. č. 484 o výměře 34 m2 (dle GP č. 322-21/2026 pozemek p. č. 484/2), pozemku\np. č. 1118 o výměře 53 m2 vše v k. ú. Stará Hlína za cenu 500,00 Kč/m2 a pozemku p. č. 508 o výměře 76\nm2 v k. ú. Stará Hlína za cenu 800,00 Kč/m2. Kupní smlouva bude ze strany kupujícího podepsána do 30 dnů\nod schválení prodeje zastupitelstvem města. Kupní cena bude uhrazena kupujícím do 30 dnů od podpisu\nkupní smlouvy na účet města. Veškeré náklady spojené s vkladem do katastru nemovitostí hradí kupující.\nSepsání kupní smlouvy zajistí právní odbor MěÚ Třeboň.\nII. ukládá\nodboru finančnímu a majetkovému zveřejnit záměr na úřední desce.",
+    "text_anonymizovan": false,
+    "tema": "Záměr prodeje pozemků ve Staré Hlíně",
+    "tema_ai": true,
+    "kategorie": [
+      "majetek_prevod"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Zastupitelstvo schválilo záměr prodeje části pozemku p. č. 484 (34 m2) a pozemku p. č. 1118 (53 m2) za 500 Kč/m2 a pozemku p. č. 508 (76 m2) za 800 Kč/m2.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-zm-2026-09-21",
+      "strany": [
+        4
+      ],
+      "text": "záměr prodeje části pozemku p. č. 484 o výměře 34 m2"
+    },
+    "castky": [
+      {
+        "hodnota": 500.0,
+        "jednotka": "Kč/m2",
+        "druh": "jine",
+        "s_dph": null,
+        "citace": "p. č. 1118 o výměře 53 m2 vše v k. ú. Stará Hlína za cenu 500,00 Kč/m2",
+        "poznamka": "Cena za m2 v záměru prodeje (části pozemku p. č. 484 a pozemek p. č. 1118); zda je s DPH, zdroj neuvádí.",
+        "mena": "CZK"
+      },
+      {
+        "hodnota": 800.0,
+        "jednotka": "Kč/m2",
+        "druh": "jine",
+        "s_dph": null,
+        "citace": "pozemku p. č. 508 o výměře 76 m2 v k. ú. Stará Hlína za cenu 800,00 Kč/m2",
+        "poznamka": "Cena za m2 v záměru prodeje (pozemek p. č. 508); zda je s DPH, zdroj neuvádí.",
+        "mena": "CZK"
+      }
+    ],
+    "parcely": [
+      {
+        "ku": "Stará Hlína",
+        "cislo": "484",
+        "cast": true,
+        "citace": "části pozemku p. č. 484 o výměře 34 m2"
+      },
+      {
+        "ku": "Stará Hlína",
+        "cislo": "1118",
+        "citace": "p. č. 1118 o výměře 53 m2 vše v k. ú. Stará Hlína"
+      },
+      {
+        "ku": "Stará Hlína",
+        "cislo": "508",
+        "citace": "pozemku p. č. 508 o výměře 76 m2 v k. ú. Stará Hlína"
+      }
+    ],
+    "poznamka": "Jde o záměr prodeje, ne o schválený prodej.",
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "zm-2026-j31-u81",
+    "cislo": "ZM 81/2026-31",
+    "jednani_id": "zm-2026-09-21",
+    "bod": 9,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "II",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "I. schvaluje\nprodej pozemků p. č. 1915/585 (ostatní plocha) o výměře 4 m2, p. č. 1915/535 (zahrada) o výměře 13 m2 v k.\nú. Třeboň, do společného jmění manželům xxxxxxxxxxxxxxxxxxxxxxxxx (xxxxxxxxxxxxxxxxx, xxxxxxxxxxxx,\nxxxxxxxxxxxxxxxxxxxx), za cenu 500,00 Kč/m2 a za podmínky, že kupní smlouva bude ze strany kupujících\npodepsána do 30 dnů ode dne schválení prodeje zastupitelstvem města. Kupní cena bude uhrazena\nkupujícími do 30 dnů od podpisu kupní smlouvy na účet města. Kupující hradí veškeré náklady spojené s\nvkladem do katastru nemovitostí. Sepsání kupní smlouvy zajistí právní odbor MěÚ Třeboň.\nII. ukládá\nodboru finančnímu a majetkovému předložit starostovi města smlouvu k podpisu.",
+    "text_anonymizovan": false,
+    "tema": "Prodej dvou malých pozemků v Třeboni",
+    "tema_ai": true,
+    "kategorie": [
+      "majetek_prevod"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Zastupitelstvo schválilo prodej pozemků p. č. 1915/585 (4 m2) a p. č. 1915/535 (13 m2) za 500 Kč/m2; kupující jsou v zápisu anonymizováni.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-zm-2026-09-21",
+      "strany": [
+        4
+      ],
+      "text": "prodej pozemků p. č. 1915/585 (ostatní plocha) o výměře 4 m2, p. č. 1915/535 (zahrada) o výměře 13 m2 v k. ú. Třeboň"
+    },
+    "castky": [
+      {
+        "hodnota": 500.0,
+        "jednotka": "Kč/m2",
+        "druh": "jine",
+        "s_dph": null,
+        "citace": "za cenu 500,00 Kč/m2",
+        "poznamka": "Prodejní cena za m2; zda je s DPH, zdroj neuvádí.",
+        "mena": "CZK"
+      }
+    ],
+    "parcely": [
+      {
+        "ku": "Třeboň",
+        "cislo": "1915/585",
+        "citace": "p. č. 1915/585 (ostatní plocha) o výměře 4 m2"
+      },
+      {
+        "ku": "Třeboň",
+        "cislo": "1915/535",
+        "citace": "p. č. 1915/535 (zahrada) o výměře 13 m2"
+      }
+    ],
+    "poznamka": "Kupující (manželé) jsou fyzické osoby, jejich údaje město v zápisu anonymizovalo.",
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "zm-2026-j31-u82",
+    "cislo": "ZM 82/2026-31",
+    "jednani_id": "zm-2026-09-21",
+    "bod": 10,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "II",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "I. schvaluje\npřijetí daru a uzavření Darovací smlouvy spojené se smlouvou o zřízení služebnosti mezi městem Třeboň\n(jako obdarovaný a oprávněný) a xxxxxxxxxxxxxxxxxxxxx (jako dárce a povinný, bytem xxxxxxxxxxxxxxx,\nxxxxxxxx, podíl o velikosti id. 8/9), xxxxxxxxxxxxxxxxxxxxxxx (jako dárce a povinný, bytem xxxxxxxxxxxxxxxxx,\nxxxxxxxxxxxxxxxx, podíl o velikosti id. 1/18) a xxxxxxxxxxxxxxxxxxxx (jako dárce a povinný, bytem\nxxxxxxxxxxxxxx, xxxxxxxxxxxxxxxxxxx, podíl o velikosti id. 1/18), kdy předmětem daru bude pozemek p. č.\n3878 (zastavěná plocha a nádvoří) o výměře 40 m2 vč. torza seníku umístěného na předmětném pozemku,\nvše v k. ú. Třeboň. Bezúplatné zřízení služebnosti bude spočívat v právu stezky, cesty na pozemku p. č. 3879\nk. ú. Třeboň ve prospěch pozemku p. č. 3878, vše k. ú. Třeboň pro město Třeboň a každého dalšího vlastníka\npozemků z důvodu údržby seníku. Rozsah a umístění věcného břemene je upřesněno geometrickým plánem\nč. 4436-32/2026. Sepsání darovací smlouvy spojené se smlouvou o zřízení služebnosti zajistí odbor právní.\nVeškeré náklady spojené s vyhotovením geometrického plánu, sepsáním darovací smlouvy spojené se\nsmlouvou o zřízení služebnosti, návrhem na vklad do KN budou hrazeny obdarovaným.\nII. ukládá\nodboru finančnímu a majetkovému předložit smlouvu starostovi města k podpisu.",
+    "text_anonymizovan": false,
+    "tema": "Dar pozemku s torzem seníku v Třeboni",
+    "tema_ai": true,
+    "kategorie": [
+      "majetek_prevod",
+      "dotace_dary"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Zastupitelstvo schválilo přijetí daru pozemku p. č. 3878 (40 m2) i s torzem seníku od tří vlastníků spolu s bezúplatným zřízením práva cesty k seníku; náklady spojené s darem hradí město.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-zm-2026-09-21",
+      "strany": [
+        5
+      ],
+      "text": "kdy předmětem daru bude pozemek p. č. 3878 (zastavěná plocha a nádvoří) o výměře 40 m2 vč. torza seníku"
+    },
+    "castky": [],
+    "parcely": [
+      {
+        "ku": "Třeboň",
+        "cislo": "3878",
+        "citace": "pozemek p. č. 3878 (zastavěná plocha a nádvoří) o výměře 40 m2"
+      },
+      {
+        "ku": "Třeboň",
+        "cislo": "3879",
+        "zdroj": "sluzebnost",
+        "citace": "v právu stezky, cesty na pozemku p. č. 3879 k. ú. Třeboň"
+      }
+    ],
+    "poznamka": "Dárci jsou fyzické osoby, jejich údaje město v zápisu anonymizovalo. Hodnota daru v zápisu neuvedena.",
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "zm-2026-j31-u83",
+    "cislo": "ZM 83/2026-31",
+    "jednani_id": "zm-2026-09-21",
+    "bod": 11,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "II",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "III",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "IV",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "I. schvaluje\nuzavření Smlouvy o bezúplatném převodu pozemku č. 1009992617 mezi Českou republikou – Státním\npozemkovým úřadem (jako převádějící, IČ: 01312774, se sídlem: Husinecká 1024/11a, 130 00 Praha 3 –\nŽižkov) a městem Třeboň (jako nabyvatel), kdy předmětem bezúplatného převodu je pozemek p. č. 1742/2\n(trvalý travní porost) k. ú. Třeboň.\nII. schvaluje\nuzavření Smlouvy o bezúplatném převodu pozemků č. 1008992617 mezi Českou republikou – Státním\npozemkovým úřadem (jako převádějící, IČ: 01312774, se sídlem: Husinecká 1024/11a, 130 00 Praha 3 –\nŽižkov) a městem Třeboň (jako nabyvatel), kdy předmětem bezúplatného převodu jsou pozemky p. č. 134/1\n(orná půda), p. č. 134/2 (trvalý travní porost), p. č. 1933/1 (orná půda, nově vytvořeno GP – číslo 1386-63/2025\nze dne 05.12.2025 z parcely č. 1933/1) a p. č. 1933/3 (trvalý travní porost), vše v k. ú. Břilice.\nIII. schvaluje\nuzavření Smlouvy o bezúplatném převodu pozemku č. 1010992617 mezi Českou republikou – Státním\npozemkovým úřadem (jako převádějící, IČ: 01312774, se sídlem: Husinecká 1024/11a, 130 00 Praha 3 –\nŽižkov) a městem Třeboň (jako nabyvatel), kdy předmětem bezúplatného převodu je pozemek p. č. 1926/3\n(orná půda) v k. ú. Břilice.\nIV. ukládá\nodboru finančnímu a majetkovému předložit smlouvy starostovi města k podpisu.",
+    "text_anonymizovan": false,
+    "tema": "Bezúplatný převod pozemků od Státního pozemkového úřadu",
+    "tema_ai": true,
+    "kategorie": [
+      "majetek_prevod"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Zastupitelstvo schválilo tři smlouvy o bezúplatném převodu pozemků v Třeboni a v Břilicích od Státního pozemkového úřadu na město.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-zm-2026-09-21",
+      "strany": [
+        5
+      ],
+      "text": "uzavření Smlouvy o bezúplatném převodu pozemku č. 1009992617 mezi Českou republikou – Státním pozemkovým úřadem"
+    },
+    "castky": [],
+    "parcely": [
+      {
+        "ku": "Třeboň",
+        "cislo": "1742/2",
+        "citace": "pozemek p. č. 1742/2 (trvalý travní porost) k. ú. Třeboň"
+      },
+      {
+        "ku": "Břilice",
+        "cislo": "134/1",
+        "citace": "pozemky p. č. 134/1 (orná půda)"
+      },
+      {
+        "ku": "Břilice",
+        "cislo": "134/2",
+        "citace": "p. č. 134/2 (trvalý travní porost)"
+      },
+      {
+        "ku": "Břilice",
+        "cislo": "1933/1",
+        "citace": "p. č. 1933/1 (orná půda, nově vytvořeno GP"
+      },
+      {
+        "ku": "Břilice",
+        "cislo": "1933/3",
+        "citace": "p. č. 1933/3 (trvalý travní porost), vše v k. ú. Břilice"
+      },
+      {
+        "ku": "Břilice",
+        "cislo": "1926/3",
+        "citace": "pozemek p. č. 1926/3 (orná půda) v k. ú. Břilice"
+      }
+    ],
+    "poznamka": null,
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "zm-2026-j31-u84",
+    "cislo": "ZM 84/2026-31",
+    "jednani_id": "zm-2026-09-21",
+    "bod": 12,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "II",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "III",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "I. schvaluje\nuzavření Smlouvy o převodu vlastnictví družstevního nebytového prostoru a pozemku mezi městem Třeboň\n(jako nabyvatelem) a Stavebním bytovým družstvem Města Třeboň 2000 (se sídlem Palackého nám. 46/II,\n379 01 Třeboň, IČO: 26019663, jako převodcem), kdy předmětem převodu je jednotka č. 566/24 vymezená v\npozemku p. č. KN 1178/4 - zastavěná plocha a nádvoří, jehož součástí je budova č. p. 566, bytový dům, v k.\nú. Třeboň a spoluvlastnický podíl o velikosti 478/11266 na společných částech nemovité věci - pozemku p. č.\nKN 1178/4 v k. ú. Třeboň, jehož součástí je budova bytového domu č. p. 566. Převod jednotky a\nspoluvlastnického podílu na nemovité věci je činěn v souladu s Dohodou o narovnání a o převodu nemovitých\nvěcí uzavřenou mezi městem Třeboň a SBD dne 06.05.2026.\nII. schvaluje\nuzavření Smlouvy o převodu vlastnictví družstevních nebytových prostor a pozemku mezi městem Třeboň\n(jako nabyvatelem) a Stavebním bytovým družstvem Města Třeboň 2000 (se sídlem Palackého nám. 46/II,\n379 01 Třeboň, IČO: 26019663, jako převodcem), kdy předmětem převodu jsou jednotky vymezené v\npozemku p. č. KN 762/4 - zastavěná plocha a nádvoří, o výměře 476 m2, v k.ú. Třeboň, jehož součástí je\nbudova č. p. 11 - bytový dům, a spoluvlastnické podíly na nemovité věci - pozemku p. č. KN 762/4, jehož\nsoučástí je budova bytového domu č.p. 11 v k.ú. Třeboň, a to:\na) jednotka č. 11/10 o výměře 56,8 m2 se spoluvlastnickým podílem na nemovité věci ve výši 568/7956,\nb) jednotka č. 11/11 o výměře 68,2 m2 se spoluvlastnickým podílem na nemovité věci ve výši 682/7956,\nc) jednotka č. 11/12 o výměře 73,9 m2 se spoluvlastnickým podílem na nemovité věci ve výši 739/7956 a\nd) jednotka č. 11/13 o výměře 41,9 m2 se spoluvlastnickým podílem na nemovité věci ve výši 419/7956.\nPřevod jednotek a spoluvlastnických podílů na nemovité věci je činěn v souladu s Dohodou o narovnání a o\npřevodu nemovitých věcí uzavřenou mezi městem Třeboň a SBD dne 06.05.2026.\nIII. ukládá\nodboru finančnímu a majetkovému předložit smlouvy k podpisu.",
+    "text_anonymizovan": false,
+    "tema": "Převod družstevních nebytových prostor od Stavebního bytového družstva",
+    "tema_ai": true,
+    "kategorie": [
+      "majetek_prevod"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Zastupitelstvo schválilo dvě smlouvy o převodu vlastnictví družstevních nebytových prostor (jednotka v č. p. 566 a čtyři jednotky v č. p. 11) na město podle dohody o narovnání ze 6. 5. 2026.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-zm-2026-09-21",
+      "strany": [
+        6
+      ],
+      "text": "uzavření Smlouvy o převodu vlastnictví družstevního nebytového prostoru a pozemku mezi městem Třeboň"
+    },
+    "castky": [],
+    "parcely": [
+      {
+        "ku": "Třeboň",
+        "cislo": "1178/4",
+        "zdroj": "usneseni",
+        "citace": "pozemku p. č. KN 1178/4 - zastavěná plocha a nádvoří, jehož součástí je budova č. p. 566"
+      },
+      {
+        "ku": "Třeboň",
+        "cislo": "762/4",
+        "zdroj": "usneseni",
+        "citace": "pozemku p. č. KN 762/4 - zastavěná plocha a nádvoří, o výměře 476 m2"
+      }
+    ],
+    "poznamka": "Cena převodu v zápisu neuvedena.",
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "zm-2026-j31-u85",
+    "cislo": "ZM 85/2026-31",
+    "jednani_id": "zm-2026-09-21",
+    "bod": 13,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "rozhoduje",
+        "sloveso": "rozhoduje"
+      },
+      {
+        "cast": "II",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "III",
+        "ukon": "deleguje",
+        "sloveso": "deleguje"
+      },
+      {
+        "cast": "IV",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "I. rozhoduje\njako spoluzakladatel o založení společenství vlastníků s názvem „Společenství vlastníků pro dům čp. 127,\nTřeboň I“, jakožto právnické osoby způsobilé vykonávat práva a zavazovat se k povinnostem ve věcech\nspojených se správou, provozem a opravami společných částí nemovitosti (správou domu) a v dalších věcech,\nv rozsahu a způsobem, uvedeným v zákoně a v příslušných stanovách.\nII. schvaluje\na) účast města Třeboně jako řádného člena společenství vlastníků s názvem „Společenství vlastníků pro dům\nčp. 127, Třeboň I“, když dle Stanov prvními členy výboru, jakožto statutárního orgánu, budou:\nxxxxxxxxxxxxxxxxxxx, narozen dne xxxxxxxxxxxxx, bytem xxxxxxxxxxxxxxxxxxxxxxx,\nxxxxxxxxxxxxxxxxxxx, narozena dne xxxxxxxxxxxxxx, bytem xxxxxxxxxxxxxxxxxxxxxxxxx,\nxxxxxxxxxxxxxxxxxxx, narozena dne xxxxxxxxxxxxxxxxx, bytem xxxxxxxxxxxxxxxxxxxxxx.\nb) Stanovy společenství vlastníků s názvem „Společenství vlastníků pro dům čp. 127, Třeboň I“ připojené v\npříloze.\nIII. deleguje\nstarostu města, PaedDr. Jana Váňu, jako zástupce města Třeboně v rámci ustanovující členské schůzce\nspolečenství vlastníků s názvem „Společenství vlastníků pro dům čp. 127, Třeboň I“, a to včetně hlasovacího\npráva v rámci shromáždění společenství vlastníků.\nIV. ukládá\nodboru finančnímu a majetkovému zajistit úkony k založení „Společenství vlastníků pro dům čp. 127, Třeboň\nI“.",
+    "text_anonymizovan": false,
+    "tema": "Založení Společenství vlastníků pro dům čp. 127",
+    "tema_ai": true,
+    "kategorie": [
+      "majetek_prevod",
+      "samosprava"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Město se stalo spoluzakladatelem Společenství vlastníků pro dům čp. 127, Třeboň I, schválilo svou účast a stanovy a delegovalo starostu jako svého zástupce.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-zm-2026-09-21",
+      "strany": [
+        6
+      ],
+      "text": "o založení společenství vlastníků s názvem „Společenství vlastníků pro dům čp. 127, Třeboň I“"
+    },
+    "castky": [],
+    "parcely": [],
+    "poznamka": "Členové prvního výboru jsou fyzické osoby, jejich údaje město v zápisu anonymizovalo.",
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "zm-2026-j31-u86",
+    "cislo": "ZM 86/2026-31",
+    "jednani_id": "zm-2026-09-21",
+    "bod": 14,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "II",
+        "ukon": "bere_na_vedomi",
+        "sloveso": "bere na vědomí"
+      },
+      {
+        "cast": "III",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "I. schvaluje\nrozdělení Změny č. 9 územního plánu Třeboň na Změnu č. 9a územního plánu Třeboň a Změnu č. 9b\núzemního plánu Třeboň.\nII. bere na vědomí\n- Změna č. 9a územního plánu Třeboň i Změna č. 9b územního plánu Třeboň budou vycházet ze schváleného\nzadání, které je součástí schválené Zprávy o uplatňování územního plánu Třeboň za období 2020-2024;\n- Změna č. 9a územního plánu Třeboň prověří pouze podněty č. 2, č. 29, č. 32 a č. 38 uvedené ve schválené\nZprávě o uplatňování územního plánu Třeboň za období 2020-2024 (viz příloha);\n- Změna č. 9b územního plánu Třeboň prověří zbývající podněty uvedené ve schválené Zprávě o uplatňování\núzemního plánu Třeboň za období 2020-2024, jakožto i další obsahové požadavky stanovené ve schváleném\nzadání.\nIII. ukládá\nodboru územního plánování a stavebního řádu zajistit plnění usnesení.",
+    "text_anonymizovan": false,
+    "tema": "Rozdělení Změny č. 9 územního plánu na Změnu č. 9a a 9b",
+    "tema_ai": true,
+    "kategorie": [
+      "ostatni"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Zastupitelstvo schválilo rozdělení Změny č. 9 územního plánu na dvě změny; 9a prověří čtyři podněty (č. 2, 29, 32 a 38), 9b ostatní podněty.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-zm-2026-09-21",
+      "strany": [
+        7
+      ],
+      "text": "rozdělení Změny č. 9 územního plánu Třeboň na Změnu č. 9a územního plánu Třeboň a Změnu č. 9b"
+    },
+    "castky": [],
+    "parcely": [],
+    "poznamka": "Hlasování 20 pro, 1 se zdržel.",
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "zm-2026-j31-u87",
+    "cislo": "ZM 87/2026-31",
+    "jednani_id": "zm-2026-09-21",
+    "bod": 15,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "bere_na_vedomi",
+        "sloveso": "bere na vědomí"
+      },
+      {
+        "cast": "II",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "III",
+        "ukon": "souhlasi",
+        "sloveso": "souhlasí"
+      },
+      {
+        "cast": "IV",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "V",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "I. bere na vědomí\nproces pořízení Změny č. 3 regulačního plánu Třeboň uvedený v důvodové zprávě.\nII. schvaluje\nvyhodnocení připomínek, které byly uplatněny během projednávání změny regulačního plánu takto:\n1. Osadní výbor Břilice\nzastavitelná plocha BV6 a navazující území\nOsadní výbor Břilice podal dne 8.1.2024 na váš úřad podnět, připomínky a požadavky na změny územně\nplánovací dokumentace lokality BV6 v k. ú. Břilice v obci Břilice. V dané věci je ustanoveno datum\n24.3.2026 k projednání navrhovaných změn.\nZa OV Břilice konstatuji, že připomínkám místních občanů bylo více méně vyhoveno. Za to děkujeme. V\npřipraveném návrhu ale nebyla k projednání akceptována připomínka občan, která zněla:\nNesouhlasí s naplánovanou dopravní obslužností navrženého řešení a uspořádání stavebních parcel. Po\npřepracování rozložení rozměrově nových stavebních parcel, navrhuje jiné umístění plnohodnotných\nmístních komunikací, která budou dvousměrně průjezdné a nebudou slepé. Zároveň budou logicky\nnějakým způsobem propojeny s komunikací a ulici Třeboňská, např. s vyústěním u místní kapličky.\nZároveň nové řešení umožní zpřístupnění stávajících parcel místních obyvatel, které navazují na jejich\nnemovitosti, např. statky na návsi, atd. Rovněž navržené nepřístupné zelené, patrně odpočinkové, zóny a\núčel jezírka by bylo vhodné diskutovat.\nZa OV Břilice si dovoluji znovu předložit tuto připomínku a to v dále uvedeném novém znění a rozsahu:\nobčan, Břilice\nNavrhuje se doplnění plnohodnotné místní komunikace, která bude dvousměrně průjezdná a nebude\n„slepá“, viz. příloha náčrtek - označeno 1) 2). Navrhovaným řešením bude možnost lokalitu v budoucnu\nlogicky propojit s ul. Třeboňská a lokalitou návsi, s vyústěním u místní kapičky. Obyvatelům se tak úpravou\n1) zkrátí časově a vzdálenostně přístup do centra obce. Navrženou úpravou 2) se zabrání zbytečnému\npojíždění v lokalitě, když celou lokalitu bude možné plynule projet a ne se točit a vracet do bodu „A“, viz.\npříloha náčrtek. Tento bod bude patrně jediným přístupovým místem, protože ostatní zakreslené\npotenciální přístupy jsou v soukromém vlastnictví a předběžně rezonuje informace, že nebude zájem je\npřevést na město, viz. bod „B“ příloha náčrtku. Zrušení slepé ulice bude mít zásadní vliv i na obslužnost\ndaného místa z hlediska nástupních ploch IZS. (zejména hasičů).\nJak bylo zmíněno v původní žádosti, OV Břilice pouze administroval požadavky občanů, které shrnul do\npodaného podnětu. Tento bod byl součástí původního návrhu. Proto si dovoluji požádat o znovu zařazení\ntohoto požadavku do změny regulačního plánu.\nZároveň OV Břilice žádá být úřadem vyrozuměn o učiněných opatřeních a dalších krocích v realizaci\npožadavků z podaného podnětu a to včetně konkrétních termínů plnění.\nVyhodnocení: NEVYHOVĚT\nZastavitelná plocha BV6 (Z.24) je dle platné územně plánovací dokumentace z hlediska dopravní\ninfrastruktury napojena ze severní strany 3 sjezdy, z čehož 2 páteřní komunikace prostupují celou\nzastavitelnou plochou a následně umožňují i napojení lokality z jihu, či popř. také z jihozápadu. Z hlediska\ndopravního napojení je území také zokruhováno. Z hlediska vlastnictví se takřka každá navrhovaná\nkomunikace nachází, byť částečně, na soukromých pozemcích. Návrh dalších nových cest, v již tak\ndopravně protkaném území, je z dopravního, urbanistického, ekologického a finančního hlediska\nkontraproduktivní.\nKomunikace MOo2(BV) – viz výkres dopravní infrastruktury návrhu změny č. 3 regulačního plánu níže, je\npouze obslužnou komunikací pro zadní trakty řadových domů mimo řešenou lokalitu, kde se\nnepředpokládá zásadní zatížení (mimo jiné je také zakončena obratištěm, čímž je adekvátně zajištěna\nobslužnost pro případný zásah složek IZS). Na komunikaci MOo2(BV) dále navazuje komunikace\nMOp3(BV), která je již pouze stezkou pro pěší. Tento návrh cestní sítě vychází z režimu klidové zóny pro\nbydlení, kdy není účelné sem směřovat automobilizaci, ale naopak zde vytvářet místo pro každodenní\nrelaxaci místních obyvatel.\nNávrh územně plánovací dokumentace nevylučuje napojení pro pěší přes Káňovský potok do ulice\nTřeboňská, přestože v návrhu není zakreslen (v ploše veřejného prostranství není vyloučena stezka pro\npěší), avšak dopravní napojení pro motorová vozidla zde není účelné (kdy zejména napojení na stávající\nkomunikaci u kapličky je z hlediska technických norem problematické) a v budoucnu by zde tímto finančně\nnáročným řešením mohlo dojít k navýšení zatížení dopravou v lokalitě BV6, která by měla být klidovou\nzónou pro místní obyvatele. K věci je nutno také podotknout, že podatelem navrhované dopravní napojení\n„s vyústěním u kapličky“ je již mimo řešené území regulačního plánu (od Káňovského potoka dále k ulici\nTřeboňská).\nKomunikace MOp1(BV) bude i nadále ponechána v režimu stezky pro pěší. Mimo jiné i dotčené orgány\npožadují eliminaci zpevněných ploch pro dopravu, MOp1(BV), ve prospěch ploch zeleně. V souvislosti s\ntímto požadavkem i požadavkem vlastníka pozemku, na kterém se komunikace MOp1(BV) nachází, zde\nbude ponechán pouze průchod pro pěší.\nVzhledem k faktu, že územně plánovací dokumentace se vydává opatřením obecné povahy dle správního\nřádu, jsou jednotlivé fáze projednání zveřejňovány na úřední desce obce, pro kterou se územně plánovací\ndokumentace pořizuje. Uplatněné připomínky včetně jejich vyhodnocení budou součástí textové části\nodůvodnění vydané územně plánovací dokumentace. Na uplatněné připomínky se jednotlivě neodpovídá.\nNa základě výše uvedeného nebude připomínce vyhověno.\n2. xxxxxxxxxxxxxxxxxxxxxxx\np. č. 124/1 v k. ú. Břilice\nŽádám Vás tímto o změnu zařazení pozemku p. č. 124/1 – orná půda o výměře 921 m2 v k. ú. Břilice, který\nje v rámci Změny č. 3 regulačního plánu Třeboň určený pro plnění zeleně.\nPožaduji přehodnocení budoucí využitelnosti s tím, by tento pozemek byl určený k zástavbě individuální\nbytovou výstavbou, resp. rodinným domem.\nVyhodnocení: NEVYHOVĚT\nPředmětný pozemek, dle evidence KN vedený jako druh pozemku orná půda se III. třídou ochrany\nzemědělského půdního fondu se aktuálně dle platného regulačního plánu nachází v ploše s rozdílným\nzpůsobem využití „plochy veřejných prostranství – sídelní/veřejná zeleň“ a dále je na pozemku vymezena\nplocha „dopravní infrastruktury“.\nNávrh Změny č. 3 regulačního plánu přesouvá dopravní infrastrukturu z předmětného pozemku tak, aby\nnavržené obratiště přímo navazovalo na pozemky určené k výstavbě, čímž nebude docházet k fragmentaci\nploch veřejné zeleně.\nPořizovatel se zabýval otázkou možnosti vymezení pozemku pro výstavbu rodinného domu, avšak již\naktuálně je kapacita předmětné plochy naplněna (v předmětné lokalitě je dle platné územně plánovací\ndokumentace stanoven minimální podíl ploch veřejných prostranství na 10 % z celkové lokality a aktuálně\nzde tvoří plochy veřejných prostranství 10,1 %). Při projednání změny již dotčené orgány hájící zájmy\nochrany přírody upozornily\nna zásadní nedostatky spojené s ochranou mimoprodukčních funkcí půdy, zajištěním ekologicky funkčních\nzelených ploch, prostorem pro evapotranspiraci i hospodařením se srážkovými vodami.\nDalším snížením celkové plochy zeleně by došlo ke snížení ploch umožňujících evapotranspiraci, která je\nklíčová pro ochlazování území, zmírňování tepelných ostrovů, stabilizaci lokálního mikroklimatu a podporu\npřirozeného malého vodního cyklu. Snižování ploch zeleně a nezpevněných ploch tak nezasahuje pouze\nestetickou a pobytovou hodnotu území, ale vede k zásadnímu narušení ekosystémových procesů, které\njsou nezbytné pro obyvatelné a klimaticky odolné prostředí. Dalším navýšením zastavitelnosti a snížením\nploch zeleně by došlo k fragmentaci zelených pásů a omezení ekosystémových funkcí zeleně.\nRegulační plán zachovává koncepci veřejné zeleně tak, aby zeleň vytvářela prstenec kolem ploch bydlení\na zajistila tak optimální mikroklima pro celou lokalitu, zejména pro budoucí pohodu bydlení, s ohledem na\nstále narůstající ohřívání zastavěných ploch. Zejména v posledních letech je kladem velký důraz na\neliminaci tepelných ostrovů, které vznikají v urbanizovaných a silně zastavěných oblastech. Upřednostňují\nse takové návrhy zeleně a koncepční řešení, které minimalizují zhoršování dopadů vln veder. Právě\nkoncepční řešení zeleně a vodního hospodaření v urbanizovaném prostoru představuje veřejný zájem.\nNa základě výše uvedeného nebude připomínce vyhověno.\n3. xxxxxxxxxxxxxxxxxxxxxxxx\np. č. 179/13 v k. ú. Břilice\nPodatelé jsou vlastníky pozemku parc. č. 179/13 v k. ú. Břilice (dále jen „Pozemek“).\nZastupitelstvo Města Třeboň schválilo zadání Změny č. 3 regulačního plánu 3. 3. 2025 a doplnilo jej 23. 6.\n2025. Sloučené společné a veřejné projednání proběhlo dne 24. 3. 2026. Ve smyslu § 97 zákona č.\n283/2021 Sb., stavební zákon (dále jen „stavební zákon“) podatelé uplatňují své připomínky k návrhu Změny\nč. 3 regulačního plánu. Činí tak v zákonné lhůtě.\nZměna č. 3 RP se týká zastavitelných ploch BM1 (Z.26), BV6 (Z.24), OS4 (Z.27). Jde o plochy v k. ú. Břilice.\nTyto plochy tvoří území dotčené připomínkou.\nPozemek podatelů se nachází v zastavitelné ploše BV6 (Z.24). Podatelé podávají následující připomínku:\nPodatelé nesouhlasí s tím, že jejich pozemek parc. č. 179/13 v k. ú. Břilice je regulačním plánem\nzařazen do plochy přírodní. Podatelé žádají, aby v rámci Změny č. 3 došlo k takové změně územně\nplánovací regulace, která na jejich pozemku umožní výstavbu jednoho rodinného domu.\nPodatelé své připomínky odůvodňují takto:\nNesoulad stávajícího regulačního plánu s územním plánem:\n1. Regulační plán není v souladu s územním plánem města Třeboň. Pozemek podatelů se podle aktuálního\núzemního plánu města Třeboně nachází na ploše Z.24 (BV6). Podle územního plánu jde o plochu určenou\npro bydlení venkovské a jde o zastavitelnou plochu.\n2. Dne 20. 5. 2020 nabyl účinnosti regulační plán mj. pro plochu BV6 (Z.24). V tomto regulačním plánu se\nPozemek podatelů stal plochou přírodní. Hlavní funkční využití ploch přírodních je zajišťování podmínek pro\nochranu přírody a krajiny. Pozemek podatelů se tedy de facto stal nezastavitelným přijetím regulačního\nplánu.\n3. Obecně o regulačním plánu platí, že je nejpodrobnější ze všech územně plánovacích podkladů (§ 85\nstavebního zákona). Vždy musí být v souladu s územním plánem coby nadřízenou územně plánovací\ndokumentací (§ 73 odst. 3 stavebního zákona). Regulační plán stanoví podrobné podmínky pro vymezení\na využití pozemků a pro umístění a prostorové uspořádání staveb na těchto pozemcích. Nemůže ale ze\nzastavitelné plochy učinit plochu nezastavitelnou. Jenže právě to přijetím regulačního plánu nastalo.\n4. Takový postup není souladný nejen se zákonem, ale ani s judikaturou NSS. Podle rozsudku NSS ze dne\n26. 9. 2024, č. j. 6 As 77/2023-121, platí, že „jestliže územní plán vymezuje plochy, pro něž následně\nstanovuje regulativy využití, zde zejména IPP, regulační plán může takovou regulaci zpřesnit pro konkrétní\nplochy, například jejich výhradním určením pro zeleň. Taková podrobnější regulace ale nemůže popřít\nani základní členění ploch dle územního plánu, ani regulaci využití těchto ploch stanovenou\núzemním plánem“ (zvýraznění doplněno).\n5. Podle § 112 odst. 1 stavebního zákona mají obce a kraje povinnost uvést územně plánovací dokumentaci,\nkterou vydaly, bez zbytečného odkladu do souladu s nadřazenou územně plánovací dokumentací. Platí\ndokonce, že do té doby nelze rozhodovat podle částí územně plánovací dokumentace, které jsou v rozporu\ns nadřazenou územně plánovací dokumentací, protože se k ní nepřihlíží (§ 112 odst. 1 a § 73 odst. 3\nstavebního zákona).\n6. K nápravě protiprávního stavu proto musí podle přesvědčení Podatelů dojít v rámci projednávané Změny\nč. 3 RP. Provedení nápravy nebrání to, že návrh Změny č. 3 RP zatím s úpravou regulace na pozemku\npodatelů nepočítal. Odstranit protiprávní stav je zpracovatel a pořizovatel Změny RP č. 3 povinen z moci\núřední. Protože tak doposud neučinil, je oprávněn to požadovat vlastník pozemku.\n7. Pokud jde o konkrétní podobu nápravy, je její návrh věcí zpracovatele návrhu Změny č. 3 RP. S ohledem\nna nutnost minimální plochy veřejných prostranství 10 % z celkové plochy lokality bude zřejmě nezbytné\npřistoupit k plošné redukci zastavitelné části jiných pozemků v ploše BV6. Podle názoru Podatelů by taková\nredukce mohla proběhnout např. u pozemků v návrhu Změny č. 3 označených jako č. 4, 5, 6, 7, 11, 12, 13,\n18, a to tak, aby byla současně zachována min. velikost parcel předepsaná územním plánem. Nastíněné\nřešení by vedlo k tomu, že by byl napraven protiprávní stav a současně nedošlo k nepřiměřenému zásahu\ndo práv jiných osob. Podatelé však samozřejmě akceptují i jiné řešení, které povede k tomu, že na Pozemku\nbude možné v souladu s územním plánem realizovat výstavbu rodinného domu.\n8. Podatelé přitom upozorňují na to, že dle zákona o obcích i podle územně plánovací dokumentace se za\nveřejné prostranství považuje nejen zeleň, ale také všechna náměstí, ulice a chodníky. Protože návrh změny\nč. 3 regulačního plánu neobsahuje konkrétní výpočet podílu veřejných prostranství na celkové ploše lokality,\nnejsou podatelé schopni prověřit, zda byl tento podíl stanoven správně. Podatelé proto současně žádají,\naby byl do odůvodnění návrhu změny č. 3 takový výpočet zahrnutý.\nS ohledem na výše uvedené proto navrhujeme, aby návrh Změny č. 3 regulačního plánu byl upraven\npodle obsahu těch připomínek a opakovaně veřejně projednán.\nVyhodnocení: NEVYHOVĚT\nObsah změny č. 3 regulačního plánu byl schválen usneseními zastupitelstva města Třeboň. Dotčená lokalita\nnení předmětem řešení změny č. 3 regulačního plánu Třeboň – zastavitelné plochy BV6, BM1, OS4.\nNa základě výše uvedeného nebude připomínce vyhověno.\nIII. souhlasí\ns předloženým návrhem Změny č. 3 regulačního plánu Třeboň.\nIV. schvaluje\nvydání Změny č. 3 regulačního plánu Třeboň.\nV. ukládá\nodboru územního plánování a stavebního řádu zajistit plnění usnesení.",
+    "text_anonymizovan": true,
+    "tema": "Vydání Změny č. 3 regulačního plánu Třeboň (plochy BM1, BV6, OS4)",
+    "tema_ai": true,
+    "kategorie": [
+      "ostatni"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Zastupitelstvo po částech hlasovalo o vydání Změny č. 3 regulačního plánu; v části II. nevyhovělo třem připomínkám (osadní výbor Břilice, vlastníci pozemků p. č. 124/1 a 179/13 v Břilicích) a změnu vydalo.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-zm-2026-09-21",
+      "strany": [
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "text": "vydání Změny č. 3 regulačního plánu Třeboň."
+    },
+    "castky": [],
+    "parcely": [
+      {
+        "ku": "Břilice",
+        "cislo": "124/1",
+        "zdroj": "pripominka",
+        "citace": "p. č. 124/1 v k. ú. Břilice"
+      },
+      {
+        "ku": "Břilice",
+        "cislo": "179/13",
+        "zdroj": "pripominka",
+        "citace": "p. č. 179/13 v k. ú. Břilice"
+      }
+    ],
+    "poznamka": "Text usnesení obsahuje vyhodnocení tří připomínek (u všech „NEVYHOVĚT“). Podatelé jsou fyzické osoby, jejich údaje jsou v textu anonymizovány; iniciály občana jsme nahradili slovem „občan“.",
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
+    "id": "zm-2026-j31-u88",
+    "cislo": "ZM 88/2026-31",
+    "jednani_id": "zm-2026-09-21",
+    "bod": 16,
+    "vysledek_hlasovani": "prijato",
+    "vysledek_zapis": "SCHVÁLENO",
+    "ukony": [
+      {
+        "cast": "I",
+        "ukon": "schvaluje",
+        "sloveso": "schvaluje"
+      },
+      {
+        "cast": "II",
+        "ukon": "uklada",
+        "sloveso": "ukládá"
+      }
+    ],
+    "text": "I. schvaluje\nDodatek č. 13 ke Zřizovací listině ze dne 05.12.1994, ve znění pozdějších dodatků, které byly uzavřeny mezi\nMěstem Třeboň a Základní školou Třeboň, Na Sadech 375, jehož předmětem je předání majetku k\nhospodaření.\nII. ukládá\nodboru školství a sociálních věcí předložit Dodatek č. 13 starostovi města k podpisu.",
+    "text_anonymizovan": false,
+    "tema": "Dodatek č. 13 ke Zřizovací listině Základní školy Na Sadech",
+    "tema_ai": true,
+    "kategorie": [
+      "skolstvi",
+      "prispevkove_organizace"
+    ],
+    "kategorie_ai": true,
+    "shrnuti": "Zastupitelstvo schválilo Dodatek č. 13 ke Zřizovací listině Základní školy Třeboň, Na Sadech 375, který se týká předání majetku škole k hospodaření.",
+    "shrnuti_ai": true,
+    "citace": {
+      "dokument_id": "zapis-zm-2026-09-21",
+      "strany": [
+        12
+      ],
+      "text": "Dodatek č. 13 ke Zřizovací listině ze dne 05.12.1994"
+    },
+    "castky": [],
+    "parcely": [],
+    "poznamka": null,
+    "otazky": [],
+    "overeni": "overeno_kodem"
+  },
+  {
     "id": "zm-2026-j1-u1",
     "cislo": "ZM 1/2026-1",
     "jednani_id": "zm-2026-11-02",
