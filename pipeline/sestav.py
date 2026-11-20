@@ -21,6 +21,7 @@ from pathlib import Path
 import yaml
 
 from pipeline import stitky as modul_stitky
+from pipeline import smlouvy as modul_smlouvy
 from pipeline import zakazky as modul_zakazky
 from pipeline.verze import zkontroluj as zkontroluj_verze
 from pipeline.zapisy import normalizuj, rozloz
@@ -288,7 +289,14 @@ def sestav(koren: Path | None = None) -> tuple[dict[str, list], list[str]]:
             for n in najdi_osobni_udaje(drzak[pole], osoby):
                 drzak[pole] = drzak[pole].replace(n, "[jméno]")
     chyby += modul_zakazky.zkontroluj(zakazky, koren)
-    vystup = {"jednani": jednani, "usneseni": usneseni, "hlasovani": hlasovani, "zakazky": zakazky}
+    smlouvy = modul_smlouvy.nacti_smlouvy(koren)
+    for sm in smlouvy:
+        # jména osob s titulem v předmětu (mimo zastupitele) se maskují; adresy a IČO FO vynechal už převod
+        for n in najdi_osobni_udaje(sm["predmet"] or "", osoby):
+            sm["predmet"] = sm["predmet"].replace(n, "[jméno]")
+    chyby += modul_smlouvy.zkontroluj(smlouvy, koren)
+    vystup = {"jednani": jednani, "usneseni": usneseni, "hlasovani": hlasovani, "zakazky": zakazky,
+              "smlouvy": smlouvy}
     # kontrola osobních údajů v celém výstupu (kromě doslovných citací, ty kontroluje sestavení)
     # (zastupitelé jen z období daného jednání)
     obdobi_jednani = {j["id"]: j["obdobi"] for j in jednani}
@@ -312,7 +320,7 @@ def main() -> int:
     for nazev, obsah in vystup.items():
         (data / f"{nazev}.json").write_text(serializuj(obsah), encoding="utf-8")
     print(f"jednání {len(vystup['jednani'])}, usnesení {len(vystup['usneseni'])}, hlasování {len(vystup['hlasovani'])}, "
-          f"zakázky {len(vystup['zakazky'])}")
+          f"zakázky {len(vystup['zakazky'])}, smlouvy {len(vystup['smlouvy'])}")
     for c in chyby:
         print("CHYBA:", c, file=sys.stderr)
     return 1 if chyby else 0

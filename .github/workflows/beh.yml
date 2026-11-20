@@ -44,6 +44,10 @@ jobs:
         run: |
           python -m pipeline.zdroje.ezak || echo "::warning::E-ZAK – některé exporty se nepodařilo stáhnout (viz log)"
 
+      - name: Registr smluv (měsíční dumpy, nejvýš 10 za běh; chyba nezastaví běh)
+        run: |
+          python -m pipeline.zdroje.registr_smluv || echo "::warning::Registr smluv – některé dumpy se nepodařilo zpracovat (viz log)"
+
       - name: Běh pipeline
         id: beh
         run: |
@@ -63,7 +67,7 @@ jobs:
         id: zmena
         if: steps.beh.outputs.kod == '0'
         run: |
-          if [ -n "$(git status --porcelain -- raw/texty raw/ezak data/jednani.json data/usneseni.json data/hlasovani.json data/zakazky.json)" ]; then
+          if [ -n "$(git status --porcelain -- raw/texty raw/ezak raw/smlouvy data/jednani.json data/usneseni.json data/hlasovani.json data/zakazky.json data/smlouvy.json)" ]; then
             echo "zmena=ano" >> "$GITHUB_OUTPUT"
           else
             echo "zmena=ne" >> "$GITHUB_OUTPUT"
@@ -90,7 +94,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -b "$vetev"
           git add raw data
-          git commit -q -m "Běh pipeline $(date -u +%F): nové zápisy / verze / zakázky"
+          git commit -q -m "Běh pipeline $(date -u +%F): nové zápisy / verze / zakázky / smlouvy"
           git push -u origin "$vetev"
           python -m pipeline.oznameni shrnuti > /tmp/telo.md
           printf '\n\nBěh: %s\n' "$ODKAZ_BEHU" >> /tmp/telo.md
