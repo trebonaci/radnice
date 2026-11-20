@@ -149,6 +149,7 @@
           }
         ],
         "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": null,
         "cena_po_dodatcich_s_dph": 72049879.34,
         "dodatky_bez_dph": 5227139.14
@@ -180,6 +181,7 @@
           }
         ],
         "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 1092000.0,
         "cena_po_dodatcich_s_dph": 1092000.0,
         "dodatky_bez_dph": 147000.0
@@ -206,6 +208,7 @@
           }
         ],
         "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": null,
         "cena_po_dodatcich_s_dph": null,
         "dodatky_bez_dph": 14500.0
@@ -232,6 +235,7 @@
           }
         ],
         "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": null,
         "cena_po_dodatcich_s_dph": null,
         "dodatky_bez_dph": 7750.0
@@ -251,6 +255,7 @@
         "vazba_dodatku": "dolozeno",
         "dodatky": [],
         "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 58419.2,
         "cena_po_dodatcich_s_dph": 70687.23,
         "dodatky_bez_dph": null
@@ -1061,6 +1066,7 @@
           }
         ],
         "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 57086755.68,
         "cena_po_dodatcich_s_dph": 69074974.36,
         "dodatky_bez_dph": 5703927.84
@@ -1092,6 +1098,7 @@
           }
         ],
         "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 929500.0,
         "cena_po_dodatcich_s_dph": 929500.0,
         "dodatky_bez_dph": 56500.0
@@ -1118,6 +1125,7 @@
           }
         ],
         "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": null,
         "cena_po_dodatcich_s_dph": null,
         "dodatky_bez_dph": 35000.0
@@ -1144,6 +1152,7 @@
           }
         ],
         "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": null,
         "cena_po_dodatcich_s_dph": null,
         "dodatky_bez_dph": 16167.0
@@ -1186,6 +1195,7 @@
           }
         ],
         "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 1870997.0,
         "cena_po_dodatcich_s_dph": 2263906.37,
         "dodatky_bez_dph": 196649.0
@@ -1205,6 +1215,7 @@
         "vazba_dodatku": "dolozeno",
         "dodatky": [],
         "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 310125.87,
         "cena_po_dodatcich_s_dph": 375252.3,
         "dodatky_bez_dph": null
@@ -1224,6 +1235,7 @@
         "vazba_dodatku": "dolozeno",
         "dodatky": [],
         "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 208817.0,
         "cena_po_dodatcich_s_dph": 252668.57,
         "dodatky_bez_dph": null

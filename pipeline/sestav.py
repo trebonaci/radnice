@@ -26,6 +26,7 @@ from pipeline.jmena import zakryj_jmena
 from pipeline import dotace as modul_dotace
 from pipeline import projekty as modul_projekty
 from pipeline import rozpocet as modul_rozpocet
+from pipeline import schvaleni as modul_schvaleni
 from pipeline import zakazky as modul_zakazky
 from pipeline.verze import zkontroluj as zkontroluj_verze
 from pipeline.zapisy import normalizuj, rozloz
@@ -348,6 +349,8 @@ def sestav(koren: Path | None = None) -> tuple[dict[str, list], list[str]]:
         sm["predmet"] = zakryj_jmena(sm["predmet"], osoby, koren)            # jména bez titulu (#84)
     chyby += modul_smlouvy.zkontroluj(smlouvy, koren)
     dotace = [d for u in usneseni for d in u.pop("_dotace", [])]
+    # stav schválení: rada sama / rada doporučila zastupitelstvu / zastupitelstvo rozhodlo (#115)
+    modul_schvaleni.oznac(usneseni, {j["id"]: j["datum"] for j in jednani})
     # rozpočtová opatření po položkách z textu usnesení (bez AI; před ± změna = po kontroluje kód)
     rozpoctova_opatreni, chyby_ro = modul_rozpocet.z_usneseni(usneseni)
     chyby += chyby_ro + modul_rozpocet.zkontroluj(rozpoctova_opatreni, usneseni)

@@ -158,7 +158,8 @@ def test_cena_z_registru_kdyz_ezak_cenu_nema():
     zak = [{"id": "z1", "role": "stavba", "url": "e", "casti": [{"registr_smluv": ["u-s0"], "vitezove": [
         {"nazev": "A", "smluvni": []}]}]}]
     c = pr.casti_akce(zak, [sml("s0", "stavba", castka=500.0, url="u-s0")])
-    assert c[0]["puvodni"] == {"bez_dph": 500.0, "s_dph": None, "zdroj_id": "s0", "url": "u-s0"}
+    assert c[0]["puvodni"] == {"bez_dph": 500.0, "s_dph": 605.0, "zdroj_id": "s0", "url": "u-s0",
+                               "s_dph_dopocteno": True, "sazba_dph": 21, "sazba_dph_zdroj": "zakladni_sazba"}
 
 
 def test_parovani_podle_cisla_zakazky_a_dalsi_dodatky_teze_smlouvy():
@@ -207,3 +208,15 @@ def test_souhrn_s_dph_zvlast():
     s = pr.souhrn([], casti)
     assert s["smluvni_s_dph"]["celkem"] == 121.0 and s["smluvni_s_dph"]["po_dodatcich"] == 108.9
     assert s["smluvni_s_dph"]["s_dph"] is True and s["smluvni_bez_dph"]["po_dodatcich"] is None
+
+
+def test_dopocet_dph_sazbou_teze_smlouvy_nebo_21():
+    neplatce = pr.casti_akce([], [dict(sml("t0", "technicky_dozor"), castky=[{"hodnota": 100.0, "s_dph": False}]),
+                                  dict(sml("t1", "technicky_dozor", 1, navazuje="it0"),
+                                       castky=[{"hodnota": 14500.0, "s_dph": False}, {"hodnota": 14500.0, "s_dph": True}])])[0]
+    assert neplatce["puvodni"]["s_dph"] == 100.0 and neplatce["puvodni"]["sazba_dph"] == 0
+    assert neplatce["puvodni"]["sazba_dph_zdroj"] == "jina_polozka_smlouvy" and neplatce["cena_po_dodatcich_s_dph"] == 14600.0
+    c = pr.casti_akce([], [dict(sml("s0", "stavba"), castky=[{"hodnota": 1000.0, "s_dph": False}]),
+                           dict(sml("s1", "stavba", 1, navazuje="is0"), castky=[{"hodnota": 10.0, "s_dph": False}])])[0]
+    assert c["puvodni"]["s_dph"] == 1210.0 and c["dodatky"][0]["s_dph"] == 12.1 and c["obsahuje_dopocet_dph"]
+    assert c["cena_po_dodatcich_s_dph"] == 1222.1

@@ -256,6 +256,38 @@ def dodatky_jen_termin(usneseni: list[dict]) -> dict[str, str]:
     return vysledek
 
 
+SAZBY_DPH = (1.0, 1.10, 1.12, 1.15, 1.21)
+SAZBA_VYCHOZI = 1.21
+
+
+def sazba_dph(polozky: list[dict]) -> float | None:
+    """Sazba DPH (koeficient) z položek téže smlouvy, které mají cenu bez i s DPH: poměr s/bez zaokrouhlený
+    na zákonnou sazbu. Neplátce DPH (stejná částka) = 1.0. Bez takové položky None."""
+    for x in polozky:
+        b, sd = (x or {}).get("bez_dph"), (x or {}).get("s_dph")
+        if b and sd and not (x or {}).get("s_dph_dopocteno"):
+            pomer = sd / b
+            for k in SAZBY_DPH:
+                if abs(pomer - k) < 0.005:
+                    return k
+    return None
+
+
+def doplnit_dph(c: dict) -> None:
+    """Kde smlouva nebo dodatek uvádí jen cenu bez DPH, dopočítá cenu s DPH (Ondřej 20. 11. 2026, #115):
+    sazbou z jiné položky téže smlouvy (i neplátce = 0 %), jinak základní sazbou 21 %. Dopočtená částka má
+    `s_dph_dopocteno: true` a `sazba_dph` (%); ve zdroji ji nehledat."""
+    polozky = [c["puvodni"]] + c["dodatky"]
+    zjistena = sazba_dph(polozky)
+    k = zjistena or SAZBA_VYCHOZI
+    for x in polozky:
+        if x and x.get("s_dph") is None and x.get("bez_dph") is not None:
+            x["s_dph"] = round(_halere(x["bez_dph"]) * k) / 100
+            x["s_dph_dopocteno"] = True
+            x["sazba_dph"] = round((k - 1) * 100)
+            x["sazba_dph_zdroj"] = "jina_polozka_smlouvy" if zjistena else "zakladni_sazba"
+
+
 def casti_akce(zakazky: list[dict], smlouvy: list[dict], jen_termin: dict[str, str] | None = None) -> list[dict]:
     """Části akce (stavba, projekt, dozor, BOZP, vybavení…): původní smlouva + její dodatky.
 
@@ -345,9 +377,11 @@ def casti_akce(zakazky: list[dict], smlouvy: list[dict], jen_termin: dict[str, s
                                  "jen_termin": termin is not None, "doklad_usneseni": termin,
                                  "bez_castky": not d["castky"], "datum": d["datum_uzavreni"], "zdroj_id": d["id"],
                                  "url": d["url"]})
+        doplnit_dph(c)
         cisla = {d["cislo"] for d in c["dodatky"]}
         c["chybi_dodatky"] = sorted(set(range(1, max(cisla) + 1)) - cisla) if cisla else []
         # dodatek bez částky v registru = změna ceny neznámá (kromě dodatku jen o termínu podle usnesení)
+        c["obsahuje_dopocet_dph"] = any(x and x.get("s_dph_dopocteno") for x in [c["puvodni"]] + c["dodatky"])
         for klic, pole in (("cena_po_dodatcich", "bez_dph"), ("cena_po_dodatcich_s_dph", "s_dph")):
             zaklad = c["puvodni"][pole] if c["puvodni"] else None
             znam = all(d[pole] is not None for d in c["dodatky"])
