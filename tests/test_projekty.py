@@ -161,7 +161,7 @@ def test_cena_z_registru_kdyz_ezak_cenu_nema():
         {"nazev": "A", "smluvni": []}]}]}]
     c = pr.casti_akce(zak, [sml("s0", "stavba", castka=500.0, url="u-s0")])
     assert c[0]["puvodni"] == {"bez_dph": 500.0, "s_dph": 605.0, "zdroj_id": "s0", "url": "u-s0",
-                               "zdroj_druh": "registr", "muze_obsahovat_dodatky": False, "s_dph_dopocteno": True, "sazba_dph": 21, "sazba_dph_zdroj": "zakladni_sazba"}
+                               "zdroj_druh": "registr", "muze_obsahovat_dodatky": False, "zaklady_z_ezak_po_dodatcich": [], "s_dph_dopocteno": True, "sazba_dph": 21, "sazba_dph_zdroj": "zakladni_sazba"}
 
 
 def test_parovani_podle_cisla_zakazky_a_dalsi_dodatky_teze_smlouvy():
@@ -275,3 +275,31 @@ def test_dokonceni_z_yaml_s_datem_bez_uvozovek():
     k = pr.sestav_projekt(p, data)
     assert k["faze"] == "dokonceno" and k["dokonceni"]["datum"] == "2026-11-20"
     json.dumps(k)
+
+
+def test_puvod_ceny_po_zakladech_dph():
+    """Nabídka jen bez DPH, smluvní cena E-ZAK s DPH už po dodatcích → s DPH se po dodatcích nepočítá."""
+    zak = [{"id": "z1", "role": "stavba", "url": "e", "casti": [{"registr_smluv": [], "vitezove": [
+        {"nazev": "A", "smluvni": [{"hodnota": 145.20, "s_dph": True}], "nabidkova": [{"hodnota": 100.0, "s_dph": False}]}]}]}]
+    (c,) = pr.casti_akce(zak, [sml("d1", "stavba", 1, 20.0, navazuje="x")])
+    assert c["puvodni"]["zaklady_z_ezak_po_dodatcich"] == ["s_dph"]
+    assert c["cena_po_dodatcich"] == 120.0 and c["cena_po_dodatcich_s_dph"] is None
+
+
+def test_skladba_ceny_akce():
+    casti = [{"role": "stavba", "cena_po_dodatcich_s_dph": 66097418.09},
+             {"role": "projekt", "cena_po_dodatcich_s_dph": 1092000.0},
+             {"role": "administrace", "cena_po_dodatcich_s_dph": 90750.0},
+             {"role": "technicky_dozor", "cena_po_dodatcich_s_dph": 246500.0},
+             {"role": "bozp", "cena_po_dodatcich_s_dph": 177446.5},
+             {"role": "vybaveni", "cena_po_dodatcich_s_dph": 0.1},
+             {"role": "vybaveni", "cena_po_dodatcich_s_dph": 0.2}]
+    sk = {x["skupina"]: x for x in pr.skladba(casti)}
+    assert sk["priprava"]["castka"] == 1182750.0 and sk["priprava"]["casti"] == 2
+    assert sk["dozor"]["castka"] == 423946.5
+    assert sk["vybaveni"]["castka"] == 0.3                    # haléře bez chyby plovoucí čárky
+    assert all(x["druh"] == "smluvni" and x["s_dph"] is True for x in sk.values())
+    casti[1]["cena_po_dodatcich_s_dph"] = None
+    sk = {x["skupina"]: x for x in pr.skladba(casti)}
+    assert sk["priprava"]["castka"] is None and sk["priprava"]["nezname"] == ["projekt"]
+    assert [x["skupina"] for x in pr.skladba(casti[:1])] == ["stavba"]

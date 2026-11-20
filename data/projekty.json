@@ -180,7 +180,8 @@
           "zdroj_id": "rs-39840721",
           "url": "https://smlouvy.gov.cz/smlouva/39840721",
           "zdroj_druh": "registr",
-          "muze_obsahovat_dodatky": false
+          "muze_obsahovat_dodatky": false,
+          "zaklady_z_ezak_po_dodatcich": []
         },
         "vysoutezena": null,
         "ezak_smluvni": {
@@ -466,7 +467,8 @@
           "zdroj_id": "rs-39122658",
           "url": "https://smlouvy.gov.cz/smlouva/39122658",
           "zdroj_druh": "registr",
-          "muze_obsahovat_dodatky": false
+          "muze_obsahovat_dodatky": false,
+          "zaklady_z_ezak_po_dodatcich": []
         },
         "vysoutezena": null,
         "ezak_smluvni": {
@@ -914,7 +916,8 @@
           "zdroj_id": "rs-40262621",
           "url": "https://smlouvy.gov.cz/smlouva/40262621",
           "zdroj_druh": "registr",
-          "muze_obsahovat_dodatky": false
+          "muze_obsahovat_dodatky": false,
+          "zaklady_z_ezak_po_dodatcich": []
         },
         "vysoutezena": null,
         "ezak_smluvni": {
@@ -943,7 +946,8 @@
           "zdroj_id": "ezak-VZ-831",
           "url": "https://zakazky.mesto-trebon.cz/contract_display_831.html",
           "zdroj_druh": "smluvni_ezak",
-          "muze_obsahovat_dodatky": false
+          "muze_obsahovat_dodatky": false,
+          "zaklady_z_ezak_po_dodatcich": []
         },
         "vysoutezena": null,
         "ezak_smluvni": {
@@ -1417,7 +1421,8 @@
           "zdroj_id": "rs-36387317",
           "url": "https://smlouvy.gov.cz/smlouva/36387317",
           "zdroj_druh": "registr",
-          "muze_obsahovat_dodatky": false
+          "muze_obsahovat_dodatky": false,
+          "zaklady_z_ezak_po_dodatcich": []
         },
         "vysoutezena": {
           "bez_dph": 49706575.9,
@@ -1505,7 +1510,8 @@
           "zdroj_id": "rs-33266344",
           "url": "https://smlouvy.gov.cz/smlouva/33266344",
           "zdroj_druh": "registr",
-          "muze_obsahovat_dodatky": false
+          "muze_obsahovat_dodatky": false,
+          "zaklady_z_ezak_po_dodatcich": []
         },
         "vysoutezena": null,
         "ezak_smluvni": {
@@ -2719,7 +2725,8 @@
           "zdroj_id": "rs-39062598",
           "url": "https://smlouvy.gov.cz/smlouva/39062598",
           "zdroj_druh": "registr",
-          "muze_obsahovat_dodatky": false
+          "muze_obsahovat_dodatky": false,
+          "zaklady_z_ezak_po_dodatcich": []
         },
         "vysoutezena": null,
         "ezak_smluvni": {
@@ -3047,7 +3054,8 @@
           "zdroj_id": "rs-36192945",
           "url": "https://smlouvy.gov.cz/smlouva/36192945",
           "zdroj_druh": "registr",
-          "muze_obsahovat_dodatky": false
+          "muze_obsahovat_dodatky": false,
+          "zaklady_z_ezak_po_dodatcich": []
         },
         "vysoutezena": {
           "bez_dph": 45678900.0,
@@ -3135,7 +3143,11 @@
           "zdroj_id": "ezak-VZ-810",
           "url": "https://zakazky.mesto-trebon.cz/contract_display_810.html",
           "zdroj_druh": "smluvni_ezak",
-          "muze_obsahovat_dodatky": true
+          "muze_obsahovat_dodatky": true,
+          "zaklady_z_ezak_po_dodatcich": [
+            "bez_dph",
+            "s_dph"
+          ]
         },
         "vysoutezena": null,
         "ezak_smluvni": {
@@ -3263,7 +3275,8 @@
           "zdroj_id": "rs-38058173",
           "url": "https://smlouvy.gov.cz/smlouva/38058173",
           "zdroj_druh": "registr",
-          "muze_obsahovat_dodatky": false
+          "muze_obsahovat_dodatky": false,
+          "zaklady_z_ezak_po_dodatcich": []
         },
         "vysoutezena": null,
         "ezak_smluvni": {

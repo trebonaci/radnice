@@ -500,13 +500,16 @@ def casti_akce(zakazky: list[dict], smlouvy: list[dict], jen_termin: dict[str, s
                                       {"zdroj_id": g["puvodni"]["id"], "url": g["puvodni"]["url"]}, "registr"))
                 kandidati.append((_bez_dph(v.get("nabidkova", [])), _s_dph(v.get("nabidkova", [])), ezak, "nabidka"))
                 kandidati.append((_bez_dph(v["smluvni"]), _s_dph(v["smluvni"]), ezak, "smluvni_ezak"))
-                cena = cena_s = zdroj = zdroj_s = druh_zdroje = None
+                cena = cena_s = zdroj = zdroj_s = druh_zdroje = druh_s = None
                 for bez, s_, zdr, druh_ in kandidati:      # každý základ DPH z prvního zdroje, který ho má
                     if cena is None and bez is not None:
                         cena, zdroj, druh_zdroje = bez, zdr, druh_
                     if cena_s is None and s_ is not None:
-                        cena_s, zdroj_s = s_, zdr
-                        druh_zdroje = druh_zdroje or druh_
+                        cena_s, zdroj_s, druh_s = s_, zdr, druh_
+                # původ se sleduje pro každý základ DPH zvlášť (bez DPH z nabídky, s DPH ze smluvní ceny po dodatcích…)
+                po_dodatcich_ezak = [z_ for z_, d_ in (("bez_dph", druh_zdroje), ("s_dph", druh_s))
+                                     if d_ == "smluvni_ezak" and g["dodatky"]]
+                druh_zdroje = druh_zdroje or druh_s
                 zdroj = zdroj or zdroj_s or ezak
                 if zdroj_s == zdroj:
                     zdroj_s = None
@@ -516,7 +519,8 @@ def casti_akce(zakazky: list[dict], smlouvy: list[dict], jen_termin: dict[str, s
                                                                "jmeno_podnikatele": v.get("jmeno_podnikatele")},
                               "puvodni": {"bez_dph": cena, "s_dph": cena_s, **zdroj, "zdroj_druh": druh_zdroje,
                                           # smluvní cena E-ZAK u smlouvy s dodatky může už dodatky obsahovat
-                                          "muze_obsahovat_dodatky": druh_zdroje == "smluvni_ezak" and bool(g["dodatky"]),
+                                          "muze_obsahovat_dodatky": bool(po_dodatcich_ezak),
+                                          "zaklady_z_ezak_po_dodatcich": po_dodatcich_ezak,
                                           **({"zdroj_s_dph": zdroj_s} if zdroj_s else {})},
                               "vysoutezena": nabidka if any(x is not None for x in nabidka.values()) else None,
                               "ezak_smluvni": ezak_akt, "ezak_url": z["url"],
@@ -545,7 +549,8 @@ def casti_akce(zakazky: list[dict], smlouvy: list[dict], jen_termin: dict[str, s
         # dodatek bez částky v registru = změna ceny neznámá (kromě dodatku jen o termínu podle usnesení)
         c["obsahuje_dopocet_dph"] = any(x and x.get("s_dph_dopocteno") for x in [c["puvodni"]] + c["dodatky"])
         for klic, pole in (("cena_po_dodatcich", "bez_dph"), ("cena_po_dodatcich_s_dph", "s_dph")):
-            zaklad = c["puvodni"][pole] if c["puvodni"] and not c["puvodni"].get("muze_obsahovat_dodatky") else None
+            zaklad = (c["puvodni"][pole] if c["puvodni"]
+                      and pole not in c["puvodni"].get("zaklady_z_ezak_po_dodatcich", []) else None)
             znam = all(d[pole] is not None for d in c["dodatky"])
             c[klic] = ((_halere(zaklad) + sum(_halere(d[pole]) for d in c["dodatky"])) / 100
                        if zaklad is not None and not c["chybi_dodatky"] and znam else None)
