@@ -1,0 +1,84 @@
+name: Codex review watchdog
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: read
+  issues: write
+
+jobs:
+  check-pending-reviews:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hand off reviews that have waited three hours
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const pullRequests = await github.paginate(github.rest.pulls.list, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              per_page: 100,
+            });
+            const candidates = pullRequests.filter(pr =>
+              pr.head.ref.startsWith('claude/') &&
+              pr.labels.some(label => label.name === 'ke-kontrole') &&
+              !pr.labels.some(label => label.name === 'potrebuje-cloveka')
+            );
+            const now = Date.now();
+            const timeoutMs = 3 * 60 * 60 * 1000;
+
+            for (const pr of candidates) {
+              const comments = await github.paginate(github.rest.issues.listComments, {
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: pr.number,
+                per_page: 100,
+              });
+              const markerPattern = /<!-- codex-review-requested:([0-9a-f]{40}):([^ ]+) -->/g;
+              const requests = [];
+              for (const comment of comments) {
+                if (comment.user?.login !== 'github-actions[bot]') continue;
+                for (const match of (comment.body || '').matchAll(markerPattern)) {
+                  if (match[1] === pr.head.sha) {
+                    requests.push({sha: match[1], requestedAt: Date.parse(match[2]), comment});
+                  }
+                }
+              }
+              if (requests.length === 0) continue;
+              const request = requests.sort((a, b) => b.requestedAt - a.requestedAt)[0];
+              if (!Number.isFinite(request.requestedAt) || now - request.requestedAt < timeoutMs) continue;
+
+              const reviews = await github.paginate(github.rest.pulls.listReviews, {
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                pull_number: pr.number,
+                per_page: 100,
+              });
+              const reviewedCurrentHead = reviews.some(review =>
+                review.user?.login === 'chatgpt-codex-connector[bot]' &&
+                review.commit_id === request.sha
+              );
+              if (reviewedCurrentHead) continue;
+
+              const timeoutMarker = `<!-- codex-review-timeout:${request.sha} -->`;
+              if (comments.some(comment => (comment.body || '').includes(timeoutMarker))) continue;
+
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: pr.number,
+                labels: ['potrebuje-cloveka'],
+              });
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: pr.number,
+                body: `${timeoutMarker}\nCodex do tří hodin neprovedl review aktuálního commitu ${request.sha}. Automatické předání zastavuji; napiš prosím do PR `@codex review` a ověř nastavení automatické kontroly.`,
+              });
+              core.warning(`PR #${pr.number} was handed to a human after three hours without a Codex review of ${request.sha}.`);
+            }
