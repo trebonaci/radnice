@@ -264,8 +264,9 @@ def sestav_projekt(p: dict, data: dict) -> dict:
     # Dokončení stavby (#136): kolaudace / předání není v žádném strojově čteném zdroji, proto ho zapisuje
     # člověk do YAML s dokladem ({datum, popis, url}). Doplacení = E-ZAK „ukončeno plnění“ u zakázky na stavbu
     # (zadavatel tím uzavírá smlouvu a zveřejňuje skutečně uhrazenou cenu) – jiná událost než dokončení.
-    dokonceni = p.get("dokonceni")
+    dokonceni = dict(p["dokonceni"]) if p.get("dokonceni") else None
     if dokonceni:
+        dokonceni["datum"] = str(dokonceni["datum"])     # YAML bez uvozovek dá datetime.date
         udalosti.append({"datum": str(dokonceni["datum"]), "typ": "dokonceni", "kategorie": "dokončení",
                          "kratce": dokonceni.get("popis") or "stavba dokončena", "text": dokonceni.get("popis") or "",
                          "url": dokonceni.get("url"), "zdroj_id": None, "jistota": "dolozeno"})

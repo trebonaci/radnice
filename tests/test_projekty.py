@@ -265,3 +265,13 @@ def test_puvodni_cena_ze_smlouvy_ne_ze_smluvni_ceny_ezak_po_dodatcich():
     assert st["puvodni"]["s_dph"] == 60144956.84 and st["puvodni"]["zdroj_druh"] == "registr"
     assert st["vysoutezena"] == {"bez_dph": 49706575.90, "s_dph": 60144956.84}
     assert st["cena_po_dodatcich_s_dph"] == 66097418.09 and st["souhlas_ezak"] is True
+
+
+def test_dokonceni_z_yaml_s_datem_bez_uvozovek():
+    import datetime, json
+    data = {"jednani": [], "usneseni": [], "rozpoctova_opatreni": [], "zakazky": [], "smlouvy": []}
+    p = {"id": "x", "nazev": "X", "vazby": {"hledat": ["nic"]},
+         "dokonceni": {"datum": datetime.date(2026, 11, 20), "popis": "kolaudace", "url": "u"}}
+    k = pr.sestav_projekt(p, data)
+    assert k["faze"] == "dokonceno" and k["dokonceni"]["datum"] == "2026-11-20"
+    json.dumps(k)
