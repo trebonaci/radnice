@@ -29,6 +29,42 @@ ROLE = [  # pořadí = priorita; dodatek je zvlášť (dodatek_cislo) a patří 
 RE_DODATEK = re.compile(r"dodat\w*\s+č\.\s*(\d+)", re.I)
 
 
+NAZEV_ROLE = {"stavba": "smlouva o dílo", "technicky_dozor": "technický dozor", "bozp": "BOZP",
+              "vybaveni": "vybavení", "administrace": "administrace výběrového řízení"}
+
+
+def druh_projektu(text: str) -> str:
+    """Stupeň projektové dokumentace z názvu smlouvy nebo zakázky."""
+    t = text or ""
+    studie = re.search(r"studi", t, re.I)
+    provadeci = re.search(r"provedení stavby|\bDPS\b|prováděc", t)
+    povoleni = re.search(r"\bDSP\b|\bDZS\b|\bDUR\b|stavební\w* povolení|společné\w* povolení|povolení stavby|"
+                         r"stavební\w* řízení", t, re.I)
+    if studie:
+        return "architektonická studie"
+    if provadeci and povoleni:
+        return "projekt pro stavební řízení a prováděcí"
+    if provadeci:
+        return "projekt prováděcí"
+    if povoleni:
+        return "projekt pro stavební řízení"
+    return "projektová dokumentace"
+
+
+def kratky_popis(role_: str, text: str, dodatek: int | None = None) -> str:
+    """Krátký popis smlouvy pro historii akce (systémový název je až v detailu)."""
+    co = druh_projektu(text) if role_ == "projekt" else NAZEV_ROLE.get(role_, role_)
+    return f"dodatek {dodatek} ({co})" if dodatek else co
+
+
+def dni_mezi(od: str | None, do: str | None) -> int | None:
+    from datetime import date
+    try:
+        return (date.fromisoformat(do[:10]) - date.fromisoformat(od[:10])).days
+    except (TypeError, ValueError):
+        return None
+
+
 def role(text: str) -> str:
     for nazev, vzor in ROLE:
         if re.search(vzor, text or "", re.I):
@@ -87,6 +123,8 @@ def sestav_projekt(p: dict, data: dict) -> dict:
         pol["zmeny"].append({"datum": datum, "cislo_ro": r["cislo_ro"], "organ": r["organ"], "zmena": r["zmena"],
                              "rozpocet": r["rozpocet"], "usneseni_id": r["usneseni_id"], "ro_id": r["id"]})
         udalosti.append({"datum": datum, "typ": "rozpocet", "text": f"Rozpočtové opatření č. {r['cislo_ro']}",
+                         "kategorie": "rozpočet",
+                         "kratce": ("navýšení" if r["zmena"] > 0 else "snížení") + f" (opatření č. {r['cislo_ro']})",
                          "zmena": r["zmena"], "polozka": r["nazev"], "zdroj_id": r["id"], "jistota": jistota})
     for pol in polozky.values():
         pol["zmeny"].sort(key=lambda z: (z["datum"] or "", z["cislo_ro"]))
@@ -111,7 +149,21 @@ def sestav_projekt(p: dict, data: dict) -> dict:
                           "datum_uzavreni_smlouvy": c["datum_uzavreni_smlouvy"], "vitezove": vitezove,
                           "registr_smluv": c.get("registr_smluv", [])})
             if c["datum_uverejneni"]:
-                udalosti.append({"datum": c["datum_uverejneni"], "typ": "soutez", "text": f"Soutěž: {z['nazev']}",
+                # malé zakázky E-ZAK často zveřejní až po skončení soutěže (uveřejnění po lhůtě pro nabídky):
+                # pak je datem události konec lhůty a doba trvání se neuvádí
+                lhuta = dni_mezi(c["datum_uverejneni"], c.get("lhuta_nabidek"))
+                if lhuta is not None and lhuta < 0:
+                    lhuta, datum_soutez = None, c.get("lhuta_nabidek")
+                else:
+                    datum_soutez = c["datum_uverejneni"]
+                predmet = "stavba" if r_ == "stavba" else kratky_popis(r_, z["nazev"])
+                n = c.get("pocet_nabidek")
+                nabidky = (f"{n} nabídka" if n == 1 else f"{n} nabídky" if 2 <= n <= 4 else f"{n} nabídek") if n else None
+                udalosti.append({"datum": datum_soutez, "typ": "soutez", "text": f"Soutěž: {z['nazev']}",
+                                 "kategorie": "výběrové řízení",
+                                 "kratce": ", ".join(x for x in [predmet, f"doba trvání {lhuta} dní" if lhuta else None,
+                                                                 nabidky] if x),
+                                 "lhuta_dni": lhuta, "pocet_nabidek": n,
                                  "role": r_, "zdroj_id": z["id"], "jistota": "nase_propojeni"})
         zakazky.append({"id": z["id"], "nazev": z["nazev"], "role": r_, "stav": z["stav"],
                         "url": z["url"], "casti": casti, "jistota": "nase_propojeni"})
@@ -141,6 +193,7 @@ def sestav_projekt(p: dict, data: dict) -> dict:
                         "url": s["url"], "evidencni_cislo_zakazky": s.get("evidencni_cislo_zakazky"),
                         "jistota": jistota})
         udalosti.append({"datum": s["datum_uzavreni"], "typ": "dodatek" if m else "smlouva",
+                         "kategorie": "smlouva", "kratce": kratky_popis(r_, s["predmet"], int(m[1]) if m else None),
                          "text": s["predmet"], "role": r_, "zdroj_id": s["id"], "jistota": jistota})
 
     # usnesení
@@ -158,6 +211,8 @@ def sestav_projekt(p: dict, data: dict) -> dict:
                        "vysledek_hlasovani": u["vysledek_hlasovani"], "jistota": jistota})
         if u["id"] not in usneseni_ro:
             udalosti.append({"datum": datum_jednani.get(u["jednani_id"]), "typ": "usneseni", "text": u["tema"],
+                             "kategorie": "rada" if u["id"].startswith("rm-") else "zastupitelstvo",
+                             "kratce": u["tema"],
                              "text_ai": u.get("tema_ai"), "overeni": u.get("overeni"),
                              "zdroj_id": u["id"], "jistota": jistota})
 
