@@ -53,7 +53,8 @@ def _odpovida(text: str, projekt: dict) -> bool:
 
 
 def _smluvni(castky: list[dict]) -> list[dict]:
-    return [{"hodnota": c["hodnota"], "s_dph": c.get("s_dph"), "druh": c.get("druh", "smluvni")}
+    return [{"hodnota": c["hodnota"], "s_dph": c.get("s_dph"), "druh": c.get("druh", "smluvni"),
+             "mena": c.get("mena", "CZK"), "jednotka": c.get("jednotka", "Kč")}
             for c in castky if c.get("druh", "smluvni") == "smluvni"]
 
 
@@ -138,10 +139,12 @@ def sestav_projekt(p: dict, data: dict) -> dict:
         else:
             continue
         vazane.append({"id": u["id"], "cislo": u["cislo"], "datum": datum_jednani.get(u["jednani_id"]),
-                       "tema": u["tema"], "shrnuti": u["shrnuti"], "vysledek_hlasovani": u["vysledek_hlasovani"],
-                       "jistota": jistota})
+                       "tema": u["tema"], "tema_ai": u.get("tema_ai"), "shrnuti": u["shrnuti"],
+                       "shrnuti_ai": u.get("shrnuti_ai"), "citace": u.get("citace"), "overeni": u.get("overeni"),
+                       "vysledek_hlasovani": u["vysledek_hlasovani"], "jistota": jistota})
         if u["id"] not in usneseni_ro:
             udalosti.append({"datum": datum_jednani.get(u["jednani_id"]), "typ": "usneseni", "text": u["tema"],
+                             "text_ai": u.get("tema_ai"), "overeni": u.get("overeni"),
                              "zdroj_id": u["id"], "jistota": jistota})
 
     udalosti.sort(key=lambda e: (e["datum"] or "", e["typ"]))

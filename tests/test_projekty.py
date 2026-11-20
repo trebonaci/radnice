@@ -20,8 +20,9 @@ def data(**k):
 
 
 def usn(id_, text):
-    return {"id": id_, "cislo": "RM 1/2026-1", "jednani_id": "rm-2026-10-21", "tema": "t", "shrnuti": "s",
-            "vysledek_hlasovani": "prijato", "text": text}
+    return {"id": id_, "cislo": "RM 1/2026-1", "jednani_id": "rm-2026-10-21", "tema": "t", "tema_ai": True,
+            "shrnuti": "s", "shrnuti_ai": True, "citace": {"dokument_id": "z", "strany": [1], "text": text},
+            "overeni": "overeno_kodem", "vysledek_hlasovani": "prijato", "text": text}
 
 
 def smlouva(id_, predmet, datum="2026-09-30"):
@@ -64,3 +65,14 @@ def test_faze():
     assert pr.faze([], []) == "pripravuje_se"
     assert pr.faze([stavba], []) == "soutezi_se"
     assert pr.faze([dict(stavba, stav="ukončeno plnění")], []) == "dokonceno"
+
+
+def test_ai_puvod_a_mena_zustavaji():
+    d = data(usneseni=[usn("rm-u9", "Dodatek ke smlouvě – přístavba dvou tělocvičen")],
+             smlouvy=[dict(smlouva("e", "Přístavba dvou tělocvičen – vybavení"),
+                           castky=[{"hodnota": 5.0, "s_dph": False, "druh": "smluvni", "mena": "EUR", "jednotka": "EUR"}])])
+    k = pr.sestav_projekt(PROJEKT, d)
+    u = k["usneseni"][0]
+    assert (u["tema_ai"], u["shrnuti_ai"], u["overeni"], u["citace"]["dokument_id"]) == (True, True, "overeno_kodem", "z")
+    assert next(e for e in k["udalosti"] if e["typ"] == "usneseni")["text_ai"] is True
+    assert k["smlouvy"][0]["castky"][0]["mena"] == "EUR"

@@ -98,12 +98,16 @@
                   {
                     "hodnota": 945000.0,
                     "s_dph": true,
-                    "druh": "smluvni"
+                    "druh": "smluvni",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
                   },
                   {
                     "hodnota": 945000.0,
                     "s_dph": false,
-                    "druh": "smluvni"
+                    "druh": "smluvni",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
                   }
                 ],
                 "zaplaceno": [
@@ -144,12 +148,16 @@
                   {
                     "hodnota": 66097418.09,
                     "s_dph": true,
-                    "druh": "smluvni"
+                    "druh": "smluvni",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
                   },
                   {
                     "hodnota": 54625965.36,
                     "s_dph": false,
-                    "druh": "smluvni"
+                    "druh": "smluvni",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
                   }
                 ],
                 "zaplaceno": []
@@ -174,12 +182,16 @@
           {
             "hodnota": 909242.11,
             "s_dph": false,
-            "druh": "smluvni"
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
           },
           {
             "hodnota": 1100182.95,
             "s_dph": true,
-            "druh": "smluvni"
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
           }
         ],
         "url": "https://smlouvy.gov.cz/smlouva/39303451",
@@ -211,12 +223,16 @@
           {
             "hodnota": 14500.0,
             "s_dph": false,
-            "druh": "smluvni"
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
           },
           {
             "hodnota": 14500.0,
             "s_dph": true,
-            "druh": "smluvni"
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
           }
         ],
         "url": "https://smlouvy.gov.cz/smlouva/39724805",
@@ -235,12 +251,16 @@
           {
             "hodnota": 7750.0,
             "s_dph": false,
-            "druh": "smluvni"
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
           },
           {
             "hodnota": 9377.5,
             "s_dph": true,
-            "druh": "smluvni"
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
           }
         ],
         "url": "https://smlouvy.gov.cz/smlouva/39725837",
@@ -259,12 +279,16 @@
           {
             "hodnota": 147000.0,
             "s_dph": false,
-            "druh": "smluvni"
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
           },
           {
             "hodnota": 147000.0,
             "s_dph": true,
-            "druh": "smluvni"
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
           }
         ],
         "url": "https://smlouvy.gov.cz/smlouva/40118109",
@@ -283,12 +307,16 @@
           {
             "hodnota": 2501117.05,
             "s_dph": false,
-            "druh": "smluvni"
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
           },
           {
             "hodnota": 3026351.63,
             "s_dph": true,
-            "druh": "smluvni"
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
           }
         ],
         "url": "https://smlouvy.gov.cz/smlouva/40163777",
@@ -301,7 +329,17 @@
         "cislo": "RM 490/2026-111",
         "datum": "2026-09-23",
         "tema": "Přístavba dvou tělocvičen sportovní haly – dodatek č. 4 (termín)",
+        "tema_ai": true,
         "shrnuti": "Rada schválila dodatek č. 4 ke smlouvě o dílo se společností MANE STAVEBNÍ s. r. o. na stavbu přístavby dvou tělocvičen sportovní haly; mění se termín dokončení díla. Nový termín zápis neuvádí.",
+        "shrnuti_ai": true,
+        "citace": {
+          "dokument_id": "zapis-rm-2026-09-23",
+          "strany": [
+            7
+          ],
+          "text": "jehož předmětem je změna termínu dokončení díla"
+        },
+        "overeni": "overeno_kodem",
         "vysledek_hlasovani": "prijato",
         "jistota": "nase_propojeni"
       },
@@ -310,7 +348,17 @@
         "cislo": "RM 493/2026-111",
         "datum": "2026-09-23",
         "tema": "Rozpočtové opatření č. 51 – vybavení přístavby tělocvičen",
+        "tema_ai": true,
         "shrnuti": "Rada přesunula 53 000 Kč ve výdajích rozpočtu z položky vybavení ubytování sportovní haly do položky vybavení přístavby tělocvičen.",
+        "shrnuti_ai": true,
+        "citace": {
+          "dokument_id": "zapis-rm-2026-09-23",
+          "strany": [
+            8
+          ],
+          "text": "-do položky 5137 „Přístavba tělocvičen - vybavení“, § 3412, ORJ 750, ORG 9750000000, UZ 0 v částce Kč 53.000,00."
+        },
+        "overeni": "overeno_kodem",
         "vysledek_hlasovani": "prijato",
         "jistota": "nase_propojeni"
       },
@@ -319,7 +367,17 @@
         "cislo": "RM 542/2026-113",
         "datum": "2026-10-21",
         "tema": "Rozpočtové opatření č. 57 – vybavení přístavby tělocvičen",
+        "tema_ai": true,
         "shrnuti": "Rada přesunula 253 000 Kč z položky Přístavba tělocvičen do položky Přístavba tělocvičen – vybavení.",
+        "shrnuti_ai": true,
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-21",
+          "strany": [
+            13
+          ],
+          "text": "-do položky 5137 „Přístavba tělocvičen - vybavení“, § 3412, ORJ 750, ORG 9750000000, UZ 0 v částce Kč 253.000,00."
+        },
+        "overeni": "overeno_kodem",
         "vysledek_hlasovani": "prijato",
         "jistota": "dolozeno"
       },
@@ -328,7 +386,17 @@
         "cislo": "RM 551/2026-114",
         "datum": "2026-10-30",
         "tema": "Dodatek č. 5 ke smlouvě o dílo – přístavba dvou tělocvičen sportovní haly",
+        "tema_ai": true,
         "shrnuti": "Rada schválila uzavření Dodatku č. 5 ke smlouvě o dílo na stavbu Přístavba dvou tělocvičen sportovní haly Třeboň; předmětem dodatku je změna ceny díla.",
+        "shrnuti_ai": true,
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-30",
+          "strany": [
+            4
+          ],
+          "text": "uzavření Dodatku č. 5 ke smlouvě o dílo č. 750/9262/26 ze dne 14.01.2026 na zhotovení stavby „Přístavba dvou tělocvičen sportovní haly Třeboň“"
+        },
+        "overeni": "overeno_kodem",
         "vysledek_hlasovani": "prijato",
         "jistota": "nase_propojeni"
       }
@@ -377,6 +445,8 @@
         "datum": "2026-09-23",
         "typ": "usneseni",
         "text": "Přístavba dvou tělocvičen sportovní haly – dodatek č. 4 (termín)",
+        "text_ai": true,
+        "overeni": "overeno_kodem",
         "zdroj_id": "rm-2026-j111-u490",
         "jistota": "nase_propojeni"
       },
@@ -434,6 +504,8 @@
         "datum": "2026-10-30",
         "typ": "usneseni",
         "text": "Dodatek č. 5 ke smlouvě o dílo – přístavba dvou tělocvičen sportovní haly",
+        "text_ai": true,
+        "overeni": "overeno_kodem",
         "zdroj_id": "rm-2026-j114-u551",
         "jistota": "nase_propojeni"
       },
@@ -539,12 +611,16 @@
                   {
                     "hodnota": 873000.0,
                     "s_dph": true,
-                    "druh": "smluvni"
+                    "druh": "smluvni",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
                   },
                   {
                     "hodnota": 873000.0,
                     "s_dph": false,
-                    "druh": "smluvni"
+                    "druh": "smluvni",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
                   }
                 ],
                 "zaplaceno": [
@@ -595,12 +671,16 @@
                   {
                     "hodnota": 62173221.68,
                     "s_dph": true,
-                    "druh": "smluvni"
+                    "druh": "smluvni",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
                   },
                   {
                     "hodnota": 51382827.84,
                     "s_dph": false,
-                    "druh": "smluvni"
+                    "druh": "smluvni",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
                   }
                 ],
                 "zaplaceno": [
@@ -641,12 +721,16 @@
                   {
                     "hodnota": 2025961.08,
                     "s_dph": true,
-                    "druh": "smluvni"
+                    "druh": "smluvni",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
                   },
                   {
                     "hodnota": 1674348.0,
                     "s_dph": false,
-                    "druh": "smluvni"
+                    "druh": "smluvni",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
                   }
                 ],
                 "zaplaceno": []
@@ -671,12 +755,16 @@
           {
             "hodnota": 1334880.1,
             "s_dph": false,
-            "druh": "smluvni"
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
           },
           {
             "hodnota": 1615204.92,
             "s_dph": true,
-            "druh": "smluvni"
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
           }
         ],
         "url": "https://smlouvy.gov.cz/smlouva/39302679",
@@ -708,12 +796,16 @@
           {
             "hodnota": 208817.0,
             "s_dph": false,
-            "druh": "smluvni"
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
           },
           {
             "hodnota": 252668.57,
             "s_dph": true,
-            "druh": "smluvni"
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
           }
         ],
         "url": "https://smlouvy.gov.cz/smlouva/39574269",
@@ -732,12 +824,16 @@
           {
             "hodnota": 35000.0,
             "s_dph": false,
-            "druh": "smluvni"
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
           },
           {
             "hodnota": 35000.0,
             "s_dph": true,
-            "druh": "smluvni"
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
           }
         ],
         "url": "https://smlouvy.gov.cz/smlouva/39725413",
@@ -756,12 +852,16 @@
           {
             "hodnota": 96668.0,
             "s_dph": false,
-            "druh": "smluvni"
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
           },
           {
             "hodnota": 116968.28,
             "s_dph": true,
-            "druh": "smluvni"
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
           }
         ],
         "url": "https://smlouvy.gov.cz/smlouva/39899189",
@@ -780,12 +880,16 @@
           {
             "hodnota": 16167.0,
             "s_dph": false,
-            "druh": "smluvni"
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
           },
           {
             "hodnota": 19562.07,
             "s_dph": true,
-            "druh": "smluvni"
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
           }
         ],
         "url": "https://smlouvy.gov.cz/smlouva/39748681",
@@ -804,12 +908,16 @@
           {
             "hodnota": 310125.87,
             "s_dph": false,
-            "druh": "smluvni"
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
           },
           {
             "hodnota": 375252.3,
             "s_dph": true,
-            "druh": "smluvni"
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
           }
         ],
         "url": "https://smlouvy.gov.cz/smlouva/40060341",
@@ -828,12 +936,16 @@
           {
             "hodnota": 870555.97,
             "s_dph": false,
-            "druh": "smluvni"
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
           },
           {
             "hodnota": 1053372.72,
             "s_dph": true,
-            "druh": "smluvni"
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
           }
         ],
         "url": "https://smlouvy.gov.cz/smlouva/40101957",
@@ -852,12 +964,16 @@
           {
             "hodnota": 99981.0,
             "s_dph": false,
-            "druh": "smluvni"
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
           },
           {
             "hodnota": 120977.01,
             "s_dph": true,
-            "druh": "smluvni"
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
           }
         ],
         "url": "https://smlouvy.gov.cz/smlouva/40117365",
@@ -876,12 +992,16 @@
           {
             "hodnota": 56500.0,
             "s_dph": false,
-            "druh": "smluvni"
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
           },
           {
             "hodnota": 56500.0,
             "s_dph": true,
-            "druh": "smluvni"
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
           }
         ],
         "url": "https://smlouvy.gov.cz/smlouva/40117957",
@@ -894,7 +1014,18 @@
         "cislo": "RM 463/2026-110",
         "datum": "2026-09-09",
         "tema": "Sportovní hala – dodatek č. 4 ke smlouvě o dílo (termín dokončení)",
+        "tema_ai": true,
         "shrnuti": "Rada schválila dodatek č. 4 ke smlouvě o dílo na stavbu Sportovní hala Třeboň – nástavba a přístavba ubytování. Dodatek mění termín dokončení díla; nový termín zápis neuvádí.",
+        "shrnuti_ai": true,
+        "citace": {
+          "dokument_id": "zapis-rm-2026-09-09",
+          "strany": [
+            6,
+            7
+          ],
+          "text": "jehož předmětem je změna termínu dokončení díla."
+        },
+        "overeni": "overeno_kodem",
         "vysledek_hlasovani": "prijato",
         "jistota": "nase_propojeni"
       },
@@ -903,7 +1034,17 @@
         "cislo": "RM 491/2026-111",
         "datum": "2026-09-23",
         "tema": "Vybavení interiéru ubytování sportovní haly – dodatek č. 1 ke kupní smlouvě",
+        "tema_ai": true,
         "shrnuti": "Rada schválila dodatek č. 1 ke kupní smlouvě se společností Artspect, a. s. na vybavení interiéru ubytování ve sportovní hale; mění se cena a termín dodání. Nová cena ani termín nejsou v zápisu.",
+        "shrnuti_ai": true,
+        "citace": {
+          "dokument_id": "zapis-rm-2026-09-23",
+          "strany": [
+            7
+          ],
+          "text": "jehož předmětem je změna ceny díla a změna termínu dodání zboží"
+        },
+        "overeni": "overeno_kodem",
         "vysledek_hlasovani": "prijato",
         "jistota": "nase_propojeni"
       },
@@ -912,7 +1053,17 @@
         "cislo": "RM 493/2026-111",
         "datum": "2026-09-23",
         "tema": "Rozpočtové opatření č. 51 – vybavení přístavby tělocvičen",
+        "tema_ai": true,
         "shrnuti": "Rada přesunula 53 000 Kč ve výdajích rozpočtu z položky vybavení ubytování sportovní haly do položky vybavení přístavby tělocvičen.",
+        "shrnuti_ai": true,
+        "citace": {
+          "dokument_id": "zapis-rm-2026-09-23",
+          "strany": [
+            8
+          ],
+          "text": "-do položky 5137 „Přístavba tělocvičen - vybavení“, § 3412, ORJ 750, ORG 9750000000, UZ 0 v částce Kč 53.000,00."
+        },
+        "overeni": "overeno_kodem",
         "vysledek_hlasovani": "prijato",
         "jistota": "nase_propojeni"
       },
@@ -921,7 +1072,17 @@
         "cislo": "RM 527/2026-113",
         "datum": "2026-10-21",
         "tema": "Sportovní hala – dodatek č. 5 ke smlouvě o dílo a rozpočtové opatření č. 56",
+        "tema_ai": true,
         "shrnuti": "Rada přesunula 1 165 000 Kč z položky Snížení energetické náročnosti DPS 3 do položky Ubytování sportovní hala a schválila dodatek č. 5 ke smlouvě o dílo na nástavbu a přístavbu ubytování, jehož předmětem je změna ceny díla; nová cena v usnesení uvedena není.",
+        "shrnuti_ai": true,
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-21",
+          "strany": [
+            8
+          ],
+          "text": "jehož předmětem je změna ceny díla."
+        },
+        "overeni": "overeno_kodem",
         "vysledek_hlasovani": "prijato",
         "jistota": "dolozeno"
       },
@@ -930,7 +1091,17 @@
         "cislo": "RM 530/2026-113",
         "datum": "2026-10-21",
         "tema": "Sportovní hala – vybavení interiéru, dodatek č. 2 ke kupní smlouvě",
+        "tema_ai": true,
         "shrnuti": "Rada schválila dodatek č. 2 ke kupní smlouvě na vybavení interiéru ubytování sportovní haly, jehož předmětem je změna ceny; výše ceny v usnesení uvedena není.",
+        "shrnuti_ai": true,
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-21",
+          "strany": [
+            9
+          ],
+          "text": "jehož předmětem je změna ceny díla."
+        },
+        "overeni": "overeno_kodem",
         "vysledek_hlasovani": "prijato",
         "jistota": "nase_propojeni"
       }
@@ -979,6 +1150,8 @@
         "datum": "2026-09-09",
         "typ": "usneseni",
         "text": "Sportovní hala – dodatek č. 4 ke smlouvě o dílo (termín dokončení)",
+        "text_ai": true,
+        "overeni": "overeno_kodem",
         "zdroj_id": "rm-2026-j110-u463",
         "jistota": "nase_propojeni"
       },
@@ -1011,6 +1184,8 @@
         "datum": "2026-09-23",
         "typ": "usneseni",
         "text": "Vybavení interiéru ubytování sportovní haly – dodatek č. 1 ke kupní smlouvě",
+        "text_ai": true,
+        "overeni": "overeno_kodem",
         "zdroj_id": "rm-2026-j111-u491",
         "jistota": "nase_propojeni"
       },
@@ -1051,6 +1226,8 @@
         "datum": "2026-10-21",
         "typ": "usneseni",
         "text": "Sportovní hala – vybavení interiéru, dodatek č. 2 ke kupní smlouvě",
+        "text_ai": true,
+        "overeni": "overeno_kodem",
         "zdroj_id": "rm-2026-j113-u530",
         "jistota": "nase_propojeni"
       },
