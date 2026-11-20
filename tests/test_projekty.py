@@ -223,8 +223,8 @@ def test_dopocet_dph_sazbou_teze_smlouvy_nebo_21():
 
 
 def test_kratke_popisy_historie():
-    assert pr.druh_projektu("Zpracování projektové dokumentace ve stupni DZS/DPS přístavby") == \
-        "projekt pro stavební řízení a prováděcí"
+    assert pr.druh_projektu("Zpracování projektové dokumentace ve stupni DZS/DPS přístavby") == "projekt prováděcí"
+    assert pr.druh_projektu("Projekt pro stavební povolení a DPS") == "projekt pro stavební řízení a prováděcí"
     assert pr.druh_projektu("Vypracování projektové dokumentace pro provedení stavby") == "projekt prováděcí"
     assert pr.druh_projektu("Architektonická studie revitalizace") == "architektonická studie"
     assert pr.druh_projektu("Zpracování PD - stavební úpravy hřbitova") == "projektová dokumentace"

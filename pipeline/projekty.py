@@ -38,7 +38,7 @@ def druh_projektu(text: str) -> str:
     t = text or ""
     studie = re.search(r"studi", t, re.I)
     provadeci = re.search(r"provedení stavby|\bDPS\b|prováděc", t)
-    povoleni = re.search(r"\bDSP\b|\bDZS\b|\bDUR\b|stavební\w* povolení|společné\w* povolení|povolení stavby|"
+    povoleni = re.search(r"\bDSP\b|\bDUR\b|stavební\w* povolení|společné\w* povolení|povolení stavby|"
                          r"stavební\w* řízení", t, re.I)
     if studie:
         return "architektonická studie"
