@@ -53,17 +53,22 @@ jobs:
               const request = requests.sort((a, b) => b.requestedAt - a.requestedAt)[0];
               if (!Number.isFinite(request.requestedAt) || now - request.requestedAt < timeoutMs) continue;
 
-              const reviews = await github.paginate(github.rest.pulls.listReviews, {
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                pull_number: pr.number,
-                per_page: 100,
-              });
-              const reviewedCurrentHead = reviews.some(review =>
-                review.user?.login === 'chatgpt-codex-connector[bot]' &&
-                review.commit_id === request.sha
-              );
-              if (reviewedCurrentHead) continue;
+              // Codex may report a clean review only in its summary comment, without a formal GitHub review.
+              // Match the same state format used by slouceni.yml and accept both running and completed states.
+              let codexReview = null;
+              for (const comment of comments) {
+                if (!comment.user?.login?.includes('codex')) continue;
+                const match = (comment.body || '').match(/codex-review-state:v1 (\\{.*?\\}) -->/s);
+                if (!match) continue;
+                try {
+                  const parsed = JSON.parse(match[1]);
+                  const state = parsed.code_review;
+                  if (state?.commit_sha === request.sha) codexReview = state;
+                } catch (error) {
+                  core.warning(`Could not parse Codex review state comment ${comment.id} on PR #${pr.number}.`);
+                }
+              }
+              if (codexReview && ['running', 'completed'].includes(codexReview.status)) continue;
 
               const timeoutMarker = `<!-- codex-review-timeout:${request.sha} -->`;
               if (comments.some(comment =>
