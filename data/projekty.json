@@ -278,6 +278,18 @@
           "bozp"
         ],
         "jistota": "nase_propojeni"
+      },
+      "smluvni_s_dph": {
+        "celkem": 67113105.32,
+        "druh": "smluvni",
+        "s_dph": true,
+        "mena": "CZK",
+        "po_dodatcich": null,
+        "neuplne": [
+          "technicky_dozor",
+          "bozp"
+        ],
+        "jistota": "nase_propojeni"
       }
     },
     "zakazky": [
@@ -1231,6 +1243,18 @@
         "celkem": 54449118.71,
         "druh": "smluvni",
         "s_dph": false,
+        "mena": "CZK",
+        "po_dodatcich": null,
+        "neuplne": [
+          "technicky_dozor",
+          "bozp"
+        ],
+        "jistota": "nase_propojeni"
+      },
+      "smluvni_s_dph": {
+        "celkem": 65700103.63,
+        "druh": "smluvni",
+        "s_dph": true,
         "mena": "CZK",
         "po_dodatcich": null,
         "neuplne": [

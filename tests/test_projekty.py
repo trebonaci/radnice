@@ -199,3 +199,11 @@ def test_dodatek_jen_o_terminu_podle_usneseni_a_cena_s_dph():
     assert c["cena_po_dodatcich"] is None                         # dodatek č. 1 nemá cenu bez DPH
     assert c["cena_po_dodatcich_s_dph"] == 121.0 - 12.1 + 12.1 + 0.0 + 1.21
     assert pr.casti_akce([], [sm[0], dict(sm[2], cislo_smlouvy="jine/4")], jt)[0]["cena_po_dodatcich"] is None
+
+
+def test_souhrn_s_dph_zvlast():
+    casti = pr.casti_akce([], [dict(sml("s0", "stavba"), castky=[{"hodnota": 100.0, "s_dph": False}, {"hodnota": 121.0, "s_dph": True}]),
+                               dict(sml("s1", "stavba", 1, navazuje="is0"), castky=[{"hodnota": -12.1, "s_dph": True}])])
+    s = pr.souhrn([], casti)
+    assert s["smluvni_s_dph"]["celkem"] == 121.0 and s["smluvni_s_dph"]["po_dodatcich"] == 108.9
+    assert s["smluvni_s_dph"]["s_dph"] is True and s["smluvni_bez_dph"]["po_dodatcich"] is None
