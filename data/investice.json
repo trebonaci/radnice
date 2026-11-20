@@ -1,0 +1,625 @@
+[
+  {
+    "rok": 2026,
+    "druh": "rozpocet / rozpocet_upraveny",
+    "s_dph": null,
+    "schvaleny": 292735000.0,
+    "po_zmenach": 278663980.0,
+    "bez_rezervy_po_zmenach": 268436840.0,
+    "oblasti": [
+      {
+        "oblast": "Služby a cestovní ruch",
+        "schvaleny": 56500000.0,
+        "po_zmenach": 63525000.0,
+        "polozky": [
+          {
+            "nazev": "Ubytování sportovní hala",
+            "orj": "750",
+            "oddil": 21,
+            "schvaleny": 56000000.0,
+            "po_zmenach": 63025000.0,
+            "zmeny_ro": [
+              13,
+              34,
+              49,
+              56
+            ],
+            "nova": false,
+            "zdroj_id": "rozpocet-2026-6-750-21-01",
+            "oblast": "Služby a cestovní ruch",
+            "projekt_id": "sportovni-hala-ubytovani"
+          },
+          {
+            "nazev": "Ubytování sportovní hala - vybavení",
+            "orj": "750",
+            "oddil": 21,
+            "schvaleny": 500000.0,
+            "po_zmenach": 500000.0,
+            "zmeny_ro": [],
+            "nova": false,
+            "zdroj_id": "rozpocet-2026-6-750-21-02",
+            "oblast": "Služby a cestovní ruch",
+            "projekt_id": "sportovni-hala-ubytovani"
+          }
+        ]
+      },
+      {
+        "oblast": "Doprava, ulice a chodníky",
+        "schvaleny": 48000000.0,
+        "po_zmenach": 49500000.0,
+        "polozky": [
+          {
+            "nazev": "Ulice - realizace",
+            "orj": "750",
+            "oddil": 22,
+            "schvaleny": 38000000.0,
+            "po_zmenach": 38000000.0,
+            "zmeny_ro": [],
+            "nova": false,
+            "zdroj_id": "rozpocet-2026-6-750-22-04",
+            "oblast": "Doprava, ulice a chodníky",
+            "projekt_id": null
+          },
+          {
+            "nazev": "Parkování, chodníky a stezky - realizace",
+            "orj": "750",
+            "oddil": 22,
+            "schvaleny": 5000000.0,
+            "po_zmenach": 6500000.0,
+            "zmeny_ro": [
+              42
+            ],
+            "nova": false,
+            "zdroj_id": "rozpocet-2026-6-750-22-01",
+            "oblast": "Doprava, ulice a chodníky",
+            "projekt_id": null
+          },
+          {
+            "nazev": "Ulice - projekty",
+            "orj": "750",
+            "oddil": 22,
+            "schvaleny": 3500000.0,
+            "po_zmenach": 3500000.0,
+            "zmeny_ro": [],
+            "nova": false,
+            "zdroj_id": "rozpocet-2026-6-750-22-03",
+            "oblast": "Doprava, ulice a chodníky",
+            "projekt_id": null
+          },
+          {
+            "nazev": "Parkování, chodníky a stezky - projekty",
+            "orj": "750",
+            "oddil": 22,
+            "schvaleny": 1500000.0,
+            "po_zmenach": 1500000.0,
+            "zmeny_ro": [],
+            "nova": false,
+            "zdroj_id": "rozpocet-2026-6-750-22-02",
+            "oblast": "Doprava, ulice a chodníky",
+            "projekt_id": null
+          }
+        ]
+      },
+      {
+        "oblast": "Voda a kanalizace",
+        "schvaleny": 12480000.0,
+        "po_zmenach": 13330000.0,
+        "polozky": [
+          {
+            "nazev": "Splašková kanalizace v ulici Sídliště",
+            "orj": "750",
+            "oddil": 23,
+            "schvaleny": 5100000.0,
+            "po_zmenach": 5100000.0,
+            "zmeny_ro": [],
+            "nova": false,
+            "zdroj_id": "rozpocet-2026-6-750-23-04",
+            "oblast": "Voda a kanalizace",
+            "projekt_id": null
+          },
+          {
+            "nazev": "Energetické řešení budov města",
+            "orj": "750",
+            "oddil": 23,
+            "schvaleny": 3000000.0,
+            "po_zmenach": 3000000.0,
+            "zmeny_ro": [],
+            "nova": false,
+            "zdroj_id": "rozpocet-2026-6-750-23-01",
+            "oblast": "Voda a kanalizace",
+            "projekt_id": null
+          },
+          {
+            "nazev": "Propustky Břilice",
+            "orj": "750",
+            "oddil": 23,
+            "schvaleny": 1500000.0,
+            "po_zmenach": 2350000.0,
+            "zmeny_ro": [
+              43
+            ],
+            "nova": false,
+            "zdroj_id": "rozpocet-2026-6-750-23-05",
+            "oblast": "Voda a kanalizace",
+            "projekt_id": "propustek-brilice"
+          },
+          {
+            "nazev": "Projekty - vodohospodářská infrastruktura",
+            "orj": "750",
+            "oddil": 23,
+            "schvaleny": 2000000.0,
+            "po_zmenach": 2000000.0,
+            "zmeny_ro": [],
+            "nova": false,
+            "zdroj_id": "rozpocet-2026-6-750-23-03",
+            "oblast": "Voda a kanalizace",
+            "projekt_id": null
+          },
+          {
+            "nazev": "Projekt páteře dešťové kanalizace",
+            "orj": "750",
+            "oddil": 23,
+            "schvaleny": 880000.0,
+            "po_zmenach": 880000.0,
+            "zmeny_ro": [],
+            "nova": false,
+            "zdroj_id": "rozpocet-2026-6-750-23-02",
+            "oblast": "Voda a kanalizace",
+            "projekt_id": null
+          }
+        ]
+      },
+      {
+        "oblast": "Školy a školky",
+        "schvaleny": 3600000.0,
+        "po_zmenach": 5700000.0,
+        "polozky": [
+          {
+            "nazev": "ZŠ Na Sadech - jídelna - rekonstrukce WC",
+            "orj": "750",
+            "oddil": 31,
+            "schvaleny": 3500000.0,
+            "po_zmenach": 3500000.0,
+            "zmeny_ro": [],
+            "nova": false,
+            "zdroj_id": "rozpocet-2026-6-750-31-02",
+            "oblast": "Školy a školky",
+            "projekt_id": null
+          },
+          {
+            "nazev": "FVE ZŠ Na Sadech",
+            "orj": "750",
+            "oddil": 31,
+            "schvaleny": 0.0,
+            "po_zmenach": 2100000.0,
+            "zmeny_ro": [
+              38
+            ],
+            "nova": true,
+            "zdroj_id": "ro-2026-38-02",
+            "oblast": "Školy a školky",
+            "projekt_id": null
+          },
+          {
+            "nazev": "Projekty a studie ve školství - investice",
+            "orj": "750",
+            "oddil": 31,
+            "schvaleny": 100000.0,
+            "po_zmenach": 100000.0,
+            "zmeny_ro": [],
+            "nova": false,
+            "zdroj_id": "rozpocet-2026-6-750-31-01",
+            "oblast": "Školy a školky",
+            "projekt_id": null
+          }
+        ]
+      },
+      {
+        "oblast": "Kultura a památky",
+        "schvaleny": 2000000.0,
+        "po_zmenach": 1820000.0,
+        "polozky": [
+          {
+            "nazev": "Umělecké artefakty",
+            "orj": "770",
+            "oddil": 33,
+            "schvaleny": 2000000.0,
+            "po_zmenach": 1820000.0,
+            "zmeny_ro": [
+              19
+            ],
+            "nova": false,
+            "zdroj_id": "rozpocet-2026-6-770-33-01",
+            "oblast": "Kultura a památky",
+            "projekt_id": null
+          }
+        ]
+      },
+      {
+        "oblast": "Sport a hřiště",
+        "schvaleny": 91750000.0,
+        "po_zmenach": 90692140.0,
+        "polozky": [
+          {
+            "nazev": "Přístavba tělocvičen",
+            "orj": "750",
+            "oddil": 34,
+            "schvaleny": 70000000.0,
+            "po_zmenach": 58992140.0,
+            "zmeny_ro": [
+              28,
+              57
+            ],
+            "nova": false,
+            "zdroj_id": "rozpocet-2026-6-750-34-04",
+            "oblast": "Sport a hřiště",
+            "projekt_id": "pristavba-telocvicen"
+          },
+          {
+            "nazev": "Dětská hřiště",
+            "orj": "750",
+            "oddil": 34,
+            "schvaleny": 16800000.0,
+            "po_zmenach": 16800000.0,
+            "zmeny_ro": [],
+            "nova": false,
+            "zdroj_id": "rozpocet-2026-6-750-34-05",
+            "oblast": "Sport a hřiště",
+            "projekt_id": null
+          },
+          {
+            "nazev": "Přístavba dvou tělocvičen sportovní haly Třeboň – dotace – KIF – JčK - INV",
+            "orj": "750",
+            "oddil": 34,
+            "schvaleny": 0.0,
+            "po_zmenach": 10000000.0,
+            "zmeny_ro": [
+              28
+            ],
+            "nova": true,
+            "zdroj_id": "ro-2026-28-02",
+            "oblast": "Sport a hřiště",
+            "projekt_id": "pristavba-telocvicen"
+          },
+          {
+            "nazev": "Inv. přísp. spolku TJ Jiskra Třeboň, z.s. na modernizaci sport. areálu tenistů",
+            "orj": "800",
+            "oddil": 34,
+            "schvaleny": 2000000.0,
+            "po_zmenach": 2000000.0,
+            "zmeny_ro": [],
+            "nova": false,
+            "zdroj_id": "rozpocet-2026-6-800-34-01",
+            "oblast": "Sport a hřiště",
+            "projekt_id": null
+          },
+          {
+            "nazev": "Sportoviště - investice",
+            "orj": "750",
+            "oddil": 34,
+            "schvaleny": 1200000.0,
+            "po_zmenach": 1190000.0,
+            "zmeny_ro": [
+              39
+            ],
+            "nova": false,
+            "zdroj_id": "rozpocet-2026-6-750-34-03",
+            "oblast": "Sport a hřiště",
+            "projekt_id": null
+          },
+          {
+            "nazev": "Projekty, studie - tělovýchova, sport, hřiště",
+            "orj": "750",
+            "oddil": 34,
+            "schvaleny": 1200000.0,
+            "po_zmenach": 1160000.0,
+            "zmeny_ro": [
+              39
+            ],
+            "nova": false,
+            "zdroj_id": "rozpocet-2026-6-750-34-01",
+            "oblast": "Sport a hřiště",
+            "projekt_id": null
+          },
+          {
+            "nazev": "Rekonstrukce plochy pro volný pohyb psů",
+            "orj": "750",
+            "oddil": 34,
+            "schvaleny": 550000.0,
+            "po_zmenach": 550000.0,
+            "zmeny_ro": [],
+            "nova": false,
+            "zdroj_id": "rozpocet-2026-6-750-34-02",
+            "oblast": "Sport a hřiště",
+            "projekt_id": null
+          }
+        ]
+      },
+      {
+        "oblast": "Bydlení, osvětlení a budovy",
+        "schvaleny": 47670000.0,
+        "po_zmenach": 39055000.0,
+        "polozky": [
+          {
+            "nazev": "Novostavba městského bytového domu v ul. Lázeňská",
+            "orj": "750",
+            "oddil": 36,
+            "schvaleny": 20000000.0,
+            "po_zmenach": 20000000.0,
+            "zmeny_ro": [],
+            "nova": false,
+            "zdroj_id": "rozpocet-2026-6-750-36-02",
+            "oblast": "Bydlení, osvětlení a budovy",
+            "projekt_id": null
+          },
+          {
+            "nazev": "VO - úsporná řešení",
+            "orj": "750",
+            "oddil": 36,
+            "schvaleny": 9620000.0,
+            "po_zmenach": 9620000.0,
+            "zmeny_ro": [],
+            "nova": false,
+            "zdroj_id": "rozpocet-2026-6-750-36-06",
+            "oblast": "Bydlení, osvětlení a budovy",
+            "projekt_id": null
+          },
+          {
+            "nazev": "Snížení energetické náročnosti DPS 3",
+            "orj": "750",
+            "oddil": 36,
+            "schvaleny": 14000000.0,
+            "po_zmenach": 6085000.0,
+            "zmeny_ro": [
+              38,
+              40,
+              43,
+              56
+            ],
+            "nova": false,
+            "zdroj_id": "rozpocet-2026-6-750-36-05",
+            "oblast": "Bydlení, osvětlení a budovy",
+            "projekt_id": "dps3-energie"
+          },
+          {
+            "nazev": "Nákup pozemků",
+            "orj": "800",
+            "oddil": 36,
+            "schvaleny": 1000000.0,
+            "po_zmenach": 1000000.0,
+            "zmeny_ro": [],
+            "nova": false,
+            "zdroj_id": "rozpocet-2026-6-800-36-01",
+            "oblast": "Bydlení, osvětlení a budovy",
+            "projekt_id": null
+          },
+          {
+            "nazev": "Hřbitov sv. Alžběty – projekt",
+            "orj": "750",
+            "oddil": 36,
+            "schvaleny": 0.0,
+            "po_zmenach": 800000.0,
+            "zmeny_ro": [
+              30
+            ],
+            "nova": true,
+            "zdroj_id": "ro-2026-30-02",
+            "oblast": "Bydlení, osvětlení a budovy",
+            "projekt_id": null
+          },
+          {
+            "nazev": "Nebytové prostory",
+            "orj": "750",
+            "oddil": 36,
+            "schvaleny": 500000.0,
+            "po_zmenach": 500000.0,
+            "zmeny_ro": [],
+            "nova": false,
+            "zdroj_id": "rozpocet-2026-6-750-36-01",
+            "oblast": "Bydlení, osvětlení a budovy",
+            "projekt_id": null
+          },
+          {
+            "nazev": "Projekty - byty",
+            "orj": "750",
+            "oddil": 36,
+            "schvaleny": 500000.0,
+            "po_zmenach": 500000.0,
+            "zmeny_ro": [],
+            "nova": false,
+            "zdroj_id": "rozpocet-2026-6-750-36-04",
+            "oblast": "Bydlení, osvětlení a budovy",
+            "projekt_id": null
+          },
+          {
+            "nazev": "VO projekty",
+            "orj": "750",
+            "oddil": 36,
+            "schvaleny": 300000.0,
+            "po_zmenach": 300000.0,
+            "zmeny_ro": [],
+            "nova": false,
+            "zdroj_id": "rozpocet-2026-6-750-36-07",
+            "oblast": "Bydlení, osvětlení a budovy",
+            "projekt_id": null
+          },
+          {
+            "nazev": "Územně plánovací dokumentace",
+            "orj": "400",
+            "oddil": 36,
+            "schvaleny": 250000.0,
+            "po_zmenach": 250000.0,
+            "zmeny_ro": [],
+            "nova": false,
+            "zdroj_id": "rozpocet-2026-6-400-36-01",
+            "oblast": "Bydlení, osvětlení a budovy",
+            "projekt_id": null
+          },
+          {
+            "nazev": "Pasport VO",
+            "orj": "750",
+            "oddil": 36,
+            "schvaleny": 1500000.0,
+            "po_zmenach": 0.0,
+            "zmeny_ro": [
+              42
+            ],
+            "nova": false,
+            "zdroj_id": "rozpocet-2026-6-750-36-03",
+            "oblast": "Bydlení, osvětlení a budovy",
+            "projekt_id": null
+          }
+        ]
+      },
+      {
+        "oblast": "Životní prostředí a zeleň",
+        "schvaleny": 2680000.0,
+        "po_zmenach": 2764700.0,
+        "polozky": [
+          {
+            "nazev": "Investiční příspěvek Český nadační fond pro vydru - Ekocentrum Vydra",
+            "orj": "800",
+            "oddil": 37,
+            "schvaleny": 2000000.0,
+            "po_zmenach": 2000000.0,
+            "zmeny_ro": [],
+            "nova": false,
+            "zdroj_id": "rozpocet-2026-6-800-37-01",
+            "oblast": "Životní prostředí a zeleň",
+            "projekt_id": null
+          },
+          {
+            "nazev": "Aktualizace pasportu zeleně",
+            "orj": "750",
+            "oddil": 37,
+            "schvaleny": 550000.0,
+            "po_zmenach": 550000.0,
+            "zmeny_ro": [],
+            "nova": false,
+            "zdroj_id": "rozpocet-2026-6-750-37-01",
+            "oblast": "Životní prostředí a zeleň",
+            "projekt_id": null
+          },
+          {
+            "nazev": "Stání pro kontejnery",
+            "orj": "750",
+            "oddil": 37,
+            "schvaleny": 130000.0,
+            "po_zmenach": 130000.0,
+            "zmeny_ro": [],
+            "nova": false,
+            "zdroj_id": "rozpocet-2026-6-750-37-02",
+            "oblast": "Životní prostředí a zeleň",
+            "projekt_id": null
+          },
+          {
+            "nazev": "Doplnění městského mobiliáře",
+            "orj": "750",
+            "oddil": 37,
+            "schvaleny": 0.0,
+            "po_zmenach": 84700.0,
+            "zmeny_ro": [
+              40
+            ],
+            "nova": true,
+            "zdroj_id": "ro-2026-40-05",
+            "oblast": "Životní prostředí a zeleň",
+            "projekt_id": null
+          }
+        ]
+      },
+      {
+        "oblast": "Bezpečnost",
+        "schvaleny": 305000.0,
+        "po_zmenach": 300000.0,
+        "polozky": [
+          {
+            "nazev": "Zástavba a úprava služebního vozidla",
+            "orj": "250",
+            "oddil": 53,
+            "schvaleny": 170000.0,
+            "po_zmenach": 165000.0,
+            "zmeny_ro": [
+              33
+            ],
+            "nova": false,
+            "zdroj_id": "rozpocet-2026-6-250-53-02",
+            "oblast": "Bezpečnost",
+            "projekt_id": null
+          },
+          {
+            "nazev": "Modernizace kamerového systému",
+            "orj": "250",
+            "oddil": 53,
+            "schvaleny": 135000.0,
+            "po_zmenach": 135000.0,
+            "zmeny_ro": [],
+            "nova": false,
+            "zdroj_id": "rozpocet-2026-6-250-53-01",
+            "oblast": "Bezpečnost",
+            "projekt_id": null
+          }
+        ]
+      },
+      {
+        "oblast": "Městský úřad",
+        "schvaleny": 1750000.0,
+        "po_zmenach": 1750000.0,
+        "polozky": [
+          {
+            "nazev": "IT - investice",
+            "orj": "770",
+            "oddil": 61,
+            "schvaleny": 1450000.0,
+            "po_zmenach": 1450000.0,
+            "zmeny_ro": [],
+            "nova": false,
+            "zdroj_id": "rozpocet-2026-6-770-61-01",
+            "oblast": "Městský úřad",
+            "projekt_id": null
+          },
+          {
+            "nazev": "Nové webové stránky",
+            "orj": "770",
+            "oddil": 61,
+            "schvaleny": 300000.0,
+            "po_zmenach": 300000.0,
+            "zmeny_ro": [],
+            "nova": false,
+            "zdroj_id": "rozpocet-2026-6-770-61-02",
+            "oblast": "Městský úřad",
+            "projekt_id": null
+          }
+        ]
+      },
+      {
+        "oblast": "Rezerva",
+        "schvaleny": 26000000.0,
+        "po_zmenach": 10227140.0,
+        "polozky": [
+          {
+            "nazev": "Rezervy kapitálových výdajů",
+            "orj": "800",
+            "oddil": 64,
+            "schvaleny": 26000000.0,
+            "po_zmenach": 10227140.0,
+            "zmeny_ro": [
+              13,
+              27,
+              28,
+              30,
+              34,
+              36,
+              48
+            ],
+            "nova": false,
+            "zdroj_id": "rozpocet-2026-6-800-64-01",
+            "oblast": "Rezerva",
+            "projekt_id": null
+          }
+        ]
+      }
+    ],
+    "fondy_poznamka": "Investice z fondů (lázeňský investiční fond, fond obnovy vodohospodářského majetku) rozpočet uvádí jen souhrnně, nejsou zahrnuty."
+  }
+]
