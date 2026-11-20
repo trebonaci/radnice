@@ -187,3 +187,13 @@ def test_rozpracovany_mesic_nemeni_manifest(koren):
     web[rs.INDEX_URL] = INDEX.replace(b"<hashDumpu>h10</hashDumpu>", b"<hashDumpu>h10b</hashDumpu>")
     zmeny, _ = rs.stahni(koren, otevri_z(web, []), max_dumpu=5)
     assert zmeny == [] and pred == {p.name: p.read_bytes() for p in (koren / "raw/smlouvy").iterdir()}
+
+
+def test_jmeno_bez_titulu_v_predmetu(koren):
+    from pipeline.jmena import zakryj_jmena
+    from pipeline.sestav import nacti_osoby
+    o = nacti_osoby(KOREN)
+    assert zakryj_jmena("Vystoupení – Andrea Kalivodová", o, KOREN) == "Vystoupení – [jméno]"
+    assert zakryj_jmena("Koncert Jany Novákové", o, KOREN) == "Koncert [jméno]"
+    assert zakryj_jmena("Nájem pro Ondřeje Zbudila", o, KOREN) == "Nájem pro Ondřeje Zbudila"     # zastupitel
+    assert zakryj_jmena("Dodávka elektřiny 2027", o, KOREN) == "Dodávka elektřiny 2027"

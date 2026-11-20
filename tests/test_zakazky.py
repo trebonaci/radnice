@@ -70,7 +70,14 @@ def test_fyzicka_osoba_je_anonymizovana(koren):
                                        ("Lesy České republiky, s. p.", False),
                                        ("Jan Novák – správa nemovitostí", True), ("Petr Svoboda – stavby obce", True),
                                        ("STRABAG a.s., odštěpný závod Morava", False),
-                                       ("Správa a údržba silnic Jihočeského kraje", False)])
+                                       ("Správa a údržba silnic Jihočeského kraje", False),
+                                       ("Základní škola Třeboň, Sokolská 296", False),
+                                       ("Gymnázium, Třeboň, Na Sadech 308", False),
+                                       ("Hasičský záchranný sbor Jihočeského kraje", False),
+                                       ("Pěvecký sbor Pěslav - Ozvěna, zapsaný spolek", False),
+                                       ("Ústav výzkumu globální změny AV ČR, v. v. i.", False),
+                                       ("Národní památkový ústav", False),
+                                       ("Jan Novák – autoškola", True)])
 def test_podnikajici_fyzicka_osoba_bez_pravni_formy(nazev, fo):
     import xml.etree.ElementTree as ET
     e = ET.fromstring(f'<subjekt xmlns="{zakazky.NS[1:-1]}"><ico>12345678</ico><nazev_subjektu>{nazev}</nazev_subjektu>'

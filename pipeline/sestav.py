@@ -22,6 +22,7 @@ import yaml
 
 from pipeline import stitky as modul_stitky
 from pipeline import smlouvy as modul_smlouvy
+from pipeline.jmena import zakryj_jmena
 from pipeline import zakazky as modul_zakazky
 from pipeline.verze import zkontroluj as zkontroluj_verze
 from pipeline.zapisy import normalizuj, rozloz
@@ -288,12 +289,15 @@ def sestav(koren: Path | None = None) -> tuple[dict[str, list], list[str]]:
             drzak[pole] = anonymizuj_urednici(drzak[pole], osoby)
             for n in najdi_osobni_udaje(drzak[pole], osoby):
                 drzak[pole] = drzak[pole].replace(n, "[jméno]")
+            drzak[pole] = zakryj_jmena(drzak[pole], osoby, koren)       # jména bez titulu (#84)
     chyby += modul_zakazky.zkontroluj(zakazky, koren)
     smlouvy = modul_smlouvy.nacti_smlouvy(koren)
     for sm in smlouvy:
         # jména osob s titulem v předmětu (mimo zastupitele) se maskují; adresy a IČO FO vynechal už převod
+        sm["predmet"] = anonymizuj_urednici(sm["predmet"], osoby) if sm["predmet"] else sm["predmet"]
         for n in najdi_osobni_udaje(sm["predmet"] or "", osoby):
             sm["predmet"] = sm["predmet"].replace(n, "[jméno]")
+        sm["predmet"] = zakryj_jmena(sm["predmet"], osoby, koren)            # jména bez titulu (#84)
     chyby += modul_smlouvy.zkontroluj(smlouvy, koren)
     vystup = {"jednani": jednani, "usneseni": usneseni, "hlasovani": hlasovani, "zakazky": zakazky,
               "smlouvy": smlouvy}

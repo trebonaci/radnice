@@ -1,5 +1,5 @@
 {
-  "zacatek": "2026-11-19T21:22:05+00:00",
+  "zacatek": "2026-11-20T01:14:51+00:00",
   "stav": "ok",
   "zdroje": [
     {
@@ -14,12 +14,14 @@
     "odkaz bez data jednání přeskočen: https://www.mesto-trebon.cz/uploads/news/id14782/Z-30-26-06-22A.pdf"
   ],
   "pocty": {
-    "jednani": 2,
-    "usneseni": 20,
-    "hlasovani": 26
+    "jednani": 8,
+    "usneseni": 139,
+    "hlasovani": 153,
+    "zakazky": 100,
+    "smlouvy": 231
   },
-  "posledni_uspesny": "2026-11-19T21:22:23+00:00",
-  "nove_dokumenty": 6,
+  "posledni_uspesny": "2026-11-20T01:15:15+00:00",
+  "nove_dokumenty": 0,
   "nove_verze": 0,
-  "konec": "2026-11-19T21:22:23+00:00"
+  "konec": "2026-11-20T01:15:15+00:00"
 }
