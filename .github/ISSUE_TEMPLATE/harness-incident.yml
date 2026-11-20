@@ -1,0 +1,72 @@
+name: Porucha harnessu
+description: Nahlášení nefunkční automatizace, CI nebo spolupráce agentů
+title: "Harness: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Použijte tento formulář pro poruchy GitHub Actions, CI, oprávnění a předávání práce mezi Codexem a Claudem. Neuvádějte tokeny, hesla ani neveřejná data.
+  - type: dropdown
+    id: reporter
+    attributes:
+      label: Kdo problém zjistil?
+      options:
+        - Codex
+        - Claude
+        - Člověk
+    validations:
+      required: true
+  - type: dropdown
+    id: component
+    attributes:
+      label: Dotčená část harnessu
+      options:
+        - Spuštění agenta
+        - Codex review
+        - Automatická oprava Claudem
+        - CI / GitHub Actions
+        - Oprávnění nebo secrets
+        - Jiná část
+    validations:
+      required: true
+  - type: input
+    id: run_url
+    attributes:
+      label: Odkaz na běh GitHub Actions nebo PR
+      description: Vložte přímý odkaz; pokud není k dispozici, napište „není“.
+      placeholder: https://github.com/trebonaci/radnice/actions/runs/…
+    validations:
+      required: true
+  - type: input
+    id: commit
+    attributes:
+      label: Číslo issue/PR a commit SHA
+      description: Uveďte číslo PR nebo issue a SHA, kterého se chyba týká.
+      placeholder: PR #123, abc123…
+    validations:
+      required: true
+  - type: textarea
+    id: expected_actual
+    attributes:
+      label: Očekávané a skutečné chování
+      description: Co se mělo stát a co se stalo místo toho?
+      placeholder: |
+        Očekáváno:
+        Skutečnost:
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Jak chybu zopakovat
+      description: Uveďte konkrétní kroky nebo podmínky.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevantní log
+      description: Vložte jen nezbytný výřez a předem odstraňte tokeny, hesla, osobní či neveřejné údaje.
+      render: text
+    validations:
+      required: false
