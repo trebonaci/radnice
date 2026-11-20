@@ -1,8 +1,8 @@
 """Stažení exportů veřejných zakázek z profilů zadavatele E-ZAK (XML podle vyhlášky č. 345/2023 Sb.).
 
 Export `…/profile_display_N.html/XMLdataVZ?od=DDMMRRRR&do=DDMMRRRR` vrací zakázky, u nichž se
-v daném období něco změnilo (nejvýš 366 dní na dotaz). Stahujeme po kalendářních letech do
-`raw/ezak/<ico>/<rok>.xml`; novější rok obsahuje novější stav zakázky (`pipeline/zakazky.py`).
+v daném období něco změnilo (nejvýš 366 dní na dotaz). Stahujeme po pololetích do
+`raw/ezak/<ico>/<rok>-<1|2>.xml`; novější rok obsahuje novější stav zakázky (`pipeline/zakazky.py`).
 
 - Uzavřené roky se stahují, dokud nejsou staženy aspoň týden po svém konci (pak `uzavreno: true`).
 - Aktuální rok se stahuje při každém běhu.
@@ -62,16 +62,23 @@ def zkontroluj_xml(obsah: bytes, ico: str) -> int:
         raise ChybaZdroje(f"odpověď není XML ({e})") from e
     if koren.tag != f"{NS}profil":
         raise ChybaZdroje(f"neočekávaný kořen XML {koren.tag!r}")
+    pocet = len(koren.findall(f"{NS}zakazka"))
     ico_xml = koren.findtext(f"{NS}zadavatel/{NS}ico_zadavatele")
-    if ico_xml != ico:
+    # prázdné období vrací XML bez zadavatele (ostrý běh 20. 11. 2026); se zakázkami IČO sedět musí
+    if (pocet or ico_xml is not None) and ico_xml != ico:
         raise ChybaZdroje(f"IČO zadavatele v XML {ico_xml!r} neodpovídá {ico!r}")
-    return len(koren.findall(f"{NS}zakazka"))
+    return pocet
 
 
-def potreba_stahnout(rok: int, zaznam: dict | None, dnes: date) -> bool:
-    if rok >= dnes.year or zaznam is None:
+def obdobi(rok: int, pul: int) -> tuple[date, date]:
+    """Pololetí: export smí mít nejvýš 366 dní a celý přestupný rok 2024 server odmítl (HTTP 400)."""
+    return (date(rok, 1, 1), date(rok, 6, 30)) if pul == 1 else (date(rok, 7, 1), date(rok, 12, 31))
+
+
+def potreba_stahnout(konec: date, zaznam: dict | None, dnes: date) -> bool:
+    if konec >= dnes or zaznam is None:
         return True
-    # uzavřený rok: stahovat, dokud není stažen aspoň týden po svém konci (zachytí změny z konce roku)
+    # uzavřené období: stahovat, dokud není staženo aspoň týden po svém konci (zachytí změny z konce)
     return not zaznam.get("uzavreno")
 
 
@@ -87,12 +94,14 @@ def stahni(koren: Path = KOREN, dnes: date | None = None,
     puvodni = json.dumps(manifest, sort_keys=True)
     zmeny, chyby = [], []
     for s in profily(koren):
-        for rok in range(PRVNI_ROK, dnes.year + 1):
-            rel = f"{s['ico']}/{rok}.xml"
-            if not potreba_stahnout(rok, manifest.get(rel), dnes):
+        for rok, pul in [(r, p) for r in range(PRVNI_ROK, dnes.year + 1) for p in (1, 2)]:
+            od, konec = obdobi(rok, pul)
+            if od > dnes:
                 continue
-            od, do = date(rok, 1, 1), min(date(rok, 12, 31), dnes)
-            url = url_exportu(s["ezak_profil"], od, do)
+            rel = f"{s['ico']}/{rok}-{pul}.xml"
+            if not potreba_stahnout(konec, manifest.get(rel), dnes):
+                continue
+            url = url_exportu(s["ezak_profil"], od, min(konec, dnes))
             try:
                 obsah = ziskej(url)
                 pocet = zkontroluj_xml(obsah, s["ico"])
@@ -111,9 +120,9 @@ def stahni(koren: Path = KOREN, dnes: date | None = None,
                 docasny.write_bytes(obsah)
                 docasny.replace(soubor)
                 zmeny.append(rel)
-                stary = {"url": url_exportu(s["ezak_profil"], od, date(rok, 12, 31)), "sha256": sha,
+                stary = {"url": url_exportu(s["ezak_profil"], od, konec), "sha256": sha,
                          "zakazek": pocet, "zmeneno": dnes.isoformat()}
-            stary["uzavreno"] = dnes >= date(rok + 1, 1, 8)
+            stary["uzavreno"] = (dnes - konec).days >= 7
             manifest[rel] = stary
     if json.dumps(manifest, sort_keys=True) != puvodni:
         adresar.mkdir(parents=True, exist_ok=True)
