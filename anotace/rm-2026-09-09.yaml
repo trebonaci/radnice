@@ -94,6 +94,10 @@ usneseni:
         citace: "na pozemek p. č. 1679/4 k. ú. Třeboň"
 
   rm-2026-j110-u458:
+    pro_obcany:
+      text: "Klubovna v domě s pečovatelskou službou v Chelčického ulici zůstává do konce roku 2030 seniorům, šachistům, pěveckému sboru a malířům; náklady na provoz hradí město."
+      oblast: socialni
+      citace: "prodloužení doby výprůjčky do 31.12.2030"
     tema: Prodloužení výpůjčky klubovny pro seniory v čp. 2/II do roku 2030
     kategorie: [majetek_najem, socialni, kultura]
     shrnuti: Rada schválila dodatky ke čtyřem smlouvám o výpůjčce klubovny v budově čp. 2/II (Chelčického). Výpůjčka se prodlužuje do 31. 12. 2030 pro setkávání seniorů, šachistů, pěveckého sboru a malování. Náklady na užívání prostoru hradí město jako půjčitel.
@@ -121,6 +125,10 @@ usneseni:
     poznamka: Nájemce je v zápisu anonymizován městem. Zápis neuvádí, zda se nájem prodlouží.
 
   rm-2026-j110-u461:
+    pro_obcany:
+      text: "Město nabízí k nájmu tři malé byty v domě s pečovatelskou službou v Chelčického ulici pro seniory a invalidní důchodce s vazbou na Třeboň, nájemné od 2 320 Kč měsíčně plus úhrada za vybavení."
+      oblast: socialni
+      citace: "zveřejnění záměru nájmu bytu č. 9 o velikosti 1+0 (30,60 m2)"
     tema: Záměr pronájmu tří bytů v DPS 2
     kategorie: [majetek_najem, socialni]
     shrnuti: Rada schválila zveřejnění záměru pronájmu bytů č. 9, 18 a 20 v čp. 2/II (Chelčického) pro seniory nebo invalidní důchodce s vazbou na Třeboň. Měsíční nájemné je 2 448 Kč (byt 9) a 2 320 Kč (byty 18 a 20) plus úhrada za vybavení bytu; kauce je ve výši 3měsíčního nájemného.
@@ -198,6 +206,10 @@ usneseni:
     poznamka: Jméno druhého člena, který není volený zástupce, neuvádíme.
 
   rm-2026-j110-u468:
+    pro_obcany:
+      text: "Město končí spolupráci na jízdence JIKORD plus a JIKORD plus Bavorsko."
+      oblast: doprava
+      citace: "uzavření Dohody o ukončení Smlouvy o spolupráci při zavedení a používání jízdenky JIKORD plus a JIKORD plus Bavorsko"
     tema: Ukončení spolupráce při jízdence JIKORD plus
     kategorie: [doprava]
     shrnuti: Rada schválila dohodu o ukončení smlouvy o spolupráci při zavedení a používání jízdenky JIKORD plus a JIKORD plus Bavorsko.

@@ -1,0 +1,867 @@
+[
+  {
+    "id": "rm-2026-j114-u547-d1",
+    "usneseni_id": "rm-2026-j114-u547",
+    "usneseni_cislo": "RM 547/2026-114",
+    "jednani_id": "rm-2026-10-30",
+    "datum": "2026-10-30",
+    "vysledek_hlasovani": "prijato",
+    "oblast": "sociálních služeb a zdravotnictví",
+    "prijemce": "Charita Třeboň",
+    "fyzicka_osoba": false,
+    "ucel": "Činnost 2026 – Občanská poradna",
+    "druh_ucelu": "cinnost",
+    "castka": {
+      "hodnota": 20000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "dotace_priznana",
+      "citace": "Charita Třeboň                             Činnost 2026 – Občanská           20.000,00"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "strany": [
+        2
+      ],
+      "text": "Charita Třeboň                             Činnost 2026 – Občanská           20.000,00"
+    }
+  },
+  {
+    "id": "rm-2026-j114-u547-d2",
+    "usneseni_id": "rm-2026-j114-u547",
+    "usneseni_cislo": "RM 547/2026-114",
+    "jednani_id": "rm-2026-10-30",
+    "datum": "2026-10-30",
+    "vysledek_hlasovani": "prijato",
+    "oblast": "sociálních služeb a zdravotnictví",
+    "prijemce": "Hospicová péče sv. Kleofáše, o.p.s.",
+    "fyzicka_osoba": false,
+    "ucel": "Činnost 2026 – Mobilní specializovaná paliativní péče",
+    "druh_ucelu": "cinnost",
+    "castka": {
+      "hodnota": 20000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "dotace_priznana",
+      "citace": "Hospicová péče sv. Kleofáše,               Činnost 2026 – Mobilní            20.000,00"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "strany": [
+        2
+      ],
+      "text": "Hospicová péče sv. Kleofáše,               Činnost 2026 – Mobilní            20.000,00"
+    }
+  },
+  {
+    "id": "rm-2026-j114-u547-d3",
+    "usneseni_id": "rm-2026-j114-u547",
+    "usneseni_cislo": "RM 547/2026-114",
+    "jednani_id": "rm-2026-10-30",
+    "datum": "2026-10-30",
+    "vysledek_hlasovani": "prijato",
+    "oblast": "sociálních služeb a zdravotnictví",
+    "prijemce": "Místní akční skupina Třeboňsko o.p.s.",
+    "fyzicka_osoba": false,
+    "ucel": "Činnost 2026 – Centrum pro pečující (terapeutické služby)",
+    "druh_ucelu": "cinnost",
+    "castka": {
+      "hodnota": 20000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "dotace_priznana",
+      "citace": "Místní akční skupina                       Činnost 2026 – Centrum pro        20.000,00"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "strany": [
+        2
+      ],
+      "text": "Místní akční skupina                       Činnost 2026 – Centrum pro        20.000,00"
+    }
+  },
+  {
+    "id": "rm-2026-j114-u547-d4",
+    "usneseni_id": "rm-2026-j114-u547",
+    "usneseni_cislo": "RM 547/2026-114",
+    "jednani_id": "rm-2026-10-30",
+    "datum": "2026-10-30",
+    "vysledek_hlasovani": "prijato",
+    "oblast": "sociálních služeb a zdravotnictví",
+    "prijemce": "Oblastní charita Červený Kostelec",
+    "fyzicka_osoba": false,
+    "ucel": "Činnost 2026 – odlehčovací pobyty",
+    "druh_ucelu": "cinnost",
+    "castka": {
+      "hodnota": 5000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "dotace_priznana",
+      "citace": "Oblastní charita Červený                   Činnost 2026 – odlehčovací         5.000,00"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "strany": [
+        2
+      ],
+      "text": "Oblastní charita Červený                   Činnost 2026 – odlehčovací         5.000,00"
+    }
+  },
+  {
+    "id": "rm-2026-j114-u547-d5",
+    "usneseni_id": "rm-2026-j114-u547",
+    "usneseni_cislo": "RM 547/2026-114",
+    "jednani_id": "rm-2026-10-30",
+    "datum": "2026-10-30",
+    "vysledek_hlasovani": "prijato",
+    "oblast": "sociálních služeb a zdravotnictví",
+    "prijemce": "FOKUS Tábor, z.s.",
+    "fyzicka_osoba": false,
+    "ucel": "Činnost 2026 – Komunitní tým",
+    "druh_ucelu": "cinnost",
+    "castka": {
+      "hodnota": 5000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "dotace_priznana",
+      "citace": "FOKUS Tábor, z.s.                          Činnost 2026 – Komunitní tým       5.000,00"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "strany": [
+        2
+      ],
+      "text": "FOKUS Tábor, z.s.                          Činnost 2026 – Komunitní tým       5.000,00"
+    }
+  },
+  {
+    "id": "rm-2026-j114-u548-d1",
+    "usneseni_id": "rm-2026-j114-u548",
+    "usneseni_cislo": "RM 548/2026-114",
+    "jednani_id": "rm-2026-10-30",
+    "datum": "2026-10-30",
+    "vysledek_hlasovani": "prijato",
+    "oblast": "tělovýchovy a sportu",
+    "prijemce": "Sportovní klub – SK Boxing TŘEBOŇ, z.s.",
+    "fyzicka_osoba": false,
+    "ucel": "Činnost",
+    "druh_ucelu": "cinnost",
+    "castka": {
+      "hodnota": 10500.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "dotace_priznana",
+      "citace": "Sportovní klub – SK Boxing                 Činnost                           10.500,00"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "strany": [
+        2,
+        3
+      ],
+      "text": "Sportovní klub – SK Boxing                 Činnost                           10.500,00"
+    }
+  },
+  {
+    "id": "rm-2026-j114-u548-d2",
+    "usneseni_id": "rm-2026-j114-u548",
+    "usneseni_cislo": "RM 548/2026-114",
+    "jednani_id": "rm-2026-10-30",
+    "datum": "2026-10-30",
+    "vysledek_hlasovani": "prijato",
+    "oblast": "tělovýchovy a sportu",
+    "prijemce": "Sportovní klub – SK Boxing TŘEBOŇ, z.s.",
+    "fyzicka_osoba": false,
+    "ucel": "Akce Oslava 25. výročí založení oddílu boxu v Třeboni",
+    "druh_ucelu": "akce",
+    "castka": {
+      "hodnota": 45000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "dotace_priznana",
+      "citace": "Sportovní klub – SK Boxing                 Akce Oslava 25. výročí            45.000,00"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "strany": [
+        2,
+        3
+      ],
+      "text": "Sportovní klub – SK Boxing                 Akce Oslava 25. výročí            45.000,00"
+    }
+  },
+  {
+    "id": "rm-2026-j114-u548-d3",
+    "usneseni_id": "rm-2026-j114-u548",
+    "usneseni_cislo": "RM 548/2026-114",
+    "jednani_id": "rm-2026-10-30",
+    "datum": "2026-10-30",
+    "vysledek_hlasovani": "prijato",
+    "oblast": "tělovýchovy a sportu",
+    "prijemce": "fyzická osoba",
+    "fyzicka_osoba": true,
+    "ucel": "Akce Běh kolem Světa",
+    "druh_ucelu": "akce",
+    "castka": {
+      "hodnota": 10000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "dotace_priznana",
+      "citace": "[fyzická osoba]                              Akce Běh kolem Světa              10.000,00"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "strany": [
+        2,
+        3
+      ],
+      "text": "[fyzická osoba]                              Akce Běh kolem Světa              10.000,00"
+    }
+  },
+  {
+    "id": "rm-2026-j114-u548-d4",
+    "usneseni_id": "rm-2026-j114-u548",
+    "usneseni_cislo": "RM 548/2026-114",
+    "jednani_id": "rm-2026-10-30",
+    "datum": "2026-10-30",
+    "vysledek_hlasovani": "prijato",
+    "oblast": "tělovýchovy a sportu",
+    "prijemce": "TJ Jiskra Třeboň, z.s. – oddíl korfbalu",
+    "fyzicka_osoba": false,
+    "ucel": "Akce Finálový turnaj korfbalové přípravky U9 v Třeboni",
+    "druh_ucelu": "akce",
+    "castka": {
+      "hodnota": 10000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "dotace_priznana",
+      "citace": "TJ Jiskra Třeboň, z.s. – oddíl             Akce Finálový turnaj korfbalové   10.000,00"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "strany": [
+        2,
+        3
+      ],
+      "text": "TJ Jiskra Třeboň, z.s. – oddíl             Akce Finálový turnaj korfbalové   10.000,00"
+    }
+  },
+  {
+    "id": "rm-2026-j114-u548-d5",
+    "usneseni_id": "rm-2026-j114-u548",
+    "usneseni_cislo": "RM 548/2026-114",
+    "jednani_id": "rm-2026-10-30",
+    "datum": "2026-10-30",
+    "vysledek_hlasovani": "prijato",
+    "oblast": "tělovýchovy a sportu",
+    "prijemce": "TJ Jiskra Třeboň, z.s. – oddíl házené",
+    "fyzicka_osoba": false,
+    "ucel": "Akce Turnaj o pětilistou růži",
+    "druh_ucelu": "akce",
+    "castka": {
+      "hodnota": 10000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "dotace_priznana",
+      "citace": "TJ Jiskra Třeboň, z.s. – oddíl             Akce Turnaj o pětilistou růži     10.000,00"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "strany": [
+        2,
+        3
+      ],
+      "text": "TJ Jiskra Třeboň, z.s. – oddíl             Akce Turnaj o pětilistou růži     10.000,00"
+    }
+  },
+  {
+    "id": "rm-2026-j114-u548-d6",
+    "usneseni_id": "rm-2026-j114-u548",
+    "usneseni_cislo": "RM 548/2026-114",
+    "jednani_id": "rm-2026-10-30",
+    "datum": "2026-10-30",
+    "vysledek_hlasovani": "prijato",
+    "oblast": "tělovýchovy a sportu",
+    "prijemce": "TJ Jiskra Třeboň, z.s. – oddíl fotbalu",
+    "fyzicka_osoba": false,
+    "ucel": "Akce Letní Lázeňský Cup 2026",
+    "druh_ucelu": "akce",
+    "castka": {
+      "hodnota": 70000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "dotace_priznana",
+      "citace": "TJ Jiskra Třeboň, z.s. – oddíl             Akce Letní Lázeňský Cup 2026      70.000,00"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "strany": [
+        2,
+        3
+      ],
+      "text": "TJ Jiskra Třeboň, z.s. – oddíl             Akce Letní Lázeňský Cup 2026      70.000,00"
+    }
+  },
+  {
+    "id": "rm-2026-j114-u548-d7",
+    "usneseni_id": "rm-2026-j114-u548",
+    "usneseni_cislo": "RM 548/2026-114",
+    "jednani_id": "rm-2026-10-30",
+    "datum": "2026-10-30",
+    "vysledek_hlasovani": "prijato",
+    "oblast": "tělovýchovy a sportu",
+    "prijemce": "TJ Jiskra Třeboň, z.s. – oddíl florbalu",
+    "fyzicka_osoba": false,
+    "ucel": "Akce Florbalové turnaje 2026",
+    "druh_ucelu": "akce",
+    "castka": {
+      "hodnota": 15000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "dotace_priznana",
+      "citace": "TJ Jiskra Třeboň, z.s. – oddíl             Akce Florbalové turnaje 2026      15.000,00"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "strany": [
+        2,
+        3
+      ],
+      "text": "TJ Jiskra Třeboň, z.s. – oddíl             Akce Florbalové turnaje 2026      15.000,00"
+    }
+  },
+  {
+    "id": "rm-2026-j114-u548-d8",
+    "usneseni_id": "rm-2026-j114-u548",
+    "usneseni_cislo": "RM 548/2026-114",
+    "jednani_id": "rm-2026-10-30",
+    "datum": "2026-10-30",
+    "vysledek_hlasovani": "prijato",
+    "oblast": "tělovýchovy a sportu",
+    "prijemce": "TJ Jiskra Třeboň, z.s. – oddíl házené",
+    "fyzicka_osoba": false,
+    "ucel": "Akce Turnaj 4+1 házená 08.11.2026",
+    "druh_ucelu": "akce",
+    "castka": {
+      "hodnota": 10500.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "dotace_priznana",
+      "citace": "TJ Jiskra Třeboň, z.s. – oddíl             Akce Turnaj 4+1 házená            10.500,00"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "strany": [
+        2,
+        3
+      ],
+      "text": "TJ Jiskra Třeboň, z.s. – oddíl             Akce Turnaj 4+1 házená            10.500,00"
+    }
+  },
+  {
+    "id": "rm-2026-j114-u548-d9",
+    "usneseni_id": "rm-2026-j114-u548",
+    "usneseni_cislo": "RM 548/2026-114",
+    "jednani_id": "rm-2026-10-30",
+    "datum": "2026-10-30",
+    "vysledek_hlasovani": "prijato",
+    "oblast": "tělovýchovy a sportu",
+    "prijemce": "TJ Jiskra Třeboň, z.s. – oddíl házené",
+    "fyzicka_osoba": false,
+    "ucel": "Akce Turnaj mladší žáci házená v Třeboni",
+    "druh_ucelu": "akce",
+    "castka": {
+      "hodnota": 10000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "dotace_priznana",
+      "citace": "TJ Jiskra Třeboň, z.s. – oddíl             Akce Turnaj mladší žáci           10.000,00"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "strany": [
+        2,
+        3
+      ],
+      "text": "TJ Jiskra Třeboň, z.s. – oddíl             Akce Turnaj mladší žáci           10.000,00"
+    }
+  },
+  {
+    "id": "rm-2026-j114-u548-d10",
+    "usneseni_id": "rm-2026-j114-u548",
+    "usneseni_cislo": "RM 548/2026-114",
+    "jednani_id": "rm-2026-10-30",
+    "datum": "2026-10-30",
+    "vysledek_hlasovani": "prijato",
+    "oblast": "tělovýchovy a sportu",
+    "prijemce": "TJ Jiskra Třeboň, z.s. – oddíl tenisu",
+    "fyzicka_osoba": false,
+    "ucel": "Akce Turnaj pro děti a mládež – ČTS C-400 starší žactvo",
+    "druh_ucelu": "akce",
+    "castka": {
+      "hodnota": 20000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "dotace_priznana",
+      "citace": "TJ Jiskra Třeboň, z.s. – oddíl             Akce Turnaj pro děti a mládež –   20.000,00"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "strany": [
+        2,
+        3
+      ],
+      "text": "TJ Jiskra Třeboň, z.s. – oddíl             Akce Turnaj pro děti a mládež –   20.000,00"
+    }
+  },
+  {
+    "id": "rm-2026-j114-u548-d11",
+    "usneseni_id": "rm-2026-j114-u548",
+    "usneseni_cislo": "RM 548/2026-114",
+    "jednani_id": "rm-2026-10-30",
+    "datum": "2026-10-30",
+    "vysledek_hlasovani": "prijato",
+    "oblast": "tělovýchovy a sportu",
+    "prijemce": "TJ Jiskra Třeboň, z.s. – oddíl veslování",
+    "fyzicka_osoba": false,
+    "ucel": "Akce MČR dorostu, juniorů a seniorů, Račice",
+    "druh_ucelu": "akce",
+    "castka": {
+      "hodnota": 10000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "dotace_priznana",
+      "citace": "TJ Jiskra Třeboň, z.s. – oddíl             Akce MČR dorostu, juniorů a      10.000,00"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "strany": [
+        2,
+        3
+      ],
+      "text": "TJ Jiskra Třeboň, z.s. – oddíl             Akce MČR dorostu, juniorů a      10.000,00"
+    }
+  },
+  {
+    "id": "rm-2026-j114-u548-d12",
+    "usneseni_id": "rm-2026-j114-u548",
+    "usneseni_cislo": "RM 548/2026-114",
+    "jednani_id": "rm-2026-10-30",
+    "datum": "2026-10-30",
+    "vysledek_hlasovani": "prijato",
+    "oblast": "tělovýchovy a sportu",
+    "prijemce": "TJ Jiskra Třeboň, z.s. – oddíl veslování",
+    "fyzicka_osoba": false,
+    "ucel": "Akce World Masters regata, Bled, Slovinsko",
+    "druh_ucelu": "akce",
+    "castka": {
+      "hodnota": 20000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "dotace_priznana",
+      "citace": "TJ Jiskra Třeboň, z.s. – oddíl             Akce World Masters regata,       20.000,00"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "strany": [
+        2,
+        3
+      ],
+      "text": "TJ Jiskra Třeboň, z.s. – oddíl             Akce World Masters regata,       20.000,00"
+    }
+  },
+  {
+    "id": "rm-2026-j114-u548-d13",
+    "usneseni_id": "rm-2026-j114-u548",
+    "usneseni_cislo": "RM 548/2026-114",
+    "jednani_id": "rm-2026-10-30",
+    "datum": "2026-10-30",
+    "vysledek_hlasovani": "prijato",
+    "oblast": "tělovýchovy a sportu",
+    "prijemce": "TJ Jiskra Třeboň, z.s. – oddíl veslování",
+    "fyzicka_osoba": false,
+    "ucel": "Akce Olympic Hopes regata v Beach sprintu, Bratislava, Slovensko",
+    "druh_ucelu": "akce",
+    "castka": {
+      "hodnota": 40000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "dotace_priznana",
+      "citace": "TJ Jiskra Třeboň, z.s. – oddíl             Akce Olympic Hopes regata        40.000,00"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "strany": [
+        2,
+        3
+      ],
+      "text": "TJ Jiskra Třeboň, z.s. – oddíl             Akce Olympic Hopes regata        40.000,00"
+    }
+  },
+  {
+    "id": "rm-2026-j114-u548-d14",
+    "usneseni_id": "rm-2026-j114-u548",
+    "usneseni_cislo": "RM 548/2026-114",
+    "jednani_id": "rm-2026-10-30",
+    "datum": "2026-10-30",
+    "vysledek_hlasovani": "prijato",
+    "oblast": "tělovýchovy a sportu",
+    "prijemce": "TJ Jiskra Třeboň, z.s. – oddíl veslování",
+    "fyzicka_osoba": false,
+    "ucel": "Akce MČR žactva, Račice",
+    "druh_ucelu": "akce",
+    "castka": {
+      "hodnota": 20000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "dotace_priznana",
+      "citace": "TJ Jiskra Třeboň, z.s. – oddíl             Akce MČR žactva, Račice          20.000,00"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "strany": [
+        2,
+        3
+      ],
+      "text": "TJ Jiskra Třeboň, z.s. – oddíl             Akce MČR žactva, Račice          20.000,00"
+    }
+  },
+  {
+    "id": "rm-2026-j114-u548-d15",
+    "usneseni_id": "rm-2026-j114-u548",
+    "usneseni_cislo": "RM 548/2026-114",
+    "jednani_id": "rm-2026-10-30",
+    "datum": "2026-10-30",
+    "vysledek_hlasovani": "prijato",
+    "oblast": "tělovýchovy a sportu",
+    "prijemce": "TJ Jiskra Třeboň, z.s. – oddíl veslování",
+    "fyzicka_osoba": false,
+    "ucel": "Akce MČR družstev, Račice",
+    "druh_ucelu": "akce",
+    "castka": {
+      "hodnota": 30000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "dotace_priznana",
+      "citace": "TJ Jiskra Třeboň, z.s. – oddíl             Akce MČR družstev, Račice        30.000,00"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "strany": [
+        2,
+        3
+      ],
+      "text": "TJ Jiskra Třeboň, z.s. – oddíl             Akce MČR družstev, Račice        30.000,00"
+    }
+  },
+  {
+    "id": "rm-2026-j114-u548-d16",
+    "usneseni_id": "rm-2026-j114-u548",
+    "usneseni_cislo": "RM 548/2026-114",
+    "jednani_id": "rm-2026-10-30",
+    "datum": "2026-10-30",
+    "vysledek_hlasovani": "prijato",
+    "oblast": "tělovýchovy a sportu",
+    "prijemce": "TJ Jiskra Třeboň, z.s. – oddíl veslování",
+    "fyzicka_osoba": false,
+    "ucel": "Akce Nominační závod, Hořín",
+    "druh_ucelu": "akce",
+    "castka": {
+      "hodnota": 0.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "dotace_priznana",
+      "citace": "TJ Jiskra Třeboň, z.s. – oddíl             Akce Nominační závod, Hořín      0,00"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "strany": [
+        2,
+        3
+      ],
+      "text": "TJ Jiskra Třeboň, z.s. – oddíl             Akce Nominační závod, Hořín      0,00"
+    }
+  },
+  {
+    "id": "rm-2026-j114-u548-d17",
+    "usneseni_id": "rm-2026-j114-u548",
+    "usneseni_cislo": "RM 548/2026-114",
+    "jednani_id": "rm-2026-10-30",
+    "datum": "2026-10-30",
+    "vysledek_hlasovani": "prijato",
+    "oblast": "tělovýchovy a sportu",
+    "prijemce": "TJ Jiskra Třeboň, z.s. – oddíl házené",
+    "fyzicka_osoba": false,
+    "ucel": "Reprezentace – Turnaj Vršovice mladší žáci, Praha",
+    "druh_ucelu": "reprezentace",
+    "castka": {
+      "hodnota": 0.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "dotace_priznana",
+      "citace": "TJ Jiskra Třeboň, z.s. – oddíl             Reprezentace – Turnaj            0,00"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "strany": [
+        2,
+        3
+      ],
+      "text": "TJ Jiskra Třeboň, z.s. – oddíl             Reprezentace – Turnaj            0,00"
+    }
+  },
+  {
+    "id": "rm-2026-j114-u548-d18",
+    "usneseni_id": "rm-2026-j114-u548",
+    "usneseni_cislo": "RM 548/2026-114",
+    "jednani_id": "rm-2026-10-30",
+    "datum": "2026-10-30",
+    "vysledek_hlasovani": "prijato",
+    "oblast": "tělovýchovy a sportu",
+    "prijemce": "TJ Jiskra Třeboň, z.s. – oddíl házené",
+    "fyzicka_osoba": false,
+    "ucel": "Reprezentace – Turnaj v rakouském Linzi mladší dorost + muži, Rakousko",
+    "druh_ucelu": "reprezentace",
+    "castka": {
+      "hodnota": 15000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "dotace_priznana",
+      "citace": "TJ Jiskra Třeboň, z.s. – oddíl             Reprezentace – Turnaj            15.000,00"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "strany": [
+        2,
+        3
+      ],
+      "text": "TJ Jiskra Třeboň, z.s. – oddíl             Reprezentace – Turnaj            15.000,00"
+    }
+  },
+  {
+    "id": "rm-2026-j114-u548-d19",
+    "usneseni_id": "rm-2026-j114-u548",
+    "usneseni_cislo": "RM 548/2026-114",
+    "jednani_id": "rm-2026-10-30",
+    "datum": "2026-10-30",
+    "vysledek_hlasovani": "prijato",
+    "oblast": "tělovýchovy a sportu",
+    "prijemce": "TJ Jiskra Třeboň, z.s. – oddíl házené",
+    "fyzicka_osoba": false,
+    "ucel": "Reprezentace – Turnaj mladšího a staršího dorostu Euroregion Elbe-Labe cup v Lovosicích",
+    "druh_ucelu": "reprezentace",
+    "castka": {
+      "hodnota": 50000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "dotace_priznana",
+      "citace": "TJ Jiskra Třeboň, z.s. – oddíl             Reprezentace – Turnaj            50.000,00"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "strany": [
+        2,
+        3
+      ],
+      "text": "TJ Jiskra Třeboň, z.s. – oddíl             Reprezentace – Turnaj            50.000,00"
+    }
+  },
+  {
+    "id": "rm-2026-j114-u548-d20",
+    "usneseni_id": "rm-2026-j114-u548",
+    "usneseni_cislo": "RM 548/2026-114",
+    "jednani_id": "rm-2026-10-30",
+    "datum": "2026-10-30",
+    "vysledek_hlasovani": "prijato",
+    "oblast": "tělovýchovy a sportu",
+    "prijemce": "TJ Jiskra Třeboň, z.s. – oddíl házené",
+    "fyzicka_osoba": false,
+    "ucel": "Reprezentace – Mladší dorost doprava 1. ligy podzim 2026",
+    "druh_ucelu": "reprezentace",
+    "castka": {
+      "hodnota": 70000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "dotace_priznana",
+      "citace": "TJ Jiskra Třeboň, z.s. – oddíl             Reprezentace – Mladší dorost     70.000,00"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "strany": [
+        2,
+        3
+      ],
+      "text": "TJ Jiskra Třeboň, z.s. – oddíl             Reprezentace – Mladší dorost     70.000,00"
+    }
+  },
+  {
+    "id": "rm-2026-j114-u548-d21",
+    "usneseni_id": "rm-2026-j114-u548",
+    "usneseni_cislo": "RM 548/2026-114",
+    "jednani_id": "rm-2026-10-30",
+    "datum": "2026-10-30",
+    "vysledek_hlasovani": "prijato",
+    "oblast": "tělovýchovy a sportu",
+    "prijemce": "TJ Jiskra Třeboň, z.s. – oddíl fotbalu",
+    "fyzicka_osoba": false,
+    "ucel": "Reprezentace – Starší a mladší dorost doprava 3. ligy mimo Jihočeský kraj",
+    "druh_ucelu": "reprezentace",
+    "castka": {
+      "hodnota": 70000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "dotace_priznana",
+      "citace": "TJ Jiskra Třeboň, z.s. – oddíl             Reprezentace – Starší a mladší   70.000,00"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "strany": [
+        2,
+        3
+      ],
+      "text": "TJ Jiskra Třeboň, z.s. – oddíl             Reprezentace – Starší a mladší   70.000,00"
+    }
+  },
+  {
+    "id": "rm-2026-j114-u548-d22",
+    "usneseni_id": "rm-2026-j114-u548",
+    "usneseni_cislo": "RM 548/2026-114",
+    "jednani_id": "rm-2026-10-30",
+    "datum": "2026-10-30",
+    "vysledek_hlasovani": "prijato",
+    "oblast": "tělovýchovy a sportu",
+    "prijemce": "TJ Jiskra Třeboň, z.s. – oddíl jachtingu",
+    "fyzicka_osoba": false,
+    "ucel": "Reprezentace – MČR Pirát 2026",
+    "druh_ucelu": "reprezentace",
+    "castka": {
+      "hodnota": 10000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "dotace_priznana",
+      "citace": "TJ Jiskra Třeboň, z.s. – oddíl             Reprezentace – MČR Pirát         10.000,00"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "strany": [
+        2,
+        3
+      ],
+      "text": "TJ Jiskra Třeboň, z.s. – oddíl             Reprezentace – MČR Pirát         10.000,00"
+    }
+  },
+  {
+    "id": "rm-2026-j114-u549-d1",
+    "usneseni_id": "rm-2026-j114-u549",
+    "usneseni_cislo": "RM 549/2026-114",
+    "jednani_id": "rm-2026-10-30",
+    "datum": "2026-10-30",
+    "vysledek_hlasovani": "prijato",
+    "oblast": "ostatních zájmových činností",
+    "prijemce": "fyzická osoba",
+    "fyzicka_osoba": true,
+    "ucel": "Akce Dopravní výuka a výcvik pro mateřské školky a žáky 1. – 4. tříd základních škol",
+    "druh_ucelu": "akce",
+    "castka": {
+      "hodnota": 18600.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "dotace_priznana",
+      "citace": "[fyzická osoba]                   Akce Dopravní výuka a výcvik     18.600,00"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "strany": [
+        3,
+        4
+      ],
+      "text": "[fyzická osoba]                   Akce Dopravní výuka a výcvik     18.600,00"
+    }
+  },
+  {
+    "id": "rm-2026-j114-u549-d2",
+    "usneseni_id": "rm-2026-j114-u549",
+    "usneseni_cislo": "RM 549/2026-114",
+    "jednani_id": "rm-2026-10-30",
+    "datum": "2026-10-30",
+    "vysledek_hlasovani": "prijato",
+    "oblast": "ostatních zájmových činností",
+    "prijemce": "Klub Mája Třeboň-spolek",
+    "fyzicka_osoba": false,
+    "ucel": "Akce Burza dětského ošacení a sportovních potřeb",
+    "druh_ucelu": "akce",
+    "castka": {
+      "hodnota": 5000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "dotace_priznana",
+      "citace": "Klub Mája Třeboň-spolek                    Akce Burza dětského ošacení       5.000,00"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "strany": [
+        3,
+        4
+      ],
+      "text": "Klub Mája Třeboň-spolek                    Akce Burza dětského ošacení       5.000,00"
+    }
+  },
+  {
+    "id": "rm-2026-j114-u549-d3",
+    "usneseni_id": "rm-2026-j114-u549",
+    "usneseni_cislo": "RM 549/2026-114",
+    "jednani_id": "rm-2026-10-30",
+    "datum": "2026-10-30",
+    "vysledek_hlasovani": "prijato",
+    "oblast": "ostatních zájmových činností",
+    "prijemce": "Dům dětí a mládeže, Jindřichův Hradec, Růžová 10, Pracoviště DDM Třeboň",
+    "fyzicka_osoba": false,
+    "ucel": "Akce Mikulášská nadílka",
+    "druh_ucelu": "akce",
+    "castka": {
+      "hodnota": 8000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "dotace_priznana",
+      "citace": "Dům dětí a mládeže, Jindřichův Akce Mikulášská nadílka            8.000,00"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "strany": [
+        3,
+        4
+      ],
+      "text": "Dům dětí a mládeže, Jindřichův Akce Mikulášská nadílka            8.000,00"
+    }
+  }
+]

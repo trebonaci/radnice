@@ -87,6 +87,11 @@ usneseni:
     poznamka: Oprávněná osoba je v zápisu již anonymizována městem (XXXXXXXXXXXXX); neuvádíme.
 
   rm-2026-j111-u481:
+    pro_obcany:
+      text: "Nájemné, které Městská Vodohospodářská platí městu za vodovody a kanalizace, bude v roce 2027 19,5 mil. Kč bez DPH."
+      oblast: voda_odpady
+      plati_od: "2027-01-01"
+      citace: "výši nájemného za provozovaný majetek pro rok 2027 ve výši 19.500.000,00 Kč bez DPH"
     tema: Nájemné za vodovody a kanalizace pro rok 2027
     kategorie: [voda_odpady, majetek_najem]
     shrnuti: Rada stanovila nájemné za vodovody a kanalizace, které provozuje společnost Městská Vodohospodářská s.r.o., na rok 2027 na 19,5 mil. Kč bez DPH, z toho 3 mil. Kč za vodovody a 16,5 mil. Kč za kanalizace.
@@ -150,6 +155,10 @@ usneseni:
     citace: "s předpokládaným spolufinancováním z IROP 21-27, výzvy č. 120"
 
   rm-2026-j111-u486:
+    pro_obcany:
+      text: "ZŠ Na Sadech dostala od spolku Děti do bruslí 10 párů dětských bruslí."
+      oblast: skolstvi
+      citace: "přijetí věcného daru 10 párů dětských bruslí v celkové hodnotě 25.000 Kč"
     tema: Dar dětských bruslí pro ZŠ Na Sadech
     kategorie: [skolstvi, dotace_dary, prispevkove_organizace]
     shrnuti: Rada jako zřizovatel souhlasila, aby ZŠ Na Sadech přijala od spolku Děti do bruslí 10 párů dětských bruslí v hodnotě 25 000 Kč.

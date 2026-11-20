@@ -41,7 +41,7 @@ from pipeline.zdroje.zapisy_mesta import ZapisyMesta
 KOREN = Path(__file__).resolve().parent.parent
 ZAMEK_STARY = 2 * 3600     # zámek starší než 2 hodiny považujeme za zbylý po pádu
 POKLES = 0.5               # výstup pod touto částí dosavadního počtu = podezřelý pokles
-VYSTUPY = ("jednani", "usneseni", "hlasovani", "zakazky", "smlouvy", "rozpoctova_opatreni", "projekty")
+VYSTUPY = ("jednani", "usneseni", "hlasovani", "zakazky", "smlouvy", "rozpoctova_opatreni", "projekty", "dotace")
 
 
 class ZamekObsazen(Exception):

@@ -45,6 +45,11 @@ usneseni:
     poznamka: Jména členů a náhradníků komisí neuvádíme (rozhodnutí 18. 11. 2026).
 
   rm-2026-j1-u3:
+    pro_obcany:
+      text: "Místnost v budově čp. 3 v Přesece bude v lednu až březnu a v listopadu 2027 sloužit sportovním, kulturním a společenským setkáním."
+      oblast: komunity_spolky
+      plati_od: "2027-01-01"
+      citace: "provozování sportovních a kulturních aktivit včetně společenských setkání"
     tema: Výpůjčka nebytového prostoru v Přesece na rok 2027
     kategorie: [majetek_najem, sport, kultura]
     shrnuti: Rada schválila bezplatnou výpůjčku prostoru v budově čp. 3 v Přesece na sportovní, kulturní a společenské aktivity v obdobích leden–březen a listopad 2027; služby hradí vypůjčitel paušálem.
@@ -100,6 +105,10 @@ usneseni:
         citace: "-do položky 5171 „Opravy ČOV“, § 2321, ORJ 750, ORG 5020005022, UZ 0 v částce Kč 223.850,00."
 
   rm-2026-j1-u8:
+    pro_obcany:
+      text: "ZŠ Sokolská dostala od spolku Děti do bruslí 10 párů dětských bruslí."
+      oblast: skolstvi
+      citace: "přijetí věcného daru 10 párů dětských bruslí v celkové hodnotě 25.000 Kč"
     tema: Dar bruslí pro ZŠ Sokolská
     kategorie: [skolstvi, dotace_dary, prispevkove_organizace]
     shrnuti: Rada jako zřizovatel souhlasila, aby ZŠ Sokolská přijala od spolku Děti do bruslí 10 párů dětských bruslí v hodnotě 25 000 Kč.

@@ -67,7 +67,7 @@ jobs:
         id: zmena
         if: steps.beh.outputs.kod == '0'
         run: |
-          if [ -n "$(git status --porcelain -- raw/texty raw/ezak raw/smlouvy data/jednani.json data/usneseni.json data/hlasovani.json data/zakazky.json data/smlouvy.json data/rozpoctova_opatreni.json data/projekty.json)" ]; then
+          if [ -n "$(git status --porcelain -- raw/texty raw/ezak raw/smlouvy data/jednani.json data/usneseni.json data/hlasovani.json data/zakazky.json data/smlouvy.json data/rozpoctova_opatreni.json data/projekty.json data/dotace.json)" ]; then
             echo "zmena=ano" >> "$GITHUB_OUTPUT"
           else
             echo "zmena=ne" >> "$GITHUB_OUTPUT"
