@@ -224,3 +224,10 @@ def test_nezpracovane_mesice_maji_prednost_pred_zmenenym_hashem(koren):
     dumpy = [u for u in volano if u != rs.INDEX_URL]
     # rozpracovaný říjen, pak dosud nezpracovaný srpen; září se změněným hashem až v dalším běhu
     assert dumpy == ["https://data.smlouvy.gov.cz/dump_2026_10.xml", "https://data.smlouvy.gov.cz/dump_2026_08.xml"]
+
+
+def test_predmet_maskuje_cast_jmena_fyzicke_osoby():
+    strany = [{"nazev": "Tětková Wegenkittlová Lenka nar. 1964", "ico": None, "prijemce": "1"}]
+    vysl = smlouvy._skryj_fo("Dotace (p. Tětková Wegenkittlová)", strany, frozenset())
+    assert "Tětková" not in vysl and "Wegenkittlová" not in vysl
+    assert "Dotace" in vysl

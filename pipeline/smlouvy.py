@@ -12,6 +12,7 @@ Bez AI, údaje se opisují. Pravidla:
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 
 from pipeline.zakazky import je_pravnicka
@@ -74,6 +75,11 @@ def _skryj_fo(predmet, strany: list[dict], znama: frozenset[str]):
                 h = (hodnota or "").strip()
                 if len(h) >= 3:
                     predmet = predmet.replace(h, "[jméno]" if h == nazev else "[údaj]")
+            if strana(s, znama)["jmeno_podnikatele"] is None:
+                # předmět často uvádí jen část jména (např. „p. Příjmení“) → maskovat i jednotlivá slova jména
+                for slovo in re.findall(r"[^\W\d_]{4,}", nazev):
+                    if slovo[0].isupper():
+                        predmet = re.sub(rf"(?<!\w){re.escape(slovo)}(?!\w)", "[jméno]", predmet, flags=re.IGNORECASE)
     return predmet
 
 
