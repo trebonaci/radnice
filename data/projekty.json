@@ -36,6 +36,26 @@
         "po_poslednim_ro": 6085000.0
       }
     ],
+    "schvaleny_rozpocet": [
+      {
+        "id": "rozpocet-2026-6-750-36-05",
+        "rok": 2026,
+        "nazev": "Snížení energetické náročnosti DPS 3",
+        "trida": "kapitalove",
+        "castka": {
+          "hodnota": 14000000.0,
+          "mena": "CZK",
+          "jednotka": "Kč",
+          "s_dph": null,
+          "druh": "rozpocet",
+          "obdobi": "2026",
+          "k_datu": null,
+          "citace": "14 000 000,00",
+          "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpo%C4%8Det%20m%C4%9Bsta%20T%C5%99ebon%C4%9B%20na%20rok%202026.pdf, strana 14; DPH dokument neuvádí"
+        },
+        "jistota": "nase_propojeni"
+      }
+    ],
     "casti": [],
     "souhrn": {
       "rozpocet": {
@@ -64,7 +84,19 @@
         "po_dodatcich": null,
         "neuplne": [],
         "jistota": "nase_propojeni"
-      }
+      },
+      "schvaleny": [
+        {
+          "rok": 2026,
+          "celkem": 14000000.0,
+          "investicni": 14000000.0,
+          "neinvesticni": 0.0,
+          "druh": "rozpocet",
+          "s_dph": null,
+          "polozek": 1,
+          "jistota": "nase_propojeni"
+        }
+      ]
     },
     "zakazky": [],
     "smlouvy": [],
@@ -125,6 +157,7 @@
     "faze": "probiha",
     "faze_jistota": "nase_propojeni",
     "rozpocet": [],
+    "schvaleny_rozpocet": [],
     "casti": [
       {
         "role": "stavba",
@@ -194,7 +227,8 @@
         "po_dodatcich": 1461059.27,
         "neuplne": [],
         "jistota": "nase_propojeni"
-      }
+      },
+      "schvaleny": []
     },
     "zakazky": [
       {
@@ -370,6 +404,7 @@
     "faze": "probiha",
     "faze_jistota": "nase_propojeni",
     "rozpocet": [],
+    "schvaleny_rozpocet": [],
     "casti": [
       {
         "role": "stavba",
@@ -431,7 +466,8 @@
         "po_dodatcich": 1239580.64,
         "neuplne": [],
         "jistota": "nase_propojeni"
-      }
+      },
+      "schvaleny": []
     },
     "zakazky": [
       {
@@ -642,6 +678,7 @@
     "faze": "pripravuje_se",
     "faze_jistota": "nase_propojeni",
     "rozpocet": [],
+    "schvaleny_rozpocet": [],
     "casti": [
       {
         "role": "projekt",
@@ -691,7 +728,8 @@
         "po_dodatcich": 961950.0,
         "neuplne": [],
         "jistota": "nase_propojeni"
-      }
+      },
+      "schvaleny": []
     },
     "zakazky": [],
     "smlouvy": [
@@ -767,6 +805,7 @@
     "faze": "probiha",
     "faze_jistota": "nase_propojeni",
     "rozpocet": [],
+    "schvaleny_rozpocet": [],
     "casti": [
       {
         "role": "stavba",
@@ -856,7 +895,8 @@
         "po_dodatcich": 27569957.31,
         "neuplne": [],
         "jistota": "nase_propojeni"
-      }
+      },
+      "schvaleny": []
     },
     "zakazky": [
       {
@@ -1195,6 +1235,26 @@
         "po_poslednim_ro": 587000.0
       }
     ],
+    "schvaleny_rozpocet": [
+      {
+        "id": "rozpocet-2026-6-750-34-04",
+        "rok": 2026,
+        "nazev": "Přístavba tělocvičen",
+        "trida": "kapitalove",
+        "castka": {
+          "hodnota": 70000000.0,
+          "mena": "CZK",
+          "jednotka": "Kč",
+          "s_dph": null,
+          "druh": "rozpocet",
+          "obdobi": "2026",
+          "k_datu": null,
+          "citace": "70 000 000,00",
+          "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpo%C4%8Det%20m%C4%9Bsta%20T%C5%99ebon%C4%9B%20na%20rok%202026.pdf, strana 14; DPH dokument neuvádí"
+        },
+        "jistota": "nase_propojeni"
+      }
+    ],
     "casti": [
       {
         "role": "stavba",
@@ -1438,7 +1498,19 @@
         "po_dodatcich": 73727263.07,
         "neuplne": [],
         "jistota": "nase_propojeni"
-      }
+      },
+      "schvaleny": [
+        {
+          "rok": 2026,
+          "celkem": 70000000.0,
+          "investicni": 70000000.0,
+          "neinvesticni": 0.0,
+          "druh": "rozpocet",
+          "s_dph": null,
+          "polozek": 1,
+          "jistota": "nase_propojeni"
+        }
+      ]
     },
     "zakazky": [
       {
@@ -2352,6 +2424,26 @@
     "faze": "probiha",
     "faze_jistota": "nase_propojeni",
     "rozpocet": [],
+    "schvaleny_rozpocet": [
+      {
+        "id": "rozpocet-2026-6-750-23-05",
+        "rok": 2026,
+        "nazev": "Propustky Břilice",
+        "trida": "kapitalove",
+        "castka": {
+          "hodnota": 1500000.0,
+          "mena": "CZK",
+          "jednotka": "Kč",
+          "s_dph": null,
+          "druh": "rozpocet",
+          "obdobi": "2026",
+          "k_datu": null,
+          "citace": "1 500 000,00",
+          "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpo%C4%8Det%20m%C4%9Bsta%20T%C5%99ebon%C4%9B%20na%20rok%202026.pdf, strana 14; DPH dokument neuvádí"
+        },
+        "jistota": "nase_propojeni"
+      }
+    ],
     "casti": [
       {
         "role": "stavba",
@@ -2401,7 +2493,19 @@
         "po_dodatcich": 2167915.86,
         "neuplne": [],
         "jistota": "nase_propojeni"
-      }
+      },
+      "schvaleny": [
+        {
+          "rok": 2026,
+          "celkem": 1500000.0,
+          "investicni": 1500000.0,
+          "neinvesticni": 0.0,
+          "druh": "rozpocet",
+          "s_dph": null,
+          "polozek": 1,
+          "jistota": "nase_propojeni"
+        }
+      ]
     },
     "zakazky": [
       {
@@ -2582,6 +2686,62 @@
         ],
         "schvaleny": 5000000.0,
         "po_poslednim_ro": 3256000.0
+      }
+    ],
+    "schvaleny_rozpocet": [
+      {
+        "id": "rozpocet-2026-5-750-21-01",
+        "rok": 2026,
+        "nazev": "Ubytování sportovní hala - vybavení",
+        "trida": "bezne",
+        "castka": {
+          "hodnota": 5000000.0,
+          "mena": "CZK",
+          "jednotka": "Kč",
+          "s_dph": null,
+          "druh": "rozpocet",
+          "obdobi": "2026",
+          "k_datu": null,
+          "citace": "5 000 000,00",
+          "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpo%C4%8Det%20m%C4%9Bsta%20T%C5%99ebon%C4%9B%20na%20rok%202026.pdf, strana 10; DPH dokument neuvádí"
+        },
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rozpocet-2026-6-750-21-01",
+        "rok": 2026,
+        "nazev": "Ubytování sportovní hala",
+        "trida": "kapitalove",
+        "castka": {
+          "hodnota": 56000000.0,
+          "mena": "CZK",
+          "jednotka": "Kč",
+          "s_dph": null,
+          "druh": "rozpocet",
+          "obdobi": "2026",
+          "k_datu": null,
+          "citace": "56 000 000,00",
+          "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpo%C4%8Det%20m%C4%9Bsta%20T%C5%99ebon%C4%9B%20na%20rok%202026.pdf, strana 14; DPH dokument neuvádí"
+        },
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rozpocet-2026-6-750-21-02",
+        "rok": 2026,
+        "nazev": "Ubytování sportovní hala - vybavení",
+        "trida": "kapitalove",
+        "castka": {
+          "hodnota": 500000.0,
+          "mena": "CZK",
+          "jednotka": "Kč",
+          "s_dph": null,
+          "druh": "rozpocet",
+          "obdobi": "2026",
+          "k_datu": null,
+          "citace": "500 000,00",
+          "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpo%C4%8Det%20m%C4%9Bsta%20T%C5%99ebon%C4%9B%20na%20rok%202026.pdf, strana 14; DPH dokument neuvádí"
+        },
+        "jistota": "nase_propojeni"
       }
     ],
     "casti": [
@@ -2908,7 +3068,19 @@
         "po_dodatcich": 73719512.67,
         "neuplne": [],
         "jistota": "nase_propojeni"
-      }
+      },
+      "schvaleny": [
+        {
+          "rok": 2026,
+          "celkem": 61500000.0,
+          "investicni": 56500000.0,
+          "neinvesticni": 5000000.0,
+          "druh": "rozpocet",
+          "s_dph": null,
+          "polozek": 3,
+          "jistota": "nase_propojeni"
+        }
+      ]
     },
     "zakazky": [
       {

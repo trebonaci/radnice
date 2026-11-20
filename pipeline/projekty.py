@@ -5,6 +5,8 @@ Projekt (soubor YAML) určuje jen identitu akce: název, popis, ORG a názvy roz
 zakázky (E-ZAK), smlouvy (registr) a usnesení. Všechno ostatní dopočítá kód z `data/`:
 
 - rozpočet: položky RO s ORG projektu („doloženo“) nebo s názvem položky z `rozpocet.nazvy` („naše propojení“),
+- schválený rozpočet roku: položky `data/rozpocet.json` s názvem z `rozpocet.schvaleny` („naše propojení“,
+  rozpočet ORG neuvádí),
 - zakázky, smlouvy, usnesení podle vzorů v názvu / předmětu / textu („naše propojení“); usnesení, z něhož
   pochází RO projektu, je „doloženo“,
 - role části (projekt, stavba, technický dozor, BOZP, vybavení, dodatek) podle názvu,
@@ -232,6 +234,11 @@ def sestav_projekt(p: dict, data: dict) -> dict:
                              "text_ai": u.get("tema_ai"), "overeni": u.get("overeni"),
                              "zdroj_id": u["id"], "jistota": jistota})
 
+    schvaleny_nazvy = set((p.get("rozpocet") or {}).get("schvaleny") or [])
+    schvaleny = [{"id": r["id"], "rok": r["rok"], "nazev": r["nazev"], "trida": r["trida"], "castka": r["castka"],
+                  "jistota": "nase_propojeni"}
+                 for r in data.get("rozpocet", []) if r["nazev"] in schvaleny_nazvy]
+
     udalosti.sort(key=lambda e: (e["datum"] or "", e["typ"]))
     rozpocet = sorted(polozky.values(), key=lambda x: (not x["kapitalova"], x["nazev"]))
     return {
@@ -239,8 +246,9 @@ def sestav_projekt(p: dict, data: dict) -> dict:
         "druh": p.get("druh"), "vlastnik_subjekt_id": p.get("vlastnik_subjekt_id"),
         "faze": faze(zakazky, smlouvy), "faze_jistota": "nase_propojeni",
         "rozpocet": rozpocet,
+        "schvaleny_rozpocet": schvaleny,
         "casti": (casti := casti_akce(zakazky, smlouvy, dodatky_jen_termin(data["usneseni"]))),
-        "souhrn": souhrn(rozpocet, casti),
+        "souhrn": souhrn(rozpocet, casti) | {"schvaleny": souhrn_schvaleny(schvaleny)},
         "zakazky": sorted(zakazky, key=lambda z: z["id"]),
         "smlouvy": sorted(smlouvy, key=lambda s: (s["datum_uzavreni"] or "", s["id"])),
         "usneseni": sorted(vazane, key=lambda u: (u["datum"] or "", u["id"])),
@@ -295,6 +303,18 @@ def souhrn(rozpocet: list[dict], casti: list[dict]) -> dict:
                  "neuplne": [c["role"] for c in casti if c.get("cena_po_dodatcich_s_dph") is None],
                  "jistota": "nase_propojeni"}
     return {"rozpocet": rozpocet_souhrn, "smluvni_bez_dph": smluvni, "smluvni_s_dph": smluvni_s}
+
+
+def souhrn_schvaleny(schvaleny: list[dict]) -> list[dict]:
+    """Schválený rozpočet akce po letech (druh rozpocet, jeden rok = jeden součet; s upraveným se nesčítá)."""
+    vysledek = []
+    for rok in sorted({s["rok"] for s in schvaleny}):
+        roku = [s for s in schvaleny if s["rok"] == rok]
+        inv = sum(_halere(s["castka"]["hodnota"]) for s in roku if s["trida"] == "kapitalove")
+        neinv = sum(_halere(s["castka"]["hodnota"]) for s in roku if s["trida"] == "bezne")
+        vysledek.append({"rok": rok, "celkem": (inv + neinv) / 100, "investicni": inv / 100, "neinvesticni": neinv / 100,
+                         "druh": "rozpocet", "s_dph": None, "polozek": len(roku), "jistota": "nase_propojeni"})
+    return vysledek
 
 
 def _bez_dph(castky: list[dict]) -> float | None:
@@ -497,5 +517,10 @@ def sestav(koren: Path, data: dict) -> tuple[list[dict], list[str]]:
                 re.compile(vzor)
             except re.error as e:
                 chyby.append(f"projekt {p['id']}: chybný vzor {vzor!r}: {e}")
+        roky = {r["rok"] for r in data.get("rozpocet", [])}
+        nazvy_roku = {(r["rok"], r["nazev"]) for r in data.get("rozpocet", [])}
+        for nazev in (p.get("rozpocet") or {}).get("schvaleny") or []:
+            if roky and not any((rok, nazev) in nazvy_roku for rok in roky):
+                chyby.append(f"projekt {p['id']}: položka schváleného rozpočtu {nazev!r} v rozpočtu není")
         vysledek.append(sestav_projekt(p, data))
     return vysledek, chyby
