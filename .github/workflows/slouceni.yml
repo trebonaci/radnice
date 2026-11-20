@@ -106,7 +106,7 @@ jobs:
                                                 && !k.user.login.endsWith('[bot]'));
                 const zBehu = pr.head.ref.startsWith('claude/beh-');
                 const zOpravy = /^Address Codex review findings/.test(commit.commit.message);
-                if (!zahajeno && !pozadano && !requestComment && !legacyTrigger && (zBehu || zOpravy)) {
+                if (!pozadano && !requestComment && !legacyTrigger && (zBehu || zOpravy)) {
                   const marker = `<!-- codex-review-requested:${sha}:${new Date().toISOString()} -->`;
                   await github.rest.issues.createComment({owner, repo, issue_number: pr.number,
                     body: `${marker}\nCodex review requested for commit ${sha.slice(0, 7)}.`});
@@ -114,7 +114,7 @@ jobs:
                     {o: owner, r: repo, n: pr.number})).repository.pullRequest.id;
                   await github.graphql(`mutation($id:ID!){convertPullRequestToDraft(input:{pullRequestId:$id}){clientMutationId}}`, {id});
                   await github.graphql(`mutation($id:ID!){markPullRequestReadyForReview(input:{pullRequestId:$id}){clientMutationId}}`, {id});
-                } else if (legacyTrigger && !requestComment && !zahajeno
+                } else if (legacyTrigger && !requestComment
                            && Date.now() - Date.parse(legacyTrigger.created_at) > 3 * 3600 * 1000
                            && !stitky.includes('potrebuje-cloveka')) {
                   await github.rest.issues.addLabels({owner, repo, issue_number: pr.number, labels: ['potrebuje-cloveka']});
