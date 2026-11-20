@@ -27,3 +27,12 @@ def test_zastupitelstvo_neschvalilo():
     zm = u("zm-1", "zm-b", "I. schvaluje " + TEXT, vysledek="neprijato")
     s.oznac([rm, zm], {"rm-a": "2026-09-09", "zm-b": "2026-09-21"})
     assert rm["schvaleni"]["stav"] == "zm_neschvalilo" and zm["schvaleni"]["stav"] == "neprijato"
+def test_neschvaluje_a_jine_cislo_dodatku():
+    rm = u("rm-1", "rm-a", "I. schvaluje a doporučuje ZM schválit Dodatek č. 13 ke Zřizovací listině základní školy " + TEXT)
+    zm = u("zm-1", "zm-b", "I. neschvaluje Dodatek č. 13 ke Zřizovací listině základní školy " + TEXT)
+    s.oznac([rm, zm], {"rm-a": "2026-09-09", "zm-b": "2026-09-21"})
+    assert rm["schvaleni"]["stav"] == "zm_neschvalilo"
+    rm2 = u("rm-2", "rm-a", "I. schvaluje a doporučuje ZM schválit Dodatek č. 13 ke Zřizovací listině základní školy " + TEXT)
+    zm2 = u("zm-2", "zm-b", "I. schvaluje Dodatek č. 14 ke Zřizovací listině základní školy " + TEXT)
+    s.oznac([rm2, zm2], {"rm-a": "2026-09-09", "zm-b": "2026-09-21"})
+    assert rm2["schvaleni"]["stav"] == "ceka_na_zm"

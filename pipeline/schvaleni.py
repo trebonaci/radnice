@@ -36,7 +36,8 @@ def _stejna_cisla(a: set[str], b: set[str], sa: set[str], sb: set[str]) -> bool:
 
 def _zamitnuti(u: dict) -> bool:
     """Usnesení zastupitelstva, jehož výrok je zamítavý (`neschvaluje`) – i když samo bylo přijato."""
-    return any(x.get("ukon") == "neschvaluje" for x in u.get("ukony") or [])
+    return (any(x.get("ukon") == "neschvaluje" for x in u.get("ukony") or [])
+            or re.search(r"\bneschvaluje\b", u.get("text") or "") is not None)
 
 
 def oznac(usneseni: list[dict], datum_jednani: dict[str, str]) -> None:
