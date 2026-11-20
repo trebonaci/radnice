@@ -100,6 +100,7 @@ jobs:
           printf '\n\nBěh: %s\n' "$ODKAZ_BEHU" >> /tmp/telo.md
           url=$(gh pr create --base main --head "$vetev" --title "Běh pipeline $(date -u +%F)" --body-file /tmp/telo.md)
           gh pr edit "$url" --add-label ke-kontrole
+          gh pr comment "$url" --body "@codex review"   # Codex se u PR od bota sám nespustí (#106)
           gh workflow run ci.yml --ref "$vetev"      # CI na PR z GITHUB_TOKEN sama nenaběhne
           echo "vetev=$vetev" >> "$GITHUB_OUTPUT"
 
