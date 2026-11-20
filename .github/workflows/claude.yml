@@ -132,15 +132,20 @@ jobs:
               core.warning(`PR #${pr.number} has no ke-kontrole label; Codex review was not requested.`);
               return;
             }
+            const issueComments = await github.paginate(github.rest.issues.listComments, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: pr.number,
+              per_page: 100,
+            });
             const requestPrefix = `<!-- codex-review-requested:${pr.head.sha}:`;
-            if (comments.some(comment =>
+            if (issueComments.some(comment =>
               comment.user?.login === 'github-actions[bot]' &&
               (comment.body || '').includes(requestPrefix)
             )) {
               core.notice(`Codex review was already requested for PR #${pr.number} at ${pr.head.sha}.`);
               return;
             }
-
             const pullRequestId = pr.node_id;
             if (!pr.draft) {
               await github.graphql(`
@@ -156,13 +161,12 @@ jobs:
                   pullRequest { isDraft }
                 }
               }`, {pullRequestId});
-
             const marker = `<!-- codex-review-requested:${pr.head.sha}:${new Date().toISOString()} -->`;
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: pr.number,
-              body: `${marker}\\nCodex review requested by transitioning the PR to ready for review.\\nSHA: ${pr.head.sha}`,
+              body: `${marker}\nCodex review requested by transitioning the PR to ready for review.\nSHA: ${pr.head.sha}`,
             });
             core.notice(`Requested Codex review for PR #${pr.number} at ${pr.head.sha} through ready_for_review.`);
 
