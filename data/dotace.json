@@ -215,7 +215,7 @@
       "jednotka": "Kč",
       "s_dph": null,
       "druh": "dotace_priznana",
-      "citace": "[fyzická osoba]                              Akce Běh kolem Světa              10.000,00"
+      "citace": "Akce Běh kolem Světa              10.000,00"
     },
     "citace": {
       "dokument_id": "zapis-rm-2026-10-30",
@@ -223,7 +223,7 @@
         2,
         3
       ],
-      "text": "[fyzická osoba]                              Akce Běh kolem Světa              10.000,00"
+      "text": "Akce Běh kolem Světa              10.000,00"
     }
   },
   {
@@ -795,7 +795,7 @@
       "jednotka": "Kč",
       "s_dph": null,
       "druh": "dotace_priznana",
-      "citace": "[fyzická osoba]                   Akce Dopravní výuka a výcvik     18.600,00"
+      "citace": "Akce Dopravní výuka a výcvik     18.600,00"
     },
     "citace": {
       "dokument_id": "zapis-rm-2026-10-30",
@@ -803,7 +803,7 @@
         3,
         4
       ],
-      "text": "[fyzická osoba]                   Akce Dopravní výuka a výcvik     18.600,00"
+      "text": "Akce Dopravní výuka a výcvik     18.600,00"
     }
   },
   {

@@ -90,8 +90,10 @@ def z_usneseni(u: dict, radky_stran: list[str], verejny_text: str, dokument_id: 
         fo = ANONYM in " ".join(r["zadatel"])
         zadatel = "fyzická osoba" if fo else " ".join(r["zadatel"]).replace(" – ", " – ").strip()
         ucel = " ".join(r["ucel"]).strip()
-        if normalizuj(r["radek"]) not in normalizuj(verejny_text):
-            chyby.append(f"{u['id']}: řádek dotace není doslova v usnesení: {r['radek']!r}")
+        # citace bez nahrazeného jména: u fyzické osoby jen účel a částka (úsek, který je doslova i ve zdroji)
+        citace = r["radek"].split(ANONYM, 1)[1].strip() if fo else r["radek"]
+        if ANONYM in citace or normalizuj(citace) not in normalizuj(verejny_text):
+            chyby.append(f"{u['id']}: řádek dotace není doslova v usnesení: {citace!r}")
         vysledek.append({
             "id": f"{u['id']}-d{i}",
             "usneseni_id": u["id"], "usneseni_cislo": u["cislo"], "jednani_id": u["jednani_id"], "datum": datum,
@@ -99,7 +101,7 @@ def z_usneseni(u: dict, radky_stran: list[str], verejny_text: str, dokument_id: 
             "oblast": m["oblast"], "prijemce": zadatel, "fyzicka_osoba": fo,
             "ucel": ucel, "druh_ucelu": druh_ucelu(ucel),
             "castka": {"hodnota": _halere(r["castka"]) / 100, "mena": "CZK", "jednotka": "Kč", "s_dph": None,
-                       "druh": "dotace_priznana", "citace": r["radek"]},
-            "citace": {"dokument_id": dokument_id, "strany": u.get("strany", []), "text": r["radek"]},
+                       "druh": "dotace_priznana", "citace": citace},
+            "citace": {"dokument_id": dokument_id, "strany": u.get("strany", []), "text": citace},
         })
     return vysledek, chyby

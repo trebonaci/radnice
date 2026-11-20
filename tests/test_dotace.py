@@ -35,6 +35,7 @@ def test_tabulka_dotaci():
          15000.0, "reprezentace"),
         ("Dům dětí a mládeže, Jindřichův Hradec, Růžová 10, Pracoviště", "Akce Mikulášská nadílka", 8000.0, "akce")]
     assert zaz[1]["fyzicka_osoba"] is True and "Praha" not in str(zaz[1])
+    assert zaz[1]["citace"]["text"] == "Akce Běh kolem Světa              10.000,00"      # bez nahrazeného jména
     assert zaz[0]["oblast"] == "tělovýchovy a sportu" and zaz[0]["castka"]["druh"] == "dotace_priznana"
 
 

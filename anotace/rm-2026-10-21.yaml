@@ -101,7 +101,7 @@ usneseni:
 
   rm-2026-j113-u521:
     pro_obcany:
-      text: "Město dostalo darem domácí loutkové divadlo s 26 loutkami a kulisami."
+      text: "Město přijme darem domácí loutkové divadlo s 26 loutkami a kulisami."
       oblast: kultura
       citace: "předmětem daru je domácí loutkové divadlo v rozsahu 26 loutek"
     tema: Dar domácího loutkového divadla
@@ -317,7 +317,7 @@ usneseni:
 
   rm-2026-j113-u541:
     pro_obcany:
-      text: "Hotel Sport ve sportovní hale má od listopadu 2026 v nájmu od města Městská sportovní Třeboň."
+      text: "Hotel Sport ve sportovní hale bude mít od listopadu 2026 v nájmu od města Městská sportovní Třeboň."
       oblast: sport
       plati_od: "2026-11-01"
       citace: "uzavření Nájemní smlouvy na pronájem nebytových prostor Sportovní haly (HOTEL SPORT)"
