@@ -1,0 +1,58 @@
+{
+  "00247618/2025-2.xml": {
+    "url": "https://zakazky.mesto-trebon.cz/profile_display_2.html/XMLdataVZ?od=01072025&do=31122025",
+    "sha256": "0587ff8960ccfd89766a2be81499f8d752121c50ceaf5b8b75841c4d0fca723a",
+    "zakazek": 22,
+    "zmeneno": "2026-11-20",
+    "uzavreno": true
+  },
+  "00247618/2026-1.xml": {
+    "url": "https://zakazky.mesto-trebon.cz/profile_display_2.html/XMLdataVZ?od=01012026&do=30062026",
+    "sha256": "11b26121cc23c22a2c2c21b2bd8d3c8a561e2bff3ce73d75845d96c70f830d9c",
+    "zakazek": 43,
+    "zmeneno": "2026-11-20",
+    "uzavreno": true
+  },
+  "00247618/2026-2.xml": {
+    "url": "https://zakazky.mesto-trebon.cz/profile_display_2.html/XMLdataVZ?od=01072026&do=31122026",
+    "sha256": "06ee7fa6159bc73dee39fbe7288d3b70f8a3feb97b1bff3cdcdb94eb40153569",
+    "zakazek": 15,
+    "zmeneno": "2026-11-20",
+    "uzavreno": false
+  },
+  "25179896/2026-1.xml": {
+    "url": "https://zakazky.mesto-trebon.cz/profile_display_190.html/XMLdataVZ?od=01012026&do=30062026",
+    "sha256": "9b16429b7d308173076cfc392f89ca9ea8a9e0559308ebb7d1bf1fe199c25590",
+    "zakazek": 23,
+    "zmeneno": "2026-11-20",
+    "uzavreno": true
+  },
+  "25179896/2026-2.xml": {
+    "url": "https://zakazky.mesto-trebon.cz/profile_display_190.html/XMLdataVZ?od=01072026&do=31122026",
+    "sha256": "78a7c5fe0760eb62cffb45d4658c5f31e3f59a3302937dc8654b6c59a582eb9a",
+    "zakazek": 31,
+    "zmeneno": "2026-11-20",
+    "uzavreno": false
+  },
+  "28136853/2025-2.xml": {
+    "url": "https://zakazky.mesto-trebon.cz/profile_display_354.html/XMLdataVZ?od=01072025&do=31122025",
+    "sha256": "ffffe017f18a3f3cf4cd08ce8152cd6bef17dc3ef632d1042e14ff440f2365f2",
+    "zakazek": 0,
+    "zmeneno": "2026-11-20",
+    "uzavreno": true
+  },
+  "28136853/2026-1.xml": {
+    "url": "https://zakazky.mesto-trebon.cz/profile_display_354.html/XMLdataVZ?od=01012026&do=30062026",
+    "sha256": "ffffe017f18a3f3cf4cd08ce8152cd6bef17dc3ef632d1042e14ff440f2365f2",
+    "zakazek": 0,
+    "zmeneno": "2026-11-20",
+    "uzavreno": true
+  },
+  "28136853/2026-2.xml": {
+    "url": "https://zakazky.mesto-trebon.cz/profile_display_354.html/XMLdataVZ?od=01072026&do=31122026",
+    "sha256": "ffffe017f18a3f3cf4cd08ce8152cd6bef17dc3ef632d1042e14ff440f2365f2",
+    "zakazek": 0,
+    "zmeneno": "2026-11-20",
+    "uzavreno": false
+  }
+}
