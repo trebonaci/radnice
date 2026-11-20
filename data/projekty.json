@@ -157,7 +157,8 @@
                   }
                 ]
               }
-            ]
+            ],
+            "registr_smluv": []
           }
         ],
         "jistota": "nase_propojeni"
@@ -196,6 +197,14 @@
                 ],
                 "zaplaceno": []
               }
+            ],
+            "registr_smluv": [
+              "https://smlouvy.gov.cz/smlouva/36387317",
+              "https://smlouvy.gov.cz/smlouva/37282997",
+              "https://smlouvy.gov.cz/smlouva/38183173",
+              "https://smlouvy.gov.cz/smlouva/39303451",
+              "https://smlouvy.gov.cz/smlouva/39681309",
+              "https://smlouvy.gov.cz/smlouva/40163777"
             ]
           }
         ],
@@ -229,6 +238,7 @@
           }
         ],
         "url": "https://smlouvy.gov.cz/smlouva/39303451",
+        "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       },
       {
@@ -242,6 +252,7 @@
         ],
         "castky": [],
         "url": "https://smlouvy.gov.cz/smlouva/39681309",
+        "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       },
       {
@@ -270,6 +281,7 @@
           }
         ],
         "url": "https://smlouvy.gov.cz/smlouva/39724805",
+        "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       },
       {
@@ -298,6 +310,7 @@
           }
         ],
         "url": "https://smlouvy.gov.cz/smlouva/39725837",
+        "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       },
       {
@@ -326,6 +339,7 @@
           }
         ],
         "url": "https://smlouvy.gov.cz/smlouva/40118109",
+        "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       },
       {
@@ -354,6 +368,7 @@
           }
         ],
         "url": "https://smlouvy.gov.cz/smlouva/40163777",
+        "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       }
     ],
@@ -732,7 +747,8 @@
                   }
                 ]
               }
-            ]
+            ],
+            "registr_smluv": []
           }
         ],
         "jistota": "nase_propojeni"
@@ -782,6 +798,14 @@
                   }
                 ]
               }
+            ],
+            "registr_smluv": [
+              "https://smlouvy.gov.cz/smlouva/36192945",
+              "https://smlouvy.gov.cz/smlouva/37638541",
+              "https://smlouvy.gov.cz/smlouva/38538892",
+              "https://smlouvy.gov.cz/smlouva/39302679",
+              "https://smlouvy.gov.cz/smlouva/39520809",
+              "https://smlouvy.gov.cz/smlouva/40101957"
             ]
           }
         ],
@@ -821,7 +845,8 @@
                 ],
                 "zaplaceno": []
               }
-            ]
+            ],
+            "registr_smluv": []
           }
         ],
         "jistota": "nase_propojeni"
@@ -854,6 +879,7 @@
           }
         ],
         "url": "https://smlouvy.gov.cz/smlouva/39302679",
+        "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       },
       {
@@ -867,6 +893,7 @@
         ],
         "castky": [],
         "url": "https://smlouvy.gov.cz/smlouva/39520809",
+        "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       },
       {
@@ -895,6 +922,7 @@
           }
         ],
         "url": "https://smlouvy.gov.cz/smlouva/39574269",
+        "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       },
       {
@@ -923,6 +951,7 @@
           }
         ],
         "url": "https://smlouvy.gov.cz/smlouva/39725413",
+        "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       },
       {
@@ -951,6 +980,7 @@
           }
         ],
         "url": "https://smlouvy.gov.cz/smlouva/39899189",
+        "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       },
       {
@@ -979,6 +1009,7 @@
           }
         ],
         "url": "https://smlouvy.gov.cz/smlouva/39748681",
+        "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       },
       {
@@ -1007,6 +1038,7 @@
           }
         ],
         "url": "https://smlouvy.gov.cz/smlouva/40060341",
+        "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       },
       {
@@ -1035,6 +1067,7 @@
           }
         ],
         "url": "https://smlouvy.gov.cz/smlouva/40101957",
+        "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       },
       {
@@ -1063,6 +1096,7 @@
           }
         ],
         "url": "https://smlouvy.gov.cz/smlouva/40117365",
+        "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       },
       {
@@ -1091,6 +1125,7 @@
           }
         ],
         "url": "https://smlouvy.gov.cz/smlouva/40117957",
+        "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       }
     ],

@@ -82,11 +82,11 @@ def test_souhrn_scita_jen_v_ramci_druhu():
     rozpocet = [{"kapitalova": True, "po_poslednim_ro": 58992143.49, "jistota": "dolozeno"},
                 {"kapitalova": False, "po_poslednim_ro": 587000.0, "jistota": "nase_propojeni"},
                 {"kapitalova": False, "po_poslednim_ro": None, "jistota": "dolozeno"}]
-    zak = [{"id": "z1", "role": "stavba", "casti": [{"vitezove": [{"nazev": "A", "smluvni": [
+    zak = [{"id": "z1", "role": "stavba", "casti": [{"registr_smluv": ["u1"], "vitezove": [{"nazev": "A", "smluvni": [
         {"hodnota": 66097418.09, "s_dph": True}, {"hodnota": 54625965.36, "s_dph": False, "mena": "CZK"}]}]}]}]
-    sml = [{"id": "s1", "role": "stavba", "dodatek_cislo": None, "strany": ["A"],
+    sml = [{"id": "s1", "role": "stavba", "dodatek_cislo": None, "strany": ["A"], "url": "u1",
             "castky": [{"hodnota": 54625965.36, "s_dph": False}]},                       # tatáž smlouva jako z1
-           {"id": "s2", "role": "vybaveni", "dodatek_cislo": None, "strany": ["B"],
+           {"id": "s2", "role": "vybaveni", "dodatek_cislo": None, "strany": ["B"], "url": "u2",
             "castky": [{"hodnota": 310125.87, "s_dph": False}, {"hodnota": 375252.3, "s_dph": True}]},
            {"id": "s3", "role": "stavba", "dodatek_cislo": 5, "strany": ["A"],
             "castky": [{"hodnota": 2501117.05, "s_dph": False}]},
@@ -97,3 +97,12 @@ def test_souhrn_scita_jen_v_ramci_druhu():
     m = s["smluvni_bez_dph"]
     assert m["celkem"] == 54936091.23 and [c["zdroj_id"] for c in m["casti"]] == ["z1", "s2"]
     assert m["bez_ceny"] == ["s4"] and m["dodatku_nezapocteno"] == 1 and m["s_dph"] is False
+
+
+def test_souhrn_stejna_cena_ruzne_smlouvy_a_neznamy_soucet():
+    sm = [{"id": f"s{i}", "role": "stavba", "dodatek_cislo": None, "strany": ["A"], "url": f"u{i}",
+           "castky": [{"hodnota": 100.0, "s_dph": False}]} for i in (1, 2)]
+    assert pr.souhrn([], [], sm)["smluvni_bez_dph"]["celkem"] == 200.0
+    s = pr.souhrn([], [], [])
+    assert s["rozpocet"]["celkem"] is None and s["rozpocet"]["jistota"] == "nevime"
+    assert s["smluvni_bez_dph"]["celkem"] is None
