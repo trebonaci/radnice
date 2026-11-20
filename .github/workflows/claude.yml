@@ -129,7 +129,19 @@ jobs:
               return;
             }
             if (!pr.labels.some(label => label.name === 'ke-kontrole')) {
-              core.warning(`PR #${pr.number} has no ke-kontrole label; Codex review was not requested.`);
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: pr.number,
+                labels: ['potrebuje-cloveka'],
+              });
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: pr.number,
+                body: 'PR od Clauda nemá štítek ke-kontrole. Automatické předání Codexu zastavuji a žádám Ondřeje o kontrolu.',
+              });
+              core.warning(`PR #${pr.number} has no ke-kontrole label; handing it to a human.`);
               return;
             }
             const issueComments = await github.paginate(github.rest.issues.listComments, {
