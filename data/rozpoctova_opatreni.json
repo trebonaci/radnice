@@ -1,0 +1,1483 @@
+[
+  {
+    "id": "rm-2026-j110-u462-p1",
+    "rok": 2026,
+    "cislo_ro": 50,
+    "usneseni_id": "rm-2026-j110-u462",
+    "usneseni_cislo": "RM 462/2026-110",
+    "jednani_id": "rm-2026-09-09",
+    "organ": "rada",
+    "vysledek_hlasovani": "prijato",
+    "strana": "vydaje",
+    "smer": "z",
+    "polozka": "5171",
+    "nazev": "Obnova nemovitých kulturních památek",
+    "paragraf": "3322",
+    "orj": "750",
+    "org": "97500000xx",
+    "uz": "0",
+    "zmena": -80000.0,
+    "castka": {
+      "hodnota": 80000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "- z položky 5171 „Obnova nemovitých kulturních památek“, § 3322, ORJ 750, ORG 97500000xx, UZ 0 v částce Kč 80.000,00"
+    },
+    "rozpocet": {
+      "schvaleny": 2600000.0,
+      "pred_ro": 2600000.0,
+      "po_ro": 2520000.0,
+      "fond": null,
+      "citace": "50.             0       97500000xx          750    3322       5171     2 600 000   2 600 000      - 80 000   2 520 000"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-09-09",
+      "strany": [
+        6
+      ],
+      "text": "- z položky 5171 „Obnova nemovitých kulturních památek“, § 3322, ORJ 750, ORG 97500000xx, UZ 0 v částce Kč 80.000,00"
+    },
+    "poznamka": null
+  },
+  {
+    "id": "rm-2026-j110-u462-p2",
+    "rok": 2026,
+    "cislo_ro": 50,
+    "usneseni_id": "rm-2026-j110-u462",
+    "usneseni_cislo": "RM 462/2026-110",
+    "jednani_id": "rm-2026-09-09",
+    "organ": "rada",
+    "vysledek_hlasovani": "prijato",
+    "strana": "vydaje",
+    "smer": "do",
+    "polozka": "5171",
+    "nazev": "Dům dětí a mládeže - opravy",
+    "paragraf": "3421",
+    "orj": "750",
+    "org": "9750000325",
+    "uz": "0",
+    "zmena": 80000.0,
+    "castka": {
+      "hodnota": 80000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "- do položky 5171 „Dům dětí a mládeže - opravy“, § 3421, ORJ 750, ORG 9750000325, UZ 0 v částce Kč 80.000,00"
+    },
+    "rozpocet": {
+      "schvaleny": 600000.0,
+      "pred_ro": 600000.0,
+      "po_ro": 680000.0,
+      "fond": null,
+      "citace": "0       9750000325          750    3421       5171       600 000    600 000      + 80 000     680 000"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-09-09",
+      "strany": [
+        6
+      ],
+      "text": "- do položky 5171 „Dům dětí a mládeže - opravy“, § 3421, ORJ 750, ORG 9750000325, UZ 0 v částce Kč 80.000,00"
+    },
+    "poznamka": null
+  },
+  {
+    "id": "rm-2026-j111-u493-p1",
+    "rok": 2026,
+    "cislo_ro": 51,
+    "usneseni_id": "rm-2026-j111-u493",
+    "usneseni_cislo": "RM 493/2026-111",
+    "jednani_id": "rm-2026-09-23",
+    "organ": "rada",
+    "vysledek_hlasovani": "prijato",
+    "strana": "vydaje",
+    "smer": "z",
+    "polozka": "5137",
+    "nazev": "Ubytování sportovní hala - vybavení",
+    "paragraf": "2142",
+    "orj": "750",
+    "org": "9750000000",
+    "uz": "0",
+    "zmena": -53000.0,
+    "castka": {
+      "hodnota": 53000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-z položky 5137 „Ubytování sportovní hala - vybavení“, § 2142, ORJ 750, ORG 9750000000, UZ 0 v částce Kč 53.000,00"
+    },
+    "rozpocet": {
+      "schvaleny": 5000000.0,
+      "pred_ro": 3309000.0,
+      "po_ro": 3256000.0,
+      "fond": null,
+      "citace": "53.             0       9750000000          750    2142       5137     5 000 000   3 309 000      - 53 000   3 256 000"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-09-23",
+      "strany": [
+        8
+      ],
+      "text": "-z položky 5137 „Ubytování sportovní hala - vybavení“, § 2142, ORJ 750, ORG 9750000000, UZ 0 v částce Kč 53.000,00"
+    },
+    "poznamka": null
+  },
+  {
+    "id": "rm-2026-j111-u493-p2",
+    "rok": 2026,
+    "cislo_ro": 51,
+    "usneseni_id": "rm-2026-j111-u493",
+    "usneseni_cislo": "RM 493/2026-111",
+    "jednani_id": "rm-2026-09-23",
+    "organ": "rada",
+    "vysledek_hlasovani": "prijato",
+    "strana": "vydaje",
+    "smer": "do",
+    "polozka": "5137",
+    "nazev": "Přístavba tělocvičen - vybavení",
+    "paragraf": "3412",
+    "orj": "750",
+    "org": "9750000000",
+    "uz": "0",
+    "zmena": 53000.0,
+    "castka": {
+      "hodnota": 53000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-do položky 5137 „Přístavba tělocvičen - vybavení“, § 3412, ORJ 750, ORG 9750000000, UZ 0 v částce Kč 53.000,00"
+    },
+    "rozpocet": {
+      "schvaleny": 0.0,
+      "pred_ro": 281000.0,
+      "po_ro": 334000.0,
+      "fond": null,
+      "citace": "0       9750000000          750    3412       5137             0    281 000      + 53 000     334 000"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-09-23",
+      "strany": [
+        8
+      ],
+      "text": "-do položky 5137 „Přístavba tělocvičen - vybavení“, § 3412, ORJ 750, ORG 9750000000, UZ 0 v částce Kč 53.000,00"
+    },
+    "poznamka": null
+  },
+  {
+    "id": "rm-2026-j112-u505-p1",
+    "rok": 2026,
+    "cislo_ro": 52,
+    "usneseni_id": "rm-2026-j112-u505",
+    "usneseni_cislo": "RM 505/2026-112",
+    "jednani_id": "rm-2026-10-07",
+    "organ": "rada",
+    "vysledek_hlasovani": "prijato",
+    "strana": "prijmy",
+    "smer": "navyseni",
+    "polozka": "2131",
+    "nazev": "Pronájem - pozemky - ostatní",
+    "paragraf": "3639",
+    "orj": "800",
+    "org": "0",
+    "uz": "0",
+    "zmena": 50000.0,
+    "castka": {
+      "hodnota": 50000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-navýšení příjmové položky 2131 „Pronájem - pozemky - ostatní“, § 3639, ORJ 800, ORG 0, UZ 0 o částku 50.000,00 Kč"
+    },
+    "rozpocet": {
+      "schvaleny": 407000.0,
+      "pred_ro": 557000.0,
+      "po_ro": 607000.0,
+      "fond": null,
+      "citace": "52.             0            0              800    3639       2131       407 000    557 000      + 50 000    607 000"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-07",
+      "strany": [
+        5
+      ],
+      "text": "-navýšení příjmové položky 2131 „Pronájem - pozemky - ostatní“, § 3639, ORJ 800, ORG 0, UZ 0 o částku 50.000,00 Kč"
+    },
+    "poznamka": null
+  },
+  {
+    "id": "rm-2026-j112-u505-p2",
+    "rok": 2026,
+    "cislo_ro": 52,
+    "usneseni_id": "rm-2026-j112-u505",
+    "usneseni_cislo": "RM 505/2026-112",
+    "jednani_id": "rm-2026-10-07",
+    "organ": "rada",
+    "vysledek_hlasovani": "prijato",
+    "strana": "vydaje",
+    "smer": "navyseni",
+    "polozka": "5163",
+    "nazev": "Pojištění majetku + spoluúčast (náhrady)",
+    "paragraf": "6320",
+    "orj": "800",
+    "org": "9800000201",
+    "uz": "0",
+    "zmena": 50000.0,
+    "castka": {
+      "hodnota": 50000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-navýšení výdajové položky 5163 „Pojištění majetku + spoluúčast (náhrady)“, § 6320, ORJ 800, ORG 9800000201, UZ 0 o částku 50.000,00 Kč"
+    },
+    "rozpocet": {
+      "schvaleny": 1000000.0,
+      "pred_ro": 1150000.0,
+      "po_ro": 1200000.0,
+      "fond": null,
+      "citace": "52.             0       9800000201          800    6320       5163     1 000 000   1 150 000     + 50 000   1 200 000"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-07",
+      "strany": [
+        5
+      ],
+      "text": "-navýšení výdajové položky 5163 „Pojištění majetku + spoluúčast (náhrady)“, § 6320, ORJ 800, ORG 9800000201, UZ 0 o částku 50.000,00 Kč"
+    },
+    "poznamka": null
+  },
+  {
+    "id": "rm-2026-j113-u524-p1",
+    "rok": 2026,
+    "cislo_ro": 53,
+    "usneseni_id": "rm-2026-j113-u524",
+    "usneseni_cislo": "RM 524/2026-113",
+    "jednani_id": "rm-2026-10-21",
+    "organ": "rada",
+    "vysledek_hlasovani": "prijato",
+    "strana": "vydaje",
+    "smer": "z",
+    "polozka": "5169",
+    "nazev": "Ostatní služby - cestovní ruch",
+    "paragraf": "2143",
+    "orj": "900",
+    "org": "9900000000",
+    "uz": "0",
+    "zmena": -60000.0,
+    "castka": {
+      "hodnota": 60000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-z položky 5169 „Ostatní služby - cestovní ruch“, § 2143, ORJ 900, ORG 9900000000, UZ 0 v částce Kč 60.000,00"
+    },
+    "rozpocet": {
+      "schvaleny": 300000.0,
+      "pred_ro": 300000.0,
+      "po_ro": 240000.0,
+      "fond": null,
+      "citace": "53.             0       9900000000          900    2143       5169       300 000    300 000       - 60 000    240 000"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-21",
+      "strany": [
+        6
+      ],
+      "text": "-z položky 5169 „Ostatní služby - cestovní ruch“, § 2143, ORJ 900, ORG 9900000000, UZ 0 v částce Kč 60.000,00"
+    },
+    "poznamka": null
+  },
+  {
+    "id": "rm-2026-j113-u524-p2",
+    "rok": 2026,
+    "cislo_ro": 53,
+    "usneseni_id": "rm-2026-j113-u524",
+    "usneseni_cislo": "RM 524/2026-113",
+    "jednani_id": "rm-2026-10-21",
+    "organ": "rada",
+    "vysledek_hlasovani": "prijato",
+    "strana": "vydaje",
+    "smer": "do",
+    "polozka": "5169",
+    "nazev": "Ostatní služby - trhy",
+    "paragraf": "2141",
+    "orj": "900",
+    "org": "9900000000",
+    "uz": "0",
+    "zmena": 60000.0,
+    "castka": {
+      "hodnota": 60000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-do položky 5169 „Ostatní služby - trhy“, § 2141, ORJ 900, ORG 9900000000, UZ 0 v částce Kč 60.000,00"
+    },
+    "rozpocet": {
+      "schvaleny": 140000.0,
+      "pred_ro": 140000.0,
+      "po_ro": 200000.0,
+      "fond": null,
+      "citace": "0       9900000000          900    2141       5169       140 000    140 000      + 60 000     200 000"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-21",
+      "strany": [
+        6
+      ],
+      "text": "-do položky 5169 „Ostatní služby - trhy“, § 2141, ORJ 900, ORG 9900000000, UZ 0 v částce Kč 60.000,00"
+    },
+    "poznamka": null
+  },
+  {
+    "id": "rm-2026-j113-u525-p1",
+    "rok": 2026,
+    "cislo_ro": 54,
+    "usneseni_id": "rm-2026-j113-u525",
+    "usneseni_cislo": "RM 525/2026-113",
+    "jednani_id": "rm-2026-10-21",
+    "organ": "rada",
+    "vysledek_hlasovani": "prijato",
+    "strana": "vydaje",
+    "smer": "snizeni",
+    "polozka": "5222",
+    "nazev": "Příspěvky v oblasti ostatních činností",
+    "paragraf": "3429",
+    "orj": "800",
+    "org": "9800003147",
+    "uz": "0",
+    "zmena": -20000.0,
+    "castka": {
+      "hodnota": 20000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-ponížení výdajové položky 5222 Příspěvky v oblasti ostatních činností, § 3429, ORJ 0800, ORG 9800003147, NZUZ 0 o částku 20 000 Kč"
+    },
+    "rozpocet": {
+      "schvaleny": 300000.0,
+      "pred_ro": 292000.0,
+      "po_ro": 272000.0,
+      "fond": null,
+      "citace": "54.          0     9800003147     0800       3429      5222      300 000       292 000   -   20 000       272 000"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-21",
+      "strany": [
+        7
+      ],
+      "text": "-ponížení výdajové položky 5222 Příspěvky v oblasti ostatních činností, § 3429, ORJ 0800, ORG 9800003147, NZUZ 0 o částku 20 000 Kč"
+    },
+    "poznamka": null
+  },
+  {
+    "id": "rm-2026-j113-u525-p2",
+    "rok": 2026,
+    "cislo_ro": 54,
+    "usneseni_id": "rm-2026-j113-u525",
+    "usneseni_cislo": "RM 525/2026-113",
+    "jednani_id": "rm-2026-10-21",
+    "organ": "rada",
+    "vysledek_hlasovani": "prijato",
+    "strana": "vydaje",
+    "smer": "navyseni",
+    "polozka": "5331",
+    "nazev": "Příspěvky v oblasti ostatních činností - dar",
+    "paragraf": "3113",
+    "orj": "800",
+    "org": "9800003150",
+    "uz": "0",
+    "zmena": 20000.0,
+    "castka": {
+      "hodnota": 20000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-navýšení výdajové položky 5331 Příspěvky v oblasti ostatních činností - dar, § 3113, ORJ 0800, ORG 9800003150, NZUZ 0 o částku 20 000 Kč"
+    },
+    "rozpocet": {
+      "schvaleny": 0.0,
+      "pred_ro": 8000.0,
+      "po_ro": 28000.0,
+      "fond": null,
+      "citace": "0     9800003150     0800       3113      5331            0         8 000   + 20 000          28 000"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-21",
+      "strany": [
+        7
+      ],
+      "text": "-navýšení výdajové položky 5331 Příspěvky v oblasti ostatních činností - dar, § 3113, ORJ 0800, ORG 9800003150, NZUZ 0 o částku 20 000 Kč"
+    },
+    "poznamka": null
+  },
+  {
+    "id": "rm-2026-j113-u526-p1",
+    "rok": 2026,
+    "cislo_ro": 55,
+    "usneseni_id": "rm-2026-j113-u526",
+    "usneseni_cislo": "RM 526/2026-113",
+    "jednani_id": "rm-2026-10-21",
+    "organ": "rada",
+    "vysledek_hlasovani": "prijato",
+    "strana": "prijmy",
+    "smer": "navyseni",
+    "polozka": "2310",
+    "nazev": "MP - Prodej zbraní",
+    "paragraf": "5311",
+    "orj": "250",
+    "org": "0",
+    "uz": "0",
+    "zmena": 6900.0,
+    "castka": {
+      "hodnota": 6900.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-navýšení příjmové položky 2310 „MP - Prodej zbraní“, § 5311, ORJ 250, ORG 0, UZ 0 o částku 6.900,00 Kč"
+    },
+    "rozpocet": {
+      "schvaleny": 0.0,
+      "pred_ro": 28920.0,
+      "po_ro": 35820.0,
+      "fond": null,
+      "citace": "55.                0           0            250      5311           2310                0        28 920       + 6 900        35 820"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-21",
+      "strany": [
+        7,
+        8
+      ],
+      "text": "-navýšení příjmové položky 2310 „MP - Prodej zbraní“, § 5311, ORJ 250, ORG 0, UZ 0 o částku 6.900,00 Kč"
+    },
+    "poznamka": null
+  },
+  {
+    "id": "rm-2026-j113-u526-p2",
+    "rok": 2026,
+    "cislo_ro": 55,
+    "usneseni_id": "rm-2026-j113-u526",
+    "usneseni_cislo": "RM 526/2026-113",
+    "jednani_id": "rm-2026-10-21",
+    "organ": "rada",
+    "vysledek_hlasovani": "prijato",
+    "strana": "vydaje",
+    "smer": "navyseni",
+    "polozka": "5137",
+    "nazev": "MP - drobný hmotný dlouhodobý majetek",
+    "paragraf": "5311",
+    "orj": "250",
+    "org": "9250000000",
+    "uz": "0",
+    "zmena": 6900.0,
+    "castka": {
+      "hodnota": 6900.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-navýšení výdajové položky 5137 „MP - drobný hmotný dlouhodobý majetek“, § 5311, ORJ 250, ORG 9250000000, UZ 0 o částku 6.900,00 Kč"
+    },
+    "rozpocet": {
+      "schvaleny": 230000.0,
+      "pred_ro": 283920.0,
+      "po_ro": 290820.0,
+      "fond": null,
+      "citace": "55.                0     9250000000         250      5311           5137         230 000        283 920       + 6 900      290 820"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-21",
+      "strany": [
+        7,
+        8
+      ],
+      "text": "-navýšení výdajové položky 5137 „MP - drobný hmotný dlouhodobý majetek“, § 5311, ORJ 250, ORG 9250000000, UZ 0 o částku 6.900,00 Kč"
+    },
+    "poznamka": null
+  },
+  {
+    "id": "rm-2026-j113-u526-p3",
+    "rok": 2026,
+    "cislo_ro": 55,
+    "usneseni_id": "rm-2026-j113-u526",
+    "usneseni_cislo": "RM 526/2026-113",
+    "jednani_id": "rm-2026-10-21",
+    "organ": "rada",
+    "vysledek_hlasovani": "prijato",
+    "strana": "vydaje",
+    "smer": "navyseni",
+    "polozka": "5162",
+    "nazev": "MP - služby telekomunikací a radiokomunikací",
+    "paragraf": "5311",
+    "orj": "250",
+    "org": "9250000000",
+    "uz": "0",
+    "zmena": 5000.0,
+    "castka": {
+      "hodnota": 5000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-navýšení výdajové položky 5162 „MP - služby telekomunikací a radiokomunikací“, § 5311, ORJ 250, ORG 9250000000, UZ 0 o částku 5.000,00 Kč"
+    },
+    "rozpocet": {
+      "schvaleny": 130000.0,
+      "pred_ro": 125000.0,
+      "po_ro": 130000.0,
+      "fond": null,
+      "citace": "0     9250000000         250      5311           5162         130 000        125 000       + 5 000      130 000"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-21",
+      "strany": [
+        7,
+        8
+      ],
+      "text": "-navýšení výdajové položky 5162 „MP - služby telekomunikací a radiokomunikací“, § 5311, ORJ 250, ORG 9250000000, UZ 0 o částku 5.000,00 Kč"
+    },
+    "poznamka": null
+  },
+  {
+    "id": "rm-2026-j113-u526-p4",
+    "rok": 2026,
+    "cislo_ro": 55,
+    "usneseni_id": "rm-2026-j113-u526",
+    "usneseni_cislo": "RM 526/2026-113",
+    "jednani_id": "rm-2026-10-21",
+    "organ": "rada",
+    "vysledek_hlasovani": "prijato",
+    "strana": "vydaje",
+    "smer": "navyseni",
+    "polozka": "5011",
+    "nazev": "MP - náhrady mezd při DPN",
+    "paragraf": "5311",
+    "orj": "250",
+    "org": "9250000201",
+    "uz": "0",
+    "zmena": 20000.0,
+    "castka": {
+      "hodnota": 20000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-navýšení výdajové položky 5011 „MP - náhrady mezd při DPN“, § 5311, ORJ 250, ORG 9250000201, UZ 0 o částku 20.000,00 Kč"
+    },
+    "rozpocet": {
+      "schvaleny": 110000.0,
+      "pred_ro": 110000.0,
+      "po_ro": 130000.0,
+      "fond": null,
+      "citace": "0     9250000201         250      5311           5011         110 000        110 000      + 20 000      130 000"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-21",
+      "strany": [
+        7,
+        8
+      ],
+      "text": "-navýšení výdajové položky 5011 „MP - náhrady mezd při DPN“, § 5311, ORJ 250, ORG 9250000201, UZ 0 o částku 20.000,00 Kč"
+    },
+    "poznamka": null
+  },
+  {
+    "id": "rm-2026-j113-u526-p5",
+    "rok": 2026,
+    "cislo_ro": 55,
+    "usneseni_id": "rm-2026-j113-u526",
+    "usneseni_cislo": "RM 526/2026-113",
+    "jednani_id": "rm-2026-10-21",
+    "organ": "rada",
+    "vysledek_hlasovani": "prijato",
+    "strana": "vydaje",
+    "smer": "snizeni",
+    "polozka": "5021",
+    "nazev": "MP - dohody",
+    "paragraf": "5311",
+    "orj": "250",
+    "org": "9250000000",
+    "uz": "0",
+    "zmena": -25000.0,
+    "castka": {
+      "hodnota": 25000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-snížení výdajové položky 5021 „MP - dohody“, § 5311, ORJ 250, ORG 9250000000, UZ 0 o částku 25.000,00 Kč"
+    },
+    "rozpocet": {
+      "schvaleny": 60000.0,
+      "pred_ro": 60000.0,
+      "po_ro": 35000.0,
+      "fond": null,
+      "citace": "0     9250000000         250      5311           5021          60 000         60 000       - 25 000       35 000"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-21",
+      "strany": [
+        7,
+        8
+      ],
+      "text": "-snížení výdajové položky 5021 „MP - dohody“, § 5311, ORJ 250, ORG 9250000000, UZ 0 o částku 25.000,00 Kč"
+    },
+    "poznamka": null
+  },
+  {
+    "id": "rm-2026-j113-u527-p1",
+    "rok": 2026,
+    "cislo_ro": 56,
+    "usneseni_id": "rm-2026-j113-u527",
+    "usneseni_cislo": "RM 527/2026-113",
+    "jednani_id": "rm-2026-10-21",
+    "organ": "rada",
+    "vysledek_hlasovani": "prijato",
+    "strana": "vydaje",
+    "smer": "z",
+    "polozka": "6121",
+    "nazev": "Snížení energetické náročnosti DPS 3",
+    "paragraf": "3612",
+    "orj": "750",
+    "org": "6227000000",
+    "uz": "0",
+    "zmena": -1165000.0,
+    "castka": {
+      "hodnota": 1165000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-z položky 6121, „Snížení energetické náročnosti DPS 3“, § 3612, ORJ 750, ORG 6227000000, UZ 0 v částce Kč 1.165.000,00"
+    },
+    "rozpocet": {
+      "schvaleny": 14000000.0,
+      "pred_ro": 7250000.0,
+      "po_ro": 6085000.0,
+      "fond": null,
+      "citace": "56.            0       6227000000     750         3612       6121          14 000 000       7 250 000     - 1 165 000      6 085 000"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-21",
+      "strany": [
+        8
+      ],
+      "text": "-z položky 6121, „Snížení energetické náročnosti DPS 3“, § 3612, ORJ 750, ORG 6227000000, UZ 0 v částce Kč 1.165.000,00"
+    },
+    "poznamka": null
+  },
+  {
+    "id": "rm-2026-j113-u527-p2",
+    "rok": 2026,
+    "cislo_ro": 56,
+    "usneseni_id": "rm-2026-j113-u527",
+    "usneseni_cislo": "RM 527/2026-113",
+    "jednani_id": "rm-2026-10-21",
+    "organ": "rada",
+    "vysledek_hlasovani": "prijato",
+    "strana": "vydaje",
+    "smer": "do",
+    "polozka": "6121",
+    "nazev": "Ubytování sportovní hala",
+    "paragraf": "2142",
+    "orj": "750",
+    "org": "6219000000",
+    "uz": "0",
+    "zmena": 1165000.0,
+    "castka": {
+      "hodnota": 1165000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-do položky 6121 „Ubytování sportovní hala“, § 2142, ORJ 750, ORG 6219000000, UZ 0 v částce Kč 1.165.000,00"
+    },
+    "rozpocet": {
+      "schvaleny": 56000000.0,
+      "pred_ro": 61860000.0,
+      "po_ro": 63025000.0,
+      "fond": null,
+      "citace": "0       6219000000     750         2142       6121          56 000 000      61 860 000     + 1 165 000     63 025 000"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-21",
+      "strany": [
+        8
+      ],
+      "text": "-do položky 6121 „Ubytování sportovní hala“, § 2142, ORJ 750, ORG 6219000000, UZ 0 v částce Kč 1.165.000,00"
+    },
+    "poznamka": null
+  },
+  {
+    "id": "rm-2026-j113-u542-p1",
+    "rok": 2026,
+    "cislo_ro": 57,
+    "usneseni_id": "rm-2026-j113-u542",
+    "usneseni_cislo": "RM 542/2026-113",
+    "jednani_id": "rm-2026-10-21",
+    "organ": "rada",
+    "vysledek_hlasovani": "prijato",
+    "strana": "vydaje",
+    "smer": "z",
+    "polozka": "6121",
+    "nazev": "Přístavba tělocvičen",
+    "paragraf": "3412",
+    "orj": "750",
+    "org": "6230000000",
+    "uz": "0",
+    "zmena": -253000.0,
+    "castka": {
+      "hodnota": 253000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-z položky 6121 „Přístavba tělocvičen“, § 3412, ORJ 750, ORG 6230000000, UZ 0 v částce Kč 253.000,00"
+    },
+    "rozpocet": {
+      "schvaleny": 70000000.0,
+      "pred_ro": 59245143.49,
+      "po_ro": 58992143.49,
+      "fond": null,
+      "citace": "57.          0    6230000000     750        3412    6121     70 000 000,00   59 245 143,49   - 253 000,00    58 992 143,49"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-21",
+      "strany": [
+        13
+      ],
+      "text": "-z položky 6121 „Přístavba tělocvičen“, § 3412, ORJ 750, ORG 6230000000, UZ 0 v částce Kč 253.000,00"
+    },
+    "poznamka": null
+  },
+  {
+    "id": "rm-2026-j113-u542-p2",
+    "rok": 2026,
+    "cislo_ro": 57,
+    "usneseni_id": "rm-2026-j113-u542",
+    "usneseni_cislo": "RM 542/2026-113",
+    "jednani_id": "rm-2026-10-21",
+    "organ": "rada",
+    "vysledek_hlasovani": "prijato",
+    "strana": "vydaje",
+    "smer": "do",
+    "polozka": "5137",
+    "nazev": "Přístavba tělocvičen - vybavení",
+    "paragraf": "3412",
+    "orj": "750",
+    "org": "9750000000",
+    "uz": "0",
+    "zmena": 253000.0,
+    "castka": {
+      "hodnota": 253000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-do položky 5137 „Přístavba tělocvičen - vybavení“, § 3412, ORJ 750, ORG 9750000000, UZ 0 v částce Kč 253.000,00"
+    },
+    "rozpocet": {
+      "schvaleny": 0.0,
+      "pred_ro": 334000.0,
+      "po_ro": 587000.0,
+      "fond": null,
+      "citace": "0    9750000000     750        3412    5137              0,00     334 000,00    +253 000,00        587 000,00"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-21",
+      "strany": [
+        13
+      ],
+      "text": "-do položky 5137 „Přístavba tělocvičen - vybavení“, § 3412, ORJ 750, ORG 9750000000, UZ 0 v částce Kč 253.000,00"
+    },
+    "poznamka": null
+  },
+  {
+    "id": "rm-2026-j113-u543-p1",
+    "rok": 2026,
+    "cislo_ro": 58,
+    "usneseni_id": "rm-2026-j113-u543",
+    "usneseni_cislo": "RM 543/2026-113",
+    "jednani_id": "rm-2026-10-21",
+    "organ": "rada",
+    "vysledek_hlasovani": "prijato",
+    "strana": "vydaje",
+    "smer": "z",
+    "polozka": "5169",
+    "nazev": "Nákup ostatních služeb (příkazní smlouvy)",
+    "paragraf": "6171",
+    "orj": "770",
+    "org": "9770000001",
+    "uz": "0",
+    "zmena": -200000.0,
+    "castka": {
+      "hodnota": 200000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "- z položky 5169 „Nákup ostatních služeb (příkazní smlouvy)“, § 6171, ORJ 770, ORG 9770000001, UZ 0 v částce Kč 200.000,00"
+    },
+    "rozpocet": {
+      "schvaleny": 400000.0,
+      "pred_ro": 400000.0,
+      "po_ro": 200000.0,
+      "fond": null,
+      "citace": "58.            0       9770000001      770    6171       5169       400 000      400 000      - 200 000       200 000"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-21",
+      "strany": [
+        13,
+        14
+      ],
+      "text": "- z položky 5169 „Nákup ostatních služeb (příkazní smlouvy)“, § 6171, ORJ 770, ORG 9770000001, UZ 0 v částce Kč 200.000,00"
+    },
+    "poznamka": null
+  },
+  {
+    "id": "rm-2026-j113-u543-p2",
+    "rok": 2026,
+    "cislo_ro": 58,
+    "usneseni_id": "rm-2026-j113-u543",
+    "usneseni_cislo": "RM 543/2026-113",
+    "jednani_id": "rm-2026-10-21",
+    "organ": "rada",
+    "vysledek_hlasovani": "prijato",
+    "strana": "vydaje",
+    "smer": "z",
+    "polozka": "5195",
+    "nazev": "Odvody za neplnění povinnosti zaměstnávat zdrav.postižené",
+    "paragraf": "6171",
+    "orj": "770",
+    "org": "9770000201",
+    "uz": "0",
+    "zmena": -180000.0,
+    "castka": {
+      "hodnota": 180000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "- z položky 5195 „Odvody za neplnění povinnosti zaměstnávat zdrav.postižené“, § 6171, ORJ 770, ORG 9770000201, UZ 0 v částce Kč 180.000,00"
+    },
+    "rozpocet": {
+      "schvaleny": 350000.0,
+      "pred_ro": 345000.0,
+      "po_ro": 165000.0,
+      "fond": null,
+      "citace": "0       9770000201      770    6171       5195       350 000      345 000      - 180 000       165 000"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-21",
+      "strany": [
+        13,
+        14
+      ],
+      "text": "- z položky 5195 „Odvody za neplnění povinnosti zaměstnávat zdrav.postižené“, § 6171, ORJ 770, ORG 9770000201, UZ 0 v částce Kč 180.000,00"
+    },
+    "poznamka": null
+  },
+  {
+    "id": "rm-2026-j113-u543-p3",
+    "rok": 2026,
+    "cislo_ro": 58,
+    "usneseni_id": "rm-2026-j113-u543",
+    "usneseni_cislo": "RM 543/2026-113",
+    "jednani_id": "rm-2026-10-21",
+    "organ": "rada",
+    "vysledek_hlasovani": "prijato",
+    "strana": "vydaje",
+    "smer": "z",
+    "polozka": "5901",
+    "nazev": "Rezervy běžných výdajů",
+    "paragraf": "6409",
+    "orj": "800",
+    "org": "9800000000",
+    "uz": "0",
+    "zmena": -500000.0,
+    "castka": {
+      "hodnota": 500000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "- z položky 5901 „Rezervy běžných výdajů“, § 6409, ORJ 800, ORG 9800000000, UZ 0 v částce Kč 500.000,00"
+    },
+    "rozpocet": {
+      "schvaleny": 7680000.0,
+      "pred_ro": 2325164.0,
+      "po_ro": 1825164.0,
+      "fond": null,
+      "citace": "0       9800000000      800    6409       5901      7 680 000    2 325 164     - 500 000     1 825 164"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-21",
+      "strany": [
+        13,
+        14
+      ],
+      "text": "- z položky 5901 „Rezervy běžných výdajů“, § 6409, ORJ 800, ORG 9800000000, UZ 0 v částce Kč 500.000,00"
+    },
+    "poznamka": null
+  },
+  {
+    "id": "rm-2026-j113-u543-p4",
+    "rok": 2026,
+    "cislo_ro": 58,
+    "usneseni_id": "rm-2026-j113-u543",
+    "usneseni_cislo": "RM 543/2026-113",
+    "jednani_id": "rm-2026-10-21",
+    "organ": "rada",
+    "vysledek_hlasovani": "prijato",
+    "strana": "vydaje",
+    "smer": "do",
+    "polozka": "5011",
+    "nazev": "Platy zaměstnanců v prac.poměru - úřad",
+    "paragraf": "6171",
+    "orj": "770",
+    "org": "9770000000",
+    "uz": "0",
+    "zmena": 657934.0,
+    "castka": {
+      "hodnota": 657934.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-do položky 5011 „Platy zaměstnanců v prac.poměru - úřad“, § 6171, ORJ 770, ORG 9770000000, UZ 0 v částce Kč 657.934,00"
+    },
+    "rozpocet": {
+      "schvaleny": 48800000.0,
+      "pred_ro": 52400000.0,
+      "po_ro": 53057934.0,
+      "fond": null,
+      "citace": "0       9770000000      770    6171       5011     48 800 000   52 400 000    + 657 934     53 057 934"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-21",
+      "strany": [
+        13,
+        14
+      ],
+      "text": "-do položky 5011 „Platy zaměstnanců v prac.poměru - úřad“, § 6171, ORJ 770, ORG 9770000000, UZ 0 v částce Kč 657.934,00"
+    },
+    "poznamka": null
+  },
+  {
+    "id": "rm-2026-j113-u543-p5",
+    "rok": 2026,
+    "cislo_ro": 58,
+    "usneseni_id": "rm-2026-j113-u543",
+    "usneseni_cislo": "RM 543/2026-113",
+    "jednani_id": "rm-2026-10-21",
+    "organ": "rada",
+    "vysledek_hlasovani": "prijato",
+    "strana": "vydaje",
+    "smer": "do",
+    "polozka": "5031",
+    "nazev": "Povinné poj.na soc.zabezpečení - zaměst.a OOV",
+    "paragraf": "6171",
+    "orj": "770",
+    "org": "9770000000",
+    "uz": "0",
+    "zmena": 162936.0,
+    "castka": {
+      "hodnota": 162936.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-do položky 5031 „Povinné poj.na soc.zabezpečení - zaměst.a OOV“, § 6171, ORJ 770, ORG 9770000000, UZ 0 v částce Kč 162.936,00"
+    },
+    "rozpocet": {
+      "schvaleny": 12250000.0,
+      "pred_ro": 13142800.0,
+      "po_ro": 13305736.0,
+      "fond": null,
+      "citace": "0       9770000000      770    6171       5031     12 250 000   13 142 800    + 162 936     13 305 736"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-21",
+      "strany": [
+        13,
+        14
+      ],
+      "text": "-do položky 5031 „Povinné poj.na soc.zabezpečení - zaměst.a OOV“, § 6171, ORJ 770, ORG 9770000000, UZ 0 v částce Kč 162.936,00"
+    },
+    "poznamka": null
+  },
+  {
+    "id": "rm-2026-j113-u543-p6",
+    "rok": 2026,
+    "cislo_ro": 58,
+    "usneseni_id": "rm-2026-j113-u543",
+    "usneseni_cislo": "RM 543/2026-113",
+    "jednani_id": "rm-2026-10-21",
+    "organ": "rada",
+    "vysledek_hlasovani": "prijato",
+    "strana": "vydaje",
+    "smer": "do",
+    "polozka": "5032",
+    "nazev": "Povinné poj. na zdrav.pojištění - zaměst. a OOV",
+    "paragraf": "6171",
+    "orj": "770",
+    "org": "9770000000",
+    "uz": "0",
+    "zmena": 59130.0,
+    "castka": {
+      "hodnota": 59130.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-do položky 5032 „Povinné poj. na zdrav.pojištění - zaměst. a OOV“, § 6171, ORJ 770, ORG 9770000000, UZ 0 v částce Kč 59.130,00"
+    },
+    "rozpocet": {
+      "schvaleny": 4420000.0,
+      "pred_ro": 4744000.0,
+      "po_ro": 4803130.0,
+      "fond": null,
+      "citace": "0       9770000000      770    6171       5032      4 420 000    4 744 000     + 59 130      4 803 130"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-21",
+      "strany": [
+        13,
+        14
+      ],
+      "text": "-do položky 5032 „Povinné poj. na zdrav.pojištění - zaměst. a OOV“, § 6171, ORJ 770, ORG 9770000000, UZ 0 v částce Kč 59.130,00"
+    },
+    "poznamka": null
+  },
+  {
+    "id": "rm-2026-j114-u550-p1",
+    "rok": 2026,
+    "cislo_ro": 59,
+    "usneseni_id": "rm-2026-j114-u550",
+    "usneseni_cislo": "RM 550/2026-114",
+    "jednani_id": "rm-2026-10-30",
+    "organ": "rada",
+    "vysledek_hlasovani": "prijato",
+    "strana": "prijmy",
+    "smer": "navyseni",
+    "polozka": "2131",
+    "nazev": "Pronájem - pozemky - ostatní",
+    "paragraf": "3639",
+    "orj": "800",
+    "org": "0",
+    "uz": "0",
+    "zmena": 50000.0,
+    "castka": {
+      "hodnota": 50000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-navýšení příjmové položky 2131 „Pronájem - pozemky - ostatní“, § 3639, ORJ 800, ORG 0, UZ 0 o částku 50.000,00 Kč"
+    },
+    "rozpocet": {
+      "schvaleny": 407000.0,
+      "pred_ro": 607000.0,
+      "po_ro": 657000.0,
+      "fond": null,
+      "citace": "58.             0            0              800    3639       2131       407 000    607 000      + 50 000    657 000"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "strany": [
+        4
+      ],
+      "text": "-navýšení příjmové položky 2131 „Pronájem - pozemky - ostatní“, § 3639, ORJ 800, ORG 0, UZ 0 o částku 50.000,00 Kč"
+    },
+    "poznamka": null
+  },
+  {
+    "id": "rm-2026-j114-u550-p2",
+    "rok": 2026,
+    "cislo_ro": 59,
+    "usneseni_id": "rm-2026-j114-u550",
+    "usneseni_cislo": "RM 550/2026-114",
+    "jednani_id": "rm-2026-10-30",
+    "organ": "rada",
+    "vysledek_hlasovani": "prijato",
+    "strana": "vydaje",
+    "smer": "navyseni",
+    "polozka": "5166",
+    "nazev": "Znalecké posudky",
+    "paragraf": "3639",
+    "orj": "800",
+    "org": "9800004004",
+    "uz": "0",
+    "zmena": 50000.0,
+    "castka": {
+      "hodnota": 50000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-navýšení výdajové položky 5166 „Znalecké posudky“, § 3639, ORJ 800, ORG 9800004004, UZ 0 o částku 50.000,00 Kč"
+    },
+    "rozpocet": {
+      "schvaleny": 100000.0,
+      "pred_ro": 288000.0,
+      "po_ro": 338000.0,
+      "fond": null,
+      "citace": "58.             0       9800004004          800    3639       5166       100 000    288 000      + 50 000    338 000"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-10-30",
+      "strany": [
+        4
+      ],
+      "text": "-navýšení výdajové položky 5166 „Znalecké posudky“, § 3639, ORJ 800, ORG 9800004004, UZ 0 o částku 50.000,00 Kč"
+    },
+    "poznamka": null
+  },
+  {
+    "id": "rm-2026-j1-u7-p1",
+    "rok": 2026,
+    "cislo_ro": 60,
+    "usneseni_id": "rm-2026-j1-u7",
+    "usneseni_cislo": "RM 7/2026-1",
+    "jednani_id": "rm-2026-11-04",
+    "organ": "rada",
+    "vysledek_hlasovani": "prijato",
+    "strana": "vydaje",
+    "smer": "z",
+    "polozka": "5171",
+    "nazev": "Opravy vodovodů (hydranty, šoupata, armatury)",
+    "paragraf": "2310",
+    "orj": "750",
+    "org": "5020005020",
+    "uz": "0",
+    "zmena": -223850.0,
+    "castka": {
+      "hodnota": 223850.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-z položky 5171 „Opravy vodovodů (hydranty, šoupata, armatury)“, § 2310, ORJ 750, ORG 5020005020, UZ 0 v částce Kč 223.850,00"
+    },
+    "rozpocet": {
+      "schvaleny": 1246300.0,
+      "pred_ro": 1246300.0,
+      "po_ro": 1022450.0,
+      "fond": "VHI",
+      "citace": "60.             0       5020005020     750    2310       5171     1 246 300   1 246 300     - 223 850   1 022 450"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-11-04",
+      "strany": [
+        3
+      ],
+      "text": "-z položky 5171 „Opravy vodovodů (hydranty, šoupata, armatury)“, § 2310, ORJ 750, ORG 5020005020, UZ 0 v částce Kč 223.850,00"
+    },
+    "poznamka": null
+  },
+  {
+    "id": "rm-2026-j1-u7-p2",
+    "rok": 2026,
+    "cislo_ro": 60,
+    "usneseni_id": "rm-2026-j1-u7",
+    "usneseni_cislo": "RM 7/2026-1",
+    "jednani_id": "rm-2026-11-04",
+    "organ": "rada",
+    "vysledek_hlasovani": "prijato",
+    "strana": "vydaje",
+    "smer": "do",
+    "polozka": "5171",
+    "nazev": "Opravy ČOV",
+    "paragraf": "2321",
+    "orj": "750",
+    "org": "5020005022",
+    "uz": "0",
+    "zmena": 223850.0,
+    "castka": {
+      "hodnota": 223850.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-do položky 5171 „Opravy ČOV“, § 2321, ORJ 750, ORG 5020005022, UZ 0 v částce Kč 223.850,00"
+    },
+    "rozpocet": {
+      "schvaleny": 302500.0,
+      "pred_ro": 302500.0,
+      "po_ro": 526350.0,
+      "fond": "VHI",
+      "citace": "0       5020005022     750    2321       5171       302 500    302 500     + 223 850     526 350"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-11-04",
+      "strany": [
+        3
+      ],
+      "text": "-do položky 5171 „Opravy ČOV“, § 2321, ORJ 750, ORG 5020005022, UZ 0 v částce Kč 223.850,00"
+    },
+    "poznamka": null
+  },
+  {
+    "id": "rm-2026-j1-u9-p1",
+    "rok": 2026,
+    "cislo_ro": 61,
+    "usneseni_id": "rm-2026-j1-u9",
+    "usneseni_cislo": "RM 9/2026-1",
+    "jednani_id": "rm-2026-11-04",
+    "organ": "rada",
+    "vysledek_hlasovani": "prijato",
+    "strana": "vydaje",
+    "smer": "z",
+    "polozka": "5164",
+    "nazev": "Nájemné",
+    "paragraf": "3319",
+    "orj": "770",
+    "org": "9770000000",
+    "uz": "0",
+    "zmena": -30000.0,
+    "castka": {
+      "hodnota": 30000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-z položky 5164 „Nájemné“, § 3319, ORJ 770, ORG 9770000000, UZ 0 v částce Kč 30.000,00"
+    },
+    "rozpocet": {
+      "schvaleny": 185000.0,
+      "pred_ro": 185000.0,
+      "po_ro": 155000.0,
+      "fond": null,
+      "citace": "61.             0         9770000000   770    3319     5164      185 000     185 000      - 30 000      155 000"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-11-04",
+      "strany": [
+        4
+      ],
+      "text": "-z položky 5164 „Nájemné“, § 3319, ORJ 770, ORG 9770000000, UZ 0 v částce Kč 30.000,00"
+    },
+    "poznamka": null
+  },
+  {
+    "id": "rm-2026-j1-u9-p2",
+    "rok": 2026,
+    "cislo_ro": 61,
+    "usneseni_id": "rm-2026-j1-u9",
+    "usneseni_cislo": "RM 9/2026-1",
+    "jednani_id": "rm-2026-11-04",
+    "organ": "rada",
+    "vysledek_hlasovani": "prijato",
+    "strana": "vydaje",
+    "smer": "do",
+    "polozka": "5173",
+    "nazev": "Cestovné – tuzemské cesty",
+    "paragraf": "6171",
+    "orj": "770",
+    "org": "9770000201",
+    "uz": "0",
+    "zmena": 30000.0,
+    "castka": {
+      "hodnota": 30000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-do položky 5173 „Cestovné – tuzemské cesty“, § 6171, ORJ 770, ORG 9770000201, UZ 0 v částce Kč 30.000,00"
+    },
+    "rozpocet": {
+      "schvaleny": 150000.0,
+      "pred_ro": 150000.0,
+      "po_ro": 180000.0,
+      "fond": null,
+      "citace": "0         9770000201   770    6171     5173      150 000     150 000     + 30 000       180 000"
+    },
+    "citace": {
+      "dokument_id": "zapis-rm-2026-11-04",
+      "strany": [
+        4
+      ],
+      "text": "-do položky 5173 „Cestovné – tuzemské cesty“, § 6171, ORJ 770, ORG 9770000201, UZ 0 v částce Kč 30.000,00"
+    },
+    "poznamka": null
+  },
+  {
+    "id": "zm-2026-j31-u77-p1",
+    "rok": 2026,
+    "cislo_ro": 48,
+    "usneseni_id": "zm-2026-j31-u77",
+    "usneseni_cislo": "ZM 77/2026-31",
+    "jednani_id": "zm-2026-09-21",
+    "organ": "zastupitelstvo",
+    "vysledek_hlasovani": "prijato",
+    "strana": "vydaje",
+    "smer": "snizeni",
+    "polozka": "6901",
+    "nazev": "Rezervy kapitálových výdajů",
+    "paragraf": "6409",
+    "orj": "800",
+    "org": "6093000000",
+    "uz": "0",
+    "zmena": -20000000.0,
+    "castka": {
+      "hodnota": 20000000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-snížení výdajové položky 6901 „Rezervy kapitálových výdajů“, § 6409, ORJ 800, ORG 6093000000, UZ 0 o částku 20.000.000,00 Kč"
+    },
+    "rozpocet": {
+      "schvaleny": 26000000.0,
+      "pred_ro": 30227143.96,
+      "po_ro": 10227143.96,
+      "fond": null,
+      "citace": "48.             0       6093000000     800    6409     6901     26 000 000   30 227 143,96   - 20 000 000    10 227 143,96"
+    },
+    "citace": {
+      "dokument_id": "zapis-zm-2026-09-21",
+      "strany": [
+        3
+      ],
+      "text": "-snížení výdajové položky 6901 „Rezervy kapitálových výdajů“, § 6409, ORJ 800, ORG 6093000000, UZ 0 o částku 20.000.000,00 Kč"
+    },
+    "poznamka": null
+  },
+  {
+    "id": "zm-2026-j31-u77-p2",
+    "rok": 2026,
+    "cislo_ro": 48,
+    "usneseni_id": "zm-2026-j31-u77",
+    "usneseni_cislo": "ZM 77/2026-31",
+    "jednani_id": "zm-2026-09-21",
+    "organ": "zastupitelstvo",
+    "vysledek_hlasovani": "prijato",
+    "strana": "vydaje",
+    "smer": "navyseni",
+    "polozka": "5349",
+    "nazev": "Jednotný příděl do lázeňského investičního fondu",
+    "paragraf": "6330",
+    "orj": "800",
+    "org": "9800000000",
+    "uz": "0",
+    "zmena": 20000000.0,
+    "castka": {
+      "hodnota": 20000000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-navýšení výdajové položky 5349 „Jednotný příděl do lázeňského investičního fondu“, § 6330, ORJ 800, ORG 9800000000, UZ 0 o částku 20.000.000,00 Kč"
+    },
+    "rozpocet": {
+      "schvaleny": 0.0,
+      "pred_ro": 0.0,
+      "po_ro": 20000000.0,
+      "fond": null,
+      "citace": "0       9800000000     800    6330     5349             0               0    + 20 000 000    20 000 000,00"
+    },
+    "citace": {
+      "dokument_id": "zapis-zm-2026-09-21",
+      "strany": [
+        3
+      ],
+      "text": "-navýšení výdajové položky 5349 „Jednotný příděl do lázeňského investičního fondu“, § 6330, ORJ 800, ORG 9800000000, UZ 0 o částku 20.000.000,00 Kč"
+    },
+    "poznamka": null
+  },
+  {
+    "id": "zm-2026-j31-u77-p3",
+    "rok": 2026,
+    "cislo_ro": 48,
+    "usneseni_id": "zm-2026-j31-u77",
+    "usneseni_cislo": "ZM 77/2026-31",
+    "jednani_id": "zm-2026-09-21",
+    "organ": "zastupitelstvo",
+    "vysledek_hlasovani": "prijato",
+    "strana": "prijmy",
+    "smer": "navyseni",
+    "polozka": "4134",
+    "nazev": "Jednotný příděl do lázeňského investičního fondu",
+    "paragraf": "6330",
+    "orj": "800",
+    "org": "5040004040",
+    "uz": null,
+    "zmena": 20000000.0,
+    "castka": {
+      "hodnota": 20000000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-navýšení příjmové položky 4134 „Jednotný příděl do lázeňského investičního fondu“, § 6330, ORJ 800, ORG 5040004040, UZ o částku 20.000.000,00 Kč"
+    },
+    "rozpocet": {
+      "schvaleny": 0.0,
+      "pred_ro": 0.0,
+      "po_ro": 20000000.0,
+      "fond": "LIF",
+      "citace": "48.             0       5040005040     800    6330     4134             0               0    + 20 000 000    20 000 000,00"
+    },
+    "citace": {
+      "dokument_id": "zapis-zm-2026-09-21",
+      "strany": [
+        3
+      ],
+      "text": "-navýšení příjmové položky 4134 „Jednotný příděl do lázeňského investičního fondu“, § 6330, ORJ 800, ORG 5040004040, UZ o částku 20.000.000,00 Kč"
+    },
+    "poznamka": "ORG v tabulce 5040005040 se liší od textu usnesení 5040004040"
+  },
+  {
+    "id": "zm-2026-j31-u77-p4",
+    "rok": 2026,
+    "cislo_ro": 48,
+    "usneseni_id": "zm-2026-j31-u77",
+    "usneseni_cislo": "ZM 77/2026-31",
+    "jednani_id": "zm-2026-09-21",
+    "organ": "zastupitelstvo",
+    "vysledek_hlasovani": "prijato",
+    "strana": "vydaje",
+    "smer": "navyseni",
+    "polozka": "6121",
+    "nazev": "TZ nemovitého majetku v pronájmu společnosti SLT",
+    "paragraf": "3613",
+    "orj": "750",
+    "org": "5040005041",
+    "uz": "0",
+    "zmena": 20000000.0,
+    "castka": {
+      "hodnota": 20000000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-navýšení výdajové položky 6121 „TZ nemovitého majetku v pronájmu společnosti SLT“, § 3613, ORJ 750, ORG 5040005041, UZ 0 o částku 20.000.000,00 Kč"
+    },
+    "rozpocet": {
+      "schvaleny": 54200000.0,
+      "pred_ro": 54200000.0,
+      "po_ro": 74200000.0,
+      "fond": "LIF",
+      "citace": "48.             0       5040005041     750    3613     6121     54 200 000     54 200 000    + 20 000 000       74 200 000"
+    },
+    "citace": {
+      "dokument_id": "zapis-zm-2026-09-21",
+      "strany": [
+        3
+      ],
+      "text": "-navýšení výdajové položky 6121 „TZ nemovitého majetku v pronájmu společnosti SLT“, § 3613, ORJ 750, ORG 5040005041, UZ 0 o částku 20.000.000,00 Kč"
+    },
+    "poznamka": null
+  }
+]
