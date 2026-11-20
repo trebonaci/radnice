@@ -56,7 +56,9 @@ jobs:
               const sha = pr.head.sha;
               // 4. pravidla a oprávnění mění jen Ondřej
               const soubory = await github.paginate(github.rest.pulls.listFiles, {owner, repo, pull_number: pr.number, per_page: 100});
-              const chranene = soubory.map(f => f.filename).filter(f => CHRANENE.some(r => r.test(f)));
+              // u přejmenování i původní cesta (přesun AGENTS.md jinam nesmí obejít předání člověku)
+              const chranene = soubory.flatMap(f => [f.filename, f.previous_filename].filter(Boolean))
+                .filter(f => CHRANENE.some(r => r.test(f)));
               if (chranene.length) {
                 await github.rest.issues.addLabels({owner, repo, issue_number: pr.number, labels: ['potrebuje-cloveka']});
                 await github.rest.issues.createComment({owner, repo, issue_number: pr.number,
