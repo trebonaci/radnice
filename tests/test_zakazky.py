@@ -96,14 +96,14 @@ def test_stahni_jen_potrebne_roky_a_kontroluje_ico(koren):
             return b"<html>Chyba</html>"
         return obsah
 
-    zmeny, chyby = ezak.stahni(koren, date(2026, 11, 20), ziskej, pauza=0)
+    zmeny, chyby = ezak.stahni(koren, date(2026, 11, 20), ziskej, pauza=0, max_stazeni=100)
     assert "00247618/2026-2.xml" in zmeny and (koren / "raw/ezak/00247618/2019-1.xml").exists()
     assert any("IČO" in c for c in chyby) and any("kořen" in c for c in chyby)
     assert not (koren / "raw/ezak/25179896").exists()
-    assert "od=01072026&do=20112026" in [u for u in volano if "profile_display_2." in u][-1]
+    assert any("od=01072026&do=20112026" in u for u in volano if "profile_display_2." in u)
     # druhý běh: uzavřené roky už ne, aktuální ano
     volano.clear()
-    ezak.stahni(koren, date(2026, 11, 21), ziskej, pauza=0)
+    ezak.stahni(koren, date(2026, 11, 21), ziskej, pauza=0, max_stazeni=100)
     assert [u for u in volano if "profile_display_2." in u] == [
         "https://zakazky.mesto-trebon.cz/profile_display_2.html/XMLdataVZ?od=01072026&do=21112026"]
     m = json.loads((koren / "raw/ezak/manifest.json").read_text(encoding="utf-8"))
@@ -141,10 +141,10 @@ def test_jmeno_s_titulem_v_predmetu_zakazky_se_maskuje(koren):
 def test_stazeni_beze_zmeny_nemeni_manifest(koren):
     """Jen nové datum stažení nesmí měnit raw/ezak (jinak by každý běh zakládal PR; Codex P1, #74)."""
     obsah = (VZORKY / "2026.xml").read_bytes()
-    ezak.stahni(koren, date(2026, 11, 20), lambda u: obsah if "display_2." in u else b"<x/>", pauza=0)
+    ezak.stahni(koren, date(2026, 11, 20), lambda u: obsah if "display_2." in u else b"<x/>", pauza=0, max_stazeni=100)
     m = koren / "raw/ezak/manifest.json"
     pred = m.read_bytes()
-    ezak.stahni(koren, date(2026, 11, 21), lambda u: obsah if "display_2." in u else b"<x/>", pauza=0)
+    ezak.stahni(koren, date(2026, 11, 21), lambda u: obsah if "display_2." in u else b"<x/>", pauza=0, max_stazeni=100)
     assert m.read_bytes() == pred
 
 
@@ -158,3 +158,19 @@ def test_urednik_bez_titulu_v_zakazce_funkci(koren):
                  if "Ing." not in (v if isinstance(v, str) else v["text"]))
     vysl = anonymizuj_urednici(f"Kontaktní osoba: {jmeno}.", osoby)
     assert jmeno not in vysl
+
+
+
+def test_limit_za_beh_rozpracovane_prvni_a_jistic(koren):
+    obsah = (VZORKY / "2026.xml").read_bytes()
+    volano = []
+    ezak.stahni(koren, date(2026, 11, 20), lambda u: volano.append(u) or (obsah if "display_2." in u else b"<x/>"),
+                pauza=0, max_stazeni=8)
+    assert len(volano) == 8 and "od=01072026" in volano[0]               # limit; aktuální pololetí jako první
+
+    def vypadek(url):
+        volano.append(url)
+        raise TimeoutError("timed out")
+    volano.clear()
+    _, chyby = ezak.stahni(koren, date(2026, 11, 20), vypadek, pauza=0, max_stazeni=8)
+    assert len(volano) == 3 and any("server neodpovídá" in c for c in chyby)   # 3 timeouty za sebou → konec

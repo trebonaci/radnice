@@ -22,7 +22,7 @@ concurrency:
 jobs:
   beh:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 75    # zdroje (E-ZAK, registr smluv) doplňují historii po částech
     env:
       GH_TOKEN: ${{ github.token }}
       ODKAZ_BEHU: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
@@ -44,7 +44,7 @@ jobs:
         run: |
           python -m pipeline.zdroje.ezak || echo "::warning::E-ZAK – některé exporty se nepodařilo stáhnout (viz log)"
 
-      - name: Registr smluv (měsíční dumpy, nejvýš 10 za běh; chyba nezastaví běh)
+      - name: Registr smluv (měsíční dumpy, nejvýš 5 za běh; chyba nezastaví běh)
         run: |
           python -m pipeline.zdroje.registr_smluv || echo "::warning::Registr smluv – některé dumpy se nepodařilo zpracovat (viz log)"
 

@@ -30,6 +30,8 @@ NS = "{urn:cz:isvz:mmr:schemas:vz-z-profilu-zadavatele:v100}"
 PRVNI_ROK = 2019          # profil města má evidenční číslo Z2019-003053
 USER_AGENT = "trebonaci-radnice/0.1 (+https://github.com/trebonaci/radnice; obcansky prehled)"
 PAUZA_S = 2.0
+MAX_STAZENI = 8             # za běh; historie se doplní postupně (server je pomalý, ostrý běh 20. 11. 2026)
+MAX_CHYB_ZA_SEBOU = 3       # pak server považujeme za nedostupný a zbytek odložíme na příští běh
 
 
 class ChybaZdroje(Exception):
@@ -38,7 +40,7 @@ class ChybaZdroje(Exception):
 
 def ziskej_http(url: str) -> bytes:
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(req, timeout=120) as r:
+    with urllib.request.urlopen(req, timeout=180) as r:
         if r.status != 200:
             raise ChybaZdroje(f"HTTP {r.status}: {url}")
         return r.read()
@@ -83,8 +85,9 @@ def potreba_stahnout(konec: date, zaznam: dict | None, dnes: date) -> bool:
 
 
 def stahni(koren: Path = KOREN, dnes: date | None = None,
-           ziskej: Callable[[str], bytes] = ziskej_http, pauza: float = PAUZA_S) -> tuple[list[str], list[str]]:
-    """Stáhne chybějící a aktuální roky. Vrací (změněné soubory, chyby). Chyba jednoho souboru
+           ziskej: Callable[[str], bytes] = ziskej_http, pauza: float = PAUZA_S,
+           max_stazeni: int = MAX_STAZENI) -> tuple[list[str], list[str]]:
+    """Stáhne nejvýš `max_stazeni` období: nejdřív rozpracovaná, pak chybějící od nejnovějších. Vrací (změněné soubory, chyby). Chyba jednoho souboru
     nezastaví ostatní a nepřepíše poslední správnou verzi. Manifest se mění jen se změnou obsahu
     (nebo když se rok uzavře), aby samotné stažení beze změny nezakládalo PR (Codex P1, #74)."""
     dnes = dnes or date.today()
@@ -93,24 +96,32 @@ def stahni(koren: Path = KOREN, dnes: date | None = None,
     manifest = json.loads(cesta_manifestu.read_text(encoding="utf-8")) if cesta_manifestu.exists() else {}
     puvodni = json.dumps(manifest, sort_keys=True)
     zmeny, chyby = [], []
+    fronta = []
     for s in profily(koren):
         for rok, pul in [(r, p) for r in range(PRVNI_ROK, dnes.year + 1) for p in (1, 2)]:
             od, konec = obdobi(rok, pul)
-            if od > dnes:
-                continue
             rel = f"{s['ico']}/{rok}-{pul}.xml"
-            if not potreba_stahnout(konec, manifest.get(rel), dnes):
-                continue
+            if od <= dnes and potreba_stahnout(konec, manifest.get(rel), dnes):
+                fronta.append((konec < dnes, -rok, -pul, s, rel, od, konec))   # rozpracovaná první
+    fronta.sort(key=lambda x: x[:3])
+    za_sebou = 0
+    for _, _, _, s, rel, od, konec in fronta[:max_stazeni]:
+        if za_sebou >= MAX_CHYB_ZA_SEBOU:
+            chyby.append(f"server neodpovídá ({za_sebou} chyby za sebou), zbytek příští běh")
+            break
+        if True:
             url = url_exportu(s["ezak_profil"], od, min(konec, dnes))
             try:
                 obsah = ziskej(url)
                 pocet = zkontroluj_xml(obsah, s["ico"])
             except Exception as e:  # noqa: BLE001 – ohlásit a pokračovat
                 chyby.append(f"{rel}: {e}")
+                za_sebou = za_sebou + 1 if isinstance(e, OSError) else 0   # jen síťové chyby (timeout)
                 continue
             finally:
                 if pauza:
                     time.sleep(pauza)
+            za_sebou = 0
             soubor = adresar / rel
             sha = hashlib.sha256(obsah).hexdigest()
             stary = manifest.get(rel, {})
