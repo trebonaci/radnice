@@ -143,10 +143,16 @@ def stahni(koren: Path = KOREN, otevri: Callable[[str], IO[bytes]] = otevri_http
             tmp_cil.write_text(obsah, encoding="utf-8")
             tmp_cil.replace(cil)
             zmeny.append(cil.name)
-        manifest[d["klic"]] = {"url": d["url"], "hash": d["hash"], "dokonceny": d["dokonceny"],
-                               "ico": sorted(ico), "zaznamu_celkem": celkem, "zaznamu_sledovanych": len(zaznamy)}
-        cesta_manifestu.write_text(json.dumps(dict(sorted(manifest.items())), ensure_ascii=False, indent=2) + "\n",
-                                   encoding="utf-8")
+        # Rozpracovaný (aktuální) měsíc se do manifestu nezapisuje: jeho dump se mění denně a samotná změna
+        # hashe nesmí zakládat PR (Codex P2, #75); zpracuje se při každém běhu, změní se jen při změně výběru.
+        if d["dokonceny"]:
+            manifest[d["klic"]] = {"url": d["url"], "hash": d["hash"], "ico": sorted(ico),
+                                   "zaznamu_sledovanych": len(zaznamy)}
+        else:
+            manifest.pop(d["klic"], None)
+        novy = json.dumps(dict(sorted(manifest.items())), ensure_ascii=False, indent=2) + "\n"
+        if not cesta_manifestu.exists() or cesta_manifestu.read_text(encoding="utf-8") != novy:
+            cesta_manifestu.write_text(novy, encoding="utf-8")
     zbyva = sum(1 for d in dumpy if _zastarale(manifest, d, ico))
     if zbyva:
         print(f"Registr smluv: zbývá zpracovat {zbyva} dumpů (příští běhy)")

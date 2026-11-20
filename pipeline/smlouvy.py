@@ -80,8 +80,9 @@ def prevod(z: dict, zdroj: str, znama: frozenset[str] = frozenset()) -> dict:
         "id": f"rs-{ident.get('idVerze')}",
         "id_smlouvy": ident.get("idSmlouvy"),
         "id_verze": ident.get("idVerze"),
-        "subjekt_ico": subj.get("ico"),
-        "subjekt_nazev": subj.get("nazev"),
+        # zveřejnit může i fyzická osoba (sledovaná organizace je pak smluvní stranou) → stejná anonymizace
+        "subjekt_ico": strana(subj, znama)["ico"],
+        "subjekt_nazev": strana(subj, znama)["nazev"],
         "strany": [strana(s, znama) for s in _seznam(sml.get("smluvniStrana"))],
         "predmet": _skryj_fo(sml.get("predmet"), _seznam(sml.get("smluvniStrana")), znama),
         "datum_uzavreni": sml.get("datumUzavreni"),

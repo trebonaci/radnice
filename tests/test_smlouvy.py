@@ -84,7 +84,11 @@ def test_stahni_vybere_sledovane_a_zpracuje_jen_zmenene(koren):
     assert all("prilohy" not in z for z in zaznamy)
     volano.clear()
     zmeny, _ = rs.stahni(koren, otevri_z(web, volano), max_dumpu=5)
-    assert zmeny == ["2026-09.json"] and "https://data.smlouvy.gov.cz/dump_2026_10.xml" not in volano
+    # dokončený 2026-09 poprvé; rozpracovaný 2026-10 se čte znovu, ale beze změny výběru nic nemění
+    assert zmeny == ["2026-09.json"] and "https://data.smlouvy.gov.cz/dump_2026_10.xml" in volano
+    volano.clear()
+    rs.stahni(koren, otevri_z(web, volano), max_dumpu=5)
+    assert "https://data.smlouvy.gov.cz/dump_2026_09.xml" not in volano          # dokončený se znovu nečte
 
 
 def test_chyba_dumpu_nezastavi_ostatni_a_index_nedostupny(koren):
@@ -141,10 +145,11 @@ def test_sledovana_pravnicka_osoba_bez_pravni_formy_zustava():
 
 
 def test_zmena_sledovanych_ico_vynuti_nove_zpracovani(koren):
-    web = {rs.INDEX_URL: INDEX, "https://data.smlouvy.gov.cz/dump_2026_10.xml": DUMP.encode()}
-    rs.stahni(koren, otevri_z(web, []), max_dumpu=1)
+    web = {rs.INDEX_URL: INDEX, "https://data.smlouvy.gov.cz/dump_2026_10.xml": DUMP.encode(),
+           "https://data.smlouvy.gov.cz/dump_2026_09.xml": DUMP.replace("<mesic>10", "<mesic>9").encode()}
+    rs.stahni(koren, otevri_z(web, []), max_dumpu=5)
     m = json.loads((koren / "raw/smlouvy/manifest.json").read_text(encoding="utf-8"))
-    d = {"klic": "2026-10", "hash": "h10"}
+    d = {"klic": "2026-09", "hash": "h9"}
     assert rs._zastarale(m, d, rs.sledovana_ico(koren)) is False
     assert rs._zastarale(m, d, {"123"}) is True
 
@@ -159,3 +164,26 @@ def test_novejsi_verze_bez_sledovaneho_ico_nahradi_starou(koren):
     rs.stahni(koren, otevri_z({rs.INDEX_URL: idx, "https://data.smlouvy.gov.cz/dump_2026_11.xml": oprava.encode()}, []),
               max_dumpu=1)
     assert "1" not in {s["id_smlouvy"] for s in smlouvy.nacti_smlouvy(koren)}
+
+
+def test_zverejnila_fyzicka_osoba(koren):
+    """Smlouvu zveřejnila FO a město je stranou: jméno ani IČO zveřejňovatele se neukáže (Codex P1, #75)."""
+    d = (f'<dump xmlns="{NS}">' + zaznam(9, 91, "2026-10-08T08:00:00+02:00", "87654321",
+         ("Město Třeboň", "00247618"), "Nájem", bez="1000").replace("<nazev>Město Třeboň</nazev><ico>87654321",
+         "<nazev>Jan Novák</nazev><ico>87654321") + "</dump>")
+    rs.stahni(koren, otevri_z({rs.INDEX_URL: INDEX, "https://data.smlouvy.gov.cz/dump_2026_10.xml": d.encode()}, []),
+              max_dumpu=1)
+    s = {x["id_smlouvy"]: x for x in smlouvy.nacti_smlouvy(koren)}["9"]
+    assert (s["subjekt_nazev"], s["subjekt_ico"]) == ("fyzická osoba", None)
+    assert "Novák" not in json.dumps(s, ensure_ascii=False)
+
+
+def test_rozpracovany_mesic_nemeni_manifest(koren):
+    """Denně přegenerovaný dump aktuálního měsíce bez změny výběru nesmí měnit raw/smlouvy (Codex P2, #75)."""
+    web = {rs.INDEX_URL: INDEX, "https://data.smlouvy.gov.cz/dump_2026_10.xml": DUMP.encode(),
+           "https://data.smlouvy.gov.cz/dump_2026_09.xml": DUMP.replace("<mesic>10", "<mesic>9").encode()}
+    rs.stahni(koren, otevri_z(web, []), max_dumpu=5)
+    pred = {p.name: p.read_bytes() for p in (koren / "raw/smlouvy").iterdir()}
+    web[rs.INDEX_URL] = INDEX.replace(b"<hashDumpu>h10</hashDumpu>", b"<hashDumpu>h10b</hashDumpu>")
+    zmeny, _ = rs.stahni(koren, otevri_z(web, []), max_dumpu=5)
+    assert zmeny == [] and pred == {p.name: p.read_bytes() for p in (koren / "raw/smlouvy").iterdir()}
