@@ -58,7 +58,7 @@ jobs:
               let codexReview = null;
               for (const comment of comments) {
                 if (!comment.user?.login?.includes('codex')) continue;
-                const match = (comment.body || '').match(/codex-review-state:v1 (\\{.*?\\}) -->/s);
+                const match = (comment.body || '').match(/codex-review-state:v1 (\{.*?\}) -->/s);
                 if (!match) continue;
                 try {
                   const parsed = JSON.parse(match[1]);
