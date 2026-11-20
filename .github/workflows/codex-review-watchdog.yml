@@ -78,7 +78,7 @@ jobs:
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: pr.number,
-                body: `${timeoutMarker}\nCodex do tří hodin neprovedl review aktuálního commitu ${request.sha}. Automatické předání zastavuji; napiš prosím do PR `@codex review` a ověř nastavení automatické kontroly.`,
+                body: `${timeoutMarker}\nCodex do tří hodin neprovedl review aktuálního commitu ${request.sha}. Automatické předání zastavuji; napiš prosím do PR @codex review a ověř nastavení automatické kontroly.`,
               });
               core.warning(`PR #${pr.number} was handed to a human after three hours without a Codex review of ${request.sha}.`);
             }
