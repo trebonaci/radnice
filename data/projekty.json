@@ -92,6 +92,22 @@
         "vazba_dodatku": "nase_propojeni",
         "dodatky": [
           {
+            "cislo": 1,
+            "bez_dph": 1816779.98,
+            "bez_castky": false,
+            "datum": "2026-03-23",
+            "zdroj_id": "rs-37282997",
+            "url": "https://smlouvy.gov.cz/smlouva/37282997"
+          },
+          {
+            "cislo": 2,
+            "bez_dph": null,
+            "bez_castky": false,
+            "datum": "2026-05-29",
+            "zdroj_id": "rs-38183173",
+            "url": "https://smlouvy.gov.cz/smlouva/38183173"
+          },
+          {
             "cislo": 3,
             "bez_dph": 909242.11,
             "bez_castky": false,
@@ -116,12 +132,9 @@
             "url": "https://smlouvy.gov.cz/smlouva/40163777"
           }
         ],
-        "chybi_dodatky": [
-          1,
-          2
-        ],
+        "chybi_dodatky": [],
         "cena_po_dodatcich": null,
-        "dodatky_bez_dph": 3410359.16
+        "dodatky_bez_dph": 5227139.14
       },
       {
         "role": "projekt",
@@ -192,6 +205,23 @@
         "chybi_dodatky": [],
         "cena_po_dodatcich": null,
         "dodatky_bez_dph": 7750.0
+      },
+      {
+        "role": "vybaveni",
+        "dodavatel": {
+          "nazev": "SANTAL spol. s r. o.",
+          "jmeno_podnikatele": null
+        },
+        "puvodni": {
+          "bez_dph": 58419.2,
+          "zdroj_id": "rs-38228669",
+          "url": "https://smlouvy.gov.cz/smlouva/38228669"
+        },
+        "vazba_dodatku": "dolozeno",
+        "dodatky": [],
+        "chybi_dodatky": [],
+        "cena_po_dodatcich": 58419.2,
+        "dodatky_bez_dph": null
       }
     ],
     "souhrn": {
@@ -205,7 +235,7 @@
         "jistota": "nase_propojeni"
       },
       "smluvni_bez_dph": {
-        "celkem": 55570965.36,
+        "celkem": 55629384.56,
         "druh": "smluvni",
         "s_dph": false,
         "mena": "CZK",
@@ -321,6 +351,104 @@
       }
     ],
     "smlouvy": [
+      {
+        "id": "rs-37282997",
+        "id_smlouvy": "35006441",
+        "navazuje_na": "34148121",
+        "predmet": "Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 1",
+        "role": "stavba",
+        "dodatek_cislo": 1,
+        "datum_uzavreni": "2026-03-23",
+        "strany": [
+          {
+            "nazev": "MANE STAVEBNÍ s.r.o.",
+            "jmeno_podnikatele": null
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 1816779.98,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 2198303.78,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/37282997",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-38183173",
+        "id_smlouvy": "35869349",
+        "navazuje_na": "34148121",
+        "predmet": "Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 2",
+        "role": "stavba",
+        "dodatek_cislo": 2,
+        "datum_uzavreni": "2026-05-29",
+        "strany": [
+          {
+            "nazev": "MANE STAVEBNÍ s.r.o.",
+            "jmeno_podnikatele": null
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": -372377.11,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/38183173",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-38228669",
+        "id_smlouvy": "35913261",
+        "navazuje_na": null,
+        "predmet": "Dodávka a montáž 8 ks laviček se zádovou stěnou s háčky do šaten - akce Přístavba dvou tělocvičen spotrovní hala Třeboň",
+        "role": "vybaveni",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2026-06-02",
+        "strany": [
+          {
+            "nazev": "SANTAL spol. s r. o.",
+            "jmeno_podnikatele": null
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 58419.2,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 70687.23,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/38228669",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
       {
         "id": "rs-39303451",
         "id_smlouvy": "36947583",
@@ -619,6 +747,30 @@
         "jistota": "nase_propojeni"
       },
       {
+        "datum": "2026-03-23",
+        "typ": "dodatek",
+        "text": "Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 1",
+        "role": "stavba",
+        "zdroj_id": "rs-37282997",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-05-29",
+        "typ": "dodatek",
+        "text": "Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 2",
+        "role": "stavba",
+        "zdroj_id": "rs-38183173",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-06-02",
+        "typ": "smlouva",
+        "text": "Dodávka a montáž 8 ks laviček se zádovou stěnou s háčky do šaten - akce Přístavba dvou tělocvičen spotrovní hala Třeboň",
+        "role": "vybaveni",
+        "zdroj_id": "rs-38228669",
+        "jistota": "nase_propojeni"
+      },
+      {
         "datum": "2026-08-28",
         "typ": "dodatek",
         "text": "Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 3",
@@ -799,6 +951,22 @@
         "vazba_dodatku": "nase_propojeni",
         "dodatky": [
           {
+            "cislo": 1,
+            "bez_dph": 939003.16,
+            "bez_castky": false,
+            "datum": "2026-04-20",
+            "zdroj_id": "rs-37638541",
+            "url": "https://smlouvy.gov.cz/smlouva/37638541"
+          },
+          {
+            "cislo": 2,
+            "bez_dph": 2559488.61,
+            "bez_castky": false,
+            "datum": "2026-06-26",
+            "zdroj_id": "rs-38538892",
+            "url": "https://smlouvy.gov.cz/smlouva/38538892"
+          },
+          {
             "cislo": 3,
             "bez_dph": 1334880.1,
             "bez_castky": false,
@@ -823,12 +991,9 @@
             "url": "https://smlouvy.gov.cz/smlouva/40101957"
           }
         ],
-        "chybi_dodatky": [
-          1,
-          2
-        ],
+        "chybi_dodatky": [],
         "cena_po_dodatcich": null,
-        "dodatky_bez_dph": 2205436.07
+        "dodatky_bez_dph": 5703927.84
       },
       {
         "role": "projekt",
@@ -1158,6 +1323,111 @@
       }
     ],
     "smlouvy": [
+      {
+        "id": "rs-37638541",
+        "id_smlouvy": "35346993",
+        "navazuje_na": "33962317",
+        "predmet": "Sportovní hala Třeboň - nástavba a přístavba ubytování - dodatek č. 1",
+        "role": "stavba",
+        "dodatek_cislo": 1,
+        "datum_uzavreni": "2026-04-20",
+        "strany": [
+          {
+            "nazev": "Retherm s.r.o.",
+            "jmeno_podnikatele": null
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 939003.16,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 1136193.82,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/37638541",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-38058173",
+        "id_smlouvy": "35749349",
+        "navazuje_na": null,
+        "predmet": "Sportovní hala Třeboň - nástavba a přístavba ubytování - vybavení interiéru",
+        "role": "vybaveni",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2026-05-21",
+        "strany": [
+          {
+            "nazev": "Artspect, a.s.",
+            "jmeno_podnikatele": null
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 1674348.0,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 2025961.08,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/38058173",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-38538892",
+        "id_smlouvy": "36212376",
+        "navazuje_na": "33962317",
+        "predmet": "Sportovní hala Třeboň - nástavba a přístavba ubytování - Dodatek č. 2",
+        "role": "stavba",
+        "dodatek_cislo": 2,
+        "datum_uzavreni": "2026-06-26",
+        "strany": [
+          {
+            "nazev": "Retherm s.r.o.",
+            "jmeno_podnikatele": null
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 2559488.61,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 3096981.22,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/38538892",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
       {
         "id": "rs-39302679",
         "id_smlouvy": "36946827",
@@ -1618,10 +1888,34 @@
       },
       {
         "datum": "2026-04-20",
+        "typ": "dodatek",
+        "text": "Sportovní hala Třeboň - nástavba a přístavba ubytování - dodatek č. 1",
+        "role": "stavba",
+        "zdroj_id": "rs-37638541",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-04-20",
         "typ": "soutez",
         "text": "Soutěž: Sportovní hala Třeboň - nástavba a přístavba ubytování - vybavení interiéru",
         "role": "vybaveni",
         "zdroj_id": "ezak-VZ-936",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-05-21",
+        "typ": "smlouva",
+        "text": "Sportovní hala Třeboň - nástavba a přístavba ubytování - vybavení interiéru",
+        "role": "vybaveni",
+        "zdroj_id": "rs-38058173",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-06-26",
+        "typ": "dodatek",
+        "text": "Sportovní hala Třeboň - nástavba a přístavba ubytování - Dodatek č. 2",
+        "role": "stavba",
+        "zdroj_id": "rs-38538892",
         "jistota": "nase_propojeni"
       },
       {
