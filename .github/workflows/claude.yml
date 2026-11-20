@@ -128,27 +128,43 @@ jobs:
               core.warning(`No open Claude PR found that closes issue #${issueNumber}; Codex review was not requested.`);
               return;
             }
-            const marker = `<!-- codex-initial-review-request:${issueNumber}:${pr.head.sha} -->`;
-            const comments = await github.paginate(github.rest.issues.listComments, {
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: pr.number,
-              per_page: 100,
-            });
+            if (!pr.labels.some(label => label.name === 'ke-kontrole')) {
+              core.warning(`PR #${pr.number} has no ke-kontrole label; Codex review was not requested.`);
+              return;
+            }
+            const requestPrefix = `<!-- codex-review-requested:${pr.head.sha}:`;
             if (comments.some(comment =>
               comment.user?.login === 'github-actions[bot]' &&
-              (comment.body || '').includes(marker)
+              (comment.body || '').includes(requestPrefix)
             )) {
               core.notice(`Codex review was already requested for PR #${pr.number} at ${pr.head.sha}.`);
               return;
             }
+
+            const pullRequestId = pr.node_id;
+            if (!pr.draft) {
+              await github.graphql(`
+                mutation($pullRequestId: ID!) {
+                  convertPullRequestToDraft(input: {pullRequestId: $pullRequestId}) {
+                    pullRequest { isDraft }
+                  }
+                }`, {pullRequestId});
+            }
+            await github.graphql(`
+              mutation($pullRequestId: ID!) {
+                markPullRequestReadyForReview(input: {pullRequestId: $pullRequestId}) {
+                  pullRequest { isDraft }
+                }
+              }`, {pullRequestId});
+
+            const marker = `<!-- codex-review-requested:${pr.head.sha}:${new Date().toISOString()} -->`;
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: pr.number,
-              body: `@codex review\n\n${marker}`,
+              body: `${marker}\\nCodex review requested by transitioning the PR to ready for review.\\nSHA: ${pr.head.sha}`,
             });
-            core.notice(`Requested Codex review for PR #${pr.number} at ${pr.head.sha}.`);
+            core.notice(`Requested Codex review for PR #${pr.number} at ${pr.head.sha} through ready_for_review.`);
 
   ci_na_pr:
     # PR otevřený z běhu spuštěného přes GITHUB_TOKEN sám CI nespustí; spustíme ji na jeho větvi.
