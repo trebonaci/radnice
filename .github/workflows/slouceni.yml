@@ -86,6 +86,7 @@ jobs:
                 if (m) { try { stav = JSON.parse(m[1]).code_review; } catch (e) {} }
               }
               if (!stav || stav.status !== 'completed' || stav.commit_sha !== sha) {
+                const reviewRunning = stav?.status === 'running' && stav.commit_sha === sha;
                 // Codex se sám nespustí u PR od bota ani u commitu z automatické opravy → požádat, když poslední
                 // žádost je starší než poslední commit PR (#111)
                 const commit = (await github.rest.repos.getCommit({owner, repo, ref: sha})).data;
@@ -106,7 +107,7 @@ jobs:
                                                 && !k.user.login.endsWith('[bot]'));
                 const zBehu = pr.head.ref.startsWith('claude/beh-');
                 const zOpravy = /^Address Codex review findings/.test(commit.commit.message);
-                if (!pozadano && !requestComment && !legacyTrigger && (zBehu || zOpravy)) {
+                if (!reviewRunning && !pozadano && !requestComment && !legacyTrigger && (zBehu || zOpravy)) {
                   const marker = `<!-- codex-review-requested:${sha}:${new Date().toISOString()} -->`;
                   await github.rest.issues.createComment({owner, repo, issue_number: pr.number,
                     body: `${marker}\nCodex review requested for commit ${sha.slice(0, 7)}.`});
@@ -114,7 +115,7 @@ jobs:
                     {o: owner, r: repo, n: pr.number})).repository.pullRequest.id;
                   await github.graphql(`mutation($id:ID!){convertPullRequestToDraft(input:{pullRequestId:$id}){clientMutationId}}`, {id});
                   await github.graphql(`mutation($id:ID!){markPullRequestReadyForReview(input:{pullRequestId:$id}){clientMutationId}}`, {id});
-                } else if (legacyTrigger && !requestComment
+                } else if (legacyTrigger && !requestComment && !reviewRunning
                            && Date.now() - Date.parse(legacyTrigger.created_at) > 3 * 3600 * 1000
                            && !stitky.includes('potrebuje-cloveka')) {
                   await github.rest.issues.addLabels({owner, repo, issue_number: pr.number, labels: ['potrebuje-cloveka']});
