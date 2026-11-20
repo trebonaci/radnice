@@ -37,7 +37,7 @@ DUMP = (f'<?xml version="1.0" encoding="UTF-8"?><dump xmlns="{NS}"><mesic>10</me
         + zaznam(1, 12, "2026-10-05T08:00:00+02:00", "00247618", ("VH-TRES spol. s r. o.", "15771822"),
                  "Oprava chodníku – opravená verze", bez="110000", s="133100")
         + zaznam(2, 21, "2026-10-03T08:00:00+02:00", "00247618", ("Jan Novák", "87654321"),
-                 "Nájem pozemku – Jan Novák, IČO 87654321, Ulice 1, 37901 Třeboň", bez="5000")
+                 "Oprava plotu – Jan Novák, IČO 87654321, Ulice 1, 37901 Třeboň", bez="5000")
         + zaznam(3, 31, "2026-10-04T08:00:00+02:00", "00247618", ("Firma a.s.", "11111111"), "Zrušená", platny=0)
         + zaznam(4, 41, "2026-10-04T09:00:00+02:00", "99999999", ("Cizí s.r.o.", "22222222"), "Nesledovaný subjekt")
         + zaznam(5, 51, "2026-10-06T08:00:00+02:00", "99999999", ("Město Třeboň", "00247618"), "Město jako strana",
@@ -136,7 +136,7 @@ def test_sestaveni_maskuje_jmena_v_predmetu(koren):
     nactene(koren)
     vystup, chyby = sestav(koren)
     s = {x["id_smlouvy"]: x for x in vystup["smlouvy"]}
-    assert s["2"]["predmet"] == "Nájem pozemku – [jméno], IČO [údaj], [údaj]"
+    assert s["2"]["predmet"] == "Oprava plotu – [jméno], IČO [údaj], [údaj]"
     assert not [c for c in chyby if "smlouvy" in c]
 
 
@@ -231,3 +231,17 @@ def test_predmet_maskuje_cast_jmena_fyzicke_osoby():
     vysl = smlouvy._skryj_fo("Dotace (p. Nováková Dvořáková)", strany, frozenset())
     assert "Nováková" not in vysl and "Dvořáková" not in vysl
     assert "Dotace" in vysl
+
+
+def test_nazev_organizace_se_v_predmetu_nemaskuje_po_slovech():
+    strany = [{"nazev": "Asociace TOM ČR, TOM 19150 ZÁLESÁCI Třeboň", "ico": None, "prijemce": "0"}]
+    vysl = smlouvy._skryj_fo("Dodatek ke smlouvě o výpůjčce (klubovna, Na Chmelnici, Třeboň)", strany, frozenset())
+    assert vysl.endswith("Na Chmelnici, Třeboň)")
+
+
+def test_vypujcka_neuvadi_podnikatele_jmenem():
+    s = {"nazev": "Jana Nováková", "ico": "12345678", "prijemce": "1"}
+    assert smlouvy.strana(s, frozenset(), "Smlouva o postoupení smlouvy o výpůjčce movitých věcí")["jmeno_podnikatele"] is None
+    assert smlouvy.strana(s, frozenset(), "Oprava chodníku")["jmeno_podnikatele"] == "Jana Nováková"
+    vysl = smlouvy._skryj_fo("Výpůjčka – p. Nováková", [s], frozenset())
+    assert "Nováková" not in vysl
