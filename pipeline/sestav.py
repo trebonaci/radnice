@@ -282,7 +282,10 @@ def sestav(koren: Path | None = None) -> tuple[dict[str, list], list[str]]:
     for z in zakazky:
         # jména osob s titulem v názvu a předmětu (např. autor projektu) → „[jméno]“ (ostrý běh 20. 11. 2026)
         for pole, drzak in [("nazev", z), ("predmet", z)] + [("nazev", c) for c in z["casti"]]:
-            for n in najdi_osobni_udaje(drzak[pole] or "", osoby):
+            if not drzak[pole]:
+                continue
+            drzak[pole] = anonymizuj_urednici(drzak[pole], osoby)
+            for n in najdi_osobni_udaje(drzak[pole], osoby):
                 drzak[pole] = drzak[pole].replace(n, "[jméno]")
     chyby += modul_zakazky.zkontroluj(zakazky, koren)
     vystup = {"jednani": jednani, "usneseni": usneseni, "hlasovani": hlasovani, "zakazky": zakazky}
