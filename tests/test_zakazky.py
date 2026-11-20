@@ -146,3 +146,15 @@ def test_stazeni_beze_zmeny_nemeni_manifest(koren):
     pred = m.read_bytes()
     ezak.stahni(koren, date(2026, 11, 21), lambda u: obsah if "display_2." in u else b"<x/>", pauza=0)
     assert m.read_bytes() == pred
+
+
+
+def test_urednik_bez_titulu_v_zakazce_funkci(koren):
+    """Úředník ze seznamu se nahradí funkcí, ne jen příjmení (Codex P1, #80)."""
+    import yaml
+    from pipeline.sestav import anonymizuj_urednici, nacti_osoby
+    osoby = nacti_osoby(KOREN)
+    jmeno = next(v if isinstance(v, str) else v["text"] for u in osoby["urednici"] for v in u["varianty"]
+                 if "Ing." not in (v if isinstance(v, str) else v["text"]))
+    vysl = anonymizuj_urednici(f"Kontaktní osoba: {jmeno}.", osoby)
+    assert jmeno not in vysl
