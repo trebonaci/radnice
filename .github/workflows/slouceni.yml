@@ -109,7 +109,7 @@ jobs:
                 if (!zahajeno && !pozadano && !requestComment && !legacyTrigger && (zBehu || zOpravy)) {
                   const marker = `<!-- codex-review-requested:${sha}:${new Date().toISOString()} -->`;
                   await github.rest.issues.createComment({owner, repo, issue_number: pr.number,
-                    body: `${marker}\\nCodex review requested for commit ${sha.slice(0, 7)}.`});
+                    body: `${marker}\nCodex review requested for commit ${sha.slice(0, 7)}.`});
                   const id = (await github.graphql(`query($o:String!,$r:String!,$n:Int!){repository(owner:$o,name:$r){pullRequest(number:$n){id}}}`,
                     {o: owner, r: repo, n: pr.number})).repository.pullRequest.id;
                   await github.graphql(`mutation($id:ID!){convertPullRequestToDraft(input:{pullRequestId:$id}){clientMutationId}}`, {id});
@@ -122,7 +122,7 @@ jobs:
                     body: `Starší žádost o Codex review commitu ${sha.slice(0, 7)} se do 3 hodin nedokončila. Ondřeji, prosím zkontroluj automatickou kontrolu.`});
                 }
                 core.info(`${kdo}: čeká na Codex review commitu ${sha.slice(0, 7)}`);
-                continue;                continue;
+                continue;
               }
               // automatická oprava nálezů Codexu ještě běží → počkat na její výsledek
               const opravy = (await github.rest.actions.listWorkflowRunsForRepo({owner, repo, branch: pr.head.ref, per_page: 20}))
