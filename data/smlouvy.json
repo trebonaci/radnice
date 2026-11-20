@@ -227,9 +227,9 @@
     "subjekt_nazev": "Město Třeboň",
     "strany": [
       {
-        "nazev": "fyzická osoba",
-        "ico": null,
-        "fyzicka_osoba": true,
+        "nazev": "Ústav výzkumu globální změny AV ČR, v. v. i.",
+        "ico": "86652079",
+        "fyzicka_osoba": false,
         "prijemce": false
       }
     ],
@@ -264,9 +264,9 @@
     "subjekt_nazev": "Město Třeboň",
     "strany": [
       {
-        "nazev": "fyzická osoba",
-        "ico": null,
-        "fyzicka_osoba": true,
+        "nazev": "Ústav výzkumu globální změny AV ČR, v. v. i.",
+        "ico": "86652079",
+        "fyzicka_osoba": false,
         "prijemce": false
       }
     ],
@@ -370,8 +370,8 @@
     "id": "rs-40329241",
     "id_smlouvy": "37932849",
     "id_verze": "40329241",
-    "subjekt_ico": null,
-    "subjekt_nazev": "fyzická osoba",
+    "subjekt_ico": "86652079",
+    "subjekt_nazev": "Ústav výzkumu globální změny AV ČR, v. v. i.",
     "strany": [
       {
         "nazev": "Město Třeboň",
@@ -866,8 +866,8 @@
     "id": "rs-40227857",
     "id_smlouvy": "37835533",
     "id_verze": "40227857",
-    "subjekt_ico": null,
-    "subjekt_nazev": "fyzická osoba",
+    "subjekt_ico": "70882835",
+    "subjekt_nazev": "Hasičský záchranný sbor Jihočeského kraje",
     "strany": [
       {
         "nazev": "Město Třeboň",
@@ -928,8 +928,8 @@
     "id": "rs-40220741",
     "id_smlouvy": "37828813",
     "id_verze": "40220741",
-    "subjekt_ico": null,
-    "subjekt_nazev": "fyzická osoba",
+    "subjekt_ico": "70882835",
+    "subjekt_nazev": "Hasičský záchranný sbor Jihočeského kraje",
     "strany": [
       {
         "nazev": "Město Třeboň",
@@ -1098,8 +1098,8 @@
     "id": "rs-40179873",
     "id_smlouvy": "37789677",
     "id_verze": "40179873",
-    "subjekt_ico": null,
-    "subjekt_nazev": "fyzická osoba",
+    "subjekt_ico": "60816945",
+    "subjekt_nazev": "Gymnázium, Třeboň, Na Sadech 308",
     "strany": [
       {
         "nazev": "Základní škola Třeboň, Na Sadech 375",
@@ -1331,9 +1331,9 @@
     "subjekt_nazev": "Město Třeboň",
     "strany": [
       {
-        "nazev": "fyzická osoba",
-        "ico": null,
-        "fyzicka_osoba": true,
+        "nazev": "Hasičský záchranný sbor Jihočeského kraje, Krajské ředitelství",
+        "ico": "70882835",
+        "fyzicka_osoba": false,
         "prijemce": true
       }
     ],
@@ -1368,9 +1368,9 @@
     "subjekt_nazev": "Město Třeboň",
     "strany": [
       {
-        "nazev": "fyzická osoba",
-        "ico": null,
-        "fyzicka_osoba": true,
+        "nazev": "Hasičský záchranný sbor Jihočeského kraje, Krajské ředitelství",
+        "ico": "70882835",
+        "fyzicka_osoba": false,
         "prijemce": true
       }
     ],
@@ -2947,9 +2947,9 @@
     "subjekt_nazev": "Město Třeboň",
     "strany": [
       {
-        "nazev": "fyzická osoba",
-        "ico": null,
-        "fyzicka_osoba": true,
+        "nazev": "Stavební bytové družstvo Města Třeboň 2000",
+        "ico": "26019663",
+        "fyzicka_osoba": false,
         "prijemce": true
       }
     ],
@@ -2984,9 +2984,9 @@
     "subjekt_nazev": "Město Třeboň",
     "strany": [
       {
-        "nazev": "fyzická osoba",
-        "ico": null,
-        "fyzicka_osoba": true,
+        "nazev": "Stavební bytové družstvo Města Třeboň 2000",
+        "ico": "26019663",
+        "fyzicka_osoba": false,
         "prijemce": true
       }
     ],
@@ -3069,9 +3069,9 @@
     "subjekt_nazev": "Slatinné lázně Třeboň s.r.o.",
     "strany": [
       {
-        "nazev": "fyzická osoba",
-        "ico": null,
-        "fyzicka_osoba": true,
+        "nazev": "Spolek Třeboňská nocturna",
+        "ico": "27040721",
+        "fyzicka_osoba": false,
         "prijemce": false
       }
     ],
@@ -3523,8 +3523,8 @@
     "id": "rs-39871885",
     "id_smlouvy": "37494057",
     "id_verze": "39871885",
-    "subjekt_ico": null,
-    "subjekt_nazev": "fyzická osoba",
+    "subjekt_ico": "49710371",
+    "subjekt_nazev": "Řízení letového provozu České republiky, státní podnik (ŘLP ČR, s.p.)",
     "strany": [
       {
         "nazev": "Slatinné lázně Třeboň s.r.o.",
@@ -4007,8 +4007,8 @@
     "id": "rs-39786597",
     "id_smlouvy": "37412017",
     "id_verze": "39786597",
-    "subjekt_ico": null,
-    "subjekt_nazev": "fyzická osoba",
+    "subjekt_ico": "60816945",
+    "subjekt_nazev": "Gymnázium, Třeboň, Na Sadech 308",
     "strany": [
       {
         "nazev": "Základní škola Třeboň, Na Sadech 375",
@@ -4933,9 +4933,9 @@
     "subjekt_nazev": "Město Třeboň",
     "strany": [
       {
-        "nazev": "fyzická osoba",
-        "ico": null,
-        "fyzicka_osoba": true,
+        "nazev": "Pěvecký sbor Pěslav - Ozvěna, zapsaný spolek",
+        "ico": "42410614",
+        "fyzicka_osoba": false,
         "prijemce": false
       }
     ],
@@ -5540,7 +5540,7 @@
         "prijemce": true
       }
     ],
-    "predmet": "Smlouva o vytvoření a veřejném provozování uměleckého výkonu - Andrea Kalivodová a Moravské klavírní trio dne 11.12.2027 v 19:00 h v Divadle J. K. Tyla v Třeboni.",
+    "predmet": "Smlouva o vytvoření a veřejném provozování uměleckého výkonu - [jméno] a Moravské klavírní trio dne 11.12.2027 v 19:00 h v Divadle J. K. Tyla v Třeboni.",
     "datum_uzavreni": "2026-09-14",
     "datum_zverejneni": "2026-09-15",
     "cislo_smlouvy": "900/6695/26",
@@ -8648,8 +8648,8 @@
     "id": "rs-38846674",
     "id_smlouvy": "36508294",
     "id_verze": "38846674",
-    "subjekt_ico": null,
-    "subjekt_nazev": "fyzická osoba",
+    "subjekt_ico": "75032333",
+    "subjekt_nazev": "Národní památkový ústav",
     "strany": [
       {
         "nazev": "Město Třeboň",
@@ -8721,8 +8721,8 @@
     "id": "rs-38806476",
     "id_smlouvy": "36469656",
     "id_verze": "38806476",
-    "subjekt_ico": null,
-    "subjekt_nazev": "fyzická osoba",
+    "subjekt_ico": "60816945",
+    "subjekt_nazev": "Gymnázium, Třeboň, Na Sadech 308",
     "strany": [
       {
         "nazev": "Základní škola Třeboň, Na Sadech 375",
@@ -9089,8 +9089,8 @@
     "id": "rs-38752908",
     "id_smlouvy": "36418592",
     "id_verze": "38752908",
-    "subjekt_ico": null,
-    "subjekt_nazev": "fyzická osoba",
+    "subjekt_ico": "49710371",
+    "subjekt_nazev": "Řízení letového provozu České republiky, státní podnik (ŘLP ČR, s.p.)",
     "strany": [
       {
         "nazev": "Slatinné lázně Třeboň s.r.o.",
