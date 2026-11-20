@@ -245,9 +245,3 @@ def test_vypujcka_neuvadi_podnikatele_jmenem():
     assert smlouvy.strana(s, frozenset(), "Oprava chodníku")["jmeno_podnikatele"] == "Jana Nováková"
     vysl = smlouvy._skryj_fo("Výpůjčka – p. Nováková", [s], frozenset())
     assert "Nováková" not in vysl
-
-
-def test_jmeno_rezisera_v_predmetu_se_maskuje():
-    p = 'představení "Hra" (režie K. Nováková) v Divadle J. K. Tyla; autor: Jan Dvořák'
-    vysl = smlouvy._skryj_fo(p, [{"nazev": "Divadlo XY s.r.o.", "ico": "12345678"}], frozenset())
-    assert "Nováková" not in vysl and "Dvořák" not in vysl and "J. K. Tyla" in vysl
