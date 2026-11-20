@@ -1544,6 +1544,42 @@
     ],
     "smlouvy": [
       {
+        "id": "rs-33266344",
+        "id_smlouvy": "31167288",
+        "navazuje_na": null,
+        "cislo_smlouvy": "750/8816/25",
+        "predmet": "Zpracování projektové dokumentace ve stupni DZS/DPS přístavby dvou tělocvičen - revitalizace a přístavba sportovní haly Třeboň",
+        "role": "projekt",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2025-05-14",
+        "strany": [
+          {
+            "nazev": "fyzická osoba",
+            "jmeno_podnikatele": "Ing. Josef Kregl"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 945000.0,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 945000.0,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/33266344",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
         "id": "rs-35626165",
         "id_smlouvy": "33422353",
         "navazuje_na": "23592055",
@@ -2085,6 +2121,16 @@
         "pocet_nabidek": 1,
         "role": "projekt",
         "zdroj_id": "ezak-VZ-877",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2025-05-14",
+        "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "projekt prováděcí",
+        "text": "Zpracování projektové dokumentace ve stupni DZS/DPS přístavby dvou tělocvičen - revitalizace a přístavba sportovní haly Třeboň",
+        "role": "projekt",
+        "zdroj_id": "rs-33266344",
         "jistota": "nase_propojeni"
       },
       {
