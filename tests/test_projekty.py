@@ -76,3 +76,24 @@ def test_ai_puvod_a_mena_zustavaji():
     assert (u["tema_ai"], u["shrnuti_ai"], u["overeni"], u["citace"]["dokument_id"]) == (True, True, "overeno_kodem", "z")
     assert next(e for e in k["udalosti"] if e["typ"] == "usneseni")["text_ai"] is True
     assert k["smlouvy"][0]["castky"][0]["mena"] == "EUR"
+
+
+def test_souhrn_scita_jen_v_ramci_druhu():
+    rozpocet = [{"kapitalova": True, "po_poslednim_ro": 58992143.49, "jistota": "dolozeno"},
+                {"kapitalova": False, "po_poslednim_ro": 587000.0, "jistota": "nase_propojeni"},
+                {"kapitalova": False, "po_poslednim_ro": None, "jistota": "dolozeno"}]
+    zak = [{"id": "z1", "role": "stavba", "casti": [{"vitezove": [{"nazev": "A", "smluvni": [
+        {"hodnota": 66097418.09, "s_dph": True}, {"hodnota": 54625965.36, "s_dph": False, "mena": "CZK"}]}]}]}]
+    sml = [{"id": "s1", "role": "stavba", "dodatek_cislo": None, "strany": ["A"],
+            "castky": [{"hodnota": 54625965.36, "s_dph": False}]},                       # tatáž smlouva jako z1
+           {"id": "s2", "role": "vybaveni", "dodatek_cislo": None, "strany": ["B"],
+            "castky": [{"hodnota": 310125.87, "s_dph": False}, {"hodnota": 375252.3, "s_dph": True}]},
+           {"id": "s3", "role": "stavba", "dodatek_cislo": 5, "strany": ["A"],
+            "castky": [{"hodnota": 2501117.05, "s_dph": False}]},
+           {"id": "s4", "role": "bozp", "dodatek_cislo": None, "strany": ["C"], "castky": []}]
+    s = pr.souhrn(rozpocet, zak, sml)
+    assert s["rozpocet"]["celkem"] == 59579143.49 and s["rozpocet"]["neinvesticni"] == 587000.0
+    assert s["rozpocet"]["jistota"] == "nase_propojeni" and s["rozpocet"]["polozek"] == 2
+    m = s["smluvni_bez_dph"]
+    assert m["celkem"] == 54936091.23 and [c["zdroj_id"] for c in m["casti"]] == ["z1", "s2"]
+    assert m["bez_ceny"] == ["s4"] and m["dodatku_nezapocteno"] == 1 and m["s_dph"] is False

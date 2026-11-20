@@ -148,11 +148,13 @@ def sestav_projekt(p: dict, data: dict) -> dict:
                              "zdroj_id": u["id"], "jistota": jistota})
 
     udalosti.sort(key=lambda e: (e["datum"] or "", e["typ"]))
+    rozpocet = sorted(polozky.values(), key=lambda x: (not x["kapitalova"], x["nazev"]))
     return {
         "id": p["id"], "nazev": p["nazev"], "popis": p.get("popis"), "oblast": p.get("oblast"),
         "druh": p.get("druh"), "vlastnik_subjekt_id": p.get("vlastnik_subjekt_id"),
         "faze": faze(zakazky, smlouvy), "faze_jistota": "nase_propojeni",
-        "rozpocet": sorted(polozky.values(), key=lambda x: (not x["kapitalova"], x["nazev"])),
+        "rozpocet": rozpocet,
+        "souhrn": souhrn(rozpocet, zakazky, smlouvy),
         "zakazky": sorted(zakazky, key=lambda z: z["id"]),
         "smlouvy": sorted(smlouvy, key=lambda s: (s["datum_uzavreni"] or "", s["id"])),
         "usneseni": sorted(vazane, key=lambda u: (u["datum"] or "", u["id"])),
@@ -162,6 +164,60 @@ def sestav_projekt(p: dict, data: dict) -> dict:
         "udalosti": udalosti,
         "posledni_udalost": udalosti[-1] if udalosti else None,
     }
+
+
+def _halere(v: float) -> int:
+    return round(v * 100)
+
+
+def souhrn(rozpocet: list[dict], zakazky: list[dict], smlouvy: list[dict]) -> dict:
+    """Kolik stojí celá akce – dva součty, každý jen v rámci jednoho druhu částky (nikdy mezi sebou):
+
+    - `rozpocet`: stav všech položek akce po posledním RO, investiční i neinvestiční (druh rozpocet_upraveny),
+    - `smluvni_bez_dph`: smluvní ceny všech částí bez DPH v Kč (druh smluvni) – vítězové z E-ZAK a smlouvy
+      z registru, které nejsou dodatkem a nemají stejnou částku jako už započtená zakázka (= tatáž smlouva).
+      Dodatky se nepřičítají: registr u nich neříká, zda je částka změna, nebo nová celková cena.
+    """
+    inv = [p for p in rozpocet if p["kapitalova"] and p["po_poslednim_ro"] is not None]
+    neinv = [p for p in rozpocet if not p["kapitalova"] and p["po_poslednim_ro"] is not None]
+    r = {"investicni": sum(_halere(p["po_poslednim_ro"]) for p in inv),
+         "neinvesticni": sum(_halere(p["po_poslednim_ro"]) for p in neinv)}
+    rozpocet_souhrn = {"celkem": (r["investicni"] + r["neinvesticni"]) / 100, "investicni": r["investicni"] / 100,
+                       "neinvesticni": r["neinvesticni"] / 100, "druh": "rozpocet_upraveny", "s_dph": None,
+                       "polozek": len(inv) + len(neinv),
+                       "jistota": "dolozeno" if all(p["jistota"] == "dolozeno" for p in inv + neinv)
+                       else "nase_propojeni"}
+
+    casti, bez_ceny = [], []
+    zapocteno: set[int] = set()
+    for z in zakazky:
+        for c in z["casti"]:
+            for v in c["vitezove"]:
+                kc = [x for x in v["smluvni"] if x["s_dph"] is False and x.get("mena", "CZK") == "CZK"]
+                if kc:
+                    zapocteno.add(_halere(kc[0]["hodnota"]))
+                    casti.append({"role": z["role"], "zdroj_id": z["id"], "dodavatel": v["nazev"],
+                                  "hodnota": kc[0]["hodnota"]})
+                else:
+                    bez_ceny.append(z["id"])
+    for sm in smlouvy:
+        if sm["dodatek_cislo"]:
+            continue
+        kc = [x for x in sm["castky"] if x["s_dph"] is False and x.get("mena", "CZK") == "CZK"]
+        if not kc:
+            bez_ceny.append(sm["id"])
+            continue
+        h = _halere(kc[0]["hodnota"])
+        if h in zapocteno:
+            continue
+        zapocteno.add(h)
+        casti.append({"role": sm["role"], "zdroj_id": sm["id"], "dodavatel": ", ".join(sm["strany"]),
+                      "hodnota": kc[0]["hodnota"]})
+    smluvni = {"celkem": sum(_halere(c["hodnota"]) for c in casti) / 100, "druh": "smluvni", "s_dph": False,
+               "mena": "CZK", "casti": casti, "bez_ceny": bez_ceny,
+               "dodatku_nezapocteno": sum(1 for sm in smlouvy if sm["dodatek_cislo"]),
+               "jistota": "nase_propojeni"}
+    return {"rozpocet": rozpocet_souhrn, "smluvni_bez_dph": smluvni}
 
 
 def faze(zakazky: list[dict], smlouvy: list[dict]) -> str:
