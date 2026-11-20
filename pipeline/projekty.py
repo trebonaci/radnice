@@ -22,7 +22,7 @@ import yaml
 ROLE = [  # pořadí = priorita; dodatek je zvlášť (dodatek_cislo) a patří k roli smlouvy, kterou mění
     ("technicky_dozor", r"technick\w* dozor"),
     ("bozp", r"koordinátor\w* BOZP"),
-    ("projekt", r"projektov\w* dokumentac|zpracování PD|\bDZS\b|\bDPS\b"),
+    ("projekt", r"projektov\w* dokumentac|vypracování projekt|projekt\w* interiér|zpracování PD|\bDZS\b|\bDPS\b"),
     ("vybaveni", r"vybavení|dodávka|posilovn|televiz"),
     ("administrace", r"administrac\w* (?:veřejné )?zakázk|zadávacího řízení"),
 ]
