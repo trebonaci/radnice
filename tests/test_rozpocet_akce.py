@@ -74,3 +74,13 @@ def test_souhrn_schvaleneho_rozpoctu_po_letech():
          {"rok": 2026, "trida": "bezne", "castka": {"hodnota": 5000000.0}}]
     (r,) = projekty.souhrn_schvaleny(s)
     assert (r["celkem"], r["investicni"], r["neinvesticni"], r["druh"]) == (61500000.0, 56500000.0, 5000000.0, "rozpocet")
+
+
+def test_souhrn_po_zmenach_vcetne_nove_polozky():
+    s = [{"rok": 2026, "trida": "kapitalove", "castka": {"hodnota": 70000000.0}, "po_zmenach": {"hodnota": 58992140.0}},
+         {"rok": 2026, "trida": "kapitalove", "castka": {"hodnota": 0.0}, "po_zmenach": {"hodnota": 10000000.0}},
+         {"rok": 2026, "trida": "bezne", "castka": {"hodnota": 5000.0}, "po_zmenach": None}]
+    (r,) = projekty.souhrn_schvaleny(s)
+    assert r["celkem"] == 70005000.0
+    assert r["po_zmenach"]["celkem"] == 68997140.0 and r["po_zmenach"]["investicni"] == 68992140.0
+    assert r["po_zmenach"]["neinvesticni"] == 5000.0 and r["po_zmenach"]["druh"] == "rozpocet_upraveny"

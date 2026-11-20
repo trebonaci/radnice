@@ -258,8 +258,24 @@ def sestav_projekt(p: dict, data: dict) -> dict:
 
     schvaleny_nazvy = set((p.get("rozpocet") or {}).get("schvaleny") or [])
     schvaleny = [{"id": r["id"], "rok": r["rok"], "nazev": r["nazev"], "trida": r["trida"], "castka": r["castka"],
+                  "po_zmenach": r.get("po_zmenach"), "zmeny_ro": r.get("zmeny_ro", []), "nova": False,
                   "jistota": "nase_propojeni"}
                  for r in data.get("rozpocet", []) if r["nazev"] in schvaleny_nazvy]
+    # položky přidané rozpočtovým opatřením během roku (ve schváleném rozpočtu nejsou), např. dotace KIF
+    # u přístavby tělocvičen – podle názvu z přehledu RO (#138)
+    from pipeline.rozpocet_zmeny import _klic, klic_polozky, normalizuj_nazev, posledni_stav
+    v_rozpoctu = {(r["rok"],) + klic_polozky(r["orj"], r["oddil"], "KV" if r["trida"] == "kapitalove" else "BV", r["nazev"])
+                  for r in data.get("rozpocet", [])}
+    hledane = {normalizuj_nazev(n) for n in schvaleny_nazvy}
+    for k, r in posledni_stav(data.get("rozpocet_zmeny", [])).items():
+        if k not in v_rozpoctu and k[-1] in hledane:
+            schvaleny.append({"id": r["id"], "rok": r["rok"], "nazev": r["ucel"],
+                              "trida": "kapitalove" if r["druh_zkratka"] == "KV" else "bezne",
+                              "castka": {"hodnota": 0.0, "mena": "CZK", "jednotka": "Kč", "s_dph": None, "druh": "rozpocet"},
+                              "po_zmenach": {"hodnota": float(r["po_zmene"]), "mena": "CZK", "jednotka": "Kč", "s_dph": None,
+                                             "druh": "rozpocet_upraveny", "po_ro": r["cislo_ro"], "zdroj_id": r["id"]},
+                              "zmeny_ro": [x["cislo_ro"] for x in data.get("rozpocet_zmeny", []) if _klic(x) == k],
+                              "nova": True, "jistota": "nase_propojeni"})
 
     # Dokončení stavby (#136): kolaudace / předání není v žádném strojově čteném zdroji, proto ho zapisuje
     # člověk do YAML s dokladem ({datum, popis, url}). Doplacení = E-ZAK „ukončeno plnění“ u zakázky na stavbu
@@ -371,8 +387,15 @@ def souhrn_schvaleny(schvaleny: list[dict]) -> list[dict]:
         roku = [s for s in schvaleny if s["rok"] == rok]
         inv = sum(_halere(s["castka"]["hodnota"]) for s in roku if s["trida"] == "kapitalove")
         neinv = sum(_halere(s["castka"]["hodnota"]) for s in roku if s["trida"] == "bezne")
+        # po změnách (přehled RO): položka bez změny zůstává na schválené částce
+        po = [_halere((s.get("po_zmenach") or {}).get("hodnota", s["castka"]["hodnota"])) for s in roku]
+        po_inv = sum(v for s, v in zip(roku, po) if s["trida"] == "kapitalove")
         vysledek.append({"rok": rok, "celkem": (inv + neinv) / 100, "investicni": inv / 100, "neinvesticni": neinv / 100,
-                         "druh": "rozpocet", "s_dph": None, "polozek": len(roku), "jistota": "nase_propojeni"})
+                         "druh": "rozpocet", "s_dph": None, "polozek": len(roku), "jistota": "nase_propojeni",
+                         "po_zmenach": {"celkem": sum(po) / 100, "investicni": po_inv / 100,
+                                        "neinvesticni": (sum(po) - po_inv) / 100, "druh": "rozpocet_upraveny",
+                                        "s_dph": None,
+                                        "zmeneno": any(s.get("po_zmenach") for s in roku)}})
     return vysledek
 
 
@@ -602,10 +625,12 @@ def sestav(koren: Path, data: dict) -> tuple[list[dict], list[str]]:
                 re.compile(vzor)
             except re.error as e:
                 chyby.append(f"projekt {p['id']}: chybný vzor {vzor!r}: {e}")
+        from pipeline.rozpocet_zmeny import normalizuj_nazev
         roky = {r["rok"] for r in data.get("rozpocet", [])}
-        nazvy_roku = {(r["rok"], r["nazev"]) for r in data.get("rozpocet", [])}
+        nazvy_roku = ({normalizuj_nazev(r["nazev"]) for r in data.get("rozpocet", [])}
+                      | {normalizuj_nazev(r["ucel"]) for r in data.get("rozpocet_zmeny", [])})
         for nazev in (p.get("rozpocet") or {}).get("schvaleny") or []:
-            if roky and not any((rok, nazev) in nazvy_roku for rok in roky):
+            if roky and normalizuj_nazev(nazev) not in nazvy_roku:
                 chyby.append(f"projekt {p['id']}: položka schváleného rozpočtu {nazev!r} v rozpočtu není")
         vysledek.append(sestav_projekt(p, data))
     return vysledek, chyby

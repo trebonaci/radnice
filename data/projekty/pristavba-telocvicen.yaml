@@ -9,7 +9,7 @@ vlastnik_subjekt_id: "00247618"
 rozpocet:
   org: ["6230000000"]
   nazvy: ["Přístavba tělocvičen - vybavení"]
-  schvaleny: ["Přístavba tělocvičen"]
+  schvaleny: ["Přístavba tělocvičen", "Přístavba tělocvičen - vybavení", "Přístavba dvou tělocvičen sportovní haly Třeboň – dotace – KIF – JčK - INV"]
 vazby:
   hledat: ["přístavb\\w* dvou tělocvič"]
   vyloucit: []

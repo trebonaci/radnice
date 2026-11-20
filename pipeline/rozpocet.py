@@ -38,6 +38,8 @@ ORGAN = {"rm": "rada", "zm": "zastupitelstvo"}
 def na_halere(s: str) -> int:
     """Český zápis částky → haléře (celé číslo, bez zaokrouhlovacích chyb)."""
     s = s.replace(" ", "")
+    if s.startswith(("-", "−")):                  # „-522,85“ = −52 285 haléřů (ne −52 200 + 85)
+        return -na_halere(s[1:])
     if "," in s:
         cela, des = s.split(",")
     else:

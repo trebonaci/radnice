@@ -27,6 +27,7 @@ from pipeline import dotace as modul_dotace
 from pipeline import projekty as modul_projekty
 from pipeline import rozpocet as modul_rozpocet
 from pipeline import rozpocet_akce as modul_rozpocet_akce
+from pipeline import rozpocet_zmeny as modul_rozpocet_zmeny
 from pipeline import schvaleni as modul_schvaleni
 from pipeline import zakazky as modul_zakazky
 from pipeline.verze import zkontroluj as zkontroluj_verze
@@ -374,12 +375,23 @@ def sestav(koren: Path | None = None) -> tuple[dict[str, list], list[str]]:
     # schválený rozpočet po položkách z PDF rozpočtu (#129; bez AI, součty kontroluje kód)
     rozpocet, chyby_r = modul_rozpocet_akce.nacti(koren)
     chyby += chyby_r + modul_rozpocet_akce.zkontroluj(rozpocet, koren)
+    # přehled rozpočtových opatření za rok (PDF finančního odboru, #138) → stav položek po změnách
+    rozpocet_zmeny, chyby_z, _upozorneni_z = modul_rozpocet_zmeny.nacti(koren)
+    _upozorneni_z += modul_rozpocet_zmeny.sjednot_nazvy(rozpocet_zmeny, rozpocet)
+    chyby += (chyby_z + modul_rozpocet_zmeny.zkontroluj(rozpocet_zmeny, koren)
+              + modul_rozpocet_zmeny.porovnej_s_usnesenimi(rozpocet_zmeny, rozpoctova_opatreni))
+    modul_rozpocet_zmeny.doplnit_rozpocet(rozpocet, rozpocet_zmeny)
     vystup = {"jednani": jednani, "usneseni": usneseni, "hlasovani": hlasovani, "zakazky": zakazky,
               "smlouvy": smlouvy, "rozpoctova_opatreni": rozpoctova_opatreni, "rozpocet": rozpocet,
+              "rozpocet_zmeny": rozpocet_zmeny,
               "dotace": dotace}
     # projektové karty: ručně spravované data/projekty/*.yaml + vazby na výstupy výše
     vystup["projekty"], chyby_p = modul_projekty.sestav(koren, vystup)
     chyby += chyby_p
+    # přehled investic roku (kapitálové výdaje po změnách, #138) – jen když je rozpočet stažený
+    roky = sorted({r["rok"] for r in rozpocet})
+    vystup["investice"] = [modul_rozpocet_zmeny.prehled_investic(rozpocet, rozpocet_zmeny, vystup["projekty"], r)
+                           for r in roky]
     # kontrola osobních údajů v celém výstupu (kromě doslovných citací, ty kontroluje sestavení)
     # (zastupitelé jen z období daného jednání)
     obdobi_jednani = {j["id"]: j["obdobi"] for j in jednani}
@@ -404,7 +416,7 @@ def main() -> int:
         (data / f"{nazev}.json").write_text(serializuj(obsah), encoding="utf-8")
     print(f"jednání {len(vystup['jednani'])}, usnesení {len(vystup['usneseni'])}, hlasování {len(vystup['hlasovani'])}, "
           f"zakázky {len(vystup['zakazky'])}, smlouvy {len(vystup['smlouvy'])}, "
-          f"položky RO {len(vystup['rozpoctova_opatreni'])}, rozpočet {len(vystup['rozpocet'])}, projekty {len(vystup['projekty'])}, dotace {len(vystup['dotace'])}")
+          f"položky RO {len(vystup['rozpoctova_opatreni'])}, rozpočet {len(vystup['rozpocet'])}, změny rozpočtu {len(vystup['rozpocet_zmeny'])}, projekty {len(vystup['projekty'])}, dotace {len(vystup['dotace'])}")
     for c in chyby:
         print("CHYBA:", c, file=sys.stderr)
     return 1 if chyby else 0

@@ -55,6 +55,22 @@
           "citace": "14 000 000,00",
           "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpo%C4%8Det%20m%C4%9Bsta%20T%C5%99ebon%C4%9B%20na%20rok%202026.pdf, strana 14; DPH dokument neuvádí"
         },
+        "po_zmenach": {
+          "hodnota": 6085000.0,
+          "mena": "CZK",
+          "jednotka": "Kč",
+          "s_dph": null,
+          "druh": "rozpocet_upraveny",
+          "po_ro": 56,
+          "zdroj_id": "ro-2026-56-01"
+        },
+        "zmeny_ro": [
+          38,
+          40,
+          43,
+          56
+        ],
+        "nova": false,
         "jistota": "nase_propojeni"
       }
     ],
@@ -97,7 +113,15 @@
           "druh": "rozpocet",
           "s_dph": null,
           "polozek": 1,
-          "jistota": "nase_propojeni"
+          "jistota": "nase_propojeni",
+          "po_zmenach": {
+            "celkem": 6085000.0,
+            "investicni": 6085000.0,
+            "neinvesticni": 0.0,
+            "druh": "rozpocet_upraveny",
+            "s_dph": null,
+            "zmeneno": true
+          }
         }
       ]
     },
@@ -1405,6 +1429,77 @@
           "citace": "70 000 000,00",
           "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpo%C4%8Det%20m%C4%9Bsta%20T%C5%99ebon%C4%9B%20na%20rok%202026.pdf, strana 14; DPH dokument neuvádí"
         },
+        "po_zmenach": {
+          "hodnota": 58992140.0,
+          "mena": "CZK",
+          "jednotka": "Kč",
+          "s_dph": null,
+          "druh": "rozpocet_upraveny",
+          "po_ro": 57,
+          "zdroj_id": "ro-2026-57-01"
+        },
+        "zmeny_ro": [
+          28,
+          57
+        ],
+        "nova": false,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "ro-2026-57-02",
+        "rok": 2026,
+        "nazev": "Přístavba tělocvičen - vybavení",
+        "trida": "bezne",
+        "castka": {
+          "hodnota": 0.0,
+          "mena": "CZK",
+          "jednotka": "Kč",
+          "s_dph": null,
+          "druh": "rozpocet"
+        },
+        "po_zmenach": {
+          "hodnota": 587000.0,
+          "mena": "CZK",
+          "jednotka": "Kč",
+          "s_dph": null,
+          "druh": "rozpocet_upraveny",
+          "po_ro": 57,
+          "zdroj_id": "ro-2026-57-02"
+        },
+        "zmeny_ro": [
+          26,
+          36,
+          51,
+          57
+        ],
+        "nova": true,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "ro-2026-28-02",
+        "rok": 2026,
+        "nazev": "Přístavba dvou tělocvičen sportovní haly Třeboň – dotace – KIF – JčK - INV",
+        "trida": "kapitalove",
+        "castka": {
+          "hodnota": 0.0,
+          "mena": "CZK",
+          "jednotka": "Kč",
+          "s_dph": null,
+          "druh": "rozpocet"
+        },
+        "po_zmenach": {
+          "hodnota": 10000000.0,
+          "mena": "CZK",
+          "jednotka": "Kč",
+          "s_dph": null,
+          "druh": "rozpocet_upraveny",
+          "po_ro": 28,
+          "zdroj_id": "ro-2026-28-02"
+        },
+        "zmeny_ro": [
+          28
+        ],
+        "nova": true,
         "jistota": "nase_propojeni"
       }
     ],
@@ -1725,8 +1820,16 @@
           "neinvesticni": 0.0,
           "druh": "rozpocet",
           "s_dph": null,
-          "polozek": 1,
-          "jistota": "nase_propojeni"
+          "polozek": 3,
+          "jistota": "nase_propojeni",
+          "po_zmenach": {
+            "celkem": 69579140.0,
+            "investicni": 68992140.0,
+            "neinvesticni": 587000.0,
+            "druh": "rozpocet_upraveny",
+            "s_dph": null,
+            "zmeneno": true
+          }
         }
       ]
     },
@@ -2709,6 +2812,19 @@
           "citace": "1 500 000,00",
           "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpo%C4%8Det%20m%C4%9Bsta%20T%C5%99ebon%C4%9B%20na%20rok%202026.pdf, strana 14; DPH dokument neuvádí"
         },
+        "po_zmenach": {
+          "hodnota": 2350000.0,
+          "mena": "CZK",
+          "jednotka": "Kč",
+          "s_dph": null,
+          "druh": "rozpocet_upraveny",
+          "po_ro": 43,
+          "zdroj_id": "ro-2026-43-02"
+        },
+        "zmeny_ro": [
+          43
+        ],
+        "nova": false,
         "jistota": "nase_propojeni"
       }
     ],
@@ -2792,7 +2908,15 @@
           "druh": "rozpocet",
           "s_dph": null,
           "polozek": 1,
-          "jistota": "nase_propojeni"
+          "jistota": "nase_propojeni",
+          "po_zmenach": {
+            "celkem": 2350000.0,
+            "investicni": 2350000.0,
+            "neinvesticni": 0.0,
+            "druh": "rozpocet_upraveny",
+            "s_dph": null,
+            "zmeneno": true
+          }
         }
       ]
     },
@@ -3002,6 +3126,21 @@
           "citace": "5 000 000,00",
           "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpo%C4%8Det%20m%C4%9Bsta%20T%C5%99ebon%C4%9B%20na%20rok%202026.pdf, strana 10; DPH dokument neuvádí"
         },
+        "po_zmenach": {
+          "hodnota": 3256000.0,
+          "mena": "CZK",
+          "jednotka": "Kč",
+          "s_dph": null,
+          "druh": "rozpocet_upraveny",
+          "po_ro": 51,
+          "zdroj_id": "ro-2026-51-01"
+        },
+        "zmeny_ro": [
+          26,
+          49,
+          51
+        ],
+        "nova": false,
         "jistota": "nase_propojeni"
       },
       {
@@ -3020,6 +3159,22 @@
           "citace": "56 000 000,00",
           "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpo%C4%8Det%20m%C4%9Bsta%20T%C5%99ebon%C4%9B%20na%20rok%202026.pdf, strana 14; DPH dokument neuvádí"
         },
+        "po_zmenach": {
+          "hodnota": 63025000.0,
+          "mena": "CZK",
+          "jednotka": "Kč",
+          "s_dph": null,
+          "druh": "rozpocet_upraveny",
+          "po_ro": 56,
+          "zdroj_id": "ro-2026-56-02"
+        },
+        "zmeny_ro": [
+          13,
+          34,
+          49,
+          56
+        ],
+        "nova": false,
         "jistota": "nase_propojeni"
       },
       {
@@ -3038,6 +3193,9 @@
           "citace": "500 000,00",
           "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpo%C4%8Det%20m%C4%9Bsta%20T%C5%99ebon%C4%9B%20na%20rok%202026.pdf, strana 14; DPH dokument neuvádí"
         },
+        "po_zmenach": null,
+        "zmeny_ro": [],
+        "nova": false,
         "jistota": "nase_propojeni"
       }
     ],
@@ -3461,7 +3619,15 @@
           "druh": "rozpocet",
           "s_dph": null,
           "polozek": 3,
-          "jistota": "nase_propojeni"
+          "jistota": "nase_propojeni",
+          "po_zmenach": {
+            "celkem": 66781000.0,
+            "investicni": 63525000.0,
+            "neinvesticni": 3256000.0,
+            "druh": "rozpocet_upraveny",
+            "s_dph": null,
+            "zmeneno": true
+          }
         }
       ]
     },

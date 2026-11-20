@@ -1,0 +1,5838 @@
+[
+  {
+    "id": "ro-2026-1-01",
+    "rok": 2026,
+    "cislo_ro": 1,
+    "nazev_ro": null,
+    "usneseni": [
+      "66/2026-95"
+    ],
+    "organ": "RM",
+    "orj": "800",
+    "oddil": 64,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Výdaje z finančního vypořádání minulých let mezi krajem a obcemi",
+    "fond": false,
+    "schvaleny": 100000,
+    "upraveny_pred": 100000,
+    "zmena": 4230,
+    "po_zmene": 104230,
+    "castka": {
+      "hodnota": 4230.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "4,23",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "800 64 BV Výdaje z finančního vypořádání minulých let mezi krajem a obcemi 100,00 100,00 4,23 104,23"
+    },
+    "nazev_polozky": "Výdaje z finančního vypořádání minulých let mezi krajem a obcemi"
+  },
+  {
+    "id": "ro-2026-1-02",
+    "rok": 2026,
+    "cislo_ro": 1,
+    "nazev_ro": null,
+    "usneseni": [
+      "66/2026-95"
+    ],
+    "organ": "RM",
+    "orj": "800",
+    "oddil": 0,
+    "druh": "financovani",
+    "druh_zkratka": "F",
+    "ucel": "Změna stavu finančních prostředků",
+    "fond": false,
+    "schvaleny": 77577290,
+    "upraveny_pred": 77577290,
+    "zmena": 4230,
+    "po_zmene": 77581520,
+    "castka": {
+      "hodnota": 4230.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "4,23",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "800 0 F Změna stavu finančních prostředků 77 577,29 77 577,29 4,23 77 581,52"
+    },
+    "nazev_polozky": "Změna stavu finančních prostředků"
+  },
+  {
+    "id": "ro-2026-2-01",
+    "rok": 2026,
+    "cislo_ro": 2,
+    "nazev_ro": null,
+    "usneseni": [
+      "67/2026-95"
+    ],
+    "organ": "RM",
+    "orj": "100",
+    "oddil": 43,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Školení, vzdělávání-transfer-výkon sociálně-právní ochrany dětí",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 128350,
+    "po_zmene": 128350,
+    "castka": {
+      "hodnota": 128350.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "128,35",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "100 43 BV Školení, vzdělávání-transfer-výkon sociálně-právní ochrany dětí 0,00 0,00 128,35 128,35"
+    },
+    "nazev_polozky": "Školení, vzdělávání-transfer-výkon sociálně-právní ochrany dětí"
+  },
+  {
+    "id": "ro-2026-2-02",
+    "rok": 2026,
+    "cislo_ro": 2,
+    "nazev_ro": null,
+    "usneseni": [
+      "67/2026-95"
+    ],
+    "organ": "RM",
+    "orj": "800",
+    "oddil": 0,
+    "druh": "financovani",
+    "druh_zkratka": "F",
+    "ucel": "Změna stavu finančních prostředků",
+    "fond": false,
+    "schvaleny": 77577290,
+    "upraveny_pred": 77581520,
+    "zmena": 128350,
+    "po_zmene": 77709870,
+    "castka": {
+      "hodnota": 128350.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "128,35",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "800 0 F Změna stavu finančních prostředků 77 577,29 77 581,52 128,35 77 709,87"
+    },
+    "nazev_polozky": "Změna stavu finančních prostředků"
+  },
+  {
+    "id": "ro-2026-3-01",
+    "rok": 2026,
+    "cislo_ro": 3,
+    "nazev_ro": null,
+    "usneseni": [
+      "77/2026-95"
+    ],
+    "organ": "RM",
+    "orj": "400",
+    "oddil": 33,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Program regenerace MPR (dot.)-přísp.j.vlast.",
+    "fond": false,
+    "schvaleny": 400000,
+    "upraveny_pred": 400000,
+    "zmena": -600,
+    "po_zmene": 399400,
+    "castka": {
+      "hodnota": -600.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-0,60",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "400 33 BV Program regenerace MPR (dot.)-přísp.j.vlast. 400,00 400,00 -0,60 399,40"
+    },
+    "nazev_polozky": "Program regenerace MPR (dot.)-přísp.j.vlast."
+  },
+  {
+    "id": "ro-2026-3-02",
+    "rok": 2026,
+    "cislo_ro": 3,
+    "nazev_ro": null,
+    "usneseni": [
+      "77/2026-95"
+    ],
+    "organ": "RM",
+    "orj": "400",
+    "oddil": 33,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Aktualizace programu regenerace",
+    "fond": false,
+    "schvaleny": 72000,
+    "upraveny_pred": 72000,
+    "zmena": 600,
+    "po_zmene": 72600,
+    "castka": {
+      "hodnota": 600.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "0,60",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "400 33 BV Aktualizace programu regenerace 72,00 72,00 0,60 72,60"
+    },
+    "nazev_polozky": "Aktualizace programu regenerace"
+  },
+  {
+    "id": "ro-2026-4-01",
+    "rok": 2026,
+    "cislo_ro": 4,
+    "nazev_ro": null,
+    "usneseni": [
+      "95/2026-96"
+    ],
+    "organ": "RM",
+    "orj": "100",
+    "oddil": 0,
+    "druh": "transfery",
+    "druh_zkratka": "T",
+    "ucel": "Dotace – NIV – „Obědy pro jihočeské děti II.“ ZŠ Na Sadech Třeboň",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 103740,
+    "po_zmene": 103740,
+    "castka": {
+      "hodnota": 103740.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "103,74",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "100 0 T Dotace – NIV – „Obědy pro jihočeské děti II.“ ZŠ Na Sadech Třeboň 0,00 0,00 103,74 103,74"
+    },
+    "nazev_polozky": "Dotace – NIV – „Obědy pro jihočeské děti II.“ ZŠ Na Sadech Třeboň"
+  },
+  {
+    "id": "ro-2026-4-02",
+    "rok": 2026,
+    "cislo_ro": 4,
+    "nazev_ro": null,
+    "usneseni": [
+      "95/2026-96"
+    ],
+    "organ": "RM",
+    "orj": "100",
+    "oddil": 0,
+    "druh": "transfery",
+    "druh_zkratka": "T",
+    "ucel": "Dotace – NIV – „Obědy pro jihočeské děti II.“ 3. MŠ Jeronýmova Třeboň",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 18560,
+    "po_zmene": 18560,
+    "castka": {
+      "hodnota": 18560.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "18,56",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "100 0 T Dotace – NIV – „Obědy pro jihočeské děti II.“ 3. MŠ Jeronýmova Třeboň 0,00 0,00 18,56 18,56"
+    },
+    "nazev_polozky": "Dotace – NIV – „Obědy pro jihočeské děti II.“ 3. MŠ Jeronýmova Třeboň"
+  },
+  {
+    "id": "ro-2026-4-03",
+    "rok": 2026,
+    "cislo_ro": 4,
+    "nazev_ro": null,
+    "usneseni": [
+      "95/2026-96"
+    ],
+    "organ": "RM",
+    "orj": "100",
+    "oddil": 43,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Obědy pro jihočeské děti II.“ ZŠ Na Sadech Třeboň - dotace – NIV",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 103740,
+    "po_zmene": 103740,
+    "castka": {
+      "hodnota": 103740.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "103,74",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "100 43 BV Obědy pro jihočeské děti II.“ ZŠ Na Sadech Třeboň - dotace – NIV 0,00 0,00 103,74 103,74"
+    },
+    "nazev_polozky": "Obědy pro jihočeské děti II.“ ZŠ Na Sadech Třeboň - dotace – NIV"
+  },
+  {
+    "id": "ro-2026-4-04",
+    "rok": 2026,
+    "cislo_ro": 4,
+    "nazev_ro": null,
+    "usneseni": [
+      "95/2026-96"
+    ],
+    "organ": "RM",
+    "orj": "100",
+    "oddil": 43,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Obědy pro jihočeské děti II.“ 3. MŠ Jeronýmova Třeboň - dotace – NIV",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 18560,
+    "po_zmene": 18560,
+    "castka": {
+      "hodnota": 18560.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "18,56",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "100 43 BV Obědy pro jihočeské děti II.“ 3. MŠ Jeronýmova Třeboň - dotace – NIV 0,00 0,00 18,56 18,56"
+    },
+    "nazev_polozky": "Obědy pro jihočeské děti II.“ 3. MŠ Jeronýmova Třeboň - dotace – NIV"
+  },
+  {
+    "id": "ro-2026-5-01",
+    "rok": 2026,
+    "cislo_ro": 5,
+    "nazev_ro": null,
+    "usneseni": [
+      "119/2026-97"
+    ],
+    "organ": "RM",
+    "orj": "900",
+    "oddil": 34,
+    "druh": "bezne_prijmy",
+    "druh_zkratka": "BP",
+    "ucel": "Příspěvek na akci Třeboňská šlapka 2026",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 15000,
+    "po_zmene": 15000,
+    "castka": {
+      "hodnota": 15000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "15,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "900 34 BP Příspěvek na akci Třeboňská šlapka 2026 0,00 0,00 15,00 15,00"
+    },
+    "nazev_polozky": "Příspěvek na akci Třeboňská šlapka 2026"
+  },
+  {
+    "id": "ro-2026-5-02",
+    "rok": 2026,
+    "cislo_ro": 5,
+    "nazev_ro": null,
+    "usneseni": [
+      "119/2026-97"
+    ],
+    "organ": "RM",
+    "orj": "900",
+    "oddil": 34,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Třeboňská šlapka 2026",
+    "fond": false,
+    "schvaleny": 10000,
+    "upraveny_pred": 10000,
+    "zmena": 15000,
+    "po_zmene": 25000,
+    "castka": {
+      "hodnota": 15000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "15,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "900 34 BV Třeboňská šlapka 2026 10,00 10,00 15,00 25,00"
+    },
+    "nazev_polozky": "Třeboňská šlapka 2026"
+  },
+  {
+    "id": "ro-2026-6-01",
+    "rok": 2026,
+    "cislo_ro": 6,
+    "nazev_ro": null,
+    "usneseni": [
+      "120/2026-97"
+    ],
+    "organ": "RM",
+    "orj": "800",
+    "oddil": 64,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Rezervy běžných výdajů",
+    "fond": false,
+    "schvaleny": 7680000,
+    "upraveny_pred": 7680000,
+    "zmena": -8000,
+    "po_zmene": 7672000,
+    "castka": {
+      "hodnota": -8000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-8,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "800 64 BV Rezervy běžných výdajů 7 680,00 7 680,00 -8,00 7 672,00"
+    },
+    "nazev_polozky": "Rezervy běžných výdajů"
+  },
+  {
+    "id": "ro-2026-6-02",
+    "rok": 2026,
+    "cislo_ro": 6,
+    "nazev_ro": null,
+    "usneseni": [
+      "120/2026-97"
+    ],
+    "organ": "RM",
+    "orj": "800",
+    "oddil": 33,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "OA, SOŠ a SOU Třeboň - dar - soutěž módní návrhář",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 8000,
+    "po_zmene": 8000,
+    "castka": {
+      "hodnota": 8000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "8,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "800 33 BV OA, SOŠ a SOU Třeboň - dar - soutěž módní návrhář 0,00 0,00 8,00 8,00"
+    },
+    "nazev_polozky": "OA, SOŠ a SOU Třeboň - dar - soutěž módní návrhář"
+  },
+  {
+    "id": "ro-2026-x14-01",
+    "rok": 2026,
+    "cislo_ro": null,
+    "nazev_ro": "úprava rozpisu SF",
+    "usneseni": [
+      "128/2026-97"
+    ],
+    "organ": "RM",
+    "orj": "770",
+    "oddil": 61,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "SF - příspěvek na stravování",
+    "fond": false,
+    "schvaleny": 2400000,
+    "upraveny_pred": 2400000,
+    "zmena": -2257000,
+    "po_zmene": 143000,
+    "castka": {
+      "hodnota": -2257000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-2 257,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "770 61 BV SF - příspěvek na stravování 2 400,00 2 400,00 -2 257,00 143,00"
+    },
+    "nazev_polozky": "SF - příspěvek na stravování",
+    "neprirazeno": true
+  },
+  {
+    "id": "ro-2026-x15-02",
+    "rok": 2026,
+    "cislo_ro": null,
+    "nazev_ro": "úprava rozpisu SF",
+    "usneseni": [
+      "128/2026-97"
+    ],
+    "organ": "RM",
+    "orj": "770",
+    "oddil": 61,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "SF - příspěvek na stravování MěÚ",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 1917000,
+    "po_zmene": 1917000,
+    "castka": {
+      "hodnota": 1917000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "1 917,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "770 61 BV SF - příspěvek na stravování MěÚ 0,00 0,00 1 917,00 1 917,00"
+    },
+    "nazev_polozky": "SF - příspěvek na stravování MěÚ"
+  },
+  {
+    "id": "ro-2026-x16-03",
+    "rok": 2026,
+    "cislo_ro": null,
+    "nazev_ro": "úprava rozpisu SF",
+    "usneseni": [
+      "128/2026-97"
+    ],
+    "organ": "RM",
+    "orj": "770",
+    "oddil": 53,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "SF - příspěvek na stravování MěPo",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 340000,
+    "po_zmene": 340000,
+    "castka": {
+      "hodnota": 340000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "340,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "770 53 BV SF - příspěvek na stravování MěPo 0,00 0,00 340,00 340,00"
+    },
+    "nazev_polozky": "SF - příspěvek na stravování MěPo"
+  },
+  {
+    "id": "ro-2026-7-01",
+    "rok": 2026,
+    "cislo_ro": 7,
+    "nazev_ro": null,
+    "usneseni": [
+      "165/2026-98"
+    ],
+    "organ": "RM",
+    "orj": "100",
+    "oddil": 64,
+    "druh": "bezne_prijmy",
+    "druh_zkratka": "BP",
+    "ucel": "Vratka transf. - MŠMT - Jan Amos Komenský ZŠ Sokolská Třeboň - SR",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 126370,
+    "po_zmene": 126370,
+    "castka": {
+      "hodnota": 126370.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "126,37",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "100 64 BP Vratka transf. - MŠMT - Jan Amos Komenský ZŠ Sokolská Třeboň - SR 0,00 0,00 126,37 126,37"
+    },
+    "nazev_polozky": "Vratka transf. - MŠMT - Jan Amos Komenský ZŠ Sokolská Třeboň - SR"
+  },
+  {
+    "id": "ro-2026-7-02",
+    "rok": 2026,
+    "cislo_ro": 7,
+    "nazev_ro": null,
+    "usneseni": [
+      "165/2026-98"
+    ],
+    "organ": "RM",
+    "orj": "100",
+    "oddil": 64,
+    "druh": "bezne_prijmy",
+    "druh_zkratka": "BP",
+    "ucel": "Vratka transf. - MŠMT - Jan Amos Komenský ZŠ Sokolská Třeboň – EU",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 416830,
+    "po_zmene": 416830,
+    "castka": {
+      "hodnota": 416830.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "416,83",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "100 64 BP Vratka transf. - MŠMT - Jan Amos Komenský ZŠ Sokolská Třeboň – EU 0,00 0,00 416,83 416,83"
+    },
+    "nazev_polozky": "Vratka transf. - MŠMT - Jan Amos Komenský ZŠ Sokolská Třeboň – EU"
+  },
+  {
+    "id": "ro-2026-7-03",
+    "rok": 2026,
+    "cislo_ro": 7,
+    "nazev_ro": null,
+    "usneseni": [
+      "165/2026-98"
+    ],
+    "organ": "RM",
+    "orj": "100",
+    "oddil": 64,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Vratka transf. - MŠMT - Jan Amos Komenský ZŠ Sokolská Třeboň - SR",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 126370,
+    "po_zmene": 126370,
+    "castka": {
+      "hodnota": 126370.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "126,37",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "100 64 BV Vratka transf. - MŠMT - Jan Amos Komenský ZŠ Sokolská Třeboň - SR 0,00 0,00 126,37 126,37"
+    },
+    "nazev_polozky": "Vratka transf. - MŠMT - Jan Amos Komenský ZŠ Sokolská Třeboň - SR"
+  },
+  {
+    "id": "ro-2026-7-04",
+    "rok": 2026,
+    "cislo_ro": 7,
+    "nazev_ro": null,
+    "usneseni": [
+      "165/2026-98"
+    ],
+    "organ": "RM",
+    "orj": "100",
+    "oddil": 64,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Vratka transf. - MŠMT - Jan Amos Komenský ZŠ Sokolská Třeboň – EU",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 416830,
+    "po_zmene": 416830,
+    "castka": {
+      "hodnota": 416830.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "416,83",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "100 64 BV Vratka transf. - MŠMT - Jan Amos Komenský ZŠ Sokolská Třeboň – EU 0,00 0,00 416,83 416,83"
+    },
+    "nazev_polozky": "Vratka transf. - MŠMT - Jan Amos Komenský ZŠ Sokolská Třeboň – EU"
+  },
+  {
+    "id": "ro-2026-8-01",
+    "rok": 2026,
+    "cislo_ro": 8,
+    "nazev_ro": null,
+    "usneseni": [
+      "178/2026-99"
+    ],
+    "organ": "RM",
+    "orj": "800",
+    "oddil": 43,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Příspěvky v oblasti sociálních služeb a zdravotnictví",
+    "fond": false,
+    "schvaleny": 2200000,
+    "upraveny_pred": 2200000,
+    "zmena": -10000,
+    "po_zmene": 2190000,
+    "castka": {
+      "hodnota": -10000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-10,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "800 43 BV Příspěvky v oblasti sociálních služeb a zdravotnictví 2 200,00 2 200,00 -10,00 2 190,00"
+    },
+    "nazev_polozky": "Příspěvky v oblasti sociálních služeb a zdravotnictví"
+  },
+  {
+    "id": "ro-2026-8-02",
+    "rok": 2026,
+    "cislo_ro": 8,
+    "nazev_ro": null,
+    "usneseni": [
+      "178/2026-99"
+    ],
+    "organ": "RM",
+    "orj": "800",
+    "oddil": 35,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Příspěvky v oblasti sociálních služeb a zdravotnictví",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 5000,
+    "po_zmene": 5000,
+    "castka": {
+      "hodnota": 5000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "5,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "800 35 BV Příspěvky v oblasti sociálních služeb a zdravotnictví 0,00 0,00 5,00 5,00"
+    },
+    "nazev_polozky": "Příspěvky v oblasti sociálních služeb a zdravotnictví"
+  },
+  {
+    "id": "ro-2026-8-03",
+    "rok": 2026,
+    "cislo_ro": 8,
+    "nazev_ro": null,
+    "usneseni": [
+      "178/2026-99"
+    ],
+    "organ": "RM",
+    "orj": "800",
+    "oddil": 35,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Příspěvky v oblasti sociálních služeb a zdravotnictví",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 5000,
+    "po_zmene": 5000,
+    "castka": {
+      "hodnota": 5000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "5,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "800 35 BV Příspěvky v oblasti sociálních služeb a zdravotnictví 0,00 0,00 5,00 5,00"
+    },
+    "nazev_polozky": "Příspěvky v oblasti sociálních služeb a zdravotnictví"
+  },
+  {
+    "id": "ro-2026-9-01",
+    "rok": 2026,
+    "cislo_ro": 9,
+    "nazev_ro": null,
+    "usneseni": [
+      "186/2026-99"
+    ],
+    "organ": "RM",
+    "orj": "800",
+    "oddil": 34,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Příspěvky v oblasti ostatních čiností",
+    "fond": false,
+    "schvaleny": 300000,
+    "upraveny_pred": 300000,
+    "zmena": -8000,
+    "po_zmene": 292000,
+    "castka": {
+      "hodnota": -8000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-8,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "800 34 BV Příspěvky v oblasti ostatních čiností 300,00 300,00 -8,00 292,00"
+    },
+    "nazev_polozky": "Příspěvky v oblasti ostatních čiností"
+  },
+  {
+    "id": "ro-2026-9-02",
+    "rok": 2026,
+    "cislo_ro": 9,
+    "nazev_ro": null,
+    "usneseni": [
+      "186/2026-99"
+    ],
+    "organ": "RM",
+    "orj": "800",
+    "oddil": 31,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Příspěvky v oblasti ostatních čiností - dar",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 8000,
+    "po_zmene": 8000,
+    "castka": {
+      "hodnota": 8000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "8,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "800 31 BV Příspěvky v oblasti ostatních čiností - dar 0,00 0,00 8,00 8,00"
+    },
+    "nazev_polozky": "Příspěvky v oblasti ostatních čiností - dar"
+  },
+  {
+    "id": "ro-2026-10-01",
+    "rok": 2026,
+    "cislo_ro": 10,
+    "nazev_ro": null,
+    "usneseni": [
+      "187/2026-99"
+    ],
+    "organ": "RM",
+    "orj": "800",
+    "oddil": 43,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Příspěvky v oblasti sociálních služeb a zdravotnictví",
+    "fond": false,
+    "schvaleny": 2200000,
+    "upraveny_pred": 2190000,
+    "zmena": -45000,
+    "po_zmene": 2145000,
+    "castka": {
+      "hodnota": -45000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-45,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "800 43 BV Příspěvky v oblasti sociálních služeb a zdravotnictví 2 200,00 2 190,00 -45,00 2 145,00"
+    },
+    "nazev_polozky": "Příspěvky v oblasti sociálních služeb a zdravotnictví"
+  },
+  {
+    "id": "ro-2026-10-02",
+    "rok": 2026,
+    "cislo_ro": 10,
+    "nazev_ro": null,
+    "usneseni": [
+      "187/2026-99"
+    ],
+    "organ": "RM",
+    "orj": "800",
+    "oddil": 43,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Příspěvky v oblasti sociálních služeb a zdravotnictví - dar",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 30000,
+    "po_zmene": 30000,
+    "castka": {
+      "hodnota": 30000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "30,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "800 43 BV Příspěvky v oblasti sociálních služeb a zdravotnictví - dar 0,00 0,00 30,00 30,00"
+    },
+    "nazev_polozky": "Příspěvky v oblasti sociálních služeb a zdravotnictví - dar"
+  },
+  {
+    "id": "ro-2026-10-03",
+    "rok": 2026,
+    "cislo_ro": 10,
+    "nazev_ro": null,
+    "usneseni": [
+      "187/2026-99"
+    ],
+    "organ": "RM",
+    "orj": "800",
+    "oddil": 35,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Příspěvky v oblasti sociálních služeb a zdravotnictví - dar",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 10000,
+    "po_zmene": 10000,
+    "castka": {
+      "hodnota": 10000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "10,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "800 35 BV Příspěvky v oblasti sociálních služeb a zdravotnictví - dar 0,00 0,00 10,00 10,00"
+    },
+    "nazev_polozky": "Příspěvky v oblasti sociálních služeb a zdravotnictví - dar"
+  },
+  {
+    "id": "ro-2026-10-04",
+    "rok": 2026,
+    "cislo_ro": 10,
+    "nazev_ro": null,
+    "usneseni": [
+      "187/2026-99"
+    ],
+    "organ": "RM",
+    "orj": "800",
+    "oddil": 39,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Příspěvky v oblasti sociálních služeb a zdravotnictví - dar",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 5000,
+    "po_zmene": 5000,
+    "castka": {
+      "hodnota": 5000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "5,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "800 39 BV Příspěvky v oblasti sociálních služeb a zdravotnictví - dar 0,00 0,00 5,00 5,00"
+    },
+    "nazev_polozky": "Příspěvky v oblasti sociálních služeb a zdravotnictví - dar"
+  },
+  {
+    "id": "ro-2026-11-01",
+    "rok": 2026,
+    "cislo_ro": 11,
+    "nazev_ro": null,
+    "usneseni": [
+      "188/2026-99"
+    ],
+    "organ": "RM",
+    "orj": "900",
+    "oddil": 0,
+    "druh": "transfery",
+    "druh_zkratka": "T",
+    "ucel": "Dotace-JčK-Regionální funkce knihoven v roce 2026",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 490000,
+    "po_zmene": 490000,
+    "castka": {
+      "hodnota": 490000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "490,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "900 0 T Dotace-JčK-Regionální funkce knihoven v roce 2026 0,00 0,00 490,00 490,00"
+    },
+    "nazev_polozky": "Dotace-JčK-Regionální funkce knihoven v roce 2026"
+  },
+  {
+    "id": "ro-2026-11-02",
+    "rok": 2026,
+    "cislo_ro": 11,
+    "nazev_ro": null,
+    "usneseni": [
+      "188/2026-99"
+    ],
+    "organ": "RM",
+    "orj": "900",
+    "oddil": 33,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Regionální funkce knihoven v roce 2026 – dotace - JčK",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 490000,
+    "po_zmene": 490000,
+    "castka": {
+      "hodnota": 490000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "490,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "900 33 BV Regionální funkce knihoven v roce 2026 – dotace - JčK 0,00 0,00 490,00 490,00"
+    },
+    "nazev_polozky": "Regionální funkce knihoven v roce 2026 – dotace - JčK"
+  },
+  {
+    "id": "ro-2026-12-01",
+    "rok": 2026,
+    "cislo_ro": 12,
+    "nazev_ro": null,
+    "usneseni": [
+      "189/2026-99"
+    ],
+    "organ": "RM",
+    "orj": "800",
+    "oddil": 36,
+    "druh": "bezne_prijmy",
+    "druh_zkratka": "BP",
+    "ucel": "Znalecké posudky - přefakturace",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 114000,
+    "po_zmene": 114000,
+    "castka": {
+      "hodnota": 114000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "114,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "800 36 BP Znalecké posudky - přefakturace 0,00 0,00 114,00 114,00"
+    },
+    "nazev_polozky": "Znalecké posudky - přefakturace"
+  },
+  {
+    "id": "ro-2026-12-02",
+    "rok": 2026,
+    "cislo_ro": 12,
+    "nazev_ro": null,
+    "usneseni": [
+      "189/2026-99"
+    ],
+    "organ": "RM",
+    "orj": "800",
+    "oddil": 36,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Znalecké posudky",
+    "fond": false,
+    "schvaleny": 100000,
+    "upraveny_pred": 100000,
+    "zmena": 188000,
+    "po_zmene": 288000,
+    "castka": {
+      "hodnota": 188000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "188,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "800 36 BV Znalecké posudky 100,00 100,00 188,00 288,00"
+    },
+    "nazev_polozky": "Znalecké posudky"
+  },
+  {
+    "id": "ro-2026-12-03",
+    "rok": 2026,
+    "cislo_ro": 12,
+    "nazev_ro": null,
+    "usneseni": [
+      "189/2026-99"
+    ],
+    "organ": "RM",
+    "orj": "800",
+    "oddil": 61,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Opravy a udržování",
+    "fond": false,
+    "schvaleny": 120000,
+    "upraveny_pred": 120000,
+    "zmena": 70000,
+    "po_zmene": 190000,
+    "castka": {
+      "hodnota": 70000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "70,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "800 61 BV Opravy a udržování 120,00 120,00 70,00 190,00"
+    },
+    "nazev_polozky": "Opravy a udržování"
+  },
+  {
+    "id": "ro-2026-12-04",
+    "rok": 2026,
+    "cislo_ro": 12,
+    "nazev_ro": null,
+    "usneseni": [
+      "189/2026-99"
+    ],
+    "organ": "RM",
+    "orj": "800",
+    "oddil": 61,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Dálniční známky",
+    "fond": false,
+    "schvaleny": 15000,
+    "upraveny_pred": 15000,
+    "zmena": 3500,
+    "po_zmene": 18500,
+    "castka": {
+      "hodnota": 3500.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "3,50",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "800 61 BV Dálniční známky 15,00 15,00 3,50 18,50"
+    },
+    "nazev_polozky": "Dálniční známky"
+  },
+  {
+    "id": "ro-2026-12-05",
+    "rok": 2026,
+    "cislo_ro": 12,
+    "nazev_ro": null,
+    "usneseni": [
+      "189/2026-99"
+    ],
+    "organ": "RM",
+    "orj": "800",
+    "oddil": 64,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Rezervy běžných výdajů",
+    "fond": false,
+    "schvaleny": 7680000,
+    "upraveny_pred": 7672000,
+    "zmena": -147500,
+    "po_zmene": 7524500,
+    "castka": {
+      "hodnota": -147500.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-147,50",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "800 64 BV Rezervy běžných výdajů 7 680,00 7 672,00 -147,50 7 524,50"
+    },
+    "nazev_polozky": "Rezervy běžných výdajů"
+  },
+  {
+    "id": "ro-2026-13-01",
+    "rok": 2026,
+    "cislo_ro": 13,
+    "nazev_ro": null,
+    "usneseni": [
+      "212/2026-100"
+    ],
+    "organ": "RM",
+    "orj": "800",
+    "oddil": 64,
+    "druh": "kapitalove_vydaje",
+    "druh_zkratka": "KV",
+    "ucel": "Rezervy kapitálových výdajů",
+    "fond": false,
+    "schvaleny": 26000000,
+    "upraveny_pred": 26000000,
+    "zmena": -1140000,
+    "po_zmene": 24860000,
+    "castka": {
+      "hodnota": -1140000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-1 140,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "800 64 KV Rezervy kapitálových výdajů 26 000,00 26 000,00 -1 140,00 24 860,00"
+    },
+    "nazev_polozky": "Rezervy kapitálových výdajů"
+  },
+  {
+    "id": "ro-2026-13-02",
+    "rok": 2026,
+    "cislo_ro": 13,
+    "nazev_ro": null,
+    "usneseni": [
+      "212/2026-100"
+    ],
+    "organ": "RM",
+    "orj": "750",
+    "oddil": 21,
+    "druh": "kapitalove_vydaje",
+    "druh_zkratka": "KV",
+    "ucel": "Ubytování sportovní hala",
+    "fond": false,
+    "schvaleny": 56000000,
+    "upraveny_pred": 56000000,
+    "zmena": 1140000,
+    "po_zmene": 57140000,
+    "castka": {
+      "hodnota": 1140000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "1 140,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "750 21 KV Ubytování sportovní hala 56 000,00 56 000,00 1 140,00 57 140,00"
+    },
+    "nazev_polozky": "Ubytování sportovní hala"
+  },
+  {
+    "id": "ro-2026-14-01",
+    "rok": 2026,
+    "cislo_ro": 14,
+    "nazev_ro": null,
+    "usneseni": [
+      "239/2026-101"
+    ],
+    "organ": "RM",
+    "orj": "100",
+    "oddil": 0,
+    "druh": "transfery",
+    "druh_zkratka": "T",
+    "ucel": "Dotace – NIV – „Obědy pro jihočeské děti II.“ ZŠ Na Sadech Třeboň",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 103740,
+    "zmena": 26110,
+    "po_zmene": 129850,
+    "castka": {
+      "hodnota": 26110.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "26,11",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "100 0 T Dotace – NIV – „Obědy pro jihočeské děti II.“ ZŠ Na Sadech Třeboň 0,00 103,74 26,11 129,85"
+    },
+    "nazev_polozky": "Dotace – NIV – „Obědy pro jihočeské děti II.“ ZŠ Na Sadech Třeboň"
+  },
+  {
+    "id": "ro-2026-14-02",
+    "rok": 2026,
+    "cislo_ro": 14,
+    "nazev_ro": null,
+    "usneseni": [
+      "239/2026-101"
+    ],
+    "organ": "RM",
+    "orj": "100",
+    "oddil": 43,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Obědy pro jihočeské děti II.“ ZŠ Na Sadech Třeboň - dotace – NIV",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 103740,
+    "zmena": 26110,
+    "po_zmene": 129850,
+    "castka": {
+      "hodnota": 26110.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "26,11",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "100 43 BV Obědy pro jihočeské děti II.“ ZŠ Na Sadech Třeboň - dotace – NIV 0,00 103,74 26,11 129,85"
+    },
+    "nazev_polozky": "Obědy pro jihočeské děti II.“ ZŠ Na Sadech Třeboň - dotace – NIV"
+  },
+  {
+    "id": "ro-2026-15-01",
+    "rok": 2026,
+    "cislo_ro": 15,
+    "nazev_ro": null,
+    "usneseni": [
+      "241/2026-101"
+    ],
+    "organ": "RM",
+    "orj": "400",
+    "oddil": 0,
+    "druh": "transfery",
+    "druh_zkratka": "T",
+    "ucel": "Dotace-MK-příspěvek na obnovu kulturních památek z Programu regenerace MPR",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 200000,
+    "po_zmene": 200000,
+    "castka": {
+      "hodnota": 200000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "200,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "400 0 T Dotace-MK-příspěvek na obnovu kulturních památek z Programu regenerace MPR 0,00 0,00 200,00 200,00"
+    },
+    "nazev_polozky": "Dotace-MK-příspěvek na obnovu kulturních památek z Programu regenerace MPR"
+  },
+  {
+    "id": "ro-2026-15-02",
+    "rok": 2026,
+    "cislo_ro": 15,
+    "nazev_ro": null,
+    "usneseni": [
+      "241/2026-101"
+    ],
+    "organ": "RM",
+    "orj": "750",
+    "oddil": 33,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Obnova nemovitých kulturních památek-Program regenerace MPR-dotace-MK",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 200000,
+    "po_zmene": 200000,
+    "castka": {
+      "hodnota": 200000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "200,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "750 33 BV Obnova nemovitých kulturních památek-Program regenerace MPR-dotace-MK 0,00 0,00 200,00 200,00"
+    },
+    "nazev_polozky": "Obnova nemovitých kulturních památek-Program regenerace MPR-dotace-MK"
+  },
+  {
+    "id": "ro-2026-16-01",
+    "rok": 2026,
+    "cislo_ro": 16,
+    "nazev_ro": null,
+    "usneseni": [
+      "240/2026-101"
+    ],
+    "organ": "RM",
+    "orj": "800",
+    "oddil": 34,
+    "druh": "bezne_prijmy",
+    "druh_zkratka": "BP",
+    "ucel": "Vratka části dotace z oblasti ostatních čiností",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 5000,
+    "po_zmene": 5000,
+    "castka": {
+      "hodnota": 5000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "5,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "800 34 BP Vratka části dotace z oblasti ostatních čiností 0,00 0,00 5,00 5,00"
+    },
+    "nazev_polozky": "Vratka části dotace z oblasti ostatních čiností"
+  },
+  {
+    "id": "ro-2026-16-02",
+    "rok": 2026,
+    "cislo_ro": 16,
+    "nazev_ro": null,
+    "usneseni": [
+      "240/2026-101"
+    ],
+    "organ": "RM",
+    "orj": "800",
+    "oddil": 34,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Příspěvky v oblasti ostatních čiností",
+    "fond": false,
+    "schvaleny": 300000,
+    "upraveny_pred": 292000,
+    "zmena": 5000,
+    "po_zmene": 297000,
+    "castka": {
+      "hodnota": 5000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "5,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "800 34 BV Příspěvky v oblasti ostatních čiností 300,00 292,00 5,00 297,00"
+    },
+    "nazev_polozky": "Příspěvky v oblasti ostatních čiností"
+  },
+  {
+    "id": "ro-2026-17-01",
+    "rok": 2026,
+    "cislo_ro": 17,
+    "nazev_ro": null,
+    "usneseni": [
+      "252/2026-102"
+    ],
+    "organ": "RM",
+    "orj": "100",
+    "oddil": 0,
+    "druh": "transfery",
+    "druh_zkratka": "T",
+    "ucel": "Dotace – NIV – „Obědy pro jihočeské děti II.“ MŠ Sluníčko Třeboň",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 5720,
+    "po_zmene": 5720,
+    "castka": {
+      "hodnota": 5720.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "5,72",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "100 0 T Dotace – NIV – „Obědy pro jihočeské děti II.“ MŠ Sluníčko Třeboň 0,00 0,00 5,72 5,72"
+    },
+    "nazev_polozky": "Dotace – NIV – „Obědy pro jihočeské děti II.“ MŠ Sluníčko Třeboň"
+  },
+  {
+    "id": "ro-2026-17-02",
+    "rok": 2026,
+    "cislo_ro": 17,
+    "nazev_ro": null,
+    "usneseni": [
+      "252/2026-102"
+    ],
+    "organ": "RM",
+    "orj": "100",
+    "oddil": 43,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "\"Obědy pro jihočeské děti II.“ MŠ Sluníčko Třeboň - dotace – NIV",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 5720,
+    "po_zmene": 5720,
+    "castka": {
+      "hodnota": 5720.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "5,72",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "100 43 BV \"Obědy pro jihočeské děti II.“ MŠ Sluníčko Třeboň - dotace – NIV 0,00 0,00 5,72 5,72"
+    },
+    "nazev_polozky": "\"Obědy pro jihočeské děti II.“ MŠ Sluníčko Třeboň - dotace – NIV"
+  },
+  {
+    "id": "ro-2026-18-01",
+    "rok": 2026,
+    "cislo_ro": 18,
+    "nazev_ro": null,
+    "usneseni": [
+      "253/2026-102"
+    ],
+    "organ": "RM",
+    "orj": "800",
+    "oddil": 64,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Rezervy běžných výdajů",
+    "fond": false,
+    "schvaleny": 7680000,
+    "upraveny_pred": 7524500,
+    "zmena": -4816800,
+    "po_zmene": 2707700,
+    "castka": {
+      "hodnota": -4816800.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-4 816,80",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "800 64 BV Rezervy běžných výdajů 7 680,00 7 524,50 -4 816,80 2 707,70"
+    },
+    "nazev_polozky": "Rezervy běžných výdajů"
+  },
+  {
+    "id": "ro-2026-18-02",
+    "rok": 2026,
+    "cislo_ro": 18,
+    "nazev_ro": null,
+    "usneseni": [
+      "253/2026-102"
+    ],
+    "organ": "RM",
+    "orj": "770",
+    "oddil": 61,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Platy zaměstnanců v prac.poměru - úřad",
+    "fond": false,
+    "schvaleny": 48800000,
+    "upraveny_pred": 48800000,
+    "zmena": 3600000,
+    "po_zmene": 52400000,
+    "castka": {
+      "hodnota": 3600000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "3 600,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "770 61 BV Platy zaměstnanců v prac.poměru - úřad 48 800,00 48 800,00 3 600,00 52 400,00"
+    },
+    "nazev_polozky": "Platy zaměstnanců v prac.poměru - úřad"
+  },
+  {
+    "id": "ro-2026-18-03",
+    "rok": 2026,
+    "cislo_ro": 18,
+    "nazev_ro": null,
+    "usneseni": [
+      "253/2026-102"
+    ],
+    "organ": "RM",
+    "orj": "770",
+    "oddil": 61,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Povinné poj.na soc.zabezpečení - zaměst.a OOV",
+    "fond": false,
+    "schvaleny": 12250000,
+    "upraveny_pred": 12250000,
+    "zmena": 892800,
+    "po_zmene": 13142800,
+    "castka": {
+      "hodnota": 892800.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "892,80",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "770 61 BV Povinné poj.na soc.zabezpečení - zaměst.a OOV 12 250,00 12 250,00 892,80 13 142,80"
+    },
+    "nazev_polozky": "Povinné pojistné na soc.zabezpečení - zaměstnanci a OOV",
+    "prirazeni": "castka"
+  },
+  {
+    "id": "ro-2026-18-04",
+    "rok": 2026,
+    "cislo_ro": 18,
+    "nazev_ro": null,
+    "usneseni": [
+      "253/2026-102"
+    ],
+    "organ": "RM",
+    "orj": "770",
+    "oddil": 61,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Povinné poj. na zdrav.pojištění - zaměst. a OOV",
+    "fond": false,
+    "schvaleny": 4420000,
+    "upraveny_pred": 4420000,
+    "zmena": 324000,
+    "po_zmene": 4744000,
+    "castka": {
+      "hodnota": 324000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "324,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "770 61 BV Povinné poj. na zdrav.pojištění - zaměst. a OOV 4 420,00 4 420,00 324,00 4 744,00"
+    },
+    "nazev_polozky": "Povinné pojistné na zdrav.pojištění - zaměstnanci a OOV",
+    "prirazeni": "castka"
+  },
+  {
+    "id": "ro-2026-19-01",
+    "rok": 2026,
+    "cislo_ro": 19,
+    "nazev_ro": null,
+    "usneseni": [
+      "254/2026-102"
+    ],
+    "organ": "RM",
+    "orj": "770",
+    "oddil": 33,
+    "druh": "kapitalove_vydaje",
+    "druh_zkratka": "KV",
+    "ucel": "Umělecké artefakty",
+    "fond": false,
+    "schvaleny": 2000000,
+    "upraveny_pred": 2000000,
+    "zmena": -180000,
+    "po_zmene": 1820000,
+    "castka": {
+      "hodnota": -180000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-180,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "770 33 KV Umělecké artefakty 2 000,00 2 000,00 -180,00 1 820,00"
+    },
+    "nazev_polozky": "Umělecké artefakty"
+  },
+  {
+    "id": "ro-2026-19-02",
+    "rok": 2026,
+    "cislo_ro": 19,
+    "nazev_ro": null,
+    "usneseni": [
+      "254/2026-102"
+    ],
+    "organ": "RM",
+    "orj": "770",
+    "oddil": 61,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Různé finanční výdaje - nákup ost.služeb",
+    "fond": false,
+    "schvaleny": 450000,
+    "upraveny_pred": 450000,
+    "zmena": 180000,
+    "po_zmene": 630000,
+    "castka": {
+      "hodnota": 180000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "180,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "770 61 BV Různé finanční výdaje - nákup ost.služeb 450,00 450,00 180,00 630,00"
+    },
+    "nazev_polozky": "Různé finanční výdaje - nákup ostatních služeb",
+    "prirazeni": "castka"
+  },
+  {
+    "id": "ro-2026-20-01",
+    "rok": 2026,
+    "cislo_ro": 20,
+    "nazev_ro": null,
+    "usneseni": [
+      "255/2026-102"
+    ],
+    "organ": "RM",
+    "orj": "750",
+    "oddil": 33,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Divadlo J.K. Tyla - opravy",
+    "fond": false,
+    "schvaleny": 400000,
+    "upraveny_pred": 400000,
+    "zmena": -100000,
+    "po_zmene": 300000,
+    "castka": {
+      "hodnota": -100000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-100,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "750 33 BV Divadlo J.K. Tyla - opravy 400,00 400,00 -100,00 300,00"
+    },
+    "nazev_polozky": "Opravy v Divadle J.K. Tyla",
+    "prirazeni": "castka"
+  },
+  {
+    "id": "ro-2026-20-02",
+    "rok": 2026,
+    "cislo_ro": 20,
+    "nazev_ro": null,
+    "usneseni": [
+      "255/2026-102"
+    ],
+    "organ": "RM",
+    "orj": "750",
+    "oddil": 33,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Divadlo J.K. Tyla - investice",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 100000,
+    "po_zmene": 100000,
+    "castka": {
+      "hodnota": 100000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "100,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "750 33 BV Divadlo J.K. Tyla - investice 0,00 0,00 100,00 100,00"
+    },
+    "nazev_polozky": "Divadlo J.K. Tyla - investice"
+  },
+  {
+    "id": "ro-2026-21-01",
+    "rok": 2026,
+    "cislo_ro": 21,
+    "nazev_ro": null,
+    "usneseni": [
+      "280/2026-103"
+    ],
+    "organ": "RM",
+    "orj": "100",
+    "oddil": 0,
+    "druh": "transfery",
+    "druh_zkratka": "T",
+    "ucel": "Transfer-MPSV na výk.soc.-práv.ochrany dětí",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 4645100,
+    "po_zmene": 4645100,
+    "castka": {
+      "hodnota": 4645100.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "4 645,10",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "100 0 T Transfer-MPSV na výk.soc.-práv.ochrany dětí 0,00 0,00 4 645,10 4 645,10"
+    },
+    "nazev_polozky": "Transfer-MPSV na výk.soc.-práv.ochrany dětí"
+  },
+  {
+    "id": "ro-2026-21-02",
+    "rok": 2026,
+    "cislo_ro": 21,
+    "nazev_ro": null,
+    "usneseni": [
+      "280/2026-103"
+    ],
+    "organ": "RM",
+    "orj": "770",
+    "oddil": 61,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Platy zaměstnanců v pr.pom.-transf..-soc.-práv.ochr.dětí",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 3170000,
+    "po_zmene": 3170000,
+    "castka": {
+      "hodnota": 3170000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "3 170,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "770 61 BV Platy zaměstnanců v pr.pom.-transf..-soc.-práv.ochr.dětí 0,00 0,00 3 170,00 3 170,00"
+    },
+    "nazev_polozky": "Platy zaměstnanců v pr.pom.-transf..-soc.-práv.ochr.dětí"
+  },
+  {
+    "id": "ro-2026-21-03",
+    "rok": 2026,
+    "cislo_ro": 21,
+    "nazev_ro": null,
+    "usneseni": [
+      "280/2026-103"
+    ],
+    "organ": "RM",
+    "orj": "770",
+    "oddil": 61,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Povinné poj. na SZ-zam.-transf.-výk.soc.-práv.ochr.dětí",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 794800,
+    "po_zmene": 794800,
+    "castka": {
+      "hodnota": 794800.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "794,80",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "770 61 BV Povinné poj. na SZ-zam.-transf.-výk.soc.-práv.ochr.dětí 0,00 0,00 794,80 794,80"
+    },
+    "nazev_polozky": "Povinné poj. na SZ-zam.-transf.-výk.soc.-práv.ochr.dětí"
+  },
+  {
+    "id": "ro-2026-21-04",
+    "rok": 2026,
+    "cislo_ro": 21,
+    "nazev_ro": null,
+    "usneseni": [
+      "280/2026-103"
+    ],
+    "organ": "RM",
+    "orj": "770",
+    "oddil": 61,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Povinné poj. na ZP-zam.OOV-transf..-soc.-práv.ochr.dětí",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 285300,
+    "po_zmene": 285300,
+    "castka": {
+      "hodnota": 285300.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "285,30",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "770 61 BV Povinné poj. na ZP-zam.OOV-transf..-soc.-práv.ochr.dětí 0,00 0,00 285,30 285,30"
+    },
+    "nazev_polozky": "Povinné poj. na ZP-zam.OOV-transf..-soc.-práv.ochr.dětí"
+  },
+  {
+    "id": "ro-2026-21-05",
+    "rok": 2026,
+    "cislo_ro": 21,
+    "nazev_ro": null,
+    "usneseni": [
+      "280/2026-103"
+    ],
+    "organ": "RM",
+    "orj": "100",
+    "oddil": 43,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Běžné výdaje podle druhového určení",
+    "fond": false,
+    "schvaleny": 128350,
+    "upraveny_pred": 128350,
+    "zmena": 395000,
+    "po_zmene": 523350,
+    "castka": {
+      "hodnota": 395000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "395,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "100 43 BV Běžné výdaje podle druhového určení 128,35 128,35 395,00 523,35"
+    },
+    "nazev_polozky": "Běžné výdaje podle druhového určení",
+    "neprirazeno": true
+  },
+  {
+    "id": "ro-2026-22-01",
+    "rok": 2026,
+    "cislo_ro": 22,
+    "nazev_ro": null,
+    "usneseni": [
+      "281/2026-103"
+    ],
+    "organ": "RM",
+    "orj": "900",
+    "oddil": 21,
+    "druh": "bezne_prijmy",
+    "druh_zkratka": "BP",
+    "ucel": "Pronájem - pozemky – externí trhy",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 300000,
+    "po_zmene": 300000,
+    "castka": {
+      "hodnota": 300000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "300,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "900 21 BP Pronájem - pozemky – externí trhy 0,00 0,00 300,00 300,00"
+    },
+    "nazev_polozky": "Pronájem - pozemky – externí trhy"
+  },
+  {
+    "id": "ro-2026-22-02",
+    "rok": 2026,
+    "cislo_ro": 22,
+    "nazev_ro": null,
+    "usneseni": [
+      "281/2026-103"
+    ],
+    "organ": "RM",
+    "orj": "900",
+    "oddil": 21,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Ostatní služby – externí trhy",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 100000,
+    "po_zmene": 100000,
+    "castka": {
+      "hodnota": 100000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "100,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "900 21 BV Ostatní služby – externí trhy 0,00 0,00 100,00 100,00"
+    },
+    "nazev_polozky": "Ostatní služby – externí trhy"
+  },
+  {
+    "id": "ro-2026-22-03",
+    "rok": 2026,
+    "cislo_ro": 22,
+    "nazev_ro": null,
+    "usneseni": [
+      "281/2026-103"
+    ],
+    "organ": "RM",
+    "orj": "800",
+    "oddil": 0,
+    "druh": "financovani",
+    "druh_zkratka": "F",
+    "ucel": "Změna stavu finančních prostředků",
+    "fond": false,
+    "schvaleny": 77577290,
+    "upraveny_pred": 77709870,
+    "zmena": -200000,
+    "po_zmene": 77509870,
+    "castka": {
+      "hodnota": -200000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-200,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "800 0 F Změna stavu finančních prostředků 77 577,29 77 709,87 -200,00 77 509,87"
+    },
+    "nazev_polozky": "Změna stavu finančních prostředků"
+  },
+  {
+    "id": "ro-2026-23-01",
+    "rok": 2026,
+    "cislo_ro": 23,
+    "nazev_ro": null,
+    "usneseni": [
+      "282/2026-103",
+      "70/2026-30"
+    ],
+    "organ": "RM/ZM",
+    "orj": "800",
+    "oddil": 64,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Rezervy běžných výdajů",
+    "fond": false,
+    "schvaleny": 7680000,
+    "upraveny_pred": 2707700,
+    "zmena": -382540,
+    "po_zmene": 2325160,
+    "castka": {
+      "hodnota": -382540.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-382,54",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "800 64 BV Rezervy běžných výdajů 7 680,00 2 707,70 -382,54 2 325,16"
+    },
+    "nazev_polozky": "Rezervy běžných výdajů"
+  },
+  {
+    "id": "ro-2026-23-02",
+    "rok": 2026,
+    "cislo_ro": 23,
+    "nazev_ro": null,
+    "usneseni": [
+      "282/2026-103",
+      "70/2026-30"
+    ],
+    "organ": "RM/ZM",
+    "orj": "800",
+    "oddil": 34,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Městská sportovní Třeboň - příspěvek na provoz",
+    "fond": false,
+    "schvaleny": 6570000,
+    "upraveny_pred": 6570000,
+    "zmena": 382540,
+    "po_zmene": 6952540,
+    "castka": {
+      "hodnota": 382540.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "382,54",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "800 34 BV Městská sportovní Třeboň - příspěvek na provoz 6 570,00 6 570,00 382,54 6 952,54"
+    },
+    "nazev_polozky": "Městská sportovní Třeboň - příspěvek na provoz"
+  },
+  {
+    "id": "ro-2026-24-01",
+    "rok": 2026,
+    "cislo_ro": 24,
+    "nazev_ro": null,
+    "usneseni": [
+      "283/2026-103"
+    ],
+    "organ": "RM",
+    "orj": "800",
+    "oddil": 34,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Příspěvky v oblasti tělovýchovy a sportu",
+    "fond": false,
+    "schvaleny": 2500000,
+    "upraveny_pred": 2400000,
+    "zmena": -30000,
+    "po_zmene": 2370000,
+    "castka": {
+      "hodnota": -30000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-30,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "800 34 BV Příspěvky v oblasti tělovýchovy a sportu 2 500,00 2 400,00 -30,00 2 370,00"
+    },
+    "nazev_polozky": "Příspěvky v oblasti tělovýchovy a sportu"
+  },
+  {
+    "id": "ro-2026-24-02",
+    "rok": 2026,
+    "cislo_ro": 24,
+    "nazev_ro": null,
+    "usneseni": [
+      "283/2026-103"
+    ],
+    "organ": "RM",
+    "orj": "800",
+    "oddil": 34,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Příspěvky v oblasti tělovýchovy a sportu - dar",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 30000,
+    "po_zmene": 30000,
+    "castka": {
+      "hodnota": 30000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "30,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "800 34 BV Příspěvky v oblasti tělovýchovy a sportu - dar 0,00 0,00 30,00 30,00"
+    },
+    "nazev_polozky": "Příspěvky v oblasti tělovýchovy a sportu - dar"
+  },
+  {
+    "id": "ro-2026-25-01",
+    "rok": 2026,
+    "cislo_ro": 25,
+    "nazev_ro": null,
+    "usneseni": [
+      "284/2026-103"
+    ],
+    "organ": "RM",
+    "orj": "800",
+    "oddil": 36,
+    "druh": "bezne_prijmy",
+    "druh_zkratka": "BP",
+    "ucel": "Pronájem - pozemky - ostatní",
+    "fond": false,
+    "schvaleny": 407000,
+    "upraveny_pred": 407000,
+    "zmena": 150000,
+    "po_zmene": 557000,
+    "castka": {
+      "hodnota": 150000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "150,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "800 36 BP Pronájem - pozemky - ostatní 407,00 407,00 150,00 557,00"
+    },
+    "nazev_polozky": "Pronájem - pozemky - ostatní"
+  },
+  {
+    "id": "ro-2026-25-02",
+    "rok": 2026,
+    "cislo_ro": 25,
+    "nazev_ro": null,
+    "usneseni": [
+      "284/2026-103"
+    ],
+    "organ": "RM",
+    "orj": "800",
+    "oddil": 63,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Pojištění majetku + spoluúčast (náhrady)",
+    "fond": false,
+    "schvaleny": 1000000,
+    "upraveny_pred": 1000000,
+    "zmena": 150000,
+    "po_zmene": 1150000,
+    "castka": {
+      "hodnota": 150000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "150,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "800 63 BV Pojištění majetku + spoluúčast (náhrady) 1 000,00 1 000,00 150,00 1 150,00"
+    },
+    "nazev_polozky": "Pojištění majetku + spoluúčast (náhrady)"
+  },
+  {
+    "id": "ro-2026-26-01",
+    "rok": 2026,
+    "cislo_ro": 26,
+    "nazev_ro": null,
+    "usneseni": [
+      "285/2026-103"
+    ],
+    "organ": "RM",
+    "orj": "750",
+    "oddil": 21,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Ubytování sportovní hala - vybavení",
+    "fond": false,
+    "schvaleny": 5000000,
+    "upraveny_pred": 5000000,
+    "zmena": -71000,
+    "po_zmene": 4929000,
+    "castka": {
+      "hodnota": -71000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-71,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "750 21 BV Ubytování sportovní hala - vybavení 5 000,00 5 000,00 -71,00 4 929,00"
+    },
+    "nazev_polozky": "Ubytování sportovní hala - vybavení"
+  },
+  {
+    "id": "ro-2026-26-02",
+    "rok": 2026,
+    "cislo_ro": 26,
+    "nazev_ro": null,
+    "usneseni": [
+      "285/2026-103"
+    ],
+    "organ": "RM",
+    "orj": "750",
+    "oddil": 34,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Přístavba tělocvičen - vybavení",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 71000,
+    "po_zmene": 71000,
+    "castka": {
+      "hodnota": 71000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "71,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "750 34 BV Přístavba tělocvičen - vybavení 0,00 0,00 71,00 71,00"
+    },
+    "nazev_polozky": "Přístavba tělocvičen - vybavení"
+  },
+  {
+    "id": "ro-2026-27-01",
+    "rok": 2026,
+    "cislo_ro": 27,
+    "nazev_ro": null,
+    "usneseni": [
+      "286/2026-103",
+      "68/2026-30"
+    ],
+    "organ": "RM/ZM",
+    "orj": "750",
+    "oddil": 0,
+    "druh": "transfery",
+    "druh_zkratka": "T",
+    "ucel": "Dotace stavební úpravy a revitalizace sportovní haly v Třeboni - MŽP - INV - EU",
+    "fond": false,
+    "schvaleny": 18076490,
+    "upraveny_pred": 18076490,
+    "zmena": -522850,
+    "po_zmene": 17553640,
+    "castka": {
+      "hodnota": -522850.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-522,85",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "750 0 T Dotace stavební úpravy a revitalizace sportovní haly v Třeboni - MŽP - INV - EU 18 076,49 18 076,49 -522,85 17 553,64"
+    },
+    "nazev_polozky": "Dotace stavební úpravy a revitalizace sportovní haly v Třeboni - MŽP - INV - EU"
+  },
+  {
+    "id": "ro-2026-27-02",
+    "rok": 2026,
+    "cislo_ro": 27,
+    "nazev_ro": null,
+    "usneseni": [
+      "286/2026-103",
+      "68/2026-30"
+    ],
+    "organ": "RM/ZM",
+    "orj": "800",
+    "oddil": 64,
+    "druh": "kapitalove_vydaje",
+    "druh_zkratka": "KV",
+    "ucel": "Rezervy kapitálových výdajů",
+    "fond": false,
+    "schvaleny": 26000000,
+    "upraveny_pred": 24860000,
+    "zmena": -522850,
+    "po_zmene": 24337150,
+    "castka": {
+      "hodnota": -522850.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-522,85",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "800 64 KV Rezervy kapitálových výdajů 26 000,00 24 860,00 -522,85 24 337,15"
+    },
+    "nazev_polozky": "Rezervy kapitálových výdajů"
+  },
+  {
+    "id": "ro-2026-28-01",
+    "rok": 2026,
+    "cislo_ro": 28,
+    "nazev_ro": null,
+    "usneseni": [
+      "67/2026-30"
+    ],
+    "organ": "ZM",
+    "orj": "750",
+    "oddil": 0,
+    "druh": "transfery",
+    "druh_zkratka": "T",
+    "ucel": "Dotace Přístavba dvou tělocvičen sportovní haly Třeboň – KIF – JčK – INV",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 10000000,
+    "po_zmene": 10000000,
+    "castka": {
+      "hodnota": 10000000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "10 000,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "750 0 T Dotace Přístavba dvou tělocvičen sportovní haly Třeboň – KIF – JčK – INV 0,00 0,00 10 000,00 10 000,00"
+    },
+    "nazev_polozky": "Dotace Přístavba dvou tělocvičen sportovní haly Třeboň – KIF – JčK – INV"
+  },
+  {
+    "id": "ro-2026-28-02",
+    "rok": 2026,
+    "cislo_ro": 28,
+    "nazev_ro": null,
+    "usneseni": [
+      "67/2026-30"
+    ],
+    "organ": "ZM",
+    "orj": "750",
+    "oddil": 34,
+    "druh": "kapitalove_vydaje",
+    "druh_zkratka": "KV",
+    "ucel": "Přístavba dvou tělocvičen sportovní haly Třeboň – dotace – KIF – JčK - INV",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 10000000,
+    "po_zmene": 10000000,
+    "castka": {
+      "hodnota": 10000000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "10 000,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "750 34 KV Přístavba dvou tělocvičen sportovní haly Třeboň – dotace – KIF – JčK - INV 0,00 0,00 10 000,00 10 000,00"
+    },
+    "nazev_polozky": "Přístavba dvou tělocvičen sportovní haly Třeboň – dotace – KIF – JčK - INV"
+  },
+  {
+    "id": "ro-2026-28-03",
+    "rok": 2026,
+    "cislo_ro": 28,
+    "nazev_ro": null,
+    "usneseni": [
+      "67/2026-30"
+    ],
+    "organ": "ZM",
+    "orj": "750",
+    "oddil": 34,
+    "druh": "kapitalove_vydaje",
+    "druh_zkratka": "KV",
+    "ucel": "Přístavba tělocvičen",
+    "fond": false,
+    "schvaleny": 70000000,
+    "upraveny_pred": 70000000,
+    "zmena": -10000000,
+    "po_zmene": 60000000,
+    "castka": {
+      "hodnota": -10000000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-10 000,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "750 34 KV Přístavba tělocvičen 70 000,00 70 000,00 -10 000,00 60 000,00"
+    },
+    "nazev_polozky": "Přístavba tělocvičen"
+  },
+  {
+    "id": "ro-2026-28-04",
+    "rok": 2026,
+    "cislo_ro": 28,
+    "nazev_ro": null,
+    "usneseni": [
+      "67/2026-30"
+    ],
+    "organ": "ZM",
+    "orj": "800",
+    "oddil": 64,
+    "druh": "kapitalove_vydaje",
+    "druh_zkratka": "KV",
+    "ucel": "Rezervy kapitálových výdajů",
+    "fond": false,
+    "schvaleny": 26000000,
+    "upraveny_pred": 24337150,
+    "zmena": 10000000,
+    "po_zmene": 34337150,
+    "castka": {
+      "hodnota": 10000000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "10 000,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "800 64 KV Rezervy kapitálových výdajů 26 000,00 24 337,15 10 000,00 34 337,15"
+    },
+    "nazev_polozky": "Rezervy kapitálových výdajů"
+  },
+  {
+    "id": "ro-2026-29-01",
+    "rok": 2026,
+    "cislo_ro": 29,
+    "nazev_ro": null,
+    "usneseni": [
+      "71/2026-30"
+    ],
+    "organ": "ZM",
+    "orj": "800",
+    "oddil": 0,
+    "druh": "danove_prijmy",
+    "druh_zkratka": "DP",
+    "ucel": "Daň z příjmů právnických osob za obce",
+    "fond": false,
+    "schvaleny": 43000000,
+    "upraveny_pred": 43000000,
+    "zmena": 7428560,
+    "po_zmene": 50428560,
+    "castka": {
+      "hodnota": 7428560.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "7 428,56",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "800 0 DP Daň z příjmů právnických osob za obce 43 000,00 43 000,00 7 428,56 50 428,56"
+    },
+    "nazev_polozky": "Daň z příjmů právnických osob za obce"
+  },
+  {
+    "id": "ro-2026-29-02",
+    "rok": 2026,
+    "cislo_ro": 29,
+    "nazev_ro": null,
+    "usneseni": [
+      "71/2026-30"
+    ],
+    "organ": "ZM",
+    "orj": "800",
+    "oddil": 63,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Daň z příjmu práv. osob - obec",
+    "fond": false,
+    "schvaleny": 43000000,
+    "upraveny_pred": 43000000,
+    "zmena": 7428560,
+    "po_zmene": 50428560,
+    "castka": {
+      "hodnota": 7428560.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "7 428,56",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 1; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 1,
+      "text": "800 63 BV Daň z příjmu práv. osob - obec 43 000,00 43 000,00 7 428,56 50 428,56"
+    },
+    "nazev_polozky": "Daň z příjmu právnických osob - obec",
+    "prirazeni": "castka"
+  },
+  {
+    "id": "ro-2026-30-01",
+    "rok": 2026,
+    "cislo_ro": 30,
+    "nazev_ro": null,
+    "usneseni": [
+      "317/2026-104"
+    ],
+    "organ": "RM",
+    "orj": "800",
+    "oddil": 64,
+    "druh": "kapitalove_vydaje",
+    "druh_zkratka": "KV",
+    "ucel": "Rezervy kapitálových výdajů",
+    "fond": false,
+    "schvaleny": 26000000,
+    "upraveny_pred": 34337150,
+    "zmena": -800000,
+    "po_zmene": 33537150,
+    "castka": {
+      "hodnota": -800000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-800,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "800 64 KV Rezervy kapitálových výdajů 26 000,00 34 337,15 -800,00 33 537,15"
+    },
+    "nazev_polozky": "Rezervy kapitálových výdajů"
+  },
+  {
+    "id": "ro-2026-30-02",
+    "rok": 2026,
+    "cislo_ro": 30,
+    "nazev_ro": null,
+    "usneseni": [
+      "317/2026-104"
+    ],
+    "organ": "RM",
+    "orj": "750",
+    "oddil": 36,
+    "druh": "kapitalove_vydaje",
+    "druh_zkratka": "KV",
+    "ucel": "Hřbitov sv. Alžběty – projekt",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 800000,
+    "po_zmene": 800000,
+    "castka": {
+      "hodnota": 800000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "800,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "750 36 KV Hřbitov sv. Alžběty – projekt 0,00 0,00 800,00 800,00"
+    },
+    "nazev_polozky": "Hřbitov sv. Alžběty – projekt"
+  },
+  {
+    "id": "ro-2026-31-01",
+    "rok": 2026,
+    "cislo_ro": 31,
+    "nazev_ro": null,
+    "usneseni": [
+      "318/2026-104"
+    ],
+    "organ": "RM",
+    "orj": "750",
+    "oddil": 0,
+    "druh": "transfery",
+    "druh_zkratka": "T",
+    "ucel": "Dotace - Jčk - Obnova seníku č. 25 na Mokrých lukách",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 230000,
+    "po_zmene": 230000,
+    "castka": {
+      "hodnota": 230000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "230,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "750 0 T Dotace - Jčk - Obnova seníku č. 25 na Mokrých lukách 0,00 0,00 230,00 230,00"
+    },
+    "nazev_polozky": "Dotace - Jčk - Obnova seníku č. 25 na Mokrých lukách"
+  },
+  {
+    "id": "ro-2026-31-02",
+    "rok": 2026,
+    "cislo_ro": 31,
+    "nazev_ro": null,
+    "usneseni": [
+      "318/2026-104"
+    ],
+    "organ": "RM",
+    "orj": "750",
+    "oddil": 33,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Obnova seníku č. 25 na Mokrých lukách – dotace - Jčk",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 230000,
+    "po_zmene": 230000,
+    "castka": {
+      "hodnota": 230000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "230,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "750 33 BV Obnova seníku č. 25 na Mokrých lukách – dotace - Jčk 0,00 0,00 230,00 230,00"
+    },
+    "nazev_polozky": "Obnova seníku č. 25 na Mokrých lukách – dotace - Jčk"
+  },
+  {
+    "id": "ro-2026-32-01",
+    "rok": 2026,
+    "cislo_ro": 32,
+    "nazev_ro": null,
+    "usneseni": [
+      "319/2026-104"
+    ],
+    "organ": "RM",
+    "orj": "800",
+    "oddil": 34,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Příspěvky v oblasti tělovýchovy a sportu",
+    "fond": false,
+    "schvaleny": 2500000,
+    "upraveny_pred": 2370000,
+    "zmena": -7000,
+    "po_zmene": 2363000,
+    "castka": {
+      "hodnota": -7000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-7,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "800 34 BV Příspěvky v oblasti tělovýchovy a sportu 2 500,00 2 370,00 -7,00 2 363,00"
+    },
+    "nazev_polozky": "Příspěvky v oblasti tělovýchovy a sportu"
+  },
+  {
+    "id": "ro-2026-32-02",
+    "rok": 2026,
+    "cislo_ro": 32,
+    "nazev_ro": null,
+    "usneseni": [
+      "319/2026-104"
+    ],
+    "organ": "RM",
+    "orj": "770",
+    "oddil": 34,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Reprezentace města ve sportu - dar",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 7000,
+    "po_zmene": 7000,
+    "castka": {
+      "hodnota": 7000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "7,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "770 34 BV Reprezentace města ve sportu - dar 0,00 0,00 7,00 7,00"
+    },
+    "nazev_polozky": "Reprezentace města ve sportu - dar"
+  },
+  {
+    "id": "ro-2026-33-01",
+    "rok": 2026,
+    "cislo_ro": 33,
+    "nazev_ro": null,
+    "usneseni": [
+      "343/2026-105"
+    ],
+    "organ": "RM",
+    "orj": "250",
+    "oddil": 53,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "MP - programové vybavení",
+    "fond": false,
+    "schvaleny": 10000,
+    "upraveny_pred": 10000,
+    "zmena": -5000,
+    "po_zmene": 5000,
+    "castka": {
+      "hodnota": -5000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-5,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "250 53 BV MP - programové vybavení 10,00 10,00 -5,00 5,00"
+    },
+    "nazev_polozky": "MP - programové vybavení"
+  },
+  {
+    "id": "ro-2026-33-02",
+    "rok": 2026,
+    "cislo_ro": 33,
+    "nazev_ro": null,
+    "usneseni": [
+      "343/2026-105"
+    ],
+    "organ": "RM",
+    "orj": "250",
+    "oddil": 53,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "MP - služby telekomunikací a radiokomunikací",
+    "fond": false,
+    "schvaleny": 130000,
+    "upraveny_pred": 130000,
+    "zmena": -5000,
+    "po_zmene": 125000,
+    "castka": {
+      "hodnota": -5000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-5,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "250 53 BV MP - služby telekomunikací a radiokomunikací 130,00 130,00 -5,00 125,00"
+    },
+    "nazev_polozky": "MP - služby telekomunikací a radiokumunikací",
+    "prirazeni": "castka"
+  },
+  {
+    "id": "ro-2026-33-03",
+    "rok": 2026,
+    "cislo_ro": 33,
+    "nazev_ro": null,
+    "usneseni": [
+      "343/2026-105"
+    ],
+    "organ": "RM",
+    "orj": "250",
+    "oddil": 53,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "MP – nákup materiálu",
+    "fond": false,
+    "schvaleny": 80000,
+    "upraveny_pred": 80000,
+    "zmena": -10000,
+    "po_zmene": 70000,
+    "castka": {
+      "hodnota": -10000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-10,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "250 53 BV MP – nákup materiálu 80,00 80,00 -10,00 70,00"
+    },
+    "nazev_polozky": "MP – nákup materiálu"
+  },
+  {
+    "id": "ro-2026-33-04",
+    "rok": 2026,
+    "cislo_ro": 33,
+    "nazev_ro": null,
+    "usneseni": [
+      "343/2026-105"
+    ],
+    "organ": "RM",
+    "orj": "250",
+    "oddil": 53,
+    "druh": "kapitalove_vydaje",
+    "druh_zkratka": "KV",
+    "ucel": "Zástavba a úprava služebního vozidla",
+    "fond": false,
+    "schvaleny": 170000,
+    "upraveny_pred": 170000,
+    "zmena": -5000,
+    "po_zmene": 165000,
+    "castka": {
+      "hodnota": -5000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-5,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "250 53 KV Zástavba a úprava služebního vozidla 170,00 170,00 -5,00 165,00"
+    },
+    "nazev_polozky": "Zástavba a úprava služebního vozidla"
+  },
+  {
+    "id": "ro-2026-33-05",
+    "rok": 2026,
+    "cislo_ro": 33,
+    "nazev_ro": null,
+    "usneseni": [
+      "343/2026-105"
+    ],
+    "organ": "RM",
+    "orj": "250",
+    "oddil": 53,
+    "druh": "kapitalove_vydaje",
+    "druh_zkratka": "KV",
+    "ucel": "MP – drobný hmotný dlouhodobý majetek",
+    "fond": false,
+    "schvaleny": 230000,
+    "upraveny_pred": 230000,
+    "zmena": 25000,
+    "po_zmene": 255000,
+    "castka": {
+      "hodnota": 25000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "25,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "250 53 KV MP – drobný hmotný dlouhodobý majetek 230,00 230,00 25,00 255,00"
+    },
+    "nazev_polozky": "MP – drobný hmotný dlouhodobý majetek",
+    "neprirazeno": true
+  },
+  {
+    "id": "ro-2026-34-01",
+    "rok": 2026,
+    "cislo_ro": 34,
+    "nazev_ro": null,
+    "usneseni": [
+      "344/2026-105"
+    ],
+    "organ": "RM",
+    "orj": "800",
+    "oddil": 64,
+    "druh": "kapitalove_vydaje",
+    "druh_zkratka": "KV",
+    "ucel": "Rezervy kapitálových výdajů",
+    "fond": false,
+    "schvaleny": 26000000,
+    "upraveny_pred": 33537140,
+    "zmena": -3100000,
+    "po_zmene": 30437140,
+    "castka": {
+      "hodnota": -3100000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-3 100,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "800 64 KV Rezervy kapitálových výdajů 26 000,00 33 537,14 -3 100,00 30 437,14"
+    },
+    "nazev_polozky": "Rezervy kapitálových výdajů"
+  },
+  {
+    "id": "ro-2026-34-02",
+    "rok": 2026,
+    "cislo_ro": 34,
+    "nazev_ro": null,
+    "usneseni": [
+      "344/2026-105"
+    ],
+    "organ": "RM",
+    "orj": "750",
+    "oddil": 21,
+    "druh": "kapitalove_vydaje",
+    "druh_zkratka": "KV",
+    "ucel": "Ubytování sportovní hala",
+    "fond": false,
+    "schvaleny": 56000000,
+    "upraveny_pred": 57140000,
+    "zmena": 3100000,
+    "po_zmene": 60240000,
+    "castka": {
+      "hodnota": 3100000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "3 100,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "750 21 KV Ubytování sportovní hala 56 000,00 57 140,00 3 100,00 60 240,00"
+    },
+    "nazev_polozky": "Ubytování sportovní hala"
+  },
+  {
+    "id": "ro-2026-35-01",
+    "rok": 2026,
+    "cislo_ro": 35,
+    "nazev_ro": null,
+    "usneseni": [
+      "345/2026-105"
+    ],
+    "organ": "RM",
+    "orj": "100",
+    "oddil": 0,
+    "druh": "transfery",
+    "druh_zkratka": "T",
+    "ucel": "Dotace-MPSV-JK-na výk.soc.práce",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 703350,
+    "po_zmene": 703350,
+    "castka": {
+      "hodnota": 703350.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "703,35",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "100 0 T Dotace-MPSV-JK-na výk.soc.práce 0,00 0,00 703,35 703,35"
+    },
+    "nazev_polozky": "Dotace-MPSV-JK-na výk.soc.práce"
+  },
+  {
+    "id": "ro-2026-35-02",
+    "rok": 2026,
+    "cislo_ro": 35,
+    "nazev_ro": null,
+    "usneseni": [
+      "345/2026-105"
+    ],
+    "organ": "RM",
+    "orj": "770",
+    "oddil": 61,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Platy zaměstnanců v pr.pom.-dot.-výk.soc.práce",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 455000,
+    "po_zmene": 455000,
+    "castka": {
+      "hodnota": 455000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "455,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "770 61 BV Platy zaměstnanců v pr.pom.-dot.-výk.soc.práce 0,00 0,00 455,00 455,00"
+    },
+    "nazev_polozky": "Platy zaměstnanců v pr.pom.-dot.-výk.soc.práce"
+  },
+  {
+    "id": "ro-2026-35-03",
+    "rok": 2026,
+    "cislo_ro": 35,
+    "nazev_ro": null,
+    "usneseni": [
+      "345/2026-105"
+    ],
+    "organ": "RM",
+    "orj": "770",
+    "oddil": 61,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Povinné poj. na SZ-zam.-dot.- výk.soc.práce",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 113500,
+    "po_zmene": 113500,
+    "castka": {
+      "hodnota": 113500.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "113,50",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "770 61 BV Povinné poj. na SZ-zam.-dot.- výk.soc.práce 0,00 0,00 113,50 113,50"
+    },
+    "nazev_polozky": "Povinné poj. na SZ-zam.-dot.- výk.soc.práce"
+  },
+  {
+    "id": "ro-2026-35-04",
+    "rok": 2026,
+    "cislo_ro": 35,
+    "nazev_ro": null,
+    "usneseni": [
+      "345/2026-105"
+    ],
+    "organ": "RM",
+    "orj": "770",
+    "oddil": 61,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Povinné poj. na ZP-zam.-dot.- výk.soc.práce",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 40650,
+    "po_zmene": 40650,
+    "castka": {
+      "hodnota": 40650.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "40,65",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "770 61 BV Povinné poj. na ZP-zam.-dot.- výk.soc.práce 0,00 0,00 40,65 40,65"
+    },
+    "nazev_polozky": "Povinné poj. na ZP-zam.-dot.- výk.soc.práce"
+  },
+  {
+    "id": "ro-2026-35-05",
+    "rok": 2026,
+    "cislo_ro": 35,
+    "nazev_ro": null,
+    "usneseni": [
+      "345/2026-105"
+    ],
+    "organ": "RM",
+    "orj": "100",
+    "oddil": 43,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Běžné výdaje podle druhového určení",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 94200,
+    "po_zmene": 94200,
+    "castka": {
+      "hodnota": 94200.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "94,20",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "100 43 BV Běžné výdaje podle druhového určení 0,00 0,00 94,20 94,20"
+    },
+    "nazev_polozky": "Běžné výdaje podle druhového určení"
+  },
+  {
+    "id": "ro-2026-36-01",
+    "rok": 2026,
+    "cislo_ro": 36,
+    "nazev_ro": null,
+    "usneseni": [
+      "346/2026-105"
+    ],
+    "organ": "RM",
+    "orj": "800",
+    "oddil": 64,
+    "druh": "kapitalove_vydaje",
+    "druh_zkratka": "KV",
+    "ucel": "Rezervy kapitálových výdajů",
+    "fond": false,
+    "schvaleny": 26000000,
+    "upraveny_pred": 30437140,
+    "zmena": -210000,
+    "po_zmene": 30227140,
+    "castka": {
+      "hodnota": -210000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-210,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "800 64 KV Rezervy kapitálových výdajů 26 000,00 30 437,14 -210,00 30 227,14"
+    },
+    "nazev_polozky": "Rezervy kapitálových výdajů"
+  },
+  {
+    "id": "ro-2026-36-02",
+    "rok": 2026,
+    "cislo_ro": 36,
+    "nazev_ro": null,
+    "usneseni": [
+      "346/2026-105"
+    ],
+    "organ": "RM",
+    "orj": "750",
+    "oddil": 34,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Přístavba tělocvičen - vybavení",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 71000,
+    "zmena": 210000,
+    "po_zmene": 281000,
+    "castka": {
+      "hodnota": 210000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "210,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "750 34 BV Přístavba tělocvičen - vybavení 0,00 71,00 210,00 281,00"
+    },
+    "nazev_polozky": "Přístavba tělocvičen - vybavení"
+  },
+  {
+    "id": "ro-2026-37-01",
+    "rok": 2026,
+    "cislo_ro": 37,
+    "nazev_ro": null,
+    "usneseni": [
+      "347/2026-105"
+    ],
+    "organ": "RM",
+    "orj": "770",
+    "oddil": 61,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Odvody za neplnění povinnosti zaměstnávat zdrav. postižené",
+    "fond": false,
+    "schvaleny": 350000,
+    "upraveny_pred": 350000,
+    "zmena": -5000,
+    "po_zmene": 345000,
+    "castka": {
+      "hodnota": -5000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-5,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "770 61 BV Odvody za neplnění povinnosti zaměstnávat zdrav. postižené 350,00 350,00 -5,00 345,00"
+    },
+    "nazev_polozky": "Odvody za neplnění povinnosti zaměstnávat zdrav.postižené",
+    "prirazeni": "castka"
+  },
+  {
+    "id": "ro-2026-37-02",
+    "rok": 2026,
+    "cislo_ro": 37,
+    "nazev_ro": null,
+    "usneseni": [
+      "347/2026-105"
+    ],
+    "organ": "RM",
+    "orj": "770",
+    "oddil": 61,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Lékařské prohlídky",
+    "fond": false,
+    "schvaleny": 5000,
+    "upraveny_pred": 5000,
+    "zmena": 5000,
+    "po_zmene": 10000,
+    "castka": {
+      "hodnota": 5000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "5,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "770 61 BV Lékařské prohlídky 5,00 5,00 5,00 10,00"
+    },
+    "nazev_polozky": "Lékařské prohlídky"
+  },
+  {
+    "id": "ro-2026-38-01",
+    "rok": 2026,
+    "cislo_ro": 38,
+    "nazev_ro": null,
+    "usneseni": [
+      "348/2026-105"
+    ],
+    "organ": "RM",
+    "orj": "750",
+    "oddil": 36,
+    "druh": "kapitalove_vydaje",
+    "druh_zkratka": "KV",
+    "ucel": "Snížení energetické náročnosti DPS 3",
+    "fond": false,
+    "schvaleny": 14000000,
+    "upraveny_pred": 14000000,
+    "zmena": -2100000,
+    "po_zmene": 11900000,
+    "castka": {
+      "hodnota": -2100000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-2 100,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "750 36 KV Snížení energetické náročnosti DPS 3 14 000,00 14 000,00 -2 100,00 11 900,00"
+    },
+    "nazev_polozky": "Snížení energetické náročnosti DPS 3"
+  },
+  {
+    "id": "ro-2026-38-02",
+    "rok": 2026,
+    "cislo_ro": 38,
+    "nazev_ro": null,
+    "usneseni": [
+      "348/2026-105"
+    ],
+    "organ": "RM",
+    "orj": "750",
+    "oddil": 31,
+    "druh": "kapitalove_vydaje",
+    "druh_zkratka": "KV",
+    "ucel": "FVE ZŠ Na Sadech",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 2100000,
+    "po_zmene": 2100000,
+    "castka": {
+      "hodnota": 2100000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "2 100,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "750 31 KV FVE ZŠ Na Sadech 0,00 0,00 2 100,00 2 100,00"
+    },
+    "nazev_polozky": "FVE ZŠ Na Sadech"
+  },
+  {
+    "id": "ro-2026-39-01",
+    "rok": 2026,
+    "cislo_ro": 39,
+    "nazev_ro": null,
+    "usneseni": [
+      "363/2026-105"
+    ],
+    "organ": "RM",
+    "orj": "750",
+    "oddil": 34,
+    "druh": "kapitalove_vydaje",
+    "druh_zkratka": "KV",
+    "ucel": "Projekty, studie – tělovýchova, sport, hřiště",
+    "fond": false,
+    "schvaleny": 1200000,
+    "upraveny_pred": 1200000,
+    "zmena": -40000,
+    "po_zmene": 1160000,
+    "castka": {
+      "hodnota": -40000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-40,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "750 34 KV Projekty, studie – tělovýchova, sport, hřiště 1 200,00 1 200,00 -40,00 1 160,00"
+    },
+    "nazev_polozky": "Projekty, studie – tělovýchova, sport, hřiště"
+  },
+  {
+    "id": "ro-2026-39-02",
+    "rok": 2026,
+    "cislo_ro": 39,
+    "nazev_ro": null,
+    "usneseni": [
+      "363/2026-105"
+    ],
+    "organ": "RM",
+    "orj": "750",
+    "oddil": 34,
+    "druh": "kapitalove_vydaje",
+    "druh_zkratka": "KV",
+    "ucel": "Sportoviště - investice",
+    "fond": false,
+    "schvaleny": 1200000,
+    "upraveny_pred": 1150000,
+    "zmena": 40000,
+    "po_zmene": 1190000,
+    "castka": {
+      "hodnota": 40000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "40,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "750 34 KV Sportoviště - investice 1 200,00 1 150,00 40,00 1 190,00"
+    },
+    "nazev_polozky": "Sportoviště - investice"
+  },
+  {
+    "id": "ro-2026-40-01",
+    "rok": 2026,
+    "cislo_ro": 40,
+    "nazev_ro": null,
+    "usneseni": [
+      "365/2026-106"
+    ],
+    "organ": "RM",
+    "orj": "750",
+    "oddil": 36,
+    "druh": "kapitalove_vydaje",
+    "druh_zkratka": "KV",
+    "ucel": "Snížení energetické náročnosti DPS 3",
+    "fond": false,
+    "schvaleny": 14000000,
+    "upraveny_pred": 11900000,
+    "zmena": -3800000,
+    "po_zmene": 8100000,
+    "castka": {
+      "hodnota": -3800000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-3 800,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "750 36 KV Snížení energetické náročnosti DPS 3 14 000,00 11 900,00 -3 800,00 8 100,00"
+    },
+    "nazev_polozky": "Snížení energetické náročnosti DPS 3"
+  },
+  {
+    "id": "ro-2026-40-02",
+    "rok": 2026,
+    "cislo_ro": 40,
+    "nazev_ro": null,
+    "usneseni": [
+      "365/2026-106"
+    ],
+    "organ": "RM",
+    "orj": "750",
+    "oddil": 22,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Oprava zábradlí u Zlaté stoky",
+    "fond": false,
+    "schvaleny": 3000000,
+    "upraveny_pred": 3000000,
+    "zmena": 2276500,
+    "po_zmene": 5276500,
+    "castka": {
+      "hodnota": 2276500.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "2 276,50",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "750 22 BV Oprava zábradlí u Zlaté stoky 3 000,00 3 000,00 2 276,50 5 276,50"
+    },
+    "nazev_polozky": "Oprava zábradlí u Zlaté stoky"
+  },
+  {
+    "id": "ro-2026-40-03",
+    "rok": 2026,
+    "cislo_ro": 40,
+    "nazev_ro": null,
+    "usneseni": [
+      "365/2026-106"
+    ],
+    "organ": "RM",
+    "orj": "750",
+    "oddil": 22,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Projekty na opravy a udržovací práce",
+    "fond": false,
+    "schvaleny": 150000,
+    "upraveny_pred": 150000,
+    "zmena": 300000,
+    "po_zmene": 450000,
+    "castka": {
+      "hodnota": 300000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "300,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "750 22 BV Projekty na opravy a udržovací práce 150,00 150,00 300,00 450,00"
+    },
+    "nazev_polozky": "Projekty na opravy a udržovací práce"
+  },
+  {
+    "id": "ro-2026-40-04",
+    "rok": 2026,
+    "cislo_ro": 40,
+    "nazev_ro": null,
+    "usneseni": [
+      "365/2026-106"
+    ],
+    "organ": "RM",
+    "orj": "750",
+    "oddil": 37,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Doplnění městského mobiliáře",
+    "fond": false,
+    "schvaleny": 450000,
+    "upraveny_pred": 450000,
+    "zmena": 338800,
+    "po_zmene": 788800,
+    "castka": {
+      "hodnota": 338800.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "338,80",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "750 37 BV Doplnění městského mobiliáře 450,00 450,00 338,80 788,80"
+    },
+    "nazev_polozky": "Doplnění městského mobiliáře"
+  },
+  {
+    "id": "ro-2026-40-05",
+    "rok": 2026,
+    "cislo_ro": 40,
+    "nazev_ro": null,
+    "usneseni": [
+      "365/2026-106"
+    ],
+    "organ": "RM",
+    "orj": "750",
+    "oddil": 37,
+    "druh": "kapitalove_vydaje",
+    "druh_zkratka": "KV",
+    "ucel": "Doplnění městského mobiliáře",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 84700,
+    "po_zmene": 84700,
+    "castka": {
+      "hodnota": 84700.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "84,70",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "750 37 KV Doplnění městského mobiliáře 0,00 0,00 84,70 84,70"
+    },
+    "nazev_polozky": "Doplnění městského mobiliáře"
+  },
+  {
+    "id": "ro-2026-40-06",
+    "rok": 2026,
+    "cislo_ro": 40,
+    "nazev_ro": null,
+    "usneseni": [
+      "365/2026-106"
+    ],
+    "organ": "RM",
+    "orj": "750",
+    "oddil": 37,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Květinové záhony",
+    "fond": false,
+    "schvaleny": 12710000,
+    "upraveny_pred": 12710000,
+    "zmena": 800000,
+    "po_zmene": 13510000,
+    "castka": {
+      "hodnota": 800000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "800,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "750 37 BV Květinové záhony 12 710,00 12 710,00 800,00 13 510,00"
+    },
+    "nazev_polozky": "Veřejná zeleň",
+    "prirazeni": "castka"
+  },
+  {
+    "id": "ro-2026-41-01",
+    "rok": 2026,
+    "cislo_ro": 41,
+    "nazev_ro": null,
+    "usneseni": [
+      "383/2026-107"
+    ],
+    "organ": "RM",
+    "orj": "800",
+    "oddil": 34,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Příspěvky v oblasti ostatních činností",
+    "fond": false,
+    "schvaleny": 300000,
+    "upraveny_pred": 297000,
+    "zmena": -5000,
+    "po_zmene": 292000,
+    "castka": {
+      "hodnota": -5000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-5,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "800 34 BV Příspěvky v oblasti ostatních činností 300,00 297,00 -5,00 292,00"
+    },
+    "nazev_polozky": "Příspěvky v oblasti ostatních čiností",
+    "prirazeni": "castka"
+  },
+  {
+    "id": "ro-2026-41-02",
+    "rok": 2026,
+    "cislo_ro": 41,
+    "nazev_ro": null,
+    "usneseni": [
+      "383/2026-107"
+    ],
+    "organ": "RM",
+    "orj": "800",
+    "oddil": 34,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Příspěvky v oblasti ostatních činností - dar",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 5000,
+    "po_zmene": 5000,
+    "castka": {
+      "hodnota": 5000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "5,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "800 34 BV Příspěvky v oblasti ostatních činností - dar 0,00 0,00 5,00 5,00"
+    },
+    "nazev_polozky": "Příspěvky v oblasti ostatních činností - dar"
+  },
+  {
+    "id": "ro-2026-42-01",
+    "rok": 2026,
+    "cislo_ro": 42,
+    "nazev_ro": null,
+    "usneseni": [
+      "393/2026-107"
+    ],
+    "organ": "RM",
+    "orj": "750",
+    "oddil": 36,
+    "druh": "kapitalove_vydaje",
+    "druh_zkratka": "KV",
+    "ucel": "Pasport VO",
+    "fond": false,
+    "schvaleny": 1500000,
+    "upraveny_pred": 1500000,
+    "zmena": -1500000,
+    "po_zmene": 0,
+    "castka": {
+      "hodnota": -1500000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-1 500,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "750 36 KV Pasport VO 1 500,00 1 500,00 -1 500,00 0,00"
+    },
+    "nazev_polozky": "Pasport VO"
+  },
+  {
+    "id": "ro-2026-42-02",
+    "rok": 2026,
+    "cislo_ro": 42,
+    "nazev_ro": null,
+    "usneseni": [
+      "393/2026-107"
+    ],
+    "organ": "RM",
+    "orj": "750",
+    "oddil": 22,
+    "druh": "kapitalove_vydaje",
+    "druh_zkratka": "KV",
+    "ucel": "Parkování, chodníky a stezky - realizace",
+    "fond": false,
+    "schvaleny": 5000000,
+    "upraveny_pred": 5000000,
+    "zmena": 1500000,
+    "po_zmene": 6500000,
+    "castka": {
+      "hodnota": 1500000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "1 500,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "750 22 KV Parkování, chodníky a stezky - realizace 5 000,00 5 000,00 1 500,00 6 500,00"
+    },
+    "nazev_polozky": "Parkování, chodníky a stezky - realizace"
+  },
+  {
+    "id": "ro-2026-43-01",
+    "rok": 2026,
+    "cislo_ro": 43,
+    "nazev_ro": null,
+    "usneseni": [
+      "413/2026-108"
+    ],
+    "organ": "RM",
+    "orj": "750",
+    "oddil": 36,
+    "druh": "kapitalove_vydaje",
+    "druh_zkratka": "KV",
+    "ucel": "Snížení energetické náročnosti",
+    "fond": false,
+    "schvaleny": 14000000,
+    "upraveny_pred": 8100000,
+    "zmena": -850000,
+    "po_zmene": 7250000,
+    "castka": {
+      "hodnota": -850000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-850,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "750 36 KV Snížení energetické náročnosti 14 000,00 8 100,00 -850,00 7 250,00"
+    },
+    "nazev_polozky": "Snížení energetické náročnosti DPS 3",
+    "prirazeni": "nazev"
+  },
+  {
+    "id": "ro-2026-43-02",
+    "rok": 2026,
+    "cislo_ro": 43,
+    "nazev_ro": null,
+    "usneseni": [
+      "413/2026-108"
+    ],
+    "organ": "RM",
+    "orj": "750",
+    "oddil": 23,
+    "druh": "kapitalove_vydaje",
+    "druh_zkratka": "KV",
+    "ucel": "Propustky Břilice",
+    "fond": false,
+    "schvaleny": 1500000,
+    "upraveny_pred": 1500000,
+    "zmena": 850000,
+    "po_zmene": 2350000,
+    "castka": {
+      "hodnota": 850000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "850,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "750 23 KV Propustky Břilice 1 500,00 1 500,00 850,00 2 350,00"
+    },
+    "nazev_polozky": "Propustky Břilice"
+  },
+  {
+    "id": "ro-2026-44-01",
+    "rok": 2026,
+    "cislo_ro": 44,
+    "nazev_ro": null,
+    "usneseni": [
+      "414/2026-108"
+    ],
+    "organ": "RM",
+    "orj": "750",
+    "oddil": 31,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Průkazy energetické náročnosti budov",
+    "fond": false,
+    "schvaleny": 200000,
+    "upraveny_pred": 200000,
+    "zmena": -115000,
+    "po_zmene": 85000,
+    "castka": {
+      "hodnota": -115000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-115,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "750 31 BV Průkazy energetické náročnosti budov 200,00 200,00 -115,00 85,00"
+    },
+    "nazev_polozky": "Průkazy energetické náročnosti budov"
+  },
+  {
+    "id": "ro-2026-44-02",
+    "rok": 2026,
+    "cislo_ro": 44,
+    "nazev_ro": null,
+    "usneseni": [
+      "414/2026-108"
+    ],
+    "organ": "RM",
+    "orj": "750",
+    "oddil": 36,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Průkazy energetické náročnosti budov",
+    "fond": false,
+    "schvaleny": 300000,
+    "upraveny_pred": 300000,
+    "zmena": -185000,
+    "po_zmene": 115000,
+    "castka": {
+      "hodnota": -185000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-185,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "750 36 BV Průkazy energetické náročnosti budov 300,00 300,00 -185,00 115,00"
+    },
+    "nazev_polozky": "Průkazy energetické náročnosti budov"
+  },
+  {
+    "id": "ro-2026-44-03",
+    "rok": 2026,
+    "cislo_ro": 44,
+    "nazev_ro": null,
+    "usneseni": [
+      "414/2026-108"
+    ],
+    "organ": "RM",
+    "orj": "750",
+    "oddil": 36,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Bytové prostory",
+    "fond": false,
+    "schvaleny": 670000,
+    "upraveny_pred": 670000,
+    "zmena": 300000,
+    "po_zmene": 970000,
+    "castka": {
+      "hodnota": 300000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "300,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "750 36 BV Bytové prostory 670,00 670,00 300,00 970,00"
+    },
+    "nazev_polozky": "Bytové prostory"
+  },
+  {
+    "id": "ro-2026-45-01",
+    "rok": 2026,
+    "cislo_ro": 45,
+    "nazev_ro": null,
+    "usneseni": [
+      "439/2026-109"
+    ],
+    "organ": "RM",
+    "orj": "250",
+    "oddil": 53,
+    "druh": "bezne_prijmy",
+    "druh_zkratka": "BP",
+    "ucel": "MP - Prodej zbraní",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 28920,
+    "po_zmene": 28920,
+    "castka": {
+      "hodnota": 28920.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "28,92",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "250 53 BP MP - Prodej zbraní 0,00 0,00 28,92 28,92"
+    },
+    "nazev_polozky": "MP - Prodej zbraní"
+  },
+  {
+    "id": "ro-2026-45-02",
+    "rok": 2026,
+    "cislo_ro": 45,
+    "nazev_ro": null,
+    "usneseni": [
+      "439/2026-109"
+    ],
+    "organ": "RM",
+    "orj": "250",
+    "oddil": 53,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "MP - drobný hmotný dlouhodobý majetek",
+    "fond": false,
+    "schvaleny": 230000,
+    "upraveny_pred": 255000,
+    "zmena": 28920,
+    "po_zmene": 283920,
+    "castka": {
+      "hodnota": 28920.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "28,92",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "250 53 BV MP - drobný hmotný dlouhodobý majetek 230,00 255,00 28,92 283,92"
+    },
+    "nazev_polozky": "MP - drobný hmotný dlouhodobý majetek"
+  },
+  {
+    "id": "ro-2026-45-03",
+    "rok": 2026,
+    "cislo_ro": 45,
+    "nazev_ro": null,
+    "usneseni": [
+      "439/2026-109"
+    ],
+    "organ": "RM",
+    "orj": "250",
+    "oddil": 53,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "MP - odstupné",
+    "fond": false,
+    "schvaleny": 500000,
+    "upraveny_pred": 500000,
+    "zmena": -25000,
+    "po_zmene": 475000,
+    "castka": {
+      "hodnota": -25000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-25,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "250 53 BV MP - odstupné 500,00 500,00 -25,00 475,00"
+    },
+    "nazev_polozky": "MP - odstupné"
+  },
+  {
+    "id": "ro-2026-45-04",
+    "rok": 2026,
+    "cislo_ro": 45,
+    "nazev_ro": null,
+    "usneseni": [
+      "439/2026-109"
+    ],
+    "organ": "RM",
+    "orj": "250",
+    "oddil": 53,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "MP - nákup ostatních služeb",
+    "fond": false,
+    "schvaleny": 65000,
+    "upraveny_pred": 65000,
+    "zmena": 25000,
+    "po_zmene": 90000,
+    "castka": {
+      "hodnota": 25000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "25,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "250 53 BV MP - nákup ostatních služeb 65,00 65,00 25,00 90,00"
+    },
+    "nazev_polozky": "MP - nákup ostatních služeb"
+  },
+  {
+    "id": "ro-2026-45-05",
+    "rok": 2026,
+    "cislo_ro": 45,
+    "nazev_ro": null,
+    "usneseni": [
+      "439/2026-109"
+    ],
+    "organ": "RM",
+    "orj": "250",
+    "oddil": 53,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "MP - prevence kriminality",
+    "fond": false,
+    "schvaleny": 100000,
+    "upraveny_pred": 100000,
+    "zmena": -15000,
+    "po_zmene": 85000,
+    "castka": {
+      "hodnota": -15000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-15,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "250 53 BV MP - prevence kriminality 100,00 100,00 -15,00 85,00"
+    },
+    "nazev_polozky": "MP - prevence kriminality"
+  },
+  {
+    "id": "ro-2026-45-06",
+    "rok": 2026,
+    "cislo_ro": 45,
+    "nazev_ro": null,
+    "usneseni": [
+      "439/2026-109"
+    ],
+    "organ": "RM",
+    "orj": "250",
+    "oddil": 53,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "MP – odchyt psů",
+    "fond": false,
+    "schvaleny": 33000,
+    "upraveny_pred": 33000,
+    "zmena": 15000,
+    "po_zmene": 48000,
+    "castka": {
+      "hodnota": 15000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "15,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "250 53 BV MP – odchyt psů 33,00 33,00 15,00 48,00"
+    },
+    "nazev_polozky": "MP – odchyt psů"
+  },
+  {
+    "id": "ro-2026-46-01",
+    "rok": 2026,
+    "cislo_ro": 46,
+    "nazev_ro": null,
+    "usneseni": [
+      "440/2026-109"
+    ],
+    "organ": "RM",
+    "orj": "770",
+    "oddil": 0,
+    "druh": "transfery",
+    "druh_zkratka": "T",
+    "ucel": "Dotace JčK na podporu narozených dětí z Jihočeského kraje",
+    "fond": false,
+    "schvaleny": 100000,
+    "upraveny_pred": 100000,
+    "zmena": 44500,
+    "po_zmene": 144500,
+    "castka": {
+      "hodnota": 44500.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "44,50",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "770 0 T Dotace JčK na podporu narozených dětí z Jihočeského kraje 100,00 100,00 44,50 144,50"
+    },
+    "nazev_polozky": "Dotace JčK na podporu narozených dětí z Jihočeského kraje"
+  },
+  {
+    "id": "ro-2026-46-02",
+    "rok": 2026,
+    "cislo_ro": 46,
+    "nazev_ro": null,
+    "usneseni": [
+      "440/2026-109"
+    ],
+    "organ": "RM",
+    "orj": "770",
+    "oddil": 33,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Dary novorozencům - dotace JčK",
+    "fond": false,
+    "schvaleny": 100000,
+    "upraveny_pred": 100000,
+    "zmena": 44500,
+    "po_zmene": 144500,
+    "castka": {
+      "hodnota": 44500.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "44,50",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "770 33 BV Dary novorozencům - dotace JčK 100,00 100,00 44,50 144,50"
+    },
+    "nazev_polozky": "Dary novorozencům - dotace JčK",
+    "neprirazeno": true
+  },
+  {
+    "id": "ro-2026-47-01",
+    "rok": 2026,
+    "cislo_ro": 47,
+    "nazev_ro": null,
+    "usneseni": [
+      "441/2026-109"
+    ],
+    "organ": "RM",
+    "orj": "500",
+    "oddil": 0,
+    "druh": "transfery",
+    "druh_zkratka": "T",
+    "ucel": "Dotace-MF-KÚ JK-volby do zastupitelstva obce 2026",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 550000,
+    "po_zmene": 550000,
+    "castka": {
+      "hodnota": 550000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "550,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "500 0 T Dotace-MF-KÚ JK-volby do zastupitelstva obce 2026 0,00 0,00 550,00 550,00"
+    },
+    "nazev_polozky": "Dotace-MF-KÚ JK-volby do zastupitelstva obce 2026"
+  },
+  {
+    "id": "ro-2026-47-02",
+    "rok": 2026,
+    "cislo_ro": 47,
+    "nazev_ro": null,
+    "usneseni": [
+      "441/2026-109"
+    ],
+    "organ": "RM",
+    "orj": "500",
+    "oddil": 61,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Volby do zastupitelstva obce 2026-dotace-pronájem",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 19700,
+    "po_zmene": 19700,
+    "castka": {
+      "hodnota": 19700.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "19,70",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "500 61 BV Volby do zastupitelstva obce 2026-dotace-pronájem 0,00 0,00 19,70 19,70"
+    },
+    "nazev_polozky": "Volby do zastupitelstva obce 2026-dotace-pronájem"
+  },
+  {
+    "id": "ro-2026-47-03",
+    "rok": 2026,
+    "cislo_ro": 47,
+    "nazev_ro": null,
+    "usneseni": [
+      "441/2026-109"
+    ],
+    "organ": "RM",
+    "orj": "500",
+    "oddil": 61,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Volby do zastupitelstva obce 2026-dotace-DDHM",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 6000,
+    "po_zmene": 6000,
+    "castka": {
+      "hodnota": 6000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "6,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "500 61 BV Volby do zastupitelstva obce 2026-dotace-DDHM 0,00 0,00 6,00 6,00"
+    },
+    "nazev_polozky": "Volby do zastupitelstva obce 2026-dotace-DDHM"
+  },
+  {
+    "id": "ro-2026-47-04",
+    "rok": 2026,
+    "cislo_ro": 47,
+    "nazev_ro": null,
+    "usneseni": [
+      "441/2026-109"
+    ],
+    "organ": "RM",
+    "orj": "500",
+    "oddil": 61,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Volby do zastupitelstva obce 2026-dotace-materiál",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 4000,
+    "po_zmene": 4000,
+    "castka": {
+      "hodnota": 4000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "4,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "500 61 BV Volby do zastupitelstva obce 2026-dotace-materiál 0,00 0,00 4,00 4,00"
+    },
+    "nazev_polozky": "Volby do zastupitelstva obce 2026-dotace-materiál"
+  },
+  {
+    "id": "ro-2026-47-05",
+    "rok": 2026,
+    "cislo_ro": 47,
+    "nazev_ro": null,
+    "usneseni": [
+      "441/2026-109"
+    ],
+    "organ": "RM",
+    "orj": "500",
+    "oddil": 61,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Volby do zastupitelstva obce 2026-dotace-ost. služby",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 4500,
+    "po_zmene": 4500,
+    "castka": {
+      "hodnota": 4500.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "4,50",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "500 61 BV Volby do zastupitelstva obce 2026-dotace-ost. služby 0,00 0,00 4,50 4,50"
+    },
+    "nazev_polozky": "Volby do zastupitelstva obce 2026-dotace-ost. služby"
+  },
+  {
+    "id": "ro-2026-47-06",
+    "rok": 2026,
+    "cislo_ro": 47,
+    "nazev_ro": null,
+    "usneseni": [
+      "441/2026-109"
+    ],
+    "organ": "RM",
+    "orj": "770",
+    "oddil": 61,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Volby do zastupitelstva obce 2026-dotace-ost. osobní výdaje",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 475800,
+    "po_zmene": 475800,
+    "castka": {
+      "hodnota": 475800.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "475,80",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "770 61 BV Volby do zastupitelstva obce 2026-dotace-ost. osobní výdaje 0,00 0,00 475,80 475,80"
+    },
+    "nazev_polozky": "Volby do zastupitelstva obce 2026-dotace-ost. osobní výdaje"
+  },
+  {
+    "id": "ro-2026-47-07",
+    "rok": 2026,
+    "cislo_ro": 47,
+    "nazev_ro": null,
+    "usneseni": [
+      "441/2026-109"
+    ],
+    "organ": "RM",
+    "orj": "770",
+    "oddil": 61,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Volby do zastupitelstva obce 2026-dotace-stravné",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 40000,
+    "po_zmene": 40000,
+    "castka": {
+      "hodnota": 40000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "40,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "770 61 BV Volby do zastupitelstva obce 2026-dotace-stravné 0,00 0,00 40,00 40,00"
+    },
+    "nazev_polozky": "Volby do zastupitelstva obce 2026-dotace-stravné"
+  },
+  {
+    "id": "ro-2026-48-01",
+    "rok": 2026,
+    "cislo_ro": 48,
+    "nazev_ro": null,
+    "usneseni": [
+      "442/2026-109",
+      "77/2026-31"
+    ],
+    "organ": "RM/ZM",
+    "orj": "800",
+    "oddil": 64,
+    "druh": "kapitalove_vydaje",
+    "druh_zkratka": "KV",
+    "ucel": "Rezervy kapitálových výdajů",
+    "fond": false,
+    "schvaleny": 26000000,
+    "upraveny_pred": 30227140,
+    "zmena": -20000000,
+    "po_zmene": 10227140,
+    "castka": {
+      "hodnota": -20000000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-20 000,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "800 64 KV Rezervy kapitálových výdajů 26 000,00 30 227,14 -20 000,00 10 227,14"
+    },
+    "nazev_polozky": "Rezervy kapitálových výdajů"
+  },
+  {
+    "id": "ro-2026-48-02",
+    "rok": 2026,
+    "cislo_ro": 48,
+    "nazev_ro": null,
+    "usneseni": [
+      "442/2026-109",
+      "77/2026-31"
+    ],
+    "organ": "RM/ZM",
+    "orj": "800",
+    "oddil": 63,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Jednotný příděl do lázeňského investičního fondu",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 20000000,
+    "po_zmene": 20000000,
+    "castka": {
+      "hodnota": 20000000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "20 000,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "800 63 BV Jednotný příděl do lázeňského investičního fondu 0,00 0,00 20 000,00 20 000,00"
+    },
+    "nazev_polozky": "Jednotný příděl do lázeňského investičního fondu"
+  },
+  {
+    "id": "ro-2026-48-03",
+    "rok": 2026,
+    "cislo_ro": 48,
+    "nazev_ro": null,
+    "usneseni": [
+      "442/2026-109",
+      "77/2026-31"
+    ],
+    "organ": "RM/ZM",
+    "orj": "800",
+    "oddil": 63,
+    "druh": "bezne_prijmy",
+    "druh_zkratka": "BP",
+    "ucel": "Jednotný příděl do lázeňského investičního fondu",
+    "fond": true,
+    "schvaleny": 0,
+    "upraveny_pred": 0,
+    "zmena": 20000000,
+    "po_zmene": 20000000,
+    "castka": {
+      "hodnota": 20000000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "20 000,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "800 63 BP Jednotný příděl do lázeňského investičního fondu* 0,00 0,00 20 000,00 20 000,00"
+    },
+    "nazev_polozky": "Jednotný příděl do lázeňského investičního fondu"
+  },
+  {
+    "id": "ro-2026-48-04",
+    "rok": 2026,
+    "cislo_ro": 48,
+    "nazev_ro": null,
+    "usneseni": [
+      "442/2026-109",
+      "77/2026-31"
+    ],
+    "organ": "RM/ZM",
+    "orj": "750",
+    "oddil": 36,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "TZ nemovitého majetku v pronájmu společnosti SLT",
+    "fond": true,
+    "schvaleny": 54200000,
+    "upraveny_pred": 54200000,
+    "zmena": 20000000,
+    "po_zmene": 74200000,
+    "castka": {
+      "hodnota": 20000000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "20 000,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "750 36 BV TZ nemovitého majetku v pronájmu společnosti SLT* 54 200,00 54 200,00 20 000,00 74 200,00"
+    },
+    "nazev_polozky": "TZ nemovitého majetku v pronájmu společnosti SLT",
+    "neprirazeno": true
+  },
+  {
+    "id": "ro-2026-49-01",
+    "rok": 2026,
+    "cislo_ro": 49,
+    "nazev_ro": null,
+    "usneseni": [
+      "443/2026-109"
+    ],
+    "organ": "RM",
+    "orj": "750",
+    "oddil": 21,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Ubytování sportovní hala - vybavení",
+    "fond": false,
+    "schvaleny": 5000000,
+    "upraveny_pred": 4929000,
+    "zmena": -1620000,
+    "po_zmene": 3309000,
+    "castka": {
+      "hodnota": -1620000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-1 620,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "750 21 BV Ubytování sportovní hala - vybavení 5 000,00 4 929,00 -1 620,00 3 309,00"
+    },
+    "nazev_polozky": "Ubytování sportovní hala - vybavení"
+  },
+  {
+    "id": "ro-2026-49-02",
+    "rok": 2026,
+    "cislo_ro": 49,
+    "nazev_ro": null,
+    "usneseni": [
+      "443/2026-109"
+    ],
+    "organ": "RM",
+    "orj": "750",
+    "oddil": 21,
+    "druh": "kapitalove_vydaje",
+    "druh_zkratka": "KV",
+    "ucel": "Ubytování sportovní hala",
+    "fond": false,
+    "schvaleny": 56000000,
+    "upraveny_pred": 60240000,
+    "zmena": 1620000,
+    "po_zmene": 61860000,
+    "castka": {
+      "hodnota": 1620000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "1 620,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "750 21 KV Ubytování sportovní hala 56 000,00 60 240,00 1 620,00 61 860,00"
+    },
+    "nazev_polozky": "Ubytování sportovní hala"
+  },
+  {
+    "id": "ro-2026-50-01",
+    "rok": 2026,
+    "cislo_ro": 50,
+    "nazev_ro": null,
+    "usneseni": [
+      "462/2026-110"
+    ],
+    "organ": "RM",
+    "orj": "750",
+    "oddil": 33,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Obnova nemovitých kulturních památek",
+    "fond": false,
+    "schvaleny": 2600000,
+    "upraveny_pred": 2600000,
+    "zmena": -80000,
+    "po_zmene": 2520000,
+    "castka": {
+      "hodnota": -80000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-80,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "750 33 BV Obnova nemovitých kulturních památek 2 600,00 2 600,00 -80,00 2 520,00"
+    },
+    "nazev_polozky": "Obnova nemovitých kulturních památek"
+  },
+  {
+    "id": "ro-2026-50-02",
+    "rok": 2026,
+    "cislo_ro": 50,
+    "nazev_ro": null,
+    "usneseni": [
+      "462/2026-110"
+    ],
+    "organ": "RM",
+    "orj": "750",
+    "oddil": 34,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Dům dětí a mládeže - opravy",
+    "fond": false,
+    "schvaleny": 600000,
+    "upraveny_pred": 600000,
+    "zmena": 80000,
+    "po_zmene": 680000,
+    "castka": {
+      "hodnota": 80000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "80,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "750 34 BV Dům dětí a mládeže - opravy 600,00 600,00 80,00 680,00"
+    },
+    "nazev_polozky": "Dům dětí a mládeže - opravy"
+  },
+  {
+    "id": "ro-2026-51-01",
+    "rok": 2026,
+    "cislo_ro": 51,
+    "nazev_ro": null,
+    "usneseni": [
+      "493/2026-111"
+    ],
+    "organ": "RM",
+    "orj": "750",
+    "oddil": 21,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Ubytování sportovní hala - vybavení",
+    "fond": false,
+    "schvaleny": 5000000,
+    "upraveny_pred": 3309000,
+    "zmena": -53000,
+    "po_zmene": 3256000,
+    "castka": {
+      "hodnota": -53000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-53,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "750 21 BV Ubytování sportovní hala - vybavení 5 000,00 3 309,00 -53,00 3 256,00"
+    },
+    "nazev_polozky": "Ubytování sportovní hala - vybavení"
+  },
+  {
+    "id": "ro-2026-51-02",
+    "rok": 2026,
+    "cislo_ro": 51,
+    "nazev_ro": null,
+    "usneseni": [
+      "493/2026-111"
+    ],
+    "organ": "RM",
+    "orj": "750",
+    "oddil": 34,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Přístavba tělocvičen - vybavení",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 281000,
+    "zmena": 53000,
+    "po_zmene": 334000,
+    "castka": {
+      "hodnota": 53000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "53,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "750 34 BV Přístavba tělocvičen - vybavení 0,00 281,00 53,00 334,00"
+    },
+    "nazev_polozky": "Přístavba tělocvičen - vybavení"
+  },
+  {
+    "id": "ro-2026-52-01",
+    "rok": 2026,
+    "cislo_ro": 52,
+    "nazev_ro": null,
+    "usneseni": [
+      "505/2026-112"
+    ],
+    "organ": "RM",
+    "orj": "800",
+    "oddil": 36,
+    "druh": "bezne_prijmy",
+    "druh_zkratka": "BP",
+    "ucel": "Pronájem - pozemky - ostatní",
+    "fond": false,
+    "schvaleny": 407000,
+    "upraveny_pred": 557000,
+    "zmena": 50000,
+    "po_zmene": 607000,
+    "castka": {
+      "hodnota": 50000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "50,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "800 36 BP Pronájem - pozemky - ostatní 407,00 557,00 50,00 607,00"
+    },
+    "nazev_polozky": "Pronájem - pozemky - ostatní"
+  },
+  {
+    "id": "ro-2026-52-02",
+    "rok": 2026,
+    "cislo_ro": 52,
+    "nazev_ro": null,
+    "usneseni": [
+      "505/2026-112"
+    ],
+    "organ": "RM",
+    "orj": "800",
+    "oddil": 63,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Pojištění majetku + spoluúčast (náhrady)",
+    "fond": false,
+    "schvaleny": 1000000,
+    "upraveny_pred": 1150000,
+    "zmena": 50000,
+    "po_zmene": 1200000,
+    "castka": {
+      "hodnota": 50000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "50,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "800 63 BV Pojištění majetku + spoluúčast (náhrady) 1 000,00 1 150,00 50,00 1 200,00"
+    },
+    "nazev_polozky": "Pojištění majetku + spoluúčast (náhrady)"
+  },
+  {
+    "id": "ro-2026-53-01",
+    "rok": 2026,
+    "cislo_ro": 53,
+    "nazev_ro": null,
+    "usneseni": [
+      "524/2026-113"
+    ],
+    "organ": "RM",
+    "orj": "900",
+    "oddil": 21,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Ostatní služby - cestovní ruch",
+    "fond": false,
+    "schvaleny": 300000,
+    "upraveny_pred": 300000,
+    "zmena": -60000,
+    "po_zmene": 240000,
+    "castka": {
+      "hodnota": -60000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-60,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "900 21 BV Ostatní služby - cestovní ruch 300,00 300,00 -60,00 240,00"
+    },
+    "nazev_polozky": "Ostatní služby - cestovní ruch"
+  },
+  {
+    "id": "ro-2026-53-02",
+    "rok": 2026,
+    "cislo_ro": 53,
+    "nazev_ro": null,
+    "usneseni": [
+      "524/2026-113"
+    ],
+    "organ": "RM",
+    "orj": "900",
+    "oddil": 21,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Ostatní služby - trhy",
+    "fond": false,
+    "schvaleny": 140000,
+    "upraveny_pred": 140000,
+    "zmena": 60000,
+    "po_zmene": 200000,
+    "castka": {
+      "hodnota": 60000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "60,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "900 21 BV Ostatní služby - trhy 140,00 140,00 60,00 200,00"
+    },
+    "nazev_polozky": "Ostatní služby - trhy"
+  },
+  {
+    "id": "ro-2026-54-01",
+    "rok": 2026,
+    "cislo_ro": 54,
+    "nazev_ro": null,
+    "usneseni": [
+      "525/2026-113"
+    ],
+    "organ": "RM",
+    "orj": "800",
+    "oddil": 34,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Příspěvky v oblasti ostatních čiností",
+    "fond": false,
+    "schvaleny": 300000,
+    "upraveny_pred": 292000,
+    "zmena": -20000,
+    "po_zmene": 272000,
+    "castka": {
+      "hodnota": -20000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-20,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "800 34 BV Příspěvky v oblasti ostatních čiností 300,00 292,00 -20,00 272,00"
+    },
+    "nazev_polozky": "Příspěvky v oblasti ostatních čiností"
+  },
+  {
+    "id": "ro-2026-54-02",
+    "rok": 2026,
+    "cislo_ro": 54,
+    "nazev_ro": null,
+    "usneseni": [
+      "525/2026-113"
+    ],
+    "organ": "RM",
+    "orj": "800",
+    "oddil": 31,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Příspěvky v oblasti ostatních čiností - dar",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 8000,
+    "zmena": 20000,
+    "po_zmene": 28000,
+    "castka": {
+      "hodnota": 20000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "20,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "800 31 BV Příspěvky v oblasti ostatních čiností - dar 0,00 8,00 20,00 28,00"
+    },
+    "nazev_polozky": "Příspěvky v oblasti ostatních čiností - dar"
+  },
+  {
+    "id": "ro-2026-55-01",
+    "rok": 2026,
+    "cislo_ro": 55,
+    "nazev_ro": null,
+    "usneseni": [
+      "526/2026-113"
+    ],
+    "organ": "RM",
+    "orj": "250",
+    "oddil": 53,
+    "druh": "bezne_prijmy",
+    "druh_zkratka": "BP",
+    "ucel": "MP - prodej zbraní",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 28920,
+    "zmena": 6900,
+    "po_zmene": 35820,
+    "castka": {
+      "hodnota": 6900.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "6,90",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "250 53 BP MP - prodej zbraní 0,00 28,92 6,90 35,82"
+    },
+    "nazev_polozky": "MP - prodej zbraní"
+  },
+  {
+    "id": "ro-2026-55-02",
+    "rok": 2026,
+    "cislo_ro": 55,
+    "nazev_ro": null,
+    "usneseni": [
+      "526/2026-113"
+    ],
+    "organ": "RM",
+    "orj": "250",
+    "oddil": 53,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "MP - drobný hmotný dlouhodobý majetek",
+    "fond": false,
+    "schvaleny": 230000,
+    "upraveny_pred": 283920,
+    "zmena": 6900,
+    "po_zmene": 290820,
+    "castka": {
+      "hodnota": 6900.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "6,90",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "250 53 BV MP - drobný hmotný dlouhodobý majetek 230,00 283,92 6,90 290,82"
+    },
+    "nazev_polozky": "MP - drobný hmotný dlouhodobý majetek"
+  },
+  {
+    "id": "ro-2026-55-03",
+    "rok": 2026,
+    "cislo_ro": 55,
+    "nazev_ro": null,
+    "usneseni": [
+      "526/2026-113"
+    ],
+    "organ": "RM",
+    "orj": "250",
+    "oddil": 53,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "MP - služby telekomunikací a radiokomunikací",
+    "fond": false,
+    "schvaleny": 130000,
+    "upraveny_pred": 125000,
+    "zmena": 5000,
+    "po_zmene": 130000,
+    "castka": {
+      "hodnota": 5000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "5,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "250 53 BV MP - služby telekomunikací a radiokomunikací 130,00 125,00 5,00 130,00"
+    },
+    "nazev_polozky": "MP - služby telekomunikací a radiokumunikací",
+    "prirazeni": "castka"
+  },
+  {
+    "id": "ro-2026-55-04",
+    "rok": 2026,
+    "cislo_ro": 55,
+    "nazev_ro": null,
+    "usneseni": [
+      "526/2026-113"
+    ],
+    "organ": "RM",
+    "orj": "250",
+    "oddil": 53,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "MP - náhrady mezd při DPN",
+    "fond": false,
+    "schvaleny": 110000,
+    "upraveny_pred": 110000,
+    "zmena": 20000,
+    "po_zmene": 130000,
+    "castka": {
+      "hodnota": 20000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "20,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "250 53 BV MP - náhrady mezd při DPN 110,00 110,00 20,00 130,00"
+    },
+    "nazev_polozky": "MP - náhrady mezd při DPN"
+  },
+  {
+    "id": "ro-2026-55-05",
+    "rok": 2026,
+    "cislo_ro": 55,
+    "nazev_ro": null,
+    "usneseni": [
+      "526/2026-113"
+    ],
+    "organ": "RM",
+    "orj": "250",
+    "oddil": 53,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "MP - dohody",
+    "fond": false,
+    "schvaleny": 60000,
+    "upraveny_pred": 60000,
+    "zmena": -25000,
+    "po_zmene": 35000,
+    "castka": {
+      "hodnota": -25000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-25,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "250 53 BV MP - dohody 60,00 60,00 -25,00 35,00"
+    },
+    "nazev_polozky": "MP - dohody"
+  },
+  {
+    "id": "ro-2026-56-01",
+    "rok": 2026,
+    "cislo_ro": 56,
+    "nazev_ro": null,
+    "usneseni": [
+      "527/2026-113"
+    ],
+    "organ": "RM",
+    "orj": "750",
+    "oddil": 36,
+    "druh": "kapitalove_vydaje",
+    "druh_zkratka": "KV",
+    "ucel": "Snížení energetické náročnosti DPS 3",
+    "fond": false,
+    "schvaleny": 14000000,
+    "upraveny_pred": 7250000,
+    "zmena": -1165000,
+    "po_zmene": 6085000,
+    "castka": {
+      "hodnota": -1165000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-1 165,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "750 36 KV Snížení energetické náročnosti DPS 3 14 000,00 7 250,00 -1 165,00 6 085,00"
+    },
+    "nazev_polozky": "Snížení energetické náročnosti DPS 3"
+  },
+  {
+    "id": "ro-2026-56-02",
+    "rok": 2026,
+    "cislo_ro": 56,
+    "nazev_ro": null,
+    "usneseni": [
+      "527/2026-113"
+    ],
+    "organ": "RM",
+    "orj": "750",
+    "oddil": 21,
+    "druh": "kapitalove_vydaje",
+    "druh_zkratka": "KV",
+    "ucel": "Ubytování sportovní hala",
+    "fond": false,
+    "schvaleny": 56000000,
+    "upraveny_pred": 61860000,
+    "zmena": 1165000,
+    "po_zmene": 63025000,
+    "castka": {
+      "hodnota": 1165000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "1 165,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 2; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 2,
+      "text": "750 21 KV Ubytování sportovní hala 56 000,00 61 860,00 1 165,00 63 025,00"
+    },
+    "nazev_polozky": "Ubytování sportovní hala"
+  },
+  {
+    "id": "ro-2026-57-01",
+    "rok": 2026,
+    "cislo_ro": 57,
+    "nazev_ro": null,
+    "usneseni": [
+      "542/2026-113"
+    ],
+    "organ": "RM",
+    "orj": "750",
+    "oddil": 34,
+    "druh": "kapitalove_vydaje",
+    "druh_zkratka": "KV",
+    "ucel": "Přístavba tělocvičen",
+    "fond": false,
+    "schvaleny": 70000000,
+    "upraveny_pred": 59245140,
+    "zmena": -253000,
+    "po_zmene": 58992140,
+    "castka": {
+      "hodnota": -253000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-253,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 3; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 3,
+      "text": "750 34 KV Přístavba tělocvičen 70 000,00 59 245,14 -253,00 58 992,14"
+    },
+    "nazev_polozky": "Přístavba tělocvičen"
+  },
+  {
+    "id": "ro-2026-57-02",
+    "rok": 2026,
+    "cislo_ro": 57,
+    "nazev_ro": null,
+    "usneseni": [
+      "542/2026-113"
+    ],
+    "organ": "RM",
+    "orj": "750",
+    "oddil": 34,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Přístavba tělocvičen - vybavení",
+    "fond": false,
+    "schvaleny": 0,
+    "upraveny_pred": 334000,
+    "zmena": 253000,
+    "po_zmene": 587000,
+    "castka": {
+      "hodnota": 253000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "253,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 3; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 3,
+      "text": "750 34 BV Přístavba tělocvičen - vybavení 0,00 334,00 253,00 587,00"
+    },
+    "nazev_polozky": "Přístavba tělocvičen - vybavení"
+  },
+  {
+    "id": "ro-2026-58-01",
+    "rok": 2026,
+    "cislo_ro": 58,
+    "nazev_ro": null,
+    "usneseni": [
+      "543/2026-113"
+    ],
+    "organ": "RM",
+    "orj": "770",
+    "oddil": 61,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Nákup ostatních služeb (příkazní smlouvy)",
+    "fond": false,
+    "schvaleny": 400000,
+    "upraveny_pred": 400000,
+    "zmena": -200000,
+    "po_zmene": 200000,
+    "castka": {
+      "hodnota": -200000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-200,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 3; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 3,
+      "text": "770 61 BV Nákup ostatních služeb (příkazní smlouvy) 400,00 400,00 -200,00 200,00"
+    },
+    "nazev_polozky": "Nákup ostatních služeb (příkazní smlouvy)"
+  },
+  {
+    "id": "ro-2026-58-02",
+    "rok": 2026,
+    "cislo_ro": 58,
+    "nazev_ro": null,
+    "usneseni": [
+      "543/2026-113"
+    ],
+    "organ": "RM",
+    "orj": "770",
+    "oddil": 61,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Odvody za neplnění povinnosti zaměstnávat zdrav.postižené",
+    "fond": false,
+    "schvaleny": 350000,
+    "upraveny_pred": 345000,
+    "zmena": -180000,
+    "po_zmene": 165000,
+    "castka": {
+      "hodnota": -180000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-180,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 3; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 3,
+      "text": "770 61 BV Odvody za neplnění povinnosti zaměstnávat zdrav.postižené 350,00 345,00 -180,00 165,00"
+    },
+    "nazev_polozky": "Odvody za neplnění povinnosti zaměstnávat zdrav.postižené"
+  },
+  {
+    "id": "ro-2026-58-03",
+    "rok": 2026,
+    "cislo_ro": 58,
+    "nazev_ro": null,
+    "usneseni": [
+      "543/2026-113"
+    ],
+    "organ": "RM",
+    "orj": "800",
+    "oddil": 64,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Rezervy běžných výdajů",
+    "fond": false,
+    "schvaleny": 7680000,
+    "upraveny_pred": 2325160,
+    "zmena": -500000,
+    "po_zmene": 1825160,
+    "castka": {
+      "hodnota": -500000.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "-500,00",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 3; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 3,
+      "text": "800 64 BV Rezervy běžných výdajů 7 680,00 2 325,16 -500,00 1 825,16"
+    },
+    "nazev_polozky": "Rezervy běžných výdajů"
+  },
+  {
+    "id": "ro-2026-58-04",
+    "rok": 2026,
+    "cislo_ro": 58,
+    "nazev_ro": null,
+    "usneseni": [
+      "543/2026-113"
+    ],
+    "organ": "RM",
+    "orj": "770",
+    "oddil": 61,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Platy zaměstnanců v prac.poměru - úřad",
+    "fond": false,
+    "schvaleny": 48800000,
+    "upraveny_pred": 52400000,
+    "zmena": 657930,
+    "po_zmene": 53057930,
+    "castka": {
+      "hodnota": 657930.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "657,93",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 3; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 3,
+      "text": "770 61 BV Platy zaměstnanců v prac.poměru - úřad 48 800,00 52 400,00 657,93 53 057,93"
+    },
+    "nazev_polozky": "Platy zaměstnanců v prac.poměru - úřad"
+  },
+  {
+    "id": "ro-2026-58-05",
+    "rok": 2026,
+    "cislo_ro": 58,
+    "nazev_ro": null,
+    "usneseni": [
+      "543/2026-113"
+    ],
+    "organ": "RM",
+    "orj": "770",
+    "oddil": 61,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Povinné poj.na soc.zabezpečení - zaměst.a OOV",
+    "fond": false,
+    "schvaleny": 12250000,
+    "upraveny_pred": 13142800,
+    "zmena": 162940,
+    "po_zmene": 13305740,
+    "castka": {
+      "hodnota": 162940.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "162,94",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 3; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 3,
+      "text": "770 61 BV Povinné poj.na soc.zabezpečení - zaměst.a OOV 12 250,00 13 142,80 162,94 13 305,74"
+    },
+    "nazev_polozky": "Povinné pojistné na soc.zabezpečení - zaměstnanci a OOV",
+    "prirazeni": "castka"
+  },
+  {
+    "id": "ro-2026-58-06",
+    "rok": 2026,
+    "cislo_ro": 58,
+    "nazev_ro": null,
+    "usneseni": [
+      "543/2026-113"
+    ],
+    "organ": "RM",
+    "orj": "770",
+    "oddil": 61,
+    "druh": "bezne_vydaje",
+    "druh_zkratka": "BV",
+    "ucel": "Povinné poj. na zdrav.pojištění - zaměst. a OOV",
+    "fond": false,
+    "schvaleny": 4420000,
+    "upraveny_pred": 4744000,
+    "zmena": 59130,
+    "po_zmene": 4803130,
+    "castka": {
+      "hodnota": 59130.0,
+      "mena": "CZK",
+      "jednotka": "Kč",
+      "s_dph": null,
+      "druh": "rozpoctove_opatreni",
+      "citace": "59,13",
+      "poznamka": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf, strana 3; zdroj v tis. Kč"
+    },
+    "citace": {
+      "dokument": "https://www.mesto-trebon.cz/uploads/_mestsky-urad/financni/rozpocet/Rozpo%C4%8Det%202026/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf",
+      "strana": 3,
+      "text": "770 61 BV Povinné poj. na zdrav.pojištění - zaměst. a OOV 4 420,00 4 744,00 59,13 4 803,13"
+    },
+    "nazev_polozky": "Povinné pojistné na zdrav.pojištění - zaměstnanci a OOV",
+    "prirazeni": "castka"
+  }
+]
