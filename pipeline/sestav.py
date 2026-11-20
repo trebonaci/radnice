@@ -23,6 +23,7 @@ import yaml
 from pipeline import stitky as modul_stitky
 from pipeline import smlouvy as modul_smlouvy
 from pipeline.jmena import zakryj_jmena
+from pipeline import dotace as modul_dotace
 from pipeline import projekty as modul_projekty
 from pipeline import rozpocet as modul_rozpocet
 from pipeline import zakazky as modul_zakazky
@@ -152,7 +153,9 @@ def zpracuj_jednani(jednani_id: str, manifest: dict, chyby: list[str], osoby: di
     adresar = adresar_textu(koren, dok)
     rozlozeno = rozloz(jednani_id, adresar)
     anot = yaml.safe_load((koren / "anotace" / f"{jednani_id}.yaml").read_text(encoding="utf-8"))
-    dokument = normalizuj(" ".join(p.read_text(encoding="utf-8") for p in sorted(adresar.glob("strana-*.txt"))))
+    strany_text = [p.read_text(encoding="utf-8") for p in sorted(adresar.glob("strana-*.txt"),
+                                                                 key=lambda x: int(x.stem.split("-")[1]))]
+    dokument = normalizuj(" ".join(strany_text))
 
     def over(citace: str, kde: str, kontext: str) -> bool:
         if normalizuj(citace) not in normalizuj(kde):
@@ -185,7 +188,11 @@ def zpracuj_jednani(jednani_id: str, manifest: dict, chyby: list[str], osoby: di
                 ok = False
         for p in a.get("parcely", []):
             ok &= over(p["citace"], dokument, f"{u['id']} parcela")
-        for cit in [a["citace"]] + [c["citace"] for c in a.get("castky", [])] + [p["citace"] for p in a.get("parcely", [])]:
+        pro = a.get("pro_obcany")          # „co se mění pro vás“ (AI, věta pro čtenáře + doslovná citace)
+        if pro:
+            ok &= over(pro["citace"], u["text"], f"{u['id']} pro_obcany")
+        for cit in ([a["citace"]] + [c["citace"] for c in a.get("castky", [])] + [p["citace"] for p in a.get("parcely", [])]
+                    + ([pro["citace"]] if pro else [])):
             for r, _ in _polozky(anon):
                 if r in cit:
                     chyby.append(f"{jednani_id}: {u['id']} citace obsahuje anonymizovaný údaj {r!r}")
@@ -218,10 +225,20 @@ def zpracuj_jednani(jednani_id: str, manifest: dict, chyby: list[str], osoby: di
             "citace": citace_usn,
             "castky": [{**c, "mena": "CZK"} for c in a.get("castky", [])],
             "parcely": a.get("parcely", []),
+            "pro_obcany": {"text": pro["text"], "oblast": pro.get("oblast"), "plati_od": pro.get("plati_od"),
+                           "citace": {"dokument_id": dok["dokument_id"], "strany": u["strany"], "text": pro["citace"]}}
+            if pro else None,
+            "pro_obcany_ai": True if pro else None,
             "poznamka": a.get("poznamka"),
             "otazky": a.get("otazky", []),
             "overeni": "overeno_kodem" if ok else "navrh",
         })
+        # dotace z tabulky v usnesení (bez AI): rozložení stran po stejné anonymizaci jako text usnesení
+        radky = anonymizuj_urednici(anonymizuj("\n".join(strany_text), anon), osoby).splitlines()
+        dot, chyby_d = modul_dotace.z_usneseni({**u, "jednani_id": jednani_id}, radky, verejny,
+                                               dok["dokument_id"], meta.get("datum"))
+        chyby += [f"{jednani_id}: {c}" for c in chyby_d]
+        usneseni_out[-1]["_dotace"] = dot
 
     hlasovani_out = []
     for h in rozlozeno["hlasovani"]:
@@ -305,11 +322,13 @@ def sestav(koren: Path | None = None) -> tuple[dict[str, list], list[str]]:
             sm["predmet"] = sm["predmet"].replace(n, "[jméno]")
         sm["predmet"] = zakryj_jmena(sm["predmet"], osoby, koren)            # jména bez titulu (#84)
     chyby += modul_smlouvy.zkontroluj(smlouvy, koren)
+    dotace = [d for u in usneseni for d in u.pop("_dotace", [])]
     # rozpočtová opatření po položkách z textu usnesení (bez AI; před ± změna = po kontroluje kód)
     rozpoctova_opatreni, chyby_ro = modul_rozpocet.z_usneseni(usneseni)
     chyby += chyby_ro + modul_rozpocet.zkontroluj(rozpoctova_opatreni, usneseni)
     vystup = {"jednani": jednani, "usneseni": usneseni, "hlasovani": hlasovani, "zakazky": zakazky,
-              "smlouvy": smlouvy, "rozpoctova_opatreni": rozpoctova_opatreni}
+              "smlouvy": smlouvy, "rozpoctova_opatreni": rozpoctova_opatreni,
+              "dotace": dotace}
     # projektové karty: ručně spravované data/projekty/*.yaml + vazby na výstupy výše
     vystup["projekty"], chyby_p = modul_projekty.sestav(koren, vystup)
     chyby += chyby_p
@@ -337,7 +356,7 @@ def main() -> int:
         (data / f"{nazev}.json").write_text(serializuj(obsah), encoding="utf-8")
     print(f"jednání {len(vystup['jednani'])}, usnesení {len(vystup['usneseni'])}, hlasování {len(vystup['hlasovani'])}, "
           f"zakázky {len(vystup['zakazky'])}, smlouvy {len(vystup['smlouvy'])}, "
-          f"položky RO {len(vystup['rozpoctova_opatreni'])}, projekty {len(vystup['projekty'])}")
+          f"položky RO {len(vystup['rozpoctova_opatreni'])}, projekty {len(vystup['projekty'])}, dotace {len(vystup['dotace'])}")
     for c in chyby:
         print("CHYBA:", c, file=sys.stderr)
     return 1 if chyby else 0

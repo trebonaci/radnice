@@ -56,6 +56,12 @@ Jen volení zástupci. `id`, `jmeno`, `klub`, `obdobi[]`, `funkce[]`
 ### rozpoctove_opatreni (položka RO)
 Jedna položka rozpočtového opatření z textu usnesení RM/ZM (`pipeline/rozpocet.py`, bez AI). `id` (`<usneseni_id>-p<n>`), `rok`, `cislo_ro`, `usneseni_id`, `usneseni_cislo`, `jednani_id`, `organ` (rada / zastupitelstvo), `vysledek_hlasovani`, `strana` (prijmy / vydaje), `smer` (z / do / navyseni / snizeni), `polozka`, `nazev`, `paragraf`, `orj`, `org`, `uz`, `zmena` (Kč se znaménkem), `castka` (druh `rozpoctove_opatreni`), `rozpocet` {`schvaleny`, `pred_ro`, `po_ro`, `fond`, `citace` = řádek tabulky} nebo null, `citace`, `poznamka`. Kontroly: citace doslova v usnesení, `pred_ro + zmena = po_ro`, přesun z/do v rámci RO vyrovnaný. Klíč investiční akce: vlastní ORG kapitálové akce (např. 6230000000), u sdíleného ORG (9750000000) název položky.
 
+### dotace (poskytnutá)
+Řádek tabulky „poskytnutí dotací žadatelům … takto:“ v usnesení (#99, `pipeline/dotace.py`, bez AI): `id` (`<usneseni_id>-d<n>`), `usneseni_id`, `usneseni_cislo`, `jednani_id`, `datum`, `vysledek_hlasovani`, `oblast` (z úvodní věty), `prijemce` (fyzická osoba → „fyzická osoba“, bez bydliště), `fyzicka_osoba`, `ucel`, `druh_ucelu` (cinnost / akce / reprezentace / jine), `castka` (druh `dotace_priznana`, citace = řádek s částkou), `citace`.
+
+### pro_obcany (v usnesení)
+„Co se mění pro vás“ (#99): jedna věta z pohledu občana navržená AI v anotaci (`pro_obcany: {text, oblast, plati_od, citace}`), ve výstupu `pro_obcany` {`text`, `oblast`, `plati_od`, `citace` {dokument_id, strany, text}} + `pro_obcany_ai: true`. Citace se ověřuje doslova v textu usnesení; čísla ve větě se jen opisují. Jen u usnesení, která mění něco pro lidi (služby, prostory, školy, kultura, pravidla).
+
 ### castka
 `hodnota`, `mena`, `jednotka` (Kč, Kč/m2/rok…), `s_dph` (true / false / null = neuvedeno), `druh` (odhad / rozpocet_schvaleny / rozpocet_upraveny / rozpoctove_opatreni / predpokladana_hodnota / vysoutezena / smluvni / dodatek / zaplaceno / najemne_sazba / dar_prijaty / dar_poskytnuty / dotace_pozadovana / dotace_priznana / jine), `obdobi`, `k_datu`, `citace`, `poznamka`. Částky různých druhů se nesčítají ani přímo neporovnávají.
 

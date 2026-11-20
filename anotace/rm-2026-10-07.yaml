@@ -45,6 +45,11 @@ usneseni:
     poznamka: Jde o schválení zveřejnění záměru, ne o uzavření výpůjčky.
 
   rm-2026-j112-u497:
+    pro_obcany:
+      text: "Hospicová péče sv. Kleofáše končí ke konci roku 2026 v nebytových prostorách domu čp. 20/II v ulici Svatopluka Čecha."
+      oblast: socialni
+      plati_od: "2026-12-31"
+      citace: "Nájemní vztah bude ukončen k 31.12.2026."
     tema: Výpověď nájmu nebytového prostoru č. p. 20/II v ulici Svatopluka Čecha
     kategorie: [majetek_najem, socialni]
     shrnuti: Rada vzala na vědomí výpověď nájmu nebytových prostor v č. p. 20/II, který měla organizace Hospicová péče sv. Kleofáše Třeboň; nájem skončí 31. 12. 2026.
@@ -267,6 +272,10 @@ usneseni:
     poznamka: Jména členů a náhradníků komisí neuvádíme (rozhodnutí 18. 11. 2026).
 
   rm-2026-j112-u511:
+    pro_obcany:
+      text: "Provoz Muzea města Třeboně zajistí na základě příkazní smlouvy fyzická osoba."
+      oblast: kultura
+      citace: "předmětem smlouvy bude zajištění provozu Muzea města Třeboně"
     tema: Příkazní smlouva na zajištění provozu Muzea města Třeboně
     kategorie: [kultura]
     shrnuti: Rada schválila příkazní smlouvu, jejímž předmětem je zajištění provozu Muzea města Třeboně.
