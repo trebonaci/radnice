@@ -12,7 +12,7 @@ Sjednoceno z návrhu Clauda, návrhu Codexu (PR #1) a zjištění z pilotu zápi
 - Neznámá hodnota je `null`, nikdy nula.
 - Automatická shoda názvů vytváří jen návrh vazby; potvrdit ji lze přímým identifikátorem nebo ruční kontrolou.
 - Surová data (`raw/`) se neupravují; vše odvozené je reprodukovatelné skriptem.
-- Osobní údaje fyzických osob, které nejsou volenými zástupci, se do `data/` nezapisují (anonymizace při sestavení). Úředníky nahrazujeme funkcí podle `config/osoby.yaml`; členy komisí neuvádíme; podnikatele (fyzické osoby) anonymizujeme vždy. Sestavení selže, pokud výstup obsahuje jméno s titulem, které nepatří zastupiteli, nebo známé jméno úředníka.
+- Osobní údaje fyzických osob, které nejsou volenými zástupci, se do `data/` nezapisují (anonymizace při sestavení). Úředníky nahrazujeme funkcí podle `config/osoby.yaml`; členy komisí neuvádíme; podnikatele (fyzické osoby) anonymizujeme; výjimka (#93): podnikající fyzická osoba (s IČO) jako dodavatel – příjemce plnění ve smlouvě nebo vítěz zakázky – má jméno ze zdroje v poli `jmeno_podnikatele` (bez IČO a adresy, `nazev` zůstává „fyzická osoba“); kontrola jmen toto pole přeskakuje. Sestavení selže, pokud výstup obsahuje jméno s titulem, které nepatří zastupiteli, nebo známé jméno úředníka.
 
 ## Entity
 

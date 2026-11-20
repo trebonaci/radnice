@@ -97,12 +97,14 @@
             "role": "stavba",
             "zdroj_id": "ezak-VZ-901",
             "dodavatel": "MANE STAVEBNÍ s.r.o.",
+            "jmeno_podnikatele": null,
             "hodnota": 54625965.36
           },
           {
             "role": "projekt",
             "zdroj_id": "ezak-VZ-877",
             "dodavatel": "fyzická osoba",
+            "jmeno_podnikatele": "Ing. Josef Kregl",
             "hodnota": 945000.0
           }
         ],
@@ -128,6 +130,7 @@
             "vitezove": [
               {
                 "nazev": "fyzická osoba",
+                "jmeno_podnikatele": "Ing. Josef Kregl",
                 "smluvni": [
                   {
                     "hodnota": 945000.0,
@@ -179,6 +182,7 @@
             "vitezove": [
               {
                 "nazev": "MANE STAVEBNÍ s.r.o.",
+                "jmeno_podnikatele": null,
                 "smluvni": [
                   {
                     "hodnota": 66097418.09,
@@ -219,7 +223,10 @@
         "dodatek_cislo": 3,
         "datum_uzavreni": "2026-08-28",
         "strany": [
-          "MANE STAVEBNÍ s.r.o."
+          {
+            "nazev": "MANE STAVEBNÍ s.r.o.",
+            "jmeno_podnikatele": null
+          }
         ],
         "castky": [
           {
@@ -248,7 +255,10 @@
         "dodatek_cislo": 4,
         "datum_uzavreni": "2026-09-25",
         "strany": [
-          "MANE STAVEBNÍ s.r.o."
+          {
+            "nazev": "MANE STAVEBNÍ s.r.o.",
+            "jmeno_podnikatele": null
+          }
         ],
         "castky": [],
         "url": "https://smlouvy.gov.cz/smlouva/39681309",
@@ -262,7 +272,10 @@
         "dodatek_cislo": 1,
         "datum_uzavreni": "2026-09-30",
         "strany": [
-          "fyzická osoba"
+          {
+            "nazev": "fyzická osoba",
+            "jmeno_podnikatele": "Zdeněk Musil"
+          }
         ],
         "castky": [
           {
@@ -291,7 +304,10 @@
         "dodatek_cislo": 1,
         "datum_uzavreni": "2026-09-30",
         "strany": [
-          "fyzická osoba"
+          {
+            "nazev": "fyzická osoba",
+            "jmeno_podnikatele": "Ing. Pavel Houška"
+          }
         ],
         "castky": [
           {
@@ -320,7 +336,10 @@
         "dodatek_cislo": 1,
         "datum_uzavreni": "2026-10-27",
         "strany": [
-          "fyzická osoba"
+          {
+            "nazev": "fyzická osoba",
+            "jmeno_podnikatele": "Ing. Josef Kregl"
+          }
         ],
         "castky": [
           {
@@ -349,7 +368,10 @@
         "dodatek_cislo": 5,
         "datum_uzavreni": "2026-11-02",
         "strany": [
-          "MANE STAVEBNÍ s.r.o."
+          {
+            "nazev": "MANE STAVEBNÍ s.r.o.",
+            "jmeno_podnikatele": null
+          }
         ],
         "castky": [
           {
@@ -659,30 +681,35 @@
             "role": "vybaveni",
             "zdroj_id": "ezak-VZ-936",
             "dodavatel": "Artspect, a.s.",
+            "jmeno_podnikatele": null,
             "hodnota": 1674348.0
           },
           {
             "role": "stavba",
             "zdroj_id": "ezak-VZ-883",
             "dodavatel": "Retherm s.r.o.",
+            "jmeno_podnikatele": null,
             "hodnota": 51382827.84
           },
           {
             "role": "projekt",
             "zdroj_id": "ezak-VZ-810",
             "dodavatel": "fyzická osoba",
+            "jmeno_podnikatele": "Ing. Josef Kregl",
             "hodnota": 873000.0
           },
           {
             "role": "vybaveni",
             "zdroj_id": "rs-40060341",
             "dodavatel": "StrongGear s.r.o.",
+            "jmeno_podnikatele": null,
             "hodnota": 310125.87
           },
           {
             "role": "vybaveni",
             "zdroj_id": "rs-39574269",
             "dodavatel": "LP DVORACEK spol. s r.o.",
+            "jmeno_podnikatele": null,
             "hodnota": 208817.0
           }
         ],
@@ -708,6 +735,7 @@
             "vitezove": [
               {
                 "nazev": "fyzická osoba",
+                "jmeno_podnikatele": "Ing. Josef Kregl",
                 "smluvni": [
                   {
                     "hodnota": 873000.0,
@@ -769,6 +797,7 @@
             "vitezove": [
               {
                 "nazev": "Retherm s.r.o.",
+                "jmeno_podnikatele": null,
                 "smluvni": [
                   {
                     "hodnota": 62173221.68,
@@ -827,6 +856,7 @@
             "vitezove": [
               {
                 "nazev": "Artspect, a.s.",
+                "jmeno_podnikatele": null,
                 "smluvni": [
                   {
                     "hodnota": 2025961.08,
@@ -860,7 +890,10 @@
         "dodatek_cislo": 3,
         "datum_uzavreni": "2026-08-28",
         "strany": [
-          "Retherm s.r.o."
+          {
+            "nazev": "Retherm s.r.o.",
+            "jmeno_podnikatele": null
+          }
         ],
         "castky": [
           {
@@ -889,7 +922,10 @@
         "dodatek_cislo": 4,
         "datum_uzavreni": "2026-09-14",
         "strany": [
-          "Retherm s.r.o."
+          {
+            "nazev": "Retherm s.r.o.",
+            "jmeno_podnikatele": null
+          }
         ],
         "castky": [],
         "url": "https://smlouvy.gov.cz/smlouva/39520809",
@@ -903,7 +939,10 @@
         "dodatek_cislo": null,
         "datum_uzavreni": "2026-09-16",
         "strany": [
-          "LP DVORACEK spol. s r.o."
+          {
+            "nazev": "LP DVORACEK spol. s r.o.",
+            "jmeno_podnikatele": null
+          }
         ],
         "castky": [
           {
@@ -932,7 +971,10 @@
         "dodatek_cislo": 1,
         "datum_uzavreni": "2026-09-30",
         "strany": [
-          "fyzická osoba"
+          {
+            "nazev": "fyzická osoba",
+            "jmeno_podnikatele": "Zdeněk Musil"
+          }
         ],
         "castky": [
           {
@@ -961,7 +1003,10 @@
         "dodatek_cislo": 1,
         "datum_uzavreni": "2026-09-30",
         "strany": [
-          "Artspect, a.s."
+          {
+            "nazev": "Artspect, a.s.",
+            "jmeno_podnikatele": null
+          }
         ],
         "castky": [
           {
@@ -990,7 +1035,10 @@
         "dodatek_cislo": 1,
         "datum_uzavreni": "2026-10-01",
         "strany": [
-          "fyzická osoba"
+          {
+            "nazev": "fyzická osoba",
+            "jmeno_podnikatele": "Ing. Pavel Houška"
+          }
         ],
         "castky": [
           {
@@ -1019,7 +1067,10 @@
         "dodatek_cislo": null,
         "datum_uzavreni": "2026-10-23",
         "strany": [
-          "StrongGear s.r.o."
+          {
+            "nazev": "StrongGear s.r.o.",
+            "jmeno_podnikatele": null
+          }
         ],
         "castky": [
           {
@@ -1048,7 +1099,10 @@
         "dodatek_cislo": 5,
         "datum_uzavreni": "2026-10-23",
         "strany": [
-          "Retherm s.r.o."
+          {
+            "nazev": "Retherm s.r.o.",
+            "jmeno_podnikatele": null
+          }
         ],
         "castky": [
           {
@@ -1077,7 +1131,10 @@
         "dodatek_cislo": 2,
         "datum_uzavreni": "2026-10-27",
         "strany": [
-          "Artspect, a.s."
+          {
+            "nazev": "Artspect, a.s.",
+            "jmeno_podnikatele": null
+          }
         ],
         "castky": [
           {
@@ -1106,7 +1163,10 @@
         "dodatek_cislo": 1,
         "datum_uzavreni": "2026-10-27",
         "strany": [
-          "fyzická osoba"
+          {
+            "nazev": "fyzická osoba",
+            "jmeno_podnikatele": "Ing. Josef Kregl"
+          }
         ],
         "castky": [
           {

@@ -81,13 +81,16 @@ def _castka(e: ET.Element, tag: str, s_dph, druh, zdroj, misto, obdobi=None) -> 
 def subjekt(e: ET.Element | None) -> dict:
     """Dodavatel/účastník. Fyzická osoba (má `bydliste`) se anonymizuje."""
     if e is None:
-        return {"nazev": None, "ico": None, "fyzicka_osoba": None}
+        return {"nazev": None, "ico": None, "fyzicka_osoba": None, "jmeno_podnikatele": None}
     nazev = _t(e, "nazev_subjektu") or ""
     fo = (e.find(f"{NS}bydliste") is not None and e.find(f"{NS}misto_podnikani") is None
           and e.find(f"{NS}zeme_sidla") is None) or not je_pravnicka(nazev)
     if fo:
-        return {"nazev": "fyzická osoba", "ico": None, "fyzicka_osoba": True}
-    return {"nazev": nazev, "ico": _t(e, "ico"), "fyzicka_osoba": False}
+        # podnikající fyzická osoba (IČO nebo místo podnikání) se uvádí jménem ze zdroje, bez IČO a adresy (#93)
+        podnikatel = bool(_t(e, "ico")) or e.find(f"{NS}misto_podnikani") is not None
+        return {"nazev": "fyzická osoba", "ico": None, "fyzicka_osoba": True,
+                "jmeno_podnikatele": nazev if podnikatel and nazev else None}
+    return {"nazev": nazev, "ico": _t(e, "ico"), "fyzicka_osoba": False, "jmeno_podnikatele": None}
 
 
 def _cast(c: ET.Element, zdroj: str, zid: str | None = None) -> dict:

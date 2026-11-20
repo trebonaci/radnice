@@ -102,7 +102,7 @@ def sestav_projekt(p: dict, data: dict) -> dict:
         r_ = role(z["nazev"])
         casti = []
         for c in z["casti"]:
-            vitezove = [{"nazev": v["nazev"], "smluvni": _smluvni(v["castky"]),
+            vitezove = [{"nazev": v["nazev"], "jmeno_podnikatele": v.get("jmeno_podnikatele"), "smluvni": _smluvni(v["castky"]),
                          "zaplaceno": [{"obdobi": k["obdobi"], "hodnota": k["hodnota"], "s_dph": k.get("s_dph")}
                                        for k in v["castky"] if k.get("druh") == "zaplaceno"]}
                         for v in c["vitezove"]]
@@ -125,7 +125,7 @@ def sestav_projekt(p: dict, data: dict) -> dict:
         m = RE_DODATEK.search(s["predmet"] or "")
         smlouvy.append({"id": s["id"], "predmet": s["predmet"], "role": r_,
                         "dodatek_cislo": int(m[1]) if m else None, "datum_uzavreni": s["datum_uzavreni"],
-                        "strany": [x["nazev"] for x in s["strany"]], "castky": _smluvni(s["castky"]),
+                        "strany": [{"nazev": x["nazev"], "jmeno_podnikatele": x.get("jmeno_podnikatele")} for x in s["strany"]], "castky": _smluvni(s["castky"]),
                         "url": s["url"], "evidencni_cislo_zakazky": s.get("evidencni_cislo_zakazky"),
                         "jistota": "nase_propojeni"})
         udalosti.append({"datum": s["datum_uzavreni"], "typ": "dodatek" if m else "smlouva",
@@ -204,6 +204,7 @@ def souhrn(rozpocet: list[dict], zakazky: list[dict], smlouvy: list[dict]) -> di
                 kc = [x for x in v["smluvni"] if x["s_dph"] is False and x.get("mena", "CZK") == "CZK"]
                 if kc:
                     casti.append({"role": z["role"], "zdroj_id": z["id"], "dodavatel": v["nazev"],
+                                  "jmeno_podnikatele": v.get("jmeno_podnikatele"),
                                   "hodnota": kc[0]["hodnota"]})
                 else:
                     bez_ceny.append(z["id"])
@@ -216,7 +217,8 @@ def souhrn(rozpocet: list[dict], zakazky: list[dict], smlouvy: list[dict]) -> di
             continue
         if sm.get("url") in odkazy or sm.get("evidencni_cislo_zakazky") in cisla:
             continue
-        casti.append({"role": sm["role"], "zdroj_id": sm["id"], "dodavatel": ", ".join(sm["strany"]),
+        casti.append({"role": sm["role"], "zdroj_id": sm["id"], "dodavatel": ", ".join(x["nazev"] for x in sm["strany"]),
+                      "jmeno_podnikatele": ", ".join(x["jmeno_podnikatele"] for x in sm["strany"] if x["jmeno_podnikatele"]) or None,
                       "hodnota": kc[0]["hodnota"]})
     smluvni = {"celkem": sum(_halere(c["hodnota"]) for c in casti) / 100 if casti else None, "druh": "smluvni", "s_dph": False,
                "mena": "CZK", "casti": casti, "bez_ceny": bez_ceny,

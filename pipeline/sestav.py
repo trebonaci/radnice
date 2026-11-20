@@ -122,12 +122,16 @@ def najdi_osobni_udaje(text: str, osoby: dict, obdobi: str | None = None) -> lis
     return nalezy
 
 
+POLE_BEZ_KONTROLY_JMEN = {"jmeno_podnikatele"}   # podnikající FO jako dodavatel jménem (#93)
+
+
 def _retezce(obj):
     if isinstance(obj, str):
         yield obj
     elif isinstance(obj, dict):
-        for v in obj.values():
-            yield from _retezce(v)
+        for k, v in obj.items():
+            if k not in POLE_BEZ_KONTROLY_JMEN:
+                yield from _retezce(v)
     elif isinstance(obj, list):
         for v in obj:
             yield from _retezce(v)

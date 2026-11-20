@@ -10,7 +10,8 @@
         "nazev": "GREEN HEAVEN s. r. o.",
         "ico": "28139160",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Smlouva - Mikrobiologické čištění OV a servis LT",
@@ -35,7 +36,8 @@
         "nazev": "GREEN HEAVEN s. r. o.",
         "ico": "28139160",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Svoz a likvidace BRO",
@@ -60,7 +62,8 @@
         "nazev": "Technické služby Třeboň, s.r.o.",
         "ico": "62502735",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Oprava VO č. 964 v Sokolské ulici v Třeboni poškozeného při dopravní nehodě.",
@@ -108,7 +111,8 @@
         "nazev": "Městská Vodohospodářská s.r.o.",
         "ico": "28136853",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Obnova sekčního šoupěte v ulici Mlýnská u č. p. 367",
@@ -156,7 +160,8 @@
         "nazev": "Jarg s.r.o.",
         "ico": "46678867",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Nákup gastro profi vybavení kuchyně",
@@ -193,7 +198,8 @@
         "nazev": "JARG s.r.o",
         "ico": "46678867",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Nákup gastro profi vybavení kuchyně",
@@ -230,7 +236,8 @@
         "nazev": "Ústav výzkumu globální změny AV ČR, v. v. i.",
         "ico": "86652079",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Smlouva o nájmu kancelářský prostor (nebytové prostory č. p. 106/II, Palackého nám., Třeboň - 2. NP výměra 30,14 m2)",
@@ -267,7 +274,8 @@
         "nazev": "Ústav výzkumu globální změny AV ČR, v. v. i.",
         "ico": "86652079",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Dohoda o ukončení smlouvy o nájmu kancelářských prostor (nebytový prostor č. p. 106/II, Palackého nám., Třeboň - 2.NP)",
@@ -292,7 +300,8 @@
         "nazev": "KOSTKA JH s.r.o.",
         "ico": "63908701",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Havarijní výměna vstupních dveří do bytů ve vybraných městských bytových jednotkách v objektech Vrchlického 935 a 937",
@@ -340,7 +349,8 @@
         "nazev": "MAPE CZ s.r.o.",
         "ico": "45349410",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Objednávka - oprava čerpadla Mape 100",
@@ -377,7 +387,8 @@
         "nazev": "Město Třeboň",
         "ico": "00247618",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Smlouva o nájmu kancelářských prostor",
@@ -402,7 +413,8 @@
         "nazev": "fyzická osoba",
         "ico": null,
         "fyzicka_osoba": true,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": "Radim Adam"
       }
     ],
     "predmet": "Objednáváme techniku do Divadla J. K. Tyla (2x reprobedna, 1x zesilovač, 5x bezdrátový mikrofon).",
@@ -439,7 +451,8 @@
         "nazev": "ISATS Ing. Prašnička s.r.o.",
         "ico": "28115856",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Obnova měření kyslíku na COV Třeboň",
@@ -487,7 +500,8 @@
         "nazev": "CETIN a.s.",
         "ico": "04084063",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Dodatek č. 4 k nájemní smlouvě ze dne 18.05.2012 (objekt vodárenské věže v Třeboni)",
@@ -535,7 +549,8 @@
         "nazev": "WAY project s.r.o.",
         "ico": "63906601",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Zpracování PD Stavebních úprav MK v ul. Ořechová v Třeboni",
@@ -583,7 +598,8 @@
         "nazev": "Městská Vodohospodářská s.r.o.",
         "ico": "28136853",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Obnova systému dodávky vzduchu na ČOV Třeboň",
@@ -631,7 +647,8 @@
         "nazev": "VKB stavby s.r.o.",
         "ico": "02192012",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Stavební úpravy MK v ul. Heřmánkova a Daskabát v Třeboni",
@@ -679,7 +696,8 @@
         "nazev": "fyzická osoba",
         "ico": null,
         "fyzicka_osoba": true,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": "Potměšil Pavel"
       }
     ],
     "predmet": "Havarijní oprava podlahové krytiny montáží nových kobercových čtverců v kanceláři agendy občanských průkazů a cestovních dokladů Městského úřadu Třeboň, Palackého nám. 46",
@@ -727,7 +745,8 @@
         "nazev": "fyzická osoba",
         "ico": null,
         "fyzicka_osoba": true,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Smlouva o budoucí smlouvě darovací spojená se smlouvou budoucí o zřízení věcného břemene - služebnosti",
@@ -752,7 +771,8 @@
         "nazev": "fyzická osoba",
         "ico": null,
         "fyzicka_osoba": true,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Dohoda o postupu - komunikace na p. č. 2467/2 k. ú. Třeboň",
@@ -777,7 +797,8 @@
         "nazev": "TRANE ČR spol. s r.o.",
         "ico": "62418661",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Servis chladících jednotek",
@@ -825,7 +846,8 @@
         "nazev": "Stavební firma HUKO s.r.o.",
         "ico": "25174533",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Obnova vodovodu v úseku Sádecká ulice – autokemp Třeboňský ráj - Dodatek č. 1",
@@ -873,7 +895,8 @@
         "nazev": "Město Třeboň",
         "ico": "00247618",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Věcný dar pro HS v Třeboni od města Třeboň -1 loď a 1 soubor dýchacího přístroje",
@@ -898,7 +921,8 @@
         "nazev": "Technické služby Třeboň, s.r.o.",
         "ico": "62502735",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Objednáváme opravu mobiliáře (dřevěné stánky a lavice) používaného v rámci pořádání řemeslných trhů.",
@@ -935,7 +959,8 @@
         "nazev": "Město Třeboň",
         "ico": "00247618",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Finanční dar pro HS v Třeboni z rozpočtu města Třeboň",
@@ -972,7 +997,8 @@
         "nazev": "fyzická osoba",
         "ico": null,
         "fyzicka_osoba": true,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": "Milan Sodomka"
       }
     ],
     "predmet": "Obnova zeleně - podzim 2026",
@@ -1020,7 +1046,8 @@
         "nazev": "VKB stavby s.r.o.",
         "ico": "02192012",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Oprava chodníku z konce ulice Souběžná u bytového domu čp. 800 vedoucího směrem k panelovému domu Táboritská čp. 1102",
@@ -1068,7 +1095,8 @@
         "nazev": "DATERA s.r.o.",
         "ico": "24804932",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Objednávka - zpracování ověřovací procesní a technické analýzy",
@@ -1105,7 +1133,8 @@
         "nazev": "Základní škola Třeboň, Na Sadech 375",
         "ico": "60816872",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Stravování žáků gymnázia - 10/2026",
@@ -1142,7 +1171,8 @@
         "nazev": "HosnedlArt, s.r.o.",
         "ico": "06967493",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Restaurování zlacení kovových plastik kamenného kříže v areálu hřbitova v Třeboni.",
@@ -1190,7 +1220,8 @@
         "nazev": "MANE STAVEBNÍ s.r.o.",
         "ico": "47239701",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 5",
@@ -1238,7 +1269,8 @@
         "nazev": "My Aura s.r.o.",
         "ico": "04428013",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Dodání čistícího stroje Duplex",
@@ -1286,7 +1318,8 @@
         "nazev": "My Aura s.r.o.",
         "ico": "04428013",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Dodání čistícího stroje Multiwash",
@@ -1334,7 +1367,8 @@
         "nazev": "Hasičský záchranný sbor Jihočeského kraje, Krajské ředitelství",
         "ico": "70882835",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Darovací smlouva HZS JHC - Záchranná loď marine a soubor dýchací techniky",
@@ -1371,7 +1405,8 @@
         "nazev": "Hasičský záchranný sbor Jihočeského kraje, Krajské ředitelství",
         "ico": "70882835",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Poskytnutí dotace (finančního příspěvku) pro HZS JHC z rozpočtu města Třeboň",
@@ -1408,7 +1443,8 @@
         "nazev": "ZESA s.r.o.",
         "ico": "48202592",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Zpracování studie podchodu pod silnicí I/34 v Třeboni včetně geodetického zaměření zájmového území a provedení předběžného inženýrsko-geologického průzkumu.",
@@ -1456,7 +1492,8 @@
         "nazev": "ELEGANTNÍ The Company s.r.o.",
         "ico": "24107239",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Čištění fasády a okapů, ochranná impregnace",
@@ -1493,7 +1530,8 @@
         "nazev": "Městská sportovní Třeboň, příspěvková organizace",
         "ico": "06457665",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Smlouva o nájmu nebytových prostor (sportovní hala - HOTEL SPORT)",
@@ -1541,7 +1579,8 @@
         "nazev": "fyzická osoba",
         "ico": null,
         "fyzicka_osoba": true,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": "Ing. Josef Kregl"
       }
     ],
     "predmet": "Zpracování projektové dokumentace ve stupni DZS/DPS přístavby dvou tělocvičen - revitalizace a přístavba sportovní haly Třeboň - dodatek č. 1",
@@ -1589,7 +1628,8 @@
         "nazev": "fyzická osoba",
         "ico": null,
         "fyzicka_osoba": true,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": "Ing. Josef Kregl"
       }
     ],
     "predmet": "Zpracování projektové dokumentace - Ubytovací objekt sportovní haly, Třeboň - dodatek č. 1",
@@ -1637,7 +1677,8 @@
         "nazev": "ANETE spol. s r.o.",
         "ico": "46970126",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Dodatek č. 1 ke SOD na dodání a parametrizaci Informačního systému",
@@ -1674,7 +1715,8 @@
         "nazev": "fyzická osoba",
         "ico": null,
         "fyzicka_osoba": true,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": "Jiří Jokl"
       }
     ],
     "predmet": "Dodatek č. 2 ke smlouvě o dílo: Revitalizace kolonády Bertiných lázní",
@@ -1722,7 +1764,8 @@
         "nazev": "Artspect, a.s.",
         "ico": "28123395",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Sportovní hala Třeboň - nástavba a přístavba ubytování - vybavení interiéru - dodatek č. 2",
@@ -1770,7 +1813,8 @@
         "nazev": "Renostav Třeboň s.r.o.",
         "ico": "11774258",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Havarijní oprava vnitřního zdiva sanačními tepelně izolačními deskami v ložnici včetně otlučení stávajících a provedení nových sanačních omítek, výdechové sestavy plynových topidel na zeď a výmalby stěn v bytě č. 6 Rožmberská 34",
@@ -1818,7 +1862,8 @@
         "nazev": "K - BUILDING CB, a.s.",
         "ico": "26105594",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Stavební úpravy MK v ul. Budějovické v Třeboni - dodatek č. 2",
@@ -1866,7 +1911,8 @@
         "nazev": "Městská sportovní Třeboň, příspěvková organizace",
         "ico": "06457665",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Dodatek č. 9 k Dohodě o provozování sportovišt ze dne 01.01.2018",
@@ -1891,7 +1937,8 @@
         "nazev": "L.M.electric s.r.o.",
         "ico": "05533821",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Rozšíření veřejného osvětlení v Branné - dodatek č. 1 (termín)",
@@ -1916,7 +1963,8 @@
         "nazev": "Retherm s.r.o.",
         "ico": "26086344",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Sportovní hala Třeboň - nástavba a přístavba ubytování - dodatek č. 5",
@@ -1964,7 +2012,8 @@
         "nazev": "OknavKlidu s.r.o.",
         "ico": "22578447",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Havarijní servisní opravy včetně výměny těsnění 52 ks plastových oken bytového domu Daskabát 45",
@@ -2012,7 +2061,8 @@
         "nazev": "Rybářství Třeboň Hld. a.s.",
         "ico": "46678191",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Oprava podemleté hráze - rybník Lávičný",
@@ -2060,7 +2110,8 @@
         "nazev": "Slatinné lázně Třeboň s.r.o.",
         "ico": "25179896",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Rekondiční pobyty pro zaměstnance divize HP",
@@ -2097,7 +2148,8 @@
         "nazev": "Městská Vodohospodářská s.r.o.",
         "ico": "28136853",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Obnova odlehčovací komory OK3 u ČSK Jatka v Třeboni",
@@ -2145,7 +2197,8 @@
         "nazev": "RK elektro s.r.o.",
         "ico": "26061236",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Montáž kamerového systému",
@@ -2193,7 +2246,8 @@
         "nazev": "LP DVORACEK spol. s r.o.",
         "ico": "06126839",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Instalace kamerového systému",
@@ -2241,7 +2295,8 @@
         "nazev": "EU technik s.r.o.",
         "ico": "26064341",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Instalace kamerového systému",
@@ -2289,7 +2344,8 @@
         "nazev": "Městská Vodohospodářská s.r.o.",
         "ico": "28136853",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Provedení čištění a monitoringu kamerovým průzkumem kanalizační sítě v ulici Ořechová a části ulice Souběžná v rámci předprojektové přípravy stavebních úprav místních komunikací",
@@ -2337,7 +2393,8 @@
         "nazev": "StrongGear s.r.o.",
         "ico": "04099001",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Dodávka vybavení posilovny v objektu ubytování sportovní haly Třeboň dle nabídky z 09.10.2026 vč. dopravy",
@@ -2385,7 +2442,8 @@
         "nazev": "BTL zdravotnická technika, a.s.",
         "ico": "26884143",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Kupní smlouva - dod. zdrav. a reh. příst. - část III - paraf. a vodní lázeň",
@@ -2422,7 +2480,8 @@
         "nazev": "BTL zdravotnická technika, a.s.",
         "ico": "26884143",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Kupní smlouva - dod. zdrav. a reh. příst. - část I - oxygenerátor",
@@ -2459,7 +2518,8 @@
         "nazev": "Galileo Corporation s.r.o.",
         "ico": "25448714",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Galileo: smlouva o vypořádání závazků (zprovoznění a měsíční provoz mobilní aplikace)",
@@ -2496,7 +2556,8 @@
         "nazev": "Galileo Corporation s.r.o.",
         "ico": "25448714",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Galileo: smlouva o vypořádání závazků (výroba WWW stránek)",
@@ -2533,7 +2594,8 @@
         "nazev": "Galileo Corporation s.r.o.",
         "ico": "25448714",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Galileo: smlouva o vypořádání závazků (měsíční provoz WWW stránek)",
@@ -2570,7 +2632,8 @@
         "nazev": "Galileo Corporation s.r.o.",
         "ico": "25448714",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Galileo: smlouva o vypořádání závazků (měsíční provoz WWW stránek)",
@@ -2607,7 +2670,8 @@
         "nazev": "Renostav Třeboň s.r.o.",
         "ico": "11774258",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Smlouva o dílo - dveře rampa",
@@ -2644,7 +2708,8 @@
         "nazev": "Onlio, a.s.",
         "ico": "26194813",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Smlouva o dílo - Analýza a návrh řešení oběhu dokumentů",
@@ -2681,7 +2746,8 @@
         "nazev": "JPS J. Hradec s.r.o.",
         "ico": "26035138",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Objednávka KAPACITNÍ STUDIE na zřízení odborně léčebného ústavu (OLÚ)",
@@ -2718,7 +2784,8 @@
         "nazev": "MADISSON, s.r.o.",
         "ico": "26124637",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Kupní smlouva - dodávka zdrav. a reh. přístrojů část IV.",
@@ -2755,7 +2822,8 @@
         "nazev": "MADISSON, s.r.o.",
         "ico": "26124637",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Kupní smlouva  - dodávka zdrav. a reh. přístrojů část VI.",
@@ -2792,7 +2860,8 @@
         "nazev": "EG.D, s.r.o.",
         "ico": "21055050",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Smlouva o smlouvě budoucí o zřízení služebnosti pro uložení VN kabelu k. ú. Třeboň",
@@ -2840,7 +2909,8 @@
         "nazev": "fyzická osoba",
         "ico": null,
         "fyzicka_osoba": true,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": "Milan Sodomka"
       }
     ],
     "predmet": "Revitalizace kolonády Bertiných lázní - sadové úpravy, Dodatek č. 1",
@@ -2865,7 +2935,8 @@
         "nazev": "Proormedent s.r.o.",
         "ico": "28223951",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Kupní smlouva  - dodávka zdrav. a reh. přístrojů část II.",
@@ -2902,7 +2973,8 @@
         "nazev": "fyzická osoba",
         "ico": null,
         "fyzicka_osoba": true,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": "Milan Mráz"
       }
     ],
     "predmet": "Impregnační nástřik + čištění střechy objektu Kluboven dětí a mládeže, Na Chmelnici 1208, Třeboň.",
@@ -2950,7 +3022,8 @@
         "nazev": "Stavební bytové družstvo Města Třeboň 2000",
         "ico": "26019663",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Převod vlastnictví družstevního nebytového prostoru a pozemku - Táboritská 566",
@@ -2987,7 +3060,8 @@
         "nazev": "Stavební bytové družstvo Města Třeboň 2000",
         "ico": "26019663",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Převod vlastnictví družstevních nebytových prostor a pozemku - Jiráskova 11",
@@ -3024,7 +3098,8 @@
         "nazev": "PRO INVEST Tábor s.r.o.",
         "ico": "28142586",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Opravy výtluků a poruch na MK Třeboň technologií SILKOT a ruční pokládkou.",
@@ -3072,7 +3147,8 @@
         "nazev": "Spolek Třeboňská nocturna",
         "ico": "27040721",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Smlouva o propagaci - hudební festival Okolo Třeboně",
@@ -3109,7 +3185,8 @@
         "nazev": "fyzická osoba",
         "ico": null,
         "fyzicka_osoba": true,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": "Karel Vávře - podnikající fyzická osoba"
       }
     ],
     "predmet": "Nákup počítačů a monitorů",
@@ -3146,7 +3223,8 @@
         "nazev": "Technické služby Třeboň, s.r.o.",
         "ico": "62502735",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Branná ořezy dřevin podél komunikace (cesta na Domanín, cesta na rašelinu)",
@@ -3194,7 +3272,8 @@
         "nazev": "VSV Tech s.r.o.",
         "ico": "17295041",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "SND Instalace FVE 38,7 kWp na střeše přístavby ZŠ Na Sadech - Dodatek č. 1.",
@@ -3242,7 +3321,8 @@
         "nazev": "Artspect, a.s.",
         "ico": "28123395",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Sportovní hala Třeboň - nástavba a přístavba ubytování - vybavení interiéru - dodatek č. 1",
@@ -3290,7 +3370,8 @@
         "nazev": "Slatinné lázně Třeboň s.r.o.",
         "ico": "25179896",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Smlouva o vypořádání technických zhodnocení - Slatinné lázně Třeboň s. r. o. - 1/2026",
@@ -3338,7 +3419,8 @@
         "nazev": "Město Třeboň",
         "ico": "00247618",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Smlouva o bezúplatném převodu pozemků č. 1008992617",
@@ -3386,7 +3468,8 @@
         "nazev": "Město Třeboň",
         "ico": "00247618",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Smlouva o bezúplatném převodu pozemku č. 1009992617",
@@ -3434,7 +3517,8 @@
         "nazev": "Město Třeboň",
         "ico": "00247618",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Smlouva o bezúplatném převodu pozemku č. 1010992617",
@@ -3482,7 +3566,8 @@
         "nazev": "VKB stavby s.r.o.",
         "ico": "02192012",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Stavební úpravy části MK ul. Sídliště v Třeboni - v úseku od silnice III/15512 po čp. 1158 - dodatek č. 4",
@@ -3530,7 +3615,8 @@
         "nazev": "Slatinné lázně Třeboň s.r.o.",
         "ico": "25179896",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Objednávka - Slatinné lázně Třeboň s.r.o. - Zajištění rekondičních pobytů pro zaměstnance 10-12/2026",
@@ -3578,7 +3664,8 @@
         "nazev": "fyzická osoba",
         "ico": null,
         "fyzicka_osoba": true,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": "Jan Nevšímal"
       }
     ],
     "predmet": "Obnova VDZ na místních komunikacích v Třeboni.",
@@ -3626,7 +3713,8 @@
         "nazev": "DVEŘE OKNA U SVĚTA Třeboň s.r.o.",
         "ico": "26112663",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Fixní zasklení dvou stěnových výplní přístřešku na dětském hřišti v Nové Hlíně.",
@@ -3674,7 +3762,8 @@
         "nazev": "fyzická osoba",
         "ico": null,
         "fyzicka_osoba": true,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": "Att Investments CZ SE"
       }
     ],
     "predmet": "Zlaté investiční slitky pro novorozence o váze 2,5 g - 20 ks (á 8 713 Kč)",
@@ -3711,7 +3800,8 @@
         "nazev": "Linhart spol. s r.o.",
         "ico": "47052121",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "SOD Multifunkční hřiště Branná - Dodatek č. 1",
@@ -3759,7 +3849,8 @@
         "nazev": "VSV Tech s.r.o.",
         "ico": "17295041",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Instalace FVE 58,0 kWp na střechy objektu ČOV Břilice, Třeboň",
@@ -3807,7 +3898,8 @@
         "nazev": "Cestovní kancelář Londonway s.r.o.",
         "ico": "23979038",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Skotsko letecky",
@@ -3844,7 +3936,8 @@
         "nazev": "Cestovní kancelář Londonway s.r.o.",
         "ico": "23979038",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Skotsko letecky",
@@ -3881,7 +3974,8 @@
         "nazev": "L.M.electric s.r.o.",
         "ico": "05533821",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Rozšíření veřejného osvětlení v Branné",
@@ -3929,7 +4023,8 @@
         "nazev": "MARIMEX CZ , s.r.o.",
         "ico": "64942422",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Kombinovaná sauna Marimex UNITE XXL s Wi-Fi (FSC) +saunová kamna.",
@@ -3977,7 +4072,8 @@
         "nazev": "TJ Jiskra Třeboň, z.s.",
         "ico": "00512907",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Dohoda o úhradě závazku",
@@ -4014,7 +4110,8 @@
         "nazev": "Základní škola Třeboň, Na Sadech 375",
         "ico": "60816872",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Stravování žáků gymnázia - 09/2026",
@@ -4051,7 +4148,8 @@
         "nazev": "fyzická osoba",
         "ico": null,
         "fyzicka_osoba": true,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Dodatek číslo 1 ke smlouvě o výpůjčce ze dne 08.01.2024 (klubovna č. p. 2/II, Chelčického ul., Třeboň)",
@@ -4076,7 +4174,8 @@
         "nazev": "fyzická osoba",
         "ico": null,
         "fyzicka_osoba": true,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": "Ing. Pavel Houška"
       }
     ],
     "predmet": "Příkazní smlouva - Koordinátor BOZP na akci Sportovní hala Třeboň - nástavba a přístavba ubytování - dodatek č. 1",
@@ -4124,7 +4223,8 @@
         "nazev": "Tenosol group s.r.o.",
         "ico": "02255910",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Tenosol: Zpracování projektové dokumentace a žádosti o podporu týkající se projektu kybernetické bezpečnosti II.",
@@ -4172,7 +4272,8 @@
         "nazev": "K - BUILDING CB, a.s.",
         "ico": "26105594",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Stavební úpravy MK v ul. Budějovické v Třeboni - dodatek č. 1",
@@ -4220,7 +4321,8 @@
         "nazev": "Hinton, a.s.",
         "ico": "24160008",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Nájemní smlouva na pronájem části pozemku p.č. 1087/17 k. ú. Třeboň",
@@ -4268,7 +4370,8 @@
         "nazev": "fyzická osoba",
         "ico": null,
         "fyzicka_osoba": true,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": "Ing. Pavel Houška"
       }
     ],
     "predmet": "Příkazní smlouva - Koordinátor BOZP na akci Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 1",
@@ -4316,7 +4419,8 @@
         "nazev": "fyzická osoba",
         "ico": null,
         "fyzicka_osoba": true,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": "Zdeněk Musil"
       }
     ],
     "predmet": "Příkazní smlouva - Technický dozor stavebníka na akci Sportovní hala Třeboň - nástavba a přístavba ubytování - dodatek č. 1",
@@ -4364,7 +4468,8 @@
         "nazev": "fyzická osoba",
         "ico": null,
         "fyzicka_osoba": true,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": "Zdeněk Musil"
       }
     ],
     "predmet": "Příkazní smlouva - Technický dozor stavebníka na akci Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 1",
@@ -4412,7 +4517,8 @@
         "nazev": "CS AUDIT s.r.o.",
         "ico": "05838762",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Smlouva o provedení auditu",
@@ -4449,7 +4555,8 @@
         "nazev": "POKLOPSYSTEM s.r.o.",
         "ico": "61172375",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Obnova zemních šachtových poklopů",
@@ -4497,7 +4604,8 @@
         "nazev": "PTR výrobní, s.r.o.",
         "ico": "05743401",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Objednávka pracovní plošiny",
@@ -4534,7 +4642,8 @@
         "nazev": "Městská Vodohospodářská s.r.o.",
         "ico": "28136853",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Obnova šachtových kanalizačních poklopů - ul. Tylova 247, Masarykovo nám. 2x, ul. Na sadech 308,  ul. Svobody 1020",
@@ -4582,7 +4691,8 @@
         "nazev": "VKB stavby s.r.o.",
         "ico": "02192012",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Dodatek č. 1 ke smlouvě o dílo: Stavební úpravy MK v ul. Souběžná v Třeboni",
@@ -4630,7 +4740,8 @@
         "nazev": "Montela s.r.o.",
         "ico": "14503026",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "VO Třeboň, hráz rybníka Svět, úsek od Budovcovy ulice k přechodu pro chodce u výpusti - dodatek č. 1",
@@ -4667,7 +4778,8 @@
         "nazev": "Alfa Laval spol. s r.o.",
         "ico": "00198501",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Dodávka a montáž čidla a kabelu k dekadéru odstředivky COV",
@@ -4715,7 +4827,8 @@
         "nazev": "Alfa Laval spol. s r.o.",
         "ico": "00198501",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Servis odstředivky COV",
@@ -4763,7 +4876,8 @@
         "nazev": "ARCDATA PRAHA, s.r.o.",
         "ico": "14889749",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Licenční smlouva - pronájem programu ArcGis",
@@ -4800,7 +4914,8 @@
         "nazev": "MANE STAVEBNÍ s.r.o.",
         "ico": "47239701",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 4",
@@ -4825,7 +4940,8 @@
         "nazev": "GREEN HEAVEN s. r. o.",
         "ico": "28139160",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Mikrobiologické čištění Ov a servis LT",
@@ -4862,7 +4978,8 @@
         "nazev": "GREEN HEAVEN s. r. o.",
         "ico": "28139160",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Svoz a likvidace BRO",
@@ -4899,7 +5016,8 @@
         "nazev": "TJ Jiskra Třeboň, z.s.",
         "ico": "00512907",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Smlouva o reklamě a propagaci",
@@ -4936,7 +5054,8 @@
         "nazev": "Pěvecký sbor Pěslav - Ozvěna, zapsaný spolek",
         "ico": "42410614",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Dodatek číslo 1 ke smlouvě o výpůjčce ze dne 04.01.2024",
@@ -4961,7 +5080,8 @@
         "nazev": "JIPAMA s.r.o.",
         "ico": "25159224",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Oprava hráze rybníka Veský - 4. etapa",
@@ -5009,7 +5129,8 @@
         "nazev": "Třeboňští senioři, z. s.",
         "ico": "17316626",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Dodatek číslo 1 ke smlouvě o výpůjčce zedne 22.12.2023",
@@ -5034,13 +5155,15 @@
         "nazev": "Technické služby Třeboň, s.r.o.",
         "ico": "62502735",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       },
       {
         "nazev": "PLOSAB s.r.o.",
         "ico": "27800393",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Kupní smlouva - dodávka fotovoltaické elektrárny",
@@ -5088,7 +5211,8 @@
         "nazev": "Renostav Třeboň s.r.o.",
         "ico": "11774258",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Oprava fasády a odvětrání podlahy a zdiva v kolárně bytového domu č.p. 29/I.",
@@ -5136,7 +5260,8 @@
         "nazev": "fyzická osoba",
         "ico": null,
         "fyzicka_osoba": true,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Dodatek číslo 1 ke smlouvě o výpůjčce ze dne 04.01.2024 (nebytové prostory č. p.  2/II, Chelčického, Třeboň)",
@@ -5161,7 +5286,8 @@
         "nazev": "Tisox s.r.o.",
         "ico": "06464068",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Stavební úpravy MK v ulici Dvorecké v Břilicích (zpracování PD)",
@@ -5209,7 +5335,8 @@
         "nazev": "Slatinné lázně Třeboň s.r.o.",
         "ico": "25179896",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Smlouva o provádění výuky plavání",
@@ -5246,7 +5373,8 @@
         "nazev": "KEROSIN s.r.o.",
         "ico": "09095861",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Dodatek č. 2 ke Smlouvě o zajištění investorsko-inženýrských činností FVE",
@@ -5271,7 +5399,8 @@
         "nazev": "LP DVORACEK spol. s r.o.",
         "ico": "06126839",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Sportovní hala Třeboň - nástavba a přístavba ubytování - dodávka televizorů",
@@ -5319,7 +5448,8 @@
         "nazev": "SOVT - RADIO spol. s r.o.",
         "ico": "47238810",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Havarijní oprava výměnou radarového ukazatele rychlosti v Třeboni na příjezdu po I/34 od Českých Budějovic.",
@@ -5367,7 +5497,8 @@
         "nazev": "Vodohospodářská technologie Brno s.r.o.",
         "ico": "46344161",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Objednávka výměna a zprovoznění dávkovací automatiky  - vodoléčba",
@@ -5404,7 +5535,8 @@
         "nazev": "TRUST-ts spol. s r.o.",
         "ico": "00665509",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "SOD Výměna oken Svinenské brány č. p. 47/I v Třeboni - Dodatek č. 1",
@@ -5441,7 +5573,8 @@
         "nazev": "fyzická osoba",
         "ico": null,
         "fyzicka_osoba": true,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": "Jan Valenta"
       }
     ],
     "predmet": "Výsadba záhonů u sportovní haly",
@@ -5489,7 +5622,8 @@
         "nazev": "J.K. STAVEBNÍ s.r.o.",
         "ico": "63911345",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "SOD Obnova seníku č. 25 na Mokrých lukách - Dodatek č. 1",
@@ -5537,7 +5671,8 @@
         "nazev": "fyzická osoba",
         "ico": null,
         "fyzicka_osoba": true,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": "Jiří Jahoda"
       }
     ],
     "predmet": "Smlouva o vytvoření a veřejném provozování uměleckého výkonu - [jméno] a Moravské klavírní trio dne 11.12.2027 v 19:00 h v Divadle J. K. Tyla v Třeboni.",
@@ -5562,7 +5697,8 @@
         "nazev": "Retherm s.r.o.",
         "ico": "26086344",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Sportovní hala Třeboň - nástavba a přístavba ubytování - dodatek č. 4",
@@ -5587,7 +5723,8 @@
         "nazev": "Slatinné lázně Třeboň s.r.o.",
         "ico": "25179896",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Rehabilitační pobyty",
@@ -5624,7 +5761,8 @@
         "nazev": "JT PROMOTION s.r.o.",
         "ico": "02281635",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Smlouva o zajištění divadelního představení - Šplouch dne 30.12.2026 od 19:30 h v Divadle J. K. Tyla v Třeboni v délce cca 120 min.",
@@ -5661,7 +5799,8 @@
         "nazev": "HSI com s.r.o.",
         "ico": "49196545",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Smlouva o poskytování služeb - Provoz systému iGIS Map",
@@ -5709,7 +5848,8 @@
         "nazev": "fyzická osoba",
         "ico": null,
         "fyzicka_osoba": true,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Dodatek č. 2 ke Smlouvě o výpůjčce (movité věci Branná čp. 114)",
@@ -5734,7 +5874,8 @@
         "nazev": "JIPAMA s.r.o.",
         "ico": "25159224",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Oprava napouštěcího objektu a propustku do Mlýnského rybníka",
@@ -5782,7 +5923,8 @@
         "nazev": "JIPAMA s.r.o.",
         "ico": "25159224",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Havarijní oprava odběrného objektu na Mlýnské stoce",
@@ -5830,7 +5972,8 @@
         "nazev": "CBH2013 a.s.",
         "ico": "27596338",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Smlouva o reklamě - HC Motor ČB",
@@ -5867,7 +6010,8 @@
         "nazev": "Metrostav CZ s.r.o.",
         "ico": "25021915",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Dodatek č. 1 ke Smlouvě o dílo  - Stavební úpravy budovy G",
@@ -5904,7 +6048,8 @@
         "nazev": "Renostav Třeboň s.r.o.",
         "ico": "11774258",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Havarijní opravy podlahových dlaždic vč. soklů ve vstupním vestibulu a vnitřních povrchů stěn vč. začištění omítek a provedení výmalby chodeb v objektu Masarykovo nám. 86",
@@ -5952,7 +6097,8 @@
         "nazev": "JPS J. Hradec s.r.o.",
         "ico": "26035138",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Volnočasové sportoviště ve SA Hliník - DSP/DPS a výkaz výměr - rozpočet.",
@@ -6000,7 +6146,8 @@
         "nazev": "WAY project s.r.o.",
         "ico": "63906601",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Zpracování PD - Chodník v parku lázní Aurora v Třeboni",
@@ -6037,7 +6184,8 @@
         "nazev": "fyzická osoba",
         "ico": null,
         "fyzicka_osoba": true,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": "Ing. Jitka Tauberová"
       }
     ],
     "predmet": "PD- úprava jednotné kanalizace ul. Táboritská",
@@ -6074,7 +6222,8 @@
         "nazev": "craftsys s.r.o.",
         "ico": "29446856",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Objednávka tonerů",
@@ -6111,7 +6260,8 @@
         "nazev": "LA divadlo s.r.o.",
         "ico": "24409570",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Předplatné 20271020_Smlouva o zájezdovém představení BUDOUCÍ TCHÝNĚ dne 20.10.2027 v čase od 19:30 h v Divadle J. K. Tyla v Třeboni.",
@@ -6148,7 +6298,8 @@
         "nazev": "Hinton, a.s.",
         "ico": "24160008",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Nájemní smlouva na pronájem části pozemu p.č. 1087/17 k. ú. Třeboň",
@@ -6196,7 +6347,8 @@
         "nazev": "Město Třeboň",
         "ico": "00247618",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Smlouva o uskutečnění divadelního představení - 11.2.2027 - Holky Elky",
@@ -6233,7 +6385,8 @@
         "nazev": "Základní škola Třeboň, Sokolská 296",
         "ico": "60818174",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Smlouva o účtu_CS10000089802623",
@@ -6258,7 +6411,8 @@
         "nazev": "ATER s.r.o.",
         "ico": "60826096",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Objendávka - oprava jednotky",
@@ -6306,7 +6460,8 @@
         "nazev": "fyzická osoba",
         "ico": null,
         "fyzicka_osoba": true,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": "Jiří Jokl"
       }
     ],
     "predmet": "Dodatek č. 1 ke smlouvě o dílo: Revitalizace kolonády Bertiných lázní",
@@ -6354,7 +6509,8 @@
         "nazev": "ZKM CB s.r.o.",
         "ico": "26046440",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Dodatek č. 1 ke smlouvě o dílo: Stavební úpravy kotelen a výměna plynových kotlů v objektu DPS IA a DPS IC, Chelčického 1, Třeboň",
@@ -6391,7 +6547,8 @@
         "nazev": "Gastro Hygiena CB s.r.o.",
         "ico": "28100051",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Objednávka elektrická sklopná pánev",
@@ -6428,7 +6585,8 @@
         "nazev": "MANE STAVEBNÍ s.r.o.",
         "ico": "47239701",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 3",
@@ -6476,7 +6634,8 @@
         "nazev": "Retherm s.r.o.",
         "ico": "26086344",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Sportovní hala Třeboň - nástavba a přístavba ubytování - dodatek č. 3",
@@ -6524,7 +6683,8 @@
         "nazev": "VKB stavby s.r.o.",
         "ico": "02192012",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Stavební úpravy části MK ul. Sídliště v Třeboni - v úseku od silnice III/15512 po čp. 1158 - dodatek č. 3",
@@ -6572,7 +6732,8 @@
         "nazev": "fyzická osoba",
         "ico": null,
         "fyzicka_osoba": true,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": "Karel Vávře - podnikající fyzická osoba"
       }
     ],
     "predmet": "Interaktivní set - tabule s příslušenstvím včetně instalace",
@@ -6609,7 +6770,8 @@
         "nazev": "fyzická osoba",
         "ico": null,
         "fyzicka_osoba": true,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": "Karel Vávře - podnikající fyzická osoba"
       }
     ],
     "predmet": "Tabule s pylony a křídly, interaktivní set včetně příslušenství a instalace - 3x",
@@ -6646,7 +6808,8 @@
         "nazev": "fyzická osoba",
         "ico": null,
         "fyzicka_osoba": true,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": "Vítězslav Zelenka"
       }
     ],
     "predmet": "Servis v oblasti výpočetní techniky",
@@ -6683,7 +6846,8 @@
         "nazev": "Renostav Třeboň s.r.o.",
         "ico": "11774258",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Nátěr plechové krytiny přístavku a malba výčepu hostince Břilice.",
@@ -6731,7 +6895,8 @@
         "nazev": "PKM - Polykarbonáty s.r.o.",
         "ico": "08792640",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Oprava mantinelů",
@@ -6779,7 +6944,8 @@
         "nazev": "EG.D Holding, a.s.",
         "ico": "28085400",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Dodatek č. 2 ke Smlouvě o připojení k distribuční soustavě",
@@ -6804,7 +6970,8 @@
         "nazev": "RSM Payroll Centre CZ s.r.o.",
         "ico": "26359812",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Dodatek č.1 k servisní smlouvě k personálnímu a mzdovému systému",
@@ -6841,7 +7008,8 @@
         "nazev": "AQUA PROCON s.r.o.",
         "ico": "46964371",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Objednávka - projektová dokumentace Rekonstrukce VDJ",
@@ -6889,7 +7057,8 @@
         "nazev": "fyzická osoba",
         "ico": null,
         "fyzicka_osoba": true,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": "Karel Vávře - podnikající fyzická osoba"
       }
     ],
     "predmet": "Kancelářské počítače  a monitory Acer",
@@ -6926,7 +7095,8 @@
         "nazev": "Místní akční skupina Třeboňsko o.p.s.",
         "ico": "26075679",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Dotace - Místní akční skupina Třeboňsko o.p.s. - projekt Místní akční plán rozvoje vzdělávání ORP Třeboň V",
@@ -6963,7 +7133,8 @@
         "nazev": "SANTAL spol. s r. o.",
         "ico": "42408121",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "SOD Dodávka a montáž kuchyní a souvisejícího vybavení (mobiliář - bud.G LDA)",
@@ -7000,7 +7171,8 @@
         "nazev": "Městská Vodohospodářská s.r.o.",
         "ico": "28136853",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Zpracování PD - rekonstrukce vodojemu Na Kopečku, Třeboň",
@@ -7048,7 +7220,8 @@
         "nazev": "Renostav Třeboň s.r.o.",
         "ico": "11774258",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Havarijní oprava vnějších povrchů stěn vč. otlučení nesoudržných omítek a provedení nových sanačních omítek, nátěrů a výmaleb fasády budovy i zdi vjezdové brány do nádvoří objektu Palackého nám. čp. 46 a 106",
@@ -7096,7 +7269,8 @@
         "nazev": "fyzická osoba",
         "ico": null,
         "fyzicka_osoba": true,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": "Mohamed Ibrahim Hassan M Mohamed"
       }
     ],
     "predmet": "Opravy poruch a nerovností na MK Stará Hlína tryskovou technologií Turbo 5000.",
@@ -7144,7 +7318,8 @@
         "nazev": "Místní akční skupina Třeboňsko o.p.s.",
         "ico": "26075679",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Tvorba dokumentu Komunitní plán sociálních služeb pro ORP Třeboň 2027-2031",
@@ -7181,7 +7356,8 @@
         "nazev": "fyzická osoba",
         "ico": null,
         "fyzicka_osoba": true,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": "Veith Miroslav"
       }
     ],
     "predmet": "Havarijní výměna plynového kotle za nový kondenzační s průtokovým ohřevem v bytě č. 3 Husova 12",
@@ -7229,7 +7405,8 @@
         "nazev": "WV systems, s.r.o.",
         "ico": "49060902",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Citrix private Cloud - licence (10) / užívací práva (18.09.2026 - 17.09.2027)",
@@ -7266,7 +7443,8 @@
         "nazev": "Wolters Kluwer ČR, a.s.",
         "ico": "63077639",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Wolters Kluwer: licenční smlouva Libra by Wolters Kluwer",
@@ -7303,7 +7481,8 @@
         "nazev": "fyzická osoba",
         "ico": null,
         "fyzicka_osoba": true,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": "Mgr. Jakub Grafnetter, advokát"
       }
     ],
     "predmet": "Administrace zadávacího řízení VZ Stavební úpravy MK v ul. Heřmánkova a Daskabát v Třeboni",
@@ -7351,7 +7530,8 @@
         "nazev": "Metrostav CZ s.r.o.",
         "ico": "25021915",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Dodatek č. 3 ke Smlouvě o dílo - rozšíření Balneo LDA",
@@ -7388,7 +7568,8 @@
         "nazev": "ATHENA INTERNATIONAL COMPANY s.r.o.",
         "ico": "46839704",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Nájemní smlouva - APE FOOD TOUR A ITALSKÉ TRHY v termínu 10.-15.07.2026 na Masarykově nám. v Třeboni.",
@@ -7436,7 +7617,8 @@
         "nazev": "Slatinné lázně Třeboň s.r.o.",
         "ico": "25179896",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Smlouva o George Business_CS41000681371509",
@@ -7461,7 +7643,8 @@
         "nazev": "SYLFA s.r.o.",
         "ico": "26093014",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Objednávka oprava klimatizační jednotky",
@@ -7498,7 +7681,8 @@
         "nazev": "Plzeňský Prazdroj, a. s.",
         "ico": "45357366",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Rámcová smlouva",
@@ -7523,7 +7707,8 @@
         "nazev": "EXTRA SERVIS s.r.o.",
         "ico": "29183251",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Objednávka prádlo_část I.",
@@ -7560,7 +7745,8 @@
         "nazev": "EXTRA SERVIS s.r.o.",
         "ico": "29183251",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Objednávka prádlo",
@@ -7597,7 +7783,8 @@
         "nazev": "Hinton, a.s.",
         "ico": "24160008",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Nájemní smlouva na pronájem části pozemku p.č. 1087/17 k. ú. Třeboň",
@@ -7645,7 +7832,8 @@
         "nazev": "VSV Tech s.r.o.",
         "ico": "17295041",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "SND Instalace FVE 38,7 kWp na střeše přístavby ZŠ Na Sadech.",
@@ -7693,7 +7881,8 @@
         "nazev": "B.K.T. spol. s r. o.",
         "ico": "16847431",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Objednávka - čerpadlo",
@@ -7741,7 +7930,8 @@
         "nazev": "VKB stavby s.r.o.",
         "ico": "02192012",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Cenová nabídka - poklopy ulice Sídliště",
@@ -7789,13 +7979,15 @@
         "nazev": "Technické služby Třeboň, s.r.o.",
         "ico": "62502735",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       },
       {
         "nazev": "ALVENO s.r.o.",
         "ico": "26288613",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Licenční smlouva - informační systém k evidenci docházky",
@@ -7832,7 +8024,8 @@
         "nazev": "Montela s.r.o.",
         "ico": "14503026",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Rozšíření veřejného osvětlení ve Staré Hlíně.",
@@ -7880,7 +8073,8 @@
         "nazev": "K - BUILDING CB, a.s.",
         "ico": "26105594",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Zkapacitnění propustku - Třeboň, Břilice",
@@ -7928,7 +8122,8 @@
         "nazev": "THERMAL-F, a.s.",
         "ico": "25401726",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Dohoda o výměnné rekreaci zaměstnanců",
@@ -7953,7 +8148,8 @@
         "nazev": "Jindřichohradecký BIG BAND z.s.",
         "ico": "06628770",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Smlouva o vystoupení",
@@ -7990,7 +8186,8 @@
         "nazev": "JPS J. Hradec s.r.o.",
         "ico": "26035138",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Smlouva o dílo - Zhotovení PD, příkazní činnosti a výkon AD pro Modernizaci objektu B LDA",
@@ -8027,7 +8224,8 @@
         "nazev": "fyzická osoba",
         "ico": null,
         "fyzicka_osoba": true,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": "Radek Liška"
       }
     ],
     "predmet": "SOD Rekonstrukce elektroinstalace dílen SOŠ a SOU v Třeboni – 4. etapa - objekt V., část kovárna - Dodatek č. 1.",
@@ -8075,7 +8273,8 @@
         "nazev": "AQUA PROCON s.r.o.",
         "ico": "46964371",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Zpracování drojektové dokumentace - Páteřní dešťová kanalizace v úseku Nový Dvůr - Jablonského, Třeboň",
@@ -8123,7 +8322,8 @@
         "nazev": "Intersystem EU s.r.o.",
         "ico": "46186123",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Revitalizace dětského hřiště Kopeček, Dodatek č. 2",
@@ -8160,7 +8360,8 @@
         "nazev": "fyzická osoba",
         "ico": null,
         "fyzicka_osoba": true,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": "Milan Sodomka"
       }
     ],
     "predmet": "Revitalizace kolonády Bertiných lázní - sadové úpravy",
@@ -8208,7 +8409,8 @@
         "nazev": "fyzická osoba",
         "ico": null,
         "fyzicka_osoba": true,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": "Veith Miroslav"
       }
     ],
     "predmet": "Havarijní výměna plynového kotle za nový kondenzační s průtokovým ohřevem v bytě č. 5 Táboritská 644",
@@ -8256,7 +8458,8 @@
         "nazev": "WV systems, s.r.o.",
         "ico": "49060902",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Licence zálohovacího software Veem Data Platform Essentials Univerzal Subscription License / 1 year / 6 packs / 30 instances",
@@ -8293,7 +8496,8 @@
         "nazev": "J.K. STAVEBNÍ s.r.o.",
         "ico": "63911345",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "SOD Stavební úpravy severní části ohradní zdi hřbitova - Dodatek č. 1",
@@ -8341,7 +8545,8 @@
         "nazev": "fyzická osoba",
         "ico": null,
         "fyzicka_osoba": true,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": "Milan Sodomka"
       }
     ],
     "predmet": "Zajištění následné péče o náhradní výsadby stromů provedené v rámci jarních výsadeb 2022, v ul. Tyršova a Libušina, výsadby na podzim 2022, na jaře 2023, na podzim 2023 a na jaře 2025, výsadby v ulici Šustova a o výsadby Přeseka – hřiště v roce 2026",
@@ -8389,7 +8594,8 @@
         "nazev": "DEKPROJEKT s.r.o.",
         "ico": "27642411",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Zpracování projektu koncepčního návrhu opravy šikmé střechy nad byty č. 5 a 6 v objektu Masarykovo nám. 86, Třeboň",
@@ -8437,7 +8643,8 @@
         "nazev": "LAURYN s.r.o.",
         "ico": "60113685",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Objednávka datové sady pro tvorbu  reportů",
@@ -8474,7 +8681,8 @@
         "nazev": "PAMÁTKY TÁBOR, s.r.o.",
         "ico": "44797958",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Smlouva o dílo - Kolárna lázně Třeboň",
@@ -8511,7 +8719,8 @@
         "nazev": "fyzická osoba",
         "ico": null,
         "fyzicka_osoba": true,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": "Milan Sodomka"
       }
     ],
     "predmet": "Následná péče o záhony - před ZŠ Sokolská, Rybníček + u hřbitovní zdi, veřejné prostranství Hliník, Valy",
@@ -8559,7 +8768,8 @@
         "nazev": "Schindler CZ, a.s.",
         "ico": "27127010",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Smlouva na servisní služby Schindler Excellence č. 0137301328 – výtah v objektu tělocvičen sportovní haly, Lázeňská 1005/II, Třeboň",
@@ -8607,7 +8817,8 @@
         "nazev": "Schindler CZ, a.s.",
         "ico": "27127010",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Smlouva na servisní služby Schindler Excellence č. 0137301323 – výtah v objektu ubytování sportovní haly, Lázeňská 1005/II, Třeboň",
@@ -8655,7 +8866,8 @@
         "nazev": "Město Třeboň",
         "ico": "00247618",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Dohoda o narovnání a dohoda o vypořádání bezdůvodného obohacení č. 3010J126029 – smlouva o dočasném bezplatném užívání movitých věcí",
@@ -8680,7 +8892,8 @@
         "nazev": "fyzická osoba",
         "ico": null,
         "fyzicka_osoba": true,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": "Truhlářství - Beneda"
       }
     ],
     "predmet": "Nábytek do školní knihovny",
@@ -8728,7 +8941,8 @@
         "nazev": "Základní škola Třeboň, Na Sadech 375",
         "ico": "60816872",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Stravování žáků gymnázia - 06/2026",
@@ -8765,7 +8979,8 @@
         "nazev": "ATER s.r.o.",
         "ico": "60826096",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Objednávka - dmychadlo na COV Třeboň",
@@ -8813,7 +9028,8 @@
         "nazev": "JPS J. Hradec s.r.o.",
         "ico": "26035138",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Zpracování PD - stavební úpravy hřbitova sv. Alžběty",
@@ -8861,7 +9077,8 @@
         "nazev": "SOVT - RADIO spol. s r.o.",
         "ico": "47238810",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Havarijní oprava výměnou radarového ukazatele rychlosti v Sádecké ulici v Třeboni.",
@@ -8909,7 +9126,8 @@
         "nazev": "fyzická osoba",
         "ico": null,
         "fyzicka_osoba": true,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": "Jiří Jokl"
       }
     ],
     "predmet": "Doplnění odvodňovacího zařízení na chodníku na Palackého nám. v Třeboni.",
@@ -8957,7 +9175,8 @@
         "nazev": "PVK s.r.o.",
         "ico": "25170155",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Objednávka - pantové poklopy s logem",
@@ -9005,13 +9224,15 @@
         "nazev": "Technické služby Třeboň, s.r.o.",
         "ico": "62502735",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       },
       {
         "nazev": "Novotný NOPO CB s.r.o.",
         "ico": "28063091",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Nákup pracovních oděvů",
@@ -9059,7 +9280,8 @@
         "nazev": "Okolo Třeboně z.s.",
         "ico": "27010961",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Smlouva o propagaci - hudební festival Okolo Třeboně",
@@ -9096,7 +9318,8 @@
         "nazev": "Slatinné lázně Třeboň s.r.o.",
         "ico": "25179896",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Objednávka - Slatinné lázně Třeboň s.r.o. - Zajištění rekondičních pobytů pro zaměstnance 07-09/2026",
@@ -9144,7 +9367,8 @@
         "nazev": "Linhart spol. s r.o.",
         "ico": "47052121",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "SOD Multifunkční hřiště Branná",
@@ -9192,7 +9416,8 @@
         "nazev": "fyzická osoba",
         "ico": null,
         "fyzicka_osoba": true,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": "Jiří Jokl"
       }
     ],
     "predmet": "Revitalizace kolonády Bertiných lázní",
@@ -9240,7 +9465,8 @@
         "nazev": "JPS J. Hradec s.r.o.",
         "ico": "26035138",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Zpracování PD pro povolení záměru a provedení stavby Revitalizace kolonády Bertiných lázní",
@@ -9288,7 +9514,8 @@
         "nazev": "B.K.T. spol. s r. o.",
         "ico": "16847431",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Objednávka 16.OBMV.2026",
@@ -9313,7 +9540,8 @@
         "nazev": "SETERM CB a.s.",
         "ico": "26031949",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Nájemnísmlouva na pronájem pozemků k. ú. Třeboň",
@@ -9350,7 +9578,8 @@
         "nazev": "Městská Vodohospodářská s.r.o.",
         "ico": "28136853",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Obnova navrtávacího pasu v ul. Mlýnská u č. p. 102 v Třeboni",
@@ -9398,7 +9627,8 @@
         "nazev": "Městská Vodohospodářská s.r.o.",
         "ico": "28136853",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Obnova zemního hydrantu včetně šoupěte v ul. Svobody u č. p. 1015 v Třeboni",
@@ -9446,7 +9676,8 @@
         "nazev": "Městská Vodohospodářská s.r.o.",
         "ico": "28136853",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Obnova kanalizační šachty ul. Svobody u č. p. 1015 v Třeboni",
@@ -9494,7 +9725,8 @@
         "nazev": "Hinton, a.s.",
         "ico": "24160008",
         "fyzicka_osoba": false,
-        "prijemce": false
+        "prijemce": false,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Nájemní smlouva na pronájem pozemku v k. ú. Třeboň",
@@ -9531,7 +9763,8 @@
         "nazev": "DVEŘE OKNA U SVĚTA Třeboň s.r.o.",
         "ico": "26112663",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Havarijní výměna 2 ks trojkřídlých oken a 1 ks balkonových dveří s dvoukřídlým oknem v bytě č. 10 Vrchlického 937",
@@ -9579,7 +9812,8 @@
         "nazev": "STEN marketing, s.r.o.",
         "ico": "26469791",
         "fyzicka_osoba": false,
-        "prijemce": true
+        "prijemce": true,
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Objednáváme u Vás vybavení pro hernu stolního tenisu včetně dopravy na adresu: Sportovní hala Třeboň, Lázeňská 1005/II, 379 01 Třeboň",

@@ -35,8 +35,13 @@ def strana(s: dict, znama: frozenset[str] = frozenset()) -> dict:
     """`znama` = IČO sledovaných právnických osob (config/subjekty.yaml): ty se nikdy neanonymizují."""
     nazev, ico = (s.get("nazev") or "").strip(), (s.get("ico") or "").strip() or None
     if not ico or (ico not in znama and not je_pravnicka(nazev)):
-        return {"nazev": "fyzická osoba", "ico": None, "fyzicka_osoba": True, "prijemce": s.get("prijemce") == "1"}
-    return {"nazev": nazev, "ico": ico, "fyzicka_osoba": False, "prijemce": s.get("prijemce") == "1"}
+        # podnikající fyzická osoba (má IČO), která je příjemcem plnění (dodavatel), se uvádí jménem ze zdroje,
+        # bez IČO a adresy (#93); ostatní fyzické osoby (nájemci, dárci, bez IČO) zůstávají anonymní
+        prijemce = s.get("prijemce") == "1"
+        return {"nazev": "fyzická osoba", "ico": None, "fyzicka_osoba": True, "prijemce": prijemce,
+                "jmeno_podnikatele": nazev if ico and nazev and prijemce else None}
+    return {"nazev": nazev, "ico": ico, "fyzicka_osoba": False, "prijemce": s.get("prijemce") == "1",
+            "jmeno_podnikatele": None}
 
 
 def castky(sml: dict, zdroj: str, misto: str) -> list[dict]:
