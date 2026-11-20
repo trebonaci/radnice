@@ -1,4 +1,4 @@
-"""Veřejné zakázky z exportů E-ZAK (`raw/ezak/<ico>/<rok>.xml`) → záznamy `zakazka` (DATOVY_MODEL.md).
+"""Veřejné zakázky z exportů E-ZAK (`raw/ezak/<ico>/<rok>-<pololetí>.xml`) → záznamy `zakazka` (DATOVY_MODEL.md).
 
 Bez AI: údaje se jen opisují z XML. Pravidla:
 - Zakázka se může objevit ve více ročních exportech; platí stav z nejnovějšího roku.

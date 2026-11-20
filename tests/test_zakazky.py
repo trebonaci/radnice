@@ -97,22 +97,45 @@ def test_stahni_jen_potrebne_roky_a_kontroluje_ico(koren):
         return obsah
 
     zmeny, chyby = ezak.stahni(koren, date(2026, 11, 20), ziskej, pauza=0)
-    assert "00247618/2026.xml" in zmeny and (koren / "raw/ezak/00247618/2019.xml").exists()
+    assert "00247618/2026-2.xml" in zmeny and (koren / "raw/ezak/00247618/2019-1.xml").exists()
     assert any("IČO" in c for c in chyby) and any("kořen" in c for c in chyby)
     assert not (koren / "raw/ezak/25179896").exists()
-    assert "od=01012026&do=20112026" in [u for u in volano if "profile_display_2." in u][-1]
+    assert "od=01072026&do=20112026" in [u for u in volano if "profile_display_2." in u][-1]
     # druhý běh: uzavřené roky už ne, aktuální ano
     volano.clear()
     ezak.stahni(koren, date(2026, 11, 21), ziskej, pauza=0)
     assert [u for u in volano if "profile_display_2." in u] == [
-        "https://zakazky.mesto-trebon.cz/profile_display_2.html/XMLdataVZ?od=01012026&do=21112026"]
+        "https://zakazky.mesto-trebon.cz/profile_display_2.html/XMLdataVZ?od=01072026&do=21112026"]
     m = json.loads((koren / "raw/ezak/manifest.json").read_text(encoding="utf-8"))
-    assert m["00247618/2026.xml"]["zakazek"] == 4
+    assert m["00247618/2026-2.xml"]["zakazek"] == 4
 
 
 def test_uzavreny_rok_se_po_skonceni_stahne_jeste_jednou():
-    assert ezak.potreba_stahnout(2026, {"uzavreno": False}, date(2027, 1, 3))
-    assert not ezak.potreba_stahnout(2026, {"uzavreno": True}, date(2027, 1, 9))
+    assert ezak.potreba_stahnout(date(2026, 12, 31), {"uzavreno": False}, date(2027, 1, 3))
+    assert not ezak.potreba_stahnout(date(2026, 12, 31), {"uzavreno": True}, date(2027, 1, 9))
+    assert ezak.obdobi(2024, 2) == (date(2024, 7, 1), date(2024, 12, 31))    # přestupný rok celý nejde (HTTP 400)
+
+
+def test_prazdne_obdobi_bez_zadavatele_je_v_poradku():
+    prazdne = f'<profil xmlns="{ezak.NS[1:-1]}"><profil_kod>Z2019-003053</profil_kod></profil>'.encode()
+    assert ezak.zkontroluj_xml(prazdne, "00247618") == 0
+    with pytest.raises(ezak.ChybaZdroje):
+        ezak.zkontroluj_xml((VZORKY / "2026.xml").read_bytes(), "25179896")
+
+
+def test_jmeno_s_titulem_v_predmetu_zakazky_se_maskuje(koren):
+    from pipeline.sestav import sestav
+    for d in ("anotace",):
+        shutil.copytree(KOREN / d, koren / d)
+    (koren / "raw" / "ezak" / "00247618").mkdir(parents=True)
+    (koren / "raw" / "manifest.json").write_text("[]", encoding="utf-8")
+    xml = (VZORKY / "2026.xml").read_text(encoding="utf-8").replace(
+        "Předmětem je rozšíření veřejného osvětlení v branné.",
+        "Předmětem je stavba podle projektu Ing. Františka Stráského.")
+    (koren / "raw/ezak/00247618/2026-2.xml").write_text(xml, encoding="utf-8")
+    vystup, chyby = sestav(koren)
+    z = {x["id"]: x for x in vystup["zakazky"]}["ezak-VZ-957"]
+    assert z["predmet"] == "Předmětem je stavba podle projektu [jméno]." and not [c for c in chyby if "zakazky" in c]
 
 
 def test_stazeni_beze_zmeny_nemeni_manifest(koren):
@@ -123,3 +146,15 @@ def test_stazeni_beze_zmeny_nemeni_manifest(koren):
     pred = m.read_bytes()
     ezak.stahni(koren, date(2026, 11, 21), lambda u: obsah if "display_2." in u else b"<x/>", pauza=0)
     assert m.read_bytes() == pred
+
+
+
+def test_urednik_bez_titulu_v_zakazce_funkci(koren):
+    """Úředník ze seznamu se nahradí funkcí, ne jen příjmení (Codex P1, #80)."""
+    import yaml
+    from pipeline.sestav import anonymizuj_urednici, nacti_osoby
+    osoby = nacti_osoby(KOREN)
+    jmeno = next(v if isinstance(v, str) else v["text"] for u in osoby["urednici"] for v in u["varianty"]
+                 if "Ing." not in (v if isinstance(v, str) else v["text"]))
+    vysl = anonymizuj_urednici(f"Kontaktní osoba: {jmeno}.", osoby)
+    assert jmeno not in vysl
