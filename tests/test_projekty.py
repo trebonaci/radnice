@@ -143,3 +143,19 @@ def test_puvodni_smlouva_pres_navazany_zaznam_dolozena():
     k = pr.sestav_projekt(PROJEKT, data(smlouvy=[puv, dod]))
     assert {s["id"]: s["jistota"] for s in k["smlouvy"]} == {"p1": "nase_propojeni", "p0": "dolozeno"}
     assert k["casti"][0]["cena_po_dodatcich"] == 146650.0
+
+
+def test_dodatek_bez_castky_necha_cenu_neznamou_a_ruzni_dodavatele_zvlast():
+    c = pr.casti_akce([], [sml("s0", "stavba", castka=100.0), sml("s1", "stavba", 1, navazuje="is0")])
+    assert c[0]["cena_po_dodatcich"] is None and c[0]["dodatky"][0]["bez_castky"] is True
+    zak = [{"id": "z1", "role": "vybaveni", "url": "e", "casti": [{"registr_smluv": [], "vitezove": [
+        {"nazev": "A", "smluvni": [{"hodnota": 100.0, "s_dph": False}]}]}]}]
+    c = pr.casti_akce(zak, [sml("b0", "vybaveni", castka=200.0, strana="B")])
+    assert sorted(x["puvodni"]["bez_dph"] for x in c) == [100.0, 200.0]
+
+
+def test_cena_z_registru_kdyz_ezak_cenu_nema():
+    zak = [{"id": "z1", "role": "stavba", "url": "e", "casti": [{"registr_smluv": ["u-s0"], "vitezove": [
+        {"nazev": "A", "smluvni": []}]}]}]
+    c = pr.casti_akce(zak, [sml("s0", "stavba", castka=500.0, url="u-s0")])
+    assert c[0]["puvodni"] == {"bez_dph": 500.0, "zdroj_id": "s0", "url": "u-s0"}

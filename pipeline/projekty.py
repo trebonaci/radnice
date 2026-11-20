@@ -224,7 +224,7 @@ def casti_akce(zakazky: list[dict], smlouvy: list[dict]) -> list[dict]:
       přes odkaz do registru (doloženo), jinak jen když je v akci jediná zakázka i jediná skupina dané role.
     - Částka u dodatku v registru je **změna ceny** (ověřeno na dodatku č. 1 smlouvy s koordinátorem BOZP
       přístavby tělocvičen: 138 900 + 7 750 = 146 650 Kč bez DPH, 20. 11. 2026). Dodatek bez částky
-      (např. jen termín) cenu nemění.
+      nemá známou změnu ceny – cena po dodatcích pak zůstává neznámá.
     - `cena_po_dodatcich` (bez DPH) počítá kód jen při známé původní ceně a úplné řadě dodatků 1..N.
     """
     skupiny: dict[str, dict] = {}
@@ -257,12 +257,20 @@ def casti_akce(zakazky: list[dict], smlouvy: list[dict]) -> list[dict]:
                         for x in (volne[k]["puvodni"] or (volne[k]["dodatky"] or [{}])[0]).get("strany", []))]
                     if len(dodavatel_) == 1:
                         klic, jistota = dodavatel_[0], "nase_propojeni"
-                    elif len(stejne) == 1 and sum(1 for x in zakazky if x["role"] == z["role"]) == 1:
+                    elif (len(stejne) == 1 and sum(1 for x in zakazky if x["role"] == z["role"]) == 1
+                          and not any((x["jmeno_podnikatele"] or x["nazev"]) not in ("", "fyzická osoba")
+                                      for x in (volne[stejne[0]]["puvodni"] or (volne[stejne[0]]["dodatky"] or [{}])[0])
+                                      .get("strany", []))):
+                        # jen když skupina nemá známého jiného dodavatele (např. jen anonymní strany)
                         klic, jistota = stejne[0], "nase_propojeni"
                 g = volne.pop(klic) if klic else {"puvodni": None, "dodatky": []}
+                cena, zdroj = _bez_dph(v["smluvni"]), {"zdroj_id": z["id"], "url": z["url"]}
+                if cena is None and g["puvodni"] and _bez_dph(g["puvodni"]["castky"]) is not None:
+                    cena, zdroj = _bez_dph(g["puvodni"]["castky"]), {"zdroj_id": g["puvodni"]["id"],
+                                                                    "url": g["puvodni"]["url"]}
                 casti.append({"role": z["role"], "dodavatel": {"nazev": v["nazev"],
                                                                "jmeno_podnikatele": v.get("jmeno_podnikatele")},
-                              "puvodni": {"bez_dph": _bez_dph(v["smluvni"]), "zdroj_id": z["id"], "url": z["url"]},
+                              "puvodni": {"bez_dph": cena, **zdroj},
                               "dodatky_smlouvy": g["dodatky"], "vazba_dodatku": jistota})
     for g in volne.values():
         p_ = g["puvodni"]
@@ -278,7 +286,8 @@ def casti_akce(zakazky: list[dict], smlouvy: list[dict]) -> list[dict]:
                          "url": d["url"]} for d in dodatky]
         cisla = {d["cislo"] for d in c["dodatky"]}
         c["chybi_dodatky"] = sorted(set(range(1, max(cisla) + 1)) - cisla) if cisla else []
-        znam = all(d["bez_dph"] is not None or d["bez_castky"] for d in c["dodatky"])
+        # dodatek bez částky v registru (cena neuvedena) = změna ceny neznámá → cena po dodatcích neznámá
+        znam = all(d["bez_dph"] is not None for d in c["dodatky"])
         zaklad = c["puvodni"]["bez_dph"] if c["puvodni"] else None
         c["cena_po_dodatcich"] = (
             (_halere(zaklad) + sum(_halere(d["bez_dph"]) for d in c["dodatky"] if d["bez_dph"] is not None)) / 100
