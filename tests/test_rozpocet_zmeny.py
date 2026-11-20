@@ -56,8 +56,10 @@ def test_aritmeticka_chyba_a_zbyle_radky():
 
 def test_porovnani_s_usnesenimi_toleruje_zaokrouhleni_na_tisice():
     r, _, _ = rz.zmeny([STRANA], 2026, "u")
-    usn = [{"cislo_ro": 57, "strana": "vydaje", "vysledek_hlasovani": "prijato", "zmena": -253000.0},
-           {"cislo_ro": 57, "strana": "vydaje", "vysledek_hlasovani": "prijato", "zmena": 253000.0}]
+    usn = [{"rok": 2026, "cislo_ro": 57, "strana": "vydaje", "vysledek_hlasovani": "prijato", "zmena": -253000.0},
+           {"rok": 2026, "cislo_ro": 57, "strana": "vydaje", "vysledek_hlasovani": "prijato", "zmena": 253000.0},
+           # RO 57 jiného roku se s přehledem 2026 neporovnává
+           {"rok": 2027, "cislo_ro": 57, "strana": "vydaje", "vysledek_hlasovani": "prijato", "zmena": 1.0}]
     assert rz.porovnej_s_usnesenimi(r, usn) == []
     usn[0]["zmena"] = -252999.4
     assert rz.porovnej_s_usnesenimi(r, usn) == []

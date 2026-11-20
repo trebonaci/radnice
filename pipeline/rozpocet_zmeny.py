@@ -152,17 +152,16 @@ def retez(radky: list[dict]) -> list[str]:
 def porovnej_s_usnesenimi(radky: list[dict], ro_usneseni: list[dict]) -> list[str]:
     """RO z textu usnesení (#86) i z přehledu: změny výdajových položek musí sedět (Kč, multimnožina)."""
     chyby = []
-    for cislo in sorted({r["cislo_ro"] for r in ro_usneseni if r.get("vysledek_hlasovani") == "prijato"
-                         and r.get("strana") == "vydaje"}):
-        z_usn = sorted(round(r["zmena"] * 100) for r in ro_usneseni
-                       if r["cislo_ro"] == cislo and r.get("strana") == "vydaje" and r.get("vysledek_hlasovani") == "prijato")
-        z_prehledu = sorted(r["zmena"] * 100 for r in radky if r["cislo_ro"] == cislo
-                            and r["druh_zkratka"] in ("BV", "KV"))
-        if not any(r["cislo_ro"] == cislo for r in radky):
+    prijate = [r for r in ro_usneseni if r.get("vysledek_hlasovani") == "prijato" and r.get("strana") == "vydaje"]
+    for rok, cislo in sorted({(r["rok"], r["cislo_ro"]) for r in prijate}):
+        if not any(r["rok"] == rok and r["cislo_ro"] == cislo for r in radky):
             continue                       # přehled ještě není aktualizovaný
+        z_usn = sorted(round(r["zmena"] * 100) for r in prijate if r["rok"] == rok and r["cislo_ro"] == cislo)
+        z_prehledu = sorted(r["zmena"] * 100 for r in radky if r["rok"] == rok and r["cislo_ro"] == cislo
+                            and r["druh_zkratka"] in ("BV", "KV"))
         # přehled je v tis. Kč a některé řádky zaokrouhluje na celé tisíce (RO 58: 16 293 600 → 16 294,00)
         if len(z_usn) != len(z_prehledu) or any(abs(a - b) > 100_000 for a, b in zip(z_usn, z_prehledu)):
-            chyby.append(f"přehled RO: opatření {cislo} nesedí s usnesením (usnesení {z_usn}, přehled {z_prehledu})")
+            chyby.append(f"přehled RO {rok}: opatření {cislo} nesedí s usnesením (usnesení {z_usn}, přehled {z_prehledu})")
     return chyby
 
 
