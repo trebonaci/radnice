@@ -45,3 +45,30 @@ def test_chyba_jednoho_dokumentu_nezastavi_druhy_a_malo_textu(tmp_path):
     chyby = rm.stahni(tmp_path, web({d[1]["url"]: b"x"}), lambda b: ["kratke"])
     assert any("2026/rozpocet" in c for c in chyby) and any("málo textu" in c for c in chyby)
     assert not (tmp_path / "raw/rozpocet/manifest.json").exists()
+
+
+def test_ro_vybere_nejnovejsi_prehled_podle_data_v_nazvu():
+    stranka = ('<a href="u/Rozpoctova_opatreni_schvalena%20do%2021_10_2026.pdf">a</a>'
+               '<a href="u/Rozpoctova_opatreni_schvalena%20do%201_2_2026.pdf">b</a>')
+    d = rm.najdi_dokumenty(stranka, 2026)
+    assert len(d) == 1 and d[0]["soubor"].endswith("21_10_2026.pdf")
+
+
+def test_selhani_zapisu_ponecha_predchozi_texty(tmp_path, monkeypatch):
+    d = rm.najdi_dokumenty(STRANKA, 2026)
+    extrahuj = lambda b: [("Strana 1 " + b.decode()) * 100, "Strana 2"]
+    assert rm.stahni(tmp_path, web({d[0]["url"]: b"v1", d[1]["url"]: b"ro"}), extrahuj) == []
+    puvodni = rm.Path.write_text
+
+    def rozbity(self, text, **kw):
+        if self.name == "strana-2.txt":
+            raise OSError("disk plný")
+        return puvodni(self, text, **kw)
+
+    monkeypatch.setattr(rm.Path, "write_text", rozbity)
+    chyby = rm.stahni(tmp_path, web({d[0]["url"]: b"v2", d[1]["url"]: b"ro"}), extrahuj)
+    monkeypatch.undo()
+    assert any("ponechána předchozí data" in c for c in chyby)
+    adr = tmp_path / "raw/rozpocet/2026/rozpocet"
+    assert "v1" in (adr / "strana-1.txt").read_text() and (adr / "strana-2.txt").exists()
+    assert not adr.with_name("rozpocet.nove").exists()
