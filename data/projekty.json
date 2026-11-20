@@ -2090,6 +2090,8 @@
       {
         "datum": "2025-11-14",
         "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "administrace výběrového řízení",
         "text": "Administrace zadávacího řízení VZ Přístavba dvou tělocvičen sportovní haly Třeboň",
         "role": "administrace",
         "zdroj_id": "rs-35626165",
@@ -2110,6 +2112,8 @@
       {
         "datum": "2026-01-12",
         "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "BOZP",
         "text": "Příkazní smlouva - Koordinátor BOZP na akci Přístavba dvou tělocvičen sportovní haly Třeboň",
         "role": "bozp",
         "zdroj_id": "rs-36357369",
@@ -2118,6 +2122,8 @@
       {
         "datum": "2026-01-13",
         "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "technický dozor",
         "text": "Příkazní smlouva - Technický dozor stavebníka na akci Přístavba dvou tělocvičen sportovní haly Třeboň",
         "role": "technicky_dozor",
         "zdroj_id": "rs-36378541",
@@ -2126,6 +2132,8 @@
       {
         "datum": "2026-01-14",
         "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "smlouva o dílo",
         "text": "Přístavba dvou tělocvičen sportovní haly Třeboň",
         "role": "stavba",
         "zdroj_id": "rs-36387317",
@@ -3732,6 +3740,8 @@
       {
         "datum": "2025-12-19",
         "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "technický dozor",
         "text": "Příkazní smlouva - Technický dozor stavebníka na akci Sportovní hala Třeboň - nástavba a přístavba ubytování",
         "role": "technicky_dozor",
         "zdroj_id": "rs-36157577",
@@ -3740,6 +3750,8 @@
       {
         "datum": "2025-12-19",
         "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "BOZP",
         "text": "Příkazní smlouva - Koordinátor BOZP na akci Sportovní hala Třeboň - nástavba a přístavba ubytování",
         "role": "bozp",
         "zdroj_id": "rs-36156093",
@@ -3748,6 +3760,8 @@
       {
         "datum": "2025-12-23",
         "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "smlouva o dílo",
         "text": "Sportovní hala Třeboň - nástavba a přístavba ubytování",
         "role": "stavba",
         "zdroj_id": "rs-36192945",
@@ -3756,6 +3770,8 @@
       {
         "datum": "2026-01-29",
         "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "projektová dokumentace",
         "text": "Vypracování projektu interiéru akce Sportovní hala Třeboň - nástavba a přístavba ubytování",
         "role": "projekt",
         "zdroj_id": "rs-36589065",
