@@ -100,6 +100,7 @@ def test_casti_chybejici_dodatek_nebo_puvodni_cena_bez_souctu():
                             sml("t1", "technicky_dozor", 1, 5.0, navazuje="y")])
     stavba, tds = c
     assert stavba["puvodni"]["bez_dph"] == 100.0 and stavba["chybi_dodatky"] == [1, 2]
+    assert stavba["puvodni"]["muze_obsahovat_dodatky"] is True      # smluvní cena E-ZAK u smlouvy s dodatky
     assert stavba["cena_po_dodatcich"] is None and stavba["dodatky"][1]["bez_castky"] is True
     assert tds["puvodni"] is None and tds["cena_po_dodatcich"] is None and tds["dodatky_bez_dph"] == 5.0
 
@@ -160,7 +161,7 @@ def test_cena_z_registru_kdyz_ezak_cenu_nema():
         {"nazev": "A", "smluvni": []}]}]}]
     c = pr.casti_akce(zak, [sml("s0", "stavba", castka=500.0, url="u-s0")])
     assert c[0]["puvodni"] == {"bez_dph": 500.0, "s_dph": 605.0, "zdroj_id": "s0", "url": "u-s0",
-                               "s_dph_dopocteno": True, "sazba_dph": 21, "sazba_dph_zdroj": "zakladni_sazba"}
+                               "zdroj_druh": "registr", "muze_obsahovat_dodatky": False, "s_dph_dopocteno": True, "sazba_dph": 21, "sazba_dph_zdroj": "zakladni_sazba"}
 
 
 def test_parovani_podle_cisla_zakazky_a_dalsi_dodatky_teze_smlouvy():
@@ -249,3 +250,18 @@ def test_kratce_usneseni():
                                "že nejvýhodnější nabídkou je nabídka s nejnižší cenou"}) == "výběr dodavatele"
     assert pr.kratce_usneseni({"vysledek_hlasovani": "neprijato", "text": "x"}) == "návrh nepřijat"
     assert pr.kratce_usneseni({"vysledek_hlasovani": "prijato", "tema": "Téma", "text": "jiné"}) == "Téma"
+
+
+def test_puvodni_cena_ze_smlouvy_ne_ze_smluvni_ceny_ezak_po_dodatcich():
+    """Přístavba tělocvičen (#136): E-ZAK uvádí smluvní cenu „po dodatku č. 5“, podepsaná smlouva 60,1 mil."""
+    zak = [{"id": "z1", "role": "stavba", "url": "e", "casti": [{"registr_smluv": ["u-s0"], "vitezove": [
+        {"nazev": "MANE", "smluvni": [{"hodnota": 66097418.09, "s_dph": True}, {"hodnota": 54625965.36, "s_dph": False}],
+         "nabidkova": [{"hodnota": 60144956.84, "s_dph": True}, {"hodnota": 49706575.90, "s_dph": False}]}]}]}]
+    c = pr.casti_akce(zak, [dict(sml("s0", "stavba", castka=49706575.90, url="u-s0"),
+                                 castky=[{"hodnota": 49706575.90, "s_dph": False}, {"hodnota": 60144956.84, "s_dph": True}]),
+                            dict(sml("s1", "stavba", 1, navazuje="is0"),
+                                 castky=[{"hodnota": 4919389.46, "s_dph": False}, {"hodnota": 5952461.25, "s_dph": True}])])
+    (st,) = c
+    assert st["puvodni"]["s_dph"] == 60144956.84 and st["puvodni"]["zdroj_druh"] == "registr"
+    assert st["vysoutezena"] == {"bez_dph": 49706575.90, "s_dph": 60144956.84}
+    assert st["cena_po_dodatcich_s_dph"] == 66097418.09 and st["souhlas_ezak"] is True

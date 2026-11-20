@@ -8,6 +8,8 @@
     "vlastnik_subjekt_id": "00247618",
     "faze": "pripravuje_se",
     "faze_jistota": "nase_propojeni",
+    "dokonceni": null,
+    "doplaceno": false,
     "rozpocet": [
       {
         "org": "6227000000",
@@ -85,6 +87,7 @@
         "neuplne": [],
         "jistota": "nase_propojeni"
       },
+      "skladba_s_dph": [],
       "schvaleny": [
         {
           "rok": 2026,
@@ -132,7 +135,9 @@
         "zmena": -1165000.0,
         "polozka": "Snížení energetické náročnosti DPS 3",
         "zdroj_id": "rm-2026-j113-u527-p1",
-        "jistota": "dolozeno"
+        "jistota": "dolozeno",
+        "usneseni_cislo": "RM 527/2026-113",
+        "url": "https://www.mesto-trebon.cz/uploads/news/id15164/Z-113-26-10-21-A.pdf#page=8"
       }
     ],
     "posledni_udalost": {
@@ -144,7 +149,9 @@
       "zmena": -1165000.0,
       "polozka": "Snížení energetické náročnosti DPS 3",
       "zdroj_id": "rm-2026-j113-u527-p1",
-      "jistota": "dolozeno"
+      "jistota": "dolozeno",
+      "usneseni_cislo": "RM 527/2026-113",
+      "url": "https://www.mesto-trebon.cz/uploads/news/id15164/Z-113-26-10-21-A.pdf#page=8"
     }
   },
   {
@@ -156,6 +163,8 @@
     "vlastnik_subjekt_id": "00247618",
     "faze": "probiha",
     "faze_jistota": "nase_propojeni",
+    "dokonceni": null,
+    "doplaceno": false,
     "rozpocet": [],
     "schvaleny_rozpocet": [],
     "casti": [
@@ -168,15 +177,24 @@
         "puvodni": {
           "bez_dph": 1123487.0,
           "s_dph": 1359419.27,
-          "zdroj_id": "ezak-VZ-966",
-          "url": "https://zakazky.mesto-trebon.cz/contract_display_966.html"
+          "zdroj_id": "rs-39840721",
+          "url": "https://smlouvy.gov.cz/smlouva/39840721",
+          "zdroj_druh": "registr",
+          "muze_obsahovat_dodatky": false
         },
+        "vysoutezena": null,
+        "ezak_smluvni": {
+          "bez_dph": 1123487.0,
+          "s_dph": 1359419.27
+        },
+        "ezak_url": "https://zakazky.mesto-trebon.cz/contract_display_966.html",
         "vazba_dodatku": "nase_propojeni",
         "dodatky": [],
         "chybi_dodatky": [],
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 1123487.0,
         "cena_po_dodatcich_s_dph": 1359419.27,
+        "souhlas_ezak": null,
         "dodatky_bez_dph": null
       },
       {
@@ -197,6 +215,7 @@
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 84000.0,
         "cena_po_dodatcich_s_dph": 101640.0,
+        "souhlas_ezak": null,
         "dodatky_bez_dph": null
       }
     ],
@@ -228,6 +247,26 @@
         "neuplne": [],
         "jistota": "nase_propojeni"
       },
+      "skladba_s_dph": [
+        {
+          "skupina": "stavba",
+          "nazev": "Stavba",
+          "casti": 1,
+          "castka": 1359419.27,
+          "nezname": [],
+          "druh": "smluvni",
+          "s_dph": true
+        },
+        {
+          "skupina": "priprava",
+          "nazev": "Projekt a výběrové řízení",
+          "casti": 1,
+          "castka": 101640.0,
+          "nezname": [],
+          "druh": "smluvni",
+          "s_dph": true
+        }
+      ],
       "schvaleny": []
     },
     "zakazky": [
@@ -264,6 +303,7 @@
                     "jednotka": "Kč"
                   }
                 ],
+                "nabidkova": [],
                 "zaplaceno": []
               }
             ],
@@ -358,16 +398,20 @@
         "text": "Vypracování projektové dokumentace pro provedení stavby včetně rozpočtu a výkazu výměr pro výběrové řízení na instalaci fotovoltaické výrobny elektřiny na objektech v areálu ČOV Třeboň, Břilice čp. 303",
         "role": "projekt",
         "zdroj_id": "rs-37703157",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/37703157"
       },
       {
         "datum": "2026-09-29",
         "typ": "soutez",
         "text": "Soutěž: Instalace FVE 58,0 kWp na střechy objektu ČOV Břilice, Třeboň",
         "kategorie": "výběrové řízení",
-        "kratce": "stavba, 3 nabídky",
+        "kratce": "stavba, smlouva 8 dní po podání nabídek (vyhlášení zveřejněno až dodatečně), 3 nabídky",
         "lhuta_dni": null,
+        "rizeni_dni": null,
+        "po_nabidkach_dni": 8,
         "pocet_nabidek": 3,
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_966.html",
         "role": "stavba",
         "zdroj_id": "ezak-VZ-966",
         "jistota": "nase_propojeni"
@@ -380,7 +424,8 @@
         "text": "Instalace FVE 58,0 kWp na střechy objektu ČOV Břilice, Třeboň",
         "role": "stavba",
         "zdroj_id": "rs-39840721",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/39840721"
       }
     ],
     "posledni_udalost": {
@@ -391,7 +436,8 @@
       "text": "Instalace FVE 58,0 kWp na střechy objektu ČOV Břilice, Třeboň",
       "role": "stavba",
       "zdroj_id": "rs-39840721",
-      "jistota": "nase_propojeni"
+      "jistota": "nase_propojeni",
+      "url": "https://smlouvy.gov.cz/smlouva/39840721"
     }
   },
   {
@@ -403,6 +449,8 @@
     "vlastnik_subjekt_id": "00247618",
     "faze": "probiha",
     "faze_jistota": "nase_propojeni",
+    "dokonceni": null,
+    "doplaceno": false,
     "rozpocet": [],
     "schvaleny_rozpocet": [],
     "casti": [
@@ -415,9 +463,17 @@
         "puvodni": {
           "bez_dph": 998761.09,
           "s_dph": 1208500.92,
-          "zdroj_id": "ezak-VZ-947",
-          "url": "https://zakazky.mesto-trebon.cz/contract_display_947.html"
+          "zdroj_id": "rs-39122658",
+          "url": "https://smlouvy.gov.cz/smlouva/39122658",
+          "zdroj_druh": "registr",
+          "muze_obsahovat_dodatky": false
         },
+        "vysoutezena": null,
+        "ezak_smluvni": {
+          "bez_dph": 998761.09,
+          "s_dph": 1208500.92
+        },
+        "ezak_url": "https://zakazky.mesto-trebon.cz/contract_display_947.html",
         "vazba_dodatku": "dolozeno",
         "dodatky": [
           {
@@ -436,6 +492,7 @@
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 1024446.81,
         "cena_po_dodatcich_s_dph": 1239580.64,
+        "souhlas_ezak": false,
         "dodatky_bez_dph": 25685.72
       }
     ],
@@ -467,6 +524,17 @@
         "neuplne": [],
         "jistota": "nase_propojeni"
       },
+      "skladba_s_dph": [
+        {
+          "skupina": "stavba",
+          "nazev": "Stavba",
+          "casti": 1,
+          "castka": 1239580.64,
+          "nezname": [],
+          "druh": "smluvni",
+          "s_dph": true
+        }
+      ],
       "schvaleny": []
     },
     "zakazky": [
@@ -503,6 +571,7 @@
                     "jednotka": "Kč"
                   }
                 ],
+                "nabidkova": [],
                 "zaplaceno": []
               }
             ],
@@ -618,9 +687,12 @@
         "typ": "soutez",
         "text": "Soutěž: Instalace FVE 38,7 kWp na střeše přístavby ZŠ Na Sadech, Třeboň",
         "kategorie": "výběrové řízení",
-        "kratce": "stavba, doba trvání 9 dní, 7 nabídek",
+        "kratce": "stavba, od vyhlášení do smlouvy 23 dní (lhůta pro nabídky 9 dní), 7 nabídek",
         "lhuta_dni": 9,
+        "rizeni_dni": 23,
+        "po_nabidkach_dni": 14,
         "pocet_nabidek": 7,
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_947.html",
         "role": "stavba",
         "zdroj_id": "ezak-VZ-947",
         "jistota": "nase_propojeni"
@@ -633,7 +705,8 @@
         "text": "SND Instalace FVE 38,7 kWp na střeše přístavby ZŠ Na Sadech.",
         "role": "stavba",
         "zdroj_id": "rs-39122658",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/39122658"
       },
       {
         "datum": "2026-10-07",
@@ -643,6 +716,8 @@
         "kratce": "schválení dodatku 1",
         "text_ai": true,
         "overeni": "overeno_kodem",
+        "usneseni_cislo": "RM 508/2026-112",
+        "url": "https://www.mesto-trebon.cz/uploads/news/id15132/Z-112-26-10-07-A.pdf#page=6",
         "zdroj_id": "rm-2026-j112-u508",
         "jistota": "nase_propojeni"
       },
@@ -654,7 +729,8 @@
         "text": "SND Instalace FVE 38,7 kWp na střeše přístavby ZŠ Na Sadech - Dodatek č. 1.",
         "role": "stavba",
         "zdroj_id": "rs-39900669",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/39900669"
       }
     ],
     "posledni_udalost": {
@@ -665,7 +741,8 @@
       "text": "SND Instalace FVE 38,7 kWp na střeše přístavby ZŠ Na Sadech - Dodatek č. 1.",
       "role": "stavba",
       "zdroj_id": "rs-39900669",
-      "jistota": "nase_propojeni"
+      "jistota": "nase_propojeni",
+      "url": "https://smlouvy.gov.cz/smlouva/39900669"
     }
   },
   {
@@ -677,6 +754,8 @@
     "vlastnik_subjekt_id": "00247618",
     "faze": "pripravuje_se",
     "faze_jistota": "nase_propojeni",
+    "dokonceni": null,
+    "doplaceno": false,
     "rozpocet": [],
     "schvaleny_rozpocet": [],
     "casti": [
@@ -698,6 +777,7 @@
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 795000.0,
         "cena_po_dodatcich_s_dph": 961950.0,
+        "souhlas_ezak": null,
         "dodatky_bez_dph": null
       }
     ],
@@ -729,6 +809,17 @@
         "neuplne": [],
         "jistota": "nase_propojeni"
       },
+      "skladba_s_dph": [
+        {
+          "skupina": "priprava",
+          "nazev": "Projekt a výběrové řízení",
+          "casti": 1,
+          "castka": 961950.0,
+          "nezname": [],
+          "druh": "smluvni",
+          "s_dph": true
+        }
+      ],
       "schvaleny": []
     },
     "zakazky": [],
@@ -781,7 +872,8 @@
         "text": "Zpracování PD - stavební úpravy hřbitova sv. Alžběty",
         "role": "projekt",
         "zdroj_id": "rs-38781444",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/38781444"
       }
     ],
     "posledni_udalost": {
@@ -792,7 +884,8 @@
       "text": "Zpracování PD - stavební úpravy hřbitova sv. Alžběty",
       "role": "projekt",
       "zdroj_id": "rs-38781444",
-      "jistota": "nase_propojeni"
+      "jistota": "nase_propojeni",
+      "url": "https://smlouvy.gov.cz/smlouva/38781444"
     }
   },
   {
@@ -804,6 +897,8 @@
     "vlastnik_subjekt_id": "00247618",
     "faze": "probiha",
     "faze_jistota": "nase_propojeni",
+    "dokonceni": null,
+    "doplaceno": false,
     "rozpocet": [],
     "schvaleny_rozpocet": [],
     "casti": [
@@ -816,15 +911,24 @@
         "puvodni": {
           "bez_dph": 21849088.69,
           "s_dph": 26437397.31,
-          "zdroj_id": "ezak-VZ-949",
-          "url": "https://zakazky.mesto-trebon.cz/contract_display_949.html"
+          "zdroj_id": "rs-40262621",
+          "url": "https://smlouvy.gov.cz/smlouva/40262621",
+          "zdroj_druh": "registr",
+          "muze_obsahovat_dodatky": false
         },
+        "vysoutezena": null,
+        "ezak_smluvni": {
+          "bez_dph": 21849088.69,
+          "s_dph": 26437397.31
+        },
+        "ezak_url": "https://zakazky.mesto-trebon.cz/contract_display_949.html",
         "vazba_dodatku": "nase_propojeni",
         "dodatky": [],
         "chybi_dodatky": [],
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 21849088.69,
         "cena_po_dodatcich_s_dph": 26437397.31,
+        "souhlas_ezak": null,
         "dodatky_bez_dph": null
       },
       {
@@ -837,14 +941,23 @@
           "bez_dph": 876000.0,
           "s_dph": 1059960.0,
           "zdroj_id": "ezak-VZ-831",
-          "url": "https://zakazky.mesto-trebon.cz/contract_display_831.html"
+          "url": "https://zakazky.mesto-trebon.cz/contract_display_831.html",
+          "zdroj_druh": "smluvni_ezak",
+          "muze_obsahovat_dodatky": false
         },
+        "vysoutezena": null,
+        "ezak_smluvni": {
+          "bez_dph": 876000.0,
+          "s_dph": 1059960.0
+        },
+        "ezak_url": "https://zakazky.mesto-trebon.cz/contract_display_831.html",
         "vazba_dodatku": null,
         "dodatky": [],
         "chybi_dodatky": [],
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 876000.0,
         "cena_po_dodatcich_s_dph": 1059960.0,
+        "souhlas_ezak": null,
         "dodatky_bez_dph": null
       },
       {
@@ -865,6 +978,7 @@
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 60000.0,
         "cena_po_dodatcich_s_dph": 72600.0,
+        "souhlas_ezak": null,
         "dodatky_bez_dph": null
       }
     ],
@@ -896,6 +1010,26 @@
         "neuplne": [],
         "jistota": "nase_propojeni"
       },
+      "skladba_s_dph": [
+        {
+          "skupina": "stavba",
+          "nazev": "Stavba",
+          "casti": 1,
+          "castka": 26437397.31,
+          "nezname": [],
+          "druh": "smluvni",
+          "s_dph": true
+        },
+        {
+          "skupina": "priprava",
+          "nazev": "Projekt a výběrové řízení",
+          "casti": 2,
+          "castka": 1132560.0,
+          "nezname": [],
+          "druh": "smluvni",
+          "s_dph": true
+        }
+      ],
       "schvaleny": []
     },
     "zakazky": [
@@ -932,6 +1066,7 @@
                     "jednotka": "Kč"
                   }
                 ],
+                "nabidkova": [],
                 "zaplaceno": [
                   {
                     "obdobi": "2025",
@@ -984,6 +1119,7 @@
                     "jednotka": "Kč"
                   }
                 ],
+                "nabidkova": [],
                 "zaplaceno": []
               }
             ],
@@ -1095,9 +1231,12 @@
         "typ": "soutez",
         "text": "Soutěž: Zpracování projektové dokumentace – Stavební úpravy MK v ul. Souběžná, Heřmánkova, Daskabát v Třeboni",
         "kategorie": "výběrové řízení",
-        "kratce": "projektová dokumentace, 2 nabídky",
+        "kratce": "projektová dokumentace, smlouva 20 dní po podání nabídek (vyhlášení zveřejněno až dodatečně), 2 nabídky",
         "lhuta_dni": null,
+        "rizeni_dni": null,
+        "po_nabidkach_dni": 20,
         "pocet_nabidek": 2,
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_831.html",
         "role": "projekt",
         "zdroj_id": "ezak-VZ-831",
         "jistota": "nase_propojeni"
@@ -1107,9 +1246,12 @@
         "typ": "soutez",
         "text": "Soutěž: Stavební úpravy MK v ul. Heřmánkova a Daskabát v Třeboni",
         "kategorie": "výběrové řízení",
-        "kratce": "stavba, doba trvání 35 dní, 4 nabídky",
+        "kratce": "stavba, od vyhlášení do smlouvy 86 dní (lhůta pro nabídky 35 dní), 4 nabídky",
         "lhuta_dni": 35,
+        "rizeni_dni": 86,
+        "po_nabidkach_dni": 51,
         "pocet_nabidek": 4,
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_949.html",
         "role": "stavba",
         "zdroj_id": "ezak-VZ-949",
         "jistota": "nase_propojeni"
@@ -1122,7 +1264,8 @@
         "text": "Administrace zadávacího řízení VZ Stavební úpravy MK v ul. Heřmánkova a Daskabát v Třeboni",
         "role": "administrace",
         "zdroj_id": "rs-39177982",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/39177982"
       },
       {
         "datum": "2026-10-07",
@@ -1132,6 +1275,8 @@
         "kratce": "výběr dodavatele",
         "text_ai": true,
         "overeni": "overeno_kodem",
+        "usneseni_cislo": "RM 506/2026-112",
+        "url": "https://www.mesto-trebon.cz/uploads/news/id15132/Z-112-26-10-07-A.pdf#page=5",
         "zdroj_id": "rm-2026-j112-u506",
         "jistota": "nase_propojeni"
       },
@@ -1143,7 +1288,8 @@
         "text": "Stavební úpravy MK v ul. Heřmánkova a Daskabát v Třeboni",
         "role": "stavba",
         "zdroj_id": "rs-40262621",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/40262621"
       }
     ],
     "posledni_udalost": {
@@ -1154,7 +1300,8 @@
       "text": "Stavební úpravy MK v ul. Heřmánkova a Daskabát v Třeboni",
       "role": "stavba",
       "zdroj_id": "rs-40262621",
-      "jistota": "nase_propojeni"
+      "jistota": "nase_propojeni",
+      "url": "https://smlouvy.gov.cz/smlouva/40262621"
     }
   },
   {
@@ -1166,6 +1313,8 @@
     "vlastnik_subjekt_id": "00247618",
     "faze": "probiha",
     "faze_jistota": "nase_propojeni",
+    "dokonceni": null,
+    "doplaceno": false,
     "rozpocet": [
       {
         "org": "6230000000",
@@ -1263,11 +1412,22 @@
           "jmeno_podnikatele": null
         },
         "puvodni": {
-          "bez_dph": 54625965.36,
-          "s_dph": 66097418.09,
-          "zdroj_id": "ezak-VZ-901",
-          "url": "https://zakazky.mesto-trebon.cz/contract_display_901.html"
+          "bez_dph": 49706575.9,
+          "s_dph": 60144956.84,
+          "zdroj_id": "rs-36387317",
+          "url": "https://smlouvy.gov.cz/smlouva/36387317",
+          "zdroj_druh": "registr",
+          "muze_obsahovat_dodatky": false
         },
+        "vysoutezena": {
+          "bez_dph": 49706575.9,
+          "s_dph": 60144956.84
+        },
+        "ezak_smluvni": {
+          "bez_dph": 54625965.36,
+          "s_dph": 66097418.09
+        },
+        "ezak_url": "https://zakazky.mesto-trebon.cz/contract_display_901.html",
         "vazba_dodatku": "dolozeno",
         "dodatky": [
           {
@@ -1329,7 +1489,8 @@
         "chybi_dodatky": [],
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": null,
-        "cena_po_dodatcich_s_dph": 72049879.34,
+        "cena_po_dodatcich_s_dph": 66097418.09,
+        "souhlas_ezak": true,
         "dodatky_bez_dph": 5227139.14
       },
       {
@@ -1341,9 +1502,17 @@
         "puvodni": {
           "bez_dph": 945000.0,
           "s_dph": 945000.0,
-          "zdroj_id": "ezak-VZ-877",
-          "url": "https://zakazky.mesto-trebon.cz/contract_display_877.html"
+          "zdroj_id": "rs-33266344",
+          "url": "https://smlouvy.gov.cz/smlouva/33266344",
+          "zdroj_druh": "registr",
+          "muze_obsahovat_dodatky": false
         },
+        "vysoutezena": null,
+        "ezak_smluvni": {
+          "bez_dph": 945000.0,
+          "s_dph": 945000.0
+        },
+        "ezak_url": "https://zakazky.mesto-trebon.cz/contract_display_877.html",
         "vazba_dodatku": "nase_propojeni",
         "dodatky": [
           {
@@ -1362,6 +1531,7 @@
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 1092000.0,
         "cena_po_dodatcich_s_dph": 1092000.0,
+        "souhlas_ezak": false,
         "dodatky_bez_dph": 147000.0
       },
       {
@@ -1394,6 +1564,7 @@
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 246500.0,
         "cena_po_dodatcich_s_dph": 246500.0,
+        "souhlas_ezak": null,
         "dodatky_bez_dph": 14500.0
       },
       {
@@ -1426,6 +1597,7 @@
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 146650.0,
         "cena_po_dodatcich_s_dph": 177446.5,
+        "souhlas_ezak": null,
         "dodatky_bez_dph": 7750.0
       },
       {
@@ -1446,6 +1618,7 @@
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 58419.2,
         "cena_po_dodatcich_s_dph": 70687.23,
+        "souhlas_ezak": null,
         "dodatky_bez_dph": null
       },
       {
@@ -1466,6 +1639,7 @@
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 75000.0,
         "cena_po_dodatcich_s_dph": 90750.0,
+        "souhlas_ezak": null,
         "dodatky_bez_dph": null
       }
     ],
@@ -1480,7 +1654,7 @@
         "jistota": "nase_propojeni"
       },
       "smluvni_bez_dph": {
-        "celkem": 56075284.56,
+        "celkem": 51155895.1,
         "druh": "smluvni",
         "s_dph": false,
         "mena": "CZK",
@@ -1491,14 +1665,52 @@
         "jistota": "nase_propojeni"
       },
       "smluvni_s_dph": {
-        "celkem": 67603924.32,
+        "celkem": 61651463.07,
         "druh": "smluvni",
         "s_dph": true,
         "mena": "CZK",
-        "po_dodatcich": 73727263.07,
+        "po_dodatcich": 67774801.82,
         "neuplne": [],
         "jistota": "nase_propojeni"
       },
+      "skladba_s_dph": [
+        {
+          "skupina": "stavba",
+          "nazev": "Stavba",
+          "casti": 1,
+          "castka": 66097418.09,
+          "nezname": [],
+          "druh": "smluvni",
+          "s_dph": true
+        },
+        {
+          "skupina": "priprava",
+          "nazev": "Projekt a výběrové řízení",
+          "casti": 2,
+          "castka": 1182750.0,
+          "nezname": [],
+          "druh": "smluvni",
+          "s_dph": true
+        },
+        {
+          "skupina": "dozor",
+          "nazev": "Technický dozor a BOZP",
+          "casti": 2,
+          "castka": 423946.5,
+          "nezname": [],
+          "druh": "smluvni",
+          "s_dph": true
+        },
+        {
+          "skupina": "vybaveni",
+          "nazev": "Vybavení",
+          "casti": 1,
+          "castka": 70687.23,
+          "nezname": [],
+          "druh": "smluvni",
+          "s_dph": true
+        }
+      ],
       "schvaleny": [
         {
           "rok": 2026,
@@ -1546,6 +1758,7 @@
                     "jednotka": "Kč"
                   }
                 ],
+                "nabidkova": [],
                 "zaplaceno": [
                   {
                     "obdobi": "2025",
@@ -1594,6 +1807,22 @@
                     "hodnota": 54625965.36,
                     "s_dph": false,
                     "druh": "smluvni",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
+                  }
+                ],
+                "nabidkova": [
+                  {
+                    "hodnota": 60144956.84,
+                    "s_dph": true,
+                    "druh": "nabidkova",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
+                  },
+                  {
+                    "hodnota": 49706575.9,
+                    "s_dph": false,
+                    "druh": "nabidkova",
                     "mena": "CZK",
                     "jednotka": "Kč"
                   }
@@ -2188,9 +2417,12 @@
         "typ": "soutez",
         "text": "Soutěž: Zpracování projektové dokumentace ve stupni DZS/DPS přístavby dvou tělocvičen - revitalizace a přístavba sportovní haly Třeboň",
         "kategorie": "výběrové řízení",
-        "kratce": "projekt prováděcí, 1 nabídka",
+        "kratce": "projekt prováděcí, smlouva 16 dní po podání nabídek (vyhlášení zveřejněno až dodatečně), 1 nabídka",
         "lhuta_dni": null,
+        "rizeni_dni": null,
+        "po_nabidkach_dni": 16,
         "pocet_nabidek": 1,
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_877.html",
         "role": "projekt",
         "zdroj_id": "ezak-VZ-877",
         "jistota": "nase_propojeni"
@@ -2203,7 +2435,8 @@
         "text": "Zpracování projektové dokumentace ve stupni DZS/DPS přístavby dvou tělocvičen - revitalizace a přístavba sportovní haly Třeboň",
         "role": "projekt",
         "zdroj_id": "rs-33266344",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/33266344"
       },
       {
         "datum": "2025-11-14",
@@ -2213,16 +2446,20 @@
         "text": "Administrace zadávacího řízení VZ Přístavba dvou tělocvičen sportovní haly Třeboň",
         "role": "administrace",
         "zdroj_id": "rs-35626165",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/35626165"
       },
       {
         "datum": "2025-11-14",
         "typ": "soutez",
         "text": "Soutěž: Přístavba dvou tělocvičen sportovní haly Třeboň",
         "kategorie": "výběrové řízení",
-        "kratce": "stavba, doba trvání 38 dní, 1 nabídka",
+        "kratce": "stavba, od vyhlášení do smlouvy 61 dní (lhůta pro nabídky 38 dní), 1 nabídka",
         "lhuta_dni": 38,
+        "rizeni_dni": 61,
+        "po_nabidkach_dni": 23,
         "pocet_nabidek": 1,
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_901.html",
         "role": "stavba",
         "zdroj_id": "ezak-VZ-901",
         "jistota": "nase_propojeni"
@@ -2235,7 +2472,8 @@
         "text": "Příkazní smlouva - Koordinátor BOZP na akci Přístavba dvou tělocvičen sportovní haly Třeboň",
         "role": "bozp",
         "zdroj_id": "rs-36357369",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/36357369"
       },
       {
         "datum": "2026-01-13",
@@ -2245,7 +2483,8 @@
         "text": "Příkazní smlouva - Technický dozor stavebníka na akci Přístavba dvou tělocvičen sportovní haly Třeboň",
         "role": "technicky_dozor",
         "zdroj_id": "rs-36378541",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/36378541"
       },
       {
         "datum": "2026-01-14",
@@ -2255,7 +2494,8 @@
         "text": "Přístavba dvou tělocvičen sportovní haly Třeboň",
         "role": "stavba",
         "zdroj_id": "rs-36387317",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/36387317"
       },
       {
         "datum": "2026-03-23",
@@ -2265,7 +2505,8 @@
         "text": "Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 1",
         "role": "stavba",
         "zdroj_id": "rs-37282997",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/37282997"
       },
       {
         "datum": "2026-05-29",
@@ -2275,7 +2516,8 @@
         "text": "Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 2",
         "role": "stavba",
         "zdroj_id": "rs-38183173",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/38183173"
       },
       {
         "datum": "2026-06-02",
@@ -2285,7 +2527,8 @@
         "text": "Dodávka a montáž 8 ks laviček se zádovou stěnou s háčky do šaten - akce Přístavba dvou tělocvičen spotrovní hala Třeboň",
         "role": "vybaveni",
         "zdroj_id": "rs-38228669",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/38228669"
       },
       {
         "datum": "2026-08-28",
@@ -2295,7 +2538,8 @@
         "text": "Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 3",
         "role": "stavba",
         "zdroj_id": "rs-39303451",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/39303451"
       },
       {
         "datum": "2026-09-23",
@@ -2306,7 +2550,9 @@
         "zmena": 53000.0,
         "polozka": "Přístavba tělocvičen - vybavení",
         "zdroj_id": "rm-2026-j111-u493-p2",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "usneseni_cislo": "RM 493/2026-111",
+        "url": "https://www.mesto-trebon.cz/uploads/news/id15072/Z-111-26-09-23-A.pdf#page=8"
       },
       {
         "datum": "2026-09-23",
@@ -2316,6 +2562,8 @@
         "kratce": "schválení dodatku 4",
         "text_ai": true,
         "overeni": "overeno_kodem",
+        "usneseni_cislo": "RM 490/2026-111",
+        "url": "https://www.mesto-trebon.cz/uploads/news/id15072/Z-111-26-09-23-A.pdf#page=7",
         "zdroj_id": "rm-2026-j111-u490",
         "jistota": "nase_propojeni"
       },
@@ -2327,7 +2575,8 @@
         "text": "Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 4",
         "role": "stavba",
         "zdroj_id": "rs-39681309",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/39681309"
       },
       {
         "datum": "2026-09-30",
@@ -2337,7 +2586,8 @@
         "text": "Příkazní smlouva - Koordinátor BOZP na akci Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 1",
         "role": "bozp",
         "zdroj_id": "rs-39725837",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/39725837"
       },
       {
         "datum": "2026-09-30",
@@ -2347,7 +2597,8 @@
         "text": "Příkazní smlouva - Technický dozor stavebníka na akci Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 1",
         "role": "technicky_dozor",
         "zdroj_id": "rs-39724805",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/39724805"
       },
       {
         "datum": "2026-10-21",
@@ -2358,7 +2609,9 @@
         "zmena": -253000.0,
         "polozka": "Přístavba tělocvičen",
         "zdroj_id": "rm-2026-j113-u542-p1",
-        "jistota": "dolozeno"
+        "jistota": "dolozeno",
+        "usneseni_cislo": "RM 542/2026-113",
+        "url": "https://www.mesto-trebon.cz/uploads/news/id15164/Z-113-26-10-21-A.pdf#page=13"
       },
       {
         "datum": "2026-10-21",
@@ -2369,7 +2622,9 @@
         "zmena": 253000.0,
         "polozka": "Přístavba tělocvičen - vybavení",
         "zdroj_id": "rm-2026-j113-u542-p2",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "usneseni_cislo": "RM 542/2026-113",
+        "url": "https://www.mesto-trebon.cz/uploads/news/id15164/Z-113-26-10-21-A.pdf#page=13"
       },
       {
         "datum": "2026-10-27",
@@ -2379,7 +2634,8 @@
         "text": "Zpracování projektové dokumentace ve stupni DZS/DPS přístavby dvou tělocvičen - revitalizace a přístavba sportovní haly Třeboň - dodatek č. 1",
         "role": "projekt",
         "zdroj_id": "rs-40118109",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/40118109"
       },
       {
         "datum": "2026-10-30",
@@ -2389,6 +2645,8 @@
         "kratce": "schválení dodatku 5",
         "text_ai": true,
         "overeni": "overeno_kodem",
+        "usneseni_cislo": "RM 551/2026-114",
+        "url": "https://www.mesto-trebon.cz/uploads/news/id15198/Z-114-26-10-30-A.pdf#page=4",
         "zdroj_id": "rm-2026-j114-u551",
         "jistota": "nase_propojeni"
       },
@@ -2400,7 +2658,8 @@
         "text": "Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 5",
         "role": "stavba",
         "zdroj_id": "rs-40163777",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/40163777"
       }
     ],
     "posledni_udalost": {
@@ -2411,7 +2670,8 @@
       "text": "Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 5",
       "role": "stavba",
       "zdroj_id": "rs-40163777",
-      "jistota": "nase_propojeni"
+      "jistota": "nase_propojeni",
+      "url": "https://smlouvy.gov.cz/smlouva/40163777"
     }
   },
   {
@@ -2423,6 +2683,8 @@
     "vlastnik_subjekt_id": "00247618",
     "faze": "probiha",
     "faze_jistota": "nase_propojeni",
+    "dokonceni": null,
+    "doplaceno": false,
     "rozpocet": [],
     "schvaleny_rozpocet": [
       {
@@ -2454,15 +2716,24 @@
         "puvodni": {
           "bez_dph": 1791666.0,
           "s_dph": 2167915.86,
-          "zdroj_id": "ezak-VZ-960",
-          "url": "https://zakazky.mesto-trebon.cz/contract_display_960.html"
+          "zdroj_id": "rs-39062598",
+          "url": "https://smlouvy.gov.cz/smlouva/39062598",
+          "zdroj_druh": "registr",
+          "muze_obsahovat_dodatky": false
         },
+        "vysoutezena": null,
+        "ezak_smluvni": {
+          "bez_dph": 1791666.0,
+          "s_dph": 2167915.86
+        },
+        "ezak_url": "https://zakazky.mesto-trebon.cz/contract_display_960.html",
         "vazba_dodatku": "nase_propojeni",
         "dodatky": [],
         "chybi_dodatky": [],
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 1791666.0,
         "cena_po_dodatcich_s_dph": 2167915.86,
+        "souhlas_ezak": null,
         "dodatky_bez_dph": null
       }
     ],
@@ -2494,6 +2765,17 @@
         "neuplne": [],
         "jistota": "nase_propojeni"
       },
+      "skladba_s_dph": [
+        {
+          "skupina": "stavba",
+          "nazev": "Stavba",
+          "casti": 1,
+          "castka": 2167915.86,
+          "nezname": [],
+          "druh": "smluvni",
+          "s_dph": true
+        }
+      ],
       "schvaleny": [
         {
           "rok": 2026,
@@ -2541,6 +2823,7 @@
                     "jednotka": "Kč"
                   }
                 ],
+                "nabidkova": [],
                 "zaplaceno": []
               }
             ],
@@ -2596,9 +2879,12 @@
         "typ": "soutez",
         "text": "Soutěž: Zkapacitnění propustku - Třeboň, Břilice",
         "kategorie": "výběrové řízení",
-        "kratce": "stavba, 2 nabídky",
+        "kratce": "stavba, smlouva 19 dní po podání nabídek (vyhlášení zveřejněno až dodatečně), 2 nabídky",
         "lhuta_dni": null,
+        "rizeni_dni": null,
+        "po_nabidkach_dni": 19,
         "pocet_nabidek": 2,
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_960.html",
         "role": "stavba",
         "zdroj_id": "ezak-VZ-960",
         "jistota": "nase_propojeni"
@@ -2611,7 +2897,8 @@
         "text": "Zkapacitnění propustku - Třeboň, Břilice",
         "role": "stavba",
         "zdroj_id": "rs-39062598",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/39062598"
       }
     ],
     "posledni_udalost": {
@@ -2622,7 +2909,8 @@
       "text": "Zkapacitnění propustku - Třeboň, Břilice",
       "role": "stavba",
       "zdroj_id": "rs-39062598",
-      "jistota": "nase_propojeni"
+      "jistota": "nase_propojeni",
+      "url": "https://smlouvy.gov.cz/smlouva/39062598"
     }
   },
   {
@@ -2634,6 +2922,8 @@
     "vlastnik_subjekt_id": "00247618",
     "faze": "probiha",
     "faze_jistota": "nase_propojeni",
+    "dokonceni": null,
+    "doplaceno": false,
     "rozpocet": [
       {
         "org": "6219000000",
@@ -2752,11 +3042,22 @@
           "jmeno_podnikatele": null
         },
         "puvodni": {
-          "bez_dph": 51382827.84,
-          "s_dph": 62173221.68,
-          "zdroj_id": "ezak-VZ-883",
-          "url": "https://zakazky.mesto-trebon.cz/contract_display_883.html"
+          "bez_dph": 45678900.0,
+          "s_dph": 55271469.0,
+          "zdroj_id": "rs-36192945",
+          "url": "https://smlouvy.gov.cz/smlouva/36192945",
+          "zdroj_druh": "registr",
+          "muze_obsahovat_dodatky": false
         },
+        "vysoutezena": {
+          "bez_dph": 45678900.0,
+          "s_dph": 55271469.0
+        },
+        "ezak_smluvni": {
+          "bez_dph": 51382827.84,
+          "s_dph": 62173221.68
+        },
+        "ezak_url": "https://zakazky.mesto-trebon.cz/contract_display_883.html",
         "vazba_dodatku": "dolozeno",
         "dodatky": [
           {
@@ -2817,8 +3118,9 @@
         ],
         "chybi_dodatky": [],
         "obsahuje_dopocet_dph": false,
-        "cena_po_dodatcich": 57086755.68,
-        "cena_po_dodatcich_s_dph": 69074974.36,
+        "cena_po_dodatcich": 51382827.84,
+        "cena_po_dodatcich_s_dph": 62173221.68,
+        "souhlas_ezak": true,
         "dodatky_bez_dph": 5703927.84
       },
       {
@@ -2831,8 +3133,16 @@
           "bez_dph": 873000.0,
           "s_dph": 873000.0,
           "zdroj_id": "ezak-VZ-810",
-          "url": "https://zakazky.mesto-trebon.cz/contract_display_810.html"
+          "url": "https://zakazky.mesto-trebon.cz/contract_display_810.html",
+          "zdroj_druh": "smluvni_ezak",
+          "muze_obsahovat_dodatky": true
         },
+        "vysoutezena": null,
+        "ezak_smluvni": {
+          "bez_dph": 873000.0,
+          "s_dph": 873000.0
+        },
+        "ezak_url": "https://zakazky.mesto-trebon.cz/contract_display_810.html",
         "vazba_dodatku": "nase_propojeni",
         "dodatky": [
           {
@@ -2849,8 +3159,9 @@
         ],
         "chybi_dodatky": [],
         "obsahuje_dopocet_dph": false,
-        "cena_po_dodatcich": 929500.0,
-        "cena_po_dodatcich_s_dph": 929500.0,
+        "cena_po_dodatcich": null,
+        "cena_po_dodatcich_s_dph": null,
+        "souhlas_ezak": null,
         "dodatky_bez_dph": 56500.0
       },
       {
@@ -2871,6 +3182,7 @@
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 233000.0,
         "cena_po_dodatcich_s_dph": 281930.0,
+        "souhlas_ezak": null,
         "dodatky_bez_dph": null
       },
       {
@@ -2903,6 +3215,7 @@
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 275000.0,
         "cena_po_dodatcich_s_dph": 275000.0,
+        "souhlas_ezak": null,
         "dodatky_bez_dph": 35000.0
       },
       {
@@ -2935,6 +3248,7 @@
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 145067.0,
         "cena_po_dodatcich_s_dph": 175531.07,
+        "souhlas_ezak": null,
         "dodatky_bez_dph": 16167.0
       },
       {
@@ -2946,9 +3260,17 @@
         "puvodni": {
           "bez_dph": 1674348.0,
           "s_dph": 2025961.08,
-          "zdroj_id": "ezak-VZ-936",
-          "url": "https://zakazky.mesto-trebon.cz/contract_display_936.html"
+          "zdroj_id": "rs-38058173",
+          "url": "https://smlouvy.gov.cz/smlouva/38058173",
+          "zdroj_druh": "registr",
+          "muze_obsahovat_dodatky": false
         },
+        "vysoutezena": null,
+        "ezak_smluvni": {
+          "bez_dph": 1674348.0,
+          "s_dph": 2025961.08
+        },
+        "ezak_url": "https://zakazky.mesto-trebon.cz/contract_display_936.html",
         "vazba_dodatku": "nase_propojeni",
         "dodatky": [
           {
@@ -2978,6 +3300,7 @@
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 1870997.0,
         "cena_po_dodatcich_s_dph": 2263906.37,
+        "souhlas_ezak": false,
         "dodatky_bez_dph": 196649.0
       },
       {
@@ -2998,6 +3321,7 @@
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 310125.87,
         "cena_po_dodatcich_s_dph": 375252.3,
+        "souhlas_ezak": null,
         "dodatky_bez_dph": null
       },
       {
@@ -3018,6 +3342,7 @@
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 208817.0,
         "cena_po_dodatcich_s_dph": 252668.57,
+        "souhlas_ezak": null,
         "dodatky_bez_dph": null
       },
       {
@@ -3038,6 +3363,7 @@
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 75000.0,
         "cena_po_dodatcich_s_dph": 90750.0,
+        "souhlas_ezak": null,
         "dodatky_bez_dph": null
       }
     ],
@@ -3052,23 +3378,67 @@
         "jistota": "nase_propojeni"
       },
       "smluvni_bez_dph": {
-        "celkem": 55126018.71,
+        "celkem": 49422090.87,
         "druh": "smluvni",
         "s_dph": false,
         "mena": "CZK",
-        "po_dodatcich": 61134262.55,
-        "neuplne": [],
+        "po_dodatcich": null,
+        "neuplne": [
+          "projekt"
+        ],
         "jistota": "nase_propojeni"
       },
       "smluvni_s_dph": {
-        "celkem": 66468752.63,
+        "celkem": 59566999.95,
         "druh": "smluvni",
         "s_dph": true,
         "mena": "CZK",
-        "po_dodatcich": 73719512.67,
-        "neuplne": [],
+        "po_dodatcich": null,
+        "neuplne": [
+          "projekt"
+        ],
         "jistota": "nase_propojeni"
       },
+      "skladba_s_dph": [
+        {
+          "skupina": "stavba",
+          "nazev": "Stavba",
+          "casti": 1,
+          "castka": 62173221.68,
+          "nezname": [],
+          "druh": "smluvni",
+          "s_dph": true
+        },
+        {
+          "skupina": "priprava",
+          "nazev": "Projekt a výběrové řízení",
+          "casti": 3,
+          "castka": null,
+          "nezname": [
+            "projekt"
+          ],
+          "druh": "smluvni",
+          "s_dph": true
+        },
+        {
+          "skupina": "dozor",
+          "nazev": "Technický dozor a BOZP",
+          "casti": 2,
+          "castka": 450531.07,
+          "nezname": [],
+          "druh": "smluvni",
+          "s_dph": true
+        },
+        {
+          "skupina": "vybaveni",
+          "nazev": "Vybavení",
+          "casti": 3,
+          "castka": 2891827.24,
+          "nezname": [],
+          "druh": "smluvni",
+          "s_dph": true
+        }
+      ],
       "schvaleny": [
         {
           "rok": 2026,
@@ -3116,6 +3486,7 @@
                     "jednotka": "Kč"
                   }
                 ],
+                "nabidkova": [],
                 "zaplaceno": [
                   {
                     "obdobi": "2024",
@@ -3174,6 +3545,22 @@
                     "hodnota": 51382827.84,
                     "s_dph": false,
                     "druh": "smluvni",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
+                  }
+                ],
+                "nabidkova": [
+                  {
+                    "hodnota": 55271469.0,
+                    "s_dph": true,
+                    "druh": "nabidkova",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
+                  },
+                  {
+                    "hodnota": 45678900.0,
+                    "s_dph": false,
+                    "druh": "nabidkova",
                     "mena": "CZK",
                     "jednotka": "Kč"
                   }
@@ -3237,6 +3624,7 @@
                     "jednotka": "Kč"
                   }
                 ],
+                "nabidkova": [],
                 "zaplaceno": []
               }
             ],
@@ -3992,9 +4380,12 @@
         "typ": "soutez",
         "text": "Soutěž: Zpracování projektové dokumentace \"Ubytovací objekt sportovní haly Třeboň\"",
         "kategorie": "výběrové řízení",
-        "kratce": "projektová dokumentace, 1 nabídka",
+        "kratce": "projektová dokumentace, smlouva 9 dní po podání nabídek (vyhlášení zveřejněno až dodatečně), 1 nabídka",
         "lhuta_dni": null,
+        "rizeni_dni": null,
+        "po_nabidkach_dni": 9,
         "pocet_nabidek": 1,
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_810.html",
         "role": "projekt",
         "zdroj_id": "ezak-VZ-810",
         "jistota": "nase_propojeni"
@@ -4007,16 +4398,20 @@
         "text": "Administrace zadávacího řízení VZ Sportovní hala Třeboň - nástavba a přístavba ubytování",
         "role": "administrace",
         "zdroj_id": "rs-34688045",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/34688045"
       },
       {
         "datum": "2025-09-04",
         "typ": "soutez",
         "text": "Soutěž: Sportovní hala Třeboň - nástavba a přístavba ubytování",
         "kategorie": "výběrové řízení",
-        "kratce": "stavba, doba trvání 41 dní, 4 nabídky",
+        "kratce": "stavba, od vyhlášení do smlouvy 110 dní (lhůta pro nabídky 41 dní), 4 nabídky",
         "lhuta_dni": 41,
+        "rizeni_dni": 110,
+        "po_nabidkach_dni": 69,
         "pocet_nabidek": 4,
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_883.html",
         "role": "stavba",
         "zdroj_id": "ezak-VZ-883",
         "jistota": "nase_propojeni"
@@ -4029,7 +4424,8 @@
         "text": "Příkazní smlouva - Technický dozor stavebníka na akci Sportovní hala Třeboň - nástavba a přístavba ubytování",
         "role": "technicky_dozor",
         "zdroj_id": "rs-36157577",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/36157577"
       },
       {
         "datum": "2025-12-19",
@@ -4039,7 +4435,8 @@
         "text": "Příkazní smlouva - Koordinátor BOZP na akci Sportovní hala Třeboň - nástavba a přístavba ubytování",
         "role": "bozp",
         "zdroj_id": "rs-36156093",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/36156093"
       },
       {
         "datum": "2025-12-23",
@@ -4049,7 +4446,8 @@
         "text": "Sportovní hala Třeboň - nástavba a přístavba ubytování",
         "role": "stavba",
         "zdroj_id": "rs-36192945",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/36192945"
       },
       {
         "datum": "2026-01-29",
@@ -4059,7 +4457,8 @@
         "text": "Vypracování projektu interiéru akce Sportovní hala Třeboň - nástavba a přístavba ubytování",
         "role": "projekt",
         "zdroj_id": "rs-36589065",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/36589065"
       },
       {
         "datum": "2026-04-20",
@@ -4069,16 +4468,20 @@
         "text": "Sportovní hala Třeboň - nástavba a přístavba ubytování - dodatek č. 1",
         "role": "stavba",
         "zdroj_id": "rs-37638541",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/37638541"
       },
       {
         "datum": "2026-04-20",
         "typ": "soutez",
         "text": "Soutěž: Sportovní hala Třeboň - nástavba a přístavba ubytování - vybavení interiéru",
         "kategorie": "výběrové řízení",
-        "kratce": "vybavení, doba trvání 16 dní, 5 nabídek",
+        "kratce": "vybavení, od vyhlášení do smlouvy 31 dní (lhůta pro nabídky 16 dní), 5 nabídek",
         "lhuta_dni": 16,
+        "rizeni_dni": 31,
+        "po_nabidkach_dni": 15,
         "pocet_nabidek": 5,
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_936.html",
         "role": "vybaveni",
         "zdroj_id": "ezak-VZ-936",
         "jistota": "nase_propojeni"
@@ -4091,7 +4494,8 @@
         "text": "Sportovní hala Třeboň - nástavba a přístavba ubytování - vybavení interiéru",
         "role": "vybaveni",
         "zdroj_id": "rs-38058173",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/38058173"
       },
       {
         "datum": "2026-06-26",
@@ -4101,7 +4505,8 @@
         "text": "Sportovní hala Třeboň - nástavba a přístavba ubytování - Dodatek č. 2",
         "role": "stavba",
         "zdroj_id": "rs-38538892",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/38538892"
       },
       {
         "datum": "2026-08-28",
@@ -4111,7 +4516,8 @@
         "text": "Sportovní hala Třeboň - nástavba a přístavba ubytování - dodatek č. 3",
         "role": "stavba",
         "zdroj_id": "rs-39302679",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/39302679"
       },
       {
         "datum": "2026-09-09",
@@ -4121,6 +4527,8 @@
         "kratce": "schválení dodatku 4",
         "text_ai": true,
         "overeni": "overeno_kodem",
+        "usneseni_cislo": "RM 463/2026-110",
+        "url": "https://www.mesto-trebon.cz/uploads/news/id15037/Z-110-26-09-09-A.pdf#page=6",
         "zdroj_id": "rm-2026-j110-u463",
         "jistota": "nase_propojeni"
       },
@@ -4132,7 +4540,8 @@
         "text": "Sportovní hala Třeboň - nástavba a přístavba ubytování - dodatek č. 4",
         "role": "stavba",
         "zdroj_id": "rs-39520809",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/39520809"
       },
       {
         "datum": "2026-09-16",
@@ -4142,7 +4551,8 @@
         "text": "Sportovní hala Třeboň - nástavba a přístavba ubytování - dodávka televizorů",
         "role": "vybaveni",
         "zdroj_id": "rs-39574269",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/39574269"
       },
       {
         "datum": "2026-09-23",
@@ -4153,7 +4563,9 @@
         "zmena": -53000.0,
         "polozka": "Ubytování sportovní hala - vybavení",
         "zdroj_id": "rm-2026-j111-u493-p1",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "usneseni_cislo": "RM 493/2026-111",
+        "url": "https://www.mesto-trebon.cz/uploads/news/id15072/Z-111-26-09-23-A.pdf#page=8"
       },
       {
         "datum": "2026-09-23",
@@ -4163,6 +4575,8 @@
         "kratce": "schválení dodatku 1",
         "text_ai": true,
         "overeni": "overeno_kodem",
+        "usneseni_cislo": "RM 491/2026-111",
+        "url": "https://www.mesto-trebon.cz/uploads/news/id15072/Z-111-26-09-23-A.pdf#page=7",
         "zdroj_id": "rm-2026-j111-u491",
         "jistota": "nase_propojeni"
       },
@@ -4174,7 +4588,8 @@
         "text": "Sportovní hala Třeboň - nástavba a přístavba ubytování - vybavení interiéru - dodatek č. 1",
         "role": "vybaveni",
         "zdroj_id": "rs-39899189",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/39899189"
       },
       {
         "datum": "2026-09-30",
@@ -4184,7 +4599,8 @@
         "text": "Příkazní smlouva - Technický dozor stavebníka na akci Sportovní hala Třeboň - nástavba a přístavba ubytování - dodatek č. 1",
         "role": "technicky_dozor",
         "zdroj_id": "rs-39725413",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/39725413"
       },
       {
         "datum": "2026-10-01",
@@ -4194,7 +4610,8 @@
         "text": "Příkazní smlouva - Koordinátor BOZP na akci Sportovní hala Třeboň - nástavba a přístavba ubytování - dodatek č. 1",
         "role": "bozp",
         "zdroj_id": "rs-39748681",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/39748681"
       },
       {
         "datum": "2026-10-21",
@@ -4205,7 +4622,9 @@
         "zmena": 1165000.0,
         "polozka": "Ubytování sportovní hala",
         "zdroj_id": "rm-2026-j113-u527-p2",
-        "jistota": "dolozeno"
+        "jistota": "dolozeno",
+        "usneseni_cislo": "RM 527/2026-113",
+        "url": "https://www.mesto-trebon.cz/uploads/news/id15164/Z-113-26-10-21-A.pdf#page=8"
       },
       {
         "datum": "2026-10-21",
@@ -4215,6 +4634,8 @@
         "kratce": "schválení dodatku 2",
         "text_ai": true,
         "overeni": "overeno_kodem",
+        "usneseni_cislo": "RM 530/2026-113",
+        "url": "https://www.mesto-trebon.cz/uploads/news/id15164/Z-113-26-10-21-A.pdf#page=9",
         "zdroj_id": "rm-2026-j113-u530",
         "jistota": "nase_propojeni"
       },
@@ -4226,7 +4647,8 @@
         "text": "Sportovní hala Třeboň - nástavba a přístavba ubytování - dodatek č. 5",
         "role": "stavba",
         "zdroj_id": "rs-40101957",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/40101957"
       },
       {
         "datum": "2026-10-23",
@@ -4236,7 +4658,8 @@
         "text": "Dodávka vybavení posilovny v objektu ubytování sportovní haly Třeboň dle nabídky z 09.10.2026 vč. dopravy",
         "role": "vybaveni",
         "zdroj_id": "rs-40060341",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/40060341"
       },
       {
         "datum": "2026-10-27",
@@ -4246,7 +4669,8 @@
         "text": "Zpracování projektové dokumentace - Ubytovací objekt sportovní haly, Třeboň - dodatek č. 1",
         "role": "projekt",
         "zdroj_id": "rs-40117957",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/40117957"
       },
       {
         "datum": "2026-10-27",
@@ -4256,7 +4680,8 @@
         "text": "Sportovní hala Třeboň - nástavba a přístavba ubytování - vybavení interiéru - dodatek č. 2",
         "role": "vybaveni",
         "zdroj_id": "rs-40117365",
-        "jistota": "nase_propojeni"
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/40117365"
       }
     ],
     "posledni_udalost": {
@@ -4267,7 +4692,8 @@
       "text": "Sportovní hala Třeboň - nástavba a přístavba ubytování - vybavení interiéru - dodatek č. 2",
       "role": "vybaveni",
       "zdroj_id": "rs-40117365",
-      "jistota": "nase_propojeni"
+      "jistota": "nase_propojeni",
+      "url": "https://smlouvy.gov.cz/smlouva/40117365"
     }
   }
 ]

@@ -106,15 +106,22 @@ def _odpovida(text: str, projekt: dict) -> bool:
     return any(re.search(x, text, re.I) for x in v.get("hledat") or [])
 
 
-def _smluvni(castky: list[dict]) -> list[dict]:
+def _smluvni(castky: list[dict], druh: str = "smluvni") -> list[dict]:
     return [{"hodnota": c["hodnota"], "s_dph": c.get("s_dph"), "druh": c.get("druh", "smluvni"),
              "mena": c.get("mena", "CZK"), "jednotka": c.get("jednotka", "Kč")}
-            for c in castky if c.get("druh", "smluvni") == "smluvni"]
+            for c in castky if c.get("druh", "smluvni") == druh]
 
 
 def sestav_projekt(p: dict, data: dict) -> dict:
     datum_jednani = {j["id"]: j["datum"] for j in data["jednani"]}
     usneseni = {u["id"]: u for u in data["usneseni"]}
+    url_dokumentu = {j["dokument"]["dokument_id"]: j["dokument"]["url"] for j in data["jednani"] if j.get("dokument")}
+
+    def odkaz_zapisu(citace: dict | None) -> str | None:
+        """Odkaz na zápis (PDF) se stranou, kde je usnesení – „#page=N“ otevře prohlížeč na té straně."""
+        url = url_dokumentu.get((citace or {}).get("dokument_id"))
+        strany = (citace or {}).get("strany") or []
+        return f"{url}#page={strany[0]}" if url and strany else url
     orgy = set((p.get("rozpocet") or {}).get("org") or [])
     nazvy = set((p.get("rozpocet") or {}).get("nazvy") or [])
     udalosti = []
@@ -143,7 +150,8 @@ def sestav_projekt(p: dict, data: dict) -> dict:
         udalosti.append({"datum": datum, "typ": "rozpocet", "text": f"Rozpočtové opatření č. {r['cislo_ro']}",
                          "kategorie": "rozpočet",
                          "kratce": ("navýšení" if r["zmena"] > 0 else "snížení") + f" (opatření č. {r['cislo_ro']})",
-                         "zmena": r["zmena"], "polozka": r["nazev"], "zdroj_id": r["id"], "jistota": jistota})
+                         "zmena": r["zmena"], "polozka": r["nazev"], "zdroj_id": r["id"], "jistota": jistota,
+                         "usneseni_cislo": r.get("usneseni_cislo"), "url": odkaz_zapisu(r.get("citace"))})
     for pol in polozky.values():
         pol["zmeny"].sort(key=lambda z: (z["datum"] or "", z["cislo_ro"]))
         posledni = next((z["rozpocet"] for z in reversed(pol["zmeny"]) if z["rozpocet"]), None)
@@ -159,6 +167,7 @@ def sestav_projekt(p: dict, data: dict) -> dict:
         casti = []
         for c in z["casti"]:
             vitezove = [{"nazev": v["nazev"], "jmeno_podnikatele": v.get("jmeno_podnikatele"), "smluvni": _smluvni(v["castky"]),
+                         "nabidkova": _smluvni(v["castky"], "nabidkova"),
                          "zaplaceno": [{"obdobi": k["obdobi"], "hodnota": k["hodnota"], "s_dph": k.get("s_dph")}
                                        for k in v["castky"] if k.get("druh") == "zaplaceno"]}
                         for v in c["vitezove"]]
@@ -166,22 +175,34 @@ def sestav_projekt(p: dict, data: dict) -> dict:
                           "datum_uverejneni": c["datum_uverejneni"],
                           "datum_uzavreni_smlouvy": c["datum_uzavreni_smlouvy"], "vitezove": vitezove,
                           "registr_smluv": c.get("registr_smluv", [])})
-            if c["datum_uverejneni"]:
-                # malé zakázky E-ZAK často zveřejní až po skončení soutěže (uveřejnění po lhůtě pro nabídky):
-                # pak je datem události konec lhůty a doba trvání se neuvádí
-                lhuta = dni_mezi(c["datum_uverejneni"], c.get("lhuta_nabidek"))
-                if lhuta is not None and lhuta < 0:
-                    lhuta, datum_soutez = None, c.get("lhuta_nabidek")
-                else:
-                    datum_soutez = c["datum_uverejneni"]
+            if c["datum_uverejneni"] or c.get("lhuta_nabidek"):
+                # Délka výběrového řízení (#136): od zveřejnění do podpisu smlouvy. Malé zakázky E-ZAK často
+                # zveřejní až po skončení soutěže (uveřejnění po lhůtě pro nabídky) – začátek pak neznáme
+                # a uvádí se jen doba od konce lhůty pro nabídky do smlouvy.
+                lhuta_konec, smlouva_ = c.get("lhuta_nabidek"), c.get("datum_uzavreni_smlouvy")
+                zacatek = c["datum_uverejneni"]
+                if zacatek and lhuta_konec and dni_mezi(zacatek, lhuta_konec) < 0:
+                    zacatek = None
+                lhuta = dni_mezi(zacatek, lhuta_konec) if zacatek else None
+                rizeni = dni_mezi(zacatek, smlouva_) if zacatek else None
+                po_nabidkach = dni_mezi(lhuta_konec, smlouva_)
+                datum_soutez = zacatek or lhuta_konec
                 predmet = "stavba" if r_ == "stavba" else kratky_popis(r_, z["nazev"])
                 n = c.get("pocet_nabidek")
                 nabidky = (f"{n} nabídka" if n == 1 else f"{n} nabídky" if 2 <= n <= 4 else f"{n} nabídek") if n else None
+                if rizeni is not None:
+                    doba = f"od vyhlášení do smlouvy {rizeni} dní" + (f" (lhůta pro nabídky {lhuta} dní)" if lhuta else "")
+                elif lhuta is not None:
+                    doba = f"lhůta pro nabídky {lhuta} dní, smlouva zatím není"
+                elif po_nabidkach is not None:
+                    doba = f"smlouva {po_nabidkach} dní po podání nabídek (vyhlášení zveřejněno až dodatečně)"
+                else:
+                    doba = None
                 udalosti.append({"datum": datum_soutez, "typ": "soutez", "text": f"Soutěž: {z['nazev']}",
                                  "kategorie": "výběrové řízení",
-                                 "kratce": ", ".join(x for x in [predmet, f"doba trvání {lhuta} dní" if lhuta else None,
-                                                                 nabidky] if x),
-                                 "lhuta_dni": lhuta, "pocet_nabidek": n,
+                                 "kratce": ", ".join(x for x in [predmet, doba, nabidky] if x),
+                                 "lhuta_dni": lhuta, "rizeni_dni": rizeni, "po_nabidkach_dni": po_nabidkach,
+                                 "pocet_nabidek": n, "url": z["url"],
                                  "role": r_, "zdroj_id": z["id"], "jistota": "nase_propojeni"})
         zakazky.append({"id": z["id"], "nazev": z["nazev"], "role": r_, "stav": z["stav"],
                         "url": z["url"], "casti": casti, "jistota": "nase_propojeni"})
@@ -212,7 +233,7 @@ def sestav_projekt(p: dict, data: dict) -> dict:
                         "jistota": jistota})
         udalosti.append({"datum": s["datum_uzavreni"], "typ": "dodatek" if m else "smlouva",
                          "kategorie": "smlouva", "kratce": kratky_popis(r_, s["predmet"], int(m[1]) if m else None),
-                         "text": s["predmet"], "role": r_, "zdroj_id": s["id"], "jistota": jistota})
+                         "text": s["predmet"], "role": r_, "zdroj_id": s["id"], "jistota": jistota, "url": s["url"]})
 
     # usnesení
     vazane = []
@@ -232,6 +253,7 @@ def sestav_projekt(p: dict, data: dict) -> dict:
                              "kategorie": "rada" if u["id"].startswith("rm-") else "zastupitelstvo",
                              "kratce": kratce_usneseni(u),
                              "text_ai": u.get("tema_ai"), "overeni": u.get("overeni"),
+                             "usneseni_cislo": u["cislo"], "url": odkaz_zapisu(u.get("citace")),
                              "zdroj_id": u["id"], "jistota": jistota})
 
     schvaleny_nazvy = set((p.get("rozpocet") or {}).get("schvaleny") or [])
@@ -239,12 +261,26 @@ def sestav_projekt(p: dict, data: dict) -> dict:
                   "jistota": "nase_propojeni"}
                  for r in data.get("rozpocet", []) if r["nazev"] in schvaleny_nazvy]
 
+    # Dokončení stavby (#136): kolaudace / předání není v žádném strojově čteném zdroji, proto ho zapisuje
+    # člověk do YAML s dokladem ({datum, popis, url}). Doplacení = E-ZAK „ukončeno plnění“ u zakázky na stavbu
+    # (zadavatel tím uzavírá smlouvu a zveřejňuje skutečně uhrazenou cenu) – jiná událost než dokončení.
+    dokonceni = p.get("dokonceni")
+    if dokonceni:
+        udalosti.append({"datum": str(dokonceni["datum"]), "typ": "dokonceni", "kategorie": "dokončení",
+                         "kratce": dokonceni.get("popis") or "stavba dokončena", "text": dokonceni.get("popis") or "",
+                         "url": dokonceni.get("url"), "zdroj_id": None, "jistota": "dolozeno"})
+    stavby_ = [z for z in zakazky if z["role"] == "stavba"]
+    doplaceno = bool(stavby_) and all(c["stav"] == "ukončeno plnění" for z in stavby_ for c in z["casti"])
+
     udalosti.sort(key=lambda e: (e["datum"] or "", e["typ"]))
     rozpocet = sorted(polozky.values(), key=lambda x: (not x["kapitalova"], x["nazev"]))
     return {
         "id": p["id"], "nazev": p["nazev"], "popis": p.get("popis"), "oblast": p.get("oblast"),
         "druh": p.get("druh"), "vlastnik_subjekt_id": p.get("vlastnik_subjekt_id"),
-        "faze": faze(zakazky, smlouvy), "faze_jistota": "nase_propojeni",
+        "faze": "dokonceno" if dokonceni else faze(zakazky, smlouvy),
+        "faze_jistota": "dolozeno" if dokonceni else "nase_propojeni",
+        "dokonceni": dokonceni,
+        "doplaceno": doplaceno,
         "rozpocet": rozpocet,
         "schvaleny_rozpocet": schvaleny,
         "casti": (casti := casti_akce(zakazky, smlouvy, dodatky_jen_termin(data["usneseni"]))),
@@ -302,7 +338,29 @@ def souhrn(rozpocet: list[dict], casti: list[dict]) -> dict:
                  if po_s and len(po_s) == len(casti) else None,
                  "neuplne": [c["role"] for c in casti if c.get("cena_po_dodatcich_s_dph") is None],
                  "jistota": "nase_propojeni"}
-    return {"rozpocet": rozpocet_souhrn, "smluvni_bez_dph": smluvni, "smluvni_s_dph": smluvni_s}
+    return {"rozpocet": rozpocet_souhrn, "smluvni_bez_dph": smluvni, "smluvni_s_dph": smluvni_s,
+            "skladba_s_dph": skladba(casti)}
+
+
+SKUPINY = [("stavba", "Stavba", ("stavba",)),
+           ("priprava", "Projekt a výběrové řízení", ("projekt", "administrace")),
+           ("dozor", "Technický dozor a BOZP", ("technicky_dozor", "bozp")),
+           ("vybaveni", "Vybavení", ("vybaveni",))]
+
+
+def skladba(casti: list[dict]) -> list[dict]:
+    """Cena akce po skupinách (#136), s DPH po dodatcích (druh smluvni). Skupina bez známé ceny všech částí
+    má `castka` null a seznam chybějících rolí; skupiny se sčítají až na kartě, jen když jsou všechny známé."""
+    vysledek = []
+    for klic, nazev, role_ in SKUPINY:
+        cc = [c for c in casti if c["role"] in role_]
+        if not cc:
+            continue
+        nezname = [c["role"] for c in cc if c.get("cena_po_dodatcich_s_dph") is None]
+        vysledek.append({"skupina": klic, "nazev": nazev, "casti": len(cc),
+                         "castka": None if nezname else sum(_halere(c["cena_po_dodatcich_s_dph"]) for c in cc) / 100,
+                         "nezname": nezname, "druh": "smluvni", "s_dph": True})
+    return vysledek
 
 
 def souhrn_schvaleny(schvaleny: list[dict]) -> list[dict]:
@@ -431,24 +489,36 @@ def casti_akce(zakazky: list[dict], smlouvy: list[dict], jen_termin: dict[str, s
                         # jen když skupina nemá známého jiného dodavatele (např. jen anonymní strany)
                         klic, jistota = stejne[0], "nase_propojeni"
                 g = volne.pop(klic) if klic else {"puvodni": None, "dodatky": []}
-                cena, cena_s, zdroj = _bez_dph(v["smluvni"]), _s_dph(v["smluvni"]), {"zdroj_id": z["id"], "url": z["url"]}
-                zdroj_s = None
+                # Původní cena (#136): smluvní cena v E-ZAK se po dodatcích přepisuje („Cena po dodatku č. 5“),
+                # proto přednost má podepsaná smlouva z registru, pak nabídková cena vítěze z E-ZAK a teprve
+                # nakonec smluvní cena z E-ZAK (jen bez dodatků, jinak by se dodatky započetly dvakrát).
+                ezak = {"zdroj_id": z["id"], "url": z["url"]}
+                kandidati = []
                 if g["puvodni"]:
-                    reg = {"zdroj_id": g["puvodni"]["id"], "url": g["puvodni"]["url"]}
-                    reg_bez, reg_s = _bez_dph(g["puvodni"]["castky"]), _s_dph(g["puvodni"]["castky"])
-                    # každý základ DPH se doplňuje z registru zvlášť; druhý známý údaj se nepřepisuje
-                    if cena is None and reg_bez is not None:
-                        cena, zdroj = reg_bez, reg
-                        if cena_s is not None:
-                            zdroj_s = {"zdroj_id": z["id"], "url": z["url"]}
-                    if cena_s is None and reg_s is not None:
-                        cena_s = reg_s
-                        if cena is not None and zdroj is not reg:
-                            zdroj_s = reg
+                    kandidati.append((_bez_dph(g["puvodni"]["castky"]), _s_dph(g["puvodni"]["castky"]),
+                                      {"zdroj_id": g["puvodni"]["id"], "url": g["puvodni"]["url"]}, "registr"))
+                kandidati.append((_bez_dph(v.get("nabidkova", [])), _s_dph(v.get("nabidkova", [])), ezak, "nabidka"))
+                kandidati.append((_bez_dph(v["smluvni"]), _s_dph(v["smluvni"]), ezak, "smluvni_ezak"))
+                cena = cena_s = zdroj = zdroj_s = druh_zdroje = None
+                for bez, s_, zdr, druh_ in kandidati:      # každý základ DPH z prvního zdroje, který ho má
+                    if cena is None and bez is not None:
+                        cena, zdroj, druh_zdroje = bez, zdr, druh_
+                    if cena_s is None and s_ is not None:
+                        cena_s, zdroj_s = s_, zdr
+                        druh_zdroje = druh_zdroje or druh_
+                zdroj = zdroj or zdroj_s or ezak
+                if zdroj_s == zdroj:
+                    zdroj_s = None
+                ezak_akt = {"bez_dph": _bez_dph(v["smluvni"]), "s_dph": _s_dph(v["smluvni"])}
+                nabidka = {"bez_dph": _bez_dph(v.get("nabidkova", [])), "s_dph": _s_dph(v.get("nabidkova", []))}
                 casti.append({"role": z["role"], "dodavatel": {"nazev": v["nazev"],
                                                                "jmeno_podnikatele": v.get("jmeno_podnikatele")},
-                              "puvodni": {"bez_dph": cena, "s_dph": cena_s, **zdroj,
+                              "puvodni": {"bez_dph": cena, "s_dph": cena_s, **zdroj, "zdroj_druh": druh_zdroje,
+                                          # smluvní cena E-ZAK u smlouvy s dodatky může už dodatky obsahovat
+                                          "muze_obsahovat_dodatky": druh_zdroje == "smluvni_ezak" and bool(g["dodatky"]),
                                           **({"zdroj_s_dph": zdroj_s} if zdroj_s else {})},
+                              "vysoutezena": nabidka if any(x is not None for x in nabidka.values()) else None,
+                              "ezak_smluvni": ezak_akt, "ezak_url": z["url"],
                               "dodatky_smlouvy": g["dodatky"], "vazba_dodatku": jistota})
     for g in volne.values():
         p_ = g["puvodni"]
@@ -474,10 +544,16 @@ def casti_akce(zakazky: list[dict], smlouvy: list[dict], jen_termin: dict[str, s
         # dodatek bez částky v registru = změna ceny neznámá (kromě dodatku jen o termínu podle usnesení)
         c["obsahuje_dopocet_dph"] = any(x and x.get("s_dph_dopocteno") for x in [c["puvodni"]] + c["dodatky"])
         for klic, pole in (("cena_po_dodatcich", "bez_dph"), ("cena_po_dodatcich_s_dph", "s_dph")):
-            zaklad = c["puvodni"][pole] if c["puvodni"] else None
+            zaklad = c["puvodni"][pole] if c["puvodni"] and not c["puvodni"].get("muze_obsahovat_dodatky") else None
             znam = all(d[pole] is not None for d in c["dodatky"])
             c[klic] = ((_halere(zaklad) + sum(_halere(d[pole]) for d in c["dodatky"])) / 100
                        if zaklad is not None and not c["chybi_dodatky"] and znam else None)
+        # kontrola: E-ZAK uvádí smluvní cenu po dodatcích – shoduje se s naším součtem?
+        ea = c.get("ezak_smluvni") or {}
+        porovnani = [(ea.get(z), c[k]) for z, k in (("bez_dph", "cena_po_dodatcich"), ("s_dph", "cena_po_dodatcich_s_dph"))
+                     if ea.get(z) is not None and c[k] is not None]
+        c["souhlas_ezak"] = (None if not c["dodatky"] or not porovnani
+                             else all(abs(_halere(a) - _halere(b)) <= 100 for a, b in porovnani))
         c["dodatky_bez_dph"] = (sum(_halere(d["bez_dph"]) for d in c["dodatky"] if d["bez_dph"] is not None) / 100
                                 if any(d["bez_dph"] is not None for d in c["dodatky"]) else None)
     poradi = ["stavba", "projekt", "technicky_dozor", "bozp", "vybaveni", "administrace"]
