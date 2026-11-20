@@ -80,7 +80,7 @@ Mezery se na webu uvádějí výslovně, nedoplňují se odhadem.
 3. **Částky se nesčítají napříč druhy**: odhad, schválený a upravený rozpočet, předpokládaná hodnota, vysoutěžená cena, smluvní cena, dodatky, zaplaceno, dotace (přislíbená/přijatá). Vždy s DPH / bez DPH / neuvedeno.
 4. **AI nepočítá čísla.** Opisuje je s citací; výpočty dělá testovaný kód.
 5. **Kontrola AI výstupů**: model A navrhne s citací → skript ověří doslovnou shodu citace se zdrojem → model B (jiný výrobce) nezávisle posoudí → Ondřej schválí zveřejnění. AI výstupy jsou označené.
-6. **Osobní údaje**: fyzické osoby anonymizovat. Volení zástupci jménem, úředníci funkcí. Totéž platí pro podněty z mapy (bez jmen a kontaktů podatelů).
+6. **Osobní údaje**: fyzické osoby anonymizovat. Volení zástupci jménem, úředníci funkcí. Výjimka (rozhodnutí 20. 11. 2026, #93): podnikající fyzická osoba (s IČO), která je dodavatelem města (příjemce plnění ve smlouvě v registru, vítěz zakázky v E-ZAK), se uvádí jménem tak, jak je ve zdroji – bez IČO a adresy. Má být vidět, kdo akci projektoval, dozoroval a co dodal. Ostatní fyzické osoby (nájemci, dárci, osoby bez IČO) zůstávají anonymní. Totéž platí pro podněty z mapy (bez jmen a kontaktů podatelů).
 7. **Interní zdroje** (GINIS, neveřejné podklady) se do repozitáře ani do AI nástrojů nevkládají; nejvýš slouží k ručnímu ověření. Zveřejňuje se jen to, co je veřejně dostupné nebo zákonně zveřejnitelné.
 8. **Neutrální jazyk** v datových sekcích; hodnocení jen v podepsaných analýzách.
 

@@ -81,6 +81,7 @@
             "nazev": "VSV Tech s.r.o.",
             "ico": "17295041",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -140,6 +141,7 @@
             "nazev": "A-Z eko ateliér s.r.o.",
             "ico": "05097681",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -257,6 +259,7 @@
             "nazev": "fyzická osoba",
             "ico": null,
             "fyzicka_osoba": true,
+            "jmeno_podnikatele": "Jiří Jokl",
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -316,6 +319,7 @@
             "nazev": "K - BUILDING CB, a.s.",
             "ico": "26105594",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -375,6 +379,7 @@
             "nazev": "Onlio, a.s.",
             "ico": "26194813",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -464,6 +469,7 @@
             "nazev": "BTL zdravotnická technika, a.s.",
             "ico": "26884143",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -508,6 +514,7 @@
             "nazev": "Proormedent s.r.o.",
             "ico": "28223951",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -574,6 +581,7 @@
             "nazev": "BTL zdravotnická technika, a.s.",
             "ico": "26884143",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -618,6 +626,7 @@
             "nazev": "MADISSON, s.r.o.",
             "ico": "26124637",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -675,6 +684,7 @@
             "nazev": "MADISSON, s.r.o.",
             "ico": "26124637",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -734,6 +744,7 @@
             "nazev": "VKB stavby s.r.o.",
             "ico": "02192012",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -821,6 +832,7 @@
             "nazev": "VSV Tech s.r.o.",
             "ico": "17295041",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -882,6 +894,7 @@
             "nazev": "KSP Computer & Services, s.r.o.",
             "ico": "27875849",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": []
           },
@@ -889,6 +902,7 @@
             "nazev": "HESPERIA s.r.o.",
             "ico": "25166573",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": []
           },
@@ -896,6 +910,7 @@
             "nazev": "craftsys s.r.o.",
             "ico": "29446856",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": []
           }
@@ -932,6 +947,7 @@
             "nazev": "SANTAL spol. s r. o.",
             "ico": "42408121",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -991,6 +1007,7 @@
             "nazev": "Stavební firma HUKO s.r.o.",
             "ico": "25174533",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -1078,6 +1095,7 @@
             "nazev": "ZKM CB s.r.o.",
             "ico": "26046440",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -1137,6 +1155,7 @@
             "nazev": "TranSoft a.s.",
             "ico": "15770281",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -1218,6 +1237,7 @@
             "nazev": "JPS J. Hradec s.r.o.",
             "ico": "26035138",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -1277,6 +1297,7 @@
             "nazev": "PAMÁTKY TÁBOR, s.r.o.",
             "ico": "44797958",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -1386,6 +1407,7 @@
             "nazev": "Artspect, a.s.",
             "ico": "28123395",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -1445,6 +1467,7 @@
             "nazev": "VKB stavby s.r.o.",
             "ico": "02192012",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -1504,6 +1527,7 @@
             "nazev": "New Logic Studio s.r.o.",
             "ico": "24202207",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -1585,6 +1609,7 @@
             "nazev": "ZEBRA STUDIO s. r. o.",
             "ico": "52158349",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -1700,6 +1725,7 @@
             "nazev": "GARTENSTA PLUS s.r.o.",
             "ico": "26689472",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -1784,6 +1810,7 @@
             "nazev": "Intersystem EU s.r.o.",
             "ico": "46186123",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -1897,6 +1924,7 @@
             "nazev": "ABUCO ICT s.r.o.",
             "ico": "29153905",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -1956,6 +1984,7 @@
             "nazev": "VIAVIS a.s.",
             "ico": "25848402",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -2022,6 +2051,7 @@
             "nazev": "fyzická osoba",
             "ico": null,
             "fyzicka_osoba": true,
+            "jmeno_podnikatele": "Karel Vávře",
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -2103,6 +2133,7 @@
             "nazev": "IPD-MYŠY s.r.o.",
             "ico": "26094312",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -2162,6 +2193,7 @@
             "nazev": "Montela s.r.o.",
             "ico": "14503026",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -2243,6 +2275,7 @@
             "nazev": "JIPAMA s.r.o.",
             "ico": "25159224",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -2352,6 +2385,7 @@
             "nazev": "K - BUILDING CB, a.s.",
             "ico": "26105594",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -2411,6 +2445,7 @@
             "nazev": "Metrostav CZ s.r.o.",
             "ico": "25021915",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -2498,6 +2533,7 @@
             "nazev": "MANE STAVEBNÍ s.r.o.",
             "ico": "47239701",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -2564,6 +2600,7 @@
             "nazev": "Nextis Services s.r.o.",
             "ico": "29385920",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -2651,6 +2688,7 @@
             "nazev": "fyzická osoba",
             "ico": null,
             "fyzicka_osoba": true,
+            "jmeno_podnikatele": "Ing. David Zána",
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -2732,6 +2770,7 @@
             "nazev": "DATASYS s.r.o.",
             "ico": "61249157",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -2813,6 +2852,7 @@
             "nazev": "Renostav Třeboň s.r.o.",
             "ico": "11774258",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -2894,6 +2934,7 @@
             "nazev": "SYSTHERM s.r.o.",
             "ico": "64830454",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -2975,6 +3016,7 @@
             "nazev": "Retherm s.r.o.",
             "ico": "26086344",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -3063,6 +3105,7 @@
             "nazev": "VKB stavby s.r.o.",
             "ico": "02192012",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -3150,6 +3193,7 @@
             "nazev": "Metrostav CZ s.r.o.",
             "ico": "25021915",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -3231,6 +3275,7 @@
             "nazev": "fyzická osoba",
             "ico": null,
             "fyzicka_osoba": true,
+            "jmeno_podnikatele": "Ing. Josef Kregl",
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -3312,6 +3357,7 @@
             "nazev": "EUROVIA CZ a.s.",
             "ico": "45274924",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -3397,6 +3443,7 @@
             "nazev": "SAFE TREES, s.r.o.",
             "ico": "26935287",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -3500,6 +3547,7 @@
             "nazev": "EUROVIA CZ a.s.",
             "ico": "45274924",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -3585,6 +3633,7 @@
             "nazev": "VIDOX s.r.o.",
             "ico": "25160168",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -3670,6 +3719,7 @@
             "nazev": "fyzická osoba",
             "ico": null,
             "fyzicka_osoba": true,
+            "jmeno_podnikatele": "Jiří Jokl",
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -3751,6 +3801,7 @@
             "nazev": "Edenred CZ s.r.o.",
             "ico": "24745391",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -3821,6 +3872,7 @@
             "nazev": "Stavební firma HUKO s.r.o.",
             "ico": "25174533",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -3907,6 +3959,7 @@
             "nazev": "fyzická osoba",
             "ico": null,
             "fyzicka_osoba": true,
+            "jmeno_podnikatele": "Zdeněk Novotný",
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -4012,6 +4065,7 @@
             "nazev": "VIDOX s.r.o.",
             "ico": "25160168",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -4096,6 +4150,7 @@
             "nazev": "INVENTE, s.r.o.",
             "ico": "25171232",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -4177,6 +4232,7 @@
             "nazev": "KOSTKA JH s.r.o.",
             "ico": "63908701",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -4258,6 +4314,7 @@
             "nazev": "ANETE spol. s r.o.",
             "ico": "46970126",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -4317,6 +4374,7 @@
             "nazev": "Stavební firma HUKO s.r.o.",
             "ico": "25174533",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -4420,6 +4478,7 @@
             "nazev": "A-Z eko ateliér s.r.o.",
             "ico": "05097681",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -4501,6 +4560,7 @@
             "nazev": "VKB stavby s.r.o.",
             "ico": "02192012",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -4585,6 +4645,7 @@
             "nazev": "WAY PROJECT s.r.o.",
             "ico": "63906601",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -4688,6 +4749,7 @@
             "nazev": "fyzická osoba",
             "ico": null,
             "fyzicka_osoba": true,
+            "jmeno_podnikatele": "Ing. Josef Kregl",
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -4791,6 +4853,7 @@
             "nazev": "A-Z eko ateliér s.r.o.",
             "ico": "05097681",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -4894,6 +4957,7 @@
             "nazev": "GARTENSTA PLUS s.r.o.",
             "ico": "26689472",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -5044,6 +5108,7 @@
             "nazev": "fyzická osoba",
             "ico": null,
             "fyzicka_osoba": true,
+            "jmeno_podnikatele": "D-EDGE, odštěpný závod",
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -5147,6 +5212,7 @@
             "nazev": "Ateliér Za Mák s.r.o.",
             "ico": "09823328",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -5252,6 +5318,7 @@
             "nazev": "AQUASYS spol. s r.o.",
             "ico": "25344447",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -5363,6 +5430,7 @@
             "nazev": "HOCHTIEF CZ a. s.",
             "ico": "46678468",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -5477,6 +5545,7 @@
             "nazev": "WAY PROJECT s.r.o.",
             "ico": "63906601",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -5580,6 +5649,7 @@
             "nazev": "WAY PROJECT s.r.o.",
             "ico": "63906601",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -5705,6 +5775,7 @@
             "nazev": "JPS J. Hradec s.r.o.",
             "ico": "26035138",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -5830,6 +5901,7 @@
             "nazev": "AFRY CZ s.r.o.",
             "ico": "45306605",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -5955,6 +6027,7 @@
             "nazev": "WAY PROJECT s.r.o.",
             "ico": "63906601",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -6080,6 +6153,7 @@
             "nazev": "Energy Consulting Service, s.r.o.",
             "ico": "28062868",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -6205,6 +6279,7 @@
             "nazev": "VELA CZECH, s.r.o.",
             "ico": "26819643",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -6286,6 +6361,7 @@
             "nazev": "system boost s.r.o.",
             "ico": "04641574",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -6389,6 +6465,7 @@
             "nazev": "CS AUDIT s.r.o.",
             "ico": "05838762",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -6536,6 +6613,7 @@
             "nazev": "Vodohospodářský rozvoj a výstavba a.s.",
             "ico": "47116901",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -6661,6 +6739,7 @@
             "nazev": "fyzická osoba",
             "ico": null,
             "fyzicka_osoba": true,
+            "jmeno_podnikatele": "Ing. Josef Kregl",
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -6786,6 +6865,7 @@
             "nazev": "LAURYN s.r.o.",
             "ico": "60113685",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -6867,6 +6947,7 @@
             "nazev": "INVENTE, s.r.o.",
             "ico": "25171232",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -6992,6 +7073,7 @@
             "nazev": "JIPAMA s.r.o.",
             "ico": "25159224",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -7121,6 +7203,7 @@
             "nazev": "Pražská plynárenská, a.s.",
             "ico": "60193492",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -7202,6 +7285,7 @@
             "nazev": "Pražská plynárenská, a.s.",
             "ico": "60193492",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -7283,6 +7367,7 @@
             "nazev": "Gastro Hygiena CB s.r.o.",
             "ico": "28100051",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -7364,6 +7449,7 @@
             "nazev": "system boost s.r.o.",
             "ico": "04641574",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -7467,6 +7553,7 @@
             "nazev": "Road M.A.A.T., s.r.o.",
             "ico": "04326083",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -7614,6 +7701,7 @@
             "nazev": "Střechy Říha s.r.o.",
             "ico": "10820639",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -7658,6 +7746,7 @@
             "nazev": "Střechy Říha s.r.o.",
             "ico": "10820639",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -7702,6 +7791,7 @@
             "nazev": "Střechy Říha s.r.o.",
             "ico": "10820639",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -7746,6 +7836,7 @@
             "nazev": "Střechy Říha s.r.o.",
             "ico": "10820639",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -7805,6 +7896,7 @@
             "nazev": "fyzická osoba",
             "ico": null,
             "fyzicka_osoba": true,
+            "jmeno_podnikatele": "Ing. David Zána",
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -7864,6 +7956,7 @@
             "nazev": "WINGS CZ s.r.o.",
             "ico": "28133676",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -7923,6 +8016,7 @@
             "nazev": "JPS J. Hradec s.r.o.",
             "ico": "26035138",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -7982,6 +8076,7 @@
             "nazev": "WAY PROJECT s.r.o.",
             "ico": "63906601",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {
@@ -8151,6 +8246,7 @@
             "nazev": "VH-TRES spol. s r. o.",
             "ico": "15771822",
             "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
             "smlouva_uzavrena": true,
             "castky": [
               {

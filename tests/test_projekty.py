@@ -84,13 +84,13 @@ def test_souhrn_scita_jen_v_ramci_druhu():
                 {"kapitalova": False, "po_poslednim_ro": None, "jistota": "dolozeno"}]
     zak = [{"id": "z1", "role": "stavba", "casti": [{"registr_smluv": ["u1"], "vitezove": [{"nazev": "A", "smluvni": [
         {"hodnota": 66097418.09, "s_dph": True}, {"hodnota": 54625965.36, "s_dph": False, "mena": "CZK"}]}]}]}]
-    sml = [{"id": "s1", "role": "stavba", "dodatek_cislo": None, "strany": ["A"], "url": "u1",
+    sml = [{"id": "s1", "role": "stavba", "dodatek_cislo": None, "strany": [{"nazev": "A", "jmeno_podnikatele": None}], "url": "u1",
             "castky": [{"hodnota": 54625965.36, "s_dph": False}]},                       # tatáž smlouva jako z1
-           {"id": "s2", "role": "vybaveni", "dodatek_cislo": None, "strany": ["B"], "url": "u2",
+           {"id": "s2", "role": "vybaveni", "dodatek_cislo": None, "strany": [{"nazev": "B", "jmeno_podnikatele": None}], "url": "u2",
             "castky": [{"hodnota": 310125.87, "s_dph": False}, {"hodnota": 375252.3, "s_dph": True}]},
-           {"id": "s3", "role": "stavba", "dodatek_cislo": 5, "strany": ["A"],
+           {"id": "s3", "role": "stavba", "dodatek_cislo": 5, "strany": [{"nazev": "A", "jmeno_podnikatele": None}],
             "castky": [{"hodnota": 2501117.05, "s_dph": False}]},
-           {"id": "s4", "role": "bozp", "dodatek_cislo": None, "strany": ["C"], "castky": []}]
+           {"id": "s4", "role": "bozp", "dodatek_cislo": None, "strany": [{"nazev": "C", "jmeno_podnikatele": None}], "castky": []}]
     s = pr.souhrn(rozpocet, zak, sml)
     assert s["rozpocet"]["celkem"] == 59579143.49 and s["rozpocet"]["neinvesticni"] == 587000.0
     assert s["rozpocet"]["jistota"] == "nase_propojeni" and s["rozpocet"]["polozek"] == 2
@@ -100,9 +100,17 @@ def test_souhrn_scita_jen_v_ramci_druhu():
 
 
 def test_souhrn_stejna_cena_ruzne_smlouvy_a_neznamy_soucet():
-    sm = [{"id": f"s{i}", "role": "stavba", "dodatek_cislo": None, "strany": ["A"], "url": f"u{i}",
+    sm = [{"id": f"s{i}", "role": "stavba", "dodatek_cislo": None, "strany": [{"nazev": "A", "jmeno_podnikatele": None}], "url": f"u{i}",
            "castky": [{"hodnota": 100.0, "s_dph": False}]} for i in (1, 2)]
     assert pr.souhrn([], [], sm)["smluvni_bez_dph"]["celkem"] == 200.0
     s = pr.souhrn([], [], [])
     assert s["rozpocet"]["celkem"] is None and s["rozpocet"]["jistota"] == "nevime"
     assert s["smluvni_bez_dph"]["celkem"] is None
+
+
+def test_podnikatel_jmenem_v_karte():
+    d = data(smlouvy=[dict(smlouva("p", "Technický dozor na akci Přístavba dvou tělocvičen"),
+                           strany=[{"nazev": "fyzická osoba", "jmeno_podnikatele": "Ing. Jan Projektant"}])])
+    k = pr.sestav_projekt(PROJEKT, d)
+    assert k["smlouvy"][0]["strany"] == [{"nazev": "fyzická osoba", "jmeno_podnikatele": "Ing. Jan Projektant"}]
+    assert k["souhrn"]["smluvni_bez_dph"]["casti"][0]["jmeno_podnikatele"] == "Ing. Jan Projektant"

@@ -126,7 +126,8 @@ def test_castky_s_druhem_a_dph(koren):
 
 def test_fyzicka_osoba_bez_jmena_ico_a_adresy(koren):
     s = nactene(koren)
-    assert s["2"]["strany"] == [{"nazev": "fyzická osoba", "ico": None, "fyzicka_osoba": True, "prijemce": True}]
+    assert s["2"]["strany"] == [{"nazev": "fyzická osoba", "ico": None, "fyzicka_osoba": True, "prijemce": True,
+                                 "jmeno_podnikatele": "Jan Novák"}]          # podnikatel–příjemce jménem (#93)
     vse = json.dumps(list(s.values()), ensure_ascii=False)
     assert "87654321" not in vse and "Ulice 1" not in vse and "Pikna" not in vse and "Palackého" not in vse
 
@@ -197,3 +198,12 @@ def test_jmeno_bez_titulu_v_predmetu(koren):
     assert zakryj_jmena("Koncert Jany Novákové", o, KOREN) == "Koncert [jméno]"
     assert zakryj_jmena("Nájem pro Ondřeje Zbudila", o, KOREN) == "Nájem pro Ondřeje Zbudila"     # zastupitel
     assert zakryj_jmena("Dodávka elektřiny 2027", o, KOREN) == "Dodávka elektřiny 2027"
+
+
+def test_podnikajici_fo_jmenem_nepodnikajici_anonymne():
+    from pipeline.smlouvy import strana
+    p = strana({"nazev": "Ing. Jan Projektant", "ico": "12345678", "prijemce": "1"})
+    assert (p["nazev"], p["ico"], p["fyzicka_osoba"], p["jmeno_podnikatele"]) == \
+        ("fyzická osoba", None, True, "Ing. Jan Projektant")
+    assert strana({"nazev": "Jana Nájemnice", "prijemce": "1"})["jmeno_podnikatele"] is None     # bez IČO
+    assert strana({"nazev": "Petr Plátce", "ico": "87654321", "prijemce": "0"})["jmeno_podnikatele"] is None
