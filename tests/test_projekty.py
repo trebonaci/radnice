@@ -303,3 +303,11 @@ def test_skladba_ceny_akce():
     sk = {x["skupina"]: x for x in pr.skladba(casti)}
     assert sk["priprava"]["castka"] is None and sk["priprava"]["nezname"] == ["projekt"]
     assert [x["skupina"] for x in pr.skladba(casti[:1])] == ["stavba"]
+
+
+def test_dopocet_dph_z_ceny_po_dodatcich_nedostane_dodatky_znovu():
+    zak = [{"id": "z1", "role": "stavba", "url": "e", "casti": [{"registr_smluv": [], "vitezove": [
+        {"nazev": "A", "smluvni": [{"hodnota": 120.0, "s_dph": False}], "nabidkova": []}]}]}]
+    (c,) = pr.casti_akce(zak, [sml("d1", "stavba", 1, 20.0, navazuje="x")])
+    assert c["puvodni"]["s_dph_dopocteno"] and c["puvodni"]["zaklady_z_ezak_po_dodatcich"] == ["bez_dph", "s_dph"]
+    assert c["cena_po_dodatcich"] is None and c["cena_po_dodatcich_s_dph"] is None

@@ -544,6 +544,9 @@ def casti_akce(zakazky: list[dict], smlouvy: list[dict], jen_termin: dict[str, s
                                  "bez_castky": not d["castky"], "datum": d["datum_uzavreni"], "zdroj_id": d["id"],
                                  "url": d["url"]})
         doplnit_dph(c)
+        pu = c["puvodni"]
+        if pu and pu.get("s_dph_dopocteno") and "bez_dph" in pu.get("zaklady_z_ezak_po_dodatcich", []):
+            pu["zaklady_z_ezak_po_dodatcich"] = pu["zaklady_z_ezak_po_dodatcich"] + ["s_dph"]   # dopočet dědí původ
         cisla = {d["cislo"] for d in c["dodatky"]}
         c["chybi_dodatky"] = sorted(set(range(1, max(cisla) + 1)) - cisla) if cisla else []
         # dodatek bez částky v registru = změna ceny neznámá (kromě dodatku jen o termínu podle usnesení)
