@@ -61,7 +61,11 @@ def test_nacti_a_zkontroluj_citace(tmp_path):
     assert chyby == [] and len(p) == 5
     assert ra.zkontroluj(p, tmp_path) == []
     p[0]["castka"]["citace"] = "81 000,00"
-    assert ra.zkontroluj(p, tmp_path) == [f"{p[0]['id']}: citace částky není ve zdroji"]
+    assert ra.zkontroluj(p, tmp_path) == [f"{p[0]['id']}: citace částky není v citovaném řádku"]
+    # popis jedné položky s částkou jiné neprojde, i když jsou obě slova i částka na straně
+    p[0]["castka"]["citace"] = "20 000,00"
+    p[0]["citace"]["text"] = "Hubení komárů 20 000,00"
+    assert ra.zkontroluj(p, tmp_path) == [f"{p[0]['id']}: citace není doslova ve zdroji"]
 
 
 def test_souhrn_schvaleneho_rozpoctu_po_letech():

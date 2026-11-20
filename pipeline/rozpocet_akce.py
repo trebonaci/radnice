@@ -168,7 +168,8 @@ def nacti(koren: Path) -> tuple[list[dict], list[str]]:
 
 
 def zkontroluj(zaznamy: list[dict], koren: Path) -> list[str]:
-    """Citace řádku je doslova (po sjednocení mezer) na uvedené straně zdroje."""
+    """Citace (řádky položky v pořadí zdroje) je doslova – po sjednocení mezer – na uvedené straně
+    a obsahuje citovanou částku."""
     chyby = []
     cache: dict[Path, str] = {}
     for z in zaznamy:
@@ -176,9 +177,9 @@ def zkontroluj(zaznamy: list[dict], koren: Path) -> list[str]:
         if cesta not in cache:
             cache[cesta] = " ".join(cesta.read_text(encoding="utf-8").split()) if cesta.exists() else ""
         zdroj = cache[cesta]
-        casti = z["citace"]["text"].split(" ")
-        if " ".join(casti) not in zdroj and not all(c in zdroj for c in casti):
-            chyby.append(f"{z['id']}: citace není ve zdroji")
-        if z["castka"]["citace"] not in zdroj:
-            chyby.append(f"{z['id']}: citace částky není ve zdroji")
+        text = " ".join(z["citace"]["text"].split())
+        if text not in zdroj:
+            chyby.append(f"{z['id']}: citace není doslova ve zdroji")
+        if z["castka"]["citace"] not in text:
+            chyby.append(f"{z['id']}: citace částky není v citovaném řádku")
     return chyby
