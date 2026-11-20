@@ -159,3 +159,17 @@ def test_cena_z_registru_kdyz_ezak_cenu_nema():
         {"nazev": "A", "smluvni": []}]}]}]
     c = pr.casti_akce(zak, [sml("s0", "stavba", castka=500.0, url="u-s0")])
     assert c[0]["puvodni"] == {"bez_dph": 500.0, "zdroj_id": "s0", "url": "u-s0"}
+
+
+def test_parovani_podle_cisla_zakazky_a_dalsi_dodatky_teze_smlouvy():
+    zak = [{"id": "ezak-VZ-1", "role": "stavba", "url": "e", "casti": [{"registr_smluv": [], "vitezove": [
+        {"nazev": "ACME s.r.o.", "smluvni": [{"hodnota": 100.0, "s_dph": False}]}]}]}]
+    c = pr.casti_akce(zak, [dict(sml("s0", "stavba", castka=100.0, strana="ACME, s.r.o."),
+                                 evidencni_cislo_zakazky="VZ-1")])
+    assert len(c) == 1 and c[0]["vazba_dodatku"] == "dolozeno"
+    puv = dict(smlouva("p0", "Smlouva o dílo"), castky=[{"hodnota": 100.0, "s_dph": False}])
+    d1 = dict(smlouva("p1", "Přístavba dvou tělocvičen - dodatek č. 1", navazuje_na="ip0"),
+              castky=[{"hodnota": 10.0, "s_dph": False}])
+    d2 = dict(smlouva("p2", "Dodatek č. 2", navazuje_na="ip0"), castky=[])
+    k = pr.sestav_projekt(PROJEKT, data(smlouvy=[puv, d1, d2]))
+    assert [d["cislo"] for d in k["casti"][0]["dodatky"]] == [1, 2] and k["casti"][0]["cena_po_dodatcich"] is None
