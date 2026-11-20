@@ -40,11 +40,24 @@ RE_JMENO_OSOBY = re.compile(r"(?:[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ][a-záčďé
                             r"[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ][a-záčďéěíňóřšťúůýž]+(?:\s*,?\s*nar\.\s*\d{4})?")
 
 
+# předmět o veřejné kulturní akci: jména umělců (autor, režie, účinkující) se neskrývají (#131),
+# fyzické osoby jako smluvní strany ano (`_skryj_fo`)
+RE_KULTURNI_AKCE = re.compile(r"koncert|představení|uměleck\w* výkon|vystoupení|divadeln", re.I)
+
+
+def je_kulturni_akce(predmet: str | None) -> bool:
+    return bool(predmet and RE_KULTURNI_AKCE.search(predmet))
+
+
 def strana(s: dict, znama: frozenset[str] = frozenset(), predmet: str | None = None) -> dict:
     """`znama` = IČO sledovaných právnických osob (config/subjekty.yaml): ty se nikdy neanonymizují.
     `predmet` smlouvy: u výpůjčky, nájmu, pachtu a daru se ani podnikající fyzická osoba neuvádí jménem."""
     nazev, ico = (s.get("nazev") or "").strip(), (s.get("ico") or "").strip() or None
-    if not ico or (ico not in znama and not je_pravnicka(nazev)):
+    # „identifikace: PO“ z registru platí (spolky, ústavy bez právní formy v názvu); „FO“ registr uvádí
+    # i u některých s.r.o., proto jinak rozhoduje IČO a právní forma v názvu
+    identifikace = s.get("identifikace")
+    fyzicka = ico not in znama and identifikace != "PO" and (not ico or not je_pravnicka(nazev))
+    if fyzicka:
         # podnikající fyzická osoba (má IČO), která je příjemcem plnění (dodavatel), se uvádí jménem ze zdroje,
         # bez IČO a adresy (#93); ostatní fyzické osoby (nájemci, dárci, bez IČO) zůstávají anonymní
         prijemce = s.get("prijemce") == "1"

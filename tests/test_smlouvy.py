@@ -245,3 +245,15 @@ def test_vypujcka_neuvadi_podnikatele_jmenem():
     assert smlouvy.strana(s, frozenset(), "Oprava chodníku")["jmeno_podnikatele"] == "Jana Nováková"
     vysl = smlouvy._skryj_fo("Výpůjčka – p. Nováková", [s], frozenset())
     assert "Nováková" not in vysl
+
+
+def test_identifikace_po_z_registru_plati():
+    s = {"nazev": "Charita Třeboň", "ico": "26520991", "prijemce": "1", "identifikace": "PO"}
+    assert smlouvy.strana(s)["nazev"] == "Charita Třeboň" and smlouvy.strana(s)["ico"] == "26520991"
+    # „FO“ u s.r.o. (chyba v registru) ani tak nevede k anonymizaci firmy
+    assert smlouvy.strana({"nazev": "Jarg s.r.o.", "ico": "1", "identifikace": "FO"})["nazev"] == "Jarg s.r.o."
+
+
+def test_kulturni_akce():
+    assert smlouvy.je_kulturni_akce("Smlouva o zajištění uměleckého výkonu - realizace koncertu (A + B)")
+    assert not smlouvy.je_kulturni_akce("Dotace - celoroční činnost")

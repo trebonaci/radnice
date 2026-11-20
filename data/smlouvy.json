@@ -5913,7 +5913,7 @@
         "jmeno_podnikatele": "Jiří Jahoda"
       }
     ],
-    "predmet": "Smlouva o vytvoření a veřejném provozování uměleckého výkonu - [jméno] a Moravské klavírní trio dne 11.12.2027 v 19:00 h v Divadle J. K. Tyla v Třeboni.",
+    "predmet": "Smlouva o vytvoření a veřejném provozování uměleckého výkonu - Andrea Kalivodová a Moravské klavírní trio dne 11.12.2027 v 19:00 h v Divadle J. K. Tyla v Třeboni.",
     "datum_uzavreni": "2026-09-14",
     "datum_zverejneni": "2026-09-15",
     "cislo_smlouvy": "900/6695/26",
@@ -11406,11 +11406,11 @@
     "subjekt_nazev": "Město Třeboň",
     "strany": [
       {
-        "nazev": "fyzická osoba",
-        "ico": null,
-        "fyzicka_osoba": true,
+        "nazev": "Kooperativa pojišťovna, a.s., Vienna Insurance Group",
+        "ico": "47116617",
+        "fyzicka_osoba": false,
         "prijemce": true,
-        "jmeno_podnikatele": "Kooperativa pojišťovna, a.s., Vienna Insurance Group"
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Dodatek č. 15 k pojistné smlouvě č. 7721072109 s pojišťovnou Kooperativa pojišťovna, a.s. - pojištění majetku",
@@ -11904,11 +11904,11 @@
         "jmeno_podnikatele": null
       },
       {
-        "nazev": "fyzická osoba",
-        "ico": null,
-        "fyzicka_osoba": true,
+        "nazev": "Kooperativa pojišťovna, a.s., Vienna Insurance Group",
+        "ico": "47116617",
+        "fyzicka_osoba": false,
         "prijemce": true,
-        "jmeno_podnikatele": "Kooperativa pojišťovna, a.s., Vienna Insurance Group"
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Smlouva o vypořádání závazků k pojistné smlouvě - pojištění podnikatelů",
@@ -11942,11 +11942,11 @@
     "subjekt_nazev": "Základní škola Třeboň, Sokolská 296",
     "strany": [
       {
-        "nazev": "fyzická osoba",
-        "ico": null,
-        "fyzicka_osoba": true,
+        "nazev": "Kooperativa pojišťovna, a.s., Vienna Insurance Group",
+        "ico": "47116617",
+        "fyzicka_osoba": false,
         "prijemce": true,
-        "jmeno_podnikatele": "Kooperativa pojišťovna, a.s., Vienna Insurance Group"
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Dodatek č. 4 k pojistné smlouvě č. 7721085676",
@@ -14818,9 +14818,9 @@
     "subjekt_nazev": "Město Třeboň",
     "strany": [
       {
-        "nazev": "fyzická osoba",
-        "ico": null,
-        "fyzicka_osoba": true,
+        "nazev": "Asijské kulturní centrum Třeboň",
+        "ico": "22722289",
+        "fyzicka_osoba": false,
         "prijemce": true,
         "jmeno_podnikatele": null
       }
@@ -15773,14 +15773,14 @@
     "subjekt_nazev": "Město Třeboň",
     "strany": [
       {
-        "nazev": "fyzická osoba",
-        "ico": null,
-        "fyzicka_osoba": true,
+        "nazev": "Charita Třeboň",
+        "ico": "26520991",
+        "fyzicka_osoba": false,
         "prijemce": true,
-        "jmeno_podnikatele": "Charita Třeboň"
+        "jmeno_podnikatele": null
       }
     ],
-    "predmet": "Dotace - [jméno] - celoroční činnost - pečovatelská služba Astra",
+    "predmet": "Dotace - Charita Třeboň - celoroční činnost - pečovatelská služba Astra",
     "datum_uzavreni": "2026-04-29",
     "datum_zverejneni": "2026-05-04",
     "cislo_smlouvy": "800/6160/26",
@@ -20234,11 +20234,11 @@
     "subjekt_nazev": "Město Třeboň",
     "strany": [
       {
-        "nazev": "fyzická osoba",
-        "ico": null,
-        "fyzicka_osoba": true,
+        "nazev": "Kooperativa pojišťovna, a.s., Vienna Insurance Group",
+        "ico": "47116617",
+        "fyzicka_osoba": false,
         "prijemce": true,
-        "jmeno_podnikatele": "Kooperativa pojišťovna, a.s., Vienna Insurance Group"
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Dodatek č. 14 k pojistné smlouvě č. 7721072109 s pojišťovnou Kooperativa pojišťovna, a.s.- pojištění majetku",
@@ -26237,11 +26237,11 @@
     "subjekt_nazev": "Město Třeboň",
     "strany": [
       {
-        "nazev": "fyzická osoba",
-        "ico": null,
-        "fyzicka_osoba": true,
+        "nazev": "Kooperativa pojišťovna, a.s., Vienna Insurance Group",
+        "ico": "47116617",
+        "fyzicka_osoba": false,
         "prijemce": true,
-        "jmeno_podnikatele": "Kooperativa pojišťovna, a.s., Vienna Insurance Group"
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Dodatek č. 13 k  pojistné smlouvě č. 7721072109 s pojišťovnou Kooperativa pojišťovna, a.s.",
@@ -30940,11 +30940,11 @@
     "subjekt_nazev": "Město Třeboň",
     "strany": [
       {
-        "nazev": "fyzická osoba",
-        "ico": null,
-        "fyzicka_osoba": true,
+        "nazev": "Kooperativa pojišťovna, a.s., Vienna Insurance Group",
+        "ico": "47116617",
+        "fyzicka_osoba": false,
         "prijemce": true,
-        "jmeno_podnikatele": "Kooperativa pojišťovna, a.s., Vienna Insurance Group"
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Dodatek č. 12 k pojistné smlouvě č. 7721072109 s pojišťovnou Kooperativa pojišťovna, a.s.- pojištění majetku",
@@ -38075,11 +38075,11 @@
     "subjekt_nazev": "Město Třeboň",
     "strany": [
       {
-        "nazev": "fyzická osoba",
-        "ico": null,
-        "fyzicka_osoba": true,
+        "nazev": "Kooperativa pojišťovna, a.s., Vienna Insurance Group",
+        "ico": "47116617",
+        "fyzicka_osoba": false,
         "prijemce": true,
-        "jmeno_podnikatele": "Kooperativa pojišťovna, a.s., Vienna Insurance Group"
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Dodatek č. 11 k Pojistné smlouvě č. 7721072109 s pojišťovnou Kooperativa pojišťovna, a.s. - připojištění II. etapy stavby Komenského sady",
@@ -39920,11 +39920,11 @@
     "subjekt_nazev": "Město Třeboň",
     "strany": [
       {
-        "nazev": "fyzická osoba",
-        "ico": null,
-        "fyzicka_osoba": true,
+        "nazev": "Kooperativa pojišťovna, a.s., Vienna Insurance Group",
+        "ico": "47116617",
+        "fyzicka_osoba": false,
         "prijemce": true,
-        "jmeno_podnikatele": "Kooperativa pojišťovna, a.s., Vienna Insurance Group"
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Dodatek č. 10 k pojistné smlouvě č. 7721072109 s pojišťovnou Kooperativa pojišťovna, a.s.",
@@ -44267,14 +44267,14 @@
     "subjekt_nazev": "Město Třeboň",
     "strany": [
       {
-        "nazev": "fyzická osoba",
-        "ico": null,
-        "fyzicka_osoba": true,
+        "nazev": "Charita Třeboň",
+        "ico": "26520991",
+        "fyzicka_osoba": false,
         "prijemce": true,
-        "jmeno_podnikatele": "Charita Třeboň"
+        "jmeno_podnikatele": null
       }
     ],
-    "predmet": "Dotace - [jméno] - celoroční činnost (pečovatelská služba)",
+    "predmet": "Dotace - Charita Třeboň - celoroční činnost (pečovatelská služba)",
     "datum_uzavreni": "2025-04-29",
     "datum_zverejneni": "2025-05-05",
     "cislo_smlouvy": "800/5849/25",
@@ -45476,14 +45476,14 @@
     "subjekt_nazev": "Město Třeboň",
     "strany": [
       {
-        "nazev": "fyzická osoba",
-        "ico": null,
-        "fyzicka_osoba": true,
+        "nazev": "Dům dětí a mládeže, Jindřichův Hradec, Růžová 10",
+        "ico": "42409152",
+        "fyzicka_osoba": false,
         "prijemce": true,
-        "jmeno_podnikatele": "Dům dětí a mládeže, Jindřichův Hradec, Růžová 10"
+        "jmeno_podnikatele": null
       }
     ],
-    "predmet": "Dotace - [jméno], místní pobočka DDM, Třeboň - reprezentace města - účast v soutěžích Czech Dance Tour a Czech Dance Masters",
+    "predmet": "Dotace - Dům dětí a mládeže, Jindřichův Hradec, Růžová 10, místní pobočka DDM, Třeboň - reprezentace města - účast v soutěžích Czech Dance Tour a Czech Dance Masters",
     "datum_uzavreni": "2025-04-14",
     "datum_zverejneni": "2025-04-16",
     "cislo_smlouvy": "800/5792/25",
@@ -49318,7 +49318,7 @@
         "jmeno_podnikatele": null
       }
     ],
-    "predmet": "Smlouva o zajištění uměleckého výkonu - realizace koncertu Ve znamení tanga dne 15.04.2025 od 19:00 h v Divadle J. K. Tyla v Třeboni ([jméno] + [jméno])",
+    "predmet": "Smlouva o zajištění uměleckého výkonu - realizace koncertu Ve znamení tanga dne 15.04.2025 od 19:00 h v Divadle J. K. Tyla v Třeboni (Jaroslava Svěcený + Ladislav Horák)",
     "datum_uzavreni": "2025-03-01",
     "datum_zverejneni": "2025-03-11",
     "cislo_smlouvy": "900/6040/25",
