@@ -100,6 +100,10 @@ usneseni:
     poznamka: Druhá strana smlouvy je fyzická osoba, zápis ji sám anonymizoval.
 
   rm-2026-j113-u521:
+    pro_obcany:
+      text: "Město přijme darem domácí loutkové divadlo s 26 loutkami a kulisami."
+      oblast: kultura
+      citace: "předmětem daru je domácí loutkové divadlo v rozsahu 26 loutek"
     tema: Dar domácího loutkového divadla
     kategorie: [kultura, dotace_dary]
     shrnuti: Rada schválila přijetí daru – domácího loutkového divadla z první republiky (26 loutek, kulisy a náhradní díly).
@@ -145,6 +149,10 @@ usneseni:
         citace: "-do položky 5169 „Ostatní služby - trhy“, § 2141, ORJ 900, ORG 9900000000, UZ 0 v částce Kč 60.000,00."
 
   rm-2026-j113-u525:
+    pro_obcany:
+      text: "Město daruje 20 000 Kč ZŠ Sokolská na oslavu výročí pracoviště v Břilicích."
+      oblast: skolstvi
+      citace: "poskytnutí finančního daru ve výši 20.000,00 Kč"
     tema: Dar 20 000 Kč základní škole na oslavu výročí pracoviště v Břilicích
     kategorie: [skolstvi, dotace_dary, rozpocet]
     shrnuti: Rada schválila finanční dar 20 000 Kč Základní škole Třeboň, Sokolská na oslavu výročí odloučeného pracoviště v Břilicích a související rozpočtové opatření č. 54.
@@ -245,6 +253,10 @@ usneseni:
     citace: "hospodaření příspěvkové organizace Městská knihovna Třeboň a mezitímní účetní závěrku k 30.09.2026."
 
   rm-2026-j113-u533:
+    pro_obcany:
+      text: "Městská knihovna připraví s Hospicovou péčí sv. Kleofáše vzdělávací kurz."
+      oblast: kultura
+      citace: "Předmětem spolupráce je realizace vzdělávacího kurzu."
     tema: Spolupráce knihovny s Hospicovou péčí sv. Kleofáše
     kategorie: [kultura, socialni]
     shrnuti: Rada schválila smlouvu o spolupráci Městské knihovny Třeboň s Hospicovou péčí sv. Kleofáše; předmětem je vzdělávací kurz.
@@ -304,6 +316,11 @@ usneseni:
     poznamka: Jednatel společnosti není volený zástupce, jméno neuvádíme. Cena ani změna ceny v usnesení není.
 
   rm-2026-j113-u541:
+    pro_obcany:
+      text: "Hotel Sport ve sportovní hale bude mít od listopadu 2026 v nájmu od města Městská sportovní Třeboň."
+      oblast: sport
+      plati_od: "2026-11-01"
+      citace: "uzavření Nájemní smlouvy na pronájem nebytových prostor Sportovní haly (HOTEL SPORT)"
     tema: Hotel Sport a Sportovní hala – dohoda o provozování a nájemní smlouva s Městskou sportovní Třeboň
     kategorie: [majetek_najem, sport, prispevkove_organizace]
     shrnuti: Rada schválila dodatek č. 9 k dohodě o provozování sportovišť a nájemní smlouvu na 860,98 m2 ve Sportovní hale (Hotel Sport) s příspěvkovou organizací Městská sportovní Třeboň od 1. 11. 2026 do 31. 12. 2036; nájemné 50 000 Kč za listopad–prosinec 2026 a 800 000 Kč za rok 2027, obojí bez DPH, od roku 2028 s inflační valorizací.
@@ -348,6 +365,10 @@ usneseni:
         poznamka: Navýšení položky Platy zaměstnanců v pracovním poměru – úřad; další položky opatření jsou v textu usnesení.
 
   rm-2026-j113-u544:
+    pro_obcany:
+      text: "Ve třech třídách MŠ Sluníčko může být letos víc dětí, než je běžný limit; celková kapacita školky se nepřekročí."
+      oblast: skolstvi
+      citace: "za podmínky nepřekročení celkové povolené kapacity dětí"
     tema: Výjimka z počtu dětí ve třídách MŠ Sluníčko
     kategorie: [skolstvi]
     shrnuti: Rada schválila výjimku z nejvyššího počtu dětí ve třídách MŠ Sluníčko pro školní rok 2026/2027 za podmínky nepřekročení celkové povolené kapacity.

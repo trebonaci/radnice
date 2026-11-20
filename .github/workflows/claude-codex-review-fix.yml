@@ -147,6 +147,20 @@ jobs:
             --max-turns 40
             --allowedTools "Read,Edit,Write,Glob,Grep,Bash(python:*),Bash(python3:*),Bash(pytest:*),Bash(cd:*),Bash(ls:*),Bash(cat:*),Bash(head:*),Bash(tail:*),Bash(grep:*),Bash(wc:*),Bash(diff:*),Bash(sort:*)"
 
+      # Automatické opravy nesmí zasahovat do AGENTS.md, pokud Codexův konkrétní nález
+      # výslovně necílí na tento soubor. Ochrana je mechanická, protože samotný prompt selhal.
+      - name: Restore AGENTS.md unless a finding targets it
+        if: steps.cycle.outputs.run_claude == 'true' && success()
+        env:
+          FINDINGS_JSON: ${{ steps.cycle.outputs.findings }}
+        run: |
+          if printf '%s' "$FINDINGS_JSON" | jq -e 'any(.[]; .path == "AGENTS.md")' >/dev/null; then
+            echo "A Codex finding explicitly targets AGENTS.md; keeping Claude's targeted change."
+          else
+            git restore --source=HEAD --staged --worktree -- AGENTS.md
+            echo "Restored AGENTS.md to the PR head because this review did not target documentation."
+          fi
+
       - name: Commit and push Claude changes to this PR branch
         if: steps.cycle.outputs.run_claude == 'true' && success()
         env:

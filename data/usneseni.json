@@ -33,6 +33,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -112,6 +114,8 @@
         "citace": "pozemku p. č. 508 o výměře 76 m2 v k. ú. Stará Hlína"
       }
     ],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -160,6 +164,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Vlastníci sousedních pozemků jsou v zápisu anonymizováni městem (XXXXXXXXX).",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -220,6 +226,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -289,6 +297,8 @@
         "citace": "p. č. 1818/55, p. č. 1818/56, p. č. 1818/57, p. č. 1818/58, p. č. 1837/51"
       }
     ],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -354,6 +364,8 @@
         "citace": "na pozemek p. č. 1679/4 k. ú. Třeboň"
       }
     ],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -460,6 +472,19 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": {
+      "text": "Klubovna v domě s pečovatelskou službou v Chelčického ulici zůstává do konce roku 2030 seniorům, šachistům, pěveckému sboru a malířům; náklady na provoz hradí město.",
+      "oblast": "socialni",
+      "plati_od": null,
+      "citace": {
+        "dokument_id": "zapis-rm-2026-09-09",
+        "strany": [
+          4
+        ],
+        "text": "prodloužení doby výprůjčky do 31.12.2030"
+      }
+    },
+    "pro_obcany_ai": true,
     "poznamka": "Dva vypůjčitelé jsou fyzické osoby, město je v zápisu anonymizovalo.",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -514,6 +539,8 @@
       }
     ],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -562,6 +589,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Nájemce je v zápisu anonymizován městem. Zápis neuvádí, zda se nájem prodlouží.",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -671,6 +700,20 @@
       }
     ],
     "parcely": [],
+    "pro_obcany": {
+      "text": "Město nabízí k nájmu tři malé byty v domě s pečovatelskou službou v Chelčického ulici pro seniory a invalidní důchodce s vazbou na Třeboň, nájemné od 2 320 Kč měsíčně plus úhrada za vybavení.",
+      "oblast": "socialni",
+      "plati_od": null,
+      "citace": {
+        "dokument_id": "zapis-rm-2026-09-09",
+        "strany": [
+          5,
+          6
+        ],
+        "text": "zveřejnění záměru nájmu bytu č. 9 o velikosti 1+0 (30,60 m2)"
+      }
+    },
+    "pro_obcany_ai": true,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -755,6 +798,8 @@
       }
     ],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -833,6 +878,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -872,6 +919,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -911,6 +960,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -955,6 +1006,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -999,6 +1052,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Jméno druhého člena, který není volený zástupce, neuvádíme.",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -1042,6 +1097,19 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": {
+      "text": "Město končí spolupráci na jízdence JIKORD plus a JIKORD plus Bavorsko.",
+      "oblast": "doprava",
+      "plati_od": null,
+      "citace": {
+        "dokument_id": "zapis-rm-2026-09-09",
+        "strany": [
+          8
+        ],
+        "text": "uzavření Dohody o ukončení Smlouvy o spolupráci při zavedení a používání jízdenky JIKORD plus a JIKORD plus Bavorsko"
+      }
+    },
+    "pro_obcany_ai": true,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -1085,6 +1153,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -1204,6 +1274,8 @@
       }
     ],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -1269,6 +1341,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -1328,6 +1402,8 @@
       }
     ],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -1376,6 +1452,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -1430,6 +1508,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -1468,6 +1548,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -1517,6 +1599,8 @@
         "citace": "pozemku p. č. 1915/260 v k. ú. Třeboň"
       }
     ],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Výsledek hlasování je v zápisu uveden jako „NÁVRH NESCHVÁLEN – USNESENÍ NEPŘIJATO“; návrh usnesení („schvaluje“) tedy neprošel.",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -1623,6 +1707,8 @@
         "citace": "p. č. 575 o výměře cca 30 m2 k. ú. Třeboň"
       }
     ],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Dohoda o užívání pozemku p. č. 500 je v zápisu již anonymizována městem (XXXXXXXXXXXXX); osoby neuvádíme.",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -1666,6 +1752,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Číselník nemá kategorii pro věcná břemena; zvolena nejbližší (užívání majetku města třetí stranou).",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -1709,6 +1797,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -1753,6 +1843,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Oprávněná osoba je v zápisu již anonymizována městem (XXXXXXXXXXXXX); neuvádíme.",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -1827,6 +1919,19 @@
       }
     ],
     "parcely": [],
+    "pro_obcany": {
+      "text": "Nájemné, které Městská Vodohospodářská platí městu za vodovody a kanalizace, bude v roce 2027 19,5 mil. Kč bez DPH.",
+      "oblast": "voda_odpady",
+      "plati_od": "2027-01-01",
+      "citace": {
+        "dokument_id": "zapis-rm-2026-09-23",
+        "strany": [
+          4
+        ],
+        "text": "výši nájemného za provozovaný majetek pro rok 2027 ve výši 19.500.000,00 Kč bez DPH"
+      }
+    },
+    "pro_obcany_ai": true,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -1876,6 +1981,8 @@
         "citace": "pozemku p. č. 1607/3 k. ú. Třeboň"
       }
     ],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -1934,6 +2041,8 @@
       }
     ],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -1977,6 +2086,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Zápis neuvádí, čeho se původní usnesení týkalo.",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -2037,6 +2148,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -2125,6 +2238,20 @@
       }
     ],
     "parcely": [],
+    "pro_obcany": {
+      "text": "ZŠ Na Sadech může od spolku Děti do bruslí přijmout darem 10 párů dětských bruslí.",
+      "oblast": "skolstvi",
+      "plati_od": null,
+      "citace": {
+        "dokument_id": "zapis-rm-2026-09-23",
+        "strany": [
+          5,
+          6
+        ],
+        "text": "přijetí věcného daru 10 párů dětských bruslí v celkové hodnotě 25.000 Kč"
+      }
+    },
+    "pro_obcany_ai": true,
     "poznamka": "Zástupce spolku (fyzická osoba) neuvádíme.",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -2221,6 +2348,8 @@
       }
     ],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -2317,6 +2446,8 @@
       }
     ],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -2395,6 +2526,8 @@
         "citace": "p. č. KN 1087/17 o výměře cca 530 m2 k. ú. Třeboň"
       }
     ],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -2470,6 +2603,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -2545,6 +2680,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -2617,6 +2754,8 @@
       }
     ],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -2686,6 +2825,8 @@
       }
     ],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -2730,6 +2871,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -2768,6 +2911,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -2875,6 +3020,8 @@
         "citace": "pozemku p. č. st. KN 17 v k. ú. Přeseka"
       }
     ],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Jde o schválení zveřejnění záměru, ne o uzavření výpůjčky.",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -2930,6 +3077,19 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": {
+      "text": "Hospicová péče sv. Kleofáše končí ke konci roku 2026 v nebytových prostorách domu čp. 20/II v ulici Svatopluka Čecha.",
+      "oblast": "socialni",
+      "plati_od": "2026-12-31",
+      "citace": {
+        "dokument_id": "zapis-rm-2026-10-07",
+        "strany": [
+          2
+        ],
+        "text": "Nájemní vztah bude ukončen k 31.12.2026."
+      }
+    },
+    "pro_obcany_ai": true,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -2989,6 +3149,8 @@
       }
     ],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Jména členů a náhradníků komisí neuvádíme (rozhodnutí 18. 11. 2026).",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -3073,6 +3235,8 @@
       }
     ],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Nájemce a dosavadní nájemci jiného bytu jsou fyzické osoby, město je v zápisu anonymizovalo.",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -3152,6 +3316,8 @@
       }
     ],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Nájemce je fyzická osoba, město ji v zápisu anonymizovalo.",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -3233,6 +3399,8 @@
       }
     ],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Nájemce je fyzická osoba, město ji v zápisu anonymizovalo.",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -3276,6 +3444,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Seznam majetku je v důvodové zprávě, která není součástí zápisu.",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -3339,6 +3509,8 @@
         "citace": "p. č. KN 862/9 v k. ú. Třeboň"
       }
     ],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -3401,6 +3573,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Zápis výsledek kontroly neuvádí.",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -3463,6 +3637,8 @@
       }
     ],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -3547,6 +3723,8 @@
       }
     ],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -3608,6 +3786,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Usnesení neuvádí, o kolik se cena mění.",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -3688,6 +3868,8 @@
       }
     ],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -3767,6 +3949,8 @@
       }
     ],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -3843,6 +4027,8 @@
         "citace": "parc. č. 91/1 v k. ú. Třeboň"
       }
     ],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Jména členů a náhradníků komisí neuvádíme (rozhodnutí 18. 11. 2026).",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -3902,6 +4088,19 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": {
+      "text": "Provoz Muzea města Třeboně zajistí na základě příkazní smlouvy fyzická osoba.",
+      "oblast": "kultura",
+      "plati_od": null,
+      "citace": {
+        "dokument_id": "zapis-rm-2026-10-07",
+        "strany": [
+          7
+        ],
+        "text": "předmětem smlouvy bude zajištění provozu Muzea města Třeboně"
+      }
+    },
+    "pro_obcany_ai": true,
     "poznamka": "Příkazník je fyzická osoba, jméno neuvádíme. Usnesení neuvádí odměnu.",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -3957,6 +4156,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -4000,6 +4201,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Usnesení neuvádí předmět závazků ani částky.",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -4038,6 +4241,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -4122,6 +4327,8 @@
         "citace": "část pozemku p. č. 575 o výměře cca 30 m2 k. ú. Třeboň"
       }
     ],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -4172,6 +4379,8 @@
         "citace": "na pozemku p. č. 3030 k. ú. Třeboň"
       }
     ],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -4225,6 +4434,8 @@
       }
     ],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -4299,6 +4510,8 @@
         "citace": "pozemku p. č. 1918/22 k. ú. Třeboň"
       }
     ],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Investor je fyzická osoba, zápis ji sám anonymizoval (XXXXXXXXXX).",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -4359,6 +4572,8 @@
         "citace": "součástí pozemku p. č. 369 v k. ú. Třeboň"
       }
     ],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -4419,6 +4634,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Druhá strana smlouvy je fyzická osoba, zápis ji sám anonymizoval.",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -4479,6 +4696,19 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": {
+      "text": "Město přijme darem domácí loutkové divadlo s 26 loutkami a kulisami.",
+      "oblast": "kultura",
+      "plati_od": null,
+      "citace": {
+        "dokument_id": "zapis-rm-2026-10-21",
+        "strany": [
+          5
+        ],
+        "text": "předmětem daru je domácí loutkové divadlo v rozsahu 26 loutek"
+      }
+    },
+    "pro_obcany_ai": true,
     "poznamka": "Dárce je fyzická osoba, zápis ji sám anonymizoval. Hodnota daru není uvedena.",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -4538,6 +4768,8 @@
       }
     ],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -4624,6 +4856,8 @@
       }
     ],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -4693,6 +4927,8 @@
       }
     ],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -4766,6 +5002,19 @@
       }
     ],
     "parcely": [],
+    "pro_obcany": {
+      "text": "Město daruje 20 000 Kč ZŠ Sokolská na oslavu výročí pracoviště v Břilicích.",
+      "oblast": "skolstvi",
+      "plati_od": null,
+      "citace": {
+        "dokument_id": "zapis-rm-2026-10-21",
+        "strany": [
+          7
+        ],
+        "text": "poskytnutí finančního daru ve výši 20.000,00 Kč"
+      }
+    },
+    "pro_obcany_ai": true,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -4820,6 +5069,8 @@
       }
     ],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -4910,6 +5161,8 @@
       }
     ],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [
       "Nová cena díla podle dodatku č. 5 není v usnesení uvedena."
@@ -5005,6 +5258,8 @@
       }
     ],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -5065,6 +5320,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [
       "Usnesení neuvádí, v čem změna plánu spočívá."
@@ -5142,6 +5399,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [
       "Nová cena podle dodatku není v usnesení uvedena."
@@ -5199,6 +5458,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -5254,6 +5515,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -5329,6 +5592,19 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": {
+      "text": "Městská knihovna připraví s Hospicovou péčí sv. Kleofáše vzdělávací kurz.",
+      "oblast": "kultura",
+      "plati_od": null,
+      "citace": {
+        "dokument_id": "zapis-rm-2026-10-21",
+        "strany": [
+          10
+        ],
+        "text": "Předmětem spolupráce je realizace vzdělávacího kurzu."
+      }
+    },
+    "pro_obcany_ai": true,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -5389,6 +5665,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Výše požadované dotace v usnesení není uvedena.",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -5438,6 +5716,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Žadatel je fyzická osoba, zápis ji anonymizoval (XXXXXXXXX).",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -5476,6 +5756,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -5519,6 +5801,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Člen školské rady není volený zástupce, jméno neuvádíme.",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -5558,6 +5842,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -5602,6 +5888,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Kupní cena v usnesení není uvedena.",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -5650,6 +5938,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Jednatel společnosti není volený zástupce, jméno neuvádíme. Cena ani změna ceny v usnesení není.",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -5737,6 +6027,20 @@
       }
     ],
     "parcely": [],
+    "pro_obcany": {
+      "text": "Hotel Sport ve sportovní hale bude mít od listopadu 2026 v nájmu od města Městská sportovní Třeboň.",
+      "oblast": "sport",
+      "plati_od": "2026-11-01",
+      "citace": {
+        "dokument_id": "zapis-rm-2026-10-21",
+        "strany": [
+          12,
+          13
+        ],
+        "text": "uzavření Nájemní smlouvy na pronájem nebytových prostor Sportovní haly (HOTEL SPORT)"
+      }
+    },
+    "pro_obcany_ai": true,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -5822,6 +6126,8 @@
       }
     ],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -5877,6 +6183,8 @@
       }
     ],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -5925,6 +6233,19 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": {
+      "text": "Ve třech třídách MŠ Sluníčko může být letos víc dětí, než je běžný limit; celková kapacita školky se nepřekročí.",
+      "oblast": "skolstvi",
+      "plati_od": null,
+      "citace": {
+        "dokument_id": "zapis-rm-2026-10-21",
+        "strany": [
+          14
+        ],
+        "text": "za podmínky nepřekročení celkové povolené kapacity dětí"
+      }
+    },
+    "pro_obcany_ai": true,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -5985,6 +6306,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Jméno pracovnice úřadu neuvádíme.",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -6023,6 +6346,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -6103,6 +6428,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Výše dotací jednotlivým žadatelům jsou v tabulce v textu usnesení; v anotaci je nerozepisujeme a nesčítáme (tabulky jsou zatím jen surový text).",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -6207,6 +6534,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Výše dotací jsou v tabulce v textu usnesení; v anotaci je nerozepisujeme a nesčítáme. Žadatel – fyzická osoba je anonymizován. U dvou akcí je dotace 0,00 Kč.",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -6289,6 +6618,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Výše dotací jsou v tabulce v textu usnesení; v anotaci je nerozepisujeme a nesčítáme. Žadatel – fyzická osoba je anonymizován.",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -6351,6 +6682,8 @@
       }
     ],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -6427,6 +6760,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Zápis neuvádí původní ani novou cenu díla, jen že dodatek mění cenu. Částku nedoplňujeme.",
     "otazky": [
       "Jaká je cena díla před a po Dodatku č. 5? (zápis ji neuvádí; hledat v registru smluv)"
@@ -6489,6 +6824,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Výše platu zápis neuvádí (neveřejná příloha).",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -6542,6 +6879,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Kupující jsou volení zástupci (starosta a místostarostka), uvedeni v zápise. Kupní cena v zápise není.",
     "otazky": [
       "Za jakou cenu byl majetek prodán? (zápis ji neuvádí)"
@@ -6587,6 +6926,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Zápis neuvádí obsah dodatku ani cenu.",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -6625,6 +6966,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -6678,6 +7021,8 @@
         "citace": "prodej části pozemku p. č. 1/1 k. ú. Holičky u Staré Hlíny"
       }
     ],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Jména členů a náhradníků komisí neuvádíme (rozhodnutí 18. 11. 2026).",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -6775,6 +7120,19 @@
         "citace": "pozemku p. č. st. KN 17 k. ú. Přeseka"
       }
     ],
+    "pro_obcany": {
+      "text": "Místnost v budově čp. 3 v Přesece bude v lednu až březnu a v listopadu 2027 sloužit sportovním, kulturním a společenským setkáním.",
+      "oblast": "komunity_spolky",
+      "plati_od": "2027-01-01",
+      "citace": {
+        "dokument_id": "zapis-rm-2026-11-04",
+        "strany": [
+          2
+        ],
+        "text": "provozování sportovních a kulturních aktivit včetně společenských setkání"
+      }
+    },
+    "pro_obcany_ai": true,
     "poznamka": "Vypůjčitel je v zápisu anonymizován městem (XXXXXXXX).",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -6813,6 +7171,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Nájemce je fyzická osoba podnikající; město zveřejnilo IČO, jméno anonymizovalo. IČO fyzické osoby nezveřejňujeme.",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -6872,6 +7232,8 @@
         "citace": "p. č. KN 862/9 v k. ú. Třeboň"
       }
     ],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Nájemce je fyzická osoba podnikající; jméno, IČO a adresu sídla nezveřejňujeme. Město je v zápisu ponechalo i v názvu bodu.",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -6927,6 +7289,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -6980,6 +7344,8 @@
       }
     ],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -7068,6 +7434,20 @@
       }
     ],
     "parcely": [],
+    "pro_obcany": {
+      "text": "ZŠ Sokolská může od spolku Děti do bruslí přijmout darem 10 párů dětských bruslí.",
+      "oblast": "skolstvi",
+      "plati_od": null,
+      "citace": {
+        "dokument_id": "zapis-rm-2026-11-04",
+        "strany": [
+          3,
+          4
+        ],
+        "text": "přijetí věcného daru 10 párů dětských bruslí v celkové hodnotě 25.000 Kč"
+      }
+    },
+    "pro_obcany_ai": true,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -7120,6 +7500,8 @@
       }
     ],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -7158,6 +7540,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -7201,6 +7585,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -7239,6 +7625,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -7277,6 +7665,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -7347,6 +7737,8 @@
       }
     ],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Částka je přesun mezi rozpočtovými položkami, ne cena zakázky ani výdaj. Tabulka rozpočtu je v datech jen jako surový text.",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -7413,6 +7805,8 @@
         "citace": "části pozemku p. č. 484/3 o výměře cca 4 m2"
       }
     ],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Jde o záměr (zveřejnění na úřední desce), ne o schválený prodej. Výměra se upřesní geometrickým plánem.",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -7473,6 +7867,8 @@
         "citace": "části pozemku p. č. 1/1 o výměře 510 m2 k. ú. Holičky u Staré Hlíny"
       }
     ],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Jde o záměr prodeje, ne o schválený prodej.",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -7552,6 +7948,8 @@
         "citace": "pozemku p. č. 508 o výměře 76 m2 v k. ú. Stará Hlína"
       }
     ],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Jde o záměr prodeje, ne o schválený prodej.",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -7616,6 +8014,8 @@
         "citace": "p. č. 1915/535 (zahrada) o výměře 13 m2"
       }
     ],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Kupující (manželé) jsou fyzické osoby, jejich údaje město v zápisu anonymizovalo.",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -7672,6 +8072,8 @@
         "citace": "v právu stezky, cesty na pozemku p. č. 3879 k. ú. Třeboň"
       }
     ],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Dárci jsou fyzické osoby, jejich údaje město v zápisu anonymizovalo. Hodnota daru v zápisu neuvedena.",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -7756,6 +8158,8 @@
         "citace": "pozemek p. č. 1926/3 (orná půda) v k. ú. Břilice"
       }
     ],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -7817,6 +8221,8 @@
         "citace": "pozemku p. č. KN 762/4 - zastavěná plocha a nádvoří, o výměře 476 m2"
       }
     ],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Cena převodu v zápisu neuvedena.",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -7871,6 +8277,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Členové prvního výboru jsou fyzické osoby, jejich údaje město v zápisu anonymizovalo.",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -7919,6 +8327,19 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": {
+      "text": "Změna územního plánu č. 9 se dělí na dvě: změna 9a prověří čtyři podněty (č. 2, 29, 32 a 38), změna 9b všechny ostatní.",
+      "oblast": "uzemni_plan",
+      "plati_od": null,
+      "citace": {
+        "dokument_id": "zapis-zm-2026-09-21",
+        "strany": [
+          7
+        ],
+        "text": "rozdělení Změny č. 9 územního plánu Třeboň na Změnu č. 9a"
+      }
+    },
+    "pro_obcany_ai": true,
     "poznamka": "Hlasování 20 pro, 1 se zdržel.",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -8014,6 +8435,8 @@
         "citace": "p. č. 179/13 v k. ú. Břilice"
       }
     ],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": "Text usnesení obsahuje vyhodnocení tří připomínek (u všech „NEVYHOVĚT“). Podatelé jsou fyzické osoby, jejich údaje jsou v textu anonymizovány; iniciály občana jsme nahradili slovem „občan“.",
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -8058,6 +8481,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -8096,6 +8521,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -8134,6 +8561,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -8172,6 +8601,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -8210,6 +8641,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -8248,6 +8681,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -8286,6 +8721,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -8325,6 +8762,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -8363,6 +8802,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -8401,6 +8842,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -8444,6 +8887,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
@@ -8482,6 +8927,8 @@
     },
     "castky": [],
     "parcely": [],
+    "pro_obcany": null,
+    "pro_obcany_ai": null,
     "poznamka": null,
     "otazky": [],
     "overeni": "overeno_kodem"
