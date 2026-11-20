@@ -37,7 +37,8 @@ def najdi_dokumenty(stranka_html: str, od_roku: int) -> list[dict]:
     """Odkazy na rozpočet a přehled RO od roku `od_roku` (u RO jen nejnovější za rok)."""
     vysledek: dict[tuple, dict] = {}
     for href in RE_ODKAZ.findall(stranka_html):
-        url = urllib.parse.urljoin(ZAKLAD, html.unescape(href))
+        # web města vkládá do odkazů i nezakódovanou diakritiku a mezery → zakódovat (už zakódované %XX ponechat)
+        url = urllib.parse.quote(urllib.parse.urljoin(ZAKLAD, html.unescape(href)), safe=":/%?=&#~")
         soubor = urllib.parse.unquote(url.rsplit("/", 1)[-1])
         for druh, vzor in DRUHY:
             m = vzor.search(soubor)
@@ -82,7 +83,7 @@ def stahni(koren: Path, ziskej=ziskej_url, extrahuj=extrahuj_pdftotext, dnes: da
             strany = extrahuj(obsah)
             if sum(len(s.strip()) for s in strany) < MIN_ZNAKU:
                 raise ChybaZdroje("málo textu (sken nebo prázdný dokument)")
-        except ChybaZdroje as e:
+        except (ChybaZdroje, OSError, ValueError) as e:
             upozorneni.append(f"{klic}: {e}")
             continue
         adresar = cil / str(d["rok"]) / d["druh"]
