@@ -118,18 +118,29 @@ def sestav_projekt(p: dict, data: dict) -> dict:
 
     # smlouvy (registr)
     smlouvy = []
-    for s in data["smlouvy"]:
-        if not _odpovida(s["predmet"], p):
-            continue
+    shodne = [s for s in data["smlouvy"] if _odpovida(s["predmet"], p)]
+    navazane = {s["navazuje_na"] for s in shodne if s.get("navazuje_na")}
+    shodne_id = {s["id"] for s in shodne}
+    # původní smlouvy, na které dodatky odkazují v registru (`navazanyZaznam`) = doložená vazba
+    puvodni = [s for s in data["smlouvy"] if s["id_smlouvy"] in navazane and s["id"] not in shodne_id]
+    vybrane_id = shodne_id | {s["id"] for s in puvodni}
+    vybrane_smlouvy = {s["id_smlouvy"] for s in shodne + puvodni if s.get("id_smlouvy")}
+    # další dodatky odkazující na vybrané původní smlouvy (i s obecným předmětem) – jinak by řada dodatků byla neúplná
+    dalsi = [s for s in data["smlouvy"] if s["id"] not in vybrane_id and s.get("navazuje_na") in vybrane_smlouvy]
+    for s, jistota in ([(x, "nase_propojeni") for x in shodne] + [(x, "dolozeno") for x in puvodni]
+                       + [(x, "dolozeno") for x in dalsi]):
         r_ = role(s["predmet"])
         m = RE_DODATEK.search(s["predmet"] or "")
-        smlouvy.append({"id": s["id"], "predmet": s["predmet"], "role": r_,
+        smlouvy.append({"id": s["id"], "id_smlouvy": s["id_smlouvy"], "navazuje_na": s.get("navazuje_na"),
+                        "predmet": s["predmet"], "role": r_,
                         "dodatek_cislo": int(m[1]) if m else None, "datum_uzavreni": s["datum_uzavreni"],
-                        "strany": [{"nazev": x["nazev"], "jmeno_podnikatele": x.get("jmeno_podnikatele")} for x in s["strany"]], "castky": _smluvni(s["castky"]),
+                        "strany": [{"nazev": x["nazev"], "jmeno_podnikatele": x.get("jmeno_podnikatele")}
+                                   for x in s["strany"]],
+                        "castky": _smluvni(s["castky"]), "cena_neuvedena": s.get("cena_neuvedena"),
                         "url": s["url"], "evidencni_cislo_zakazky": s.get("evidencni_cislo_zakazky"),
-                        "jistota": "nase_propojeni"})
+                        "jistota": jistota})
         udalosti.append({"datum": s["datum_uzavreni"], "typ": "dodatek" if m else "smlouva",
-                         "text": s["predmet"], "role": r_, "zdroj_id": s["id"], "jistota": "nase_propojeni"})
+                         "text": s["predmet"], "role": r_, "zdroj_id": s["id"], "jistota": jistota})
 
     # usnesení
     vazane = []
@@ -156,7 +167,8 @@ def sestav_projekt(p: dict, data: dict) -> dict:
         "druh": p.get("druh"), "vlastnik_subjekt_id": p.get("vlastnik_subjekt_id"),
         "faze": faze(zakazky, smlouvy), "faze_jistota": "nase_propojeni",
         "rozpocet": rozpocet,
-        "souhrn": souhrn(rozpocet, zakazky, smlouvy),
+        "casti": (casti := casti_akce(zakazky, smlouvy)),
+        "souhrn": souhrn(rozpocet, casti),
         "zakazky": sorted(zakazky, key=lambda z: z["id"]),
         "smlouvy": sorted(smlouvy, key=lambda s: (s["datum_uzavreni"] or "", s["id"])),
         "usneseni": sorted(vazane, key=lambda u: (u["datum"] or "", u["id"])),
@@ -172,14 +184,12 @@ def _halere(v: float) -> int:
     return round(v * 100)
 
 
-def souhrn(rozpocet: list[dict], zakazky: list[dict], smlouvy: list[dict]) -> dict:
+def souhrn(rozpocet: list[dict], casti: list[dict]) -> dict:
     """Kolik stojí celá akce – dva součty, každý jen v rámci jednoho druhu částky (nikdy mezi sebou):
 
     - `rozpocet`: stav všech položek akce po posledním RO, investiční i neinvestiční (druh rozpocet_upraveny),
-    - `smluvni_bez_dph`: smluvní ceny všech částí bez DPH v Kč (druh smluvni) – vítězové z E-ZAK a smlouvy
-      z registru, které nejsou dodatkem a nejsou odkazem z už započtené zakázky E-ZAK (shoda URL v registru
-      nebo evidenčního čísla zakázky; částka se k poznání téže smlouvy nepoužívá). Bez použitelné částky je součet null.
-      Dodatky se nepřičítají: registr u nich neříká, zda je částka změna, nebo nová celková cena.
+    - `smluvni_bez_dph`: `celkem` = původní smluvní ceny všech částí (`casti_akce`) bez DPH v Kč;
+      `po_dodatcich` = součet cen po dodatcích, jen když ji známe u všech částí (jinak null, chybějící v `neuplne`).
     """
     inv = [p for p in rozpocet if p["kapitalova"] and p["po_poslednim_ro"] is not None]
     neinv = [p for p in rozpocet if not p["kapitalova"] and p["po_poslednim_ro"] is not None]
@@ -195,36 +205,106 @@ def souhrn(rozpocet: list[dict], zakazky: list[dict], smlouvy: list[dict]) -> di
         rozpocet_souhrn = {"celkem": None, "investicni": None, "neinvesticni": None, "druh": "rozpocet_upraveny",
                            "s_dph": None, "polozek": 0, "jistota": "nevime"}
 
-    casti, bez_ceny = [], []
-    odkazy = {u for z in zakazky for c in z["casti"] for u in c.get("registr_smluv", [])}
-    cisla = {z["id"].removeprefix("ezak-") for z in zakazky}
+    znamo = [c for c in casti if c["puvodni"] and c["puvodni"]["bez_dph"] is not None]
+    po = [c for c in casti if c["cena_po_dodatcich"] is not None]
+    smluvni = {"celkem": sum(_halere(c["puvodni"]["bez_dph"]) for c in znamo) / 100 if znamo else None,
+               "druh": "smluvni", "s_dph": False, "mena": "CZK",
+               "po_dodatcich": sum(_halere(c["cena_po_dodatcich"]) for c in po) / 100
+               if po and len(po) == len(casti) else None,
+               "neuplne": [c["role"] for c in casti if c["cena_po_dodatcich"] is None],
+               "jistota": "nase_propojeni"}
+    return {"rozpocet": rozpocet_souhrn, "smluvni_bez_dph": smluvni}
+
+
+def _bez_dph(castky: list[dict]) -> float | None:
+    kc = [x for x in castky if x["s_dph"] is False and x.get("mena", "CZK") == "CZK"]
+    return kc[0]["hodnota"] if kc else None
+
+
+def casti_akce(zakazky: list[dict], smlouvy: list[dict]) -> list[dict]:
+    """Části akce (stavba, projekt, dozor, BOZP, vybavení…): původní smlouva + její dodatky.
+
+    - Dodatek patří k původní smlouvě přes `navazuje_na` z registru (doloženo); bez něj tvoří vlastní skupinu.
+    - Původní cena: smluvní cena vítěze z E-ZAK, jinak z registru. Zakázka E-ZAK se se skupinou smluv spojí
+      přes odkaz do registru (doloženo), jinak jen když je v akci jediná zakázka i jediná skupina dané role.
+    - Částka u dodatku v registru je **změna ceny** (ověřeno na dodatku č. 1 smlouvy s koordinátorem BOZP
+      přístavby tělocvičen: 138 900 + 7 750 = 146 650 Kč bez DPH, 20. 11. 2026). Dodatek bez částky
+      nemá známou změnu ceny – cena po dodatcích pak zůstává neznámá.
+    - `cena_po_dodatcich` (bez DPH) počítá kód jen při známé původní ceně a úplné řadě dodatků 1..N.
+    """
+    skupiny: dict[str, dict] = {}
+    for sm in smlouvy:
+        klic = (sm["navazuje_na"] if sm["dodatek_cislo"] and sm.get("navazuje_na") else sm["id_smlouvy"]) or sm["id"]
+        g = skupiny.setdefault(klic, {"puvodni": None, "dodatky": [], "role": sm["role"]})
+        if sm["dodatek_cislo"]:
+            g["dodatky"].append(sm)
+        else:
+            g["puvodni"] = sm
+            g["role"] = sm["role"]
+
+    def dodavatel(strany):
+        return {"nazev": ", ".join(x["nazev"] for x in strany),
+                "jmeno_podnikatele": ", ".join(x["jmeno_podnikatele"] for x in strany if x["jmeno_podnikatele"]) or None}
+
+    casti = []
+    volne = dict(skupiny)
     for z in zakazky:
         for c in z["casti"]:
             for v in c["vitezove"]:
-                kc = [x for x in v["smluvni"] if x["s_dph"] is False and x.get("mena", "CZK") == "CZK"]
-                if kc:
-                    casti.append({"role": z["role"], "zdroj_id": z["id"], "dodavatel": v["nazev"],
-                                  "jmeno_podnikatele": v.get("jmeno_podnikatele"),
-                                  "hodnota": kc[0]["hodnota"]})
-                else:
-                    bez_ceny.append(z["id"])
-    for sm in smlouvy:
-        if sm["dodatek_cislo"]:
-            continue
-        kc = [x for x in sm["castky"] if x["s_dph"] is False and x.get("mena", "CZK") == "CZK"]
-        if not kc:
-            bez_ceny.append(sm["id"])
-            continue
-        if sm.get("url") in odkazy or sm.get("evidencni_cislo_zakazky") in cisla:
-            continue
-        casti.append({"role": sm["role"], "zdroj_id": sm["id"], "dodavatel": ", ".join(x["nazev"] for x in sm["strany"]),
-                      "jmeno_podnikatele": ", ".join(x["jmeno_podnikatele"] for x in sm["strany"] if x["jmeno_podnikatele"]) or None,
-                      "hodnota": kc[0]["hodnota"]})
-    smluvni = {"celkem": sum(_halere(c["hodnota"]) for c in casti) / 100 if casti else None, "druh": "smluvni", "s_dph": False,
-               "mena": "CZK", "casti": casti, "bez_ceny": bez_ceny,
-               "dodatku_nezapocteno": sum(1 for sm in smlouvy if sm["dodatek_cislo"]),
-               "jistota": "nase_propojeni"}
-    return {"rozpocet": rozpocet_souhrn, "smluvni_bez_dph": smluvni}
+                odkazy = set(c.get("registr_smluv") or [])
+                klic = next((k for k, g in volne.items() if g["puvodni"] and g["puvodni"]["url"] in odkazy), None)
+                if not klic:   # shoda podle evidenčního čísla zakázky (doloženo)
+                    cislo = z["id"].removeprefix("ezak-")
+                    klic = next((k for k, g in volne.items()
+                                 if g["puvodni"] and g["puvodni"].get("evidencni_cislo_zakazky") == cislo), None)
+                jistota = "dolozeno" if klic else None
+                if not klic:   # stejná role a stejný dodavatel, jinak jediná zakázka i skupina dané role
+                    jmeno = v.get("jmeno_podnikatele") or v["nazev"]
+                    stejne = [k for k, g in volne.items() if g["role"] == z["role"]]
+                    dodavatel_ = [k for k in stejne if any(
+                        jmeno in (x["jmeno_podnikatele"] or x["nazev"])
+                        for x in (volne[k]["puvodni"] or (volne[k]["dodatky"] or [{}])[0]).get("strany", []))]
+                    if len(dodavatel_) == 1:
+                        klic, jistota = dodavatel_[0], "nase_propojeni"
+                    elif (len(stejne) == 1 and sum(1 for x in zakazky if x["role"] == z["role"]) == 1
+                          and not any((x["jmeno_podnikatele"] or x["nazev"]) not in ("", "fyzická osoba")
+                                      for x in (volne[stejne[0]]["puvodni"] or (volne[stejne[0]]["dodatky"] or [{}])[0])
+                                      .get("strany", []))):
+                        # jen když skupina nemá známého jiného dodavatele (např. jen anonymní strany)
+                        klic, jistota = stejne[0], "nase_propojeni"
+                g = volne.pop(klic) if klic else {"puvodni": None, "dodatky": []}
+                cena, zdroj = _bez_dph(v["smluvni"]), {"zdroj_id": z["id"], "url": z["url"]}
+                if cena is None and g["puvodni"] and _bez_dph(g["puvodni"]["castky"]) is not None:
+                    cena, zdroj = _bez_dph(g["puvodni"]["castky"]), {"zdroj_id": g["puvodni"]["id"],
+                                                                    "url": g["puvodni"]["url"]}
+                casti.append({"role": z["role"], "dodavatel": {"nazev": v["nazev"],
+                                                               "jmeno_podnikatele": v.get("jmeno_podnikatele")},
+                              "puvodni": {"bez_dph": cena, **zdroj},
+                              "dodatky_smlouvy": g["dodatky"], "vazba_dodatku": jistota})
+    for g in volne.values():
+        p_ = g["puvodni"]
+        strany = (p_ or (g["dodatky"] or [{}])[0]).get("strany", [])
+        casti.append({"role": g["role"], "dodavatel": dodavatel(strany),
+                      "puvodni": {"bez_dph": _bez_dph(p_["castky"]), "zdroj_id": p_["id"], "url": p_["url"]}
+                      if p_ else None,
+                      "dodatky_smlouvy": g["dodatky"], "vazba_dodatku": "dolozeno" if p_ else None})
+    for c in casti:
+        dodatky = sorted(c.pop("dodatky_smlouvy"), key=lambda d: d["dodatek_cislo"])
+        c["dodatky"] = [{"cislo": d["dodatek_cislo"], "bez_dph": _bez_dph(d["castky"]),
+                         "bez_castky": not d["castky"], "datum": d["datum_uzavreni"], "zdroj_id": d["id"],
+                         "url": d["url"]} for d in dodatky]
+        cisla = {d["cislo"] for d in c["dodatky"]}
+        c["chybi_dodatky"] = sorted(set(range(1, max(cisla) + 1)) - cisla) if cisla else []
+        # dodatek bez částky v registru (cena neuvedena) = změna ceny neznámá → cena po dodatcích neznámá
+        znam = all(d["bez_dph"] is not None for d in c["dodatky"])
+        zaklad = c["puvodni"]["bez_dph"] if c["puvodni"] else None
+        c["cena_po_dodatcich"] = (
+            (_halere(zaklad) + sum(_halere(d["bez_dph"]) for d in c["dodatky"] if d["bez_dph"] is not None)) / 100
+            if zaklad is not None and not c["chybi_dodatky"] and znam else None)
+        c["dodatky_bez_dph"] = (sum(_halere(d["bez_dph"]) for d in c["dodatky"] if d["bez_dph"] is not None) / 100
+                                if any(d["bez_dph"] is not None for d in c["dodatky"]) else None)
+    poradi = ["stavba", "projekt", "technicky_dozor", "bozp", "vybaveni", "administrace"]
+    return sorted(casti, key=lambda c: poradi.index(c["role"]) if c["role"] in poradi else 99)
 
 
 def faze(zakazky: list[dict], smlouvy: list[dict]) -> str:

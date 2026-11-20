@@ -77,6 +77,123 @@
         "po_poslednim_ro": 587000.0
       }
     ],
+    "casti": [
+      {
+        "role": "stavba",
+        "dodavatel": {
+          "nazev": "MANE STAVEBNÍ s.r.o.",
+          "jmeno_podnikatele": null
+        },
+        "puvodni": {
+          "bez_dph": 54625965.36,
+          "zdroj_id": "ezak-VZ-901",
+          "url": "https://zakazky.mesto-trebon.cz/contract_display_901.html"
+        },
+        "vazba_dodatku": "nase_propojeni",
+        "dodatky": [
+          {
+            "cislo": 3,
+            "bez_dph": 909242.11,
+            "bez_castky": false,
+            "datum": "2026-08-28",
+            "zdroj_id": "rs-39303451",
+            "url": "https://smlouvy.gov.cz/smlouva/39303451"
+          },
+          {
+            "cislo": 4,
+            "bez_dph": null,
+            "bez_castky": true,
+            "datum": "2026-09-25",
+            "zdroj_id": "rs-39681309",
+            "url": "https://smlouvy.gov.cz/smlouva/39681309"
+          },
+          {
+            "cislo": 5,
+            "bez_dph": 2501117.05,
+            "bez_castky": false,
+            "datum": "2026-11-02",
+            "zdroj_id": "rs-40163777",
+            "url": "https://smlouvy.gov.cz/smlouva/40163777"
+          }
+        ],
+        "chybi_dodatky": [
+          1,
+          2
+        ],
+        "cena_po_dodatcich": null,
+        "dodatky_bez_dph": 3410359.16
+      },
+      {
+        "role": "projekt",
+        "dodavatel": {
+          "nazev": "fyzická osoba",
+          "jmeno_podnikatele": "Ing. Josef Kregl"
+        },
+        "puvodni": {
+          "bez_dph": 945000.0,
+          "zdroj_id": "ezak-VZ-877",
+          "url": "https://zakazky.mesto-trebon.cz/contract_display_877.html"
+        },
+        "vazba_dodatku": "nase_propojeni",
+        "dodatky": [
+          {
+            "cislo": 1,
+            "bez_dph": 147000.0,
+            "bez_castky": false,
+            "datum": "2026-10-27",
+            "zdroj_id": "rs-40118109",
+            "url": "https://smlouvy.gov.cz/smlouva/40118109"
+          }
+        ],
+        "chybi_dodatky": [],
+        "cena_po_dodatcich": 1092000.0,
+        "dodatky_bez_dph": 147000.0
+      },
+      {
+        "role": "technicky_dozor",
+        "dodavatel": {
+          "nazev": "fyzická osoba",
+          "jmeno_podnikatele": "Zdeněk Musil"
+        },
+        "puvodni": null,
+        "vazba_dodatku": null,
+        "dodatky": [
+          {
+            "cislo": 1,
+            "bez_dph": 14500.0,
+            "bez_castky": false,
+            "datum": "2026-09-30",
+            "zdroj_id": "rs-39724805",
+            "url": "https://smlouvy.gov.cz/smlouva/39724805"
+          }
+        ],
+        "chybi_dodatky": [],
+        "cena_po_dodatcich": null,
+        "dodatky_bez_dph": 14500.0
+      },
+      {
+        "role": "bozp",
+        "dodavatel": {
+          "nazev": "fyzická osoba",
+          "jmeno_podnikatele": "Ing. Pavel Houška"
+        },
+        "puvodni": null,
+        "vazba_dodatku": null,
+        "dodatky": [
+          {
+            "cislo": 1,
+            "bez_dph": 7750.0,
+            "bez_castky": false,
+            "datum": "2026-09-30",
+            "zdroj_id": "rs-39725837",
+            "url": "https://smlouvy.gov.cz/smlouva/39725837"
+          }
+        ],
+        "chybi_dodatky": [],
+        "cena_po_dodatcich": null,
+        "dodatky_bez_dph": 7750.0
+      }
+    ],
     "souhrn": {
       "rozpocet": {
         "celkem": 59579143.49,
@@ -92,24 +209,12 @@
         "druh": "smluvni",
         "s_dph": false,
         "mena": "CZK",
-        "casti": [
-          {
-            "role": "stavba",
-            "zdroj_id": "ezak-VZ-901",
-            "dodavatel": "MANE STAVEBNÍ s.r.o.",
-            "jmeno_podnikatele": null,
-            "hodnota": 54625965.36
-          },
-          {
-            "role": "projekt",
-            "zdroj_id": "ezak-VZ-877",
-            "dodavatel": "fyzická osoba",
-            "jmeno_podnikatele": "Ing. Josef Kregl",
-            "hodnota": 945000.0
-          }
+        "po_dodatcich": null,
+        "neuplne": [
+          "stavba",
+          "technicky_dozor",
+          "bozp"
         ],
-        "bez_ceny": [],
-        "dodatku_nezapocteno": 6,
         "jistota": "nase_propojeni"
       }
     },
@@ -218,6 +323,8 @@
     "smlouvy": [
       {
         "id": "rs-39303451",
+        "id_smlouvy": "36947583",
+        "navazuje_na": "34148121",
         "predmet": "Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 3",
         "role": "stavba",
         "dodatek_cislo": 3,
@@ -244,12 +351,15 @@
             "jednotka": "Kč"
           }
         ],
+        "cena_neuvedena": false,
         "url": "https://smlouvy.gov.cz/smlouva/39303451",
         "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       },
       {
         "id": "rs-39681309",
+        "id_smlouvy": "37310917",
+        "navazuje_na": "34148121",
         "predmet": "Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 4",
         "role": "stavba",
         "dodatek_cislo": 4,
@@ -261,12 +371,15 @@
           }
         ],
         "castky": [],
+        "cena_neuvedena": false,
         "url": "https://smlouvy.gov.cz/smlouva/39681309",
         "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       },
       {
         "id": "rs-39724805",
+        "id_smlouvy": "37352781",
+        "navazuje_na": "34139917",
         "predmet": "Příkazní smlouva - Technický dozor stavebníka na akci Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 1",
         "role": "technicky_dozor",
         "dodatek_cislo": 1,
@@ -293,12 +406,15 @@
             "jednotka": "Kč"
           }
         ],
+        "cena_neuvedena": false,
         "url": "https://smlouvy.gov.cz/smlouva/39724805",
         "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       },
       {
         "id": "rs-39725837",
+        "id_smlouvy": "37353729",
+        "navazuje_na": "34119585",
         "predmet": "Příkazní smlouva - Koordinátor BOZP na akci Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 1",
         "role": "bozp",
         "dodatek_cislo": 1,
@@ -325,12 +441,15 @@
             "jednotka": "Kč"
           }
         ],
+        "cena_neuvedena": false,
         "url": "https://smlouvy.gov.cz/smlouva/39725837",
         "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       },
       {
         "id": "rs-40118109",
+        "id_smlouvy": "37730005",
+        "navazuje_na": "31167288",
         "predmet": "Zpracování projektové dokumentace ve stupni DZS/DPS přístavby dvou tělocvičen - revitalizace a přístavba sportovní haly Třeboň - dodatek č. 1",
         "role": "projekt",
         "dodatek_cislo": 1,
@@ -357,12 +476,15 @@
             "jednotka": "Kč"
           }
         ],
+        "cena_neuvedena": false,
         "url": "https://smlouvy.gov.cz/smlouva/40118109",
         "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       },
       {
         "id": "rs-40163777",
+        "id_smlouvy": "37774173",
+        "navazuje_na": "34148121",
         "predmet": "Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 5",
         "role": "stavba",
         "dodatek_cislo": 5,
@@ -389,6 +511,7 @@
             "jednotka": "Kč"
           }
         ],
+        "cena_neuvedena": false,
         "url": "https://smlouvy.gov.cz/smlouva/40163777",
         "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
@@ -661,6 +784,191 @@
         "po_poslednim_ro": 3256000.0
       }
     ],
+    "casti": [
+      {
+        "role": "stavba",
+        "dodavatel": {
+          "nazev": "Retherm s.r.o.",
+          "jmeno_podnikatele": null
+        },
+        "puvodni": {
+          "bez_dph": 51382827.84,
+          "zdroj_id": "ezak-VZ-883",
+          "url": "https://zakazky.mesto-trebon.cz/contract_display_883.html"
+        },
+        "vazba_dodatku": "nase_propojeni",
+        "dodatky": [
+          {
+            "cislo": 3,
+            "bez_dph": 1334880.1,
+            "bez_castky": false,
+            "datum": "2026-08-28",
+            "zdroj_id": "rs-39302679",
+            "url": "https://smlouvy.gov.cz/smlouva/39302679"
+          },
+          {
+            "cislo": 4,
+            "bez_dph": null,
+            "bez_castky": true,
+            "datum": "2026-09-14",
+            "zdroj_id": "rs-39520809",
+            "url": "https://smlouvy.gov.cz/smlouva/39520809"
+          },
+          {
+            "cislo": 5,
+            "bez_dph": 870555.97,
+            "bez_castky": false,
+            "datum": "2026-10-23",
+            "zdroj_id": "rs-40101957",
+            "url": "https://smlouvy.gov.cz/smlouva/40101957"
+          }
+        ],
+        "chybi_dodatky": [
+          1,
+          2
+        ],
+        "cena_po_dodatcich": null,
+        "dodatky_bez_dph": 2205436.07
+      },
+      {
+        "role": "projekt",
+        "dodavatel": {
+          "nazev": "fyzická osoba",
+          "jmeno_podnikatele": "Ing. Josef Kregl"
+        },
+        "puvodni": {
+          "bez_dph": 873000.0,
+          "zdroj_id": "ezak-VZ-810",
+          "url": "https://zakazky.mesto-trebon.cz/contract_display_810.html"
+        },
+        "vazba_dodatku": "nase_propojeni",
+        "dodatky": [
+          {
+            "cislo": 1,
+            "bez_dph": 56500.0,
+            "bez_castky": false,
+            "datum": "2026-10-27",
+            "zdroj_id": "rs-40117957",
+            "url": "https://smlouvy.gov.cz/smlouva/40117957"
+          }
+        ],
+        "chybi_dodatky": [],
+        "cena_po_dodatcich": 929500.0,
+        "dodatky_bez_dph": 56500.0
+      },
+      {
+        "role": "technicky_dozor",
+        "dodavatel": {
+          "nazev": "fyzická osoba",
+          "jmeno_podnikatele": "Zdeněk Musil"
+        },
+        "puvodni": null,
+        "vazba_dodatku": null,
+        "dodatky": [
+          {
+            "cislo": 1,
+            "bez_dph": 35000.0,
+            "bez_castky": false,
+            "datum": "2026-09-30",
+            "zdroj_id": "rs-39725413",
+            "url": "https://smlouvy.gov.cz/smlouva/39725413"
+          }
+        ],
+        "chybi_dodatky": [],
+        "cena_po_dodatcich": null,
+        "dodatky_bez_dph": 35000.0
+      },
+      {
+        "role": "bozp",
+        "dodavatel": {
+          "nazev": "fyzická osoba",
+          "jmeno_podnikatele": "Ing. Pavel Houška"
+        },
+        "puvodni": null,
+        "vazba_dodatku": null,
+        "dodatky": [
+          {
+            "cislo": 1,
+            "bez_dph": 16167.0,
+            "bez_castky": false,
+            "datum": "2026-10-01",
+            "zdroj_id": "rs-39748681",
+            "url": "https://smlouvy.gov.cz/smlouva/39748681"
+          }
+        ],
+        "chybi_dodatky": [],
+        "cena_po_dodatcich": null,
+        "dodatky_bez_dph": 16167.0
+      },
+      {
+        "role": "vybaveni",
+        "dodavatel": {
+          "nazev": "Artspect, a.s.",
+          "jmeno_podnikatele": null
+        },
+        "puvodni": {
+          "bez_dph": 1674348.0,
+          "zdroj_id": "ezak-VZ-936",
+          "url": "https://zakazky.mesto-trebon.cz/contract_display_936.html"
+        },
+        "vazba_dodatku": "nase_propojeni",
+        "dodatky": [
+          {
+            "cislo": 1,
+            "bez_dph": 96668.0,
+            "bez_castky": false,
+            "datum": "2026-09-30",
+            "zdroj_id": "rs-39899189",
+            "url": "https://smlouvy.gov.cz/smlouva/39899189"
+          },
+          {
+            "cislo": 2,
+            "bez_dph": 99981.0,
+            "bez_castky": false,
+            "datum": "2026-10-27",
+            "zdroj_id": "rs-40117365",
+            "url": "https://smlouvy.gov.cz/smlouva/40117365"
+          }
+        ],
+        "chybi_dodatky": [],
+        "cena_po_dodatcich": 1870997.0,
+        "dodatky_bez_dph": 196649.0
+      },
+      {
+        "role": "vybaveni",
+        "dodavatel": {
+          "nazev": "StrongGear s.r.o.",
+          "jmeno_podnikatele": null
+        },
+        "puvodni": {
+          "bez_dph": 310125.87,
+          "zdroj_id": "rs-40060341",
+          "url": "https://smlouvy.gov.cz/smlouva/40060341"
+        },
+        "vazba_dodatku": "dolozeno",
+        "dodatky": [],
+        "chybi_dodatky": [],
+        "cena_po_dodatcich": 310125.87,
+        "dodatky_bez_dph": null
+      },
+      {
+        "role": "vybaveni",
+        "dodavatel": {
+          "nazev": "LP DVORACEK spol. s r.o.",
+          "jmeno_podnikatele": null
+        },
+        "puvodni": {
+          "bez_dph": 208817.0,
+          "zdroj_id": "rs-39574269",
+          "url": "https://smlouvy.gov.cz/smlouva/39574269"
+        },
+        "vazba_dodatku": "dolozeno",
+        "dodatky": [],
+        "chybi_dodatky": [],
+        "cena_po_dodatcich": 208817.0,
+        "dodatky_bez_dph": null
+      }
+    ],
     "souhrn": {
       "rozpocet": {
         "celkem": 66281000.0,
@@ -676,45 +984,12 @@
         "druh": "smluvni",
         "s_dph": false,
         "mena": "CZK",
-        "casti": [
-          {
-            "role": "vybaveni",
-            "zdroj_id": "ezak-VZ-936",
-            "dodavatel": "Artspect, a.s.",
-            "jmeno_podnikatele": null,
-            "hodnota": 1674348.0
-          },
-          {
-            "role": "stavba",
-            "zdroj_id": "ezak-VZ-883",
-            "dodavatel": "Retherm s.r.o.",
-            "jmeno_podnikatele": null,
-            "hodnota": 51382827.84
-          },
-          {
-            "role": "projekt",
-            "zdroj_id": "ezak-VZ-810",
-            "dodavatel": "fyzická osoba",
-            "jmeno_podnikatele": "Ing. Josef Kregl",
-            "hodnota": 873000.0
-          },
-          {
-            "role": "vybaveni",
-            "zdroj_id": "rs-40060341",
-            "dodavatel": "StrongGear s.r.o.",
-            "jmeno_podnikatele": null,
-            "hodnota": 310125.87
-          },
-          {
-            "role": "vybaveni",
-            "zdroj_id": "rs-39574269",
-            "dodavatel": "LP DVORACEK spol. s r.o.",
-            "jmeno_podnikatele": null,
-            "hodnota": 208817.0
-          }
+        "po_dodatcich": null,
+        "neuplne": [
+          "stavba",
+          "technicky_dozor",
+          "bozp"
         ],
-        "bez_ceny": [],
-        "dodatku_nezapocteno": 8,
         "jistota": "nase_propojeni"
       }
     },
@@ -885,6 +1160,8 @@
     "smlouvy": [
       {
         "id": "rs-39302679",
+        "id_smlouvy": "36946827",
+        "navazuje_na": "33962317",
         "predmet": "Sportovní hala Třeboň - nástavba a přístavba ubytování - dodatek č. 3",
         "role": "stavba",
         "dodatek_cislo": 3,
@@ -911,12 +1188,15 @@
             "jednotka": "Kč"
           }
         ],
+        "cena_neuvedena": false,
         "url": "https://smlouvy.gov.cz/smlouva/39302679",
         "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       },
       {
         "id": "rs-39520809",
+        "id_smlouvy": "37156385",
+        "navazuje_na": "33962317",
         "predmet": "Sportovní hala Třeboň - nástavba a přístavba ubytování - dodatek č. 4",
         "role": "stavba",
         "dodatek_cislo": 4,
@@ -928,12 +1208,15 @@
           }
         ],
         "castky": [],
+        "cena_neuvedena": false,
         "url": "https://smlouvy.gov.cz/smlouva/39520809",
         "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       },
       {
         "id": "rs-39574269",
+        "id_smlouvy": "37208201",
+        "navazuje_na": null,
         "predmet": "Sportovní hala Třeboň - nástavba a přístavba ubytování - dodávka televizorů",
         "role": "vybaveni",
         "dodatek_cislo": null,
@@ -960,12 +1243,15 @@
             "jednotka": "Kč"
           }
         ],
+        "cena_neuvedena": false,
         "url": "https://smlouvy.gov.cz/smlouva/39574269",
         "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       },
       {
         "id": "rs-39725413",
+        "id_smlouvy": "37353329",
+        "navazuje_na": "33928593",
         "predmet": "Příkazní smlouva - Technický dozor stavebníka na akci Sportovní hala Třeboň - nástavba a přístavba ubytování - dodatek č. 1",
         "role": "technicky_dozor",
         "dodatek_cislo": 1,
@@ -992,12 +1278,15 @@
             "jednotka": "Kč"
           }
         ],
+        "cena_neuvedena": false,
         "url": "https://smlouvy.gov.cz/smlouva/39725413",
         "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       },
       {
         "id": "rs-39899189",
+        "id_smlouvy": "37354941",
+        "navazuje_na": "35749349",
         "predmet": "Sportovní hala Třeboň - nástavba a přístavba ubytování - vybavení interiéru - dodatek č. 1",
         "role": "vybaveni",
         "dodatek_cislo": 1,
@@ -1024,12 +1313,15 @@
             "jednotka": "Kč"
           }
         ],
+        "cena_neuvedena": false,
         "url": "https://smlouvy.gov.cz/smlouva/39899189",
         "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       },
       {
         "id": "rs-39748681",
+        "id_smlouvy": "37375201",
+        "navazuje_na": "33927205",
         "predmet": "Příkazní smlouva - Koordinátor BOZP na akci Sportovní hala Třeboň - nástavba a přístavba ubytování - dodatek č. 1",
         "role": "bozp",
         "dodatek_cislo": 1,
@@ -1056,12 +1348,15 @@
             "jednotka": "Kč"
           }
         ],
+        "cena_neuvedena": false,
         "url": "https://smlouvy.gov.cz/smlouva/39748681",
         "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       },
       {
         "id": "rs-40060341",
+        "id_smlouvy": "37674657",
+        "navazuje_na": null,
         "predmet": "Dodávka vybavení posilovny v objektu ubytování sportovní haly Třeboň dle nabídky z 09.10.2026 vč. dopravy",
         "role": "vybaveni",
         "dodatek_cislo": null,
@@ -1088,12 +1383,15 @@
             "jednotka": "Kč"
           }
         ],
+        "cena_neuvedena": false,
         "url": "https://smlouvy.gov.cz/smlouva/40060341",
         "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       },
       {
         "id": "rs-40101957",
+        "id_smlouvy": "37714621",
+        "navazuje_na": "33962317",
         "predmet": "Sportovní hala Třeboň - nástavba a přístavba ubytování - dodatek č. 5",
         "role": "stavba",
         "dodatek_cislo": 5,
@@ -1120,12 +1418,15 @@
             "jednotka": "Kč"
           }
         ],
+        "cena_neuvedena": false,
         "url": "https://smlouvy.gov.cz/smlouva/40101957",
         "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       },
       {
         "id": "rs-40117365",
+        "id_smlouvy": "37729313",
+        "navazuje_na": "35749349",
         "predmet": "Sportovní hala Třeboň - nástavba a přístavba ubytování - vybavení interiéru - dodatek č. 2",
         "role": "vybaveni",
         "dodatek_cislo": 2,
@@ -1152,12 +1453,15 @@
             "jednotka": "Kč"
           }
         ],
+        "cena_neuvedena": false,
         "url": "https://smlouvy.gov.cz/smlouva/40117365",
         "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       },
       {
         "id": "rs-40117957",
+        "id_smlouvy": "37729869",
+        "navazuje_na": "28200348",
         "predmet": "Zpracování projektové dokumentace - Ubytovací objekt sportovní haly, Třeboň - dodatek č. 1",
         "role": "projekt",
         "dodatek_cislo": 1,
@@ -1184,6 +1488,7 @@
             "jednotka": "Kč"
           }
         ],
+        "cena_neuvedena": false,
         "url": "https://smlouvy.gov.cz/smlouva/40117957",
         "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"

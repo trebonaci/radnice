@@ -25,8 +25,8 @@ def usn(id_, text):
             "overeni": "overeno_kodem", "vysledek_hlasovani": "prijato", "text": text}
 
 
-def smlouva(id_, predmet, datum="2026-09-30"):
-    return {"id": id_, "predmet": predmet, "datum_uzavreni": datum, "strany": [{"nazev": "Firma s.r.o."}],
+def smlouva(id_, predmet, datum="2026-09-30", navazuje_na=None):
+    return {"id": id_, "id_smlouvy": "i" + id_, "navazuje_na": navazuje_na, "predmet": predmet, "datum_uzavreni": datum, "strany": [{"nazev": "Firma s.r.o."}],
             "castky": [{"hodnota": 10.0, "s_dph": False}], "url": "u"}
 
 
@@ -78,32 +78,52 @@ def test_ai_puvod_a_mena_zustavaji():
     assert k["smlouvy"][0]["castky"][0]["mena"] == "EUR"
 
 
+def sml(id_, role, cislo=None, castka=None, navazuje=None, strana="A", url=None):
+    return {"id": id_, "id_smlouvy": "i" + id_, "navazuje_na": navazuje, "role": role, "dodatek_cislo": cislo,
+            "datum_uzavreni": "2026-09-30", "url": url or "u" + id_,
+            "strany": [{"nazev": strana, "jmeno_podnikatele": None}],
+            "castky": [] if castka is None else [{"hodnota": castka, "s_dph": False}]}
+
+
+def test_casti_dodatek_k_puvodni_smlouve_a_cena_po_dodatcich():
+    # BOZP: původní 138 900 + dodatek č. 1 7 750 = 146 650 Kč bez DPH (doslova v dodatku, registr 20. 11. 2026)
+    c = pr.casti_akce([], [sml("b0", "bozp", castka=138900.0), sml("b1", "bozp", 1, 7750.0, navazuje="ib0")])
+    assert len(c) == 1 and c[0]["cena_po_dodatcich"] == 146650.0 and c[0]["vazba_dodatku"] == "dolozeno"
+    assert c[0]["dodatky_bez_dph"] == 7750.0
+
+
+def test_casti_chybejici_dodatek_nebo_puvodni_cena_bez_souctu():
+    zak = [{"id": "z1", "role": "stavba", "url": "e", "casti": [{"registr_smluv": [], "vitezove": [
+        {"nazev": "A", "smluvni": [{"hodnota": 100.0, "s_dph": False}]}]}]}]
+    c = pr.casti_akce(zak, [sml("d3", "stavba", 3, 10.0, navazuje="x"), sml("d4", "stavba", 4, navazuje="x"),
+                            sml("t1", "technicky_dozor", 1, 5.0, navazuje="y")])
+    stavba, tds = c
+    assert stavba["puvodni"]["bez_dph"] == 100.0 and stavba["chybi_dodatky"] == [1, 2]
+    assert stavba["cena_po_dodatcich"] is None and stavba["dodatky"][1]["bez_castky"] is True
+    assert tds["puvodni"] is None and tds["cena_po_dodatcich"] is None and tds["dodatky_bez_dph"] == 5.0
+
+
 def test_souhrn_scita_jen_v_ramci_druhu():
     rozpocet = [{"kapitalova": True, "po_poslednim_ro": 58992143.49, "jistota": "dolozeno"},
                 {"kapitalova": False, "po_poslednim_ro": 587000.0, "jistota": "nase_propojeni"},
                 {"kapitalova": False, "po_poslednim_ro": None, "jistota": "dolozeno"}]
-    zak = [{"id": "z1", "role": "stavba", "casti": [{"registr_smluv": ["u1"], "vitezove": [{"nazev": "A", "smluvni": [
-        {"hodnota": 66097418.09, "s_dph": True}, {"hodnota": 54625965.36, "s_dph": False, "mena": "CZK"}]}]}]}]
-    sml = [{"id": "s1", "role": "stavba", "dodatek_cislo": None, "strany": [{"nazev": "A", "jmeno_podnikatele": None}], "url": "u1",
-            "castky": [{"hodnota": 54625965.36, "s_dph": False}]},                       # tatáž smlouva jako z1
-           {"id": "s2", "role": "vybaveni", "dodatek_cislo": None, "strany": [{"nazev": "B", "jmeno_podnikatele": None}], "url": "u2",
-            "castky": [{"hodnota": 310125.87, "s_dph": False}, {"hodnota": 375252.3, "s_dph": True}]},
-           {"id": "s3", "role": "stavba", "dodatek_cislo": 5, "strany": [{"nazev": "A", "jmeno_podnikatele": None}],
-            "castky": [{"hodnota": 2501117.05, "s_dph": False}]},
-           {"id": "s4", "role": "bozp", "dodatek_cislo": None, "strany": [{"nazev": "C", "jmeno_podnikatele": None}], "castky": []}]
-    s = pr.souhrn(rozpocet, zak, sml)
+    zak = [{"id": "z1", "role": "stavba", "url": "e", "casti": [{"registr_smluv": ["u-s1"], "vitezove": [
+        {"nazev": "A", "smluvni": [{"hodnota": 66097418.09, "s_dph": True}, {"hodnota": 54625965.36, "s_dph": False}]}]}]}]
+    casti = pr.casti_akce(zak, [sml("s1", "stavba", castka=54625965.36, url="u-s1"),     # tatáž smlouva jako z1
+                                sml("s2", "vybaveni", castka=310125.87, strana="B"),
+                                sml("s3", "stavba", 1, 2501117.05, navazuje="is1")])
+    s = pr.souhrn(rozpocet, casti)
     assert s["rozpocet"]["celkem"] == 59579143.49 and s["rozpocet"]["neinvesticni"] == 587000.0
     assert s["rozpocet"]["jistota"] == "nase_propojeni" and s["rozpocet"]["polozek"] == 2
     m = s["smluvni_bez_dph"]
-    assert m["celkem"] == 54936091.23 and [c["zdroj_id"] for c in m["casti"]] == ["z1", "s2"]
-    assert m["bez_ceny"] == ["s4"] and m["dodatku_nezapocteno"] == 1 and m["s_dph"] is False
+    assert m["celkem"] == 54936091.23 and m["po_dodatcich"] == 57437208.28 and m["neuplne"] == []
+    assert m["s_dph"] is False
 
 
 def test_souhrn_stejna_cena_ruzne_smlouvy_a_neznamy_soucet():
-    sm = [{"id": f"s{i}", "role": "stavba", "dodatek_cislo": None, "strany": [{"nazev": "A", "jmeno_podnikatele": None}], "url": f"u{i}",
-           "castky": [{"hodnota": 100.0, "s_dph": False}]} for i in (1, 2)]
-    assert pr.souhrn([], [], sm)["smluvni_bez_dph"]["celkem"] == 200.0
-    s = pr.souhrn([], [], [])
+    casti = pr.casti_akce([], [sml("s1", "stavba", castka=100.0), sml("s2", "stavba", castka=100.0, strana="B")])
+    assert pr.souhrn([], casti)["smluvni_bez_dph"]["celkem"] == 200.0
+    s = pr.souhrn([], [])
     assert s["rozpocet"]["celkem"] is None and s["rozpocet"]["jistota"] == "nevime"
     assert s["smluvni_bez_dph"]["celkem"] is None
 
@@ -113,4 +133,43 @@ def test_podnikatel_jmenem_v_karte():
                            strany=[{"nazev": "fyzická osoba", "jmeno_podnikatele": "Ing. Jan Projektant"}])])
     k = pr.sestav_projekt(PROJEKT, d)
     assert k["smlouvy"][0]["strany"] == [{"nazev": "fyzická osoba", "jmeno_podnikatele": "Ing. Jan Projektant"}]
-    assert k["souhrn"]["smluvni_bez_dph"]["casti"][0]["jmeno_podnikatele"] == "Ing. Jan Projektant"
+    assert k["casti"][0]["dodavatel"]["jmeno_podnikatele"] == "Ing. Jan Projektant"
+
+
+def test_puvodni_smlouva_pres_navazany_zaznam_dolozena():
+    puv = dict(smlouva("p0", "Příkazní smlouva – koordinátor BOZP"), castky=[{"hodnota": 138900.0, "s_dph": False}])
+    dod = dict(smlouva("p1", "Koordinátor BOZP na akci Přístavba dvou tělocvičen - dodatek č. 1", navazuje_na="ip0"),
+               castky=[{"hodnota": 7750.0, "s_dph": False}])
+    k = pr.sestav_projekt(PROJEKT, data(smlouvy=[puv, dod]))
+    assert {s["id"]: s["jistota"] for s in k["smlouvy"]} == {"p1": "nase_propojeni", "p0": "dolozeno"}
+    assert k["casti"][0]["cena_po_dodatcich"] == 146650.0
+
+
+def test_dodatek_bez_castky_necha_cenu_neznamou_a_ruzni_dodavatele_zvlast():
+    c = pr.casti_akce([], [sml("s0", "stavba", castka=100.0), sml("s1", "stavba", 1, navazuje="is0")])
+    assert c[0]["cena_po_dodatcich"] is None and c[0]["dodatky"][0]["bez_castky"] is True
+    zak = [{"id": "z1", "role": "vybaveni", "url": "e", "casti": [{"registr_smluv": [], "vitezove": [
+        {"nazev": "A", "smluvni": [{"hodnota": 100.0, "s_dph": False}]}]}]}]
+    c = pr.casti_akce(zak, [sml("b0", "vybaveni", castka=200.0, strana="B")])
+    assert sorted(x["puvodni"]["bez_dph"] for x in c) == [100.0, 200.0]
+
+
+def test_cena_z_registru_kdyz_ezak_cenu_nema():
+    zak = [{"id": "z1", "role": "stavba", "url": "e", "casti": [{"registr_smluv": ["u-s0"], "vitezove": [
+        {"nazev": "A", "smluvni": []}]}]}]
+    c = pr.casti_akce(zak, [sml("s0", "stavba", castka=500.0, url="u-s0")])
+    assert c[0]["puvodni"] == {"bez_dph": 500.0, "zdroj_id": "s0", "url": "u-s0"}
+
+
+def test_parovani_podle_cisla_zakazky_a_dalsi_dodatky_teze_smlouvy():
+    zak = [{"id": "ezak-VZ-1", "role": "stavba", "url": "e", "casti": [{"registr_smluv": [], "vitezove": [
+        {"nazev": "ACME s.r.o.", "smluvni": [{"hodnota": 100.0, "s_dph": False}]}]}]}]
+    c = pr.casti_akce(zak, [dict(sml("s0", "stavba", castka=100.0, strana="ACME, s.r.o."),
+                                 evidencni_cislo_zakazky="VZ-1")])
+    assert len(c) == 1 and c[0]["vazba_dodatku"] == "dolozeno"
+    puv = dict(smlouva("p0", "Smlouva o dílo"), castky=[{"hodnota": 100.0, "s_dph": False}])
+    d1 = dict(smlouva("p1", "Přístavba dvou tělocvičen - dodatek č. 1", navazuje_na="ip0"),
+              castky=[{"hodnota": 10.0, "s_dph": False}])
+    d2 = dict(smlouva("p2", "Dodatek č. 2", navazuje_na="ip0"), castky=[])
+    k = pr.sestav_projekt(PROJEKT, data(smlouvy=[puv, d1, d2]))
+    assert [d["cislo"] for d in k["casti"][0]["dodatky"]] == [1, 2] and k["casti"][0]["cena_po_dodatcich"] is None
