@@ -70,9 +70,23 @@ OBLASTI_PRO_OBCANY = {"socialni", "sport", "kultura", "skolstvi", "komunity_spol
 RE_URADNI_ZACATEK = re.compile(r"^(Rada|Zastupitelstvo|RM|ZM)\b")
 
 
-def zkontroluj_pro_obcany(pro: dict) -> list[str]:
+def _kmeny(text: str) -> list[str]:
+    """Kmeny slov (první 4 znaky slov o 3+ písmenech) – tolerance ke skloňování („Sokolská“ ~ „Sokolskou“)."""
+    return [w.lower()[:max(3, min(4, len(w) - 1))] for w in re.findall(r"\w{3,}", text or "")]
+
+
+def zkontroluj_pro_obcany(pro: dict, text_usneseni: str | None = None) -> list[str]:
     """Pravidla věty „Co se mění pro vás“ (docs/ANOTACE.md), která jde ohlídat kódem."""
     chyby = []
+    kdo = pro.get("kdo")
+    if kdo is not None:
+        if not str(kdo).strip() or len(str(kdo)) > 60:
+            chyby.append("kdo musí být krátký název organizace nebo místa (nejvýš 60 znaků)")
+        elif text_usneseni is not None:
+            zdroj = " ".join(_kmeny(text_usneseni))
+            chybi = [k for k in _kmeny(kdo) if not k.isdigit() and k not in zdroj]
+            if chybi:
+                chyby.append(f"kdo {kdo!r}: slova nejsou v textu usnesení ({', '.join(chybi)})")
     text = (pro.get("text") or "").strip()
     if not text:
         chyby.append("chybí text")
@@ -215,7 +229,7 @@ def zpracuj_jednani(jednani_id: str, manifest: dict, chyby: list[str], osoby: di
         pro = a.get("pro_obcany")          # „co se mění pro vás“ (AI, věta pro čtenáře + doslovná citace)
         if pro:
             ok &= over(pro["citace"], u["text"], f"{u['id']} pro_obcany")
-            for c in zkontroluj_pro_obcany(pro):
+            for c in zkontroluj_pro_obcany(pro, u["text"]):
                 chyby.append(f"{jednani_id}: {u['id']} pro_obcany: {c}")
         for cit in ([a["citace"]] + [c["citace"] for c in a.get("castky", [])] + [p["citace"] for p in a.get("parcely", [])]
                     + ([pro["citace"]] if pro else [])):
@@ -251,7 +265,8 @@ def zpracuj_jednani(jednani_id: str, manifest: dict, chyby: list[str], osoby: di
             "citace": citace_usn,
             "castky": [{**c, "mena": "CZK"} for c in a.get("castky", [])],
             "parcely": a.get("parcely", []),
-            "pro_obcany": {"text": pro["text"], "oblast": pro.get("oblast"), "plati_od": pro.get("plati_od"),
+            "pro_obcany": {"text": pro["text"], "kdo": pro.get("kdo"), "oblast": pro.get("oblast"),
+                           "plati_od": pro.get("plati_od"),
                            "citace": {"dokument_id": dok["dokument_id"], "strany": u["strany"], "text": pro["citace"]}}
             if pro else None,
             "pro_obcany_ai": True if pro else None,

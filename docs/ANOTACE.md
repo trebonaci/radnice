@@ -42,6 +42,7 @@ v přehledu „Co se v Třeboni mění“, proto musí obstát i bez kontextu.
 
 ```yaml
     pro_obcany:
+      kdo: "Klubovna, Chelčického 2/II"   # organizace nebo místo do nadpisu karty
       text: "Klubovna v domě s pečovatelskou službou v Chelčického ulici zůstává do konce roku 2030 seniorům, šachistům, pěveckému sboru a malířům; náklady na provoz hradí město."
       oblast: socialni
       plati_od: "2027-01-01"     # jen když datum výslovně uvádí zdroj, jinak pole vynechat
@@ -64,4 +65,7 @@ investice (mají vlastní kartu), majetkové převody bez dopadu na veřejné u�
 - žádná jména nevolených osob (fyzická osoba = „fyzická osoba“), žádné hodnocení;
 - `oblast` z číselníku: `socialni`, `sport`, `kultura`, `skolstvi`, `komunity_spolky`, `doprava`,
   `voda_odpady`, `uzemni_plan`, `bydleni`, `zivotni_prostredi`, `bezpecnost`, `jine`;
+- `kdo` = krátký název organizace nebo místa, kterého se věc týká (nejvýš 60 znaků; „ZŠ Sokolská“, „MŠ Sluníčko“,
+  „Hotel Sport, sportovní hala“); zobrazí se jako nadpis karty, aby se podobné karty nepletly. Slova musí být
+  v textu usnesení (sestavení to ověří, toleruje skloňování); zkratky ZŠ, MŠ, DPS jsou povolené;
 - `citace` = doslovný úsek usnesení, který větu dokládá; nesmí obsahovat řetězec z `anonymizace`.

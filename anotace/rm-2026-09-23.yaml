@@ -88,6 +88,7 @@ usneseni:
 
   rm-2026-j111-u481:
     pro_obcany:
+      kdo: "Městská Vodohospodářská"
       text: "Nájemné, které Městská Vodohospodářská platí městu za vodovody a kanalizace, bude v roce 2027 19,5 mil. Kč bez DPH."
       oblast: voda_odpady
       plati_od: "2027-01-01"
@@ -156,6 +157,7 @@ usneseni:
 
   rm-2026-j111-u486:
     pro_obcany:
+      kdo: "ZŠ Na Sadech"
       text: "ZŠ Na Sadech může od spolku Děti do bruslí přijmout darem 10 párů dětských bruslí."
       oblast: skolstvi
       citace: "přijetí věcného daru 10 párů dětských bruslí v celkové hodnotě 25.000 Kč"

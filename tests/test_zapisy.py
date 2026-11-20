@@ -238,3 +238,11 @@ def test_pravidla_pro_obcany():
     assert zkontroluj_pro_obcany(dobre) == []
     spatne = zkontroluj_pro_obcany({"text": "Rada schválila " + "x" * 220, "oblast": "neco", "plati_od": "1. 1. 2027"})
     assert len(spatne) == 4
+
+
+def test_pro_obcany_kdo_musi_byt_v_textu():
+    from pipeline.sestav import zkontroluj_pro_obcany
+    pro = {"text": "Škola může přijmout brusle.", "oblast": "skolstvi", "kdo": "ZŠ Sokolská"}
+    assert zkontroluj_pro_obcany(pro, "přijetí daru Základní školou Sokolská 296") == []
+    assert zkontroluj_pro_obcany(dict(pro, kdo="ZŠ Na Sadech"), "přijetí daru Základní školou Sokolská 296")
+    assert zkontroluj_pro_obcany(dict(pro, kdo="x" * 61))

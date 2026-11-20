@@ -95,6 +95,7 @@ usneseni:
 
   rm-2026-j110-u458:
     pro_obcany:
+      kdo: "Klubovna, Chelčického 2/II"
       text: "Klubovna v domě s pečovatelskou službou v Chelčického ulici zůstává do konce roku 2030 seniorům, šachistům, pěveckému sboru a malířům; náklady na provoz hradí město."
       oblast: socialni
       citace: "prodloužení doby výprůjčky do 31.12.2030"
@@ -126,6 +127,7 @@ usneseni:
 
   rm-2026-j110-u461:
     pro_obcany:
+      kdo: "DPS Chelčického"
       text: "Město nabízí k nájmu tři malé byty v domě s pečovatelskou službou v Chelčického ulici pro seniory a invalidní důchodce s vazbou na Třeboň, nájemné od 2 320 Kč měsíčně plus úhrada za vybavení."
       oblast: socialni
       citace: "zveřejnění záměru nájmu bytu č. 9 o velikosti 1+0 (30,60 m2)"
@@ -207,6 +209,7 @@ usneseni:
 
   rm-2026-j110-u468:
     pro_obcany:
+      kdo: "JIKORD plus"
       text: "Město končí spolupráci na jízdence JIKORD plus a JIKORD plus Bavorsko."
       oblast: doprava
       citace: "uzavření Dohody o ukončení Smlouvy o spolupráci při zavedení a používání jízdenky JIKORD plus a JIKORD plus Bavorsko"
