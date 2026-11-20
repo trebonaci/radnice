@@ -1,0 +1,13 @@
+# Ručně spravovaný projekt (DATOVY_MODEL.md, „projekt“). Vazby přes `hledat` jsou „naše propojení“.
+id: mk-hermankova-daskabat
+nazev: Ulice Heřmánkova a Daskabát
+popis: Stavební úpravy místních komunikací v ulicích Heřmánkova a Daskabát v Třeboni.
+oblast: doprava
+druh: investicni
+vlastnik_subjekt_id: "00247618"
+rozpocet:
+  org: []
+  nazvy: []
+vazby:
+  hledat: ["Heřmánkova a Daskabát", "Souběžná, Heřmánkov"]
+  vyloucit: []
