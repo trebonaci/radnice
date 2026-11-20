@@ -111,7 +111,12 @@ def nacti_smlouvy(koren: Path) -> list[dict]:
                 poradi = (z.get("casZverejneni") or "") + str(ident.get("idVerze", "")).zfill(12)
                 if klic not in posledni or poradi > posledni[klic][0]:
                     posledni[klic] = (poradi, z, soubor.name)
-    vysledek = [prevod(z, zdroj, znama) for _, z, zdroj in posledni.values() if str(z.get("platnyZaznam")) == "1"]
+    def sleduje(z: dict) -> bool:          # nejnovější verze už sledovaný subjekt nemusí obsahovat
+        sml = z.get("smlouva", {})
+        ica = {sml.get("subjekt", {}).get("ico")} | {s.get("ico") for s in _seznam(sml.get("smluvniStrana"))}
+        return bool(ica & znama)
+    vysledek = [prevod(z, zdroj, znama) for _, z, zdroj in posledni.values()
+                if str(z.get("platnyZaznam")) == "1" and sleduje(z)]
     return sorted(vysledek, key=lambda s: (s["datum_zverejneni"] or "", s["id"]), reverse=True)
 
 

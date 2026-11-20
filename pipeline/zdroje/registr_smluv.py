@@ -80,15 +80,19 @@ def _na_slovnik(e: ET.Element):
     return v
 
 
-def vyber_zaznamy(soubor: IO[bytes], ico: set[str]) -> tuple[list[dict], int]:
-    """Projde dump proudově; vrátí (záznamy se sledovaným IČO, počet všech záznamů)."""
+def vyber_zaznamy(soubor: IO[bytes], ico: set[str], znama_id: set[str] | None = None) -> tuple[list[dict], int]:
+    """Projde dump proudově; vrátí (záznamy se sledovaným IČO, počet všech záznamů). Vezme i novější verzi
+    už známé smlouvy (`znama_id`), ze které sledované IČO zmizelo – jinak by dál platila stará verze
+    (Codex P2, #75)."""
+    znama_id = znama_id or set()
     vybrane, celkem = [], 0
     for udalost, e in ET.iterparse(soubor, events=("end",)):
         if _lokalni(e.tag) != "zaznam":
             continue
         celkem += 1
         ica = {x.text.strip() for x in e.iter() if _lokalni(x.tag) == "ico" and x.text}
-        if ica & ico:
+        id_sml = next((x.text.strip() for x in e.iter() if _lokalni(x.tag) == "idSmlouvy" and x.text), None)
+        if ica & ico or id_sml in znama_id:
             vybrane.append(_na_slovnik(e))
         e.clear()
     return vybrane, celkem
@@ -115,13 +119,15 @@ def stahni(koren: Path = KOREN, otevri: Callable[[str], IO[bytes]] = otevri_http
     if not dumpy:
         return [], ["index: žádné měsíční dumpy"]
     k_zpracovani = [d for d in reversed(dumpy) if _zastarale(manifest, d, ico)][:max_dumpu]
+    znama_id = {str(z.get("identifikator", {}).get("idSmlouvy")) for f in adresar.glob("*-*.json")
+                for z in json.loads(f.read_text(encoding="utf-8"))} if adresar.exists() else set()
     for d in k_zpracovani:
         try:
             with tempfile.TemporaryFile() as tmp:
                 with otevri(d["url"]) as r:
                     shutil.copyfileobj(r, tmp)
                 tmp.seek(0)
-                zaznamy, celkem = vyber_zaznamy(tmp, ico)
+                zaznamy, celkem = vyber_zaznamy(tmp, ico, znama_id)
         except Exception as e:  # noqa: BLE001 – ohlásit, zbytek dávky dál
             chyby.append(f"{d['klic']}: {e}")
             continue

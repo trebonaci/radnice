@@ -147,3 +147,15 @@ def test_zmena_sledovanych_ico_vynuti_nove_zpracovani(koren):
     d = {"klic": "2026-10", "hash": "h10"}
     assert rs._zastarale(m, d, rs.sledovana_ico(koren)) is False
     assert rs._zastarale(m, d, {"123"}) is True
+
+
+def test_novejsi_verze_bez_sledovaneho_ico_nahradi_starou(koren):
+    """Oprava metadat odebrala sledované IČO: smlouva už nemá u subjektu figurovat (Codex P2, #75)."""
+    nactene(koren)
+    oprava = (f'<dump xmlns="{NS}">' + zaznam(1, 13, "2026-11-02T08:00:00+01:00", "99999999",
+              ("Cizí s.r.o.", "22222222"), "Oprava – jiný subjekt", bez="1") + "</dump>")
+    idx = INDEX.replace(b"</index>", b'<dump><mesic>11</mesic><rok>2026</rok><hashDumpu>h11</hashDumpu>'
+                        b'<odkaz>https://data.smlouvy.gov.cz/dump_2026_11.xml</odkaz></dump></index>')
+    rs.stahni(koren, otevri_z({rs.INDEX_URL: idx, "https://data.smlouvy.gov.cz/dump_2026_11.xml": oprava.encode()}, []),
+              max_dumpu=1)
+    assert "1" not in {s["id_smlouvy"] for s in smlouvy.nacti_smlouvy(koren)}
