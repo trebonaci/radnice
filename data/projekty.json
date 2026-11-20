@@ -2516,26 +2516,6 @@
         "dodatky_bez_dph": 5703927.84
       },
       {
-        "role": "stavba",
-        "dodavatel": {
-          "nazev": "JPS J. Hradec s.r.o.",
-          "jmeno_podnikatele": null
-        },
-        "puvodni": {
-          "bez_dph": 233000.0,
-          "s_dph": 281930.0,
-          "zdroj_id": "rs-36589065",
-          "url": "https://smlouvy.gov.cz/smlouva/36589065"
-        },
-        "vazba_dodatku": "dolozeno",
-        "dodatky": [],
-        "chybi_dodatky": [],
-        "obsahuje_dopocet_dph": false,
-        "cena_po_dodatcich": 233000.0,
-        "cena_po_dodatcich_s_dph": 281930.0,
-        "dodatky_bez_dph": null
-      },
-      {
         "role": "projekt",
         "dodavatel": {
           "nazev": "fyzická osoba",
@@ -2566,6 +2546,26 @@
         "cena_po_dodatcich": 929500.0,
         "cena_po_dodatcich_s_dph": 929500.0,
         "dodatky_bez_dph": 56500.0
+      },
+      {
+        "role": "projekt",
+        "dodavatel": {
+          "nazev": "JPS J. Hradec s.r.o.",
+          "jmeno_podnikatele": null
+        },
+        "puvodni": {
+          "bez_dph": 233000.0,
+          "s_dph": 281930.0,
+          "zdroj_id": "rs-36589065",
+          "url": "https://smlouvy.gov.cz/smlouva/36589065"
+        },
+        "vazba_dodatku": "dolozeno",
+        "dodatky": [],
+        "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
+        "cena_po_dodatcich": 233000.0,
+        "cena_po_dodatcich_s_dph": 281930.0,
+        "dodatky_bez_dph": null
       },
       {
         "role": "technicky_dozor",
@@ -3023,7 +3023,7 @@
         "navazuje_na": null,
         "cislo_smlouvy": "750/9287/26",
         "predmet": "Vypracování projektu interiéru akce Sportovní hala Třeboň - nástavba a přístavba ubytování",
-        "role": "stavba",
+        "role": "projekt",
         "dodatek_cislo": null,
         "datum_uzavreni": "2026-01-29",
         "strany": [
@@ -3657,7 +3657,7 @@
         "datum": "2026-01-29",
         "typ": "smlouva",
         "text": "Vypracování projektu interiéru akce Sportovní hala Třeboň - nástavba a přístavba ubytování",
-        "role": "stavba",
+        "role": "projekt",
         "zdroj_id": "rs-36589065",
         "jistota": "nase_propojeni"
       },

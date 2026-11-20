@@ -33,6 +33,7 @@ def smlouva(id_, predmet, datum="2026-09-30", navazuje_na=None):
 def test_role():
     assert pr.role("Příkazní smlouva - Technický dozor stavebníka na akci X - dodatek č. 1") == "technicky_dozor"
     assert pr.role("Zpracování projektové dokumentace ve stupni DZS/DPS") == "projekt"
+    assert pr.role("Vypracování projektu interiéru akce Sportovní hala") == "projekt"
     assert pr.role("Přístavba dvou tělocvičen - dodatek č. 5") == "stavba"
 
 
