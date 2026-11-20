@@ -105,9 +105,7 @@ jobs:
                 const legacyTrigger = komentare.find(k => (k.body || '').includes(legacyMarker));
                 const pozadano = komentare.some(k => (k.body || '').includes('@codex review') && k.created_at >= kdyCommit
                                                 && !k.user.login.endsWith('[bot]'));
-                const zBehu = pr.head.ref.startsWith('claude/beh-');
-                const zOpravy = /^Address Codex review findings/.test(commit.commit.message);
-                if (!reviewRunning && !pozadano && !requestComment && !legacyTrigger && (zBehu || zOpravy)) {
+                if (!reviewRunning && !pozadano && !requestComment && !legacyTrigger) {
                   const marker = `<!-- codex-review-requested:${sha}:${new Date().toISOString()} -->`;
                   await github.rest.issues.createComment({owner, repo, issue_number: pr.number,
                     body: `${marker}\nCodex review requested for commit ${sha.slice(0, 7)}.`});
