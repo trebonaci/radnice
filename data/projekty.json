@@ -95,6 +95,8 @@
         "datum": "2026-10-21",
         "typ": "rozpocet",
         "text": "Rozpočtové opatření č. 56",
+        "kategorie": "rozpočet",
+        "kratce": "snížení (opatření č. 56)",
         "zmena": -1165000.0,
         "polozka": "Snížení energetické náročnosti DPS 3",
         "zdroj_id": "rm-2026-j113-u527-p1",
@@ -105,6 +107,8 @@
       "datum": "2026-10-21",
       "typ": "rozpocet",
       "text": "Rozpočtové opatření č. 56",
+      "kategorie": "rozpočet",
+      "kratce": "snížení (opatření č. 56)",
       "zmena": -1165000.0,
       "polozka": "Snížení energetické náročnosti DPS 3",
       "zdroj_id": "rm-2026-j113-u527-p1",
@@ -315,34 +319,44 @@
       {
         "datum": "2026-04-24",
         "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "projekt prováděcí",
         "text": "Vypracování projektové dokumentace pro provedení stavby včetně rozpočtu a výkazu výměr pro výběrové řízení na instalaci fotovoltaické výrobny elektřiny na objektech v areálu ČOV Třeboň, Břilice čp. 303",
         "role": "projekt",
         "zdroj_id": "rs-37703157",
         "jistota": "nase_propojeni"
       },
       {
+        "datum": "2026-09-29",
+        "typ": "soutez",
+        "text": "Soutěž: Instalace FVE 58,0 kWp na střechy objektu ČOV Břilice, Třeboň",
+        "kategorie": "výběrové řízení",
+        "kratce": "stavba, 3 nabídky",
+        "lhuta_dni": null,
+        "pocet_nabidek": 3,
+        "role": "stavba",
+        "zdroj_id": "ezak-VZ-966",
+        "jistota": "nase_propojeni"
+      },
+      {
         "datum": "2026-10-07",
         "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "smlouva o dílo",
         "text": "Instalace FVE 58,0 kWp na střechy objektu ČOV Břilice, Třeboň",
         "role": "stavba",
         "zdroj_id": "rs-39840721",
         "jistota": "nase_propojeni"
-      },
-      {
-        "datum": "2026-10-30",
-        "typ": "soutez",
-        "text": "Soutěž: Instalace FVE 58,0 kWp na střechy objektu ČOV Břilice, Třeboň",
-        "role": "stavba",
-        "zdroj_id": "ezak-VZ-966",
-        "jistota": "nase_propojeni"
       }
     ],
     "posledni_udalost": {
-      "datum": "2026-10-30",
-      "typ": "soutez",
-      "text": "Soutěž: Instalace FVE 58,0 kWp na střechy objektu ČOV Břilice, Třeboň",
+      "datum": "2026-10-07",
+      "typ": "smlouva",
+      "kategorie": "smlouva",
+      "kratce": "smlouva o dílo",
+      "text": "Instalace FVE 58,0 kWp na střechy objektu ČOV Břilice, Třeboň",
       "role": "stavba",
-      "zdroj_id": "ezak-VZ-966",
+      "zdroj_id": "rs-39840721",
       "jistota": "nase_propojeni"
     }
   },
@@ -567,6 +581,10 @@
         "datum": "2026-07-21",
         "typ": "soutez",
         "text": "Soutěž: Instalace FVE 38,7 kWp na střeše přístavby ZŠ Na Sadech, Třeboň",
+        "kategorie": "výběrové řízení",
+        "kratce": "stavba, doba trvání 9 dní, 7 nabídek",
+        "lhuta_dni": 9,
+        "pocet_nabidek": 7,
         "role": "stavba",
         "zdroj_id": "ezak-VZ-947",
         "jistota": "nase_propojeni"
@@ -574,6 +592,8 @@
       {
         "datum": "2026-08-13",
         "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "smlouva o dílo",
         "text": "SND Instalace FVE 38,7 kWp na střeše přístavby ZŠ Na Sadech.",
         "role": "stavba",
         "zdroj_id": "rs-39122658",
@@ -583,6 +603,8 @@
         "datum": "2026-10-07",
         "typ": "usneseni",
         "text": "Dodatek č. 1 ke smlouvě o instalaci fotovoltaiky na přístavbě ZŠ Na Sadech",
+        "kategorie": "rada",
+        "kratce": "schválení dodatku 1",
         "text_ai": true,
         "overeni": "overeno_kodem",
         "zdroj_id": "rm-2026-j112-u508",
@@ -591,6 +613,8 @@
       {
         "datum": "2026-10-12",
         "typ": "dodatek",
+        "kategorie": "smlouva",
+        "kratce": "dodatek 1 (smlouva o dílo)",
         "text": "SND Instalace FVE 38,7 kWp na střeše přístavby ZŠ Na Sadech - Dodatek č. 1.",
         "role": "stavba",
         "zdroj_id": "rs-39900669",
@@ -600,6 +624,8 @@
     "posledni_udalost": {
       "datum": "2026-10-12",
       "typ": "dodatek",
+      "kategorie": "smlouva",
+      "kratce": "dodatek 1 (smlouva o dílo)",
       "text": "SND Instalace FVE 38,7 kWp na střeše přístavby ZŠ Na Sadech - Dodatek č. 1.",
       "role": "stavba",
       "zdroj_id": "rs-39900669",
@@ -712,6 +738,8 @@
       {
         "datum": "2026-07-15",
         "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "projektová dokumentace",
         "text": "Zpracování PD - stavební úpravy hřbitova sv. Alžběty",
         "role": "projekt",
         "zdroj_id": "rs-38781444",
@@ -721,6 +749,8 @@
     "posledni_udalost": {
       "datum": "2026-07-15",
       "typ": "smlouva",
+      "kategorie": "smlouva",
+      "kratce": "projektová dokumentace",
       "text": "Zpracování PD - stavební úpravy hřbitova sv. Alžběty",
       "role": "projekt",
       "zdroj_id": "rs-38781444",
@@ -1021,9 +1051,13 @@
     "posledni_dodatek": {},
     "udalosti": [
       {
-        "datum": "2025-02-05",
+        "datum": "2025-01-15",
         "typ": "soutez",
         "text": "Soutěž: Zpracování projektové dokumentace – Stavební úpravy MK v ul. Souběžná, Heřmánkova, Daskabát v Třeboni",
+        "kategorie": "výběrové řízení",
+        "kratce": "projektová dokumentace, 2 nabídky",
+        "lhuta_dni": null,
+        "pocet_nabidek": 2,
         "role": "projekt",
         "zdroj_id": "ezak-VZ-831",
         "jistota": "nase_propojeni"
@@ -1032,6 +1066,10 @@
         "datum": "2026-08-12",
         "typ": "soutez",
         "text": "Soutěž: Stavební úpravy MK v ul. Heřmánkova a Daskabát v Třeboni",
+        "kategorie": "výběrové řízení",
+        "kratce": "stavba, doba trvání 35 dní, 4 nabídky",
+        "lhuta_dni": 35,
+        "pocet_nabidek": 4,
         "role": "stavba",
         "zdroj_id": "ezak-VZ-949",
         "jistota": "nase_propojeni"
@@ -1039,6 +1077,8 @@
       {
         "datum": "2026-08-19",
         "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "administrace výběrového řízení",
         "text": "Administrace zadávacího řízení VZ Stavební úpravy MK v ul. Heřmánkova a Daskabát v Třeboni",
         "role": "administrace",
         "zdroj_id": "rs-39177982",
@@ -1048,6 +1088,8 @@
         "datum": "2026-10-07",
         "typ": "usneseni",
         "text": "Stavební úpravy místních komunikací Heřmánkova a Daskabát – výběr zhotovitele",
+        "kategorie": "rada",
+        "kratce": "výběr dodavatele",
         "text_ai": true,
         "overeni": "overeno_kodem",
         "zdroj_id": "rm-2026-j112-u506",
@@ -1056,6 +1098,8 @@
       {
         "datum": "2026-11-06",
         "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "smlouva o dílo",
         "text": "Stavební úpravy MK v ul. Heřmánkova a Daskabát v Třeboni",
         "role": "stavba",
         "zdroj_id": "rs-40262621",
@@ -1065,6 +1109,8 @@
     "posledni_udalost": {
       "datum": "2026-11-06",
       "typ": "smlouva",
+      "kategorie": "smlouva",
+      "kratce": "smlouva o dílo",
       "text": "Stavební úpravy MK v ul. Heřmánkova a Daskabát v Třeboni",
       "role": "stavba",
       "zdroj_id": "rs-40262621",
@@ -2030,9 +2076,13 @@
     },
     "udalosti": [
       {
-        "datum": "2025-07-28",
+        "datum": "2025-04-28",
         "typ": "soutez",
         "text": "Soutěž: Zpracování projektové dokumentace ve stupni DZS/DPS přístavby dvou tělocvičen - revitalizace a přístavba sportovní haly Třeboň",
+        "kategorie": "výběrové řízení",
+        "kratce": "projekt prováděcí, 1 nabídka",
+        "lhuta_dni": null,
+        "pocet_nabidek": 1,
         "role": "projekt",
         "zdroj_id": "ezak-VZ-877",
         "jistota": "nase_propojeni"
@@ -2049,6 +2099,10 @@
         "datum": "2025-11-14",
         "typ": "soutez",
         "text": "Soutěž: Přístavba dvou tělocvičen sportovní haly Třeboň",
+        "kategorie": "výběrové řízení",
+        "kratce": "stavba, doba trvání 38 dní, 1 nabídka",
+        "lhuta_dni": 38,
+        "pocet_nabidek": 1,
         "role": "stavba",
         "zdroj_id": "ezak-VZ-901",
         "jistota": "nase_propojeni"
@@ -2080,6 +2134,8 @@
       {
         "datum": "2026-03-23",
         "typ": "dodatek",
+        "kategorie": "smlouva",
+        "kratce": "dodatek 1 (smlouva o dílo)",
         "text": "Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 1",
         "role": "stavba",
         "zdroj_id": "rs-37282997",
@@ -2088,6 +2144,8 @@
       {
         "datum": "2026-05-29",
         "typ": "dodatek",
+        "kategorie": "smlouva",
+        "kratce": "dodatek 2 (smlouva o dílo)",
         "text": "Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 2",
         "role": "stavba",
         "zdroj_id": "rs-38183173",
@@ -2096,6 +2154,8 @@
       {
         "datum": "2026-06-02",
         "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "vybavení",
         "text": "Dodávka a montáž 8 ks laviček se zádovou stěnou s háčky do šaten - akce Přístavba dvou tělocvičen spotrovní hala Třeboň",
         "role": "vybaveni",
         "zdroj_id": "rs-38228669",
@@ -2104,6 +2164,8 @@
       {
         "datum": "2026-08-28",
         "typ": "dodatek",
+        "kategorie": "smlouva",
+        "kratce": "dodatek 3 (smlouva o dílo)",
         "text": "Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 3",
         "role": "stavba",
         "zdroj_id": "rs-39303451",
@@ -2113,6 +2175,8 @@
         "datum": "2026-09-23",
         "typ": "rozpocet",
         "text": "Rozpočtové opatření č. 51",
+        "kategorie": "rozpočet",
+        "kratce": "navýšení (opatření č. 51)",
         "zmena": 53000.0,
         "polozka": "Přístavba tělocvičen - vybavení",
         "zdroj_id": "rm-2026-j111-u493-p2",
@@ -2122,6 +2186,8 @@
         "datum": "2026-09-23",
         "typ": "usneseni",
         "text": "Přístavba dvou tělocvičen sportovní haly – dodatek č. 4 (termín)",
+        "kategorie": "rada",
+        "kratce": "schválení dodatku 4",
         "text_ai": true,
         "overeni": "overeno_kodem",
         "zdroj_id": "rm-2026-j111-u490",
@@ -2130,6 +2196,8 @@
       {
         "datum": "2026-09-25",
         "typ": "dodatek",
+        "kategorie": "smlouva",
+        "kratce": "dodatek 4 (smlouva o dílo)",
         "text": "Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 4",
         "role": "stavba",
         "zdroj_id": "rs-39681309",
@@ -2138,6 +2206,8 @@
       {
         "datum": "2026-09-30",
         "typ": "dodatek",
+        "kategorie": "smlouva",
+        "kratce": "dodatek 1 (BOZP)",
         "text": "Příkazní smlouva - Koordinátor BOZP na akci Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 1",
         "role": "bozp",
         "zdroj_id": "rs-39725837",
@@ -2146,6 +2216,8 @@
       {
         "datum": "2026-09-30",
         "typ": "dodatek",
+        "kategorie": "smlouva",
+        "kratce": "dodatek 1 (technický dozor)",
         "text": "Příkazní smlouva - Technický dozor stavebníka na akci Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 1",
         "role": "technicky_dozor",
         "zdroj_id": "rs-39724805",
@@ -2155,6 +2227,8 @@
         "datum": "2026-10-21",
         "typ": "rozpocet",
         "text": "Rozpočtové opatření č. 57",
+        "kategorie": "rozpočet",
+        "kratce": "snížení (opatření č. 57)",
         "zmena": -253000.0,
         "polozka": "Přístavba tělocvičen",
         "zdroj_id": "rm-2026-j113-u542-p1",
@@ -2164,6 +2238,8 @@
         "datum": "2026-10-21",
         "typ": "rozpocet",
         "text": "Rozpočtové opatření č. 57",
+        "kategorie": "rozpočet",
+        "kratce": "navýšení (opatření č. 57)",
         "zmena": 253000.0,
         "polozka": "Přístavba tělocvičen - vybavení",
         "zdroj_id": "rm-2026-j113-u542-p2",
@@ -2172,6 +2248,8 @@
       {
         "datum": "2026-10-27",
         "typ": "dodatek",
+        "kategorie": "smlouva",
+        "kratce": "dodatek 1 (projekt prováděcí)",
         "text": "Zpracování projektové dokumentace ve stupni DZS/DPS přístavby dvou tělocvičen - revitalizace a přístavba sportovní haly Třeboň - dodatek č. 1",
         "role": "projekt",
         "zdroj_id": "rs-40118109",
@@ -2181,6 +2259,8 @@
         "datum": "2026-10-30",
         "typ": "usneseni",
         "text": "Dodatek č. 5 ke smlouvě o dílo – přístavba dvou tělocvičen sportovní haly",
+        "kategorie": "rada",
+        "kratce": "schválení dodatku 5",
         "text_ai": true,
         "overeni": "overeno_kodem",
         "zdroj_id": "rm-2026-j114-u551",
@@ -2189,6 +2269,8 @@
       {
         "datum": "2026-11-02",
         "typ": "dodatek",
+        "kategorie": "smlouva",
+        "kratce": "dodatek 5 (smlouva o dílo)",
         "text": "Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 5",
         "role": "stavba",
         "zdroj_id": "rs-40163777",
@@ -2198,6 +2280,8 @@
     "posledni_udalost": {
       "datum": "2026-11-02",
       "typ": "dodatek",
+      "kategorie": "smlouva",
+      "kratce": "dodatek 5 (smlouva o dílo)",
       "text": "Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 5",
       "role": "stavba",
       "zdroj_id": "rs-40163777",
@@ -2350,28 +2434,36 @@
     "posledni_dodatek": {},
     "udalosti": [
       {
+        "datum": "2026-07-22",
+        "typ": "soutez",
+        "text": "Soutěž: Zkapacitnění propustku - Třeboň, Břilice",
+        "kategorie": "výběrové řízení",
+        "kratce": "stavba, 2 nabídky",
+        "lhuta_dni": null,
+        "pocet_nabidek": 2,
+        "role": "stavba",
+        "zdroj_id": "ezak-VZ-960",
+        "jistota": "nase_propojeni"
+      },
+      {
         "datum": "2026-08-10",
         "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "smlouva o dílo",
         "text": "Zkapacitnění propustku - Třeboň, Břilice",
         "role": "stavba",
         "zdroj_id": "rs-39062598",
         "jistota": "nase_propojeni"
-      },
-      {
-        "datum": "2026-08-24",
-        "typ": "soutez",
-        "text": "Soutěž: Zkapacitnění propustku - Třeboň, Břilice",
-        "role": "stavba",
-        "zdroj_id": "ezak-VZ-960",
-        "jistota": "nase_propojeni"
       }
     ],
     "posledni_udalost": {
-      "datum": "2026-08-24",
-      "typ": "soutez",
-      "text": "Soutěž: Zkapacitnění propustku - Třeboň, Břilice",
+      "datum": "2026-08-10",
+      "typ": "smlouva",
+      "kategorie": "smlouva",
+      "kratce": "smlouva o dílo",
+      "text": "Zkapacitnění propustku - Třeboň, Břilice",
       "role": "stavba",
-      "zdroj_id": "ezak-VZ-960",
+      "zdroj_id": "rs-39062598",
       "jistota": "nase_propojeni"
     }
   },
@@ -3614,9 +3706,13 @@
     },
     "udalosti": [
       {
-        "datum": "2024-11-12",
+        "datum": "2024-09-04",
         "typ": "soutez",
         "text": "Soutěž: Zpracování projektové dokumentace \"Ubytovací objekt sportovní haly Třeboň\"",
+        "kategorie": "výběrové řízení",
+        "kratce": "projektová dokumentace, 1 nabídka",
+        "lhuta_dni": null,
+        "pocet_nabidek": 1,
         "role": "projekt",
         "zdroj_id": "ezak-VZ-810",
         "jistota": "nase_propojeni"
@@ -3625,6 +3721,10 @@
         "datum": "2025-09-04",
         "typ": "soutez",
         "text": "Soutěž: Sportovní hala Třeboň - nástavba a přístavba ubytování",
+        "kategorie": "výběrové řízení",
+        "kratce": "stavba, doba trvání 41 dní, 4 nabídky",
+        "lhuta_dni": 41,
+        "pocet_nabidek": 4,
         "role": "stavba",
         "zdroj_id": "ezak-VZ-883",
         "jistota": "nase_propojeni"
@@ -3664,6 +3764,8 @@
       {
         "datum": "2026-04-20",
         "typ": "dodatek",
+        "kategorie": "smlouva",
+        "kratce": "dodatek 1 (smlouva o dílo)",
         "text": "Sportovní hala Třeboň - nástavba a přístavba ubytování - dodatek č. 1",
         "role": "stavba",
         "zdroj_id": "rs-37638541",
@@ -3673,6 +3775,10 @@
         "datum": "2026-04-20",
         "typ": "soutez",
         "text": "Soutěž: Sportovní hala Třeboň - nástavba a přístavba ubytování - vybavení interiéru",
+        "kategorie": "výběrové řízení",
+        "kratce": "vybavení, doba trvání 16 dní, 5 nabídek",
+        "lhuta_dni": 16,
+        "pocet_nabidek": 5,
         "role": "vybaveni",
         "zdroj_id": "ezak-VZ-936",
         "jistota": "nase_propojeni"
@@ -3680,6 +3786,8 @@
       {
         "datum": "2026-05-21",
         "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "vybavení",
         "text": "Sportovní hala Třeboň - nástavba a přístavba ubytování - vybavení interiéru",
         "role": "vybaveni",
         "zdroj_id": "rs-38058173",
@@ -3688,6 +3796,8 @@
       {
         "datum": "2026-06-26",
         "typ": "dodatek",
+        "kategorie": "smlouva",
+        "kratce": "dodatek 2 (smlouva o dílo)",
         "text": "Sportovní hala Třeboň - nástavba a přístavba ubytování - Dodatek č. 2",
         "role": "stavba",
         "zdroj_id": "rs-38538892",
@@ -3696,6 +3806,8 @@
       {
         "datum": "2026-08-28",
         "typ": "dodatek",
+        "kategorie": "smlouva",
+        "kratce": "dodatek 3 (smlouva o dílo)",
         "text": "Sportovní hala Třeboň - nástavba a přístavba ubytování - dodatek č. 3",
         "role": "stavba",
         "zdroj_id": "rs-39302679",
@@ -3705,6 +3817,8 @@
         "datum": "2026-09-09",
         "typ": "usneseni",
         "text": "Sportovní hala – dodatek č. 4 ke smlouvě o dílo (termín dokončení)",
+        "kategorie": "rada",
+        "kratce": "schválení dodatku 4",
         "text_ai": true,
         "overeni": "overeno_kodem",
         "zdroj_id": "rm-2026-j110-u463",
@@ -3713,6 +3827,8 @@
       {
         "datum": "2026-09-14",
         "typ": "dodatek",
+        "kategorie": "smlouva",
+        "kratce": "dodatek 4 (smlouva o dílo)",
         "text": "Sportovní hala Třeboň - nástavba a přístavba ubytování - dodatek č. 4",
         "role": "stavba",
         "zdroj_id": "rs-39520809",
@@ -3721,6 +3837,8 @@
       {
         "datum": "2026-09-16",
         "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "vybavení",
         "text": "Sportovní hala Třeboň - nástavba a přístavba ubytování - dodávka televizorů",
         "role": "vybaveni",
         "zdroj_id": "rs-39574269",
@@ -3730,6 +3848,8 @@
         "datum": "2026-09-23",
         "typ": "rozpocet",
         "text": "Rozpočtové opatření č. 51",
+        "kategorie": "rozpočet",
+        "kratce": "snížení (opatření č. 51)",
         "zmena": -53000.0,
         "polozka": "Ubytování sportovní hala - vybavení",
         "zdroj_id": "rm-2026-j111-u493-p1",
@@ -3739,6 +3859,8 @@
         "datum": "2026-09-23",
         "typ": "usneseni",
         "text": "Vybavení interiéru ubytování sportovní haly – dodatek č. 1 ke kupní smlouvě",
+        "kategorie": "rada",
+        "kratce": "schválení dodatku 1",
         "text_ai": true,
         "overeni": "overeno_kodem",
         "zdroj_id": "rm-2026-j111-u491",
@@ -3747,6 +3869,8 @@
       {
         "datum": "2026-09-30",
         "typ": "dodatek",
+        "kategorie": "smlouva",
+        "kratce": "dodatek 1 (vybavení)",
         "text": "Sportovní hala Třeboň - nástavba a přístavba ubytování - vybavení interiéru - dodatek č. 1",
         "role": "vybaveni",
         "zdroj_id": "rs-39899189",
@@ -3755,6 +3879,8 @@
       {
         "datum": "2026-09-30",
         "typ": "dodatek",
+        "kategorie": "smlouva",
+        "kratce": "dodatek 1 (technický dozor)",
         "text": "Příkazní smlouva - Technický dozor stavebníka na akci Sportovní hala Třeboň - nástavba a přístavba ubytování - dodatek č. 1",
         "role": "technicky_dozor",
         "zdroj_id": "rs-39725413",
@@ -3763,6 +3889,8 @@
       {
         "datum": "2026-10-01",
         "typ": "dodatek",
+        "kategorie": "smlouva",
+        "kratce": "dodatek 1 (BOZP)",
         "text": "Příkazní smlouva - Koordinátor BOZP na akci Sportovní hala Třeboň - nástavba a přístavba ubytování - dodatek č. 1",
         "role": "bozp",
         "zdroj_id": "rs-39748681",
@@ -3772,6 +3900,8 @@
         "datum": "2026-10-21",
         "typ": "rozpocet",
         "text": "Rozpočtové opatření č. 56",
+        "kategorie": "rozpočet",
+        "kratce": "navýšení (opatření č. 56)",
         "zmena": 1165000.0,
         "polozka": "Ubytování sportovní hala",
         "zdroj_id": "rm-2026-j113-u527-p2",
@@ -3781,6 +3911,8 @@
         "datum": "2026-10-21",
         "typ": "usneseni",
         "text": "Sportovní hala – vybavení interiéru, dodatek č. 2 ke kupní smlouvě",
+        "kategorie": "rada",
+        "kratce": "schválení dodatku 2",
         "text_ai": true,
         "overeni": "overeno_kodem",
         "zdroj_id": "rm-2026-j113-u530",
@@ -3789,6 +3921,8 @@
       {
         "datum": "2026-10-23",
         "typ": "dodatek",
+        "kategorie": "smlouva",
+        "kratce": "dodatek 5 (smlouva o dílo)",
         "text": "Sportovní hala Třeboň - nástavba a přístavba ubytování - dodatek č. 5",
         "role": "stavba",
         "zdroj_id": "rs-40101957",
@@ -3797,6 +3931,8 @@
       {
         "datum": "2026-10-23",
         "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "vybavení",
         "text": "Dodávka vybavení posilovny v objektu ubytování sportovní haly Třeboň dle nabídky z 09.10.2026 vč. dopravy",
         "role": "vybaveni",
         "zdroj_id": "rs-40060341",
@@ -3805,6 +3941,8 @@
       {
         "datum": "2026-10-27",
         "typ": "dodatek",
+        "kategorie": "smlouva",
+        "kratce": "dodatek 1 (projektová dokumentace)",
         "text": "Zpracování projektové dokumentace - Ubytovací objekt sportovní haly, Třeboň - dodatek č. 1",
         "role": "projekt",
         "zdroj_id": "rs-40117957",
@@ -3813,6 +3951,8 @@
       {
         "datum": "2026-10-27",
         "typ": "dodatek",
+        "kategorie": "smlouva",
+        "kratce": "dodatek 2 (vybavení)",
         "text": "Sportovní hala Třeboň - nástavba a přístavba ubytování - vybavení interiéru - dodatek č. 2",
         "role": "vybaveni",
         "zdroj_id": "rs-40117365",
@@ -3822,6 +3962,8 @@
     "posledni_udalost": {
       "datum": "2026-10-27",
       "typ": "dodatek",
+      "kategorie": "smlouva",
+      "kratce": "dodatek 2 (vybavení)",
       "text": "Sportovní hala Třeboň - nástavba a přístavba ubytování - vybavení interiéru - dodatek č. 2",
       "role": "vybaveni",
       "zdroj_id": "rs-40117365",
