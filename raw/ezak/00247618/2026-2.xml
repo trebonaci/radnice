@@ -1,0 +1,2455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<profil xmlns="urn:cz:isvz:mmr:schemas:vz-z-profilu-zadavatele:v100">
+ <profil_kod>Z2019-003053</profil_kod>
+ <zadavatel>
+  <nazev_zadavatele>Město Třeboň</nazev_zadavatele>
+  <ico_zadavatele>00247618</ico_zadavatele>
+ </zadavatel>
+ <zakazka>
+  <id_objektu>VZ-882</id_objektu>
+  <nazev_vz>Stavební úpravy části MK ul. Sídliště v Třeboni - v úseku od silnice III/15512 po čp. 1158</nazev_vz>
+  <druh_vz>stavební práce</druh_vz>
+  <rezim_vz>Podlimitní</rezim_vz>
+  <predmet_vz>Předmětem veřejné zakázky jsou stavební úpravy stávající místní komunikace ulice Sídliště v úseku od areálu fy REPROGEN po silnici III/15512 ve městě Třeboň a stavební úpravy stávající místní komunikace ulice Sídliště v úseku od křižovatky před areálem fy REPROGEN po rodinný dům č.p. 1158 ve městě Třeboň. Jedná se o provedení stavebních úprav stávajících místních komunikací a nového vodovodu, splaškové a dešťové kanalizace, veřejného osvětlení a nového chodníku. Součástí stavby je i výměna nebo výstavba nových přípojek vodohospodářských sítí.</predmet_vz>
+  <hlavni_cpv>45233000</hlavni_cpv>
+  <delena_na_casti>0</delena_na_casti>
+  <zadavaci_postupy>
+   <zadavaci_postup>
+    <id_objektu>ZP-882</id_objektu>
+    <evidencni_cislo_vvz>Z2025-063110</evidencni_cislo_vvz>
+   </zadavaci_postup>
+  </zadavaci_postupy>
+  <casti_vz>
+   <cast_zakazky>
+    <id_objektu>882</id_objektu>
+    <id_zadavaciho_postupu_vz>ZP-882</id_zadavaciho_postupu_vz>
+    <nazev_casti_vz>Stavební úpravy části MK ul. Sídliště v Třeboni - v úseku od silnice III/15512 po čp. 1158</nazev_casti_vz>
+    <druh_casti_vz>stavební práce</druh_casti_vz>
+    <rezim_casti_vz>Podlimitní</rezim_casti_vz>
+    <predmet_casti_vz>Předmětem veřejné zakázky jsou stavební úpravy stávající místní komunikace ulice Sídliště v úseku od areálu fy REPROGEN po silnici III/15512 ve městě Třeboň a stavební úpravy stávající místní komunikace ulice Sídliště v úseku od křižovatky před areálem fy REPROGEN po rodinný dům č.p. 1158 ve městě Třeboň. Jedná se o provedení stavebních úprav stávajících místních komunikací a nového vodovodu, splaškové a dešťové kanalizace, veřejného osvětlení a nového chodníku. Součástí stavby je i výměna nebo výstavba nových přípojek vodohospodářských sítí.</predmet_casti_vz>
+    <hlavni_cpv_casti_vz>45233000</hlavni_cpv_casti_vz>
+    <zadavaci_postup_casti>
+     <id_objektu>ZP-882</id_objektu>
+     <evidencni_cislo_vvz>Z2025-063110</evidencni_cislo_vvz>
+     <lhuty_zadavaciho_postupu>
+      <lhuta>
+       <druh_lhuty>lhůta podání nabídky</druh_lhuty>
+       <datum_konce_lhuty>2025-09-29T10:00:00+02:00</datum_konce_lhuty>
+      </lhuta>
+     </lhuty_zadavaciho_postupu>
+     <stav_zadavaciho_postupu>dokončen</stav_zadavaciho_postupu>
+     <druh_zadavaciho_postupu>zjednodušené podlimitní řízení</druh_zadavaciho_postupu>
+     <ramcova_dohoda>0</ramcova_dohoda>
+     <zavedeni_dns>0</zavedeni_dns>
+     <dokumenty>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_7783.html</url>
+       <typ_dokumentu>výběr dodavatele</typ_dokumentu>
+       <cas_vlozeni_na_profil>2025-10-21T12:14:51+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_7784.html</url>
+       <typ_dokumentu>výběr dodavatele</typ_dokumentu>
+       <cas_vlozeni_na_profil>2025-10-21T12:15:10+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_7870.html</url>
+       <typ_dokumentu>písemná zpráva zadavatele</typ_dokumentu>
+       <cas_vlozeni_na_profil>2025-11-14T07:45:03+01:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_7857.html</url>
+       <typ_dokumentu>smlouva</typ_dokumentu>
+       <cas_vlozeni_na_profil>2025-11-10T08:54:59+01:00</cas_vlozeni_na_profil>
+       <metadata_smlouvy_nebo_rd>
+        <id_v_registru_smluv>33322953</id_v_registru_smluv>
+        <url_v_registru_smluv>https://smlouvy.gov.cz/smlouva/35522661</url_v_registru_smluv>
+       </metadata_smlouvy_nebo_rd>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8407.html</url>
+       <typ_dokumentu>smlouva</typ_dokumentu>
+       <cas_vlozeni_na_profil>2026-06-02T09:11:48+02:00</cas_vlozeni_na_profil>
+       <metadata_smlouvy_nebo_rd>
+        <id_v_registru_smluv>35868925</id_v_registru_smluv>
+        <url_v_registru_smluv>https://smlouvy.gov.cz/smlouva/38182725</url_v_registru_smluv>
+       </metadata_smlouvy_nebo_rd>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8421.html</url>
+       <typ_dokumentu>smlouva</typ_dokumentu>
+       <cas_vlozeni_na_profil>2026-07-01T11:33:10+02:00</cas_vlozeni_na_profil>
+       <metadata_smlouvy_nebo_rd>
+        <id_v_registru_smluv>36239196</id_v_registru_smluv>
+        <url_v_registru_smluv>https://smlouvy.gov.cz/smlouva/38566304</url_v_registru_smluv>
+       </metadata_smlouvy_nebo_rd>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8587.html</url>
+       <typ_dokumentu>smlouva</typ_dokumentu>
+       <cas_vlozeni_na_profil>2026-09-03T09:13:00+02:00</cas_vlozeni_na_profil>
+       <metadata_smlouvy_nebo_rd>
+        <id_v_registru_smluv>36946547</id_v_registru_smluv>
+        <url_v_registru_smluv>https://smlouvy.gov.cz/smlouva/39302391</url_v_registru_smluv>
+       </metadata_smlouvy_nebo_rd>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8704.html</url>
+       <typ_dokumentu>smlouva</typ_dokumentu>
+       <cas_vlozeni_na_profil>2026-10-19T12:11:58+02:00</cas_vlozeni_na_profil>
+       <metadata_smlouvy_nebo_rd>
+        <id_v_registru_smluv>37516021</id_v_registru_smluv>
+        <url_v_registru_smluv>https://smlouvy.gov.cz/smlouva/39894521</url_v_registru_smluv>
+       </metadata_smlouvy_nebo_rd>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_7618.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2025-09-04T17:45:13+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_7619.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2025-09-04T17:45:13+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_7620.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2025-09-04T17:45:13+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_7621.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2025-09-04T17:45:13+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_7622.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2025-09-04T17:45:13+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_7623.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2025-09-04T17:45:13+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_7624.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2025-09-04T17:45:13+02:00</cas_vlozeni_na_profil>
+      </dokument>
+     </dokumenty>
+     <datum_uverejneni>2025-09-04T17:45:13+02:00</datum_uverejneni>
+     <ucastnici>
+      <ucastnik>
+       <subjekt>
+        <ico>25018094</ico>
+        <nazev_subjektu>SaM silnice a mosty a.s.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <nabidkova_cena_bez_dph>25984429.69</nabidkova_cena_bez_dph>
+       <nabidkova_cena_s_dph>31441159.92</nabidkova_cena_s_dph>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+      <ucastnik>
+       <subjekt>
+        <ico>45359041</ico>
+        <nazev_subjektu>STRABAG SIS a.s.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <nabidkova_cena_bez_dph>22858259.88</nabidkova_cena_bez_dph>
+       <nabidkova_cena_s_dph>27658494.45</nabidkova_cena_s_dph>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+      <ucastnik>
+       <subjekt>
+        <ico>48035599</ico>
+        <nazev_subjektu>SWIETELSKY stavební s.r.o.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <nabidkova_cena_bez_dph>23430072.52</nabidkova_cena_bez_dph>
+       <nabidkova_cena_s_dph>28350387.75</nabidkova_cena_s_dph>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+      <ucastnik>
+       <subjekt>
+        <ico>02192012</ico>
+        <nazev_subjektu>VKB stavby s.r.o.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <nabidkova_cena_bez_dph>22821965.97</nabidkova_cena_bez_dph>
+       <nabidkova_cena_s_dph>27614578.82</nabidkova_cena_s_dph>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+     </ucastnici>
+     <vybrani_dodavatele>
+      <vybrany_dodavatel>
+       <subjekt>
+        <ico>02192012</ico>
+        <nazev_subjektu>VKB stavby s.r.o.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <uzavrena_smlouva_nebo_rd>1</uzavrena_smlouva_nebo_rd>
+       <smluvni_cena_s_DPH>28907183.56</smluvni_cena_s_DPH>
+       <smluvni_cena_bez_DPH>23890234.34</smluvni_cena_bez_DPH>
+       <role_dodavatele>dodavatel bez společné účasti</role_dodavatele>
+       <plneni_dodavateli>
+        <plneni>
+         <rok_smlouvy>2025</rok_smlouvy>
+         <cena_za_rok_bez_dph>0.00</cena_za_rok_bez_dph>
+         <cena_za_rok_s_dph>0.00</cena_za_rok_s_dph>
+        </plneni>
+       </plneni_dodavateli>
+      </vybrany_dodavatel>
+     </vybrani_dodavatele>
+     <zjisten_stret_zajmu>0</zjisten_stret_zajmu>
+     <datum_uzavreni_smlouvy>2025-11-07T00:00:00+01:00</datum_uzavreni_smlouvy>
+    </zadavaci_postup_casti>
+   </cast_zakazky>
+  </casti_vz>
+ </zakazka>
+ <zakazka>
+  <id_objektu>VZ-883</id_objektu>
+  <nazev_vz>Sportovní hala Třeboň - nástavba a přístavba ubytování</nazev_vz>
+  <druh_vz>stavební práce</druh_vz>
+  <rezim_vz>Podlimitní</rezim_vz>
+  <predmet_vz>Předmětem veřejné zakázky je přístavba a nástavba objektu ubytování u sportovní haly. Je pojata stěnovým systémem z tradičních materiálů keramického zdiva. Založení je navrženo na plošných základech, stropní konstrukce jsou navrženy jako keramické trámečkové v rámci použitého systému stavby. Střechy ploché, jednoplášťové s krytinou z PE folie. Fasády budou řešeny z kovových lamel jako typová konstrukce předsazených větraných systémů. Na střeše objektu bude umístěna fotovoltaická elektrárna.</predmet_vz>
+  <hlavni_cpv>45212413</hlavni_cpv>
+  <delena_na_casti>0</delena_na_casti>
+  <zadavaci_postupy>
+   <zadavaci_postup>
+    <id_objektu>ZP-883</id_objektu>
+    <evidencni_cislo_vvz>Z2025-049260</evidencni_cislo_vvz>
+   </zadavaci_postup>
+  </zadavaci_postupy>
+  <casti_vz>
+   <cast_zakazky>
+    <id_objektu>883</id_objektu>
+    <id_zadavaciho_postupu_vz>ZP-883</id_zadavaciho_postupu_vz>
+    <nazev_casti_vz>Sportovní hala Třeboň - nástavba a přístavba ubytování</nazev_casti_vz>
+    <druh_casti_vz>stavební práce</druh_casti_vz>
+    <rezim_casti_vz>Podlimitní</rezim_casti_vz>
+    <predmet_casti_vz>Předmětem veřejné zakázky je přístavba a nástavba objektu ubytování u sportovní haly. Je pojata stěnovým systémem z tradičních materiálů keramického zdiva. Založení je navrženo na plošných základech, stropní konstrukce jsou navrženy jako keramické trámečkové v rámci použitého systému stavby. Střechy ploché, jednoplášťové s krytinou z PE folie. Fasády budou řešeny z kovových lamel jako typová konstrukce předsazených větraných systémů. Na střeše objektu bude umístěna fotovoltaická elektrárna.</predmet_casti_vz>
+    <hlavni_cpv_casti_vz>45212413</hlavni_cpv_casti_vz>
+    <zadavaci_postup_casti>
+     <id_objektu>ZP-883</id_objektu>
+     <evidencni_cislo_vvz>Z2025-049260</evidencni_cislo_vvz>
+     <lhuty_zadavaciho_postupu>
+      <lhuta>
+       <druh_lhuty>lhůta podání nabídky</druh_lhuty>
+       <datum_konce_lhuty>2025-10-15T13:00:00+02:00</datum_konce_lhuty>
+      </lhuta>
+     </lhuty_zadavaciho_postupu>
+     <stav_zadavaciho_postupu>dokončen</stav_zadavaciho_postupu>
+     <druh_zadavaciho_postupu>otevřené řízení</druh_zadavaciho_postupu>
+     <ramcova_dohoda>0</ramcova_dohoda>
+     <zavedeni_dns>0</zavedeni_dns>
+     <dokumenty>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_7982.html</url>
+       <typ_dokumentu>písemná zpráva zadavatele</typ_dokumentu>
+       <cas_vlozeni_na_profil>2026-01-07T08:33:33+01:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_7977.html</url>
+       <typ_dokumentu>smlouva</typ_dokumentu>
+       <cas_vlozeni_na_profil>2025-12-23T11:16:57+01:00</cas_vlozeni_na_profil>
+       <metadata_smlouvy_nebo_rd>
+        <id_v_registru_smluv>33962317</id_v_registru_smluv>
+        <url_v_registru_smluv>https://smlouvy.gov.cz/smlouva/36192945</url_v_registru_smluv>
+       </metadata_smlouvy_nebo_rd>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8271.html</url>
+       <typ_dokumentu>smlouva</typ_dokumentu>
+       <cas_vlozeni_na_profil>2026-04-23T12:59:38+02:00</cas_vlozeni_na_profil>
+       <metadata_smlouvy_nebo_rd>
+        <id_v_registru_smluv>35346993</id_v_registru_smluv>
+        <url_v_registru_smluv>https://smlouvy.gov.cz/smlouva/37638541</url_v_registru_smluv>
+       </metadata_smlouvy_nebo_rd>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8422.html</url>
+       <typ_dokumentu>smlouva</typ_dokumentu>
+       <cas_vlozeni_na_profil>2026-07-01T15:48:57+02:00</cas_vlozeni_na_profil>
+       <metadata_smlouvy_nebo_rd>
+        <id_v_registru_smluv>36212376</id_v_registru_smluv>
+        <url_v_registru_smluv>https://smlouvy.gov.cz/smlouva/38538892</url_v_registru_smluv>
+       </metadata_smlouvy_nebo_rd>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8588.html</url>
+       <typ_dokumentu>smlouva</typ_dokumentu>
+       <cas_vlozeni_na_profil>2026-09-03T09:19:54+02:00</cas_vlozeni_na_profil>
+       <metadata_smlouvy_nebo_rd>
+        <id_v_registru_smluv>36946827</id_v_registru_smluv>
+        <url_v_registru_smluv>https://smlouvy.gov.cz/smlouva/39302679</url_v_registru_smluv>
+       </metadata_smlouvy_nebo_rd>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8615.html</url>
+       <typ_dokumentu>smlouva</typ_dokumentu>
+       <cas_vlozeni_na_profil>2026-09-16T08:26:12+02:00</cas_vlozeni_na_profil>
+       <metadata_smlouvy_nebo_rd>
+        <id_v_registru_smluv>37156385</id_v_registru_smluv>
+        <url_v_registru_smluv>https://smlouvy.gov.cz/smlouva/39520809</url_v_registru_smluv>
+       </metadata_smlouvy_nebo_rd>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8724.html</url>
+       <typ_dokumentu>smlouva</typ_dokumentu>
+       <cas_vlozeni_na_profil>2026-11-02T16:10:02+01:00</cas_vlozeni_na_profil>
+       <metadata_smlouvy_nebo_rd>
+        <id_v_registru_smluv>37714621</id_v_registru_smluv>
+        <url_v_registru_smluv>https://smlouvy.gov.cz/smlouva/40101957</url_v_registru_smluv>
+       </metadata_smlouvy_nebo_rd>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_7625.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2025-09-04T18:29:10+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_7626.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2025-09-04T18:29:10+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_7627.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2025-09-04T18:29:10+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_7628.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2025-09-04T18:29:10+02:00</cas_vlozeni_na_profil>
+      </dokument>
+     </dokumenty>
+     <datum_uverejneni>2025-09-04T18:29:10+02:00</datum_uverejneni>
+     <ucastnici>
+      <ucastnik>
+       <subjekt>
+        <ico>26089785</ico>
+        <nazev_subjektu>Auböck s.r.o.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <nabidkova_cena_bez_dph>53465979.33</nabidkova_cena_bez_dph>
+       <nabidkova_cena_s_dph>64693834.99</nabidkova_cena_s_dph>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+      <ucastnik>
+       <subjekt>
+        <ico>25172328</ico>
+        <nazev_subjektu>EDIKT a.s.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <nabidkova_cena_bez_dph>53350577.59</nabidkova_cena_bez_dph>
+       <nabidkova_cena_s_dph>64554198.88</nabidkova_cena_s_dph>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+      <ucastnik>
+       <subjekt>
+        <ico>19738781</ico>
+        <nazev_subjektu>PSConstructions s.r.o.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <nabidkova_cena_bez_dph>53485500.00</nabidkova_cena_bez_dph>
+       <nabidkova_cena_s_dph>64717455.00</nabidkova_cena_s_dph>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+      <ucastnik>
+       <subjekt>
+        <ico>26086344</ico>
+        <nazev_subjektu>Retherm s.r.o.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <nabidkova_cena_bez_dph>45678900.00</nabidkova_cena_bez_dph>
+       <nabidkova_cena_s_dph>55271469.00</nabidkova_cena_s_dph>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+     </ucastnici>
+     <vybrani_dodavatele>
+      <vybrany_dodavatel>
+       <subjekt>
+        <ico>26086344</ico>
+        <nazev_subjektu>Retherm s.r.o.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <uzavrena_smlouva_nebo_rd>1</uzavrena_smlouva_nebo_rd>
+       <smluvni_cena_s_DPH>62173221.68</smluvni_cena_s_DPH>
+       <smluvni_cena_bez_DPH>51382827.84</smluvni_cena_bez_DPH>
+       <role_dodavatele>dodavatel bez společné účasti</role_dodavatele>
+       <plneni_dodavateli>
+        <plneni>
+         <rok_smlouvy>2025</rok_smlouvy>
+         <cena_za_rok_bez_dph>0.00</cena_za_rok_bez_dph>
+         <cena_za_rok_s_dph>0.00</cena_za_rok_s_dph>
+        </plneni>
+       </plneni_dodavateli>
+      </vybrany_dodavatel>
+     </vybrani_dodavatele>
+     <zjisten_stret_zajmu>0</zjisten_stret_zajmu>
+     <datum_uzavreni_smlouvy>2025-12-23T00:00:00+01:00</datum_uzavreni_smlouvy>
+    </zadavaci_postup_casti>
+   </cast_zakazky>
+  </casti_vz>
+ </zakazka>
+ <zakazka>
+  <id_objektu>VZ-901</id_objektu>
+  <nazev_vz>Přístavba dvou tělocvičen sportovní haly Třeboň</nazev_vz>
+  <druh_vz>stavební práce</druh_vz>
+  <rezim_vz>Podlimitní</rezim_vz>
+  <predmet_vz>Jedná se o dvoupodlažní novostavbu. V každém podlaží bude jedna tělocvična. Šatny pro nové tělocvičny jsou navrženy v suterénu stávající sportovní haly. Založení je navrženo na plošných základových konstrukcích. Přistavovaná část novostavby je pojata žb skeletem v kombinaci se zděným systémem z keramických tvárnic. Stropy budou z žb prefa předpjatých panelů. Fasáda bude řešena certifikovaným systémem horizontálních šikmých lamel předsazené větrané fasády. Střešní krytina bude ze svařované folie. Na střeše bude umístěna FVE.</predmet_vz>
+  <hlavni_cpv>45212220</hlavni_cpv>
+  <delena_na_casti>0</delena_na_casti>
+  <zadavaci_postupy>
+   <zadavaci_postup>
+    <id_objektu>ZP-901</id_objektu>
+    <evidencni_cislo_vvz>Z2025-064101</evidencni_cislo_vvz>
+   </zadavaci_postup>
+  </zadavaci_postupy>
+  <casti_vz>
+   <cast_zakazky>
+    <id_objektu>901</id_objektu>
+    <id_zadavaciho_postupu_vz>ZP-901</id_zadavaciho_postupu_vz>
+    <nazev_casti_vz>Přístavba dvou tělocvičen sportovní haly Třeboň</nazev_casti_vz>
+    <druh_casti_vz>stavební práce</druh_casti_vz>
+    <rezim_casti_vz>Podlimitní</rezim_casti_vz>
+    <predmet_casti_vz>Jedná se o dvoupodlažní novostavbu. V každém podlaží bude jedna tělocvična. Šatny pro nové tělocvičny jsou navrženy v suterénu stávající sportovní haly. Založení je navrženo na plošných základových konstrukcích. Přistavovaná část novostavby je pojata žb skeletem v kombinaci se zděným systémem z keramických tvárnic. Stropy budou z žb prefa předpjatých panelů. Fasáda bude řešena certifikovaným systémem horizontálních šikmých lamel předsazené větrané fasády. Střešní krytina bude ze svařované folie. Na střeše bude umístěna FVE.</predmet_casti_vz>
+    <hlavni_cpv_casti_vz>45212220</hlavni_cpv_casti_vz>
+    <zadavaci_postup_casti>
+     <id_objektu>ZP-901</id_objektu>
+     <evidencni_cislo_vvz>Z2025-064101</evidencni_cislo_vvz>
+     <lhuty_zadavaciho_postupu>
+      <lhuta>
+       <druh_lhuty>lhůta podání nabídky</druh_lhuty>
+       <datum_konce_lhuty>2025-12-22T09:00:00+01:00</datum_konce_lhuty>
+      </lhuta>
+     </lhuty_zadavaciho_postupu>
+     <stav_zadavaciho_postupu>dokončen</stav_zadavaciho_postupu>
+     <druh_zadavaciho_postupu>otevřené řízení</druh_zadavaciho_postupu>
+     <ramcova_dohoda>0</ramcova_dohoda>
+     <zavedeni_dns>0</zavedeni_dns>
+     <dokumenty>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8006.html</url>
+       <typ_dokumentu>písemná zpráva zadavatele</typ_dokumentu>
+       <cas_vlozeni_na_profil>2026-01-19T09:49:03+01:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8001.html</url>
+       <typ_dokumentu>smlouva</typ_dokumentu>
+       <cas_vlozeni_na_profil>2026-01-14T15:25:44+01:00</cas_vlozeni_na_profil>
+       <metadata_smlouvy_nebo_rd>
+        <id_v_registru_smluv>34148121</id_v_registru_smluv>
+        <url_v_registru_smluv>https://smlouvy.gov.cz/smlouva/36387317</url_v_registru_smluv>
+       </metadata_smlouvy_nebo_rd>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8234.html</url>
+       <typ_dokumentu>smlouva</typ_dokumentu>
+       <cas_vlozeni_na_profil>2026-04-10T13:41:00+02:00</cas_vlozeni_na_profil>
+       <metadata_smlouvy_nebo_rd>
+        <id_v_registru_smluv>35006441</id_v_registru_smluv>
+        <url_v_registru_smluv>https://smlouvy.gov.cz/smlouva/37282997</url_v_registru_smluv>
+       </metadata_smlouvy_nebo_rd>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8403.html</url>
+       <typ_dokumentu>smlouva</typ_dokumentu>
+       <cas_vlozeni_na_profil>2026-06-01T12:32:31+02:00</cas_vlozeni_na_profil>
+       <metadata_smlouvy_nebo_rd>
+        <id_v_registru_smluv>35869349</id_v_registru_smluv>
+        <url_v_registru_smluv>https://smlouvy.gov.cz/smlouva/38183173</url_v_registru_smluv>
+       </metadata_smlouvy_nebo_rd>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8589.html</url>
+       <typ_dokumentu>smlouva</typ_dokumentu>
+       <cas_vlozeni_na_profil>2026-09-03T09:48:34+02:00</cas_vlozeni_na_profil>
+       <metadata_smlouvy_nebo_rd>
+        <id_v_registru_smluv>36947583</id_v_registru_smluv>
+        <url_v_registru_smluv>https://smlouvy.gov.cz/smlouva/39303451</url_v_registru_smluv>
+       </metadata_smlouvy_nebo_rd>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8660.html</url>
+       <typ_dokumentu>smlouva</typ_dokumentu>
+       <cas_vlozeni_na_profil>2026-10-02T09:15:04+02:00</cas_vlozeni_na_profil>
+       <metadata_smlouvy_nebo_rd>
+        <id_v_registru_smluv>37310917</id_v_registru_smluv>
+        <url_v_registru_smluv>https://smlouvy.gov.cz/smlouva/39681309</url_v_registru_smluv>
+       </metadata_smlouvy_nebo_rd>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8781.html</url>
+       <typ_dokumentu>smlouva</typ_dokumentu>
+       <cas_vlozeni_na_profil>2026-11-18T08:56:47+01:00</cas_vlozeni_na_profil>
+       <metadata_smlouvy_nebo_rd>
+        <id_v_registru_smluv>37774173</id_v_registru_smluv>
+        <url_v_registru_smluv>https://smlouvy.gov.cz/smlouva/40163777</url_v_registru_smluv>
+       </metadata_smlouvy_nebo_rd>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_7872.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2025-11-14T11:40:05+01:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_7873.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2025-11-14T11:40:05+01:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_7874.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2025-11-14T11:40:05+01:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_7875.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2025-11-14T11:40:05+01:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_7876.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2025-11-14T11:40:05+01:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_7877.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2025-11-14T11:40:05+01:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_7878.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2025-11-14T11:40:05+01:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_7884.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2025-11-14T11:40:05+01:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_7885.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2025-11-14T11:40:05+01:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_7886.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2025-11-14T11:40:05+01:00</cas_vlozeni_na_profil>
+      </dokument>
+     </dokumenty>
+     <datum_uverejneni>2025-11-14T11:40:05+01:00</datum_uverejneni>
+     <ucastnici>
+      <ucastnik>
+       <subjekt>
+        <ico>47239701</ico>
+        <nazev_subjektu>MANE STAVEBNÍ s.r.o.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <nabidkova_cena_bez_dph>49706575.90</nabidkova_cena_bez_dph>
+       <nabidkova_cena_s_dph>60144956.84</nabidkova_cena_s_dph>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+     </ucastnici>
+     <vybrani_dodavatele>
+      <vybrany_dodavatel>
+       <subjekt>
+        <ico>47239701</ico>
+        <nazev_subjektu>MANE STAVEBNÍ s.r.o.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <uzavrena_smlouva_nebo_rd>1</uzavrena_smlouva_nebo_rd>
+       <poddodavatele>
+        <poddodavatel>
+         <ico>27875971</ico>
+         <nazev_subjektu>BEDOX s.r.o.</nazev_subjektu>
+         <zeme_sidla>CZ</zeme_sidla>
+        </poddodavatel>
+        <poddodavatel>
+         <ico>05064562</ico>
+         <nazev_subjektu>FALIKO s.r.o.</nazev_subjektu>
+         <zeme_sidla>CZ</zeme_sidla>
+        </poddodavatel>
+        <poddodavatel>
+         <ico>28127919</ico>
+         <nazev_subjektu>KN INTERIERY CB s.r.o.</nazev_subjektu>
+         <zeme_sidla>CZ</zeme_sidla>
+        </poddodavatel>
+        <poddodavatel>
+         <ico>05533821</ico>
+         <nazev_subjektu>L.M.electric s.r.o.</nazev_subjektu>
+         <zeme_sidla>CZ</zeme_sidla>
+        </poddodavatel>
+        <poddodavatel>
+         <ico>28157915</ico>
+         <nazev_subjektu>OKNOservis CB s.r.o.</nazev_subjektu>
+         <zeme_sidla>CZ</zeme_sidla>
+        </poddodavatel>
+        <poddodavatel>
+         <ico>60192356</ico>
+         <nazev_subjektu>PREFA PRAHA, a.s.</nazev_subjektu>
+         <zeme_sidla>CZ</zeme_sidla>
+        </poddodavatel>
+       </poddodavatele>
+       <smluvni_cena_s_DPH>66097418.09</smluvni_cena_s_DPH>
+       <smluvni_cena_bez_DPH>54625965.36</smluvni_cena_bez_DPH>
+       <role_dodavatele>dodavatel bez společné účasti</role_dodavatele>
+      </vybrany_dodavatel>
+     </vybrani_dodavatele>
+     <zjisten_stret_zajmu>0</zjisten_stret_zajmu>
+     <datum_uzavreni_smlouvy>2026-01-14T00:00:00+01:00</datum_uzavreni_smlouvy>
+    </zadavaci_postup_casti>
+   </cast_zakazky>
+  </casti_vz>
+ </zakazka>
+ <zakazka>
+  <id_objektu>VZ-914</id_objektu>
+  <nazev_vz>Stavební úpravy MK v ul. Budějovické v Třeboni</nazev_vz>
+  <druh_vz>stavební práce</druh_vz>
+  <rezim_vz>Podlimitní</rezim_vz>
+  <predmet_vz>Předmětem plnění veřejné zakázky jsou stavební úpravy místní komunikace, sjezdů, vodovodu, jednotné kanalizace a veřejného osvětlení a novostavba dešťové kanalizace. Jedná se o úsek Budějovické ulice od křižovatky s ulicí Třebízského k domu čp. 647 v délce 108 m. Součástí stavby je také výměna nebo výstavba nových přípojek vodohospodářských sítí.
+
+Stavba bude užívána jako místní komunikace, dále pro odvádění a likvidaci splaškových vod z nemovitostí, dešťových vod ze zpevněných ploch, pro zásobování nemovitostí pitnou vodou a pro veřejné osvětlení.
+
+V koordinaci bude probíhat stavba jiného investora, společnosti EG.D, a. s., výměna plynovodu vč. přípojek. Zhotovitel musí tuto stavbu umožnit.</predmet_vz>
+  <hlavni_cpv>45233000</hlavni_cpv>
+  <delena_na_casti>0</delena_na_casti>
+  <zadavaci_postupy>
+   <zadavaci_postup>
+    <id_objektu>ZP-914</id_objektu>
+   </zadavaci_postup>
+  </zadavaci_postupy>
+  <casti_vz>
+   <cast_zakazky>
+    <id_objektu>914</id_objektu>
+    <id_zadavaciho_postupu_vz>ZP-914</id_zadavaciho_postupu_vz>
+    <nazev_casti_vz>Stavební úpravy MK v ul. Budějovické v Třeboni</nazev_casti_vz>
+    <druh_casti_vz>stavební práce</druh_casti_vz>
+    <rezim_casti_vz>Podlimitní</rezim_casti_vz>
+    <predmet_casti_vz>Předmětem plnění veřejné zakázky jsou stavební úpravy místní komunikace, sjezdů, vodovodu, jednotné kanalizace a veřejného osvětlení a novostavba dešťové kanalizace. Jedná se o úsek Budějovické ulice od křižovatky s ulicí Třebízského k domu čp. 647 v délce 108 m. Součástí stavby je také výměna nebo výstavba nových přípojek vodohospodářských sítí.
+
+Stavba bude užívána jako místní komunikace, dále pro odvádění a likvidaci splaškových vod z nemovitostí, dešťových vod ze zpevněných ploch, pro zásobování nemovitostí pitnou vodou a pro veřejné osvětlení.
+
+V koordinaci bude probíhat stavba jiného investora, společnosti EG.D, a. s., výměna plynovodu vč. přípojek. Zhotovitel musí tuto stavbu umožnit.</predmet_casti_vz>
+    <hlavni_cpv_casti_vz>45233000</hlavni_cpv_casti_vz>
+    <zadavaci_postup_casti>
+     <id_objektu>ZP-914</id_objektu>
+     <lhuty_zadavaciho_postupu>
+      <lhuta>
+       <druh_lhuty>lhůta podání nabídky</druh_lhuty>
+       <datum_konce_lhuty>2026-03-03T10:00:00+01:00</datum_konce_lhuty>
+      </lhuta>
+     </lhuty_zadavaciho_postupu>
+     <stav_zadavaciho_postupu>dokončen</stav_zadavaciho_postupu>
+     <druh_zadavaciho_postupu>zjednodušené podlimitní řízení</druh_zadavaciho_postupu>
+     <ramcova_dohoda>0</ramcova_dohoda>
+     <zavedeni_dns>0</zavedeni_dns>
+     <dokumenty>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8128.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-03-04T20:08:33+01:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8186.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-03-20T21:23:00+01:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8240.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-04-14T10:20:53+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8241.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-04-14T10:26:08+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8242.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-04-14T14:49:04+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8693.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-10-15T11:09:28+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8736.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-11-03T19:01:40+01:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8033.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-02-09T12:44:53+01:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8034.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-02-09T12:44:53+01:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8035.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-02-09T12:44:53+01:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8036.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-02-09T12:44:53+01:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8037.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-02-09T12:44:53+01:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8038.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-02-09T12:44:53+01:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8039.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-02-09T12:44:53+01:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8040.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-02-09T12:44:53+01:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8041.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-02-09T12:44:53+01:00</cas_vlozeni_na_profil>
+      </dokument>
+     </dokumenty>
+     <datum_uverejneni>2026-02-09T12:44:53+01:00</datum_uverejneni>
+     <ucastnici>
+      <ucastnik>
+       <subjekt>
+        <ico>26105594</ico>
+        <nazev_subjektu>K - BUILDING CB, a.s.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+      <ucastnik>
+       <subjekt>
+        <ico>45359041</ico>
+        <nazev_subjektu>STRABAG SIS a.s.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+      <ucastnik>
+       <subjekt>
+        <ico>02192012</ico>
+        <nazev_subjektu>VKB stavby s.r.o.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+     </ucastnici>
+     <vybrani_dodavatele>
+      <vybrany_dodavatel>
+       <subjekt>
+        <ico>26105594</ico>
+        <nazev_subjektu>K - BUILDING CB, a.s.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <uzavrena_smlouva_nebo_rd>1</uzavrena_smlouva_nebo_rd>
+       <smluvni_cena_s_DPH>14493110.17</smluvni_cena_s_DPH>
+       <smluvni_cena_bez_DPH>11977777.00</smluvni_cena_bez_DPH>
+       <role_dodavatele>dodavatel bez společné účasti</role_dodavatele>
+      </vybrany_dodavatel>
+     </vybrani_dodavatele>
+     <zjisten_stret_zajmu>0</zjisten_stret_zajmu>
+     <datum_uzavreni_smlouvy>2026-04-13T00:00:00+02:00</datum_uzavreni_smlouvy>
+    </zadavaci_postup_casti>
+   </cast_zakazky>
+  </casti_vz>
+ </zakazka>
+ <zakazka>
+  <id_objektu>VZ-929</id_objektu>
+  <nazev_vz>Revitalizace dětského hřiště Kopeček</nazev_vz>
+  <druh_vz>stavební práce</druh_vz>
+  <rezim_vz>Veřejné zakázky malého rozsahu</rezim_vz>
+  <predmet_vz>Jedná se o revitalizaci a rozšíření dětského hřiště s herními prvky v Třeboni. Součástí díla jsou všechny nezbytné práce a činnosti pro komplexní dokončení díla v celém rozsahu zadání, který je vymezen projektem, určenými standardy a obecně technickými požadavky na výstavbu.</predmet_vz>
+  <hlavni_cpv>37535200</hlavni_cpv>
+  <delena_na_casti>0</delena_na_casti>
+  <zadavaci_postupy>
+   <zadavaci_postup>
+    <id_objektu>ZP-929</id_objektu>
+   </zadavaci_postup>
+  </zadavaci_postupy>
+  <casti_vz>
+   <cast_zakazky>
+    <id_objektu>929</id_objektu>
+    <id_zadavaciho_postupu_vz>ZP-929</id_zadavaciho_postupu_vz>
+    <nazev_casti_vz>Revitalizace dětského hřiště Kopeček</nazev_casti_vz>
+    <druh_casti_vz>stavební práce</druh_casti_vz>
+    <rezim_casti_vz>Veřejné zakázky malého rozsahu</rezim_casti_vz>
+    <predmet_casti_vz>Jedná se o revitalizaci a rozšíření dětského hřiště s herními prvky v Třeboni. Součástí díla jsou všechny nezbytné práce a činnosti pro komplexní dokončení díla v celém rozsahu zadání, který je vymezen projektem, určenými standardy a obecně technickými požadavky na výstavbu.</predmet_casti_vz>
+    <hlavni_cpv_casti_vz>37535200</hlavni_cpv_casti_vz>
+    <zadavaci_postup_casti>
+     <id_objektu>ZP-929</id_objektu>
+     <lhuty_zadavaciho_postupu>
+      <lhuta>
+       <druh_lhuty>lhůta podání nabídky</druh_lhuty>
+       <datum_konce_lhuty>2026-03-25T12:00:00+01:00</datum_konce_lhuty>
+      </lhuta>
+     </lhuty_zadavaciho_postupu>
+     <stav_zadavaciho_postupu>ukončeno plnění</stav_zadavaciho_postupu>
+     <druh_zadavaciho_postupu>otevřená výzva</druh_zadavaciho_postupu>
+     <ramcova_dohoda>0</ramcova_dohoda>
+     <zavedeni_dns>0</zavedeni_dns>
+     <dokumenty>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8216.html</url>
+       <typ_dokumentu>smlouva</typ_dokumentu>
+       <cas_vlozeni_na_profil>2026-04-01T16:06:47+02:00</cas_vlozeni_na_profil>
+       <metadata_smlouvy_nebo_rd>
+        <id_v_registru_smluv>35132749</id_v_registru_smluv>
+        <url_v_registru_smluv>https://smlouvy.gov.cz/smlouva/37415133</url_v_registru_smluv>
+       </metadata_smlouvy_nebo_rd>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8420.html</url>
+       <typ_dokumentu>smlouva</typ_dokumentu>
+       <cas_vlozeni_na_profil>2026-06-17T10:28:42+02:00</cas_vlozeni_na_profil>
+       <metadata_smlouvy_nebo_rd>
+        <id_v_registru_smluv>36078662</id_v_registru_smluv>
+        <url_v_registru_smluv>https://smlouvy.gov.cz/smlouva/38399846</url_v_registru_smluv>
+       </metadata_smlouvy_nebo_rd>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8464.html</url>
+       <typ_dokumentu>smlouva</typ_dokumentu>
+       <cas_vlozeni_na_profil>2026-07-30T14:43:05+02:00</cas_vlozeni_na_profil>
+       <metadata_smlouvy_nebo_rd>
+        <id_v_registru_smluv>36616938</id_v_registru_smluv>
+        <url_v_registru_smluv>https://smlouvy.gov.cz/smlouva/38959598</url_v_registru_smluv>
+       </metadata_smlouvy_nebo_rd>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8217.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>Ostatní</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-04-01T16:17:18+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8218.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>Ostatní</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-04-01T16:17:53+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8142.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-03-05T14:19:17+01:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8143.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-03-05T14:19:17+01:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8144.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-03-05T14:19:17+01:00</cas_vlozeni_na_profil>
+      </dokument>
+     </dokumenty>
+     <datum_uverejneni>2026-03-05T14:19:17+01:00</datum_uverejneni>
+     <ucastnici>
+      <ucastnik>
+       <subjekt>
+        <ico>26689472</ico>
+        <nazev_subjektu>GARTENSTA PLUS s.r.o.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <nabidkova_cena_bez_dph>2990422.67</nabidkova_cena_bez_dph>
+       <nabidkova_cena_s_dph>3618411.13</nabidkova_cena_s_dph>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+      <ucastnik>
+       <subjekt>
+        <ico>46186123</ico>
+        <nazev_subjektu>Intersystem EU s.r.o.</nazev_subjektu>
+        <zeme_sidla>SK</zeme_sidla>
+       </subjekt>
+       <nabidkova_cena_bez_dph>2838149.00</nabidkova_cena_bez_dph>
+       <nabidkova_cena_s_dph>3434160.29</nabidkova_cena_s_dph>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+     </ucastnici>
+     <vybrani_dodavatele>
+      <vybrany_dodavatel>
+       <subjekt>
+        <ico>46186123</ico>
+        <nazev_subjektu>Intersystem EU s.r.o.</nazev_subjektu>
+        <zeme_sidla>SK</zeme_sidla>
+       </subjekt>
+       <uzavrena_smlouva_nebo_rd>1</uzavrena_smlouva_nebo_rd>
+       <smluvni_cena_s_DPH>3434160.29</smluvni_cena_s_DPH>
+       <smluvni_cena_bez_DPH>2838149.00</smluvni_cena_bez_DPH>
+       <role_dodavatele>dodavatel bez společné účasti</role_dodavatele>
+       <plneni_dodavateli>
+        <plneni>
+         <rok_smlouvy>2026</rok_smlouvy>
+         <cena_za_rok_bez_dph>2663825.22</cena_za_rok_bez_dph>
+         <cena_za_rok_s_dph>3223228.52</cena_za_rok_s_dph>
+        </plneni>
+       </plneni_dodavateli>
+      </vybrany_dodavatel>
+     </vybrani_dodavatele>
+     <zjisten_stret_zajmu>0</zjisten_stret_zajmu>
+     <datum_uzavreni_smlouvy>2026-03-31T00:00:00+02:00</datum_uzavreni_smlouvy>
+    </zadavaci_postup_casti>
+   </cast_zakazky>
+  </casti_vz>
+ </zakazka>
+ <zakazka>
+  <id_objektu>VZ-935</id_objektu>
+  <nazev_vz>Stavební úpravy MK v ul. Souběžná v Třeboni</nazev_vz>
+  <druh_vz>stavební práce</druh_vz>
+  <rezim_vz>Podlimitní</rezim_vz>
+  <predmet_vz>Předmětem plnění veřejné zakázky jsou stavební úpravy místní komunikace, zpevněných ploch chodníků, parkovacích stání a sjezdů, vodovodu, jednotné kanalizace a veřejného osvětlení a novostavbě dešťové kanalizace. Jedná se o úsek Souběžné ulice od křižovatky s ulicí Ořechová po konec ulice Souběžné před bytovým domem čp. 800 v délce 120 m. Součástí stavby je také výměna nebo výstavba nových přípojek vodohospodářských sítí.
+
+Zadavatel upozorňuje, že vymezení Projektové dokumentace ve smyslu zadávací dokumentace je širší nežli zadavatelem vymezený předmět plnění této veřejné zakázky. Tato veřejná zakázka se týká pouze ul. Souběžná, která je v Projektové dokumentaci vyznačena jako tzv. 1. etapa; Výkaz výměr svým rozsahem odpovídá tomuto vymezení.</predmet_vz>
+  <hlavni_cpv>45233000</hlavni_cpv>
+  <delena_na_casti>0</delena_na_casti>
+  <zadavaci_postupy>
+   <zadavaci_postup>
+    <id_objektu>ZP-935</id_objektu>
+   </zadavaci_postup>
+  </zadavaci_postupy>
+  <casti_vz>
+   <cast_zakazky>
+    <id_objektu>935</id_objektu>
+    <id_zadavaciho_postupu_vz>ZP-935</id_zadavaciho_postupu_vz>
+    <nazev_casti_vz>Stavební úpravy MK v ul. Souběžná v Třeboni</nazev_casti_vz>
+    <druh_casti_vz>stavební práce</druh_casti_vz>
+    <rezim_casti_vz>Podlimitní</rezim_casti_vz>
+    <predmet_casti_vz>Předmětem plnění veřejné zakázky jsou stavební úpravy místní komunikace, zpevněných ploch chodníků, parkovacích stání a sjezdů, vodovodu, jednotné kanalizace a veřejného osvětlení a novostavbě dešťové kanalizace. Jedná se o úsek Souběžné ulice od křižovatky s ulicí Ořechová po konec ulice Souběžné před bytovým domem čp. 800 v délce 120 m. Součástí stavby je také výměna nebo výstavba nových přípojek vodohospodářských sítí.
+
+Zadavatel upozorňuje, že vymezení Projektové dokumentace ve smyslu zadávací dokumentace je širší nežli zadavatelem vymezený předmět plnění této veřejné zakázky. Tato veřejná zakázka se týká pouze ul. Souběžná, která je v Projektové dokumentaci vyznačena jako tzv. 1. etapa; Výkaz výměr svým rozsahem odpovídá tomuto vymezení.</predmet_casti_vz>
+    <hlavni_cpv_casti_vz>45233000</hlavni_cpv_casti_vz>
+    <zadavaci_postup_casti>
+     <id_objektu>ZP-935</id_objektu>
+     <lhuty_zadavaciho_postupu>
+      <lhuta>
+       <druh_lhuty>lhůta podání nabídky</druh_lhuty>
+       <datum_konce_lhuty>2026-04-27T10:00:00+02:00</datum_konce_lhuty>
+      </lhuta>
+     </lhuty_zadavaciho_postupu>
+     <stav_zadavaciho_postupu>dokončen</stav_zadavaciho_postupu>
+     <druh_zadavaciho_postupu>zjednodušené podlimitní řízení</druh_zadavaciho_postupu>
+     <ramcova_dohoda>0</ramcova_dohoda>
+     <zavedeni_dns>0</zavedeni_dns>
+     <dokumenty>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8273.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-04-28T09:37:04+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8361.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-05-26T13:54:15+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8362.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-05-26T13:55:10+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8363.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-05-26T13:56:32+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8364.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-05-26T13:57:43+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8691.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-10-15T10:32:06+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8692.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-10-15T10:34:12+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8221.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-04-07T12:46:00+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8222.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-04-07T12:46:00+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8223.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-04-07T12:46:00+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8224.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-04-07T12:46:00+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8225.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-04-07T12:46:00+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8226.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-04-07T12:46:00+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8227.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-04-07T12:46:00+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8228.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-04-07T12:46:00+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8229.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-04-07T12:46:00+02:00</cas_vlozeni_na_profil>
+      </dokument>
+     </dokumenty>
+     <datum_uverejneni>2026-04-07T12:46:00+02:00</datum_uverejneni>
+     <ucastnici>
+      <ucastnik>
+       <subjekt>
+        <ico>25159224</ico>
+        <nazev_subjektu>JIPAMA s.r.o.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+      <ucastnik>
+       <subjekt>
+        <ico>26105594</ico>
+        <nazev_subjektu>K - BUILDING CB, a.s.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+      <ucastnik>
+       <subjekt>
+        <ico>25018094</ico>
+        <nazev_subjektu>SaM silnice a mosty a.s.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+      <ucastnik>
+       <subjekt>
+        <ico>25174533</ico>
+        <nazev_subjektu>Stavební firma HUKO s.r.o.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+      <ucastnik>
+       <subjekt>
+        <ico>45359041</ico>
+        <nazev_subjektu>STRABAG SIS a.s.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+      <ucastnik>
+       <subjekt>
+        <ico>02192012</ico>
+        <nazev_subjektu>VKB stavby s.r.o.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+     </ucastnici>
+     <vybrani_dodavatele>
+      <vybrany_dodavatel>
+       <subjekt>
+        <ico>02192012</ico>
+        <nazev_subjektu>VKB stavby s.r.o.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <uzavrena_smlouva_nebo_rd>1</uzavrena_smlouva_nebo_rd>
+       <smluvni_cena_s_DPH>11056528.86</smluvni_cena_s_DPH>
+       <smluvni_cena_bez_DPH>9137627.16</smluvni_cena_bez_DPH>
+       <role_dodavatele>dodavatel bez společné účasti</role_dodavatele>
+      </vybrany_dodavatel>
+     </vybrani_dodavatele>
+     <zjisten_stret_zajmu>0</zjisten_stret_zajmu>
+     <datum_uzavreni_smlouvy>2026-05-25T00:00:00+02:00</datum_uzavreni_smlouvy>
+    </zadavaci_postup_casti>
+   </cast_zakazky>
+  </casti_vz>
+ </zakazka>
+ <zakazka>
+  <id_objektu>VZ-936</id_objektu>
+  <nazev_vz>Sportovní hala Třeboň - nástavba a přístavba ubytování - vybavení interiéru</nazev_vz>
+  <druh_vz>dodávky</druh_vz>
+  <rezim_vz>Veřejné zakázky malého rozsahu</rezim_vz>
+  <predmet_vz>Předmětem akce je dodávka a montáž vybavení interiéru nástavby a přístavby objektu ubytování sportovní haly v Třeboni, čp. 1005, Lázeňská ulice, Třeboň.</predmet_vz>
+  <hlavni_cpv>39200000</hlavni_cpv>
+  <delena_na_casti>0</delena_na_casti>
+  <zadavaci_postupy>
+   <zadavaci_postup>
+    <id_objektu>ZP-936</id_objektu>
+   </zadavaci_postup>
+  </zadavaci_postupy>
+  <casti_vz>
+   <cast_zakazky>
+    <id_objektu>936</id_objektu>
+    <id_zadavaciho_postupu_vz>ZP-936</id_zadavaciho_postupu_vz>
+    <nazev_casti_vz>Sportovní hala Třeboň - nástavba a přístavba ubytování - vybavení interiéru</nazev_casti_vz>
+    <druh_casti_vz>dodávky</druh_casti_vz>
+    <rezim_casti_vz>Veřejné zakázky malého rozsahu</rezim_casti_vz>
+    <predmet_casti_vz>Předmětem akce je dodávka a montáž vybavení interiéru nástavby a přístavby objektu ubytování sportovní haly v Třeboni, čp. 1005, Lázeňská ulice, Třeboň.</predmet_casti_vz>
+    <hlavni_cpv_casti_vz>39200000</hlavni_cpv_casti_vz>
+    <zadavaci_postup_casti>
+     <id_objektu>ZP-936</id_objektu>
+     <lhuty_zadavaciho_postupu>
+      <lhuta>
+       <druh_lhuty>lhůta podání nabídky</druh_lhuty>
+       <datum_konce_lhuty>2026-05-06T12:00:00+02:00</datum_konce_lhuty>
+      </lhuta>
+     </lhuty_zadavaciho_postupu>
+     <stav_zadavaciho_postupu>dokončen</stav_zadavaciho_postupu>
+     <druh_zadavaciho_postupu>otevřená výzva</druh_zadavaciho_postupu>
+     <ramcova_dohoda>0</ramcova_dohoda>
+     <zavedeni_dns>0</zavedeni_dns>
+     <dokumenty>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8430.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-07-08T15:10:06+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8431.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-07-08T15:10:40+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8432.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-07-08T15:11:11+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8247.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-04-20T16:23:29+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8248.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-04-20T16:23:29+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8249.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-04-20T16:23:29+02:00</cas_vlozeni_na_profil>
+      </dokument>
+     </dokumenty>
+     <datum_uverejneni>2026-04-20T16:23:29+02:00</datum_uverejneni>
+     <ucastnici>
+      <ucastnik>
+       <subjekt>
+        <ico>28123395</ico>
+        <nazev_subjektu>Artspect, a.s.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+      <ucastnik>
+       <subjekt>
+        <ico>04163664</ico>
+        <nazev_subjektu>KANONA a.s.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+      <ucastnik>
+       <subjekt>
+        <ico>48202118</ico>
+        <nazev_subjektu>PROFIL NÁBYTEK, a.s.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+      <ucastnik>
+       <subjekt>
+        <ico>42408121</ico>
+        <nazev_subjektu>SANTAL spol. s r. o.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+      <ucastnik>
+       <subjekt>
+        <ico>00665509</ico>
+        <nazev_subjektu>TRUST-ts spol. s r.o.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+     </ucastnici>
+     <vybrani_dodavatele>
+      <vybrany_dodavatel>
+       <subjekt>
+        <ico>28123395</ico>
+        <nazev_subjektu>Artspect, a.s.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <uzavrena_smlouva_nebo_rd>1</uzavrena_smlouva_nebo_rd>
+       <smluvni_cena_s_DPH>2025961.08</smluvni_cena_s_DPH>
+       <smluvni_cena_bez_DPH>1674348.00</smluvni_cena_bez_DPH>
+       <role_dodavatele>dodavatel bez společné účasti</role_dodavatele>
+      </vybrany_dodavatel>
+     </vybrani_dodavatele>
+     <zjisten_stret_zajmu>0</zjisten_stret_zajmu>
+     <datum_uzavreni_smlouvy>2026-05-21T00:00:00+02:00</datum_uzavreni_smlouvy>
+    </zadavaci_postup_casti>
+   </cast_zakazky>
+  </casti_vz>
+ </zakazka>
+ <zakazka>
+  <id_objektu>VZ-941</id_objektu>
+  <nazev_vz>Stavební úpravy kotelen a výměna plynových kotlů v objektu DPS IA a DPS IC, Chelčického 1, Třeboň</nazev_vz>
+  <druh_vz>stavební práce</druh_vz>
+  <rezim_vz>Veřejné zakázky malého rozsahu</rezim_vz>
+  <predmet_vz>Předmětem této zakázky je kompletní rekonstrukce dvou kotelen v objektu domu s pečovatelskou službou DPS 1. Základním účelem rekonstrukce jsou plně funkční kotelny jako technický celek (stavba). Zadavatel neusiluje jen o obměnu kotlů (stávajících atmosférických stacionárních plynových kotlů za nové kondenzační závěsné plynové kotle), a tudíž dodávky technologie (kotlů, zásobníkových ohřívačů TUV, čerpadel, tlakových expanzních nádob, MaR,…) nejsou základním účelem, ale pouze součástí této rekonstrukce. Součástí stavby jsou i elektroinstalační práce a stavební úpravy jako nové základy pod ohřívače, opravy podlah (dlažby), omítek (sanace do 1,5 m), stěn (výmalba) a svítidel.</predmet_vz>
+  <hlavni_cpv>45453100</hlavni_cpv>
+  <delena_na_casti>0</delena_na_casti>
+  <zadavaci_postupy>
+   <zadavaci_postup>
+    <id_objektu>ZP-941</id_objektu>
+   </zadavaci_postup>
+  </zadavaci_postupy>
+  <casti_vz>
+   <cast_zakazky>
+    <id_objektu>941</id_objektu>
+    <id_zadavaciho_postupu_vz>ZP-941</id_zadavaciho_postupu_vz>
+    <nazev_casti_vz>Stavební úpravy kotelen a výměna plynových kotlů v objektu DPS IA a DPS IC, Chelčického 1, Třeboň</nazev_casti_vz>
+    <druh_casti_vz>stavební práce</druh_casti_vz>
+    <rezim_casti_vz>Veřejné zakázky malého rozsahu</rezim_casti_vz>
+    <predmet_casti_vz>Předmětem této zakázky je kompletní rekonstrukce dvou kotelen v objektu domu s pečovatelskou službou DPS 1. Základním účelem rekonstrukce jsou plně funkční kotelny jako technický celek (stavba). Zadavatel neusiluje jen o obměnu kotlů (stávajících atmosférických stacionárních plynových kotlů za nové kondenzační závěsné plynové kotle), a tudíž dodávky technologie (kotlů, zásobníkových ohřívačů TUV, čerpadel, tlakových expanzních nádob, MaR,…) nejsou základním účelem, ale pouze součástí této rekonstrukce. Součástí stavby jsou i elektroinstalační práce a stavební úpravy jako nové základy pod ohřívače, opravy podlah (dlažby), omítek (sanace do 1,5 m), stěn (výmalba) a svítidel.</predmet_casti_vz>
+    <hlavni_cpv_casti_vz>45453100</hlavni_cpv_casti_vz>
+    <zadavaci_postup_casti>
+     <id_objektu>ZP-941</id_objektu>
+     <lhuty_zadavaciho_postupu>
+      <lhuta>
+       <druh_lhuty>lhůta podání nabídky</druh_lhuty>
+       <datum_konce_lhuty>2026-05-04T10:00:00+02:00</datum_konce_lhuty>
+      </lhuta>
+     </lhuty_zadavaciho_postupu>
+     <stav_zadavaciho_postupu>dokončen</stav_zadavaciho_postupu>
+     <druh_zadavaciho_postupu>uzavřená výzva</druh_zadavaciho_postupu>
+     <ramcova_dohoda>0</ramcova_dohoda>
+     <zavedeni_dns>0</zavedeni_dns>
+     <dokumenty>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8381.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-05-29T08:48:21+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8382.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-05-29T08:48:21+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8585.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-09-01T15:05:34+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8380.html</url>
+       <typ_dokumentu>smlouva</typ_dokumentu>
+       <cas_vlozeni_na_profil>2026-05-29T08:48:21+02:00</cas_vlozeni_na_profil>
+       <metadata_smlouvy_nebo_rd>
+        <smluvni_strany>
+         <smluvni_strana>
+          <subjekt>
+           <ico>26046440</ico>
+           <nazev_subjektu>ZKM CB s.r.o.</nazev_subjektu>
+           <zeme_sidla>CZ</zeme_sidla>
+          </subjekt>
+         </smluvni_strana>
+        </smluvni_strany>
+        <predmet_smlouvy>Předmětem této zakázky je kompletní rekonstrukce dvou kotelen v objektu domu s pečovatelskou službou DPS 1. Základním účelem rekonstrukce jsou plně funkční kotelny jako technický celek (stavba). Zadavatel neusiluje jen o obměnu kotlů (stávajících atmosférických stacionárních plynových kotlů za nové kondenzační závěsné plynové kotle), a tudíž dodávky technologie (kotlů, zásobníkových ohřívačů TUV, čerpadel, tlakových expanzních nádob, MaR,…) nejsou základním účelem, ale pouze součástí této rekonstrukce. Součástí stavby jsou i elektroinstalační práce a stavební úpravy jako nové základy pod ohřívače, opravy podlah (dlažby), omítek (sanace do 1,5 m), stěn (výmalba) a svítidel.</predmet_smlouvy>
+        <smluvni_cena_s_dph>3060353.00</smluvni_cena_s_dph>
+        <smluvni_cena_bez_dph>2732458.00</smluvni_cena_bez_dph>
+        <datum_uzavreni_smlouvy>2026-05-18T00:00:00+02:00</datum_uzavreni_smlouvy>
+       </metadata_smlouvy_nebo_rd>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8584.html</url>
+       <typ_dokumentu>smlouva</typ_dokumentu>
+       <cas_vlozeni_na_profil>2026-09-01T15:05:04+02:00</cas_vlozeni_na_profil>
+       <metadata_smlouvy_nebo_rd>
+        <smluvni_strany>
+         <smluvni_strana>
+          <subjekt>
+           <ico>26046440</ico>
+           <nazev_subjektu>ZKM CB s.r.o.</nazev_subjektu>
+           <zeme_sidla>CZ</zeme_sidla>
+          </subjekt>
+         </smluvni_strana>
+        </smluvni_strany>
+        <predmet_smlouvy>Předmětem této zakázky je kompletní rekonstrukce dvou kotelen v objektu domu s pečovatelskou službou DPS 1. Základním účelem rekonstrukce jsou plně funkční kotelny jako technický celek (stavba). Zadavatel neusiluje jen o obměnu kotlů (stávajících atmosférických stacionárních plynových kotlů za nové kondenzační závěsné plynové kotle), a tudíž dodávky technologie (kotlů, zásobníkových ohřívačů TUV, čerpadel, tlakových expanzních nádob, MaR,…) nejsou základním účelem, ale pouze součástí této rekonstrukce. Součástí stavby jsou i elektroinstalační práce a stavební úpravy jako nové základy pod ohřívače, opravy podlah (dlažby), omítek (sanace do 1,5 m), stěn (výmalba) a svítidel.</predmet_smlouvy>
+        <smluvni_cena_s_dph>3060353.00</smluvni_cena_s_dph>
+        <smluvni_cena_bez_dph>2732458.00</smluvni_cena_bez_dph>
+        <datum_uzavreni_smlouvy>2026-05-18T00:00:00+02:00</datum_uzavreni_smlouvy>
+       </metadata_smlouvy_nebo_rd>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8378.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>Ostatní</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-05-29T08:48:21+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8379.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>Ostatní</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-05-29T08:48:21+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8377.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-05-29T08:48:21+02:00</cas_vlozeni_na_profil>
+      </dokument>
+     </dokumenty>
+     <datum_uverejneni>2026-05-29T08:48:21+02:00</datum_uverejneni>
+     <ucastnici>
+      <ucastnik>
+       <subjekt>
+        <ico>26046440</ico>
+        <nazev_subjektu>ZKM CB s.r.o.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+     </ucastnici>
+     <vybrani_dodavatele>
+      <vybrany_dodavatel>
+       <subjekt>
+        <ico>26046440</ico>
+        <nazev_subjektu>ZKM CB s.r.o.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <uzavrena_smlouva_nebo_rd>1</uzavrena_smlouva_nebo_rd>
+       <smluvni_cena_s_DPH>3060353.00</smluvni_cena_s_DPH>
+       <smluvni_cena_bez_DPH>2732458.00</smluvni_cena_bez_DPH>
+       <role_dodavatele>dodavatel bez společné účasti</role_dodavatele>
+      </vybrany_dodavatel>
+     </vybrani_dodavatele>
+     <zjisten_stret_zajmu>0</zjisten_stret_zajmu>
+     <datum_uzavreni_smlouvy>2026-05-18T00:00:00+02:00</datum_uzavreni_smlouvy>
+    </zadavaci_postup_casti>
+   </cast_zakazky>
+  </casti_vz>
+ </zakazka>
+ <zakazka>
+  <id_objektu>VZ-944</id_objektu>
+  <nazev_vz>Novostavba bytového domu, Třeboň – 1. opakované řízení</nazev_vz>
+  <druh_vz>stavební práce</druh_vz>
+  <rezim_vz>Podlimitní</rezim_vz>
+  <predmet_vz>Předmětem plnění veřejné zakázky je novostavba bytového domu s celkem 14 byty ve městě Třeboni.</predmet_vz>
+  <hlavni_cpv>45211340</hlavni_cpv>
+  <delena_na_casti>0</delena_na_casti>
+  <zadavaci_postupy>
+   <zadavaci_postup>
+    <id_objektu>ZP-944</id_objektu>
+    <evidencni_cislo_vvz>Z2026-028982</evidencni_cislo_vvz>
+   </zadavaci_postup>
+  </zadavaci_postupy>
+  <casti_vz>
+   <cast_zakazky>
+    <id_objektu>944</id_objektu>
+    <id_zadavaciho_postupu_vz>ZP-944</id_zadavaciho_postupu_vz>
+    <nazev_casti_vz>Novostavba bytového domu, Třeboň – 1. opakované řízení</nazev_casti_vz>
+    <druh_casti_vz>stavební práce</druh_casti_vz>
+    <rezim_casti_vz>Podlimitní</rezim_casti_vz>
+    <predmet_casti_vz>Předmětem plnění veřejné zakázky je novostavba bytového domu s celkem 14 byty ve městě Třeboni.</predmet_casti_vz>
+    <hlavni_cpv_casti_vz>45211340</hlavni_cpv_casti_vz>
+    <zadavaci_postup_casti>
+     <id_objektu>ZP-944</id_objektu>
+     <evidencni_cislo_vvz>Z2026-028982</evidencni_cislo_vvz>
+     <lhuty_zadavaciho_postupu>
+      <lhuta>
+       <druh_lhuty>lhůta podání nabídky</druh_lhuty>
+       <datum_konce_lhuty>2026-07-13T10:00:00+02:00</datum_konce_lhuty>
+      </lhuta>
+     </lhuty_zadavaciho_postupu>
+     <stav_zadavaciho_postupu>zrušen</stav_zadavaciho_postupu>
+     <druh_zadavaciho_postupu>otevřené řízení</druh_zadavaciho_postupu>
+     <ramcova_dohoda>0</ramcova_dohoda>
+     <zavedeni_dns>0</zavedeni_dns>
+     <dokumenty>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8475.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-08-06T11:03:32+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8476.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-08-06T11:03:49+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8393.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-05-29T16:18:43+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8394.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-05-29T16:18:43+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8395.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-05-29T16:18:43+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8396.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-05-29T16:18:43+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8397.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-05-29T16:18:43+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8398.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-05-29T16:18:43+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8399.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-05-29T16:18:43+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8400.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-05-29T16:18:43+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8401.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-05-29T16:18:43+02:00</cas_vlozeni_na_profil>
+      </dokument>
+     </dokumenty>
+     <datum_uverejneni>2026-05-29T16:18:43+02:00</datum_uverejneni>
+     <zjisten_stret_zajmu>0</zjisten_stret_zajmu>
+     <datum_zruseni_rizeni>2026-08-06T00:00:00+02:00</datum_zruseni_rizeni>
+    </zadavaci_postup_casti>
+   </cast_zakazky>
+  </casti_vz>
+ </zakazka>
+ <zakazka>
+  <id_objektu>VZ-947</id_objektu>
+  <nazev_vz>Instalace FVE 38,7 kWp na střeše přístavby ZŠ Na Sadech, Třeboň</nazev_vz>
+  <druh_vz>dodávky</druh_vz>
+  <rezim_vz>Veřejné zakázky malého rozsahu</rezim_vz>
+  <predmet_vz>Předmětem této veřejné zakázky je dodávka a montáž včetně prací spojených s umístěním a instalací střešní fotovoltaické elektrárny (dále FVE) o celkovém výkonu 38,7 kWp na střeše stávajícího objektu přístavby ZŠ Na Sadech v Třeboni čp. 375. Jedná se o instalaci celkem 86 ks monokrystalických křemíkových FV panelů. Akumulátorovna a napojení na odběrné místo (školní jídelna) je v sousední budově čp. 349.</predmet_vz>
+  <hlavni_cpv>09332000</hlavni_cpv>
+  <delena_na_casti>0</delena_na_casti>
+  <zadavaci_postupy>
+   <zadavaci_postup>
+    <id_objektu>ZP-947</id_objektu>
+   </zadavaci_postup>
+  </zadavaci_postupy>
+  <casti_vz>
+   <cast_zakazky>
+    <id_objektu>947</id_objektu>
+    <id_zadavaciho_postupu_vz>ZP-947</id_zadavaciho_postupu_vz>
+    <nazev_casti_vz>Instalace FVE 38,7 kWp na střeše přístavby ZŠ Na Sadech, Třeboň</nazev_casti_vz>
+    <druh_casti_vz>dodávky</druh_casti_vz>
+    <rezim_casti_vz>Veřejné zakázky malého rozsahu</rezim_casti_vz>
+    <predmet_casti_vz>Předmětem této veřejné zakázky je dodávka a montáž včetně prací spojených s umístěním a instalací střešní fotovoltaické elektrárny (dále FVE) o celkovém výkonu 38,7 kWp na střeše stávajícího objektu přístavby ZŠ Na Sadech v Třeboni čp. 375. Jedná se o instalaci celkem 86 ks monokrystalických křemíkových FV panelů. Akumulátorovna a napojení na odběrné místo (školní jídelna) je v sousední budově čp. 349.</predmet_casti_vz>
+    <hlavni_cpv_casti_vz>09332000</hlavni_cpv_casti_vz>
+    <zadavaci_postup_casti>
+     <id_objektu>ZP-947</id_objektu>
+     <lhuty_zadavaciho_postupu>
+      <lhuta>
+       <druh_lhuty>lhůta podání nabídky</druh_lhuty>
+       <datum_konce_lhuty>2026-07-30T13:00:00+02:00</datum_konce_lhuty>
+      </lhuta>
+     </lhuty_zadavaciho_postupu>
+     <stav_zadavaciho_postupu>dokončen</stav_zadavaciho_postupu>
+     <druh_zadavaciho_postupu>otevřená výzva</druh_zadavaciho_postupu>
+     <ramcova_dohoda>0</ramcova_dohoda>
+     <zavedeni_dns>0</zavedeni_dns>
+     <dokumenty>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8466.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-07-31T10:23:02+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8477.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-08-10T14:20:19+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8511.html</url>
+       <typ_dokumentu>smlouva</typ_dokumentu>
+       <cas_vlozeni_na_profil>2026-08-14T10:12:03+02:00</cas_vlozeni_na_profil>
+       <metadata_smlouvy_nebo_rd>
+        <id_v_registru_smluv>36773470</id_v_registru_smluv>
+        <url_v_registru_smluv>https://smlouvy.gov.cz/smlouva/39122658</url_v_registru_smluv>
+       </metadata_smlouvy_nebo_rd>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8433.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-07-21T13:48:30+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8434.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-07-21T13:48:30+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8435.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-07-21T13:48:30+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8436.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-07-21T13:48:30+02:00</cas_vlozeni_na_profil>
+      </dokument>
+     </dokumenty>
+     <datum_uverejneni>2026-07-21T13:48:30+02:00</datum_uverejneni>
+     <ucastnici>
+      <ucastnik>
+       <subjekt>
+        <ico>09002146</ico>
+        <nazev_subjektu>Greenwatt Solution s.r.o.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+      <ucastnik>
+       <subjekt>
+        <ico>49452690</ico>
+        <nazev_subjektu>MOBIS, spol. s r.o.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+      <ucastnik>
+       <subjekt>
+        <ico>14283905</ico>
+        <nazev_subjektu>Montekord Solar s.r.o.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+      <ucastnik>
+       <subjekt>
+        <ico>27800393</ico>
+        <nazev_subjektu>PLOSAB s.r.o.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+      <ucastnik>
+       <subjekt>
+        <ico>21007411</ico>
+        <nazev_subjektu>RS SUN s.r.o.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+      <ucastnik>
+       <subjekt>
+        <ico>26022231</ico>
+        <nazev_subjektu>TERMS CZ s.r.o.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+      <ucastnik>
+       <subjekt>
+        <ico>17295041</ico>
+        <nazev_subjektu>VSV Tech s.r.o.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+     </ucastnici>
+     <vybrani_dodavatele>
+      <vybrany_dodavatel>
+       <subjekt>
+        <ico>17295041</ico>
+        <nazev_subjektu>VSV Tech s.r.o.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <uzavrena_smlouva_nebo_rd>1</uzavrena_smlouva_nebo_rd>
+       <smluvni_cena_s_DPH>1208500.92</smluvni_cena_s_DPH>
+       <smluvni_cena_bez_DPH>998761.09</smluvni_cena_bez_DPH>
+       <role_dodavatele>dodavatel bez společné účasti</role_dodavatele>
+      </vybrany_dodavatel>
+     </vybrani_dodavatele>
+     <zjisten_stret_zajmu>0</zjisten_stret_zajmu>
+     <datum_uzavreni_smlouvy>2026-08-13T00:00:00+02:00</datum_uzavreni_smlouvy>
+    </zadavaci_postup_casti>
+   </cast_zakazky>
+  </casti_vz>
+ </zakazka>
+ <zakazka>
+  <id_objektu>VZ-949</id_objektu>
+  <nazev_vz>Stavební úpravy MK v ul. Heřmánkova a Daskabát v Třeboni</nazev_vz>
+  <druh_vz>stavební práce</druh_vz>
+  <rezim_vz>Podlimitní</rezim_vz>
+  <predmet_vz>Předmětem plnění veřejné zakázky jsou stavební úpravy místní komunikace v celé Heřmánkově ulici v délce 260 m, a dále v pokračující části ulice Daskabát (80 m) od křižovatky s ulicí Heřmánkova po křižovatku s ulicí U Francouzů a v části ulice Daskabát (80 m) od křižovatky s ulicí Heřmánkova po křižovatku s ulicí Ořechová. Součástí stavby je také výměna nebo výstavba nových přípojek vodohospodářských sítí.
+
+V koordinaci budou na staveništi současně probíhat stavby soukromých investorů, společnosti Gas Distribution, s.r.o., výměna plynovodu včetně přípojek, a společnosti CETIN a.s. nové trasy kabelového vedení sítí elektronických komunikací. Zhotovitel musí tyto stavby umožnit.
+
+Zadavatel upozorňuje, že vymezení Projektové dokumentace ve smyslu zadávací dokumentace je širší nežli zadavatelem vymezený předmět plnění této veřejné zakázky. Tato veřejná zakázka se týká ulice Heřmánkova a Daskabát, které jsou v Projektové dokumentaci vyznačeny jako tzv. 2. etapa; Výkaz výměr svým rozsahem odpovídá tomuto vymezení.</predmet_vz>
+  <hlavni_cpv>45233000</hlavni_cpv>
+  <delena_na_casti>0</delena_na_casti>
+  <zadavaci_postupy>
+   <zadavaci_postup>
+    <id_objektu>ZP-949</id_objektu>
+   </zadavaci_postup>
+  </zadavaci_postupy>
+  <casti_vz>
+   <cast_zakazky>
+    <id_objektu>949</id_objektu>
+    <id_zadavaciho_postupu_vz>ZP-949</id_zadavaciho_postupu_vz>
+    <nazev_casti_vz>Stavební úpravy MK v ul. Heřmánkova a Daskabát v Třeboni</nazev_casti_vz>
+    <druh_casti_vz>stavební práce</druh_casti_vz>
+    <rezim_casti_vz>Podlimitní</rezim_casti_vz>
+    <predmet_casti_vz>Předmětem plnění veřejné zakázky jsou stavební úpravy místní komunikace v celé Heřmánkově ulici v délce 260 m, a dále v pokračující části ulice Daskabát (80 m) od křižovatky s ulicí Heřmánkova po křižovatku s ulicí U Francouzů a v části ulice Daskabát (80 m) od křižovatky s ulicí Heřmánkova po křižovatku s ulicí Ořechová. Součástí stavby je také výměna nebo výstavba nových přípojek vodohospodářských sítí.
+
+V koordinaci budou na staveništi současně probíhat stavby soukromých investorů, společnosti Gas Distribution, s.r.o., výměna plynovodu včetně přípojek, a společnosti CETIN a.s. nové trasy kabelového vedení sítí elektronických komunikací. Zhotovitel musí tyto stavby umožnit.
+
+Zadavatel upozorňuje, že vymezení Projektové dokumentace ve smyslu zadávací dokumentace je širší nežli zadavatelem vymezený předmět plnění této veřejné zakázky. Tato veřejná zakázka se týká ulice Heřmánkova a Daskabát, které jsou v Projektové dokumentaci vyznačeny jako tzv. 2. etapa; Výkaz výměr svým rozsahem odpovídá tomuto vymezení.</predmet_casti_vz>
+    <hlavni_cpv_casti_vz>45233000</hlavni_cpv_casti_vz>
+    <zadavaci_postup_casti>
+     <id_objektu>ZP-949</id_objektu>
+     <lhuty_zadavaciho_postupu>
+      <lhuta>
+       <druh_lhuty>lhůta podání nabídky</druh_lhuty>
+       <datum_konce_lhuty>2026-09-16T10:00:00+02:00</datum_konce_lhuty>
+      </lhuta>
+     </lhuty_zadavaciho_postupu>
+     <stav_zadavaciho_postupu>dokončen</stav_zadavaciho_postupu>
+     <druh_zadavaciho_postupu>zjednodušené podlimitní řízení</druh_zadavaciho_postupu>
+     <ramcova_dohoda>0</ramcova_dohoda>
+     <zavedeni_dns>0</zavedeni_dns>
+     <dokumenty>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8616.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-09-16T12:06:15+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8773.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-11-10T10:31:33+01:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8774.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-11-10T10:32:01+01:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8778.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-11-10T11:23:53+01:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8779.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-11-10T11:25:20+01:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8482.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-08-12T12:41:04+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8483.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-08-12T12:41:04+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8484.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-08-12T12:41:04+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8485.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-08-12T12:41:04+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8486.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-08-12T12:41:04+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8487.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-08-12T12:41:04+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8488.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-08-12T12:41:04+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8489.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-08-12T12:41:04+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8490.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-08-12T12:41:04+02:00</cas_vlozeni_na_profil>
+      </dokument>
+     </dokumenty>
+     <datum_uverejneni>2026-08-12T12:41:04+02:00</datum_uverejneni>
+     <ucastnici>
+      <ucastnik>
+       <subjekt>
+        <ico>25018094</ico>
+        <nazev_subjektu>SaM silnice a mosty a.s.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+      <ucastnik>
+       <subjekt>
+        <ico>25168002</ico>
+        <nazev_subjektu>Stavitelství Matourek s.r.o. dopravní a inženýrské stavby</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+      <ucastnik>
+       <subjekt>
+        <ico>48035599</ico>
+        <nazev_subjektu>SWIETELSKY stavební s.r.o.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+      <ucastnik>
+       <subjekt>
+        <ico>02192012</ico>
+        <nazev_subjektu>VKB stavby s.r.o.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+     </ucastnici>
+     <vybrani_dodavatele>
+      <vybrany_dodavatel>
+       <subjekt>
+        <ico>02192012</ico>
+        <nazev_subjektu>VKB stavby s.r.o.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <uzavrena_smlouva_nebo_rd>1</uzavrena_smlouva_nebo_rd>
+       <smluvni_cena_s_DPH>26437397.31</smluvni_cena_s_DPH>
+       <smluvni_cena_bez_DPH>21849088.69</smluvni_cena_bez_DPH>
+       <role_dodavatele>dodavatel bez společné účasti</role_dodavatele>
+      </vybrany_dodavatel>
+     </vybrani_dodavatele>
+     <zjisten_stret_zajmu>0</zjisten_stret_zajmu>
+     <datum_uzavreni_smlouvy>2026-11-06T00:00:00+01:00</datum_uzavreni_smlouvy>
+    </zadavaci_postup_casti>
+   </cast_zakazky>
+  </casti_vz>
+ </zakazka>
+ <zakazka>
+  <id_objektu>VZ-957</id_objektu>
+  <nazev_vz>Rozšíření veřejného osvětlení v Branné</nazev_vz>
+  <druh_vz>stavební práce</druh_vz>
+  <rezim_vz>Veřejné zakázky malého rozsahu</rezim_vz>
+  <predmet_vz>Předmětem veřejné zakázky je výstavba veřejného osvětlení ve 4 lokalitách místní části Branná, celkem 5 osvětlovacích bodů. &#13;
+Dodavatel si zajistí dopravně inženýrské opatření včetně vydání potřebných povolení pro omezení provozu na komunikacích při provádění stavby.</predmet_vz>
+  <hlavni_cpv>45316100</hlavni_cpv>
+  <delena_na_casti>0</delena_na_casti>
+  <zadavaci_postupy>
+   <zadavaci_postup>
+    <id_objektu>ZP-957</id_objektu>
+   </zadavaci_postup>
+  </zadavaci_postupy>
+  <casti_vz>
+   <cast_zakazky>
+    <id_objektu>957</id_objektu>
+    <id_zadavaciho_postupu_vz>ZP-957</id_zadavaciho_postupu_vz>
+    <nazev_casti_vz>Rozšíření veřejného osvětlení v Branné</nazev_casti_vz>
+    <druh_casti_vz>stavební práce</druh_casti_vz>
+    <rezim_casti_vz>Veřejné zakázky malého rozsahu</rezim_casti_vz>
+    <predmet_casti_vz>Předmětem veřejné zakázky je výstavba veřejného osvětlení ve 4 lokalitách místní části Branná, celkem 5 osvětlovacích bodů. &#13;
+Dodavatel si zajistí dopravně inženýrské opatření včetně vydání potřebných povolení pro omezení provozu na komunikacích při provádění stavby.</predmet_casti_vz>
+    <hlavni_cpv_casti_vz>45316100</hlavni_cpv_casti_vz>
+    <zadavaci_postup_casti>
+     <id_objektu>ZP-957</id_objektu>
+     <lhuty_zadavaciho_postupu>
+      <lhuta>
+       <druh_lhuty>lhůta podání nabídky</druh_lhuty>
+       <datum_konce_lhuty>2026-09-15T10:00:00+02:00</datum_konce_lhuty>
+      </lhuta>
+     </lhuty_zadavaciho_postupu>
+     <stav_zadavaciho_postupu>zahájen</stav_zadavaciho_postupu>
+     <druh_zadavaciho_postupu>otevřená výzva</druh_zadavaciho_postupu>
+     <ramcova_dohoda>0</ramcova_dohoda>
+     <zavedeni_dns>0</zavedeni_dns>
+     <dokumenty>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8614.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-09-15T16:39:38+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8617.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-09-16T12:29:38+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8514.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-08-18T10:52:31+02:00</cas_vlozeni_na_profil>
+      </dokument>
+     </dokumenty>
+     <datum_uverejneni>2026-08-18T10:52:31+02:00</datum_uverejneni>
+     <zjisten_stret_zajmu>0</zjisten_stret_zajmu>
+    </zadavaci_postup_casti>
+   </cast_zakazky>
+  </casti_vz>
+ </zakazka>
+ <zakazka>
+  <id_objektu>VZ-960</id_objektu>
+  <nazev_vz>Zkapacitnění propustku - Třeboň, Břilice</nazev_vz>
+  <druh_vz>stavební práce</druh_vz>
+  <rezim_vz>Veřejné zakázky malého rozsahu</rezim_vz>
+  <predmet_vz>Předmětem této zakázky jsou stavební práce na zkapacitnění stávajícího propustku na pozemcích p. č. 4203 a 4194 v k. ú. Břilice (silnice Břilice - Dvorce).</predmet_vz>
+  <hlavni_cpv>45221220</hlavni_cpv>
+  <delena_na_casti>0</delena_na_casti>
+  <zadavaci_postupy>
+   <zadavaci_postup>
+    <id_objektu>ZP-960</id_objektu>
+   </zadavaci_postup>
+  </zadavaci_postupy>
+  <casti_vz>
+   <cast_zakazky>
+    <id_objektu>960</id_objektu>
+    <id_zadavaciho_postupu_vz>ZP-960</id_zadavaciho_postupu_vz>
+    <nazev_casti_vz>Zkapacitnění propustku - Třeboň, Břilice</nazev_casti_vz>
+    <druh_casti_vz>stavební práce</druh_casti_vz>
+    <rezim_casti_vz>Veřejné zakázky malého rozsahu</rezim_casti_vz>
+    <predmet_casti_vz>Předmětem této zakázky jsou stavební práce na zkapacitnění stávajícího propustku na pozemcích p. č. 4203 a 4194 v k. ú. Břilice (silnice Břilice - Dvorce).</predmet_casti_vz>
+    <hlavni_cpv_casti_vz>45221220</hlavni_cpv_casti_vz>
+    <zadavaci_postup_casti>
+     <id_objektu>ZP-960</id_objektu>
+     <lhuty_zadavaciho_postupu>
+      <lhuta>
+       <druh_lhuty>lhůta podání nabídky</druh_lhuty>
+       <datum_konce_lhuty>2026-07-22T13:00:00+02:00</datum_konce_lhuty>
+      </lhuta>
+     </lhuty_zadavaciho_postupu>
+     <stav_zadavaciho_postupu>dokončen</stav_zadavaciho_postupu>
+     <druh_zadavaciho_postupu>uzavřená výzva</druh_zadavaciho_postupu>
+     <ramcova_dohoda>0</ramcova_dohoda>
+     <zavedeni_dns>0</zavedeni_dns>
+     <dokumenty>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8541.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-08-24T13:34:53+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8542.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-08-24T13:35:21+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8543.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-08-24T13:36:09+02:00</cas_vlozeni_na_profil>
+      </dokument>
+     </dokumenty>
+     <datum_uverejneni>2026-08-24T13:27:10+02:00</datum_uverejneni>
+     <ucastnici>
+      <ucastnik>
+       <subjekt>
+        <ico>60875691</ico>
+        <nazev_subjektu>AKORD - stavební a obchodní společnost, spol. s r.o.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+      <ucastnik>
+       <subjekt>
+        <ico>26105594</ico>
+        <nazev_subjektu>K - BUILDING CB, a.s.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+     </ucastnici>
+     <vybrani_dodavatele>
+      <vybrany_dodavatel>
+       <subjekt>
+        <ico>26105594</ico>
+        <nazev_subjektu>K - BUILDING CB, a.s.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <uzavrena_smlouva_nebo_rd>1</uzavrena_smlouva_nebo_rd>
+       <smluvni_cena_s_DPH>2167915.86</smluvni_cena_s_DPH>
+       <smluvni_cena_bez_DPH>1791666.00</smluvni_cena_bez_DPH>
+       <role_dodavatele>dodavatel bez společné účasti</role_dodavatele>
+      </vybrany_dodavatel>
+     </vybrani_dodavatele>
+     <zjisten_stret_zajmu>0</zjisten_stret_zajmu>
+     <datum_uzavreni_smlouvy>2026-08-10T00:00:00+02:00</datum_uzavreni_smlouvy>
+    </zadavaci_postup_casti>
+   </cast_zakazky>
+  </casti_vz>
+ </zakazka>
+ <zakazka>
+  <id_objektu>VZ-961</id_objektu>
+  <nazev_vz>Revitalizace kolonády Bertiných lázní</nazev_vz>
+  <druh_vz>stavební práce</druh_vz>
+  <rezim_vz>Veřejné zakázky malého rozsahu</rezim_vz>
+  <predmet_vz>Předmětem této zakázky je obnova stávajících okrasných a funkčních prvků podél promenády před Bertinými lázněmi v části ulice Tylova, a to:&#13;
+-	výměna původního zábradlí za nové zámečnicky provedené zábradlí (ze svařených žárově pozinkovaných uzavřených ocelových profilů) podél koryta Zlaté stoky ve stávajícím úseku;&#13;
+-	repase stávajících stožárů a svítidel včetně výměny kabelového vedení veřejného osvětlení a obměnu osvětlovacích bodů pro slavnostní nasvětlení pergol včetně zásuvkových krabic;&#13;
+-	výměna podpěrných konstrukcí pergol pro popínavé rostliny;&#13;
+-	instalace městského mobiliáře odpočinkových stolků se sezením a odpadkových košů;&#13;
+-	oprava dlážděných chodníků a betonových obrubníků poškozených po odstranění kořenů křovin včetně opravy a doplnění kamenného zdiva břehu koryta poškozeného při vrtání do patky pro ukotvení sloupků zábradlí.</predmet_vz>
+  <hlavni_cpv>45233253</hlavni_cpv>
+  <delena_na_casti>0</delena_na_casti>
+  <zadavaci_postupy>
+   <zadavaci_postup>
+    <id_objektu>ZP-961</id_objektu>
+   </zadavaci_postup>
+  </zadavaci_postupy>
+  <casti_vz>
+   <cast_zakazky>
+    <id_objektu>961</id_objektu>
+    <id_zadavaciho_postupu_vz>ZP-961</id_zadavaciho_postupu_vz>
+    <nazev_casti_vz>Revitalizace kolonády Bertiných lázní</nazev_casti_vz>
+    <druh_casti_vz>stavební práce</druh_casti_vz>
+    <rezim_casti_vz>Veřejné zakázky malého rozsahu</rezim_casti_vz>
+    <predmet_casti_vz>Předmětem této zakázky je obnova stávajících okrasných a funkčních prvků podél promenády před Bertinými lázněmi v části ulice Tylova, a to:&#13;
+-	výměna původního zábradlí za nové zámečnicky provedené zábradlí (ze svařených žárově pozinkovaných uzavřených ocelových profilů) podél koryta Zlaté stoky ve stávajícím úseku;&#13;
+-	repase stávajících stožárů a svítidel včetně výměny kabelového vedení veřejného osvětlení a obměnu osvětlovacích bodů pro slavnostní nasvětlení pergol včetně zásuvkových krabic;&#13;
+-	výměna podpěrných konstrukcí pergol pro popínavé rostliny;&#13;
+-	instalace městského mobiliáře odpočinkových stolků se sezením a odpadkových košů;&#13;
+-	oprava dlážděných chodníků a betonových obrubníků poškozených po odstranění kořenů křovin včetně opravy a doplnění kamenného zdiva břehu koryta poškozeného při vrtání do patky pro ukotvení sloupků zábradlí.</predmet_casti_vz>
+    <hlavni_cpv_casti_vz>45233253</hlavni_cpv_casti_vz>
+    <zadavaci_postup_casti>
+     <id_objektu>ZP-961</id_objektu>
+     <lhuty_zadavaciho_postupu>
+      <lhuta>
+       <druh_lhuty>lhůta podání nabídky</druh_lhuty>
+       <datum_konce_lhuty>2026-07-03T10:00:00+02:00</datum_konce_lhuty>
+      </lhuta>
+     </lhuty_zadavaciho_postupu>
+     <stav_zadavaciho_postupu>dokončen</stav_zadavaciho_postupu>
+     <druh_zadavaciho_postupu>uzavřená výzva</druh_zadavaciho_postupu>
+     <ramcova_dohoda>0</ramcova_dohoda>
+     <zavedeni_dns>0</zavedeni_dns>
+     <dokumenty>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8580.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-09-01T15:01:51+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8581.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-09-01T15:02:12+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8583.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-09-01T15:03:32+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8717.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-10-30T13:04:51+01:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8579.html</url>
+       <typ_dokumentu>smlouva</typ_dokumentu>
+       <cas_vlozeni_na_profil>2026-09-01T15:01:05+02:00</cas_vlozeni_na_profil>
+       <metadata_smlouvy_nebo_rd>
+        <smluvni_strany>
+         <smluvni_strana>
+          <subjekt>
+           <ico>42417473</ico>
+           <nazev_subjektu>Jiří Jokl</nazev_subjektu>
+           <zeme_sidla>CZ</zeme_sidla>
+          </subjekt>
+         </smluvni_strana>
+        </smluvni_strany>
+        <predmet_smlouvy>Předmětem této zakázky je obnova stávajících okrasných a funkčních prvků podél promenády před Bertinými lázněmi v části ulice Tylova, a to:&#13;
+-	výměna původního zábradlí za nové zámečnicky provedené zábradlí (ze svařených žárově pozinkovaných uzavřených ocelových profilů) podél koryta Zlaté stoky ve stávajícím úseku;&#13;
+-	repase stávajících stožárů a svítidel včetně výměny kabelového vedení veřejného osvětlení a obměnu osvětlovacích bodů pro slavnostní nasvětlení pergol včetně zásuvkových krabic;&#13;
+-	výměna podpěrných konstrukcí pergol pro popínavé rostliny;&#13;
+-	instalace městského mobiliáře odpočinkových stolků se sezením a odpadkových košů;&#13;
+-	oprava dlážděných chodníků a betonových obrubníků poškozených po odstranění kořenů křovin včetně opravy a doplnění kamenného zdiva břehu koryta poškozeného při vrtání do patky pro ukotvení sloupků zábradlí.</predmet_smlouvy>
+        <smluvni_cena_s_dph>5527662.49</smluvni_cena_s_dph>
+        <smluvni_cena_bez_dph>4568316.11</smluvni_cena_bez_dph>
+        <datum_uzavreni_smlouvy>2026-07-10T00:00:00+02:00</datum_uzavreni_smlouvy>
+       </metadata_smlouvy_nebo_rd>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8582.html</url>
+       <typ_dokumentu>smlouva</typ_dokumentu>
+       <cas_vlozeni_na_profil>2026-09-01T15:02:50+02:00</cas_vlozeni_na_profil>
+       <metadata_smlouvy_nebo_rd>
+        <smluvni_strany>
+         <smluvni_strana>
+          <subjekt>
+           <ico>42417473</ico>
+           <nazev_subjektu>Jiří Jokl</nazev_subjektu>
+           <zeme_sidla>CZ</zeme_sidla>
+          </subjekt>
+         </smluvni_strana>
+        </smluvni_strany>
+        <predmet_smlouvy>Předmětem této zakázky je obnova stávajících okrasných a funkčních prvků podél promenády před Bertinými lázněmi v části ulice Tylova, a to:&#13;
+-	výměna původního zábradlí za nové zámečnicky provedené zábradlí (ze svařených žárově pozinkovaných uzavřených ocelových profilů) podél koryta Zlaté stoky ve stávajícím úseku;&#13;
+-	repase stávajících stožárů a svítidel včetně výměny kabelového vedení veřejného osvětlení a obměnu osvětlovacích bodů pro slavnostní nasvětlení pergol včetně zásuvkových krabic;&#13;
+-	výměna podpěrných konstrukcí pergol pro popínavé rostliny;&#13;
+-	instalace městského mobiliáře odpočinkových stolků se sezením a odpadkových košů;&#13;
+-	oprava dlážděných chodníků a betonových obrubníků poškozených po odstranění kořenů křovin včetně opravy a doplnění kamenného zdiva břehu koryta poškozeného při vrtání do patky pro ukotvení sloupků zábradlí.</predmet_smlouvy>
+        <smluvni_cena_s_dph>5527662.49</smluvni_cena_s_dph>
+        <smluvni_cena_bez_dph>4568316.11</smluvni_cena_bez_dph>
+        <datum_uzavreni_smlouvy>2026-07-10T00:00:00+02:00</datum_uzavreni_smlouvy>
+       </metadata_smlouvy_nebo_rd>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8716.html</url>
+       <typ_dokumentu>smlouva</typ_dokumentu>
+       <cas_vlozeni_na_profil>2026-10-30T13:03:47+01:00</cas_vlozeni_na_profil>
+       <metadata_smlouvy_nebo_rd>
+        <smluvni_strany>
+         <smluvni_strana>
+          <subjekt>
+           <ico>42417473</ico>
+           <nazev_subjektu>Jiří Jokl</nazev_subjektu>
+           <zeme_sidla>CZ</zeme_sidla>
+          </subjekt>
+         </smluvni_strana>
+        </smluvni_strany>
+        <predmet_smlouvy>Předmětem této zakázky je obnova stávajících okrasných a funkčních prvků podél promenády před Bertinými lázněmi v části ulice Tylova, a to:&#13;
+-	výměna původního zábradlí za nové zámečnicky provedené zábradlí (ze svařených žárově pozinkovaných uzavřených ocelových profilů) podél koryta Zlaté stoky ve stávajícím úseku;&#13;
+-	repase stávajících stožárů a svítidel včetně výměny kabelového vedení veřejného osvětlení a obměnu osvětlovacích bodů pro slavnostní nasvětlení pergol včetně zásuvkových krabic;&#13;
+-	výměna podpěrných konstrukcí pergol pro popínavé rostliny;&#13;
+-	instalace městského mobiliáře odpočinkových stolků se sezením a odpadkových košů;&#13;
+-	oprava dlážděných chodníků a betonových obrubníků poškozených po odstranění kořenů křovin včetně opravy a doplnění kamenného zdiva břehu koryta poškozeného při vrtání do patky pro ukotvení sloupků zábradlí.</predmet_smlouvy>
+        <smluvni_cena_s_dph>5527662.49</smluvni_cena_s_dph>
+        <smluvni_cena_bez_dph>4568316.11</smluvni_cena_bez_dph>
+        <datum_uzavreni_smlouvy>2026-07-10T00:00:00+02:00</datum_uzavreni_smlouvy>
+       </metadata_smlouvy_nebo_rd>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8577.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>Ostatní</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-09-01T14:59:54+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8578.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>Ostatní</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-09-01T15:00:26+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8576.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-09-01T14:58:30+02:00</cas_vlozeni_na_profil>
+      </dokument>
+     </dokumenty>
+     <datum_uverejneni>2026-09-01T14:58:30+02:00</datum_uverejneni>
+     <ucastnici>
+      <ucastnik>
+       <subjekt>
+        <ico>42417473</ico>
+        <nazev_subjektu>Jiří Jokl</nazev_subjektu>
+        <bydliste>CZ</bydliste>
+       </subjekt>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+     </ucastnici>
+     <vybrani_dodavatele>
+      <vybrany_dodavatel>
+       <subjekt>
+        <ico>42417473</ico>
+        <nazev_subjektu>Jiří Jokl</nazev_subjektu>
+        <bydliste>CZ</bydliste>
+       </subjekt>
+       <uzavrena_smlouva_nebo_rd>1</uzavrena_smlouva_nebo_rd>
+       <smluvni_cena_s_DPH>5527662.49</smluvni_cena_s_DPH>
+       <smluvni_cena_bez_DPH>4568316.11</smluvni_cena_bez_DPH>
+       <role_dodavatele>dodavatel bez společné účasti</role_dodavatele>
+      </vybrany_dodavatel>
+     </vybrani_dodavatele>
+     <zjisten_stret_zajmu>0</zjisten_stret_zajmu>
+     <datum_uzavreni_smlouvy>2026-07-10T00:00:00+02:00</datum_uzavreni_smlouvy>
+    </zadavaci_postup_casti>
+   </cast_zakazky>
+  </casti_vz>
+ </zakazka>
+ <zakazka>
+  <id_objektu>VZ-966</id_objektu>
+  <nazev_vz>Instalace FVE 58,0 kWp na střechy objektu ČOV Břilice, Třeboň</nazev_vz>
+  <druh_vz>dodávky</druh_vz>
+  <rezim_vz>Veřejné zakázky malého rozsahu</rezim_vz>
+  <predmet_vz>Předmětem této veřejné zakázky je dodávka a montáž včetně prací spojených s umístěním a instalací střešní fotovoltaické elektrárny (dále FVE) o celkovém výkonu 58,0 kWp na střechy stávajících objektů v areálu čistírny odpadních vod (dále ČOV) Třeboň, v k. ú. Břilice, místní části Třeboně. Jedná se o instalaci celkem 116 ks monokrystalických FV panelů každý o jmenovitém výkonu 500 Wp seskupených do 8 větví (stringů) umístěných na lehkých hliníkových konstrukcích na střechy administrativní budovy čp. 303, parc. č. st. 516/1, 516/2 a budovy technického vybavení bez čp., parc. č. st. 514/1, 514/2, v areálu velké ČOV pro Třeboň, v k. ú. Břilice, v obci Třeboň.</predmet_vz>
+  <hlavni_cpv>09331000</hlavni_cpv>
+  <delena_na_casti>0</delena_na_casti>
+  <zadavaci_postupy>
+   <zadavaci_postup>
+    <id_objektu>ZP-966</id_objektu>
+   </zadavaci_postup>
+  </zadavaci_postupy>
+  <casti_vz>
+   <cast_zakazky>
+    <id_objektu>966</id_objektu>
+    <id_zadavaciho_postupu_vz>ZP-966</id_zadavaciho_postupu_vz>
+    <nazev_casti_vz>Instalace FVE 58,0 kWp na střechy objektu ČOV Břilice, Třeboň</nazev_casti_vz>
+    <druh_casti_vz>dodávky</druh_casti_vz>
+    <rezim_casti_vz>Veřejné zakázky malého rozsahu</rezim_casti_vz>
+    <predmet_casti_vz>Předmětem této veřejné zakázky je dodávka a montáž včetně prací spojených s umístěním a instalací střešní fotovoltaické elektrárny (dále FVE) o celkovém výkonu 58,0 kWp na střechy stávajících objektů v areálu čistírny odpadních vod (dále ČOV) Třeboň, v k. ú. Břilice, místní části Třeboně. Jedná se o instalaci celkem 116 ks monokrystalických FV panelů každý o jmenovitém výkonu 500 Wp seskupených do 8 větví (stringů) umístěných na lehkých hliníkových konstrukcích na střechy administrativní budovy čp. 303, parc. č. st. 516/1, 516/2 a budovy technického vybavení bez čp., parc. č. st. 514/1, 514/2, v areálu velké ČOV pro Třeboň, v k. ú. Břilice, v obci Třeboň.</predmet_casti_vz>
+    <hlavni_cpv_casti_vz>09331000</hlavni_cpv_casti_vz>
+    <zadavaci_postup_casti>
+     <id_objektu>ZP-966</id_objektu>
+     <lhuty_zadavaciho_postupu>
+      <lhuta>
+       <druh_lhuty>lhůta podání nabídky</druh_lhuty>
+       <datum_konce_lhuty>2026-09-29T13:00:00+02:00</datum_konce_lhuty>
+      </lhuta>
+     </lhuty_zadavaciho_postupu>
+     <stav_zadavaciho_postupu>dokončen</stav_zadavaciho_postupu>
+     <druh_zadavaciho_postupu>uzavřená výzva</druh_zadavaciho_postupu>
+     <ramcova_dohoda>0</ramcova_dohoda>
+     <zavedeni_dns>0</zavedeni_dns>
+     <dokumenty>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8722.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-10-30T14:06:18+01:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8723.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-10-30T14:06:50+01:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8721.html</url>
+       <typ_dokumentu>smlouva</typ_dokumentu>
+       <cas_vlozeni_na_profil>2026-10-30T14:04:41+01:00</cas_vlozeni_na_profil>
+       <metadata_smlouvy_nebo_rd>
+        <smluvni_strany>
+         <smluvni_strana>
+          <subjekt>
+           <ico>17295041</ico>
+           <nazev_subjektu>VSV Tech s.r.o.</nazev_subjektu>
+           <zeme_sidla>CZ</zeme_sidla>
+          </subjekt>
+         </smluvni_strana>
+        </smluvni_strany>
+        <predmet_smlouvy>Předmětem této veřejné zakázky je dodávka a montáž včetně prací spojených s umístěním a instalací střešní fotovoltaické elektrárny (dále FVE) o celkovém výkonu 58,0 kWp na střechy stávajících objektů v areálu čistírny odpadních vod (dále ČOV) Třeboň, v k. ú. Břilice, místní části Třeboně. Jedná se o instalaci celkem 116 ks monokrystalických FV panelů každý o jmenovitém výkonu 500 Wp seskupených do 8 větví (stringů) umístěných na lehkých hliníkových konstrukcích na střechy administrativní budovy čp. 303, parc. č. st. 516/1, 516/2 a budovy technického vybavení bez čp., parc. č. st. 514/1, 514/2, v areálu velké ČOV pro Třeboň, v k. ú. Břilice, v obci Třeboň.</predmet_smlouvy>
+        <smluvni_cena_s_dph>1359419.27</smluvni_cena_s_dph>
+        <smluvni_cena_bez_dph>1123487.00</smluvni_cena_bez_dph>
+        <datum_uzavreni_smlouvy>2026-10-07T00:00:00+02:00</datum_uzavreni_smlouvy>
+       </metadata_smlouvy_nebo_rd>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8719.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>Ostatní</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-10-30T14:02:52+01:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8720.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>Ostatní</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-10-30T14:03:30+01:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8718.html</url>
+       <typ_dokumentu>zadávací dokumentace</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-10-30T14:01:11+01:00</cas_vlozeni_na_profil>
+      </dokument>
+     </dokumenty>
+     <datum_uverejneni>2026-10-30T14:01:11+01:00</datum_uverejneni>
+     <ucastnici>
+      <ucastnik>
+       <subjekt>
+        <ico>04597206</ico>
+        <nazev_subjektu>Solarflux s.r.o.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+      <ucastnik>
+       <subjekt>
+        <ico>26022231</ico>
+        <nazev_subjektu>TERMS CZ s.r.o.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+      <ucastnik>
+       <subjekt>
+        <ico>17295041</ico>
+        <nazev_subjektu>VSV Tech s.r.o.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+     </ucastnici>
+     <vybrani_dodavatele>
+      <vybrany_dodavatel>
+       <subjekt>
+        <ico>17295041</ico>
+        <nazev_subjektu>VSV Tech s.r.o.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <uzavrena_smlouva_nebo_rd>1</uzavrena_smlouva_nebo_rd>
+       <smluvni_cena_s_DPH>1359419.27</smluvni_cena_s_DPH>
+       <smluvni_cena_bez_DPH>1123487.00</smluvni_cena_bez_DPH>
+       <role_dodavatele>dodavatel bez společné účasti</role_dodavatele>
+      </vybrany_dodavatel>
+     </vybrani_dodavatele>
+     <zjisten_stret_zajmu>0</zjisten_stret_zajmu>
+     <datum_uzavreni_smlouvy>2026-10-07T00:00:00+02:00</datum_uzavreni_smlouvy>
+    </zadavaci_postup_casti>
+   </cast_zakazky>
+  </casti_vz>
+ </zakazka>
+</profil>
