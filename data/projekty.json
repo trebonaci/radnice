@@ -77,6 +77,40 @@
         "po_poslednim_ro": 587000.0
       }
     ],
+    "souhrn": {
+      "rozpocet": {
+        "celkem": 59579143.49,
+        "investicni": 58992143.49,
+        "neinvesticni": 587000.0,
+        "druh": "rozpocet_upraveny",
+        "s_dph": null,
+        "polozek": 2,
+        "jistota": "nase_propojeni"
+      },
+      "smluvni_bez_dph": {
+        "celkem": 55570965.36,
+        "druh": "smluvni",
+        "s_dph": false,
+        "mena": "CZK",
+        "casti": [
+          {
+            "role": "stavba",
+            "zdroj_id": "ezak-VZ-901",
+            "dodavatel": "MANE STAVEBNÍ s.r.o.",
+            "hodnota": 54625965.36
+          },
+          {
+            "role": "projekt",
+            "zdroj_id": "ezak-VZ-877",
+            "dodavatel": "fyzická osoba",
+            "hodnota": 945000.0
+          }
+        ],
+        "bez_ceny": [],
+        "dodatku_nezapocteno": 6,
+        "jistota": "nase_propojeni"
+      }
+    },
     "zakazky": [
       {
         "id": "ezak-VZ-877",
@@ -123,7 +157,8 @@
                   }
                 ]
               }
-            ]
+            ],
+            "registr_smluv": []
           }
         ],
         "jistota": "nase_propojeni"
@@ -162,6 +197,14 @@
                 ],
                 "zaplaceno": []
               }
+            ],
+            "registr_smluv": [
+              "https://smlouvy.gov.cz/smlouva/36387317",
+              "https://smlouvy.gov.cz/smlouva/37282997",
+              "https://smlouvy.gov.cz/smlouva/38183173",
+              "https://smlouvy.gov.cz/smlouva/39303451",
+              "https://smlouvy.gov.cz/smlouva/39681309",
+              "https://smlouvy.gov.cz/smlouva/40163777"
             ]
           }
         ],
@@ -195,6 +238,7 @@
           }
         ],
         "url": "https://smlouvy.gov.cz/smlouva/39303451",
+        "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       },
       {
@@ -208,6 +252,7 @@
         ],
         "castky": [],
         "url": "https://smlouvy.gov.cz/smlouva/39681309",
+        "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       },
       {
@@ -236,6 +281,7 @@
           }
         ],
         "url": "https://smlouvy.gov.cz/smlouva/39724805",
+        "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       },
       {
@@ -264,6 +310,7 @@
           }
         ],
         "url": "https://smlouvy.gov.cz/smlouva/39725837",
+        "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       },
       {
@@ -292,6 +339,7 @@
           }
         ],
         "url": "https://smlouvy.gov.cz/smlouva/40118109",
+        "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       },
       {
@@ -320,6 +368,7 @@
           }
         ],
         "url": "https://smlouvy.gov.cz/smlouva/40163777",
+        "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       }
     ],
@@ -590,6 +639,58 @@
         "po_poslednim_ro": 3256000.0
       }
     ],
+    "souhrn": {
+      "rozpocet": {
+        "celkem": 66281000.0,
+        "investicni": 63025000.0,
+        "neinvesticni": 3256000.0,
+        "druh": "rozpocet_upraveny",
+        "s_dph": null,
+        "polozek": 2,
+        "jistota": "nase_propojeni"
+      },
+      "smluvni_bez_dph": {
+        "celkem": 54449118.71,
+        "druh": "smluvni",
+        "s_dph": false,
+        "mena": "CZK",
+        "casti": [
+          {
+            "role": "vybaveni",
+            "zdroj_id": "ezak-VZ-936",
+            "dodavatel": "Artspect, a.s.",
+            "hodnota": 1674348.0
+          },
+          {
+            "role": "stavba",
+            "zdroj_id": "ezak-VZ-883",
+            "dodavatel": "Retherm s.r.o.",
+            "hodnota": 51382827.84
+          },
+          {
+            "role": "projekt",
+            "zdroj_id": "ezak-VZ-810",
+            "dodavatel": "fyzická osoba",
+            "hodnota": 873000.0
+          },
+          {
+            "role": "vybaveni",
+            "zdroj_id": "rs-40060341",
+            "dodavatel": "StrongGear s.r.o.",
+            "hodnota": 310125.87
+          },
+          {
+            "role": "vybaveni",
+            "zdroj_id": "rs-39574269",
+            "dodavatel": "LP DVORACEK spol. s r.o.",
+            "hodnota": 208817.0
+          }
+        ],
+        "bez_ceny": [],
+        "dodatku_nezapocteno": 8,
+        "jistota": "nase_propojeni"
+      }
+    },
     "zakazky": [
       {
         "id": "ezak-VZ-810",
@@ -646,7 +747,8 @@
                   }
                 ]
               }
-            ]
+            ],
+            "registr_smluv": []
           }
         ],
         "jistota": "nase_propojeni"
@@ -696,6 +798,14 @@
                   }
                 ]
               }
+            ],
+            "registr_smluv": [
+              "https://smlouvy.gov.cz/smlouva/36192945",
+              "https://smlouvy.gov.cz/smlouva/37638541",
+              "https://smlouvy.gov.cz/smlouva/38538892",
+              "https://smlouvy.gov.cz/smlouva/39302679",
+              "https://smlouvy.gov.cz/smlouva/39520809",
+              "https://smlouvy.gov.cz/smlouva/40101957"
             ]
           }
         ],
@@ -735,7 +845,8 @@
                 ],
                 "zaplaceno": []
               }
-            ]
+            ],
+            "registr_smluv": []
           }
         ],
         "jistota": "nase_propojeni"
@@ -768,6 +879,7 @@
           }
         ],
         "url": "https://smlouvy.gov.cz/smlouva/39302679",
+        "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       },
       {
@@ -781,6 +893,7 @@
         ],
         "castky": [],
         "url": "https://smlouvy.gov.cz/smlouva/39520809",
+        "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       },
       {
@@ -809,6 +922,7 @@
           }
         ],
         "url": "https://smlouvy.gov.cz/smlouva/39574269",
+        "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       },
       {
@@ -837,6 +951,7 @@
           }
         ],
         "url": "https://smlouvy.gov.cz/smlouva/39725413",
+        "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       },
       {
@@ -865,6 +980,7 @@
           }
         ],
         "url": "https://smlouvy.gov.cz/smlouva/39899189",
+        "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       },
       {
@@ -893,6 +1009,7 @@
           }
         ],
         "url": "https://smlouvy.gov.cz/smlouva/39748681",
+        "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       },
       {
@@ -921,6 +1038,7 @@
           }
         ],
         "url": "https://smlouvy.gov.cz/smlouva/40060341",
+        "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       },
       {
@@ -949,6 +1067,7 @@
           }
         ],
         "url": "https://smlouvy.gov.cz/smlouva/40101957",
+        "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       },
       {
@@ -977,6 +1096,7 @@
           }
         ],
         "url": "https://smlouvy.gov.cz/smlouva/40117365",
+        "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       },
       {
@@ -1005,6 +1125,7 @@
           }
         ],
         "url": "https://smlouvy.gov.cz/smlouva/40117957",
+        "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
       }
     ],
