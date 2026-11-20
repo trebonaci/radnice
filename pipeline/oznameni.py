@@ -66,8 +66,8 @@ def telo_zapisu(z: dict, vetev: str | None = None) -> str:
     return (
         f"<!-- radnice-klic: {klic_zapisu(j)} -->\n"
         f"Běh pipeline stáhl nový zápis ({organ}, jednání `{j}`). Zatím nemá anotaci, proto se nezobrazuje v `data/`.\n\n"
-        f"**Úkol:** doplnit `anotace/{j}.yaml` podle `METODIKA.md` (doslovné citace, částky podle druhu, anonymizace, "
-        f"bez jmen nevolených osob), ověřit `python -m pipeline.sestav` a `python -m pytest` a otevřít PR (`Closes #<toto issue>`).\n\n"
+        f"**Úkol:** doplnit `anotace/{j}.yaml` podle `METODIKA.md` a `docs/ANOTACE.md` (doslovné citace, částky podle "
+        f"druhu, anonymizace, bez jmen nevolených osob; u usnesení, která mění něco pro lidi, i větu `pro_obcany`), ověřit `python -m pipeline.sestav` a `python -m pytest` a otevřít PR (`Closes #<toto issue>`).\n\n"
         f"- zdroj: {z['url']}\n- text po stranách: `{texty}/` (verze {verze.get('cislo', 1)}, sha256 `{z['sha256']}`)\n"
         f"- stažení: {z.get('stazeno', 'neuvedeno')}\n"
         + (f"- text zápisu zatím není v `main`, je ve větvi `{vetev}` (PR s ním čeká na sloučení): "

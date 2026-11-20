@@ -230,3 +230,11 @@ def test_program_rm_111_pokracuje_za_znackou_vysledku():
     assert "NEPŘIJATO" not in program[3]
     assert program[8].endswith("pro rok 2027")
     assert program[18].endswith("vybavení interiéru")
+
+
+def test_pravidla_pro_obcany():
+    from pipeline.sestav import zkontroluj_pro_obcany
+    dobre = {"text": "Klubovna zůstává seniorům do roku 2030.", "oblast": "socialni", "plati_od": "2027-01-01"}
+    assert zkontroluj_pro_obcany(dobre) == []
+    spatne = zkontroluj_pro_obcany({"text": "Rada schválila " + "x" * 220, "oblast": "neco", "plati_od": "1. 1. 2027"})
+    assert len(spatne) == 4

@@ -64,6 +64,29 @@ RE_TITUL_JMENO = re.compile(
 RE_ZAPSAL = re.compile(r"Zapsal[a]?:\s*([A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]\S*\s+\S+)")
 
 
+OBLASTI_PRO_OBCANY = {"socialni", "sport", "kultura", "skolstvi", "komunity_spolky", "doprava", "voda_odpady",
+                      "uzemni_plan", "bydleni", "zivotni_prostredi", "bezpecnost", "jine"}
+RE_URADNI_ZACATEK = re.compile(r"^(Rada|Zastupitelstvo|RM|ZM)\b")
+
+
+def zkontroluj_pro_obcany(pro: dict) -> list[str]:
+    """Pravidla věty „Co se mění pro vás“ (docs/ANOTACE.md), která jde ohlídat kódem."""
+    chyby = []
+    text = (pro.get("text") or "").strip()
+    if not text:
+        chyby.append("chybí text")
+    if len(text) > 220:
+        chyby.append(f"text má {len(text)} znaků (nejvýš 220)")
+    if RE_URADNI_ZACATEK.match(text):
+        chyby.append("text začíná orgánem – psát z pohledu občana")
+    if pro.get("oblast") not in OBLASTI_PRO_OBCANY:
+        chyby.append(f"neznámá oblast {pro.get('oblast')!r}")
+    od = pro.get("plati_od")
+    if od is not None and not re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(od)):
+        chyby.append(f"plati_od není datum RRRR-MM-DD: {od!r}")
+    return chyby
+
+
 def nacti_osoby(koren: Path | None = None) -> dict:
     return yaml.safe_load(((koren or KOREN) / "config" / "osoby.yaml").read_text(encoding="utf-8"))
 
@@ -191,6 +214,8 @@ def zpracuj_jednani(jednani_id: str, manifest: dict, chyby: list[str], osoby: di
         pro = a.get("pro_obcany")          # „co se mění pro vás“ (AI, věta pro čtenáře + doslovná citace)
         if pro:
             ok &= over(pro["citace"], u["text"], f"{u['id']} pro_obcany")
+            for c in zkontroluj_pro_obcany(pro):
+                chyby.append(f"{jednani_id}: {u['id']} pro_obcany: {c}")
         for cit in ([a["citace"]] + [c["citace"] for c in a.get("castky", [])] + [p["citace"] for p in a.get("parcely", [])]
                     + ([pro["citace"]] if pro else [])):
             for r, _ in _polozky(anon):
