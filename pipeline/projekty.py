@@ -132,6 +132,7 @@ def sestav_projekt(p: dict, data: dict) -> dict:
         r_ = role(s["predmet"])
         m = RE_DODATEK.search(s["predmet"] or "")
         smlouvy.append({"id": s["id"], "id_smlouvy": s["id_smlouvy"], "navazuje_na": s.get("navazuje_na"),
+                        "cislo_smlouvy": s.get("cislo_smlouvy"),
                         "predmet": s["predmet"], "role": r_,
                         "dodatek_cislo": int(m[1]) if m else None, "datum_uzavreni": s["datum_uzavreni"],
                         "strany": [{"nazev": x["nazev"], "jmeno_podnikatele": x.get("jmeno_podnikatele")}
@@ -167,7 +168,7 @@ def sestav_projekt(p: dict, data: dict) -> dict:
         "druh": p.get("druh"), "vlastnik_subjekt_id": p.get("vlastnik_subjekt_id"),
         "faze": faze(zakazky, smlouvy), "faze_jistota": "nase_propojeni",
         "rozpocet": rozpocet,
-        "casti": (casti := casti_akce(zakazky, smlouvy)),
+        "casti": (casti := casti_akce(zakazky, smlouvy, dodatky_jen_termin(data["usneseni"]))),
         "souhrn": souhrn(rozpocet, casti),
         "zakazky": sorted(zakazky, key=lambda z: z["id"]),
         "smlouvy": sorted(smlouvy, key=lambda s: (s["datum_uzavreni"] or "", s["id"])),
@@ -221,7 +222,32 @@ def _bez_dph(castky: list[dict]) -> float | None:
     return kc[0]["hodnota"] if kc else None
 
 
-def casti_akce(zakazky: list[dict], smlouvy: list[dict]) -> list[dict]:
+def _s_dph(castky: list[dict]) -> float | None:
+    kc = [x for x in castky if x["s_dph"] is True and x.get("mena", "CZK") == "CZK"]
+    return kc[0]["hodnota"] if kc else None
+
+
+RE_DODATEK_TERMIN = re.compile(
+    r"Dodatku č\.\s*(\d+) ke smlouvě o dílo č\.\s*([\d/]+).{0,400}?jehož předmětem je změna termínu dokončení díla(?![^.]*cen)")
+
+
+def dodatky_jen_termin(usneseni: list[dict]) -> dict[str, str]:
+    """Číslo dodatku v registru (`<číslo SOD>/<N>`) → id usnesení, podle kterého dodatek mění jen termín.
+
+    Doklad ze zdroje: přijaté usnesení „uzavření Dodatku č. N ke smlouvě o dílo č. X …, jehož předmětem
+    je změna termínu dokončení díla“ (bez zmínky o ceně). Takový dodatek cenu nemění, i když v registru
+    částku nemá.
+    """
+    vysledek = {}
+    for u in usneseni:
+        if u.get("vysledek_hlasovani") != "prijato":
+            continue
+        for m in RE_DODATEK_TERMIN.finditer(" ".join((u.get("text") or "").split())):
+            vysledek[f"{m[2]}/{m[1]}"] = u["id"]
+    return vysledek
+
+
+def casti_akce(zakazky: list[dict], smlouvy: list[dict], jen_termin: dict[str, str] | None = None) -> list[dict]:
     """Části akce (stavba, projekt, dozor, BOZP, vybavení…): původní smlouva + její dodatky.
 
     - Dodatek patří k původní smlouvě přes `navazuje_na` z registru (doloženo); bez něj tvoří vlastní skupinu.
@@ -273,34 +299,40 @@ def casti_akce(zakazky: list[dict], smlouvy: list[dict]) -> list[dict]:
                         # jen když skupina nemá známého jiného dodavatele (např. jen anonymní strany)
                         klic, jistota = stejne[0], "nase_propojeni"
                 g = volne.pop(klic) if klic else {"puvodni": None, "dodatky": []}
-                cena, zdroj = _bez_dph(v["smluvni"]), {"zdroj_id": z["id"], "url": z["url"]}
+                cena, cena_s, zdroj = _bez_dph(v["smluvni"]), _s_dph(v["smluvni"]), {"zdroj_id": z["id"], "url": z["url"]}
                 if cena is None and g["puvodni"] and _bez_dph(g["puvodni"]["castky"]) is not None:
-                    cena, zdroj = _bez_dph(g["puvodni"]["castky"]), {"zdroj_id": g["puvodni"]["id"],
-                                                                    "url": g["puvodni"]["url"]}
+                    cena, cena_s, zdroj = (_bez_dph(g["puvodni"]["castky"]), _s_dph(g["puvodni"]["castky"]),
+                                           {"zdroj_id": g["puvodni"]["id"], "url": g["puvodni"]["url"]})
                 casti.append({"role": z["role"], "dodavatel": {"nazev": v["nazev"],
                                                                "jmeno_podnikatele": v.get("jmeno_podnikatele")},
-                              "puvodni": {"bez_dph": cena, **zdroj},
+                              "puvodni": {"bez_dph": cena, "s_dph": cena_s, **zdroj},
                               "dodatky_smlouvy": g["dodatky"], "vazba_dodatku": jistota})
     for g in volne.values():
         p_ = g["puvodni"]
         strany = (p_ or (g["dodatky"] or [{}])[0]).get("strany", [])
         casti.append({"role": g["role"], "dodavatel": dodavatel(strany),
-                      "puvodni": {"bez_dph": _bez_dph(p_["castky"]), "zdroj_id": p_["id"], "url": p_["url"]}
+                      "puvodni": {"bez_dph": _bez_dph(p_["castky"]), "s_dph": _s_dph(p_["castky"]),
+                                  "zdroj_id": p_["id"], "url": p_["url"]}
                       if p_ else None,
                       "dodatky_smlouvy": g["dodatky"], "vazba_dodatku": "dolozeno" if p_ else None})
     for c in casti:
         dodatky = sorted(c.pop("dodatky_smlouvy"), key=lambda d: d["dodatek_cislo"])
-        c["dodatky"] = [{"cislo": d["dodatek_cislo"], "bez_dph": _bez_dph(d["castky"]),
-                         "bez_castky": not d["castky"], "datum": d["datum_uzavreni"], "zdroj_id": d["id"],
-                         "url": d["url"]} for d in dodatky]
+        c["dodatky"] = []
+        for d in dodatky:
+            termin = (jen_termin or {}).get(d.get("cislo_smlouvy") or "") if not d["castky"] else None
+            c["dodatky"].append({"cislo": d["dodatek_cislo"], "bez_dph": 0.0 if termin else _bez_dph(d["castky"]),
+                                 "s_dph": 0.0 if termin else _s_dph(d["castky"]),
+                                 "jen_termin": termin is not None, "doklad_usneseni": termin,
+                                 "bez_castky": not d["castky"], "datum": d["datum_uzavreni"], "zdroj_id": d["id"],
+                                 "url": d["url"]})
         cisla = {d["cislo"] for d in c["dodatky"]}
         c["chybi_dodatky"] = sorted(set(range(1, max(cisla) + 1)) - cisla) if cisla else []
-        # dodatek bez částky v registru (cena neuvedena) = změna ceny neznámá → cena po dodatcích neznámá
-        znam = all(d["bez_dph"] is not None for d in c["dodatky"])
-        zaklad = c["puvodni"]["bez_dph"] if c["puvodni"] else None
-        c["cena_po_dodatcich"] = (
-            (_halere(zaklad) + sum(_halere(d["bez_dph"]) for d in c["dodatky"] if d["bez_dph"] is not None)) / 100
-            if zaklad is not None and not c["chybi_dodatky"] and znam else None)
+        # dodatek bez částky v registru = změna ceny neznámá (kromě dodatku jen o termínu podle usnesení)
+        for klic, pole in (("cena_po_dodatcich", "bez_dph"), ("cena_po_dodatcich_s_dph", "s_dph")):
+            zaklad = c["puvodni"][pole] if c["puvodni"] else None
+            znam = all(d[pole] is not None for d in c["dodatky"])
+            c[klic] = ((_halere(zaklad) + sum(_halere(d[pole]) for d in c["dodatky"])) / 100
+                       if zaklad is not None and not c["chybi_dodatky"] and znam else None)
         c["dodatky_bez_dph"] = (sum(_halere(d["bez_dph"]) for d in c["dodatky"] if d["bez_dph"] is not None) / 100
                                 if any(d["bez_dph"] is not None for d in c["dodatky"]) else None)
     poradi = ["stavba", "projekt", "technicky_dozor", "bozp", "vybaveni", "administrace"]
