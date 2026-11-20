@@ -227,7 +227,7 @@ def test_nezpracovane_mesice_maji_prednost_pred_zmenenym_hashem(koren):
 
 
 def test_predmet_maskuje_cast_jmena_fyzicke_osoby():
-    strany = [{"nazev": "Tětková Wegenkittlová Lenka nar. 1964", "ico": None, "prijemce": "1"}]
-    vysl = smlouvy._skryj_fo("Dotace (p. Tětková Wegenkittlová)", strany, frozenset())
-    assert "Tětková" not in vysl and "Wegenkittlová" not in vysl
+    strany = [{"nazev": "Nováková Dvořáková Jana nar. 1960", "ico": None, "prijemce": "1"}]
+    vysl = smlouvy._skryj_fo("Dotace (p. Nováková Dvořáková)", strany, frozenset())
+    assert "Nováková" not in vysl and "Dvořáková" not in vysl
     assert "Dotace" in vysl
