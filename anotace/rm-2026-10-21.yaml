@@ -101,6 +101,7 @@ usneseni:
 
   rm-2026-j113-u521:
     pro_obcany:
+      kdo: "Loutkové divadlo"
       text: "Město přijme darem domácí loutkové divadlo s 26 loutkami a kulisami."
       oblast: kultura
       citace: "předmětem daru je domácí loutkové divadlo v rozsahu 26 loutek"
@@ -150,6 +151,7 @@ usneseni:
 
   rm-2026-j113-u525:
     pro_obcany:
+      kdo: "ZŠ Sokolská"
       text: "Město daruje 20 000 Kč ZŠ Sokolská na oslavu výročí pracoviště v Břilicích."
       oblast: skolstvi
       citace: "poskytnutí finančního daru ve výši 20.000,00 Kč"
@@ -254,6 +256,7 @@ usneseni:
 
   rm-2026-j113-u533:
     pro_obcany:
+      kdo: "Městská knihovna"
       text: "Městská knihovna připraví s Hospicovou péčí sv. Kleofáše vzdělávací kurz."
       oblast: kultura
       citace: "Předmětem spolupráce je realizace vzdělávacího kurzu."
@@ -317,6 +320,7 @@ usneseni:
 
   rm-2026-j113-u541:
     pro_obcany:
+      kdo: "Hotel Sport, sportovní hala"
       text: "Hotel Sport ve sportovní hale bude mít od listopadu 2026 v nájmu od města Městská sportovní Třeboň."
       oblast: sport
       plati_od: "2026-11-01"
@@ -366,6 +370,7 @@ usneseni:
 
   rm-2026-j113-u544:
     pro_obcany:
+      kdo: "MŠ Sluníčko"
       text: "Ve třech třídách MŠ Sluníčko může být letos víc dětí, než je běžný limit; celková kapacita školky se nepřekročí."
       oblast: skolstvi
       citace: "za podmínky nepřekročení celkové povolené kapacity dětí"

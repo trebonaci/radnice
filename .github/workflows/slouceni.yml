@@ -1,0 +1,121 @@
+name: Sloučení
+
+# Automatické sloučení PR agentů (rozhodnutí Ondřeje 20. 11. 2026, #106): Ondřej dává jen pokyny a nápady,
+# slučují agenti. Sloučí se PR z větve claude/* se štítkem ke-kontrole, když
+#   1. kontrola CI (job „kontrola“) na posledním commitu PR je zelená,
+#   2. Codex dokončil review právě tohoto commitu,
+#   3. nejsou nevyřešené nálezy P0/P1 (P2 nesloučení nebrání – AGENTS.md),
+#   4. PR nemění pravidla ani oprávnění (.github/, AGENTS.md, ZADANI.md, CLAUDE.md, SECURITY.md) –
+#      takový PR dostane štítek potrebuje-cloveka a čeká na Ondřeje,
+#   5. PR nemá štítek potrebuje-cloveka.
+# Sloučení ≠ zveřejnění: na web jde dál jen to, co Ondřej schválí.
+
+on:
+  issue_comment:
+    types: [created, edited]
+  pull_request_review:
+    types: [submitted]
+  workflow_run:
+    workflows: ["Kontrola"]
+    types: [completed]
+  schedule:
+    - cron: "23 * * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: slouceni
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+  checks: read
+  actions: write
+
+jobs:
+  slouceni:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Sloučit PR, které splňují podmínky
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const {owner, repo} = context.repo;
+            const CHRANENE = [/^\.github\//, /^AGENTS\.md$/, /^ZADANI\.md$/, /^CLAUDE\.md$/, /^SECURITY\.md$/];
+            const STAV = /codex-review-state:v1 (\{.*?\}) -->/s;
+            const prs = await github.paginate(github.rest.pulls.list, {owner, repo, state: 'open', per_page: 100});
+            for (const pr of prs) {
+              const stitky = pr.labels.map(l => l.name);
+              const kdo = `PR #${pr.number}`;
+              if (!pr.head.ref.startsWith('claude/') || pr.head.repo.full_name !== `${owner}/${repo}`
+                  || !stitky.includes('ke-kontrole') || stitky.includes('potrebuje-cloveka') || pr.draft) {
+                continue;
+              }
+              const sha = pr.head.sha;
+              // 4. pravidla a oprávnění mění jen Ondřej
+              const soubory = await github.paginate(github.rest.pulls.listFiles, {owner, repo, pull_number: pr.number, per_page: 100});
+              // u přejmenování i původní cesta (přesun AGENTS.md jinam nesmí obejít předání člověku)
+              const chranene = soubory.flatMap(f => [f.filename, f.previous_filename].filter(Boolean))
+                .filter(f => CHRANENE.some(r => r.test(f)));
+              if (chranene.length) {
+                await github.rest.issues.addLabels({owner, repo, issue_number: pr.number, labels: ['potrebuje-cloveka']});
+                await github.rest.issues.createComment({owner, repo, issue_number: pr.number,
+                  body: `Automatické sloučení se nepoužije: PR mění pravidla nebo oprávnění (${chranene.join(', ')}). Sloučí Ondřej.`});
+                core.info(`${kdo}: chráněné soubory → potrebuje-cloveka`);
+                continue;
+              }
+              // 1. CI na posledním commitu; když tam žádná není (push přes GITHUB_TOKEN), spustit ji
+              const behy = (await github.rest.checks.listForRef({owner, repo, ref: sha, check_name: 'kontrola'})).data.check_runs;
+              if (!behy.length) {
+                await github.rest.actions.createWorkflowDispatch({owner, repo, workflow_id: 'ci.yml', ref: pr.head.ref});
+                core.info(`${kdo}: CI na ${sha.slice(0, 7)} chybí → spuštěna`);
+                continue;
+              }
+              if (behy.some(b => b.status !== 'completed')) { core.info(`${kdo}: CI běží`); continue; }
+              if (!behy.some(b => b.conclusion === 'success') || behy.some(b => b.conclusion === 'failure')) {
+                core.info(`${kdo}: CI není zelená`); continue;
+              }
+              // 2. Codex review tohoto commitu (souhrnný komentář s codex-review-state)
+              const komentare = await github.paginate(github.rest.issues.listComments, {owner, repo, issue_number: pr.number, per_page: 100});
+              let stav = null;
+              for (const k of komentare) {
+                if (!k.user.login.includes('codex')) continue;
+                const m = (k.body || '').match(STAV);
+                if (m) { try { stav = JSON.parse(m[1]).code_review; } catch (e) {} }
+              }
+              if (!stav || stav.status !== 'completed' || stav.commit_sha !== sha) {
+                // Codex se sám nespustí u PR od bota ani u commitu z automatické opravy → požádat, když poslední
+                // žádost je starší než poslední commit PR (#111)
+                const commit = (await github.rest.repos.getCommit({owner, repo, ref: sha})).data;
+                const kdyCommit = commit.commit.committer.date;
+                const pozadano = komentare.some(k => (k.body || '').includes('@codex review') && k.created_at >= kdyCommit);
+                const bezi = stav && stav.status && stav.status !== 'completed';
+                if (!pozadano && !bezi) {
+                  await github.rest.issues.createComment({owner, repo, issue_number: pr.number, body: '@codex review'});
+                }
+                core.info(`${kdo}: čeká na Codex review commitu ${sha.slice(0, 7)}`);
+                continue;
+              }
+              // automatická oprava nálezů Codexu ještě běží → počkat na její výsledek
+              const opravy = (await github.rest.actions.listWorkflowRunsForRepo({owner, repo, branch: pr.head.ref, per_page: 20}))
+                .data.workflow_runs.filter(r => r.name === 'Claude fixes Codex review findings' && r.status !== 'completed');
+              if (opravy.length) { core.info(`${kdo}: běží automatická oprava nálezů`); continue; }
+              // 3. nevyřešené nálezy P0/P1 (vlákna review)
+              const q = await github.graphql(`query($o:String!,$r:String!,$n:Int!){repository(owner:$o,name:$r){pullRequest(number:$n){
+                reviewThreads(first:100){nodes{isResolved comments(first:1){nodes{body author{login}}}}}}}}`,
+                {o: owner, r: repo, n: pr.number});
+              const otevrene = q.repository.pullRequest.reviewThreads.nodes.filter(t => !t.isResolved)
+                .map(t => (t.comments.nodes[0] || {}).body || '')
+                .filter(b => /P0 Badge|P1 Badge|badge\/P0|badge\/P1/.test(b));
+              if (otevrene.length) { core.info(`${kdo}: ${otevrene.length} nevyřešených nálezů P0/P1`); continue; }
+              try {
+                await github.rest.pulls.merge({owner, repo, pull_number: pr.number, sha, merge_method: 'squash'});
+                await github.rest.issues.createComment({owner, repo, issue_number: pr.number,
+                  body: `Automaticky sloučeno (${sha.slice(0, 7)}): CI zelená, Codex review dokončeno, bez nevyřešených nálezů P0/P1. Sloučení ≠ zveřejnění.`});
+                core.info(`${kdo}: sloučeno`);
+              } catch (e) {
+                core.warning(`${kdo}: sloučení selhalo: ${e.message}`);
+              }
+            }

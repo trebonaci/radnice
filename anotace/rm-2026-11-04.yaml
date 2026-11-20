@@ -46,6 +46,7 @@ usneseni:
 
   rm-2026-j1-u3:
     pro_obcany:
+      kdo: "Budova čp. 3, Přeseka"
       text: "Místnost v budově čp. 3 v Přesece bude v lednu až březnu a v listopadu 2027 sloužit sportovním, kulturním a společenským setkáním."
       oblast: komunity_spolky
       plati_od: "2027-01-01"
@@ -106,6 +107,7 @@ usneseni:
 
   rm-2026-j1-u8:
     pro_obcany:
+      kdo: "ZŠ Sokolská"
       text: "ZŠ Sokolská může od spolku Děti do bruslí přijmout darem 10 párů dětských bruslí."
       oblast: skolstvi
       citace: "přijetí věcného daru 10 párů dětských bruslí v celkové hodnotě 25.000 Kč"

@@ -158,7 +158,8 @@ def test_cena_z_registru_kdyz_ezak_cenu_nema():
     zak = [{"id": "z1", "role": "stavba", "url": "e", "casti": [{"registr_smluv": ["u-s0"], "vitezove": [
         {"nazev": "A", "smluvni": []}]}]}]
     c = pr.casti_akce(zak, [sml("s0", "stavba", castka=500.0, url="u-s0")])
-    assert c[0]["puvodni"] == {"bez_dph": 500.0, "zdroj_id": "s0", "url": "u-s0"}
+    assert c[0]["puvodni"] == {"bez_dph": 500.0, "s_dph": 605.0, "zdroj_id": "s0", "url": "u-s0",
+                               "s_dph_dopocteno": True, "sazba_dph": 21, "sazba_dph_zdroj": "zakladni_sazba"}
 
 
 def test_parovani_podle_cisla_zakazky_a_dalsi_dodatky_teze_smlouvy():
@@ -173,3 +174,49 @@ def test_parovani_podle_cisla_zakazky_a_dalsi_dodatky_teze_smlouvy():
     d2 = dict(smlouva("p2", "Dodatek č. 2", navazuje_na="ip0"), castky=[])
     k = pr.sestav_projekt(PROJEKT, data(smlouvy=[puv, d1, d2]))
     assert [d["cislo"] for d in k["casti"][0]["dodatky"]] == [1, 2] and k["casti"][0]["cena_po_dodatcich"] is None
+
+
+def test_dodatek_jen_o_terminu_podle_usneseni_a_cena_s_dph():
+    usn_ = [{"id": "rm-u463", "vysledek_hlasovani": "prijato", "text":
+             "uzavření Dodatku č. 4 ke smlouvě o dílo č. 750/9256/25 ze dne 23.12.2025 na zhotovení stavby „Hala“ "
+             "se společností X, jehož předmětem je změna termínu dokončení díla."},
+            {"id": "rm-u9", "vysledek_hlasovani": "prijato", "text":
+             "uzavření Dodatku č. 5 ke smlouvě o dílo č. 750/9256/25, jehož předmětem je změna ceny díla."}]
+    jt = pr.dodatky_jen_termin(usn_)
+    assert jt == {"750/9256/25/4": "rm-u463"}
+    sm = [dict(sml("s0", "stavba", castka=100.0), castky=[{"hodnota": 100.0, "s_dph": False}, {"hodnota": 121.0, "s_dph": True}]),
+          dict(sml("s1", "stavba", 1, navazuje="is0"), castky=[{"hodnota": -12.1, "s_dph": True}]),   # jen s DPH
+          dict(sml("s2", "stavba", 2, navazuje="is0"), cislo_smlouvy="750/9256/25/4")]          # bez částky
+    sm[2]["dodatek_cislo"] = 4
+    sm.append(dict(sml("s3", "stavba", 3, 10.0, navazuje="is0"), castky=[{"hodnota": 10.0, "s_dph": False},
+                                                                      {"hodnota": 12.1, "s_dph": True}]))
+    sm[1]["dodatek_cislo"], sm[3]["dodatek_cislo"] = 1, 2
+    sm.append(dict(sml("s5", "stavba", 3, navazuje="is0"), cislo_smlouvy="750/9256/25/3"))      # bez částky, bez usnesení
+    c = pr.casti_akce([], sm[:4], jt)[0]
+    d4 = next(d for d in c["dodatky"] if d["cislo"] == 4)
+    assert d4["jen_termin"] and d4["doklad_usneseni"] == "rm-u463" and d4["bez_dph"] == 0.0
+    assert c["chybi_dodatky"] == [3] and c["cena_po_dodatcich_s_dph"] is None
+    c = pr.casti_akce([], sm[:4] + [dict(sm[4], castky=[{"hodnota": 1.0, "s_dph": False}, {"hodnota": 1.21, "s_dph": True}])], jt)[0]
+    assert c["cena_po_dodatcich"] is None                         # dodatek č. 1 nemá cenu bez DPH
+    assert c["cena_po_dodatcich_s_dph"] == 121.0 - 12.1 + 12.1 + 0.0 + 1.21
+    assert pr.casti_akce([], [sm[0], dict(sm[2], cislo_smlouvy="jine/4")], jt)[0]["cena_po_dodatcich"] is None
+
+
+def test_souhrn_s_dph_zvlast():
+    casti = pr.casti_akce([], [dict(sml("s0", "stavba"), castky=[{"hodnota": 100.0, "s_dph": False}, {"hodnota": 121.0, "s_dph": True}]),
+                               dict(sml("s1", "stavba", 1, navazuje="is0"), castky=[{"hodnota": -12.1, "s_dph": True}])])
+    s = pr.souhrn([], casti)
+    assert s["smluvni_s_dph"]["celkem"] == 121.0 and s["smluvni_s_dph"]["po_dodatcich"] == 108.9
+    assert s["smluvni_s_dph"]["s_dph"] is True and s["smluvni_bez_dph"]["po_dodatcich"] is None
+
+
+def test_dopocet_dph_sazbou_teze_smlouvy_nebo_21():
+    neplatce = pr.casti_akce([], [dict(sml("t0", "technicky_dozor"), castky=[{"hodnota": 100.0, "s_dph": False}]),
+                                  dict(sml("t1", "technicky_dozor", 1, navazuje="it0"),
+                                       castky=[{"hodnota": 14500.0, "s_dph": False}, {"hodnota": 14500.0, "s_dph": True}])])[0]
+    assert neplatce["puvodni"]["s_dph"] == 100.0 and neplatce["puvodni"]["sazba_dph"] == 0
+    assert neplatce["puvodni"]["sazba_dph_zdroj"] == "jina_polozka_smlouvy" and neplatce["cena_po_dodatcich_s_dph"] == 14600.0
+    c = pr.casti_akce([], [dict(sml("s0", "stavba"), castky=[{"hodnota": 1000.0, "s_dph": False}]),
+                           dict(sml("s1", "stavba", 1, navazuje="is0"), castky=[{"hodnota": 10.0, "s_dph": False}])])[0]
+    assert c["puvodni"]["s_dph"] == 1210.0 and c["dodatky"][0]["s_dph"] == 12.1 and c["obsahuje_dopocet_dph"]
+    assert c["cena_po_dodatcich_s_dph"] == 1222.1

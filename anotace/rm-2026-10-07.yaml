@@ -46,6 +46,7 @@ usneseni:
 
   rm-2026-j112-u497:
     pro_obcany:
+      kdo: "Hospicová péče sv. Kleofáše"
       text: "Hospicová péče sv. Kleofáše končí ke konci roku 2026 v nebytových prostorách domu čp. 20/II v ulici Svatopluka Čecha."
       oblast: socialni
       plati_od: "2026-12-31"
@@ -273,6 +274,7 @@ usneseni:
 
   rm-2026-j112-u511:
     pro_obcany:
+      kdo: "Muzeum města Třeboně"
       text: "Provoz Muzea města Třeboně zajistí na základě příkazní smlouvy fyzická osoba."
       oblast: kultura
       citace: "předmětem smlouvy bude zajištění provozu Muzea města Třeboně"
