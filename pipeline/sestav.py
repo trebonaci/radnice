@@ -23,6 +23,7 @@ import yaml
 from pipeline import stitky as modul_stitky
 from pipeline import smlouvy as modul_smlouvy
 from pipeline.jmena import zakryj_jmena
+from pipeline import projekty as modul_projekty
 from pipeline import rozpocet as modul_rozpocet
 from pipeline import zakazky as modul_zakazky
 from pipeline.verze import zkontroluj as zkontroluj_verze
@@ -305,6 +306,9 @@ def sestav(koren: Path | None = None) -> tuple[dict[str, list], list[str]]:
     chyby += chyby_ro + modul_rozpocet.zkontroluj(rozpoctova_opatreni, usneseni)
     vystup = {"jednani": jednani, "usneseni": usneseni, "hlasovani": hlasovani, "zakazky": zakazky,
               "smlouvy": smlouvy, "rozpoctova_opatreni": rozpoctova_opatreni}
+    # projektové karty: ručně spravované data/projekty/*.yaml + vazby na výstupy výše
+    vystup["projekty"], chyby_p = modul_projekty.sestav(koren, vystup)
+    chyby += chyby_p
     # kontrola osobních údajů v celém výstupu (kromě doslovných citací, ty kontroluje sestavení)
     # (zastupitelé jen z období daného jednání)
     obdobi_jednani = {j["id"]: j["obdobi"] for j in jednani}
@@ -329,7 +333,7 @@ def main() -> int:
         (data / f"{nazev}.json").write_text(serializuj(obsah), encoding="utf-8")
     print(f"jednání {len(vystup['jednani'])}, usnesení {len(vystup['usneseni'])}, hlasování {len(vystup['hlasovani'])}, "
           f"zakázky {len(vystup['zakazky'])}, smlouvy {len(vystup['smlouvy'])}, "
-          f"položky RO {len(vystup['rozpoctova_opatreni'])}")
+          f"položky RO {len(vystup['rozpoctova_opatreni'])}, projekty {len(vystup['projekty'])}")
     for c in chyby:
         print("CHYBA:", c, file=sys.stderr)
     return 1 if chyby else 0

@@ -41,7 +41,7 @@ from pipeline.zdroje.zapisy_mesta import ZapisyMesta
 KOREN = Path(__file__).resolve().parent.parent
 ZAMEK_STARY = 2 * 3600     # zámek starší než 2 hodiny považujeme za zbylý po pádu
 POKLES = 0.5               # výstup pod touto částí dosavadního počtu = podezřelý pokles
-VYSTUPY = ("jednani", "usneseni", "hlasovani", "zakazky", "smlouvy", "rozpoctova_opatreni")
+VYSTUPY = ("jednani", "usneseni", "hlasovani", "zakazky", "smlouvy", "rozpoctova_opatreni", "projekty")
 
 
 class ZamekObsazen(Exception):
@@ -303,7 +303,7 @@ def _beh(koren: Path, zdroje: list[Zdroj], dnes: date, ted: datetime) -> int:
     # 2. staging: změny a sestavení nad kopií, ostrá data se zatím nedotknou
     with tempfile.TemporaryDirectory() as tmp:
         stage = Path(tmp)
-        for podadresar in ("raw/texty", "raw/ezak", "raw/smlouvy", "anotace", "config"):
+        for podadresar in ("raw/texty", "raw/ezak", "raw/smlouvy", "anotace", "config", "data/projekty"):
             if (koren / podadresar).exists():
                 shutil.copytree(koren / podadresar, stage / podadresar)
         (stage / "raw").mkdir(exist_ok=True)

@@ -1,0 +1,1099 @@
+[
+  {
+    "id": "pristavba-telocvicen",
+    "nazev": "Přístavba dvou tělocvičen sportovní haly",
+    "popis": "Stavba dvou nových tělocvičen jako přístavby sportovní haly v Třeboni.",
+    "oblast": "sport",
+    "druh": "investicni",
+    "vlastnik_subjekt_id": "00247618",
+    "faze": "probiha",
+    "faze_jistota": "nase_propojeni",
+    "rozpocet": [
+      {
+        "org": "6230000000",
+        "nazev": "Přístavba tělocvičen",
+        "polozka": "6121",
+        "kapitalova": true,
+        "jistota": "dolozeno",
+        "zmeny": [
+          {
+            "datum": "2026-10-21",
+            "cislo_ro": 57,
+            "organ": "rada",
+            "zmena": -253000.0,
+            "rozpocet": {
+              "schvaleny": 70000000.0,
+              "pred_ro": 59245143.49,
+              "po_ro": 58992143.49,
+              "fond": null,
+              "citace": "57.          0    6230000000     750        3412    6121     70 000 000,00   59 245 143,49   - 253 000,00    58 992 143,49"
+            },
+            "usneseni_id": "rm-2026-j113-u542",
+            "ro_id": "rm-2026-j113-u542-p1"
+          }
+        ],
+        "schvaleny": 70000000.0,
+        "po_poslednim_ro": 58992143.49
+      },
+      {
+        "org": "9750000000",
+        "nazev": "Přístavba tělocvičen - vybavení",
+        "polozka": "5137",
+        "kapitalova": false,
+        "jistota": "nase_propojeni",
+        "zmeny": [
+          {
+            "datum": "2026-09-23",
+            "cislo_ro": 51,
+            "organ": "rada",
+            "zmena": 53000.0,
+            "rozpocet": {
+              "schvaleny": 0.0,
+              "pred_ro": 281000.0,
+              "po_ro": 334000.0,
+              "fond": null,
+              "citace": "0       9750000000          750    3412       5137             0    281 000      + 53 000     334 000"
+            },
+            "usneseni_id": "rm-2026-j111-u493",
+            "ro_id": "rm-2026-j111-u493-p2"
+          },
+          {
+            "datum": "2026-10-21",
+            "cislo_ro": 57,
+            "organ": "rada",
+            "zmena": 253000.0,
+            "rozpocet": {
+              "schvaleny": 0.0,
+              "pred_ro": 334000.0,
+              "po_ro": 587000.0,
+              "fond": null,
+              "citace": "0    9750000000     750        3412    5137              0,00     334 000,00    +253 000,00        587 000,00"
+            },
+            "usneseni_id": "rm-2026-j113-u542",
+            "ro_id": "rm-2026-j113-u542-p2"
+          }
+        ],
+        "schvaleny": 0.0,
+        "po_poslednim_ro": 587000.0
+      }
+    ],
+    "zakazky": [
+      {
+        "id": "ezak-VZ-877",
+        "nazev": "Zpracování projektové dokumentace ve stupni DZS/DPS přístavby dvou tělocvičen - revitalizace a přístavba sportovní haly Třeboň",
+        "role": "projekt",
+        "stav": "dokončen",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_877.html",
+        "casti": [
+          {
+            "nazev": "Zpracování projektové dokumentace ve stupni DZS/DPS přístavby dvou tělocvičen - revitalizace a přístavba sportovní haly Třeboň",
+            "stav": "dokončen",
+            "pocet_nabidek": 1,
+            "datum_uverejneni": "2025-07-28",
+            "datum_uzavreni_smlouvy": "2025-05-14",
+            "vitezove": [
+              {
+                "nazev": "fyzická osoba",
+                "smluvni": [
+                  {
+                    "hodnota": 945000.0,
+                    "s_dph": true,
+                    "druh": "smluvni"
+                  },
+                  {
+                    "hodnota": 945000.0,
+                    "s_dph": false,
+                    "druh": "smluvni"
+                  }
+                ],
+                "zaplaceno": [
+                  {
+                    "obdobi": "2025",
+                    "hodnota": 900000.0,
+                    "s_dph": true
+                  },
+                  {
+                    "obdobi": "2025",
+                    "hodnota": 900000.0,
+                    "s_dph": false
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "ezak-VZ-901",
+        "nazev": "Přístavba dvou tělocvičen sportovní haly Třeboň",
+        "role": "stavba",
+        "stav": "dokončen",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_901.html",
+        "casti": [
+          {
+            "nazev": "Přístavba dvou tělocvičen sportovní haly Třeboň",
+            "stav": "dokončen",
+            "pocet_nabidek": 1,
+            "datum_uverejneni": "2025-11-14",
+            "datum_uzavreni_smlouvy": "2026-01-14",
+            "vitezove": [
+              {
+                "nazev": "MANE STAVEBNÍ s.r.o.",
+                "smluvni": [
+                  {
+                    "hodnota": 66097418.09,
+                    "s_dph": true,
+                    "druh": "smluvni"
+                  },
+                  {
+                    "hodnota": 54625965.36,
+                    "s_dph": false,
+                    "druh": "smluvni"
+                  }
+                ],
+                "zaplaceno": []
+              }
+            ]
+          }
+        ],
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "smlouvy": [
+      {
+        "id": "rs-39303451",
+        "predmet": "Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 3",
+        "role": "stavba",
+        "dodatek_cislo": 3,
+        "datum_uzavreni": "2026-08-28",
+        "strany": [
+          "MANE STAVEBNÍ s.r.o."
+        ],
+        "castky": [
+          {
+            "hodnota": 909242.11,
+            "s_dph": false,
+            "druh": "smluvni"
+          },
+          {
+            "hodnota": 1100182.95,
+            "s_dph": true,
+            "druh": "smluvni"
+          }
+        ],
+        "url": "https://smlouvy.gov.cz/smlouva/39303451",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-39681309",
+        "predmet": "Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 4",
+        "role": "stavba",
+        "dodatek_cislo": 4,
+        "datum_uzavreni": "2026-09-25",
+        "strany": [
+          "MANE STAVEBNÍ s.r.o."
+        ],
+        "castky": [],
+        "url": "https://smlouvy.gov.cz/smlouva/39681309",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-39724805",
+        "predmet": "Příkazní smlouva - Technický dozor stavebníka na akci Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 1",
+        "role": "technicky_dozor",
+        "dodatek_cislo": 1,
+        "datum_uzavreni": "2026-09-30",
+        "strany": [
+          "fyzická osoba"
+        ],
+        "castky": [
+          {
+            "hodnota": 14500.0,
+            "s_dph": false,
+            "druh": "smluvni"
+          },
+          {
+            "hodnota": 14500.0,
+            "s_dph": true,
+            "druh": "smluvni"
+          }
+        ],
+        "url": "https://smlouvy.gov.cz/smlouva/39724805",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-39725837",
+        "predmet": "Příkazní smlouva - Koordinátor BOZP na akci Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 1",
+        "role": "bozp",
+        "dodatek_cislo": 1,
+        "datum_uzavreni": "2026-09-30",
+        "strany": [
+          "fyzická osoba"
+        ],
+        "castky": [
+          {
+            "hodnota": 7750.0,
+            "s_dph": false,
+            "druh": "smluvni"
+          },
+          {
+            "hodnota": 9377.5,
+            "s_dph": true,
+            "druh": "smluvni"
+          }
+        ],
+        "url": "https://smlouvy.gov.cz/smlouva/39725837",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-40118109",
+        "predmet": "Zpracování projektové dokumentace ve stupni DZS/DPS přístavby dvou tělocvičen - revitalizace a přístavba sportovní haly Třeboň - dodatek č. 1",
+        "role": "projekt",
+        "dodatek_cislo": 1,
+        "datum_uzavreni": "2026-10-27",
+        "strany": [
+          "fyzická osoba"
+        ],
+        "castky": [
+          {
+            "hodnota": 147000.0,
+            "s_dph": false,
+            "druh": "smluvni"
+          },
+          {
+            "hodnota": 147000.0,
+            "s_dph": true,
+            "druh": "smluvni"
+          }
+        ],
+        "url": "https://smlouvy.gov.cz/smlouva/40118109",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-40163777",
+        "predmet": "Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 5",
+        "role": "stavba",
+        "dodatek_cislo": 5,
+        "datum_uzavreni": "2026-11-02",
+        "strany": [
+          "MANE STAVEBNÍ s.r.o."
+        ],
+        "castky": [
+          {
+            "hodnota": 2501117.05,
+            "s_dph": false,
+            "druh": "smluvni"
+          },
+          {
+            "hodnota": 3026351.63,
+            "s_dph": true,
+            "druh": "smluvni"
+          }
+        ],
+        "url": "https://smlouvy.gov.cz/smlouva/40163777",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "usneseni": [
+      {
+        "id": "rm-2026-j111-u490",
+        "cislo": "RM 490/2026-111",
+        "datum": "2026-09-23",
+        "tema": "Přístavba dvou tělocvičen sportovní haly – dodatek č. 4 (termín)",
+        "shrnuti": "Rada schválila dodatek č. 4 ke smlouvě o dílo se společností MANE STAVEBNÍ s. r. o. na stavbu přístavby dvou tělocvičen sportovní haly; mění se termín dokončení díla. Nový termín zápis neuvádí.",
+        "vysledek_hlasovani": "prijato",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rm-2026-j111-u493",
+        "cislo": "RM 493/2026-111",
+        "datum": "2026-09-23",
+        "tema": "Rozpočtové opatření č. 51 – vybavení přístavby tělocvičen",
+        "shrnuti": "Rada přesunula 53 000 Kč ve výdajích rozpočtu z položky vybavení ubytování sportovní haly do položky vybavení přístavby tělocvičen.",
+        "vysledek_hlasovani": "prijato",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rm-2026-j113-u542",
+        "cislo": "RM 542/2026-113",
+        "datum": "2026-10-21",
+        "tema": "Rozpočtové opatření č. 57 – vybavení přístavby tělocvičen",
+        "shrnuti": "Rada přesunula 253 000 Kč z položky Přístavba tělocvičen do položky Přístavba tělocvičen – vybavení.",
+        "vysledek_hlasovani": "prijato",
+        "jistota": "dolozeno"
+      },
+      {
+        "id": "rm-2026-j114-u551",
+        "cislo": "RM 551/2026-114",
+        "datum": "2026-10-30",
+        "tema": "Dodatek č. 5 ke smlouvě o dílo – přístavba dvou tělocvičen sportovní haly",
+        "shrnuti": "Rada schválila uzavření Dodatku č. 5 ke smlouvě o dílo na stavbu Přístavba dvou tělocvičen sportovní haly Třeboň; předmětem dodatku je změna ceny díla.",
+        "vysledek_hlasovani": "prijato",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "posledni_dodatek": {
+      "bozp": 1,
+      "projekt": 1,
+      "stavba": 5,
+      "technicky_dozor": 1
+    },
+    "udalosti": [
+      {
+        "datum": "2025-07-28",
+        "typ": "soutez",
+        "text": "Soutěž: Zpracování projektové dokumentace ve stupni DZS/DPS přístavby dvou tělocvičen - revitalizace a přístavba sportovní haly Třeboň",
+        "role": "projekt",
+        "zdroj_id": "ezak-VZ-877",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2025-11-14",
+        "typ": "soutez",
+        "text": "Soutěž: Přístavba dvou tělocvičen sportovní haly Třeboň",
+        "role": "stavba",
+        "zdroj_id": "ezak-VZ-901",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-08-28",
+        "typ": "dodatek",
+        "text": "Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 3",
+        "role": "stavba",
+        "zdroj_id": "rs-39303451",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-09-23",
+        "typ": "rozpocet",
+        "text": "Rozpočtové opatření č. 51",
+        "zmena": 53000.0,
+        "polozka": "Přístavba tělocvičen - vybavení",
+        "zdroj_id": "rm-2026-j111-u493-p2",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-09-23",
+        "typ": "usneseni",
+        "text": "Přístavba dvou tělocvičen sportovní haly – dodatek č. 4 (termín)",
+        "zdroj_id": "rm-2026-j111-u490",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-09-25",
+        "typ": "dodatek",
+        "text": "Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 4",
+        "role": "stavba",
+        "zdroj_id": "rs-39681309",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-09-30",
+        "typ": "dodatek",
+        "text": "Příkazní smlouva - Koordinátor BOZP na akci Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 1",
+        "role": "bozp",
+        "zdroj_id": "rs-39725837",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-09-30",
+        "typ": "dodatek",
+        "text": "Příkazní smlouva - Technický dozor stavebníka na akci Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 1",
+        "role": "technicky_dozor",
+        "zdroj_id": "rs-39724805",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-10-21",
+        "typ": "rozpocet",
+        "text": "Rozpočtové opatření č. 57",
+        "zmena": -253000.0,
+        "polozka": "Přístavba tělocvičen",
+        "zdroj_id": "rm-2026-j113-u542-p1",
+        "jistota": "dolozeno"
+      },
+      {
+        "datum": "2026-10-21",
+        "typ": "rozpocet",
+        "text": "Rozpočtové opatření č. 57",
+        "zmena": 253000.0,
+        "polozka": "Přístavba tělocvičen - vybavení",
+        "zdroj_id": "rm-2026-j113-u542-p2",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-10-27",
+        "typ": "dodatek",
+        "text": "Zpracování projektové dokumentace ve stupni DZS/DPS přístavby dvou tělocvičen - revitalizace a přístavba sportovní haly Třeboň - dodatek č. 1",
+        "role": "projekt",
+        "zdroj_id": "rs-40118109",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-10-30",
+        "typ": "usneseni",
+        "text": "Dodatek č. 5 ke smlouvě o dílo – přístavba dvou tělocvičen sportovní haly",
+        "zdroj_id": "rm-2026-j114-u551",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-11-02",
+        "typ": "dodatek",
+        "text": "Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 5",
+        "role": "stavba",
+        "zdroj_id": "rs-40163777",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "posledni_udalost": {
+      "datum": "2026-11-02",
+      "typ": "dodatek",
+      "text": "Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 5",
+      "role": "stavba",
+      "zdroj_id": "rs-40163777",
+      "jistota": "nase_propojeni"
+    }
+  },
+  {
+    "id": "sportovni-hala-ubytovani",
+    "nazev": "Ubytování ve sportovní hale (nástavba a přístavba)",
+    "popis": "Nástavba a přístavba sportovní haly v Třeboni o ubytovací část včetně vybavení interiéru.",
+    "oblast": "sport",
+    "druh": "investicni",
+    "vlastnik_subjekt_id": "00247618",
+    "faze": "probiha",
+    "faze_jistota": "nase_propojeni",
+    "rozpocet": [
+      {
+        "org": "6219000000",
+        "nazev": "Ubytování sportovní hala",
+        "polozka": "6121",
+        "kapitalova": true,
+        "jistota": "dolozeno",
+        "zmeny": [
+          {
+            "datum": "2026-10-21",
+            "cislo_ro": 56,
+            "organ": "rada",
+            "zmena": 1165000.0,
+            "rozpocet": {
+              "schvaleny": 56000000.0,
+              "pred_ro": 61860000.0,
+              "po_ro": 63025000.0,
+              "fond": null,
+              "citace": "0       6219000000     750         2142       6121          56 000 000      61 860 000     + 1 165 000     63 025 000"
+            },
+            "usneseni_id": "rm-2026-j113-u527",
+            "ro_id": "rm-2026-j113-u527-p2"
+          }
+        ],
+        "schvaleny": 56000000.0,
+        "po_poslednim_ro": 63025000.0
+      },
+      {
+        "org": "9750000000",
+        "nazev": "Ubytování sportovní hala - vybavení",
+        "polozka": "5137",
+        "kapitalova": false,
+        "jistota": "nase_propojeni",
+        "zmeny": [
+          {
+            "datum": "2026-09-23",
+            "cislo_ro": 51,
+            "organ": "rada",
+            "zmena": -53000.0,
+            "rozpocet": {
+              "schvaleny": 5000000.0,
+              "pred_ro": 3309000.0,
+              "po_ro": 3256000.0,
+              "fond": null,
+              "citace": "53.             0       9750000000          750    2142       5137     5 000 000   3 309 000      - 53 000   3 256 000"
+            },
+            "usneseni_id": "rm-2026-j111-u493",
+            "ro_id": "rm-2026-j111-u493-p1"
+          }
+        ],
+        "schvaleny": 5000000.0,
+        "po_poslednim_ro": 3256000.0
+      }
+    ],
+    "zakazky": [
+      {
+        "id": "ezak-VZ-810",
+        "nazev": "Zpracování projektové dokumentace \"Ubytovací objekt sportovní haly Třeboň\"",
+        "role": "projekt",
+        "stav": "dokončen",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_810.html",
+        "casti": [
+          {
+            "nazev": "Zpracování projektové dokumentace \"Ubytovací objekt sportovní haly Třeboň\"",
+            "stav": "dokončen",
+            "pocet_nabidek": 1,
+            "datum_uverejneni": "2024-11-12",
+            "datum_uzavreni_smlouvy": "2024-09-13",
+            "vitezove": [
+              {
+                "nazev": "fyzická osoba",
+                "smluvni": [
+                  {
+                    "hodnota": 873000.0,
+                    "s_dph": true,
+                    "druh": "smluvni"
+                  },
+                  {
+                    "hodnota": 873000.0,
+                    "s_dph": false,
+                    "druh": "smluvni"
+                  }
+                ],
+                "zaplaceno": [
+                  {
+                    "obdobi": "2024",
+                    "hodnota": 85000.0,
+                    "s_dph": true
+                  },
+                  {
+                    "obdobi": "2024",
+                    "hodnota": 85000.0,
+                    "s_dph": false
+                  },
+                  {
+                    "obdobi": "2025",
+                    "hodnota": 595000.0,
+                    "s_dph": true
+                  },
+                  {
+                    "obdobi": "2025",
+                    "hodnota": 595000.0,
+                    "s_dph": false
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "ezak-VZ-883",
+        "nazev": "Sportovní hala Třeboň - nástavba a přístavba ubytování",
+        "role": "stavba",
+        "stav": "dokončen",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_883.html",
+        "casti": [
+          {
+            "nazev": "Sportovní hala Třeboň - nástavba a přístavba ubytování",
+            "stav": "dokončen",
+            "pocet_nabidek": 4,
+            "datum_uverejneni": "2025-09-04",
+            "datum_uzavreni_smlouvy": "2025-12-23",
+            "vitezove": [
+              {
+                "nazev": "Retherm s.r.o.",
+                "smluvni": [
+                  {
+                    "hodnota": 62173221.68,
+                    "s_dph": true,
+                    "druh": "smluvni"
+                  },
+                  {
+                    "hodnota": 51382827.84,
+                    "s_dph": false,
+                    "druh": "smluvni"
+                  }
+                ],
+                "zaplaceno": [
+                  {
+                    "obdobi": "2025",
+                    "hodnota": 0.0,
+                    "s_dph": true
+                  },
+                  {
+                    "obdobi": "2025",
+                    "hodnota": 0.0,
+                    "s_dph": false
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "ezak-VZ-936",
+        "nazev": "Sportovní hala Třeboň - nástavba a přístavba ubytování - vybavení interiéru",
+        "role": "vybaveni",
+        "stav": "dokončen",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_936.html",
+        "casti": [
+          {
+            "nazev": "Sportovní hala Třeboň - nástavba a přístavba ubytování - vybavení interiéru",
+            "stav": "dokončen",
+            "pocet_nabidek": 5,
+            "datum_uverejneni": "2026-04-20",
+            "datum_uzavreni_smlouvy": "2026-05-21",
+            "vitezove": [
+              {
+                "nazev": "Artspect, a.s.",
+                "smluvni": [
+                  {
+                    "hodnota": 2025961.08,
+                    "s_dph": true,
+                    "druh": "smluvni"
+                  },
+                  {
+                    "hodnota": 1674348.0,
+                    "s_dph": false,
+                    "druh": "smluvni"
+                  }
+                ],
+                "zaplaceno": []
+              }
+            ]
+          }
+        ],
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "smlouvy": [
+      {
+        "id": "rs-39302679",
+        "predmet": "Sportovní hala Třeboň - nástavba a přístavba ubytování - dodatek č. 3",
+        "role": "stavba",
+        "dodatek_cislo": 3,
+        "datum_uzavreni": "2026-08-28",
+        "strany": [
+          "Retherm s.r.o."
+        ],
+        "castky": [
+          {
+            "hodnota": 1334880.1,
+            "s_dph": false,
+            "druh": "smluvni"
+          },
+          {
+            "hodnota": 1615204.92,
+            "s_dph": true,
+            "druh": "smluvni"
+          }
+        ],
+        "url": "https://smlouvy.gov.cz/smlouva/39302679",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-39520809",
+        "predmet": "Sportovní hala Třeboň - nástavba a přístavba ubytování - dodatek č. 4",
+        "role": "stavba",
+        "dodatek_cislo": 4,
+        "datum_uzavreni": "2026-09-14",
+        "strany": [
+          "Retherm s.r.o."
+        ],
+        "castky": [],
+        "url": "https://smlouvy.gov.cz/smlouva/39520809",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-39574269",
+        "predmet": "Sportovní hala Třeboň - nástavba a přístavba ubytování - dodávka televizorů",
+        "role": "vybaveni",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2026-09-16",
+        "strany": [
+          "LP DVORACEK spol. s r.o."
+        ],
+        "castky": [
+          {
+            "hodnota": 208817.0,
+            "s_dph": false,
+            "druh": "smluvni"
+          },
+          {
+            "hodnota": 252668.57,
+            "s_dph": true,
+            "druh": "smluvni"
+          }
+        ],
+        "url": "https://smlouvy.gov.cz/smlouva/39574269",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-39725413",
+        "predmet": "Příkazní smlouva - Technický dozor stavebníka na akci Sportovní hala Třeboň - nástavba a přístavba ubytování - dodatek č. 1",
+        "role": "technicky_dozor",
+        "dodatek_cislo": 1,
+        "datum_uzavreni": "2026-09-30",
+        "strany": [
+          "fyzická osoba"
+        ],
+        "castky": [
+          {
+            "hodnota": 35000.0,
+            "s_dph": false,
+            "druh": "smluvni"
+          },
+          {
+            "hodnota": 35000.0,
+            "s_dph": true,
+            "druh": "smluvni"
+          }
+        ],
+        "url": "https://smlouvy.gov.cz/smlouva/39725413",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-39899189",
+        "predmet": "Sportovní hala Třeboň - nástavba a přístavba ubytování - vybavení interiéru - dodatek č. 1",
+        "role": "vybaveni",
+        "dodatek_cislo": 1,
+        "datum_uzavreni": "2026-09-30",
+        "strany": [
+          "Artspect, a.s."
+        ],
+        "castky": [
+          {
+            "hodnota": 96668.0,
+            "s_dph": false,
+            "druh": "smluvni"
+          },
+          {
+            "hodnota": 116968.28,
+            "s_dph": true,
+            "druh": "smluvni"
+          }
+        ],
+        "url": "https://smlouvy.gov.cz/smlouva/39899189",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-39748681",
+        "predmet": "Příkazní smlouva - Koordinátor BOZP na akci Sportovní hala Třeboň - nástavba a přístavba ubytování - dodatek č. 1",
+        "role": "bozp",
+        "dodatek_cislo": 1,
+        "datum_uzavreni": "2026-10-01",
+        "strany": [
+          "fyzická osoba"
+        ],
+        "castky": [
+          {
+            "hodnota": 16167.0,
+            "s_dph": false,
+            "druh": "smluvni"
+          },
+          {
+            "hodnota": 19562.07,
+            "s_dph": true,
+            "druh": "smluvni"
+          }
+        ],
+        "url": "https://smlouvy.gov.cz/smlouva/39748681",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-40060341",
+        "predmet": "Dodávka vybavení posilovny v objektu ubytování sportovní haly Třeboň dle nabídky z 09.10.2026 vč. dopravy",
+        "role": "vybaveni",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2026-10-23",
+        "strany": [
+          "StrongGear s.r.o."
+        ],
+        "castky": [
+          {
+            "hodnota": 310125.87,
+            "s_dph": false,
+            "druh": "smluvni"
+          },
+          {
+            "hodnota": 375252.3,
+            "s_dph": true,
+            "druh": "smluvni"
+          }
+        ],
+        "url": "https://smlouvy.gov.cz/smlouva/40060341",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-40101957",
+        "predmet": "Sportovní hala Třeboň - nástavba a přístavba ubytování - dodatek č. 5",
+        "role": "stavba",
+        "dodatek_cislo": 5,
+        "datum_uzavreni": "2026-10-23",
+        "strany": [
+          "Retherm s.r.o."
+        ],
+        "castky": [
+          {
+            "hodnota": 870555.97,
+            "s_dph": false,
+            "druh": "smluvni"
+          },
+          {
+            "hodnota": 1053372.72,
+            "s_dph": true,
+            "druh": "smluvni"
+          }
+        ],
+        "url": "https://smlouvy.gov.cz/smlouva/40101957",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-40117365",
+        "predmet": "Sportovní hala Třeboň - nástavba a přístavba ubytování - vybavení interiéru - dodatek č. 2",
+        "role": "vybaveni",
+        "dodatek_cislo": 2,
+        "datum_uzavreni": "2026-10-27",
+        "strany": [
+          "Artspect, a.s."
+        ],
+        "castky": [
+          {
+            "hodnota": 99981.0,
+            "s_dph": false,
+            "druh": "smluvni"
+          },
+          {
+            "hodnota": 120977.01,
+            "s_dph": true,
+            "druh": "smluvni"
+          }
+        ],
+        "url": "https://smlouvy.gov.cz/smlouva/40117365",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-40117957",
+        "predmet": "Zpracování projektové dokumentace - Ubytovací objekt sportovní haly, Třeboň - dodatek č. 1",
+        "role": "projekt",
+        "dodatek_cislo": 1,
+        "datum_uzavreni": "2026-10-27",
+        "strany": [
+          "fyzická osoba"
+        ],
+        "castky": [
+          {
+            "hodnota": 56500.0,
+            "s_dph": false,
+            "druh": "smluvni"
+          },
+          {
+            "hodnota": 56500.0,
+            "s_dph": true,
+            "druh": "smluvni"
+          }
+        ],
+        "url": "https://smlouvy.gov.cz/smlouva/40117957",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "usneseni": [
+      {
+        "id": "rm-2026-j110-u463",
+        "cislo": "RM 463/2026-110",
+        "datum": "2026-09-09",
+        "tema": "Sportovní hala – dodatek č. 4 ke smlouvě o dílo (termín dokončení)",
+        "shrnuti": "Rada schválila dodatek č. 4 ke smlouvě o dílo na stavbu Sportovní hala Třeboň – nástavba a přístavba ubytování. Dodatek mění termín dokončení díla; nový termín zápis neuvádí.",
+        "vysledek_hlasovani": "prijato",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rm-2026-j111-u491",
+        "cislo": "RM 491/2026-111",
+        "datum": "2026-09-23",
+        "tema": "Vybavení interiéru ubytování sportovní haly – dodatek č. 1 ke kupní smlouvě",
+        "shrnuti": "Rada schválila dodatek č. 1 ke kupní smlouvě se společností Artspect, a. s. na vybavení interiéru ubytování ve sportovní hale; mění se cena a termín dodání. Nová cena ani termín nejsou v zápisu.",
+        "vysledek_hlasovani": "prijato",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rm-2026-j111-u493",
+        "cislo": "RM 493/2026-111",
+        "datum": "2026-09-23",
+        "tema": "Rozpočtové opatření č. 51 – vybavení přístavby tělocvičen",
+        "shrnuti": "Rada přesunula 53 000 Kč ve výdajích rozpočtu z položky vybavení ubytování sportovní haly do položky vybavení přístavby tělocvičen.",
+        "vysledek_hlasovani": "prijato",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rm-2026-j113-u527",
+        "cislo": "RM 527/2026-113",
+        "datum": "2026-10-21",
+        "tema": "Sportovní hala – dodatek č. 5 ke smlouvě o dílo a rozpočtové opatření č. 56",
+        "shrnuti": "Rada přesunula 1 165 000 Kč z položky Snížení energetické náročnosti DPS 3 do položky Ubytování sportovní hala a schválila dodatek č. 5 ke smlouvě o dílo na nástavbu a přístavbu ubytování, jehož předmětem je změna ceny díla; nová cena v usnesení uvedena není.",
+        "vysledek_hlasovani": "prijato",
+        "jistota": "dolozeno"
+      },
+      {
+        "id": "rm-2026-j113-u530",
+        "cislo": "RM 530/2026-113",
+        "datum": "2026-10-21",
+        "tema": "Sportovní hala – vybavení interiéru, dodatek č. 2 ke kupní smlouvě",
+        "shrnuti": "Rada schválila dodatek č. 2 ke kupní smlouvě na vybavení interiéru ubytování sportovní haly, jehož předmětem je změna ceny; výše ceny v usnesení uvedena není.",
+        "vysledek_hlasovani": "prijato",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "posledni_dodatek": {
+      "bozp": 1,
+      "projekt": 1,
+      "stavba": 5,
+      "technicky_dozor": 1,
+      "vybaveni": 2
+    },
+    "udalosti": [
+      {
+        "datum": "2024-11-12",
+        "typ": "soutez",
+        "text": "Soutěž: Zpracování projektové dokumentace \"Ubytovací objekt sportovní haly Třeboň\"",
+        "role": "projekt",
+        "zdroj_id": "ezak-VZ-810",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2025-09-04",
+        "typ": "soutez",
+        "text": "Soutěž: Sportovní hala Třeboň - nástavba a přístavba ubytování",
+        "role": "stavba",
+        "zdroj_id": "ezak-VZ-883",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-04-20",
+        "typ": "soutez",
+        "text": "Soutěž: Sportovní hala Třeboň - nástavba a přístavba ubytování - vybavení interiéru",
+        "role": "vybaveni",
+        "zdroj_id": "ezak-VZ-936",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-08-28",
+        "typ": "dodatek",
+        "text": "Sportovní hala Třeboň - nástavba a přístavba ubytování - dodatek č. 3",
+        "role": "stavba",
+        "zdroj_id": "rs-39302679",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-09-09",
+        "typ": "usneseni",
+        "text": "Sportovní hala – dodatek č. 4 ke smlouvě o dílo (termín dokončení)",
+        "zdroj_id": "rm-2026-j110-u463",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-09-14",
+        "typ": "dodatek",
+        "text": "Sportovní hala Třeboň - nástavba a přístavba ubytování - dodatek č. 4",
+        "role": "stavba",
+        "zdroj_id": "rs-39520809",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-09-16",
+        "typ": "smlouva",
+        "text": "Sportovní hala Třeboň - nástavba a přístavba ubytování - dodávka televizorů",
+        "role": "vybaveni",
+        "zdroj_id": "rs-39574269",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-09-23",
+        "typ": "rozpocet",
+        "text": "Rozpočtové opatření č. 51",
+        "zmena": -53000.0,
+        "polozka": "Ubytování sportovní hala - vybavení",
+        "zdroj_id": "rm-2026-j111-u493-p1",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-09-23",
+        "typ": "usneseni",
+        "text": "Vybavení interiéru ubytování sportovní haly – dodatek č. 1 ke kupní smlouvě",
+        "zdroj_id": "rm-2026-j111-u491",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-09-30",
+        "typ": "dodatek",
+        "text": "Sportovní hala Třeboň - nástavba a přístavba ubytování - vybavení interiéru - dodatek č. 1",
+        "role": "vybaveni",
+        "zdroj_id": "rs-39899189",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-09-30",
+        "typ": "dodatek",
+        "text": "Příkazní smlouva - Technický dozor stavebníka na akci Sportovní hala Třeboň - nástavba a přístavba ubytování - dodatek č. 1",
+        "role": "technicky_dozor",
+        "zdroj_id": "rs-39725413",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-10-01",
+        "typ": "dodatek",
+        "text": "Příkazní smlouva - Koordinátor BOZP na akci Sportovní hala Třeboň - nástavba a přístavba ubytování - dodatek č. 1",
+        "role": "bozp",
+        "zdroj_id": "rs-39748681",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-10-21",
+        "typ": "rozpocet",
+        "text": "Rozpočtové opatření č. 56",
+        "zmena": 1165000.0,
+        "polozka": "Ubytování sportovní hala",
+        "zdroj_id": "rm-2026-j113-u527-p2",
+        "jistota": "dolozeno"
+      },
+      {
+        "datum": "2026-10-21",
+        "typ": "usneseni",
+        "text": "Sportovní hala – vybavení interiéru, dodatek č. 2 ke kupní smlouvě",
+        "zdroj_id": "rm-2026-j113-u530",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-10-23",
+        "typ": "dodatek",
+        "text": "Sportovní hala Třeboň - nástavba a přístavba ubytování - dodatek č. 5",
+        "role": "stavba",
+        "zdroj_id": "rs-40101957",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-10-23",
+        "typ": "smlouva",
+        "text": "Dodávka vybavení posilovny v objektu ubytování sportovní haly Třeboň dle nabídky z 09.10.2026 vč. dopravy",
+        "role": "vybaveni",
+        "zdroj_id": "rs-40060341",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-10-27",
+        "typ": "dodatek",
+        "text": "Zpracování projektové dokumentace - Ubytovací objekt sportovní haly, Třeboň - dodatek č. 1",
+        "role": "projekt",
+        "zdroj_id": "rs-40117957",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-10-27",
+        "typ": "dodatek",
+        "text": "Sportovní hala Třeboň - nástavba a přístavba ubytování - vybavení interiéru - dodatek č. 2",
+        "role": "vybaveni",
+        "zdroj_id": "rs-40117365",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "posledni_udalost": {
+      "datum": "2026-10-27",
+      "typ": "dodatek",
+      "text": "Sportovní hala Třeboň - nástavba a přístavba ubytování - vybavení interiéru - dodatek č. 2",
+      "role": "vybaveni",
+      "zdroj_id": "rs-40117365",
+      "jistota": "nase_propojeni"
+    }
+  }
+]

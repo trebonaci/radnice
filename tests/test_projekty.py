@@ -1,0 +1,66 @@
+"""Projektové karty (pipeline/projekty.py) na malých vzorcích ve tvaru data/*.json."""
+from pipeline import projekty as pr
+
+PROJEKT = {"id": "telocvicny", "nazev": "Přístavba tělocvičen", "vazby": {"hledat": ["přístavb\\w* dvou tělocvič"],
+           "vyloucit": ["servisní"]}, "rozpocet": {"org": ["6230000000"], "nazvy": ["Přístavba tělocvičen - vybavení"]}}
+
+
+def ro(id_, org, nazev, zmena, usn="rm-u1", vysledek="prijato", po=1.0):
+    return {"id": id_, "org": org, "nazev": nazev, "polozka": "6121" if org.startswith("6") else "5137",
+            "zmena": zmena, "cislo_ro": 57, "organ": "rada", "strana": "vydaje", "vysledek_hlasovani": vysledek,
+            "usneseni_id": usn, "jednani_id": "rm-2026-10-21",
+            "rozpocet": {"schvaleny": 70.0, "pred_ro": po - zmena, "po_ro": po, "fond": None, "citace": "x"}}
+
+
+def data(**k):
+    d = {"jednani": [{"id": "rm-2026-10-21", "datum": "2026-10-21"}], "usneseni": [], "zakazky": [], "smlouvy": [],
+         "rozpoctova_opatreni": []}
+    d.update(k)
+    return d
+
+
+def usn(id_, text):
+    return {"id": id_, "cislo": "RM 1/2026-1", "jednani_id": "rm-2026-10-21", "tema": "t", "shrnuti": "s",
+            "vysledek_hlasovani": "prijato", "text": text}
+
+
+def smlouva(id_, predmet, datum="2026-09-30"):
+    return {"id": id_, "predmet": predmet, "datum_uzavreni": datum, "strany": [{"nazev": "Firma s.r.o."}],
+            "castky": [{"hodnota": 10.0, "s_dph": False}], "url": "u"}
+
+
+def test_role():
+    assert pr.role("Příkazní smlouva - Technický dozor stavebníka na akci X - dodatek č. 1") == "technicky_dozor"
+    assert pr.role("Zpracování projektové dokumentace ve stupni DZS/DPS") == "projekt"
+    assert pr.role("Přístavba dvou tělocvičen - dodatek č. 5") == "stavba"
+
+
+def test_rozpocet_org_dolozeno_nazev_propojeni_neprijate_vynechano():
+    d = data(rozpoctova_opatreni=[ro("a", "6230000000", "Přístavba tělocvičen", -253000.0, po=58.0),
+                                  ro("b", "9750000000", "Přístavba tělocvičen - vybavení", 253000.0, usn="rm-u2"),
+                                  ro("c", "6230000000", "Přístavba tělocvičen", 5.0, vysledek="neprijato"),
+                                  ro("d", "9750000000", "Něco jiného", 5.0)],
+             usneseni=[usn("rm-u1", "RO"), usn("rm-u2", "RO")])
+    k = pr.sestav_projekt(PROJEKT, d)
+    assert [(r["org"], r["jistota"], len(r["zmeny"])) for r in k["rozpocet"]] == \
+        [("6230000000", "dolozeno", 1), ("9750000000", "nase_propojeni", 1)]
+    assert k["rozpocet"][0]["po_poslednim_ro"] == 58.0
+    assert {u["id"]: u["jistota"] for u in k["usneseni"]} == {"rm-u1": "dolozeno", "rm-u2": "nase_propojeni"}
+
+
+def test_smlouvy_vzor_pres_zalomeni_vylouceni_a_dodatky():
+    d = data(smlouvy=[smlouva("s3", "Přístavba dvou tělocvičen - dodatek č. 3"),
+                      smlouva("s5", "Přístavba dvou\ntělocvičen - dodatek č. 5", "2026-11-02"),
+                      smlouva("t1", "Technický dozor na akci Přístavba dvou tělocvičen - dodatek č. 1"),
+                      smlouva("x", "Servisní smlouva výtah přístavba dvou tělocvičen")])
+    k = pr.sestav_projekt(PROJEKT, d)
+    assert [s["id"] for s in k["smlouvy"]] == ["s3", "t1", "s5"]
+    assert k["posledni_dodatek"] == {"stavba": 5, "technicky_dozor": 1}
+    assert k["faze"] == "probiha" and k["posledni_udalost"]["zdroj_id"] == "s5"
+
+
+def test_faze():
+    stavba = {"role": "stavba", "stav": "zahájen", "casti": [{"vitezove": []}]}
+    assert pr.faze([], []) == "pripravuje_se"
+    assert pr.faze([stavba], []) == "soutezi_se"
+    assert pr.faze([dict(stavba, stav="ukončeno plnění")], []) == "dokonceno"

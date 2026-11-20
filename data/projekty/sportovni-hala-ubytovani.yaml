@@ -1,0 +1,14 @@
+# Ručně spravovaný projekt (DATOVY_MODEL.md, „projekt“). Vazby přes `hledat` jsou „naše propojení“,
+# přes ORG v rozpočtovém opatření „doloženo“.
+id: sportovni-hala-ubytovani
+nazev: Ubytování ve sportovní hale (nástavba a přístavba)
+popis: Nástavba a přístavba sportovní haly v Třeboni o ubytovací část včetně vybavení interiéru.
+oblast: sport
+druh: investicni
+vlastnik_subjekt_id: "00247618"
+rozpocet:
+  org: ["6219000000"]
+  nazvy: ["Ubytování sportovní hala - vybavení"]
+vazby:
+  hledat: ["nástavba a přístavba ubytování", "ubytovací objekt sportovní haly", "ubytování sportovní hal"]
+  vyloucit: ["nájmu nebytových prostor", "servisní služby"]
