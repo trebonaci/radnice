@@ -39,6 +39,11 @@ RE_NE_DODAVKA = re.compile(r"výpůjč|nájem|nájm|pacht|daru|darovac", re.I)
 RE_JMENO_OSOBY = re.compile(r"(?:[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ][a-záčďéěíňóřšťúůýž]+(?:-[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ][a-záčďéěíňóřšťúůýž]+)?\s+){1,3}"
                             r"[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ][a-záčďéěíňóřšťúůýž]+(?:\s*,?\s*nar\.\s*\d{4})?")
 
+# jméno osoby uvedené v předmětu funkcí v představení (režie, autor, účinkuje…), která není smluvní stranou
+_V, _M = "A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ", "a-záčďéěíňóřšťúůýž"
+RE_ROLE_JMENO = re.compile(rf"\b((?:režie|režisér\w*|autor\w*|účinkuj\w*|choreograf\w*|dirigent\w*|scénář)\s*:?\s+)"
+                           rf"((?:[{_V}]\.\s*|[{_V}][{_M}]+\s+)[{_V}][{_M}]+)", re.I)
+
 
 def strana(s: dict, znama: frozenset[str] = frozenset(), predmet: str | None = None) -> dict:
     """`znama` = IČO sledovaných právnických osob (config/subjekty.yaml): ty se nikdy neanonymizují.
@@ -79,6 +84,7 @@ def _skryj_fo(predmet, strany: list[dict], znama: frozenset[str]):
     if not predmet:
         return predmet
     puvodni = predmet
+    predmet = RE_ROLE_JMENO.sub(lambda m: m[1] + "[jméno]", predmet)
     for s in strany:
         if strana(s, znama, puvodni)["fyzicka_osoba"]:
             nazev = (s.get("nazev") or "").strip()
