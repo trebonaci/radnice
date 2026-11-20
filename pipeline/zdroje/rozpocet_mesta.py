@@ -14,6 +14,7 @@ import hashlib
 import html
 import json
 import re
+import shutil
 import sys
 import urllib.parse
 from datetime import date
@@ -27,7 +28,7 @@ ZAKLAD = "https://www.mesto-trebon.cz/"
 RE_ODKAZ = re.compile(r'href="([^"]+\.pdf)"', re.I)
 DRUHY = (
     ("rozpocet", re.compile(r"Rozpočet města Třeboně na rok (\d{4})\.pdf$", re.I)),
-    ("rozpoctova_opatreni", re.compile(r"Rozpoctova_opatreni_schvalena do \d{1,2}_\d{1,2}_(\d{4})\.pdf$", re.I)),
+    ("rozpoctova_opatreni", re.compile(r"Rozpoctova_opatreni_schvalena do (\d{1,2})_(\d{1,2})_(\d{4})\.pdf$", re.I)),
 )
 MIN_ZNAKU = 500
 
@@ -40,9 +41,19 @@ def najdi_dokumenty(stranka_html: str, od_roku: int) -> list[dict]:
         soubor = urllib.parse.unquote(url.rsplit("/", 1)[-1])
         for druh, vzor in DRUHY:
             m = vzor.search(soubor)
-            if m and int(m[1]) >= od_roku:
-                vysledek[(druh, int(m[1]))] = {"druh": druh, "rok": int(m[1]), "url": url, "soubor": soubor}
-    return sorted(vysledek.values(), key=lambda d: (d["rok"], d["druh"]))
+            if not m:
+                continue
+            rok = int(m[m.lastindex])
+            if rok < od_roku:
+                continue
+            # datum z názvu (u RO „do D_M_RRRR“): pořadí odkazů na stránce nesmí vrátit starší přehled
+            datum = (rok, int(m[2]), int(m[1])) if m.lastindex == 3 else (rok, 0, 0)
+            stary = vysledek.get((druh, rok))
+            if stary is None or datum > stary["_datum"]:
+                vysledek[(druh, rok)] = {"druh": druh, "rok": rok, "url": url, "soubor": soubor,
+                                         "_datum": datum}
+    return [{k: v for k, v in d.items() if k != "_datum"}
+            for d in sorted(vysledek.values(), key=lambda d: (d["rok"], d["druh"]))]
 
 
 def stahni(koren: Path, ziskej=ziskej_url, extrahuj=extrahuj_pdftotext, dnes: date | None = None,
@@ -75,12 +86,29 @@ def stahni(koren: Path, ziskej=ziskej_url, extrahuj=extrahuj_pdftotext, dnes: da
             upozorneni.append(f"{klic}: {e}")
             continue
         adresar = cil / str(d["rok"]) / d["druh"]
-        if adresar.exists():
-            for stary in adresar.glob("strana-*.txt"):
-                stary.unlink()
-        adresar.mkdir(parents=True, exist_ok=True)
-        for i, text in enumerate(strany, start=1):
-            (adresar / f"strana-{i}.txt").write_text(text, encoding="utf-8")
+        nove = adresar.with_name(adresar.name + ".nove")
+        zaloha = adresar.with_name(adresar.name + ".stare")
+        try:
+            for tmp in (nove, zaloha):
+                if tmp.exists():
+                    shutil.rmtree(tmp)
+            nove.mkdir(parents=True)
+            for i, text in enumerate(strany, start=1):
+                (nove / f"strana-{i}.txt").write_text(text, encoding="utf-8")
+            if adresar.exists():
+                adresar.rename(zaloha)
+            try:
+                nove.rename(adresar)
+            except OSError:
+                if zaloha.exists() and not adresar.exists():
+                    zaloha.rename(adresar)
+                raise
+            if zaloha.exists():
+                shutil.rmtree(zaloha)
+        except OSError as e:
+            shutil.rmtree(nove, ignore_errors=True)
+            upozorneni.append(f"{klic}: zápis selhal, ponechána předchozí data ({e})")
+            continue
         manifest[klic] = {"url": d["url"], "soubor": d["soubor"], "sha256": sha, "stran": len(strany),
                           "stazeno": dnes.isoformat()}
         zmena = True
