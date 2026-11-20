@@ -214,11 +214,18 @@ def sjednot_nazvy(radky: list[dict], rozpocet: list[dict]) -> list[str]:
         n = normalizuj_nazev(r["ucel"])
         if any(normalizuj_nazev(p["nazev"]) == n for p in kandidati):
             continue
-        shoda = [p for p in kandidati if round(p["castka"]["hodnota"]) == r["schvaleny"]
-                 and (normalizuj_nazev(p["nazev"]).startswith(n) or n.startswith(normalizuj_nazev(p["nazev"])))]
+        stejna_castka = [p for p in kandidati if round(p["castka"]["hodnota"]) == r["schvaleny"]]
+        shoda = [p for p in stejna_castka
+                 if normalizuj_nazev(p["nazev"]).startswith(n) or n.startswith(normalizuj_nazev(p["nazev"]))]
+        # jinak pojmenovaná položka (RO 20 „Divadlo J.K. Tyla - opravy“ = „Opravy v Divadle J.K. Tyla“):
+        # jediná položka téhož ORJ, oddílu a třídy se stejným schváleným rozpočtem
+        shoda = shoda or (stejna_castka if len(stejna_castka) == 1 else [])
         if len(shoda) == 1:
             r["nazev_polozky"] = shoda[0]["nazev"]
+            r["prirazeni"] = "nazev" if normalizuj_nazev(shoda[0]["nazev"]).startswith(n) \
+                or n.startswith(normalizuj_nazev(shoda[0]["nazev"])) else "castka"
         else:
+            r["neprirazeno"] = True
             upozorneni.append(f"RO {r['cislo_ro']} „{r['ucel']}“: položku schváleného rozpočtu nelze určit")
     return upozorneni
 
@@ -238,8 +245,14 @@ def doplnit_rozpocet(rozpocet: list[dict], radky: list[dict]) -> None:
         k = _klic(r)
         posledni[k] = r
         seznam.setdefault(k, []).append(r["cislo_ro"])
+    # nepřiřazené řádky přehledu: položku se stejným schváleným rozpočtem nelze označit „beze změny“
+    nejasne = {(r["rok"], r["orj"], r["oddil"], r["druh_zkratka"], r["schvaleny"]) for r in radky if r.get("neprirazeno")}
     for p in rozpocet:
-        k = (p["rok"],) + klic_polozky(p["orj"], p["oddil"], "KV" if p["trida"] == "kapitalove" else "BV", p["nazev"])
+        druh = "KV" if p["trida"] == "kapitalove" else "BV"
+        k = (p["rok"],) + klic_polozky(p["orj"], p["oddil"], druh, p["nazev"])
+        p["stav_zmen"] = ("zmeneno" if k in posledni else
+                          "nejasne" if (p["rok"], p["orj"], p["oddil"], druh, round(p["castka"]["hodnota"])) in nejasne
+                          else "beze_zmeny")
         if k in posledni:
             p["po_zmenach"] = {"hodnota": float(posledni[k]["po_zmene"]), "mena": "CZK", "jednotka": "Kč",
                                "s_dph": None, "druh": "rozpocet_upraveny", "po_ro": posledni[k]["cislo_ro"],
@@ -281,6 +294,7 @@ def prehled_investic(rozpocet: list[dict], radky: list[dict], projekty: list[dic
         v_rozpoctu.add((rok,) + klic_polozky(r["orj"], r["oddil"], "KV", r["nazev"]))
         po = r["po_zmenach"]["hodnota"] if r.get("po_zmenach") else r["castka"]["hodnota"]
         polozky.append({"nazev": r["nazev"], "orj": r["orj"], "oddil": r["oddil"], "schvaleny": r["castka"]["hodnota"],
+                        "stav_zmen": r.get("stav_zmen", "beze_zmeny"),
                         "po_zmenach": po, "zmeny_ro": r.get("zmeny_ro", []), "nova": False, "zdroj_id": r["id"]})
     prvni: dict[tuple, dict] = {}
     for x in radky:
@@ -289,6 +303,7 @@ def prehled_investic(rozpocet: list[dict], radky: list[dict], projekty: list[dic
         # nová položka = při prvním výskytu nemá schválený ani upravený rozpočet (jinak jde o přejmenovanou)
         if k[0] == rok and k[3] == "KV" and k not in v_rozpoctu and not prvni[k]["schvaleny"]:
             polozky.append({"nazev": r["ucel"], "orj": r["orj"], "oddil": r["oddil"], "schvaleny": 0.0,
+                            "stav_zmen": "zmeneno",
                             "po_zmenach": float(r["po_zmene"]),
                             "zmeny_ro": [x["cislo_ro"] for x in radky if _klic(x) == k],
                             "nova": True, "zdroj_id": r["id"]})
@@ -308,5 +323,6 @@ def prehled_investic(rozpocet: list[dict], radky: list[dict], projekty: list[dic
     return {"rok": rok, "druh": "rozpocet / rozpocet_upraveny", "s_dph": None,
             "schvaleny": soucet("schvaleny"), "po_zmenach": soucet("po_zmenach"),
             "bez_rezervy_po_zmenach": soucet("po_zmenach", lambda p: p["oddil"] != 64),
+            "nejasne_polozky": [p["nazev"] for p in polozky if p["stav_zmen"] == "nejasne"],
             "oblasti": oblasti, "fondy_poznamka": "Investice z fondů (lázeňský investiční fond, fond obnovy "
             "vodohospodářského majetku) rozpočet uvádí jen souhrnně, nejsou zahrnuty."}

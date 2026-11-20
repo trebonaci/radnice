@@ -522,7 +522,8 @@
       "strana": 1,
       "text": "770 61 BV SF - příspěvek na stravování 2 400,00 2 400,00 -2 257,00 143,00"
     },
-    "nazev_polozky": "SF - příspěvek na stravování"
+    "nazev_polozky": "SF - příspěvek na stravování",
+    "neprirazeno": true
   },
   {
     "id": "ro-2026-x15-02",
@@ -1747,7 +1748,8 @@
       "strana": 1,
       "text": "770 61 BV Povinné poj.na soc.zabezpečení - zaměst.a OOV 12 250,00 12 250,00 892,80 13 142,80"
     },
-    "nazev_polozky": "Povinné poj.na soc.zabezpečení - zaměst.a OOV"
+    "nazev_polozky": "Povinné pojistné na soc.zabezpečení - zaměstnanci a OOV",
+    "prirazeni": "castka"
   },
   {
     "id": "ro-2026-18-04",
@@ -1782,7 +1784,8 @@
       "strana": 1,
       "text": "770 61 BV Povinné poj. na zdrav.pojištění - zaměst. a OOV 4 420,00 4 420,00 324,00 4 744,00"
     },
-    "nazev_polozky": "Povinné poj. na zdrav.pojištění - zaměst. a OOV"
+    "nazev_polozky": "Povinné pojistné na zdrav.pojištění - zaměstnanci a OOV",
+    "prirazeni": "castka"
   },
   {
     "id": "ro-2026-19-01",
@@ -1852,7 +1855,8 @@
       "strana": 1,
       "text": "770 61 BV Různé finanční výdaje - nákup ost.služeb 450,00 450,00 180,00 630,00"
     },
-    "nazev_polozky": "Různé finanční výdaje - nákup ost.služeb"
+    "nazev_polozky": "Různé finanční výdaje - nákup ostatních služeb",
+    "prirazeni": "castka"
   },
   {
     "id": "ro-2026-20-01",
@@ -1887,7 +1891,8 @@
       "strana": 1,
       "text": "750 33 BV Divadlo J.K. Tyla - opravy 400,00 400,00 -100,00 300,00"
     },
-    "nazev_polozky": "Divadlo J.K. Tyla - opravy"
+    "nazev_polozky": "Opravy v Divadle J.K. Tyla",
+    "prirazeni": "castka"
   },
   {
     "id": "ro-2026-20-02",
@@ -2097,7 +2102,8 @@
       "strana": 1,
       "text": "100 43 BV Běžné výdaje podle druhového určení 128,35 128,35 395,00 523,35"
     },
-    "nazev_polozky": "Běžné výdaje podle druhového určení"
+    "nazev_polozky": "Běžné výdaje podle druhového určení",
+    "neprirazeno": true
   },
   {
     "id": "ro-2026-22-01",
@@ -2766,7 +2772,8 @@
       "strana": 1,
       "text": "800 63 BV Daň z příjmu práv. osob - obec 43 000,00 43 000,00 7 428,56 50 428,56"
     },
-    "nazev_polozky": "Daň z příjmu práv. osob - obec"
+    "nazev_polozky": "Daň z příjmu právnických osob - obec",
+    "prirazeni": "castka"
   },
   {
     "id": "ro-2026-30-01",
@@ -3046,7 +3053,8 @@
       "strana": 2,
       "text": "250 53 BV MP - služby telekomunikací a radiokomunikací 130,00 130,00 -5,00 125,00"
     },
-    "nazev_polozky": "MP - služby telekomunikací a radiokomunikací"
+    "nazev_polozky": "MP - služby telekomunikací a radiokumunikací",
+    "prirazeni": "castka"
   },
   {
     "id": "ro-2026-33-03",
@@ -3151,7 +3159,8 @@
       "strana": 2,
       "text": "250 53 KV MP – drobný hmotný dlouhodobý majetek 230,00 230,00 25,00 255,00"
     },
-    "nazev_polozky": "MP – drobný hmotný dlouhodobý majetek"
+    "nazev_polozky": "MP – drobný hmotný dlouhodobý majetek",
+    "neprirazeno": true
   },
   {
     "id": "ro-2026-34-01",
@@ -3501,7 +3510,8 @@
       "strana": 2,
       "text": "770 61 BV Odvody za neplnění povinnosti zaměstnávat zdrav. postižené 350,00 350,00 -5,00 345,00"
     },
-    "nazev_polozky": "Odvody za neplnění povinnosti zaměstnávat zdrav. postižené"
+    "nazev_polozky": "Odvody za neplnění povinnosti zaměstnávat zdrav.postižené",
+    "prirazeni": "castka"
   },
   {
     "id": "ro-2026-37-02",
@@ -3886,7 +3896,8 @@
       "strana": 2,
       "text": "750 37 BV Květinové záhony 12 710,00 12 710,00 800,00 13 510,00"
     },
-    "nazev_polozky": "Květinové záhony"
+    "nazev_polozky": "Veřejná zeleň",
+    "prirazeni": "castka"
   },
   {
     "id": "ro-2026-41-01",
@@ -3921,7 +3932,8 @@
       "strana": 2,
       "text": "800 34 BV Příspěvky v oblasti ostatních činností 300,00 297,00 -5,00 292,00"
     },
-    "nazev_polozky": "Příspěvky v oblasti ostatních činností"
+    "nazev_polozky": "Příspěvky v oblasti ostatních čiností",
+    "prirazeni": "castka"
   },
   {
     "id": "ro-2026-41-02",
@@ -4061,7 +4073,8 @@
       "strana": 2,
       "text": "750 36 KV Snížení energetické náročnosti 14 000,00 8 100,00 -850,00 7 250,00"
     },
-    "nazev_polozky": "Snížení energetické náročnosti DPS 3"
+    "nazev_polozky": "Snížení energetické náročnosti DPS 3",
+    "prirazeni": "nazev"
   },
   {
     "id": "ro-2026-43-02",
@@ -4481,7 +4494,8 @@
       "strana": 2,
       "text": "770 33 BV Dary novorozencům - dotace JčK 100,00 100,00 44,50 144,50"
     },
-    "nazev_polozky": "Dary novorozencům - dotace JčK"
+    "nazev_polozky": "Dary novorozencům - dotace JčK",
+    "neprirazeno": true
   },
   {
     "id": "ro-2026-47-01",
@@ -4870,7 +4884,8 @@
       "strana": 2,
       "text": "750 36 BV TZ nemovitého majetku v pronájmu společnosti SLT* 54 200,00 54 200,00 20 000,00 74 200,00"
     },
-    "nazev_polozky": "TZ nemovitého majetku v pronájmu společnosti SLT"
+    "nazev_polozky": "TZ nemovitého majetku v pronájmu společnosti SLT",
+    "neprirazeno": true
   },
   {
     "id": "ro-2026-49-01",
@@ -5395,7 +5410,8 @@
       "strana": 2,
       "text": "250 53 BV MP - služby telekomunikací a radiokomunikací 130,00 125,00 5,00 130,00"
     },
-    "nazev_polozky": "MP - služby telekomunikací a radiokomunikací"
+    "nazev_polozky": "MP - služby telekomunikací a radiokumunikací",
+    "prirazeni": "castka"
   },
   {
     "id": "ro-2026-55-04",
@@ -5780,7 +5796,8 @@
       "strana": 3,
       "text": "770 61 BV Povinné poj.na soc.zabezpečení - zaměst.a OOV 12 250,00 13 142,80 162,94 13 305,74"
     },
-    "nazev_polozky": "Povinné poj.na soc.zabezpečení - zaměst.a OOV"
+    "nazev_polozky": "Povinné pojistné na soc.zabezpečení - zaměstnanci a OOV",
+    "prirazeni": "castka"
   },
   {
     "id": "ro-2026-58-06",
@@ -5815,6 +5832,7 @@
       "strana": 3,
       "text": "770 61 BV Povinné poj. na zdrav.pojištění - zaměst. a OOV 4 420,00 4 744,00 59,13 4 803,13"
     },
-    "nazev_polozky": "Povinné poj. na zdrav.pojištění - zaměst. a OOV"
+    "nazev_polozky": "Povinné pojistné na zdrav.pojištění - zaměstnanci a OOV",
+    "prirazeni": "castka"
   }
 ]

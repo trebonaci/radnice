@@ -70,8 +70,27 @@ def test_porovnani_s_usnesenimi_toleruje_zaokrouhleni_na_tisice():
 def test_doplnit_rozpocet_a_retez():
     r, _, upozorneni = rz.zmeny([STRANA], 2026, "u")
     assert any("Příspěvky v oblasti sociálních služeb" in u for u in upozorneni)     # dvakrát tentýž řádek v RO 8
-    rozpocet = [{"rok": 2026, "orj": "750", "oddil": 34, "trida": "kapitalove", "nazev": "Přístavba tělocvičen"},
-                {"rok": 2026, "orj": "750", "oddil": 34, "trida": "bezne", "nazev": "Přístavba tělocvičen"}]
+    rozpocet = [{"rok": 2026, "orj": "750", "oddil": 34, "trida": "kapitalove", "nazev": "Přístavba tělocvičen",
+                 "castka": {"hodnota": 70000000.0}},
+                {"rok": 2026, "orj": "750", "oddil": 34, "trida": "bezne", "nazev": "Přístavba tělocvičen",
+                 "castka": {"hodnota": 0.0}}]
     rz.doplnit_rozpocet(rozpocet, r)
     assert rozpocet[0]["po_zmenach"]["hodnota"] == 58992140.0 and rozpocet[0]["zmeny_ro"] == [57]
     assert rozpocet[1]["po_zmenach"] is None
+
+
+def test_jinak_pojmenovana_polozka_podle_castky_a_nejasne():
+    radky = [{"rok": 2026, "cislo_ro": 20, "orj": "750", "oddil": 33, "druh_zkratka": "BV", "ucel": "Divadlo J.K. Tyla - opravy",
+              "schvaleny": 400000, "upraveny_pred": 400000, "zmena": -100000, "po_zmene": 300000, "id": "a"},
+             {"rok": 2026, "cislo_ro": 21, "orj": "750", "oddil": 36, "druh_zkratka": "BV", "ucel": "Něco jiného",
+              "schvaleny": 50000, "upraveny_pred": 50000, "zmena": 1000, "po_zmene": 51000, "id": "b"}]
+    rozpocet = [{"rok": 2026, "orj": "750", "oddil": 33, "trida": "bezne", "nazev": "Opravy v Divadle J.K. Tyla",
+                 "castka": {"hodnota": 400000.0}},
+                {"rok": 2026, "orj": "750", "oddil": 36, "trida": "bezne", "nazev": "A", "castka": {"hodnota": 50000.0}},
+                {"rok": 2026, "orj": "750", "oddil": 36, "trida": "bezne", "nazev": "B", "castka": {"hodnota": 50000.0}}]
+    up = rz.sjednot_nazvy(radky, rozpocet)
+    assert radky[0]["nazev_polozky"] == "Opravy v Divadle J.K. Tyla" and radky[0]["prirazeni"] == "castka"
+    assert radky[1].get("neprirazeno") and len(up) == 1
+    rz.doplnit_rozpocet(rozpocet, radky)
+    assert rozpocet[0]["stav_zmen"] == "zmeneno" and rozpocet[0]["po_zmenach"]["hodnota"] == 300000.0
+    assert rozpocet[1]["stav_zmen"] == rozpocet[2]["stav_zmen"] == "nejasne" and rozpocet[1]["po_zmenach"] is None
