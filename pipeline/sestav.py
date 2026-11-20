@@ -279,6 +279,11 @@ def sestav(koren: Path | None = None) -> tuple[dict[str, list], list[str]]:
         usneseni += u
         hlasovani += h
     zakazky = modul_zakazky.nacti_zakazky(koren)
+    for z in zakazky:
+        # jména osob s titulem v názvu a předmětu (např. autor projektu) → „[jméno]“ (ostrý běh 20. 11. 2026)
+        for pole, drzak in [("nazev", z), ("predmet", z)] + [("nazev", c) for c in z["casti"]]:
+            for n in najdi_osobni_udaje(drzak[pole] or "", osoby):
+                drzak[pole] = drzak[pole].replace(n, "[jméno]")
     chyby += modul_zakazky.zkontroluj(zakazky, koren)
     vystup = {"jednani": jednani, "usneseni": usneseni, "hlasovani": hlasovani, "zakazky": zakazky}
     # kontrola osobních údajů v celém výstupu (kromě doslovných citací, ty kontroluje sestavení)
