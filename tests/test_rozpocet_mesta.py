@@ -72,3 +72,21 @@ def test_selhani_zapisu_ponecha_predchozi_texty(tmp_path, monkeypatch):
     adr = tmp_path / "raw/rozpocet/2026/rozpocet"
     assert "v1" in (adr / "strana-1.txt").read_text() and (adr / "strana-2.txt").exists()
     assert not adr.with_name("rozpocet.nove").exists()
+
+
+def test_odkaz_s_nezakodovanou_diakritikou_je_ascii():
+    stranka = '<a href="/uploads/Rozpočet 2026/Rozpočet města Třeboně na rok 2026.pdf">x</a>'
+    d = rm.najdi_dokumenty(stranka, 2026)
+    assert d[0]["url"].isascii() and " " not in d[0]["url"]
+    assert d[0]["soubor"] == "Rozpočet města Třeboně na rok 2026.pdf"
+    # už zakódovaný odkaz se nezakóduje podruhé
+    assert "%25" not in rm.najdi_dokumenty(STRANKA, 2026)[0]["url"]
+
+
+def test_neocekavana_chyba_stazeni_je_upozorneni(tmp_path):
+    def ziskej(url):
+        if url == rm.STRANKA:
+            return STRANKA.encode()
+        raise UnicodeEncodeError("ascii", "č", 0, 1, "x")
+    chyby = rm.stahni(tmp_path, ziskej, lambda b: [])
+    assert len(chyby) == 2
