@@ -95,28 +95,34 @@ jobs:
                 // opravy po Codex review („Address Codex review findings“); draft PR se sem nedostane (přeskočen výše).
                 // Evidence podle PR a SHA značkou v komentáři – stejný commit se nespouští opakovaně. Úspěch = Codex
                 // review s commit_sha tohoto SHA (jakýkoli stav), ne změna stavu PR; bez něj do 3 h → potrebuje-cloveka.
-                const ZNACKA = `<!-- codex-trigger:pr${pr.number}:${sha} -->`;
-                const zahajeno = stav && stav.commit_sha === sha;
-                const spusteno = komentare.find(k => (k.body || '').includes(ZNACKA));
+                const requestPrefix = `<!-- codex-review-requested:${sha}:`;
+                const requestComment = komentare.find(k =>
+                  k.user?.login === 'github-actions[bot]' && (k.body || '').includes(requestPrefix)
+                );
+                // Starší běhy mohly vytvořit marker codex-trigger; zachováme jejich timeout.
+                const legacyMarker = `<!-- codex-trigger:pr${pr.number}:${sha} -->`;
+                const legacyTrigger = komentare.find(k => (k.body || '').includes(legacyMarker));
                 const pozadano = komentare.some(k => (k.body || '').includes('@codex review') && k.created_at >= kdyCommit
                                                 && !k.user.login.endsWith('[bot]'));
                 const zBehu = pr.head.ref.startsWith('claude/beh-');
                 const zOpravy = /^Address Codex review findings/.test(commit.commit.message);
-                if (!zahajeno && !pozadano && !spusteno && (zBehu || zOpravy)) {
+                if (!zahajeno && !pozadano && !requestComment && !legacyTrigger && (zBehu || zOpravy)) {
+                  const marker = `<!-- codex-review-requested:${sha}:${new Date().toISOString()} -->`;
+                  await github.rest.issues.createComment({owner, repo, issue_number: pr.number,
+                    body: `${marker}\\nCodex review requested for commit ${sha.slice(0, 7)}.`});
                   const id = (await github.graphql(`query($o:String!,$r:String!,$n:Int!){repository(owner:$o,name:$r){pullRequest(number:$n){id}}}`,
                     {o: owner, r: repo, n: pr.number})).repository.pullRequest.id;
                   await github.graphql(`mutation($id:ID!){convertPullRequestToDraft(input:{pullRequestId:$id}){clientMutationId}}`, {id});
                   await github.graphql(`mutation($id:ID!){markPullRequestReadyForReview(input:{pullRequestId:$id}){clientMutationId}}`, {id});
-                  await github.rest.issues.createComment({owner, repo, issue_number: pr.number,
-                    body: `${ZNACKA}\nPilot: PR převeden na draft a zpět, aby Codex zkontroloval commit ${sha.slice(0, 7)}.`});
-                } else if (spusteno && !zahajeno && Date.now() - Date.parse(spusteno.created_at) > 3 * 3600 * 1000
+                } else if (legacyTrigger && !requestComment && !zahajeno
+                           && Date.now() - Date.parse(legacyTrigger.created_at) > 3 * 3600 * 1000
                            && !stitky.includes('potrebuje-cloveka')) {
                   await github.rest.issues.addLabels({owner, repo, issue_number: pr.number, labels: ['potrebuje-cloveka']});
                   await github.rest.issues.createComment({owner, repo, issue_number: pr.number,
-                    body: `Pilot: Codex review commitu ${sha.slice(0, 7)} se do 3 hodin nezahájilo. Ondřeji, napiš prosím do PR \`@codex review\` (žádost od bota Codex nepřijímá).`});
+                    body: `Starší žádost o Codex review commitu ${sha.slice(0, 7)} se do 3 hodin nedokončila. Ondřeji, prosím zkontroluj automatickou kontrolu.`});
                 }
                 core.info(`${kdo}: čeká na Codex review commitu ${sha.slice(0, 7)}`);
-                continue;
+                continue;                continue;
               }
               // automatická oprava nálezů Codexu ještě běží → počkat na její výsledek
               const opravy = (await github.rest.actions.listWorkflowRunsForRepo({owner, repo, branch: pr.head.ref, per_page: 20}))
