@@ -89,7 +89,7 @@
           "zdroj_id": "ezak-VZ-901",
           "url": "https://zakazky.mesto-trebon.cz/contract_display_901.html"
         },
-        "vazba_dodatku": "nase_propojeni",
+        "vazba_dodatku": "dolozeno",
         "dodatky": [
           {
             "cislo": 1,
@@ -168,8 +168,12 @@
           "nazev": "fyzická osoba",
           "jmeno_podnikatele": "Zdeněk Musil"
         },
-        "puvodni": null,
-        "vazba_dodatku": null,
+        "puvodni": {
+          "bez_dph": 232000.0,
+          "zdroj_id": "rs-36378541",
+          "url": "https://smlouvy.gov.cz/smlouva/36378541"
+        },
+        "vazba_dodatku": "dolozeno",
         "dodatky": [
           {
             "cislo": 1,
@@ -181,7 +185,7 @@
           }
         ],
         "chybi_dodatky": [],
-        "cena_po_dodatcich": null,
+        "cena_po_dodatcich": 246500.0,
         "dodatky_bez_dph": 14500.0
       },
       {
@@ -190,8 +194,12 @@
           "nazev": "fyzická osoba",
           "jmeno_podnikatele": "Ing. Pavel Houška"
         },
-        "puvodni": null,
-        "vazba_dodatku": null,
+        "puvodni": {
+          "bez_dph": 138900.0,
+          "zdroj_id": "rs-36357369",
+          "url": "https://smlouvy.gov.cz/smlouva/36357369"
+        },
+        "vazba_dodatku": "dolozeno",
         "dodatky": [
           {
             "cislo": 1,
@@ -203,7 +211,7 @@
           }
         ],
         "chybi_dodatky": [],
-        "cena_po_dodatcich": null,
+        "cena_po_dodatcich": 146650.0,
         "dodatky_bez_dph": 7750.0
       },
       {
@@ -222,6 +230,23 @@
         "chybi_dodatky": [],
         "cena_po_dodatcich": 58419.2,
         "dodatky_bez_dph": null
+      },
+      {
+        "role": "administrace",
+        "dodavatel": {
+          "nazev": "GPL - INVEST s.r.o.",
+          "jmeno_podnikatele": null
+        },
+        "puvodni": {
+          "bez_dph": 75000.0,
+          "zdroj_id": "rs-35626165",
+          "url": "https://smlouvy.gov.cz/smlouva/35626165"
+        },
+        "vazba_dodatku": "dolozeno",
+        "dodatky": [],
+        "chybi_dodatky": [],
+        "cena_po_dodatcich": 75000.0,
+        "dodatky_bez_dph": null
       }
     ],
     "souhrn": {
@@ -235,15 +260,13 @@
         "jistota": "nase_propojeni"
       },
       "smluvni_bez_dph": {
-        "celkem": 55629384.56,
+        "celkem": 56075284.56,
         "druh": "smluvni",
         "s_dph": false,
         "mena": "CZK",
         "po_dodatcich": null,
         "neuplne": [
-          "stavba",
-          "technicky_dozor",
-          "bozp"
+          "stavba"
         ],
         "jistota": "nase_propojeni"
       }
@@ -351,6 +374,146 @@
       }
     ],
     "smlouvy": [
+      {
+        "id": "rs-35626165",
+        "id_smlouvy": "33422353",
+        "navazuje_na": "23592055",
+        "predmet": "Administrace zadávacího řízení VZ Přístavba dvou tělocvičen sportovní haly Třeboň",
+        "role": "administrace",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2025-11-14",
+        "strany": [
+          {
+            "nazev": "GPL - INVEST s.r.o.",
+            "jmeno_podnikatele": null
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 75000.0,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 90750.0,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/35626165",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-36357369",
+        "id_smlouvy": "34119585",
+        "navazuje_na": null,
+        "predmet": "Příkazní smlouva - Koordinátor BOZP na akci Přístavba dvou tělocvičen sportovní haly Třeboň",
+        "role": "bozp",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2026-01-12",
+        "strany": [
+          {
+            "nazev": "fyzická osoba",
+            "jmeno_podnikatele": "Ing. Pavel Houška"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 138900.0,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 168069.0,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/36357369",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-36378541",
+        "id_smlouvy": "34139917",
+        "navazuje_na": null,
+        "predmet": "Příkazní smlouva - Technický dozor stavebníka na akci Přístavba dvou tělocvičen sportovní haly Třeboň",
+        "role": "technicky_dozor",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2026-01-13",
+        "strany": [
+          {
+            "nazev": "fyzická osoba",
+            "jmeno_podnikatele": "Zdeněk Musil"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 232000.0,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 232000.0,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/36378541",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-36387317",
+        "id_smlouvy": "34148121",
+        "navazuje_na": null,
+        "predmet": "Přístavba dvou tělocvičen sportovní haly Třeboň",
+        "role": "stavba",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2026-01-14",
+        "strany": [
+          {
+            "nazev": "MANE STAVEBNÍ s.r.o.",
+            "jmeno_podnikatele": null
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 49706575.9,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 60144956.84,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/36387317",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
       {
         "id": "rs-37282997",
         "id_smlouvy": "35006441",
@@ -740,10 +903,42 @@
       },
       {
         "datum": "2025-11-14",
+        "typ": "smlouva",
+        "text": "Administrace zadávacího řízení VZ Přístavba dvou tělocvičen sportovní haly Třeboň",
+        "role": "administrace",
+        "zdroj_id": "rs-35626165",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2025-11-14",
         "typ": "soutez",
         "text": "Soutěž: Přístavba dvou tělocvičen sportovní haly Třeboň",
         "role": "stavba",
         "zdroj_id": "ezak-VZ-901",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-01-12",
+        "typ": "smlouva",
+        "text": "Příkazní smlouva - Koordinátor BOZP na akci Přístavba dvou tělocvičen sportovní haly Třeboň",
+        "role": "bozp",
+        "zdroj_id": "rs-36357369",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-01-13",
+        "typ": "smlouva",
+        "text": "Příkazní smlouva - Technický dozor stavebníka na akci Přístavba dvou tělocvičen sportovní haly Třeboň",
+        "role": "technicky_dozor",
+        "zdroj_id": "rs-36378541",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-01-14",
+        "typ": "smlouva",
+        "text": "Přístavba dvou tělocvičen sportovní haly Třeboň",
+        "role": "stavba",
+        "zdroj_id": "rs-36387317",
         "jistota": "nase_propojeni"
       },
       {
@@ -948,7 +1143,7 @@
           "zdroj_id": "ezak-VZ-883",
           "url": "https://zakazky.mesto-trebon.cz/contract_display_883.html"
         },
-        "vazba_dodatku": "nase_propojeni",
+        "vazba_dodatku": "dolozeno",
         "dodatky": [
           {
             "cislo": 1,
@@ -996,6 +1191,23 @@
         "dodatky_bez_dph": 5703927.84
       },
       {
+        "role": "stavba",
+        "dodavatel": {
+          "nazev": "JPS J. Hradec s.r.o.",
+          "jmeno_podnikatele": null
+        },
+        "puvodni": {
+          "bez_dph": 233000.0,
+          "zdroj_id": "rs-36589065",
+          "url": "https://smlouvy.gov.cz/smlouva/36589065"
+        },
+        "vazba_dodatku": "dolozeno",
+        "dodatky": [],
+        "chybi_dodatky": [],
+        "cena_po_dodatcich": 233000.0,
+        "dodatky_bez_dph": null
+      },
+      {
         "role": "projekt",
         "dodavatel": {
           "nazev": "fyzická osoba",
@@ -1027,8 +1239,12 @@
           "nazev": "fyzická osoba",
           "jmeno_podnikatele": "Zdeněk Musil"
         },
-        "puvodni": null,
-        "vazba_dodatku": null,
+        "puvodni": {
+          "bez_dph": 240000.0,
+          "zdroj_id": "rs-36157577",
+          "url": "https://smlouvy.gov.cz/smlouva/36157577"
+        },
+        "vazba_dodatku": "dolozeno",
         "dodatky": [
           {
             "cislo": 1,
@@ -1040,7 +1256,7 @@
           }
         ],
         "chybi_dodatky": [],
-        "cena_po_dodatcich": null,
+        "cena_po_dodatcich": 275000.0,
         "dodatky_bez_dph": 35000.0
       },
       {
@@ -1049,8 +1265,12 @@
           "nazev": "fyzická osoba",
           "jmeno_podnikatele": "Ing. Pavel Houška"
         },
-        "puvodni": null,
-        "vazba_dodatku": null,
+        "puvodni": {
+          "bez_dph": 128900.0,
+          "zdroj_id": "rs-36156093",
+          "url": "https://smlouvy.gov.cz/smlouva/36156093"
+        },
+        "vazba_dodatku": "dolozeno",
         "dodatky": [
           {
             "cislo": 1,
@@ -1062,7 +1282,7 @@
           }
         ],
         "chybi_dodatky": [],
-        "cena_po_dodatcich": null,
+        "cena_po_dodatcich": 145067.0,
         "dodatky_bez_dph": 16167.0
       },
       {
@@ -1145,15 +1365,13 @@
         "jistota": "nase_propojeni"
       },
       "smluvni_bez_dph": {
-        "celkem": 54449118.71,
+        "celkem": 55051018.71,
         "druh": "smluvni",
         "s_dph": false,
         "mena": "CZK",
         "po_dodatcich": null,
         "neuplne": [
-          "stavba",
-          "technicky_dozor",
-          "bozp"
+          "stavba"
         ],
         "jistota": "nase_propojeni"
       }
@@ -1323,6 +1541,146 @@
       }
     ],
     "smlouvy": [
+      {
+        "id": "rs-36156093",
+        "id_smlouvy": "33927205",
+        "navazuje_na": null,
+        "predmet": "Příkazní smlouva - Koordinátor BOZP na akci Sportovní hala Třeboň - nástavba a přístavba ubytování",
+        "role": "bozp",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2025-12-19",
+        "strany": [
+          {
+            "nazev": "fyzická osoba",
+            "jmeno_podnikatele": "Ing. Pavel Houška"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 128900.0,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 155969.0,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/36156093",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-36157577",
+        "id_smlouvy": "33928593",
+        "navazuje_na": null,
+        "predmet": "Příkazní smlouva - Technický dozor stavebníka na akci Sportovní hala Třeboň - nástavba a přístavba ubytování",
+        "role": "technicky_dozor",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2025-12-19",
+        "strany": [
+          {
+            "nazev": "fyzická osoba",
+            "jmeno_podnikatele": "Zdeněk Musil"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 240000.0,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 240000.0,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/36157577",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-36192945",
+        "id_smlouvy": "33962317",
+        "navazuje_na": null,
+        "predmet": "Sportovní hala Třeboň - nástavba a přístavba ubytování",
+        "role": "stavba",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2025-12-23",
+        "strany": [
+          {
+            "nazev": "Retherm s.r.o.",
+            "jmeno_podnikatele": null
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 45678900.0,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 55271469.0,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/36192945",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-36589065",
+        "id_smlouvy": "34340417",
+        "navazuje_na": null,
+        "predmet": "Vypracování projektu interiéru akce Sportovní hala Třeboň - nástavba a přístavba ubytování",
+        "role": "stavba",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2026-01-29",
+        "strany": [
+          {
+            "nazev": "JPS J. Hradec s.r.o.",
+            "jmeno_podnikatele": null
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 233000.0,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 281930.0,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/36589065",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
       {
         "id": "rs-37638541",
         "id_smlouvy": "35346993",
@@ -1884,6 +2242,38 @@
         "text": "Soutěž: Sportovní hala Třeboň - nástavba a přístavba ubytování",
         "role": "stavba",
         "zdroj_id": "ezak-VZ-883",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2025-12-19",
+        "typ": "smlouva",
+        "text": "Příkazní smlouva - Technický dozor stavebníka na akci Sportovní hala Třeboň - nástavba a přístavba ubytování",
+        "role": "technicky_dozor",
+        "zdroj_id": "rs-36157577",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2025-12-19",
+        "typ": "smlouva",
+        "text": "Příkazní smlouva - Koordinátor BOZP na akci Sportovní hala Třeboň - nástavba a přístavba ubytování",
+        "role": "bozp",
+        "zdroj_id": "rs-36156093",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2025-12-23",
+        "typ": "smlouva",
+        "text": "Sportovní hala Třeboň - nástavba a přístavba ubytování",
+        "role": "stavba",
+        "zdroj_id": "rs-36192945",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-01-29",
+        "typ": "smlouva",
+        "text": "Vypracování projektu interiéru akce Sportovní hala Třeboň - nástavba a přístavba ubytování",
+        "role": "stavba",
+        "zdroj_id": "rs-36589065",
         "jistota": "nase_propojeni"
       },
       {
