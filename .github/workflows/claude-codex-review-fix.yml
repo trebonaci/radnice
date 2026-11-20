@@ -195,7 +195,7 @@ jobs:
           ORIGINAL_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
         run: |
           # API vrací nový head s několikasekundovým zpožděním po pushi (#111, PR #109) → zkusit opakovaně
-          for pokus in 1 2 3 4 5 6; do
+          for _ in 1 2 3 4 5 6; do
             current_head="$(gh api "repos/${GITHUB_REPOSITORY}/pulls/${PR_NUMBER}" --jq '.head.sha')"
             [ "$current_head" != "$ORIGINAL_HEAD_SHA" ] && break
             sleep 10
