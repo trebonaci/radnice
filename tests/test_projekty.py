@@ -239,3 +239,12 @@ def test_soutez_zverejnena_po_lhute_bez_doby_trvani():
                       "lhuta_nabidek": "2026-07-22", "datum_uzavreni_smlouvy": None, "vitezove": []}]}
     e = next(x for x in pr.sestav_projekt(PROJEKT, data(zakazky=[zak]))["udalosti"] if x["typ"] == "soutez")
     assert e["datum"] == "2026-07-22" and e["kratce"] == "stavba, 2 nabídky" and e["lhuta_dni"] is None
+
+
+def test_kratce_usneseni():
+    assert pr.kratce_usneseni({"vysledek_hlasovani": "prijato", "text": "uzavření Dodatku č. 5 ke smlouvě o dílo"}) == \
+        "schválení dodatku 5"
+    assert pr.kratce_usneseni({"vysledek_hlasovani": "prijato", "tema": "T", "text":
+                               "že nejvýhodnější nabídkou je nabídka s nejnižší cenou"}) == "výběr dodavatele"
+    assert pr.kratce_usneseni({"vysledek_hlasovani": "neprijato", "text": "x"}) == "návrh nepřijat"
+    assert pr.kratce_usneseni({"vysledek_hlasovani": "prijato", "tema": "Téma", "text": "jiné"}) == "Téma"

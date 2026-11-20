@@ -57,6 +57,22 @@ def kratky_popis(role_: str, text: str, dodatek: int | None = None) -> str:
     return f"dodatek {dodatek} ({co})" if dodatek else co
 
 
+def kratce_usneseni(u: dict) -> str:
+    """Krátký popis usnesení v historii akce: co orgán schválil, bez opakování názvu akce."""
+    t = " ".join((u.get("text") or "").split())
+    if u.get("vysledek_hlasovani") != "prijato":
+        return "návrh nepřijat"
+    m = re.search(r"Dodatku č\.\s*(\d+)", t)
+    if m:
+        return f"schválení dodatku {m[1]}"
+    if re.search(r"nejvýhodnější nabídk|výběr\w* (dodavatele|zhotovitele)|pořadí nabídek", t):
+        return "výběr dodavatele"
+    m = re.search(r"rozpočtového opatření č\.\s*(\d+)", t)
+    if m:
+        return f"rozpočtové opatření č. {m[1]}"
+    return u.get("tema") or ""
+
+
 def dni_mezi(od: str | None, do: str | None) -> int | None:
     from datetime import date
     try:
@@ -212,7 +228,7 @@ def sestav_projekt(p: dict, data: dict) -> dict:
         if u["id"] not in usneseni_ro:
             udalosti.append({"datum": datum_jednani.get(u["jednani_id"]), "typ": "usneseni", "text": u["tema"],
                              "kategorie": "rada" if u["id"].startswith("rm-") else "zastupitelstvo",
-                             "kratce": u["tema"],
+                             "kratce": kratce_usneseni(u),
                              "text_ai": u.get("tema_ai"), "overeni": u.get("overeni"),
                              "zdroj_id": u["id"], "jistota": jistota})
 
