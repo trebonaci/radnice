@@ -1,12 +1,12 @@
 {
-  "zacatek": "2026-11-20T01:14:51+00:00",
+  "zacatek": "2026-11-20T12:08:16+00:00",
   "stav": "ok",
   "zdroje": [
     {
       "nazev": "zapisy_mesta",
       "stav": "ok",
       "odkazu": 8,
-      "stazeno": 8
+      "stazeno": 0
     }
   ],
   "chyby": [],
@@ -17,11 +17,13 @@
     "jednani": 8,
     "usneseni": 139,
     "hlasovani": 153,
-    "zakazky": 100,
-    "smlouvy": 231
+    "zakazky": 165,
+    "smlouvy": 237,
+    "rozpoctova_opatreni": 35,
+    "projekty": 2
   },
-  "posledni_uspesny": "2026-11-20T01:15:15+00:00",
+  "posledni_uspesny": "2026-11-20T12:08:20+00:00",
   "nove_dokumenty": 0,
   "nove_verze": 0,
-  "konec": "2026-11-20T01:15:15+00:00"
+  "konec": "2026-11-20T12:08:20+00:00"
 }

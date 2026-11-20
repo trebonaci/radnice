@@ -1,5 +1,243 @@
 [
   {
+    "id": "rs-40413413",
+    "id_smlouvy": "38013977",
+    "id_verze": "40413413",
+    "subjekt_ico": "00247618",
+    "subjekt_nazev": "Město Třeboň",
+    "strany": [
+      {
+        "nazev": "L.M.electric s.r.o.",
+        "ico": "05533821",
+        "fyzicka_osoba": false,
+        "prijemce": true,
+        "jmeno_podnikatele": null
+      }
+    ],
+    "predmet": "Rozšíření veřejného osvětlení v Branné - dodatek č. 2 (termín)",
+    "datum_uzavreni": "2026-11-19",
+    "datum_zverejneni": "2026-11-19",
+    "cislo_smlouvy": "750/9665/26/2",
+    "castky": [],
+    "cena_neuvedena": false,
+    "navazuje_na": "37436189",
+    "evidencni_cislo_zakazky": null,
+    "url": "https://smlouvy.gov.cz/smlouva/40413413",
+    "zdroj": "2026-11.json"
+  },
+  {
+    "id": "rs-40412709",
+    "id_smlouvy": "38013337",
+    "id_verze": "40412709",
+    "subjekt_ico": "00247618",
+    "subjekt_nazev": "Město Třeboň",
+    "strany": [
+      {
+        "nazev": "Projektservis Třeboň s.r.o.",
+        "ico": "03478564",
+        "fyzicka_osoba": false,
+        "prijemce": true,
+        "jmeno_podnikatele": null
+      }
+    ],
+    "predmet": "Vypracování projektové dokumentace včetně rozpočtu a výkazu výměr pro výběrové řízení na stavební opravy bytu č. 1 Dukelská 148",
+    "datum_uzavreni": "2026-11-19",
+    "datum_zverejneni": "2026-11-19",
+    "cislo_smlouvy": "750/9878/26",
+    "castky": [
+      {
+        "hodnota": 53450.0,
+        "mena": "CZK",
+        "jednotka": "Kč",
+        "s_dph": false,
+        "druh": "smluvni",
+        "obdobi": null,
+        "k_datu": null,
+        "citace": "\"hodnotaBezDph\": \"53450\"",
+        "poznamka": "2026-11.json; záznam idVerze 40412709"
+      },
+      {
+        "hodnota": 64674.5,
+        "mena": "CZK",
+        "jednotka": "Kč",
+        "s_dph": true,
+        "druh": "smluvni",
+        "obdobi": null,
+        "k_datu": null,
+        "citace": "\"hodnotaVcetneDph\": \"64674.5\"",
+        "poznamka": "2026-11.json; záznam idVerze 40412709"
+      }
+    ],
+    "cena_neuvedena": false,
+    "navazuje_na": null,
+    "evidencni_cislo_zakazky": null,
+    "url": "https://smlouvy.gov.cz/smlouva/40412709",
+    "zdroj": "2026-11.json"
+  },
+  {
+    "id": "rs-40408717",
+    "id_smlouvy": "38009601",
+    "id_verze": "40408717",
+    "subjekt_ico": "00247618",
+    "subjekt_nazev": "Město Třeboň",
+    "strany": [
+      {
+        "nazev": "Hinton, a.s.",
+        "ico": "24160008",
+        "fyzicka_osoba": false,
+        "prijemce": true,
+        "jmeno_podnikatele": null
+      }
+    ],
+    "predmet": "Oprava obrusné vrstvy asfaltového krytu vozovky místní komunikace v ulici Svobody v Třeboni.",
+    "datum_uzavreni": "2026-11-19",
+    "datum_zverejneni": "2026-11-19",
+    "cislo_smlouvy": "750/9875/26",
+    "castky": [
+      {
+        "hodnota": 332563.22,
+        "mena": "CZK",
+        "jednotka": "Kč",
+        "s_dph": false,
+        "druh": "smluvni",
+        "obdobi": null,
+        "k_datu": null,
+        "citace": "\"hodnotaBezDph\": \"332563.22\"",
+        "poznamka": "2026-11.json; záznam idVerze 40408717"
+      },
+      {
+        "hodnota": 402401.5,
+        "mena": "CZK",
+        "jednotka": "Kč",
+        "s_dph": true,
+        "druh": "smluvni",
+        "obdobi": null,
+        "k_datu": null,
+        "citace": "\"hodnotaVcetneDph\": \"402401.5\"",
+        "poznamka": "2026-11.json; záznam idVerze 40408717"
+      }
+    ],
+    "cena_neuvedena": false,
+    "navazuje_na": null,
+    "evidencni_cislo_zakazky": null,
+    "url": "https://smlouvy.gov.cz/smlouva/40408717",
+    "zdroj": "2026-11.json"
+  },
+  {
+    "id": "rs-40408421",
+    "id_smlouvy": "38009313",
+    "id_verze": "40408421",
+    "subjekt_ico": "25179896",
+    "subjekt_nazev": "Slatinné lázně Třeboň s.r.o.",
+    "strany": [
+      {
+        "nazev": "A-Z eko ateliér s.r.o.",
+        "ico": "05097681",
+        "fyzicka_osoba": false,
+        "prijemce": false,
+        "jmeno_podnikatele": null
+      }
+    ],
+    "predmet": "Smlouva o dílo - Zhotov.PD, příkaz.činnosti a výkon AD pro přesun ordinací na 1. NP objektů D až E LDA",
+    "datum_uzavreni": "2026-11-18",
+    "datum_zverejneni": "2026-11-19",
+    "cislo_smlouvy": "10SM260328",
+    "castky": [
+      {
+        "hodnota": 985500.0,
+        "mena": "CZK",
+        "jednotka": "Kč",
+        "s_dph": false,
+        "druh": "smluvni",
+        "obdobi": null,
+        "k_datu": null,
+        "citace": "\"hodnotaBezDph\": \"985500\"",
+        "poznamka": "2026-11.json; záznam idVerze 40408421"
+      }
+    ],
+    "cena_neuvedena": false,
+    "navazuje_na": null,
+    "evidencni_cislo_zakazky": null,
+    "url": "https://smlouvy.gov.cz/smlouva/40408421",
+    "zdroj": "2026-11.json"
+  },
+  {
+    "id": "rs-40401917",
+    "id_smlouvy": "38003113",
+    "id_verze": "40401917",
+    "subjekt_ico": "25179896",
+    "subjekt_nazev": "Slatinné lázně Třeboň s.r.o.",
+    "strany": [
+      {
+        "nazev": "ECO CARS s.r.o.",
+        "ico": "01835068",
+        "fyzicka_osoba": false,
+        "prijemce": false,
+        "jmeno_podnikatele": null
+      }
+    ],
+    "predmet": "Objednávka - oprava vozidla HiSun Vector E1",
+    "datum_uzavreni": "2026-11-09",
+    "datum_zverejneni": "2026-11-19",
+    "cislo_smlouvy": "10OB261515",
+    "castky": [
+      {
+        "hodnota": 103441.4,
+        "mena": "CZK",
+        "jednotka": "Kč",
+        "s_dph": false,
+        "druh": "smluvni",
+        "obdobi": null,
+        "k_datu": null,
+        "citace": "\"hodnotaBezDph\": \"103441.4\"",
+        "poznamka": "2026-11.json; záznam idVerze 40401917"
+      }
+    ],
+    "cena_neuvedena": false,
+    "navazuje_na": null,
+    "evidencni_cislo_zakazky": null,
+    "url": "https://smlouvy.gov.cz/smlouva/40401917",
+    "zdroj": "2026-11.json"
+  },
+  {
+    "id": "rs-40398437",
+    "id_smlouvy": "37999769",
+    "id_verze": "40398437",
+    "subjekt_ico": "00247618",
+    "subjekt_nazev": "Město Třeboň",
+    "strany": [
+      {
+        "nazev": "Alza.cz a.s.",
+        "ico": "27082440",
+        "fyzicka_osoba": false,
+        "prijemce": true,
+        "jmeno_podnikatele": null
+      }
+    ],
+    "predmet": "2x notebook, 3x monitor, 3x set klávesnice+myš, 2x iPhone 17, příslušenství",
+    "datum_uzavreni": "2026-11-11",
+    "datum_zverejneni": "2026-11-19",
+    "cislo_smlouvy": "770/5123/26",
+    "castky": [
+      {
+        "hodnota": 140524.0,
+        "mena": "CZK",
+        "jednotka": "Kč",
+        "s_dph": true,
+        "druh": "smluvni",
+        "obdobi": null,
+        "k_datu": null,
+        "citace": "\"hodnotaVcetneDph\": \"140524\"",
+        "poznamka": "2026-11.json; záznam idVerze 40398437"
+      }
+    ],
+    "cena_neuvedena": false,
+    "navazuje_na": null,
+    "evidencni_cislo_zakazky": null,
+    "url": "https://smlouvy.gov.cz/smlouva/40398437",
+    "zdroj": "2026-11.json"
+  },
+  {
     "id": "rs-40380845",
     "id_smlouvy": "37982717",
     "id_verze": "40380845",
