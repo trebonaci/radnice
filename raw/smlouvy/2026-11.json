@@ -1034,5 +1034,193 @@
    "cenaNeuvedena": "cena dle množství vyprodukovaného odpadu"
   },
   "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "37999769",
+   "idVerze": "40398437"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/40398437",
+  "casZverejneni": "2026-11-19T08:09:57+01:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "4cbbvj4",
+    "nazev": "Město Třeboň",
+    "ico": "00247618",
+    "adresa": "Město Třeboň,  Palackého nám. 46/II,  37901 Třeboň",
+    "utvar": "Městský úřad Třeboň",
+    "platce": "1"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "xtkcrkz",
+    "nazev": "Alza.cz a.s.",
+    "ico": "27082440",
+    "adresa": "Jankovcova 1522/53,  17000 Praha",
+    "prijemce": "1",
+    "identifikace": "PO"
+   },
+   "predmet": "2x notebook, 3x monitor, 3x set klávesnice+myš, 2x iPhone 17, příslušenství",
+   "datumUzavreni": "2026-11-11",
+   "cisloSmlouvy": "770/5123/26",
+   "schvalil": "Ing. Petra Pikna Jánská",
+   "hodnotaVcetneDph": "140524"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "38003113",
+   "idVerze": "40401917"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/40401917",
+  "casZverejneni": "2026-11-19T09:49:07+01:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "7pehv9f",
+    "nazev": "Slatinné lázně Třeboň s.r.o.",
+    "ico": "25179896",
+    "adresa": "Lázeňská 1001, 37901 Třeboň, CZ"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "s6y77ue",
+    "nazev": "ECO CARS s.r.o.",
+    "ico": "01835068",
+    "adresa": "Vitějovská 228/12, Cholupice, 14300, Praha 4",
+    "identifikace": "PO"
+   },
+   "predmet": "Objednávka - oprava vozidla HiSun Vector E1",
+   "datumUzavreni": "2026-11-09",
+   "cisloSmlouvy": "10OB261515",
+   "schvalil": "prof. JUDr. Vilém Kahoun, Ph.D.",
+   "hodnotaBezDph": "103441.4"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "38009313",
+   "idVerze": "40408421"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/40408421",
+  "casZverejneni": "2026-11-19T13:05:37+01:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "7pehv9f",
+    "nazev": "Slatinné lázně Třeboň s.r.o.",
+    "ico": "25179896",
+    "adresa": "Lázeňská 1001, 37901 Třeboň, CZ"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "m7mvyic",
+    "nazev": "A-Z eko ateliér s.r.o.",
+    "ico": "05097681",
+    "adresa": "Bechyňská 46/14, Soběslav III, 39201, Soběslav",
+    "identifikace": "PO"
+   },
+   "predmet": "Smlouva o dílo - Zhotov.PD, příkaz.činnosti a výkon AD pro přesun ordinací na 1. NP objektů D až E LDA",
+   "datumUzavreni": "2026-11-18",
+   "cisloSmlouvy": "10SM260328",
+   "schvalil": "prof. JUDr. Vilém Kahoun, Ph.D.",
+   "hodnotaBezDph": "985500"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "38009601",
+   "idVerze": "40408717"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/40408717",
+  "casZverejneni": "2026-11-19T13:14:54+01:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "4cbbvj4",
+    "nazev": "Město Třeboň",
+    "ico": "00247618",
+    "adresa": "Město Třeboň,  Palackého nám. 46/II,  37901 Třeboň",
+    "utvar": "Neurčeno",
+    "platce": "1"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "53v5tih",
+    "nazev": "Hinton, a.s.",
+    "ico": "24160008",
+    "adresa": "Vinohradská 1597/174,  13000 Praha",
+    "prijemce": "1",
+    "identifikace": "PO"
+   },
+   "predmet": "Oprava obrusné vrstvy asfaltového krytu vozovky místní komunikace v ulici Svobody v Třeboni.",
+   "datumUzavreni": "2026-11-19",
+   "cisloSmlouvy": "750/9875/26",
+   "hodnotaBezDph": "332563.22",
+   "hodnotaVcetneDph": "402401.5"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "38013337",
+   "idVerze": "40412709"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/40412709",
+  "casZverejneni": "2026-11-19T15:07:32+01:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "4cbbvj4",
+    "nazev": "Město Třeboň",
+    "ico": "00247618",
+    "adresa": "Město Třeboň,  Palackého nám. 46/II,  37901 Třeboň",
+    "utvar": "Neurčeno",
+    "platce": "1"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "zn2rsrp",
+    "nazev": "Projektservis Třeboň s.r.o.",
+    "ico": "03478564",
+    "adresa": "Novohradská 226,  37901 Třeboň",
+    "prijemce": "1",
+    "identifikace": "PO"
+   },
+   "predmet": "Vypracování projektové dokumentace včetně rozpočtu a výkazu výměr pro výběrové řízení na stavební opravy bytu č. 1 Dukelská 148",
+   "datumUzavreni": "2026-11-19",
+   "cisloSmlouvy": "750/9878/26",
+   "hodnotaBezDph": "53450",
+   "hodnotaVcetneDph": "64674.5"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "38013977",
+   "idVerze": "40413413"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/40413413",
+  "casZverejneni": "2026-11-19T15:48:34+01:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "4cbbvj4",
+    "nazev": "Město Třeboň",
+    "ico": "00247618",
+    "adresa": "Město Třeboň,  Palackého nám. 46/II,  37901 Třeboň",
+    "utvar": "Neurčeno",
+    "platce": "1"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "t7x5u75",
+    "nazev": "L.M.electric s.r.o.",
+    "ico": "05533821",
+    "adresa": "Jarošovská 840,  37701 Jindřichův Hradec",
+    "prijemce": "1",
+    "identifikace": "PO"
+   },
+   "predmet": "Rozšíření veřejného osvětlení v Branné - dodatek č. 2 (termín)",
+   "datumUzavreni": "2026-11-19",
+   "cisloSmlouvy": "750/9665/26/2",
+   "schvalil": "Mgr. Aleš Kolář",
+   "cenaNeuvedena": "Cena se nemění.",
+   "navazanyZaznam": "37436189"
+  },
+  "platnyZaznam": "1",
+  "navazanyZaznam": "https://smlouvy.gov.cz/smlouva/37436189"
  }
 ]
