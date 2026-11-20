@@ -1,5 +1,1077 @@
 [
   {
+    "id": "dps3-energie",
+    "nazev": "Úspory energie v DPS 3",
+    "popis": "Snížení energetické náročnosti domu s pečovatelskou službou DPS 3.",
+    "oblast": "socialni",
+    "druh": "investicni",
+    "vlastnik_subjekt_id": "00247618",
+    "faze": "pripravuje_se",
+    "faze_jistota": "nase_propojeni",
+    "rozpocet": [
+      {
+        "org": "6227000000",
+        "nazev": "Snížení energetické náročnosti DPS 3",
+        "polozka": "6121",
+        "kapitalova": true,
+        "jistota": "dolozeno",
+        "zmeny": [
+          {
+            "datum": "2026-10-21",
+            "cislo_ro": 56,
+            "organ": "rada",
+            "zmena": -1165000.0,
+            "rozpocet": {
+              "schvaleny": 14000000.0,
+              "pred_ro": 7250000.0,
+              "po_ro": 6085000.0,
+              "fond": null,
+              "citace": "56.            0       6227000000     750         3612       6121          14 000 000       7 250 000     - 1 165 000      6 085 000"
+            },
+            "usneseni_id": "rm-2026-j113-u527",
+            "ro_id": "rm-2026-j113-u527-p1"
+          }
+        ],
+        "schvaleny": 14000000.0,
+        "po_poslednim_ro": 6085000.0
+      }
+    ],
+    "casti": [],
+    "souhrn": {
+      "rozpocet": {
+        "celkem": 6085000.0,
+        "investicni": 6085000.0,
+        "neinvesticni": 0.0,
+        "druh": "rozpocet_upraveny",
+        "s_dph": null,
+        "polozek": 1,
+        "jistota": "dolozeno"
+      },
+      "smluvni_bez_dph": {
+        "celkem": null,
+        "druh": "smluvni",
+        "s_dph": false,
+        "mena": "CZK",
+        "po_dodatcich": null,
+        "neuplne": [],
+        "jistota": "nase_propojeni"
+      },
+      "smluvni_s_dph": {
+        "celkem": null,
+        "druh": "smluvni",
+        "s_dph": true,
+        "mena": "CZK",
+        "po_dodatcich": null,
+        "neuplne": [],
+        "jistota": "nase_propojeni"
+      }
+    },
+    "zakazky": [],
+    "smlouvy": [],
+    "usneseni": [
+      {
+        "id": "rm-2026-j113-u527",
+        "cislo": "RM 527/2026-113",
+        "datum": "2026-10-21",
+        "tema": "Sportovní hala – dodatek č. 5 ke smlouvě o dílo a rozpočtové opatření č. 56",
+        "tema_ai": true,
+        "shrnuti": "Rada přesunula 1 165 000 Kč z položky Snížení energetické náročnosti DPS 3 do položky Ubytování sportovní hala a schválila dodatek č. 5 ke smlouvě o dílo na nástavbu a přístavbu ubytování, jehož předmětem je změna ceny díla; nová cena v usnesení uvedena není.",
+        "shrnuti_ai": true,
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-21",
+          "strany": [
+            8
+          ],
+          "text": "jehož předmětem je změna ceny díla."
+        },
+        "overeni": "overeno_kodem",
+        "vysledek_hlasovani": "prijato",
+        "jistota": "dolozeno"
+      }
+    ],
+    "posledni_dodatek": {},
+    "udalosti": [
+      {
+        "datum": "2026-10-21",
+        "typ": "rozpocet",
+        "text": "Rozpočtové opatření č. 56",
+        "zmena": -1165000.0,
+        "polozka": "Snížení energetické náročnosti DPS 3",
+        "zdroj_id": "rm-2026-j113-u527-p1",
+        "jistota": "dolozeno"
+      }
+    ],
+    "posledni_udalost": {
+      "datum": "2026-10-21",
+      "typ": "rozpocet",
+      "text": "Rozpočtové opatření č. 56",
+      "zmena": -1165000.0,
+      "polozka": "Snížení energetické náročnosti DPS 3",
+      "zdroj_id": "rm-2026-j113-u527-p1",
+      "jistota": "dolozeno"
+    }
+  },
+  {
+    "id": "fve-cov-brilice",
+    "nazev": "Fotovoltaika na ČOV Břilice",
+    "popis": "Fotovoltaická elektrárna 58 kWp na střechách čistírny odpadních vod v Břilicích.",
+    "oblast": "voda_odpady",
+    "druh": "investicni",
+    "vlastnik_subjekt_id": "00247618",
+    "faze": "probiha",
+    "faze_jistota": "nase_propojeni",
+    "rozpocet": [],
+    "casti": [
+      {
+        "role": "stavba",
+        "dodavatel": {
+          "nazev": "VSV Tech s.r.o.",
+          "jmeno_podnikatele": null
+        },
+        "puvodni": {
+          "bez_dph": 1123487.0,
+          "s_dph": 1359419.27,
+          "zdroj_id": "ezak-VZ-966",
+          "url": "https://zakazky.mesto-trebon.cz/contract_display_966.html"
+        },
+        "vazba_dodatku": "nase_propojeni",
+        "dodatky": [],
+        "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
+        "cena_po_dodatcich": 1123487.0,
+        "cena_po_dodatcich_s_dph": 1359419.27,
+        "dodatky_bez_dph": null
+      },
+      {
+        "role": "projekt",
+        "dodavatel": {
+          "nazev": "PLOSAB s.r.o.",
+          "jmeno_podnikatele": null
+        },
+        "puvodni": {
+          "bez_dph": 84000.0,
+          "s_dph": 101640.0,
+          "zdroj_id": "rs-37703157",
+          "url": "https://smlouvy.gov.cz/smlouva/37703157"
+        },
+        "vazba_dodatku": "dolozeno",
+        "dodatky": [],
+        "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
+        "cena_po_dodatcich": 84000.0,
+        "cena_po_dodatcich_s_dph": 101640.0,
+        "dodatky_bez_dph": null
+      }
+    ],
+    "souhrn": {
+      "rozpocet": {
+        "celkem": null,
+        "investicni": null,
+        "neinvesticni": null,
+        "druh": "rozpocet_upraveny",
+        "s_dph": null,
+        "polozek": 0,
+        "jistota": "nevime"
+      },
+      "smluvni_bez_dph": {
+        "celkem": 1207487.0,
+        "druh": "smluvni",
+        "s_dph": false,
+        "mena": "CZK",
+        "po_dodatcich": 1207487.0,
+        "neuplne": [],
+        "jistota": "nase_propojeni"
+      },
+      "smluvni_s_dph": {
+        "celkem": 1461059.27,
+        "druh": "smluvni",
+        "s_dph": true,
+        "mena": "CZK",
+        "po_dodatcich": 1461059.27,
+        "neuplne": [],
+        "jistota": "nase_propojeni"
+      }
+    },
+    "zakazky": [
+      {
+        "id": "ezak-VZ-966",
+        "nazev": "Instalace FVE 58,0 kWp na střechy objektu ČOV Břilice, Třeboň",
+        "role": "stavba",
+        "stav": "dokončen",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_966.html",
+        "casti": [
+          {
+            "nazev": "Instalace FVE 58,0 kWp na střechy objektu ČOV Břilice, Třeboň",
+            "stav": "dokončen",
+            "pocet_nabidek": 3,
+            "datum_uverejneni": "2026-10-30",
+            "datum_uzavreni_smlouvy": "2026-10-07",
+            "vitezove": [
+              {
+                "nazev": "VSV Tech s.r.o.",
+                "jmeno_podnikatele": null,
+                "smluvni": [
+                  {
+                    "hodnota": 1359419.27,
+                    "s_dph": true,
+                    "druh": "smluvni",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
+                  },
+                  {
+                    "hodnota": 1123487.0,
+                    "s_dph": false,
+                    "druh": "smluvni",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
+                  }
+                ],
+                "zaplaceno": []
+              }
+            ],
+            "registr_smluv": []
+          }
+        ],
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "smlouvy": [
+      {
+        "id": "rs-37703157",
+        "id_smlouvy": "35408789",
+        "navazuje_na": null,
+        "cislo_smlouvy": "750/9483/26",
+        "predmet": "Vypracování projektové dokumentace pro provedení stavby včetně rozpočtu a výkazu výměr pro výběrové řízení na instalaci fotovoltaické výrobny elektřiny na objektech v areálu ČOV Třeboň, Břilice čp. 303",
+        "role": "projekt",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2026-04-24",
+        "strany": [
+          {
+            "nazev": "PLOSAB s.r.o.",
+            "jmeno_podnikatele": null
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 84000.0,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 101640.0,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/37703157",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-39840721",
+        "id_smlouvy": "37464277",
+        "navazuje_na": null,
+        "cislo_smlouvy": "750/9780/26",
+        "predmet": "Instalace FVE 58,0 kWp na střechy objektu ČOV Břilice, Třeboň",
+        "role": "stavba",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2026-10-07",
+        "strany": [
+          {
+            "nazev": "VSV Tech s.r.o.",
+            "jmeno_podnikatele": null
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 1123487.0,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 1359419.27,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/39840721",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "usneseni": [],
+    "posledni_dodatek": {},
+    "udalosti": [
+      {
+        "datum": "2026-04-24",
+        "typ": "smlouva",
+        "text": "Vypracování projektové dokumentace pro provedení stavby včetně rozpočtu a výkazu výměr pro výběrové řízení na instalaci fotovoltaické výrobny elektřiny na objektech v areálu ČOV Třeboň, Břilice čp. 303",
+        "role": "projekt",
+        "zdroj_id": "rs-37703157",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-10-07",
+        "typ": "smlouva",
+        "text": "Instalace FVE 58,0 kWp na střechy objektu ČOV Břilice, Třeboň",
+        "role": "stavba",
+        "zdroj_id": "rs-39840721",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-10-30",
+        "typ": "soutez",
+        "text": "Soutěž: Instalace FVE 58,0 kWp na střechy objektu ČOV Břilice, Třeboň",
+        "role": "stavba",
+        "zdroj_id": "ezak-VZ-966",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "posledni_udalost": {
+      "datum": "2026-10-30",
+      "typ": "soutez",
+      "text": "Soutěž: Instalace FVE 58,0 kWp na střechy objektu ČOV Břilice, Třeboň",
+      "role": "stavba",
+      "zdroj_id": "ezak-VZ-966",
+      "jistota": "nase_propojeni"
+    }
+  },
+  {
+    "id": "fve-zs-na-sadech",
+    "nazev": "Fotovoltaika na ZŠ Na Sadech",
+    "popis": "Fotovoltaická elektrárna 38,7 kWp na střeše přístavby ZŠ Na Sadech.",
+    "oblast": "skolstvi",
+    "druh": "investicni",
+    "vlastnik_subjekt_id": "00247618",
+    "faze": "probiha",
+    "faze_jistota": "nase_propojeni",
+    "rozpocet": [],
+    "casti": [
+      {
+        "role": "stavba",
+        "dodavatel": {
+          "nazev": "VSV Tech s.r.o.",
+          "jmeno_podnikatele": null
+        },
+        "puvodni": {
+          "bez_dph": 998761.09,
+          "s_dph": 1208500.92,
+          "zdroj_id": "ezak-VZ-947",
+          "url": "https://zakazky.mesto-trebon.cz/contract_display_947.html"
+        },
+        "vazba_dodatku": "dolozeno",
+        "dodatky": [
+          {
+            "cislo": 1,
+            "bez_dph": 25685.72,
+            "s_dph": 31079.72,
+            "jen_termin": false,
+            "doklad_usneseni": null,
+            "bez_castky": false,
+            "datum": "2026-10-12",
+            "zdroj_id": "rs-39900669",
+            "url": "https://smlouvy.gov.cz/smlouva/39900669"
+          }
+        ],
+        "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
+        "cena_po_dodatcich": 1024446.81,
+        "cena_po_dodatcich_s_dph": 1239580.64,
+        "dodatky_bez_dph": 25685.72
+      }
+    ],
+    "souhrn": {
+      "rozpocet": {
+        "celkem": null,
+        "investicni": null,
+        "neinvesticni": null,
+        "druh": "rozpocet_upraveny",
+        "s_dph": null,
+        "polozek": 0,
+        "jistota": "nevime"
+      },
+      "smluvni_bez_dph": {
+        "celkem": 998761.09,
+        "druh": "smluvni",
+        "s_dph": false,
+        "mena": "CZK",
+        "po_dodatcich": 1024446.81,
+        "neuplne": [],
+        "jistota": "nase_propojeni"
+      },
+      "smluvni_s_dph": {
+        "celkem": 1208500.92,
+        "druh": "smluvni",
+        "s_dph": true,
+        "mena": "CZK",
+        "po_dodatcich": 1239580.64,
+        "neuplne": [],
+        "jistota": "nase_propojeni"
+      }
+    },
+    "zakazky": [
+      {
+        "id": "ezak-VZ-947",
+        "nazev": "Instalace FVE 38,7 kWp na střeše přístavby ZŠ Na Sadech, Třeboň",
+        "role": "stavba",
+        "stav": "dokončen",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_947.html",
+        "casti": [
+          {
+            "nazev": "Instalace FVE 38,7 kWp na střeše přístavby ZŠ Na Sadech, Třeboň",
+            "stav": "dokončen",
+            "pocet_nabidek": 7,
+            "datum_uverejneni": "2026-07-21",
+            "datum_uzavreni_smlouvy": "2026-08-13",
+            "vitezove": [
+              {
+                "nazev": "VSV Tech s.r.o.",
+                "jmeno_podnikatele": null,
+                "smluvni": [
+                  {
+                    "hodnota": 1208500.92,
+                    "s_dph": true,
+                    "druh": "smluvni",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
+                  },
+                  {
+                    "hodnota": 998761.09,
+                    "s_dph": false,
+                    "druh": "smluvni",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
+                  }
+                ],
+                "zaplaceno": []
+              }
+            ],
+            "registr_smluv": [
+              "https://smlouvy.gov.cz/smlouva/39122658"
+            ]
+          }
+        ],
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "smlouvy": [
+      {
+        "id": "rs-39122658",
+        "id_smlouvy": "36773470",
+        "navazuje_na": null,
+        "cislo_smlouvy": "750/9681/26",
+        "predmet": "SND Instalace FVE 38,7 kWp na střeše přístavby ZŠ Na Sadech.",
+        "role": "stavba",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2026-08-13",
+        "strany": [
+          {
+            "nazev": "VSV Tech s.r.o.",
+            "jmeno_podnikatele": null
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 998761.09,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 1208500.92,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/39122658",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-39900669",
+        "id_smlouvy": "37521725",
+        "navazuje_na": "36773470",
+        "cislo_smlouvy": "750/9681/26/1",
+        "predmet": "SND Instalace FVE 38,7 kWp na střeše přístavby ZŠ Na Sadech - Dodatek č. 1.",
+        "role": "stavba",
+        "dodatek_cislo": 1,
+        "datum_uzavreni": "2026-10-12",
+        "strany": [
+          {
+            "nazev": "VSV Tech s.r.o.",
+            "jmeno_podnikatele": null
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 25685.72,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 31079.72,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/39900669",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "usneseni": [
+      {
+        "id": "rm-2026-j112-u508",
+        "cislo": "RM 508/2026-112",
+        "datum": "2026-10-07",
+        "tema": "Dodatek č. 1 ke smlouvě o instalaci fotovoltaiky na přístavbě ZŠ Na Sadech",
+        "tema_ai": true,
+        "shrnuti": "Rada schválila dodatek, kterým se mění rozsah díla a cena stoupá o 25 685,72 Kč bez DPH na 1 024 446,81 Kč bez DPH.",
+        "shrnuti_ai": true,
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-07",
+          "strany": [
+            6
+          ],
+          "text": "cena díla se zvyšuje o částku 25 685,72 Kč bez DPH na částku 1 024 446,81 Kč bez DPH."
+        },
+        "overeni": "overeno_kodem",
+        "vysledek_hlasovani": "prijato",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "posledni_dodatek": {
+      "stavba": 1
+    },
+    "udalosti": [
+      {
+        "datum": "2026-07-21",
+        "typ": "soutez",
+        "text": "Soutěž: Instalace FVE 38,7 kWp na střeše přístavby ZŠ Na Sadech, Třeboň",
+        "role": "stavba",
+        "zdroj_id": "ezak-VZ-947",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-08-13",
+        "typ": "smlouva",
+        "text": "SND Instalace FVE 38,7 kWp na střeše přístavby ZŠ Na Sadech.",
+        "role": "stavba",
+        "zdroj_id": "rs-39122658",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-10-07",
+        "typ": "usneseni",
+        "text": "Dodatek č. 1 ke smlouvě o instalaci fotovoltaiky na přístavbě ZŠ Na Sadech",
+        "text_ai": true,
+        "overeni": "overeno_kodem",
+        "zdroj_id": "rm-2026-j112-u508",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-10-12",
+        "typ": "dodatek",
+        "text": "SND Instalace FVE 38,7 kWp na střeše přístavby ZŠ Na Sadech - Dodatek č. 1.",
+        "role": "stavba",
+        "zdroj_id": "rs-39900669",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "posledni_udalost": {
+      "datum": "2026-10-12",
+      "typ": "dodatek",
+      "text": "SND Instalace FVE 38,7 kWp na střeše přístavby ZŠ Na Sadech - Dodatek č. 1.",
+      "role": "stavba",
+      "zdroj_id": "rs-39900669",
+      "jistota": "nase_propojeni"
+    }
+  },
+  {
+    "id": "hrbitov-sv-alzbety",
+    "nazev": "Hřbitov sv. Alžběty – stavební úpravy",
+    "popis": "Příprava stavebních úprav hřbitova sv. Alžběty v Třeboni; zatím projektová dokumentace.",
+    "oblast": "jine",
+    "druh": "investicni",
+    "vlastnik_subjekt_id": "00247618",
+    "faze": "pripravuje_se",
+    "faze_jistota": "nase_propojeni",
+    "rozpocet": [],
+    "casti": [
+      {
+        "role": "projekt",
+        "dodavatel": {
+          "nazev": "JPS J. Hradec s.r.o.",
+          "jmeno_podnikatele": null
+        },
+        "puvodni": {
+          "bez_dph": 795000.0,
+          "s_dph": 961950.0,
+          "zdroj_id": "rs-38781444",
+          "url": "https://smlouvy.gov.cz/smlouva/38781444"
+        },
+        "vazba_dodatku": "dolozeno",
+        "dodatky": [],
+        "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
+        "cena_po_dodatcich": 795000.0,
+        "cena_po_dodatcich_s_dph": 961950.0,
+        "dodatky_bez_dph": null
+      }
+    ],
+    "souhrn": {
+      "rozpocet": {
+        "celkem": null,
+        "investicni": null,
+        "neinvesticni": null,
+        "druh": "rozpocet_upraveny",
+        "s_dph": null,
+        "polozek": 0,
+        "jistota": "nevime"
+      },
+      "smluvni_bez_dph": {
+        "celkem": 795000.0,
+        "druh": "smluvni",
+        "s_dph": false,
+        "mena": "CZK",
+        "po_dodatcich": 795000.0,
+        "neuplne": [],
+        "jistota": "nase_propojeni"
+      },
+      "smluvni_s_dph": {
+        "celkem": 961950.0,
+        "druh": "smluvni",
+        "s_dph": true,
+        "mena": "CZK",
+        "po_dodatcich": 961950.0,
+        "neuplne": [],
+        "jistota": "nase_propojeni"
+      }
+    },
+    "zakazky": [],
+    "smlouvy": [
+      {
+        "id": "rs-38781444",
+        "id_smlouvy": "36444220",
+        "navazuje_na": null,
+        "cislo_smlouvy": "750/9635/26",
+        "predmet": "Zpracování PD - stavební úpravy hřbitova sv. Alžběty",
+        "role": "projekt",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2026-07-15",
+        "strany": [
+          {
+            "nazev": "JPS J. Hradec s.r.o.",
+            "jmeno_podnikatele": null
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 795000.0,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 961950.0,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/38781444",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "usneseni": [],
+    "posledni_dodatek": {},
+    "udalosti": [
+      {
+        "datum": "2026-07-15",
+        "typ": "smlouva",
+        "text": "Zpracování PD - stavební úpravy hřbitova sv. Alžběty",
+        "role": "projekt",
+        "zdroj_id": "rs-38781444",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "posledni_udalost": {
+      "datum": "2026-07-15",
+      "typ": "smlouva",
+      "text": "Zpracování PD - stavební úpravy hřbitova sv. Alžběty",
+      "role": "projekt",
+      "zdroj_id": "rs-38781444",
+      "jistota": "nase_propojeni"
+    }
+  },
+  {
+    "id": "mk-hermankova-daskabat",
+    "nazev": "Ulice Heřmánkova a Daskabát",
+    "popis": "Stavební úpravy místních komunikací v ulicích Heřmánkova a Daskabát v Třeboni.",
+    "oblast": "doprava",
+    "druh": "investicni",
+    "vlastnik_subjekt_id": "00247618",
+    "faze": "probiha",
+    "faze_jistota": "nase_propojeni",
+    "rozpocet": [],
+    "casti": [
+      {
+        "role": "stavba",
+        "dodavatel": {
+          "nazev": "VKB stavby s.r.o.",
+          "jmeno_podnikatele": null
+        },
+        "puvodni": {
+          "bez_dph": 21849088.69,
+          "s_dph": 26437397.31,
+          "zdroj_id": "ezak-VZ-949",
+          "url": "https://zakazky.mesto-trebon.cz/contract_display_949.html"
+        },
+        "vazba_dodatku": "nase_propojeni",
+        "dodatky": [],
+        "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
+        "cena_po_dodatcich": 21849088.69,
+        "cena_po_dodatcich_s_dph": 26437397.31,
+        "dodatky_bez_dph": null
+      },
+      {
+        "role": "projekt",
+        "dodavatel": {
+          "nazev": "INVENTE, s.r.o.",
+          "jmeno_podnikatele": null
+        },
+        "puvodni": {
+          "bez_dph": 876000.0,
+          "s_dph": 1059960.0,
+          "zdroj_id": "ezak-VZ-831",
+          "url": "https://zakazky.mesto-trebon.cz/contract_display_831.html"
+        },
+        "vazba_dodatku": null,
+        "dodatky": [],
+        "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
+        "cena_po_dodatcich": 876000.0,
+        "cena_po_dodatcich_s_dph": 1059960.0,
+        "dodatky_bez_dph": null
+      },
+      {
+        "role": "administrace",
+        "dodavatel": {
+          "nazev": "fyzická osoba",
+          "jmeno_podnikatele": "Mgr. Jakub Grafnetter, advokát"
+        },
+        "puvodni": {
+          "bez_dph": 60000.0,
+          "s_dph": 72600.0,
+          "zdroj_id": "rs-39177982",
+          "url": "https://smlouvy.gov.cz/smlouva/39177982"
+        },
+        "vazba_dodatku": "dolozeno",
+        "dodatky": [],
+        "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
+        "cena_po_dodatcich": 60000.0,
+        "cena_po_dodatcich_s_dph": 72600.0,
+        "dodatky_bez_dph": null
+      }
+    ],
+    "souhrn": {
+      "rozpocet": {
+        "celkem": null,
+        "investicni": null,
+        "neinvesticni": null,
+        "druh": "rozpocet_upraveny",
+        "s_dph": null,
+        "polozek": 0,
+        "jistota": "nevime"
+      },
+      "smluvni_bez_dph": {
+        "celkem": 22785088.69,
+        "druh": "smluvni",
+        "s_dph": false,
+        "mena": "CZK",
+        "po_dodatcich": 22785088.69,
+        "neuplne": [],
+        "jistota": "nase_propojeni"
+      },
+      "smluvni_s_dph": {
+        "celkem": 27569957.31,
+        "druh": "smluvni",
+        "s_dph": true,
+        "mena": "CZK",
+        "po_dodatcich": 27569957.31,
+        "neuplne": [],
+        "jistota": "nase_propojeni"
+      }
+    },
+    "zakazky": [
+      {
+        "id": "ezak-VZ-831",
+        "nazev": "Zpracování projektové dokumentace – Stavební úpravy MK v ul. Souběžná, Heřmánkova, Daskabát v Třeboni",
+        "role": "projekt",
+        "stav": "dokončen",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_831.html",
+        "casti": [
+          {
+            "nazev": "Zpracování projektové dokumentace – Stavební úpravy MK v ul. Souběžná, Heřmánkova, Daskabát v Třeboni",
+            "stav": "dokončen",
+            "pocet_nabidek": 2,
+            "datum_uverejneni": "2025-02-05",
+            "datum_uzavreni_smlouvy": "2025-02-04",
+            "vitezove": [
+              {
+                "nazev": "INVENTE, s.r.o.",
+                "jmeno_podnikatele": null,
+                "smluvni": [
+                  {
+                    "hodnota": 1059960.0,
+                    "s_dph": true,
+                    "druh": "smluvni",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
+                  },
+                  {
+                    "hodnota": 876000.0,
+                    "s_dph": false,
+                    "druh": "smluvni",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
+                  }
+                ],
+                "zaplaceno": [
+                  {
+                    "obdobi": "2025",
+                    "hodnota": 1038180.0,
+                    "s_dph": true
+                  },
+                  {
+                    "obdobi": "2025",
+                    "hodnota": 858000.0,
+                    "s_dph": false
+                  }
+                ]
+              }
+            ],
+            "registr_smluv": []
+          }
+        ],
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "ezak-VZ-949",
+        "nazev": "Stavební úpravy MK v ul. Heřmánkova a Daskabát v Třeboni",
+        "role": "stavba",
+        "stav": "dokončen",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_949.html",
+        "casti": [
+          {
+            "nazev": "Stavební úpravy MK v ul. Heřmánkova a Daskabát v Třeboni",
+            "stav": "dokončen",
+            "pocet_nabidek": 4,
+            "datum_uverejneni": "2026-08-12",
+            "datum_uzavreni_smlouvy": "2026-11-06",
+            "vitezove": [
+              {
+                "nazev": "VKB stavby s.r.o.",
+                "jmeno_podnikatele": null,
+                "smluvni": [
+                  {
+                    "hodnota": 26437397.31,
+                    "s_dph": true,
+                    "druh": "smluvni",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
+                  },
+                  {
+                    "hodnota": 21849088.69,
+                    "s_dph": false,
+                    "druh": "smluvni",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
+                  }
+                ],
+                "zaplaceno": []
+              }
+            ],
+            "registr_smluv": []
+          }
+        ],
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "smlouvy": [
+      {
+        "id": "rs-39177982",
+        "id_smlouvy": "36826706",
+        "navazuje_na": null,
+        "cislo_smlouvy": "750/9686/26",
+        "predmet": "Administrace zadávacího řízení VZ Stavební úpravy MK v ul. Heřmánkova a Daskabát v Třeboni",
+        "role": "administrace",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2026-08-19",
+        "strany": [
+          {
+            "nazev": "fyzická osoba",
+            "jmeno_podnikatele": "Mgr. Jakub Grafnetter, advokát"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 60000.0,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 72600.0,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/39177982",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-40262621",
+        "id_smlouvy": "37868753",
+        "navazuje_na": null,
+        "cislo_smlouvy": "750/9799/26",
+        "predmet": "Stavební úpravy MK v ul. Heřmánkova a Daskabát v Třeboni",
+        "role": "stavba",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2026-11-06",
+        "strany": [
+          {
+            "nazev": "VKB stavby s.r.o.",
+            "jmeno_podnikatele": null
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 21849088.69,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 26437397.31,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/40262621",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "usneseni": [
+      {
+        "id": "rm-2026-j112-u506",
+        "cislo": "RM 506/2026-112",
+        "datum": "2026-10-07",
+        "tema": "Stavební úpravy místních komunikací Heřmánkova a Daskabát – výběr zhotovitele",
+        "tema_ai": true,
+        "shrnuti": "Rada rozhodla, že nejvýhodnější nabídku na stavební úpravy komunikací v ulicích Heřmánkova a Daskabát podala společnost VKB stavby s.r.o., a schválila s ní smlouvu o dílo.",
+        "shrnuti_ai": true,
+        "citace": {
+          "dokument_id": "zapis-rm-2026-10-07",
+          "strany": [
+            5
+          ],
+          "text": "nejvýhodnější nabídkou je nabídka s nejnižší nabídkovou cenou podaná společností VKB stavby s.r.o."
+        },
+        "overeni": "overeno_kodem",
+        "vysledek_hlasovani": "prijato",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "posledni_dodatek": {},
+    "udalosti": [
+      {
+        "datum": "2025-02-05",
+        "typ": "soutez",
+        "text": "Soutěž: Zpracování projektové dokumentace – Stavební úpravy MK v ul. Souběžná, Heřmánkova, Daskabát v Třeboni",
+        "role": "projekt",
+        "zdroj_id": "ezak-VZ-831",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-08-12",
+        "typ": "soutez",
+        "text": "Soutěž: Stavební úpravy MK v ul. Heřmánkova a Daskabát v Třeboni",
+        "role": "stavba",
+        "zdroj_id": "ezak-VZ-949",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-08-19",
+        "typ": "smlouva",
+        "text": "Administrace zadávacího řízení VZ Stavební úpravy MK v ul. Heřmánkova a Daskabát v Třeboni",
+        "role": "administrace",
+        "zdroj_id": "rs-39177982",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-10-07",
+        "typ": "usneseni",
+        "text": "Stavební úpravy místních komunikací Heřmánkova a Daskabát – výběr zhotovitele",
+        "text_ai": true,
+        "overeni": "overeno_kodem",
+        "zdroj_id": "rm-2026-j112-u506",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-11-06",
+        "typ": "smlouva",
+        "text": "Stavební úpravy MK v ul. Heřmánkova a Daskabát v Třeboni",
+        "role": "stavba",
+        "zdroj_id": "rs-40262621",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "posledni_udalost": {
+      "datum": "2026-11-06",
+      "typ": "smlouva",
+      "text": "Stavební úpravy MK v ul. Heřmánkova a Daskabát v Třeboni",
+      "role": "stavba",
+      "zdroj_id": "rs-40262621",
+      "jistota": "nase_propojeni"
+    }
+  },
+  {
     "id": "pristavba-telocvicen",
     "nazev": "Přístavba dvou tělocvičen sportovní haly",
     "popis": "Stavba dvou nových tělocvičen jako přístavby sportovní haly v Třeboni.",
@@ -928,6 +2000,177 @@
       "text": "Přístavba dvou tělocvičen sportovní haly Třeboň - dodatek č. 5",
       "role": "stavba",
       "zdroj_id": "rs-40163777",
+      "jistota": "nase_propojeni"
+    }
+  },
+  {
+    "id": "propustek-brilice",
+    "nazev": "Větší propustek v Břilicích",
+    "popis": "Zkapacitnění propustku v Břilicích.",
+    "oblast": "voda_odpady",
+    "druh": "investicni",
+    "vlastnik_subjekt_id": "00247618",
+    "faze": "probiha",
+    "faze_jistota": "nase_propojeni",
+    "rozpocet": [],
+    "casti": [
+      {
+        "role": "stavba",
+        "dodavatel": {
+          "nazev": "K - BUILDING CB, a.s.",
+          "jmeno_podnikatele": null
+        },
+        "puvodni": {
+          "bez_dph": 1791666.0,
+          "s_dph": 2167915.86,
+          "zdroj_id": "ezak-VZ-960",
+          "url": "https://zakazky.mesto-trebon.cz/contract_display_960.html"
+        },
+        "vazba_dodatku": "nase_propojeni",
+        "dodatky": [],
+        "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
+        "cena_po_dodatcich": 1791666.0,
+        "cena_po_dodatcich_s_dph": 2167915.86,
+        "dodatky_bez_dph": null
+      }
+    ],
+    "souhrn": {
+      "rozpocet": {
+        "celkem": null,
+        "investicni": null,
+        "neinvesticni": null,
+        "druh": "rozpocet_upraveny",
+        "s_dph": null,
+        "polozek": 0,
+        "jistota": "nevime"
+      },
+      "smluvni_bez_dph": {
+        "celkem": 1791666.0,
+        "druh": "smluvni",
+        "s_dph": false,
+        "mena": "CZK",
+        "po_dodatcich": 1791666.0,
+        "neuplne": [],
+        "jistota": "nase_propojeni"
+      },
+      "smluvni_s_dph": {
+        "celkem": 2167915.86,
+        "druh": "smluvni",
+        "s_dph": true,
+        "mena": "CZK",
+        "po_dodatcich": 2167915.86,
+        "neuplne": [],
+        "jistota": "nase_propojeni"
+      }
+    },
+    "zakazky": [
+      {
+        "id": "ezak-VZ-960",
+        "nazev": "Zkapacitnění propustku - Třeboň, Břilice",
+        "role": "stavba",
+        "stav": "dokončen",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_960.html",
+        "casti": [
+          {
+            "nazev": "Zkapacitnění propustku - Třeboň, Břilice",
+            "stav": "dokončen",
+            "pocet_nabidek": 2,
+            "datum_uverejneni": "2026-08-24",
+            "datum_uzavreni_smlouvy": "2026-08-10",
+            "vitezove": [
+              {
+                "nazev": "K - BUILDING CB, a.s.",
+                "jmeno_podnikatele": null,
+                "smluvni": [
+                  {
+                    "hodnota": 2167915.86,
+                    "s_dph": true,
+                    "druh": "smluvni",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
+                  },
+                  {
+                    "hodnota": 1791666.0,
+                    "s_dph": false,
+                    "druh": "smluvni",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
+                  }
+                ],
+                "zaplaceno": []
+              }
+            ],
+            "registr_smluv": []
+          }
+        ],
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "smlouvy": [
+      {
+        "id": "rs-39062598",
+        "id_smlouvy": "36715438",
+        "navazuje_na": null,
+        "cislo_smlouvy": "750/9673/26",
+        "predmet": "Zkapacitnění propustku - Třeboň, Břilice",
+        "role": "stavba",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2026-08-10",
+        "strany": [
+          {
+            "nazev": "K - BUILDING CB, a.s.",
+            "jmeno_podnikatele": null
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 1791666.0,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 2167915.86,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/39062598",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "usneseni": [],
+    "posledni_dodatek": {},
+    "udalosti": [
+      {
+        "datum": "2026-08-10",
+        "typ": "smlouva",
+        "text": "Zkapacitnění propustku - Třeboň, Břilice",
+        "role": "stavba",
+        "zdroj_id": "rs-39062598",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-08-24",
+        "typ": "soutez",
+        "text": "Soutěž: Zkapacitnění propustku - Třeboň, Břilice",
+        "role": "stavba",
+        "zdroj_id": "ezak-VZ-960",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "posledni_udalost": {
+      "datum": "2026-08-24",
+      "typ": "soutez",
+      "text": "Soutěž: Zkapacitnění propustku - Třeboň, Břilice",
+      "role": "stavba",
+      "zdroj_id": "ezak-VZ-960",
       "jistota": "nase_propojeni"
     }
   },

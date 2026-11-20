@@ -1,0 +1,12 @@
+id: fve-zs-na-sadech
+nazev: Fotovoltaika na ZŠ Na Sadech
+popis: Fotovoltaická elektrárna 38,7 kWp na střeše přístavby ZŠ Na Sadech.
+oblast: skolstvi
+druh: investicni
+vlastnik_subjekt_id: "00247618"
+rozpocet:
+  org: []
+  nazvy: []
+vazby:
+  hledat: ["FVE 38,7 kWp"]
+  vyloucit: []

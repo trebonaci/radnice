@@ -1,0 +1,12 @@
+id: propustek-brilice
+nazev: Větší propustek v Břilicích
+popis: Zkapacitnění propustku v Břilicích.
+oblast: voda_odpady
+druh: investicni
+vlastnik_subjekt_id: "00247618"
+rozpocet:
+  org: []
+  nazvy: ["Propustky Břilice"]
+vazby:
+  hledat: ["Zkapacitnění propustku - Třeboň, Břilice"]
+  vyloucit: []

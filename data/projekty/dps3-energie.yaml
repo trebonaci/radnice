@@ -1,0 +1,12 @@
+id: dps3-energie
+nazev: Úspory energie v DPS 3
+popis: Snížení energetické náročnosti domu s pečovatelskou službou DPS 3.
+oblast: socialni
+druh: investicni
+vlastnik_subjekt_id: "00247618"
+rozpocet:
+  org: ["6227000000"]
+  nazvy: []
+vazby:
+  hledat: ["energetické náročnosti DPS 3"]
+  vyloucit: []

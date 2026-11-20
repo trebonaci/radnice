@@ -1,0 +1,12 @@
+id: hrbitov-sv-alzbety
+nazev: Hřbitov sv. Alžběty – stavební úpravy
+popis: Příprava stavebních úprav hřbitova sv. Alžběty v Třeboni; zatím projektová dokumentace.
+oblast: jine
+druh: investicni
+vlastnik_subjekt_id: "00247618"
+rozpocet:
+  org: []
+  nazvy: ["Hřbitov sv. Alžběty – projekt"]
+vazby:
+  hledat: ["stavební úpravy hřbitova sv. Alžběty"]
+  vyloucit: []

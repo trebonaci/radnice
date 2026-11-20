@@ -1,0 +1,12 @@
+id: fve-cov-brilice
+nazev: Fotovoltaika na ČOV Břilice
+popis: Fotovoltaická elektrárna 58 kWp na střechách čistírny odpadních vod v Břilicích.
+oblast: voda_odpady
+druh: investicni
+vlastnik_subjekt_id: "00247618"
+rozpocet:
+  org: []
+  nazvy: []
+vazby:
+  hledat: ["FVE 58,0 kWp", "fotovoltaické výrobny elektřiny na objektech v areálu ČOV"]
+  vyloucit: []
