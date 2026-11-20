@@ -86,9 +86,13 @@ jobs:
                 if (m) { try { stav = JSON.parse(m[1]).code_review; } catch (e) {} }
               }
               if (!stav || stav.status !== 'completed' || stav.commit_sha !== sha) {
-                // u PR od bota se Codex sám nespustí → jednou ho požádat
-                const pozadano = komentare.some(k => (k.body || '').includes('@codex review'));
-                if (!stav && !pozadano) {
+                // Codex se sám nespustí u PR od bota ani u commitu z automatické opravy → požádat, když poslední
+                // žádost je starší než poslední commit PR (#111)
+                const commit = (await github.rest.repos.getCommit({owner, repo, ref: sha})).data;
+                const kdyCommit = commit.commit.committer.date;
+                const pozadano = komentare.some(k => (k.body || '').includes('@codex review') && k.created_at >= kdyCommit);
+                const bezi = stav && stav.status && stav.status !== 'completed';
+                if (!pozadano && !bezi) {
                   await github.rest.issues.createComment({owner, repo, issue_number: pr.number, body: '@codex review'});
                 }
                 core.info(`${kdo}: čeká na Codex review commitu ${sha.slice(0, 7)}`);

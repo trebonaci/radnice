@@ -194,7 +194,12 @@ jobs:
           PR_NUMBER: ${{ github.event.pull_request.number }}
           ORIGINAL_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
         run: |
-          current_head="$(gh api "repos/${GITHUB_REPOSITORY}/pulls/${PR_NUMBER}" --jq '.head.sha')"
+          # API vrací nový head s několikasekundovým zpožděním po pushi (#111, PR #109) → zkusit opakovaně
+          for pokus in 1 2 3 4 5 6; do
+            current_head="$(gh api "repos/${GITHUB_REPOSITORY}/pulls/${PR_NUMBER}" --jq '.head.sha')"
+            [ "$current_head" != "$ORIGINAL_HEAD_SHA" ] && break
+            sleep 10
+          done
           if [ "$current_head" = "$ORIGINAL_HEAD_SHA" ]; then
             gh pr edit "$PR_NUMBER" --add-label potrebuje-cloveka
             gh pr comment "$PR_NUMBER" --body "Claude nahrál nový commit jen tehdy, pokud ověřil a opravil nález. Tentokrát se nový commit neobjevil, proto další automatické kolo zastavuji a předávám PR Ondřejovi."
