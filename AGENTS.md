@@ -34,7 +34,7 @@ Píšeme pro běžného čtenáře, ne pro úředníky: krátce, bez zkratek a �
 ## Pravidla kontroly (review guidelines)
 Při review PR v tomto repozitáři hlídej přednostně (P0/P1):
 1. Každý nový údaj v `data/` má citaci, která doslova existuje ve zdroji, a správný stav `overeni`.
-2. Ve výstupu nejsou jména nevolených osob, IČO ani adresy fyzických osob; úředníci jsou uvedeni funkcí. Výjimka (#93): jméno podnikající fyzické osoby jako dodavatele v poli `jmeno_podnikatele` (bez IČO a adresy).
+2. Ve výstupu nejsou jména nevolených osob, IČO ani adresy fyzických osob; úředníci jsou uvedeni funkcí. Výjimka (#93): jméno podnikající fyzické osoby jako dodavatele v poli `jmeno_podnikatele` (bez IČO a adresy). Jména umělců (autor, režie, účinkující) v názvu nebo popisu veřejné kulturní akce se neskrývají (rozhodnutí Ondřeje 20. 11. 2026, #131); skrývají se fyzické osoby jako smluvní strany a osoby v soukromé roli (příjemci dotací, nájemci, vypůjčitelé, dárci).
 3. Částky různých druhů se nesčítají; u každé je `druh` a `s_dph`.
 4. Výsledek hlasování není zaměněn s obsahem usnesení (`vysledek_hlasovani` vs. `ukony`).
 5. `data/` odpovídá `python -m pipeline.sestav` a CI je zelená.
@@ -46,7 +46,7 @@ Při review PR v tomto repozitáři hlídej přednostně (P0/P1):
 - Druhy částek se nesčítají napříč (odhad ≠ rozpočet ≠ smluvní cena ≠ zaplaceno). Vždy uveď s DPH / bez DPH / neuvedeno.
 - AI nepočítá čísla: čísla se opisují ze zdroje a počítá je testovaný kód.
 - Výstupy AI mají citaci, která se strojově ověří (doslovná shoda ve zdroji), a příznak `*_ai`.
-- Fyzické osoby anonymizovat. Volení zástupci jménem, úředníci funkcí. Podnikající fyzická osoba jako dodavatel města (příjemce plnění v registru, vítěz v E-ZAK) jménem bez IČO a adresy (#93).
+- Fyzické osoby anonymizovat. Volení zástupci jménem, úředníci funkcí. Podnikající fyzická osoba jako dodavatel města (příjemce plnění v registru, vítěz v E-ZAK) jménem bez IČO a adresy (#93). Umělci v názvu veřejné kulturní akce (autor, režie, účinkující) jménem (#131).
 - Do repozitáře ani do promptů nepatří interní dokumenty (GINIS, neveřejné podklady), tokeny a hesla. Tajné hodnoty jen přes GitHub Secrets.
 - Datové sekce píšeme neutrálně. Hodnocení patří jen do `analyzy/` a je podepsané.
 
