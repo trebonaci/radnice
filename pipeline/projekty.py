@@ -214,7 +214,16 @@ def souhrn(rozpocet: list[dict], casti: list[dict]) -> dict:
                if po and len(po) == len(casti) else None,
                "neuplne": [c["role"] for c in casti if c["cena_po_dodatcich"] is None],
                "jistota": "nase_propojeni"}
-    return {"rozpocet": rozpocet_souhrn, "smluvni_bez_dph": smluvni}
+    # totéž s DPH – rozpočet města počítá s cenou včetně DPH, proto karta ukazuje přednostně tento základ
+    znamo_s = [c for c in casti if c["puvodni"] and c["puvodni"].get("s_dph") is not None]
+    po_s = [c for c in casti if c.get("cena_po_dodatcich_s_dph") is not None]
+    smluvni_s = {"celkem": sum(_halere(c["puvodni"]["s_dph"]) for c in znamo_s) / 100 if znamo_s else None,
+                 "druh": "smluvni", "s_dph": True, "mena": "CZK",
+                 "po_dodatcich": sum(_halere(c["cena_po_dodatcich_s_dph"]) for c in po_s) / 100
+                 if po_s and len(po_s) == len(casti) else None,
+                 "neuplne": [c["role"] for c in casti if c.get("cena_po_dodatcich_s_dph") is None],
+                 "jistota": "nase_propojeni"}
+    return {"rozpocet": rozpocet_souhrn, "smluvni_bez_dph": smluvni, "smluvni_s_dph": smluvni_s}
 
 
 def _bez_dph(castky: list[dict]) -> float | None:
