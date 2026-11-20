@@ -361,7 +361,8 @@ def sestav(koren: Path | None = None) -> tuple[dict[str, list], list[str]]:
         sm["predmet"] = anonymizuj_urednici(sm["predmet"], osoby) if sm["predmet"] else sm["predmet"]
         for n in najdi_osobni_udaje(sm["predmet"] or "", osoby):
             sm["predmet"] = sm["predmet"].replace(n, "[jméno]")
-        sm["predmet"] = zakryj_jmena(sm["predmet"], osoby, koren)            # jména bez titulu (#84)
+        if not modul_smlouvy.je_kulturni_akce(sm["predmet"]):                # umělci jménem (#131)
+            sm["predmet"] = zakryj_jmena(sm["predmet"], osoby, koren)        # jména bez titulu (#84)
     chyby += modul_smlouvy.zkontroluj(smlouvy, koren)
     dotace = [d for u in usneseni for d in u.pop("_dotace", [])]
     # stav schválení: rada sama / rada doporučila zastupitelstvu / zastupitelstvo rozhodlo (#115)
