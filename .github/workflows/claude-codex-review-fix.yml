@@ -189,20 +189,77 @@ jobs:
 
       - name: Request Codex to review Claude's new commit
         if: steps.cycle.outputs.run_claude == 'true' && success()
+        uses: actions/github-script@v8
         env:
-          GH_TOKEN: ${{ github.token }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
           ORIGINAL_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
-        run: |
-          # API vrací nový head s několikasekundovým zpožděním po pushi (#111, PR #109) → zkusit opakovaně
-          for _ in 1 2 3 4 5 6; do
-            current_head="$(gh api "repos/${GITHUB_REPOSITORY}/pulls/${PR_NUMBER}" --jq '.head.sha')"
-            [ "$current_head" != "$ORIGINAL_HEAD_SHA" ] && break
-            sleep 10
-          done
-          if [ "$current_head" = "$ORIGINAL_HEAD_SHA" ]; then
-            gh pr edit "$PR_NUMBER" --add-label potrebuje-cloveka
-            gh pr comment "$PR_NUMBER" --body "Claude nahrál nový commit jen tehdy, pokud ověřil a opravil nález. Tentokrát se nový commit neobjevil, proto další automatické kolo zastavuji a předávám PR Ondřejovi."
-            exit 0
-          fi
-          gh pr comment "$PR_NUMBER" --body "@codex review"
+        with:
+          script: |
+            const prNumber = Number(process.env.PR_NUMBER);
+            const originalHead = process.env.ORIGINAL_HEAD_SHA;
+            let currentPr;
+            for (let attempt = 1; attempt <= 6; attempt++) {
+              const {data} = await github.rest.pulls.get({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                pull_number: prNumber,
+              });
+              currentPr = data;
+              if (currentPr.head.sha !== originalHead) break;
+              if (attempt < 6) await new Promise(resolve => setTimeout(resolve, 10000));
+            }
+            if (currentPr.head.sha === originalHead) {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: prNumber,
+                labels: ['potrebuje-cloveka'],
+              });
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: prNumber,
+                body: 'Claude po kontrole nevytvořil nový commit. Automatické kolo zastavuji a předávám PR Ondřejovi.',
+              });
+              return;
+            }
+
+            const comments = await github.paginate(github.rest.issues.listComments, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: prNumber,
+              per_page: 100,
+            });
+            const requestPrefix = `<!-- codex-review-requested:${currentPr.head.sha}:`;
+            if (comments.some(comment =>
+              comment.user?.login === 'github-actions[bot]' &&
+              (comment.body || '').includes(requestPrefix)
+            )) {
+              core.notice(`Codex review already requested for PR #${prNumber} at ${currentPr.head.sha}.`);
+              return;
+            }
+
+            const pullRequestId = currentPr.node_id;
+            if (!currentPr.draft) {
+              await github.graphql(`
+                mutation($pullRequestId: ID!) {
+                  convertPullRequestToDraft(input: {pullRequestId: $pullRequestId}) {
+                    pullRequest { isDraft }
+                  }
+                }`, {pullRequestId});
+            }
+            await github.graphql(`
+              mutation($pullRequestId: ID!) {
+                markPullRequestReadyForReview(input: {pullRequestId: $pullRequestId}) {
+                  pullRequest { isDraft }
+                }
+              }`, {pullRequestId});
+
+            const marker = `<!-- codex-review-requested:${currentPr.head.sha}:${new Date().toISOString()} -->`;
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: prNumber,
+              body: `${marker}\nCodex review requested by transitioning the PR to ready for review.\nSHA: ${currentPr.head.sha}`,
+            });
+            core.notice(`Requested Codex review for PR #${prNumber} at ${currentPr.head.sha} through ready_for_review.`);
