@@ -123,7 +123,12 @@ def sestav_projekt(p: dict, data: dict) -> dict:
     shodne_id = {s["id"] for s in shodne}
     # původní smlouvy, na které dodatky odkazují v registru (`navazanyZaznam`) = doložená vazba
     puvodni = [s for s in data["smlouvy"] if s["id_smlouvy"] in navazane and s["id"] not in shodne_id]
-    for s, jistota in [(x, "nase_propojeni") for x in shodne] + [(x, "dolozeno") for x in puvodni]:
+    vybrane_id = shodne_id | {s["id"] for s in puvodni}
+    vybrane_smlouvy = {s["id_smlouvy"] for s in shodne + puvodni if s.get("id_smlouvy")}
+    # další dodatky odkazující na vybrané původní smlouvy (i s obecným předmětem) – jinak by řada dodatků byla neúplná
+    dalsi = [s for s in data["smlouvy"] if s["id"] not in vybrane_id and s.get("navazuje_na") in vybrane_smlouvy]
+    for s, jistota in ([(x, "nase_propojeni") for x in shodne] + [(x, "dolozeno") for x in puvodni]
+                       + [(x, "dolozeno") for x in dalsi]):
         r_ = role(s["predmet"])
         m = RE_DODATEK.search(s["predmet"] or "")
         smlouvy.append({"id": s["id"], "id_smlouvy": s["id_smlouvy"], "navazuje_na": s.get("navazuje_na"),
@@ -248,6 +253,10 @@ def casti_akce(zakazky: list[dict], smlouvy: list[dict]) -> list[dict]:
             for v in c["vitezove"]:
                 odkazy = set(c.get("registr_smluv") or [])
                 klic = next((k for k, g in volne.items() if g["puvodni"] and g["puvodni"]["url"] in odkazy), None)
+                if not klic:   # shoda podle evidenčního čísla zakázky (doloženo)
+                    cislo = z["id"].removeprefix("ezak-")
+                    klic = next((k for k, g in volne.items()
+                                 if g["puvodni"] and g["puvodni"].get("evidencni_cislo_zakazky") == cislo), None)
                 jistota = "dolozeno" if klic else None
                 if not klic:   # stejná role a stejný dodavatel, jinak jediná zakázka i skupina dané role
                     jmeno = v.get("jmeno_podnikatele") or v["nazev"]
