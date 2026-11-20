@@ -7477,6 +7477,90 @@
     "zdroj": "00247618/2026-1.xml"
   },
   {
+    "id": "ezak-VZ-815",
+    "subjekt_ico": "25179896",
+    "nazev": "Nákupní poukázky pro zaměstnance SLT",
+    "druh": "dodavky",
+    "rezim": "Veřejné zakázky malého rozsahu",
+    "predmet": "Pořízení nákupních poukázek pro zaměstnance SLT. Jedná se o víceúčelový poukaz, kdy předmětem daně z přidané hodnoty bude skutečné předání zboží nebo poskytnutí služby konečnému držiteli poukazu.",
+    "cpv": "18530000",
+    "stav": "ukončeno plnění",
+    "datum_zahajeni": "2024-11-27",
+    "casti": [
+      {
+        "id": "815",
+        "nazev": "Nákupní poukázky pro zaměstnance SLT",
+        "stav": "ukončeno plnění",
+        "druh_rizeni": "otevřená výzva",
+        "datum_uverejneni": "2024-11-27",
+        "lhuta_nabidek": "2024-12-05",
+        "datum_uzavreni_smlouvy": "2024-12-12",
+        "datum_zruseni": null,
+        "pocet_nabidek": 2,
+        "vitezove": [
+          {
+            "nazev": "FLOSMAN s.r.o.",
+            "ico": "09776648",
+            "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
+            "smlouva_uzavrena": true,
+            "castky": [
+              {
+                "hodnota": 1008320.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_s_DPH>1008320.00</smluvni_cena_s_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-815, část 815, dodavatel č. 1"
+              },
+              {
+                "hodnota": 833322.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_bez_DPH>833322.00</smluvni_cena_bez_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-815, část 815, dodavatel č. 1"
+              },
+              {
+                "hodnota": 1008320.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "zaplaceno",
+                "obdobi": "2024",
+                "k_datu": null,
+                "citace": "<cena_za_rok_s_dph>1008320.00</cena_za_rok_s_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-815, část 815, dodavatel č. 1"
+              },
+              {
+                "hodnota": 1008320.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "zaplaceno",
+                "obdobi": "2024",
+                "k_datu": null,
+                "citace": "<cena_za_rok_bez_dph>1008320.00</cena_za_rok_bez_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-815, část 815, dodavatel č. 1"
+              }
+            ]
+          }
+        ],
+        "registr_smluv": [
+          "https://smlouvy.gov.cz/smlouva/31432532"
+        ]
+      }
+    ],
+    "url": "https://zakazky.mesto-trebon.cz/contract_display_815.html",
+    "zdroj": "25179896/2024-2.xml"
+  },
+  {
     "id": "ezak-VZ-814",
     "subjekt_ico": "00247618",
     "nazev": "Zpevněné chodníky v areálu hřbitova sv. Alžběty v Třeboni – III. a IV. etapa",
@@ -7557,6 +7641,34 @@
     ],
     "url": "https://zakazky.mesto-trebon.cz/contract_display_814.html",
     "zdroj": "00247618/2024-2.xml"
+  },
+  {
+    "id": "ezak-VZ-813",
+    "subjekt_ico": "25179896",
+    "nazev": "Dodávka technických plynů - Slatinné lázně Třeboň",
+    "druh": "dodavky",
+    "rezim": "Veřejné zakázky malého rozsahu",
+    "predmet": "Dodávka technických plynů - Slatinné lázně Třeboň",
+    "cpv": "24110000",
+    "stav": "zrušen",
+    "datum_zahajeni": "2024-11-20",
+    "casti": [
+      {
+        "id": "813",
+        "nazev": "Dodávka technických plynů - Slatinné lázně Třeboň",
+        "stav": "zrušen",
+        "druh_rizeni": "otevřená výzva",
+        "datum_uverejneni": "2024-11-20",
+        "lhuta_nabidek": "2024-12-16",
+        "datum_uzavreni_smlouvy": null,
+        "datum_zruseni": "2024-12-16",
+        "pocet_nabidek": 0,
+        "vitezove": [],
+        "registr_smluv": []
+      }
+    ],
+    "url": "https://zakazky.mesto-trebon.cz/contract_display_813.html",
+    "zdroj": "25179896/2024-2.xml"
   },
   {
     "id": "ezak-VZ-811",
@@ -7920,6 +8032,88 @@
     "zdroj": "25179896/2025-1.xml"
   },
   {
+    "id": "ezak-VZ-807",
+    "subjekt_ico": "25179896",
+    "nazev": "Opravy podlahových krytin",
+    "druh": "dodavky",
+    "rezim": "Veřejné zakázky malého rozsahu",
+    "predmet": "Opravy podlahových krytin",
+    "cpv": "45432130",
+    "stav": "ukončeno plnění",
+    "datum_zahajeni": "2024-10-14",
+    "casti": [
+      {
+        "id": "807",
+        "nazev": "Opravy podlahových krytin",
+        "stav": "ukončeno plnění",
+        "druh_rizeni": "otevřená výzva",
+        "datum_uverejneni": "2024-10-14",
+        "lhuta_nabidek": "2024-10-23",
+        "datum_uzavreni_smlouvy": "2024-11-13",
+        "datum_zruseni": null,
+        "pocet_nabidek": 2,
+        "vitezove": [
+          {
+            "nazev": "ANNECY DESIGN s.r.o.",
+            "ico": "06612857",
+            "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
+            "smlouva_uzavrena": true,
+            "castky": [
+              {
+                "hodnota": 491744.56,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_s_DPH>491744.56</smluvni_cena_s_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-807, část 807, dodavatel č. 1"
+              },
+              {
+                "hodnota": 406400.56,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_bez_DPH>406400.56</smluvni_cena_bez_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-807, část 807, dodavatel č. 1"
+              },
+              {
+                "hodnota": 491744.68,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "zaplaceno",
+                "obdobi": "2024",
+                "k_datu": null,
+                "citace": "<cena_za_rok_s_dph>491744.68</cena_za_rok_s_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-807, část 807, dodavatel č. 1"
+              },
+              {
+                "hodnota": 406400.56,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "zaplaceno",
+                "obdobi": "2024",
+                "k_datu": null,
+                "citace": "<cena_za_rok_bez_dph>406400.56</cena_za_rok_bez_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-807, část 807, dodavatel č. 1"
+              }
+            ]
+          }
+        ],
+        "registr_smluv": []
+      }
+    ],
+    "url": "https://zakazky.mesto-trebon.cz/contract_display_807.html",
+    "zdroj": "25179896/2024-2.xml"
+  },
+  {
     "id": "ezak-VZ-805",
     "subjekt_ico": "25179896",
     "nazev": "Zhotovení PD, příkazní činnost a výkon AD pro – Rozšíření balneo provozu – lázeňský dům Aurora – opakované řízení",
@@ -8022,6 +8216,136 @@
     ],
     "url": "https://zakazky.mesto-trebon.cz/contract_display_805.html",
     "zdroj": "25179896/2026-2.xml"
+  },
+  {
+    "id": "ezak-VZ-804",
+    "subjekt_ico": "25179896",
+    "nazev": "Dodávka gastro zařízení",
+    "druh": "dodavky",
+    "rezim": "Veřejné zakázky malého rozsahu",
+    "predmet": "Dodávka gastro zařízení",
+    "cpv": "39141000",
+    "stav": "dokončen",
+    "datum_zahajeni": "2024-10-07",
+    "casti": [
+      {
+        "id": "804",
+        "nazev": "Dodávka gastro zařízení",
+        "stav": "dokončen",
+        "druh_rizeni": "otevřená výzva",
+        "datum_uverejneni": "2024-10-07",
+        "lhuta_nabidek": "2024-10-17",
+        "datum_uzavreni_smlouvy": "2024-10-31",
+        "datum_zruseni": null,
+        "pocet_nabidek": 3,
+        "vitezove": [
+          {
+            "nazev": "Gastro Hygiena CB s.r.o.",
+            "ico": "28100051",
+            "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
+            "smlouva_uzavrena": true,
+            "castky": [
+              {
+                "hodnota": 226209.5,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_s_DPH>226209.50</smluvni_cena_s_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-804, část 804, dodavatel č. 1"
+              },
+              {
+                "hodnota": 186950.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_bez_DPH>186950.00</smluvni_cena_bez_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-804, část 804, dodavatel č. 1"
+              },
+              {
+                "hodnota": 186950.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "zaplaceno",
+                "obdobi": "2024",
+                "k_datu": null,
+                "citace": "<cena_za_rok_bez_dph>186950.00</cena_za_rok_bez_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-804, část 804, dodavatel č. 1"
+              }
+            ]
+          }
+        ],
+        "registr_smluv": []
+      }
+    ],
+    "url": "https://zakazky.mesto-trebon.cz/contract_display_804.html",
+    "zdroj": "25179896/2024-2.xml"
+  },
+  {
+    "id": "ezak-VZ-801",
+    "subjekt_ico": "25179896",
+    "nazev": "Tvorba MLP a dílčí grafické práce",
+    "druh": "sluzby",
+    "rezim": "Veřejné zakázky malého rozsahu",
+    "predmet": "Část I. - Tvorba měsíčníku Lázeňská pohoda (MLP)\r\nPředmětem plnění veřejné zakázky jsou pravidelné služby spojené s přípravou a realizací redakčních, grafických a fotografických prací a jazykové korektury pro tvorbu měsíčníku Lázeňská pohoda, vč. předtiskových služeb.\r\n\r\nČást II. - Dílčí grafické služby\r\nPředmětem plnění veřejné zakázky jsou grafické, Invenční práce katalogů a ostatních merkantilií zadavatele a další nahodilé redakční, grafické, fotografické a související služby dle jednotlivých objednávek, pokynů a požadavků zadavatele.",
+    "cpv": "79822500",
+    "stav": null,
+    "datum_zahajeni": "2024-09-26",
+    "casti": [
+      {
+        "id": "802",
+        "nazev": "Část I. - Tvorba měsíčníku Lázeňská pohoda (MLP)",
+        "stav": "dokončen",
+        "druh_rizeni": "otevřená výzva",
+        "datum_uverejneni": "2024-09-26",
+        "lhuta_nabidek": "2024-10-11",
+        "datum_uzavreni_smlouvy": "2024-11-28",
+        "datum_zruseni": null,
+        "pocet_nabidek": 3,
+        "vitezove": [
+          {
+            "nazev": "MEUM, s.r.o.",
+            "ico": "29045746",
+            "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
+            "smlouva_uzavrena": true,
+            "castky": []
+          }
+        ],
+        "registr_smluv": []
+      },
+      {
+        "id": "803",
+        "nazev": "Část II. - Dílčí grafické služby",
+        "stav": "dokončen",
+        "druh_rizeni": "otevřená výzva",
+        "datum_uverejneni": "2024-09-26",
+        "lhuta_nabidek": "2024-10-11",
+        "datum_uzavreni_smlouvy": "2024-11-28",
+        "datum_zruseni": null,
+        "pocet_nabidek": 5,
+        "vitezove": [
+          {
+            "nazev": "MEUM, s.r.o.",
+            "ico": "29045746",
+            "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
+            "smlouva_uzavrena": true,
+            "castky": []
+          }
+        ],
+        "registr_smluv": []
+      }
+    ],
+    "url": "https://zakazky.mesto-trebon.cz/contract_display_801.html",
+    "zdroj": "25179896/2024-2.xml"
   },
   {
     "id": "ezak-VZ-800",
@@ -8341,6 +8665,88 @@
     "zdroj": "00247618/2025-2.xml"
   },
   {
+    "id": "ezak-VZ-797",
+    "subjekt_ico": "25179896",
+    "nazev": "Sanace ŽB stropní konstrukce vodárny LDA",
+    "druh": "stavebni",
+    "rezim": "Veřejné zakázky malého rozsahu",
+    "predmet": "Sanace ŽB stropní konstrukce vodárny LDA",
+    "cpv": "45000000",
+    "stav": "ukončeno plnění",
+    "datum_zahajeni": "2024-09-04",
+    "casti": [
+      {
+        "id": "797",
+        "nazev": "Sanace ŽB stropní konstrukce vodárny LDA",
+        "stav": "ukončeno plnění",
+        "druh_rizeni": "otevřená výzva",
+        "datum_uverejneni": "2024-09-04",
+        "lhuta_nabidek": "2024-09-16",
+        "datum_uzavreni_smlouvy": "2024-09-19",
+        "datum_zruseni": null,
+        "pocet_nabidek": 2,
+        "vitezove": [
+          {
+            "nazev": "DV stav s.r.o.",
+            "ico": "28142551",
+            "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
+            "smlouva_uzavrena": true,
+            "castky": [
+              {
+                "hodnota": 2040980.06,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_s_DPH>2040980.06</smluvni_cena_s_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-797, část 797, dodavatel č. 1"
+              },
+              {
+                "hodnota": 1686686.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_bez_DPH>1686686.00</smluvni_cena_bez_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-797, část 797, dodavatel č. 1"
+              },
+              {
+                "hodnota": 2040345.6,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "zaplaceno",
+                "obdobi": "2024",
+                "k_datu": null,
+                "citace": "<cena_za_rok_s_dph>2040345.60</cena_za_rok_s_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-797, část 797, dodavatel č. 1"
+              },
+              {
+                "hodnota": 1686236.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "zaplaceno",
+                "obdobi": "2024",
+                "k_datu": null,
+                "citace": "<cena_za_rok_bez_dph>1686236.00</cena_za_rok_bez_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-797, část 797, dodavatel č. 1"
+              }
+            ]
+          }
+        ],
+        "registr_smluv": []
+      }
+    ],
+    "url": "https://zakazky.mesto-trebon.cz/contract_display_797.html",
+    "zdroj": "25179896/2024-2.xml"
+  },
+  {
     "id": "ezak-VZ-796",
     "subjekt_ico": "25179896",
     "nazev": "Dodávka a implementace online rezervačního systému pro Slatinné lázně Třeboň s.r.o.",
@@ -8443,6 +8849,71 @@
     ],
     "url": "https://zakazky.mesto-trebon.cz/contract_display_796.html",
     "zdroj": "25179896/2026-2.xml"
+  },
+  {
+    "id": "ezak-VZ-795",
+    "subjekt_ico": "25179896",
+    "nazev": "Zhotovení PD, příkazní činnost a výkon AD pro – Rozšíření balneo provozu – lázeňský dům Aurora",
+    "druh": "sluzby",
+    "rezim": "Veřejné zakázky malého rozsahu",
+    "predmet": "Předmětem výběrového řízení jsou:\n-\tprojekční služby (vypracování projektové dokumentace ve stupních a v rozsahu dle závazného vzoru smlouvy), \n-\tslužby obstaravatelské,\n-\tvýkon odborné poradenské činnosti, \n-\tvýkon autorského dozoru, \n-\tveškeré navazující činnosti nezbytné pro vyhotovení projektové dokumentace a získání stavebního povolení pro budoucí veřejné zakázky stavebních prací s pracovním názvem „Rozšíření balneo provozu – lázeňský dům Aurora“. \n\nVypracovaná projektová dokumentace v rámci plnění díla bude objednatelem následně použita pro zadávací řízení na výběr zhotovitele stavby.",
+    "cpv": "71242000",
+    "stav": "zrušen",
+    "datum_zahajeni": "2024-08-28",
+    "casti": [
+      {
+        "id": "795",
+        "nazev": "Zhotovení PD, příkazní činnost a výkon AD pro – Rozšíření balneo provozu – lázeňský dům Aurora",
+        "stav": "zrušen",
+        "druh_rizeni": "otevřená výzva",
+        "datum_uverejneni": "2024-08-28",
+        "lhuta_nabidek": "2024-09-19",
+        "datum_uzavreni_smlouvy": null,
+        "datum_zruseni": "2024-09-24",
+        "pocet_nabidek": 0,
+        "vitezove": [],
+        "registr_smluv": []
+      }
+    ],
+    "url": "https://zakazky.mesto-trebon.cz/contract_display_795.html",
+    "zdroj": "25179896/2024-2.xml"
+  },
+  {
+    "id": "ezak-VZ-779",
+    "subjekt_ico": "25179896",
+    "nazev": "Nákup léčiv a zdravotnického materiálu (II)",
+    "druh": "dodavky",
+    "rezim": "Veřejné zakázky malého rozsahu",
+    "predmet": "Předmětem výběrového řízení je dodávka léčiv a zdravotnického materiálu, a to dle specifikace a za podmínek dle příloh zadávací dokumentace.",
+    "cpv": "33600000",
+    "stav": "dokončen",
+    "datum_zahajeni": "2024-08-28",
+    "casti": [
+      {
+        "id": "779",
+        "nazev": "Nákup léčiv a zdravotnického materiálu (II)",
+        "stav": "dokončen",
+        "druh_rizeni": "uzavřená výzva",
+        "datum_uverejneni": "2024-08-28",
+        "lhuta_nabidek": "2024-08-09",
+        "datum_uzavreni_smlouvy": "2024-08-28",
+        "datum_zruseni": null,
+        "pocet_nabidek": 1,
+        "vitezove": [
+          {
+            "nazev": "MAGISTRA a.s.",
+            "ico": "24801011",
+            "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
+            "smlouva_uzavrena": true,
+            "castky": []
+          }
+        ],
+        "registr_smluv": []
+      }
+    ],
+    "url": "https://zakazky.mesto-trebon.cz/contract_display_779.html",
+    "zdroj": "25179896/2024-2.xml"
   },
   {
     "id": "ezak-VZ-794",
@@ -9197,6 +9668,88 @@
     "zdroj": "00247618/2025-1.xml"
   },
   {
+    "id": "ezak-VZ-773",
+    "subjekt_ico": "25179896",
+    "nazev": "Elektrický pracovní vozík",
+    "druh": "dodavky",
+    "rezim": "Veřejné zakázky malého rozsahu",
+    "predmet": "Elektrický pracovní vozík",
+    "cpv": "34911100",
+    "stav": "dokončen",
+    "datum_zahajeni": "2024-08-14",
+    "casti": [
+      {
+        "id": "773",
+        "nazev": "Elektrický pracovní vozík",
+        "stav": "dokončen",
+        "druh_rizeni": "uzavřená výzva",
+        "datum_uverejneni": "2024-08-14",
+        "lhuta_nabidek": "2024-07-30",
+        "datum_uzavreni_smlouvy": "2024-08-08",
+        "datum_zruseni": null,
+        "pocet_nabidek": 2,
+        "vitezove": [
+          {
+            "nazev": "ITTEC, s.r.o.",
+            "ico": "64574296",
+            "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
+            "smlouva_uzavrena": true,
+            "castky": [
+              {
+                "hodnota": 440983.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_s_DPH>440983.00</smluvni_cena_s_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-773, část 773, dodavatel č. 1"
+              },
+              {
+                "hodnota": 364449.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_bez_DPH>364449.00</smluvni_cena_bez_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-773, část 773, dodavatel č. 1"
+              },
+              {
+                "hodnota": 440983.29,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "zaplaceno",
+                "obdobi": "2024",
+                "k_datu": null,
+                "citace": "<cena_za_rok_s_dph>440983.29</cena_za_rok_s_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-773, část 773, dodavatel č. 1"
+              },
+              {
+                "hodnota": 364449.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "zaplaceno",
+                "obdobi": "2024",
+                "k_datu": null,
+                "citace": "<cena_za_rok_bez_dph>364449.00</cena_za_rok_bez_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-773, část 773, dodavatel č. 1"
+              }
+            ]
+          }
+        ],
+        "registr_smluv": []
+      }
+    ],
+    "url": "https://zakazky.mesto-trebon.cz/contract_display_773.html",
+    "zdroj": "25179896/2024-2.xml"
+  },
+  {
     "id": "ezak-VZ-781",
     "subjekt_ico": "00247618",
     "nazev": "Parkoviště pro potřeby lázní v Lázeňské ulici v Třeboni",
@@ -9383,6 +9936,34 @@
     "zdroj": "00247618/2024-2.xml"
   },
   {
+    "id": "ezak-VZ-778",
+    "subjekt_ico": "25179896",
+    "nazev": "Informační systém pro Slatinné lázně Třeboň – část stravovací",
+    "druh": "dodavky",
+    "rezim": "Podlimitní",
+    "predmet": "Předmětem veřejné zakázky jsou:\n\na) nákup Informačního systému pro Slatinné lázně Třeboň – část stravovací (dále též „Systém“) poskytující a obsluhující požadované agendy dle technických podmínek zadávací dokumentace, dále vytvoření implementační analýzy a následná implementace Systému a jeho integrace se stávajícími systémy, postupné testování a související služby,\nb) zajištění technické podpory na období 8 let s možností prodloužení této doby, vč. služby ServiceDesk, řešení provozních požadavků a incidentů (SLA), údržba a aktualizace Systému, aktualizace legislativy, rozvoj Systému a související služby, \nc) převod příslušných licenčních oprávnění a výkon práv ve smyslu požadavků dle Licenční smlouvy.",
+    "cpv": "72200000",
+    "stav": "zrušen",
+    "datum_zahajeni": "2024-08-02",
+    "casti": [
+      {
+        "id": "778",
+        "nazev": "Informační systém pro Slatinné lázně Třeboň – část stravovací",
+        "stav": "zrušen",
+        "druh_rizeni": "zjednodušené podlimitní řízení",
+        "datum_uverejneni": "2024-08-02",
+        "lhuta_nabidek": "2024-09-03",
+        "datum_uzavreni_smlouvy": null,
+        "datum_zruseni": "2024-09-04",
+        "pocet_nabidek": 0,
+        "vitezove": [],
+        "registr_smluv": []
+      }
+    ],
+    "url": "https://zakazky.mesto-trebon.cz/contract_display_778.html",
+    "zdroj": "25179896/2024-2.xml"
+  },
+  {
     "id": "ezak-VZ-776",
     "subjekt_ico": "00247618",
     "nazev": "Stavební úpravy bytu č. 3 Masarykovo nám. 103, Třeboň",
@@ -9545,6 +10126,88 @@
     ],
     "url": "https://zakazky.mesto-trebon.cz/contract_display_775.html",
     "zdroj": "00247618/2024-2.xml"
+  },
+  {
+    "id": "ezak-VZ-774",
+    "subjekt_ico": "25179896",
+    "nazev": "Obnova vozového parku - etapa I.",
+    "druh": "dodavky",
+    "rezim": "Veřejné zakázky malého rozsahu",
+    "predmet": "Předmětem výběrového řízení je dodávka nového pětimístného dodávkového vozidla (skříňové dodávky) vč. servisních služeb a odkupu stávajícího vozidla (společně dále též „dodávka“).",
+    "cpv": "34136000",
+    "stav": "ukončeno plnění",
+    "datum_zahajeni": "2024-07-21",
+    "casti": [
+      {
+        "id": "774",
+        "nazev": "Obnova vozového parku - etapa I.",
+        "stav": "ukončeno plnění",
+        "druh_rizeni": "otevřená výzva",
+        "datum_uverejneni": "2024-07-21",
+        "lhuta_nabidek": "2024-08-01",
+        "datum_uzavreni_smlouvy": "2024-08-13",
+        "datum_zruseni": null,
+        "pocet_nabidek": 2,
+        "vitezove": [
+          {
+            "nazev": "Milan Král a.s.",
+            "ico": "48203734",
+            "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
+            "smlouva_uzavrena": true,
+            "castky": [
+              {
+                "hodnota": 1184590.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_s_DPH>1184590.00</smluvni_cena_s_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-774, část 774, dodavatel č. 1"
+              },
+              {
+                "hodnota": 979000.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_bez_DPH>979000.00</smluvni_cena_bez_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-774, část 774, dodavatel č. 1"
+              },
+              {
+                "hodnota": 1184590.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "zaplaceno",
+                "obdobi": "2024",
+                "k_datu": null,
+                "citace": "<cena_za_rok_s_dph>1184590.00</cena_za_rok_s_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-774, část 774, dodavatel č. 1"
+              },
+              {
+                "hodnota": 979000.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "zaplaceno",
+                "obdobi": "2024",
+                "k_datu": null,
+                "citace": "<cena_za_rok_bez_dph>979000.00</cena_za_rok_bez_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-774, část 774, dodavatel č. 1"
+              }
+            ]
+          }
+        ],
+        "registr_smluv": []
+      }
+    ],
+    "url": "https://zakazky.mesto-trebon.cz/contract_display_774.html",
+    "zdroj": "25179896/2024-2.xml"
   },
   {
     "id": "ezak-VZ-772",
@@ -9818,6 +10481,465 @@
     "zdroj": "00247618/2025-1.xml"
   },
   {
+    "id": "ezak-VZ-767",
+    "subjekt_ico": "25179896",
+    "nazev": "Dodávka matrací a chráničů",
+    "druh": "dodavky",
+    "rezim": "Veřejné zakázky malého rozsahu",
+    "predmet": "Dodávka matrací a chráničů",
+    "cpv": "39143112",
+    "stav": "ukončeno plnění",
+    "datum_zahajeni": "2024-07-10",
+    "casti": [
+      {
+        "id": "767",
+        "nazev": "Dodávka matrací a chráničů",
+        "stav": "ukončeno plnění",
+        "druh_rizeni": "otevřená výzva",
+        "datum_uverejneni": "2024-07-10",
+        "lhuta_nabidek": "2024-08-05",
+        "datum_uzavreni_smlouvy": "2024-08-12",
+        "datum_zruseni": null,
+        "pocet_nabidek": 3,
+        "vitezove": [
+          {
+            "nazev": "Hilding Anders Česká republika a.s.",
+            "ico": "26173212",
+            "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
+            "smlouva_uzavrena": true,
+            "castky": [
+              {
+                "hodnota": 503249.89,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_s_DPH>503249.89</smluvni_cena_s_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-767, část 767, dodavatel č. 1"
+              },
+              {
+                "hodnota": 415909.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_bez_DPH>415909.00</smluvni_cena_bez_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-767, část 767, dodavatel č. 1"
+              },
+              {
+                "hodnota": 493268.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "zaplaceno",
+                "obdobi": "2024",
+                "k_datu": null,
+                "citace": "<cena_za_rok_s_dph>493268.00</cena_za_rok_s_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-767, část 767, dodavatel č. 1"
+              },
+              {
+                "hodnota": 415908.93,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "zaplaceno",
+                "obdobi": "2024",
+                "k_datu": null,
+                "citace": "<cena_za_rok_bez_dph>415908.93</cena_za_rok_bez_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-767, část 767, dodavatel č. 1"
+              }
+            ]
+          }
+        ],
+        "registr_smluv": []
+      }
+    ],
+    "url": "https://zakazky.mesto-trebon.cz/contract_display_767.html",
+    "zdroj": "25179896/2024-2.xml"
+  },
+  {
+    "id": "ezak-VZ-766",
+    "subjekt_ico": "25179896",
+    "nazev": "Nákup léčiv a zdravotnického materiálu",
+    "druh": "dodavky",
+    "rezim": "Veřejné zakázky malého rozsahu",
+    "predmet": "Předmětem výběrového řízení je dodávka léčiv a zdravotnického materiálu, a to dle specifikace a za podmínek dle příloh zadávací dokumentace.",
+    "cpv": "00000000",
+    "stav": "zrušen",
+    "datum_zahajeni": "2024-06-25",
+    "casti": [
+      {
+        "id": "766",
+        "nazev": "Nákup léčiv a zdravotnického materiálu",
+        "stav": "zrušen",
+        "druh_rizeni": "otevřená výzva",
+        "datum_uverejneni": "2024-06-25",
+        "lhuta_nabidek": "2024-07-09",
+        "datum_uzavreni_smlouvy": null,
+        "datum_zruseni": "2024-07-15",
+        "pocet_nabidek": 0,
+        "vitezove": [],
+        "registr_smluv": []
+      }
+    ],
+    "url": "https://zakazky.mesto-trebon.cz/contract_display_766.html",
+    "zdroj": "25179896/2024-2.xml"
+  },
+  {
+    "id": "ezak-VZ-765",
+    "subjekt_ico": "25179896",
+    "nazev": "Obnova HW (PC a NTB)",
+    "druh": "dodavky",
+    "rezim": "Veřejné zakázky malého rozsahu",
+    "predmet": "Předmětem výběrového řízení je dodávka výpočetní techniky, konkrétně počítačů, notebooků a souvisejícího příslušenství.",
+    "cpv": "00000000",
+    "stav": "ukončeno plnění",
+    "datum_zahajeni": "2024-06-20",
+    "casti": [
+      {
+        "id": "765",
+        "nazev": "Obnova HW (PC a NTB)",
+        "stav": "ukončeno plnění",
+        "druh_rizeni": "otevřená výzva",
+        "datum_uverejneni": "2024-06-20",
+        "lhuta_nabidek": "2024-07-02",
+        "datum_uzavreni_smlouvy": "2024-07-31",
+        "datum_zruseni": null,
+        "pocet_nabidek": 4,
+        "vitezove": [
+          {
+            "nazev": "CSF, s.r.o.",
+            "ico": "25289462",
+            "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
+            "smlouva_uzavrena": true,
+            "castky": [
+              {
+                "hodnota": 1065949.5,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_s_DPH>1065949.50</smluvni_cena_s_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-765, část 765, dodavatel č. 1"
+              },
+              {
+                "hodnota": 880950.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_bez_DPH>880950.00</smluvni_cena_bez_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-765, část 765, dodavatel č. 1"
+              },
+              {
+                "hodnota": 1065949.5,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "zaplaceno",
+                "obdobi": "2024",
+                "k_datu": null,
+                "citace": "<cena_za_rok_s_dph>1065949.50</cena_za_rok_s_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-765, část 765, dodavatel č. 1"
+              },
+              {
+                "hodnota": 880950.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "zaplaceno",
+                "obdobi": "2024",
+                "k_datu": null,
+                "citace": "<cena_za_rok_bez_dph>880950.00</cena_za_rok_bez_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-765, část 765, dodavatel č. 1"
+              }
+            ]
+          }
+        ],
+        "registr_smluv": []
+      }
+    ],
+    "url": "https://zakazky.mesto-trebon.cz/contract_display_765.html",
+    "zdroj": "25179896/2024-2.xml"
+  },
+  {
+    "id": "ezak-VZ-761",
+    "subjekt_ico": "25179896",
+    "nazev": "Dodávka venkovního mobiliáře",
+    "druh": "dodavky",
+    "rezim": "Veřejné zakázky malého rozsahu",
+    "predmet": "Dodávka venkovního mobiliáře",
+    "cpv": "00000000",
+    "stav": null,
+    "datum_zahajeni": "2024-06-05",
+    "casti": [
+      {
+        "id": "762",
+        "nazev": "Část 1- Zahradní hliníkový nábytek",
+        "stav": "ukončeno plnění",
+        "druh_rizeni": "otevřená výzva",
+        "datum_uverejneni": "2024-06-05",
+        "lhuta_nabidek": "2024-06-13",
+        "datum_uzavreni_smlouvy": "2024-06-19",
+        "datum_zruseni": null,
+        "pocet_nabidek": 2,
+        "vitezove": [
+          {
+            "nazev": "DOPPLER CZ spol. s r.o.",
+            "ico": "16190963",
+            "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
+            "smlouva_uzavrena": true,
+            "castky": [
+              {
+                "hodnota": 145870.34,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_s_DPH>145870.34</smluvni_cena_s_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-761, část 762, dodavatel č. 1"
+              },
+              {
+                "hodnota": 120554.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_bez_DPH>120554.00</smluvni_cena_bez_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-761, část 762, dodavatel č. 1"
+              },
+              {
+                "hodnota": 145870.34,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "zaplaceno",
+                "obdobi": "2024",
+                "k_datu": null,
+                "citace": "<cena_za_rok_s_dph>145870.34</cena_za_rok_s_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-761, část 762, dodavatel č. 1"
+              },
+              {
+                "hodnota": 120554.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "zaplaceno",
+                "obdobi": "2024",
+                "k_datu": null,
+                "citace": "<cena_za_rok_bez_dph>120554.00</cena_za_rok_bez_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-761, část 762, dodavatel č. 1"
+              }
+            ]
+          }
+        ],
+        "registr_smluv": []
+      },
+      {
+        "id": "763",
+        "nazev": "Část 2 - Sety ratanového nábytku",
+        "stav": "zrušen",
+        "druh_rizeni": "otevřená výzva",
+        "datum_uverejneni": "2024-06-05",
+        "lhuta_nabidek": "2024-06-13",
+        "datum_uzavreni_smlouvy": null,
+        "datum_zruseni": "2024-06-13",
+        "pocet_nabidek": 0,
+        "vitezove": [],
+        "registr_smluv": []
+      },
+      {
+        "id": "764",
+        "nazev": "Část 3 - Nábytek pro TERASABAR",
+        "stav": "ukončeno plnění",
+        "druh_rizeni": "otevřená výzva",
+        "datum_uverejneni": "2024-06-05",
+        "lhuta_nabidek": "2024-06-13",
+        "datum_uzavreni_smlouvy": "2024-06-17",
+        "datum_zruseni": null,
+        "pocet_nabidek": 3,
+        "vitezove": [
+          {
+            "nazev": "ITALSKY INTERIER s.r.o.",
+            "ico": "06892817",
+            "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
+            "smlouva_uzavrena": true,
+            "castky": [
+              {
+                "hodnota": 371431.3,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_s_DPH>371431.30</smluvni_cena_s_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-761, část 764, dodavatel č. 1"
+              },
+              {
+                "hodnota": 306968.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_bez_DPH>306968.00</smluvni_cena_bez_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-761, část 764, dodavatel č. 1"
+              },
+              {
+                "hodnota": 371431.28,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "zaplaceno",
+                "obdobi": "2024",
+                "k_datu": null,
+                "citace": "<cena_za_rok_s_dph>371431.28</cena_za_rok_s_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-761, část 764, dodavatel č. 1"
+              },
+              {
+                "hodnota": 306968.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "zaplaceno",
+                "obdobi": "2024",
+                "k_datu": null,
+                "citace": "<cena_za_rok_bez_dph>306968.00</cena_za_rok_bez_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-761, část 764, dodavatel č. 1"
+              }
+            ]
+          }
+        ],
+        "registr_smluv": []
+      }
+    ],
+    "url": "https://zakazky.mesto-trebon.cz/contract_display_761.html",
+    "zdroj": "25179896/2024-2.xml"
+  },
+  {
+    "id": "ezak-VZ-758",
+    "subjekt_ico": "25179896",
+    "nazev": "Zemní práce a přesuny přírodního léčivého zdroje pro Slatinné lázně Třeboň s.r.o. - Opakované řízení",
+    "druh": "stavebni",
+    "rezim": "Veřejné zakázky malého rozsahu",
+    "predmet": "Zemní práce a přesuny přírodního léčivého zdroje pro Slatinné lázně Třeboň s.r.o. - Opakované řízení",
+    "cpv": "00000000",
+    "stav": null,
+    "datum_zahajeni": "2024-06-04",
+    "casti": [
+      {
+        "id": "759",
+        "nazev": "Část I.",
+        "stav": "dokončen",
+        "druh_rizeni": "otevřená výzva",
+        "datum_uverejneni": "2024-06-04",
+        "lhuta_nabidek": "2024-06-12",
+        "datum_uzavreni_smlouvy": "2024-07-11",
+        "datum_zruseni": null,
+        "pocet_nabidek": 4,
+        "vitezove": [
+          {
+            "nazev": "HYDRO & KOV s.r.o.",
+            "ico": "27720161",
+            "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
+            "smlouva_uzavrena": true,
+            "castky": [
+              {
+                "hodnota": 4268831.6,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_s_DPH>4268831.60</smluvni_cena_s_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-758, část 759, dodavatel č. 1"
+              },
+              {
+                "hodnota": 3527960.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_bez_DPH>3527960.00</smluvni_cena_bez_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-758, část 759, dodavatel č. 1"
+              }
+            ]
+          }
+        ],
+        "registr_smluv": []
+      },
+      {
+        "id": "760",
+        "nazev": "Část II.",
+        "stav": "dokončen",
+        "druh_rizeni": "otevřená výzva",
+        "datum_uverejneni": "2024-06-04",
+        "lhuta_nabidek": "2024-06-12",
+        "datum_uzavreni_smlouvy": "2024-07-12",
+        "datum_zruseni": null,
+        "pocet_nabidek": 3,
+        "vitezove": [
+          {
+            "nazev": "Marius Pedersen a.s.",
+            "ico": "42194920",
+            "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
+            "smlouva_uzavrena": true,
+            "castky": [
+              {
+                "hodnota": 1401664.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_s_DPH>1401664.00</smluvni_cena_s_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-758, část 760, dodavatel č. 1"
+              },
+              {
+                "hodnota": 1158400.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_bez_DPH>1158400.00</smluvni_cena_bez_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-758, část 760, dodavatel č. 1"
+              }
+            ]
+          }
+        ],
+        "registr_smluv": []
+      }
+    ],
+    "url": "https://zakazky.mesto-trebon.cz/contract_display_758.html",
+    "zdroj": "25179896/2024-2.xml"
+  },
+  {
     "id": "ezak-VZ-754",
     "subjekt_ico": "00247618",
     "nazev": "Rekonstrukce ulice Novohradská a Trocnovské nám. v Třeboni – 2. etapa",
@@ -9876,6 +10998,373 @@
     ],
     "url": "https://zakazky.mesto-trebon.cz/contract_display_754.html",
     "zdroj": "00247618/2024-2.xml"
+  },
+  {
+    "id": "ezak-VZ-744",
+    "subjekt_ico": "25179896",
+    "nazev": "Dodávka zdravotních a rehabilitačních přístrojů",
+    "druh": "dodavky",
+    "rezim": "Nadlimitní",
+    "predmet": "Zakázka je rozdělena na části:\n\nČást I. – Dodávka defibrilátorů\n\nPředmětem plnění veřejné zakázky je dodávka 2 ks defibrilátorů ve smyslu přílohy – Technická specifikace a cenová nabídka pro příslušnou část veřejné zakázky. \n\nČást II. – Dodávka terapeutického laseru\n\nPředmětem plnění veřejné zakázky je dodávka 1 ks terapeutického laseru ve smyslu přílohy – Technická specifikace a cenová nabídka pro příslušnou část veřejné zakázky.\n\t\nČást III. – Dodávka vany na podvodní masáže\n\nPředmětem plnění veřejné zakázky je dodávka 1 ks nové vany na podvodní masáže v kombinaci s vířivkou ve smyslu přílohy – Technická specifikace a cenová nabídka pro příslušnou část veřejné zakázky. \n\nČást IV. – Dodávka přístroje pro vakuovou kompresní terapii\n\nPředmětem plnění veřejné zakázky je dodávka 2 ks  – přístrojů pro vakuovou kompresní terapii ve smyslu přílohy – Technická specifikace a cenová nabídka pro příslušnou část veřejné zakázky.\n\nČást V. – Dodávka vysokoindukčního magnetu\n\nPředmětem plnění veřejné zakázky je dodávka 1 ks vysokoindukčního magnetu ve smyslu přílohy – Technická specifikace a cenová nabídka pro příslušnou část veřejné zakázky.\n\nČást VI. – Dodávka motodlahy pro dolní končetiny s přepravním vozíkem\n\nPředmětem plnění veřejné zakázky je dodávka 1 ks motodlahy pro dolní končetiny s přepravním vozíkem ve smyslu přílohy – Technická specifikace a cenová nabídka pro příslušnou část veřejné zakázky.\n\nČást VII. – Dodávka  přístroje pro neurofyzikální rehabilitaci\n\nPředmětem plnění veřejné zakázky je dodávka 1 ks přístroje pro neurofyzikální rehabilitaci ve smyslu přílohy – Technická specifikace a cenová nabídka pro příslušnou část veřejné zakázky.\n\nČást VIII. – Dodávka  suché masážní vany\n\nPředmětem plnění veřejné zakázky je dodávka 1 ks suché masážní vany ve smyslu přílohy – Technická specifikace a cenová nabídka pro příslušnou část veřejné zakázky.\n\nČást IX. – Dodávka  vířivé vany pro masáž horních končetin\n\nPředmětem plnění veřejné zakázky je dodávka 1 ks  vířivé vany pro masáž horních končetin ve smyslu přílohy – Technická specifikace a cenová nabídka pro příslušnou část veřejné zakázky.",
+    "cpv": "00000000",
+    "stav": null,
+    "datum_zahajeni": "2024-05-28",
+    "casti": [
+      {
+        "id": "745",
+        "nazev": "Část I. – Dodávka defibrilátorů",
+        "stav": "zrušen",
+        "druh_rizeni": "otevřené řízení",
+        "datum_uverejneni": "2024-05-28",
+        "lhuta_nabidek": "2024-07-08",
+        "datum_uzavreni_smlouvy": null,
+        "datum_zruseni": "2024-07-11",
+        "pocet_nabidek": 0,
+        "vitezove": [],
+        "registr_smluv": []
+      },
+      {
+        "id": "746",
+        "nazev": "Část II. – Dodávka terapeutického laseru",
+        "stav": "zrušen",
+        "druh_rizeni": "otevřené řízení",
+        "datum_uverejneni": "2024-05-28",
+        "lhuta_nabidek": "2024-07-08",
+        "datum_uzavreni_smlouvy": null,
+        "datum_zruseni": "2024-07-17",
+        "pocet_nabidek": 0,
+        "vitezove": [],
+        "registr_smluv": []
+      },
+      {
+        "id": "747",
+        "nazev": "Část III. – Dodávka vany na podvodní masáže",
+        "stav": "zrušen",
+        "druh_rizeni": "otevřené řízení",
+        "datum_uverejneni": "2024-05-28",
+        "lhuta_nabidek": "2024-07-08",
+        "datum_uzavreni_smlouvy": null,
+        "datum_zruseni": "2024-07-11",
+        "pocet_nabidek": 0,
+        "vitezove": [],
+        "registr_smluv": []
+      },
+      {
+        "id": "748",
+        "nazev": "Část IV. – Dodávka přístroje pro vakuovou kompresní terapii",
+        "stav": "zrušen",
+        "druh_rizeni": "otevřené řízení",
+        "datum_uverejneni": "2024-05-28",
+        "lhuta_nabidek": "2024-07-08",
+        "datum_uzavreni_smlouvy": null,
+        "datum_zruseni": "2024-07-11",
+        "pocet_nabidek": 0,
+        "vitezove": [],
+        "registr_smluv": []
+      },
+      {
+        "id": "749",
+        "nazev": "Část V. – Dodávka vysokoindukčního magnetu",
+        "stav": "zrušen",
+        "druh_rizeni": "otevřené řízení",
+        "datum_uverejneni": "2024-05-28",
+        "lhuta_nabidek": "2024-07-08",
+        "datum_uzavreni_smlouvy": null,
+        "datum_zruseni": "2024-07-11",
+        "pocet_nabidek": 0,
+        "vitezove": [],
+        "registr_smluv": []
+      },
+      {
+        "id": "750",
+        "nazev": "Část VI. – Dodávka motodlahy pro dolní končetiny s přepravním vozíkem",
+        "stav": "zrušen",
+        "druh_rizeni": "otevřené řízení",
+        "datum_uverejneni": "2024-05-28",
+        "lhuta_nabidek": "2024-07-08",
+        "datum_uzavreni_smlouvy": null,
+        "datum_zruseni": "2024-07-11",
+        "pocet_nabidek": 0,
+        "vitezove": [],
+        "registr_smluv": []
+      },
+      {
+        "id": "751",
+        "nazev": "Část VII. – Dodávka  přístroje pro neurofyzikální rehabilitaci",
+        "stav": "zrušen",
+        "druh_rizeni": "otevřené řízení",
+        "datum_uverejneni": "2024-05-28",
+        "lhuta_nabidek": "2024-07-08",
+        "datum_uzavreni_smlouvy": null,
+        "datum_zruseni": "2024-07-11",
+        "pocet_nabidek": 0,
+        "vitezove": [],
+        "registr_smluv": []
+      },
+      {
+        "id": "752",
+        "nazev": "Část VIII. – Dodávka  suché masážní vany",
+        "stav": "zrušen",
+        "druh_rizeni": "otevřené řízení",
+        "datum_uverejneni": "2024-05-28",
+        "lhuta_nabidek": "2024-07-08",
+        "datum_uzavreni_smlouvy": null,
+        "datum_zruseni": "2024-07-11",
+        "pocet_nabidek": 0,
+        "vitezove": [],
+        "registr_smluv": []
+      },
+      {
+        "id": "753",
+        "nazev": "Část IX. – Dodávka  vířivé vany pro masáž horních končetin",
+        "stav": "zrušen",
+        "druh_rizeni": "otevřené řízení",
+        "datum_uverejneni": "2024-05-28",
+        "lhuta_nabidek": "2024-07-08",
+        "datum_uzavreni_smlouvy": null,
+        "datum_zruseni": "2024-07-11",
+        "pocet_nabidek": 0,
+        "vitezove": [],
+        "registr_smluv": []
+      }
+    ],
+    "url": "https://zakazky.mesto-trebon.cz/contract_display_744.html",
+    "zdroj": "25179896/2024-2.xml"
+  },
+  {
+    "id": "ezak-VZ-743",
+    "subjekt_ico": "25179896",
+    "nazev": "Kancelářské a ostatní židle SLT",
+    "druh": "dodavky",
+    "rezim": "Veřejné zakázky malého rozsahu",
+    "predmet": "Dodávka kancelářských a ostatních židlí pro SLT",
+    "cpv": "00000000",
+    "stav": "ukončeno plnění",
+    "datum_zahajeni": "2024-05-20",
+    "casti": [
+      {
+        "id": "743",
+        "nazev": "Kancelářské a ostatní židle SLT",
+        "stav": "ukončeno plnění",
+        "druh_rizeni": "otevřená výzva",
+        "datum_uverejneni": "2024-05-20",
+        "lhuta_nabidek": "2024-05-29",
+        "datum_uzavreni_smlouvy": "2024-06-12",
+        "datum_zruseni": null,
+        "pocet_nabidek": 10,
+        "vitezove": [
+          {
+            "nazev": "KŘESLA - ŽIDLE s.r.o.",
+            "ico": "27685802",
+            "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
+            "smlouva_uzavrena": true,
+            "castky": [
+              {
+                "hodnota": 377380.85,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_s_DPH>377380.85</smluvni_cena_s_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-743, část 743, dodavatel č. 1"
+              },
+              {
+                "hodnota": 311885.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_bez_DPH>311885.00</smluvni_cena_bez_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-743, část 743, dodavatel č. 1"
+              },
+              {
+                "hodnota": 377380.85,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "zaplaceno",
+                "obdobi": "2024",
+                "k_datu": null,
+                "citace": "<cena_za_rok_s_dph>377380.85</cena_za_rok_s_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-743, část 743, dodavatel č. 1"
+              },
+              {
+                "hodnota": 311885.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "zaplaceno",
+                "obdobi": "2024",
+                "k_datu": null,
+                "citace": "<cena_za_rok_bez_dph>311885.00</cena_za_rok_bez_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-743, část 743, dodavatel č. 1"
+              }
+            ]
+          }
+        ],
+        "registr_smluv": []
+      }
+    ],
+    "url": "https://zakazky.mesto-trebon.cz/contract_display_743.html",
+    "zdroj": "25179896/2024-2.xml"
+  },
+  {
+    "id": "ezak-VZ-742",
+    "subjekt_ico": "25179896",
+    "nazev": "Opravy systému měření a regulace - 4. etapa",
+    "druh": "dodavky",
+    "rezim": "Veřejné zakázky malého rozsahu",
+    "predmet": "Předmětem plnění VZMR je 4. etapa oprav systému měření a regulace v objektech Slatinných lázní Třeboň s.r.o.",
+    "cpv": "00000000",
+    "stav": "dokončen",
+    "datum_zahajeni": "2024-05-14",
+    "casti": [
+      {
+        "id": "742",
+        "nazev": "Opravy systému měření a regulace - 4. etapa",
+        "stav": "dokončen",
+        "druh_rizeni": "otevřená výzva",
+        "datum_uverejneni": "2024-05-14",
+        "lhuta_nabidek": "2024-05-24",
+        "datum_uzavreni_smlouvy": "2024-05-29",
+        "datum_zruseni": null,
+        "pocet_nabidek": 3,
+        "vitezove": [
+          {
+            "nazev": "MD instalace s.r.o.",
+            "ico": "08043264",
+            "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
+            "smlouva_uzavrena": true,
+            "castky": [
+              {
+                "hodnota": 1132143.8,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_s_DPH>1132143.80</smluvni_cena_s_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-742, část 742, dodavatel č. 1"
+              },
+              {
+                "hodnota": 935656.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_bez_DPH>935656.00</smluvni_cena_bez_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-742, část 742, dodavatel č. 1"
+              },
+              {
+                "hodnota": 935656.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "zaplaceno",
+                "obdobi": "2024",
+                "k_datu": null,
+                "citace": "<cena_za_rok_bez_dph>935656.00</cena_za_rok_bez_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-742, část 742, dodavatel č. 1"
+              }
+            ]
+          }
+        ],
+        "registr_smluv": []
+      }
+    ],
+    "url": "https://zakazky.mesto-trebon.cz/contract_display_742.html",
+    "zdroj": "25179896/2024-2.xml"
+  },
+  {
+    "id": "ezak-VZ-734",
+    "subjekt_ico": "25179896",
+    "nazev": "Modernizace chladíren LDA",
+    "druh": "stavebni",
+    "rezim": "Veřejné zakázky malého rozsahu",
+    "predmet": "Předmětem plnění VZ je dílo, spočívající v modernizaci technologie chladíren ve stávajícím objektu na parc. č. 1977/11, v katastrálním území Třeboň, stavební objekt č.p. 1001, v areálu Lázeňského domu Aurora. Jedná se o kompletní modernizaci stávajícího technologické vybavení chladíren formou komplexní výměny za nová technologická zařízení. Předmětem díla jsou rovněž stavební práce spočívající v dodání a montáži chladírenských dveří a tepelně technických opatření (stěny a stropy chladíren), vše v rozsahu stanoveném dokumentací pro provedení díla.",
+    "cpv": "00000000",
+    "stav": "dokončen",
+    "datum_zahajeni": "2024-04-19",
+    "casti": [
+      {
+        "id": "734",
+        "nazev": "Modernizace chladíren LDA",
+        "stav": "dokončen",
+        "druh_rizeni": "otevřená výzva",
+        "datum_uverejneni": "2024-04-19",
+        "lhuta_nabidek": "2024-04-29",
+        "datum_uzavreni_smlouvy": "2024-05-15",
+        "datum_zruseni": null,
+        "pocet_nabidek": 3,
+        "vitezove": [
+          {
+            "nazev": "SYLFA s.r.o.",
+            "ico": "26093014",
+            "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
+            "smlouva_uzavrena": true,
+            "castky": [
+              {
+                "hodnota": 3450109.3,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_s_DPH>3450109.30</smluvni_cena_s_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-734, část 734, dodavatel č. 1"
+              },
+              {
+                "hodnota": 2851330.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_bez_DPH>2851330.00</smluvni_cena_bez_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-734, část 734, dodavatel č. 1"
+              },
+              {
+                "hodnota": 3401588.3,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "zaplaceno",
+                "obdobi": "2024",
+                "k_datu": null,
+                "citace": "<cena_za_rok_s_dph>3401588.30</cena_za_rok_s_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-734, část 734, dodavatel č. 1"
+              },
+              {
+                "hodnota": 2811230.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "zaplaceno",
+                "obdobi": "2024",
+                "k_datu": null,
+                "citace": "<cena_za_rok_bez_dph>2811230.00</cena_za_rok_bez_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-734, část 734, dodavatel č. 1"
+              }
+            ]
+          }
+        ],
+        "registr_smluv": []
+      }
+    ],
+    "url": "https://zakazky.mesto-trebon.cz/contract_display_734.html",
+    "zdroj": "25179896/2024-2.xml"
   },
   {
     "id": "ezak-VZ-733",
@@ -9962,6 +11451,327 @@
     ],
     "url": "https://zakazky.mesto-trebon.cz/contract_display_733.html",
     "zdroj": "00247618/2025-1.xml"
+  },
+  {
+    "id": "ezak-VZ-732",
+    "subjekt_ico": "25179896",
+    "nazev": "Studie - Přemístění provozu restaurace LDA - II.etapa",
+    "druh": "sluzby",
+    "rezim": "Veřejné zakázky malého rozsahu",
+    "predmet": "Studie - Přemístění provozu restaurace LDA - II.etapa",
+    "cpv": "00000000",
+    "stav": "dokončen",
+    "datum_zahajeni": "2024-04-17",
+    "casti": [
+      {
+        "id": "732",
+        "nazev": "Studie - Přemístění provozu restaurace LDA - II.etapa",
+        "stav": "dokončen",
+        "druh_rizeni": "uzavřená výzva",
+        "datum_uverejneni": "2024-04-17",
+        "lhuta_nabidek": "2024-04-04",
+        "datum_uzavreni_smlouvy": "2024-04-16",
+        "datum_zruseni": null,
+        "pocet_nabidek": 3,
+        "vitezove": [
+          {
+            "nazev": "A-Z eko ateliér s.r.o.",
+            "ico": "05097681",
+            "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
+            "smlouva_uzavrena": true,
+            "castky": [
+              {
+                "hodnota": 225665.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_s_DPH>225665.00</smluvni_cena_s_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-732, část 732, dodavatel č. 1"
+              },
+              {
+                "hodnota": 186500.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_bez_DPH>186500.00</smluvni_cena_bez_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-732, část 732, dodavatel č. 1"
+              },
+              {
+                "hodnota": 225665.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "zaplaceno",
+                "obdobi": "2024",
+                "k_datu": null,
+                "citace": "<cena_za_rok_s_dph>225665.00</cena_za_rok_s_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-732, část 732, dodavatel č. 1"
+              },
+              {
+                "hodnota": 186500.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "zaplaceno",
+                "obdobi": "2024",
+                "k_datu": null,
+                "citace": "<cena_za_rok_bez_dph>186500.00</cena_za_rok_bez_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-732, část 732, dodavatel č. 1"
+              }
+            ]
+          }
+        ],
+        "registr_smluv": []
+      }
+    ],
+    "url": "https://zakazky.mesto-trebon.cz/contract_display_732.html",
+    "zdroj": "25179896/2024-2.xml"
+  },
+  {
+    "id": "ezak-VZ-726",
+    "subjekt_ico": "25179896",
+    "nazev": "Interiér - jídelna v atriu LDA - opakované řízení",
+    "druh": "dodavky",
+    "rezim": "Veřejné zakázky malého rozsahu",
+    "predmet": "Interiér - jídelna v atriu LDA - opakované řízení",
+    "cpv": "00000000",
+    "stav": null,
+    "datum_zahajeni": "2024-03-21",
+    "casti": [
+      {
+        "id": "727",
+        "nazev": "Část 1 - Židle do jídelny",
+        "stav": "dokončen",
+        "druh_rizeni": "otevřená výzva",
+        "datum_uverejneni": "2024-03-21",
+        "lhuta_nabidek": "2024-04-05",
+        "datum_uzavreni_smlouvy": "2024-04-17",
+        "datum_zruseni": null,
+        "pocet_nabidek": 1,
+        "vitezove": [
+          {
+            "nazev": "TREND nábytek  s.r.o.",
+            "ico": "28495578",
+            "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
+            "smlouva_uzavrena": true,
+            "castky": [
+              {
+                "hodnota": 542213.1,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_s_DPH>542213.10</smluvni_cena_s_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-726, část 727, dodavatel č. 1"
+              },
+              {
+                "hodnota": 448110.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_bez_DPH>448110.00</smluvni_cena_bez_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-726, část 727, dodavatel č. 1"
+              },
+              {
+                "hodnota": 448110.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "zaplaceno",
+                "obdobi": "2024",
+                "k_datu": null,
+                "citace": "<cena_za_rok_bez_dph>448110.00</cena_za_rok_bez_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-726, část 727, dodavatel č. 1"
+              }
+            ]
+          }
+        ],
+        "registr_smluv": []
+      },
+      {
+        "id": "728",
+        "nazev": "Část 2 - Různý mobiliář (stoly, židle,  stojanové věšáky, stojany na hole)",
+        "stav": "dokončen",
+        "druh_rizeni": "otevřená výzva",
+        "datum_uverejneni": "2024-03-21",
+        "lhuta_nabidek": "2024-04-05",
+        "datum_uzavreni_smlouvy": "2024-04-17",
+        "datum_zruseni": null,
+        "pocet_nabidek": 1,
+        "vitezove": [
+          {
+            "nazev": "TREND nábytek  s.r.o.",
+            "ico": "28495578",
+            "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
+            "smlouva_uzavrena": true,
+            "castky": [
+              {
+                "hodnota": 521171.2,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_s_DPH>521171.20</smluvni_cena_s_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-726, část 728, dodavatel č. 1"
+              },
+              {
+                "hodnota": 430720.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_bez_DPH>430720.00</smluvni_cena_bez_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-726, část 728, dodavatel č. 1"
+              },
+              {
+                "hodnota": 430720.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "zaplaceno",
+                "obdobi": "2024",
+                "k_datu": null,
+                "citace": "<cena_za_rok_bez_dph>430720.00</cena_za_rok_bez_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-726, část 728, dodavatel č. 1"
+              }
+            ]
+          }
+        ],
+        "registr_smluv": []
+      },
+      {
+        "id": "729",
+        "nazev": "Část 3 - Věšákové stěny",
+        "stav": "dokončen",
+        "druh_rizeni": "otevřená výzva",
+        "datum_uverejneni": "2024-03-21",
+        "lhuta_nabidek": "2024-04-05",
+        "datum_uzavreni_smlouvy": "2024-04-12",
+        "datum_zruseni": null,
+        "pocet_nabidek": 1,
+        "vitezove": [
+          {
+            "nazev": "fyzická osoba",
+            "ico": null,
+            "fyzicka_osoba": true,
+            "jmeno_podnikatele": "Josef Kohout",
+            "smlouva_uzavrena": true,
+            "castky": [
+              {
+                "hodnota": 105452.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_s_DPH>105452.00</smluvni_cena_s_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-726, část 729, dodavatel č. 1"
+              },
+              {
+                "hodnota": 87150.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_bez_DPH>87150.00</smluvni_cena_bez_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-726, část 729, dodavatel č. 1"
+              },
+              {
+                "hodnota": 87150.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "zaplaceno",
+                "obdobi": "2024",
+                "k_datu": null,
+                "citace": "<cena_za_rok_bez_dph>87150.00</cena_za_rok_bez_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-726, část 729, dodavatel č. 1"
+              }
+            ]
+          }
+        ],
+        "registr_smluv": []
+      },
+      {
+        "id": "730",
+        "nazev": "Část 4 - Rolety",
+        "stav": "dokončen",
+        "druh_rizeni": "otevřená výzva",
+        "datum_uverejneni": "2024-03-21",
+        "lhuta_nabidek": "2024-04-05",
+        "datum_uzavreni_smlouvy": "2024-05-31",
+        "datum_zruseni": null,
+        "pocet_nabidek": 1,
+        "vitezove": [
+          {
+            "nazev": "Saldezza s.r.o.",
+            "ico": "04852061",
+            "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
+            "smlouva_uzavrena": true,
+            "castky": [
+              {
+                "hodnota": 90244.31,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_s_DPH>90244.31</smluvni_cena_s_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-726, část 730, dodavatel č. 1"
+              },
+              {
+                "hodnota": 74582.4,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_bez_DPH>74582.40</smluvni_cena_bez_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-726, část 730, dodavatel č. 1"
+              },
+              {
+                "hodnota": 74582.4,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "zaplaceno",
+                "obdobi": "2024",
+                "k_datu": null,
+                "citace": "<cena_za_rok_bez_dph>74582.40</cena_za_rok_bez_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-726, část 730, dodavatel č. 1"
+              }
+            ]
+          }
+        ],
+        "registr_smluv": []
+      }
+    ],
+    "url": "https://zakazky.mesto-trebon.cz/contract_display_726.html",
+    "zdroj": "25179896/2024-2.xml"
   },
   {
     "id": "ezak-VZ-725",
@@ -10088,6 +11898,159 @@
     ],
     "url": "https://zakazky.mesto-trebon.cz/contract_display_725.html",
     "zdroj": "00247618/2025-1.xml"
+  },
+  {
+    "id": "ezak-VZ-724",
+    "subjekt_ico": "25179896",
+    "nazev": "Pracoviště lymfologie - LDA",
+    "druh": "stavebni",
+    "rezim": "Veřejné zakázky malého rozsahu",
+    "predmet": "Pracoviště lymfologie - LDA",
+    "cpv": "00000000",
+    "stav": "dokončen",
+    "datum_zahajeni": "2024-03-15",
+    "casti": [
+      {
+        "id": "724",
+        "nazev": "Pracoviště lymfologie - LDA",
+        "stav": "dokončen",
+        "druh_rizeni": "otevřená výzva",
+        "datum_uverejneni": "2024-03-15",
+        "lhuta_nabidek": "2024-04-05",
+        "datum_uzavreni_smlouvy": "2024-04-15",
+        "datum_zruseni": null,
+        "pocet_nabidek": 4,
+        "vitezove": [
+          {
+            "nazev": "KOSTKA JH s.r.o.",
+            "ico": "63908701",
+            "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
+            "smlouva_uzavrena": true,
+            "castky": [
+              {
+                "hodnota": 1556275.5,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_s_DPH>1556275.50</smluvni_cena_s_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-724, část 724, dodavatel č. 1"
+              },
+              {
+                "hodnota": 1286178.13,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_bez_DPH>1286178.13</smluvni_cena_bez_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-724, část 724, dodavatel č. 1"
+              },
+              {
+                "hodnota": 1431478.47,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "zaplaceno",
+                "obdobi": "2024",
+                "k_datu": null,
+                "citace": "<cena_za_rok_bez_dph>1431478.47</cena_za_rok_bez_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-724, část 724, dodavatel č. 1"
+              }
+            ]
+          }
+        ],
+        "registr_smluv": []
+      }
+    ],
+    "url": "https://zakazky.mesto-trebon.cz/contract_display_724.html",
+    "zdroj": "25179896/2024-2.xml"
+  },
+  {
+    "id": "ezak-VZ-704",
+    "subjekt_ico": "25179896",
+    "nazev": "Gastro zařízení restaurace Beseda a Třeboňský vodní svět",
+    "druh": "dodavky",
+    "rezim": "Veřejné zakázky malého rozsahu",
+    "predmet": "Gastro zařízení restaurace Beseda a Třeboňský vodní svět",
+    "cpv": "00000000",
+    "stav": "ukončeno plnění",
+    "datum_zahajeni": "2024-03-13",
+    "casti": [
+      {
+        "id": "704",
+        "nazev": "Gastro zařízení restaurace Beseda a Třeboňský vodní svět",
+        "stav": "ukončeno plnění",
+        "druh_rizeni": "uzavřená výzva",
+        "datum_uverejneni": "2024-03-13",
+        "lhuta_nabidek": "2024-02-23",
+        "datum_uzavreni_smlouvy": "2024-03-06",
+        "datum_zruseni": null,
+        "pocet_nabidek": 3,
+        "vitezove": [
+          {
+            "nazev": "JARg, s.r.o.",
+            "ico": "46678867",
+            "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
+            "smlouva_uzavrena": true,
+            "castky": [
+              {
+                "hodnota": 677056.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_s_DPH>677056.00</smluvni_cena_s_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-704, část 704, dodavatel č. 1"
+              },
+              {
+                "hodnota": 559550.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_bez_DPH>559550.00</smluvni_cena_bez_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-704, část 704, dodavatel č. 1"
+              },
+              {
+                "hodnota": 677056.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "zaplaceno",
+                "obdobi": "2024",
+                "k_datu": null,
+                "citace": "<cena_za_rok_s_dph>677056.00</cena_za_rok_s_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-704, část 704, dodavatel č. 1"
+              },
+              {
+                "hodnota": 559550.5,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "zaplaceno",
+                "obdobi": "2024",
+                "k_datu": null,
+                "citace": "<cena_za_rok_bez_dph>559550.50</cena_za_rok_bez_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-704, část 704, dodavatel č. 1"
+              }
+            ]
+          }
+        ],
+        "registr_smluv": []
+      }
+    ],
+    "url": "https://zakazky.mesto-trebon.cz/contract_display_704.html",
+    "zdroj": "25179896/2024-2.xml"
   },
   {
     "id": "ezak-VZ-713",
@@ -10269,6 +12232,88 @@
     ],
     "url": "https://zakazky.mesto-trebon.cz/contract_display_712.html",
     "zdroj": "00247618/2026-1.xml"
+  },
+  {
+    "id": "ezak-VZ-710",
+    "subjekt_ico": "25179896",
+    "nazev": "Dodávka gastrotechnologie – jídelna v atriu LDA",
+    "druh": "dodavky",
+    "rezim": "Podlimitní",
+    "predmet": "Předmětem veřejné zakázky je dodávka a montáž gastrotechnologie a zařízení vč. příslušenství, vč. všech dalších souvisejících plnění v rozsahu a za podmínek dle zadávací dokumentace a jejích příloh.",
+    "cpv": "00000000",
+    "stav": "dokončen",
+    "datum_zahajeni": "2024-02-29",
+    "casti": [
+      {
+        "id": "710",
+        "nazev": "Dodávka gastrotechnologie – jídelna v atriu LDA",
+        "stav": "dokončen",
+        "druh_rizeni": "zjednodušené podlimitní řízení",
+        "datum_uverejneni": "2024-02-29",
+        "lhuta_nabidek": "2024-03-18",
+        "datum_uzavreni_smlouvy": "2024-04-15",
+        "datum_zruseni": null,
+        "pocet_nabidek": 3,
+        "vitezove": [
+          {
+            "nazev": "JARg, s.r.o.",
+            "ico": "46678867",
+            "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
+            "smlouva_uzavrena": true,
+            "castky": [
+              {
+                "hodnota": 5688112.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_s_DPH>5688112.00</smluvni_cena_s_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-710, část 710, dodavatel č. 1"
+              },
+              {
+                "hodnota": 4700919.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_bez_DPH>4700919.00</smluvni_cena_bez_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-710, část 710, dodavatel č. 1"
+              },
+              {
+                "hodnota": 5590915.11,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "zaplaceno",
+                "obdobi": "2024",
+                "k_datu": null,
+                "citace": "<cena_za_rok_s_dph>5590915.11</cena_za_rok_s_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-710, část 710, dodavatel č. 1"
+              },
+              {
+                "hodnota": 4620591.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "zaplaceno",
+                "obdobi": "2024",
+                "k_datu": null,
+                "citace": "<cena_za_rok_bez_dph>4620591.00</cena_za_rok_bez_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-710, část 710, dodavatel č. 1"
+              }
+            ]
+          }
+        ],
+        "registr_smluv": []
+      }
+    ],
+    "url": "https://zakazky.mesto-trebon.cz/contract_display_710.html",
+    "zdroj": "25179896/2024-2.xml"
   },
   {
     "id": "ezak-VZ-709",
@@ -11344,6 +13389,88 @@
     "zdroj": "00247618/2026-1.xml"
   },
   {
+    "id": "ezak-VZ-693",
+    "subjekt_ico": "25179896",
+    "nazev": "Oprava 16 slatinných koupelen – opakované řízení",
+    "druh": "stavebni",
+    "rezim": "Veřejné zakázky malého rozsahu",
+    "predmet": "Předmětem této veřejné zakázky je závazek vybraného dodavatele provést pro zadavatele řádně a včas dílo, spočívající v opravě 16 slatinných koupelen ve stávajícím objektu v areálu Lázeňského domu Aurora. Jedná se o komplexní opravy povrchů bez bourání starých obkladů a dlažeb. Předmětem stavebních prací jsou rovněž demontáže a montáže zařizovacích předmětů zdravotně technické instalace a EI, nové výplně otvorů a výměna podhledových konstrukcí, vše v rozsahu stanoveném závazným vzorem smlouvy o dílo a přílohami zadávací dokumentace.",
+    "cpv": "00000000",
+    "stav": "dokončen",
+    "datum_zahajeni": "2023-12-22",
+    "casti": [
+      {
+        "id": "693",
+        "nazev": "Oprava 16 slatinných koupelen – opakované řízení",
+        "stav": "dokončen",
+        "druh_rizeni": "otevřená výzva",
+        "datum_uverejneni": "2023-12-22",
+        "lhuta_nabidek": "2024-01-08",
+        "datum_uzavreni_smlouvy": "2024-01-22",
+        "datum_zruseni": null,
+        "pocet_nabidek": 4,
+        "vitezove": [
+          {
+            "nazev": "DV stav s.r.o.",
+            "ico": "28142551",
+            "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
+            "smlouva_uzavrena": true,
+            "castky": [
+              {
+                "hodnota": 7199452.58,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_s_DPH>7199452.58</smluvni_cena_s_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-693, část 693, dodavatel č. 1"
+              },
+              {
+                "hodnota": 5949960.81,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_bez_DPH>5949960.81</smluvni_cena_bez_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-693, část 693, dodavatel č. 1"
+              },
+              {
+                "hodnota": 7814448.4,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "zaplaceno",
+                "obdobi": "2024",
+                "k_datu": null,
+                "citace": "<cena_za_rok_s_dph>7814448.40</cena_za_rok_s_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-693, část 693, dodavatel č. 1"
+              },
+              {
+                "hodnota": 6458221.85,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "zaplaceno",
+                "obdobi": "2024",
+                "k_datu": null,
+                "citace": "<cena_za_rok_bez_dph>6458221.85</cena_za_rok_bez_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-693, část 693, dodavatel č. 1"
+              }
+            ]
+          }
+        ],
+        "registr_smluv": []
+      }
+    ],
+    "url": "https://zakazky.mesto-trebon.cz/contract_display_693.html",
+    "zdroj": "25179896/2024-2.xml"
+  },
+  {
     "id": "ezak-VZ-692",
     "subjekt_ico": "00247618",
     "nazev": "Zpracování energetického auditu energetického hospodářství města Třeboň",
@@ -12184,6 +14311,412 @@
     "zdroj": "00247618/2025-1.xml"
   },
   {
+    "id": "ezak-VZ-665",
+    "subjekt_ico": "25179896",
+    "nazev": "Výkon technického dozoru stavebníka a koordinátora BOZP  Vybudování jídelny v prostoru atria Lázeňského domu Aurora",
+    "druh": "sluzby",
+    "rezim": "Veřejné zakázky malého rozsahu",
+    "predmet": "Výkon technického dozoru stavebníka a koordinátora BOZP  Vybudování jídelny v prostoru atria Lázeňského domu Aurora",
+    "cpv": "00000000",
+    "stav": "ukončeno plnění",
+    "datum_zahajeni": "2023-09-19",
+    "casti": [
+      {
+        "id": "665",
+        "nazev": "Výkon technického dozoru stavebníka a koordinátora BOZP  Vybudování jídelny v prostoru atria Lázeňského domu Aurora",
+        "stav": "ukončeno plnění",
+        "druh_rizeni": "uzavřená výzva",
+        "datum_uverejneni": "2023-09-19",
+        "lhuta_nabidek": "2023-08-31",
+        "datum_uzavreni_smlouvy": "2023-09-15",
+        "datum_zruseni": null,
+        "pocet_nabidek": 0,
+        "vitezove": [],
+        "registr_smluv": []
+      }
+    ],
+    "url": "https://zakazky.mesto-trebon.cz/contract_display_665.html",
+    "zdroj": "25179896/2024-2.xml"
+  },
+  {
+    "id": "ezak-VZ-662",
+    "subjekt_ico": "25179896",
+    "nazev": "Opravy fasád a výplní otvorů technického dvora SLT",
+    "druh": "stavebni",
+    "rezim": "Veřejné zakázky malého rozsahu",
+    "predmet": "Opravy fasád a výplní otvorů technického dvora SLT",
+    "cpv": "00000000",
+    "stav": "dokončen",
+    "datum_zahajeni": "2023-09-14",
+    "casti": [
+      {
+        "id": "662",
+        "nazev": "Opravy fasád a výplní otvorů technického dvora SLT",
+        "stav": "dokončen",
+        "druh_rizeni": "otevřená výzva",
+        "datum_uverejneni": "2023-09-14",
+        "lhuta_nabidek": "2023-09-21",
+        "datum_uzavreni_smlouvy": "2023-10-09",
+        "datum_zruseni": null,
+        "pocet_nabidek": 5,
+        "vitezove": [
+          {
+            "nazev": "PAMÁTKY TÁBOR, s.r.o.",
+            "ico": "44797958",
+            "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
+            "smlouva_uzavrena": true,
+            "castky": [
+              {
+                "hodnota": 6889894.88,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_s_DPH>6889894.88</smluvni_cena_s_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-662, část 662, dodavatel č. 1"
+              },
+              {
+                "hodnota": 5694128.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_bez_DPH>5694128.00</smluvni_cena_bez_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-662, část 662, dodavatel č. 1"
+              },
+              {
+                "hodnota": 7254440.9,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "zaplaceno",
+                "obdobi": "2024",
+                "k_datu": null,
+                "citace": "<cena_za_rok_s_dph>7254440.90</cena_za_rok_s_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-662, část 662, dodavatel č. 1"
+              },
+              {
+                "hodnota": 5995405.76,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "zaplaceno",
+                "obdobi": "2024",
+                "k_datu": null,
+                "citace": "<cena_za_rok_bez_dph>5995405.76</cena_za_rok_bez_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-662, část 662, dodavatel č. 1"
+              }
+            ]
+          }
+        ],
+        "registr_smluv": []
+      }
+    ],
+    "url": "https://zakazky.mesto-trebon.cz/contract_display_662.html",
+    "zdroj": "25179896/2024-2.xml"
+  },
+  {
+    "id": "ezak-VZ-649",
+    "subjekt_ico": "25179896",
+    "nazev": "Dodávka zdravotních a rehabilitačních přístrojů",
+    "druh": "dodavky",
+    "rezim": "Podlimitní",
+    "predmet": "Předmětem veřejné zakázky je dodávka zdravotních a rehabilitačních přístrojů.\r\n\r\nČást I. – Suchá masážní vana\r\nPředmětem této části zakázky je dodávka a instalace suché masážní vany, vč. příslušenství, služby související s dodávkou a dále související služby záručního a pozáručního servisu a záruční a pozáruční opravy vad.\r\n\r\nČást II. – Vana pro podvodní masáž (2 ks)\r\nPředmětem této části zakázky je dodávka a instalace 2 ks vany pro podvodní masáž, vč. příslušenství, služby související s dodávkou a dále související služby záručního a pozáručního servisu a záruční a pozáruční opravy vad.\r\n\r\nČást III. – 4 komorová galvanická koupel + sprcha\r\nPředmětem této části zakázky je dodávka a instalace 4 komorové galvanické koupele a sprchy, vč. příslušenství, služby související s dodávkou a dále související služby záručního a pozáručního servisu a záruční a pozáruční opravy vad.\r\n\r\nČást IV. – Motodlaha kolenního a kyčelního kloubu\r\nPředmětem této části zakázky je dodávka a instalace motodlahy kolenního a kyčelního kloubu, vč. příslušenství, služby související s dodávkou a dále související služby záručního a pozáručního servisu a záruční a pozáruční opravy vad.\r\n\r\nČást V. – Pojízdný sprchovací zvedák se sedačkou\r\nPředmětem této části zakázky je dodávka a instalace pojízdného sprchovacího zvedáku se sedačkou, vč. příslušenství, služby související s dodávkou a dále související služby záručního a pozáručního servisu a záruční a pozáruční opravy vad.",
+    "cpv": "33150000",
+    "stav": null,
+    "datum_zahajeni": "2023-08-23",
+    "casti": [
+      {
+        "id": "650",
+        "nazev": "Část I. – Suchá masážní vana",
+        "stav": "ukončeno plnění",
+        "druh_rizeni": "zjednodušené podlimitní řízení",
+        "datum_uverejneni": "2023-08-23",
+        "lhuta_nabidek": "2023-09-11",
+        "datum_uzavreni_smlouvy": "2023-10-04",
+        "datum_zruseni": null,
+        "pocet_nabidek": 1,
+        "vitezove": [
+          {
+            "nazev": "MADISSON, s.r.o.",
+            "ico": "26124637",
+            "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
+            "smlouva_uzavrena": true,
+            "castky": [
+              {
+                "hodnota": 689095.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_s_DPH>689095.00</smluvni_cena_s_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-649, část 650, dodavatel č. 1"
+              },
+              {
+                "hodnota": 569500.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_bez_DPH>569500.00</smluvni_cena_bez_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-649, část 650, dodavatel č. 1"
+              },
+              {
+                "hodnota": 689085.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "zaplaceno",
+                "obdobi": "2023",
+                "k_datu": null,
+                "citace": "<cena_za_rok_s_dph>689085.00</cena_za_rok_s_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-649, část 650, dodavatel č. 1"
+              },
+              {
+                "hodnota": 569500.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "zaplaceno",
+                "obdobi": "2023",
+                "k_datu": null,
+                "citace": "<cena_za_rok_bez_dph>569500.00</cena_za_rok_bez_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-649, část 650, dodavatel č. 1"
+              }
+            ]
+          }
+        ],
+        "registr_smluv": []
+      },
+      {
+        "id": "651",
+        "nazev": "Část II. – Vana pro podvodní masáž (2 ks)",
+        "stav": "ukončeno plnění",
+        "druh_rizeni": "zjednodušené podlimitní řízení",
+        "datum_uverejneni": "2023-08-23",
+        "lhuta_nabidek": "2023-09-11",
+        "datum_uzavreni_smlouvy": "2023-10-20",
+        "datum_zruseni": null,
+        "pocet_nabidek": 2,
+        "vitezove": [
+          {
+            "nazev": "MADISSON, s.r.o.",
+            "ico": "26124637",
+            "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
+            "smlouva_uzavrena": true,
+            "castky": [
+              {
+                "hodnota": 607662.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_s_DPH>607662.00</smluvni_cena_s_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-649, část 651, dodavatel č. 1"
+              },
+              {
+                "hodnota": 502200.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_bez_DPH>502200.00</smluvni_cena_bez_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-649, část 651, dodavatel č. 1"
+              },
+              {
+                "hodnota": 607662.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "zaplaceno",
+                "obdobi": "2023",
+                "k_datu": null,
+                "citace": "<cena_za_rok_s_dph>607662.00</cena_za_rok_s_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-649, část 651, dodavatel č. 1"
+              },
+              {
+                "hodnota": 502200.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "zaplaceno",
+                "obdobi": "2023",
+                "k_datu": null,
+                "citace": "<cena_za_rok_bez_dph>502200.00</cena_za_rok_bez_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-649, část 651, dodavatel č. 1"
+              }
+            ]
+          }
+        ],
+        "registr_smluv": []
+      },
+      {
+        "id": "652",
+        "nazev": "Část III. – 4 komorová galvanická koupel + sprcha",
+        "stav": "ukončeno plnění",
+        "druh_rizeni": "zjednodušené podlimitní řízení",
+        "datum_uverejneni": "2023-08-23",
+        "lhuta_nabidek": "2023-09-11",
+        "datum_uzavreni_smlouvy": "2023-10-19",
+        "datum_zruseni": null,
+        "pocet_nabidek": 2,
+        "vitezove": [
+          {
+            "nazev": "Chironax Frýdek - Místek s.r.o.",
+            "ico": "47666391",
+            "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
+            "smlouva_uzavrena": true,
+            "castky": [
+              {
+                "hodnota": 335170.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_s_DPH>335170.00</smluvni_cena_s_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-649, část 652, dodavatel č. 1"
+              },
+              {
+                "hodnota": 277000.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_bez_DPH>277000.00</smluvni_cena_bez_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-649, část 652, dodavatel č. 1"
+              },
+              {
+                "hodnota": 335170.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "zaplaceno",
+                "obdobi": "2023",
+                "k_datu": null,
+                "citace": "<cena_za_rok_s_dph>335170.00</cena_za_rok_s_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-649, část 652, dodavatel č. 1"
+              },
+              {
+                "hodnota": 277000.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "zaplaceno",
+                "obdobi": "2023",
+                "k_datu": null,
+                "citace": "<cena_za_rok_bez_dph>277000.00</cena_za_rok_bez_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-649, část 652, dodavatel č. 1"
+              }
+            ]
+          }
+        ],
+        "registr_smluv": []
+      },
+      {
+        "id": "653",
+        "nazev": "Část IV. – Motodlaha kolenního a kyčelního kloubu",
+        "stav": "zrušen",
+        "druh_rizeni": "zjednodušené podlimitní řízení",
+        "datum_uverejneni": "2023-08-23",
+        "lhuta_nabidek": "2023-09-11",
+        "datum_uzavreni_smlouvy": null,
+        "datum_zruseni": "2023-09-14",
+        "pocet_nabidek": 0,
+        "vitezove": [],
+        "registr_smluv": []
+      },
+      {
+        "id": "654",
+        "nazev": "Část V. – Pojízdný sprchovací zvedák se sedačkou",
+        "stav": "ukončeno plnění",
+        "druh_rizeni": "zjednodušené podlimitní řízení",
+        "datum_uverejneni": "2023-08-23",
+        "lhuta_nabidek": "2023-09-11",
+        "datum_uzavreni_smlouvy": "2023-10-16",
+        "datum_zruseni": null,
+        "pocet_nabidek": 1,
+        "vitezove": [
+          {
+            "nazev": "SIVAK medical technology s.r.o.",
+            "ico": "28807065",
+            "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
+            "smlouva_uzavrena": true,
+            "castky": [
+              {
+                "hodnota": 107040.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_s_DPH>107040.00</smluvni_cena_s_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-649, část 654, dodavatel č. 1"
+              },
+              {
+                "hodnota": 93078.26,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_bez_DPH>93078.26</smluvni_cena_bez_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-649, část 654, dodavatel č. 1"
+              },
+              {
+                "hodnota": 107040.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "zaplaceno",
+                "obdobi": "2023",
+                "k_datu": null,
+                "citace": "<cena_za_rok_s_dph>107040.00</cena_za_rok_s_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-649, část 654, dodavatel č. 1"
+              },
+              {
+                "hodnota": 93078.26,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "zaplaceno",
+                "obdobi": "2023",
+                "k_datu": null,
+                "citace": "<cena_za_rok_bez_dph>93078.26</cena_za_rok_bez_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-649, část 654, dodavatel č. 1"
+              }
+            ]
+          }
+        ],
+        "registr_smluv": []
+      }
+    ],
+    "url": "https://zakazky.mesto-trebon.cz/contract_display_649.html",
+    "zdroj": "25179896/2024-2.xml"
+  },
+  {
     "id": "ezak-VZ-648",
     "subjekt_ico": "25179896",
     "nazev": "Výkon odborného dozoru, technického dozoru stavebníka a koordinátora BOZP v rámci projektu „FVE – Slatinné lázně Třeboň\"",
@@ -12726,6 +15259,88 @@
     "zdroj": "25179896/2026-2.xml"
   },
   {
+    "id": "ezak-VZ-640",
+    "subjekt_ico": "25179896",
+    "nazev": "Vybudování jídelny v prostoru atria Lázeňského domu Aurora",
+    "druh": "stavebni",
+    "rezim": "Podlimitní",
+    "predmet": "Předmětem plnění veřejné zakázky je stavební dílo „Vybudování jídelny v prostoru atria Lázeňského domu Aurora“, budované ve stávajícím objektu na parc. č. 1977/11 v katastrálním území Třeboň, včetně souvisejících dodávek, stavebních prací a služeb (dále též „dílo“), v rozsahu požadavků zadavatele dle zadávací dokumentace a jejích příloh. Součástí díla jsou veškeré nezbytné práce a činnosti pro komplexní dokončení díla v celém rozsahu zadání.",
+    "cpv": "00000000",
+    "stav": "ukončeno plnění",
+    "datum_zahajeni": "2023-07-14",
+    "casti": [
+      {
+        "id": "640",
+        "nazev": "Vybudování jídelny v prostoru atria Lázeňského domu Aurora",
+        "stav": "ukončeno plnění",
+        "druh_rizeni": "zjednodušené podlimitní řízení",
+        "datum_uverejneni": "2023-07-14",
+        "lhuta_nabidek": "2023-08-03",
+        "datum_uzavreni_smlouvy": "2023-09-08",
+        "datum_zruseni": null,
+        "pocet_nabidek": 3,
+        "vitezove": [
+          {
+            "nazev": "Spilka a Říha s.r.o.",
+            "ico": "45021309",
+            "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
+            "smlouva_uzavrena": true,
+            "castky": [
+              {
+                "hodnota": 37376906.4,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_s_DPH>37376906.40</smluvni_cena_s_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-640, část 640, dodavatel č. 1"
+              },
+              {
+                "hodnota": 30890005.3,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_bez_DPH>30890005.30</smluvni_cena_bez_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-640, část 640, dodavatel č. 1"
+              },
+              {
+                "hodnota": 37012599.44,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "zaplaceno",
+                "obdobi": "2024",
+                "k_datu": null,
+                "citace": "<cena_za_rok_s_dph>37012599.44</cena_za_rok_s_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-640, část 640, dodavatel č. 1"
+              },
+              {
+                "hodnota": 30588925.16,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "zaplaceno",
+                "obdobi": "2024",
+                "k_datu": null,
+                "citace": "<cena_za_rok_bez_dph>30588925.16</cena_za_rok_bez_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-640, část 640, dodavatel č. 1"
+              }
+            ]
+          }
+        ],
+        "registr_smluv": []
+      }
+    ],
+    "url": "https://zakazky.mesto-trebon.cz/contract_display_640.html",
+    "zdroj": "25179896/2024-2.xml"
+  },
+  {
     "id": "ezak-VZ-639",
     "subjekt_ico": "00247618",
     "nazev": "Zpracování projektové dokumentace – Stavební úpravy MK v ul. Šustova a 2. etapy ul. Polní v Třeboni",
@@ -13064,6 +15679,77 @@
     "zdroj": "00247618/2026-1.xml"
   },
   {
+    "id": "ezak-VZ-636",
+    "subjekt_ico": "25179896",
+    "nazev": "Modernizace výtahů – budova B - LDA",
+    "druh": "dodavky",
+    "rezim": "Podlimitní",
+    "predmet": "Předmětem plnění veřejné zakázky je modernizace 2 výtahů v sídle zadavatele, budova B – Lázeňský dům Aurora, včetně souvisejících dodávek, stavebních prací a služeb (dále též „dílo“), a dále vč. prací navazujících, tj. zejména včetně související údržby dodaných výtahů v rozsahu požadavků zadavatele dle zadávací dokumentace a jejích příloh. Součástí díla jsou veškeré nezbytné práce a činnosti pro komplexní dokončení díla v celém rozsahu zadání.",
+    "cpv": "00000000",
+    "stav": "dokončen",
+    "datum_zahajeni": "2023-06-26",
+    "casti": [
+      {
+        "id": "636",
+        "nazev": "Modernizace výtahů – budova B - LDA",
+        "stav": "dokončen",
+        "druh_rizeni": "zjednodušené podlimitní řízení",
+        "datum_uverejneni": "2023-06-26",
+        "lhuta_nabidek": "2023-07-20",
+        "datum_uzavreni_smlouvy": "2023-08-17",
+        "datum_zruseni": null,
+        "pocet_nabidek": 1,
+        "vitezove": [
+          {
+            "nazev": "Schindler  CZ,  a.s.",
+            "ico": "27127010",
+            "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
+            "smlouva_uzavrena": true,
+            "castky": [
+              {
+                "hodnota": 2278182.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_s_DPH>2278182.00</smluvni_cena_s_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-636, část 636, dodavatel č. 1"
+              },
+              {
+                "hodnota": 1882795.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_bez_DPH>1882795.00</smluvni_cena_bez_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-636, část 636, dodavatel č. 1"
+              },
+              {
+                "hodnota": 1700000.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "zaplaceno",
+                "obdobi": "2024",
+                "k_datu": null,
+                "citace": "<cena_za_rok_bez_dph>1700000.00</cena_za_rok_bez_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-636, část 636, dodavatel č. 1"
+              }
+            ]
+          }
+        ],
+        "registr_smluv": []
+      }
+    ],
+    "url": "https://zakazky.mesto-trebon.cz/contract_display_636.html",
+    "zdroj": "25179896/2024-2.xml"
+  },
+  {
     "id": "ezak-VZ-635",
     "subjekt_ico": "00247618",
     "nazev": "Sdružené služby dodávky zemního plynu pro město Třeboň a s ním sdružené zadavatele na období dodávky let 2024-2025",
@@ -13144,6 +15830,77 @@
     ],
     "url": "https://zakazky.mesto-trebon.cz/contract_display_635.html",
     "zdroj": "00247618/2026-1.xml"
+  },
+  {
+    "id": "ezak-VZ-628",
+    "subjekt_ico": "25179896",
+    "nazev": "Dodávka suché masážní vany",
+    "druh": "dodavky",
+    "rezim": "Veřejné zakázky malého rozsahu",
+    "predmet": "Předmětem výběrového řízení je dodávka suché masážní vany včetně příslušenství pro pracoviště zadavatele, a to v technickém provedení dle příloh zadávací dokumentace, a dále poskytnutí souvisejících plnění dle závazného vzoru smlouvy.",
+    "cpv": "00000000",
+    "stav": "dokončen",
+    "datum_zahajeni": "2023-06-01",
+    "casti": [
+      {
+        "id": "628",
+        "nazev": "Dodávka suché masážní vany",
+        "stav": "dokončen",
+        "druh_rizeni": "uzavřená výzva",
+        "datum_uverejneni": "2023-06-01",
+        "lhuta_nabidek": "2023-05-23",
+        "datum_uzavreni_smlouvy": "2023-05-31",
+        "datum_zruseni": null,
+        "pocet_nabidek": 1,
+        "vitezove": [
+          {
+            "nazev": "MADISSON, s.r.o.",
+            "ico": "26124637",
+            "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
+            "smlouva_uzavrena": true,
+            "castky": [
+              {
+                "hodnota": 737858.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_s_DPH>737858.00</smluvni_cena_s_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-628, část 628, dodavatel č. 1"
+              },
+              {
+                "hodnota": 609800.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_bez_DPH>609800.00</smluvni_cena_bez_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-628, část 628, dodavatel č. 1"
+              },
+              {
+                "hodnota": 569500.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "zaplaceno",
+                "obdobi": "2023",
+                "k_datu": null,
+                "citace": "<cena_za_rok_bez_dph>569500.00</cena_za_rok_bez_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-628, část 628, dodavatel č. 1"
+              }
+            ]
+          }
+        ],
+        "registr_smluv": []
+      }
+    ],
+    "url": "https://zakazky.mesto-trebon.cz/contract_display_628.html",
+    "zdroj": "25179896/2024-2.xml"
   },
   {
     "id": "ezak-VZ-612",
@@ -13228,6 +15985,148 @@
     "zdroj": "00247618/2024-2.xml"
   },
   {
+    "id": "ezak-VZ-610",
+    "subjekt_ico": "25179896",
+    "nazev": "Obnova systému pro zabezpečení vstupu do sítě na perimetru",
+    "druh": "dodavky",
+    "rezim": "Veřejné zakázky malého rozsahu",
+    "predmet": "Obnova systému pro zabezpečení vstupu do sítě na perimetru",
+    "cpv": "00000000",
+    "stav": "dokončen",
+    "datum_zahajeni": "2023-03-14",
+    "casti": [
+      {
+        "id": "610",
+        "nazev": "Obnova systému pro zabezpečení vstupu do sítě na perimetru",
+        "stav": "dokončen",
+        "druh_rizeni": "otevřená výzva",
+        "datum_uverejneni": "2023-03-14",
+        "lhuta_nabidek": "2023-03-21",
+        "datum_uzavreni_smlouvy": "2023-03-28",
+        "datum_zruseni": null,
+        "pocet_nabidek": 4,
+        "vitezove": [
+          {
+            "nazev": "TranSoft a.s.",
+            "ico": "15770281",
+            "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
+            "smlouva_uzavrena": true,
+            "castky": [
+              {
+                "hodnota": 453387.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_s_DPH>453387.00</smluvni_cena_s_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-610, část 610, dodavatel č. 1"
+              },
+              {
+                "hodnota": 374700.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_bez_DPH>374700.00</smluvni_cena_bez_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-610, část 610, dodavatel č. 1"
+              },
+              {
+                "hodnota": 374700.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "zaplaceno",
+                "obdobi": "2023",
+                "k_datu": null,
+                "citace": "<cena_za_rok_bez_dph>374700.00</cena_za_rok_bez_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-610, část 610, dodavatel č. 1"
+              }
+            ]
+          }
+        ],
+        "registr_smluv": []
+      }
+    ],
+    "url": "https://zakazky.mesto-trebon.cz/contract_display_610.html",
+    "zdroj": "25179896/2024-2.xml"
+  },
+  {
+    "id": "ezak-VZ-605",
+    "subjekt_ico": "25179896",
+    "nazev": "Upgrade a rozšíření telefonní ústředny Slatinné lázně Třeboň",
+    "druh": "dodavky",
+    "rezim": "Podlimitní",
+    "predmet": "Upgrade a rozšíření telefonní ústředny Slatinné lázně Třeboň",
+    "cpv": "00000000",
+    "stav": "dokončen",
+    "datum_zahajeni": "2023-02-17",
+    "casti": [
+      {
+        "id": "605",
+        "nazev": "Upgrade a rozšíření telefonní ústředny Slatinné lázně Třeboň",
+        "stav": "dokončen",
+        "druh_rizeni": "zjednodušené podlimitní řízení",
+        "datum_uverejneni": "2023-02-17",
+        "lhuta_nabidek": "2023-03-10",
+        "datum_uzavreni_smlouvy": "2023-04-04",
+        "datum_zruseni": null,
+        "pocet_nabidek": 2,
+        "vitezove": [
+          {
+            "nazev": "APENEX, s.r.o.",
+            "ico": "26102692",
+            "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
+            "smlouva_uzavrena": true,
+            "castky": [
+              {
+                "hodnota": 2768480.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_s_DPH>2768480.00</smluvni_cena_s_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-605, část 605, dodavatel č. 1"
+              },
+              {
+                "hodnota": 2288000.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_bez_DPH>2288000.00</smluvni_cena_bez_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-605, část 605, dodavatel č. 1"
+              },
+              {
+                "hodnota": 1760000.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "zaplaceno",
+                "obdobi": "2023",
+                "k_datu": null,
+                "citace": "<cena_za_rok_bez_dph>1760000.00</cena_za_rok_bez_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-605, část 605, dodavatel č. 1"
+              }
+            ]
+          }
+        ],
+        "registr_smluv": []
+      }
+    ],
+    "url": "https://zakazky.mesto-trebon.cz/contract_display_605.html",
+    "zdroj": "25179896/2024-2.xml"
+  },
+  {
     "id": "ezak-VZ-601",
     "subjekt_ico": "25179896",
     "nazev": "Dodávka myčky nádobí",
@@ -13308,6 +16207,148 @@
     ],
     "url": "https://zakazky.mesto-trebon.cz/contract_display_601.html",
     "zdroj": "25179896/2026-2.xml"
+  },
+  {
+    "id": "ezak-VZ-595",
+    "subjekt_ico": "25179896",
+    "nazev": "Zvýšení ubytovací kapacity LDA – interiér",
+    "druh": "dodavky",
+    "rezim": "Nadlimitní",
+    "predmet": "Předmětem této veřejné zakázky je závazek dodavatele provést zaměření, výrobu, dodávku a montáž nábytku v areálu Lázeňského domu Aurora, Třeboň, a to na základě a v souladu se závaznými podklady, v technickém a estetickém provedení, v rozsahu a za podmínek, uvedených v zadávací dokumentaci a jejích přílohách.",
+    "cpv": "00000000",
+    "stav": "dokončen",
+    "datum_zahajeni": "2022-12-09",
+    "casti": [
+      {
+        "id": "595",
+        "nazev": "Zvýšení ubytovací kapacity LDA – interiér",
+        "stav": "dokončen",
+        "druh_rizeni": "otevřené řízení",
+        "datum_uverejneni": "2022-12-09",
+        "lhuta_nabidek": "2023-01-06",
+        "datum_uzavreni_smlouvy": "2023-03-23",
+        "datum_zruseni": null,
+        "pocet_nabidek": 3,
+        "vitezove": [
+          {
+            "nazev": "SANTAL spol. s r. o.",
+            "ico": "42408121",
+            "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
+            "smlouva_uzavrena": true,
+            "castky": [
+              {
+                "hodnota": 18338920.93,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_s_DPH>18338920.93</smluvni_cena_s_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-595, část 595, dodavatel č. 1"
+              },
+              {
+                "hodnota": 15156133.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_bez_DPH>15156133.00</smluvni_cena_bez_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-595, část 595, dodavatel č. 1"
+              },
+              {
+                "hodnota": 14970735.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "zaplaceno",
+                "obdobi": "2023",
+                "k_datu": null,
+                "citace": "<cena_za_rok_bez_dph>14970735.00</cena_za_rok_bez_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-595, část 595, dodavatel č. 1"
+              }
+            ]
+          }
+        ],
+        "registr_smluv": []
+      }
+    ],
+    "url": "https://zakazky.mesto-trebon.cz/contract_display_595.html",
+    "zdroj": "25179896/2024-2.xml"
+  },
+  {
+    "id": "ezak-VZ-594",
+    "subjekt_ico": "25179896",
+    "nazev": "Obnova tiskáren Slatinné lázně Třeboň",
+    "druh": "dodavky",
+    "rezim": "Veřejné zakázky malého rozsahu",
+    "predmet": "Obnova tiskáren Slatinné lázně Třeboň",
+    "cpv": "00000000",
+    "stav": "dokončen",
+    "datum_zahajeni": "2022-12-09",
+    "casti": [
+      {
+        "id": "594",
+        "nazev": "Obnova tiskáren Slatinné lázně Třeboň",
+        "stav": "dokončen",
+        "druh_rizeni": "otevřená výzva",
+        "datum_uverejneni": "2022-12-09",
+        "lhuta_nabidek": "2022-12-20",
+        "datum_uzavreni_smlouvy": "2022-12-28",
+        "datum_zruseni": null,
+        "pocet_nabidek": 4,
+        "vitezove": [
+          {
+            "nazev": "TranSoft a.s.",
+            "ico": "15770281",
+            "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
+            "smlouva_uzavrena": true,
+            "castky": [
+              {
+                "hodnota": 237492.75,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_s_DPH>237492.75</smluvni_cena_s_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-594, část 594, dodavatel č. 1"
+              },
+              {
+                "hodnota": 196275.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_bez_DPH>196275.00</smluvni_cena_bez_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-594, část 594, dodavatel č. 1"
+              },
+              {
+                "hodnota": 196275.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "zaplaceno",
+                "obdobi": "2023",
+                "k_datu": null,
+                "citace": "<cena_za_rok_bez_dph>196275.00</cena_za_rok_bez_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-594, část 594, dodavatel č. 1"
+              }
+            ]
+          }
+        ],
+        "registr_smluv": []
+      }
+    ],
+    "url": "https://zakazky.mesto-trebon.cz/contract_display_594.html",
+    "zdroj": "25179896/2024-2.xml"
   },
   {
     "id": "ezak-VZ-586",
@@ -13875,6 +16916,77 @@
     ],
     "url": "https://zakazky.mesto-trebon.cz/contract_display_541.html",
     "zdroj": "25179896/2026-1.xml"
+  },
+  {
+    "id": "ezak-VZ-533",
+    "subjekt_ico": "25179896",
+    "nazev": "Zvýšení ubytovací kapacity – Lázeňský dům Aurora – opakované řízení",
+    "druh": "stavebni",
+    "rezim": "Nadlimitní",
+    "predmet": "Předmětem této veřejné zakázky je provedení díla s pracovním názvem „Zvýšení ubytovací kapacity – Lázeňský dům Aurora“ (dále též „stavba“ a „dílo“), které je technicky definováno zpracovanou projektovou dokumentací. Součástí díla jsou všechny nezbytné práce a činnosti pro komplexní dokončení díla v celém rozsahu zadání. Předmětem této zakázky jsou i související projektové a geodetické práce.",
+    "cpv": "00000000",
+    "stav": "dokončen",
+    "datum_zahajeni": "2022-03-18",
+    "casti": [
+      {
+        "id": "533",
+        "nazev": "Zvýšení ubytovací kapacity – Lázeňský dům Aurora – opakované řízení",
+        "stav": "dokončen",
+        "druh_rizeni": "otevřené řízení",
+        "datum_uverejneni": "2022-03-18",
+        "lhuta_nabidek": "2022-04-19",
+        "datum_uzavreni_smlouvy": "2022-05-06",
+        "datum_zruseni": null,
+        "pocet_nabidek": 2,
+        "vitezove": [
+          {
+            "nazev": "Metrostav CZ s.r.o.",
+            "ico": "25021915",
+            "fyzicka_osoba": false,
+            "jmeno_podnikatele": null,
+            "smlouva_uzavrena": true,
+            "castky": [
+              {
+                "hodnota": 174401386.46,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_s_DPH>174401386.46</smluvni_cena_s_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-533, část 533, dodavatel č. 1"
+              },
+              {
+                "hodnota": 144133377.24,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "smluvni",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<smluvni_cena_bez_DPH>144133377.24</smluvni_cena_bez_DPH>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-533, část 533, dodavatel č. 1"
+              },
+              {
+                "hodnota": 143058255.83,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "zaplaceno",
+                "obdobi": "2023",
+                "k_datu": null,
+                "citace": "<cena_za_rok_bez_dph>143058255.83</cena_za_rok_bez_dph>",
+                "poznamka": "25179896/2024-2.xml; zakázka VZ-533, část 533, dodavatel č. 1"
+              }
+            ]
+          }
+        ],
+        "registr_smluv": []
+      }
+    ],
+    "url": "https://zakazky.mesto-trebon.cz/contract_display_533.html",
+    "zdroj": "25179896/2024-2.xml"
   },
   {
     "id": "ezak-VZ-458",
