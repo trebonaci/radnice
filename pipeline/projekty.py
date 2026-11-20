@@ -112,7 +112,7 @@ def sestav_projekt(p: dict, data: dict) -> dict:
             if c["datum_uverejneni"]:
                 udalosti.append({"datum": c["datum_uverejneni"], "typ": "soutez", "text": f"Soutěž: {z['nazev']}",
                                  "role": r_, "zdroj_id": z["id"], "jistota": "nase_propojeni"})
-        zakazky.append({"id": z["id"], "nazev": z["nazev"], "role": r_, "stav": z["stav"] or casti[0]["stav"],
+        zakazky.append({"id": z["id"], "nazev": z["nazev"], "role": r_, "stav": z["stav"],
                         "url": z["url"], "casti": casti, "jistota": "nase_propojeni"})
 
     # smlouvy (registr)
@@ -167,7 +167,11 @@ def sestav_projekt(p: dict, data: dict) -> dict:
 def faze(zakazky: list[dict], smlouvy: list[dict]) -> str:
     """Návrh fáze z dokladů (ne úřední stav): podle hlavní zakázky na stavbu."""
     stavby = [z for z in zakazky if z["role"] == "stavba"]
-    if any(z["stav"] == "ukončeno plnění" for z in stavby):
+    def _hotovo(z: dict) -> bool:  # u vícečástečné zakázky musí být ukončeny všechny části
+        stavy = [c["stav"] for c in z["casti"]] if z["stav"] is None and z["casti"] else [z["stav"]]
+        return all(st == "ukončeno plnění" for st in stavy)
+
+    if any(_hotovo(z) for z in stavby):
         return "dokonceno"
     if any(v for z in stavby for c in z["casti"] for v in c["vitezove"]) or \
             any(s["role"] == "stavba" for s in smlouvy):
