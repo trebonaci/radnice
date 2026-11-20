@@ -300,12 +300,23 @@ def casti_akce(zakazky: list[dict], smlouvy: list[dict], jen_termin: dict[str, s
                         klic, jistota = stejne[0], "nase_propojeni"
                 g = volne.pop(klic) if klic else {"puvodni": None, "dodatky": []}
                 cena, cena_s, zdroj = _bez_dph(v["smluvni"]), _s_dph(v["smluvni"]), {"zdroj_id": z["id"], "url": z["url"]}
-                if cena is None and g["puvodni"] and _bez_dph(g["puvodni"]["castky"]) is not None:
-                    cena, cena_s, zdroj = (_bez_dph(g["puvodni"]["castky"]), _s_dph(g["puvodni"]["castky"]),
-                                           {"zdroj_id": g["puvodni"]["id"], "url": g["puvodni"]["url"]})
+                zdroj_s = None
+                if g["puvodni"]:
+                    reg = {"zdroj_id": g["puvodni"]["id"], "url": g["puvodni"]["url"]}
+                    reg_bez, reg_s = _bez_dph(g["puvodni"]["castky"]), _s_dph(g["puvodni"]["castky"])
+                    # každý základ DPH se doplňuje z registru zvlášť; druhý známý údaj se nepřepisuje
+                    if cena is None and reg_bez is not None:
+                        cena, zdroj = reg_bez, reg
+                        if cena_s is not None:
+                            zdroj_s = {"zdroj_id": z["id"], "url": z["url"]}
+                    if cena_s is None and reg_s is not None:
+                        cena_s = reg_s
+                        if cena is not None and zdroj is not reg:
+                            zdroj_s = reg
                 casti.append({"role": z["role"], "dodavatel": {"nazev": v["nazev"],
                                                                "jmeno_podnikatele": v.get("jmeno_podnikatele")},
-                              "puvodni": {"bez_dph": cena, "s_dph": cena_s, **zdroj},
+                              "puvodni": {"bez_dph": cena, "s_dph": cena_s, **zdroj,
+                                          **({"zdroj_s_dph": zdroj_s} if zdroj_s else {})},
                               "dodatky_smlouvy": g["dodatky"], "vazba_dodatku": jistota})
     for g in volne.values():
         p_ = g["puvodni"]
