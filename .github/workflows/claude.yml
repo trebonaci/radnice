@@ -158,6 +158,14 @@ jobs:
               core.notice(`Codex review was already requested for PR #${pr.number} at ${pr.head.sha}.`);
               return;
             }
+            const marker = `<!-- codex-review-requested:${pr.head.sha}:${new Date().toISOString()} -->`;
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: pr.number,
+              body: `${marker}\\nCodex review requested by transitioning the PR to ready for review.\\nSHA: ${pr.head.sha}`,
+            });
+
             const pullRequestId = pr.node_id;
             if (!pr.draft) {
               await github.graphql(`
@@ -173,13 +181,6 @@ jobs:
                   pullRequest { isDraft }
                 }
               }`, {pullRequestId});
-            const marker = `<!-- codex-review-requested:${pr.head.sha}:${new Date().toISOString()} -->`;
-            await github.rest.issues.createComment({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: pr.number,
-              body: `${marker}\nCodex review requested by transitioning the PR to ready for review.\nSHA: ${pr.head.sha}`,
-            });
             core.notice(`Requested Codex review for PR #${pr.number} at ${pr.head.sha} through ready_for_review.`);
 
   ci_na_pr:
