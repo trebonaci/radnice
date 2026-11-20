@@ -28,9 +28,19 @@ RE_INSTITUCE = re.compile(r"^(?:město|obec|městys|statutární město|kraj|min
 RE_ODSTEPNY = re.compile(r"(?:a\.\s?s\.?|s\.\s?r\.\s?o\.?)\s*,\s*(?:odštěpný závod|organizační složka)", re.IGNORECASE)
 
 
+# Školy, ústavy, spolky a další organizace bez právní formy na konci názvu (ostrý běh 20. 11. 2026:
+# „Základní škola Třeboň, Sokolská 296“, „Hasičský záchranný sbor Jihočeského kraje“…).
+RE_ORGANIZACE = re.compile(
+    r"\b(?:mateřská|základní|střední|vyšší odborná|vysoká|umělecká|hudební)\s+škola\b|\bgymnázium\b|"
+    r"zapsaný spolek|^spolek\b|\bdružstvo\b|státní podnik|\bv\.\s?v\.\s?i\.|\bústav\b|záchranný sbor|"
+    r"^národní\b|\bministerstvo\b|ředitelství|\bknihovna\b|\bmuzeum\b|\bnemocnice\b|příspěvková organizace|"
+    r"obecně prospěšná|\bnadace\b|nadační fond|\bfarnost\b|\bsvaz\b|\buniverzita\b", re.IGNORECASE)
+
+
 def je_pravnicka(nazev: str) -> bool:
     nazev = nazev.strip().rstrip(",")
-    return bool(RE_PRAVNI_FORMA.search(nazev) or RE_INSTITUCE.search(nazev) or RE_ODSTEPNY.search(nazev))
+    return bool(RE_PRAVNI_FORMA.search(nazev) or RE_INSTITUCE.search(nazev) or RE_ODSTEPNY.search(nazev)
+                or RE_ORGANIZACE.search(nazev))
 
 
 DRUHY = {"stavební práce": "stavebni", "dodávky": "dodavky", "služby": "sluzby"}
