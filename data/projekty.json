@@ -141,6 +141,26 @@
         "cena_po_dodatcich": 1123487.0,
         "cena_po_dodatcich_s_dph": 1359419.27,
         "dodatky_bez_dph": null
+      },
+      {
+        "role": "projekt",
+        "dodavatel": {
+          "nazev": "PLOSAB s.r.o.",
+          "jmeno_podnikatele": null
+        },
+        "puvodni": {
+          "bez_dph": 84000.0,
+          "s_dph": 101640.0,
+          "zdroj_id": "rs-37703157",
+          "url": "https://smlouvy.gov.cz/smlouva/37703157"
+        },
+        "vazba_dodatku": "dolozeno",
+        "dodatky": [],
+        "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
+        "cena_po_dodatcich": 84000.0,
+        "cena_po_dodatcich_s_dph": 101640.0,
+        "dodatky_bez_dph": null
       }
     ],
     "souhrn": {
@@ -154,20 +174,20 @@
         "jistota": "nevime"
       },
       "smluvni_bez_dph": {
-        "celkem": 1123487.0,
+        "celkem": 1207487.0,
         "druh": "smluvni",
         "s_dph": false,
         "mena": "CZK",
-        "po_dodatcich": 1123487.0,
+        "po_dodatcich": 1207487.0,
         "neuplne": [],
         "jistota": "nase_propojeni"
       },
       "smluvni_s_dph": {
-        "celkem": 1359419.27,
+        "celkem": 1461059.27,
         "druh": "smluvni",
         "s_dph": true,
         "mena": "CZK",
-        "po_dodatcich": 1359419.27,
+        "po_dodatcich": 1461059.27,
         "neuplne": [],
         "jistota": "nase_propojeni"
       }
@@ -217,6 +237,42 @@
     ],
     "smlouvy": [
       {
+        "id": "rs-37703157",
+        "id_smlouvy": "35408789",
+        "navazuje_na": null,
+        "cislo_smlouvy": "750/9483/26",
+        "predmet": "Vypracování projektové dokumentace pro provedení stavby včetně rozpočtu a výkazu výměr pro výběrové řízení na instalaci fotovoltaické výrobny elektřiny na objektech v areálu ČOV Třeboň, Břilice čp. 303",
+        "role": "projekt",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2026-04-24",
+        "strany": [
+          {
+            "nazev": "PLOSAB s.r.o.",
+            "jmeno_podnikatele": null
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 84000.0,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 101640.0,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/37703157",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
         "id": "rs-39840721",
         "id_smlouvy": "37464277",
         "navazuje_na": null,
@@ -256,6 +312,14 @@
     "usneseni": [],
     "posledni_dodatek": {},
     "udalosti": [
+      {
+        "datum": "2026-04-24",
+        "typ": "smlouva",
+        "text": "Vypracování projektové dokumentace pro provedení stavby včetně rozpočtu a výkazu výměr pro výběrové řízení na instalaci fotovoltaické výrobny elektřiny na objektech v areálu ČOV Třeboň, Břilice čp. 303",
+        "role": "projekt",
+        "zdroj_id": "rs-37703157",
+        "jistota": "nase_propojeni"
+      },
       {
         "datum": "2026-10-07",
         "typ": "smlouva",
