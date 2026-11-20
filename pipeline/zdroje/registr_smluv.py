@@ -118,7 +118,11 @@ def stahni(koren: Path = KOREN, otevri: Callable[[str], IO[bytes]] = otevri_http
         return [], [f"index: {e}"]
     if not dumpy:
         return [], ["index: žádné měsíční dumpy"]
-    k_zpracovani = [d for d in reversed(dumpy) if _zastarale(manifest, d, ico)][:max_dumpu]
+    # pořadí dávky: rozpracovaný měsíc, pak dosud nezpracované měsíce (nejnovější první), nakonec měsíce
+    # se změněným hashem – registr mění hash nedávných dumpů denně a bez tohoto pořadí by historie nepřibývala
+    zastarale = [d for d in reversed(dumpy) if _zastarale(manifest, d, ico)]
+    k_zpracovani = sorted(zastarale, key=lambda d: 0 if not d["dokonceny"] else 1 if d["klic"] not in manifest else 2
+                          )[:max_dumpu]
     znama_id = {str(z.get("identifikator", {}).get("idSmlouvy")) for f in adresar.glob("*-*.json")
                 for z in json.loads(f.read_text(encoding="utf-8"))} if adresar.exists() else set()
     for d in k_zpracovani:

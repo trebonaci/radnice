@@ -207,3 +207,20 @@ def test_podnikajici_fo_jmenem_nepodnikajici_anonymne():
         ("fyzická osoba", None, True, "Ing. Jan Projektant")
     assert strana({"nazev": "Jana Nájemnice", "prijemce": "1"})["jmeno_podnikatele"] is None     # bez IČO
     assert strana({"nazev": "Petr Plátce", "ico": "87654321", "prijemce": "0"})["jmeno_podnikatele"] is None
+
+
+def test_nezpracovane_mesice_maji_prednost_pred_zmenenym_hashem(koren):
+    index = INDEX.replace(b'<dump><mesic>10</mesic>', (
+        b'<dump><mesic>8</mesic><rok>2026</rok><hashDumpu>h8</hashDumpu><dokoncenyMesic>1</dokoncenyMesic>'
+        b'<odkaz>https://data.smlouvy.gov.cz/dump_2026_08.xml</odkaz></dump><dump><mesic>10</mesic>'))
+    web = {rs.INDEX_URL: index, "https://data.smlouvy.gov.cz/dump_2026_10.xml": DUMP.encode(),
+           "https://data.smlouvy.gov.cz/dump_2026_09.xml": DUMP.replace("<mesic>10", "<mesic>9").encode(),
+           "https://data.smlouvy.gov.cz/dump_2026_08.xml": DUMP.replace("<mesic>10", "<mesic>8").encode()}
+    m = koren / "raw/smlouvy/manifest.json"
+    m.parent.mkdir(parents=True, exist_ok=True)
+    m.write_text(json.dumps({"2026-09": {"hash": "stary", "ico": sorted(rs.sledovana_ico(koren))}}), encoding="utf-8")
+    volano = []
+    rs.stahni(koren, otevri_z(web, volano), max_dumpu=2)
+    dumpy = [u for u in volano if u != rs.INDEX_URL]
+    # rozpracovaný říjen, pak dosud nezpracovaný srpen; září se změněným hashem až v dalším běhu
+    assert dumpy == ["https://data.smlouvy.gov.cz/dump_2026_10.xml", "https://data.smlouvy.gov.cz/dump_2026_08.xml"]
