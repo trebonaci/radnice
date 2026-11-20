@@ -12,6 +12,7 @@ Bez AI, údaje se opisují. Pravidla:
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 
 from pipeline.zakazky import je_pravnicka
@@ -31,15 +32,25 @@ def _cislo(v) -> float | None:
         return None
 
 
-def strana(s: dict, znama: frozenset[str] = frozenset()) -> dict:
-    """`znama` = IČO sledovaných právnických osob (config/subjekty.yaml): ty se nikdy neanonymizují."""
+# výpůjčka, nájem, pacht nebo dar: fyzická osoba užívá nebo dává majetek, není dodavatelem města (#93)
+RE_NE_DODAVKA = re.compile(r"výpůjč|nájem|nájm|pacht|daru|darovac", re.I)
+# jméno osoby: 2–4 slova s velkým počátečním písmenem, volitelně „nar. RRRR“; organizace (čísla, zkratky,
+# čárky) se po slovech nemaskují, jinak by zmizela i věcná slova předmětu (místa, názvy)
+RE_JMENO_OSOBY = re.compile(r"(?:[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ][a-záčďéěíňóřšťúůýž]+(?:-[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ][a-záčďéěíňóřšťúůýž]+)?\s+){1,3}"
+                            r"[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ][a-záčďéěíňóřšťúůýž]+(?:\s*,?\s*nar\.\s*\d{4})?")
+
+
+def strana(s: dict, znama: frozenset[str] = frozenset(), predmet: str | None = None) -> dict:
+    """`znama` = IČO sledovaných právnických osob (config/subjekty.yaml): ty se nikdy neanonymizují.
+    `predmet` smlouvy: u výpůjčky, nájmu, pachtu a daru se ani podnikající fyzická osoba neuvádí jménem."""
     nazev, ico = (s.get("nazev") or "").strip(), (s.get("ico") or "").strip() or None
     if not ico or (ico not in znama and not je_pravnicka(nazev)):
         # podnikající fyzická osoba (má IČO), která je příjemcem plnění (dodavatel), se uvádí jménem ze zdroje,
         # bez IČO a adresy (#93); ostatní fyzické osoby (nájemci, dárci, bez IČO) zůstávají anonymní
         prijemce = s.get("prijemce") == "1"
         return {"nazev": "fyzická osoba", "ico": None, "fyzicka_osoba": True, "prijemce": prijemce,
-                "jmeno_podnikatele": nazev if ico and nazev and prijemce else None}
+                "jmeno_podnikatele": nazev if ico and nazev and prijemce
+                and not RE_NE_DODAVKA.search(predmet or "") else None}
     return {"nazev": nazev, "ico": ico, "fyzicka_osoba": False, "prijemce": s.get("prijemce") == "1",
             "jmeno_podnikatele": None}
 
@@ -67,13 +78,19 @@ def _skryj_fo(predmet, strany: list[dict], znama: frozenset[str]):
     """Z předmětu odstraní jméno, IČO a adresu smluvních stran, které jsou fyzickými osobami."""
     if not predmet:
         return predmet
+    puvodni = predmet
     for s in strany:
-        if strana(s, znama)["fyzicka_osoba"]:
+        if strana(s, znama, puvodni)["fyzicka_osoba"]:
             nazev = (s.get("nazev") or "").strip()
             for hodnota in (s.get("adresa"), nazev, s.get("ico")):
                 h = (hodnota or "").strip()
                 if len(h) >= 3:
                     predmet = predmet.replace(h, "[jméno]" if h == nazev else "[údaj]")
+            if strana(s, znama, puvodni)["jmeno_podnikatele"] is None and RE_JMENO_OSOBY.fullmatch(nazev):
+                # předmět často uvádí jen část jména (např. „p. Příjmení“) → maskovat i jednotlivá slova jména
+                for slovo in re.findall(r"[^\W\d_]{4,}", nazev):
+                    if slovo[0].isupper():
+                        predmet = re.sub(rf"(?<!\w){re.escape(slovo)}(?!\w)", "[jméno]", predmet, flags=re.IGNORECASE)
     return predmet
 
 
@@ -88,7 +105,7 @@ def prevod(z: dict, zdroj: str, znama: frozenset[str] = frozenset()) -> dict:
         # zveřejnit může i fyzická osoba (sledovaná organizace je pak smluvní stranou) → stejná anonymizace
         "subjekt_ico": strana(subj, znama)["ico"],
         "subjekt_nazev": strana(subj, znama)["nazev"],
-        "strany": [strana(s, znama) for s in _seznam(sml.get("smluvniStrana"))],
+        "strany": [strana(s, znama, sml.get("predmet")) for s in _seznam(sml.get("smluvniStrana"))],
         "predmet": _skryj_fo(sml.get("predmet"), _seznam(sml.get("smluvniStrana")), znama),
         "datum_uzavreni": sml.get("datumUzavreni"),
         "datum_zverejneni": (z.get("casZverejneni") or "")[:10] or None,

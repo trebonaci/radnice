@@ -2813,6 +2813,26 @@
         "cena_po_dodatcich": 208817.0,
         "cena_po_dodatcich_s_dph": 252668.57,
         "dodatky_bez_dph": null
+      },
+      {
+        "role": "administrace",
+        "dodavatel": {
+          "nazev": "GPL - INVEST s.r.o.",
+          "jmeno_podnikatele": null
+        },
+        "puvodni": {
+          "bez_dph": 75000.0,
+          "s_dph": 90750.0,
+          "zdroj_id": "rs-34688045",
+          "url": "https://smlouvy.gov.cz/smlouva/34688045"
+        },
+        "vazba_dodatku": "dolozeno",
+        "dodatky": [],
+        "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
+        "cena_po_dodatcich": 75000.0,
+        "cena_po_dodatcich_s_dph": 90750.0,
+        "dodatky_bez_dph": null
       }
     ],
     "souhrn": {
@@ -2826,20 +2846,20 @@
         "jistota": "nase_propojeni"
       },
       "smluvni_bez_dph": {
-        "celkem": 55051018.71,
+        "celkem": 55126018.71,
         "druh": "smluvni",
         "s_dph": false,
         "mena": "CZK",
-        "po_dodatcich": 61059262.55,
+        "po_dodatcich": 61134262.55,
         "neuplne": [],
         "jistota": "nase_propojeni"
       },
       "smluvni_s_dph": {
-        "celkem": 66378002.63,
+        "celkem": 66468752.63,
         "druh": "smluvni",
         "s_dph": true,
         "mena": "CZK",
-        "po_dodatcich": 73628762.67,
+        "po_dodatcich": 73719512.67,
         "neuplne": [],
         "jistota": "nase_propojeni"
       }
@@ -3009,6 +3029,42 @@
       }
     ],
     "smlouvy": [
+      {
+        "id": "rs-34688045",
+        "id_smlouvy": "32523365",
+        "navazuje_na": "23592055",
+        "cislo_smlouvy": "750/9019/25",
+        "predmet": "Administrace zadávacího řízení VZ Sportovní hala Třeboň - nástavba a přístavba ubytování",
+        "role": "administrace",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2025-09-04",
+        "strany": [
+          {
+            "nazev": "GPL - INVEST s.r.o.",
+            "jmeno_podnikatele": null
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 75000.0,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 90750.0,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/34688045",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
       {
         "id": "rs-36156093",
         "id_smlouvy": "33927205",
@@ -3723,6 +3779,16 @@
         "pocet_nabidek": 1,
         "role": "projekt",
         "zdroj_id": "ezak-VZ-810",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2025-09-04",
+        "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "administrace výběrového řízení",
+        "text": "Administrace zadávacího řízení VZ Sportovní hala Třeboň - nástavba a přístavba ubytování",
+        "role": "administrace",
+        "zdroj_id": "rs-34688045",
         "jistota": "nase_propojeni"
       },
       {
