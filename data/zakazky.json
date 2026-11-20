@@ -1856,6 +1856,28 @@
                 "k_datu": null,
                 "citace": "<cena_za_rok_bez_dph>2663825.22</cena_za_rok_bez_dph>",
                 "poznamka": "00247618/2026-2.xml; zakázka VZ-929, část 929, dodavatel č. 1"
+              },
+              {
+                "hodnota": 3434160.29,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "nabidkova",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<nabidkova_cena_s_dph>3434160.29</nabidkova_cena_s_dph>",
+                "poznamka": "00247618/2026-2.xml; zakázka VZ-929, část 929, dodavatel č. 1, nabídka"
+              },
+              {
+                "hodnota": 2838149.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "nabidkova",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<nabidkova_cena_bez_dph>2838149.00</nabidkova_cena_bez_dph>",
+                "poznamka": "00247618/2026-2.xml; zakázka VZ-929, část 929, dodavatel č. 1, nabídka"
               }
             ]
           }
@@ -2699,6 +2721,28 @@
                 "k_datu": null,
                 "citace": "<smluvni_cena_bez_DPH>54625965.36</smluvni_cena_bez_DPH>",
                 "poznamka": "00247618/2026-2.xml; zakázka VZ-901, část 901, dodavatel č. 1"
+              },
+              {
+                "hodnota": 60144956.84,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "nabidkova",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<nabidkova_cena_s_dph>60144956.84</nabidkova_cena_s_dph>",
+                "poznamka": "00247618/2026-2.xml; zakázka VZ-901, část 901, dodavatel č. 1, nabídka"
+              },
+              {
+                "hodnota": 49706575.9,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "nabidkova",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<nabidkova_cena_bez_dph>49706575.90</nabidkova_cena_bez_dph>",
+                "poznamka": "00247618/2026-2.xml; zakázka VZ-901, část 901, dodavatel č. 1, nabídka"
               }
             ]
           }
@@ -3529,6 +3573,28 @@
                 "k_datu": null,
                 "citace": "<cena_za_rok_bez_dph>0.00</cena_za_rok_bez_dph>",
                 "poznamka": "00247618/2026-2.xml; zakázka VZ-883, část 883, dodavatel č. 1"
+              },
+              {
+                "hodnota": 55271469.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "nabidkova",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<nabidkova_cena_s_dph>55271469.00</nabidkova_cena_s_dph>",
+                "poznamka": "00247618/2026-2.xml; zakázka VZ-883, část 883, dodavatel č. 1, nabídka"
+              },
+              {
+                "hodnota": 45678900.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "nabidkova",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<nabidkova_cena_bez_dph>45678900.00</nabidkova_cena_bez_dph>",
+                "poznamka": "00247618/2026-2.xml; zakázka VZ-883, část 883, dodavatel č. 1, nabídka"
               }
             ]
           }
@@ -3618,6 +3684,28 @@
                 "k_datu": null,
                 "citace": "<cena_za_rok_bez_dph>0.00</cena_za_rok_bez_dph>",
                 "poznamka": "00247618/2026-2.xml; zakázka VZ-882, část 882, dodavatel č. 1"
+              },
+              {
+                "hodnota": 27614578.82,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "nabidkova",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<nabidkova_cena_s_dph>27614578.82</nabidkova_cena_s_dph>",
+                "poznamka": "00247618/2026-2.xml; zakázka VZ-882, část 882, dodavatel č. 1, nabídka"
+              },
+              {
+                "hodnota": 22821965.97,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "nabidkova",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<nabidkova_cena_bez_dph>22821965.97</nabidkova_cena_bez_dph>",
+                "poznamka": "00247618/2026-2.xml; zakázka VZ-882, část 882, dodavatel č. 1, nabídka"
               }
             ]
           }
@@ -4116,6 +4204,28 @@
                 "k_datu": null,
                 "citace": "<cena_za_rok_bez_dph>9126917.34</cena_za_rok_bez_dph>",
                 "poznamka": "00247618/2026-1.xml; zakázka VZ-872, část 872, dodavatel č. 1"
+              },
+              {
+                "hodnota": 11279201.1,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "nabidkova",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<nabidkova_cena_s_dph>11279201.10</nabidkova_cena_s_dph>",
+                "poznamka": "00247618/2026-1.xml; zakázka VZ-872, část 872, dodavatel č. 1, nabídka"
+              },
+              {
+                "hodnota": 9321653.8,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "nabidkova",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<nabidkova_cena_bez_dph>9321653.80</nabidkova_cena_bez_dph>",
+                "poznamka": "00247618/2026-1.xml; zakázka VZ-872, část 872, dodavatel č. 1, nabídka"
               }
             ]
           }
@@ -5096,6 +5206,28 @@
                 "k_datu": null,
                 "citace": "<cena_za_rok_bez_dph>15433507.60</cena_za_rok_bez_dph>",
                 "poznamka": "00247618/2025-2.xml; zakázka VZ-858, část 858, dodavatel č. 1"
+              },
+              {
+                "hodnota": 17202173.77,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "nabidkova",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<nabidkova_cena_s_dph>17202173.77</nabidkova_cena_s_dph>",
+                "poznamka": "00247618/2025-2.xml; zakázka VZ-858, část 858, dodavatel č. 1, nabídka"
+              },
+              {
+                "hodnota": 14216672.54,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "nabidkova",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<nabidkova_cena_bez_dph>14216672.54</nabidkova_cena_bez_dph>",
+                "poznamka": "00247618/2025-2.xml; zakázka VZ-858, část 858, dodavatel č. 1, nabídka"
               }
             ]
           }
@@ -5270,6 +5402,28 @@
                 "k_datu": null,
                 "citace": "<smluvni_cena_bez_DPH>957600.00</smluvni_cena_bez_DPH>",
                 "poznamka": "25179896/2025-2.xml; zakázka VZ-849, část 850, dodavatel č. 1"
+              },
+              {
+                "hodnota": 1072512.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "nabidkova",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<nabidkova_cena_s_dph>1072512.00</nabidkova_cena_s_dph>",
+                "poznamka": "25179896/2025-2.xml; zakázka VZ-849, část 850, dodavatel č. 1, nabídka"
+              },
+              {
+                "hodnota": 957600.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "nabidkova",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<nabidkova_cena_bez_dph>957600.00</nabidkova_cena_bez_dph>",
+                "poznamka": "25179896/2025-2.xml; zakázka VZ-849, část 850, dodavatel č. 1, nabídka"
               }
             ]
           }
@@ -5315,6 +5469,28 @@
                 "k_datu": null,
                 "citace": "<smluvni_cena_bez_DPH>584000.00</smluvni_cena_bez_DPH>",
                 "poznamka": "25179896/2025-2.xml; zakázka VZ-849, část 851, dodavatel č. 1"
+              },
+              {
+                "hodnota": 706640.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "nabidkova",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<nabidkova_cena_s_dph>706640.00</nabidkova_cena_s_dph>",
+                "poznamka": "25179896/2025-2.xml; zakázka VZ-849, část 851, dodavatel č. 1, nabídka"
+              },
+              {
+                "hodnota": 584000.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "nabidkova",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<nabidkova_cena_bez_dph>584000.00</nabidkova_cena_bez_dph>",
+                "poznamka": "25179896/2025-2.xml; zakázka VZ-849, část 851, dodavatel č. 1, nabídka"
               }
             ]
           }
@@ -5360,6 +5536,28 @@
                 "k_datu": null,
                 "citace": "<smluvni_cena_bez_DPH>654490.00</smluvni_cena_bez_DPH>",
                 "poznamka": "25179896/2025-2.xml; zakázka VZ-849, část 852, dodavatel č. 1"
+              },
+              {
+                "hodnota": 791932.9,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "nabidkova",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<nabidkova_cena_s_dph>791932.90</nabidkova_cena_s_dph>",
+                "poznamka": "25179896/2025-2.xml; zakázka VZ-849, část 852, dodavatel č. 1, nabídka"
+              },
+              {
+                "hodnota": 654490.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "nabidkova",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<nabidkova_cena_bez_dph>654490.00</nabidkova_cena_bez_dph>",
+                "poznamka": "25179896/2025-2.xml; zakázka VZ-849, část 852, dodavatel č. 1, nabídka"
               }
             ]
           }
@@ -5765,6 +5963,28 @@
                 "k_datu": null,
                 "citace": "<cena_za_rok_bez_dph>10868691.29</cena_za_rok_bez_dph>",
                 "poznamka": "00247618/2026-1.xml; zakázka VZ-840, část 840, dodavatel č. 1"
+              },
+              {
+                "hodnota": 13983443.99,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "nabidkova",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<nabidkova_cena_s_dph>13983443.99</nabidkova_cena_s_dph>",
+                "poznamka": "00247618/2026-1.xml; zakázka VZ-840, část 840, dodavatel č. 1, nabídka"
+              },
+              {
+                "hodnota": 11556265.28,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "nabidkova",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<nabidkova_cena_bez_dph>11556265.28</nabidkova_cena_bez_dph>",
+                "poznamka": "00247618/2026-1.xml; zakázka VZ-840, část 840, dodavatel č. 1, nabídka"
               }
             ]
           }
@@ -7463,6 +7683,28 @@
                 "k_datu": null,
                 "citace": "<cena_za_rok_bez_dph>11694972.07</cena_za_rok_bez_dph>",
                 "poznamka": "00247618/2026-1.xml; zakázka VZ-812, část 812, dodavatel č. 1"
+              },
+              {
+                "hodnota": 14009392.05,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "nabidkova",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<nabidkova_cena_s_dph>14009392.05</nabidkova_cena_s_dph>",
+                "poznamka": "00247618/2026-1.xml; zakázka VZ-812, část 812, dodavatel č. 1, nabídka"
+              },
+              {
+                "hodnota": 11578009.96,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "nabidkova",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<nabidkova_cena_bez_dph>11578009.96</nabidkova_cena_bez_dph>",
+                "poznamka": "00247618/2026-1.xml; zakázka VZ-812, část 812, dodavatel č. 1, nabídka"
               }
             ]
           }
@@ -8651,6 +8893,28 @@
                 "k_datu": null,
                 "citace": "<cena_za_rok_bez_dph>158590.43</cena_za_rok_bez_dph>",
                 "poznamka": "00247618/2025-2.xml; zakázka VZ-798, část 798, dodavatel č. 1"
+              },
+              {
+                "hodnota": 18119972.93,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "nabidkova",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<nabidkova_cena_s_dph>18119972.93</nabidkova_cena_s_dph>",
+                "poznamka": "00247618/2025-2.xml; zakázka VZ-798, část 798, dodavatel č. 1, nabídka"
+              },
+              {
+                "hodnota": 14975184.24,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "nabidkova",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<nabidkova_cena_bez_dph>14975184.24</nabidkova_cena_bez_dph>",
+                "poznamka": "00247618/2025-2.xml; zakázka VZ-798, část 798, dodavatel č. 1, nabídka"
               }
             ]
           }
@@ -10281,6 +10545,28 @@
                 "k_datu": null,
                 "citace": "<cena_za_rok_bez_dph>967408.55</cena_za_rok_bez_dph>",
                 "poznamka": "00247618/2024-2.xml; zakázka VZ-772, část 772, dodavatel č. 1"
+              },
+              {
+                "hodnota": 899497.98,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "nabidkova",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<nabidkova_cena_s_dph>899497.98</nabidkova_cena_s_dph>",
+                "poznamka": "00247618/2024-2.xml; zakázka VZ-772, část 772, dodavatel č. 1, nabídka"
+              },
+              {
+                "hodnota": 743386.76,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "nabidkova",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<nabidkova_cena_bez_dph>743386.76</nabidkova_cena_bez_dph>",
+                "poznamka": "00247618/2024-2.xml; zakázka VZ-772, část 772, dodavatel č. 1, nabídka"
               }
             ]
           }
@@ -11438,6 +11724,28 @@
                 "k_datu": null,
                 "citace": "<cena_za_rok_bez_dph>14649559.20</cena_za_rok_bez_dph>",
                 "poznamka": "00247618/2025-1.xml; zakázka VZ-733, část 733, dodavatel č. 1"
+              },
+              {
+                "hodnota": 16210476.49,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "nabidkova",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<nabidkova_cena_s_dph>16210476.49</nabidkova_cena_s_dph>",
+                "poznamka": "00247618/2025-1.xml; zakázka VZ-733, část 733, dodavatel č. 1, nabídka"
+              },
+              {
+                "hodnota": 13397088.01,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "nabidkova",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<nabidkova_cena_bez_dph>13397088.01</nabidkova_cena_bez_dph>",
+                "poznamka": "00247618/2025-1.xml; zakázka VZ-733, část 733, dodavatel č. 1, nabídka"
               }
             ]
           }
@@ -12215,6 +12523,28 @@
                 "k_datu": null,
                 "citace": "<cena_za_rok_bez_dph>28318205.98</cena_za_rok_bez_dph>",
                 "poznamka": "00247618/2026-1.xml; zakázka VZ-712, část 712, dodavatel č. 1"
+              },
+              {
+                "hodnota": 43714880.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "nabidkova",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<nabidkova_cena_s_dph>43714880.00</nabidkova_cena_s_dph>",
+                "poznamka": "00247618/2026-1.xml; zakázka VZ-712, část 712, dodavatel č. 1, nabídka"
+              },
+              {
+                "hodnota": 36128000.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "nabidkova",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<nabidkova_cena_bez_dph>36128000.00</nabidkova_cena_bez_dph>",
+                "poznamka": "00247618/2026-1.xml; zakázka VZ-712, část 712, dodavatel č. 1, nabídka"
               }
             ]
           }
@@ -12551,6 +12881,28 @@
                 "k_datu": null,
                 "citace": "<cena_za_rok_bez_dph>87929379.44</cena_za_rok_bez_dph>",
                 "poznamka": "00247618/2026-1.xml; zakázka VZ-706, část 706, dodavatel č. 1"
+              },
+              {
+                "hodnota": 99590835.96,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "nabidkova",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<nabidkova_cena_s_dph>99590835.96</nabidkova_cena_s_dph>",
+                "poznamka": "00247618/2026-1.xml; zakázka VZ-706, část 706, dodavatel č. 1, nabídka"
+              },
+              {
+                "hodnota": 82306476.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "nabidkova",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<nabidkova_cena_bez_dph>82306476.00</nabidkova_cena_bez_dph>",
+                "poznamka": "00247618/2026-1.xml; zakázka VZ-706, část 706, dodavatel č. 1, nabídka"
               }
             ]
           }
@@ -13854,6 +14206,28 @@
                 "k_datu": null,
                 "citace": "<cena_za_rok_bez_dph>9283489.16</cena_za_rok_bez_dph>",
                 "poznamka": "00247618/2025-1.xml; zakázka VZ-688, část 688, dodavatel č. 1"
+              },
+              {
+                "hodnota": 10164000.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "nabidkova",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<nabidkova_cena_s_dph>10164000.00</nabidkova_cena_s_dph>",
+                "poznamka": "00247618/2025-1.xml; zakázka VZ-688, část 688, dodavatel č. 1, nabídka"
+              },
+              {
+                "hodnota": 8400000.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "nabidkova",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<nabidkova_cena_bez_dph>8400000.00</nabidkova_cena_bez_dph>",
+                "poznamka": "00247618/2025-1.xml; zakázka VZ-688, část 688, dodavatel č. 1, nabídka"
               }
             ]
           }
@@ -14295,6 +14669,28 @@
                 "k_datu": null,
                 "citace": "<cena_za_rok_bez_dph>10965593.67</cena_za_rok_bez_dph>",
                 "poznamka": "00247618/2025-1.xml; zakázka VZ-667, část 667, dodavatel č. 1"
+              },
+              {
+                "hodnota": 11742673.24,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "nabidkova",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<nabidkova_cena_s_dph>11742673.24</nabidkova_cena_s_dph>",
+                "poznamka": "00247618/2025-1.xml; zakázka VZ-667, část 667, dodavatel č. 1, nabídka"
+              },
+              {
+                "hodnota": 9704688.63,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "nabidkova",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<nabidkova_cena_bez_dph>9704688.63</nabidkova_cena_bez_dph>",
+                "poznamka": "00247618/2025-1.xml; zakázka VZ-667, část 667, dodavatel č. 1, nabídka"
               }
             ]
           }
@@ -14936,6 +15332,28 @@
                 "k_datu": null,
                 "citace": "<cena_za_rok_bez_dph>2061200.81</cena_za_rok_bez_dph>",
                 "poznamka": "00247618/2024-2.xml; zakázka VZ-644, část 644, dodavatel č. 1"
+              },
+              {
+                "hodnota": 8645503.42,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "nabidkova",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<nabidkova_cena_s_dph>8645503.42</nabidkova_cena_s_dph>",
+                "poznamka": "00247618/2024-2.xml; zakázka VZ-644, část 644, dodavatel č. 1, nabídka"
+              },
+              {
+                "hodnota": 7145044.15,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "nabidkova",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<nabidkova_cena_bez_dph>7145044.15</nabidkova_cena_bez_dph>",
+                "poznamka": "00247618/2024-2.xml; zakázka VZ-644, část 644, dodavatel č. 1, nabídka"
               }
             ]
           }
@@ -15040,6 +15458,28 @@
                 "k_datu": null,
                 "citace": "<cena_za_rok_bez_dph>8092306.49</cena_za_rok_bez_dph>",
                 "poznamka": "00247618/2024-2.xml; zakázka VZ-643, část 643, dodavatel č. 1"
+              },
+              {
+                "hodnota": 16896219.1,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "nabidkova",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<nabidkova_cena_s_dph>16896219.10</nabidkova_cena_s_dph>",
+                "poznamka": "00247618/2024-2.xml; zakázka VZ-643, část 643, dodavatel č. 1, nabídka"
+              },
+              {
+                "hodnota": 13963817.44,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "nabidkova",
+                "obdobi": null,
+                "k_datu": null,
+                "citace": "<nabidkova_cena_bez_dph>13963817.44</nabidkova_cena_bez_dph>",
+                "poznamka": "00247618/2024-2.xml; zakázka VZ-643, část 643, dodavatel č. 1, nabídka"
               }
             ]
           }

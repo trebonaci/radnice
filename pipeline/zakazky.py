@@ -4,7 +4,8 @@ Bez AI: údaje se jen opisují z XML. Pravidla:
 - Zakázka se může objevit ve více ročních exportech; platí stav z nejnovějšího roku.
 - Fyzické osoby (subjekt s `bydliste`, ne `misto_podnikani` / `zeme_sidla`) se nezveřejňují:
   místo názvu „fyzická osoba“, bez IČO.
-- Částky mají `druh` a `s_dph`, nesčítají se: smluvní cena (`smluvni`) a plnění za rok (`zaplaceno`).
+- Částky mají `druh` a `s_dph`, nesčítají se: nabídková cena vítěze (`nabidkova`), smluvní cena (`smluvni` –
+  E-ZAK ji po dodatcích přepisuje na cenu po dodatku) a plnění za rok (`zaplaceno`).
   Nabídkové ceny uchazečů se neukládají, jen počet nabídek.
 """
 from __future__ import annotations
@@ -112,7 +113,20 @@ def _cast(c: ET.Element, zdroj: str, zid: str | None = None) -> dict:
                 _castka(pl, "cena_za_rok_s_dph", True, "zaplaceno", zdroj, misto, rok),
                 _castka(pl, "cena_za_rok_bez_dph", False, "zaplaceno", zdroj, misto, rok),
             ) if x]
-        vitezove.append({**subjekt(v.find(f"{NS}subjekt")), "smlouva_uzavrena": _t(v, "uzavrena_smlouva_nebo_rd") == "1",
+        # nabídková cena vítěze (= vysoutěžená cena; smluvní cena v E-ZAK se po dodatcích přepisuje,
+        # např. „Cena po dodatku č. 5“ u přístavby tělocvičen)
+        sv = v.find(f"{NS}subjekt")
+        for u in (p.findall(f"{NS}ucastnici/{NS}ucastnik") if p is not None else []):
+            su = u.find(f"{NS}subjekt")
+            if su is not None and sv is not None and (
+                    (_t(su, "ico") and _t(su, "ico") == _t(sv, "ico"))
+                    or (not _t(sv, "ico") and _t(su, "nazev_subjektu") == _t(sv, "nazev_subjektu"))):
+                castky += [x for x in (
+                    _castka(u, "nabidkova_cena_s_dph", True, "nabidkova", zdroj, misto + ", nabídka"),
+                    _castka(u, "nabidkova_cena_bez_dph", False, "nabidkova", zdroj, misto + ", nabídka"),
+                ) if x]
+                break
+        vitezove.append({**subjekt(sv), "smlouva_uzavrena": _t(v, "uzavrena_smlouva_nebo_rd") == "1",
                          "castky": castky})
     ucastnici = p.findall(f"{NS}ucastnici/{NS}ucastnik") if p is not None else []
     registr = []
@@ -181,7 +195,7 @@ def zkontroluj(zakazky: list[dict], koren: Path | None = None) -> list[str]:
                 if v["fyzicka_osoba"] and (v["ico"] or v["nazev"] != "fyzická osoba"):
                     chyby.append(f"zakazky: {z['id']}: fyzická osoba není anonymizovaná")
                 for k in v["castky"]:
-                    if k["druh"] not in ("smluvni", "zaplaceno") or k["s_dph"] not in (True, False):
+                    if k["druh"] not in ("smluvni", "nabidkova", "zaplaceno") or k["s_dph"] not in (True, False):
                         chyby.append(f"zakazky: {z['id']}: částka bez druhu nebo DPH")
                     if not k.get("citace") or not k.get("poznamka"):
                         chyby.append(f"zakazky: {z['id']}: částka bez citace nebo umístění")
