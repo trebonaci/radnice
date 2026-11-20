@@ -90,10 +90,25 @@ jobs:
                 // žádost je starší než poslední commit PR (#111)
                 const commit = (await github.rest.repos.getCommit({owner, repo, ref: sha})).data;
                 const kdyCommit = commit.commit.committer.date;
-                const pozadano = komentare.some(k => (k.body || '').includes('@codex review') && k.created_at >= kdyCommit);
+                // Codex odmítá „@codex review“ od bota (#123) → review spustit převodem PR na draft a zpět na
+                // „ready for review“ (jednou za commit, značka v komentáři); když do 3 h nic, výzva pro Ondřeje
+                const ZNACKA = `<!-- codex-trigger:${sha} -->`;
                 const bezi = stav && stav.status && stav.status !== 'completed';
-                if (!pozadano && !bezi) {
-                  await github.rest.issues.createComment({owner, repo, issue_number: pr.number, body: '@codex review'});
+                const spusteno = komentare.find(k => (k.body || '').includes(ZNACKA));
+                const pozadano = komentare.some(k => (k.body || '').includes('@codex review') && k.created_at >= kdyCommit
+                                                && !k.user.login.endsWith('[bot]'));
+                if (!bezi && !pozadano && !spusteno) {
+                  const id = (await github.graphql(`query($o:String!,$r:String!,$n:Int!){repository(owner:$o,name:$r){pullRequest(number:$n){id}}}`,
+                    {o: owner, r: repo, n: pr.number})).repository.pullRequest.id;
+                  await github.graphql(`mutation($id:ID!){convertPullRequestToDraft(input:{pullRequestId:$id}){clientMutationId}}`, {id});
+                  await github.graphql(`mutation($id:ID!){markPullRequestReadyForReview(input:{pullRequestId:$id}){clientMutationId}}`, {id});
+                  await github.rest.issues.createComment({owner, repo, issue_number: pr.number,
+                    body: `${ZNACKA}\nPR převeden na draft a zpět, aby Codex zkontroloval commit ${sha.slice(0, 7)}.`});
+                } else if (spusteno && !bezi && Date.now() - Date.parse(spusteno.created_at) > 3 * 3600 * 1000
+                           && !stitky.includes('potrebuje-cloveka')) {
+                  await github.rest.issues.addLabels({owner, repo, issue_number: pr.number, labels: ['potrebuje-cloveka']});
+                  await github.rest.issues.createComment({owner, repo, issue_number: pr.number,
+                    body: `Codex commit ${sha.slice(0, 7)} do 3 hodin nezkontroloval. Ondřeji, napiš prosím do PR \`@codex review\` (žádost od bota Codex nepřijímá).`});
                 }
                 core.info(`${kdo}: čeká na Codex review commitu ${sha.slice(0, 7)}`);
                 continue;
