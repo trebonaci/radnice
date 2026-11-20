@@ -244,7 +244,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: prNumber,
-              body: `${marker}\nCodex review requested by transitioning the PR to ready for review.\\nSHA: ${currentPr.head.sha}`,
+              body: `${marker}\nCodex review requested by transitioning the PR to ready for review.\nSHA: ${currentPr.head.sha}`,
             });
 
             const pullRequestId = currentPr.node_id;
