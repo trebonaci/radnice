@@ -28,7 +28,7 @@ KOREN = Path(__file__).resolve().parents[2]
 INDEX_URL = "https://data.smlouvy.gov.cz/index.xml"
 NS_INDEX = "{http://portal.gov.cz/rejstriky/ISRS/1.2/}"
 OD = (2016, 7)              # registr smluv od 1. 7. 2016
-MAX_DUMPU = 10              # za jeden běh (zpětné doplnění historie po částech)
+MAX_DUMPU = 5               # za jeden běh (zpětné doplnění historie po částech)
 USER_AGENT = "trebonaci-radnice/0.1 (+https://github.com/trebonaci/radnice; obcansky prehled)"
 
 
