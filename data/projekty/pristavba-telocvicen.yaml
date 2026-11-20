@@ -1,0 +1,14 @@
+# Ručně spravovaný projekt (DATOVY_MODEL.md, „projekt“). Vazby přes `hledat` jsou „naše propojení“,
+# přes ORG v rozpočtovém opatření „doloženo“.
+id: pristavba-telocvicen
+nazev: Přístavba dvou tělocvičen sportovní haly
+popis: Stavba dvou nových tělocvičen jako přístavby sportovní haly v Třeboni.
+oblast: sport
+druh: investicni
+vlastnik_subjekt_id: "00247618"
+rozpocet:
+  org: ["6230000000"]
+  nazvy: ["Přístavba tělocvičen - vybavení"]
+vazby:
+  hledat: ["přístavb\\w* dvou tělocvič"]
+  vyloucit: []
