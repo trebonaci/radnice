@@ -101,8 +101,10 @@ def test_casti_chybejici_dodatek_nebo_puvodni_cena_bez_souctu():
     stavba, tds = c
     assert stavba["puvodni"]["bez_dph"] == 100.0 and stavba["chybi_dodatky"] == [1, 2]
     assert stavba["puvodni"]["muze_obsahovat_dodatky"] is True      # smluvní cena E-ZAK u smlouvy s dodatky
-    assert stavba["cena_po_dodatcich"] is None and stavba["dodatky"][1]["bez_castky"] is True
-    assert tds["puvodni"] is None and tds["cena_po_dodatcich"] is None and tds["dodatky_bez_dph"] == 5.0
+    assert stavba["cena_po_dodatcich"] == 110.0 and stavba["dodatky"][1]["bez_castky"] is True
+    assert any("bez ceny" in d for d in stavba["neuplne_cena_po_dodatcich"])   # součet známých + důvod
+    assert tds["puvodni"] is None and tds["cena_po_dodatcich"] == 5.0 and tds["dodatky_bez_dph"] == 5.0
+    assert "původní cena není známa" in tds["neuplne_cena_po_dodatcich"]
 
 
 def test_souhrn_scita_jen_v_ramci_druhu():
@@ -149,7 +151,8 @@ def test_puvodni_smlouva_pres_navazany_zaznam_dolozena():
 
 def test_dodatek_bez_castky_necha_cenu_neznamou_a_ruzni_dodavatele_zvlast():
     c = pr.casti_akce([], [sml("s0", "stavba", castka=100.0), sml("s1", "stavba", 1, navazuje="is0")])
-    assert c[0]["cena_po_dodatcich"] is None and c[0]["dodatky"][0]["bez_castky"] is True
+    assert c[0]["cena_po_dodatcich"] == 100.0 and c[0]["dodatky"][0]["bez_castky"] is True
+    assert c[0]["neuplne_cena_po_dodatcich"] == ["dodatek č. 1 bez ceny"]
     zak = [{"id": "z1", "role": "vybaveni", "url": "e", "casti": [{"registr_smluv": [], "vitezove": [
         {"nazev": "A", "smluvni": [{"hodnota": 100.0, "s_dph": False}]}]}]}]
     c = pr.casti_akce(zak, [sml("b0", "vybaveni", castka=200.0, strana="B")])
@@ -175,7 +178,8 @@ def test_parovani_podle_cisla_zakazky_a_dalsi_dodatky_teze_smlouvy():
               castky=[{"hodnota": 10.0, "s_dph": False}])
     d2 = dict(smlouva("p2", "Dodatek č. 2", navazuje_na="ip0"), castky=[])
     k = pr.sestav_projekt(PROJEKT, data(smlouvy=[puv, d1, d2]))
-    assert [d["cislo"] for d in k["casti"][0]["dodatky"]] == [1, 2] and k["casti"][0]["cena_po_dodatcich"] is None
+    assert [d["cislo"] for d in k["casti"][0]["dodatky"]] == [1, 2] and k["casti"][0]["cena_po_dodatcich"] == 110.0
+    assert k["casti"][0]["neuplne_cena_po_dodatcich"]
 
 
 def test_dodatek_jen_o_terminu_podle_usneseni_a_cena_s_dph():
@@ -197,11 +201,13 @@ def test_dodatek_jen_o_terminu_podle_usneseni_a_cena_s_dph():
     c = pr.casti_akce([], sm[:4], jt)[0]
     d4 = next(d for d in c["dodatky"] if d["cislo"] == 4)
     assert d4["jen_termin"] and d4["doklad_usneseni"] == "rm-u463" and d4["bez_dph"] == 0.0
-    assert c["chybi_dodatky"] == [3] and c["cena_po_dodatcich_s_dph"] is None
+    assert c["chybi_dodatky"] == [3] and c["cena_po_dodatcich_s_dph"] == 121.0
+    assert "chybí dodatek č. 3" in c["neuplne_cena_po_dodatcich_s_dph"]
     c = pr.casti_akce([], sm[:4] + [dict(sm[4], castky=[{"hodnota": 1.0, "s_dph": False}, {"hodnota": 1.21, "s_dph": True}])], jt)[0]
-    assert c["cena_po_dodatcich"] is None                         # dodatek č. 1 nemá cenu bez DPH
+    assert c["neuplne_cena_po_dodatcich"] == ["dodatek č. 1 bez ceny"]   # dodatek č. 1 nemá cenu bez DPH
     assert c["cena_po_dodatcich_s_dph"] == 121.0 - 12.1 + 12.1 + 0.0 + 1.21
-    assert pr.casti_akce([], [sm[0], dict(sm[2], cislo_smlouvy="jine/4")], jt)[0]["cena_po_dodatcich"] is None
+    jina = pr.casti_akce([], [sm[0], dict(sm[2], cislo_smlouvy="jine/4")], jt)[0]
+    assert jina["dodatky"][0]["jen_termin"] is False and jina["neuplne_cena_po_dodatcich"]
 
 
 def test_souhrn_s_dph_zvlast():
@@ -209,7 +215,8 @@ def test_souhrn_s_dph_zvlast():
                                dict(sml("s1", "stavba", 1, navazuje="is0"), castky=[{"hodnota": -12.1, "s_dph": True}])])
     s = pr.souhrn([], casti)
     assert s["smluvni_s_dph"]["celkem"] == 121.0 and s["smluvni_s_dph"]["po_dodatcich"] == 108.9
-    assert s["smluvni_s_dph"]["s_dph"] is True and s["smluvni_bez_dph"]["po_dodatcich"] is None
+    assert s["smluvni_s_dph"]["s_dph"] is True and s["smluvni_bez_dph"]["po_dodatcich"] == 100.0
+    assert s["smluvni_bez_dph"]["neuplne"]
 
 
 def test_dopocet_dph_sazbou_teze_smlouvy_nebo_21():
@@ -283,7 +290,10 @@ def test_puvod_ceny_po_zakladech_dph():
         {"nazev": "A", "smluvni": [{"hodnota": 145.20, "s_dph": True}], "nabidkova": [{"hodnota": 100.0, "s_dph": False}]}]}]}]
     (c,) = pr.casti_akce(zak, [sml("d1", "stavba", 1, 20.0, navazuje="x")])
     assert c["puvodni"]["zaklady_z_ezak_po_dodatcich"] == ["s_dph"]
-    assert c["cena_po_dodatcich"] == 120.0 and c["cena_po_dodatcich_s_dph"] is None
+    assert c["cena_po_dodatcich"] == 120.0 and c["neuplne_cena_po_dodatcich"] == []
+    # s DPH: smluvní cena E-ZAK už po dodatcích + dodatek → sečteno, ale označeno
+    assert c["cena_po_dodatcich_s_dph"] == 169.4
+    assert c["neuplne_cena_po_dodatcich_s_dph"] == ["původní cena z E-ZAK může už zahrnovat dodatky"]
 
 
 def test_skladba_ceny_akce():
@@ -301,7 +311,7 @@ def test_skladba_ceny_akce():
     assert all(x["druh"] == "smluvni" and x["s_dph"] is True for x in sk.values())
     casti[1]["cena_po_dodatcich_s_dph"] = None
     sk = {x["skupina"]: x for x in pr.skladba(casti)}
-    assert sk["priprava"]["castka"] is None and sk["priprava"]["nezname"] == ["projekt"]
+    assert sk["priprava"]["castka"] == 90750.0 and sk["priprava"]["nezname"] == ["projekt"]
     assert [x["skupina"] for x in pr.skladba(casti[:1])] == ["stavba"]
 
 
@@ -310,4 +320,18 @@ def test_dopocet_dph_z_ceny_po_dodatcich_nedostane_dodatky_znovu():
         {"nazev": "A", "smluvni": [{"hodnota": 120.0, "s_dph": False}], "nabidkova": []}]}]}]
     (c,) = pr.casti_akce(zak, [sml("d1", "stavba", 1, 20.0, navazuje="x")])
     assert c["puvodni"]["s_dph_dopocteno"] and c["puvodni"]["zaklady_z_ezak_po_dodatcich"] == ["bez_dph", "s_dph"]
-    assert c["cena_po_dodatcich"] is None and c["cena_po_dodatcich_s_dph"] is None
+    assert c["cena_po_dodatcich"] == 140.0 and c["neuplne_cena_po_dodatcich"] == ["původní cena z E-ZAK může už zahrnovat dodatky"]
+    assert c["neuplne_cena_po_dodatcich_s_dph"] == ["původní cena z E-ZAK může už zahrnovat dodatky"]
+
+
+def test_celkova_cena_soucet_znamych_casti():
+    casti = [{"role": "stavba", "puvodni": None, "cena_po_dodatcich": None, "neuplne_cena_po_dodatcich": [],
+              "cena_po_dodatcich_s_dph": 66097418.09, "neuplne_cena_po_dodatcich_s_dph": []},
+             {"role": "projekt", "puvodni": None, "cena_po_dodatcich": None, "neuplne_cena_po_dodatcich": [],
+              "cena_po_dodatcich_s_dph": 929500.0,
+              "neuplne_cena_po_dodatcich_s_dph": ["původní cena z E-ZAK může už zahrnovat dodatky"]},
+             {"role": "bozp", "puvodni": None, "cena_po_dodatcich": None, "neuplne_cena_po_dodatcich": [],
+              "cena_po_dodatcich_s_dph": None, "neuplne_cena_po_dodatcich_s_dph": ["původní cena není známa"]}]
+    c = pr.souhrn([], casti)["celkova_cena_s_dph"]
+    assert c["castka"] == 67026918.09 and c["neuplne"] == ["projekt", "bozp"]
+    assert c["druh"] == "smluvni" and c["s_dph"] is True
