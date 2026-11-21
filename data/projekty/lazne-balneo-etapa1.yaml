@@ -1,0 +1,14 @@
+id: lazne-balneo-etapa1
+nazev: Rozšíření balneo provozu v Lázeňském domě Aurora (1. etapa)
+popis: Modernizace a rozšíření balneo provozu Lázeňského domu Aurora. Staví Slatinné lázně Třeboň (městská společnost) na majetku města; město technické zhodnocení od lázní odkupuje z lázeňského investičního fondu.
+oblast: lazne
+druh: investicni
+vlastnik_subjekt_id: "25179896"
+financovani: Lázeňský investiční fond (rozpočet města ho uvádí jen souhrnně)
+rozpocet:
+  org: []
+  nazvy: []
+  schvaleny: []
+vazby:
+  hledat: ["[Bb]alneo"]
+  vyloucit: []

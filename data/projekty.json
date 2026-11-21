@@ -6,6 +6,7 @@
     "oblast": "socialni",
     "druh": "investicni",
     "vlastnik_subjekt_id": "00247618",
+    "financovani": null,
     "faze": "pripravuje_se",
     "faze_jistota": "nase_propojeni",
     "dokonceni": null,
@@ -192,6 +193,7 @@
     "oblast": "voda_odpady",
     "druh": "investicni",
     "vlastnik_subjekt_id": "00247618",
+    "financovani": null,
     "faze": "probiha",
     "faze_jistota": "nase_propojeni",
     "dokonceni": null,
@@ -220,6 +222,11 @@
           "s_dph": 1359419.27
         },
         "ezak_url": "https://zakazky.mesto-trebon.cz/contract_display_966.html",
+        "ukonceno_plneni": false,
+        "ezak_zaplaceno": {
+          "bez_dph": null,
+          "s_dph": null
+        },
         "vazba_dodatku": "nase_propojeni",
         "dodatky": [],
         "chybi_dodatky": [],
@@ -228,6 +235,7 @@
         "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 1359419.27,
         "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
         "souhlas_ezak": null,
         "dodatky_bez_dph": null
       },
@@ -251,6 +259,7 @@
         "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 101640.0,
         "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
         "souhlas_ezak": null,
         "dodatky_bez_dph": null
       }
@@ -330,6 +339,7 @@
               {
                 "nazev": "VSV Tech s.r.o.",
                 "jmeno_podnikatele": null,
+                "ico": "17295041",
                 "smluvni": [
                   {
                     "hodnota": 1359419.27,
@@ -369,7 +379,8 @@
         "strany": [
           {
             "nazev": "PLOSAB s.r.o.",
-            "jmeno_podnikatele": null
+            "jmeno_podnikatele": null,
+            "ico": "27800393"
           }
         ],
         "castky": [
@@ -405,7 +416,8 @@
         "strany": [
           {
             "nazev": "VSV Tech s.r.o.",
-            "jmeno_podnikatele": null
+            "jmeno_podnikatele": null,
+            "ico": "17295041"
           }
         ],
         "castky": [
@@ -490,6 +502,7 @@
     "oblast": "skolstvi",
     "druh": "investicni",
     "vlastnik_subjekt_id": "00247618",
+    "financovani": null,
     "faze": "probiha",
     "faze_jistota": "nase_propojeni",
     "dokonceni": null,
@@ -518,6 +531,11 @@
           "s_dph": 1208500.92
         },
         "ezak_url": "https://zakazky.mesto-trebon.cz/contract_display_947.html",
+        "ukonceno_plneni": false,
+        "ezak_zaplaceno": {
+          "bez_dph": null,
+          "s_dph": null
+        },
         "vazba_dodatku": "dolozeno",
         "dodatky": [
           {
@@ -538,6 +556,7 @@
         "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 1239580.64,
         "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
         "souhlas_ezak": false,
         "dodatky_bez_dph": 25685.72
       }
@@ -608,6 +627,7 @@
               {
                 "nazev": "VSV Tech s.r.o.",
                 "jmeno_podnikatele": null,
+                "ico": "17295041",
                 "smluvni": [
                   {
                     "hodnota": 1208500.92,
@@ -649,7 +669,8 @@
         "strany": [
           {
             "nazev": "VSV Tech s.r.o.",
-            "jmeno_podnikatele": null
+            "jmeno_podnikatele": null,
+            "ico": "17295041"
           }
         ],
         "castky": [
@@ -685,7 +706,8 @@
         "strany": [
           {
             "nazev": "VSV Tech s.r.o.",
-            "jmeno_podnikatele": null
+            "jmeno_podnikatele": null,
+            "ico": "17295041"
           }
         ],
         "castky": [
@@ -805,6 +827,7 @@
     "oblast": "jine",
     "druh": "investicni",
     "vlastnik_subjekt_id": "00247618",
+    "financovani": null,
     "faze": "pripravuje_se",
     "faze_jistota": "nase_propojeni",
     "dokonceni": null,
@@ -832,6 +855,7 @@
         "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 961950.0,
         "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
         "souhlas_ezak": null,
         "dodatky_bez_dph": null
       }
@@ -898,7 +922,8 @@
         "strany": [
           {
             "nazev": "JPS J. Hradec s.r.o.",
-            "jmeno_podnikatele": null
+            "jmeno_podnikatele": null,
+            "ico": "26035138"
           }
         ],
         "castky": [
@@ -951,12 +976,1544 @@
     }
   },
   {
+    "id": "lazne-balneo-etapa1",
+    "nazev": "Rozšíření balneo provozu v Lázeňském domě Aurora (1. etapa)",
+    "popis": "Modernizace a rozšíření balneo provozu Lázeňského domu Aurora. Staví Slatinné lázně Třeboň (městská společnost) na majetku města; město technické zhodnocení od lázní odkupuje z lázeňského investičního fondu.",
+    "oblast": "lazne",
+    "druh": "investicni",
+    "vlastnik_subjekt_id": "25179896",
+    "financovani": "Lázeňský investiční fond (rozpočet města ho uvádí jen souhrnně)",
+    "faze": "dokonceno",
+    "faze_jistota": "nase_propojeni",
+    "dokonceni": null,
+    "doplaceno": true,
+    "rozpocet": [],
+    "schvaleny_rozpocet": [],
+    "casti": [
+      {
+        "role": "stavba",
+        "dodavatel": {
+          "nazev": "Metrostav CZ s.r.o.",
+          "jmeno_podnikatele": null
+        },
+        "puvodni": {
+          "bez_dph": 64330560.0,
+          "s_dph": 77839977.0,
+          "zdroj_id": "rs-35362133",
+          "url": "https://smlouvy.gov.cz/smlouva/35362133",
+          "zdroj_druh": "registr",
+          "muze_obsahovat_dodatky": false,
+          "zaklady_z_ezak_po_dodatcich": [],
+          "zdroj_s_dph": {
+            "zdroj_id": "ezak-VZ-880",
+            "url": "https://zakazky.mesto-trebon.cz/contract_display_880.html"
+          }
+        },
+        "vysoutezena": null,
+        "ezak_smluvni": {
+          "bez_dph": 64330560.0,
+          "s_dph": 77839977.0
+        },
+        "ezak_url": "https://zakazky.mesto-trebon.cz/contract_display_880.html",
+        "ukonceno_plneni": true,
+        "ezak_zaplaceno": {
+          "bez_dph": 65226157.7,
+          "s_dph": 78923650.82
+        },
+        "vazba_dodatku": "nase_propojeni",
+        "dodatky": [
+          {
+            "cislo": 1,
+            "bez_dph": 150094.46,
+            "s_dph": 181614.3,
+            "jen_termin": false,
+            "doklad_usneseni": null,
+            "bez_castky": false,
+            "datum": "2026-04-01",
+            "zdroj_id": "rs-37435037",
+            "url": "https://smlouvy.gov.cz/smlouva/37435037",
+            "castka_je_celkova": true,
+            "celkova_bez_dph": 64480654.46,
+            "s_dph_dopocteno": true,
+            "sazba_dph": 21,
+            "sazba_dph_zdroj": "jina_polozka_smlouvy"
+          },
+          {
+            "cislo": 2,
+            "bez_dph": 1189186.64,
+            "s_dph": 1438915.83,
+            "jen_termin": false,
+            "doklad_usneseni": null,
+            "bez_castky": false,
+            "datum": "2026-05-25",
+            "zdroj_id": "rs-38120049",
+            "url": "https://smlouvy.gov.cz/smlouva/38120049",
+            "s_dph_dopocteno": true,
+            "sazba_dph": 21,
+            "sazba_dph_zdroj": "jina_polozka_smlouvy"
+          },
+          {
+            "cislo": 3,
+            "bez_dph": -443683.4,
+            "s_dph": -536856.91,
+            "jen_termin": false,
+            "doklad_usneseni": null,
+            "bez_castky": false,
+            "datum": "2026-08-17",
+            "zdroj_id": "rs-39177962",
+            "url": "https://smlouvy.gov.cz/smlouva/39177962",
+            "castka_je_celkova": true,
+            "celkova_bez_dph": 65226157.7,
+            "s_dph_dopocteno": true,
+            "sazba_dph": 21,
+            "sazba_dph_zdroj": "jina_polozka_smlouvy"
+          }
+        ],
+        "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": true,
+        "cena_po_dodatcich": 65226157.7,
+        "neuplne_cena_po_dodatcich": [],
+        "cena_po_dodatcich_s_dph": 78923650.22,
+        "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": true,
+        "souhlas_ezak": false,
+        "dodatky_bez_dph": 895597.7
+      },
+      {
+        "role": "projekt",
+        "dodavatel": {
+          "nazev": "A-Z eko ateliér s.r.o.",
+          "jmeno_podnikatele": null
+        },
+        "puvodni": {
+          "bez_dph": 1997000.0,
+          "s_dph": 2416370.0,
+          "zdroj_id": "ezak-VZ-805",
+          "url": "https://zakazky.mesto-trebon.cz/contract_display_805.html",
+          "zdroj_druh": "smluvni_ezak",
+          "muze_obsahovat_dodatky": false,
+          "zaklady_z_ezak_po_dodatcich": []
+        },
+        "vysoutezena": null,
+        "ezak_smluvni": {
+          "bez_dph": 1997000.0,
+          "s_dph": 2416370.0
+        },
+        "ezak_url": "https://zakazky.mesto-trebon.cz/contract_display_805.html",
+        "ukonceno_plneni": true,
+        "ezak_zaplaceno": {
+          "bez_dph": 1997000.0,
+          "s_dph": 2416370.0
+        },
+        "vazba_dodatku": null,
+        "dodatky": [],
+        "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
+        "cena_po_dodatcich": 1997000.0,
+        "neuplne_cena_po_dodatcich": [],
+        "cena_po_dodatcich_s_dph": 2416370.0,
+        "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": true,
+        "souhlas_ezak": null,
+        "dodatky_bez_dph": null
+      },
+      {
+        "role": "technicky_dozor",
+        "dodavatel": {
+          "nazev": "fyzická osoba",
+          "jmeno_podnikatele": "Ing. David Zána"
+        },
+        "puvodni": {
+          "bez_dph": 390000.0,
+          "s_dph": 390000.0,
+          "zdroj_id": "ezak-VZ-893",
+          "url": "https://zakazky.mesto-trebon.cz/contract_display_893.html",
+          "zdroj_druh": "smluvni_ezak",
+          "muze_obsahovat_dodatky": false,
+          "zaklady_z_ezak_po_dodatcich": []
+        },
+        "vysoutezena": null,
+        "ezak_smluvni": {
+          "bez_dph": 390000.0,
+          "s_dph": 390000.0
+        },
+        "ezak_url": "https://zakazky.mesto-trebon.cz/contract_display_893.html",
+        "ukonceno_plneni": true,
+        "ezak_zaplaceno": {
+          "bez_dph": 390333.0,
+          "s_dph": 390333.0
+        },
+        "vazba_dodatku": null,
+        "dodatky": [],
+        "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
+        "cena_po_dodatcich": 390000.0,
+        "neuplne_cena_po_dodatcich": [],
+        "cena_po_dodatcich_s_dph": 390000.0,
+        "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": false,
+        "souhlas_ezak": null,
+        "dodatky_bez_dph": null
+      }
+    ],
+    "souhrn": {
+      "rozpocet": {
+        "celkem": null,
+        "investicni": null,
+        "neinvesticni": null,
+        "druh": "rozpocet_upraveny",
+        "s_dph": null,
+        "polozek": 0,
+        "jistota": "nevime"
+      },
+      "smluvni_bez_dph": {
+        "celkem": 66717560.0,
+        "druh": "smluvni",
+        "s_dph": false,
+        "mena": "CZK",
+        "po_dodatcich": 67613157.7,
+        "neuplne": [],
+        "jistota": "nase_propojeni"
+      },
+      "smluvni_s_dph": {
+        "celkem": 80646347.0,
+        "druh": "smluvni",
+        "s_dph": true,
+        "mena": "CZK",
+        "po_dodatcich": 81730020.22,
+        "neuplne": [],
+        "jistota": "nase_propojeni"
+      },
+      "skladba_s_dph": [
+        {
+          "skupina": "stavba",
+          "nazev": "Stavba",
+          "casti": 1,
+          "castka": 78923650.22,
+          "nezname": [],
+          "druh": "smluvni",
+          "s_dph": true
+        },
+        {
+          "skupina": "priprava",
+          "nazev": "Projekt a výběrové řízení",
+          "casti": 1,
+          "castka": 2416370.0,
+          "nezname": [],
+          "druh": "smluvni",
+          "s_dph": true
+        },
+        {
+          "skupina": "dozor",
+          "nazev": "Technický dozor a BOZP",
+          "casti": 1,
+          "castka": 390000.0,
+          "nezname": [],
+          "druh": "smluvni",
+          "s_dph": true
+        }
+      ],
+      "celkova_cena_s_dph": {
+        "castka": 81730020.22,
+        "neuplne": [],
+        "druh": "smluvni",
+        "s_dph": true,
+        "jistota": "nase_propojeni"
+      },
+      "schvaleny": []
+    },
+    "zakazky": [
+      {
+        "id": "ezak-VZ-795",
+        "nazev": "Zhotovení PD, příkazní činnost a výkon AD pro – Rozšíření balneo provozu – lázeňský dům Aurora",
+        "role": "projekt",
+        "stav": "zrušen",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_795.html",
+        "casti": [
+          {
+            "nazev": "Zhotovení PD, příkazní činnost a výkon AD pro – Rozšíření balneo provozu – lázeňský dům Aurora",
+            "stav": "zrušen",
+            "pocet_nabidek": 0,
+            "datum_uverejneni": "2024-08-28",
+            "datum_uzavreni_smlouvy": null,
+            "vitezove": [],
+            "registr_smluv": []
+          }
+        ],
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "ezak-VZ-805",
+        "nazev": "Zhotovení PD, příkazní činnost a výkon AD pro – Rozšíření balneo provozu – lázeňský dům Aurora – opakované řízení",
+        "role": "projekt",
+        "stav": "ukončeno plnění",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_805.html",
+        "casti": [
+          {
+            "nazev": "Zhotovení PD, příkazní činnost a výkon AD pro – Rozšíření balneo provozu – lázeňský dům Aurora – opakované řízení",
+            "stav": "ukončeno plnění",
+            "pocet_nabidek": 2,
+            "datum_uverejneni": "2024-10-08",
+            "datum_uzavreni_smlouvy": "2024-11-07",
+            "vitezove": [
+              {
+                "nazev": "A-Z eko ateliér s.r.o.",
+                "jmeno_podnikatele": null,
+                "ico": "05097681",
+                "smluvni": [
+                  {
+                    "hodnota": 2416370.0,
+                    "s_dph": true,
+                    "druh": "smluvni",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
+                  },
+                  {
+                    "hodnota": 1997000.0,
+                    "s_dph": false,
+                    "druh": "smluvni",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
+                  }
+                ],
+                "nabidkova": [],
+                "zaplaceno": [
+                  {
+                    "obdobi": "2025",
+                    "hodnota": 2191310.0,
+                    "s_dph": true
+                  },
+                  {
+                    "obdobi": "2025",
+                    "hodnota": 1811000.0,
+                    "s_dph": false
+                  },
+                  {
+                    "obdobi": "2026",
+                    "hodnota": 225060.0,
+                    "s_dph": true
+                  },
+                  {
+                    "obdobi": "2026",
+                    "hodnota": 186000.0,
+                    "s_dph": false
+                  }
+                ]
+              }
+            ],
+            "registr_smluv": []
+          }
+        ],
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "ezak-VZ-880",
+        "nazev": "Modernizace a rozšíření balneo provozu Lázeňský dům Aurora – Etapa I Rozšíření slatinných koupelí",
+        "role": "stavba",
+        "stav": "ukončeno plnění",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_880.html",
+        "casti": [
+          {
+            "nazev": "Modernizace a rozšíření balneo provozu Lázeňský dům Aurora – Etapa I Rozšíření slatinných koupelí",
+            "stav": "ukončeno plnění",
+            "pocet_nabidek": 2,
+            "datum_uverejneni": "2025-08-21",
+            "datum_uzavreni_smlouvy": "2025-10-24",
+            "vitezove": [
+              {
+                "nazev": "Metrostav CZ s.r.o.",
+                "jmeno_podnikatele": null,
+                "ico": "25021915",
+                "smluvni": [
+                  {
+                    "hodnota": 77839977.0,
+                    "s_dph": true,
+                    "druh": "smluvni",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
+                  },
+                  {
+                    "hodnota": 64330560.0,
+                    "s_dph": false,
+                    "druh": "smluvni",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
+                  }
+                ],
+                "nabidkova": [],
+                "zaplaceno": [
+                  {
+                    "obdobi": "2026",
+                    "hodnota": 78923650.82,
+                    "s_dph": true
+                  },
+                  {
+                    "obdobi": "2026",
+                    "hodnota": 65226157.7,
+                    "s_dph": false
+                  }
+                ]
+              }
+            ],
+            "registr_smluv": []
+          }
+        ],
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "ezak-VZ-893",
+        "nazev": "Výkon technického dozoru stavebníka a koordinátora BOZP - Modernizace a rozšíření balneo provozu Lázeňský dům AURORA - Etapa I Rozšíření slatinných koupelí",
+        "role": "technicky_dozor",
+        "stav": "ukončeno plnění",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_893.html",
+        "casti": [
+          {
+            "nazev": "Výkon technického dozoru stavebníka a koordinátora BOZP - Modernizace a rozšíření balneo provozu Lázeňský dům AURORA - Etapa I Rozšíření slatinných koupelí",
+            "stav": "ukončeno plnění",
+            "pocet_nabidek": 2,
+            "datum_uverejneni": "2025-11-05",
+            "datum_uzavreni_smlouvy": "2025-10-29",
+            "vitezove": [
+              {
+                "nazev": "fyzická osoba",
+                "jmeno_podnikatele": "Ing. David Zána",
+                "ico": null,
+                "smluvni": [
+                  {
+                    "hodnota": 390000.0,
+                    "s_dph": true,
+                    "druh": "smluvni",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
+                  },
+                  {
+                    "hodnota": 390000.0,
+                    "s_dph": false,
+                    "druh": "smluvni",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
+                  }
+                ],
+                "nabidkova": [],
+                "zaplaceno": [
+                  {
+                    "obdobi": "2026",
+                    "hodnota": 390333.0,
+                    "s_dph": true
+                  },
+                  {
+                    "obdobi": "2026",
+                    "hodnota": 390333.0,
+                    "s_dph": false
+                  }
+                ]
+              }
+            ],
+            "registr_smluv": []
+          }
+        ],
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "smlouvy": [
+      {
+        "id": "rs-35362133",
+        "id_smlouvy": "33170113",
+        "navazuje_na": null,
+        "cislo_smlouvy": "10SM250317",
+        "predmet": "Smlouva o dílo - Rozšíření balneo provozu LDA - Etapa I",
+        "role": "stavba",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2025-10-24",
+        "strany": [
+          {
+            "nazev": "Metrostav DIZ s.r.o.",
+            "jmeno_podnikatele": null,
+            "ico": "25021915"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 64330560.0,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/35362133",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-37435037",
+        "id_smlouvy": "35151877",
+        "navazuje_na": null,
+        "cislo_smlouvy": null,
+        "predmet": "Dodatek č. 1 ke Smlouvě o dílo  - rozšíření Balneo LDA",
+        "role": "stavba",
+        "dodatek_cislo": 1,
+        "datum_uzavreni": "2026-04-01",
+        "strany": [
+          {
+            "nazev": "Metrostav CZ s.r.o.",
+            "jmeno_podnikatele": null,
+            "ico": "25021915"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 64480654.46,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/37435037",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-38120049",
+        "id_smlouvy": "35808397",
+        "navazuje_na": null,
+        "cislo_smlouvy": "10SM260179",
+        "predmet": "Dodatek č. 2 ke Smlouvě o dílo rozšíření Balneo LDA",
+        "role": "stavba",
+        "dodatek_cislo": 2,
+        "datum_uzavreni": "2026-05-25",
+        "strany": [
+          {
+            "nazev": "Metrostav CZ s.r.o.",
+            "jmeno_podnikatele": null,
+            "ico": "25021915"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 1189186.64,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/38120049",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-39177962",
+        "id_smlouvy": "36826690",
+        "navazuje_na": null,
+        "cislo_smlouvy": "10SM260245",
+        "predmet": "Dodatek č. 3 ke Smlouvě o dílo - rozšíření Balneo LDA",
+        "role": "stavba",
+        "dodatek_cislo": 3,
+        "datum_uzavreni": "2026-08-17",
+        "strany": [
+          {
+            "nazev": "Metrostav CZ s.r.o.",
+            "jmeno_podnikatele": null,
+            "ico": "25021915"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 65226157.7,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/39177962",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "usneseni": [
+      {
+        "id": "rm-2026-j110-u470",
+        "cislo": "RM 470/2026-110",
+        "datum": "2026-09-09",
+        "tema": "Převod technického zhodnocení z majetku lázní na město",
+        "tema_ai": true,
+        "shrnuti": "Rada jako valná hromada společnosti Slatinné lázně Třeboň souhlasila s převodem čtyř technických zhodnocení Lázeňského domu Aurora na město za úplatu. Jde o kotelnu a zásobníky TUV, plynový kotel, modernizaci Balnea a vodní prvek v atriu.",
+        "shrnuti_ai": true,
+        "citace": {
+          "dokument_id": "zapis-rm-2026-09-09",
+          "strany": [
+            8,
+            9
+          ],
+          "text": "Modernizace a rozšíření Balneo – Etapa I, LDA"
+        },
+        "overeni": "overeno_kodem",
+        "vysledek_hlasovani": "prijato",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "posledni_dodatek": {
+      "stavba": 3
+    },
+    "udalosti": [
+      {
+        "datum": "2024-08-28",
+        "typ": "soutez",
+        "text": "Soutěž: Zhotovení PD, příkazní činnost a výkon AD pro – Rozšíření balneo provozu – lázeňský dům Aurora",
+        "kategorie": "výběrové řízení",
+        "kratce": "projektová dokumentace, lhůta pro nabídky 22 dní, smlouva zatím není",
+        "lhuta_dni": 22,
+        "rizeni_dni": null,
+        "po_nabidkach_dni": null,
+        "pocet_nabidek": 0,
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_795.html",
+        "role": "projekt",
+        "zdroj_id": "ezak-VZ-795",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2024-10-08",
+        "typ": "soutez",
+        "text": "Soutěž: Zhotovení PD, příkazní činnost a výkon AD pro – Rozšíření balneo provozu – lázeňský dům Aurora – opakované řízení",
+        "kategorie": "výběrové řízení",
+        "kratce": "projektová dokumentace, od vyhlášení do smlouvy 30 dní (lhůta pro nabídky 10 dní), 2 nabídky",
+        "lhuta_dni": 10,
+        "rizeni_dni": 30,
+        "po_nabidkach_dni": 20,
+        "pocet_nabidek": 2,
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_805.html",
+        "role": "projekt",
+        "zdroj_id": "ezak-VZ-805",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2025-08-21",
+        "typ": "soutez",
+        "text": "Soutěž: Modernizace a rozšíření balneo provozu Lázeňský dům Aurora – Etapa I Rozšíření slatinných koupelí",
+        "kategorie": "výběrové řízení",
+        "kratce": "stavba, od vyhlášení do smlouvy 64 dní (lhůta pro nabídky 32 dní), 2 nabídky",
+        "lhuta_dni": 32,
+        "rizeni_dni": 64,
+        "po_nabidkach_dni": 32,
+        "pocet_nabidek": 2,
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_880.html",
+        "role": "stavba",
+        "zdroj_id": "ezak-VZ-880",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2025-10-23",
+        "typ": "soutez",
+        "text": "Soutěž: Výkon technického dozoru stavebníka a koordinátora BOZP - Modernizace a rozšíření balneo provozu Lázeňský dům AURORA - Etapa I Rozšíření slatinných koupelí",
+        "kategorie": "výběrové řízení",
+        "kratce": "technický dozor, smlouva 6 dní po podání nabídek (vyhlášení zveřejněno až dodatečně), 2 nabídky",
+        "lhuta_dni": null,
+        "rizeni_dni": null,
+        "po_nabidkach_dni": 6,
+        "pocet_nabidek": 2,
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_893.html",
+        "role": "technicky_dozor",
+        "zdroj_id": "ezak-VZ-893",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2025-10-24",
+        "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "smlouva o dílo",
+        "text": "Smlouva o dílo - Rozšíření balneo provozu LDA - Etapa I",
+        "role": "stavba",
+        "zdroj_id": "rs-35362133",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/35362133"
+      },
+      {
+        "datum": "2026-04-01",
+        "typ": "dodatek",
+        "kategorie": "smlouva",
+        "kratce": "dodatek 1 (smlouva o dílo)",
+        "text": "Dodatek č. 1 ke Smlouvě o dílo  - rozšíření Balneo LDA",
+        "role": "stavba",
+        "zdroj_id": "rs-37435037",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/37435037"
+      },
+      {
+        "datum": "2026-05-25",
+        "typ": "dodatek",
+        "kategorie": "smlouva",
+        "kratce": "dodatek 2 (smlouva o dílo)",
+        "text": "Dodatek č. 2 ke Smlouvě o dílo rozšíření Balneo LDA",
+        "role": "stavba",
+        "zdroj_id": "rs-38120049",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/38120049"
+      },
+      {
+        "datum": "2026-08-17",
+        "typ": "dodatek",
+        "kategorie": "smlouva",
+        "kratce": "dodatek 3 (smlouva o dílo)",
+        "text": "Dodatek č. 3 ke Smlouvě o dílo - rozšíření Balneo LDA",
+        "role": "stavba",
+        "zdroj_id": "rs-39177962",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/39177962"
+      },
+      {
+        "datum": "2026-09-09",
+        "typ": "usneseni",
+        "text": "Převod technického zhodnocení z majetku lázní na město",
+        "kategorie": "rada",
+        "kratce": "Převod technického zhodnocení z majetku lázní na město",
+        "text_ai": true,
+        "overeni": "overeno_kodem",
+        "usneseni_cislo": "RM 470/2026-110",
+        "url": "https://www.mesto-trebon.cz/uploads/news/id15037/Z-110-26-09-09-A.pdf#page=8",
+        "zdroj_id": "rm-2026-j110-u470",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "posledni_udalost": {
+      "datum": "2026-09-09",
+      "typ": "usneseni",
+      "text": "Převod technického zhodnocení z majetku lázní na město",
+      "kategorie": "rada",
+      "kratce": "Převod technického zhodnocení z majetku lázní na město",
+      "text_ai": true,
+      "overeni": "overeno_kodem",
+      "usneseni_cislo": "RM 470/2026-110",
+      "url": "https://www.mesto-trebon.cz/uploads/news/id15037/Z-110-26-09-09-A.pdf#page=8",
+      "zdroj_id": "rm-2026-j110-u470",
+      "jistota": "nase_propojeni"
+    }
+  },
+  {
+    "id": "lazne-budova-g",
+    "nazev": "Nástavba budovy G v Lázeňském domě Aurora",
+    "popis": "Stavební úpravy budovy G Lázeňského domu Aurora s nástavbou administrativních a ubytovacích kapacit včetně vybavení. Staví Slatinné lázně Třeboň (městská společnost) na majetku města, financováno z lázeňského investičního fondu.",
+    "oblast": "lazne",
+    "druh": "investicni",
+    "vlastnik_subjekt_id": "25179896",
+    "financovani": "Lázeňský investiční fond (rozpočet města ho uvádí jen souhrnně)",
+    "faze": "probiha",
+    "faze_jistota": "nase_propojeni",
+    "dokonceni": null,
+    "doplaceno": false,
+    "rozpocet": [],
+    "schvaleny_rozpocet": [],
+    "casti": [
+      {
+        "role": "stavba",
+        "dodavatel": {
+          "nazev": "Metrostav CZ s.r.o.",
+          "jmeno_podnikatele": null
+        },
+        "puvodni": {
+          "bez_dph": 93956986.0,
+          "s_dph": 113687953.0,
+          "zdroj_id": "rs-36749377",
+          "url": "https://smlouvy.gov.cz/smlouva/36749377",
+          "zdroj_druh": "registr",
+          "muze_obsahovat_dodatky": false,
+          "zaklady_z_ezak_po_dodatcich": [],
+          "zdroj_s_dph": {
+            "zdroj_id": "ezak-VZ-912",
+            "url": "https://zakazky.mesto-trebon.cz/contract_display_912.html"
+          }
+        },
+        "vysoutezena": null,
+        "ezak_smluvni": {
+          "bez_dph": 93956986.0,
+          "s_dph": 113687953.0
+        },
+        "ezak_url": "https://zakazky.mesto-trebon.cz/contract_display_912.html",
+        "ukonceno_plneni": false,
+        "ezak_zaplaceno": {
+          "bez_dph": null,
+          "s_dph": null
+        },
+        "vazba_dodatku": "nase_propojeni",
+        "dodatky": [
+          {
+            "cislo": 1,
+            "bez_dph": 1324349.33,
+            "s_dph": 1602462.69,
+            "jen_termin": false,
+            "doklad_usneseni": null,
+            "bez_castky": false,
+            "datum": "2026-09-10",
+            "zdroj_id": "rs-39474653",
+            "url": "https://smlouvy.gov.cz/smlouva/39474653",
+            "s_dph_dopocteno": true,
+            "sazba_dph": 21,
+            "sazba_dph_zdroj": "jina_polozka_smlouvy"
+          }
+        ],
+        "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": true,
+        "cena_po_dodatcich": 95281335.33,
+        "neuplne_cena_po_dodatcich": [],
+        "cena_po_dodatcich_s_dph": 115290415.69,
+        "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
+        "souhlas_ezak": false,
+        "dodatky_bez_dph": 1324349.33
+      },
+      {
+        "role": "projekt",
+        "dodavatel": {
+          "nazev": "JK - STAVPROJEKT, s.r.o.",
+          "jmeno_podnikatele": null
+        },
+        "puvodni": {
+          "bez_dph": 1982000.0,
+          "s_dph": 2401850.0,
+          "zdroj_id": "ezak-VZ-837",
+          "url": "https://zakazky.mesto-trebon.cz/contract_display_837.html",
+          "zdroj_druh": "smluvni_ezak",
+          "muze_obsahovat_dodatky": false,
+          "zaklady_z_ezak_po_dodatcich": []
+        },
+        "vysoutezena": null,
+        "ezak_smluvni": {
+          "bez_dph": 1982000.0,
+          "s_dph": 2401850.0
+        },
+        "ezak_url": "https://zakazky.mesto-trebon.cz/contract_display_837.html",
+        "ukonceno_plneni": false,
+        "ezak_zaplaceno": {
+          "bez_dph": null,
+          "s_dph": null
+        },
+        "vazba_dodatku": null,
+        "dodatky": [],
+        "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
+        "cena_po_dodatcich": 1982000.0,
+        "neuplne_cena_po_dodatcich": [],
+        "cena_po_dodatcich_s_dph": 2401850.0,
+        "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
+        "souhlas_ezak": null,
+        "dodatky_bez_dph": null
+      },
+      {
+        "role": "projekt",
+        "dodavatel": {
+          "nazev": "fyzická osoba",
+          "jmeno_podnikatele": null
+        },
+        "puvodni": {
+          "bez_dph": 190000.0,
+          "s_dph": 229900.0,
+          "zdroj_id": "rs-34440465",
+          "url": "https://smlouvy.gov.cz/smlouva/34440465",
+          "s_dph_dopocteno": true,
+          "sazba_dph": 21,
+          "sazba_dph_zdroj": "zakladni_sazba"
+        },
+        "vazba_dodatku": "dolozeno",
+        "dodatky": [],
+        "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": true,
+        "cena_po_dodatcich": 190000.0,
+        "neuplne_cena_po_dodatcich": [],
+        "cena_po_dodatcich_s_dph": 229900.0,
+        "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
+        "souhlas_ezak": null,
+        "dodatky_bez_dph": null
+      },
+      {
+        "role": "technicky_dozor",
+        "dodavatel": {
+          "nazev": "IPD-MYŠY s.r.o.",
+          "jmeno_podnikatele": null
+        },
+        "puvodni": {
+          "bez_dph": 648000.0,
+          "s_dph": 784080.0,
+          "zdroj_id": "ezak-VZ-913",
+          "url": "https://zakazky.mesto-trebon.cz/contract_display_913.html",
+          "zdroj_druh": "smluvni_ezak",
+          "muze_obsahovat_dodatky": false,
+          "zaklady_z_ezak_po_dodatcich": []
+        },
+        "vysoutezena": null,
+        "ezak_smluvni": {
+          "bez_dph": 648000.0,
+          "s_dph": 784080.0
+        },
+        "ezak_url": "https://zakazky.mesto-trebon.cz/contract_display_913.html",
+        "ukonceno_plneni": false,
+        "ezak_zaplaceno": {
+          "bez_dph": null,
+          "s_dph": null
+        },
+        "vazba_dodatku": null,
+        "dodatky": [],
+        "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
+        "cena_po_dodatcich": 648000.0,
+        "neuplne_cena_po_dodatcich": [],
+        "cena_po_dodatcich_s_dph": 784080.0,
+        "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
+        "souhlas_ezak": null,
+        "dodatky_bez_dph": null
+      },
+      {
+        "role": "vybaveni",
+        "dodavatel": {
+          "nazev": "SANTAL spol. s r. o.",
+          "jmeno_podnikatele": null
+        },
+        "puvodni": {
+          "bez_dph": 3686654.0,
+          "s_dph": 4460851.34,
+          "zdroj_id": "ezak-VZ-946",
+          "url": "https://zakazky.mesto-trebon.cz/contract_display_946.html",
+          "zdroj_druh": "smluvni_ezak",
+          "muze_obsahovat_dodatky": false,
+          "zaklady_z_ezak_po_dodatcich": []
+        },
+        "vysoutezena": null,
+        "ezak_smluvni": {
+          "bez_dph": 3686654.0,
+          "s_dph": 4460851.34
+        },
+        "ezak_url": "https://zakazky.mesto-trebon.cz/contract_display_946.html",
+        "ukonceno_plneni": false,
+        "ezak_zaplaceno": {
+          "bez_dph": null,
+          "s_dph": null
+        },
+        "vazba_dodatku": null,
+        "dodatky": [],
+        "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
+        "cena_po_dodatcich": 3686654.0,
+        "neuplne_cena_po_dodatcich": [],
+        "cena_po_dodatcich_s_dph": 4460851.34,
+        "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
+        "souhlas_ezak": null,
+        "dodatky_bez_dph": null
+      }
+    ],
+    "souhrn": {
+      "rozpocet": {
+        "celkem": null,
+        "investicni": null,
+        "neinvesticni": null,
+        "druh": "rozpocet_upraveny",
+        "s_dph": null,
+        "polozek": 0,
+        "jistota": "nevime"
+      },
+      "smluvni_bez_dph": {
+        "celkem": 100463640.0,
+        "druh": "smluvni",
+        "s_dph": false,
+        "mena": "CZK",
+        "po_dodatcich": 101787989.33,
+        "neuplne": [],
+        "jistota": "nase_propojeni"
+      },
+      "smluvni_s_dph": {
+        "celkem": 121564634.34,
+        "druh": "smluvni",
+        "s_dph": true,
+        "mena": "CZK",
+        "po_dodatcich": 123167097.03,
+        "neuplne": [],
+        "jistota": "nase_propojeni"
+      },
+      "skladba_s_dph": [
+        {
+          "skupina": "stavba",
+          "nazev": "Stavba",
+          "casti": 1,
+          "castka": 115290415.69,
+          "nezname": [],
+          "druh": "smluvni",
+          "s_dph": true
+        },
+        {
+          "skupina": "priprava",
+          "nazev": "Projekt a výběrové řízení",
+          "casti": 2,
+          "castka": 2631750.0,
+          "nezname": [],
+          "druh": "smluvni",
+          "s_dph": true
+        },
+        {
+          "skupina": "dozor",
+          "nazev": "Technický dozor a BOZP",
+          "casti": 1,
+          "castka": 784080.0,
+          "nezname": [],
+          "druh": "smluvni",
+          "s_dph": true
+        },
+        {
+          "skupina": "vybaveni",
+          "nazev": "Vybavení",
+          "casti": 1,
+          "castka": 4460851.34,
+          "nezname": [],
+          "druh": "smluvni",
+          "s_dph": true
+        }
+      ],
+      "celkova_cena_s_dph": {
+        "castka": 123167097.03,
+        "neuplne": [],
+        "druh": "smluvni",
+        "s_dph": true,
+        "jistota": "nase_propojeni"
+      },
+      "schvaleny": []
+    },
+    "zakazky": [
+      {
+        "id": "ezak-VZ-837",
+        "nazev": "Zhotovení PD, příkazní činnost a výkon AD pro Výstavba bytů a administrativního zázemí - budova G - LDA",
+        "role": "projekt",
+        "stav": "dokončen",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_837.html",
+        "casti": [
+          {
+            "nazev": "Zhotovení PD, příkazní činnost a výkon AD pro Výstavba bytů a administrativního zázemí - budova G - LDA",
+            "stav": "dokončen",
+            "pocet_nabidek": 3,
+            "datum_uverejneni": "2025-03-20",
+            "datum_uzavreni_smlouvy": "2025-03-20",
+            "vitezove": [
+              {
+                "nazev": "JK - STAVPROJEKT, s.r.o.",
+                "jmeno_podnikatele": null,
+                "ico": "26112779",
+                "smluvni": [
+                  {
+                    "hodnota": 2401850.0,
+                    "s_dph": true,
+                    "druh": "smluvni",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
+                  },
+                  {
+                    "hodnota": 1982000.0,
+                    "s_dph": false,
+                    "druh": "smluvni",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
+                  }
+                ],
+                "nabidkova": [],
+                "zaplaceno": []
+              }
+            ],
+            "registr_smluv": []
+          }
+        ],
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "ezak-VZ-891",
+        "nazev": "Stavební úpravy budovy G – LDA s nástavbou administrativních a ubytovacích kapacit",
+        "role": "stavba",
+        "stav": "zrušen",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_891.html",
+        "casti": [
+          {
+            "nazev": "Stavební úpravy budovy G – LDA s nástavbou administrativních a ubytovacích kapacit",
+            "stav": "zrušen",
+            "pocet_nabidek": 0,
+            "datum_uverejneni": "2025-10-10",
+            "datum_uzavreni_smlouvy": null,
+            "vitezove": [],
+            "registr_smluv": []
+          }
+        ],
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "ezak-VZ-912",
+        "nazev": "Stavební úpravy budovy G – LDA s nástavbou administrativních a ubytovacích kapacit – opakované řízení",
+        "role": "stavba",
+        "stav": "dokončen",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_912.html",
+        "casti": [
+          {
+            "nazev": "Stavební úpravy budovy G – LDA s nástavbou administrativních a ubytovacích kapacit – opakované řízení",
+            "stav": "dokončen",
+            "pocet_nabidek": 2,
+            "datum_uverejneni": "2025-12-03",
+            "datum_uzavreni_smlouvy": "2026-02-09",
+            "vitezove": [
+              {
+                "nazev": "Metrostav CZ s.r.o.",
+                "jmeno_podnikatele": null,
+                "ico": "25021915",
+                "smluvni": [
+                  {
+                    "hodnota": 113687953.0,
+                    "s_dph": true,
+                    "druh": "smluvni",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
+                  },
+                  {
+                    "hodnota": 93956986.0,
+                    "s_dph": false,
+                    "druh": "smluvni",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
+                  }
+                ],
+                "nabidkova": [],
+                "zaplaceno": []
+              }
+            ],
+            "registr_smluv": []
+          }
+        ],
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "ezak-VZ-913",
+        "nazev": "Výkon technického dozoru stavebníka a koordinátora BOZP - Stavební úpravy budovy G - LDA s nástavbou administrativních a ubytovacích kapacit",
+        "role": "technicky_dozor",
+        "stav": "dokončen",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_913.html",
+        "casti": [
+          {
+            "nazev": "Výkon technického dozoru stavebníka a koordinátora BOZP - Stavební úpravy budovy G - LDA s nástavbou administrativních a ubytovacích kapacit",
+            "stav": "dokončen",
+            "pocet_nabidek": 3,
+            "datum_uverejneni": "2026-02-16",
+            "datum_uzavreni_smlouvy": "2026-02-11",
+            "vitezove": [
+              {
+                "nazev": "IPD-MYŠY s.r.o.",
+                "jmeno_podnikatele": null,
+                "ico": "26094312",
+                "smluvni": [
+                  {
+                    "hodnota": 784080.0,
+                    "s_dph": true,
+                    "druh": "smluvni",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
+                  },
+                  {
+                    "hodnota": 648000.0,
+                    "s_dph": false,
+                    "druh": "smluvni",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
+                  }
+                ],
+                "nabidkova": [],
+                "zaplaceno": []
+              }
+            ],
+            "registr_smluv": []
+          }
+        ],
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "ezak-VZ-946",
+        "nazev": "Dodávka a montáž kuchyní a souvisejícího vybavení (mobiliář – budova G-LDA)",
+        "role": "vybaveni",
+        "stav": "dokončen",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_946.html",
+        "casti": [
+          {
+            "nazev": "Dodávka a montáž kuchyní a souvisejícího vybavení (mobiliář – budova G-LDA)",
+            "stav": "dokončen",
+            "pocet_nabidek": 3,
+            "datum_uverejneni": "2026-06-05",
+            "datum_uzavreni_smlouvy": "2026-08-20",
+            "vitezove": [
+              {
+                "nazev": "SANTAL spol. s r. o.",
+                "jmeno_podnikatele": null,
+                "ico": "42408121",
+                "smluvni": [
+                  {
+                    "hodnota": 4460851.34,
+                    "s_dph": true,
+                    "druh": "smluvni",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
+                  },
+                  {
+                    "hodnota": 3686654.0,
+                    "s_dph": false,
+                    "druh": "smluvni",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
+                  }
+                ],
+                "nabidkova": [],
+                "zaplaceno": []
+              }
+            ],
+            "registr_smluv": []
+          }
+        ],
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "ezak-VZ-962",
+        "nazev": "Dodávka a montáž nábytku předsíní (mobiliář – budova G-LDA)",
+        "role": "vybaveni",
+        "stav": "zahájen",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_962.html",
+        "casti": [
+          {
+            "nazev": "Dodávka a montáž nábytku předsíní (mobiliář – budova G-LDA)",
+            "stav": "zahájen",
+            "pocet_nabidek": 0,
+            "datum_uverejneni": "2026-09-14",
+            "datum_uzavreni_smlouvy": null,
+            "vitezove": [],
+            "registr_smluv": []
+          }
+        ],
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "ezak-VZ-963",
+        "nazev": "Dodávka a montáž nábytku – postele, stoly, kanceláře (mobiliář – budova G-LDA)",
+        "role": "vybaveni",
+        "stav": "zahájen",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_963.html",
+        "casti": [
+          {
+            "nazev": "Dodávka a montáž nábytku – postele, stoly, kanceláře (mobiliář – budova G-LDA)",
+            "stav": "zahájen",
+            "pocet_nabidek": 0,
+            "datum_uverejneni": "2026-10-07",
+            "datum_uzavreni_smlouvy": null,
+            "vitezove": [],
+            "registr_smluv": []
+          }
+        ],
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "smlouvy": [
+      {
+        "id": "rs-34440465",
+        "id_smlouvy": "32287025",
+        "navazuje_na": null,
+        "cislo_smlouvy": "10OB251013",
+        "predmet": "Objednávka PD na interiéry - ubytovací zařízení G - LDA",
+        "role": "projekt",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2025-08-13",
+        "strany": [
+          {
+            "nazev": "fyzická osoba",
+            "jmeno_podnikatele": null,
+            "ico": null
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 190000.0,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/34440465",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-36749377",
+        "id_smlouvy": "34494473",
+        "navazuje_na": null,
+        "cislo_smlouvy": "10SM260060",
+        "predmet": "Smlouva o dílo - Stavební úpravy budovy G - LDA",
+        "role": "stavba",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2026-02-09",
+        "strany": [
+          {
+            "nazev": "Metrostav CZ s.r.o.",
+            "jmeno_podnikatele": null,
+            "ico": "25021915"
+          },
+          {
+            "nazev": "PAMÁTKY TÁBOR, s.r.o.",
+            "jmeno_podnikatele": null,
+            "ico": "44797958"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 93956986.0,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/36749377",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-39474653",
+        "id_smlouvy": "37112409",
+        "navazuje_na": null,
+        "cislo_smlouvy": null,
+        "predmet": "Dodatek č. 1 ke Smlouvě o dílo  - Stavební úpravy budovy G",
+        "role": "stavba",
+        "dodatek_cislo": 1,
+        "datum_uzavreni": "2026-09-10",
+        "strany": [
+          {
+            "nazev": "Metrostav CZ s.r.o.",
+            "jmeno_podnikatele": null,
+            "ico": "25021915"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 1324349.33,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/39474653",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "usneseni": [
+      {
+        "id": "rm-2026-j110-u472",
+        "cislo": "RM 472/2026-110",
+        "datum": "2026-09-09",
+        "tema": "Zadávací řízení na nábytek předsíní – budova G-LDA",
+        "tema_ai": true,
+        "shrnuti": "Rada jako valná hromada společnosti Slatinné lázně Třeboň schválila zadávací dokumentaci nadlimitního řízení na dodávku a montáž nábytku předsíní (budova G-LDA) s předpokládanou hodnotou 1 400 000 Kč bez DPH.",
+        "shrnuti_ai": true,
+        "citace": {
+          "dokument_id": "zapis-rm-2026-09-09",
+          "strany": [
+            9,
+            10
+          ],
+          "text": "ve výši předpokládané hodnoty 1.400.000, - Kč bez DPH."
+        },
+        "overeni": "overeno_kodem",
+        "vysledek_hlasovani": "prijato",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "posledni_dodatek": {
+      "stavba": 1
+    },
+    "udalosti": [
+      {
+        "datum": "2025-03-17",
+        "typ": "soutez",
+        "text": "Soutěž: Zhotovení PD, příkazní činnost a výkon AD pro Výstavba bytů a administrativního zázemí - budova G - LDA",
+        "kategorie": "výběrové řízení",
+        "kratce": "projektová dokumentace, smlouva 3 dní po podání nabídek (vyhlášení zveřejněno až dodatečně), 3 nabídky",
+        "lhuta_dni": null,
+        "rizeni_dni": null,
+        "po_nabidkach_dni": 3,
+        "pocet_nabidek": 3,
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_837.html",
+        "role": "projekt",
+        "zdroj_id": "ezak-VZ-837",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2025-08-13",
+        "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "projektová dokumentace",
+        "text": "Objednávka PD na interiéry - ubytovací zařízení G - LDA",
+        "role": "projekt",
+        "zdroj_id": "rs-34440465",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/34440465"
+      },
+      {
+        "datum": "2025-10-10",
+        "typ": "soutez",
+        "text": "Soutěž: Stavební úpravy budovy G – LDA s nástavbou administrativních a ubytovacích kapacit",
+        "kategorie": "výběrové řízení",
+        "kratce": "stavba, lhůta pro nabídky 48 dní, smlouva zatím není",
+        "lhuta_dni": 48,
+        "rizeni_dni": null,
+        "po_nabidkach_dni": null,
+        "pocet_nabidek": 0,
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_891.html",
+        "role": "stavba",
+        "zdroj_id": "ezak-VZ-891",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2025-12-03",
+        "typ": "soutez",
+        "text": "Soutěž: Stavební úpravy budovy G – LDA s nástavbou administrativních a ubytovacích kapacit – opakované řízení",
+        "kategorie": "výběrové řízení",
+        "kratce": "stavba, od vyhlášení do smlouvy 68 dní (lhůta pro nabídky 36 dní), 2 nabídky",
+        "lhuta_dni": 36,
+        "rizeni_dni": 68,
+        "po_nabidkach_dni": 32,
+        "pocet_nabidek": 2,
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_912.html",
+        "role": "stavba",
+        "zdroj_id": "ezak-VZ-912",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-02-09",
+        "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "smlouva o dílo",
+        "text": "Smlouva o dílo - Stavební úpravy budovy G - LDA",
+        "role": "stavba",
+        "zdroj_id": "rs-36749377",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/36749377"
+      },
+      {
+        "datum": "2026-02-09",
+        "typ": "soutez",
+        "text": "Soutěž: Výkon technického dozoru stavebníka a koordinátora BOZP - Stavební úpravy budovy G - LDA s nástavbou administrativních a ubytovacích kapacit",
+        "kategorie": "výběrové řízení",
+        "kratce": "technický dozor, smlouva 2 dní po podání nabídek (vyhlášení zveřejněno až dodatečně), 3 nabídky",
+        "lhuta_dni": null,
+        "rizeni_dni": null,
+        "po_nabidkach_dni": 2,
+        "pocet_nabidek": 3,
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_913.html",
+        "role": "technicky_dozor",
+        "zdroj_id": "ezak-VZ-913",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-06-05",
+        "typ": "soutez",
+        "text": "Soutěž: Dodávka a montáž kuchyní a souvisejícího vybavení (mobiliář – budova G-LDA)",
+        "kategorie": "výběrové řízení",
+        "kratce": "vybavení, od vyhlášení do smlouvy 76 dní (lhůta pro nabídky 32 dní), 3 nabídky",
+        "lhuta_dni": 32,
+        "rizeni_dni": 76,
+        "po_nabidkach_dni": 44,
+        "pocet_nabidek": 3,
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_946.html",
+        "role": "vybaveni",
+        "zdroj_id": "ezak-VZ-946",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-09-09",
+        "typ": "usneseni",
+        "text": "Zadávací řízení na nábytek předsíní – budova G-LDA",
+        "kategorie": "rada",
+        "kratce": "Zadávací řízení na nábytek předsíní – budova G-LDA",
+        "text_ai": true,
+        "overeni": "overeno_kodem",
+        "usneseni_cislo": "RM 472/2026-110",
+        "url": "https://www.mesto-trebon.cz/uploads/news/id15037/Z-110-26-09-09-A.pdf#page=9",
+        "zdroj_id": "rm-2026-j110-u472",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-09-10",
+        "typ": "dodatek",
+        "kategorie": "smlouva",
+        "kratce": "dodatek 1 (smlouva o dílo)",
+        "text": "Dodatek č. 1 ke Smlouvě o dílo  - Stavební úpravy budovy G",
+        "role": "stavba",
+        "zdroj_id": "rs-39474653",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/39474653"
+      },
+      {
+        "datum": "2026-09-14",
+        "typ": "soutez",
+        "text": "Soutěž: Dodávka a montáž nábytku předsíní (mobiliář – budova G-LDA)",
+        "kategorie": "výběrové řízení",
+        "kratce": "vybavení, lhůta pro nabídky 29 dní, smlouva zatím není",
+        "lhuta_dni": 29,
+        "rizeni_dni": null,
+        "po_nabidkach_dni": null,
+        "pocet_nabidek": 0,
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_962.html",
+        "role": "vybaveni",
+        "zdroj_id": "ezak-VZ-962",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-10-07",
+        "typ": "soutez",
+        "text": "Soutěž: Dodávka a montáž nábytku – postele, stoly, kanceláře (mobiliář – budova G-LDA)",
+        "kategorie": "výběrové řízení",
+        "kratce": "vybavení, lhůta pro nabídky 15 dní, smlouva zatím není",
+        "lhuta_dni": 15,
+        "rizeni_dni": null,
+        "po_nabidkach_dni": null,
+        "pocet_nabidek": 0,
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_963.html",
+        "role": "vybaveni",
+        "zdroj_id": "ezak-VZ-963",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "posledni_udalost": {
+      "datum": "2026-10-07",
+      "typ": "soutez",
+      "text": "Soutěž: Dodávka a montáž nábytku – postele, stoly, kanceláře (mobiliář – budova G-LDA)",
+      "kategorie": "výběrové řízení",
+      "kratce": "vybavení, lhůta pro nabídky 15 dní, smlouva zatím není",
+      "lhuta_dni": 15,
+      "rizeni_dni": null,
+      "po_nabidkach_dni": null,
+      "pocet_nabidek": 0,
+      "url": "https://zakazky.mesto-trebon.cz/contract_display_963.html",
+      "role": "vybaveni",
+      "zdroj_id": "ezak-VZ-963",
+      "jistota": "nase_propojeni"
+    }
+  },
+  {
     "id": "mk-hermankova-daskabat",
     "nazev": "Ulice Heřmánkova a Daskabát",
     "popis": "Stavební úpravy místních komunikací v ulicích Heřmánkova a Daskabát v Třeboni.",
     "oblast": "doprava",
     "druh": "investicni",
     "vlastnik_subjekt_id": "00247618",
+    "financovani": null,
     "faze": "probiha",
     "faze_jistota": "nase_propojeni",
     "dokonceni": null,
@@ -985,6 +2542,11 @@
           "s_dph": 26437397.31
         },
         "ezak_url": "https://zakazky.mesto-trebon.cz/contract_display_949.html",
+        "ukonceno_plneni": false,
+        "ezak_zaplaceno": {
+          "bez_dph": null,
+          "s_dph": null
+        },
         "vazba_dodatku": "nase_propojeni",
         "dodatky": [],
         "chybi_dodatky": [],
@@ -993,6 +2555,7 @@
         "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 26437397.31,
         "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
         "souhlas_ezak": null,
         "dodatky_bez_dph": null
       },
@@ -1017,6 +2580,11 @@
           "s_dph": 1059960.0
         },
         "ezak_url": "https://zakazky.mesto-trebon.cz/contract_display_831.html",
+        "ukonceno_plneni": false,
+        "ezak_zaplaceno": {
+          "bez_dph": 858000.0,
+          "s_dph": 1038180.0
+        },
         "vazba_dodatku": null,
         "dodatky": [],
         "chybi_dodatky": [],
@@ -1025,6 +2593,7 @@
         "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 1059960.0,
         "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
         "souhlas_ezak": null,
         "dodatky_bez_dph": null
       },
@@ -1048,6 +2617,7 @@
         "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 72600.0,
         "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
         "souhlas_ezak": null,
         "dodatky_bez_dph": null
       }
@@ -1127,6 +2697,7 @@
               {
                 "nazev": "INVENTE, s.r.o.",
                 "jmeno_podnikatele": null,
+                "ico": "25171232",
                 "smluvni": [
                   {
                     "hodnota": 1059960.0,
@@ -1180,6 +2751,7 @@
               {
                 "nazev": "VKB stavby s.r.o.",
                 "jmeno_podnikatele": null,
+                "ico": "02192012",
                 "smluvni": [
                   {
                     "hodnota": 26437397.31,
@@ -1219,7 +2791,8 @@
         "strany": [
           {
             "nazev": "fyzická osoba",
-            "jmeno_podnikatele": "Mgr. Jakub Grafnetter, advokát"
+            "jmeno_podnikatele": "Mgr. Jakub Grafnetter, advokát",
+            "ico": null
           }
         ],
         "castky": [
@@ -1255,7 +2828,8 @@
         "strany": [
           {
             "nazev": "VKB stavby s.r.o.",
-            "jmeno_podnikatele": null
+            "jmeno_podnikatele": null,
+            "ico": "02192012"
           }
         ],
         "castky": [
@@ -1388,6 +2962,7 @@
     "oblast": "sport",
     "druh": "investicni",
     "vlastnik_subjekt_id": "00247618",
+    "financovani": null,
     "faze": "probiha",
     "faze_jistota": "nase_propojeni",
     "dokonceni": null,
@@ -1577,6 +3152,11 @@
           "s_dph": 66097418.09
         },
         "ezak_url": "https://zakazky.mesto-trebon.cz/contract_display_901.html",
+        "ukonceno_plneni": false,
+        "ezak_zaplaceno": {
+          "bez_dph": null,
+          "s_dph": null
+        },
         "vazba_dodatku": "dolozeno",
         "dodatky": [
           {
@@ -1643,6 +3223,7 @@
         ],
         "cena_po_dodatcich_s_dph": 66097418.09,
         "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
         "souhlas_ezak": true,
         "dodatky_bez_dph": 5227139.14
       },
@@ -1667,6 +3248,11 @@
           "s_dph": 945000.0
         },
         "ezak_url": "https://zakazky.mesto-trebon.cz/contract_display_877.html",
+        "ukonceno_plneni": false,
+        "ezak_zaplaceno": {
+          "bez_dph": 900000.0,
+          "s_dph": 900000.0
+        },
         "vazba_dodatku": "nase_propojeni",
         "dodatky": [
           {
@@ -1687,6 +3273,7 @@
         "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 1092000.0,
         "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
         "souhlas_ezak": false,
         "dodatky_bez_dph": 147000.0
       },
@@ -1722,6 +3309,7 @@
         "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 246500.0,
         "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
         "souhlas_ezak": null,
         "dodatky_bez_dph": 14500.0
       },
@@ -1757,6 +3345,7 @@
         "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 177446.5,
         "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
         "souhlas_ezak": null,
         "dodatky_bez_dph": 7750.0
       },
@@ -1780,6 +3369,7 @@
         "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 70687.23,
         "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
         "souhlas_ezak": null,
         "dodatky_bez_dph": null
       },
@@ -1803,6 +3393,7 @@
         "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 90750.0,
         "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
         "souhlas_ezak": null,
         "dodatky_bez_dph": null
       }
@@ -1921,6 +3512,7 @@
               {
                 "nazev": "fyzická osoba",
                 "jmeno_podnikatele": "Ing. Josef Kregl",
+                "ico": null,
                 "smluvni": [
                   {
                     "hodnota": 945000.0,
@@ -1974,6 +3566,7 @@
               {
                 "nazev": "MANE STAVEBNÍ s.r.o.",
                 "jmeno_podnikatele": null,
+                "ico": "47239701",
                 "smluvni": [
                   {
                     "hodnota": 66097418.09,
@@ -2035,7 +3628,8 @@
         "strany": [
           {
             "nazev": "fyzická osoba",
-            "jmeno_podnikatele": "Ing. Josef Kregl"
+            "jmeno_podnikatele": "Ing. Josef Kregl",
+            "ico": null
           }
         ],
         "castky": [
@@ -2071,7 +3665,8 @@
         "strany": [
           {
             "nazev": "GPL - INVEST s.r.o.",
-            "jmeno_podnikatele": null
+            "jmeno_podnikatele": null,
+            "ico": "26070766"
           }
         ],
         "castky": [
@@ -2107,7 +3702,8 @@
         "strany": [
           {
             "nazev": "fyzická osoba",
-            "jmeno_podnikatele": "Ing. Pavel Houška"
+            "jmeno_podnikatele": "Ing. Pavel Houška",
+            "ico": null
           }
         ],
         "castky": [
@@ -2143,7 +3739,8 @@
         "strany": [
           {
             "nazev": "fyzická osoba",
-            "jmeno_podnikatele": "Zdeněk Musil"
+            "jmeno_podnikatele": "Zdeněk Musil",
+            "ico": null
           }
         ],
         "castky": [
@@ -2179,7 +3776,8 @@
         "strany": [
           {
             "nazev": "MANE STAVEBNÍ s.r.o.",
-            "jmeno_podnikatele": null
+            "jmeno_podnikatele": null,
+            "ico": "47239701"
           }
         ],
         "castky": [
@@ -2215,7 +3813,8 @@
         "strany": [
           {
             "nazev": "MANE STAVEBNÍ s.r.o.",
-            "jmeno_podnikatele": null
+            "jmeno_podnikatele": null,
+            "ico": "47239701"
           }
         ],
         "castky": [
@@ -2251,7 +3850,8 @@
         "strany": [
           {
             "nazev": "MANE STAVEBNÍ s.r.o.",
-            "jmeno_podnikatele": null
+            "jmeno_podnikatele": null,
+            "ico": "47239701"
           }
         ],
         "castky": [
@@ -2280,7 +3880,8 @@
         "strany": [
           {
             "nazev": "SANTAL spol. s r. o.",
-            "jmeno_podnikatele": null
+            "jmeno_podnikatele": null,
+            "ico": "42408121"
           }
         ],
         "castky": [
@@ -2316,7 +3917,8 @@
         "strany": [
           {
             "nazev": "MANE STAVEBNÍ s.r.o.",
-            "jmeno_podnikatele": null
+            "jmeno_podnikatele": null,
+            "ico": "47239701"
           }
         ],
         "castky": [
@@ -2352,7 +3954,8 @@
         "strany": [
           {
             "nazev": "MANE STAVEBNÍ s.r.o.",
-            "jmeno_podnikatele": null
+            "jmeno_podnikatele": null,
+            "ico": "47239701"
           }
         ],
         "castky": [],
@@ -2373,7 +3976,8 @@
         "strany": [
           {
             "nazev": "fyzická osoba",
-            "jmeno_podnikatele": "Zdeněk Musil"
+            "jmeno_podnikatele": "Zdeněk Musil",
+            "ico": null
           }
         ],
         "castky": [
@@ -2409,7 +4013,8 @@
         "strany": [
           {
             "nazev": "fyzická osoba",
-            "jmeno_podnikatele": "Ing. Pavel Houška"
+            "jmeno_podnikatele": "Ing. Pavel Houška",
+            "ico": null
           }
         ],
         "castky": [
@@ -2445,7 +4050,8 @@
         "strany": [
           {
             "nazev": "fyzická osoba",
-            "jmeno_podnikatele": "Ing. Josef Kregl"
+            "jmeno_podnikatele": "Ing. Josef Kregl",
+            "ico": null
           }
         ],
         "castky": [
@@ -2481,7 +4087,8 @@
         "strany": [
           {
             "nazev": "MANE STAVEBNÍ s.r.o.",
-            "jmeno_podnikatele": null
+            "jmeno_podnikatele": null,
+            "ico": "47239701"
           }
         ],
         "castky": [
@@ -2860,6 +4467,7 @@
     "oblast": "voda_odpady",
     "druh": "investicni",
     "vlastnik_subjekt_id": "00247618",
+    "financovani": null,
     "faze": "probiha",
     "faze_jistota": "nase_propojeni",
     "dokonceni": null,
@@ -2920,6 +4528,11 @@
           "s_dph": 2167915.86
         },
         "ezak_url": "https://zakazky.mesto-trebon.cz/contract_display_960.html",
+        "ukonceno_plneni": false,
+        "ezak_zaplaceno": {
+          "bez_dph": null,
+          "s_dph": null
+        },
         "vazba_dodatku": "nase_propojeni",
         "dodatky": [],
         "chybi_dodatky": [],
@@ -2928,6 +4541,7 @@
         "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 2167915.86,
         "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
         "souhlas_ezak": null,
         "dodatky_bez_dph": null
       }
@@ -3017,6 +4631,7 @@
               {
                 "nazev": "K - BUILDING CB, a.s.",
                 "jmeno_podnikatele": null,
+                "ico": "26105594",
                 "smluvni": [
                   {
                     "hodnota": 2167915.86,
@@ -3056,7 +4671,8 @@
         "strany": [
           {
             "nazev": "K - BUILDING CB, a.s.",
-            "jmeno_podnikatele": null
+            "jmeno_podnikatele": null,
+            "ico": "26105594"
           }
         ],
         "castky": [
@@ -3130,6 +4746,7 @@
     "oblast": "sport",
     "druh": "investicni",
     "vlastnik_subjekt_id": "00247618",
+    "financovani": null,
     "faze": "probiha",
     "faze_jistota": "nase_propojeni",
     "dokonceni": null,
@@ -3303,6 +4920,11 @@
           "s_dph": 62173221.68
         },
         "ezak_url": "https://zakazky.mesto-trebon.cz/contract_display_883.html",
+        "ukonceno_plneni": false,
+        "ezak_zaplaceno": {
+          "bez_dph": 0.0,
+          "s_dph": 0.0
+        },
         "vazba_dodatku": "dolozeno",
         "dodatky": [
           {
@@ -3367,6 +4989,7 @@
         "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 62173221.68,
         "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
         "souhlas_ezak": true,
         "dodatky_bez_dph": 5703927.84
       },
@@ -3394,6 +5017,11 @@
           "s_dph": 873000.0
         },
         "ezak_url": "https://zakazky.mesto-trebon.cz/contract_display_810.html",
+        "ukonceno_plneni": false,
+        "ezak_zaplaceno": {
+          "bez_dph": 680000.0,
+          "s_dph": 680000.0
+        },
         "vazba_dodatku": "nase_propojeni",
         "dodatky": [
           {
@@ -3418,6 +5046,7 @@
         "neuplne_cena_po_dodatcich_s_dph": [
           "původní cena z E-ZAK může už zahrnovat dodatky"
         ],
+        "souhlas_zaplaceno": null,
         "souhlas_ezak": null,
         "dodatky_bez_dph": 56500.0
       },
@@ -3441,6 +5070,7 @@
         "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 281930.0,
         "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
         "souhlas_ezak": null,
         "dodatky_bez_dph": null
       },
@@ -3476,6 +5106,7 @@
         "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 275000.0,
         "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
         "souhlas_ezak": null,
         "dodatky_bez_dph": 35000.0
       },
@@ -3511,6 +5142,7 @@
         "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 175531.07,
         "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
         "souhlas_ezak": null,
         "dodatky_bez_dph": 16167.0
       },
@@ -3535,6 +5167,11 @@
           "s_dph": 2025961.08
         },
         "ezak_url": "https://zakazky.mesto-trebon.cz/contract_display_936.html",
+        "ukonceno_plneni": false,
+        "ezak_zaplaceno": {
+          "bez_dph": null,
+          "s_dph": null
+        },
         "vazba_dodatku": "nase_propojeni",
         "dodatky": [
           {
@@ -3566,6 +5203,7 @@
         "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 2263906.37,
         "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
         "souhlas_ezak": false,
         "dodatky_bez_dph": 196649.0
       },
@@ -3589,6 +5227,7 @@
         "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 375252.3,
         "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
         "souhlas_ezak": null,
         "dodatky_bez_dph": null
       },
@@ -3612,6 +5251,7 @@
         "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 252668.57,
         "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
         "souhlas_ezak": null,
         "dodatky_bez_dph": null
       },
@@ -3635,6 +5275,7 @@
         "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 90750.0,
         "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
         "souhlas_ezak": null,
         "dodatky_bez_dph": null
       }
@@ -3759,6 +5400,7 @@
               {
                 "nazev": "fyzická osoba",
                 "jmeno_podnikatele": "Ing. Josef Kregl",
+                "ico": null,
                 "smluvni": [
                   {
                     "hodnota": 873000.0,
@@ -3822,6 +5464,7 @@
               {
                 "nazev": "Retherm s.r.o.",
                 "jmeno_podnikatele": null,
+                "ico": "26086344",
                 "smluvni": [
                   {
                     "hodnota": 62173221.68,
@@ -3897,6 +5540,7 @@
               {
                 "nazev": "Artspect, a.s.",
                 "jmeno_podnikatele": null,
+                "ico": "28123395",
                 "smluvni": [
                   {
                     "hodnota": 2025961.08,
@@ -3936,7 +5580,8 @@
         "strany": [
           {
             "nazev": "GPL - INVEST s.r.o.",
-            "jmeno_podnikatele": null
+            "jmeno_podnikatele": null,
+            "ico": "26070766"
           }
         ],
         "castky": [
@@ -3972,7 +5617,8 @@
         "strany": [
           {
             "nazev": "fyzická osoba",
-            "jmeno_podnikatele": "Ing. Pavel Houška"
+            "jmeno_podnikatele": "Ing. Pavel Houška",
+            "ico": null
           }
         ],
         "castky": [
@@ -4008,7 +5654,8 @@
         "strany": [
           {
             "nazev": "fyzická osoba",
-            "jmeno_podnikatele": "Zdeněk Musil"
+            "jmeno_podnikatele": "Zdeněk Musil",
+            "ico": null
           }
         ],
         "castky": [
@@ -4044,7 +5691,8 @@
         "strany": [
           {
             "nazev": "Retherm s.r.o.",
-            "jmeno_podnikatele": null
+            "jmeno_podnikatele": null,
+            "ico": "26086344"
           }
         ],
         "castky": [
@@ -4080,7 +5728,8 @@
         "strany": [
           {
             "nazev": "JPS J. Hradec s.r.o.",
-            "jmeno_podnikatele": null
+            "jmeno_podnikatele": null,
+            "ico": "26035138"
           }
         ],
         "castky": [
@@ -4116,7 +5765,8 @@
         "strany": [
           {
             "nazev": "Retherm s.r.o.",
-            "jmeno_podnikatele": null
+            "jmeno_podnikatele": null,
+            "ico": "26086344"
           }
         ],
         "castky": [
@@ -4152,7 +5802,8 @@
         "strany": [
           {
             "nazev": "Artspect, a.s.",
-            "jmeno_podnikatele": null
+            "jmeno_podnikatele": null,
+            "ico": "28123395"
           }
         ],
         "castky": [
@@ -4188,7 +5839,8 @@
         "strany": [
           {
             "nazev": "Retherm s.r.o.",
-            "jmeno_podnikatele": null
+            "jmeno_podnikatele": null,
+            "ico": "26086344"
           }
         ],
         "castky": [
@@ -4224,7 +5876,8 @@
         "strany": [
           {
             "nazev": "Retherm s.r.o.",
-            "jmeno_podnikatele": null
+            "jmeno_podnikatele": null,
+            "ico": "26086344"
           }
         ],
         "castky": [
@@ -4260,7 +5913,8 @@
         "strany": [
           {
             "nazev": "Retherm s.r.o.",
-            "jmeno_podnikatele": null
+            "jmeno_podnikatele": null,
+            "ico": "26086344"
           }
         ],
         "castky": [],
@@ -4281,7 +5935,8 @@
         "strany": [
           {
             "nazev": "LP DVORACEK spol. s r.o.",
-            "jmeno_podnikatele": null
+            "jmeno_podnikatele": null,
+            "ico": "06126839"
           }
         ],
         "castky": [
@@ -4317,7 +5972,8 @@
         "strany": [
           {
             "nazev": "fyzická osoba",
-            "jmeno_podnikatele": "Zdeněk Musil"
+            "jmeno_podnikatele": "Zdeněk Musil",
+            "ico": null
           }
         ],
         "castky": [
@@ -4353,7 +6009,8 @@
         "strany": [
           {
             "nazev": "Artspect, a.s.",
-            "jmeno_podnikatele": null
+            "jmeno_podnikatele": null,
+            "ico": "28123395"
           }
         ],
         "castky": [
@@ -4389,7 +6046,8 @@
         "strany": [
           {
             "nazev": "fyzická osoba",
-            "jmeno_podnikatele": "Ing. Pavel Houška"
+            "jmeno_podnikatele": "Ing. Pavel Houška",
+            "ico": null
           }
         ],
         "castky": [
@@ -4425,7 +6083,8 @@
         "strany": [
           {
             "nazev": "StrongGear s.r.o.",
-            "jmeno_podnikatele": null
+            "jmeno_podnikatele": null,
+            "ico": "04099001"
           }
         ],
         "castky": [
@@ -4461,7 +6120,8 @@
         "strany": [
           {
             "nazev": "Retherm s.r.o.",
-            "jmeno_podnikatele": null
+            "jmeno_podnikatele": null,
+            "ico": "26086344"
           }
         ],
         "castky": [
@@ -4497,7 +6157,8 @@
         "strany": [
           {
             "nazev": "Artspect, a.s.",
-            "jmeno_podnikatele": null
+            "jmeno_podnikatele": null,
+            "ico": "28123395"
           }
         ],
         "castky": [
@@ -4533,7 +6194,8 @@
         "strany": [
           {
             "nazev": "fyzická osoba",
-            "jmeno_podnikatele": "Ing. Josef Kregl"
+            "jmeno_podnikatele": "Ing. Josef Kregl",
+            "ico": null
           }
         ],
         "castky": [

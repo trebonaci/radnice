@@ -34,6 +34,8 @@ def test_role():
     assert pr.role("Příkazní smlouva - Technický dozor stavebníka na akci X - dodatek č. 1") == "technicky_dozor"
     assert pr.role("Zpracování projektové dokumentace ve stupni DZS/DPS") == "projekt"
     assert pr.role("Vypracování projektu interiéru akce Sportovní hala") == "projekt"
+    assert pr.role("Zhotovení PD, příkazní činnost a výkon AD pro Modernizaci objektu B LDA") == "projekt"
+    assert pr.role("Objednávka PD na interiéry - ubytovací zařízení G - LDA") == "projekt"
     assert pr.role("Přístavba dvou tělocvičen - dodatek č. 5") == "stavba"
 
 
@@ -136,7 +138,7 @@ def test_podnikatel_jmenem_v_karte():
     d = data(smlouvy=[dict(smlouva("p", "Technický dozor na akci Přístavba dvou tělocvičen"),
                            strany=[{"nazev": "fyzická osoba", "jmeno_podnikatele": "Ing. Jan Projektant"}])])
     k = pr.sestav_projekt(PROJEKT, d)
-    assert k["smlouvy"][0]["strany"] == [{"nazev": "fyzická osoba", "jmeno_podnikatele": "Ing. Jan Projektant"}]
+    assert k["smlouvy"][0]["strany"] == [{"nazev": "fyzická osoba", "jmeno_podnikatele": "Ing. Jan Projektant", "ico": None}]
     assert k["casti"][0]["dodavatel"]["jmeno_podnikatele"] == "Ing. Jan Projektant"
 
 
@@ -335,3 +337,28 @@ def test_celkova_cena_soucet_znamych_casti():
     c = pr.souhrn([], casti)["celkova_cena_s_dph"]
     assert c["castka"] == 67026918.09 and c["neuplne"] == ["projekt", "bozp"]
     assert c["druh"] == "smluvni" and c["s_dph"] is True
+
+
+def test_dodatek_s_celkovou_cenou_a_bez_vazby_v_registru():
+    """Balneo LDA (Slatinné lázně): dodatky bez `navazuje_na`, č. 1 a 3 uvádějí novou celkovou cenu, č. 2 změnu."""
+    def d(id_, n, h):
+        return dict(sml(id_, "stavba", n, h), strany=[{"nazev": "Metrostav CZ s.r.o.", "ico": "25021915", "jmeno_podnikatele": None}])
+    sm = [dict(sml("s0", "stavba", castka=64330560.0), strany=[{"nazev": "Metrostav DIZ s.r.o.", "ico": "25021915",
+                                                                  "jmeno_podnikatele": None}]),
+          d("s1", 1, 64480654.46), d("s2", 2, 1189186.64), d("s3", 3, 65226157.70)]
+    (c,) = pr.casti_akce([], sm)
+    zm = [(x["cislo"], x["bez_dph"], x.get("castka_je_celkova", False)) for x in c["dodatky"]]
+    assert zm == [(1, 150094.46, True), (2, 1189186.64, False), (3, -443683.4, True)]
+    assert c["cena_po_dodatcich"] == 65226157.70 and c["neuplne_cena_po_dodatcich"] == []
+    # dodatek z jiné firmy (jiné IČO) se nepřipojí
+    sm.append(dict(sml("x1", "stavba", 1, 5.0), strany=[{"nazev": "Jiná a.s.", "ico": "1", "jmeno_podnikatele": None}]))
+    assert len(pr.casti_akce([], sm)) == 2
+
+
+def test_spojeni_jen_podle_role_hlida_cenu():
+    sm = [dict(sml("p0", "projekt", castka=190000.0), strany=[{"nazev": "fyzická osoba", "jmeno_podnikatele": None}])]
+    zak = [{"id": "z1", "role": "projekt", "url": "e", "casti": [{"registr_smluv": [], "vitezove": [
+        {"nazev": "JK s.r.o.", "smluvni": [{"hodnota": 1982000.0, "s_dph": False}], "nabidkova": []}]}]}]
+    assert len(pr.casti_akce(zak, sm)) == 2                  # 190 000 vs 1 982 000 → dvě různé smlouvy
+    sm[0]["castky"] = [{"hodnota": 1900000.0, "s_dph": False}]
+    assert len(pr.casti_akce(zak, sm)) == 1
