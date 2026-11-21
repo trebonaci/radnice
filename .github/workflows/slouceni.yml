@@ -16,7 +16,7 @@ on:
   pull_request_review:
     types: [submitted]
   workflow_run:
-    workflows: ["Kontrola"]
+    workflows: ["Kontrola", "Claude fixes Codex review findings"]
     types: [completed]
   schedule:
     - cron: "23 * * * *"
@@ -127,6 +127,26 @@ jobs:
               const opravy = (await github.rest.actions.listWorkflowRunsForRepo({owner, repo, branch: pr.head.ref, per_page: 20}))
                 .data.workflow_runs.filter(r => r.name === 'Claude fixes Codex review findings' && r.status !== 'completed');
               if (opravy.length) { core.info(`${kdo}: běží automatická oprava nálezů`); continue; }
+              // Má-li Codex review tohoto commitu nálezy (i P2), počkat, až o nich automatická oprava rozhodne:
+              // review spouští opravu i sloučení současně a běh opravy nemusí být ještě vidět (#148 – PR #143 se
+              // sloučil 3 s před začátkem opravy a commit s opravou zůstal mimo main).
+              const codexReviews = (await github.paginate(github.rest.pulls.listReviews, {owner, repo, pull_number: pr.number}))
+                .filter(r => r.user?.login === 'chatgpt-codex-connector[bot]' && r.commit_id === sha);
+              const posledniReview = codexReviews.at(-1);
+              if (posledniReview) {
+                const nalezy = (await github.paginate(github.rest.pulls.listReviewComments, {owner, repo, pull_number: pr.number}))
+                  .filter(k => k.pull_request_review_id === posledniReview.id).length;
+                if (nalezy) {
+                  const odReview = Date.parse(posledniReview.submitted_at) - 5000;
+                  const dokoncene = (await github.rest.actions.listWorkflowRunsForRepo({owner, repo, branch: pr.head.ref, per_page: 20}))
+                    .data.workflow_runs.filter(r => r.name === 'Claude fixes Codex review findings'
+                      && Date.parse(r.created_at) >= odReview && r.status === 'completed');
+                  if (!dokoncene.length && Date.now() - Date.parse(posledniReview.submitted_at) < 30 * 60 * 1000) {
+                    core.info(`${kdo}: Codex review má ${nalezy} nálezů, čeká se na rozhodnutí automatické opravy`);
+                    continue;
+                  }
+                }
+              }
               // 3. nevyřešené nálezy P0/P1 (vlákna review)
               const q = await github.graphql(`query($o:String!,$r:String!,$n:Int!){repository(owner:$o,name:$r){pullRequest(number:$n){
                 reviewThreads(first:100){nodes{isResolved comments(first:1){nodes{body author{login}}}}}}}}`,
