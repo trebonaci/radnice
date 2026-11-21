@@ -1,5 +1,5 @@
 {
-  "zacatek": "2026-11-21T11:29:42+00:00",
+  "zacatek": "2026-11-21T13:41:17+00:00",
   "stav": "ok",
   "zdroje": [
     {
@@ -18,7 +18,7 @@
     "usneseni": 139,
     "hlasovani": 153,
     "zakazky": 202,
-    "smlouvy": 1675,
+    "smlouvy": 1919,
     "rozpoctova_opatreni": 35,
     "rozpocet": 343,
     "rozpocet_zmeny": 166,
@@ -26,8 +26,8 @@
     "investice": 1,
     "dotace": 30
   },
-  "posledni_uspesny": "2026-11-21T11:29:47+00:00",
+  "posledni_uspesny": "2026-11-21T13:41:23+00:00",
   "nove_dokumenty": 0,
   "nove_verze": 0,
-  "konec": "2026-11-21T11:29:47+00:00"
+  "konec": "2026-11-21T13:41:23+00:00"
 }
