@@ -1,0 +1,524 @@
+[
+  {
+    "id": "jednani",
+    "nazev": "Zpracovaná jednání",
+    "hodnota": [
+      {
+        "klic": "rada",
+        "nazev": "Rada města",
+        "hodnota": 6
+      },
+      {
+        "klic": "zastupitelstvo",
+        "nazev": "Zastupitelstvo",
+        "hodnota": 2
+      }
+    ],
+    "jednotka": "jednání",
+    "obdobi": {
+      "od": "2026-09-09",
+      "do": "2026-11-04"
+    },
+    "definice": "Jednání rady a zastupitelstva, jejichž zápis je zveřejněný a zpracovaný.",
+    "vypocet": "pipeline/ukazatele.py:jednani",
+    "zdroj": [
+      {
+        "nazev": "Zápisy z jednání rady města",
+        "url": "https://www.mesto-trebon.cz/cz/mestsky-urad-trebon/samosprava-mesta/rada-mesta/zapisy-z-jednani-rady-mesta/"
+      },
+      {
+        "nazev": "Zápisy zastupitelstva města",
+        "url": "https://www.mesto-trebon.cz/cz/mestsky-urad-trebon/samosprava-mesta/zastupitelstvo-mesta/zapisy-zastupitelstva-mesta/"
+      }
+    ],
+    "zkontrolovano": null,
+    "srovnatelnost": "Zpracováváme zápisy od 1. 9. 2026 (konec období 2022–2026 a období 2026–2030)."
+  },
+  {
+    "id": "usneseni-oblasti",
+    "nazev": "Usnesení podle oblastí",
+    "hodnota": [
+      {
+        "klic": "samosprava",
+        "nazev": "Samospráva a úřad",
+        "hodnota": 27
+      },
+      {
+        "klic": "majetek_najem",
+        "nazev": "Nájmy a pronájmy",
+        "hodnota": 26
+      },
+      {
+        "klic": "investice",
+        "nazev": "Investice",
+        "hodnota": 25
+      },
+      {
+        "klic": "majetek_prevod",
+        "nazev": "Prodej a nákup majetku",
+        "hodnota": 22
+      },
+      {
+        "klic": "rozpocet",
+        "nazev": "Rozpočet",
+        "hodnota": 16
+      },
+      {
+        "klic": "sport",
+        "nazev": "Sport",
+        "hodnota": 15
+      },
+      {
+        "klic": "prispevkove_organizace",
+        "nazev": "Městské organizace",
+        "hodnota": 12
+      },
+      {
+        "klic": "skolstvi",
+        "nazev": "Školy",
+        "hodnota": 12
+      },
+      {
+        "klic": "socialni",
+        "nazev": "Sociální služby",
+        "hodnota": 11
+      },
+      {
+        "klic": "verejne_zakazky",
+        "nazev": "Zakázky",
+        "hodnota": 11
+      },
+      {
+        "klic": "kultura",
+        "nazev": "Kultura",
+        "hodnota": 10
+      },
+      {
+        "klic": "dotace_dary",
+        "nazev": "Dotace a dary",
+        "hodnota": 9
+      },
+      {
+        "klic": "doprava",
+        "nazev": "Doprava",
+        "hodnota": 8
+      },
+      {
+        "klic": "lazne_spolecnosti",
+        "nazev": "Lázně a městské firmy",
+        "hodnota": 8
+      },
+      {
+        "klic": "ostatni",
+        "nazev": "Ostatní",
+        "hodnota": 7
+      },
+      {
+        "klic": "voda_odpady",
+        "nazev": "Voda a odpady",
+        "hodnota": 5
+      },
+      {
+        "klic": "personalni",
+        "nazev": "Personální věci",
+        "hodnota": 4
+      }
+    ],
+    "jednotka": "usnesení",
+    "obdobi": {
+      "od": "2026-09-09",
+      "do": "2026-11-04"
+    },
+    "definice": "Počet usnesení, která se oblasti týkají. Jedno usnesení může patřit do více oblastí, proto se řada nesčítá.",
+    "vypocet": "pipeline/ukazatele.py:usneseni_oblasti",
+    "zdroj": [
+      {
+        "nazev": "Zápisy z jednání rady města",
+        "url": "https://www.mesto-trebon.cz/cz/mestsky-urad-trebon/samosprava-mesta/rada-mesta/zapisy-z-jednani-rady-mesta/"
+      },
+      {
+        "nazev": "Zápisy zastupitelstva města",
+        "url": "https://www.mesto-trebon.cz/cz/mestsky-urad-trebon/samosprava-mesta/zastupitelstvo-mesta/zapisy-zastupitelstva-mesta/"
+      }
+    ],
+    "zkontrolovano": null,
+    "srovnatelnost": "Oblasti přiřazuje AI s kontrolou, viz metodika.",
+    "celkem": 139,
+    "neprijato": 1,
+    "kategorie_ai": true
+  },
+  {
+    "id": "smlouvy-organizace",
+    "nazev": "Smlouvy v registru podle organizací",
+    "hodnota": [
+      {
+        "klic": "00247618",
+        "nazev": "Město Třeboň",
+        "hodnota": 1150,
+        "podle_let": {
+          "2024": 363,
+          "2025": 423,
+          "2026": 364
+        }
+      },
+      {
+        "klic": "25179896",
+        "nazev": "Slatinné lázně Třeboň s.r.o.",
+        "hodnota": 503,
+        "podle_let": {
+          "2024": 179,
+          "2025": 200,
+          "2026": 124
+        }
+      },
+      {
+        "klic": "60816872",
+        "nazev": "Základní škola Třeboň, Na Sadech 375",
+        "hodnota": 108,
+        "podle_let": {
+          "2024": 28,
+          "2025": 47,
+          "2026": 33
+        }
+      },
+      {
+        "klic": "28136853",
+        "nazev": "Městská Vodohospodářská s.r.o.",
+        "hodnota": 92,
+        "podle_let": {
+          "2024": 25,
+          "2025": 30,
+          "2026": 37
+        }
+      },
+      {
+        "klic": "62502735",
+        "nazev": "Technické služby Třeboň, s.r.o.",
+        "hodnota": 66,
+        "podle_let": {
+          "2024": 26,
+          "2025": 22,
+          "2026": 18
+        }
+      },
+      {
+        "klic": "06457665",
+        "nazev": "Městská sportovní Třeboň, příspěvková organizace",
+        "hodnota": 48,
+        "podle_let": {
+          "2024": 7,
+          "2025": 22,
+          "2026": 19
+        }
+      },
+      {
+        "klic": "60818174",
+        "nazev": "Základní škola Třeboň, Sokolská 296",
+        "hodnota": 28,
+        "podle_let": {
+          "2024": 7,
+          "2025": 14,
+          "2026": 7
+        }
+      },
+      {
+        "klic": "70989907",
+        "nazev": "3. mateřská škola Třeboň, Jeronýmova 183",
+        "hodnota": 22,
+        "podle_let": {
+          "2024": 9,
+          "2025": 9,
+          "2026": 4
+        }
+      },
+      {
+        "klic": "63263777",
+        "nazev": "Mateřská škola Sluníčko, Třeboň",
+        "hodnota": 16,
+        "podle_let": {
+          "2024": 6,
+          "2025": 6,
+          "2026": 4
+        }
+      },
+      {
+        "klic": "21551464",
+        "nazev": "Městská knihovna Třeboň",
+        "hodnota": 10,
+        "podle_let": {
+          "2024": 6,
+          "2025": 3,
+          "2026": 1
+        }
+      },
+      {
+        "klic": "60838256",
+        "nazev": "Třeboňské lesy a rybníky s.r.o.",
+        "hodnota": 2,
+        "podle_let": {
+          "2025": 1,
+          "2026": 1
+        }
+      }
+    ],
+    "jednotka": "smluv",
+    "obdobi": {
+      "od": "2024-03-01",
+      "do": "2026-11-20"
+    },
+    "definice": "Smlouvy zveřejněné v registru smluv, kde je sledovaná organizace smluvní stranou. Verze téže smlouvy se počítají jednou.",
+    "vypocet": "pipeline/ukazatele.py:smlouvy",
+    "zdroj": [
+      {
+        "nazev": "Registr smluv (otevřená data)",
+        "url": "https://data.smlouvy.gov.cz/"
+      }
+    ],
+    "zkontrolovano": null,
+    "srovnatelnost": "Registr zpracováváme od března 2024. Do registru se nemusí zveřejňovat smlouvy do 50 000 Kč bez DPH.",
+    "celkem": 1919
+  },
+  {
+    "id": "zakazky-organizace",
+    "nazev": "Veřejné zakázky podle zadavatelů",
+    "hodnota": [
+      {
+        "klic": "25179896",
+        "nazev": "Slatinné lázně Třeboň s.r.o.",
+        "hodnota": 113,
+        "podle_let": {
+          "2021": 1,
+          "2022": 7,
+          "2023": 15,
+          "2024": 36,
+          "2025": 32,
+          "2026": 22
+        },
+        "podle_stavu": {
+          "dokončen": 43,
+          "neuvedeno": 13,
+          "ukončeno plnění": 38,
+          "zahájen": 4,
+          "zrušen": 15
+        }
+      },
+      {
+        "klic": "00247618",
+        "nazev": "Město Třeboň",
+        "hodnota": 89,
+        "podle_let": {
+          "2020": 1,
+          "2021": 3,
+          "2022": 1,
+          "2023": 13,
+          "2024": 29,
+          "2025": 25,
+          "2026": 17
+        },
+        "podle_stavu": {
+          "dokončen": 34,
+          "ukončeno plnění": 52,
+          "zahájen": 1,
+          "zrušen": 2
+        }
+      }
+    ],
+    "jednotka": "zakázek",
+    "obdobi": {
+      "od": "2020-06-19",
+      "do": "2026-11-09"
+    },
+    "definice": "Zakázky zveřejněné na profilech zadavatelů v E-ZAK, podle roku zahájení.",
+    "vypocet": "pipeline/ukazatele.py:zakazky",
+    "zdroj": [
+      {
+        "nazev": "Profily zadavatelů E-ZAK",
+        "url": "https://zakazky.mesto-trebon.cz/"
+      }
+    ],
+    "zkontrolovano": null,
+    "srovnatelnost": "Strojově čitelný export mají jen město, Městská Vodohospodářská a Slatinné lázně; malé zakázky se na profilu nezveřejňují.",
+    "celkem": 202
+  },
+  {
+    "id": "dotace-oblasti",
+    "nazev": "Dotace přiznané radou a zastupitelstvem",
+    "hodnota": [
+      {
+        "klic": "tělovýchovy a sportu",
+        "nazev": "Sport a tělovýchova",
+        "pocet": 22,
+        "hodnota": 546000.0
+      },
+      {
+        "klic": "sociálních služeb a zdravotnictví",
+        "nazev": "Sociální služby a zdravotnictví",
+        "pocet": 5,
+        "hodnota": 70000.0
+      },
+      {
+        "klic": "ostatních zájmových činností",
+        "nazev": "Ostatní zájmová činnost",
+        "pocet": 3,
+        "hodnota": 31600.0
+      }
+    ],
+    "jednotka": "Kč",
+    "obdobi": {
+      "od": "2026-10-30",
+      "do": "2026-10-30"
+    },
+    "definice": "Součet dotací přiznaných v usneseních, podle oblasti programu.",
+    "vypocet": "pipeline/ukazatele.py:dotace",
+    "zdroj": [
+      {
+        "nazev": "Zápisy z jednání rady města",
+        "url": "https://www.mesto-trebon.cz/cz/mestsky-urad-trebon/samosprava-mesta/rada-mesta/zapisy-z-jednani-rady-mesta/"
+      },
+      {
+        "nazev": "Zápisy zastupitelstva města",
+        "url": "https://www.mesto-trebon.cz/cz/mestsky-urad-trebon/samosprava-mesta/zastupitelstvo-mesta/zapisy-zastupitelstva-mesta/"
+      }
+    ],
+    "zkontrolovano": null,
+    "srovnatelnost": "Přiznaná částka, ne vyplacená. DPH se u dotací neuplatňuje.",
+    "druh": "dotace_priznana",
+    "s_dph": null,
+    "celkem_pocet": 30
+  },
+  {
+    "id": "investice-rozpocet",
+    "nazev": "Investice v rozpočtu 2026",
+    "hodnota": [
+      {
+        "klic": "Sport a hřiště",
+        "nazev": "Sport a hřiště",
+        "schvaleny": 91750000.0,
+        "hodnota": 90692140.0
+      },
+      {
+        "klic": "Služby a cestovní ruch",
+        "nazev": "Služby a cestovní ruch",
+        "schvaleny": 56500000.0,
+        "hodnota": 63525000.0
+      },
+      {
+        "klic": "Doprava, ulice a chodníky",
+        "nazev": "Doprava, ulice a chodníky",
+        "schvaleny": 48000000.0,
+        "hodnota": 49500000.0
+      },
+      {
+        "klic": "Bydlení, osvětlení a budovy",
+        "nazev": "Bydlení, osvětlení a budovy",
+        "schvaleny": 47670000.0,
+        "hodnota": 39055000.0
+      },
+      {
+        "klic": "Voda a kanalizace",
+        "nazev": "Voda a kanalizace",
+        "schvaleny": 12480000.0,
+        "hodnota": 13330000.0
+      },
+      {
+        "klic": "Školy a školky",
+        "nazev": "Školy a školky",
+        "schvaleny": 3600000.0,
+        "hodnota": 5700000.0
+      },
+      {
+        "klic": "Životní prostředí a zeleň",
+        "nazev": "Životní prostředí a zeleň",
+        "schvaleny": 2680000.0,
+        "hodnota": 2764700.0
+      },
+      {
+        "klic": "Kultura a památky",
+        "nazev": "Kultura a památky",
+        "schvaleny": 2000000.0,
+        "hodnota": 1820000.0
+      },
+      {
+        "klic": "Městský úřad",
+        "nazev": "Městský úřad",
+        "schvaleny": 1750000.0,
+        "hodnota": 1750000.0
+      },
+      {
+        "klic": "Bezpečnost",
+        "nazev": "Bezpečnost",
+        "schvaleny": 305000.0,
+        "hodnota": 300000.0
+      }
+    ],
+    "jednotka": "Kč",
+    "obdobi": {
+      "od": "2026-01-01",
+      "do": "2026-12-31"
+    },
+    "definice": "Kapitálové výdaje rozpočtu města po rozpočtových opatřeních, bez rezerv, podle oblastí.",
+    "vypocet": "pipeline/ukazatele.py:investice",
+    "zdroj": [
+      {
+        "nazev": "Rozpočet města a přehled rozpočtových opatření",
+        "url": "https://www.mesto-trebon.cz/cz/mestsky-urad-trebon/organizacni-struktura/odbor-financni-a-majetkovy/rozpocet.html"
+      }
+    ],
+    "zkontrolovano": null,
+    "srovnatelnost": "Investice z fondů (lázeňský investiční fond, fond obnovy vodohospodářského majetku) rozpočet uvádí jen souhrnně, nejsou zahrnuty.",
+    "druh": "rozpocet_upraveny",
+    "s_dph": null,
+    "schvaleny": 266735000.0,
+    "po_zmenach": 268436840.0
+  },
+  {
+    "id": "investicni-akce",
+    "nazev": "Investiční akce podle fáze",
+    "hodnota": [
+      {
+        "klic": "pripravuje_se",
+        "nazev": "Připravuje se",
+        "hodnota": 2
+      },
+      {
+        "klic": "probiha",
+        "nazev": "Stavba probíhá",
+        "hodnota": 15
+      },
+      {
+        "klic": "dokonceno",
+        "nazev": "Dokončeno",
+        "hodnota": 16
+      }
+    ],
+    "jednotka": "akcí",
+    "obdobi": {
+      "od": null,
+      "do": null
+    },
+    "definice": "Karty investičních akcí města a městských společností; fáze se určuje z dokladů (rozpočet, zakázka, smlouva, předání).",
+    "vypocet": "pipeline/ukazatele.py:projekty",
+    "zdroj": [
+      {
+        "nazev": "Rozpočet města a přehled rozpočtových opatření",
+        "url": "https://www.mesto-trebon.cz/cz/mestsky-urad-trebon/organizacni-struktura/odbor-financni-a-majetkovy/rozpocet.html"
+      },
+      {
+        "nazev": "Profily zadavatelů E-ZAK",
+        "url": "https://zakazky.mesto-trebon.cz/"
+      },
+      {
+        "nazev": "Registr smluv (otevřená data)",
+        "url": "https://data.smlouvy.gov.cz/"
+      },
+      {
+        "nazev": "Evidence Strategického plánu na trebonaci.cz",
+        "url": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+      }
+    ],
+    "zkontrolovano": null,
+    "srovnatelnost": "Karty zakládáme postupně; automaticky pro stavební zakázky města od roku 2025 nad 1 mil. Kč.",
+    "zasobnik": 32,
+    "namety": 37
+  }
+]

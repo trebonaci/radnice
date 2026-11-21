@@ -44,7 +44,10 @@ Všechny stavy, šetrné stahování.
 Každá vazba s `jistota`.
 
 ## 7. Datový přehled na trebonaci.cz
-Šablona stránky čtoucí JSON; náhled ke schválení; zveřejnění až po souhlasu.
+Šablona stránky čtoucí JSON; náhled ke schválení; zveřejnění až po souhlasu. Modul `web/radnice/` + `data/ukazatele.json` (#177).
+
+## Otevřené otázky k rozhodnutí
+Viz issue #175 (zásobník, SPRM, harness).
 
 ---
 

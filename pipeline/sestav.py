@@ -26,6 +26,7 @@ from pipeline.jmena import zakryj_jmena
 from pipeline import dotace as modul_dotace
 from pipeline import projekty as modul_projekty
 from pipeline import zasobnik as modul_zasobnik
+from pipeline import ukazatele as modul_ukazatele
 from pipeline import rozpocet as modul_rozpocet
 from pipeline import rozpocet_akce as modul_rozpocet_akce
 from pipeline import rozpocet_zmeny as modul_rozpocet_zmeny
@@ -396,12 +397,15 @@ def sestav(koren: Path | None = None) -> tuple[dict[str, list], list[str]]:
     roky = sorted({r["rok"] for r in rozpocet})
     vystup["investice"] = [modul_rozpocet_zmeny.prehled_investic(rozpocet, rozpocet_zmeny, vystup["projekty"], r)
                            for r in roky]
+    # datový přehled (#177): ukazatele počítá kód z hotových výstupů
+    vystup["ukazatele"] = modul_ukazatele.sestav(vystup, modul_zasobnik.nacti_subjekty(koren))
     # kontrola osobních údajů v celém výstupu (kromě doslovných citací, ty kontroluje sestavení)
     # (zastupitelé jen z období daného jednání)
     obdobi_jednani = {j["id"]: j["obdobi"] for j in jednani}
     for nazev, obsah in vystup.items():
         for zaznam in obsah:
-            obdobi = zaznam.get("obdobi") or obdobi_jednani.get(zaznam.get("jednani_id"))
+            obdobi = zaznam.get("obdobi") if isinstance(zaznam.get("obdobi"), str) else None
+            obdobi = obdobi or obdobi_jednani.get(zaznam.get("jednani_id"))
             for r in _retezce(zaznam):
                 for n in najdi_osobni_udaje(r, osoby, obdobi):
                     chyby.append(f"{nazev}: osobní údaj ve výstupu: {n!r}")
@@ -420,7 +424,7 @@ def main() -> int:
         (data / f"{nazev}.json").write_text(serializuj(obsah), encoding="utf-8")
     print(f"jednání {len(vystup['jednani'])}, usnesení {len(vystup['usneseni'])}, hlasování {len(vystup['hlasovani'])}, "
           f"zakázky {len(vystup['zakazky'])}, smlouvy {len(vystup['smlouvy'])}, "
-          f"položky RO {len(vystup['rozpoctova_opatreni'])}, rozpočet {len(vystup['rozpocet'])}, změny rozpočtu {len(vystup['rozpocet_zmeny'])}, projekty {len(vystup['projekty'])}, zásobník {len(vystup['zasobnik'])}, dotace {len(vystup['dotace'])}")
+          f"položky RO {len(vystup['rozpoctova_opatreni'])}, rozpočet {len(vystup['rozpocet'])}, změny rozpočtu {len(vystup['rozpocet_zmeny'])}, projekty {len(vystup['projekty'])}, zásobník {len(vystup['zasobnik'])}, ukazatele {len(vystup['ukazatele'])}, dotace {len(vystup['dotace'])}")
     for c in chyby:
         print("CHYBA:", c, file=sys.stderr)
     return 1 if chyby else 0
