@@ -24,6 +24,11 @@
     if (n >= 1e3) return (n / 1e3).toLocaleString("cs-CZ", { maximumFractionDigits: 0 }) + " tis. Kč";
     return cislo(n) + " Kč";
   }
+  var JISTOTA = {
+    doloze: "doloženo", doloženo: "doloženo",
+    nase_propojeni: "naše propojení: stav odhadujeme z dokladů, město ho takto neoznámilo",
+    nevime: "nevíme"
+  };
   function nacti(url) {
     return fetch(url, { cache: "no-cache" }).then(function (r) {
       if (!r.ok) throw new Error(r.status);
@@ -45,7 +50,8 @@
     var ai = p.text_ai ? '<p class="trb-radnice-ai">Shrnutí připravila AI z usnesení, citace je ověřená proti zápisu.</p>' : "";
     return '<li><article class="trb-radnice-karta">' +
       '<p class="trb-radnice-meta">' + meta + "</p>" +
-      '<p class="trb-radnice-stav trb-radnice-stav--' + esc(p.stav) + '">' + esc(p.stav_nazev) + "</p>" +
+      '<p class="trb-radnice-stav trb-radnice-stav--' + esc(p.stav) + '">' + esc(p.stav_nazev) +
+        (p.stav_jistota ? ' <span class="trb-radnice-jistota">(' + esc(JISTOTA[p.stav_jistota] || p.stav_jistota) + ")</span>" : "") + "</p>" +
       '<h3 class="trb-radnice-titulek">' + esc(p.titulek) + "</h3>" +
       '<p class="trb-radnice-shrnuti">' + esc(p.shrnuti) + "</p>" + krok +
       '<p class="trb-radnice-datum"><time datetime="' + esc(p.datum) + '">' + datum(p.datum) + "</time></p>" +
@@ -98,7 +104,7 @@
     $("[data-trb-radnice-legenda]").innerHTML = pouzite.map(function (s) {
       return '<div><dt><span class="trb-radnice-stav trb-radnice-stav--' + s + '">' + esc(stavy[s].nazev) + "</span></dt><dd>" +
         esc(stavy[s].popis) + "</dd></div>";
-    }).join("");
+    }).join("") + "<div><dt>Jak jistý je stav</dt><dd>U investic je stav našim odhadem z dokladů (štítek „naše propojení“), pokud není uvedeno „doloženo“.</dd></div>";
     form.hidden = false;
     form.addEventListener("change", zmena);
     form.addEventListener("reset", function () { setTimeout(zmena, 0); });
