@@ -3451,9 +3451,9 @@
         "puvodni": {
           "bez_dph": 876000.0,
           "s_dph": 1059960.0,
-          "zdroj_id": "ezak-VZ-831",
-          "url": "https://zakazky.mesto-trebon.cz/contract_display_831.html",
-          "zdroj_druh": "smluvni_ezak",
+          "zdroj_id": "rs-32016396",
+          "url": "https://smlouvy.gov.cz/smlouva/32016396",
+          "zdroj_druh": "registr",
           "muze_obsahovat_dodatky": false,
           "zaklady_z_ezak_po_dodatcich": []
         },
@@ -3468,7 +3468,7 @@
           "bez_dph": 858000.0,
           "s_dph": 1038180.0
         },
-        "vazba_dodatku": null,
+        "vazba_dodatku": "nase_propojeni",
         "dodatky": [],
         "chybi_dodatky": [],
         "obsahuje_dopocet_dph": false,
@@ -3665,6 +3665,43 @@
     ],
     "smlouvy": [
       {
+        "id": "rs-32016396",
+        "id_smlouvy": "29973456",
+        "navazuje_na": null,
+        "cislo_smlouvy": "750/8600/25",
+        "predmet": "Zpracování PD Stavebních úprav MK v ul. Souběžná, Heřmánkova, Daskabát v Třeboni",
+        "role": "projekt",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2025-02-04",
+        "strany": [
+          {
+            "nazev": "INVENTE, s.r.o.",
+            "jmeno_podnikatele": null,
+            "ico": "25171232"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 876000.0,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 1059960.0,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/32016396",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
         "id": "rs-39177982",
         "id_smlouvy": "36826706",
         "navazuje_na": null,
@@ -3778,6 +3815,17 @@
         "role": "projekt",
         "zdroj_id": "ezak-VZ-831",
         "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2025-02-04",
+        "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "projektová dokumentace",
+        "text": "Zpracování PD Stavebních úprav MK v ul. Souběžná, Heřmánkova, Daskabát v Třeboni",
+        "role": "projekt",
+        "zdroj_id": "rs-32016396",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/32016396"
       },
       {
         "datum": "2026-08-12",
@@ -8541,8 +8589,13 @@
           "nazev": "WAY project s.r.o.",
           "jmeno_podnikatele": null
         },
-        "puvodni": null,
-        "vazba_dodatku": null,
+        "puvodni": {
+          "bez_dph": 409100.0,
+          "s_dph": 495011.0,
+          "zdroj_id": "rs-32011864",
+          "url": "https://smlouvy.gov.cz/smlouva/32011864"
+        },
+        "vazba_dodatku": "dolozeno",
         "dodatky": [
           {
             "cislo": 1,
@@ -8558,14 +8611,10 @@
         ],
         "chybi_dodatky": [],
         "obsahuje_dopocet_dph": false,
-        "cena_po_dodatcich": 146000.0,
-        "neuplne_cena_po_dodatcich": [
-          "původní cena není známa"
-        ],
-        "cena_po_dodatcich_s_dph": 176660.0,
-        "neuplne_cena_po_dodatcich_s_dph": [
-          "původní cena není známa"
-        ],
+        "cena_po_dodatcich": 555100.0,
+        "neuplne_cena_po_dodatcich": [],
+        "cena_po_dodatcich_s_dph": 671671.0,
+        "neuplne_cena_po_dodatcich_s_dph": [],
         "souhlas_zaplaceno": null,
         "souhlas_ezak": null,
         "dodatky_bez_dph": 146000.0
@@ -8606,26 +8655,23 @@
         "jistota": "nevime"
       },
       "smluvni_bez_dph": {
-        "celkem": 9376653.8,
+        "celkem": 9785753.8,
         "druh": "smluvni",
         "s_dph": false,
         "mena": "CZK",
-        "po_dodatcich": 9522653.8,
+        "po_dodatcich": 9931753.8,
         "neuplne": [
-          "stavba",
-          "projekt"
+          "stavba"
         ],
         "jistota": "nase_propojeni"
       },
       "smluvni_s_dph": {
-        "celkem": 11345751.1,
+        "celkem": 11840762.1,
         "druh": "smluvni",
         "s_dph": true,
         "mena": "CZK",
-        "po_dodatcich": 11286779.98,
-        "neuplne": [
-          "projekt"
-        ],
+        "po_dodatcich": 11781790.98,
+        "neuplne": [],
         "jistota": "nase_propojeni"
       },
       "skladba_s_dph": [
@@ -8642,19 +8688,15 @@
           "skupina": "priprava",
           "nazev": "Projekt a výběrové řízení",
           "casti": 2,
-          "castka": 243210.0,
-          "nezname": [
-            "projekt"
-          ],
+          "castka": 738221.0,
+          "nezname": [],
           "druh": "smluvni",
           "s_dph": true
         }
       ],
       "celkova_cena_s_dph": {
-        "castka": 11286779.98,
-        "neuplne": [
-          "projekt"
-        ],
+        "castka": 11781790.98,
+        "neuplne": [],
         "druh": "smluvni",
         "s_dph": true,
         "jistota": "nase_propojeni"
@@ -8738,6 +8780,43 @@
       }
     ],
     "smlouvy": [
+      {
+        "id": "rs-32011864",
+        "id_smlouvy": "29969084",
+        "navazuje_na": null,
+        "cislo_smlouvy": "750/8586/25",
+        "predmet": "Stavební úpravy komunikace v ul. U Světa a parkoviště v ul. Sportovní v Třeboni - zpracování PD",
+        "role": "projekt",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2025-02-04",
+        "strany": [
+          {
+            "nazev": "WAY project s.r.o.",
+            "jmeno_podnikatele": null,
+            "ico": "63906601"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 409100.0,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 495011.0,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/32011864",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
       {
         "id": "rs-34169337",
         "id_smlouvy": "32028981",
@@ -8916,6 +8995,17 @@
       "stavba": 2
     },
     "udalosti": [
+      {
+        "datum": "2025-02-04",
+        "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "projektová dokumentace",
+        "text": "Stavební úpravy komunikace v ul. U Světa a parkoviště v ul. Sportovní v Třeboni - zpracování PD",
+        "role": "projekt",
+        "zdroj_id": "rs-32011864",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/32011864"
+      },
       {
         "datum": "2025-07-21",
         "typ": "dodatek",
