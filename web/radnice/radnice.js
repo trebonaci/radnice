@@ -53,7 +53,7 @@
         sloupce(u, u.hodnota, function (r) { return r.hodnota === r.schvaleny ? "beze změny" : "schváleno " + kc(r.schvaleny); }));
     },
     "investicni-akce": function (u) {
-      return blok(u, "Investiční akce", velke(u.hodnota.map(function (r) { return [cislo(r.hodnota), r.nazev]; })
+      return blok(u, "Investiční akce", velke(u.hodnota.map(function (r) { return [cislo(r.hodnota), r.nazev + (r.z_toho_odhad ? " (odhad z dokladů)" : "")]; })
         .concat([[cislo(u.zasobnik), "v zásobníku (připravuje se)"]])));
     },
     "smlouvy-organizace": function (u) {

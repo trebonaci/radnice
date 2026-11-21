@@ -138,11 +138,12 @@ def investice(investice: list[dict]) -> dict | None:
 
 def projekty(projekty: list[dict], zasobnik: list[dict]) -> dict:
     pocty = Counter(p.get("faze") for p in projekty)
-    rada = [{"klic": k, "nazev": n, "hodnota": pocty[k]} for k, n in FAZE.items() if pocty[k]]
+    odhad = Counter(p.get("faze") for p in projekty if p.get("faze_jistota") != "dolozeno")
+    rada = [{"klic": k, "nazev": n, "hodnota": pocty[k], "z_toho_odhad": odhad[k]} for k, n in FAZE.items() if pocty[k]]
     v_zasobniku = sum(1 for z in zasobnik if z["typ"] == "polozka" and z.get("faze") in ("zasobnik", "stavba"))
     namety = sum(1 for z in zasobnik if z["typ"] == "namet")
     return _ukazatel("investicni-akce", "Investiční akce podle fáze", rada, "akcí", None, None,
-                     "Karty investičních akcí města a městských společností; fáze se určuje z dokladů (rozpočet, zakázka, smlouva, předání).",
+                     "Karty investičních akcí města a městských společností; fáze se určuje z dokladů (rozpočet, zakázka, smlouva, předání) a je naším odhadem (`z_toho_odhad`), ne potvrzením města.",
                      "projekty", [ZDROJ_ROZPOCET, ZDROJ_EZAK, ZDROJ_REGISTR, ZDROJ_SPRM],
                      "Karty zakládáme postupně; automaticky pro stavební zakázky města od roku 2025 nad 1 mil. Kč.",
                      zasobnik=v_zasobniku, namety=namety)

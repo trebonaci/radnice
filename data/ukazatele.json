@@ -478,17 +478,20 @@
       {
         "klic": "pripravuje_se",
         "nazev": "Připravuje se",
-        "hodnota": 2
+        "hodnota": 2,
+        "z_toho_odhad": 2
       },
       {
         "klic": "probiha",
         "nazev": "Stavba probíhá",
-        "hodnota": 15
+        "hodnota": 15,
+        "z_toho_odhad": 15
       },
       {
         "klic": "dokonceno",
         "nazev": "Dokončeno",
-        "hodnota": 16
+        "hodnota": 16,
+        "z_toho_odhad": 16
       }
     ],
     "jednotka": "akcí",
@@ -496,7 +499,7 @@
       "od": null,
       "do": null
     },
-    "definice": "Karty investičních akcí města a městských společností; fáze se určuje z dokladů (rozpočet, zakázka, smlouva, předání).",
+    "definice": "Karty investičních akcí města a městských společností; fáze se určuje z dokladů (rozpočet, zakázka, smlouva, předání) a je naším odhadem (`z_toho_odhad`), ne potvrzením města.",
     "vypocet": "pipeline/ukazatele.py:projekty",
     "zdroj": [
       {

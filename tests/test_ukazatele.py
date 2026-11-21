@@ -54,8 +54,8 @@ def test_zakazky_a_projekty():
     assert u["hodnota"][0]["podle_stavu"] == {"dokončen": 1, "neuvedeno": 1}
     p = ukazatele.projekty([{"faze": "probiha"}, {"faze": "probiha"}, {"faze": "dokonceno"}],
                            [{"typ": "polozka", "faze": "zasobnik"}, {"typ": "polozka", "faze": "realizovano"}, {"typ": "namet"}])
-    assert p["hodnota"] == [{"klic": "probiha", "nazev": "Stavba probíhá", "hodnota": 2},
-                            {"klic": "dokonceno", "nazev": "Dokončeno", "hodnota": 1}]
+    assert p["hodnota"] == [{"klic": "probiha", "nazev": "Stavba probíhá", "hodnota": 2, "z_toho_odhad": 2},
+                            {"klic": "dokonceno", "nazev": "Dokončeno", "hodnota": 1, "z_toho_odhad": 1}]
     assert p["zasobnik"] == 1 and p["namety"] == 1
 
 
