@@ -102,6 +102,9 @@ Rozhodnutí Ondřeje 21. 11. 2026: měkké aktivity (sport, kultura, sociální 
 ### zmena („Co se mění“, #183)
 `data/zmeny.json`: každá změna `pro_obcany` z přijatého usnesení, nejnovější první: `id`, `text`, `kdo`, `oblast`, `plati_od`, `datum` (jednání), `organ`, `usneseni_id`, `usneseni_cislo`, `url` (zápis se stranou), `pro_obcany_ai`, `overeni`, `misto_id` + `misto_jistota` (naše propojení podle vzoru katalogu; null = bez karty).
 
+### polozka_prehledu (web „Co se děje na radnici“, #187)
+`data/prehled.json` (`pipeline/prehled.py`), nejnovější událost nahoře: `id`, `druh` (zmena / investice / zasobnik), `typ` (Rada města, Zastupitelstvo města, Investice, Příprava investice), `oblast` + `oblast_nazev`, `stav` (rozhodnuto / navrzeno / projednava_se / planuje_se / realizuje_se / dokonceno) + `stav_nazev` + `stav_popis`, `titulek`, `shrnuti`, `posledni_udalost`?, `datum` (událost), `zdroj` {`nazev` (konkrétní, s datem), `url`, `druh`, `pdf`, `strana`, `datum`}, `dalsi_krok` (jen doložený, např. „Platí od …“), `text_ai`. Položka bez primárního zdroje se do přehledu nedostane. Stav investice podle fáze z dokladů, příprava = „plánuje se“, změna z přijatého usnesení = „rozhodnuto“. Pravidla: `docs/DESIGN-PREHLED-RADNICE.md`.
+
 ### podnet
 Z mapy na trebonaci.cz. **Jen omezený veřejný výstup**: `id`, `typ` (prani / zavada), `stav`, `poloha`, `kategorie`, `datum`, upravený popis. Bez jména podatele, kontaktů a diskuse (současný endpoint `/podnety` je vrací, proto se přímo nepoužije). Vazba na projekt/usnesení s `jistota`; občanský návrh se vizuálně odlišuje od projektu, který město připravuje.
 

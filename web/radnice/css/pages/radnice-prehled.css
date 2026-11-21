@@ -1,0 +1,84 @@
+/*
+ * css/pages/radnice-prehled.css — Přehled dění na radnici (trebonaci/radnice #187).
+ * Načítá se jen na šabloně page-radnice-prehled.php (inc/enqueue.php → trebonaci_page_css).
+ * Jediný kořen .trb-radnice-prehled, prvky trb-radnice-*. Hero, kontejner a hlavička jsou
+ * společné komponenty šablony (page-hero, .container). Jen tokeny z css/01-tokens.css,
+ * žádné nové barvy, fonty, radiusy ani !important.
+ */
+.trb-radnice-prehled .trb-radnice-obsah { padding-top: var(--space-md); padding-bottom: var(--space-lg); font-family: var(--font-body); color: var(--text-color); }
+.trb-radnice-prehled h2 { font-family: var(--font-head); font-size: var(--text-h2); letter-spacing: var(--tracking-tight); margin: 0 0 var(--space-sm); }
+.trb-radnice-prehled .trb-radnice-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* Úvod: užší textový sloupec, legenda stavů */
+.trb-radnice-prehled .trb-radnice-uvod { max-width: var(--trb-content); margin-bottom: var(--trb-space-block); }
+.trb-radnice-prehled .trb-radnice-uvod p { font-size: var(--text-base); line-height: 1.6; color: var(--text-mid); margin: 0 0 var(--space-sm); }
+.trb-radnice-prehled .trb-radnice-aktualizace:empty { display: none; }
+.trb-radnice-prehled .trb-radnice-legenda { display: grid; gap: var(--space-xs); margin: var(--space-sm) 0 0; }
+.trb-radnice-prehled .trb-radnice-legenda div { display: grid; grid-template-columns: 9.5rem minmax(0, 1fr); gap: var(--space-sm); align-items: baseline; }
+.trb-radnice-prehled .trb-radnice-legenda dd { margin: 0; font-size: var(--text-sm); color: var(--text-mid); }
+
+/* Stav = vždy textový štítek; barva jen doplňuje */
+.trb-radnice-prehled .trb-radnice-stav { display: inline-block; margin: 0; padding: 2px 10px; border: 1px solid var(--border-mid); border-radius: var(--r-pill); font-size: var(--text-xs); font-weight: 700; line-height: 1.6; color: var(--text-color); background: var(--surface-container-lowest); }
+.trb-radnice-prehled .trb-radnice-stav--rozhodnuto { background: var(--green-bg); border-color: var(--green-dark); }
+.trb-radnice-prehled .trb-radnice-stav--planuje_se { background: var(--blue-bg); border-color: var(--blue-dark); }
+.trb-radnice-prehled .trb-radnice-stav--realizuje_se { border-color: var(--primary); color: var(--primary); }
+.trb-radnice-prehled .trb-radnice-stav--dokonceno { background: var(--canvas); }
+
+/* Filtry: jeden řádek nad seznamem, na mobilu pod sebou */
+.trb-radnice-prehled .trb-radnice-filtry { display: flex; flex-wrap: wrap; align-items: flex-end; gap: var(--space-sm) var(--space-md); padding: var(--space-sm) 20px; margin-bottom: var(--space-sm); background: var(--surface-container-lowest); border: 1px solid var(--border-color); border-radius: var(--r-lg); }
+.trb-radnice-prehled .trb-radnice-filtry[hidden] { display: none; }
+.trb-radnice-prehled .trb-radnice-filtr { display: grid; gap: 6px; margin: 0; padding: 0; border: 0; min-width: 0; }
+.trb-radnice-prehled .trb-radnice-filtr > span, .trb-radnice-prehled .trb-radnice-filtr legend { font-size: var(--text-sm); font-weight: 700; color: var(--text-mid); padding: 0; margin-bottom: 6px; }
+.trb-radnice-prehled select { min-height: 44px; padding: 8px 12px; font: inherit; color: var(--text-color); background: var(--surface-container-lowest); border: 1px solid var(--border-mid); border-radius: var(--r-sm); max-width: 100%; }
+.trb-radnice-prehled .trb-radnice-stavy { display: flex; flex-wrap: wrap; gap: var(--space-xs); }
+.trb-radnice-prehled .trb-radnice-volba { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 14px; border: 1px solid var(--border-mid); border-radius: var(--r-pill); font-size: var(--text-sm); cursor: pointer; }
+.trb-radnice-prehled .trb-radnice-volba:has(input:checked) { border-color: var(--primary); background: var(--surface-container-low); font-weight: 700; }
+.trb-radnice-prehled .trb-radnice-volba input { width: 18px; height: 18px; margin: 0; accent-color: var(--primary); }
+.trb-radnice-prehled .trb-radnice-zrusit, .trb-radnice-prehled .trb-radnice-dalsi { min-height: 44px; padding: 0 18px; font: inherit; font-weight: 700; color: var(--primary); background: var(--surface-container-lowest); border: 1px solid var(--primary); border-radius: var(--r-md); cursor: pointer; }
+.trb-radnice-prehled .trb-radnice-odkaz-tlacitko { padding: 0; font: inherit; color: var(--primary); background: none; border: 0; text-decoration: underline; cursor: pointer; }
+.trb-radnice-prehled .trb-radnice-pocet { font-size: var(--text-sm); color: var(--text-mid); margin: 0 0 var(--space-sm); }
+
+/* Seznam karet */
+.trb-radnice-prehled .trb-radnice-polozky { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-sm); }
+.trb-radnice-prehled .trb-radnice-karta { display: grid; gap: 6px; justify-items: start; padding: 20px 24px; background: var(--surface-container-lowest); border: 1px solid var(--border-color); border-radius: var(--r-lg); }
+.trb-radnice-prehled .trb-radnice-karta p { margin: 0; }
+.trb-radnice-prehled .trb-radnice-meta { font-size: var(--text-xs); font-weight: 700; letter-spacing: var(--tracking-eyebrow); text-transform: uppercase; color: var(--text-mid); }
+.trb-radnice-prehled .trb-radnice-titulek { margin: 4px 0 0; font-family: var(--font-head); font-size: var(--text-h3); line-height: 1.3; overflow-wrap: anywhere; }
+.trb-radnice-prehled .trb-radnice-shrnuti { font-size: var(--text-base); line-height: 1.6; max-width: var(--trb-content); }
+.trb-radnice-prehled .trb-radnice-krok, .trb-radnice-prehled .trb-radnice-datum, .trb-radnice-prehled .trb-radnice-odkaz, .trb-radnice-prehled .trb-radnice-ai { font-size: var(--text-sm); color: var(--text-mid); line-height: 1.5; }
+.trb-radnice-prehled .trb-radnice-datum { font-variant-numeric: tabular-nums; }
+.trb-radnice-prehled a { color: var(--primary); text-decoration: none; }
+.trb-radnice-prehled a:hover { text-decoration: underline; }
+.trb-radnice-prehled .trb-radnice-zdroj { overflow-wrap: anywhere; }
+.trb-radnice-prehled .trb-radnice-dalsi { margin-top: var(--space-md); }
+.trb-radnice-prehled .trb-radnice-dalsi[hidden] { display: none; }
+
+/* V číslech */
+.trb-radnice-prehled .trb-radnice-cisla { margin-top: var(--trb-space-block); }
+.trb-radnice-prehled .trb-radnice-cisla[hidden] { display: none; }
+.trb-radnice-prehled .trb-radnice-ukazatel { padding: 20px 24px; margin-bottom: var(--space-sm); background: var(--surface-container-lowest); border: 1px solid var(--border-color); border-radius: var(--r-lg); }
+.trb-radnice-prehled .trb-radnice-ukazatel h3 { margin: 0 0 var(--space-sm); font-size: var(--text-h3); }
+.trb-radnice-prehled .trb-radnice-velke { margin: 0 0 var(--space-sm); color: var(--text-mid); }
+.trb-radnice-prehled .trb-radnice-velke strong { display: block; font-size: var(--text-h2); color: var(--text-color); font-variant-numeric: tabular-nums; }
+.trb-radnice-prehled .trb-radnice-sloupce { list-style: none; margin: 0; padding: 0; }
+.trb-radnice-prehled .trb-radnice-sloupce li { display: grid; grid-template-columns: minmax(0, 14rem) minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 6px 0; border-top: 1px solid var(--border-color); }
+.trb-radnice-prehled .trb-radnice-sloupce li:first-child { border-top: 0; }
+.trb-radnice-prehled .trb-radnice-sloupce-nazev { font-size: var(--text-sm); }
+.trb-radnice-prehled .trb-radnice-sloupce-osa { height: 10px; }
+.trb-radnice-prehled .trb-radnice-sloupce-osa span { display: block; height: 100%; background: var(--primary); border-radius: 0 4px 4px 0; }
+.trb-radnice-prehled .trb-radnice-sloupce-hodnota { font-size: var(--text-sm); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.trb-radnice-prehled .trb-radnice-poznamka { margin: var(--space-sm) 0 0; font-size: var(--text-sm); color: var(--text-mid); line-height: 1.5; }
+.trb-radnice-prehled .trb-radnice-pata { margin-top: var(--space-md); font-size: var(--text-sm); color: var(--text-mid); max-width: var(--trb-content); }
+
+/* Ovládání klávesnicí a pohyb */
+.trb-radnice-prehled a:focus-visible, .trb-radnice-prehled button:focus-visible, .trb-radnice-prehled select:focus-visible,
+.trb-radnice-prehled .trb-radnice-volba:has(input:focus-visible) { outline: 3px solid var(--primary); outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) { .trb-radnice-prehled * { transition: none; animation: none; scroll-behavior: auto; } }
+
+@media (max-width: 760px) {
+  .trb-radnice-prehled .trb-radnice-filtry { flex-direction: column; align-items: stretch; }
+  .trb-radnice-prehled .trb-radnice-karta, .trb-radnice-prehled .trb-radnice-ukazatel { padding: 16px; }
+  .trb-radnice-prehled .trb-radnice-legenda div { grid-template-columns: 1fr; gap: 4px; }
+  .trb-radnice-prehled .trb-radnice-sloupce li { grid-template-columns: minmax(0, 1fr) auto; }
+  .trb-radnice-prehled .trb-radnice-sloupce-osa { grid-column: 1 / -1; grid-row: 2; }
+}
