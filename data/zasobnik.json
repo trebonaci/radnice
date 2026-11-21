@@ -1,0 +1,2875 @@
+[
+  {
+    "typ": "polozka",
+    "id": "parkovaci-dum",
+    "nazev": "Parkovací dům",
+    "popis": null,
+    "oblast": "doprava",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "nositel_jistota": "nase_propojeni",
+    "pripravenost": {
+      "stupen": "projekt",
+      "nazev": "projektová dokumentace zadána",
+      "doklad": {
+        "typ": "smlouva",
+        "id": "rs-37709985",
+        "text": "Úprava projektové dokumentace parkovacího domu v Třeboni.",
+        "datum": "2026-04-24",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/37709985"
+      },
+      "jistota": "dolozeno"
+    },
+    "doklady": [
+      {
+        "typ": "zakazka",
+        "id": "ezak-VZ-698",
+        "text": "Parkovací dům Třeboň (PD)",
+        "datum": "2024-01-04",
+        "ico": "00247618",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_698.html",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "typ": "smlouva",
+        "id": "rs-37709985",
+        "text": "Úprava projektové dokumentace parkovacího domu v Třeboni.",
+        "datum": "2026-04-24",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/37709985",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "prvni_doklad": "2024-01-04",
+    "odhad": null,
+    "zdroj": null,
+    "stavby": [],
+    "faze": "zasobnik",
+    "sprm": []
+  },
+  {
+    "typ": "polozka",
+    "id": "jatecni-ulice",
+    "nazev": "Jateční ulice – parkoviště a komunikace",
+    "popis": null,
+    "oblast": "doprava",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "nositel_jistota": "nase_propojeni",
+    "pripravenost": {
+      "stupen": "projekt",
+      "nazev": "projektová dokumentace zadána",
+      "doklad": {
+        "typ": "smlouva",
+        "id": "rs-32327428",
+        "text": "Zpracování PD Stavební úpravy komunikace v Jateční ulici v Třeboni.",
+        "datum": "2025-02-27",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/32327428"
+      },
+      "jistota": "dolozeno"
+    },
+    "doklady": [
+      {
+        "typ": "zakazka",
+        "id": "ezak-VZ-697",
+        "text": "Parkoviště v Jateční ulici v Třeboni (PD)",
+        "datum": "2024-01-04",
+        "ico": "00247618",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_697.html",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "typ": "smlouva",
+        "id": "rs-32327428",
+        "text": "Zpracování PD Stavební úpravy komunikace v Jateční ulici v Třeboni.",
+        "datum": "2025-02-27",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/32327428",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "prvni_doklad": "2024-01-04",
+    "odhad": null,
+    "zdroj": null,
+    "stavby": [],
+    "faze": "zasobnik",
+    "sprm": []
+  },
+  {
+    "typ": "polozka",
+    "id": "stezka-jatecni-nadrazni",
+    "nazev": "Stezka podél trati z Jateční do Nádražní ulice",
+    "popis": null,
+    "oblast": "doprava",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "nositel_jistota": "nase_propojeni",
+    "pripravenost": {
+      "stupen": "studie",
+      "nazev": "studie zadána",
+      "doklad": {
+        "typ": "smlouva",
+        "id": "rs-32440316",
+        "text": "Technická studie akce Stezka podél trati ČD z ulice Jateční do ulice Nádražní v Třeboni",
+        "datum": "2025-03-10",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/32440316"
+      },
+      "jistota": "dolozeno"
+    },
+    "doklady": [
+      {
+        "typ": "smlouva",
+        "id": "rs-32440316",
+        "text": "Technická studie akce Stezka podél trati ČD z ulice Jateční do ulice Nádražní v Třeboni",
+        "datum": "2025-03-10",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/32440316",
+        "stupen": "studie",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "prvni_doklad": "2025-03-10",
+    "odhad": null,
+    "zdroj": null,
+    "stavby": [],
+    "faze": "zasobnik",
+    "sprm": []
+  },
+  {
+    "typ": "polozka",
+    "id": "nadrazni-ulice",
+    "nazev": "Nádražní ulice – komunikace a chodník",
+    "popis": null,
+    "oblast": "doprava",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "nositel_jistota": "nase_propojeni",
+    "pripravenost": {
+      "stupen": "projekt",
+      "nazev": "projektová dokumentace zadána",
+      "doklad": {
+        "typ": "smlouva",
+        "id": "rs-36589129",
+        "text": "Vypracování projektové dokumentace akce Oprava chodníku v Nádražní ulici v Třeboni",
+        "datum": "2026-01-29",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/36589129"
+      },
+      "jistota": "dolozeno"
+    },
+    "doklady": [
+      {
+        "typ": "zakazka",
+        "id": "ezak-VZ-701",
+        "text": "Zpracování projektové dokumentace Stavební úpravy MK ul. Nádražní v Třeboni",
+        "datum": "2024-02-05",
+        "ico": "00247618",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_701.html",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "typ": "smlouva",
+        "id": "rs-33958253",
+        "text": "Zpracování projektové dokumentace Stavební úpravy MK ul. Nádražní v Třeboni - dodatek č. 1",
+        "datum": "2025-07-03",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/33958253",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "typ": "smlouva",
+        "id": "rs-36589129",
+        "text": "Vypracování projektové dokumentace akce Oprava chodníku v Nádražní ulici v Třeboni",
+        "datum": "2026-01-29",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/36589129",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "prvni_doklad": "2024-02-05",
+    "odhad": null,
+    "zdroj": null,
+    "stavby": [],
+    "faze": "zasobnik",
+    "sprm": [
+      {
+        "id": 301,
+        "sprm_ai": true,
+        "citace": "chodník",
+        "overeni": "overeno_kodem",
+        "aktivita": "Rekonstrukce veřejných prostranství",
+        "opatreni": "7. Veřejná prostranství",
+        "osa": "Doprava",
+        "stav_v_evidenci": "Plánováno",
+        "potvrzeno": false,
+        "jistota": "nase_propojeni",
+        "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+      }
+    ]
+  },
+  {
+    "typ": "polozka",
+    "id": "mk-orechova",
+    "nazev": "Ulice Ořechová",
+    "popis": null,
+    "oblast": "doprava",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "nositel_jistota": "nase_propojeni",
+    "pripravenost": {
+      "stupen": "projekt",
+      "nazev": "projektová dokumentace zadána",
+      "doklad": {
+        "typ": "smlouva",
+        "id": "rs-40277401",
+        "text": "Zpracování PD Stavebních úprav MK v ul. Ořechová v Třeboni",
+        "datum": "2026-11-09",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/40277401"
+      },
+      "jistota": "dolozeno"
+    },
+    "doklady": [
+      {
+        "typ": "smlouva",
+        "id": "rs-40061089",
+        "text": "Provedení čištění a monitoringu kamerovým průzkumem kanalizační sítě v ulici Ořechová a části ulice Souběžná v rámci předprojektové přípravy stavebních úprav místních komunikací",
+        "datum": "2026-10-23",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/40061089",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "typ": "smlouva",
+        "id": "rs-40277401",
+        "text": "Zpracování PD Stavebních úprav MK v ul. Ořechová v Třeboni",
+        "datum": "2026-11-09",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/40277401",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "prvni_doklad": "2026-10-23",
+    "odhad": null,
+    "zdroj": null,
+    "stavby": [],
+    "faze": "zasobnik",
+    "sprm": [
+      {
+        "id": 280,
+        "sprm_ai": true,
+        "citace": "Ulice ",
+        "overeni": "overeno_kodem",
+        "aktivita": "Komplexní rekonstrukce komunikací vč. sítí",
+        "opatreni": "2. Technická infrastruktura",
+        "osa": "Doprava",
+        "stav_v_evidenci": "Plánováno",
+        "potvrzeno": false,
+        "jistota": "nase_propojeni",
+        "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+      }
+    ]
+  },
+  {
+    "typ": "polozka",
+    "id": "mk-jiraskova",
+    "nazev": "Jiráskova ulice",
+    "popis": null,
+    "oblast": "doprava",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "nositel_jistota": "nase_propojeni",
+    "pripravenost": {
+      "stupen": "projekt",
+      "nazev": "projektová dokumentace zadána",
+      "doklad": {
+        "typ": "smlouva",
+        "id": "rs-37372101",
+        "text": "Stavební úpravy MK v Jiráskově ul. v Třeboni (zpracování PD)",
+        "datum": "2026-03-30",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/37372101"
+      },
+      "jistota": "dolozeno"
+    },
+    "doklady": [
+      {
+        "typ": "smlouva",
+        "id": "rs-37372101",
+        "text": "Stavební úpravy MK v Jiráskově ul. v Třeboni (zpracování PD)",
+        "datum": "2026-03-30",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/37372101",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "prvni_doklad": "2026-03-30",
+    "odhad": null,
+    "zdroj": null,
+    "stavby": [
+      {
+        "id": "ezak-VZ-799",
+        "nazev": "Oprava vozovky MK v Jiráskově ulici v Třeboni",
+        "datum": "2024-09-20",
+        "stav": "ukončeno plnění",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_799.html"
+      }
+    ],
+    "faze": "zasobnik",
+    "sprm": []
+  },
+  {
+    "typ": "polozka",
+    "id": "mk-stara-hlina",
+    "nazev": "Místní komunikace ve Staré Hlíně (od I/34 k polní cestě)",
+    "popis": null,
+    "oblast": "doprava",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "nositel_jistota": "nase_propojeni",
+    "pripravenost": {
+      "stupen": "projekt",
+      "nazev": "projektová dokumentace zadána",
+      "doklad": {
+        "typ": "smlouva",
+        "id": "rs-38002721",
+        "text": "Zpracování projektové dokumentace \"Stavební úpravy MK ve Staré Hlíně v úseku od silnice I/34 po polní cestu HPC 1\" - dodatek č. 2",
+        "datum": "2026-05-18",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/38002721"
+      },
+      "jistota": "dolozeno"
+    },
+    "doklady": [
+      {
+        "typ": "smlouva",
+        "id": "rs-30953920",
+        "text": "Zpracování projektové dokumentace \"Stavební úpravy MK ve Staré Hlíně v úseku od silnice I/34 po polní cestu HPC 1\"",
+        "datum": "2024-11-12",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/30953920",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "typ": "zakazka",
+        "id": "ezak-VZ-811",
+        "text": "Zpracování projektové dokumentace \"Stavební úpravy MK ve Staré Hlíně v úseku od silnice I/34 po polní cestu HPC 1\"",
+        "datum": "2024-11-18",
+        "ico": "00247618",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_811.html",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "typ": "smlouva",
+        "id": "rs-33284428",
+        "text": "Zpracování projektové dokumentace \"Stavební úpravy MK ve Staré Hlíně v úseku od silnice I/34 po polní cestu HPC 1\" - dodatek č. 1",
+        "datum": "2025-05-15",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/33284428",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "typ": "smlouva",
+        "id": "rs-38002721",
+        "text": "Zpracování projektové dokumentace \"Stavební úpravy MK ve Staré Hlíně v úseku od silnice I/34 po polní cestu HPC 1\" - dodatek č. 2",
+        "datum": "2026-05-18",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/38002721",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "prvni_doklad": "2024-11-12",
+    "odhad": null,
+    "zdroj": null,
+    "stavby": [],
+    "faze": "zasobnik",
+    "sprm": []
+  },
+  {
+    "typ": "polozka",
+    "id": "mk-dvorecka-brilice",
+    "nazev": "Dvorecká ulice v Břilicích",
+    "popis": null,
+    "oblast": "doprava",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "nositel_jistota": "nase_propojeni",
+    "pripravenost": {
+      "stupen": "projekt",
+      "nazev": "projektová dokumentace zadána",
+      "doklad": {
+        "typ": "smlouva",
+        "id": "rs-39611077",
+        "text": "Stavební úpravy MK v ulici Dvorecké v Břilicích (zpracování PD)",
+        "datum": "2026-09-21",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/39611077"
+      },
+      "jistota": "dolozeno"
+    },
+    "doklady": [
+      {
+        "typ": "smlouva",
+        "id": "rs-39611077",
+        "text": "Stavební úpravy MK v ulici Dvorecké v Břilicích (zpracování PD)",
+        "datum": "2026-09-21",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/39611077",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "prvni_doklad": "2026-09-21",
+    "odhad": null,
+    "zdroj": null,
+    "stavby": [],
+    "faze": "zasobnik",
+    "sprm": []
+  },
+  {
+    "typ": "polozka",
+    "id": "most-vitek",
+    "nazev": "Most přes rybník Vítek ve Staré Hlíně",
+    "popis": null,
+    "oblast": "doprava",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "nositel_jistota": "nase_propojeni",
+    "pripravenost": {
+      "stupen": "projekt",
+      "nazev": "projektová dokumentace zadána",
+      "doklad": {
+        "typ": "smlouva",
+        "id": "rs-34457265",
+        "text": "Most přes rybník Vítek v k. ú. Stará Hlína (zpracování PD).",
+        "datum": "2025-08-15",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/34457265"
+      },
+      "jistota": "dolozeno"
+    },
+    "doklady": [
+      {
+        "typ": "smlouva",
+        "id": "rs-34457265",
+        "text": "Most přes rybník Vítek v k. ú. Stará Hlína (zpracování PD).",
+        "datum": "2025-08-15",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/34457265",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "prvni_doklad": "2025-08-15",
+    "odhad": null,
+    "zdroj": null,
+    "stavby": [],
+    "faze": "zasobnik",
+    "sprm": []
+  },
+  {
+    "typ": "polozka",
+    "id": "taboritska-stezka",
+    "nazev": "Táboritská ulice – propojení stezky pro chodce přes I/34",
+    "popis": null,
+    "oblast": "doprava",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "nositel_jistota": "nase_propojeni",
+    "pripravenost": {
+      "stupen": "projekt_provadeci",
+      "nazev": "prováděcí projekt zadán",
+      "doklad": {
+        "typ": "smlouva",
+        "id": "rs-36631737",
+        "text": "Zpracování PD ve stupni pro povolení záměru a provedení stavby Táboritská ulice - propojení stezky pro chodce a cyklisty mezi okružní křižovatkou a ulicí Jablonského v Třeboni.",
+        "datum": "2026-02-02",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/36631737"
+      },
+      "jistota": "dolozeno"
+    },
+    "doklady": [
+      {
+        "typ": "smlouva",
+        "id": "rs-33547760",
+        "text": "Zpracování projektové dokumetace propoj přes silnici I/34 v části ulice [jméno]",
+        "datum": "2025-06-03",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/33547760",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "typ": "smlouva",
+        "id": "rs-36631737",
+        "text": "Zpracování PD ve stupni pro povolení záměru a provedení stavby Táboritská ulice - propojení stezky pro chodce a cyklisty mezi okružní křižovatkou a ulicí Jablonského v Třeboni.",
+        "datum": "2026-02-02",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/36631737",
+        "stupen": "projekt_provadeci",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "prvni_doklad": "2025-06-03",
+    "odhad": null,
+    "zdroj": null,
+    "stavby": [],
+    "faze": "zasobnik",
+    "sprm": []
+  },
+  {
+    "typ": "polozka",
+    "id": "ucelova-komunikace-taboritska",
+    "nazev": "Účelová komunikace k domům Táboritská 670 a 1049",
+    "popis": null,
+    "oblast": "doprava",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "nositel_jistota": "nase_propojeni",
+    "pripravenost": {
+      "stupen": "projekt",
+      "nazev": "projektová dokumentace zadána",
+      "doklad": {
+        "typ": "smlouva",
+        "id": "rs-33011944",
+        "text": "Účelová komunikace k domu Táboritská 670 a 1049 v Třeboni - zpracování PD",
+        "datum": "2025-04-23",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/33011944"
+      },
+      "jistota": "dolozeno"
+    },
+    "doklady": [
+      {
+        "typ": "smlouva",
+        "id": "rs-33011944",
+        "text": "Účelová komunikace k domu Táboritská 670 a 1049 v Třeboni - zpracování PD",
+        "datum": "2025-04-23",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/33011944",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "prvni_doklad": "2025-04-23",
+    "odhad": null,
+    "zdroj": null,
+    "stavby": [],
+    "faze": "zasobnik",
+    "sprm": []
+  },
+  {
+    "typ": "polozka",
+    "id": "podchod-i34",
+    "nazev": "Podchod pod silnicí I/34",
+    "popis": null,
+    "oblast": "doprava",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "nositel_jistota": "nase_propojeni",
+    "pripravenost": {
+      "stupen": "studie",
+      "nazev": "studie zadána",
+      "doklad": {
+        "typ": "smlouva",
+        "id": "rs-40133385",
+        "text": "Zpracování studie podchodu pod silnicí I/34 v Třeboni včetně geodetického zaměření zájmového území a provedení předběžného inženýrsko-geologického průzkumu.",
+        "datum": "2026-10-29",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/40133385"
+      },
+      "jistota": "dolozeno"
+    },
+    "doklady": [
+      {
+        "typ": "smlouva",
+        "id": "rs-40133385",
+        "text": "Zpracování studie podchodu pod silnicí I/34 v Třeboni včetně geodetického zaměření zájmového území a provedení předběžného inženýrsko-geologického průzkumu.",
+        "datum": "2026-10-29",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/40133385",
+        "stupen": "studie",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "prvni_doklad": "2026-10-29",
+    "odhad": null,
+    "zdroj": null,
+    "stavby": [],
+    "faze": "zasobnik",
+    "sprm": []
+  },
+  {
+    "typ": "polozka",
+    "id": "chodnik-sportovni-svobody",
+    "nazev": "Chodník z parkoviště ve Sportovní ulici do ulice Svobody",
+    "popis": null,
+    "oblast": "doprava",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "nositel_jistota": "nase_propojeni",
+    "pripravenost": {
+      "stupen": "projekt",
+      "nazev": "projektová dokumentace zadána",
+      "doklad": {
+        "typ": "smlouva",
+        "id": "rs-38314861",
+        "text": "Zpracování PD Chodník z parkoviště v ul. Sportovní do ulice Svobody včetně inženýrské činnosti, zajištění povolení záměru, soupisu prací a položkového rozpočtu.",
+        "datum": "2026-06-09",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/38314861"
+      },
+      "jistota": "dolozeno"
+    },
+    "doklady": [
+      {
+        "typ": "smlouva",
+        "id": "rs-38314861",
+        "text": "Zpracování PD Chodník z parkoviště v ul. Sportovní do ulice Svobody včetně inženýrské činnosti, zajištění povolení záměru, soupisu prací a položkového rozpočtu.",
+        "datum": "2026-06-09",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/38314861",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "prvni_doklad": "2026-06-09",
+    "odhad": null,
+    "zdroj": null,
+    "stavby": [],
+    "faze": "zasobnik",
+    "sprm": [
+      {
+        "id": 301,
+        "sprm_ai": true,
+        "citace": "Chodník",
+        "overeni": "overeno_kodem",
+        "aktivita": "Rekonstrukce veřejných prostranství",
+        "opatreni": "7. Veřejná prostranství",
+        "osa": "Doprava",
+        "stav_v_evidenci": "Plánováno",
+        "potvrzeno": false,
+        "jistota": "nase_propojeni",
+        "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+      }
+    ]
+  },
+  {
+    "typ": "polozka",
+    "id": "vodojem-kopecek",
+    "nazev": "Rekonstrukce vodojemu Na Kopečku",
+    "popis": null,
+    "oblast": "voda_odpady",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      },
+      {
+        "ico": "28136853",
+        "nazev": "Městská Vodohospodářská s.r.o."
+      }
+    ],
+    "nositel_jistota": "nase_propojeni",
+    "pripravenost": {
+      "stupen": "projekt",
+      "nazev": "projektová dokumentace zadána",
+      "doklad": {
+        "typ": "smlouva",
+        "id": "rs-39238778",
+        "text": "Objednávka - projektová dokumentace Rekonstrukce VDJ",
+        "datum": "2026-08-21",
+        "ico": "28136853",
+        "url": "https://smlouvy.gov.cz/smlouva/39238778"
+      },
+      "jistota": "dolozeno"
+    },
+    "doklady": [
+      {
+        "typ": "smlouva",
+        "id": "rs-39202010",
+        "text": "Zpracování PD - rekonstrukce vodojemu Na Kopečku, Třeboň",
+        "datum": "2026-08-20",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/39202010",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "typ": "smlouva",
+        "id": "rs-39238778",
+        "text": "Objednávka - projektová dokumentace Rekonstrukce VDJ",
+        "datum": "2026-08-21",
+        "ico": "28136853",
+        "url": "https://smlouvy.gov.cz/smlouva/39238778",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "prvni_doklad": "2026-08-20",
+    "odhad": null,
+    "zdroj": null,
+    "stavby": [],
+    "faze": "zasobnik",
+    "sprm": []
+  },
+  {
+    "typ": "polozka",
+    "id": "kanalizace-taboritska",
+    "nazev": "Úprava jednotné kanalizace v Táboritské ulici",
+    "popis": null,
+    "oblast": "voda_odpady",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "nositel_jistota": "nase_propojeni",
+    "pripravenost": {
+      "stupen": "projekt",
+      "nazev": "projektová dokumentace zadána",
+      "doklad": {
+        "typ": "smlouva",
+        "id": "rs-39398801",
+        "text": "PD- úprava jednotné kanalizace ul. Táboritská",
+        "datum": "2026-09-03",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/39398801"
+      },
+      "jistota": "dolozeno"
+    },
+    "doklady": [
+      {
+        "typ": "smlouva",
+        "id": "rs-39398801",
+        "text": "PD- úprava jednotné kanalizace ul. Táboritská",
+        "datum": "2026-09-03",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/39398801",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "prvni_doklad": "2026-09-03",
+    "odhad": null,
+    "zdroj": null,
+    "stavby": [],
+    "faze": "zasobnik",
+    "sprm": [
+      {
+        "id": 316,
+        "sprm_ai": true,
+        "citace": "kanalizac",
+        "overeni": "overeno_kodem",
+        "aktivita": "Obnova vodárenských sítí",
+        "opatreni": "3. Vodovody, kanalizace",
+        "osa": "Životní prostředí",
+        "stav_v_evidenci": "Plánováno",
+        "potvrzeno": false,
+        "jistota": "nase_propojeni",
+        "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+      }
+    ]
+  },
+  {
+    "typ": "polozka",
+    "id": "destova-kanalizace-novy-dvur",
+    "nazev": "Páteřní dešťová kanalizace Nový Dvůr – Jablonského",
+    "popis": null,
+    "oblast": "voda_odpady",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "nositel_jistota": "nase_propojeni",
+    "pripravenost": {
+      "stupen": "projekt",
+      "nazev": "projektová dokumentace zadána",
+      "doklad": {
+        "typ": "smlouva",
+        "id": "rs-38983178",
+        "text": "Zpracování drojektové dokumentace - Páteřní dešťová kanalizace v úseku Nový Dvůr - Jablonského, Třeboň",
+        "datum": "2026-08-03",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/38983178"
+      },
+      "jistota": "dolozeno"
+    },
+    "doklady": [
+      {
+        "typ": "smlouva",
+        "id": "rs-38530380",
+        "text": "Podklady pro vypracování PD - monitoring kanalizace v okolí areálu Nového Dvora",
+        "datum": "2026-06-25",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/38530380",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "typ": "smlouva",
+        "id": "rs-38983178",
+        "text": "Zpracování drojektové dokumentace - Páteřní dešťová kanalizace v úseku Nový Dvůr - Jablonského, Třeboň",
+        "datum": "2026-08-03",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/38983178",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "prvni_doklad": "2026-06-25",
+    "odhad": null,
+    "zdroj": null,
+    "stavby": [],
+    "faze": "zasobnik",
+    "sprm": [
+      {
+        "id": 316,
+        "sprm_ai": true,
+        "citace": "kanalizac",
+        "overeni": "overeno_kodem",
+        "aktivita": "Obnova vodárenských sítí",
+        "opatreni": "3. Vodovody, kanalizace",
+        "osa": "Životní prostředí",
+        "stav_v_evidenci": "Plánováno",
+        "potvrzeno": false,
+        "jistota": "nase_propojeni",
+        "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+      }
+    ]
+  },
+  {
+    "typ": "polozka",
+    "id": "kanalizace-pivovar",
+    "nazev": "Obnova šachet a potrubí kanalizace pod pivovarem",
+    "popis": null,
+    "oblast": "voda_odpady",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "nositel_jistota": "nase_propojeni",
+    "pripravenost": {
+      "stupen": "projekt",
+      "nazev": "projektová dokumentace zadána",
+      "doklad": {
+        "typ": "smlouva",
+        "id": "rs-33970217",
+        "text": "Předprojektová příprava - obnova stávajících šachet a potrubí kanalizace pod pivovarem, Třeboň",
+        "datum": "2025-07-04",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/33970217"
+      },
+      "jistota": "dolozeno"
+    },
+    "doklady": [
+      {
+        "typ": "smlouva",
+        "id": "rs-33970217",
+        "text": "Předprojektová příprava - obnova stávajících šachet a potrubí kanalizace pod pivovarem, Třeboň",
+        "datum": "2025-07-04",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/33970217",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "prvni_doklad": "2025-07-04",
+    "odhad": null,
+    "zdroj": null,
+    "stavby": [],
+    "faze": "zasobnik",
+    "sprm": [
+      {
+        "id": 316,
+        "sprm_ai": true,
+        "citace": "kanalizac",
+        "overeni": "overeno_kodem",
+        "aktivita": "Obnova vodárenských sítí",
+        "opatreni": "3. Vodovody, kanalizace",
+        "osa": "Životní prostředí",
+        "stav_v_evidenci": "Plánováno",
+        "potvrzeno": false,
+        "jistota": "nase_propojeni",
+        "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+      }
+    ]
+  },
+  {
+    "typ": "polozka",
+    "id": "destove-vody-brilice",
+    "nazev": "Odvod dešťových vod v Břilicích",
+    "popis": null,
+    "oblast": "voda_odpady",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "nositel_jistota": "nase_propojeni",
+    "pripravenost": {
+      "stupen": "studie",
+      "nazev": "studie zadána",
+      "doklad": {
+        "typ": "smlouva",
+        "id": "rs-32169484",
+        "text": "Studie odvodu dešťových vod v Břilicích",
+        "datum": "2025-02-14",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/32169484"
+      },
+      "jistota": "dolozeno"
+    },
+    "doklady": [
+      {
+        "typ": "smlouva",
+        "id": "rs-32169484",
+        "text": "Studie odvodu dešťových vod v Břilicích",
+        "datum": "2025-02-14",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/32169484",
+        "stupen": "studie",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "prvni_doklad": "2025-02-14",
+    "odhad": null,
+    "zdroj": null,
+    "stavby": [],
+    "faze": "zasobnik",
+    "sprm": []
+  },
+  {
+    "typ": "polozka",
+    "id": "sportoviste-hlinik",
+    "nazev": "Volnočasové sportoviště ve sportovním areálu Hliník",
+    "popis": null,
+    "oblast": "sport",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "nositel_jistota": "nase_propojeni",
+    "pripravenost": {
+      "stupen": "projekt_provadeci",
+      "nazev": "prováděcí projekt zadán",
+      "doklad": {
+        "typ": "smlouva",
+        "id": "rs-39460817",
+        "text": "Volnočasové sportoviště ve SA Hliník - DSP/DPS a výkaz výměr - rozpočet.",
+        "datum": "2026-09-07",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/39460817"
+      },
+      "jistota": "dolozeno"
+    },
+    "doklady": [
+      {
+        "typ": "smlouva",
+        "id": "rs-39460817",
+        "text": "Volnočasové sportoviště ve SA Hliník - DSP/DPS a výkaz výměr - rozpočet.",
+        "datum": "2026-09-07",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/39460817",
+        "stupen": "projekt_provadeci",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "prvni_doklad": "2026-09-07",
+    "odhad": null,
+    "zdroj": null,
+    "stavby": [],
+    "faze": "zasobnik",
+    "sprm": []
+  },
+  {
+    "typ": "polozka",
+    "id": "sportovni-hala-revitalizace",
+    "nazev": "Revitalizace sportovní haly (občerstvení, zázemí v 1. podzemním podlaží)",
+    "popis": null,
+    "oblast": "sport",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "nositel_jistota": "nase_propojeni",
+    "pripravenost": {
+      "stupen": "projekt_provadeci",
+      "nazev": "prováděcí projekt zadán",
+      "doklad": {
+        "typ": "smlouva",
+        "id": "rs-35901953",
+        "text": "PD sportovní hala Třeboň - specializované činnosti projektanta pro vypracování PD ve stupních DSP, DZS a DPS.",
+        "datum": "2025-12-04",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/35901953"
+      },
+      "jistota": "dolozeno"
+    },
+    "doklady": [
+      {
+        "typ": "smlouva",
+        "id": "rs-31186248",
+        "text": "Zpracování projektové dokumentace – „Stavební úpravy a revitalizace sportovní haly Třeboň – občerstvení“",
+        "datum": "2024-11-28",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/31186248",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "typ": "smlouva",
+        "id": "rs-35901953",
+        "text": "PD sportovní hala Třeboň - specializované činnosti projektanta pro vypracování PD ve stupních DSP, DZS a DPS.",
+        "datum": "2025-12-04",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/35901953",
+        "stupen": "projekt_provadeci",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "typ": "smlouva",
+        "id": "rs-35902245",
+        "text": "PD změn dispozic stavby SÚ a revitalizace sportovní haly v 1.PP - VZT, infrasauna, masérna.",
+        "datum": "2025-12-04",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/35902245",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "prvni_doklad": "2024-11-28",
+    "odhad": null,
+    "zdroj": null,
+    "stavby": [
+      {
+        "id": "ezak-VZ-706",
+        "nazev": "Stavební úpravy a revitalizace sportovní haly v Třeboni",
+        "datum": "2024-02-15",
+        "stav": "ukončeno plnění",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_706.html"
+      }
+    ],
+    "faze": "zasobnik",
+    "sprm": []
+  },
+  {
+    "typ": "polozka",
+    "id": "kabiny-brilice",
+    "nazev": "Fotbalové kabiny v Břilicích",
+    "popis": null,
+    "oblast": "sport",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "nositel_jistota": "nase_propojeni",
+    "pripravenost": {
+      "stupen": "projekt_povoleni",
+      "nazev": "projekt pro povolení stavby zadán",
+      "doklad": {
+        "typ": "smlouva",
+        "id": "rs-31982392",
+        "text": "Stavební úpravy fotbalových kabin v Břilicích - sever - DSP-DZS, IS,výkaz výměr, rozpočet.",
+        "datum": "2025-01-31",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/31982392"
+      },
+      "jistota": "dolozeno"
+    },
+    "doklady": [
+      {
+        "typ": "smlouva",
+        "id": "rs-31982392",
+        "text": "Stavební úpravy fotbalových kabin v Břilicích - sever - DSP-DZS, IS,výkaz výměr, rozpočet.",
+        "datum": "2025-01-31",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/31982392",
+        "stupen": "projekt_povoleni",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "prvni_doklad": "2025-01-31",
+    "odhad": null,
+    "zdroj": null,
+    "stavby": [],
+    "faze": "zasobnik",
+    "sprm": []
+  },
+  {
+    "typ": "polozka",
+    "id": "divadlo-zazemi",
+    "nazev": "Hygienické zázemí pro diváky v divadle J. K. Tyla",
+    "popis": null,
+    "oblast": "kultura",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "nositel_jistota": "nase_propojeni",
+    "pripravenost": {
+      "stupen": "projekt_provadeci",
+      "nazev": "prováděcí projekt zadán",
+      "doklad": {
+        "typ": "smlouva",
+        "id": "rs-37981845",
+        "text": "Vypracování DVZ/ DPS, vč. položkového rozpočtu na stavbu SÚ hygienického zázemí pro diváky v divadle J. K. Tyla.",
+        "datum": "2026-05-15",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/37981845"
+      },
+      "jistota": "dolozeno"
+    },
+    "doklady": [
+      {
+        "typ": "smlouva",
+        "id": "rs-37981845",
+        "text": "Vypracování DVZ/ DPS, vč. položkového rozpočtu na stavbu SÚ hygienického zázemí pro diváky v divadle J. K. Tyla.",
+        "datum": "2026-05-15",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/37981845",
+        "stupen": "projekt_provadeci",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "prvni_doklad": "2026-05-15",
+    "odhad": null,
+    "zdroj": null,
+    "stavby": [],
+    "faze": "zasobnik",
+    "sprm": []
+  },
+  {
+    "typ": "polozka",
+    "id": "stara-radnice-vez-fasada",
+    "nazev": "Stará radnice – oprava věže a fasády",
+    "popis": null,
+    "oblast": "kultura",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "nositel_jistota": "nase_propojeni",
+    "pripravenost": {
+      "stupen": "projekt_provadeci",
+      "nazev": "prováděcí projekt zadán",
+      "doklad": {
+        "typ": "smlouva",
+        "id": "rs-40426169",
+        "text": "DPS Oprava radniční věže č.p. 1/I v Třeboni, výkaz výměr a položkový rozpočet.",
+        "datum": "2026-11-10",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/40426169"
+      },
+      "jistota": "dolozeno"
+    },
+    "doklady": [
+      {
+        "typ": "smlouva",
+        "id": "rs-32810536",
+        "text": "Vypracování DPS, položkového rozpočtu, výkazu výměr a zajištění IS na stavbu Oprava fasády čp. 1/I v Třeboni.",
+        "datum": "2025-03-31",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/32810536",
+        "stupen": "projekt_provadeci",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "typ": "smlouva",
+        "id": "rs-40426169",
+        "text": "DPS Oprava radniční věže č.p. 1/I v Třeboni, výkaz výměr a položkový rozpočet.",
+        "datum": "2026-11-10",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/40426169",
+        "stupen": "projekt_provadeci",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "prvni_doklad": "2025-03-31",
+    "odhad": null,
+    "zdroj": null,
+    "stavby": [],
+    "faze": "zasobnik",
+    "sprm": []
+  },
+  {
+    "typ": "polozka",
+    "id": "kz-branna-prodejna",
+    "nazev": "Prodejna smíšeného zboží v kulturním zařízení v Branné",
+    "popis": null,
+    "oblast": "jine",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "nositel_jistota": "nase_propojeni",
+    "pripravenost": {
+      "stupen": "projekt_provadeci",
+      "nazev": "prováděcí projekt zadán",
+      "doklad": {
+        "typ": "smlouva",
+        "id": "rs-37740053",
+        "text": "Vypracování DPS \"Stavební úpravy části objektu KZ Branná na prodejnu smíšeného zboží\". vč. VV, rozpočtu a činnosti IS.",
+        "datum": "2026-04-27",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/37740053"
+      },
+      "jistota": "dolozeno"
+    },
+    "doklady": [
+      {
+        "typ": "smlouva",
+        "id": "rs-37740053",
+        "text": "Vypracování DPS \"Stavební úpravy části objektu KZ Branná na prodejnu smíšeného zboží\". vč. VV, rozpočtu a činnosti IS.",
+        "datum": "2026-04-27",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/37740053",
+        "stupen": "projekt_provadeci",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "prvni_doklad": "2026-04-27",
+    "odhad": null,
+    "zdroj": null,
+    "stavby": [],
+    "faze": "zasobnik",
+    "sprm": []
+  },
+  {
+    "typ": "polozka",
+    "id": "dps1-kotelny",
+    "nazev": "Kotelny a plynové kotle v domě s pečovatelskou službou I (Chelčického)",
+    "popis": null,
+    "oblast": "socialni",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "nositel_jistota": "nase_propojeni",
+    "pripravenost": {
+      "stupen": "projekt_provadeci",
+      "nazev": "prováděcí projekt zadán",
+      "doklad": {
+        "typ": "smlouva",
+        "id": "rs-36642205",
+        "text": "Zpracování PD Stavebních úprav kotelen a výměny plynových kotlů v objektu DPS IA a DPS IC, Chelčického 1, Třeboň",
+        "datum": "2026-02-02",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/36642205"
+      },
+      "jistota": "dolozeno"
+    },
+    "doklady": [
+      {
+        "typ": "smlouva",
+        "id": "rs-36642205",
+        "text": "Zpracování PD Stavebních úprav kotelen a výměny plynových kotlů v objektu DPS IA a DPS IC, Chelčického 1, Třeboň",
+        "datum": "2026-02-02",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/36642205",
+        "stupen": "projekt_provadeci",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "prvni_doklad": "2026-02-02",
+    "odhad": null,
+    "zdroj": null,
+    "stavby": [],
+    "faze": "zasobnik",
+    "sprm": []
+  },
+  {
+    "typ": "polozka",
+    "id": "bytovy-dum-lazenska",
+    "nazev": "Městský bytový dům v Lázeňské ulici",
+    "popis": null,
+    "oblast": "bydleni",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "nositel_jistota": "nase_propojeni",
+    "pripravenost": {
+      "stupen": "projekt",
+      "nazev": "projektová dokumentace zadána",
+      "doklad": {
+        "typ": "zakazka",
+        "id": "ezak-VZ-642",
+        "text": "Zpracování projektové dokumentace – Novostavba městského bytového domu v ul. Lázeňská na p. č. 1087/17 v obci a k. ú. Třeboň",
+        "datum": "2023-07-21",
+        "ico": "00247618",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_642.html"
+      },
+      "jistota": "dolozeno"
+    },
+    "doklady": [
+      {
+        "typ": "zakazka",
+        "id": "ezak-VZ-642",
+        "text": "Zpracování projektové dokumentace – Novostavba městského bytového domu v ul. Lázeňská na p. č. 1087/17 v obci a k. ú. Třeboň",
+        "datum": "2023-07-21",
+        "ico": "00247618",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_642.html",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "prvni_doklad": "2023-07-21",
+    "odhad": null,
+    "zdroj": null,
+    "stavby": [],
+    "faze": "zasobnik",
+    "sprm": []
+  },
+  {
+    "typ": "polozka",
+    "id": "lazne-objekt-b",
+    "nazev": "Modernizace objektu B Lázeňského domu Aurora",
+    "popis": null,
+    "oblast": "lazne",
+    "nositele": [
+      {
+        "ico": "25179896",
+        "nazev": "Slatinné lázně Třeboň s.r.o."
+      }
+    ],
+    "nositel_jistota": "nase_propojeni",
+    "pripravenost": {
+      "stupen": "projekt",
+      "nazev": "projektová dokumentace zadána",
+      "doklad": {
+        "typ": "smlouva",
+        "id": "rs-39002054",
+        "text": "Smlouva o dílo - Zhotovení PD, příkazní činnosti a výkon AD pro Modernizaci objektu B LDA",
+        "datum": "2026-08-04",
+        "ico": "25179896",
+        "url": "https://smlouvy.gov.cz/smlouva/39002054"
+      },
+      "jistota": "dolozeno"
+    },
+    "doklady": [
+      {
+        "typ": "zakazka",
+        "id": "ezak-VZ-931",
+        "text": "Zhotovení PD, příkazní činnosti a výkon AD pro Modernizaci objektu B LDA",
+        "datum": "2026-03-19",
+        "ico": "25179896",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_931.html",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "typ": "zakazka",
+        "id": "ezak-VZ-940",
+        "text": "Zhotovení PD, příkazní činnosti a výkon AD pro Modernizaci objektu B LDA – opakované řízení",
+        "datum": "2026-05-06",
+        "ico": "25179896",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_940.html",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "typ": "smlouva",
+        "id": "rs-39002054",
+        "text": "Smlouva o dílo - Zhotovení PD, příkazní činnosti a výkon AD pro Modernizaci objektu B LDA",
+        "datum": "2026-08-04",
+        "ico": "25179896",
+        "url": "https://smlouvy.gov.cz/smlouva/39002054",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "prvni_doklad": "2026-03-19",
+    "odhad": null,
+    "zdroj": null,
+    "stavby": [],
+    "faze": "zasobnik",
+    "sprm": []
+  },
+  {
+    "typ": "polozka",
+    "id": "lazne-ordinace",
+    "nazev": "Přesun ordinací do přízemí objektů D a E Lázeňského domu Aurora",
+    "popis": null,
+    "oblast": "lazne",
+    "nositele": [
+      {
+        "ico": "25179896",
+        "nazev": "Slatinné lázně Třeboň s.r.o."
+      }
+    ],
+    "nositel_jistota": "nase_propojeni",
+    "pripravenost": {
+      "stupen": "projekt",
+      "nazev": "projektová dokumentace zadána",
+      "doklad": {
+        "typ": "smlouva",
+        "id": "rs-40408421",
+        "text": "Smlouva o dílo - Zhotov.PD, příkaz.činnosti a výkon AD pro přesun ordinací na 1. NP objektů D až E LDA",
+        "datum": "2026-11-18",
+        "ico": "25179896",
+        "url": "https://smlouvy.gov.cz/smlouva/40408421"
+      },
+      "jistota": "dolozeno"
+    },
+    "doklady": [
+      {
+        "typ": "zakazka",
+        "id": "ezak-VZ-964",
+        "text": "Zhotovení PD, příkazní činnosti a výkon AD pro přesun ordinací na 1. NP objektů D až E LDA",
+        "datum": "2026-10-19",
+        "ico": "25179896",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_964.html",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "typ": "smlouva",
+        "id": "rs-40408421",
+        "text": "Smlouva o dílo - Zhotov.PD, příkaz.činnosti a výkon AD pro přesun ordinací na 1. NP objektů D až E LDA",
+        "datum": "2026-11-18",
+        "ico": "25179896",
+        "url": "https://smlouvy.gov.cz/smlouva/40408421",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "prvni_doklad": "2026-10-19",
+    "odhad": null,
+    "zdroj": null,
+    "stavby": [],
+    "faze": "zasobnik",
+    "sprm": []
+  },
+  {
+    "typ": "polozka",
+    "id": "lazne-restaurace",
+    "nazev": "Přemístění restaurace Lázeňského domu Aurora",
+    "popis": null,
+    "oblast": "lazne",
+    "nositele": [
+      {
+        "ico": "25179896",
+        "nazev": "Slatinné lázně Třeboň s.r.o."
+      }
+    ],
+    "nositel_jistota": "nase_propojeni",
+    "pripravenost": {
+      "stupen": "projekt",
+      "nazev": "projektová dokumentace zadána",
+      "doklad": {
+        "typ": "smlouva",
+        "id": "rs-35578073",
+        "text": "Smlouva o dílo - Zhotov.PD, příkaz.činnost a výkon AD pro přemístění provozu rest.LDA",
+        "datum": "2025-11-11",
+        "ico": "25179896",
+        "url": "https://smlouvy.gov.cz/smlouva/35578073"
+      },
+      "jistota": "dolozeno"
+    },
+    "doklady": [
+      {
+        "typ": "zakazka",
+        "id": "ezak-VZ-732",
+        "text": "Studie - Přemístění provozu restaurace LDA - II.etapa",
+        "datum": "2024-04-17",
+        "ico": "25179896",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_732.html",
+        "stupen": "studie",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "typ": "zakazka",
+        "id": "ezak-VZ-884",
+        "text": "Zhotovení PD, příkazní činnost a výkon AD pro Přemístění provozu restaurace LDA",
+        "datum": "2025-09-04",
+        "ico": "25179896",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_884.html",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "typ": "smlouva",
+        "id": "rs-35578073",
+        "text": "Smlouva o dílo - Zhotov.PD, příkaz.činnost a výkon AD pro přemístění provozu rest.LDA",
+        "datum": "2025-11-11",
+        "ico": "25179896",
+        "url": "https://smlouvy.gov.cz/smlouva/35578073",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "prvni_doklad": "2024-04-17",
+    "odhad": null,
+    "zdroj": null,
+    "stavby": [],
+    "faze": "zasobnik",
+    "sprm": []
+  },
+  {
+    "typ": "polozka",
+    "id": "lazne-olu",
+    "nazev": "Odborný léčebný ústav (kapacitní studie)",
+    "popis": null,
+    "oblast": "lazne",
+    "nositele": [
+      {
+        "ico": "25179896",
+        "nazev": "Slatinné lázně Třeboň s.r.o."
+      }
+    ],
+    "nositel_jistota": "nase_propojeni",
+    "pripravenost": {
+      "stupen": "studie",
+      "nazev": "studie zadána",
+      "doklad": {
+        "typ": "smlouva",
+        "id": "rs-40024397",
+        "text": "Objednávka KAPACITNÍ STUDIE na zřízení odborně léčebného ústavu (OLÚ)",
+        "datum": "2026-10-12",
+        "ico": "25179896",
+        "url": "https://smlouvy.gov.cz/smlouva/40024397"
+      },
+      "jistota": "dolozeno"
+    },
+    "doklady": [
+      {
+        "typ": "smlouva",
+        "id": "rs-40024397",
+        "text": "Objednávka KAPACITNÍ STUDIE na zřízení odborně léčebného ústavu (OLÚ)",
+        "datum": "2026-10-12",
+        "ico": "25179896",
+        "url": "https://smlouvy.gov.cz/smlouva/40024397",
+        "stupen": "studie",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "prvni_doklad": "2026-10-12",
+    "odhad": null,
+    "zdroj": null,
+    "stavby": [],
+    "faze": "zasobnik",
+    "sprm": []
+  },
+  {
+    "typ": "polozka",
+    "id": "lazne-chodnik-park",
+    "nazev": "Chodník v parku lázní Aurora",
+    "popis": null,
+    "oblast": "lazne",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "nositel_jistota": "nase_propojeni",
+    "pripravenost": {
+      "stupen": "projekt",
+      "nazev": "projektová dokumentace zadána",
+      "doklad": {
+        "typ": "smlouva",
+        "id": "rs-39439905",
+        "text": "Zpracování PD - Chodník v parku lázní Aurora v Třeboni",
+        "datum": "2026-09-04",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/39439905"
+      },
+      "jistota": "dolozeno"
+    },
+    "doklady": [
+      {
+        "typ": "smlouva",
+        "id": "rs-39439905",
+        "text": "Zpracování PD - Chodník v parku lázní Aurora v Třeboni",
+        "datum": "2026-09-04",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/39439905",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "prvni_doklad": "2026-09-04",
+    "odhad": null,
+    "zdroj": null,
+    "stavby": [],
+    "faze": "zasobnik",
+    "sprm": [
+      {
+        "id": 301,
+        "sprm_ai": true,
+        "citace": "Chodník",
+        "overeni": "overeno_kodem",
+        "aktivita": "Rekonstrukce veřejných prostranství",
+        "opatreni": "7. Veřejná prostranství",
+        "osa": "Doprava",
+        "stav_v_evidenci": "Plánováno",
+        "potvrzeno": false,
+        "jistota": "nase_propojeni",
+        "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+      }
+    ]
+  },
+  {
+    "typ": "polozka",
+    "id": "lazne-padel",
+    "nazev": "Dva kurty na padel (Bertiny lázně)",
+    "popis": null,
+    "oblast": "lazne",
+    "nositele": [
+      {
+        "ico": "25179896",
+        "nazev": "Slatinné lázně Třeboň s.r.o."
+      }
+    ],
+    "nositel_jistota": "nase_propojeni",
+    "pripravenost": {
+      "stupen": "projekt",
+      "nazev": "projektová dokumentace zadána",
+      "doklad": {
+        "typ": "smlouva",
+        "id": "rs-37068121",
+        "text": "Objednávka - projektová dokumentace - 2 kurty pro Padel - LDB",
+        "datum": "2026-02-27",
+        "ico": "25179896",
+        "url": "https://smlouvy.gov.cz/smlouva/37068121"
+      },
+      "jistota": "dolozeno"
+    },
+    "doklady": [
+      {
+        "typ": "smlouva",
+        "id": "rs-37068121",
+        "text": "Objednávka - projektová dokumentace - 2 kurty pro Padel - LDB",
+        "datum": "2026-02-27",
+        "ico": "25179896",
+        "url": "https://smlouvy.gov.cz/smlouva/37068121",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "prvni_doklad": "2026-02-27",
+    "odhad": null,
+    "zdroj": null,
+    "stavby": [],
+    "faze": "zasobnik",
+    "sprm": []
+  },
+  {
+    "typ": "polozka",
+    "id": "mk-na-chmelnici",
+    "nazev": "Ulice Na Chmelnici a část Vrchlického",
+    "popis": null,
+    "oblast": "doprava",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "nositel_jistota": "nase_propojeni",
+    "pripravenost": {
+      "stupen": "projekt",
+      "nazev": "projektová dokumentace zadána",
+      "doklad": {
+        "typ": "zakazka",
+        "id": "ezak-VZ-699",
+        "text": "Stavební úpravy MK v ul. Na Chmelnici a části ul. Vrchlického v Třeboni (PD)",
+        "datum": "2024-01-04",
+        "ico": "00247618",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_699.html"
+      },
+      "jistota": "dolozeno"
+    },
+    "doklady": [
+      {
+        "typ": "zakazka",
+        "id": "ezak-VZ-699",
+        "text": "Stavební úpravy MK v ul. Na Chmelnici a části ul. Vrchlického v Třeboni (PD)",
+        "datum": "2024-01-04",
+        "ico": "00247618",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_699.html",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "prvni_doklad": "2024-01-04",
+    "odhad": null,
+    "zdroj": null,
+    "stavby": [
+      {
+        "id": "ezak-VZ-812",
+        "nazev": "Stavební úpravy MK v ul. Na Chmelnici a části ul. Vrchlického v Třeboni",
+        "datum": "2024-11-29",
+        "stav": "ukončeno plnění",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_812.html"
+      }
+    ],
+    "faze": "realizovano",
+    "sprm": [
+      {
+        "id": 280,
+        "sprm_ai": true,
+        "citace": "Ulice ",
+        "overeni": "overeno_kodem",
+        "aktivita": "Komplexní rekonstrukce komunikací vč. sítí",
+        "opatreni": "2. Technická infrastruktura",
+        "osa": "Doprava",
+        "stav_v_evidenci": "Plánováno",
+        "potvrzeno": false,
+        "jistota": "nase_propojeni",
+        "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+      }
+    ]
+  },
+  {
+    "typ": "polozka",
+    "id": "mk-petra-pavla",
+    "nazev": "Ulice U sv. Petra a Pavla",
+    "popis": null,
+    "oblast": "doprava",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "nositel_jistota": "nase_propojeni",
+    "pripravenost": {
+      "stupen": "projekt",
+      "nazev": "projektová dokumentace zadána",
+      "doklad": {
+        "typ": "zakazka",
+        "id": "ezak-VZ-696",
+        "text": "Stavební úpravy MK v ulici U sv. Petra a Pavla v Třeboni - 2. etapa (PD)",
+        "datum": "2024-01-04",
+        "ico": "00247618",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_696.html"
+      },
+      "jistota": "dolozeno"
+    },
+    "doklady": [
+      {
+        "typ": "zakazka",
+        "id": "ezak-VZ-695",
+        "text": "Stavební úpravy MK v ulici U sv. Petra a Pavla v Třeboni (zpracování PD)",
+        "datum": "2024-01-04",
+        "ico": "00247618",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_695.html",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "typ": "zakazka",
+        "id": "ezak-VZ-696",
+        "text": "Stavební úpravy MK v ulici U sv. Petra a Pavla v Třeboni - 2. etapa (PD)",
+        "datum": "2024-01-04",
+        "ico": "00247618",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_696.html",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "prvni_doklad": "2024-01-04",
+    "odhad": null,
+    "zdroj": null,
+    "stavby": [
+      {
+        "id": "ezak-VZ-733",
+        "nazev": "Stavební úpravy MK v ulici U sv. Petra a Pavla v Třeboni - 2. etapa",
+        "datum": "2024-04-17",
+        "stav": "ukončeno plnění",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_733.html"
+      },
+      {
+        "id": "ezak-VZ-644",
+        "nazev": "Stavební úpravy MK v ulici U sv. Petra a Pavla v Třeboni",
+        "datum": "2023-07-26",
+        "stav": "ukončeno plnění",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_644.html"
+      }
+    ],
+    "faze": "realizovano",
+    "sprm": [
+      {
+        "id": 280,
+        "sprm_ai": true,
+        "citace": "Ulice ",
+        "overeni": "overeno_kodem",
+        "aktivita": "Komplexní rekonstrukce komunikací vč. sítí",
+        "opatreni": "2. Technická infrastruktura",
+        "osa": "Doprava",
+        "stav_v_evidenci": "Plánováno",
+        "potvrzeno": false,
+        "jistota": "nase_propojeni",
+        "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+      }
+    ]
+  },
+  {
+    "typ": "polozka",
+    "id": "mk-sustova-polni",
+    "nazev": "Ulice Šustova a 2. etapa ulice Polní",
+    "popis": null,
+    "oblast": "doprava",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "nositel_jistota": "nase_propojeni",
+    "pripravenost": {
+      "stupen": "projekt",
+      "nazev": "projektová dokumentace zadána",
+      "doklad": {
+        "typ": "zakazka",
+        "id": "ezak-VZ-639",
+        "text": "Zpracování projektové dokumentace – Stavební úpravy MK v ul. Šustova a 2. etapy ul. Polní v Třeboni",
+        "datum": "2023-06-30",
+        "ico": "00247618",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_639.html"
+      },
+      "jistota": "dolozeno"
+    },
+    "doklady": [
+      {
+        "typ": "zakazka",
+        "id": "ezak-VZ-639",
+        "text": "Zpracování projektové dokumentace – Stavební úpravy MK v ul. Šustova a 2. etapy ul. Polní v Třeboni",
+        "datum": "2023-06-30",
+        "ico": "00247618",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_639.html",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "prvni_doklad": "2023-06-30",
+    "odhad": null,
+    "zdroj": null,
+    "stavby": [
+      {
+        "id": "ezak-VZ-712",
+        "nazev": "Stavební úpravy MK v ulici Šustova a 2. etapy ulice Polní v Třeboni",
+        "datum": "2024-03-01",
+        "stav": "ukončeno plnění",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_712.html"
+      }
+    ],
+    "faze": "realizovano",
+    "sprm": [
+      {
+        "id": 280,
+        "sprm_ai": true,
+        "citace": "Ulice ",
+        "overeni": "overeno_kodem",
+        "aktivita": "Komplexní rekonstrukce komunikací vč. sítí",
+        "opatreni": "2. Technická infrastruktura",
+        "osa": "Doprava",
+        "stav_v_evidenci": "Plánováno",
+        "potvrzeno": false,
+        "jistota": "nase_propojeni",
+        "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+      }
+    ]
+  },
+  {
+    "typ": "polozka",
+    "id": "odkanalizovani-holicky",
+    "nazev": "Odkanalizování lokality Holičky",
+    "popis": null,
+    "oblast": "voda_odpady",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "nositel_jistota": "nase_propojeni",
+    "pripravenost": {
+      "stupen": "projekt",
+      "nazev": "projektová dokumentace zadána",
+      "doklad": {
+        "typ": "smlouva",
+        "id": "rs-33452264",
+        "text": "Smlouva o dílo na zpracování projektové dokumentace - odkanalizování lokality Holičky - dodatek č. 1",
+        "datum": "2025-05-28",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/33452264"
+      },
+      "jistota": "dolozeno"
+    },
+    "doklady": [
+      {
+        "typ": "smlouva",
+        "id": "rs-33452264",
+        "text": "Smlouva o dílo na zpracování projektové dokumentace - odkanalizování lokality Holičky - dodatek č. 1",
+        "datum": "2025-05-28",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/33452264",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "prvni_doklad": "2025-05-28",
+    "odhad": null,
+    "zdroj": null,
+    "stavby": [
+      {
+        "id": "ezak-VZ-638",
+        "nazev": "Odkanalizování lokality Holičky",
+        "datum": "2023-06-28",
+        "stav": "ukončeno plnění",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_638.html"
+      }
+    ],
+    "faze": "realizovano",
+    "sprm": []
+  },
+  {
+    "typ": "polozka",
+    "id": "rybnik-branna",
+    "nazev": "Odbahnění návesního rybníku v Branné",
+    "popis": null,
+    "oblast": "voda_odpady",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "nositel_jistota": "nase_propojeni",
+    "pripravenost": {
+      "stupen": "projekt",
+      "nazev": "projektová dokumentace zadána",
+      "doklad": {
+        "typ": "smlouva",
+        "id": "rs-29773180",
+        "text": "Zpracování projektové dokumentace - Odbahnění návesního rybníku na pozemku p . č. 156/1 v Branné",
+        "datum": "2024-08-12",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/29773180"
+      },
+      "jistota": "dolozeno"
+    },
+    "doklady": [
+      {
+        "typ": "zakazka",
+        "id": "ezak-VZ-770",
+        "text": "Zpracování projektové dokumentace - Odbahnění návesního rybníku na pozemku p. č. 156/1 v Branné",
+        "datum": "2024-07-17",
+        "ico": "00247618",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_770.html",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "typ": "smlouva",
+        "id": "rs-29773180",
+        "text": "Zpracování projektové dokumentace - Odbahnění návesního rybníku na pozemku p . č. 156/1 v Branné",
+        "datum": "2024-08-12",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/29773180",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "prvni_doklad": "2024-07-17",
+    "odhad": null,
+    "zdroj": null,
+    "stavby": [
+      {
+        "id": "ezak-VZ-836",
+        "nazev": "Odbahnění návesního rybníku na parcele p. č. 156/1 v k. ú. Branná",
+        "datum": "2025-02-21",
+        "stav": "ukončeno plnění",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_836.html"
+      }
+    ],
+    "faze": "realizovano",
+    "sprm": []
+  },
+  {
+    "typ": "polozka",
+    "id": "zive-ploty-dukelska",
+    "nazev": "Revitalizace živých plotů v Dukelské ulici",
+    "popis": null,
+    "oblast": "zelen",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "nositel_jistota": "nase_propojeni",
+    "pripravenost": {
+      "stupen": "projekt",
+      "nazev": "projektová dokumentace zadána",
+      "doklad": {
+        "typ": "smlouva",
+        "id": "rs-30159604",
+        "text": "Zpracování projektové dokumentace „Revitalizace živých plotů – ulice Dukelská“",
+        "datum": "2024-09-10",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/30159604"
+      },
+      "jistota": "dolozeno"
+    },
+    "doklady": [
+      {
+        "typ": "smlouva",
+        "id": "rs-30159604",
+        "text": "Zpracování projektové dokumentace „Revitalizace živých plotů – ulice Dukelská“",
+        "datum": "2024-09-10",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/30159604",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "prvni_doklad": "2024-09-10",
+    "odhad": null,
+    "zdroj": null,
+    "stavby": [
+      {
+        "id": "ezak-VZ-839",
+        "nazev": "Revitalizace živých plotů – ulice Dukelská",
+        "datum": "2025-03-19",
+        "stav": "ukončeno plnění",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_839.html"
+      }
+    ],
+    "faze": "realizovano",
+    "sprm": []
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-40412709",
+    "nazev": "Vypracování projektové dokumentace včetně rozpočtu a výkazu výměr pro výběrové řízení na stavební opravy bytu č. 1 Dukelská 148",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-40412709",
+      "text": "Vypracování projektové dokumentace včetně rozpočtu a výkazu výměr pro výběrové řízení na stavební opravy bytu č. 1 Dukelská 148",
+      "datum": "2026-11-19",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/40412709"
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-37858033",
+    "nazev": "Zpracování PD včetně inženýrské činnosti a zajištění povolení stavby pro doplnění záchytného zařízení na komunikaci na p. p. č. 160/1, k. ú. Branná (u Kulturního zařízení Branná).",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-37858033",
+      "text": "Zpracování PD včetně inženýrské činnosti a zajištění povolení stavby pro doplnění záchytného zařízení na komunikaci na p. p. č. 160/1, k. ú. Branná (u Kulturního zařízení Branná).",
+      "datum": "2026-05-06",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/37858033"
+    },
+    "stupen": "projekt_povoleni",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-34005077",
+    "nazev": "Dodatek č. 1 ke Smlouvě o dílo - zhotovení PD",
+    "nositele": [
+      {
+        "ico": "25179896",
+        "nazev": "Slatinné lázně Třeboň s.r.o."
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-34005077",
+      "text": "Dodatek č. 1 ke Smlouvě o dílo - zhotovení PD",
+      "datum": "2025-07-08",
+      "ico": "25179896",
+      "url": "https://smlouvy.gov.cz/smlouva/34005077"
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-33899865",
+    "nazev": "Zpracování projektové dokumentace akce \"Zkapacitnění propustků a koryta - Třeboň, Břilice\"",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-33899865",
+      "text": "Zpracování projektové dokumentace akce \"Zkapacitnění propustků a koryta - Třeboň, Břilice\"",
+      "datum": "2025-06-30",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/33899865"
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-33174696",
+    "nazev": "Vypracování DPS, IS, výkazu výměr a rozpočtu na stavbu \"Oprava hřbitovní zdi - sever\".",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-33174696",
+      "text": "Vypracování DPS, IS, výkazu výměr a rozpočtu na stavbu \"Oprava hřbitovní zdi - sever\".",
+      "datum": "2025-05-05",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/33174696"
+    },
+    "stupen": "projekt_provadeci",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-33013444",
+    "nazev": "Zpracování Projektové dokumentace Snížení energetické náročnosti objektu DPS III, [jméno] 20, Třeboň",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-33013444",
+      "text": "Zpracování Projektové dokumentace Snížení energetické náročnosti objektu DPS III, [jméno] 20, Třeboň",
+      "datum": "2025-04-23",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/33013444"
+    },
+    "stupen": "projekt_provadeci",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-32810632",
+    "nazev": "Vypracování studie, DSP+ DPS, IS, rozpočtu a výkazu výměr na provedení stavebních a architektonických úprav vstupního vestibulu sportovní haly.",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-32810632",
+      "text": "Vypracování studie, DSP+ DPS, IS, rozpočtu a výkazu výměr na provedení stavebních a architektonických úprav vstupního vestibulu sportovní haly.",
+      "datum": "2025-03-31",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/32810632"
+    },
+    "stupen": "studie",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-32722812",
+    "nazev": "Zpracování PD pro akci Třeboň - úprava plochy na pozemku parc. č. 767.",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-32722812",
+      "text": "Zpracování PD pro akci Třeboň - úprava plochy na pozemku parc. č. 767.",
+      "datum": "2025-03-31",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/32722812"
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-32584604",
+    "nazev": "Smlouva o dílo - Zhotovení PD, příkazní činnost a výkon AD, výstavba bytů a admin.zázemí",
+    "nositele": [
+      {
+        "ico": "25179896",
+        "nazev": "Slatinné lázně Třeboň s.r.o."
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-32584604",
+      "text": "Smlouva o dílo - Zhotovení PD, příkazní činnost a výkon AD, výstavba bytů a admin.zázemí",
+      "datum": "2025-03-20",
+      "ico": "25179896",
+      "url": "https://smlouvy.gov.cz/smlouva/32584604"
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-ezak-VZ-816",
+    "nazev": "Zhotovení PD, příkazní činnost a výkon AD - Výměna zásobníků TUV - LDA",
+    "nositele": [
+      {
+        "ico": "25179896",
+        "nazev": "Slatinné lázně Třeboň s.r.o."
+      }
+    ],
+    "doklad": {
+      "typ": "zakazka",
+      "id": "ezak-VZ-816",
+      "text": "Zhotovení PD, příkazní činnost a výkon AD - Výměna zásobníků TUV - LDA",
+      "datum": "2024-12-11",
+      "ico": "25179896",
+      "url": "https://zakazky.mesto-trebon.cz/contract_display_816.html"
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-30907580",
+    "nazev": "Smlouva o dílo - zhotovení PD",
+    "nositele": [
+      {
+        "ico": "25179896",
+        "nazev": "Slatinné lázně Třeboň s.r.o."
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-30907580",
+      "text": "Smlouva o dílo - zhotovení PD",
+      "datum": "2024-11-07",
+      "ico": "25179896",
+      "url": "https://smlouvy.gov.cz/smlouva/30907580"
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-30300108",
+    "nazev": "Dodatek č. 1 PD - Modernizace rezervační kanceláře LDA",
+    "nositele": [
+      {
+        "ico": "25179896",
+        "nazev": "Slatinné lázně Třeboň s.r.o."
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-30300108",
+      "text": "Dodatek č. 1 PD - Modernizace rezervační kanceláře LDA",
+      "datum": "2024-09-24",
+      "ico": "25179896",
+      "url": "https://smlouvy.gov.cz/smlouva/30300108"
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-30172840",
+    "nazev": "Objednávka zpracování projektové dokumentace",
+    "nositele": [
+      {
+        "ico": "25179896",
+        "nazev": "Slatinné lázně Třeboň s.r.o."
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-30172840",
+      "text": "Objednávka zpracování projektové dokumentace",
+      "datum": "2024-09-11",
+      "ico": "25179896",
+      "url": "https://smlouvy.gov.cz/smlouva/30172840"
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-29562236",
+    "nazev": "Smlouva o dílo - projektová dokumentace",
+    "nositele": [
+      {
+        "ico": "25179896",
+        "nazev": "Slatinné lázně Třeboň s.r.o."
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-29562236",
+      "text": "Smlouva o dílo - projektová dokumentace",
+      "datum": "2024-07-19",
+      "ico": "25179896",
+      "url": "https://smlouvy.gov.cz/smlouva/29562236"
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "namet",
+    "id": "sprm-274",
+    "nazev": "Řešení kapacity kruhových objezdů",
+    "osa": "Doprava",
+    "opatreni": "1. Motorová doprava",
+    "stav_v_evidenci": "Plánováno",
+    "komentar": null,
+    "faze": "namet",
+    "jistota": "dolozeno",
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+  },
+  {
+    "typ": "namet",
+    "id": "sprm-275",
+    "nazev": "Komplexní řešení dopravy v klíčových ulicích (Táboritská, Jiráskova)",
+    "osa": "Doprava",
+    "opatreni": "1. Motorová doprava",
+    "stav_v_evidenci": "Plánováno",
+    "komentar": null,
+    "faze": "namet",
+    "jistota": "dolozeno",
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+  },
+  {
+    "typ": "namet",
+    "id": "sprm-279",
+    "nazev": "Stanovení priorit oprav ulic a místních komunikací",
+    "osa": "Doprava",
+    "opatreni": "2. Technická infrastruktura",
+    "stav_v_evidenci": "Plánováno",
+    "komentar": null,
+    "faze": "namet",
+    "jistota": "dolozeno",
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+  },
+  {
+    "typ": "namet",
+    "id": "sprm-287",
+    "nazev": "Dobudování cyklostezky kolem silnice I/34",
+    "osa": "Doprava",
+    "opatreni": "4. Nemotorová doprava",
+    "stav_v_evidenci": "Plánováno",
+    "komentar": null,
+    "faze": "namet",
+    "jistota": "dolozeno",
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+  },
+  {
+    "typ": "namet",
+    "id": "sprm-292",
+    "nazev": "Vybudování parkovacích domů pro lázně",
+    "osa": "Doprava",
+    "opatreni": "5. Doprava v klidu",
+    "stav_v_evidenci": "Plánováno",
+    "komentar": null,
+    "faze": "namet",
+    "jistota": "dolozeno",
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+  },
+  {
+    "typ": "namet",
+    "id": "sprm-298",
+    "nazev": "Rozvoj kamerového systému",
+    "osa": "Doprava",
+    "opatreni": "6. Bezpečnost",
+    "stav_v_evidenci": "Plánováno",
+    "komentar": null,
+    "faze": "namet",
+    "jistota": "dolozeno",
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+  },
+  {
+    "typ": "namet",
+    "id": "sprm-299",
+    "nazev": "Upgrade bezpečnostních náramků",
+    "osa": "Doprava",
+    "opatreni": "6. Bezpečnost",
+    "stav_v_evidenci": "Plánováno",
+    "komentar": null,
+    "faze": "namet",
+    "jistota": "dolozeno",
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+  },
+  {
+    "typ": "namet",
+    "id": "sprm-305",
+    "nazev": "Opatření na zlepšování stavu povrchových vod",
+    "osa": "Životní prostředí",
+    "opatreni": "1. Příroda a ŽP",
+    "stav_v_evidenci": "Plánováno",
+    "komentar": null,
+    "faze": "namet",
+    "jistota": "dolozeno",
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+  },
+  {
+    "typ": "namet",
+    "id": "sprm-306",
+    "nazev": "Spolupráce s AOPK ČR, AV ČR",
+    "osa": "Životní prostředí",
+    "opatreni": "1. Příroda a ŽP",
+    "stav_v_evidenci": "Plánováno",
+    "komentar": null,
+    "faze": "namet",
+    "jistota": "dolozeno",
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+  },
+  {
+    "typ": "namet",
+    "id": "sprm-307",
+    "nazev": "Opatření pro retenci vody a biodiverzitu",
+    "osa": "Životní prostředí",
+    "opatreni": "1. Příroda a ŽP",
+    "stav_v_evidenci": "Plánováno",
+    "komentar": null,
+    "faze": "namet",
+    "jistota": "dolozeno",
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+  },
+  {
+    "typ": "namet",
+    "id": "sprm-308",
+    "nazev": "Ochrana dřevin mimo les",
+    "osa": "Životní prostředí",
+    "opatreni": "1. Příroda a ŽP",
+    "stav_v_evidenci": "Plánováno",
+    "komentar": null,
+    "faze": "namet",
+    "jistota": "dolozeno",
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+  },
+  {
+    "typ": "namet",
+    "id": "sprm-313",
+    "nazev": "Zakládání nových ploch zeleně",
+    "osa": "Životní prostředí",
+    "opatreni": "2. Sídelní zeleň",
+    "stav_v_evidenci": "Plánováno",
+    "komentar": null,
+    "faze": "namet",
+    "jistota": "dolozeno",
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+  },
+  {
+    "typ": "namet",
+    "id": "sprm-315",
+    "nazev": "Generely vodovodů a kanalizací",
+    "osa": "Životní prostředí",
+    "opatreni": "3. Vodovody, kanalizace",
+    "stav_v_evidenci": "Plánováno",
+    "komentar": null,
+    "faze": "namet",
+    "jistota": "dolozeno",
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+  },
+  {
+    "typ": "namet",
+    "id": "sprm-322",
+    "nazev": "Aktualizace strategických dokumentů",
+    "osa": "Sociální oblast",
+    "opatreni": "1. Sociální služby",
+    "stav_v_evidenci": "Plánováno",
+    "komentar": null,
+    "faze": "namet",
+    "jistota": "dolozeno",
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+  },
+  {
+    "typ": "namet",
+    "id": "sprm-323",
+    "nazev": "Rozšíření kapacit pobytových služeb pro seniory",
+    "osa": "Sociální oblast",
+    "opatreni": "1. Sociální služby",
+    "stav_v_evidenci": "Plánováno",
+    "komentar": null,
+    "faze": "namet",
+    "jistota": "dolozeno",
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+  },
+  {
+    "typ": "namet",
+    "id": "sprm-325",
+    "nazev": "Modernizace bezpečnostních náramků",
+    "osa": "Sociální oblast",
+    "opatreni": "1. Sociální služby",
+    "stav_v_evidenci": "Plánováno",
+    "komentar": null,
+    "faze": "namet",
+    "jistota": "dolozeno",
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+  },
+  {
+    "typ": "namet",
+    "id": "sprm-330",
+    "nazev": "Modernizace MŠ a vybavení",
+    "osa": "Sociální oblast",
+    "opatreni": "3. Mateřské školy",
+    "stav_v_evidenci": "Plánováno",
+    "komentar": null,
+    "faze": "namet",
+    "jistota": "dolozeno",
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+  },
+  {
+    "typ": "namet",
+    "id": "sprm-331",
+    "nazev": "Podpora vzdělávání učitelů",
+    "osa": "Sociální oblast",
+    "opatreni": "3. Mateřské školy",
+    "stav_v_evidenci": "Plánováno",
+    "komentar": null,
+    "faze": "namet",
+    "jistota": "dolozeno",
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+  },
+  {
+    "typ": "namet",
+    "id": "sprm-332",
+    "nazev": "Využívání městských tělocvičen a bazénů",
+    "osa": "Sociální oblast",
+    "opatreni": "3. Mateřské školy",
+    "stav_v_evidenci": "Plánováno",
+    "komentar": null,
+    "faze": "namet",
+    "jistota": "dolozeno",
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+  },
+  {
+    "typ": "namet",
+    "id": "sprm-334",
+    "nazev": "Vybavení specializovaných učeben",
+    "osa": "Sociální oblast",
+    "opatreni": "4. Základní školy",
+    "stav_v_evidenci": "Plánováno",
+    "komentar": null,
+    "faze": "namet",
+    "jistota": "dolozeno",
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+  },
+  {
+    "typ": "namet",
+    "id": "sprm-339",
+    "nazev": "Spolupráce s místními zaměstnavateli",
+    "osa": "Sociální oblast",
+    "opatreni": "5. Střední školy",
+    "stav_v_evidenci": "Plánováno",
+    "komentar": null,
+    "faze": "namet",
+    "jistota": "dolozeno",
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+  },
+  {
+    "typ": "namet",
+    "id": "sprm-342",
+    "nazev": "Podpora sportovních oddílů",
+    "osa": "Sociální oblast",
+    "opatreni": "6. Volnočasové aktivity",
+    "stav_v_evidenci": "Plánováno",
+    "komentar": null,
+    "faze": "namet",
+    "jistota": "dolozeno",
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+  },
+  {
+    "typ": "namet",
+    "id": "sprm-346",
+    "nazev": "Podpora kulturních akcí v Třeboni",
+    "osa": "Kultura",
+    "opatreni": "2. Kulturní akce",
+    "stav_v_evidenci": "Plánováno",
+    "komentar": null,
+    "faze": "namet",
+    "jistota": "dolozeno",
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+  },
+  {
+    "typ": "namet",
+    "id": "sprm-354",
+    "nazev": "Nový web města",
+    "osa": "Kultura",
+    "opatreni": "4. Občanská vybavenost",
+    "stav_v_evidenci": "Plánováno",
+    "komentar": null,
+    "faze": "namet",
+    "jistota": "dolozeno",
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+  },
+  {
+    "typ": "namet",
+    "id": "sprm-360",
+    "nazev": "Podpora JHK",
+    "osa": "Podnikání",
+    "opatreni": "1. Podnikatelské prostředí",
+    "stav_v_evidenci": "Plánováno",
+    "komentar": null,
+    "faze": "namet",
+    "jistota": "dolozeno",
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+  },
+  {
+    "typ": "namet",
+    "id": "sprm-361",
+    "nazev": "Pořádání podnikatelských fór",
+    "osa": "Podnikání",
+    "opatreni": "1. Podnikatelské prostředí",
+    "stav_v_evidenci": "Plánováno",
+    "komentar": null,
+    "faze": "namet",
+    "jistota": "dolozeno",
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+  },
+  {
+    "typ": "namet",
+    "id": "sprm-367",
+    "nazev": "Spolupráce škol s podnikateli",
+    "osa": "Podnikání",
+    "opatreni": "3. Spolupráce školy-podnikatelé",
+    "stav_v_evidenci": "Plánováno",
+    "komentar": null,
+    "faze": "namet",
+    "jistota": "dolozeno",
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+  },
+  {
+    "typ": "namet",
+    "id": "sprm-370",
+    "nazev": "Zachování rozvojových ploch pro bydlení",
+    "osa": "Podnikání",
+    "opatreni": "5. Rozvoj bydlení",
+    "stav_v_evidenci": "Plánováno",
+    "komentar": null,
+    "faze": "namet",
+    "jistota": "dolozeno",
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+  },
+  {
+    "typ": "namet",
+    "id": "sprm-373",
+    "nazev": "Zapisování brownfieldů do databáze",
+    "osa": "Podnikání",
+    "opatreni": "6. Brownfieldy",
+    "stav_v_evidenci": "Plánováno",
+    "komentar": null,
+    "faze": "namet",
+    "jistota": "dolozeno",
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+  },
+  {
+    "typ": "namet",
+    "id": "sprm-374",
+    "nazev": "Revitalizace brownfieldů",
+    "osa": "Podnikání",
+    "opatreni": "6. Brownfieldy",
+    "stav_v_evidenci": "Plánováno",
+    "komentar": null,
+    "faze": "namet",
+    "jistota": "dolozeno",
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+  },
+  {
+    "typ": "namet",
+    "id": "sprm-381",
+    "nazev": "Výstavba parkovacích domů pro lázně",
+    "osa": "Cestovní ruch",
+    "opatreni": "1. Lázeňství",
+    "stav_v_evidenci": "Plánováno",
+    "komentar": null,
+    "faze": "namet",
+    "jistota": "dolozeno",
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+  },
+  {
+    "typ": "namet",
+    "id": "sprm-383",
+    "nazev": "Zvyšování kvalifikace lázeňského personálu",
+    "osa": "Cestovní ruch",
+    "opatreni": "1. Lázeňství",
+    "stav_v_evidenci": "Plánováno",
+    "komentar": null,
+    "faze": "namet",
+    "jistota": "dolozeno",
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+  },
+  {
+    "typ": "namet",
+    "id": "sprm-384",
+    "nazev": "Podpora činnosti destinačního managementu",
+    "osa": "Cestovní ruch",
+    "opatreni": "2. Produkty CR",
+    "stav_v_evidenci": "Plánováno",
+    "komentar": null,
+    "faze": "namet",
+    "jistota": "dolozeno",
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+  },
+  {
+    "typ": "namet",
+    "id": "sprm-385",
+    "nazev": "Tvorba produktů pro mimosezónu",
+    "osa": "Cestovní ruch",
+    "opatreni": "2. Produkty CR",
+    "stav_v_evidenci": "Plánováno",
+    "komentar": null,
+    "faze": "namet",
+    "jistota": "dolozeno",
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+  },
+  {
+    "typ": "namet",
+    "id": "sprm-386",
+    "nazev": "Rozšíření nabídky pro rodiny s dětmi",
+    "osa": "Cestovní ruch",
+    "opatreni": "2. Produkty CR",
+    "stav_v_evidenci": "Plánováno",
+    "komentar": null,
+    "faze": "namet",
+    "jistota": "dolozeno",
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+  },
+  {
+    "typ": "namet",
+    "id": "sprm-388",
+    "nazev": "Podpora certifikace ubytování",
+    "osa": "Cestovní ruch",
+    "opatreni": "3. Standard služeb",
+    "stav_v_evidenci": "Plánováno",
+    "komentar": null,
+    "faze": "namet",
+    "jistota": "dolozeno",
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+  },
+  {
+    "typ": "namet",
+    "id": "sprm-392",
+    "nazev": "Instalace vybavení pro cykloturisty",
+    "osa": "Cestovní ruch",
+    "opatreni": "4. Turistika a cykloturistika",
+    "stav_v_evidenci": "Plánováno",
+    "komentar": null,
+    "faze": "namet",
+    "jistota": "dolozeno",
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+  }
+]
