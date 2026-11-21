@@ -398,6 +398,8 @@ def sestav(koren: Path | None = None) -> tuple[dict[str, list], list[str]]:
     # mapa investic (#180): ulice liniově, budovy bodově (RÚIAN), náměty SPRM bodově
     vystup["mapa"], chyby_m, _upozorneni_m = modul_mapa.sestav(
         koren, vystup["projekty"], vystup["zasobnik"], modul_zasobnik.nacti(koren), modul_projekty.nacti_sprm(koren)[0])
+    for u in _upozorneni_m:
+        print(f"UPOZORNĚNÍ: {u}", file=sys.stderr)
     chyby += chyby_m
     # měkké aktivity: karty míst a služeb + proud „Co se mění“ (#183); místa jsou body na mapě
     vystup["mista"], vystup["zmeny"], chyby_mi = modul_mista.sestav(koren, vystup, vystup["projekty"], vystup["zasobnik"])
