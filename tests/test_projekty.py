@@ -437,3 +437,21 @@ def test_ramcova_smlouva_se_nepritahne_pres_navazanou_dilci():
     p = {"id": "x", "nazev": "X", "vazby": {"hledat": ["Budějovick"], "vyloucit": ["[Rr]ámcov"]}}
     k = pr.sestav_projekt(p, data(smlouvy=sm))
     assert [s["id"] for s in k["smlouvy"]] == ["a"]
+
+
+def test_prirazeni_sprm_pravidlem_a_z_yaml():
+    akt = {280: {"id": 280, "aktivita": "Komplexní rekonstrukce komunikací vč. sítí", "opatreni": "2. Technická infrastruktura",
+                 "osa_nazev": "Doprava", "stav": "Plánováno"},
+           351: {"id": 351, "aktivita": "Budování dětských hřišť", "opatreni": "3. Sportovní infrastruktura",
+                 "osa_nazev": "Kultura", "stav": "Hotovo"}}
+    pravidla = [{"vzor": r"\bMK\b", "sprm_id": 280, "potvrzeno": False}, {"vzor": "hřiště", "sprm_id": 351, "potvrzeno": True}]
+    (s,) = pr.prirad_sprm({"nazev": "Stavební úpravy MK v ul. Budějovické"}, {}, akt, pravidla)
+    assert s["id"] == 280 and s["potvrzeno"] is False and s["opatreni"] == "2. Technická infrastruktura"
+    (s,) = pr.prirad_sprm({"nazev": "Dětské HŘIŠTĚ Kopeček".replace("HŘIŠTĚ", "hřiště")}, {}, akt, pravidla)
+    assert s["id"] == 351 and s["potvrzeno"] is True
+    assert pr.prirad_sprm({"nazev": "Kašna"}, {}, akt, pravidla) == []
+    # YAML karty má přednost a je potvrzené; prázdný seznam = výslovně k žádnému opatření
+    (s,) = pr.prirad_sprm({"nazev": "Stavební úpravy MK"}, {"sprm": [351]}, akt, pravidla)
+    assert s["id"] == 351 and s["potvrzeno"] is True
+    assert pr.prirad_sprm({"nazev": "Stavební úpravy MK"}, {"sprm": []}, akt, pravidla) == []
+    assert pr.prirad_sprm({"nazev": "Stavební úpravy MK"}, {}, {}, pravidla) == []

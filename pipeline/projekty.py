@@ -16,6 +16,7 @@ zakázky (E-ZAK), smlouvy (registr) a usnesení. Všechno ostatní dopočítá k
 """
 from __future__ import annotations
 
+import json
 import re
 from pathlib import Path
 
@@ -716,8 +717,56 @@ def faze(zakazky: list[dict], smlouvy: list[dict]) -> str:
     return "pripravuje_se"
 
 
+def nacti_sprm(koren: Path) -> tuple[dict, list[dict]]:
+    """Aktivity SPRM (raw/sprm/projekty.json) podle id a pravidla přiřazení (config/sprm_pravidla.yaml)."""
+    cesta = koren / "raw" / "sprm" / "projekty.json"
+    aktivity = {int(a["id"]): a for a in json.loads(cesta.read_text(encoding="utf-8"))} if cesta.exists() else {}
+    pr_cesta = koren / "config" / "sprm_pravidla.yaml"
+    pravidla = yaml.safe_load(pr_cesta.read_text(encoding="utf-8")) or [] if pr_cesta.exists() else []
+    return aktivity, pravidla
+
+
+def prirad_sprm(karta: dict, yaml_projekt: dict, aktivity: dict, pravidla: list[dict]) -> list[dict]:
+    """Opatření SPRM karty (#168): `sprm: [id]` v YAML karty (potvrzeno), jinak pravidla podle názvu a popisu
+    (návrh, dokud ho Ondřej nepotvrdí). Prázdný seznam = karta nepatří k žádnému opatření (nebo nevíme)."""
+    if not aktivity:
+        return []
+    if yaml_projekt.get("sprm") is not None:
+        ids, potvrzeno, text = [int(x) for x in yaml_projekt.get("sprm") or []], True, ""
+    else:
+        text = " ".join(filter(None, [karta["nazev"], karta.get("popis")]))
+        shody = [pr for pr in pravidla if re.search(pr["vzor"], text, re.I)]
+        ids = list(dict.fromkeys(int(pr["sprm_id"]) for pr in shody))
+        potvrzeno = None
+    vysledek = []
+    for i in ids:
+        a = aktivity.get(i)
+        if not a:
+            continue
+        shody_i = [pr for pr in pravidla if int(pr["sprm_id"]) == i and re.search(pr["vzor"], text, re.I)]
+        pot = potvrzeno if potvrzeno is not None else all(pr.get("potvrzeno") for pr in shody_i)
+        ai = potvrzeno is None  # návrh z pravidel Clauda; `sprm: [id]` v YAML je ruční (Ondřej)
+        citace = re.search(shody_i[0]["vzor"], text, re.I).group(0) if ai and shody_i else None
+        # citace = doslovný úsek názvu/popisu karty, na který pravidlo sedlo; ověřuje ho kód
+        overeni = ("overeno_kodem" if citace and citace.lower() in text.lower() else "navrh") if ai else "schvaleno"
+        vysledek.append({"id": i, "sprm_ai": ai, "citace": citace, "overeni": overeni, "aktivita": a["aktivita"], "opatreni": a.get("opatreni"),
+                         "osa": a.get("osa_nazev"), "stav_v_evidenci": a.get("stav"),
+                         "potvrzeno": bool(pot), "jistota": "nase_propojeni",
+                         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"})
+    return vysledek
+
+
 def sestav(koren: Path, data: dict) -> tuple[list[dict], list[str]]:
     chyby, vysledek, ids = [], [], set()
+    aktivity, pravidla = nacti_sprm(koren)
+    for pr in pravidla:
+        try:
+            re.compile(pr["vzor"])
+        except re.error as e:
+            chyby.append(f"sprm_pravidla: chybný vzor {pr.get('vzor')!r}: {e}")
+        if aktivity and int(pr["sprm_id"]) not in aktivity:
+            chyby.append(f"sprm_pravidla: aktivita {pr['sprm_id']} v evidenci SPRM není")
+    yaml_podle_id = {}
     for p in nacti_projekty(koren):
         for pole in ("id", "nazev", "vazby"):
             if not p.get(pole):
@@ -739,9 +788,17 @@ def sestav(koren: Path, data: dict) -> tuple[list[dict], list[str]]:
         for nazev in (p.get("rozpocet") or {}).get("schvaleny") or []:
             if roky and normalizuj_nazev(nazev) not in nazvy_roku:
                 chyby.append(f"projekt {p['id']}: položka schváleného rozpočtu {nazev!r} v rozpočtu není")
+        for i in p.get("sprm") or []:
+            if aktivity and int(i) not in aktivity:
+                chyby.append(f"projekt {p['id']}: aktivita SPRM {i} v evidenci není")
+        yaml_podle_id[p["id"]] = p
         vysledek.append(sestav_projekt(p, data))
     if not chyby:
-        vysledek += [sestav_projekt(p, data) for p in automaticke_projekty(data, vysledek)]
+        auto = automaticke_projekty(data, vysledek)
+        yaml_podle_id.update({p["id"]: p for p in auto})
+        vysledek += [sestav_projekt(p, data) for p in auto]
+    for k in vysledek:
+        k["sprm"] = prirad_sprm(k, yaml_podle_id.get(k["id"], {}), aktivity, pravidla)
     return vysledek, chyby
 
 
