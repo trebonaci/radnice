@@ -176,6 +176,7 @@ def sestav_projekt(p: dict, data: dict) -> dict:
             casti.append({"nazev": c["nazev"], "stav": c["stav"], "pocet_nabidek": c["pocet_nabidek"],
                           "datum_uverejneni": c["datum_uverejneni"],
                           "datum_uzavreni_smlouvy": c["datum_uzavreni_smlouvy"], "vitezove": vitezove,
+                          "datum_zruseni": c.get("datum_zruseni"),
                           "registr_smluv": c.get("registr_smluv", [])})
             if c["datum_uverejneni"] or c.get("lhuta_nabidek"):
                 # Délka výběrového řízení (#136): od zveřejnění do podpisu smlouvy. Malé zakázky E-ZAK často
@@ -192,7 +193,14 @@ def sestav_projekt(p: dict, data: dict) -> dict:
                 predmet = "stavba" if r_ == "stavba" else kratky_popis(r_, z["nazev"])
                 n = c.get("pocet_nabidek")
                 nabidky = (f"{n} nabídka" if n == 1 else f"{n} nabídky" if 2 <= n <= 4 else f"{n} nabídek") if n else None
-                if rizeni is not None:
+                zruseno = c.get("stav") == "zrušen"
+                if zruseno:
+                    # zrušené řízení smlouvu mít nemůže (#146): datum zrušení z E-ZAK místo „smlouva zatím není“
+                    dz = c.get("datum_zruseni")
+                    trvani = dni_mezi(zacatek, dz) if zacatek and dz else None
+                    doba = ("řízení zrušeno" + (f" {'. '.join(x.lstrip('0') for x in reversed(dz[:10].split('-')))}" if dz else "")
+                            + (f" po {trvani} dnech" if trvani is not None else ""))
+                elif rizeni is not None:
                     doba = f"od vyhlášení do smlouvy {rizeni} dní" + (f" (lhůta pro nabídky {lhuta} dní)" if lhuta else "")
                 elif lhuta is not None:
                     doba = f"lhůta pro nabídky {lhuta} dní, smlouva zatím není"
@@ -204,6 +212,7 @@ def sestav_projekt(p: dict, data: dict) -> dict:
                                  "kategorie": "výběrové řízení",
                                  "kratce": ", ".join(x for x in [predmet, doba, nabidky] if x),
                                  "lhuta_dni": lhuta, "rizeni_dni": rizeni, "po_nabidkach_dni": po_nabidkach,
+                                 "zruseno": zruseno, "datum_zruseni": c.get("datum_zruseni"),
                                  "pocet_nabidek": n, "url": z["url"],
                                  "role": r_, "zdroj_id": z["id"], "jistota": "nase_propojeni"})
         zakazky.append({"id": z["id"], "nazev": z["nazev"], "role": r_, "stav": z["stav"],

@@ -360,6 +360,7 @@
                 "zaplaceno": []
               }
             ],
+            "datum_zruseni": null,
             "registr_smluv": []
           }
         ],
@@ -465,6 +466,8 @@
         "lhuta_dni": null,
         "rizeni_dni": null,
         "po_nabidkach_dni": 8,
+        "zruseno": false,
+        "datum_zruseni": null,
         "pocet_nabidek": 3,
         "url": "https://zakazky.mesto-trebon.cz/contract_display_966.html",
         "role": "stavba",
@@ -648,6 +651,7 @@
                 "zaplaceno": []
               }
             ],
+            "datum_zruseni": null,
             "registr_smluv": [
               "https://smlouvy.gov.cz/smlouva/39122658"
             ]
@@ -766,6 +770,8 @@
         "lhuta_dni": 9,
         "rizeni_dni": 23,
         "po_nabidkach_dni": 14,
+        "zruseno": false,
+        "datum_zruseni": null,
         "pocet_nabidek": 7,
         "url": "https://zakazky.mesto-trebon.cz/contract_display_947.html",
         "role": "stavba",
@@ -1237,6 +1243,7 @@
             "datum_uverejneni": "2024-08-28",
             "datum_uzavreni_smlouvy": null,
             "vitezove": [],
+            "datum_zruseni": "2024-09-24",
             "registr_smluv": []
           }
         ],
@@ -1301,6 +1308,7 @@
                 ]
               }
             ],
+            "datum_zruseni": null,
             "registr_smluv": []
           }
         ],
@@ -1355,6 +1363,7 @@
                 ]
               }
             ],
+            "datum_zruseni": null,
             "registr_smluv": []
           }
         ],
@@ -1409,6 +1418,7 @@
                 ]
               }
             ],
+            "datum_zruseni": null,
             "registr_smluv": []
           }
         ],
@@ -1568,10 +1578,12 @@
         "typ": "soutez",
         "text": "Soutěž: Zhotovení PD, příkazní činnost a výkon AD pro – Rozšíření balneo provozu – lázeňský dům Aurora",
         "kategorie": "výběrové řízení",
-        "kratce": "projektová dokumentace, lhůta pro nabídky 22 dní, smlouva zatím není",
+        "kratce": "projektová dokumentace, řízení zrušeno 24. 9. 2024 po 27 dnech",
         "lhuta_dni": 22,
         "rizeni_dni": null,
         "po_nabidkach_dni": null,
+        "zruseno": true,
+        "datum_zruseni": "2024-09-24",
         "pocet_nabidek": 0,
         "url": "https://zakazky.mesto-trebon.cz/contract_display_795.html",
         "role": "projekt",
@@ -1587,6 +1599,8 @@
         "lhuta_dni": 10,
         "rizeni_dni": 30,
         "po_nabidkach_dni": 20,
+        "zruseno": false,
+        "datum_zruseni": null,
         "pocet_nabidek": 2,
         "url": "https://zakazky.mesto-trebon.cz/contract_display_805.html",
         "role": "projekt",
@@ -1602,6 +1616,8 @@
         "lhuta_dni": 32,
         "rizeni_dni": 64,
         "po_nabidkach_dni": 32,
+        "zruseno": false,
+        "datum_zruseni": null,
         "pocet_nabidek": 2,
         "url": "https://zakazky.mesto-trebon.cz/contract_display_880.html",
         "role": "stavba",
@@ -1617,6 +1633,8 @@
         "lhuta_dni": null,
         "rizeni_dni": null,
         "po_nabidkach_dni": 6,
+        "zruseno": false,
+        "datum_zruseni": null,
         "pocet_nabidek": 2,
         "url": "https://zakazky.mesto-trebon.cz/contract_display_893.html",
         "role": "technicky_dozor",
@@ -2023,6 +2041,7 @@
                 "zaplaceno": []
               }
             ],
+            "datum_zruseni": null,
             "registr_smluv": []
           }
         ],
@@ -2042,6 +2061,7 @@
             "datum_uverejneni": "2025-10-10",
             "datum_uzavreni_smlouvy": null,
             "vitezove": [],
+            "datum_zruseni": "2025-12-02",
             "registr_smluv": []
           }
         ],
@@ -2085,6 +2105,7 @@
                 "zaplaceno": []
               }
             ],
+            "datum_zruseni": null,
             "registr_smluv": []
           }
         ],
@@ -2128,6 +2149,7 @@
                 "zaplaceno": []
               }
             ],
+            "datum_zruseni": null,
             "registr_smluv": []
           }
         ],
@@ -2171,6 +2193,7 @@
                 "zaplaceno": []
               }
             ],
+            "datum_zruseni": null,
             "registr_smluv": []
           }
         ],
@@ -2190,6 +2213,7 @@
             "datum_uverejneni": "2026-09-14",
             "datum_uzavreni_smlouvy": null,
             "vitezove": [],
+            "datum_zruseni": null,
             "registr_smluv": []
           }
         ],
@@ -2209,6 +2233,7 @@
             "datum_uverejneni": "2026-10-07",
             "datum_uzavreni_smlouvy": null,
             "vitezove": [],
+            "datum_zruseni": null,
             "registr_smluv": []
           }
         ],
@@ -2347,6 +2372,8 @@
         "lhuta_dni": null,
         "rizeni_dni": null,
         "po_nabidkach_dni": 3,
+        "zruseno": false,
+        "datum_zruseni": null,
         "pocet_nabidek": 3,
         "url": "https://zakazky.mesto-trebon.cz/contract_display_837.html",
         "role": "projekt",
@@ -2369,10 +2396,12 @@
         "typ": "soutez",
         "text": "Soutěž: Stavební úpravy budovy G – LDA s nástavbou administrativních a ubytovacích kapacit",
         "kategorie": "výběrové řízení",
-        "kratce": "stavba, lhůta pro nabídky 48 dní, smlouva zatím není",
+        "kratce": "stavba, řízení zrušeno 2. 12. 2025 po 53 dnech",
         "lhuta_dni": 48,
         "rizeni_dni": null,
         "po_nabidkach_dni": null,
+        "zruseno": true,
+        "datum_zruseni": "2025-12-02",
         "pocet_nabidek": 0,
         "url": "https://zakazky.mesto-trebon.cz/contract_display_891.html",
         "role": "stavba",
@@ -2388,6 +2417,8 @@
         "lhuta_dni": 36,
         "rizeni_dni": 68,
         "po_nabidkach_dni": 32,
+        "zruseno": false,
+        "datum_zruseni": null,
         "pocet_nabidek": 2,
         "url": "https://zakazky.mesto-trebon.cz/contract_display_912.html",
         "role": "stavba",
@@ -2414,6 +2445,8 @@
         "lhuta_dni": null,
         "rizeni_dni": null,
         "po_nabidkach_dni": 2,
+        "zruseno": false,
+        "datum_zruseni": null,
         "pocet_nabidek": 3,
         "url": "https://zakazky.mesto-trebon.cz/contract_display_913.html",
         "role": "technicky_dozor",
@@ -2429,6 +2462,8 @@
         "lhuta_dni": 32,
         "rizeni_dni": 76,
         "po_nabidkach_dni": 44,
+        "zruseno": false,
+        "datum_zruseni": null,
         "pocet_nabidek": 3,
         "url": "https://zakazky.mesto-trebon.cz/contract_display_946.html",
         "role": "vybaveni",
@@ -2468,6 +2503,8 @@
         "lhuta_dni": 29,
         "rizeni_dni": null,
         "po_nabidkach_dni": null,
+        "zruseno": false,
+        "datum_zruseni": null,
         "pocet_nabidek": 0,
         "url": "https://zakazky.mesto-trebon.cz/contract_display_962.html",
         "role": "vybaveni",
@@ -2483,6 +2520,8 @@
         "lhuta_dni": 15,
         "rizeni_dni": null,
         "po_nabidkach_dni": null,
+        "zruseno": false,
+        "datum_zruseni": null,
         "pocet_nabidek": 0,
         "url": "https://zakazky.mesto-trebon.cz/contract_display_963.html",
         "role": "vybaveni",
@@ -2499,6 +2538,8 @@
       "lhuta_dni": 15,
       "rizeni_dni": null,
       "po_nabidkach_dni": null,
+      "zruseno": false,
+      "datum_zruseni": null,
       "pocet_nabidek": 0,
       "url": "https://zakazky.mesto-trebon.cz/contract_display_963.html",
       "role": "vybaveni",
@@ -2729,6 +2770,7 @@
                 ]
               }
             ],
+            "datum_zruseni": null,
             "registr_smluv": []
           }
         ],
@@ -2772,6 +2814,7 @@
                 "zaplaceno": []
               }
             ],
+            "datum_zruseni": null,
             "registr_smluv": []
           }
         ],
@@ -2886,6 +2929,8 @@
         "lhuta_dni": null,
         "rizeni_dni": null,
         "po_nabidkach_dni": 20,
+        "zruseno": false,
+        "datum_zruseni": null,
         "pocet_nabidek": 2,
         "url": "https://zakazky.mesto-trebon.cz/contract_display_831.html",
         "role": "projekt",
@@ -2901,6 +2946,8 @@
         "lhuta_dni": 35,
         "rizeni_dni": 86,
         "po_nabidkach_dni": 51,
+        "zruseno": false,
+        "datum_zruseni": null,
         "pocet_nabidek": 4,
         "url": "https://zakazky.mesto-trebon.cz/contract_display_949.html",
         "role": "stavba",
@@ -3544,6 +3591,7 @@
                 ]
               }
             ],
+            "datum_zruseni": null,
             "registr_smluv": []
           }
         ],
@@ -3602,6 +3650,7 @@
                 "zaplaceno": []
               }
             ],
+            "datum_zruseni": null,
             "registr_smluv": [
               "https://smlouvy.gov.cz/smlouva/36387317",
               "https://smlouvy.gov.cz/smlouva/37282997",
@@ -4207,6 +4256,8 @@
         "lhuta_dni": null,
         "rizeni_dni": null,
         "po_nabidkach_dni": 16,
+        "zruseno": false,
+        "datum_zruseni": null,
         "pocet_nabidek": 1,
         "url": "https://zakazky.mesto-trebon.cz/contract_display_877.html",
         "role": "projekt",
@@ -4244,6 +4295,8 @@
         "lhuta_dni": 38,
         "rizeni_dni": 61,
         "po_nabidkach_dni": 23,
+        "zruseno": false,
+        "datum_zruseni": null,
         "pocet_nabidek": 1,
         "url": "https://zakazky.mesto-trebon.cz/contract_display_901.html",
         "role": "stavba",
@@ -4652,6 +4705,7 @@
                 "zaplaceno": []
               }
             ],
+            "datum_zruseni": null,
             "registr_smluv": []
           }
         ],
@@ -4709,6 +4763,8 @@
         "lhuta_dni": null,
         "rizeni_dni": null,
         "po_nabidkach_dni": 19,
+        "zruseno": false,
+        "datum_zruseni": null,
         "pocet_nabidek": 2,
         "url": "https://zakazky.mesto-trebon.cz/contract_display_960.html",
         "role": "stavba",
@@ -5442,6 +5498,7 @@
                 ]
               }
             ],
+            "datum_zruseni": null,
             "registr_smluv": []
           }
         ],
@@ -5511,6 +5568,7 @@
                 ]
               }
             ],
+            "datum_zruseni": null,
             "registr_smluv": [
               "https://smlouvy.gov.cz/smlouva/36192945",
               "https://smlouvy.gov.cz/smlouva/37638541",
@@ -5561,6 +5619,7 @@
                 "zaplaceno": []
               }
             ],
+            "datum_zruseni": null,
             "registr_smluv": []
           }
         ],
@@ -6335,6 +6394,8 @@
         "lhuta_dni": null,
         "rizeni_dni": null,
         "po_nabidkach_dni": 9,
+        "zruseno": false,
+        "datum_zruseni": null,
         "pocet_nabidek": 1,
         "url": "https://zakazky.mesto-trebon.cz/contract_display_810.html",
         "role": "projekt",
@@ -6361,6 +6422,8 @@
         "lhuta_dni": 41,
         "rizeni_dni": 110,
         "po_nabidkach_dni": 69,
+        "zruseno": false,
+        "datum_zruseni": null,
         "pocet_nabidek": 4,
         "url": "https://zakazky.mesto-trebon.cz/contract_display_883.html",
         "role": "stavba",
@@ -6431,6 +6494,8 @@
         "lhuta_dni": 16,
         "rizeni_dni": 31,
         "po_nabidkach_dni": 15,
+        "zruseno": false,
+        "datum_zruseni": null,
         "pocet_nabidek": 5,
         "url": "https://zakazky.mesto-trebon.cz/contract_display_936.html",
         "role": "vybaveni",

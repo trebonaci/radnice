@@ -252,6 +252,16 @@ def test_soutez_zverejnena_po_lhute_bez_doby_trvani():
     assert e["datum"] == "2026-07-22" and e["kratce"] == "stavba, 2 nabídky" and e["lhuta_dni"] is None
 
 
+def test_zrusene_rizeni_bez_smlouvy():
+    zak = {"id": "ezak-VZ-891", "nazev": "Přístavba dvou tělocvičen", "stav": "zrušen", "url": "e",
+           "casti": [{"nazev": "x", "stav": "zrušen", "pocet_nabidek": 1, "datum_uverejneni": "2025-10-10",
+                      "lhuta_nabidek": "2025-11-27", "datum_uzavreni_smlouvy": None, "datum_zruseni": "2025-12-02",
+                      "vitezove": []}]}
+    e = next(x for x in pr.sestav_projekt(PROJEKT, data(zakazky=[zak]))["udalosti"] if x["typ"] == "soutez")
+    assert e["zruseno"] and e["kratce"] == "stavba, řízení zrušeno 2. 12. 2025 po 53 dnech, 1 nabídka"
+    assert "smlouva" not in e["kratce"]
+
+
 def test_kratce_usneseni():
     assert pr.kratce_usneseni({"vysledek_hlasovani": "prijato", "text": "uzavření Dodatku č. 5 ke smlouvě o dílo"}) == \
         "schválení dodatku 5"
