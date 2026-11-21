@@ -82,6 +82,8 @@ Jeden ověřitelný krok projektu nebo téma, které zatím nemá potvrzenou vaz
 ### ukazatel (datový přehled)
 `id`, `nazev`, `hodnota` (číslo nebo řada), `jednotka`, `obdobi`, `definice`, `vypocet` (skript), `zdroj`, `zkontrolovano`, `srovnatelnost`
 
+Výstup `data/ukazatele.json` (#177, `pipeline/ukazatele.py`): `obdobi` = {`od`, `do`}, `zdroj` = [{`nazev`, `url`}]; řada = [{`klic`, `nazev`, `hodnota`, …}]. Ukazatele: `jednani` (podle orgánu), `usneseni-oblasti` (+ `celkem`, `neprijato`; usnesení může mít víc oblastí, řada se nesčítá), `smlouvy-organizace` (zveřejněné v registru od 3/2024, verze jednou, smlouva dvou sledovaných organizací u obou; `podle_let`), `zakazky-organizace` (`podle_let`, `podle_stavu`), `dotace-oblasti` (počet a součet jednoho druhu `dotace_priznana`; jiný druh = chyba), `investice-rozpocet` (oblasti bez rezervy; `schvaleny` a `po_zmenach` bez rezervy), `investicni-akce` (karty podle fáze, `zasobnik`, `namety`). Zobrazuje je modul `web/radnice/`.
+
 ### sprm_opatreni
 Ze Strategického plánu 2021–2030. Zdroj: existující WordPress evidence `trebonaci_projekt` na trebonaci.cz (endpoint `/projekty`). Před rozšířením se její pole zmapují; druhý katalog SPRM nevytvářet bez rozhodnutí.
 
