@@ -26,7 +26,8 @@ RE_INSTITUCE = re.compile(r"^(?:město|obec|městys|statutární město|kraj|min
                           re.IGNORECASE)
 
 
-RE_ODSTEPNY = re.compile(r"(?:a\.\s?s\.?|s\.\s?r\.\s?o\.?)\s*,\s*(?:odštěpný závod|organizační složka)", re.IGNORECASE)
+# právní forma uprostřed názvu: „…, a.s., odštěpný závod“, „Kooperativa pojišťovna, a.s., Vienna Insurance Group“
+RE_ODSTEPNY = re.compile(r"(?:\ba\.\s?s\.|s\.\s?r\.\s?o\.)\s*,\s*\S", re.IGNORECASE)
 
 
 # Školy, ústavy, spolky a další organizace bez právní formy na konci názvu (ostrý běh 20. 11. 2026:

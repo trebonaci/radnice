@@ -713,34 +713,6 @@
  },
  {
   "identifikator": {
-   "idSmlouvy": "37932849",
-   "idVerze": "40329241"
-  },
-  "odkaz": "https://smlouvy.gov.cz/smlouva/40329241",
-  "casZverejneni": "2026-11-12T11:38:20+01:00",
-  "smlouva": {
-   "subjekt": {
-    "datovaSchranka": "9tcgadk",
-    "nazev": "Ústav výzkumu globální změny AV ČR, v. v. i.",
-    "ico": "86652079",
-    "adresa": "Bělidla 986/4a, 60300 Brno, CZ"
-   },
-   "smluvniStrana": {
-    "datovaSchranka": "4cbbvj4",
-    "nazev": "Město Třeboň",
-    "ico": "00247618",
-    "adresa": "Palackého nám. 46, Třeboň II, 37901, Třeboň",
-    "prijemce": "1",
-    "identifikace": "OVM"
-   },
-   "predmet": "Smlouva o nájmu kancelářských prostor",
-   "datumUzavreni": "2026-11-11",
-   "cisloSmlouvy": "1477/2026"
-  },
-  "platnyZaznam": "1"
- },
- {
-  "identifikator": {
    "idSmlouvy": "37934649",
    "idVerze": "40331125"
   },
@@ -1222,5 +1194,66 @@
   },
   "platnyZaznam": "1",
   "navazanyZaznam": "https://smlouvy.gov.cz/smlouva/37436189"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "38022881",
+   "idVerze": "40422561"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/40422561",
+  "casZverejneni": "2026-11-20T10:01:33+01:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "7pehv9f",
+    "nazev": "Slatinné lázně Třeboň s.r.o.",
+    "ico": "25179896",
+    "adresa": "Lázeňská 1001, 37901 Třeboň, CZ"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "kjpbtju",
+    "nazev": "WEISHAUPT s.r.o.",
+    "ico": "43871933",
+    "adresa": "Strašnická 3177/1c, Záběhlice, 10200, Praha 10",
+    "identifikace": "PO"
+   },
+   "predmet": "Objednávka - výměna bezpečnostních komponent u plyn.kotlů",
+   "datumUzavreni": "2026-11-11",
+   "cisloSmlouvy": "10OB261535",
+   "schvalil": "prof. JUDr. Vilém Kahoun, Ph.D.",
+   "hodnotaBezDph": "158114.66"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "38026233",
+   "idVerze": "40426169"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/40426169",
+  "casZverejneni": "2026-11-20T12:01:31+01:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "4cbbvj4",
+    "nazev": "Město Třeboň",
+    "ico": "00247618",
+    "adresa": "Město Třeboň,  Palackého nám. 46/II,  37901 Třeboň",
+    "utvar": "Neurčeno",
+    "platce": "1"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "im96g5p",
+    "nazev": "Ing. Vladimír Knapík",
+    "ico": "49042963",
+    "adresa": "Táboritská 1104,  37901 Třeboň",
+    "prijemce": "1",
+    "identifikace": "PFO"
+   },
+   "predmet": "DPS Oprava radniční věže č.p. 1/I v Třeboni, výkaz výměr a položkový rozpočet.",
+   "datumUzavreni": "2026-11-10",
+   "cisloSmlouvy": "750/9862/26",
+   "hodnotaBezDph": "67500",
+   "hodnotaVcetneDph": "81675"
+  },
+  "platnyZaznam": "1"
  }
 ]

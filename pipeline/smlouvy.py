@@ -88,6 +88,19 @@ def castky(sml: dict, zdroj: str, misto: str) -> list[dict]:
     return vysledek
 
 
+def _kmeny_prijmeni(slovo: str) -> list[str]:
+    """Kmeny pro skloňované tvary příjmení (jen s velkým písmenem, aby se nemaskovala obecná slova):
+    pohyblivé e („Plaček“ → „Plačk“), ženský tvar („Nováková“ → „Novák“), koncová samohláska („Svoboda“ → „Svobod“)."""
+    kmeny = []
+    if re.search(r"e[kc]$", slovo):
+        kmeny.append(slovo[:-2] + slovo[-1])
+    if slovo.endswith("ová"):
+        kmeny.append(slovo[:-3])
+    elif slovo[-1] in "aeiouyáéíóúůý":
+        kmeny.append(slovo[:-1])
+    return [k for k in kmeny if len(k) >= 4]
+
+
 def _skryj_fo(predmet, strany: list[dict], znama: frozenset[str]):
     """Z předmětu odstraní jméno, IČO a adresu smluvních stran, které jsou fyzickými osobami."""
     if not predmet:
@@ -105,6 +118,9 @@ def _skryj_fo(predmet, strany: list[dict], znama: frozenset[str]):
                 for slovo in re.findall(r"[^\W\d_]{4,}", nazev):
                     if slovo[0].isupper():
                         predmet = re.sub(rf"(?<!\w){re.escape(slovo)}(?!\w)", "[jméno]", predmet, flags=re.IGNORECASE)
+                        # skloňované a hromadné tvary příjmení („Plaček“ → „Plačkovi“, „Nováková“ → „Novákovi“)
+                        for kmen in _kmeny_prijmeni(slovo):
+                            predmet = re.sub(rf"(?<!\w){re.escape(kmen)}[^\W\d_]{{0,4}}(?!\w)", "[jméno]", predmet)
     return predmet
 
 
