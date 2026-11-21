@@ -93,6 +93,16 @@
       },
       {
         "typ": "smlouva",
+        "id": "rs-27818027",
+        "text": "Studie dopravního řešení MK a PD DÚR + DPS VO v Jateční ulici v Třeboni.",
+        "datum": "2024-02-29",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/27818027",
+        "stupen": "studie",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "typ": "smlouva",
         "id": "rs-32327428",
         "text": "Zpracování PD Stavební úpravy komunikace v Jateční ulici v Třeboni.",
         "datum": "2025-02-27",
@@ -188,6 +198,16 @@
         "datum": "2024-02-05",
         "ico": "00247618",
         "url": "https://zakazky.mesto-trebon.cz/contract_display_701.html",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "typ": "smlouva",
+        "id": "rs-27521487",
+        "text": "Zpracování projektové dokumentace Stavební úpravy MK ul. Nádražní v Třeboni",
+        "datum": "2024-02-05",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/27521487",
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       },
@@ -1852,6 +1872,16 @@
     },
     "doklady": [
       {
+        "typ": "smlouva",
+        "id": "rs-26582843",
+        "text": "Zpracování PD pro dešťovou kanalizaci v lokalitě U sv. Petra a Pavla v Třeboni.",
+        "datum": "2023-11-22",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/26582843",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      },
+      {
         "typ": "zakazka",
         "id": "ezak-VZ-695",
         "text": "Stavební úpravy MK v ulici U sv. Petra a Pavla v Třeboni (zpracování PD)",
@@ -1872,7 +1902,7 @@
         "jistota": "nase_propojeni"
       }
     ],
-    "prvni_doklad": "2024-01-04",
+    "prvni_doklad": "2023-11-22",
     "odhad": null,
     "zdroj": null,
     "stavby": [
@@ -2602,6 +2632,300 @@
       "datum": "2024-03-11",
       "ico": "00247618",
       "url": "https://smlouvy.gov.cz/smlouva/27936867"
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-27768507",
+    "nazev": "Vypracování projektové dokumentace - oprava fasádních omítek na objektu čp. 20/I, Masarykovo nám., Třeboň",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-27768507",
+      "text": "Vypracování projektové dokumentace - oprava fasádních omítek na objektu čp. 20/I, Masarykovo nám., Třeboň",
+      "datum": "2024-02-26",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/27768507"
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-27521215",
+    "nazev": "Projektová dokumentace - úprava vodohospodářsdkých sítí ulice Táboritská",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-27521215",
+      "text": "Projektová dokumentace - úprava vodohospodářsdkých sítí ulice Táboritská",
+      "datum": "2024-02-05",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/27521215"
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-27521195",
+    "nazev": "Projektová dokumentace - rekonstrukce části kanalizace ulice Daskabát",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-27521195",
+      "text": "Projektová dokumentace - rekonstrukce části kanalizace ulice Daskabát",
+      "datum": "2024-02-05",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/27521195"
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-27402835",
+    "nazev": "Vyprojektování projektové dokumentace na výběr zhotovitele fotovoltaické elektrárny ke snížení energetického řešení u dodávky elektřiny v napěťové hladině VN budov a technologických zařízení v areálu ČOV Třeboň",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-27402835",
+      "text": "Vyprojektování projektové dokumentace na výběr zhotovitele fotovoltaické elektrárny ke snížení energetického řešení u dodávky elektřiny v napěťové hladině VN budov a technologických zařízení v areálu ČOV Třeboň",
+      "datum": "2024-01-25",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/27402835"
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-27396527",
+    "nazev": "Zpracování PD Šustova alej",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-27396527",
+      "text": "Zpracování PD Šustova alej",
+      "datum": "2024-01-25",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/27396527"
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-27688947",
+    "nazev": "Smlouva o dílo PD Lymfodrenáže",
+    "nositele": [
+      {
+        "ico": "25179896",
+        "nazev": "Slatinné lázně Třeboň s.r.o."
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-27688947",
+      "text": "Smlouva o dílo PD Lymfodrenáže",
+      "datum": "2024-01-15",
+      "ico": "25179896",
+      "url": "https://smlouvy.gov.cz/smlouva/27688947"
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-27182587",
+    "nazev": "Smlouva o výpůjčce (nebytové prostory - klubovna důchodců DPS Třeboň)",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-27182587",
+      "text": "Smlouva o výpůjčce (nebytové prostory - klubovna důchodců DPS Třeboň)",
+      "datum": "2024-01-08",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/27182587"
+    },
+    "stupen": "projekt_provadeci",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-27165971",
+    "nazev": "Smlouva o výpůjčce (nebytové prostory- klubovna důchodců DPS Třeboň)",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-27165971",
+      "text": "Smlouva o výpůjčce (nebytové prostory- klubovna důchodců DPS Třeboň)",
+      "datum": "2024-01-04",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/27165971"
+    },
+    "stupen": "projekt_provadeci",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-27163447",
+    "nazev": "Smlouva o výpůjčce (nebytové prostory - klubovna důchodců DPS Třeboň)",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-27163447",
+      "text": "Smlouva o výpůjčce (nebytové prostory - klubovna důchodců DPS Třeboň)",
+      "datum": "2024-01-04",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/27163447"
+    },
+    "stupen": "projekt_provadeci",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-27044403",
+    "nazev": "Aktualizace PD z roku 2013 Rekonstrukce ulice Novohradská a Trocnovské nám. - II. etapa, včetně IČ, VV a pol. rozpočtu.",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-27044403",
+      "text": "Aktualizace PD z roku 2013 Rekonstrukce ulice Novohradská a Trocnovské nám. - II. etapa, včetně IČ, VV a pol. rozpočtu.",
+      "datum": "2023-12-20",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/27044403"
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-26955479",
+    "nazev": "Zpracování projektové dokumentace - Stavební úpravy místní komunikace ulice Sídliště v úseku od silnice III/15512 po REPROGEN v Třeboni",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-26955479",
+      "text": "Zpracování projektové dokumentace - Stavební úpravy místní komunikace ulice Sídliště v úseku od silnice III/15512 po REPROGEN v Třeboni",
+      "datum": "2023-12-18",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/26955479"
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-26583683",
+    "nazev": "Vypracování redukované PD na akci Zateplení přístavby ZŠ Na Sadech, vč. výkazu výměr, položkového rozpočtu a provádění AD.",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-26583683",
+      "text": "Vypracování redukované PD na akci Zateplení přístavby ZŠ Na Sadech, vč. výkazu výměr, položkového rozpočtu a provádění AD.",
+      "datum": "2023-11-21",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/26583683"
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-26503247",
+    "nazev": "Aktualizace projektové dokumentace pro opakované výběrové řízení na zhotovení stavby: Úprava prostranství u Českobudějovické brány, Třeboň",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-26503247",
+      "text": "Aktualizace projektové dokumentace pro opakované výběrové řízení na zhotovení stavby: Úprava prostranství u Českobudějovické brány, Třeboň",
+      "datum": "2023-11-15",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/26503247"
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-26465771",
+    "nazev": "Vypracování projektových dokumentací snižujících energetickou náročnost objektů pro výběr dodavatele fotovoltaických panelů na střechy a pozemky vybraných vodohospodářských budov připojených ze sítí NN",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-26465771",
+      "text": "Vypracování projektových dokumentací snižujících energetickou náročnost objektů pro výběr dodavatele fotovoltaických panelů na střechy a pozemky vybraných vodohospodářských budov připojených ze sítí NN",
+      "datum": "2023-11-13",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/26465771"
     },
     "stupen": "projekt",
     "jistota": "nase_propojeni"
