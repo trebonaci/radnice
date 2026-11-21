@@ -257,3 +257,14 @@ def test_identifikace_po_z_registru_plati():
 def test_kulturni_akce():
     assert smlouvy.je_kulturni_akce("Smlouva o zajištění uměleckého výkonu - realizace koncertu (A + B)")
     assert not smlouvy.je_kulturni_akce("Dotace - celoroční činnost")
+
+
+def test_hromadne_tvary_prijmeni_v_predmetu():
+    strany = [{"nazev": "Jan Plaček"}, {"nazev": "Eva Plačková"}, {"nazev": "Petr Janoušek"}]
+    vysl = smlouvy._skryj_fo("Dohoda vlastníků provozně souvisejících kanalizací - Plačkovi, Janouškovi", strany, frozenset())
+    assert "Plač" not in vysl and "Janoušk" not in vysl and vysl.startswith("Dohoda vlastníků")
+
+
+def test_pravni_forma_uprostred_nazvu():
+    s = smlouvy.strana({"nazev": "Kooperativa pojišťovna, a.s., Vienna Insurance Group", "ico": "47116617"})
+    assert s["nazev"].startswith("Kooperativa") and s["ico"] == "47116617"

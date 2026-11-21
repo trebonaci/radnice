@@ -23551,9 +23551,9 @@
     "subjekt_nazev": "Slatinné lázně Třeboň s.r.o.",
     "strany": [
       {
-        "nazev": "fyzická osoba",
-        "ico": null,
-        "fyzicka_osoba": true,
+        "nazev": "Kooperativa pojišťovna, a.s., Vienna Insurance Group",
+        "ico": "47116617",
+        "fyzicka_osoba": false,
         "prijemce": false,
         "jmeno_podnikatele": null
       }
@@ -24868,7 +24868,7 @@
         "jmeno_podnikatele": null
       }
     ],
-    "predmet": "Dodatek ke smlouvě o ubytování penzion U Dvořáků",
+    "predmet": "Dodatek ke smlouvě o ubytování penzion U [jméno]",
     "datum_uzavreni": "2025-12-15",
     "datum_zverejneni": "2025-12-19",
     "cislo_smlouvy": "10SM250391",
@@ -54011,9 +54011,9 @@
     "subjekt_nazev": "Slatinné lázně Třeboň s.r.o.",
     "strany": [
       {
-        "nazev": "fyzická osoba",
-        "ico": null,
-        "fyzicka_osoba": true,
+        "nazev": "Kooperativa pojišťovna, a.s., Vienna Insurance Group",
+        "ico": "47116617",
+        "fyzicka_osoba": false,
         "prijemce": false,
         "jmeno_podnikatele": null
       }
@@ -54087,9 +54087,9 @@
     "subjekt_nazev": "Slatinné lázně Třeboň s.r.o.",
     "strany": [
       {
-        "nazev": "fyzická osoba",
-        "ico": null,
-        "fyzicka_osoba": true,
+        "nazev": "Kooperativa pojišťovna, a.s., Vienna Insurance Group",
+        "ico": "47116617",
+        "fyzicka_osoba": false,
         "prijemce": false,
         "jmeno_podnikatele": null
       }
@@ -54996,7 +54996,7 @@
         "jmeno_podnikatele": null
       }
     ],
-    "predmet": "Dohoda vlastníků provozně souvisejících kanalizací - Plačkovi, Janouškovi",
+    "predmet": "Dohoda vlastníků provozně souvisejících kanalizací - [jméno], [jméno]",
     "datum_uzavreni": "2024-12-03",
     "datum_zverejneni": "2024-12-16",
     "cislo_smlouvy": "800/5679/24",
@@ -55302,11 +55302,11 @@
     "subjekt_nazev": "Město Třeboň",
     "strany": [
       {
-        "nazev": "fyzická osoba",
-        "ico": null,
-        "fyzicka_osoba": true,
+        "nazev": "Kooperativa pojišťovna, a.s., Vienna Insurance Group",
+        "ico": "47116617",
+        "fyzicka_osoba": false,
         "prijemce": true,
-        "jmeno_podnikatele": "Kooperativa pojišťovna, a.s., Vienna Insurance Group"
+        "jmeno_podnikatele": null
       }
     ],
     "predmet": "Dodatek č. 9 k pojistné smlouvě č. 7721072109 s pojišťovnou Kooperativa pojišťovna, a.s.",
