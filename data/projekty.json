@@ -11071,6 +11071,30 @@
         "souhlas_zaplaceno": null,
         "souhlas_ezak": null,
         "dodatky_bez_dph": null
+      },
+      {
+        "role": "projekt",
+        "dodavatel": {
+          "nazev": "fyzická osoba",
+          "jmeno_podnikatele": "Ing. Jitka Tauberová"
+        },
+        "puvodni": {
+          "bez_dph": 181000.0,
+          "s_dph": 181000.0,
+          "zdroj_id": "rs-32229380",
+          "url": "https://smlouvy.gov.cz/smlouva/32229380"
+        },
+        "vazba_dodatku": "dolozeno",
+        "dodatky": [],
+        "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
+        "cena_po_dodatcich": 181000.0,
+        "neuplne_cena_po_dodatcich": [],
+        "cena_po_dodatcich_s_dph": 181000.0,
+        "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
+        "souhlas_ezak": null,
+        "dodatky_bez_dph": null
       }
     ],
     "souhrn": {
@@ -11084,20 +11108,20 @@
         "jistota": "nevime"
       },
       "smluvni_bez_dph": {
-        "celkem": 1651842.95,
+        "celkem": 1832842.95,
         "druh": "smluvni",
         "s_dph": false,
         "mena": "CZK",
-        "po_dodatcich": 1651842.95,
+        "po_dodatcich": 1832842.95,
         "neuplne": [],
         "jistota": "nase_propojeni"
       },
       "smluvni_s_dph": {
-        "celkem": 1998729.97,
+        "celkem": 2179729.97,
         "druh": "smluvni",
         "s_dph": true,
         "mena": "CZK",
-        "po_dodatcich": 1998729.97,
+        "po_dodatcich": 2179729.97,
         "neuplne": [],
         "jistota": "nase_propojeni"
       },
@@ -11110,10 +11134,19 @@
           "nezname": [],
           "druh": "smluvni",
           "s_dph": true
+        },
+        {
+          "skupina": "priprava",
+          "nazev": "Projekt a výběrové řízení",
+          "casti": 1,
+          "castka": 181000.0,
+          "nezname": [],
+          "druh": "smluvni",
+          "s_dph": true
         }
       ],
       "celkova_cena_s_dph": {
-        "castka": 1998729.97,
+        "castka": 2179729.97,
         "neuplne": [],
         "druh": "smluvni",
         "s_dph": true,
@@ -11167,10 +11200,59 @@
         "jistota": "nase_propojeni"
       }
     ],
-    "smlouvy": [],
+    "smlouvy": [
+      {
+        "id": "rs-32229380",
+        "id_smlouvy": "30177188",
+        "navazuje_na": null,
+        "cislo_smlouvy": "750/8662/25",
+        "predmet": "Zpracování projektové dokumentace akce Oprava vodovodu v úseku Sádecká ulice - autokemp Třeboňský ráj",
+        "role": "projekt",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2025-02-21",
+        "strany": [
+          {
+            "nazev": "fyzická osoba",
+            "jmeno_podnikatele": "Ing. Jitka Tauberová",
+            "ico": null
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 181000.0,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 181000.0,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/32229380",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      }
+    ],
     "usneseni": [],
     "posledni_dodatek": {},
     "udalosti": [
+      {
+        "datum": "2025-02-21",
+        "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "projektová dokumentace",
+        "text": "Zpracování projektové dokumentace akce Oprava vodovodu v úseku Sádecká ulice - autokemp Třeboňský ráj",
+        "role": "projekt",
+        "zdroj_id": "rs-32229380",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/32229380"
+      },
       {
         "datum": "2026-05-18",
         "typ": "soutez",
@@ -14829,14 +14911,11 @@
         "puvodni": {
           "bez_dph": 1887510.65,
           "s_dph": 2283887.89,
-          "zdroj_id": "ezak-VZ-835",
-          "url": "https://zakazky.mesto-trebon.cz/contract_display_835.html",
-          "zdroj_druh": "smluvni_ezak",
-          "muze_obsahovat_dodatky": true,
-          "zaklady_z_ezak_po_dodatcich": [
-            "bez_dph",
-            "s_dph"
-          ]
+          "zdroj_id": "rs-31995368",
+          "url": "https://smlouvy.gov.cz/smlouva/31995368",
+          "zdroj_druh": "registr",
+          "muze_obsahovat_dodatky": false,
+          "zaklady_z_ezak_po_dodatcich": []
         },
         "vysoutezena": null,
         "ezak_smluvni": {
@@ -14866,15 +14945,11 @@
         "chybi_dodatky": [],
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 1998429.47,
-        "neuplne_cena_po_dodatcich": [
-          "původní cena z E-ZAK může už zahrnovat dodatky"
-        ],
+        "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 2418099.66,
-        "neuplne_cena_po_dodatcich_s_dph": [
-          "původní cena z E-ZAK může už zahrnovat dodatky"
-        ],
+        "neuplne_cena_po_dodatcich_s_dph": [],
         "souhlas_zaplaceno": true,
-        "souhlas_ezak": null,
+        "souhlas_ezak": false,
         "dodatky_bez_dph": 110918.82
       }
     ],
@@ -14894,9 +14969,7 @@
         "s_dph": false,
         "mena": "CZK",
         "po_dodatcich": 1998429.47,
-        "neuplne": [
-          "stavba"
-        ],
+        "neuplne": [],
         "jistota": "nase_propojeni"
       },
       "smluvni_s_dph": {
@@ -14905,9 +14978,7 @@
         "s_dph": true,
         "mena": "CZK",
         "po_dodatcich": 2418099.66,
-        "neuplne": [
-          "stavba"
-        ],
+        "neuplne": [],
         "jistota": "nase_propojeni"
       },
       "skladba_s_dph": [
@@ -14916,18 +14987,14 @@
           "nazev": "Stavba",
           "casti": 1,
           "castka": 2418099.66,
-          "nezname": [
-            "stavba"
-          ],
+          "nezname": [],
           "druh": "smluvni",
           "s_dph": true
         }
       ],
       "celkova_cena_s_dph": {
         "castka": 2418099.66,
-        "neuplne": [
-          "stavba"
-        ],
+        "neuplne": [],
         "druh": "smluvni",
         "s_dph": true,
         "jistota": "nase_propojeni"
@@ -14993,6 +15060,43 @@
     ],
     "smlouvy": [
       {
+        "id": "rs-31995368",
+        "id_smlouvy": "29953308",
+        "navazuje_na": null,
+        "cislo_smlouvy": "750/8576/25",
+        "predmet": "Chodník v Lázeňské ulici v Třeboni",
+        "role": "stavba",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2025-02-03",
+        "strany": [
+          {
+            "nazev": "fyzická osoba",
+            "jmeno_podnikatele": "Jiří Jokl",
+            "ico": null
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 1887510.65,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 2283887.89,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/31995368",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
         "id": "rs-33096484",
         "id_smlouvy": "31003788",
         "navazuje_na": "29953308",
@@ -15051,6 +15155,17 @@
         "role": "stavba",
         "zdroj_id": "ezak-VZ-835",
         "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2025-02-03",
+        "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "smlouva o dílo",
+        "text": "Chodník v Lázeňské ulici v Třeboni",
+        "role": "stavba",
+        "zdroj_id": "rs-31995368",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/31995368"
       },
       {
         "datum": "2025-04-29",
@@ -15916,6 +16031,17 @@
         "vazba_dodatku": "nase_propojeni",
         "dodatky": [
           {
+            "cislo": 1,
+            "bez_dph": 4412.21,
+            "s_dph": 5338.78,
+            "jen_termin": false,
+            "doklad_usneseni": null,
+            "bez_castky": false,
+            "datum": "2024-12-06",
+            "zdroj_id": "rs-31324028",
+            "url": "https://smlouvy.gov.cz/smlouva/31324028"
+          },
+          {
             "cislo": 2,
             "bez_dph": 505492.0,
             "s_dph": 611645.0,
@@ -15927,23 +16053,43 @@
             "url": "https://smlouvy.gov.cz/smlouva/32937788"
           }
         ],
-        "chybi_dodatky": [
-          1
-        ],
+        "chybi_dodatky": [],
         "obsahuje_dopocet_dph": false,
-        "cena_po_dodatcich": 2501749.0,
+        "cena_po_dodatcich": 2506161.21,
         "neuplne_cena_po_dodatcich": [
-          "původní cena z E-ZAK může už zahrnovat dodatky",
-          "chybí dodatek č. 1"
+          "původní cena z E-ZAK může už zahrnovat dodatky"
         ],
-        "cena_po_dodatcich_s_dph": 3027116.0,
+        "cena_po_dodatcich_s_dph": 3032454.78,
         "neuplne_cena_po_dodatcich_s_dph": [
-          "původní cena z E-ZAK může už zahrnovat dodatky",
-          "chybí dodatek č. 1"
+          "původní cena z E-ZAK může už zahrnovat dodatky"
         ],
-        "souhlas_zaplaceno": false,
+        "souhlas_zaplaceno": true,
         "souhlas_ezak": null,
-        "dodatky_bez_dph": 505492.0
+        "dodatky_bez_dph": 509904.21
+      },
+      {
+        "role": "stavba",
+        "dodavatel": {
+          "nazev": "Muzeum Jindřichohradecka",
+          "jmeno_podnikatele": null
+        },
+        "puvodni": {
+          "bez_dph": 72862.0,
+          "s_dph": 72862.0,
+          "zdroj_id": "rs-30938356",
+          "url": "https://smlouvy.gov.cz/smlouva/30938356"
+        },
+        "vazba_dodatku": "dolozeno",
+        "dodatky": [],
+        "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
+        "cena_po_dodatcich": 72862.0,
+        "neuplne_cena_po_dodatcich": [],
+        "cena_po_dodatcich_s_dph": 72862.0,
+        "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
+        "souhlas_ezak": null,
+        "dodatky_bez_dph": null
       }
     ],
     "souhrn": {
@@ -15957,22 +16103,22 @@
         "jistota": "nevime"
       },
       "smluvni_bez_dph": {
-        "celkem": 1996257.0,
+        "celkem": 2069119.0,
         "druh": "smluvni",
         "s_dph": false,
         "mena": "CZK",
-        "po_dodatcich": 2501749.0,
+        "po_dodatcich": 2579023.21,
         "neuplne": [
           "stavba"
         ],
         "jistota": "nase_propojeni"
       },
       "smluvni_s_dph": {
-        "celkem": 2415471.0,
+        "celkem": 2488333.0,
         "druh": "smluvni",
         "s_dph": true,
         "mena": "CZK",
-        "po_dodatcich": 3027116.0,
+        "po_dodatcich": 3105316.78,
         "neuplne": [
           "stavba"
         ],
@@ -15982,8 +16128,8 @@
         {
           "skupina": "stavba",
           "nazev": "Stavba",
-          "casti": 1,
-          "castka": 3027116.0,
+          "casti": 2,
+          "castka": 3105316.78,
           "nezname": [
             "stavba"
           ],
@@ -15992,7 +16138,7 @@
         }
       ],
       "celkova_cena_s_dph": {
-        "castka": 3027116.0,
+        "castka": 3105316.78,
         "neuplne": [
           "stavba"
         ],
@@ -16071,6 +16217,80 @@
     ],
     "smlouvy": [
       {
+        "id": "rs-30938356",
+        "id_smlouvy": "28948316",
+        "navazuje_na": "28102044",
+        "cislo_smlouvy": "750/8342/24/1",
+        "predmet": "Navýšení rozsahu archeologického výzkumu při stavbě Stavební úpravy pro technologii Jordánovy kašny.",
+        "role": "stavba",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2024-11-04",
+        "strany": [
+          {
+            "nazev": "Muzeum Jindřichohradecka",
+            "jmeno_podnikatele": null,
+            "ico": "00070971"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 72862.0,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 72862.0,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/30938356",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-31324028",
+        "id_smlouvy": "29314464",
+        "navazuje_na": "27927384",
+        "cislo_smlouvy": "750/8320/24/1",
+        "predmet": "SOD Stavební úpravy pro technologii Jordánovy kašny - Dodatek č. 1",
+        "role": "stavba",
+        "dodatek_cislo": 1,
+        "datum_uzavreni": "2024-12-06",
+        "strany": [
+          {
+            "nazev": "Stavební firma HUKO s.r.o.",
+            "jmeno_podnikatele": null,
+            "ico": "25174533"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 4412.21,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 5338.78,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/31324028",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
         "id": "rs-32937788",
         "id_smlouvy": "30851404",
         "navazuje_na": "27927384",
@@ -16129,6 +16349,28 @@
         "role": "stavba",
         "zdroj_id": "ezak-VZ-826",
         "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2024-11-04",
+        "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "smlouva o dílo",
+        "text": "Navýšení rozsahu archeologického výzkumu při stavbě Stavební úpravy pro technologii Jordánovy kašny.",
+        "role": "stavba",
+        "zdroj_id": "rs-30938356",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/30938356"
+      },
+      {
+        "datum": "2024-12-06",
+        "typ": "dodatek",
+        "kategorie": "smlouva",
+        "kratce": "dodatek 1 (smlouva o dílo)",
+        "text": "SOD Stavební úpravy pro technologii Jordánovy kašny - Dodatek č. 1",
+        "role": "stavba",
+        "zdroj_id": "rs-31324028",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/31324028"
       },
       {
         "datum": "2025-04-16",
