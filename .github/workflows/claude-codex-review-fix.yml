@@ -186,23 +186,3 @@ jobs:
         run: |
           gh pr edit "$PR_NUMBER" --add-label potrebuje-cloveka || true
           gh pr comment "$PR_NUMBER" --body "Automatická oprava Claudem selhala ještě před dokončením. Smyčku zastavuji a předávám PR Ondřejovi k ruční kontrole."
-
-      - name: Request Codex to review Claude's new commit
-        if: steps.cycle.outputs.run_claude == 'true' && success()
-        env:
-          GH_TOKEN: ${{ github.token }}
-          PR_NUMBER: ${{ github.event.pull_request.number }}
-          ORIGINAL_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
-        run: |
-          # API vrací nový head s několikasekundovým zpožděním po pushi (#111, PR #109) → zkusit opakovaně
-          for _ in 1 2 3 4 5 6; do
-            current_head="$(gh api "repos/${GITHUB_REPOSITORY}/pulls/${PR_NUMBER}" --jq '.head.sha')"
-            [ "$current_head" != "$ORIGINAL_HEAD_SHA" ] && break
-            sleep 10
-          done
-          if [ "$current_head" = "$ORIGINAL_HEAD_SHA" ]; then
-            gh pr edit "$PR_NUMBER" --add-label potrebuje-cloveka
-            gh pr comment "$PR_NUMBER" --body "Claude nahrál nový commit jen tehdy, pokud ověřil a opravil nález. Tentokrát se nový commit neobjevil, proto další automatické kolo zastavuji a předávám PR Ondřejovi."
-            exit 0
-          fi
-          gh pr comment "$PR_NUMBER" --body "@codex review"
