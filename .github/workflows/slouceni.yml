@@ -77,21 +77,13 @@ jobs:
               if (!behy.some(b => b.conclusion === 'success') || behy.some(b => b.conclusion === 'failure')) {
                 core.info(`${kdo}: CI není zelená`); continue;
               }
-              // 2a. PR z denního běhu (claude/beh-*) obsahují jen data vygenerovaná kódem – slučují se po zelené
-              //     kontrole bez čekání na Codex review (rozhodnutí Ondřeje 21. 11. 2026, #166). Codex review
-              //     u nich sám nezačne (reaguje jen na člověka); jen commit běhu, ne ruční opravy na větvi.
+              // 2a. PR z denního běhu (claude/beh-*) obsahují jen data vygenerovaná kódem – nemusí čekat na Codex
+              //     review (rozhodnutí Ondřeje 21. 11. 2026, #166; Codex u nich sám nezačne). Kontroly běžící opravy
+              //     a nevyřešených nálezů P0/P1 níže platí dál. Jen commit běhu, ne commit opravy ani ruční úpravy.
               const commitBehu = (await github.rest.repos.getCommit({owner, repo, ref: sha})).data;
-              if (pr.head.ref.startsWith('claude/beh-') && commitBehu.author?.login === 'github-actions[bot]'
-                  && pr.user?.login === 'github-actions[bot]'
-                  && !commitBehu.commit.message.startsWith('Address Codex review findings')) {
-                try {
-                  await github.rest.pulls.merge({owner, repo, pull_number: pr.number, sha, merge_method: 'squash'});
-                  await github.rest.issues.createComment({owner, repo, issue_number: pr.number,
-                    body: `Automaticky sloučeno (${sha.slice(0, 7)}): PR z denního běhu, CI zelená (bez Codex review, #166). Sloučení ≠ zveřejnění.`});
-                  core.info(`${kdo}: sloučeno (běh)`);
-                } catch (e) { core.warning(`${kdo}: sloučení selhalo: ${e.message}`); }
-                continue;
-              }
+              const jeBeh = pr.head.ref.startsWith('claude/beh-') && pr.user?.login === 'github-actions[bot]'
+                && commitBehu.author?.login === 'github-actions[bot]'
+                && !commitBehu.commit.message.startsWith('Address Codex review findings');
               // 2. Codex review tohoto commitu (souhrnný komentář s codex-review-state)
               const komentare = await github.paginate(github.rest.issues.listComments, {owner, repo, issue_number: pr.number, per_page: 100});
               let stav = null;
@@ -100,7 +92,9 @@ jobs:
                 const m = (k.body || '').match(STAV);
                 if (m) { try { stav = JSON.parse(m[1]).code_review; } catch (e) {} }
               }
-              if (!stav || stav.status !== 'completed' || stav.commit_sha !== sha) {
+              const bezReview = !stav || stav.status !== 'completed' || stav.commit_sha !== sha;
+              const reviewBezi = stav?.status === 'running' && stav.commit_sha === sha;
+              if (bezReview && !(jeBeh && !reviewBezi)) {
                 const reviewRunning = stav?.status === 'running' && stav.commit_sha === sha;
                 // Codex se sám nespustí u PR od bota ani u commitu z automatické opravy → požádat, když poslední
                 // žádost je starší než poslední commit PR (#111)
@@ -174,7 +168,9 @@ jobs:
               try {
                 await github.rest.pulls.merge({owner, repo, pull_number: pr.number, sha, merge_method: 'squash'});
                 await github.rest.issues.createComment({owner, repo, issue_number: pr.number,
-                  body: `Automaticky sloučeno (${sha.slice(0, 7)}): CI zelená, Codex review dokončeno, bez nevyřešených nálezů P0/P1. Sloučení ≠ zveřejnění.`});
+                  body: bezReview
+                    ? `Automaticky sloučeno (${sha.slice(0, 7)}): PR z denního běhu, CI zelená, bez nevyřešených nálezů P0/P1 (bez Codex review, #166). Sloučení ≠ zveřejnění.`
+                    : `Automaticky sloučeno (${sha.slice(0, 7)}): CI zelená, Codex review dokončeno, bez nevyřešených nálezů P0/P1. Sloučení ≠ zveřejnění.`});
                 core.info(`${kdo}: sloučeno`);
               } catch (e) {
                 core.warning(`${kdo}: sloučení selhalo: ${e.message}`);
