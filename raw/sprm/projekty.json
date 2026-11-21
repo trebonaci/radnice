@@ -1,0 +1,2050 @@
+[
+ {
+  "id": 273,
+  "aktivita": "Aktivně vstupovat do jednání o obchvatech (Lišov, Štěpánovice, Dolní Lhota, Lásenice)",
+  "osa_id": "1",
+  "osa_nazev": "Doprava",
+  "opatreni": "1. Motorová doprava",
+  "stav": "Hotovo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.746266146781936,
+    49.005036873868306
+   ]
+  }
+ },
+ {
+  "id": 274,
+  "aktivita": "Řešení kapacity kruhových objezdů",
+  "osa_id": "1",
+  "osa_nazev": "Doprava",
+  "opatreni": "1. Motorová doprava",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.757339967563377,
+    49.00828601301289
+   ]
+  }
+ },
+ {
+  "id": 275,
+  "aktivita": "Komplexní řešení dopravy v klíčových ulicích (Táboritská, Jiráskova)",
+  "osa_id": "1",
+  "osa_nazev": "Doprava",
+  "opatreni": "1. Motorová doprava",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.756396743221666,
+    49.01315214182864
+   ]
+  }
+ },
+ {
+  "id": 276,
+  "aktivita": "Dopravní průzkumy a jejich aplikace",
+  "osa_id": "1",
+  "osa_nazev": "Doprava",
+  "opatreni": "1. Motorová doprava",
+  "stav": "Neznámo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.760882295745478,
+    49.00296847239594
+   ]
+  }
+ },
+ {
+  "id": 277,
+  "aktivita": "Audit bezpečnosti dopravy",
+  "osa_id": "1",
+  "osa_nazev": "Doprava",
+  "opatreni": "1. Motorová doprava",
+  "stav": "Neznámo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.76279017941205,
+    49.00407885716381
+   ]
+  }
+ },
+ {
+  "id": 278,
+  "aktivita": "Vytipování míst pro nabíjecí stanice elektromobilů",
+  "osa_id": "1",
+  "osa_nazev": "Doprava",
+  "opatreni": "1. Motorová doprava",
+  "stav": "Neřeší se",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.762683083907785,
+    49.003825637508236
+   ]
+  }
+ },
+ {
+  "id": 279,
+  "aktivita": "Stanovení priorit oprav ulic a místních komunikací",
+  "osa_id": "1",
+  "osa_nazev": "Doprava",
+  "opatreni": "2. Technická infrastruktura",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.762876432682814,
+    49.00433210463685
+   ]
+  }
+ },
+ {
+  "id": 280,
+  "aktivita": "Komplexní rekonstrukce komunikací vč. sítí",
+  "osa_id": "1",
+  "osa_nazev": "Doprava",
+  "opatreni": "2. Technická infrastruktura",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.762211358292015,
+    49.00441667863547
+   ]
+  }
+ },
+ {
+  "id": 281,
+  "aktivita": "Založení datových sítí při rekonstrukcích",
+  "osa_id": "1",
+  "osa_nazev": "Doprava",
+  "opatreni": "2. Technická infrastruktura",
+  "stav": "Neznámo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.762061327590674,
+    49.003896485234115
+   ]
+  }
+ },
+ {
+  "id": 282,
+  "aktivita": "Jednání se JIKORD o rozsahu drážní dopravy",
+  "osa_id": "1",
+  "osa_nazev": "Doprava",
+  "opatreni": "3. Železniční doprava",
+  "stav": "Neznámo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.776826784044268,
+    49.00735484181204
+   ]
+  }
+ },
+ {
+  "id": 283,
+  "aktivita": "Apelování na nízkopodlažní soupravy",
+  "osa_id": "1",
+  "osa_nazev": "Doprava",
+  "opatreni": "3. Železniční doprava",
+  "stav": "Neznámo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.77774931363087,
+    49.007271805578014
+   ]
+  }
+ },
+ {
+  "id": 284,
+  "aktivita": "Rekonstrukce vlakového nádraží",
+  "osa_id": "1",
+  "osa_nazev": "Doprava",
+  "opatreni": "3. Železniční doprava",
+  "stav": "Neřeší se",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.760667509151208,
+    49.015304249028205
+   ]
+  }
+ },
+ {
+  "id": 285,
+  "aktivita": "Vytvoření cyklogenerelu",
+  "osa_id": "1",
+  "osa_nazev": "Doprava",
+  "opatreni": "4. Nemotorová doprava",
+  "stav": "Neřeší se",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.77004581931986,
+    49.00367014664618
+   ]
+  }
+ },
+ {
+  "id": 286,
+  "aktivita": "Zavedení systému páteřních cyklotras",
+  "osa_id": "1",
+  "osa_nazev": "Doprava",
+  "opatreni": "4. Nemotorová doprava",
+  "stav": "Neřeší se",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.770474473604647,
+    49.00378400004451
+   ]
+  }
+ },
+ {
+  "id": 287,
+  "aktivita": "Dobudování cyklostezky kolem silnice I/34",
+  "osa_id": "1",
+  "osa_nazev": "Doprava",
+  "opatreni": "4. Nemotorová doprava",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.767598833567195,
+    49.01104128200971
+   ]
+  }
+ },
+ {
+  "id": 288,
+  "aktivita": "Vybudování informačního systému pro cyklisty",
+  "osa_id": "1",
+  "osa_nazev": "Doprava",
+  "opatreni": "4. Nemotorová doprava",
+  "stav": "Neřeší se",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.771376257385976,
+    49.00402255174543
+   ]
+  }
+ },
+ {
+  "id": 289,
+  "aktivita": "Zázemí pro cykloturisty mimo centrum",
+  "osa_id": "1",
+  "osa_nazev": "Doprava",
+  "opatreni": "4. Nemotorová doprava",
+  "stav": "Neřeší se",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.754765585772393,
+    49.00215355232685
+   ]
+  }
+ },
+ {
+  "id": 290,
+  "aktivita": "Přijetí strategie řízení parkování",
+  "osa_id": "1",
+  "osa_nazev": "Doprava",
+  "opatreni": "5. Doprava v klidu",
+  "stav": "Neřeší se",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.758887313643564,
+    49.00187280929117
+   ]
+  }
+ },
+ {
+  "id": 291,
+  "aktivita": "Zavedení smart technologií pro parkování",
+  "osa_id": "1",
+  "osa_nazev": "Doprava",
+  "opatreni": "5. Doprava v klidu",
+  "stav": "Neřeší se",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.762792451146371,
+    49.00271340371577
+   ]
+  }
+ },
+ {
+  "id": 292,
+  "aktivita": "Vybudování parkovacích domů pro lázně",
+  "osa_id": "1",
+  "osa_nazev": "Doprava",
+  "opatreni": "5. Doprava v klidu",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.754423272678203,
+    49.0024605457948
+   ]
+  }
+ },
+ {
+  "id": 293,
+  "aktivita": "Zavedení systému pro parkování karavanů",
+  "osa_id": "1",
+  "osa_nazev": "Doprava",
+  "opatreni": "5. Doprava v klidu",
+  "stav": "Neřeší se",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.773201013189034,
+    48.998860440616646
+   ]
+  }
+ },
+ {
+  "id": 294,
+  "aktivita": "Nový systém parkomatů (smart řešení)",
+  "osa_id": "1",
+  "osa_nazev": "Doprava",
+  "opatreni": "5. Doprava v klidu",
+  "stav": "Neřeší se",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.75875719492744,
+    49.00296703650837
+   ]
+  }
+ },
+ {
+  "id": 295,
+  "aktivita": "Příprava modrých zón",
+  "osa_id": "1",
+  "osa_nazev": "Doprava",
+  "opatreni": "5. Doprava v klidu",
+  "stav": "Neznámo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.760731641097122,
+    49.00331979585058
+   ]
+  }
+ },
+ {
+  "id": 296,
+  "aktivita": "Aplikace bezpečnostních prvků v dopravě",
+  "osa_id": "1",
+  "osa_nazev": "Doprava",
+  "opatreni": "6. Bezpečnost",
+  "stav": "Neznámo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.768371445897348,
+    49.00454420877696
+   ]
+  }
+ },
+ {
+  "id": 297,
+  "aktivita": "Zabezpečení parkovišť",
+  "osa_id": "1",
+  "osa_nazev": "Doprava",
+  "opatreni": "6. Bezpečnost",
+  "stav": "Neznámo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.773007119878468,
+    48.9991683470304
+   ]
+  }
+ },
+ {
+  "id": 298,
+  "aktivita": "Rozvoj kamerového systému",
+  "osa_id": "1",
+  "osa_nazev": "Doprava",
+  "opatreni": "6. Bezpečnost",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.770904829563076,
+    49.003911415385126
+   ]
+  }
+ },
+ {
+  "id": 299,
+  "aktivita": "Upgrade bezpečnostních náramků",
+  "osa_id": "1",
+  "osa_nazev": "Doprava",
+  "opatreni": "6. Bezpečnost",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.757083967298511,
+    49.00555695834294
+   ]
+  }
+ },
+ {
+  "id": 300,
+  "aktivita": "Zabezpečení institucí pro případ blackoutu",
+  "osa_id": "1",
+  "osa_nazev": "Doprava",
+  "opatreni": "6. Bezpečnost",
+  "stav": "Neznámo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.762148828755466,
+    49.00412078543255
+   ]
+  }
+ },
+ {
+  "id": 301,
+  "aktivita": "Rekonstrukce veřejných prostranství",
+  "osa_id": "1",
+  "osa_nazev": "Doprava",
+  "opatreni": "7. Veřejná prostranství",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.766848498548596,
+    49.005387076763384
+   ]
+  }
+ },
+ {
+  "id": 302,
+  "aktivita": "Návrh využití areálu bývalých technických služeb",
+  "osa_id": "1",
+  "osa_nazev": "Doprava",
+  "opatreni": "7. Veřejná prostranství",
+  "stav": "Neznámo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.773694185132436,
+    48.999774433036976
+   ]
+  }
+ },
+ {
+  "id": 303,
+  "aktivita": "Revitalizace pláže U Světa",
+  "osa_id": "1",
+  "osa_nazev": "Doprava",
+  "opatreni": "7. Veřejná prostranství",
+  "stav": "Neznámo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.76152682569569,
+    49.00111178359465
+   ]
+  }
+ },
+ {
+  "id": 304,
+  "aktivita": "Výměna veřejného osvětlení za úsporné",
+  "osa_id": "1",
+  "osa_nazev": "Doprava",
+  "opatreni": "7. Veřejná prostranství",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.758887171837436,
+    49.00495133076735
+   ]
+  }
+ },
+ {
+  "id": 305,
+  "aktivita": "Opatření na zlepšování stavu povrchových vod",
+  "osa_id": "2",
+  "osa_nazev": "Životní prostředí",
+  "opatreni": "1. Příroda a ŽP",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.780990037559521,
+    48.991369855369776
+   ]
+  }
+ },
+ {
+  "id": 306,
+  "aktivita": "Spolupráce s AOPK ČR, AV ČR",
+  "osa_id": "2",
+  "osa_nazev": "Životní prostředí",
+  "opatreni": "1. Příroda a ŽP",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.762791571948338,
+    49.003948104849016
+   ]
+  }
+ },
+ {
+  "id": 307,
+  "aktivita": "Opatření pro retenci vody a biodiverzitu",
+  "osa_id": "2",
+  "osa_nazev": "Životní prostředí",
+  "opatreni": "1. Příroda a ŽP",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.788072079018551,
+    48.99936322272173
+   ]
+  }
+ },
+ {
+  "id": 308,
+  "aktivita": "Ochrana dřevin mimo les",
+  "osa_id": "2",
+  "osa_nazev": "Životní prostředí",
+  "opatreni": "1. Příroda a ŽP",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.753348982355345,
+    49.000180206565354
+   ]
+  }
+ },
+ {
+  "id": 309,
+  "aktivita": "Snižování světelného smogu",
+  "osa_id": "2",
+  "osa_nazev": "Životní prostředí",
+  "opatreni": "1. Příroda a ŽP",
+  "stav": "Neřeší se",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.7706032139651,
+    49.003782467162615
+   ]
+  }
+ },
+ {
+  "id": 310,
+  "aktivita": "Snižování energetické náročnosti budov",
+  "osa_id": "2",
+  "osa_nazev": "Životní prostředí",
+  "opatreni": "1. Příroda a ŽP",
+  "stav": "Hotovo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.771548213719669,
+    49.00665395677283
+   ]
+  }
+ },
+ {
+  "id": 311,
+  "aktivita": "Pasport městské zeleně",
+  "osa_id": "2",
+  "osa_nazev": "Životní prostředí",
+  "opatreni": "2. Sídelní zeleň",
+  "stav": "Hotovo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.766912392260197,
+    49.00532499074018
+   ]
+  }
+ },
+ {
+  "id": 312,
+  "aktivita": "Péče o stávající zeleň",
+  "osa_id": "2",
+  "osa_nazev": "Životní prostředí",
+  "opatreni": "2. Sídelní zeleň",
+  "stav": "Hotovo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.767813727934136,
+    49.00563553478212
+   ]
+  }
+ },
+ {
+  "id": 313,
+  "aktivita": "Zakládání nových ploch zeleně",
+  "osa_id": "2",
+  "osa_nazev": "Životní prostředí",
+  "opatreni": "2. Sídelní zeleň",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.77124738089162,
+    49.00394864814714
+   ]
+  }
+ },
+ {
+  "id": 314,
+  "aktivita": "Zelené střechy a fasády",
+  "osa_id": "2",
+  "osa_nazev": "Životní prostředí",
+  "opatreni": "2. Sídelní zeleň",
+  "stav": "Hotovo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.753049766117236,
+    49.00218044482805
+   ]
+  }
+ },
+ {
+  "id": 315,
+  "aktivita": "Generely vodovodů a kanalizací",
+  "osa_id": "2",
+  "osa_nazev": "Životní prostředí",
+  "opatreni": "3. Vodovody, kanalizace",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.786312555577005,
+    49.012080563488425
+   ]
+  }
+ },
+ {
+  "id": 316,
+  "aktivita": "Obnova vodárenských sítí",
+  "osa_id": "2",
+  "osa_nazev": "Životní prostředí",
+  "opatreni": "3. Vodovody, kanalizace",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.78687044937988,
+    49.01239092959763
+   ]
+  }
+ },
+ {
+  "id": 317,
+  "aktivita": "Napojení Přeseka a Nové Hlíny na ČOV",
+  "osa_id": "2",
+  "osa_nazev": "Životní prostředí",
+  "opatreni": "3. Vodovody, kanalizace",
+  "stav": "Neznámo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.731290001931493,
+    49.04055178890414
+   ]
+  }
+ },
+ {
+  "id": 318,
+  "aktivita": "Budování páteřní sítě dešťové kanalizace",
+  "osa_id": "2",
+  "osa_nazev": "Životní prostředí",
+  "opatreni": "3. Vodovody, kanalizace",
+  "stav": "Neznámo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.786055619391638,
+    49.01249962201178
+   ]
+  }
+ },
+ {
+  "id": 319,
+  "aktivita": "Efektivnější systém evidence a svozu odpadů",
+  "osa_id": "2",
+  "osa_nazev": "Životní prostředí",
+  "opatreni": "4. Odpady, třídění",
+  "stav": "Neznámo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.757212616903079,
+    49.017282251572865
+   ]
+  }
+ },
+ {
+  "id": 320,
+  "aktivita": "Zavedení svozu bioodpadu",
+  "osa_id": "2",
+  "osa_nazev": "Životní prostředí",
+  "opatreni": "4. Odpady, třídění",
+  "stav": "Hotovo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.757331455157278,
+    49.01684782293716
+   ]
+  }
+ },
+ {
+  "id": 321,
+  "aktivita": "Vybudování městské kompostárny",
+  "osa_id": "2",
+  "osa_nazev": "Životní prostředí",
+  "opatreni": "4. Odpady, třídění",
+  "stav": "Neřeší se",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.757512865489872,
+    49.01641220547578
+   ]
+  }
+ },
+ {
+  "id": 322,
+  "aktivita": "Aktualizace strategických dokumentů",
+  "osa_id": "3",
+  "osa_nazev": "Sociální oblast",
+  "opatreni": "1. Sociální služby",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.774101713571472,
+    49.00527378001522
+   ]
+  }
+ },
+ {
+  "id": 323,
+  "aktivita": "Rozšíření kapacit pobytových služeb pro seniory",
+  "osa_id": "3",
+  "osa_nazev": "Sociální oblast",
+  "opatreni": "1. Sociální služby",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.756568339367798,
+    49.00559807044702
+   ]
+  }
+ },
+ {
+  "id": 324,
+  "aktivita": "Zřízení odlehčovací služby",
+  "osa_id": "3",
+  "osa_nazev": "Sociální oblast",
+  "opatreni": "1. Sociální služby",
+  "stav": "Neznámo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.765925549215796,
+    49.003572804638075
+   ]
+  }
+ },
+ {
+  "id": 325,
+  "aktivita": "Modernizace bezpečnostních náramků",
+  "osa_id": "3",
+  "osa_nazev": "Sociální oblast",
+  "opatreni": "1. Sociální služby",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.765818070835001,
+    49.00377016615722
+   ]
+  }
+ },
+ {
+  "id": 326,
+  "aktivita": "Podpora chráněného bydlení",
+  "osa_id": "3",
+  "osa_nazev": "Sociální oblast",
+  "opatreni": "1. Sociální služby",
+  "stav": "Neznámo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.774810290383899,
+    48.99848096866564
+   ]
+  }
+ },
+ {
+  "id": 327,
+  "aktivita": "Zachování LSPP v Třeboni",
+  "osa_id": "3",
+  "osa_nazev": "Sociální oblast",
+  "opatreni": "2. Zdravotní péče",
+  "stav": "Neřeší se",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.761934059177944,
+    49.00406396586992
+   ]
+  }
+ },
+ {
+  "id": 328,
+  "aktivita": "Vytvoření podmínek pro nové lékaře",
+  "osa_id": "3",
+  "osa_nazev": "Sociální oblast",
+  "opatreni": "2. Zdravotní péče",
+  "stav": "Neřeší se",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.762577712766173,
+    49.00625897447261
+   ]
+  }
+ },
+ {
+  "id": 329,
+  "aktivita": "Bezbariérové přístupy u lékařů",
+  "osa_id": "3",
+  "osa_nazev": "Sociální oblast",
+  "opatreni": "2. Zdravotní péče",
+  "stav": "Neznámo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.762534621582352,
+    49.006076678436294
+   ]
+  }
+ },
+ {
+  "id": 330,
+  "aktivita": "Modernizace MŠ a vybavení",
+  "osa_id": "3",
+  "osa_nazev": "Sociální oblast",
+  "opatreni": "3. Mateřské školy",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.761676022576939,
+    49.002743381146516
+   ]
+  }
+ },
+ {
+  "id": 331,
+  "aktivita": "Podpora vzdělávání učitelů",
+  "osa_id": "3",
+  "osa_nazev": "Sociální oblast",
+  "opatreni": "3. Mateřské školy",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.765218166411065,
+    49.00527400314958
+   ]
+  }
+ },
+ {
+  "id": 332,
+  "aktivita": "Využívání městských tělocvičen a bazénů",
+  "osa_id": "3",
+  "osa_nazev": "Sociální oblast",
+  "opatreni": "3. Mateřské školy",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.767256738854437,
+    49.00504958202542
+   ]
+  }
+ },
+ {
+  "id": 333,
+  "aktivita": "Modernizace ZŠ a vybavení",
+  "osa_id": "3",
+  "osa_nazev": "Sociální oblast",
+  "opatreni": "4. Základní školy",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.765904545323332,
+    49.00528924333531
+   ]
+  }
+ },
+ {
+  "id": 334,
+  "aktivita": "Vybavení specializovaných učeben",
+  "osa_id": "3",
+  "osa_nazev": "Sociální oblast",
+  "opatreni": "4. Základní školy",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.767342209355315,
+    49.004741091068034
+   ]
+  }
+ },
+ {
+  "id": 335,
+  "aktivita": "Podpora rozvoje jazykové gramotnosti",
+  "osa_id": "3",
+  "osa_nazev": "Sociální oblast",
+  "opatreni": "4. Základní školy",
+  "stav": "Neznámo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.767556621581369,
+    49.00491021812934
+   ]
+  }
+ },
+ {
+  "id": 336,
+  "aktivita": "Zapojení dopravní výchovy na 2. stupni",
+  "osa_id": "3",
+  "osa_nazev": "Sociální oblast",
+  "opatreni": "4. Základní školy",
+  "stav": "Neznámo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.765582056294532,
+    49.00530430888958
+   ]
+  }
+ },
+ {
+  "id": 337,
+  "aktivita": "Modernizace školní jídelny",
+  "osa_id": "3",
+  "osa_nazev": "Sociální oblast",
+  "opatreni": "4. Základní školy",
+  "stav": "Neznámo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.765560595786278,
+    49.00488439427487
+   ]
+  }
+ },
+ {
+  "id": 338,
+  "aktivita": "Podpora perspektivních oborů",
+  "osa_id": "3",
+  "osa_nazev": "Sociální oblast",
+  "opatreni": "5. Střední školy",
+  "stav": "Neznámo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.75742804446107,
+    49.01003179667022
+   ]
+  }
+ },
+ {
+  "id": 339,
+  "aktivita": "Spolupráce s místními zaměstnavateli",
+  "osa_id": "3",
+  "osa_nazev": "Sociální oblast",
+  "opatreni": "5. Střední školy",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.760603995480047,
+    49.01143800152834
+   ]
+  }
+ },
+ {
+  "id": 340,
+  "aktivita": "Aktualizace Plánu rozvoje sportu",
+  "osa_id": "3",
+  "osa_nazev": "Sociální oblast",
+  "opatreni": "6. Volnočasové aktivity",
+  "stav": "Neřeší se",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.757127183271791,
+    49.00305500849951
+   ]
+  }
+ },
+ {
+  "id": 341,
+  "aktivita": "Modernizace DDM",
+  "osa_id": "3",
+  "osa_nazev": "Sociální oblast",
+  "opatreni": "6. Volnočasové aktivity",
+  "stav": "Neznámo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.766569602697384,
+    49.00693740858581
+   ]
+  }
+ },
+ {
+  "id": 342,
+  "aktivita": "Podpora sportovních oddílů",
+  "osa_id": "3",
+  "osa_nazev": "Sociální oblast",
+  "opatreni": "6. Volnočasové aktivity",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.76922169557761,
+    49.00737720217561
+   ]
+  }
+ },
+ {
+  "id": 343,
+  "aktivita": "Revitalizace Staré radnice č.p. 1",
+  "osa_id": "4",
+  "osa_nazev": "Kultura",
+  "opatreni": "1. Kulturní památky",
+  "stav": "Hotovo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.771536592923022,
+    49.00383046039599
+   ]
+  }
+ },
+ {
+  "id": 344,
+  "aktivita": "Rekonstrukce Krčínova domu č.p. 114",
+  "osa_id": "4",
+  "osa_nazev": "Kultura",
+  "opatreni": "1. Kulturní památky",
+  "stav": "Neřeší se",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.770533461641103,
+    49.002801162711464
+   ]
+  }
+ },
+ {
+  "id": 345,
+  "aktivita": "Rekonstrukce objektu bývalé ZUŠ",
+  "osa_id": "4",
+  "osa_nazev": "Kultura",
+  "opatreni": "1. Kulturní památky",
+  "stav": "Neřeší se",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.77244856242286,
+    49.004416273805774
+   ]
+  }
+ },
+ {
+  "id": 346,
+  "aktivita": "Podpora kulturních akcí v Třeboni",
+  "osa_id": "4",
+  "osa_nazev": "Kultura",
+  "opatreni": "2. Kulturní akce",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.77056118916342,
+    49.0037272286066
+   ]
+  }
+ },
+ {
+  "id": 347,
+  "aktivita": "Rekonstrukce sportovní haly pro koncerty",
+  "osa_id": "4",
+  "osa_nazev": "Kultura",
+  "opatreni": "2. Kulturní akce",
+  "stav": "Neřeší se",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.755967850702564,
+    49.00215242688302
+   ]
+  }
+ },
+ {
+  "id": 348,
+  "aktivita": "Rekonstrukce a rozšíření sportovní haly",
+  "osa_id": "4",
+  "osa_nazev": "Kultura",
+  "opatreni": "3. Sportovní infrastruktura",
+  "stav": "Hotovo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.756440424319043,
+    49.002209161307825
+   ]
+  }
+ },
+ {
+  "id": 349,
+  "aktivita": "Vybudování ubytování pro sportovce",
+  "osa_id": "4",
+  "osa_nazev": "Kultura",
+  "opatreni": "3. Sportovní infrastruktura",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.756697678150159,
+    49.002518948617826
+   ]
+  }
+ },
+ {
+  "id": 350,
+  "aktivita": "Údržba zimního kluziště",
+  "osa_id": "4",
+  "osa_nazev": "Kultura",
+  "opatreni": "3. Sportovní infrastruktura",
+  "stav": "Hotovo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.768114226099728,
+    49.00693434301613
+   ]
+  }
+ },
+ {
+  "id": 351,
+  "aktivita": "Budování dětských hřišť",
+  "osa_id": "4",
+  "osa_nazev": "Kultura",
+  "opatreni": "3. Sportovní infrastruktura",
+  "stav": "Hotovo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.766740526682428,
+    49.00547166837322
+   ]
+  }
+ },
+ {
+  "id": 352,
+  "aktivita": "Zařízení pro mládež 15+ (skate park, pump track)",
+  "osa_id": "4",
+  "osa_nazev": "Kultura",
+  "opatreni": "3. Sportovní infrastruktura",
+  "stav": "Neřeší se",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.758886865536171,
+    49.00111113354024
+   ]
+  }
+ },
+ {
+  "id": 353,
+  "aktivita": "Zefektivňování procesů MěÚ (smart, e-government)",
+  "osa_id": "4",
+  "osa_nazev": "Kultura",
+  "opatreni": "4. Občanská vybavenost",
+  "stav": "Neřeší se",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.76210553337079,
+    49.00406471290306
+   ]
+  }
+ },
+ {
+  "id": 354,
+  "aktivita": "Nový web města",
+  "osa_id": "4",
+  "osa_nazev": "Kultura",
+  "opatreni": "4. Občanská vybavenost",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.762791838543844,
+    49.004064286026995
+   ]
+  }
+ },
+ {
+  "id": 355,
+  "aktivita": "Elektronický dotykový informační panel",
+  "osa_id": "4",
+  "osa_nazev": "Kultura",
+  "opatreni": "4. Občanská vybavenost",
+  "stav": "Hotovo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.762105397236887,
+    49.00437398418399
+   ]
+  }
+ },
+ {
+  "id": 356,
+  "aktivita": "Podpora nové moderní polikliniky",
+  "osa_id": "4",
+  "osa_nazev": "Kultura",
+  "opatreni": "4. Občanská vybavenost",
+  "stav": "Neřeší se",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.762492083442421,
+    49.00610939446859
+   ]
+  }
+ },
+ {
+  "id": 357,
+  "aktivita": "Rekonstrukce/rozšíření městské knihovny",
+  "osa_id": "4",
+  "osa_nazev": "Kultura",
+  "opatreni": "4. Občanská vybavenost",
+  "stav": "Hotovo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.766204473428244,
+    49.00351171607142
+   ]
+  }
+ },
+ {
+  "id": 358,
+  "aktivita": "Vybudování nového hřbitova",
+  "osa_id": "4",
+  "osa_nazev": "Kultura",
+  "opatreni": "4. Občanská vybavenost",
+  "stav": "Neznámo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.748627664869897,
+    49.00018305909617
+   ]
+  }
+ },
+ {
+  "id": 359,
+  "aktivita": "Využití volných prostor a brownfieldů",
+  "osa_id": "5",
+  "osa_nazev": "Podnikání",
+  "opatreni": "1. Podnikatelské prostředí",
+  "stav": "Neznámo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.773608292049273,
+    48.999966939798924
+   ]
+  }
+ },
+ {
+  "id": 360,
+  "aktivita": "Podpora JHK",
+  "osa_id": "5",
+  "osa_nazev": "Podnikání",
+  "opatreni": "1. Podnikatelské prostředí",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.762792042744698,
+    49.004298859553685
+   ]
+  }
+ },
+ {
+  "id": 361,
+  "aktivita": "Pořádání podnikatelských fór",
+  "osa_id": "5",
+  "osa_nazev": "Podnikání",
+  "opatreni": "1. Podnikatelské prostředí",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.762105170347061,
+    49.00424175884509
+   ]
+  }
+ },
+ {
+  "id": 362,
+  "aktivita": "Propagace místních služeb",
+  "osa_id": "5",
+  "osa_nazev": "Podnikání",
+  "opatreni": "1. Podnikatelské prostředí",
+  "stav": "Neznámo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.762019209196941,
+    49.00395953351157
+   ]
+  }
+ },
+ {
+  "id": 363,
+  "aktivita": "Podpora výzkumu, vývoje a inovací",
+  "osa_id": "5",
+  "osa_nazev": "Podnikání",
+  "opatreni": "1. Podnikatelské prostředí",
+  "stav": "Neznámo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.773951149679037,
+    49.00530900440945
+   ]
+  }
+ },
+ {
+  "id": 364,
+  "aktivita": "Podpora kvalitních pracovních míst",
+  "osa_id": "5",
+  "osa_nazev": "Podnikání",
+  "opatreni": "2. Pracovní příležitosti",
+  "stav": "Neznámo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.750258669168513,
+    49.00241029262728
+   ]
+  }
+ },
+ {
+  "id": 365,
+  "aktivita": "Podpora dalšího vzdělávání ve firmách",
+  "osa_id": "5",
+  "osa_nazev": "Podnikání",
+  "opatreni": "2. Pracovní příležitosti",
+  "stav": "Neznámo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.761332223354408,
+    49.01096137544765
+   ]
+  }
+ },
+ {
+  "id": 366,
+  "aktivita": "Propojování oborů s trhem práce",
+  "osa_id": "5",
+  "osa_nazev": "Podnikání",
+  "opatreni": "3. Spolupráce školy-podnikatelé",
+  "stav": "Neznámo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.757512343643267,
+    49.009870505686614
+   ]
+  }
+ },
+ {
+  "id": 367,
+  "aktivita": "Spolupráce škol s podnikateli",
+  "osa_id": "5",
+  "osa_nazev": "Podnikání",
+  "opatreni": "3. Spolupráce školy-podnikatelé",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.757726857969766,
+    49.00941941449655
+   ]
+  }
+ },
+ {
+  "id": 368,
+  "aktivita": "Podpora znevýhodněných skupin",
+  "osa_id": "5",
+  "osa_nazev": "Podnikání",
+  "opatreni": "4. Nezaměstnanost",
+  "stav": "Neznámo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.762662701126203,
+    49.00390456680125
+   ]
+  }
+ },
+ {
+  "id": 369,
+  "aktivita": "Vzděl. kurzy pro dospělé",
+  "osa_id": "5",
+  "osa_nazev": "Podnikání",
+  "opatreni": "4. Nezaměstnanost",
+  "stav": "Neznámo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.762233434238928,
+    49.00452244972005
+   ]
+  }
+ },
+ {
+  "id": 370,
+  "aktivita": "Zachování rozvojových ploch pro bydlení",
+  "osa_id": "5",
+  "osa_nazev": "Podnikání",
+  "opatreni": "5. Rozvoj bydlení",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.748799122045991,
+    49.014648266398034
+   ]
+  }
+ },
+ {
+  "id": 371,
+  "aktivita": "Podpora dostupného bydlení pro mladé",
+  "osa_id": "5",
+  "osa_nazev": "Podnikání",
+  "opatreni": "5. Rozvoj bydlení",
+  "stav": "Neřeší se",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.754850968353479,
+    49.00370448931098
+   ]
+  }
+ },
+ {
+  "id": 372,
+  "aktivita": "Výstavba základní tech. infrastruktury",
+  "osa_id": "5",
+  "osa_nazev": "Podnikání",
+  "opatreni": "5. Rozvoj bydlení",
+  "stav": "Neznámo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.762533835976333,
+    49.00423797518398
+   ]
+  }
+ },
+ {
+  "id": 373,
+  "aktivita": "Zapisování brownfieldů do databáze",
+  "osa_id": "5",
+  "osa_nazev": "Podnikání",
+  "opatreni": "6. Brownfieldy",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.762533518330581,
+    49.01091107265613
+   ]
+  }
+ },
+ {
+  "id": 374,
+  "aktivita": "Revitalizace brownfieldů",
+  "osa_id": "5",
+  "osa_nazev": "Podnikání",
+  "opatreni": "6. Brownfieldy",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.773650038910919,
+    48.99948810814478
+   ]
+  }
+ },
+ {
+  "id": 375,
+  "aktivita": "Zvyšování povědomí o dotacích",
+  "osa_id": "5",
+  "osa_nazev": "Podnikání",
+  "opatreni": "7. Dotace",
+  "stav": "Neznámo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.762876858101237,
+    49.0045230900283
+   ]
+  }
+ },
+ {
+  "id": 376,
+  "aktivita": "Energetický management objektů",
+  "osa_id": "5",
+  "osa_nazev": "Podnikání",
+  "opatreni": "8. Ekologická řešení",
+  "stav": "Hotovo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.751073595584902,
+    49.00232757801828
+   ]
+  }
+ },
+ {
+  "id": 377,
+  "aktivita": "Podpora zateplování a OZE",
+  "osa_id": "5",
+  "osa_nazev": "Podnikání",
+  "opatreni": "8. Ekologická řešení",
+  "stav": "Hotovo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.752103734013984,
+    49.00229839590724
+   ]
+  }
+ },
+ {
+  "id": 378,
+  "aktivita": "Podpora zelených střech a FV panelů",
+  "osa_id": "5",
+  "osa_nazev": "Podnikání",
+  "opatreni": "8. Ekologická řešení",
+  "stav": "Hotovo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.771461163498397,
+    49.00654548442655
+   ]
+  }
+ },
+ {
+  "id": 379,
+  "aktivita": "Tvorba kvalitních lázeňských nabídek",
+  "osa_id": "6",
+  "osa_nazev": "Cestovní ruch",
+  "opatreni": "1. Lázeňství",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.75300520014956,
+    49.002071322397306
+   ]
+  }
+ },
+ {
+  "id": 380,
+  "aktivita": "Rozšíření ubytovacích kapacit pro klienty",
+  "osa_id": "6",
+  "osa_nazev": "Cestovní ruch",
+  "opatreni": "1. Lázeňství",
+  "stav": "Hotovo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.74871241215944,
+    49.002329615452446
+   ]
+  }
+ },
+ {
+  "id": 381,
+  "aktivita": "Výstavba parkovacích domů pro lázně",
+  "osa_id": "6",
+  "osa_nazev": "Cestovní ruch",
+  "opatreni": "1. Lázeňství",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.754678484500918,
+    49.00224414531768
+   ]
+  }
+ },
+ {
+  "id": 382,
+  "aktivita": "Napojení Aurora na centrum (kolonáda)",
+  "osa_id": "6",
+  "osa_nazev": "Cestovní ruch",
+  "opatreni": "1. Lázeňství",
+  "stav": "Neřeší se",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.755923262045878,
+    49.00432499416552
+   ]
+  }
+ },
+ {
+  "id": 383,
+  "aktivita": "Zvyšování kvalifikace lázeňského personálu",
+  "osa_id": "6",
+  "osa_nazev": "Cestovní ruch",
+  "opatreni": "1. Lázeňství",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.75193169259659,
+    49.00238277931855
+   ]
+  }
+ },
+ {
+  "id": 384,
+  "aktivita": "Podpora činnosti destinačního managementu",
+  "osa_id": "6",
+  "osa_nazev": "Cestovní ruch",
+  "opatreni": "2. Produkty CR",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.750214948365416,
+    49.00226931079993
+   ]
+  }
+ },
+ {
+  "id": 385,
+  "aktivita": "Tvorba produktů pro mimosezónu",
+  "osa_id": "6",
+  "osa_nazev": "Cestovní ruch",
+  "opatreni": "2. Produkty CR",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.751159329845194,
+    49.00207151643966
+   ]
+  }
+ },
+ {
+  "id": 386,
+  "aktivita": "Rozšíření nabídky pro rodiny s dětmi",
+  "osa_id": "6",
+  "osa_nazev": "Cestovní ruch",
+  "opatreni": "2. Produkty CR",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.771418177251114,
+    49.00406821522723
+   ]
+  }
+ },
+ {
+  "id": 387,
+  "aktivita": "Zvyšování standardu ubytování a stravování",
+  "osa_id": "6",
+  "osa_nazev": "Cestovní ruch",
+  "opatreni": "3. Standard služeb",
+  "stav": "Hotovo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.751072642647653,
+    49.002693264092336
+   ]
+  }
+ },
+ {
+  "id": 388,
+  "aktivita": "Podpora certifikace ubytování",
+  "osa_id": "6",
+  "osa_nazev": "Cestovní ruch",
+  "opatreni": "3. Standard služeb",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.769271272753935,
+    49.0067997185789
+   ]
+  }
+ },
+ {
+  "id": 389,
+  "aktivita": "Zlepšení vybavenosti pláží u Světa",
+  "osa_id": "6",
+  "osa_nazev": "Cestovní ruch",
+  "opatreni": "3. Standard služeb",
+  "stav": "Neřeší se",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.76184606736391,
+    49.00114406143422
+   ]
+  }
+ },
+ {
+  "id": 390,
+  "aktivita": "Zřízení veřejných WC u parkovišť",
+  "osa_id": "6",
+  "osa_nazev": "Cestovní ruch",
+  "opatreni": "3. Standard služeb",
+  "stav": "Neřeší se",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.773473103162827,
+    49.00018980431945
+   ]
+  }
+ },
+ {
+  "id": 391,
+  "aktivita": "Vytváření oddělených cyklokoridorů",
+  "osa_id": "6",
+  "osa_nazev": "Cestovní ruch",
+  "opatreni": "4. Turistika a cykloturistika",
+  "stav": "Neřeší se",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.769357540205355,
+    49.00145207015764
+   ]
+  }
+ },
+ {
+  "id": 392,
+  "aktivita": "Instalace vybavení pro cykloturisty",
+  "osa_id": "6",
+  "osa_nazev": "Cestovní ruch",
+  "opatreni": "4. Turistika a cykloturistika",
+  "stav": "Plánováno",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.772963070085096,
+    49.004208580754934
+   ]
+  }
+ },
+ {
+  "id": 393,
+  "aktivita": "Vytvoření cyklogenerelu",
+  "osa_id": "6",
+  "osa_nazev": "Cestovní ruch",
+  "opatreni": "4. Turistika a cykloturistika",
+  "stav": "Neřeší se",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.770688432051085,
+    49.00378605682268
+   ]
+  }
+ },
+ {
+  "id": 394,
+  "aktivita": "Propagace ohleduplné cykloturistiky",
+  "osa_id": "6",
+  "osa_nazev": "Cestovní ruch",
+  "opatreni": "4. Turistika a cykloturistika",
+  "stav": "Neznámo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.770944812356353,
+    49.00399873569129
+   ]
+  }
+ },
+ {
+  "id": 395,
+  "aktivita": "Revitalizace Staré radnice pro muzeum",
+  "osa_id": "6",
+  "osa_nazev": "Cestovní ruch",
+  "opatreni": "5. Stávající objekty",
+  "stav": "Hotovo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.77165449525668,
+    49.00375778753445
+   ]
+  }
+ },
+ {
+  "id": 396,
+  "aktivita": "Zavádění smart technologií (navigace, info)",
+  "osa_id": "6",
+  "osa_nazev": "Cestovní ruch",
+  "opatreni": "6. Komfort návštěvníků",
+  "stav": "Neřeší se",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.771245605478724,
+    49.00381461714819
+   ]
+  }
+ },
+ {
+  "id": 397,
+  "aktivita": "Zkvalitnění databáze ubytovatelů",
+  "osa_id": "6",
+  "osa_nazev": "Cestovní ruch",
+  "opatreni": "6. Komfort návštěvníků",
+  "stav": "Neřeší se",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.7595630814189,
+    49.00478590985275
+   ]
+  }
+ },
+ {
+  "id": 398,
+  "aktivita": "Komunikace mezi subjekty CR",
+  "osa_id": "6",
+  "osa_nazev": "Cestovní ruch",
+  "opatreni": "7. Spolupráce a vzdělávání",
+  "stav": "Neznámo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.758112148802887,
+    49.00108472557711
+   ]
+  }
+ },
+ {
+  "id": 399,
+  "aktivita": "Propojení vzdělávání s trhem práce v CR",
+  "osa_id": "6",
+  "osa_nazev": "Cestovní ruch",
+  "opatreni": "7. Spolupráce a vzdělávání",
+  "stav": "Neznámo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.764208600783808,
+    49.00541926451888
+   ]
+  }
+ },
+ {
+  "id": 400,
+  "aktivita": "Zvyšování povědomí o dotacích v CR",
+  "osa_id": "6",
+  "osa_nazev": "Cestovní ruch",
+  "opatreni": "7. Spolupráce a vzdělávání",
+  "stav": "Neznámo",
+  "komentar": "",
+  "geometrie": {
+   "type": "Point",
+   "coordinates": [
+    14.76206371276993,
+    49.00392746123362
+   ]
+  }
+ }
+]

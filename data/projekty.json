@@ -6860,14 +6860,11 @@
         "puvodni": {
           "bez_dph": 873000.0,
           "s_dph": 873000.0,
-          "zdroj_id": "ezak-VZ-810",
-          "url": "https://zakazky.mesto-trebon.cz/contract_display_810.html",
-          "zdroj_druh": "smluvni_ezak",
-          "muze_obsahovat_dodatky": true,
-          "zaklady_z_ezak_po_dodatcich": [
-            "bez_dph",
-            "s_dph"
-          ]
+          "zdroj_id": "rs-30136364",
+          "url": "https://smlouvy.gov.cz/smlouva/30136364",
+          "zdroj_druh": "registr",
+          "muze_obsahovat_dodatky": false,
+          "zaklady_z_ezak_po_dodatcich": []
         },
         "vysoutezena": null,
         "ezak_smluvni": {
@@ -6897,15 +6894,11 @@
         "chybi_dodatky": [],
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 929500.0,
-        "neuplne_cena_po_dodatcich": [
-          "původní cena z E-ZAK může už zahrnovat dodatky"
-        ],
+        "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 929500.0,
-        "neuplne_cena_po_dodatcich_s_dph": [
-          "původní cena z E-ZAK může už zahrnovat dodatky"
-        ],
+        "neuplne_cena_po_dodatcich_s_dph": [],
         "souhlas_zaplaceno": null,
-        "souhlas_ezak": null,
+        "souhlas_ezak": false,
         "dodatky_bez_dph": 56500.0
       },
       {
@@ -7154,9 +7147,7 @@
         "s_dph": false,
         "mena": "CZK",
         "po_dodatcich": 55430334.71,
-        "neuplne": [
-          "projekt"
-        ],
+        "neuplne": [],
         "jistota": "nase_propojeni"
       },
       "smluvni_s_dph": {
@@ -7165,9 +7156,7 @@
         "s_dph": true,
         "mena": "CZK",
         "po_dodatcich": 66817759.99,
-        "neuplne": [
-          "projekt"
-        ],
+        "neuplne": [],
         "jistota": "nase_propojeni"
       },
       "skladba_s_dph": [
@@ -7185,9 +7174,7 @@
           "nazev": "Projekt a výběrové řízení",
           "casti": 3,
           "castka": 1302180.0,
-          "nezname": [
-            "projekt"
-          ],
+          "nezname": [],
           "druh": "smluvni",
           "s_dph": true
         },
@@ -7212,9 +7199,7 @@
       ],
       "celkova_cena_s_dph": {
         "castka": 66817759.99,
-        "neuplne": [
-          "projekt"
-        ],
+        "neuplne": [],
         "druh": "smluvni",
         "s_dph": true,
         "jistota": "nase_propojeni"
@@ -7429,6 +7414,43 @@
       }
     ],
     "smlouvy": [
+      {
+        "id": "rs-30136364",
+        "id_smlouvy": "28200348",
+        "navazuje_na": null,
+        "cislo_smlouvy": "750/8366/24",
+        "predmet": "Zpracování projektové dokumentace - Ubytovací objekt sportovní haly, Třeboň",
+        "role": "projekt",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2024-09-13",
+        "strany": [
+          {
+            "nazev": "fyzická osoba",
+            "jmeno_podnikatele": "Ing. Josef Kregl",
+            "ico": null
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 873000.0,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 873000.0,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/30136364",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
       {
         "id": "rs-34688045",
         "id_smlouvy": "32523365",
@@ -8203,6 +8225,17 @@
         "role": "projekt",
         "zdroj_id": "ezak-VZ-810",
         "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2024-09-13",
+        "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "projektová dokumentace",
+        "text": "Zpracování projektové dokumentace - Ubytovací objekt sportovní haly, Třeboň",
+        "role": "projekt",
+        "zdroj_id": "rs-30136364",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/30136364"
       },
       {
         "datum": "2025-09-04",
@@ -16008,14 +16041,11 @@
         "puvodni": {
           "bez_dph": 1996257.0,
           "s_dph": 2415471.0,
-          "zdroj_id": "ezak-VZ-826",
-          "url": "https://zakazky.mesto-trebon.cz/contract_display_826.html",
-          "zdroj_druh": "smluvni_ezak",
-          "muze_obsahovat_dodatky": true,
-          "zaklady_z_ezak_po_dodatcich": [
-            "bez_dph",
-            "s_dph"
-          ]
+          "zdroj_id": "rs-29850324",
+          "url": "https://smlouvy.gov.cz/smlouva/29850324",
+          "zdroj_druh": "registr",
+          "muze_obsahovat_dodatky": false,
+          "zaklady_z_ezak_po_dodatcich": []
         },
         "vysoutezena": null,
         "ezak_smluvni": {
@@ -16056,15 +16086,11 @@
         "chybi_dodatky": [],
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 2506161.21,
-        "neuplne_cena_po_dodatcich": [
-          "původní cena z E-ZAK může už zahrnovat dodatky"
-        ],
+        "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 3032454.78,
-        "neuplne_cena_po_dodatcich_s_dph": [
-          "původní cena z E-ZAK může už zahrnovat dodatky"
-        ],
+        "neuplne_cena_po_dodatcich_s_dph": [],
         "souhlas_zaplaceno": true,
-        "souhlas_ezak": null,
+        "souhlas_ezak": false,
         "dodatky_bez_dph": 509904.21
       },
       {
@@ -16090,6 +16116,54 @@
         "souhlas_zaplaceno": null,
         "souhlas_ezak": null,
         "dodatky_bez_dph": null
+      },
+      {
+        "role": "stavba",
+        "dodavatel": {
+          "nazev": "Muzeum Jindřichohradecka",
+          "jmeno_podnikatele": null
+        },
+        "puvodni": {
+          "bez_dph": 80000.0,
+          "s_dph": 80000.0,
+          "zdroj_id": "rs-30033540",
+          "url": "https://smlouvy.gov.cz/smlouva/30033540"
+        },
+        "vazba_dodatku": "dolozeno",
+        "dodatky": [],
+        "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
+        "cena_po_dodatcich": 80000.0,
+        "neuplne_cena_po_dodatcich": [],
+        "cena_po_dodatcich_s_dph": 80000.0,
+        "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
+        "souhlas_ezak": null,
+        "dodatky_bez_dph": null
+      },
+      {
+        "role": "bozp",
+        "dodavatel": {
+          "nazev": "STAVEBNÍ PORADNA, spol. s r.o.",
+          "jmeno_podnikatele": null
+        },
+        "puvodni": {
+          "bez_dph": 59000.0,
+          "s_dph": 71390.0,
+          "zdroj_id": "rs-30302056",
+          "url": "https://smlouvy.gov.cz/smlouva/30302056"
+        },
+        "vazba_dodatku": "dolozeno",
+        "dodatky": [],
+        "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
+        "cena_po_dodatcich": 59000.0,
+        "neuplne_cena_po_dodatcich": [],
+        "cena_po_dodatcich_s_dph": 71390.0,
+        "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
+        "souhlas_ezak": null,
+        "dodatky_bez_dph": null
       }
     ],
     "souhrn": {
@@ -16103,45 +16177,46 @@
         "jistota": "nevime"
       },
       "smluvni_bez_dph": {
-        "celkem": 2069119.0,
+        "celkem": 2208119.0,
         "druh": "smluvni",
         "s_dph": false,
         "mena": "CZK",
-        "po_dodatcich": 2579023.21,
-        "neuplne": [
-          "stavba"
-        ],
+        "po_dodatcich": 2718023.21,
+        "neuplne": [],
         "jistota": "nase_propojeni"
       },
       "smluvni_s_dph": {
-        "celkem": 2488333.0,
+        "celkem": 2639723.0,
         "druh": "smluvni",
         "s_dph": true,
         "mena": "CZK",
-        "po_dodatcich": 3105316.78,
-        "neuplne": [
-          "stavba"
-        ],
+        "po_dodatcich": 3256706.78,
+        "neuplne": [],
         "jistota": "nase_propojeni"
       },
       "skladba_s_dph": [
         {
           "skupina": "stavba",
           "nazev": "Stavba",
-          "casti": 2,
-          "castka": 3105316.78,
-          "nezname": [
-            "stavba"
-          ],
+          "casti": 3,
+          "castka": 3185316.78,
+          "nezname": [],
+          "druh": "smluvni",
+          "s_dph": true
+        },
+        {
+          "skupina": "dozor",
+          "nazev": "Technický dozor a BOZP",
+          "casti": 1,
+          "castka": 71390.0,
+          "nezname": [],
           "druh": "smluvni",
           "s_dph": true
         }
       ],
       "celkova_cena_s_dph": {
-        "castka": 3105316.78,
-        "neuplne": [
-          "stavba"
-        ],
+        "castka": 3256706.78,
+        "neuplne": [],
         "druh": "smluvni",
         "s_dph": true,
         "jistota": "nase_propojeni"
@@ -16216,6 +16291,117 @@
       }
     ],
     "smlouvy": [
+      {
+        "id": "rs-29850324",
+        "id_smlouvy": "27927384",
+        "navazuje_na": null,
+        "cislo_smlouvy": "750/8320/24",
+        "predmet": "SOD Stavební úpravy pro technologii Jordánovy kašny",
+        "role": "stavba",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2024-08-19",
+        "strany": [
+          {
+            "nazev": "Stavební firma HUKO s.r.o.",
+            "jmeno_podnikatele": null,
+            "ico": "25174533"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 1996257.0,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 2415471.0,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/29850324",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-30033540",
+        "id_smlouvy": "28102044",
+        "navazuje_na": null,
+        "cislo_smlouvy": "750/8342/24",
+        "predmet": "Archeologický dohled při stavbě Stavební úpravy pro technologii Jordánovy kašny.",
+        "role": "stavba",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2024-09-03",
+        "strany": [
+          {
+            "nazev": "Muzeum Jindřichohradecka",
+            "jmeno_podnikatele": null,
+            "ico": "00070971"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 80000.0,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 80000.0,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/30033540",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-30302056",
+        "id_smlouvy": "28357968",
+        "navazuje_na": null,
+        "cislo_smlouvy": "750/8383/24",
+        "predmet": "Příkazní smlouva - výkon činnosti koordinátora BOZP na stavbě „Stavební úpravy pro technologii Jordánovy kašny“",
+        "role": "bozp",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2024-09-25",
+        "strany": [
+          {
+            "nazev": "STAVEBNÍ PORADNA, spol. s r.o.",
+            "jmeno_podnikatele": null,
+            "ico": "62508822"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 59000.0,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 71390.0,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/30302056",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
       {
         "id": "rs-30938356",
         "id_smlouvy": "28948316",
@@ -16351,6 +16537,39 @@
         "jistota": "nase_propojeni"
       },
       {
+        "datum": "2024-08-19",
+        "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "smlouva o dílo",
+        "text": "SOD Stavební úpravy pro technologii Jordánovy kašny",
+        "role": "stavba",
+        "zdroj_id": "rs-29850324",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/29850324"
+      },
+      {
+        "datum": "2024-09-03",
+        "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "smlouva o dílo",
+        "text": "Archeologický dohled při stavbě Stavební úpravy pro technologii Jordánovy kašny.",
+        "role": "stavba",
+        "zdroj_id": "rs-30033540",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/30033540"
+      },
+      {
+        "datum": "2024-09-25",
+        "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "BOZP",
+        "text": "Příkazní smlouva - výkon činnosti koordinátora BOZP na stavbě „Stavební úpravy pro technologii Jordánovy kašny“",
+        "role": "bozp",
+        "zdroj_id": "rs-30302056",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/30302056"
+      },
+      {
         "datum": "2024-11-04",
         "typ": "smlouva",
         "kategorie": "smlouva",
@@ -16421,9 +16640,9 @@
         "puvodni": {
           "bez_dph": 1467668.26,
           "s_dph": 1643788.46,
-          "zdroj_id": "ezak-VZ-824",
-          "url": "https://zakazky.mesto-trebon.cz/contract_display_824.html",
-          "zdroj_druh": "smluvni_ezak",
+          "zdroj_id": "rs-30443016",
+          "url": "https://smlouvy.gov.cz/smlouva/30443016",
+          "zdroj_druh": "registr",
           "muze_obsahovat_dodatky": false,
           "zaklady_z_ezak_po_dodatcich": []
         },
@@ -16438,7 +16657,7 @@
           "bez_dph": 1467668.26,
           "s_dph": 1643788.46
         },
-        "vazba_dodatku": null,
+        "vazba_dodatku": "nase_propojeni",
         "dodatky": [],
         "chybi_dodatky": [],
         "obsahuje_dopocet_dph": false,
@@ -16556,7 +16775,45 @@
         "jistota": "nase_propojeni"
       }
     ],
-    "smlouvy": [],
+    "smlouvy": [
+      {
+        "id": "rs-30443016",
+        "id_smlouvy": "28491616",
+        "navazuje_na": null,
+        "cislo_smlouvy": "750/8405/24",
+        "predmet": "Stavební opravy bytových jednotek č. 935/3 a 935/7 Vrchlického 935, Třeboň",
+        "role": "stavba",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2024-10-07",
+        "strany": [
+          {
+            "nazev": "KOSTKA JH s.r.o.",
+            "jmeno_podnikatele": null,
+            "ico": "63908701"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 1467668.26,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 1643788.46,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/30443016",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      }
+    ],
     "usneseni": [],
     "posledni_dodatek": {},
     "udalosti": [
@@ -16576,24 +16833,29 @@
         "role": "stavba",
         "zdroj_id": "ezak-VZ-824",
         "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2024-10-07",
+        "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "smlouva o dílo",
+        "text": "Stavební opravy bytových jednotek č. 935/3 a 935/7 Vrchlického 935, Třeboň",
+        "role": "stavba",
+        "zdroj_id": "rs-30443016",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/30443016"
       }
     ],
     "posledni_udalost": {
-      "datum": "2024-09-30",
-      "typ": "soutez",
-      "text": "Soutěž: Stavební opravy bytových jednotek č. 935/3 a 935/7 Vrchlického 935, Třeboň",
-      "kategorie": "výběrové řízení",
-      "kratce": "stavba, smlouva 7 dní po podání nabídek (vyhlášení zveřejněno až dodatečně), 1 nabídka",
-      "lhuta_dni": null,
-      "rizeni_dni": null,
-      "po_nabidkach_dni": 7,
-      "zruseno": false,
-      "datum_zruseni": null,
-      "pocet_nabidek": 1,
-      "url": "https://zakazky.mesto-trebon.cz/contract_display_824.html",
+      "datum": "2024-10-07",
+      "typ": "smlouva",
+      "kategorie": "smlouva",
+      "kratce": "smlouva o dílo",
+      "text": "Stavební opravy bytových jednotek č. 935/3 a 935/7 Vrchlického 935, Třeboň",
       "role": "stavba",
-      "zdroj_id": "ezak-VZ-824",
-      "jistota": "nase_propojeni"
+      "zdroj_id": "rs-30443016",
+      "jistota": "nase_propojeni",
+      "url": "https://smlouvy.gov.cz/smlouva/30443016"
     }
   },
   {
@@ -16621,9 +16883,9 @@
         "puvodni": {
           "bez_dph": 1382248.08,
           "s_dph": 1672520.18,
-          "zdroj_id": "ezak-VZ-823",
-          "url": "https://zakazky.mesto-trebon.cz/contract_display_823.html",
-          "zdroj_druh": "smluvni_ezak",
+          "zdroj_id": "rs-29991764",
+          "url": "https://smlouvy.gov.cz/smlouva/29991764",
+          "zdroj_druh": "registr",
           "muze_obsahovat_dodatky": false,
           "zaklady_z_ezak_po_dodatcich": []
         },
@@ -16638,17 +16900,29 @@
           "bez_dph": 1884639.05,
           "s_dph": 2280413.25
         },
-        "vazba_dodatku": null,
-        "dodatky": [],
+        "vazba_dodatku": "nase_propojeni",
+        "dodatky": [
+          {
+            "cislo": 1,
+            "bez_dph": 502390.97,
+            "s_dph": 607893.07,
+            "jen_termin": false,
+            "doklad_usneseni": null,
+            "bez_castky": false,
+            "datum": "2024-10-16",
+            "zdroj_id": "rs-30583216",
+            "url": "https://smlouvy.gov.cz/smlouva/30583216"
+          }
+        ],
         "chybi_dodatky": [],
         "obsahuje_dopocet_dph": false,
-        "cena_po_dodatcich": 1382248.08,
+        "cena_po_dodatcich": 1884639.05,
         "neuplne_cena_po_dodatcich": [],
-        "cena_po_dodatcich_s_dph": 1672520.18,
+        "cena_po_dodatcich_s_dph": 2280413.25,
         "neuplne_cena_po_dodatcich_s_dph": [],
-        "souhlas_zaplaceno": false,
-        "souhlas_ezak": null,
-        "dodatky_bez_dph": null
+        "souhlas_zaplaceno": true,
+        "souhlas_ezak": false,
+        "dodatky_bez_dph": 502390.97
       }
     ],
     "souhrn": {
@@ -16666,7 +16940,7 @@
         "druh": "smluvni",
         "s_dph": false,
         "mena": "CZK",
-        "po_dodatcich": 1382248.08,
+        "po_dodatcich": 1884639.05,
         "neuplne": [],
         "jistota": "nase_propojeni"
       },
@@ -16675,7 +16949,7 @@
         "druh": "smluvni",
         "s_dph": true,
         "mena": "CZK",
-        "po_dodatcich": 1672520.18,
+        "po_dodatcich": 2280413.25,
         "neuplne": [],
         "jistota": "nase_propojeni"
       },
@@ -16684,14 +16958,14 @@
           "skupina": "stavba",
           "nazev": "Stavba",
           "casti": 1,
-          "castka": 1672520.18,
+          "castka": 2280413.25,
           "nezname": [],
           "druh": "smluvni",
           "s_dph": true
         }
       ],
       "celkova_cena_s_dph": {
-        "castka": 1672520.18,
+        "castka": 2280413.25,
         "neuplne": [],
         "druh": "smluvni",
         "s_dph": true,
@@ -16756,9 +17030,86 @@
         "jistota": "nase_propojeni"
       }
     ],
-    "smlouvy": [],
+    "smlouvy": [
+      {
+        "id": "rs-29991764",
+        "id_smlouvy": "28062464",
+        "navazuje_na": null,
+        "cislo_smlouvy": "750/8332/24",
+        "predmet": "Oprava hráze rybníka Veský - 3. etapa",
+        "role": "stavba",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2024-09-02",
+        "strany": [
+          {
+            "nazev": "Lesostavby Třeboň a.s.",
+            "jmeno_podnikatele": null,
+            "ico": "47239328"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 1382248.08,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 1672520.18,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/29991764",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-30583216",
+        "id_smlouvy": "28615776",
+        "navazuje_na": "28062464",
+        "cislo_smlouvy": "750/8332/24/1",
+        "predmet": "Dodatek č. 1 ke smlouvě o dílo: Oprava hráze rybníka Veský - 3. etapa",
+        "role": "stavba",
+        "dodatek_cislo": 1,
+        "datum_uzavreni": "2024-10-16",
+        "strany": [
+          {
+            "nazev": "Lesostavby Třeboň a.s.",
+            "jmeno_podnikatele": null,
+            "ico": "47239328"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 502390.97,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 607893.07,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/30583216",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      }
+    ],
     "usneseni": [],
-    "posledni_dodatek": {},
+    "posledni_dodatek": {
+      "stavba": 1
+    },
     "udalosti": [
       {
         "datum": "2024-08-19",
@@ -16776,24 +17127,40 @@
         "role": "stavba",
         "zdroj_id": "ezak-VZ-823",
         "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2024-09-02",
+        "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "smlouva o dílo",
+        "text": "Oprava hráze rybníka Veský - 3. etapa",
+        "role": "stavba",
+        "zdroj_id": "rs-29991764",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/29991764"
+      },
+      {
+        "datum": "2024-10-16",
+        "typ": "dodatek",
+        "kategorie": "smlouva",
+        "kratce": "dodatek 1 (smlouva o dílo)",
+        "text": "Dodatek č. 1 ke smlouvě o dílo: Oprava hráze rybníka Veský - 3. etapa",
+        "role": "stavba",
+        "zdroj_id": "rs-30583216",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/30583216"
       }
     ],
     "posledni_udalost": {
-      "datum": "2024-08-19",
-      "typ": "soutez",
-      "text": "Soutěž: Oprava hráze rybníka Veský – 3. etapa",
-      "kategorie": "výběrové řízení",
-      "kratce": "stavba, smlouva 14 dní po podání nabídek (vyhlášení zveřejněno až dodatečně), 2 nabídky",
-      "lhuta_dni": null,
-      "rizeni_dni": null,
-      "po_nabidkach_dni": 14,
-      "zruseno": false,
-      "datum_zruseni": null,
-      "pocet_nabidek": 2,
-      "url": "https://zakazky.mesto-trebon.cz/contract_display_823.html",
+      "datum": "2024-10-16",
+      "typ": "dodatek",
+      "kategorie": "smlouva",
+      "kratce": "dodatek 1 (smlouva o dílo)",
+      "text": "Dodatek č. 1 ke smlouvě o dílo: Oprava hráze rybníka Veský - 3. etapa",
       "role": "stavba",
-      "zdroj_id": "ezak-VZ-823",
-      "jistota": "nase_propojeni"
+      "zdroj_id": "rs-30583216",
+      "jistota": "nase_propojeni",
+      "url": "https://smlouvy.gov.cz/smlouva/30583216"
     }
   }
 ]
