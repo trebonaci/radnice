@@ -1,0 +1,210 @@
+[
+  {
+    "id": "dps-chelcickeho",
+    "nazev": "Dům s pečovatelskou službou Chelčického",
+    "oblast": "socialni",
+    "popis": "Byty pro seniory a klubovna v Chelčického ulici.",
+    "zmeny": [
+      "zmena-rm-2026-j110-u461",
+      "zmena-rm-2026-j110-u458"
+    ],
+    "investice": [
+      {
+        "id": "auto-vz-941",
+        "nazev": "Stavební úpravy kotelen a výměna plynových kotlů v objektu DPS IA a DPS IC, Chelčického 1, Třeboň",
+        "faze": "probiha",
+        "jistota": "dolozeno"
+      }
+    ],
+    "zasobnik": [
+      {
+        "id": "dps1-kotelny",
+        "nazev": "Kotelny a plynové kotle v domě s pečovatelskou službou I (Chelčického)",
+        "pripravenost": "projektová dokumentace zadána",
+        "jistota": "dolozeno"
+      }
+    ],
+    "misto": [],
+    "geometrie": null,
+    "posledni_zmena": "2026-09-09"
+  },
+  {
+    "id": "dps-3",
+    "nazev": "Dům s pečovatelskou službou DPS 3",
+    "oblast": "socialni",
+    "popis": null,
+    "zmeny": [],
+    "investice": [
+      {
+        "id": "dps3-energie",
+        "nazev": "Úspory energie v DPS 3",
+        "faze": "pripravuje_se",
+        "jistota": "dolozeno"
+      }
+    ],
+    "zasobnik": [],
+    "misto": [],
+    "geometrie": null,
+    "posledni_zmena": null
+  },
+  {
+    "id": "sportovni-hala",
+    "nazev": "Sportovní hala",
+    "oblast": "sport",
+    "popis": "Sportovní hala s tělocvičnami a ubytováním (Hotel Sport).",
+    "zmeny": [
+      "zmena-rm-2026-j113-u541"
+    ],
+    "investice": [
+      {
+        "id": "pristavba-telocvicen",
+        "nazev": "Přístavba dvou tělocvičen sportovní haly",
+        "faze": "probiha",
+        "jistota": "dolozeno"
+      },
+      {
+        "id": "sportovni-hala-ubytovani",
+        "nazev": "Ubytování ve sportovní hale (nástavba a přístavba)",
+        "faze": "probiha",
+        "jistota": "dolozeno"
+      }
+    ],
+    "zasobnik": [
+      {
+        "id": "sportovni-hala-revitalizace",
+        "nazev": "Revitalizace sportovní haly (občerstvení, zázemí v 1. podzemním podlaží)",
+        "pripravenost": "prováděcí projekt zadán",
+        "jistota": "dolozeno"
+      }
+    ],
+    "misto": [],
+    "geometrie": null,
+    "posledni_zmena": "2026-10-21"
+  },
+  {
+    "id": "muzeum",
+    "nazev": "Muzeum města Třeboně",
+    "oblast": "kultura",
+    "popis": null,
+    "zmeny": [
+      "zmena-rm-2026-j112-u511"
+    ],
+    "investice": [],
+    "zasobnik": [],
+    "misto": [],
+    "geometrie": null,
+    "posledni_zmena": "2026-10-07"
+  },
+  {
+    "id": "knihovna",
+    "nazev": "Městská knihovna",
+    "oblast": "kultura",
+    "popis": null,
+    "zmeny": [
+      "zmena-rm-2026-j113-u533"
+    ],
+    "investice": [],
+    "zasobnik": [],
+    "misto": [],
+    "geometrie": null,
+    "posledni_zmena": "2026-10-21"
+  },
+  {
+    "id": "dum-svatopluka-cecha-20",
+    "nazev": "Dům čp. 20/II v ulici Svatopluka Čecha",
+    "oblast": "socialni",
+    "popis": "Nebytové prostory, kde dosud sídlí Hospicová péče sv. Kleofáše.",
+    "zmeny": [
+      "zmena-rm-2026-j112-u497"
+    ],
+    "investice": [],
+    "zasobnik": [],
+    "misto": [],
+    "geometrie": null,
+    "posledni_zmena": "2026-10-07"
+  },
+  {
+    "id": "zs-na-sadech",
+    "nazev": "ZŠ Na Sadech",
+    "oblast": "skolstvi",
+    "popis": null,
+    "zmeny": [
+      "zmena-rm-2026-j111-u486"
+    ],
+    "investice": [
+      {
+        "id": "fve-zs-na-sadech",
+        "nazev": "Fotovoltaika na ZŠ Na Sadech",
+        "faze": "probiha",
+        "jistota": "dolozeno"
+      },
+      {
+        "id": "auto-vz-848",
+        "nazev": "Rekonstrukce fasády staré budovy ZŠ Na Sadech – západní strana, dvorní část",
+        "faze": "dokonceno",
+        "jistota": "dolozeno"
+      }
+    ],
+    "zasobnik": [],
+    "misto": [],
+    "geometrie": null,
+    "posledni_zmena": "2026-09-23"
+  },
+  {
+    "id": "zs-sokolska",
+    "nazev": "ZŠ Sokolská (včetně pracoviště v Břilicích)",
+    "oblast": "skolstvi",
+    "popis": null,
+    "zmeny": [
+      "zmena-rm-2026-j1-u8",
+      "zmena-rm-2026-j113-u525"
+    ],
+    "investice": [],
+    "zasobnik": [],
+    "misto": [],
+    "geometrie": null,
+    "posledni_zmena": "2026-11-04"
+  },
+  {
+    "id": "ms-slunicko",
+    "nazev": "MŠ Sluníčko",
+    "oblast": "skolstvi",
+    "popis": null,
+    "zmeny": [
+      "zmena-rm-2026-j113-u544"
+    ],
+    "investice": [],
+    "zasobnik": [],
+    "misto": [],
+    "geometrie": null,
+    "posledni_zmena": "2026-10-21"
+  },
+  {
+    "id": "preseka-cp3",
+    "nazev": "Budova čp. 3 v Přesece",
+    "oblast": "sport",
+    "popis": null,
+    "zmeny": [
+      "zmena-rm-2026-j1-u3"
+    ],
+    "investice": [],
+    "zasobnik": [],
+    "misto": [],
+    "geometrie": null,
+    "posledni_zmena": "2026-11-04"
+  },
+  {
+    "id": "verejna-doprava",
+    "nazev": "Veřejná doprava a jízdenky",
+    "oblast": "doprava",
+    "popis": null,
+    "zmeny": [
+      "zmena-rm-2026-j110-u468"
+    ],
+    "investice": [],
+    "zasobnik": [],
+    "misto": [],
+    "geometrie": null,
+    "posledni_zmena": "2026-09-09"
+  }
+]

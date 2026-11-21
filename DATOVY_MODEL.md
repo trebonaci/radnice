@@ -96,6 +96,12 @@ Ze Strategického plánu 2021–2030. Zdroj: existující WordPress evidence `tr
 ### mapa (místa akcí, #180)
 `data/mapa.json`: `id`, `typ` (investice / zasobnik / namet), `nazev`, `faze`, `oblast`, `misto[]` {`druh` ulice / adresa / budova / bod, `nazev`, `linie` nebo `bod` (WGS84 [délka, šířka]), `jistota`, `zdroj`, `ruian_kod`}, `geometrie` (GeoJSON: MultiLineString, Point, MultiPoint nebo GeometryCollection; null = místo neznáme). Ulice = celá definiční čára ulice z RÚIAN, budova = definiční bod stavebního objektu, adresa = adresní místo. Ruční `misto` v YAML karty nebo položky zásobníku je doloženo (`- ulice: Valy`, `- adresa: Na Sadech 375`, `- cp: 1` + `cast_obce: Třeboň I`, `- bod: [šířka, délka]`); místo z názvu akce je naše propojení. Body námětů SPRM jsou orientační (redakční evidence). Zdroj geometrie: `raw/ruian/` (`pipeline/zdroje/ruian.py`, VFR obce Třeboň 547336, převod S-JTSK → WGS84).
 
+### misto_sluzba (karta místa nebo služby – měkké aktivity, #183)
+Rozhodnutí Ondřeje 21. 11. 2026: měkké aktivity (sport, kultura, sociální a komunitní služby) se uspořádají jako karty míst a služeb. Katalog ručně v `data/mista.yaml` (`id`, `nazev`, `oblast`, `popis`?, `misto`? jako u mapy, `zmeny` = vzory, `investice` = id karet, `zasobnik` = id položek). Výstup `data/mista.json`: `id`, `nazev`, `oblast`, `popis`, `zmeny[]` (id změn), `investice[]` {`id`, `nazev`, `faze`, `jistota`}, `zasobnik[]` {`id`, `nazev`, `pripravenost`, `jistota`}, `misto[]`, `geometrie`, `posledni_zmena`. Neexistující karta nebo položka se vynechá.
+
+### zmena („Co se mění“, #183)
+`data/zmeny.json`: každá změna `pro_obcany` z přijatého usnesení, nejnovější první: `id`, `text`, `kdo`, `oblast`, `plati_od`, `datum` (jednání), `organ`, `usneseni_id`, `usneseni_cislo`, `url` (zápis se stranou), `pro_obcany_ai`, `overeni`, `misto_id` + `misto_jistota` (naše propojení podle vzoru katalogu; null = bez karty).
+
 ### podnet
 Z mapy na trebonaci.cz. **Jen omezený veřejný výstup**: `id`, `typ` (prani / zavada), `stav`, `poloha`, `kategorie`, `datum`, upravený popis. Bez jména podatele, kontaktů a diskuse (současný endpoint `/podnety` je vrací, proto se přímo nepoužije). Vazba na projekt/usnesení s `jistota`; občanský návrh se vizuálně odlišuje od projektu, který město připravuje.
 

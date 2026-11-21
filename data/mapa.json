@@ -1656,5 +1656,104 @@
         49.004208580754934
       ]
     }
+  },
+  {
+    "id": "dps-chelcickeho",
+    "typ": "misto",
+    "nazev": "Dům s pečovatelskou službou Chelčického",
+    "faze": null,
+    "oblast": "socialni",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "dps-3",
+    "typ": "misto",
+    "nazev": "Dům s pečovatelskou službou DPS 3",
+    "faze": null,
+    "oblast": "socialni",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "sportovni-hala",
+    "typ": "misto",
+    "nazev": "Sportovní hala",
+    "faze": null,
+    "oblast": "sport",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "muzeum",
+    "typ": "misto",
+    "nazev": "Muzeum města Třeboně",
+    "faze": null,
+    "oblast": "kultura",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "knihovna",
+    "typ": "misto",
+    "nazev": "Městská knihovna",
+    "faze": null,
+    "oblast": "kultura",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "dum-svatopluka-cecha-20",
+    "typ": "misto",
+    "nazev": "Dům čp. 20/II v ulici Svatopluka Čecha",
+    "faze": null,
+    "oblast": "socialni",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "zs-na-sadech",
+    "typ": "misto",
+    "nazev": "ZŠ Na Sadech",
+    "faze": null,
+    "oblast": "skolstvi",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "zs-sokolska",
+    "typ": "misto",
+    "nazev": "ZŠ Sokolská (včetně pracoviště v Břilicích)",
+    "faze": null,
+    "oblast": "skolstvi",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "ms-slunicko",
+    "typ": "misto",
+    "nazev": "MŠ Sluníčko",
+    "faze": null,
+    "oblast": "skolstvi",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "preseka-cp3",
+    "typ": "misto",
+    "nazev": "Budova čp. 3 v Přesece",
+    "faze": null,
+    "oblast": "sport",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "verejna-doprava",
+    "typ": "misto",
+    "nazev": "Veřejná doprava a jízdenky",
+    "faze": null,
+    "oblast": "doprava",
+    "misto": [],
+    "geometrie": null
   }
 ]

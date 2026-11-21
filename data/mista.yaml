@@ -1,0 +1,81 @@
+# Katalog míst a služeb pro karty měkkých aktivit (#183, rozhodnutí Ondřeje 21. 11. 2026).
+#
+# Karta místa nebo služby sbírá změny z usnesení („Co se mění pro vás“) i investice a položky zásobníku
+# do toho místa. Spravuje se ručně.
+#
+#   id          krátký identifikátor
+#   nazev       jak místo lidé znají
+#   oblast      sport | kultura | socialni | skolstvi | komunity_spolky | doprava | voda_odpady | jine
+#   popis       volitelně, jedna věta
+#   misto       volitelně, jako u karet investic (#180): adresa / cp + cast_obce / ulice / bod
+#   zmeny       vzory (regulární výrazy) hledané v „kdo“ a textu změny → naše propojení
+#   investice   id karet investic (data/projekty, auto-vz-*) – ručně, doloženo
+#   zasobnik    id položek zásobníku – ručně
+
+mista:
+  - id: dps-chelcickeho
+    nazev: Dům s pečovatelskou službou Chelčického
+    oblast: socialni
+    popis: Byty pro seniory a klubovna v Chelčického ulici.
+    misto:
+      - cp: 2
+        cast_obce: Třeboň II
+    zmeny: ['DPS Chelčického', 'Klubovna, Chelčického']
+    investice: [auto-vz-941]
+    zasobnik: [dps1-kotelny]
+  - id: dps-3
+    nazev: Dům s pečovatelskou službou DPS 3
+    oblast: socialni
+    zmeny: ['DPS 3\b', 'DPS III']
+    investice: [dps3-energie]
+  - id: sportovni-hala
+    nazev: Sportovní hala
+    oblast: sport
+    popis: Sportovní hala s tělocvičnami a ubytováním (Hotel Sport).
+    zmeny: ['[Ss]portovní hal', 'Hotel Sport']
+    investice: [pristavba-telocvicen, sportovni-hala-ubytovani]
+    zasobnik: [sportovni-hala-revitalizace]
+  - id: muzeum
+    nazev: Muzeum města Třeboně
+    oblast: kultura
+    zmeny: ['Muzeum']
+  - id: knihovna
+    nazev: Městská knihovna
+    oblast: kultura
+    zmeny: ['[Kk]nihovn']
+  - id: dum-svatopluka-cecha-20
+    nazev: Dům čp. 20/II v ulici Svatopluka Čecha
+    oblast: socialni
+    popis: Nebytové prostory, kde dosud sídlí Hospicová péče sv. Kleofáše.
+    misto:
+      - cp: 20
+        cast_obce: Třeboň II
+    zmeny: ['Hospicová péče sv\. Kleofáše končí']
+  - id: zs-na-sadech
+    nazev: ZŠ Na Sadech
+    oblast: skolstvi
+    misto:
+      - adresa: Na Sadech 375
+    zmeny: ['ZŠ Na Sadech']
+    investice: [fve-zs-na-sadech, auto-vz-848]
+  - id: zs-sokolska
+    nazev: ZŠ Sokolská (včetně pracoviště v Břilicích)
+    oblast: skolstvi
+    misto:
+      - adresa: Sokolská 296
+    zmeny: ['ZŠ Sokolská']
+  - id: ms-slunicko
+    nazev: MŠ Sluníčko
+    oblast: skolstvi
+    zmeny: ['MŠ Sluníčko']
+  - id: preseka-cp3
+    nazev: Budova čp. 3 v Přesece
+    oblast: sport
+    misto:
+      - cp: 3
+        cast_obce: Přeseka
+    zmeny: ['čp\. 3, Přeseka', 'v Přesece']
+  - id: verejna-doprava
+    nazev: Veřejná doprava a jízdenky
+    oblast: doprava
+    zmeny: ['JIKORD']
