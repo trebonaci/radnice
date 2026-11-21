@@ -149,9 +149,10 @@ jobs:
               }
               // 3. nevyřešené nálezy P0/P1 (vlákna review)
               const q = await github.graphql(`query($o:String!,$r:String!,$n:Int!){repository(owner:$o,name:$r){pullRequest(number:$n){
-                reviewThreads(first:100){nodes{isResolved comments(first:1){nodes{body author{login}}}}}}}}`,
+                reviewThreads(first:100){nodes{isResolved isOutdated comments(first:1){nodes{body author{login}}}}}}}}`,
                 {o: owner, r: repo, n: pr.number});
-              const otevrene = q.repository.pullRequest.reviewThreads.nodes.filter(t => !t.isResolved)
+              // vlákno k už změněnému kódu (isOutdated) neblokuje: aktuální commit Codex zkontroloval znovu (bod 2) (#164)
+              const otevrene = q.repository.pullRequest.reviewThreads.nodes.filter(t => !t.isResolved && !t.isOutdated)
                 .map(t => (t.comments.nodes[0] || {}).body || '')
                 .filter(b => /P0 Badge|P1 Badge|badge\/P0|badge\/P1/.test(b));
               if (otevrene.length) { core.info(`${kdo}: ${otevrene.length} nevyřešených nálezů P0/P1`); continue; }
