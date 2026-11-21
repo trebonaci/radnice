@@ -10032,6 +10032,30 @@
         "souhlas_zaplaceno": true,
         "souhlas_ezak": false,
         "dodatky_bez_dph": null
+      },
+      {
+        "role": "projekt",
+        "dodavatel": {
+          "nazev": "fyzická osoba",
+          "jmeno_podnikatele": "Martin Vaňas, DiS."
+        },
+        "puvodni": {
+          "bez_dph": 102000.0,
+          "s_dph": 123420.0,
+          "zdroj_id": "rs-32722776",
+          "url": "https://smlouvy.gov.cz/smlouva/32722776"
+        },
+        "vazba_dodatku": "dolozeno",
+        "dodatky": [],
+        "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
+        "cena_po_dodatcich": 102000.0,
+        "neuplne_cena_po_dodatcich": [],
+        "cena_po_dodatcich_s_dph": 123420.0,
+        "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
+        "souhlas_ezak": null,
+        "dodatky_bez_dph": null
       }
     ],
     "souhrn": {
@@ -10045,22 +10069,22 @@
         "jistota": "nevime"
       },
       "smluvni_bez_dph": {
-        "celkem": 2832643.0,
+        "celkem": 2934643.0,
         "druh": "smluvni",
         "s_dph": false,
         "mena": "CZK",
-        "po_dodatcich": 2832643.0,
+        "po_dodatcich": 2934643.0,
         "neuplne": [
           "stavba"
         ],
         "jistota": "nase_propojeni"
       },
       "smluvni_s_dph": {
-        "celkem": 3427498.1,
+        "celkem": 3550918.1,
         "druh": "smluvni",
         "s_dph": true,
         "mena": "CZK",
-        "po_dodatcich": 3417316.31,
+        "po_dodatcich": 3540736.31,
         "neuplne": [],
         "jistota": "nase_propojeni"
       },
@@ -10073,10 +10097,19 @@
           "nezname": [],
           "druh": "smluvni",
           "s_dph": true
+        },
+        {
+          "skupina": "priprava",
+          "nazev": "Projekt a výběrové řízení",
+          "casti": 1,
+          "castka": 123420.0,
+          "nezname": [],
+          "druh": "smluvni",
+          "s_dph": true
         }
       ],
       "celkova_cena_s_dph": {
-        "castka": 3417316.31,
+        "castka": 3540736.31,
         "neuplne": [],
         "druh": "smluvni",
         "s_dph": true,
@@ -10142,6 +10175,43 @@
       }
     ],
     "smlouvy": [
+      {
+        "id": "rs-32722776",
+        "id_smlouvy": "30646804",
+        "navazuje_na": null,
+        "cislo_smlouvy": "750/8717/25",
+        "predmet": "Zpracování PD stavby \"VO Třeboň, Táboritská ulice - úsek mezi okružními křižovatkami\" včetně inženýrské činnosti a zajištění povolení stavby.",
+        "role": "projekt",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2025-03-31",
+        "strany": [
+          {
+            "nazev": "fyzická osoba",
+            "jmeno_podnikatele": "Martin Vaňas, DiS.",
+            "ico": null
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 102000.0,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 123420.0,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/32722776",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
       {
         "id": "rs-36735777",
         "id_smlouvy": "34481389",
@@ -10215,6 +10285,17 @@
       "stavba": 1
     },
     "udalosti": [
+      {
+        "datum": "2025-03-31",
+        "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "projekt pro stavební řízení",
+        "text": "Zpracování PD stavby \"VO Třeboň, Táboritská ulice - úsek mezi okružními křižovatkami\" včetně inženýrské činnosti a zajištění povolení stavby.",
+        "role": "projekt",
+        "zdroj_id": "rs-32722776",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/32722776"
+      },
       {
         "datum": "2026-02-04",
         "typ": "soutez",
