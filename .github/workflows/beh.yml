@@ -56,6 +56,10 @@ jobs:
         run: |
           python -m pipeline.zdroje.sprm || echo "::warning::SPRM – evidenci se nepodařilo stáhnout (viz log)"
 
+      - name: Ulice a budovy Třeboně z RÚIAN pro mapu (měsíčně; chyba nezastaví běh)
+        run: |
+          python -m pipeline.zdroje.ruian || echo "::warning::RÚIAN – data pro mapu se nepodařilo stáhnout (viz log)"
+
       - name: Běh pipeline
         id: beh
         run: |
@@ -75,7 +79,7 @@ jobs:
         id: zmena
         if: steps.beh.outputs.kod == '0'
         run: |
-          if [ -n "$(git status --porcelain -- raw/texty raw/ezak raw/smlouvy raw/rozpocet raw/sprm data/jednani.json data/usneseni.json data/hlasovani.json data/zakazky.json data/smlouvy.json data/rozpoctova_opatreni.json data/rozpocet.json data/rozpocet_zmeny.json data/projekty.json data/investice.json data/dotace.json)" ]; then
+          if [ -n "$(git status --porcelain -- raw/texty raw/ezak raw/smlouvy raw/rozpocet raw/sprm raw/ruian data/jednani.json data/usneseni.json data/hlasovani.json data/zakazky.json data/smlouvy.json data/rozpoctova_opatreni.json data/rozpocet.json data/rozpocet_zmeny.json data/projekty.json data/investice.json data/dotace.json data/mapa.json)" ]; then
             echo "zmena=ano" >> "$GITHUB_OUTPUT"
           else
             echo "zmena=ne" >> "$GITHUB_OUTPUT"
