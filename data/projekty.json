@@ -387,6 +387,9 @@
     "sprm": [
       {
         "id": 301,
+        "sprm_ai": true,
+        "citace": "Chodník",
+        "overeni": "overeno_kodem",
         "aktivita": "Rekonstrukce veřejných prostranství",
         "opatreni": "7. Veřejná prostranství",
         "osa": "Doprava",
@@ -587,6 +590,9 @@
     "sprm": [
       {
         "id": 310,
+        "sprm_ai": true,
+        "citace": "DPS 3",
+        "overeni": "overeno_kodem",
         "aktivita": "Snižování energetické náročnosti budov",
         "opatreni": "1. Příroda a ŽP",
         "osa": "Životní prostředí",
@@ -912,6 +918,9 @@
     "sprm": [
       {
         "id": 378,
+        "sprm_ai": true,
+        "citace": "Fotovoltaika",
+        "overeni": "overeno_kodem",
         "aktivita": "Podpora zelených střech a FV panelů",
         "opatreni": "8. Ekologická řešení",
         "osa": "Podnikání",
@@ -1253,6 +1262,9 @@
     "sprm": [
       {
         "id": 378,
+        "sprm_ai": true,
+        "citace": "Fotovoltaika",
+        "overeni": "overeno_kodem",
         "aktivita": "Podpora zelených střech a FV panelů",
         "opatreni": "8. Ekologická řešení",
         "osa": "Podnikání",
@@ -1263,6 +1275,9 @@
       },
       {
         "id": 333,
+        "sprm_ai": true,
+        "citace": "ZŠ Na Sadech",
+        "overeni": "overeno_kodem",
         "aktivita": "Modernizace ZŠ a vybavení",
         "opatreni": "4. Základní školy",
         "osa": "Sociální oblast",
@@ -1890,6 +1905,9 @@
     "sprm": [
       {
         "id": 351,
+        "sprm_ai": true,
+        "citace": "hřiště",
+        "overeni": "overeno_kodem",
         "aktivita": "Budování dětských hřišť",
         "opatreni": "3. Sportovní infrastruktura",
         "osa": "Kultura",
@@ -2635,6 +2653,9 @@
     "sprm": [
       {
         "id": 379,
+        "sprm_ai": true,
+        "citace": "balneo",
+        "overeni": "overeno_kodem",
         "aktivita": "Tvorba kvalitních lázeňských nabídek",
         "opatreni": "1. Lázeňství",
         "osa": "Cestovní ruch",
@@ -3482,6 +3503,9 @@
     "sprm": [
       {
         "id": 380,
+        "sprm_ai": true,
+        "citace": "budovy G",
+        "overeni": "overeno_kodem",
         "aktivita": "Rozšíření ubytovacích kapacit pro klienty",
         "opatreni": "1. Lázeňství",
         "osa": "Cestovní ruch",
@@ -3998,6 +4022,9 @@
     "sprm": [
       {
         "id": 280,
+        "sprm_ai": true,
+        "citace": "Ulice ",
+        "overeni": "overeno_kodem",
         "aktivita": "Komplexní rekonstrukce komunikací vč. sítí",
         "opatreni": "2. Technická infrastruktura",
         "osa": "Doprava",
@@ -4910,6 +4937,9 @@
     "sprm": [
       {
         "id": 280,
+        "sprm_ai": true,
+        "citace": "Ulice ",
+        "overeni": "overeno_kodem",
         "aktivita": "Komplexní rekonstrukce komunikací vč. sítí",
         "opatreni": "2. Technická infrastruktura",
         "osa": "Doprava",
@@ -6434,6 +6464,9 @@
     "sprm": [
       {
         "id": 348,
+        "sprm_ai": true,
+        "citace": "tělocvič",
+        "overeni": "overeno_kodem",
         "aktivita": "Rekonstrukce a rozšíření sportovní haly",
         "opatreni": "3. Sportovní infrastruktura",
         "osa": "Kultura",
@@ -8681,6 +8714,9 @@
     "sprm": [
       {
         "id": 349,
+        "sprm_ai": true,
+        "citace": "Ubytování ve sportovní hale",
+        "overeni": "overeno_kodem",
         "aktivita": "Vybudování ubytování pro sportovce",
         "opatreni": "3. Sportovní infrastruktura",
         "osa": "Kultura",
@@ -9284,6 +9320,9 @@
     "sprm": [
       {
         "id": 280,
+        "sprm_ai": true,
+        "citace": "Ulice ",
+        "overeni": "overeno_kodem",
         "aktivita": "Komplexní rekonstrukce komunikací vč. sítí",
         "opatreni": "2. Technická infrastruktura",
         "osa": "Doprava",
@@ -9978,6 +10017,9 @@
     "sprm": [
       {
         "id": 280,
+        "sprm_ai": true,
+        "citace": "Ulice ",
+        "overeni": "overeno_kodem",
         "aktivita": "Komplexní rekonstrukce komunikací vč. sítí",
         "opatreni": "2. Technická infrastruktura",
         "osa": "Doprava",
@@ -10275,6 +10317,9 @@
     "sprm": [
       {
         "id": 304,
+        "sprm_ai": true,
+        "citace": "Veřejné osvětlení",
+        "overeni": "overeno_kodem",
         "aktivita": "Výměna veřejného osvětlení za úsporné",
         "opatreni": "7. Veřejná prostranství",
         "osa": "Doprava",
@@ -10670,6 +10715,9 @@
     "sprm": [
       {
         "id": 304,
+        "sprm_ai": true,
+        "citace": "Veřejné osvětlení",
+        "overeni": "overeno_kodem",
         "aktivita": "Výměna veřejného osvětlení za úsporné",
         "opatreni": "7. Veřejná prostranství",
         "osa": "Doprava",
@@ -11517,6 +11565,9 @@
     "sprm": [
       {
         "id": 316,
+        "sprm_ai": true,
+        "citace": "vodovod",
+        "overeni": "overeno_kodem",
         "aktivita": "Obnova vodárenských sítí",
         "opatreni": "3. Vodovody, kanalizace",
         "osa": "Životní prostředí",
@@ -11820,6 +11871,9 @@
     "sprm": [
       {
         "id": 310,
+        "sprm_ai": true,
+        "citace": "kotelen a výměna plynových kotlů v objektu DPS IA a DPS",
+        "overeni": "overeno_kodem",
         "aktivita": "Snižování energetické náročnosti budov",
         "opatreni": "1. Příroda a ŽP",
         "osa": "Životní prostředí",
@@ -12503,6 +12557,9 @@
     "sprm": [
       {
         "id": 280,
+        "sprm_ai": true,
+        "citace": "Stavební úpravy MK v ul.",
+        "overeni": "overeno_kodem",
         "aktivita": "Komplexní rekonstrukce komunikací vč. sítí",
         "opatreni": "2. Technická infrastruktura",
         "osa": "Doprava",
@@ -12901,6 +12958,9 @@
     "sprm": [
       {
         "id": 351,
+        "sprm_ai": true,
+        "citace": "Svět pohybu",
+        "overeni": "overeno_kodem",
         "aktivita": "Budování dětských hřišť",
         "opatreni": "3. Sportovní infrastruktura",
         "osa": "Kultura",
@@ -13565,6 +13625,9 @@
     "sprm": [
       {
         "id": 280,
+        "sprm_ai": true,
+        "citace": "Stavební úpravy MK v ul.",
+        "overeni": "overeno_kodem",
         "aktivita": "Komplexní rekonstrukce komunikací vč. sítí",
         "opatreni": "2. Technická infrastruktura",
         "osa": "Doprava",
@@ -14288,6 +14351,9 @@
     "sprm": [
       {
         "id": 280,
+        "sprm_ai": true,
+        "citace": "Stavební úpravy části MK ul.",
+        "overeni": "overeno_kodem",
         "aktivita": "Komplexní rekonstrukce komunikací vč. sítí",
         "opatreni": "2. Technická infrastruktura",
         "osa": "Doprava",
@@ -14665,6 +14731,9 @@
     "sprm": [
       {
         "id": 333,
+        "sprm_ai": true,
+        "citace": "ZŠ Na Sadech",
+        "overeni": "overeno_kodem",
         "aktivita": "Modernizace ZŠ a vybavení",
         "opatreni": "4. Základní školy",
         "osa": "Sociální oblast",
@@ -14920,6 +14989,9 @@
     "sprm": [
       {
         "id": 301,
+        "sprm_ai": true,
+        "citace": "Úprava plochy",
+        "overeni": "overeno_kodem",
         "aktivita": "Rekonstrukce veřejných prostranství",
         "opatreni": "7. Veřejná prostranství",
         "osa": "Doprava",
@@ -15211,6 +15283,9 @@
     "sprm": [
       {
         "id": 343,
+        "sprm_ai": true,
+        "citace": "staré radnice",
+        "overeni": "overeno_kodem",
         "aktivita": "Revitalizace Staré radnice č.p. 1",
         "opatreni": "1. Kulturní památky",
         "osa": "Kultura",
@@ -15528,6 +15603,9 @@
     "sprm": [
       {
         "id": 301,
+        "sprm_ai": true,
+        "citace": "Chodník",
+        "overeni": "overeno_kodem",
         "aktivita": "Rekonstrukce veřejných prostranství",
         "opatreni": "7. Veřejná prostranství",
         "osa": "Doprava",

@@ -732,7 +732,7 @@ def prirad_sprm(karta: dict, yaml_projekt: dict, aktivity: dict, pravidla: list[
     if not aktivity:
         return []
     if yaml_projekt.get("sprm") is not None:
-        ids, potvrzeno = [int(x) for x in yaml_projekt.get("sprm") or []], True
+        ids, potvrzeno, text = [int(x) for x in yaml_projekt.get("sprm") or []], True, ""
     else:
         text = " ".join(filter(None, [karta["nazev"], karta.get("popis")]))
         shody = [pr for pr in pravidla if re.search(pr["vzor"], text, re.I)]
@@ -743,9 +743,13 @@ def prirad_sprm(karta: dict, yaml_projekt: dict, aktivity: dict, pravidla: list[
         a = aktivity.get(i)
         if not a:
             continue
-        pot = potvrzeno if potvrzeno is not None else all(
-            pr.get("potvrzeno") for pr in pravidla if int(pr["sprm_id"]) == i and re.search(pr["vzor"], text, re.I))
-        vysledek.append({"id": i, "aktivita": a["aktivita"], "opatreni": a.get("opatreni"),
+        shody_i = [pr for pr in pravidla if int(pr["sprm_id"]) == i and re.search(pr["vzor"], text, re.I)]
+        pot = potvrzeno if potvrzeno is not None else all(pr.get("potvrzeno") for pr in shody_i)
+        ai = potvrzeno is None  # návrh z pravidel Clauda; `sprm: [id]` v YAML je ruční (Ondřej)
+        citace = re.search(shody_i[0]["vzor"], text, re.I).group(0) if ai and shody_i else None
+        # citace = doslovný úsek názvu/popisu karty, na který pravidlo sedlo; ověřuje ho kód
+        overeni = ("overeno_kodem" if citace and citace.lower() in text.lower() else "navrh") if ai else "schvaleno"
+        vysledek.append({"id": i, "sprm_ai": ai, "citace": citace, "overeni": overeni, "aktivita": a["aktivita"], "opatreni": a.get("opatreni"),
                          "osa": a.get("osa_nazev"), "stav_v_evidenci": a.get("stav"),
                          "potvrzeno": bool(pot), "jistota": "nase_propojeni",
                          "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"})
