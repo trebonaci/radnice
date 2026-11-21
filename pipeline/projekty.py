@@ -296,7 +296,7 @@ def sestav_projekt(p: dict, data: dict) -> dict:
     return {
         "id": p["id"], "nazev": p["nazev"], "popis": p.get("popis"), "oblast": p.get("oblast"),
         "druh": p.get("druh"), "vlastnik_subjekt_id": p.get("vlastnik_subjekt_id"),
-        "financovani": p.get("financovani"),
+        "poznamka": p.get("poznamka"),
         "faze": "dokonceno" if dokonceni else faze(zakazky, smlouvy),
         "faze_jistota": "dolozeno" if dokonceni else "nase_propojeni",
         "dokonceni": dokonceni,

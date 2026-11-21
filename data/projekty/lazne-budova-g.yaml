@@ -1,10 +1,10 @@
 id: lazne-budova-g
 nazev: Nástavba budovy G v Lázeňském domě Aurora
-popis: Stavební úpravy budovy G Lázeňského domu Aurora s nástavbou administrativních a ubytovacích kapacit včetně vybavení. Staví Slatinné lázně Třeboň (městská společnost) na majetku města, financováno z lázeňského investičního fondu.
+popis: Stavební úpravy budovy G Lázeňského domu Aurora s nástavbou administrativních a ubytovacích kapacit včetně vybavení. Investuje Slatinné lázně Třeboň, městská společnost, na majetku města.
 oblast: lazne
 druh: investicni
 vlastnik_subjekt_id: "25179896"
-financovani: Lázeňský investiční fond (rozpočet města ho uvádí jen souhrnně)
+poznamka: Lázně stavbu provádějí na majetku města (technické zhodnocení). Město ho od lázní odkupuje podle samostatného rozhodnutí rady; s financováním akce to nespojujeme.
 rozpocet:
   org: []
   nazvy: []
