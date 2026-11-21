@@ -60,7 +60,8 @@ class Ruian:
 
     def adresa(self, ulice: str, cislo: str) -> dict | None:
         for a in self.adresy:
-            if a.get("ulice") == ulice and cislo in (a.get("cislo_domovni"), a.get("cislo_orientacni")):
+            # RÚIAN píše „Na sadech“, lidé „Na Sadech“: název ulice se porovnává bez ohledu na velikost písmen
+            if (a.get("ulice") or "").casefold() == (ulice or "").casefold() and cislo in (a.get("cislo_domovni"), a.get("cislo_orientacni")):
                 return a
         return None
 

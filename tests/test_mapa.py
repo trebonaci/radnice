@@ -97,3 +97,8 @@ def test_bez_ruian_jen_upozorneni(tmp_path):
     (tmp_path / "data/projekty/a.yaml").write_text("id: a\nmisto:\n  - ulice: Valy\n", encoding="utf-8")
     vys, chyby, upozorneni = mapa.sestav(tmp_path, [{"id": "a", "nazev": "A"}], [], [], {})
     assert chyby == [] and vys[0]["geometrie"] is None and any("RÚIAN" in u for u in upozorneni)
+
+
+def test_adresa_bez_ohledu_na_velikost_pismen(tmp_path):
+    r = mapa.Ruian(_koren(tmp_path))
+    assert r.adresa("CHELČICKÉHO", "1")["kod"] == "200"

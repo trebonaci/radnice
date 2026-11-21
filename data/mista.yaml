@@ -55,7 +55,7 @@ mista:
     nazev: ZŠ Na Sadech
     oblast: skolstvi
     misto:
-      - adresa: Na Sadech 375
+      - adresa: Na sadech 375
     zmeny: ['ZŠ Na Sadech']
     investice: [fve-zs-na-sadech, auto-vz-848]
   - id: zs-sokolska
