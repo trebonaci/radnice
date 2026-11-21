@@ -1,0 +1,182 @@
+# Pracovní zásobník projektů města Třeboně a městských společností (#172).
+#
+# NEJDE o dokument schválený radou ani zastupitelstvem. Je to pracovní přehled konkrétních
+# projektů, které se připravují, ale ještě nemají kartu investice (zakázku na stavbu).
+# Rozhodnutí Ondřeje 21. 11. 2026: zásobník vedeme jako pracovní dokument; ukazujeme i neoceněné,
+# ale reálné nápady; projekty městských společností uvádíme s nositelem.
+#
+# Položka:
+#   id          krátký identifikátor (malá písmena, pomlčky)
+#   nazev       název srozumitelný občanovi
+#   popis       volitelně, jedna věta
+#   oblast      doprava | voda_odpady | sport | skolstvi | socialni | bydleni | kultura | lazne | zelen | jine
+#   vazby.hledat  vzory (regulární výrazy) pro smlouvy a zakázky na studii / projekt; z nich kód odvodí
+#               nositele (zadavatele) a stav připravenosti (doloženo smlouvou nebo zakázkou)
+#   zdroj       {url, datum, popis} – nutné u položky bez dokladu ve smlouvách/zakázkách (jen záměr)
+#   odhad       volitelně {hodnota, s_dph, url, citace} – odhad nákladů opsaný ze zdroje
+#   sprm        volitelně [id aktivit SPRM] – potvrzené přiřazení (jinak návrh podle config/sprm_pravidla.yaml)
+#
+# Reálný = má veřejný doklad (smlouvu nebo zakázku na přípravu) nebo jiný uvedený veřejný zdroj.
+# Položku, ke které se objeví zakázka na stavbu, je čas převést na kartu v data/projekty/.
+
+polozky:
+  # --- Doprava ---
+  - id: parkovaci-dum
+    nazev: Parkovací dům
+    oblast: doprava
+    vazby: {hledat: ['[Pp]arkovací\w* dům', 'parkovacího domu']}
+  - id: jatecni-ulice
+    nazev: Jateční ulice – parkoviště a komunikace
+    oblast: doprava
+    vazby: {hledat: ['Jateční ulic']}
+  - id: stezka-jatecni-nadrazni
+    nazev: Stezka podél trati z Jateční do Nádražní ulice
+    oblast: doprava
+    vazby: {hledat: ['[Ss]tezka podél trati']}
+  - id: nadrazni-ulice
+    nazev: Nádražní ulice – komunikace a chodník
+    oblast: doprava
+    vazby: {hledat: ['MK ul\. Nádražní', 'chodníku v Nádražní']}
+  - id: mk-orechova
+    nazev: Ulice Ořechová
+    oblast: doprava
+    vazby: {hledat: ['Ořechov']}
+  - id: mk-jiraskova
+    nazev: Jiráskova ulice
+    oblast: doprava
+    vazby: {hledat: ['Jiráskov\w* ul']}
+  - id: mk-stara-hlina
+    nazev: Místní komunikace ve Staré Hlíně (od I/34 k polní cestě)
+    oblast: doprava
+    vazby: {hledat: ['MK ve Staré Hlíně']}
+  - id: mk-dvorecka-brilice
+    nazev: Dvorecká ulice v Břilicích
+    oblast: doprava
+    vazby: {hledat: ['Dvoreck\w* v Břilicích']}
+  - id: most-vitek
+    nazev: Most přes rybník Vítek ve Staré Hlíně
+    oblast: doprava
+    vazby: {hledat: ['rybník Vítek']}
+  - id: taboritska-stezka
+    nazev: Táboritská ulice – propojení stezky pro chodce přes I/34
+    oblast: doprava
+    vazby: {hledat: ['propojení stezky', 'propoj přes silnici I/34']}
+  - id: ucelova-komunikace-taboritska
+    nazev: Účelová komunikace k domům Táboritská 670 a 1049
+    oblast: doprava
+    vazby: {hledat: ['Táboritská 670']}
+  - id: podchod-i34
+    nazev: Podchod pod silnicí I/34
+    oblast: doprava
+    vazby: {hledat: ['podchodu pod silnicí I/34']}
+  - id: chodnik-sportovni-svobody
+    nazev: Chodník z parkoviště ve Sportovní ulici do ulice Svobody
+    oblast: doprava
+    vazby: {hledat: ['Sportovní do ulice Svobody']}
+  # --- Voda a kanalizace ---
+  - id: vodojem-kopecek
+    nazev: Rekonstrukce vodojemu Na Kopečku
+    oblast: voda_odpady
+    vazby: {hledat: ['vodojemu Na Kopečku', 'Rekonstrukce VDJ']}
+  - id: kanalizace-taboritska
+    nazev: Úprava jednotné kanalizace v Táboritské ulici
+    oblast: voda_odpady
+    vazby: {hledat: ['kanalizace ul\. Táboritská']}
+  - id: destova-kanalizace-novy-dvur
+    nazev: Páteřní dešťová kanalizace Nový Dvůr – Jablonského
+    oblast: voda_odpady
+    vazby: {hledat: ['Nový Dvůr - Jablonského', 'areálu Nového Dvora']}
+  - id: kanalizace-pivovar
+    nazev: Obnova šachet a potrubí kanalizace pod pivovarem
+    oblast: voda_odpady
+    vazby: {hledat: ['pod pivovarem']}
+  - id: destove-vody-brilice
+    nazev: Odvod dešťových vod v Břilicích
+    oblast: voda_odpady
+    vazby: {hledat: ['dešťových vod v Břilicích']}
+  # --- Sport ---
+  - id: sportoviste-hlinik
+    nazev: Volnočasové sportoviště ve sportovním areálu Hliník
+    oblast: sport
+    vazby: {hledat: ['SA Hliník']}
+  - id: sportovni-hala-revitalizace
+    nazev: Revitalizace sportovní haly (občerstvení, zázemí v 1. podzemním podlaží)
+    oblast: sport
+    vazby: {hledat: ['revitalizace sportovní haly', 'PD sportovní hala Třeboň']}
+  - id: kabiny-brilice
+    nazev: Fotbalové kabiny v Břilicích
+    oblast: sport
+    vazby: {hledat: ['fotbalových kabin v Břilicích']}
+  # --- Kultura a památky ---
+  - id: divadlo-zazemi
+    nazev: Hygienické zázemí pro diváky v divadle J. K. Tyla
+    oblast: kultura
+    vazby: {hledat: ['zázemí pro diváky']}
+  - id: stara-radnice-vez-fasada
+    nazev: Stará radnice – oprava věže a fasády
+    oblast: kultura
+    vazby: {hledat: ['radniční věže', 'fasády čp\. 1/I']}
+  - id: kz-branna-prodejna
+    nazev: Prodejna smíšeného zboží v kulturním zařízení v Branné
+    oblast: jine
+    vazby: {hledat: ['KZ Branná']}
+  # --- Sociální oblast a bydlení ---
+  - id: dps1-kotelny
+    nazev: Kotelny a plynové kotle v domě s pečovatelskou službou I (Chelčického)
+    oblast: socialni
+    vazby: {hledat: ['kotelen a výměny plynových kotlů']}
+  - id: bytovy-dum-lazenska
+    nazev: Městský bytový dům v Lázeňské ulici
+    oblast: bydleni
+    vazby: {hledat: ['bytového domu v ul\. Lázeňská']}
+  # --- Lázně (nositel Slatinné lázně Třeboň) ---
+  - id: lazne-objekt-b
+    nazev: Modernizace objektu B Lázeňského domu Aurora
+    oblast: lazne
+    vazby: {hledat: ['objektu B LDA']}
+  - id: lazne-ordinace
+    nazev: Přesun ordinací do přízemí objektů D a E Lázeňského domu Aurora
+    oblast: lazne
+    vazby: {hledat: ['ordinací na 1\. NP']}
+  - id: lazne-restaurace
+    nazev: Přemístění restaurace Lázeňského domu Aurora
+    oblast: lazne
+    vazby: {hledat: ['provozu rest']}
+  - id: lazne-olu
+    nazev: Odborný léčebný ústav (kapacitní studie)
+    oblast: lazne
+    vazby: {hledat: ['odborně léčebného ústavu']}
+  - id: lazne-chodnik-park
+    nazev: Chodník v parku lázní Aurora
+    oblast: lazne
+    vazby: {hledat: ['Chodník v parku lázní Aurora']}
+  - id: lazne-padel
+    nazev: Dva kurty na padel (Bertiny lázně)
+    oblast: lazne
+    vazby: {hledat: ['kurty pro Padel']}
+  # --- Už realizované (kód je pozná podle ukončené stavby po přípravě; drží se, aby jejich doklady
+  #     nepadaly mezi kandidáty) ---
+  - id: mk-na-chmelnici
+    nazev: Ulice Na Chmelnici a část Vrchlického
+    oblast: doprava
+    vazby: {hledat: ['Na Chmelnici']}
+  - id: mk-petra-pavla
+    nazev: Ulice U sv. Petra a Pavla
+    oblast: doprava
+    vazby: {hledat: ['U sv\. Petra a Pavla']}
+  - id: mk-sustova-polni
+    nazev: Ulice Šustova a 2. etapa ulice Polní
+    oblast: doprava
+    vazby: {hledat: ['MK v ul\. Šustova', 'MK v ulici Šustova']}
+  - id: odkanalizovani-holicky
+    nazev: Odkanalizování lokality Holičky
+    oblast: voda_odpady
+    vazby: {hledat: ['Holičky']}
+  - id: rybnik-branna
+    nazev: Odbahnění návesního rybníku v Branné
+    oblast: voda_odpady
+    vazby: {hledat: ['návesního rybníku']}
+  - id: zive-ploty-dukelska
+    nazev: Revitalizace živých plotů v Dukelské ulici
+    oblast: zelen
+    vazby: {hledat: ['živých plotů']}

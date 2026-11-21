@@ -85,6 +85,12 @@ Jeden ověřitelný krok projektu nebo téma, které zatím nemá potvrzenou vaz
 ### sprm_opatreni
 Ze Strategického plánu 2021–2030. Zdroj: existující WordPress evidence `trebonaci_projekt` na trebonaci.cz (endpoint `/projekty`). Před rozšířením se její pole zmapují; druhý katalog SPRM nevytvářet bez rozhodnutí.
 
+### zasobnik (pracovní zásobník projektů, #172)
+`data/zasobnik.yaml` (ručně: `id`, `nazev`, `popis`?, `oblast`, `vazby.hledat`/`vyloucit`, `zdroj`?, `odhad`?, `sprm`?) → `data/zasobnik.json`. Pracovní dokument, ne dokument schválený městem (rozhodnutí Ondřeje 21. 11. 2026). Záznam má `typ`:
+- `polozka`: `nositele[]` {`ico`, `nazev`} ze zadavatelů dokladů (`nositel_jistota` naše propojení / nevíme), `pripravenost` {`stupen` zamer | studie | projekt | projekt_povoleni | projekt_provadeci, `nazev`, `doklad`, `jistota`} = nejvyšší zadaný stupeň (smlouva nebo zakázka; říká „zadáno“, ne „hotovo“), `doklady[]` {`typ` smlouva | zakazka, `id`, `text`, `datum`, `ico`, `url`, `stupen`, `jistota`}, `odhad` (castka s `druh: odhad`, jen opsaný ze zdroje) nebo null = neoceněno, `stavby[]` (zakázky na stavbu mimo karty), `faze` zasobnik | stavba (čas založit kartu) | realizovano (ukončená stavba po poslední přípravě), `sprm[]` jako u projektu. Položka bez dokladů musí mít `zdroj.url` (jen reálné nápady).
+- `kandidat`: smlouva nebo zakázka na přípravu od 2023 mimo karty a položky (`doklad`, `stupen`) – podklad pro doplnění zásobníku.
+- `namet`: aktivita SPRM se stavem „Plánováno“ bez karty a bez položky (`osa`, `opatreni`, `komentar`, `zdroj`).
+
 ### podnet
 Z mapy na trebonaci.cz. **Jen omezený veřejný výstup**: `id`, `typ` (prani / zavada), `stav`, `poloha`, `kategorie`, `datum`, upravený popis. Bez jména podatele, kontaktů a diskuse (současný endpoint `/podnety` je vrací, proto se přímo nepoužije). Vazba na projekt/usnesení s `jistota`; občanský návrh se vizuálně odlišuje od projektu, který město připravuje.
 
