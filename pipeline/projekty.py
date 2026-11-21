@@ -24,7 +24,8 @@ import yaml
 ROLE = [  # pořadí = priorita; dodatek je zvlášť (dodatek_cislo) a patří k roli smlouvy, kterou mění
     ("technicky_dozor", r"technick\w* dozor"),
     ("bozp", r"koordinátor\w* BOZP"),
-    ("projekt", r"projektov\w* dokumentac|vypracování projekt|projekt\w* interiér|zpracování PD|\bDZS\b|\bDPS\b"),
+    ("projekt", r"projektov\w* dokumentac|vypracování projekt|projekt\w* interiér|zpracování PD|zhotovení PD|"
+                r"\bPD na\b|výkon AD|\bDZS\b|\bDPS\b"),
     ("vybaveni", r"vybavení|dodávka|posilovn|televiz"),
     ("administrace", r"administrac\w* (?:veřejné )?zakázk|zadávacího řízení"),
 ]
@@ -166,7 +167,8 @@ def sestav_projekt(p: dict, data: dict) -> dict:
         r_ = role(z["nazev"])
         casti = []
         for c in z["casti"]:
-            vitezove = [{"nazev": v["nazev"], "jmeno_podnikatele": v.get("jmeno_podnikatele"), "smluvni": _smluvni(v["castky"]),
+            vitezove = [{"nazev": v["nazev"], "jmeno_podnikatele": v.get("jmeno_podnikatele"),
+                         "ico": None if v.get("fyzicka_osoba") else v.get("ico"), "smluvni": _smluvni(v["castky"]),
                          "nabidkova": _smluvni(v["castky"], "nabidkova"),
                          "zaplaceno": [{"obdobi": k["obdobi"], "hodnota": k["hodnota"], "s_dph": k.get("s_dph")}
                                        for k in v["castky"] if k.get("druh") == "zaplaceno"]}
@@ -226,8 +228,8 @@ def sestav_projekt(p: dict, data: dict) -> dict:
                         "cislo_smlouvy": s.get("cislo_smlouvy"),
                         "predmet": s["predmet"], "role": r_,
                         "dodatek_cislo": int(m[1]) if m else None, "datum_uzavreni": s["datum_uzavreni"],
-                        "strany": [{"nazev": x["nazev"], "jmeno_podnikatele": x.get("jmeno_podnikatele")}
-                                   for x in s["strany"]],
+                        "strany": [{"nazev": x["nazev"], "jmeno_podnikatele": x.get("jmeno_podnikatele"),
+                                    "ico": None if x.get("fyzicka_osoba") else x.get("ico")} for x in s["strany"]],
                         "castky": _smluvni(s["castky"]), "cena_neuvedena": s.get("cena_neuvedena"),
                         "url": s["url"], "evidencni_cislo_zakazky": s.get("evidencni_cislo_zakazky"),
                         "jistota": jistota})
@@ -294,6 +296,7 @@ def sestav_projekt(p: dict, data: dict) -> dict:
     return {
         "id": p["id"], "nazev": p["nazev"], "popis": p.get("popis"), "oblast": p.get("oblast"),
         "druh": p.get("druh"), "vlastnik_subjekt_id": p.get("vlastnik_subjekt_id"),
+        "financovani": p.get("financovani"),
         "faze": "dokonceno" if dokonceni else faze(zakazky, smlouvy),
         "faze_jistota": "dolozeno" if dokonceni else "nase_propojeni",
         "dokonceni": dokonceni,
@@ -488,6 +491,18 @@ def casti_akce(zakazky: list[dict], smlouvy: list[dict], jen_termin: dict[str, s
         else:
             g["puvodni"] = sm
             g["role"] = sm["role"]
+    # Dodatek bez vazby `navazuje_na` (registr ji u některých subjektů nevyplňuje, např. Slatinné lázně):
+    # připojí se k jediné původní smlouvě téže role se stejným IČO dodavatele (naše propojení, #142).
+    def _ica(sm):
+        return {x.get("ico") for x in (sm or {}).get("strany", []) if x.get("ico")}
+    for k in [k for k, g in skupiny.items() if not g["puvodni"] and g["dodatky"]]:
+        ica = set().union(*(_ica(d) for d in skupiny[k]["dodatky"]))
+        cil = [k2 for k2, g2 in skupiny.items() if g2["puvodni"] and g2["role"] == skupiny[k]["role"]
+               and _ica(g2["puvodni"]) & ica]
+        if ica and len(cil) == 1:
+            skupiny[cil[0]]["dodatky"] += skupiny[k]["dodatky"]
+            skupiny[cil[0]]["vazba_ico"] = True
+            del skupiny[k]
 
     def dodavatel(strany):
         return {"nazev": ", ".join(x["nazev"] for x in strany),
@@ -509,14 +524,15 @@ def casti_akce(zakazky: list[dict], smlouvy: list[dict], jen_termin: dict[str, s
                     jmeno = v.get("jmeno_podnikatele") or v["nazev"]
                     stejne = [k for k, g in volne.items() if g["role"] == z["role"]]
                     dodavatel_ = [k for k in stejne if any(
-                        jmeno in (x["jmeno_podnikatele"] or x["nazev"])
+                        jmeno in (x["jmeno_podnikatele"] or x["nazev"]) or (v.get("ico") and x.get("ico") == v.get("ico"))
                         for x in (volne[k]["puvodni"] or (volne[k]["dodatky"] or [{}])[0]).get("strany", []))]
                     if len(dodavatel_) == 1:
                         klic, jistota = dodavatel_[0], "nase_propojeni"
                     elif (len(stejne) == 1 and sum(1 for x in zakazky if x["role"] == z["role"]) == 1
                           and not any((x["jmeno_podnikatele"] or x["nazev"]) not in ("", "fyzická osoba")
                                       for x in (volne[stejne[0]]["puvodni"] or (volne[stejne[0]]["dodatky"] or [{}])[0])
-                                      .get("strany", []))):
+                                      .get("strany", []))
+                          and _ceny_blizko(volne[stejne[0]]["puvodni"], v)):
                         # jen když skupina nemá známého jiného dodavatele (např. jen anonymní strany)
                         klic, jistota = stejne[0], "nase_propojeni"
                 g = volne.pop(klic) if klic else {"puvodni": None, "dodatky": []}
@@ -539,6 +555,10 @@ def casti_akce(zakazky: list[dict], smlouvy: list[dict], jen_termin: dict[str, s
                 # původ se sleduje pro každý základ DPH zvlášť (bez DPH z nabídky, s DPH ze smluvní ceny po dodatcích…)
                 po_dodatcich_ezak = [z_ for z_, d_ in (("bez_dph", druh_zdroje), ("s_dph", druh_s))
                                      if d_ == "smluvni_ezak" and g["dodatky"]]
+                # E-ZAK smluvní cenu nepřepsal (bez DPH = podepsaná smlouva) → i jeho cena s DPH je původní
+                if ("s_dph" in po_dodatcich_ezak and druh_zdroje == "registr" and cena is not None
+                        and _bez_dph(v["smluvni"]) is not None and abs(_halere(_bez_dph(v["smluvni"])) - _halere(cena)) <= 100):
+                    po_dodatcich_ezak.remove("s_dph")
                 druh_zdroje = druh_zdroje or druh_s
                 zdroj = zdroj or zdroj_s or ezak
                 if zdroj_s == zdroj:
@@ -554,6 +574,8 @@ def casti_akce(zakazky: list[dict], smlouvy: list[dict], jen_termin: dict[str, s
                                           **({"zdroj_s_dph": zdroj_s} if zdroj_s else {})},
                               "vysoutezena": nabidka if any(x is not None for x in nabidka.values()) else None,
                               "ezak_smluvni": ezak_akt, "ezak_url": z["url"],
+                              "ukonceno_plneni": c.get("stav") == "ukončeno plnění",
+                              "ezak_zaplaceno": _zaplaceno_celkem(v),
                               "dodatky_smlouvy": g["dodatky"], "vazba_dodatku": jistota})
     for g in volne.values():
         p_ = g["puvodni"]
@@ -573,6 +595,7 @@ def casti_akce(zakazky: list[dict], smlouvy: list[dict], jen_termin: dict[str, s
                                  "jen_termin": termin is not None, "doklad_usneseni": termin,
                                  "bez_castky": not d["castky"], "datum": d["datum_uzavreni"], "zdroj_id": d["id"],
                                  "url": d["url"]})
+        prepocet_celkovych_dodatku(c)
         doplnit_dph(c)
         pu = c["puvodni"]
         if pu and pu.get("s_dph_dopocteno") and "bez_dph" in pu.get("zaklady_z_ezak_po_dodatcich", []):
@@ -599,12 +622,62 @@ def casti_akce(zakazky: list[dict], smlouvy: list[dict], jen_termin: dict[str, s
         ea = c.get("ezak_smluvni") or {}
         porovnani = [(ea.get(z), c[k]) for z, k in (("bez_dph", "cena_po_dodatcich"), ("s_dph", "cena_po_dodatcich_s_dph"))
                      if ea.get(z) is not None and c[k] is not None and not c["neuplne_" + k]]
+        zapl = c.get("ezak_zaplaceno") or {}
+        porovnani_z = [(zapl.get(z), c[k]) for z, k in (("bez_dph", "cena_po_dodatcich"), ("s_dph", "cena_po_dodatcich_s_dph"))
+                       if zapl.get(z) is not None and c[k] is not None]
+        # E-ZAK po ukončení plnění zveřejní skutečně zaplacenou cenu – shoduje se s naším součtem?
+        c["souhlas_zaplaceno"] = (None if not c.get("ukonceno_plneni") or not porovnani_z
+                                  else any(abs(_halere(a) - _halere(b)) <= 100 for a, b in porovnani_z))
         c["souhlas_ezak"] = (None if not c["dodatky"] or not porovnani
                              else all(abs(_halere(a) - _halere(b)) <= 100 for a, b in porovnani))
         c["dodatky_bez_dph"] = (sum(_halere(d["bez_dph"]) for d in c["dodatky"] if d["bez_dph"] is not None) / 100
                                 if any(d["bez_dph"] is not None for d in c["dodatky"]) else None)
     poradi = ["stavba", "projekt", "technicky_dozor", "bozp", "vybaveni", "administrace"]
     return sorted(casti, key=lambda c: poradi.index(c["role"]) if c["role"] in poradi else 99)
+
+
+def _zaplaceno_celkem(vitez: dict) -> dict:
+    """Součet skutečně uhrazených částek za všechny roky z E-ZAK (druh zaplaceno), každý základ zvlášť."""
+    z = vitez.get("zaplaceno") or []
+    vysl = {}
+    for pole, s_dph in (("bez_dph", False), ("s_dph", True)):
+        h = [x["hodnota"] for x in z if x.get("s_dph") is s_dph]
+        vysl[pole] = sum(_halere(x) for x in h) / 100 if h else None
+    return vysl
+
+
+def _ceny_blizko(puvodni: dict | None, vitez: dict) -> bool:
+    """Spojení zakázky se smlouvou jen podle role: ceny bez DPH se nesmí lišit o víc než pětinu (jinak jde
+    nejspíš o jinou smlouvu, např. objednávka PD interiérů 190 000 Kč vs. zakázka na PD 1 982 000 Kč)."""
+    a = _bez_dph((puvodni or {}).get("castky") or [])
+    b = _bez_dph(vitez.get("smluvni") or []) or _bez_dph(vitez.get("nabidkova") or [])
+    return a is None or b is None or abs(a - b) <= 0.2 * max(abs(a), abs(b))
+
+
+def prepocet_celkovych_dodatku(c: dict) -> None:
+    """Některé subjekty (Slatinné lázně, Balneo LDA) uvádějí u dodatku v registru novou CELKOVOU cenu díla,
+    ne změnu (dodatek č. 1: 64 480 654,46 Kč při původní ceně 64 330 560 Kč). Částka dodatku mezi 80 a 150 %
+    ceny před dodatkem se proto bere jako cena po dodatku (změna takové velikosti by zákon o zadávání
+    veřejných zakázek nedovolil) a změnou je rozdíl proti ceně před dodatkem
+    (`castka_je_celkova`, `celkova_bez_dph`/`celkova_s_dph`). Každý základ DPH zvlášť (#142)."""
+    if not c["puvodni"]:
+        return
+    for pole in ("bez_dph", "s_dph"):
+        zaklad = c["puvodni"].get(pole)
+        if zaklad is None:
+            continue
+        prubezne = _halere(zaklad)
+        for d in c["dodatky"]:
+            if d[pole] is None:
+                continue
+            h = _halere(d[pole])
+            if prubezne > 0 and 0.8 * prubezne <= h <= 1.5 * prubezne:
+                d["castka_je_celkova"] = True
+                d["celkova_" + pole] = d[pole]
+                d[pole] = (h - prubezne) / 100
+                prubezne = h
+            else:
+                prubezne += h
 
 
 def faze(zakazky: list[dict], smlouvy: list[dict]) -> str:
