@@ -1,0 +1,13 @@
+id: chodniky-husova-kaple
+nazev: Chodníky u Husovy kaple
+popis: Stavební úpravy chodníků u Husovy kaple v Třeboni.
+oblast: doprava
+druh: investicni
+vlastnik_subjekt_id: "00247618"
+rozpocet:
+  org: []
+  nazvy: []
+  schvaleny: []
+vazby:
+  hledat: ["chodníků u Husovy kaple"]
+  vyloucit: []

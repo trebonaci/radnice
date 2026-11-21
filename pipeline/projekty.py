@@ -22,7 +22,7 @@ from pathlib import Path
 import yaml
 
 ROLE = [  # pořadí = priorita; dodatek je zvlášť (dodatek_cislo) a patří k roli smlouvy, kterou mění
-    ("technicky_dozor", r"technick\w* dozor"),
+    ("technicky_dozor", r"technick\w* dozor|\bTDS\b"),
     ("bozp", r"koordinátor\w* BOZP"),
     ("projekt", r"projektov\w* dokumentac|vypracování projekt|projekt\w* interiér|zpracování PD|zhotovení PD|"
                 r"\bPD na\b|výkon AD|\bDZS\b|\bDPS\b"),
@@ -602,6 +602,9 @@ def casti_akce(zakazky: list[dict], smlouvy: list[dict], jen_termin: dict[str, s
         c["dodatky"] = []
         for d in dodatky:
             termin = (jen_termin or {}).get(d.get("cislo_smlouvy") or "") if not d["castky"] else None
+            # dodatek bez ceny, jehož předmět v registru sám říká „(termín)“ (VO Branná, #154)
+            if not d["castky"] and not termin and re.search(r"\(\s*termín\s*\)", d.get("predmet") or "", re.I):
+                termin = "predmet_registru"
             c["dodatky"].append({"cislo": d["dodatek_cislo"], "bez_dph": 0.0 if termin else _bez_dph(d["castky"]),
                                  "s_dph": 0.0 if termin else _s_dph(d["castky"]),
                                  "jen_termin": termin is not None, "doklad_usneseni": termin,

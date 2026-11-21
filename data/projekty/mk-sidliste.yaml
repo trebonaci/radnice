@@ -1,0 +1,13 @@
+id: mk-sidliste
+nazev: Ulice Sídliště – stavební úpravy
+popis: Stavební úpravy části místní komunikace v ulici Sídliště v Třeboni.
+oblast: doprava
+druh: investicni
+vlastnik_subjekt_id: "00247618"
+rozpocet:
+  org: []
+  nazvy: []
+  schvaleny: []
+vazby:
+  hledat: ["MK ul\\. Sídliště"]
+  vyloucit: []

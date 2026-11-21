@@ -1,0 +1,13 @@
+id: ulice-valy
+nazev: Ulice Valy – stavební úpravy
+popis: Stavební úpravy ulice Valy v Třeboni.
+oblast: doprava
+druh: investicni
+vlastnik_subjekt_id: "00247618"
+rozpocet:
+  org: []
+  nazvy: []
+  schvaleny: []
+vazby:
+  hledat: ["ulice Valy"]
+  vyloucit: []
