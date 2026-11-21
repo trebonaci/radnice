@@ -22,6 +22,7 @@ Píšeme pro běžného čtenáře, ne pro úředníky: krátce, bez zkratek a �
 - PR lze sloučit jen se zelenou automatickou kontrolou (`.github/workflows/ci.yml`: sestavení dat, shoda `data/` se sestavením, testy). Před pushem spusť `python -m pipeline.sestav` a `python -m pytest` lokálně.
 - PR popis: co se změnilo, jak to ověřit, co zůstává otevřené, zdroje dat použité v PR.
 - Pokud zadání v issue nestačí nebo je v rozporu se `ZADANI.md`, zastav se a napiš otázku do issue místo dohadu.
+- Rychlost kontroly (rozhodnutí Ondřeje 21. 11. 2026, #150): drobné nálezy Codexu (P2/P3) se v PR neopravují – `claude-codex-review-fix.yml` je zapíše do jednoho otevřeného issue „Úklid: drobné nálezy Codexu (P2/P3)“ a PR se sloučí po prvním review bez P0/P1; úklid se dělá najednou v jednom PR. Nálezy P0/P1 opravuje automatická oprava; Claude v relaci je souběžně neopravuje ručně (zasáhne až po jejím selhání nebo vyčerpání dvou kol). Během čekání na review pracuje agent na dalším úkolu.
 
 ## Automatická orchestrace
 - Orchestrátorem je GitHub: issue se štítkem `agent:claude` (nebo komentář `@claude` od Ondřeje, nebo přímé spuštění `workflow_dispatch` s číslem issue) spustí Claude v GitHub Actions (`.github/workflows/claude.yml`). Codex kontroluje PR automaticky nebo na `@codex review`.

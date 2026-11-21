@@ -52,9 +52,38 @@ jobs:
               if (pokus < 5) await new Promise(r => setTimeout(r, 15000));
             }
             core.setOutput('run_claude', 'false');
-            core.setOutput('findings', JSON.stringify(findings.map(({ path, line, body, diff_hunk }) => ({ path, line, body, diff_hunk }))));
             if (findings.length === 0) {
               core.notice('This Codex review has no inline findings; Claude will not be started.');
+              return;
+            }
+            // Drobné nálezy (P2, P3) se v PR neopravují – zapíšou se do jednoho sběrného issue a opraví se
+            // najednou v úklidovém PR (rozhodnutí Ondřeje 21. 11. 2026, #150). Automatická oprava jen P0/P1.
+            const zavazne = f => /P0 Badge|P1 Badge|badge\/P0|badge\/P1/.test(f.body || '');
+            const drobne = findings.filter(f => !zavazne(f));
+            findings = findings.filter(zavazne);
+            if (drobne.length) {
+              const nazevUklidu = 'Úklid: drobné nálezy Codexu (P2/P3)';
+              const otevrene = await github.paginate(github.rest.issues.listForRepo, {
+                owner: context.repo.owner, repo: context.repo.repo, state: 'open', per_page: 100});
+              let uklid = otevrene.find(i => !i.pull_request && i.title === nazevUklidu);
+              if (!uklid) {
+                uklid = (await github.rest.issues.create({owner: context.repo.owner, repo: context.repo.repo,
+                  title: nazevUklidu,
+                  body: 'Drobné nálezy Codexu (P2/P3) z PR, které se kvůli nim nezdržují. Opraví se najednou v jednom úklidovém PR (#150).'})).data;
+              }
+              const polozky = drobne.map(f => {
+                const nadpis = ((f.body || '').split('\n').find(r => r.includes('**')) || '').replace(/<[^>]+>|!\[[^\]]*\]\([^)]*\)/g, '').trim();
+                return `- [ ] PR #${pr.number} (${review.commit_id.slice(0, 7)}) \`${f.path}:${f.line ?? ''}\` ${nadpis.slice(0, 200)}`;
+              }).join('\n');
+              await github.rest.issues.createComment({owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: uklid.number, body: `<!-- codex-drobne review:${review.id} -->\n${polozky}`});
+              await github.rest.issues.createComment({owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: pr.number,
+                body: `Drobné nálezy Codexu (${drobne.length}) zapsány do #${uklid.number}; tento PR kvůli nim nečeká.`});
+            }
+            core.setOutput('findings', JSON.stringify(findings.map(({ path, line, body, diff_hunk }) => ({ path, line, body, diff_hunk }))));
+            if (findings.length === 0) {
+              core.notice('Only minor (P2/P3) findings; recorded for the cleanup issue, Claude will not be started.');
               return;
             }
 
