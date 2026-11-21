@@ -372,3 +372,27 @@ def test_spojeni_jen_podle_role_hlida_cenu():
     assert len(pr.casti_akce(zak, sm)) == 2                  # 190 000 vs 1 982 000 → dvě různé smlouvy
     sm[0]["castky"] = [{"hodnota": 1900000.0, "s_dph": False}]
     assert len(pr.casti_akce(zak, sm)) == 1
+
+
+def test_celkova_cena_s_dph_po_dopoctu_dph_starsiho_dodatku():
+    sm = [dict(sml("s0", "stavba"), castky=[{"hodnota": 100.0, "s_dph": False}, {"hodnota": 121.0, "s_dph": True}]),
+          dict(sml("s1", "stavba", 1, navazuje="is0"), castky=[{"hodnota": 10.0, "s_dph": False}]),
+          dict(sml("s2", "stavba", 2, navazuje="is0"), castky=[{"hodnota": 120.0, "s_dph": False}, {"hodnota": 145.2, "s_dph": True}])]
+    (c,) = pr.casti_akce([], sm)
+    assert c["cena_po_dodatcich"] == 120.0 and c["cena_po_dodatcich_s_dph"] == 145.2
+    assert c["dodatky"][1]["castka_je_celkova"] and c["dodatky"][1]["s_dph"] == 12.1
+
+
+def test_vyslovna_vazba_dodatku_ma_prednost_a_ico_vazba_je_nase_propojeni():
+    f = [{"nazev": "Firma s.r.o.", "ico": "9", "jmeno_podnikatele": None}]
+    sm = [dict(sml("s0", "stavba", castka=100.0), strany=f),
+          dict(sml("s1", "stavba", 1, 5.0, navazuje="jina-puvodni"), strany=f)]
+    assert len(pr.casti_akce([], sm)) == 2
+    sm[1]["navazuje_na"] = None
+    (c,) = pr.casti_akce([], sm)
+    assert c["vazba_dodatku"] == "nase_propojeni" and c["cena_po_dodatcich"] == 105.0
+
+
+def test_blizkost_cen_podle_nabidky():
+    assert pr._ceny_blizko({"castky": [{"hodnota": 100.0, "s_dph": False}]},
+                           {"smluvni": [{"hodnota": 130.0, "s_dph": False}], "nabidkova": [{"hodnota": 100.0, "s_dph": False}]})
