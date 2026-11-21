@@ -82,7 +82,8 @@ jobs:
               //     u nich sám nezačne (reaguje jen na člověka); jen commit běhu, ne ruční opravy na větvi.
               const commitBehu = (await github.rest.repos.getCommit({owner, repo, ref: sha})).data;
               if (pr.head.ref.startsWith('claude/beh-') && commitBehu.author?.login === 'github-actions[bot]'
-                  && pr.user?.login === 'github-actions[bot]') {
+                  && pr.user?.login === 'github-actions[bot]'
+                  && !commitBehu.commit.message.startsWith('Address Codex review findings')) {
                 try {
                   await github.rest.pulls.merge({owner, repo, pull_number: pr.number, sha, merge_method: 'squash'});
                   await github.rest.issues.createComment({owner, repo, issue_number: pr.number,
