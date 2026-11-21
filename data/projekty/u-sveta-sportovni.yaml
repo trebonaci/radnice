@@ -1,0 +1,13 @@
+id: u-sveta-sportovni
+nazev: Ulice U Světa a parkoviště ve Sportovní
+popis: Stavební úpravy komunikace v ulici U Světa a parkoviště v ulici Sportovní.
+oblast: doprava
+druh: investicni
+vlastnik_subjekt_id: "00247618"
+rozpocet:
+  org: []
+  nazvy: []
+  schvaleny: []
+vazby:
+  hledat: ["ul\\. U Světa a parkoviště"]
+  vyloucit: []

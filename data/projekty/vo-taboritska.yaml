@@ -1,0 +1,13 @@
+id: vo-taboritska
+nazev: Veřejné osvětlení v Táboritské ulici
+popis: Nové veřejné osvětlení v Táboritské ulici v úseku mezi okružními křižovatkami.
+oblast: doprava
+druh: investicni
+vlastnik_subjekt_id: "00247618"
+rozpocet:
+  org: []
+  nazvy: []
+  schvaleny: []
+vazby:
+  hledat: ["Táboritská ulice – úsek mezi okružními"]
+  vyloucit: []

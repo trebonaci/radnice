@@ -12,6 +12,7 @@ Bez AI, údaje se opisují. Pravidla:
 from __future__ import annotations
 
 import json
+import html
 import re
 from pathlib import Path
 
@@ -119,7 +120,9 @@ def prevod(z: dict, zdroj: str, znama: frozenset[str] = frozenset()) -> dict:
         "subjekt_ico": strana(subj, znama)["ico"],
         "subjekt_nazev": strana(subj, znama)["nazev"],
         "strany": [strana(s, znama, sml.get("predmet")) for s in _seznam(sml.get("smluvniStrana"))],
-        "predmet": _skryj_fo(sml.get("predmet"), _seznam(sml.get("smluvniStrana")), znama),
+        # registr občas vrací HTML entity („&quot;“) – převést na znaky
+        "predmet": _skryj_fo(html.unescape(sml["predmet"]) if sml.get("predmet") else sml.get("predmet"),
+                             _seznam(sml.get("smluvniStrana")), znama),
         "datum_uzavreni": sml.get("datumUzavreni"),
         "datum_zverejneni": (z.get("casZverejneni") or "")[:10] or None,
         "cislo_smlouvy": sml.get("cisloSmlouvy"),

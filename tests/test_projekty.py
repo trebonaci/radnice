@@ -36,6 +36,7 @@ def test_role():
     assert pr.role("Vypracování projektu interiéru akce Sportovní hala") == "projekt"
     assert pr.role("Zhotovení PD, příkazní činnost a výkon AD pro Modernizaci objektu B LDA") == "projekt"
     assert pr.role("Objednávka PD na interiéry - ubytovací zařízení G - LDA") == "projekt"
+    assert pr.role("Příkazní smlouva - TDS na akci Stavební úpravy ulice Valy v Třeboni") == "technicky_dozor"
     assert pr.role("Přístavba dvou tělocvičen - dodatek č. 5") == "stavba"
 
 
@@ -396,3 +397,11 @@ def test_vyslovna_vazba_dodatku_ma_prednost_a_ico_vazba_je_nase_propojeni():
 def test_blizkost_cen_podle_nabidky():
     assert pr._ceny_blizko({"castky": [{"hodnota": 100.0, "s_dph": False}]},
                            {"smluvni": [{"hodnota": 130.0, "s_dph": False}], "nabidkova": [{"hodnota": 100.0, "s_dph": False}]})
+
+
+def test_dodatek_termin_podle_predmetu_registru():
+    sm = [sml("s0", "stavba", castka=545631.8),
+          dict(sml("s1", "stavba", 1, navazuje="is0"), predmet="Rozšíření veřejného osvětlení v Branné - dodatek č. 1 (termín)")]
+    (c,) = pr.casti_akce([], sm)
+    assert c["dodatky"][0]["jen_termin"] and c["dodatky"][0]["doklad_usneseni"] == "predmet_registru"
+    assert c["neuplne_cena_po_dodatcich"] == [] and c["cena_po_dodatcich"] == 545631.8

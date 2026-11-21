@@ -1,0 +1,13 @@
+id: vo-branna
+nazev: Veřejné osvětlení v Branné
+popis: Rozšíření veřejného osvětlení v Branné.
+oblast: doprava
+druh: investicni
+vlastnik_subjekt_id: "00247618"
+rozpocet:
+  org: []
+  nazvy: []
+  schvaleny: []
+vazby:
+  hledat: ["osvětlení v Branné"]
+  vyloucit: []
