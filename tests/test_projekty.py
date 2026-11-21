@@ -37,6 +37,9 @@ def test_role():
     assert pr.role("Zhotovení PD, příkazní činnost a výkon AD pro Modernizaci objektu B LDA") == "projekt"
     assert pr.role("Objednávka PD na interiéry - ubytovací zařízení G - LDA") == "projekt"
     assert pr.role("Příkazní smlouva - TDS na akci Stavební úpravy ulice Valy v Třeboni") == "technicky_dozor"
+    assert pr.role("Příkazní smlouva na výkon Koordinátora bezpečnosti a ochrany zdraví při práci (BOZP)") == "bozp"
+    assert pr.role("Stavební úpravy kotelen a výměna plynových kotlů v objektu DPS IA a DPS IC") == "stavba"
+    assert pr.role("Činnost AD při realizaci akce Oprava fasády objektu čp. 20/I Třeboň") == "projekt"
     assert pr.role("Přístavba dvou tělocvičen - dodatek č. 5") == "stavba"
 
 
@@ -405,3 +408,32 @@ def test_dodatek_termin_podle_predmetu_registru():
     (c,) = pr.casti_akce([], sm)
     assert c["dodatky"][0]["jen_termin"] and c["dodatky"][0]["doklad_usneseni"] == "predmet_registru"
     assert c["neuplne_cena_po_dodatcich"] == [] and c["cena_po_dodatcich"] == 545631.8
+
+
+def test_automaticke_karty_ze_stavebnich_zakazek():
+    def zak(id_, nazev, cena, druh="stavebni", datum="2026-02-09", ico="00247618"):
+        return {"id": id_, "subjekt_ico": ico, "nazev": nazev, "druh": druh, "stav": "dokončen", "datum_zahajeni": datum,
+                "url": "e", "casti": [{"vitezove": [{"castky": [{"druh": "smluvni", "s_dph": True, "hodnota": cena}]}]}]}
+    data_ = {"zakazky": [zak("ezak-VZ-914", "Stavební úpravy MK v ul. Budějovické v Třeboni", 14493110.17),
+                         zak("ezak-VZ-1", "Malá oprava", 500000.0), zak("ezak-VZ-2", "Elektřina", 5e7, druh="dodavky"),
+                         zak("ezak-VZ-3", "Stará akce", 5e6, datum="2024-12-31"), zak("ezak-VZ-4", "Lázně", 5e6, ico="25179896"),
+                         zak("ezak-VZ-5", "Už v kartě", 5e6)]}
+    auto = pr.automaticke_projekty(data_, [{"zakazky": [{"id": "ezak-VZ-5"}]}])
+    assert [a["id"] for a in auto] == ["auto-vz-914"] and auto[0]["oblast"] == "doprava" and auto[0]["automaticka"]
+    vzor = auto[0]["vazby"]["hledat"][0]
+    import re
+    assert re.search(vzor, "Činnost TDS při provádění stavby Stavební úpravy MK v ul. Budějovické v Třeboni.")
+    assert re.search(vzor, "Stavební  úpravy MK v ul. Budějovické - dodatek č. 1")
+    assert re.search(auto[0]["vazby"]["vyloucit"][0], "Rámcová příkazní smlouva - Administrování veřejných zakázek")
+
+
+def test_ramcova_smlouva_se_nepritahne_pres_navazanou_dilci():
+    sm = [{"id": "r", "id_smlouvy": "R", "navazuje_na": None, "predmet": "Rámcová příkazní smlouva - Administrování",
+           "datum_uzavreni": "2025-01-01", "strany": [], "castky": [], "url": "u"},
+          {"id": "a", "id_smlouvy": "A", "navazuje_na": "R", "predmet": "Administrace zadávacího řízení VZ Budějovická",
+           "datum_uzavreni": "2025-02-01", "strany": [], "castky": [], "url": "u"},
+          {"id": "b", "id_smlouvy": "B", "navazuje_na": "R", "predmet": "Administrace zadávacího řízení VZ Jiná akce",
+           "datum_uzavreni": "2025-02-01", "strany": [], "castky": [], "url": "u"}]
+    p = {"id": "x", "nazev": "X", "vazby": {"hledat": ["Budějovick"], "vyloucit": ["[Rr]ámcov"]}}
+    k = pr.sestav_projekt(p, data(smlouvy=sm))
+    assert [s["id"] for s in k["smlouvy"]] == ["a"]

@@ -23,9 +23,9 @@ import yaml
 
 ROLE = [  # pořadí = priorita; dodatek je zvlášť (dodatek_cislo) a patří k roli smlouvy, kterou mění
     ("technicky_dozor", r"technick\w* dozor|\bTDS\b"),
-    ("bozp", r"koordinátor\w* BOZP"),
+    ("bozp", r"koordinátor\w* BOZP|koordinátor\w* bezpečnosti"),
     ("projekt", r"projektov\w* dokumentac|vypracování projekt|projekt\w* interiér|zpracování PD|zhotovení PD|"
-                r"\bPD na\b|výkon AD|\bDZS\b|\bDPS\b"),
+                r"\bPD na\b|výkon AD|činnost AD|autorsk\w* dozor|\bDZS\b|DZS/DPS|stupn\w* DPS"),
     ("vybaveni", r"vybavení|dodávka|posilovn|televiz"),
     ("administrace", r"administrac\w* (?:veřejné )?zakázk|zadávacího řízení"),
 ]
@@ -221,10 +221,13 @@ def sestav_projekt(p: dict, data: dict) -> dict:
     # smlouvy (registr)
     smlouvy = []
     shodne = [s for s in data["smlouvy"] if _odpovida(s["predmet"], p)]
-    navazane = {s["navazuje_na"] for s in shodne if s.get("navazuje_na")}
+    # původní smlouvu dotahujeme jen k dodatkům (navázaná dílčí smlouva rámcové smlouvy rámcovou nepřitáhne)
+    navazane = {s["navazuje_na"] for s in shodne if s.get("navazuje_na") and RE_DODATEK.search(s["predmet"] or "")}
     shodne_id = {s["id"] for s in shodne}
     # původní smlouvy, na které dodatky odkazují v registru (`navazanyZaznam`) = doložená vazba
-    puvodni = [s for s in data["smlouvy"] if s["id_smlouvy"] in navazane and s["id"] not in shodne_id]
+    vyloucit = (p.get("vazby") or {}).get("vyloucit") or []
+    puvodni = [s for s in data["smlouvy"] if s["id_smlouvy"] in navazane and s["id"] not in shodne_id
+               and not any(re.search(x, " ".join((s["predmet"] or "").split()), re.I) for x in vyloucit)]
     vybrane_id = shodne_id | {s["id"] for s in puvodni}
     vybrane_smlouvy = {s["id_smlouvy"] for s in shodne + puvodni if s.get("id_smlouvy")}
     # další dodatky odkazující na vybrané původní smlouvy (i s obecným předmětem) – jinak by řada dodatků byla neúplná
@@ -306,6 +309,7 @@ def sestav_projekt(p: dict, data: dict) -> dict:
         "id": p["id"], "nazev": p["nazev"], "popis": p.get("popis"), "oblast": p.get("oblast"),
         "druh": p.get("druh"), "vlastnik_subjekt_id": p.get("vlastnik_subjekt_id"),
         "poznamka": p.get("poznamka"),
+        "automaticka": bool(p.get("automaticka")),
         "faze": "dokonceno" if dokonceni else faze(zakazky, smlouvy),
         "faze_jistota": "dolozeno" if dokonceni else "nase_propojeni",
         "dokonceni": dokonceni,
@@ -736,4 +740,50 @@ def sestav(koren: Path, data: dict) -> tuple[list[dict], list[str]]:
             if roky and normalizuj_nazev(nazev) not in nazvy_roku:
                 chyby.append(f"projekt {p['id']}: položka schváleného rozpočtu {nazev!r} v rozpočtu není")
         vysledek.append(sestav_projekt(p, data))
+    if not chyby:
+        vysledek += [sestav_projekt(p, data) for p in automaticke_projekty(data, vysledek)]
     return vysledek, chyby
+
+
+AUTO_OD = "2025-01-01"
+AUTO_MIN_S_DPH = 1_000_000.0
+AUTO_ZADAVATELE = ("00247618",)       # město; investice městských společností jen ručně (YAML)
+OBLAST_PODLE_NAZVU = [("voda_odpady", r"vodovod|kanaliz|rybník|hráz|odbahn|kašn"),
+                      ("doprava", r"\bMK\b|komunikac|chodník|ulic|parkoviš|osvětlen|most|propust"),
+                      ("sport", r"hřišt|sportov|tělocvič|pohybu"),
+                      ("skolstvi", r"\bZŠ\b|\bMŠ\b|škol"),
+                      ("socialni", r"\bDPS\b|senior|sociál"),
+                      ("bydleni", r"byt|bytov"),
+                      ("kultura", r"radnic|fasád|kolonád|divadl|památ")]
+
+
+def _vzor_nazvu(nazev: str) -> str:
+    """Vzor pro vyhledání smluv a usnesení k zakázce: celý název bez uvozovek, pomlčky a mezery volně."""
+    jadro = re.sub(r"[„“\"']", "", " ".join(nazev.split())).strip()
+    jadro = re.sub(r"\s*v Třeboni$", "", jadro)
+    casti = [re.escape(x) for x in re.split(r"\s*[–-]\s*", jadro)]
+    return r"\s*[–-]\s*".join(x.replace(r"\ ", r"\s+") for x in casti)
+
+
+def automaticke_projekty(data: dict, rucni: list[dict]) -> list[dict]:
+    """Karty pro stavební zakázky města od roku 2025 se smluvní cenou aspoň 1 mil. Kč s DPH, které nejsou
+    v žádné ručně vedené kartě (#157). Identita = zakázka v E-ZAK; smlouvy, dodatky, dozor a usnesení se
+    připojí podle celého názvu zakázky (naše propojení). Rozpočet se nepřiřazuje."""
+    pokryte = {z["id"] for p in rucni for z in p["zakazky"]}
+    vysledek = []
+    for z in data["zakazky"]:
+        if (z["subjekt_ico"] not in AUTO_ZADAVATELE or z.get("druh") != "stavebni" or z["id"] in pokryte
+                or (z.get("datum_zahajeni") or "") < AUTO_OD or z.get("stav") == "zrušen"):
+            continue
+        ceny = [k["hodnota"] for c in z["casti"] for v in c["vitezove"] for k in v["castky"]
+                if k.get("druh") == "smluvni" and k.get("s_dph") is True]
+        if not ceny or max(ceny) < AUTO_MIN_S_DPH:
+            continue
+        nazev = " ".join(re.sub(r"[„“\"]", "", z["nazev"]).split())
+        oblast = next((o for o, vz in OBLAST_PODLE_NAZVU if re.search(vz, nazev, re.I)), "jine")
+        vysledek.append({"id": "auto-" + z["id"].removeprefix("ezak-").lower(), "nazev": nazev, "popis": "",
+                         "oblast": oblast, "druh": "investicni", "vlastnik_subjekt_id": z["subjekt_ico"],
+                         "automaticka": True, "rozpocet": {"org": [], "nazvy": [], "schvaleny": []},
+                         # rámcová smlouva (např. na administraci více zakázek) není součástí akce
+                         "vazby": {"hledat": [_vzor_nazvu(z["nazev"])], "vyloucit": [r"[Rr]ámcov"]}})
+    return vysledek
