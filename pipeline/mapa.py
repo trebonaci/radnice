@@ -85,7 +85,8 @@ def _geometrie(misto: list[dict]) -> dict | None:
 
 
 def vyres_rucni(misto: list[dict], ruian: Ruian, kdo: str) -> tuple[list[dict], list[str], list[str]]:
-    """Ruční `misto` → části s geometrií. Vrací (části, chyby, upozornění)."""
+    """Ruční `misto` → části s geometrií. Vrací (části, chyby, upozornění).
+    Místo, které v RÚIAN není (překlep, jiné číslo), je jen upozornění: denní běh kvůli němu nesmí selhat."""
     casti, chyby, upozorneni = [], [], []
     for m in misto or []:
         popis = m.get("popis")
@@ -102,7 +103,7 @@ def vyres_rucni(misto: list[dict], ruian: Ruian, kdo: str) -> tuple[list[dict], 
                     casti.append({"druh": "ulice", "nazev": nazev, "linie": u["linie"], "jistota": "dolozeno",
                                   "zdroj": "RÚIAN", "ruian_kod": u["kod"]})
                 elif ruian.k_dispozici:
-                    chyby.append(f"mapa {kdo}: ulice {nazev!r} v RÚIAN není")
+                    upozorneni.append(f"mapa {kdo}: ulice {nazev!r} v RÚIAN není – místo vynecháno")
                 else:
                     upozorneni.append(f"mapa {kdo}: ulice {nazev!r} – chybí data RÚIAN")
         elif "adresa" in m:
@@ -112,7 +113,7 @@ def vyres_rucni(misto: list[dict], ruian: Ruian, kdo: str) -> tuple[list[dict], 
                 casti.append({"druh": "adresa", "nazev": popis or m["adresa"], "bod": a["bod"], "jistota": "dolozeno",
                               "zdroj": "RÚIAN", "ruian_kod": a["kod"]})
             elif ruian.k_dispozici:
-                chyby.append(f"mapa {kdo}: adresa {m['adresa']!r} v RÚIAN není")
+                upozorneni.append(f"mapa {kdo}: adresa {m['adresa']!r} v RÚIAN není – místo vynecháno")
             else:
                 upozorneni.append(f"mapa {kdo}: adresa {m['adresa']!r} – chybí data RÚIAN")
         elif "cp" in m:
@@ -121,7 +122,7 @@ def vyres_rucni(misto: list[dict], ruian: Ruian, kdo: str) -> tuple[list[dict], 
                 casti.append({"druh": "budova", "nazev": popis or f"č. p. {m['cp']}", "bod": b["bod"], "jistota": "dolozeno",
                               "zdroj": "RÚIAN", "ruian_kod": b["kod"]})
             elif ruian.k_dispozici:
-                chyby.append(f"mapa {kdo}: budova č. p. {m['cp']} ({m.get('cast_obce')}) v RÚIAN není")
+                upozorneni.append(f"mapa {kdo}: budova č. p. {m['cp']} ({m.get('cast_obce')}) v RÚIAN není – místo vynecháno")
             else:
                 upozorneni.append(f"mapa {kdo}: č. p. {m['cp']} – chybí data RÚIAN")
         else:

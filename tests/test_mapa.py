@@ -82,13 +82,14 @@ def test_rucni_misto_a_vystup(tmp_path):
     karty = [{"id": "a", "nazev": "A", "faze": "probiha"}, {"id": "b", "nazev": "B"},
              {"id": "c", "nazev": "Stavební úpravy MK v ul. Budějovické"}]
     zasobnik = [{"typ": "namet", "id": "sprm-5", "nazev": "Kompostárna", "osa": "Životní prostředí"}]
-    vys, chyby, _ = mapa.sestav(koren, karty, zasobnik, [], {5: {"geometrie": {"type": "Point", "coordinates": [14.75, 49.01]}}})
+    vys, chyby, upozorneni = mapa.sestav(koren, karty, zasobnik, [], {5: {"geometrie": {"type": "Point", "coordinates": [14.75, 49.01]}}})
     po = {m["id"]: m for m in vys}
     assert po["a"]["geometrie"]["type"] == "GeometryCollection"
     assert po["a"]["geometrie"]["geometries"][1] == {"type": "Point", "coordinates": [14.7706, 49.0035]}
     assert po["c"]["geometrie"] == {"type": "MultiLineString", "coordinates": [[[1, 2], [3, 4], [5, 6]]]}
     assert po["sprm-5"]["geometrie"] == {"type": "Point", "coordinates": [14.75, 49.01]}
-    assert chyby == ["mapa b: ulice 'Neexistující' v RÚIAN není"]
+    assert chyby == [] and po["b"]["geometrie"] is None
+    assert "mapa b: ulice 'Neexistující' v RÚIAN není – místo vynecháno" in upozorneni
 
 
 def test_bez_ruian_jen_upozorneni(tmp_path):
