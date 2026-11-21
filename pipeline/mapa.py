@@ -25,6 +25,17 @@ RE_CP = re.compile(r"\bč\.\s?p\.\s*(\d+)\s*/\s*(I{1,2})\b|\bčp\.\s*(\d+)\s*/\s
 RE_ADRESA = re.compile(r"\b([A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ][a-záčďéěíňóřšťúůýž]+(?:\s+[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ][a-záčďéěíňóřšťúůýž]+)?)\s+(\d{1,4})\b")
 
 
+SPRM_URL = "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+
+
+def _datum_sprm(koren: Path) -> str | None:
+    """Datum stažení evidence SPRM z raw/sprm/manifest.json."""
+    cesta = koren / "raw" / "sprm" / "manifest.json"
+    if not cesta.exists():
+        return None
+    return json.loads(cesta.read_text(encoding="utf-8")).get("stazeno")
+
+
 class Ruian:
     def __init__(self, koren: Path):
         adr = koren / "raw" / "ruian"
@@ -192,7 +203,8 @@ def sestav(koren: Path, projekty: list[dict], zasobnik: list[dict], zasobnik_yam
             g = a.get("geometrie")
             if isinstance(g, dict) and g.get("type") == "Point":
                 casti = [{"druh": "bod", "nazev": None, "bod": g["coordinates"], "jistota": "dolozeno",
-                          "zdroj": "evidence SPRM na trebonaci.cz"}]
+                          "zdroj": "evidence SPRM na trebonaci.cz",
+                          "zdroj_url": SPRM_URL, "zdroj_datum": _datum_sprm(koren)}]
                 vysledek.append({"id": z["id"], "typ": "namet", "nazev": z["nazev"], "faze": "namet", "oblast": None,
                                  "osa": z.get("osa"), "misto": casti, "geometrie": _geometrie(casti)})
     if not ruian.k_dispozici:
