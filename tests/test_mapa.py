@@ -15,17 +15,17 @@ VFR = """<?xml version="1.0" encoding="UTF-8"?>
  <vf:Obce><vf:Obec gml:id="OB.547336"><obi:Kod>547336</obi:Kod><obi:Nazev>Třeboň</obi:Nazev></vf:Obec></vf:Obce>
  <vf:CastiObci><vf:CastObce gml:id="CO.1"><coi:Kod>1</coi:Kod><coi:Nazev>Třeboň I</coi:Nazev></vf:CastObce></vf:CastiObci>
  <vf:Ulice><vf:Ulice gml:id="UL.10"><uli:Kod>10</uli:Kod><uli:Nazev>Budějovická</uli:Nazev>
-  <uli:Geometrie><uli:DefinicniCara><gml:MultiCurve><gml:curveMember><gml:LineString>
+  <uli:Geometrie><uli:DefinicniCara><gml:MultiCurve><gml:curveMember><gml:LineString gml:id="L.1">
    <gml:posList srsDimension="2">1 2 3 4 5 6</gml:posList></gml:LineString></gml:curveMember></gml:MultiCurve></uli:DefinicniCara></uli:Geometrie></vf:Ulice>
   <vf:Ulice gml:id="UL.11"><uli:Kod>11</uli:Kod><uli:Nazev>Chelčického</uli:Nazev>
   <uli:Geometrie><uli:DefinicniCara><gml:MultiCurve><gml:curveMember><gml:LineString>
    <gml:posList>7 8 9 10</gml:posList></gml:LineString></gml:curveMember></gml:MultiCurve></uli:DefinicniCara></uli:Geometrie></vf:Ulice></vf:Ulice>
  <vf:StavebniObjekty><vf:StavebniObjekt gml:id="SO.100"><soi:Kod>100</soi:Kod><soi:CislaDomovni><com:CisloDomovni>1</com:CisloDomovni></soi:CislaDomovni>
   <soi:CastObce><coi:Kod>1</coi:Kod></soi:CastObce><soi:TypStavebnihoObjektuKod>1</soi:TypStavebnihoObjektuKod>
-  <soi:Geometrie><soi:DefinicniBod><gml:Point><gml:pos>11 12</gml:pos></gml:Point></soi:DefinicniBod></soi:Geometrie></vf:StavebniObjekt></vf:StavebniObjekty>
+  <soi:Geometrie><soi:DefinicniBod><gml:Point gml:id="P.1"><gml:pos>11 12</gml:pos></gml:Point></soi:DefinicniBod></soi:Geometrie></vf:StavebniObjekt></vf:StavebniObjekty>
  <vf:AdresniMista><vf:AdresniMisto gml:id="AD.200"><ami:Kod>200</ami:Kod><ami:CisloDomovni>206</ami:CisloDomovni><ami:CisloOrientacni>1</ami:CisloOrientacni>
   <ami:StavebniObjekt><soi:Kod>100</soi:Kod></ami:StavebniObjekt><ami:Ulice><uli:Kod>11</uli:Kod></ami:Ulice>
-  <ami:Geometrie><ami:DefinicniBod><gml:Point><gml:pos>13 14</gml:pos></gml:Point></ami:DefinicniBod></ami:Geometrie></vf:AdresniMisto></vf:AdresniMista>
+  <ami:Geometrie><ami:DefinicniBod><gml:Point gml:id="P.2"><gml:pos>13 14</gml:pos></gml:Point></ami:DefinicniBod></ami:Geometrie></vf:AdresniMisto></vf:AdresniMista>
 </vf:Data></vf:VymennyFormat>""".encode("utf-8")
 
 WGS = lambda xy: [xy[0], xy[1]]

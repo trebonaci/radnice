@@ -88,7 +88,9 @@ def rozloz(soubor, wgs=None) -> dict:
     wgs = wgs or _prevod()
     obec, ulice, casti, budovy, adresy = None, [], {}, [], []
     for _, el in ET.iterparse(soubor, events=("end",)):
-        if GML_ID not in el.attrib:
+        # gml:id mají i geometrie (gml:Point, gml:LineString…) uvnitř prvku – ty se nesmí vyčistit dřív,
+        # než se zpracuje jejich prvek (Codex P1 v #182); zpracují se a čistí jen prvky RÚIAN
+        if GML_ID not in el.attrib or el.tag.startswith("{http://www.opengis.net/gml"):
             continue
         druh = _ln(el.tag)
         if druh == "Obec":
