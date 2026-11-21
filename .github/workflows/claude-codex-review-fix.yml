@@ -81,7 +81,11 @@ jobs:
                 issue_number: pr.number,
                 body: `Drobné nálezy Codexu (${drobne.length}) zapsány do #${uklid.number}; tento PR kvůli nim nečeká.`});
             }
-            core.setOutput('findings', JSON.stringify(findings.map(({ path, line, body, diff_hunk }) => ({ path, line, body, diff_hunk }))));
+            // diff_hunk u PR z běhu (velké soubory v raw/ a data/) přesáhl limit délky argumentu procesu
+            // („Argument list too long“, PR #159) → krátit tělo i diff na rozumnou délku (#162)
+            const kratit = (t, n) => (t || '').length > n ? (t || '').slice(0, n) + '\n…' : (t || '');
+            core.setOutput('findings', JSON.stringify(findings.map(({ path, line, body, diff_hunk }) =>
+              ({ path, line, body: kratit(body, 4000), diff_hunk: kratit(diff_hunk, 1500) }))));
             if (findings.length === 0) {
               core.notice('Only minor (P2/P3) findings; recorded for the cleanup issue, Claude will not be started.');
               return;
