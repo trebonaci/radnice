@@ -252,6 +252,16 @@ def test_soutez_zverejnena_po_lhute_bez_doby_trvani():
     assert e["datum"] == "2026-07-22" and e["kratce"] == "stavba, 2 nabídky" and e["lhuta_dni"] is None
 
 
+def test_zrusene_rizeni_bez_smlouvy():
+    zak = {"id": "ezak-VZ-891", "nazev": "Přístavba dvou tělocvičen", "stav": "zrušen", "url": "e",
+           "casti": [{"nazev": "x", "stav": "zrušen", "pocet_nabidek": 1, "datum_uverejneni": "2025-10-10",
+                      "lhuta_nabidek": "2025-11-27", "datum_uzavreni_smlouvy": None, "datum_zruseni": "2025-12-02",
+                      "vitezove": []}]}
+    e = next(x for x in pr.sestav_projekt(PROJEKT, data(zakazky=[zak]))["udalosti"] if x["typ"] == "soutez")
+    assert e["zruseno"] and e["kratce"] == "stavba, řízení zrušeno 2. 12. 2025 po 53 dnech, 1 nabídka"
+    assert "smlouva" not in e["kratce"]
+
+
 def test_kratce_usneseni():
     assert pr.kratce_usneseni({"vysledek_hlasovani": "prijato", "text": "uzavření Dodatku č. 5 ke smlouvě o dílo"}) == \
         "schválení dodatku 5"
@@ -362,3 +372,27 @@ def test_spojeni_jen_podle_role_hlida_cenu():
     assert len(pr.casti_akce(zak, sm)) == 2                  # 190 000 vs 1 982 000 → dvě různé smlouvy
     sm[0]["castky"] = [{"hodnota": 1900000.0, "s_dph": False}]
     assert len(pr.casti_akce(zak, sm)) == 1
+
+
+def test_celkova_cena_s_dph_po_dopoctu_dph_starsiho_dodatku():
+    sm = [dict(sml("s0", "stavba"), castky=[{"hodnota": 100.0, "s_dph": False}, {"hodnota": 121.0, "s_dph": True}]),
+          dict(sml("s1", "stavba", 1, navazuje="is0"), castky=[{"hodnota": 10.0, "s_dph": False}]),
+          dict(sml("s2", "stavba", 2, navazuje="is0"), castky=[{"hodnota": 120.0, "s_dph": False}, {"hodnota": 145.2, "s_dph": True}])]
+    (c,) = pr.casti_akce([], sm)
+    assert c["cena_po_dodatcich"] == 120.0 and c["cena_po_dodatcich_s_dph"] == 145.2
+    assert c["dodatky"][1]["castka_je_celkova"] and c["dodatky"][1]["s_dph"] == 12.1
+
+
+def test_vyslovna_vazba_dodatku_ma_prednost_a_ico_vazba_je_nase_propojeni():
+    f = [{"nazev": "Firma s.r.o.", "ico": "9", "jmeno_podnikatele": None}]
+    sm = [dict(sml("s0", "stavba", castka=100.0), strany=f),
+          dict(sml("s1", "stavba", 1, 5.0, navazuje="jina-puvodni"), strany=f)]
+    assert len(pr.casti_akce([], sm)) == 2
+    sm[1]["navazuje_na"] = None
+    (c,) = pr.casti_akce([], sm)
+    assert c["vazba_dodatku"] == "nase_propojeni" and c["cena_po_dodatcich"] == 105.0
+
+
+def test_blizkost_cen_podle_nabidky():
+    assert pr._ceny_blizko({"castky": [{"hodnota": 100.0, "s_dph": False}]},
+                           {"smluvni": [{"hodnota": 130.0, "s_dph": False}], "nabidkova": [{"hodnota": 100.0, "s_dph": False}]})
