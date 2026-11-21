@@ -10,3 +10,7 @@ rozpocet:
 vazby:
   hledat: ["FVE 38,7 kWp"]
   vyloucit: []
+# místo na mapě (#180): ulice = celá definiční čára ulice z RÚIAN, adresa = adresní místo
+misto:
+  - adresa: Na Sadech 375
+    popis: ZŠ Na Sadech

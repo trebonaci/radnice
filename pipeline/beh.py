@@ -44,8 +44,8 @@ POKLES = 0.5               # výstup pod touto částí dosavadního počtu = po
 # ručně spravované soubory mimo podadresáře, které sestavení čte (#153: zásobník projektů)
 RUCNI_SOUBORY = ("data/zasobnik.yaml",)
 # zásobník se legitimně zmenšuje (položka se stane kartou, kandidát se zařadí)
-BEZ_KONTROLY_POKLESU = {"zasobnik", "ukazatele"}
-VYSTUPY = ("jednani", "usneseni", "hlasovani", "zakazky", "smlouvy", "rozpoctova_opatreni", "rozpocet", "rozpocet_zmeny", "projekty", "investice", "dotace", "zasobnik", "ukazatele")
+BEZ_KONTROLY_POKLESU = {"zasobnik", "ukazatele", "mapa"}
+VYSTUPY = ("jednani", "usneseni", "hlasovani", "zakazky", "smlouvy", "rozpoctova_opatreni", "rozpocet", "rozpocet_zmeny", "projekty", "investice", "dotace", "zasobnik", "ukazatele", "mapa")
 
 
 class ZamekObsazen(Exception):
@@ -309,7 +309,7 @@ def _beh(koren: Path, zdroje: list[Zdroj], dnes: date, ted: datetime) -> int:
     # 2. staging: změny a sestavení nad kopií, ostrá data se zatím nedotknou
     with tempfile.TemporaryDirectory() as tmp:
         stage = Path(tmp)
-        for podadresar in ("raw/texty", "raw/ezak", "raw/smlouvy", "raw/rozpocet", "raw/sprm", "anotace", "config", "data/projekty"):
+        for podadresar in ("raw/texty", "raw/ezak", "raw/smlouvy", "raw/rozpocet", "raw/sprm", "raw/ruian", "anotace", "config", "data/projekty"):
             if (koren / podadresar).exists():
                 shutil.copytree(koren / podadresar, stage / podadresar)
         for soubor in RUCNI_SOUBORY:
