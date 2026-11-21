@@ -104,6 +104,13 @@
         "jistota": "nase_propojeni"
       },
       "skladba_s_dph": [],
+      "celkova_cena_s_dph": {
+        "castka": null,
+        "neuplne": [],
+        "druh": "smluvni",
+        "s_dph": true,
+        "jistota": "nase_propojeni"
+      },
       "schvaleny": [
         {
           "rok": 2026,
@@ -218,7 +225,9 @@
         "chybi_dodatky": [],
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 1123487.0,
+        "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 1359419.27,
+        "neuplne_cena_po_dodatcich_s_dph": [],
         "souhlas_ezak": null,
         "dodatky_bez_dph": null
       },
@@ -239,7 +248,9 @@
         "chybi_dodatky": [],
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 84000.0,
+        "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 101640.0,
+        "neuplne_cena_po_dodatcich_s_dph": [],
         "souhlas_ezak": null,
         "dodatky_bez_dph": null
       }
@@ -292,6 +303,13 @@
           "s_dph": true
         }
       ],
+      "celkova_cena_s_dph": {
+        "castka": 1461059.27,
+        "neuplne": [],
+        "druh": "smluvni",
+        "s_dph": true,
+        "jistota": "nase_propojeni"
+      },
       "schvaleny": []
     },
     "zakazky": [
@@ -517,7 +535,9 @@
         "chybi_dodatky": [],
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 1024446.81,
+        "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 1239580.64,
+        "neuplne_cena_po_dodatcich_s_dph": [],
         "souhlas_ezak": false,
         "dodatky_bez_dph": 25685.72
       }
@@ -561,6 +581,13 @@
           "s_dph": true
         }
       ],
+      "celkova_cena_s_dph": {
+        "castka": 1239580.64,
+        "neuplne": [],
+        "druh": "smluvni",
+        "s_dph": true,
+        "jistota": "nase_propojeni"
+      },
       "schvaleny": []
     },
     "zakazky": [
@@ -802,7 +829,9 @@
         "chybi_dodatky": [],
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 795000.0,
+        "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 961950.0,
+        "neuplne_cena_po_dodatcich_s_dph": [],
         "souhlas_ezak": null,
         "dodatky_bez_dph": null
       }
@@ -846,6 +875,13 @@
           "s_dph": true
         }
       ],
+      "celkova_cena_s_dph": {
+        "castka": 961950.0,
+        "neuplne": [],
+        "druh": "smluvni",
+        "s_dph": true,
+        "jistota": "nase_propojeni"
+      },
       "schvaleny": []
     },
     "zakazky": [],
@@ -954,7 +990,9 @@
         "chybi_dodatky": [],
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 21849088.69,
+        "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 26437397.31,
+        "neuplne_cena_po_dodatcich_s_dph": [],
         "souhlas_ezak": null,
         "dodatky_bez_dph": null
       },
@@ -984,7 +1022,9 @@
         "chybi_dodatky": [],
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 876000.0,
+        "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 1059960.0,
+        "neuplne_cena_po_dodatcich_s_dph": [],
         "souhlas_ezak": null,
         "dodatky_bez_dph": null
       },
@@ -1005,7 +1045,9 @@
         "chybi_dodatky": [],
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 60000.0,
+        "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 72600.0,
+        "neuplne_cena_po_dodatcich_s_dph": [],
         "souhlas_ezak": null,
         "dodatky_bez_dph": null
       }
@@ -1058,6 +1100,13 @@
           "s_dph": true
         }
       ],
+      "celkova_cena_s_dph": {
+        "castka": 27569957.31,
+        "neuplne": [],
+        "druh": "smluvni",
+        "s_dph": true,
+        "jistota": "nase_propojeni"
+      },
       "schvaleny": []
     },
     "zakazky": [
@@ -1588,8 +1637,12 @@
         ],
         "chybi_dodatky": [],
         "obsahuje_dopocet_dph": false,
-        "cena_po_dodatcich": null,
+        "cena_po_dodatcich": 54933715.04,
+        "neuplne_cena_po_dodatcich": [
+          "dodatek č. 2 bez ceny"
+        ],
         "cena_po_dodatcich_s_dph": 66097418.09,
+        "neuplne_cena_po_dodatcich_s_dph": [],
         "souhlas_ezak": true,
         "dodatky_bez_dph": 5227139.14
       },
@@ -1631,7 +1684,9 @@
         "chybi_dodatky": [],
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 1092000.0,
+        "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 1092000.0,
+        "neuplne_cena_po_dodatcich_s_dph": [],
         "souhlas_ezak": false,
         "dodatky_bez_dph": 147000.0
       },
@@ -1664,7 +1719,9 @@
         "chybi_dodatky": [],
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 246500.0,
+        "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 246500.0,
+        "neuplne_cena_po_dodatcich_s_dph": [],
         "souhlas_ezak": null,
         "dodatky_bez_dph": 14500.0
       },
@@ -1697,7 +1754,9 @@
         "chybi_dodatky": [],
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 146650.0,
+        "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 177446.5,
+        "neuplne_cena_po_dodatcich_s_dph": [],
         "souhlas_ezak": null,
         "dodatky_bez_dph": 7750.0
       },
@@ -1718,7 +1777,9 @@
         "chybi_dodatky": [],
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 58419.2,
+        "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 70687.23,
+        "neuplne_cena_po_dodatcich_s_dph": [],
         "souhlas_ezak": null,
         "dodatky_bez_dph": null
       },
@@ -1739,7 +1800,9 @@
         "chybi_dodatky": [],
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 75000.0,
+        "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 90750.0,
+        "neuplne_cena_po_dodatcich_s_dph": [],
         "souhlas_ezak": null,
         "dodatky_bez_dph": null
       }
@@ -1759,7 +1822,7 @@
         "druh": "smluvni",
         "s_dph": false,
         "mena": "CZK",
-        "po_dodatcich": null,
+        "po_dodatcich": 56552284.24,
         "neuplne": [
           "stavba"
         ],
@@ -1812,6 +1875,13 @@
           "s_dph": true
         }
       ],
+      "celkova_cena_s_dph": {
+        "castka": 67774801.82,
+        "neuplne": [],
+        "druh": "smluvni",
+        "s_dph": true,
+        "jistota": "nase_propojeni"
+      },
       "schvaleny": [
         {
           "rok": 2026,
@@ -2855,7 +2925,9 @@
         "chybi_dodatky": [],
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 1791666.0,
+        "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 2167915.86,
+        "neuplne_cena_po_dodatcich_s_dph": [],
         "souhlas_ezak": null,
         "dodatky_bez_dph": null
       }
@@ -2899,6 +2971,13 @@
           "s_dph": true
         }
       ],
+      "celkova_cena_s_dph": {
+        "castka": 2167915.86,
+        "neuplne": [],
+        "druh": "smluvni",
+        "s_dph": true,
+        "jistota": "nase_propojeni"
+      },
       "schvaleny": [
         {
           "rok": 2026,
@@ -3285,7 +3364,9 @@
         "chybi_dodatky": [],
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 51382827.84,
+        "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 62173221.68,
+        "neuplne_cena_po_dodatcich_s_dph": [],
         "souhlas_ezak": true,
         "dodatky_bez_dph": 5703927.84
       },
@@ -3329,8 +3410,14 @@
         ],
         "chybi_dodatky": [],
         "obsahuje_dopocet_dph": false,
-        "cena_po_dodatcich": null,
-        "cena_po_dodatcich_s_dph": null,
+        "cena_po_dodatcich": 929500.0,
+        "neuplne_cena_po_dodatcich": [
+          "původní cena z E-ZAK může už zahrnovat dodatky"
+        ],
+        "cena_po_dodatcich_s_dph": 929500.0,
+        "neuplne_cena_po_dodatcich_s_dph": [
+          "původní cena z E-ZAK může už zahrnovat dodatky"
+        ],
         "souhlas_ezak": null,
         "dodatky_bez_dph": 56500.0
       },
@@ -3351,7 +3438,9 @@
         "chybi_dodatky": [],
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 233000.0,
+        "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 281930.0,
+        "neuplne_cena_po_dodatcich_s_dph": [],
         "souhlas_ezak": null,
         "dodatky_bez_dph": null
       },
@@ -3384,7 +3473,9 @@
         "chybi_dodatky": [],
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 275000.0,
+        "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 275000.0,
+        "neuplne_cena_po_dodatcich_s_dph": [],
         "souhlas_ezak": null,
         "dodatky_bez_dph": 35000.0
       },
@@ -3417,7 +3508,9 @@
         "chybi_dodatky": [],
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 145067.0,
+        "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 175531.07,
+        "neuplne_cena_po_dodatcich_s_dph": [],
         "souhlas_ezak": null,
         "dodatky_bez_dph": 16167.0
       },
@@ -3470,7 +3563,9 @@
         "chybi_dodatky": [],
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 1870997.0,
+        "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 2263906.37,
+        "neuplne_cena_po_dodatcich_s_dph": [],
         "souhlas_ezak": false,
         "dodatky_bez_dph": 196649.0
       },
@@ -3491,7 +3586,9 @@
         "chybi_dodatky": [],
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 310125.87,
+        "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 375252.3,
+        "neuplne_cena_po_dodatcich_s_dph": [],
         "souhlas_ezak": null,
         "dodatky_bez_dph": null
       },
@@ -3512,7 +3609,9 @@
         "chybi_dodatky": [],
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 208817.0,
+        "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 252668.57,
+        "neuplne_cena_po_dodatcich_s_dph": [],
         "souhlas_ezak": null,
         "dodatky_bez_dph": null
       },
@@ -3533,7 +3632,9 @@
         "chybi_dodatky": [],
         "obsahuje_dopocet_dph": false,
         "cena_po_dodatcich": 75000.0,
+        "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 90750.0,
+        "neuplne_cena_po_dodatcich_s_dph": [],
         "souhlas_ezak": null,
         "dodatky_bez_dph": null
       }
@@ -3553,7 +3654,7 @@
         "druh": "smluvni",
         "s_dph": false,
         "mena": "CZK",
-        "po_dodatcich": null,
+        "po_dodatcich": 55430334.71,
         "neuplne": [
           "projekt"
         ],
@@ -3564,7 +3665,7 @@
         "druh": "smluvni",
         "s_dph": true,
         "mena": "CZK",
-        "po_dodatcich": null,
+        "po_dodatcich": 66817759.99,
         "neuplne": [
           "projekt"
         ],
@@ -3584,7 +3685,7 @@
           "skupina": "priprava",
           "nazev": "Projekt a výběrové řízení",
           "casti": 3,
-          "castka": null,
+          "castka": 1302180.0,
           "nezname": [
             "projekt"
           ],
@@ -3610,6 +3711,15 @@
           "s_dph": true
         }
       ],
+      "celkova_cena_s_dph": {
+        "castka": 66817759.99,
+        "neuplne": [
+          "projekt"
+        ],
+        "druh": "smluvni",
+        "s_dph": true,
+        "jistota": "nase_propojeni"
+      },
       "schvaleny": [
         {
           "rok": 2026,

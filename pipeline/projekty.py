@@ -342,21 +342,25 @@ def souhrn(rozpocet: list[dict], casti: list[dict]) -> dict:
     po = [c for c in casti if c["cena_po_dodatcich"] is not None]
     smluvni = {"celkem": sum(_halere(c["puvodni"]["bez_dph"]) for c in znamo) / 100 if znamo else None,
                "druh": "smluvni", "s_dph": False, "mena": "CZK",
-               "po_dodatcich": sum(_halere(c["cena_po_dodatcich"]) for c in po) / 100
-               if po and len(po) == len(casti) else None,
-               "neuplne": [c["role"] for c in casti if c["cena_po_dodatcich"] is None],
+               "po_dodatcich": sum(_halere(c["cena_po_dodatcich"]) for c in po) / 100 if po else None,
+               "neuplne": [c["role"] for c in casti if c["cena_po_dodatcich"] is None or c["neuplne_cena_po_dodatcich"]],
                "jistota": "nase_propojeni"}
     # totéž s DPH – rozpočet města počítá s cenou včetně DPH, proto karta ukazuje přednostně tento základ
     znamo_s = [c for c in casti if c["puvodni"] and c["puvodni"].get("s_dph") is not None]
     po_s = [c for c in casti if c.get("cena_po_dodatcich_s_dph") is not None]
     smluvni_s = {"celkem": sum(_halere(c["puvodni"]["s_dph"]) for c in znamo_s) / 100 if znamo_s else None,
                  "druh": "smluvni", "s_dph": True, "mena": "CZK",
-                 "po_dodatcich": sum(_halere(c["cena_po_dodatcich_s_dph"]) for c in po_s) / 100
-                 if po_s and len(po_s) == len(casti) else None,
-                 "neuplne": [c["role"] for c in casti if c.get("cena_po_dodatcich_s_dph") is None],
+                 "po_dodatcich": sum(_halere(c["cena_po_dodatcich_s_dph"]) for c in po_s) / 100 if po_s else None,
+                 "neuplne": [c["role"] for c in casti if c.get("cena_po_dodatcich_s_dph") is None
+                             or c.get("neuplne_cena_po_dodatcich_s_dph")],
                  "jistota": "nase_propojeni"}
+    sk = skladba(casti)
+    zname_sk = [x for x in sk if x["castka"] is not None]
+    celkem = {"castka": sum(_halere(x["castka"]) for x in zname_sk) / 100 if zname_sk else None,
+              "neuplne": [r for x in sk for r in x["nezname"]], "druh": "smluvni", "s_dph": True,
+              "jistota": "nase_propojeni"}
     return {"rozpocet": rozpocet_souhrn, "smluvni_bez_dph": smluvni, "smluvni_s_dph": smluvni_s,
-            "skladba_s_dph": skladba(casti)}
+            "skladba_s_dph": sk, "celkova_cena_s_dph": celkem}
 
 
 SKUPINY = [("stavba", "Stavba", ("stavba",)),
@@ -366,16 +370,18 @@ SKUPINY = [("stavba", "Stavba", ("stavba",)),
 
 
 def skladba(casti: list[dict]) -> list[dict]:
-    """Cena akce po skupinách (#136), s DPH po dodatcích (druh smluvni). Skupina bez známé ceny všech částí
-    má `castka` null a seznam chybějících rolí; skupiny se sčítají až na kartě, jen když jsou všechny známé."""
+    """Cena akce po skupinách (#136), s DPH po dodatcích (druh smluvni), součet známých hodnot; `nezname` =
+    role, jejichž cena chybí nebo je neúplná. `castka` je null, jen když ve skupině není známá žádná cena."""
     vysledek = []
     for klic, nazev, role_ in SKUPINY:
         cc = [c for c in casti if c["role"] in role_]
         if not cc:
             continue
-        nezname = [c["role"] for c in cc if c.get("cena_po_dodatcich_s_dph") is None]
+        nezname = [c["role"] for c in cc if c.get("cena_po_dodatcich_s_dph") is None
+                   or c.get("neuplne_cena_po_dodatcich_s_dph")]
+        zname = [c for c in cc if c.get("cena_po_dodatcich_s_dph") is not None]
         vysledek.append({"skupina": klic, "nazev": nazev, "casti": len(cc),
-                         "castka": None if nezname else sum(_halere(c["cena_po_dodatcich_s_dph"]) for c in cc) / 100,
+                         "castka": sum(_halere(c["cena_po_dodatcich_s_dph"]) for c in zname) / 100 if zname else None,
                          "nezname": nezname, "druh": "smluvni", "s_dph": True})
     return vysledek
 
@@ -470,7 +476,8 @@ def casti_akce(zakazky: list[dict], smlouvy: list[dict], jen_termin: dict[str, s
     - Částka u dodatku v registru je **změna ceny** (ověřeno na dodatku č. 1 smlouvy s koordinátorem BOZP
       přístavby tělocvičen: 138 900 + 7 750 = 146 650 Kč bez DPH, 20. 11. 2026). Dodatek bez částky
       nemá známou změnu ceny – cena po dodatcích pak zůstává neznámá.
-    - `cena_po_dodatcich` (bez DPH) počítá kód jen při známé původní ceně a úplné řadě dodatků 1..N.
+    - `cena_po_dodatcich` (bez DPH) a `cena_po_dodatcich_s_dph` = součet známých hodnot; důvody neúplnosti
+      v `neuplne_cena_po_dodatcich[_s_dph]` (chybí dodatek, dodatek bez ceny, původní cena neznámá nebo z E-ZAK).
     """
     skupiny: dict[str, dict] = {}
     for sm in smlouvy:
@@ -574,16 +581,24 @@ def casti_akce(zakazky: list[dict], smlouvy: list[dict], jen_termin: dict[str, s
         c["chybi_dodatky"] = sorted(set(range(1, max(cisla) + 1)) - cisla) if cisla else []
         # dodatek bez částky v registru = změna ceny neznámá (kromě dodatku jen o termínu podle usnesení)
         c["obsahuje_dopocet_dph"] = any(x and x.get("s_dph_dopocteno") for x in [c["puvodni"]] + c["dodatky"])
+        # Cena po dodatcích = součet ZNÁMÝCH hodnot (#140, rozhodnutí Ondřeje 21. 11. 2026: další dodatky mohou přijít
+        # kdykoli, proto vždy sčítat, co je známo). Co v součtu chybí nebo může být navíc, říká `neuplne_*`.
         for klic, pole in (("cena_po_dodatcich", "bez_dph"), ("cena_po_dodatcich_s_dph", "s_dph")):
-            zaklad = (c["puvodni"][pole] if c["puvodni"]
-                      and pole not in c["puvodni"].get("zaklady_z_ezak_po_dodatcich", []) else None)
-            znam = all(d[pole] is not None for d in c["dodatky"])
-            c[klic] = ((_halere(zaklad) + sum(_halere(d[pole]) for d in c["dodatky"])) / 100
-                       if zaklad is not None and not c["chybi_dodatky"] and znam else None)
+            zaklad = c["puvodni"][pole] if c["puvodni"] else None
+            hodnoty = ([zaklad] if zaklad is not None else []) + [d[pole] for d in c["dodatky"] if d[pole] is not None]
+            c[klic] = sum(_halere(h) for h in hodnoty) / 100 if hodnoty else None
+            duvody = []
+            if zaklad is None:
+                duvody.append("původní cena není známa")
+            elif pole in c["puvodni"].get("zaklady_z_ezak_po_dodatcich", []):
+                duvody.append("původní cena z E-ZAK může už zahrnovat dodatky")
+            duvody += [f"chybí dodatek č. {n}" for n in c["chybi_dodatky"]]
+            duvody += [f"dodatek č. {d['cislo']} bez ceny" for d in c["dodatky"] if d[pole] is None]
+            c["neuplne_" + klic] = duvody
         # kontrola: E-ZAK uvádí smluvní cenu po dodatcích – shoduje se s naším součtem?
         ea = c.get("ezak_smluvni") or {}
         porovnani = [(ea.get(z), c[k]) for z, k in (("bez_dph", "cena_po_dodatcich"), ("s_dph", "cena_po_dodatcich_s_dph"))
-                     if ea.get(z) is not None and c[k] is not None]
+                     if ea.get(z) is not None and c[k] is not None and not c["neuplne_" + k]]
         c["souhlas_ezak"] = (None if not c["dodatky"] or not porovnani
                              else all(abs(_halere(a) - _halere(b)) <= 100 for a, b in porovnani))
         c["dodatky_bez_dph"] = (sum(_halere(d["bez_dph"]) for d in c["dodatky"] if d["bez_dph"] is not None) / 100
