@@ -10,6 +10,7 @@ on:
 
 permissions:
   contents: read
+  actions: write   # jen pro spuštění Sloučení po ručně spuštěné kontrole (#160)
 
 jobs:
   kontrola:
@@ -43,3 +44,11 @@ jobs:
 
       - name: Testy
         run: python -m pytest -v
+
+      # Kontrolu spuštěnou přes workflow_dispatch (PR z běhu, oprava po review) založil GITHUB_TOKEN a její
+      # dokončení proto nespustí workflow_run ve Sloučení – PR by čekal na hodinový běh (#160). Spustit hned.
+      - name: Spustit Sloučení
+        if: success() && github.event_name == 'workflow_dispatch' && startsWith(github.ref_name, 'claude/')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run slouceni.yml --ref main --repo "$GITHUB_REPOSITORY"
