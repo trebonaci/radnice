@@ -11,3 +11,6 @@ rozpocet:
 vazby:
   hledat: ["ul\\. U Světa a parkoviště"]
   vyloucit: []
+# místo na mapě (#180): ulice = celá definiční čára ulice z RÚIAN, adresa = adresní místo
+misto:
+  - ulice: U Světa

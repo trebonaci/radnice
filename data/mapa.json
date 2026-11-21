@@ -1,0 +1,1660 @@
+[
+  {
+    "id": "chodniky-husova-kaple",
+    "typ": "investice",
+    "nazev": "Chodníky u Husovy kaple",
+    "faze": "dokonceno",
+    "oblast": "doprava",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "dps3-energie",
+    "typ": "investice",
+    "nazev": "Úspory energie v DPS 3",
+    "faze": "pripravuje_se",
+    "oblast": "socialni",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "fve-cov-brilice",
+    "typ": "investice",
+    "nazev": "Fotovoltaika na ČOV Břilice",
+    "faze": "probiha",
+    "oblast": "voda_odpady",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "fve-zs-na-sadech",
+    "typ": "investice",
+    "nazev": "Fotovoltaika na ZŠ Na Sadech",
+    "faze": "probiha",
+    "oblast": "skolstvi",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "hrbitov-sv-alzbety",
+    "typ": "investice",
+    "nazev": "Hřbitov sv. Alžběty – stavební úpravy",
+    "faze": "pripravuje_se",
+    "oblast": "jine",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "hriste-kopecek",
+    "typ": "investice",
+    "nazev": "Dětské hřiště Kopeček",
+    "faze": "dokonceno",
+    "oblast": "sport",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "lazne-balneo-etapa1",
+    "typ": "investice",
+    "nazev": "Rozšíření balneo provozu v Lázeňském domě Aurora (1. etapa)",
+    "faze": "dokonceno",
+    "oblast": "lazne",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "lazne-budova-g",
+    "typ": "investice",
+    "nazev": "Nástavba budovy G v Lázeňském domě Aurora",
+    "faze": "probiha",
+    "oblast": "lazne",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "mk-hermankova-daskabat",
+    "typ": "investice",
+    "nazev": "Ulice Heřmánkova a Daskabát",
+    "faze": "probiha",
+    "oblast": "doprava",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "mk-sidliste",
+    "typ": "investice",
+    "nazev": "Ulice Sídliště – stavební úpravy",
+    "faze": "probiha",
+    "oblast": "doprava",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "pristavba-telocvicen",
+    "typ": "investice",
+    "nazev": "Přístavba dvou tělocvičen sportovní haly",
+    "faze": "probiha",
+    "oblast": "sport",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "propustek-brilice",
+    "typ": "investice",
+    "nazev": "Větší propustek v Břilicích",
+    "faze": "probiha",
+    "oblast": "voda_odpady",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "sportovni-hala-ubytovani",
+    "typ": "investice",
+    "nazev": "Ubytování ve sportovní hale (nástavba a přístavba)",
+    "faze": "probiha",
+    "oblast": "sport",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "u-sveta-sportovni",
+    "typ": "investice",
+    "nazev": "Ulice U Světa a parkoviště ve Sportovní",
+    "faze": "dokonceno",
+    "oblast": "doprava",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "ulice-valy",
+    "typ": "investice",
+    "nazev": "Ulice Valy – stavební úpravy",
+    "faze": "dokonceno",
+    "oblast": "doprava",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "vo-branna",
+    "typ": "investice",
+    "nazev": "Veřejné osvětlení v Branné",
+    "faze": "probiha",
+    "oblast": "doprava",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "vo-taboritska",
+    "typ": "investice",
+    "nazev": "Veřejné osvětlení v Táboritské ulici",
+    "faze": "dokonceno",
+    "oblast": "doprava",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "auto-vz-961",
+    "typ": "investice",
+    "nazev": "Revitalizace kolonády Bertiných lázní",
+    "faze": "probiha",
+    "oblast": "kultura",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "auto-vz-945",
+    "typ": "investice",
+    "nazev": "Oprava vodovodu v úseku Sádecká ulice - autokemp Třeboňský ráj",
+    "faze": "probiha",
+    "oblast": "voda_odpady",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "auto-vz-941",
+    "typ": "investice",
+    "nazev": "Stavební úpravy kotelen a výměna plynových kotlů v objektu DPS IA a DPS IC, Chelčického 1, Třeboň",
+    "faze": "probiha",
+    "oblast": "socialni",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "auto-vz-935",
+    "typ": "investice",
+    "nazev": "Stavební úpravy MK v ul. Souběžná v Třeboni",
+    "faze": "probiha",
+    "oblast": "doprava",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "auto-vz-930",
+    "typ": "investice",
+    "nazev": "Svět pohybu, Třeboň",
+    "faze": "dokonceno",
+    "oblast": "sport",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "auto-vz-914",
+    "typ": "investice",
+    "nazev": "Stavební úpravy MK v ul. Budějovické v Třeboni",
+    "faze": "probiha",
+    "oblast": "doprava",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "auto-vz-895",
+    "typ": "investice",
+    "nazev": "Stavební opravy bytových jednotek č. 1 a 6, malování společných prostor v objektu Stará Hlína 27, Třeboň",
+    "faze": "dokonceno",
+    "oblast": "bydleni",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "auto-vz-858",
+    "typ": "investice",
+    "nazev": "Stavební úpravy části MK ul. Nádražní v Třeboni",
+    "faze": "probiha",
+    "oblast": "doprava",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "auto-vz-848",
+    "typ": "investice",
+    "nazev": "Rekonstrukce fasády staré budovy ZŠ Na Sadech – západní strana, dvorní část",
+    "faze": "dokonceno",
+    "oblast": "skolstvi",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "auto-vz-844",
+    "typ": "investice",
+    "nazev": "Úprava plochy v Jateční ulici v Třeboni",
+    "faze": "dokonceno",
+    "oblast": "doprava",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "auto-vz-838",
+    "typ": "investice",
+    "nazev": "Oprava staré radnice č.p. 1/I – V. etapa – V, S a Z fasáda a radniční věž",
+    "faze": "dokonceno",
+    "oblast": "kultura",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "auto-vz-835",
+    "typ": "investice",
+    "nazev": "Chodník v Lázeňské ulici v Třeboni",
+    "faze": "dokonceno",
+    "oblast": "doprava",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "auto-vz-829",
+    "typ": "investice",
+    "nazev": "Oprava fasády objektu čp. 20/I Třeboň",
+    "faze": "dokonceno",
+    "oblast": "kultura",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "auto-vz-826",
+    "typ": "investice",
+    "nazev": "Stavební úpravy pro technologii Jordánovy kašny",
+    "faze": "dokonceno",
+    "oblast": "voda_odpady",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "auto-vz-824",
+    "typ": "investice",
+    "nazev": "Stavební opravy bytových jednotek č. 935/3 a 935/7 Vrchlického 935, Třeboň",
+    "faze": "dokonceno",
+    "oblast": "bydleni",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "auto-vz-823",
+    "typ": "investice",
+    "nazev": "Oprava hráze rybníka Veský – 3. etapa",
+    "faze": "dokonceno",
+    "oblast": "voda_odpady",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "parkovaci-dum",
+    "typ": "zasobnik",
+    "nazev": "Parkovací dům",
+    "faze": "zasobnik",
+    "oblast": "doprava",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "jatecni-ulice",
+    "typ": "zasobnik",
+    "nazev": "Jateční ulice – parkoviště a komunikace",
+    "faze": "zasobnik",
+    "oblast": "doprava",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "stezka-jatecni-nadrazni",
+    "typ": "zasobnik",
+    "nazev": "Stezka podél trati z Jateční do Nádražní ulice",
+    "faze": "zasobnik",
+    "oblast": "doprava",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "nadrazni-ulice",
+    "typ": "zasobnik",
+    "nazev": "Nádražní ulice – komunikace a chodník",
+    "faze": "zasobnik",
+    "oblast": "doprava",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "mk-orechova",
+    "typ": "zasobnik",
+    "nazev": "Ulice Ořechová",
+    "faze": "zasobnik",
+    "oblast": "doprava",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "mk-jiraskova",
+    "typ": "zasobnik",
+    "nazev": "Jiráskova ulice",
+    "faze": "zasobnik",
+    "oblast": "doprava",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "mk-stara-hlina",
+    "typ": "zasobnik",
+    "nazev": "Místní komunikace ve Staré Hlíně (od I/34 k polní cestě)",
+    "faze": "zasobnik",
+    "oblast": "doprava",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "mk-dvorecka-brilice",
+    "typ": "zasobnik",
+    "nazev": "Dvorecká ulice v Břilicích",
+    "faze": "zasobnik",
+    "oblast": "doprava",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "most-vitek",
+    "typ": "zasobnik",
+    "nazev": "Most přes rybník Vítek ve Staré Hlíně",
+    "faze": "zasobnik",
+    "oblast": "doprava",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "taboritska-stezka",
+    "typ": "zasobnik",
+    "nazev": "Táboritská ulice – propojení stezky pro chodce přes I/34",
+    "faze": "zasobnik",
+    "oblast": "doprava",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "ucelova-komunikace-taboritska",
+    "typ": "zasobnik",
+    "nazev": "Účelová komunikace k domům Táboritská 670 a 1049",
+    "faze": "zasobnik",
+    "oblast": "doprava",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "podchod-i34",
+    "typ": "zasobnik",
+    "nazev": "Podchod pod silnicí I/34",
+    "faze": "zasobnik",
+    "oblast": "doprava",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "chodnik-sportovni-svobody",
+    "typ": "zasobnik",
+    "nazev": "Chodník z parkoviště ve Sportovní ulici do ulice Svobody",
+    "faze": "zasobnik",
+    "oblast": "doprava",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "vodojem-kopecek",
+    "typ": "zasobnik",
+    "nazev": "Rekonstrukce vodojemu Na Kopečku",
+    "faze": "zasobnik",
+    "oblast": "voda_odpady",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "kanalizace-taboritska",
+    "typ": "zasobnik",
+    "nazev": "Úprava jednotné kanalizace v Táboritské ulici",
+    "faze": "zasobnik",
+    "oblast": "voda_odpady",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "destova-kanalizace-novy-dvur",
+    "typ": "zasobnik",
+    "nazev": "Páteřní dešťová kanalizace Nový Dvůr – Jablonského",
+    "faze": "zasobnik",
+    "oblast": "voda_odpady",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "kanalizace-pivovar",
+    "typ": "zasobnik",
+    "nazev": "Obnova šachet a potrubí kanalizace pod pivovarem",
+    "faze": "zasobnik",
+    "oblast": "voda_odpady",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "destove-vody-brilice",
+    "typ": "zasobnik",
+    "nazev": "Odvod dešťových vod v Břilicích",
+    "faze": "zasobnik",
+    "oblast": "voda_odpady",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "sportoviste-hlinik",
+    "typ": "zasobnik",
+    "nazev": "Volnočasové sportoviště ve sportovním areálu Hliník",
+    "faze": "zasobnik",
+    "oblast": "sport",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "sportovni-hala-revitalizace",
+    "typ": "zasobnik",
+    "nazev": "Revitalizace sportovní haly (občerstvení, zázemí v 1. podzemním podlaží)",
+    "faze": "zasobnik",
+    "oblast": "sport",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "kabiny-brilice",
+    "typ": "zasobnik",
+    "nazev": "Fotbalové kabiny v Břilicích",
+    "faze": "zasobnik",
+    "oblast": "sport",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "divadlo-zazemi",
+    "typ": "zasobnik",
+    "nazev": "Hygienické zázemí pro diváky v divadle J. K. Tyla",
+    "faze": "zasobnik",
+    "oblast": "kultura",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "stara-radnice-vez-fasada",
+    "typ": "zasobnik",
+    "nazev": "Stará radnice – oprava věže a fasády",
+    "faze": "zasobnik",
+    "oblast": "kultura",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "kz-branna-prodejna",
+    "typ": "zasobnik",
+    "nazev": "Prodejna smíšeného zboží v kulturním zařízení v Branné",
+    "faze": "zasobnik",
+    "oblast": "jine",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "dps1-kotelny",
+    "typ": "zasobnik",
+    "nazev": "Kotelny a plynové kotle v domě s pečovatelskou službou I (Chelčického)",
+    "faze": "zasobnik",
+    "oblast": "socialni",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "bytovy-dum-lazenska",
+    "typ": "zasobnik",
+    "nazev": "Městský bytový dům v Lázeňské ulici",
+    "faze": "zasobnik",
+    "oblast": "bydleni",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "lazne-objekt-b",
+    "typ": "zasobnik",
+    "nazev": "Modernizace objektu B Lázeňského domu Aurora",
+    "faze": "zasobnik",
+    "oblast": "lazne",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "lazne-ordinace",
+    "typ": "zasobnik",
+    "nazev": "Přesun ordinací do přízemí objektů D a E Lázeňského domu Aurora",
+    "faze": "zasobnik",
+    "oblast": "lazne",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "lazne-restaurace",
+    "typ": "zasobnik",
+    "nazev": "Přemístění restaurace Lázeňského domu Aurora",
+    "faze": "zasobnik",
+    "oblast": "lazne",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "lazne-olu",
+    "typ": "zasobnik",
+    "nazev": "Odborný léčebný ústav (kapacitní studie)",
+    "faze": "zasobnik",
+    "oblast": "lazne",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "lazne-chodnik-park",
+    "typ": "zasobnik",
+    "nazev": "Chodník v parku lázní Aurora",
+    "faze": "zasobnik",
+    "oblast": "lazne",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "lazne-padel",
+    "typ": "zasobnik",
+    "nazev": "Dva kurty na padel (Bertiny lázně)",
+    "faze": "zasobnik",
+    "oblast": "lazne",
+    "misto": [],
+    "geometrie": null
+  },
+  {
+    "id": "sprm-274",
+    "typ": "namet",
+    "nazev": "Řešení kapacity kruhových objezdů",
+    "faze": "namet",
+    "oblast": null,
+    "osa": "Doprava",
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.757339967563377,
+          49.00828601301289
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "evidence SPRM na trebonaci.cz",
+        "zdroj_url": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+        "zdroj_datum": "2026-11-21"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.757339967563377,
+        49.00828601301289
+      ]
+    }
+  },
+  {
+    "id": "sprm-275",
+    "typ": "namet",
+    "nazev": "Komplexní řešení dopravy v klíčových ulicích (Táboritská, Jiráskova)",
+    "faze": "namet",
+    "oblast": null,
+    "osa": "Doprava",
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.756396743221666,
+          49.01315214182864
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "evidence SPRM na trebonaci.cz",
+        "zdroj_url": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+        "zdroj_datum": "2026-11-21"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.756396743221666,
+        49.01315214182864
+      ]
+    }
+  },
+  {
+    "id": "sprm-279",
+    "typ": "namet",
+    "nazev": "Stanovení priorit oprav ulic a místních komunikací",
+    "faze": "namet",
+    "oblast": null,
+    "osa": "Doprava",
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.762876432682814,
+          49.00433210463685
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "evidence SPRM na trebonaci.cz",
+        "zdroj_url": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+        "zdroj_datum": "2026-11-21"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.762876432682814,
+        49.00433210463685
+      ]
+    }
+  },
+  {
+    "id": "sprm-287",
+    "typ": "namet",
+    "nazev": "Dobudování cyklostezky kolem silnice I/34",
+    "faze": "namet",
+    "oblast": null,
+    "osa": "Doprava",
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.767598833567195,
+          49.01104128200971
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "evidence SPRM na trebonaci.cz",
+        "zdroj_url": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+        "zdroj_datum": "2026-11-21"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.767598833567195,
+        49.01104128200971
+      ]
+    }
+  },
+  {
+    "id": "sprm-292",
+    "typ": "namet",
+    "nazev": "Vybudování parkovacích domů pro lázně",
+    "faze": "namet",
+    "oblast": null,
+    "osa": "Doprava",
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.754423272678203,
+          49.0024605457948
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "evidence SPRM na trebonaci.cz",
+        "zdroj_url": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+        "zdroj_datum": "2026-11-21"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.754423272678203,
+        49.0024605457948
+      ]
+    }
+  },
+  {
+    "id": "sprm-298",
+    "typ": "namet",
+    "nazev": "Rozvoj kamerového systému",
+    "faze": "namet",
+    "oblast": null,
+    "osa": "Doprava",
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.770904829563076,
+          49.003911415385126
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "evidence SPRM na trebonaci.cz",
+        "zdroj_url": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+        "zdroj_datum": "2026-11-21"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.770904829563076,
+        49.003911415385126
+      ]
+    }
+  },
+  {
+    "id": "sprm-299",
+    "typ": "namet",
+    "nazev": "Upgrade bezpečnostních náramků",
+    "faze": "namet",
+    "oblast": null,
+    "osa": "Doprava",
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.757083967298511,
+          49.00555695834294
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "evidence SPRM na trebonaci.cz",
+        "zdroj_url": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+        "zdroj_datum": "2026-11-21"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.757083967298511,
+        49.00555695834294
+      ]
+    }
+  },
+  {
+    "id": "sprm-305",
+    "typ": "namet",
+    "nazev": "Opatření na zlepšování stavu povrchových vod",
+    "faze": "namet",
+    "oblast": null,
+    "osa": "Životní prostředí",
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.780990037559521,
+          48.991369855369776
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "evidence SPRM na trebonaci.cz",
+        "zdroj_url": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+        "zdroj_datum": "2026-11-21"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.780990037559521,
+        48.991369855369776
+      ]
+    }
+  },
+  {
+    "id": "sprm-306",
+    "typ": "namet",
+    "nazev": "Spolupráce s AOPK ČR, AV ČR",
+    "faze": "namet",
+    "oblast": null,
+    "osa": "Životní prostředí",
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.762791571948338,
+          49.003948104849016
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "evidence SPRM na trebonaci.cz",
+        "zdroj_url": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+        "zdroj_datum": "2026-11-21"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.762791571948338,
+        49.003948104849016
+      ]
+    }
+  },
+  {
+    "id": "sprm-307",
+    "typ": "namet",
+    "nazev": "Opatření pro retenci vody a biodiverzitu",
+    "faze": "namet",
+    "oblast": null,
+    "osa": "Životní prostředí",
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.788072079018551,
+          48.99936322272173
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "evidence SPRM na trebonaci.cz",
+        "zdroj_url": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+        "zdroj_datum": "2026-11-21"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.788072079018551,
+        48.99936322272173
+      ]
+    }
+  },
+  {
+    "id": "sprm-308",
+    "typ": "namet",
+    "nazev": "Ochrana dřevin mimo les",
+    "faze": "namet",
+    "oblast": null,
+    "osa": "Životní prostředí",
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.753348982355345,
+          49.000180206565354
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "evidence SPRM na trebonaci.cz",
+        "zdroj_url": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+        "zdroj_datum": "2026-11-21"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.753348982355345,
+        49.000180206565354
+      ]
+    }
+  },
+  {
+    "id": "sprm-313",
+    "typ": "namet",
+    "nazev": "Zakládání nových ploch zeleně",
+    "faze": "namet",
+    "oblast": null,
+    "osa": "Životní prostředí",
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.77124738089162,
+          49.00394864814714
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "evidence SPRM na trebonaci.cz",
+        "zdroj_url": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+        "zdroj_datum": "2026-11-21"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.77124738089162,
+        49.00394864814714
+      ]
+    }
+  },
+  {
+    "id": "sprm-315",
+    "typ": "namet",
+    "nazev": "Generely vodovodů a kanalizací",
+    "faze": "namet",
+    "oblast": null,
+    "osa": "Životní prostředí",
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.786312555577005,
+          49.012080563488425
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "evidence SPRM na trebonaci.cz",
+        "zdroj_url": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+        "zdroj_datum": "2026-11-21"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.786312555577005,
+        49.012080563488425
+      ]
+    }
+  },
+  {
+    "id": "sprm-322",
+    "typ": "namet",
+    "nazev": "Aktualizace strategických dokumentů",
+    "faze": "namet",
+    "oblast": null,
+    "osa": "Sociální oblast",
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.774101713571472,
+          49.00527378001522
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "evidence SPRM na trebonaci.cz",
+        "zdroj_url": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+        "zdroj_datum": "2026-11-21"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.774101713571472,
+        49.00527378001522
+      ]
+    }
+  },
+  {
+    "id": "sprm-323",
+    "typ": "namet",
+    "nazev": "Rozšíření kapacit pobytových služeb pro seniory",
+    "faze": "namet",
+    "oblast": null,
+    "osa": "Sociální oblast",
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.756568339367798,
+          49.00559807044702
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "evidence SPRM na trebonaci.cz",
+        "zdroj_url": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+        "zdroj_datum": "2026-11-21"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.756568339367798,
+        49.00559807044702
+      ]
+    }
+  },
+  {
+    "id": "sprm-325",
+    "typ": "namet",
+    "nazev": "Modernizace bezpečnostních náramků",
+    "faze": "namet",
+    "oblast": null,
+    "osa": "Sociální oblast",
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.765818070835001,
+          49.00377016615722
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "evidence SPRM na trebonaci.cz",
+        "zdroj_url": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+        "zdroj_datum": "2026-11-21"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.765818070835001,
+        49.00377016615722
+      ]
+    }
+  },
+  {
+    "id": "sprm-330",
+    "typ": "namet",
+    "nazev": "Modernizace MŠ a vybavení",
+    "faze": "namet",
+    "oblast": null,
+    "osa": "Sociální oblast",
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.761676022576939,
+          49.002743381146516
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "evidence SPRM na trebonaci.cz",
+        "zdroj_url": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+        "zdroj_datum": "2026-11-21"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.761676022576939,
+        49.002743381146516
+      ]
+    }
+  },
+  {
+    "id": "sprm-331",
+    "typ": "namet",
+    "nazev": "Podpora vzdělávání učitelů",
+    "faze": "namet",
+    "oblast": null,
+    "osa": "Sociální oblast",
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.765218166411065,
+          49.00527400314958
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "evidence SPRM na trebonaci.cz",
+        "zdroj_url": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+        "zdroj_datum": "2026-11-21"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.765218166411065,
+        49.00527400314958
+      ]
+    }
+  },
+  {
+    "id": "sprm-332",
+    "typ": "namet",
+    "nazev": "Využívání městských tělocvičen a bazénů",
+    "faze": "namet",
+    "oblast": null,
+    "osa": "Sociální oblast",
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.767256738854437,
+          49.00504958202542
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "evidence SPRM na trebonaci.cz",
+        "zdroj_url": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+        "zdroj_datum": "2026-11-21"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.767256738854437,
+        49.00504958202542
+      ]
+    }
+  },
+  {
+    "id": "sprm-334",
+    "typ": "namet",
+    "nazev": "Vybavení specializovaných učeben",
+    "faze": "namet",
+    "oblast": null,
+    "osa": "Sociální oblast",
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.767342209355315,
+          49.004741091068034
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "evidence SPRM na trebonaci.cz",
+        "zdroj_url": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+        "zdroj_datum": "2026-11-21"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.767342209355315,
+        49.004741091068034
+      ]
+    }
+  },
+  {
+    "id": "sprm-339",
+    "typ": "namet",
+    "nazev": "Spolupráce s místními zaměstnavateli",
+    "faze": "namet",
+    "oblast": null,
+    "osa": "Sociální oblast",
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.760603995480047,
+          49.01143800152834
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "evidence SPRM na trebonaci.cz",
+        "zdroj_url": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+        "zdroj_datum": "2026-11-21"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.760603995480047,
+        49.01143800152834
+      ]
+    }
+  },
+  {
+    "id": "sprm-342",
+    "typ": "namet",
+    "nazev": "Podpora sportovních oddílů",
+    "faze": "namet",
+    "oblast": null,
+    "osa": "Sociální oblast",
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.76922169557761,
+          49.00737720217561
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "evidence SPRM na trebonaci.cz",
+        "zdroj_url": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+        "zdroj_datum": "2026-11-21"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.76922169557761,
+        49.00737720217561
+      ]
+    }
+  },
+  {
+    "id": "sprm-346",
+    "typ": "namet",
+    "nazev": "Podpora kulturních akcí v Třeboni",
+    "faze": "namet",
+    "oblast": null,
+    "osa": "Kultura",
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.77056118916342,
+          49.0037272286066
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "evidence SPRM na trebonaci.cz",
+        "zdroj_url": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+        "zdroj_datum": "2026-11-21"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.77056118916342,
+        49.0037272286066
+      ]
+    }
+  },
+  {
+    "id": "sprm-354",
+    "typ": "namet",
+    "nazev": "Nový web města",
+    "faze": "namet",
+    "oblast": null,
+    "osa": "Kultura",
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.762791838543844,
+          49.004064286026995
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "evidence SPRM na trebonaci.cz",
+        "zdroj_url": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+        "zdroj_datum": "2026-11-21"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.762791838543844,
+        49.004064286026995
+      ]
+    }
+  },
+  {
+    "id": "sprm-360",
+    "typ": "namet",
+    "nazev": "Podpora JHK",
+    "faze": "namet",
+    "oblast": null,
+    "osa": "Podnikání",
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.762792042744698,
+          49.004298859553685
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "evidence SPRM na trebonaci.cz",
+        "zdroj_url": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+        "zdroj_datum": "2026-11-21"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.762792042744698,
+        49.004298859553685
+      ]
+    }
+  },
+  {
+    "id": "sprm-361",
+    "typ": "namet",
+    "nazev": "Pořádání podnikatelských fór",
+    "faze": "namet",
+    "oblast": null,
+    "osa": "Podnikání",
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.762105170347061,
+          49.00424175884509
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "evidence SPRM na trebonaci.cz",
+        "zdroj_url": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+        "zdroj_datum": "2026-11-21"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.762105170347061,
+        49.00424175884509
+      ]
+    }
+  },
+  {
+    "id": "sprm-367",
+    "typ": "namet",
+    "nazev": "Spolupráce škol s podnikateli",
+    "faze": "namet",
+    "oblast": null,
+    "osa": "Podnikání",
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.757726857969766,
+          49.00941941449655
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "evidence SPRM na trebonaci.cz",
+        "zdroj_url": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+        "zdroj_datum": "2026-11-21"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.757726857969766,
+        49.00941941449655
+      ]
+    }
+  },
+  {
+    "id": "sprm-370",
+    "typ": "namet",
+    "nazev": "Zachování rozvojových ploch pro bydlení",
+    "faze": "namet",
+    "oblast": null,
+    "osa": "Podnikání",
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.748799122045991,
+          49.014648266398034
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "evidence SPRM na trebonaci.cz",
+        "zdroj_url": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+        "zdroj_datum": "2026-11-21"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.748799122045991,
+        49.014648266398034
+      ]
+    }
+  },
+  {
+    "id": "sprm-373",
+    "typ": "namet",
+    "nazev": "Zapisování brownfieldů do databáze",
+    "faze": "namet",
+    "oblast": null,
+    "osa": "Podnikání",
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.762533518330581,
+          49.01091107265613
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "evidence SPRM na trebonaci.cz",
+        "zdroj_url": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+        "zdroj_datum": "2026-11-21"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.762533518330581,
+        49.01091107265613
+      ]
+    }
+  },
+  {
+    "id": "sprm-374",
+    "typ": "namet",
+    "nazev": "Revitalizace brownfieldů",
+    "faze": "namet",
+    "oblast": null,
+    "osa": "Podnikání",
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.773650038910919,
+          48.99948810814478
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "evidence SPRM na trebonaci.cz",
+        "zdroj_url": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+        "zdroj_datum": "2026-11-21"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.773650038910919,
+        48.99948810814478
+      ]
+    }
+  },
+  {
+    "id": "sprm-381",
+    "typ": "namet",
+    "nazev": "Výstavba parkovacích domů pro lázně",
+    "faze": "namet",
+    "oblast": null,
+    "osa": "Cestovní ruch",
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.754678484500918,
+          49.00224414531768
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "evidence SPRM na trebonaci.cz",
+        "zdroj_url": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+        "zdroj_datum": "2026-11-21"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.754678484500918,
+        49.00224414531768
+      ]
+    }
+  },
+  {
+    "id": "sprm-383",
+    "typ": "namet",
+    "nazev": "Zvyšování kvalifikace lázeňského personálu",
+    "faze": "namet",
+    "oblast": null,
+    "osa": "Cestovní ruch",
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.75193169259659,
+          49.00238277931855
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "evidence SPRM na trebonaci.cz",
+        "zdroj_url": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+        "zdroj_datum": "2026-11-21"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.75193169259659,
+        49.00238277931855
+      ]
+    }
+  },
+  {
+    "id": "sprm-384",
+    "typ": "namet",
+    "nazev": "Podpora činnosti destinačního managementu",
+    "faze": "namet",
+    "oblast": null,
+    "osa": "Cestovní ruch",
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.750214948365416,
+          49.00226931079993
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "evidence SPRM na trebonaci.cz",
+        "zdroj_url": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+        "zdroj_datum": "2026-11-21"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.750214948365416,
+        49.00226931079993
+      ]
+    }
+  },
+  {
+    "id": "sprm-385",
+    "typ": "namet",
+    "nazev": "Tvorba produktů pro mimosezónu",
+    "faze": "namet",
+    "oblast": null,
+    "osa": "Cestovní ruch",
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.751159329845194,
+          49.00207151643966
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "evidence SPRM na trebonaci.cz",
+        "zdroj_url": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+        "zdroj_datum": "2026-11-21"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.751159329845194,
+        49.00207151643966
+      ]
+    }
+  },
+  {
+    "id": "sprm-386",
+    "typ": "namet",
+    "nazev": "Rozšíření nabídky pro rodiny s dětmi",
+    "faze": "namet",
+    "oblast": null,
+    "osa": "Cestovní ruch",
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.771418177251114,
+          49.00406821522723
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "evidence SPRM na trebonaci.cz",
+        "zdroj_url": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+        "zdroj_datum": "2026-11-21"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.771418177251114,
+        49.00406821522723
+      ]
+    }
+  },
+  {
+    "id": "sprm-388",
+    "typ": "namet",
+    "nazev": "Podpora certifikace ubytování",
+    "faze": "namet",
+    "oblast": null,
+    "osa": "Cestovní ruch",
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.769271272753935,
+          49.0067997185789
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "evidence SPRM na trebonaci.cz",
+        "zdroj_url": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+        "zdroj_datum": "2026-11-21"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.769271272753935,
+        49.0067997185789
+      ]
+    }
+  },
+  {
+    "id": "sprm-392",
+    "typ": "namet",
+    "nazev": "Instalace vybavení pro cykloturisty",
+    "faze": "namet",
+    "oblast": null,
+    "osa": "Cestovní ruch",
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.772963070085096,
+          49.004208580754934
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "evidence SPRM na trebonaci.cz",
+        "zdroj_url": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+        "zdroj_datum": "2026-11-21"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.772963070085096,
+        49.004208580754934
+      ]
+    }
+  }
+]

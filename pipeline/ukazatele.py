@@ -105,7 +105,9 @@ def zakazky(zakazky: list[dict], subjekty: dict) -> dict:
 
 
 def dotace(dotace: list[dict]) -> dict:
-    """Přiznané dotace (usnesení rady a zastupitelstva) podle oblasti: počet a součet – jeden druh částky."""
+    """Přiznané dotace (usnesení rady a zastupitelstva) podle oblasti: počet a součet – jeden druh částky.
+    Počítají se jen přijatá usnesení; nepřijatý návrh není přiznaná dotace."""
+    dotace = [d for d in dotace if d.get("vysledek_hlasovani") == "prijato"]
     pocty, soucty = Counter(), defaultdict(float)
     druhy = {d["castka"]["druh"] for d in dotace if d.get("castka")}
     if len(druhy) > 1:

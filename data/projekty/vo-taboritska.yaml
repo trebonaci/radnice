@@ -11,3 +11,6 @@ rozpocet:
 vazby:
   hledat: ["Táboritská ulice [–-] úsek mezi okružními"]
   vyloucit: []
+# místo na mapě (#180): ulice = celá definiční čára ulice z RÚIAN, adresa = adresní místo
+misto:
+  - ulice: Táboritská

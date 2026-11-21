@@ -93,6 +93,9 @@ Ze Strategického plánu 2021–2030. Zdroj: existující WordPress evidence `tr
 - `kandidat`: smlouva nebo zakázka na přípravu od 2023 mimo karty a položky (`doklad`, `stupen`) – podklad pro doplnění zásobníku.
 - `namet`: aktivita SPRM se stavem „Plánováno“ bez karty a bez položky (`osa`, `opatreni`, `komentar`, `zdroj`).
 
+### mapa (místa akcí, #180)
+`data/mapa.json`: `id`, `typ` (investice / zasobnik / namet), `nazev`, `faze`, `oblast`, `misto[]` {`druh` ulice / adresa / budova / bod, `nazev`, `linie` nebo `bod` (WGS84 [délka, šířka]), `jistota`, `zdroj`, `ruian_kod`}, `geometrie` (GeoJSON: MultiLineString, Point, MultiPoint nebo GeometryCollection; null = místo neznáme). Ulice = celá definiční čára ulice z RÚIAN, budova = definiční bod stavebního objektu, adresa = adresní místo. Ruční `misto` v YAML karty nebo položky zásobníku je doloženo (`- ulice: Valy`, `- adresa: Na Sadech 375`, `- cp: 1` + `cast_obce: Třeboň I`, `- bod: [šířka, délka]`); místo z názvu akce je naše propojení. Body námětů SPRM jsou orientační (redakční evidence). Zdroj geometrie: `raw/ruian/` (`pipeline/zdroje/ruian.py`, VFR obce Třeboň 547336, převod S-JTSK → WGS84).
+
 ### podnet
 Z mapy na trebonaci.cz. **Jen omezený veřejný výstup**: `id`, `typ` (prani / zavada), `stav`, `poloha`, `kategorie`, `datum`, upravený popis. Bez jména podatele, kontaktů a diskuse (současný endpoint `/podnety` je vrací, proto se přímo nepoužije). Vazba na projekt/usnesení s `jistota`; občanský návrh se vizuálně odlišuje od projektu, který město připravuje.
 

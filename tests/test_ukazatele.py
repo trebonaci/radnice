@@ -33,10 +33,17 @@ def test_smlouvy_verze_jednou_a_u_obou_organizaci():
     assert u["celkem"] == 2 and u["obdobi"] == {"od": "2024-03-01", "do": "2026-03-01"}
 
 
+def test_dotace_nepriznava_neprijate():
+    d = [{"oblast": "kultury", "datum": "2026-10-30", "vysledek_hlasovani": "prijato", "castka": {"hodnota": 10.0, "druh": "dotace_priznana"}},
+         {"oblast": "kultury", "datum": "2026-10-30", "vysledek_hlasovani": "neprijato", "castka": {"hodnota": 100000.0, "druh": "dotace_priznana"}}]
+    u = ukazatele.dotace(d)
+    assert u["hodnota"][0]["hodnota"] == 10.0 and u["celkem_pocet"] == 1
+
+
 def test_dotace_jen_jeden_druh():
-    d = [{"oblast": "tělovýchovy a sportu", "datum": "2026-10-30", "castka": {"hodnota": 20000.0, "druh": "dotace_priznana"}},
-         {"oblast": "tělovýchovy a sportu", "datum": "2026-10-30", "castka": {"hodnota": 5000.5, "druh": "dotace_priznana"}},
-         {"oblast": "kultury", "datum": "2026-10-30", "castka": {"hodnota": 30000.0, "druh": "dotace_priznana"}}]
+    d = [{"oblast": "tělovýchovy a sportu", "datum": "2026-10-30", "vysledek_hlasovani": "prijato", "castka": {"hodnota": 20000.0, "druh": "dotace_priznana"}},
+         {"oblast": "tělovýchovy a sportu", "datum": "2026-10-30", "vysledek_hlasovani": "prijato", "castka": {"hodnota": 5000.5, "druh": "dotace_priznana"}},
+         {"oblast": "kultury", "datum": "2026-10-30", "vysledek_hlasovani": "prijato", "castka": {"hodnota": 30000.0, "druh": "dotace_priznana"}}]
     u = ukazatele.dotace(d)
     assert u["hodnota"] == [{"klic": "kultury", "nazev": "Kultura", "pocet": 1, "hodnota": 30000.0},
                             {"klic": "tělovýchovy a sportu", "nazev": "Sport a tělovýchova", "pocet": 2, "hodnota": 25000.5}]
