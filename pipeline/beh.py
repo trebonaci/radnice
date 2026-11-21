@@ -303,7 +303,7 @@ def _beh(koren: Path, zdroje: list[Zdroj], dnes: date, ted: datetime) -> int:
     # 2. staging: změny a sestavení nad kopií, ostrá data se zatím nedotknou
     with tempfile.TemporaryDirectory() as tmp:
         stage = Path(tmp)
-        for podadresar in ("raw/texty", "raw/ezak", "raw/smlouvy", "raw/rozpocet", "anotace", "config", "data/projekty"):
+        for podadresar in ("raw/texty", "raw/ezak", "raw/smlouvy", "raw/rozpocet", "raw/sprm", "anotace", "config", "data/projekty"):
             if (koren / podadresar).exists():
                 shutil.copytree(koren / podadresar, stage / podadresar)
         (stage / "raw").mkdir(exist_ok=True)

@@ -1,0 +1,43 @@
+# Přiřazení karet investic k aktivitám Strategického plánu rozvoje města 2021–2030 (#168).
+# Aktivity: raw/sprm/projekty.json (evidence trebonaci.cz). Pravidlo = regulární výraz na název a popis karty.
+# Karta v data/projekty/*.yaml může mít vlastní `sprm: [id]` (ta mají přednost a jsou potvrzená).
+# potvrzeno: false = NÁVRH Clauda, který musí potvrdit Ondřej; na webu se ukáže jako návrh.
+- vzor: '\bMK\b|^Ulice |stavební úpravy .*ul\.'
+  sprm_id: 280        # Komplexní rekonstrukce komunikací vč. sítí
+  potvrzeno: false
+- vzor: 'chodník|[Úú]prava plochy'
+  sprm_id: 301        # Rekonstrukce veřejných prostranství
+  potvrzeno: false
+- vzor: '[Vv]eřejné osvětlení'
+  sprm_id: 304        # Výměna veřejného osvětlení za úsporné
+  potvrzeno: false
+- vzor: 'hřiště|Svět pohybu'
+  sprm_id: 351        # Budování dětských hřišť
+  potvrzeno: false
+- vzor: 'tělocvič'
+  sprm_id: 348        # Rekonstrukce a rozšíření sportovní haly
+  potvrzeno: false
+- vzor: 'Ubytování ve sportovní hale'
+  sprm_id: 349        # Vybudování ubytování pro sportovce
+  potvrzeno: false
+- vzor: 'DPS 3|kotel.*DPS'
+  sprm_id: 310        # Snižování energetické náročnosti budov
+  potvrzeno: false
+- vzor: 'Fotovoltaika'
+  sprm_id: 378        # Podpora zelených střech a FV panelů
+  potvrzeno: false
+- vzor: 'staré radnice|Staré radnice'
+  sprm_id: 343        # Revitalizace Staré radnice č.p. 1
+  potvrzeno: false
+- vzor: 'ZŠ Na Sadech|ZŠ Sokolská'
+  sprm_id: 333        # Modernizace ZŠ a vybavení
+  potvrzeno: false
+- vzor: 'vodovod|kanalizac'
+  sprm_id: 316        # Obnova vodárenských sítí
+  potvrzeno: false
+- vzor: 'budovy G'
+  sprm_id: 380        # Rozšíření ubytovacích kapacit pro klienty
+  potvrzeno: false
+- vzor: '[Bb]alneo'
+  sprm_id: 379        # Tvorba kvalitních lázeňských nabídek
+  potvrzeno: false

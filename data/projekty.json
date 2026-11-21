@@ -383,7 +383,19 @@
       "zdroj_id": "rs-38006909",
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/38006909"
-    }
+    },
+    "sprm": [
+      {
+        "id": 301,
+        "aktivita": "Rekonstrukce veřejných prostranství",
+        "opatreni": "7. Veřejná prostranství",
+        "osa": "Doprava",
+        "stav_v_evidenci": "Plánováno",
+        "potvrzeno": false,
+        "jistota": "nase_propojeni",
+        "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+      }
+    ]
   },
   {
     "id": "dps3-energie",
@@ -571,7 +583,19 @@
       "jistota": "dolozeno",
       "usneseni_cislo": "RM 527/2026-113",
       "url": "https://www.mesto-trebon.cz/uploads/news/id15164/Z-113-26-10-21-A.pdf#page=8"
-    }
+    },
+    "sprm": [
+      {
+        "id": 310,
+        "aktivita": "Snižování energetické náročnosti budov",
+        "opatreni": "1. Příroda a ŽP",
+        "osa": "Životní prostředí",
+        "stav_v_evidenci": "Hotovo",
+        "potvrzeno": false,
+        "jistota": "nase_propojeni",
+        "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+      }
+    ]
   },
   {
     "id": "fve-cov-brilice",
@@ -884,7 +908,19 @@
       "zdroj_id": "rs-39840721",
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/39840721"
-    }
+    },
+    "sprm": [
+      {
+        "id": 378,
+        "aktivita": "Podpora zelených střech a FV panelů",
+        "opatreni": "8. Ekologická řešení",
+        "osa": "Podnikání",
+        "stav_v_evidenci": "Hotovo",
+        "potvrzeno": false,
+        "jistota": "nase_propojeni",
+        "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+      }
+    ]
   },
   {
     "id": "fve-zs-na-sadech",
@@ -1213,7 +1249,29 @@
       "zdroj_id": "rs-39900669",
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/39900669"
-    }
+    },
+    "sprm": [
+      {
+        "id": 378,
+        "aktivita": "Podpora zelených střech a FV panelů",
+        "opatreni": "8. Ekologická řešení",
+        "osa": "Podnikání",
+        "stav_v_evidenci": "Hotovo",
+        "potvrzeno": false,
+        "jistota": "nase_propojeni",
+        "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+      },
+      {
+        "id": 333,
+        "aktivita": "Modernizace ZŠ a vybavení",
+        "opatreni": "4. Základní školy",
+        "osa": "Sociální oblast",
+        "stav_v_evidenci": "Plánováno",
+        "potvrzeno": false,
+        "jistota": "nase_propojeni",
+        "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+      }
+    ]
   },
   {
     "id": "hrbitov-sv-alzbety",
@@ -1369,7 +1427,8 @@
       "zdroj_id": "rs-38781444",
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/38781444"
-    }
+    },
+    "sprm": []
   },
   {
     "id": "hriste-kopecek",
@@ -1827,7 +1886,19 @@
       "zdroj_id": "rs-38959598",
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/38959598"
-    }
+    },
+    "sprm": [
+      {
+        "id": 351,
+        "aktivita": "Budování dětských hřišť",
+        "opatreni": "3. Sportovní infrastruktura",
+        "osa": "Kultura",
+        "stav_v_evidenci": "Hotovo",
+        "potvrzeno": false,
+        "jistota": "nase_propojeni",
+        "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+      }
+    ]
   },
   {
     "id": "lazne-balneo-etapa1",
@@ -2560,7 +2631,19 @@
       "url": "https://www.mesto-trebon.cz/uploads/news/id15037/Z-110-26-09-09-A.pdf#page=8",
       "zdroj_id": "rm-2026-j110-u470",
       "jistota": "nase_propojeni"
-    }
+    },
+    "sprm": [
+      {
+        "id": 379,
+        "aktivita": "Tvorba kvalitních lázeňských nabídek",
+        "opatreni": "1. Lázeňství",
+        "osa": "Cestovní ruch",
+        "stav_v_evidenci": "Plánováno",
+        "potvrzeno": false,
+        "jistota": "nase_propojeni",
+        "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+      }
+    ]
   },
   {
     "id": "lazne-budova-g",
@@ -3395,7 +3478,19 @@
       "role": "vybaveni",
       "zdroj_id": "ezak-VZ-963",
       "jistota": "nase_propojeni"
-    }
+    },
+    "sprm": [
+      {
+        "id": 380,
+        "aktivita": "Rozšíření ubytovacích kapacit pro klienty",
+        "opatreni": "1. Lázeňství",
+        "osa": "Cestovní ruch",
+        "stav_v_evidenci": "Hotovo",
+        "potvrzeno": false,
+        "jistota": "nase_propojeni",
+        "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+      }
+    ]
   },
   {
     "id": "mk-hermankova-daskabat",
@@ -3899,7 +3994,19 @@
       "zdroj_id": "rs-40262621",
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/40262621"
-    }
+    },
+    "sprm": [
+      {
+        "id": 280,
+        "aktivita": "Komplexní rekonstrukce komunikací vč. sítí",
+        "opatreni": "2. Technická infrastruktura",
+        "osa": "Doprava",
+        "stav_v_evidenci": "Plánováno",
+        "potvrzeno": false,
+        "jistota": "nase_propojeni",
+        "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+      }
+    ]
   },
   {
     "id": "mk-sidliste",
@@ -4799,7 +4906,19 @@
       "zdroj_id": "rs-39894521",
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/39894521"
-    }
+    },
+    "sprm": [
+      {
+        "id": 280,
+        "aktivita": "Komplexní rekonstrukce komunikací vč. sítí",
+        "opatreni": "2. Technická infrastruktura",
+        "osa": "Doprava",
+        "stav_v_evidenci": "Plánováno",
+        "potvrzeno": false,
+        "jistota": "nase_propojeni",
+        "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+      }
+    ]
   },
   {
     "id": "pristavba-telocvicen",
@@ -6311,7 +6430,19 @@
       "zdroj_id": "rs-40163777",
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/40163777"
-    }
+    },
+    "sprm": [
+      {
+        "id": 348,
+        "aktivita": "Rekonstrukce a rozšíření sportovní haly",
+        "opatreni": "3. Sportovní infrastruktura",
+        "osa": "Kultura",
+        "stav_v_evidenci": "Hotovo",
+        "potvrzeno": false,
+        "jistota": "nase_propojeni",
+        "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+      }
+    ]
   },
   {
     "id": "propustek-brilice",
@@ -6594,7 +6725,8 @@
       "zdroj_id": "rs-39062598",
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/39062598"
-    }
+    },
+    "sprm": []
   },
   {
     "id": "sportovni-hala-ubytovani",
@@ -8545,7 +8677,19 @@
       "zdroj_id": "rs-40117365",
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/40117365"
-    }
+    },
+    "sprm": [
+      {
+        "id": 349,
+        "aktivita": "Vybudování ubytování pro sportovce",
+        "opatreni": "3. Sportovní infrastruktura",
+        "osa": "Kultura",
+        "stav_v_evidenci": "Plánováno",
+        "potvrzeno": false,
+        "jistota": "nase_propojeni",
+        "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+      }
+    ]
   },
   {
     "id": "u-sveta-sportovni",
@@ -9136,7 +9280,19 @@
       "zdroj_id": "rs-36026805",
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/36026805"
-    }
+    },
+    "sprm": [
+      {
+        "id": 280,
+        "aktivita": "Komplexní rekonstrukce komunikací vč. sítí",
+        "opatreni": "2. Technická infrastruktura",
+        "osa": "Doprava",
+        "stav_v_evidenci": "Plánováno",
+        "potvrzeno": false,
+        "jistota": "nase_propojeni",
+        "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+      }
+    ]
   },
   {
     "id": "ulice-valy",
@@ -9818,7 +9974,19 @@
       "zdroj_id": "rs-36612953",
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/36612953"
-    }
+    },
+    "sprm": [
+      {
+        "id": 280,
+        "aktivita": "Komplexní rekonstrukce komunikací vč. sítí",
+        "opatreni": "2. Technická infrastruktura",
+        "osa": "Doprava",
+        "stav_v_evidenci": "Plánováno",
+        "potvrzeno": false,
+        "jistota": "nase_propojeni",
+        "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+      }
+    ]
   },
   {
     "id": "vo-branna",
@@ -10103,7 +10271,19 @@
       "zdroj_id": "rs-40413413",
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/40413413"
-    }
+    },
+    "sprm": [
+      {
+        "id": 304,
+        "aktivita": "Výměna veřejného osvětlení za úsporné",
+        "opatreni": "7. Veřejná prostranství",
+        "osa": "Doprava",
+        "stav_v_evidenci": "Plánováno",
+        "potvrzeno": false,
+        "jistota": "nase_propojeni",
+        "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+      }
+    ]
   },
   {
     "id": "vo-taboritska",
@@ -10486,7 +10666,19 @@
       "zdroj_id": "rs-37848145",
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/37848145"
-    }
+    },
+    "sprm": [
+      {
+        "id": 304,
+        "aktivita": "Výměna veřejného osvětlení za úsporné",
+        "opatreni": "7. Veřejná prostranství",
+        "osa": "Doprava",
+        "stav_v_evidenci": "Plánováno",
+        "potvrzeno": false,
+        "jistota": "nase_propojeni",
+        "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+      }
+    ]
   },
   {
     "id": "auto-vz-961",
@@ -11049,7 +11241,8 @@
       "zdroj_id": "rs-40117897",
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/40117897"
-    }
+    },
+    "sprm": []
   },
   {
     "id": "auto-vz-945",
@@ -11320,7 +11513,19 @@
       "role": "stavba",
       "zdroj_id": "ezak-VZ-945",
       "jistota": "nase_propojeni"
-    }
+    },
+    "sprm": [
+      {
+        "id": 316,
+        "aktivita": "Obnova vodárenských sítí",
+        "opatreni": "3. Vodovody, kanalizace",
+        "osa": "Životní prostředí",
+        "stav_v_evidenci": "Plánováno",
+        "potvrzeno": false,
+        "jistota": "nase_propojeni",
+        "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+      }
+    ]
   },
   {
     "id": "auto-vz-941",
@@ -11611,7 +11816,19 @@
       "zdroj_id": "rs-39329195",
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/39329195"
-    }
+    },
+    "sprm": [
+      {
+        "id": 310,
+        "aktivita": "Snižování energetické náročnosti budov",
+        "opatreni": "1. Příroda a ŽP",
+        "osa": "Životní prostředí",
+        "stav_v_evidenci": "Hotovo",
+        "potvrzeno": false,
+        "jistota": "nase_propojeni",
+        "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+      }
+    ]
   },
   {
     "id": "auto-vz-935",
@@ -12282,7 +12499,19 @@
       "zdroj_id": "rs-39711481",
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/39711481"
-    }
+    },
+    "sprm": [
+      {
+        "id": 280,
+        "aktivita": "Komplexní rekonstrukce komunikací vč. sítí",
+        "opatreni": "2. Technická infrastruktura",
+        "osa": "Doprava",
+        "stav_v_evidenci": "Plánováno",
+        "potvrzeno": false,
+        "jistota": "nase_propojeni",
+        "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+      }
+    ]
   },
   {
     "id": "auto-vz-930",
@@ -12668,7 +12897,19 @@
       "zdroj_id": "rs-38180737",
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/38180737"
-    }
+    },
+    "sprm": [
+      {
+        "id": 351,
+        "aktivita": "Budování dětských hřišť",
+        "opatreni": "3. Sportovní infrastruktura",
+        "osa": "Kultura",
+        "stav_v_evidenci": "Hotovo",
+        "potvrzeno": false,
+        "jistota": "nase_propojeni",
+        "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+      }
+    ]
   },
   {
     "id": "auto-vz-914",
@@ -13320,7 +13561,19 @@
       "zdroj_id": "rs-40115661",
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/40115661"
-    }
+    },
+    "sprm": [
+      {
+        "id": 280,
+        "aktivita": "Komplexní rekonstrukce komunikací vč. sítí",
+        "opatreni": "2. Technická infrastruktura",
+        "osa": "Doprava",
+        "stav_v_evidenci": "Plánováno",
+        "potvrzeno": false,
+        "jistota": "nase_propojeni",
+        "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+      }
+    ]
   },
   {
     "id": "auto-vz-895",
@@ -13563,7 +13816,8 @@
       "zdroj_id": "rs-34569109",
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/34569109"
-    }
+    },
+    "sprm": []
   },
   {
     "id": "auto-vz-858",
@@ -14030,7 +14284,19 @@
       "zdroj_id": "rs-36029297",
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/36029297"
-    }
+    },
+    "sprm": [
+      {
+        "id": 280,
+        "aktivita": "Komplexní rekonstrukce komunikací vč. sítí",
+        "opatreni": "2. Technická infrastruktura",
+        "osa": "Doprava",
+        "stav_v_evidenci": "Plánováno",
+        "potvrzeno": false,
+        "jistota": "nase_propojeni",
+        "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+      }
+    ]
   },
   {
     "id": "auto-vz-848",
@@ -14395,7 +14661,19 @@
       "zdroj_id": "rs-35224981",
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/35224981"
-    }
+    },
+    "sprm": [
+      {
+        "id": 333,
+        "aktivita": "Modernizace ZŠ a vybavení",
+        "opatreni": "4. Základní školy",
+        "osa": "Sociální oblast",
+        "stav_v_evidenci": "Plánováno",
+        "potvrzeno": false,
+        "jistota": "nase_propojeni",
+        "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+      }
+    ]
   },
   {
     "id": "auto-vz-844",
@@ -14638,7 +14916,19 @@
       "zdroj_id": "rs-33229332",
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/33229332"
-    }
+    },
+    "sprm": [
+      {
+        "id": 301,
+        "aktivita": "Rekonstrukce veřejných prostranství",
+        "opatreni": "7. Veřejná prostranství",
+        "osa": "Doprava",
+        "stav_v_evidenci": "Plánováno",
+        "potvrzeno": false,
+        "jistota": "nase_propojeni",
+        "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+      }
+    ]
   },
   {
     "id": "auto-vz-838",
@@ -14917,7 +15207,19 @@
       "zdroj_id": "rs-34289933",
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/34289933"
-    }
+    },
+    "sprm": [
+      {
+        "id": 343,
+        "aktivita": "Revitalizace Staré radnice č.p. 1",
+        "opatreni": "1. Kulturní památky",
+        "osa": "Kultura",
+        "stav_v_evidenci": "Hotovo",
+        "potvrzeno": false,
+        "jistota": "nase_propojeni",
+        "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+      }
+    ]
   },
   {
     "id": "auto-vz-835",
@@ -15222,7 +15524,19 @@
       "zdroj_id": "rs-33096484",
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/33096484"
-    }
+    },
+    "sprm": [
+      {
+        "id": 301,
+        "aktivita": "Rekonstrukce veřejných prostranství",
+        "opatreni": "7. Veřejná prostranství",
+        "osa": "Doprava",
+        "stav_v_evidenci": "Plánováno",
+        "potvrzeno": false,
+        "jistota": "nase_propojeni",
+        "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+      }
+    ]
   },
   {
     "id": "auto-vz-829",
@@ -16014,7 +16328,8 @@
       "zdroj_id": "rs-34915761",
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/34915761"
-    }
+    },
+    "sprm": []
   },
   {
     "id": "auto-vz-826",
@@ -16613,7 +16928,8 @@
       "zdroj_id": "rs-32937788",
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/32937788"
-    }
+    },
+    "sprm": []
   },
   {
     "id": "auto-vz-824",
@@ -16856,7 +17172,8 @@
       "zdroj_id": "rs-30443016",
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/30443016"
-    }
+    },
+    "sprm": []
   },
   {
     "id": "auto-vz-823",
@@ -17161,6 +17478,7 @@
       "zdroj_id": "rs-30583216",
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/30583216"
-    }
+    },
+    "sprm": []
   }
 ]
