@@ -40,6 +40,7 @@ NAZEV_STUPNE = dict(STUPNE)
 RE_PRIPRAVA = re.compile(
     r"projektov\w* dok|projektové dokum|drojektov|\(PD\)|zpracování PD|zhotov\w*\.? ?PD|\bPD\b|studi|"
     r"předprojektov|\bDSP\b|\bDZS\b|\bDUR\b|\bDPS\b(?!\s*(?:[0-9]|I\b|II\b|III\b|IA\b|IC\b))", re.I)
+RE_DPS_DUM = re.compile(r"\bDPS\s*(?:[0-9]|I\b|II\b|III\b|IA\b|IC\b)")
 RE_NE_PRIPRAVA = re.compile(r"havarijní|lázeňských procedur|rehabilitační pobyt|kybernetick", re.I)
 KANDIDATI_OD = "2023-01-01"
 OBLASTI = {"doprava", "voda_odpady", "sport", "skolstvi", "socialni", "bydleni", "kultura", "lazne", "zelen", "jine"}
@@ -51,7 +52,8 @@ def je_priprava(text: str) -> bool:
 
 
 def stupen(text: str) -> str:
-    druh = modul_projekty.druh_projektu(text)
+    # „DPS IA“, „DPS 1“ = dům s pečovatelskou službou, ne dokumentace pro provedení stavby
+    druh = modul_projekty.druh_projektu(RE_DPS_DUM.sub("dům s pečovatelskou službou", text))
     return {"architektonická studie": "studie", "projekt prováděcí": "projekt_provadeci",
             "projekt pro stavební řízení a prováděcí": "projekt_provadeci",
             "projekt pro stavební řízení": "projekt_povoleni"}.get(druh, "projekt")
@@ -68,7 +70,8 @@ def _doklady(data: dict) -> list[dict]:
     """Smlouvy a zakázky na přípravu stavby, sjednocené do jednoho tvaru."""
     vysledek = []
     for z in data.get("zakazky", []):
-        if je_priprava(z["nazev"]):
+        # zakázka dokládá zadání jen s vybraným dodavatelem (zrušená nebo běžící soutěž ne)
+        if je_priprava(z["nazev"]) and _zadano(z):
             vysledek.append({"typ": "zakazka", "id": z["id"], "text": " ".join(html.unescape(z["nazev"]).split()),
                              "datum": z.get("datum_zahajeni"), "ico": z.get("subjekt_ico"), "url": z.get("url")})
     for s in data.get("smlouvy", []):
@@ -76,6 +79,10 @@ def _doklady(data: dict) -> list[dict]:
             vysledek.append({"typ": "smlouva", "id": s["id"], "text": " ".join(html.unescape(s["predmet"]).split()),
                              "datum": s.get("datum_uzavreni"), "ico": s.get("subjekt_ico"), "url": s.get("url")})
     return vysledek
+
+
+def _zadano(z: dict) -> bool:
+    return z.get("stav") != "zrušen" and any(c.get("vitezove") for c in z.get("casti", []))
 
 
 def _v_kartach(projekty: list[dict]) -> set[str]:

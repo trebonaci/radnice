@@ -141,7 +141,7 @@ polozky:
   - id: lazne-restaurace
     nazev: Přemístění restaurace Lázeňského domu Aurora
     oblast: lazne
-    vazby: {hledat: ['provozu rest']}
+    vazby: {hledat: ['provozu rest', 'restaurace přemístění']}
   - id: lazne-olu
     nazev: Odborný léčebný ústav (kapacitní studie)
     oblast: lazne

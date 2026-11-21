@@ -41,7 +41,11 @@ from pipeline.zdroje.zapisy_mesta import ZapisyMesta
 KOREN = Path(__file__).resolve().parent.parent
 ZAMEK_STARY = 2 * 3600     # zámek starší než 2 hodiny považujeme za zbylý po pádu
 POKLES = 0.5               # výstup pod touto částí dosavadního počtu = podezřelý pokles
-VYSTUPY = ("jednani", "usneseni", "hlasovani", "zakazky", "smlouvy", "rozpoctova_opatreni", "rozpocet", "rozpocet_zmeny", "projekty", "investice", "dotace")
+# ručně spravované soubory mimo podadresáře, které sestavení čte (#153: zásobník projektů)
+RUCNI_SOUBORY = ("data/zasobnik.yaml",)
+# zásobník se legitimně zmenšuje (položka se stane kartou, kandidát se zařadí)
+BEZ_KONTROLY_POKLESU = {"zasobnik"}
+VYSTUPY = ("jednani", "usneseni", "hlasovani", "zakazky", "smlouvy", "rozpoctova_opatreni", "rozpocet", "rozpocet_zmeny", "projekty", "investice", "dotace", "zasobnik")
 
 
 class ZamekObsazen(Exception):
@@ -228,6 +232,8 @@ def aplikuj(manifest: list[dict], dokumenty: list[Dokument], dnes: date, stage: 
 def kontrola_poklesu(vystup: dict, koren: Path) -> list[str]:
     chyby = []
     for nazev in VYSTUPY:
+        if nazev in BEZ_KONTROLY_POKLESU:
+            continue
         dosud = len(_nacti_json(koren / "data" / f"{nazev}.json", []))
         ted = len(vystup.get(nazev, []))
         if dosud >= 2 and ted < dosud * POKLES:
@@ -306,6 +312,10 @@ def _beh(koren: Path, zdroje: list[Zdroj], dnes: date, ted: datetime) -> int:
         for podadresar in ("raw/texty", "raw/ezak", "raw/smlouvy", "raw/rozpocet", "raw/sprm", "anotace", "config", "data/projekty"):
             if (koren / podadresar).exists():
                 shutil.copytree(koren / podadresar, stage / podadresar)
+        for soubor in RUCNI_SOUBORY:
+            if (koren / soubor).exists():
+                (stage / soubor).parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy(koren / soubor, stage / soubor)
         (stage / "raw").mkdir(exist_ok=True)
         rel_soubory: dict[str, str] = {}
         try:

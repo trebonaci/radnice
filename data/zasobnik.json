@@ -331,6 +331,16 @@
     "doklady": [
       {
         "typ": "smlouva",
+        "id": "rs-28715171",
+        "text": "Zpracování PD pro opravu vozovky MK v Jiráskově ulici v Třeboni.",
+        "datum": "2024-05-16",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/28715171",
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "typ": "smlouva",
         "id": "rs-37372101",
         "text": "Stavební úpravy MK v Jiráskově ul. v Třeboni (zpracování PD)",
         "datum": "2026-03-30",
@@ -340,7 +350,7 @@
         "jistota": "nase_propojeni"
       }
     ],
-    "prvni_doklad": "2026-03-30",
+    "prvni_doklad": "2024-05-16",
     "odhad": null,
     "zdroj": null,
     "stavby": [
@@ -1337,8 +1347,8 @@
     ],
     "nositel_jistota": "nase_propojeni",
     "pripravenost": {
-      "stupen": "projekt_provadeci",
-      "nazev": "prováděcí projekt zadán",
+      "stupen": "projekt",
+      "nazev": "projektová dokumentace zadána",
       "doklad": {
         "typ": "smlouva",
         "id": "rs-36642205",
@@ -1357,7 +1367,7 @@
         "datum": "2026-02-02",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/36642205",
-        "stupen": "projekt_provadeci",
+        "stupen": "projekt",
         "jistota": "nase_propojeni"
       }
     ],
@@ -1442,16 +1452,6 @@
     "doklady": [
       {
         "typ": "zakazka",
-        "id": "ezak-VZ-931",
-        "text": "Zhotovení PD, příkazní činnosti a výkon AD pro Modernizaci objektu B LDA",
-        "datum": "2026-03-19",
-        "ico": "25179896",
-        "url": "https://zakazky.mesto-trebon.cz/contract_display_931.html",
-        "stupen": "projekt",
-        "jistota": "nase_propojeni"
-      },
-      {
-        "typ": "zakazka",
         "id": "ezak-VZ-940",
         "text": "Zhotovení PD, příkazní činnosti a výkon AD pro Modernizaci objektu B LDA – opakované řízení",
         "datum": "2026-05-06",
@@ -1471,7 +1471,7 @@
         "jistota": "nase_propojeni"
       }
     ],
-    "prvni_doklad": "2026-03-19",
+    "prvni_doklad": "2026-05-06",
     "odhad": null,
     "zdroj": null,
     "stavby": [],
@@ -1561,6 +1561,16 @@
     },
     "doklady": [
       {
+        "typ": "smlouva",
+        "id": "rs-28361767",
+        "text": "Smlouva o dílo - studie provoz restaurace přemístění",
+        "datum": "2024-04-16",
+        "ico": "25179896",
+        "url": "https://smlouvy.gov.cz/smlouva/28361767",
+        "stupen": "studie",
+        "jistota": "nase_propojeni"
+      },
+      {
         "typ": "zakazka",
         "id": "ezak-VZ-732",
         "text": "Studie - Přemístění provozu restaurace LDA - II.etapa",
@@ -1591,7 +1601,7 @@
         "jistota": "nase_propojeni"
       }
     ],
-    "prvni_doklad": "2024-04-17",
+    "prvni_doklad": "2024-04-16",
     "odhad": null,
     "zdroj": null,
     "stavby": [],
@@ -2257,7 +2267,7 @@
       "ico": "00247618",
       "url": "https://smlouvy.gov.cz/smlouva/33013444"
     },
-    "stupen": "projekt_provadeci",
+    "stupen": "projekt",
     "jistota": "nase_propojeni"
   },
   {
@@ -2424,6 +2434,174 @@
       "datum": "2024-07-19",
       "ico": "25179896",
       "url": "https://smlouvy.gov.cz/smlouva/29562236"
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-28957516",
+    "nazev": "Zpracování studie alternativ připojení prostoru ulice Za Nádražím v Třeboni",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-28957516",
+      "text": "Zpracování studie alternativ připojení prostoru ulice Za Nádražím v Třeboni",
+      "datum": "2024-06-05",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/28957516"
+    },
+    "stupen": "studie",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-28835860",
+    "nazev": "Zpracování projektové dokumentace - Stavební úpravy místní komunikace ulice Sídliště v úseku od REPROGENu po čp. 1158 Třeboň",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-28835860",
+      "text": "Zpracování projektové dokumentace - Stavební úpravy místní komunikace ulice Sídliště v úseku od REPROGENu po čp. 1158 Třeboň",
+      "datum": "2024-05-27",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/28835860"
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-28715827",
+    "nazev": "Zpracování PD pro opravu vozovky MK v ulici Svobody v Třeboni.",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-28715827",
+      "text": "Zpracování PD pro opravu vozovky MK v ulici Svobody v Třeboni.",
+      "datum": "2024-05-16",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/28715827"
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-28525763",
+    "nazev": "Smlouva o dílo na zhotovení projektové dokumentace \"revitalizace Komenského sady\"",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-28525763",
+      "text": "Smlouva o dílo na zhotovení projektové dokumentace \"revitalizace Komenského sady\"",
+      "datum": "2024-04-29",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/28525763"
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-28237275",
+    "nazev": "Vypracování jednostupňové PD, výkazu výměr, položkového rozpočtu a zajištění IČ na akci \"Technologická šachta Jordánovy kašny\".",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-28237275",
+      "text": "Vypracování jednostupňové PD, výkazu výměr, položkového rozpočtu a zajištění IČ na akci \"Technologická šachta Jordánovy kašny\".",
+      "datum": "2024-04-05",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/28237275"
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-28000023",
+    "nazev": "Zpracování PD Prodloužení MK v ulici Zahradní v Třeboni k domům čp. 1081, 1082 a 354.",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-28000023",
+      "text": "Zpracování PD Prodloužení MK v ulici Zahradní v Třeboni k domům čp. 1081, 1082 a 354.",
+      "datum": "2024-03-15",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/28000023"
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-27936991",
+    "nazev": "Parkoviště pro potřeby lázní v Lázeňské ulici v Třeboni (zpracování PD)",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-27936991",
+      "text": "Parkoviště pro potřeby lázní v Lázeňské ulici v Třeboni (zpracování PD)",
+      "datum": "2024-03-11",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/27936991"
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-27936867",
+    "nazev": "Zpracování projektové dokumentace Novostavba ocelové haly v areálu Technických služeb Třeboň",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-27936867",
+      "text": "Zpracování projektové dokumentace Novostavba ocelové haly v areálu Technických služeb Třeboň",
+      "datum": "2024-03-11",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/27936867"
     },
     "stupen": "projekt",
     "jistota": "nase_propojeni"

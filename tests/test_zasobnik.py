@@ -66,9 +66,9 @@ def test_sestaveni(tmp_path):
         allow_unicode=True), encoding="utf-8")
     data = {
         "zakazky": [{"id": "z1", "nazev": "Parkovací dům Třeboň (PD)", "datum_zahajeni": "2024-01-04",
-                     "subjekt_ico": "00247618", "url": "u1"},
-                    {"id": "z2", "nazev": "Chodník X (PD)", "datum_zahajeni": "2025-01-01", "subjekt_ico": "00247618"},
-                    {"id": "z3", "nazev": "Ulice Y (PD)", "datum_zahajeni": "2025-02-01", "subjekt_ico": "00247618"}],
+                     "subjekt_ico": "00247618", "url": "u1", "stav": "dokončen", "casti": [{"vitezove": [{"nazev": "P s.r.o."}]}]},
+                    {"id": "z2", "nazev": "Chodník X (PD)", "datum_zahajeni": "2025-01-01", "subjekt_ico": "00247618", "stav": "dokončen", "casti": [{"vitezove": [{"nazev": "P s.r.o."}]}]},
+                    {"id": "z3", "nazev": "Ulice Y (PD)", "datum_zahajeni": "2025-02-01", "subjekt_ico": "00247618", "stav": "dokončen", "casti": [{"vitezove": [{"nazev": "P s.r.o."}]}]}],
         "smlouvy": [{"id": "s1", "predmet": "Úprava projektové dokumentace parkovacího domu v Třeboni.",
                      "datum_uzavreni": "2026-04-24", "subjekt_ico": "00247618"}],
     }
@@ -88,3 +88,23 @@ def test_sestaveni(tmp_path):
     assert [z["doklad"]["id"] for z in vysledek if z["typ"] == "kandidat"] == ["z2"]
     # námět = plánovaná aktivita bez karty a bez položky
     assert [z["id"] for z in vysledek if z["typ"] == "namet"] == ["sprm-3"]
+
+
+def test_dum_s_pecovatelskou_sluzbou_neni_provadeci_projekt():
+    assert zasobnik.stupen("PD rekonstrukce kotelen a výměny plynových kotlů v objektech DPS IA a DPS IC") == "projekt"
+    assert zasobnik.stupen("Hřiště Hliník - DSP/DPS a výkaz výměr") == "projekt_provadeci"
+
+
+def test_zakazka_doklada_zadani_jen_s_vitezem():
+    vitez = [{"vitezove": [{"nazev": "Projektant s.r.o."}]}]
+    assert zasobnik._zadano({"stav": "dokončen", "casti": vitez})
+    assert not zasobnik._zadano({"stav": "zrušen", "casti": vitez})
+    assert not zasobnik._zadano({"stav": "zahájen", "casti": [{"vitezove": []}]})
+    data = {"zakazky": [{"id": "z1", "nazev": "Ulice X (PD)", "stav": "zrušen", "casti": []}], "smlouvy": []}
+    assert zasobnik._doklady(data) == []
+
+
+def test_beh_kopiruje_zasobnik_do_stagingu():
+    from pipeline import beh
+    assert "data/zasobnik.yaml" in beh.RUCNI_SOUBORY and "zasobnik" in beh.VYSTUPY
+    assert not [c for c in beh.kontrola_poklesu({"zasobnik": []}, beh.KOREN) if "zasobnik" in c]
