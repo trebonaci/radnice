@@ -1,0 +1,14 @@
+{
+ "url": "https://vdp.cuzk.gov.cz/vymenny_format/soucasna/20261031_OB_547336_UKSH.xml.zip",
+ "k_datu": "2026-10-31",
+ "sha256": "7f2f5aee4a2e922abf00971cdcb9ea55156bd256e35e6a822afb162b9dda2e34",
+ "obec": {
+  "kod": "547336",
+  "nazev": "Třeboň"
+ },
+ "ulic": 110,
+ "budov": 2425,
+ "adres": 2454,
+ "stazeno": "2026-11-21",
+ "souradnice": "WGS84 (EPSG:4326), převod z S-JTSK (EPSG:5514) knihovnou pyproj"
+}
