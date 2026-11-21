@@ -52,6 +52,10 @@ jobs:
         run: |
           python -m pipeline.zdroje.rozpocet_mesta || echo "::warning::Rozpočet – některé dokumenty se nepodařilo stáhnout (viz log)"
 
+      - name: Aktivity Strategického plánu z trebonaci.cz (chyba nezastaví běh)
+        run: |
+          python -m pipeline.zdroje.sprm || echo "::warning::SPRM – evidenci se nepodařilo stáhnout (viz log)"
+
       - name: Běh pipeline
         id: beh
         run: |
@@ -71,7 +75,7 @@ jobs:
         id: zmena
         if: steps.beh.outputs.kod == '0'
         run: |
-          if [ -n "$(git status --porcelain -- raw/texty raw/ezak raw/smlouvy raw/rozpocet data/jednani.json data/usneseni.json data/hlasovani.json data/zakazky.json data/smlouvy.json data/rozpoctova_opatreni.json data/rozpocet.json data/rozpocet_zmeny.json data/projekty.json data/investice.json data/dotace.json)" ]; then
+          if [ -n "$(git status --porcelain -- raw/texty raw/ezak raw/smlouvy raw/rozpocet raw/sprm data/jednani.json data/usneseni.json data/hlasovani.json data/zakazky.json data/smlouvy.json data/rozpoctova_opatreni.json data/rozpocet.json data/rozpocet_zmeny.json data/projekty.json data/investice.json data/dotace.json)" ]; then
             echo "zmena=ano" >> "$GITHUB_OUTPUT"
           else
             echo "zmena=ne" >> "$GITHUB_OUTPUT"
