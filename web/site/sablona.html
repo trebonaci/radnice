@@ -267,6 +267,7 @@ function stavText(p){const f=(FAZE[p.faze]||["",""])[0];return p.faze_jistota===
 function stavDoklad(p){
   const st=p.udalosti.filter(e=>e.datum&&(e.typ==="smlouva"&&p.casti.some(c=>c.role==="stavba"&&c.puvodni?.zdroj_id===e.zdroj_id))).sort((a,b)=>a.datum.localeCompare(b.datum))[0];
   if(p.faze==="probiha")return st?`Odvozujeme ho z podpisu smlouvy o dílo ${dat(st.datum)}. Postup prací ani plánovaný termín dokončení v datech nemáme.`:"Stav odvozujeme z dokladů.";
+  if(p.faze==="dokonceno" && !p.dokonceni && p.ukonceni_plneni)return `Podle E-ZAK bylo plnění stavební smlouvy ukončeno ${dat(p.ukonceni_plneni.datum)}.`;
   if(p.faze==="dokonceno")return p.dokonceni?`Dokončení doloženo ${dat(String(p.dokonceni.datum))}.`:"Dokončení odvozujeme z dokladů (E-ZAK: ukončeno plnění). Den předání stavby v datech nemáme.";
   if(p.faze==="soutezi_se")return "Probíhá výběr dodavatele, smlouva o dílo zatím není.";
   return "Stavba zatím nemá dodavatele. Stav odvozujeme z dokladů.";}
@@ -631,14 +632,15 @@ function zobraz(el,html,h,nazev,vlastniZpet){el.innerHTML=(vlastniZpet?"":`<div 
 function archivProjektu(projekty){
   const skupiny = new Map();
   for (const projekt of projekty.filter(p => p.faze === "dokonceno")) {
-    const doklad = projekt.dokonceni;
+    const doklad = projekt.dokonceni || projekt.ukonceni_plneni;
     const rok = doklad?.datum && /^https?:\/\//i.test(doklad.url || "") ? String(doklad.datum).slice(0,4) : "";
     if (!skupiny.has(rok)) skupiny.set(rok, []);
     skupiny.get(rok).push(projekt);
   }
   function polozka(p, rok) {
     const [druhCeny, cena] = hlavni(p);
-    const doklad = rok ? `<p>Dokončeno ${dat(p.dokonceni.datum)} · <a href="${esc(p.dokonceni.url)}">Doklad o dokončení</a></p>` : "";
+    const zdroj = p.dokonceni || p.ukonceni_plneni;
+    const doklad = rok ? `<p>${p.dokonceni ? "Dokončeno" : "Plnění stavební smlouvy ukončeno"} ${dat(zdroj.datum)} · <a href="${esc(zdroj.url)}">${p.dokonceni ? "Doklad o dokončení" : "Zakázka v E-ZAK"}</a></p>` : "";
     return `<li><h3><a href="#${esc(p.id)}">${esc(rozepis(p.nazev))}</a></h3>
       ${p.popis && p.popis !== p.nazev ? `<p>${esc(p.popis)}</p>` : ""}
       <p>${esc(OBLAST[p.oblast] || "Ostatní")}${cena ? ` · ${esc(druhCeny)}: ${esc(cena)}` : ""}</p>${doklad}</li>`;
@@ -646,12 +648,12 @@ function archivProjektu(projekty){
   const roky = [...skupiny.keys()].sort().reverse();
   const obsah = roky.map((rok, index) => {
     const projektyRoku = skupiny.get(rok).sort((a,b) => 
-      (rok && b.dokonceni.datum.localeCompare(a.dokonceni.datum)) || a.nazev.localeCompare(b.nazev, "cs") || a.id.localeCompare(b.id));
+      (rok && (b.dokonceni || b.ukonceni_plneni).datum.localeCompare((a.dokonceni || a.ukonceni_plneni).datum)) || a.nazev.localeCompare(b.nazev, "cs") || a.id.localeCompare(b.id));
     return `<details class="archiv-rok" ${index === 0 ? "open" : ""}><summary>${rok || "Rok dokončení není doložen"} (${projektyRoku.length})</summary>
       <ul>${projektyRoku.map(p => polozka(p, rok)).join("")}</ul></details>`;
   }).join("");
   return `<section><h1 class="st" tabindex="-1">Dokončené projekty</h1>
-    <p>Rok vychází z dokladu o předání nebo dokončení stavby. Pokud známe jen ukončení zakázky, najdete projekt ve skupině bez doloženého roku.</p>
+    <p>Projekty řadíme podle roku doloženého dokončení stavby nebo ukončení plnění stavební smlouvy v E-ZAK.</p>
     ${obsah || "<p>V evidenci zatím nejsou dokončené projekty.</p>"}</section>`;
 }
 
