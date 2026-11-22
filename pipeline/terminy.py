@@ -12,11 +12,12 @@ import re
 from datetime import date
 
 DATUM = r"(\d{1,2})\.\s?(\d{1,2})\.\s?(20\d{2})"
-KLIC = (r"(?:term[ií]n\w*\s+(?:dokon[čc]en\w*|p[řr]ed[aá]n[ií]\w*)(?:\s+(?:d[ií]la|stavby|prac[ií]|v[šs]ech\s+prac[ií]))?"
+KLIC = (r"(?:term[ií]n\w*\s+(?:dokon[čc]en\w*|p[řr]ed[aá]n[ií]\s+(?:d[ií]la|stavby|prac[ií]|v[šs]ech\s+prac[ií])\b)"
         r"|dokon[čc]it\s+(?:d[ií]lo|stavbu)|p[řr]edat\s+(?:d[ií]lo|stavbu)|dokon[čc]en[ií]\s+(?:d[ií]la|stavby))")
 # mezi klíčovým slovem a datem nesmí být jiný termín (zahájení) ani konec věty
 MEZI = r"(?:(?!zah[aá]jen|\.\s+[A-ZČŘŠŽ])[^;]){0,90}?"
 RE_DATUM = re.compile(KLIC + MEZI + DATUM, re.I)
+RE_NOVE_DATUM = re.compile(r"\s+na\s+" + DATUM, re.I)
 RE_LHUTA = re.compile(KLIC + MEZI + r"(\d{1,4})\s+(?:kalend[aá][řr]n[ií]ch\s+|pracovn[ií]ch\s+)?(?:dn[ůuí]|t[ýy]dn[ůu]|m[ěe]s[ií]c[ůu])"
                       r"[^.;]{0,80}", re.I)
 
@@ -32,9 +33,10 @@ def z_uryvku(text: str) -> dict | None:
     """První termín dokončení v úryvku: {druh, datum, citace} nebo None."""
     m = RE_DATUM.search(text)
     if m:
-        dt = _datum(*m.groups()[-3:])
+        nove = RE_NOVE_DATUM.match(text, m.end())
+        dt = _datum(*(nove or m).groups()[-3:])
         if dt:
-            return {"druh": "datum", "datum": dt, "citace": m.group(0)}
+            return {"druh": "datum", "datum": dt, "citace": text[m.start():(nove or m).end()]}
     m = RE_LHUTA.search(text)
     if m:
         return {"druh": "lhuta", "datum": None, "citace": m.group(0).strip()}
@@ -66,9 +68,16 @@ def sestav(raw: dict) -> tuple[list[dict], list[str]]:
 
 def pro_kartu(k: dict, terminy: dict) -> dict | None:
     """Platný termín dokončení stavby karty: z posledního dodatku, který termín uvádí, jinak z původní smlouvy."""
-    st = next((c for c in k.get("casti", []) if c.get("role") == "stavba"), None)
-    if not st:
+    stavby = [c for c in k.get("casti", []) if c.get("role") == "stavba"]
+    nalezy = [_pro_cast(st, terminy) for st in stavby]
+    if len(nalezy) == 1:
+        return nalezy[0]
+    if not nalezy or any(not t or not t.get("datum") for t in nalezy):
         return None
+    return max(nalezy, key=lambda t: t["datum"])
+
+
+def _pro_cast(st: dict, terminy: dict) -> dict | None:
     kandidati = [(d.get("datum") or "", "dodatek", d) for d in st.get("dodatky") or []]
     kandidati.sort(key=lambda x: x[0], reverse=True)
     kandidati.append(("", "smlouva", st.get("puvodni") or {}))
