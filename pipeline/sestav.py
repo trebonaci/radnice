@@ -27,6 +27,7 @@ from pipeline import dotace as modul_dotace
 from pipeline import projekty as modul_projekty
 from pipeline import zasobnik as modul_zasobnik
 from pipeline import harmonogram as modul_harmonogram
+from pipeline import terminy as modul_terminy
 from pipeline import ukazatele as modul_ukazatele
 from pipeline import mapa as modul_mapa
 from pipeline import mista as modul_mista
@@ -410,6 +411,13 @@ def sestav(koren: Path | None = None) -> tuple[dict[str, list], list[str]]:
     vystup["prehled"] = modul_prehled.sestav(vystup["zmeny"], vystup["projekty"], vystup["zasobnik"])
     vystup["mapa"] += [{"id": m["id"], "typ": "misto", "nazev": m["nazev"], "faze": None, "oblast": m["oblast"],
                         "misto": m["misto"], "geometrie": m["geometrie"]} for m in vystup["mista"]]
+    # termín dokončení stavby podle smlouvy (#205): úryvky příloh z registru smluv → karty
+    cesta_t = koren / "raw" / "smlouvy" / "terminy.json"
+    vystup["terminy"], chyby_t = modul_terminy.sestav(json.loads(cesta_t.read_text(encoding="utf-8")) if cesta_t.exists() else {})
+    chyby += chyby_t
+    podle_id = {t["zdroj_id"]: t for t in vystup["terminy"]}
+    for k in vystup["projekty"]:
+        k["termin_dokonceni"] = modul_terminy.pro_kartu(k, podle_id)
     # harmonogram investic, zásobníku a dlouhodobých neinvestičních projektů (#194)
     vystup["harmonogram"], chyby_h = modul_harmonogram.sestav(koren, vystup, vystup["projekty"], vystup["zasobnik"])
     chyby += chyby_h

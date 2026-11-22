@@ -398,7 +398,8 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "termin_dokonceni": null
   },
   {
     "id": "dps3-energie",
@@ -601,7 +602,8 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "termin_dokonceni": null
   },
   {
     "id": "fve-cov-brilice",
@@ -929,7 +931,8 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "termin_dokonceni": null
   },
   {
     "id": "fve-zs-na-sadech",
@@ -1286,7 +1289,8 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "termin_dokonceni": null
   },
   {
     "id": "hrbitov-sv-alzbety",
@@ -1443,7 +1447,8 @@
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/38781444"
     },
-    "sprm": []
+    "sprm": [],
+    "termin_dokonceni": null
   },
   {
     "id": "hriste-kopecek",
@@ -1916,7 +1921,8 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "termin_dokonceni": null
   },
   {
     "id": "lazne-balneo-etapa1",
@@ -2664,7 +2670,8 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "termin_dokonceni": null
   },
   {
     "id": "lazne-budova-g",
@@ -3514,7 +3521,8 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "termin_dokonceni": null
   },
   {
     "id": "mk-hermankova-daskabat",
@@ -4033,7 +4041,8 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "termin_dokonceni": null
   },
   {
     "id": "mk-sidliste",
@@ -4948,7 +4957,8 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "termin_dokonceni": null
   },
   {
     "id": "pristavba-telocvicen",
@@ -6475,7 +6485,8 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "termin_dokonceni": null
   },
   {
     "id": "propustek-brilice",
@@ -6759,7 +6770,8 @@
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/39062598"
     },
-    "sprm": []
+    "sprm": [],
+    "termin_dokonceni": null
   },
   {
     "id": "sportovni-hala-ubytovani",
@@ -8725,7 +8737,8 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "termin_dokonceni": null
   },
   {
     "id": "u-sveta-sportovni",
@@ -9331,7 +9344,8 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "termin_dokonceni": null
   },
   {
     "id": "ulice-valy",
@@ -10072,7 +10086,8 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "termin_dokonceni": null
   },
   {
     "id": "vo-branna",
@@ -10372,7 +10387,8 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "termin_dokonceni": null
   },
   {
     "id": "vo-taboritska",
@@ -10770,7 +10786,8 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "termin_dokonceni": null
   },
   {
     "id": "auto-vz-961",
@@ -11334,7 +11351,8 @@
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/40117897"
     },
-    "sprm": []
+    "sprm": [],
+    "termin_dokonceni": null
   },
   {
     "id": "auto-vz-945",
@@ -11620,7 +11638,8 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "termin_dokonceni": null
   },
   {
     "id": "auto-vz-941",
@@ -11926,7 +11945,8 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "termin_dokonceni": null
   },
   {
     "id": "auto-vz-935",
@@ -12612,7 +12632,8 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "termin_dokonceni": null
   },
   {
     "id": "auto-vz-930",
@@ -13013,7 +13034,8 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "termin_dokonceni": null
   },
   {
     "id": "auto-vz-914",
@@ -13680,7 +13702,8 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "termin_dokonceni": null
   },
   {
     "id": "auto-vz-895",
@@ -13924,7 +13947,8 @@
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/34569109"
     },
-    "sprm": []
+    "sprm": [],
+    "termin_dokonceni": null
   },
   {
     "id": "auto-vz-858",
@@ -14406,7 +14430,8 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "termin_dokonceni": null
   },
   {
     "id": "auto-vz-848",
@@ -14786,7 +14811,8 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "termin_dokonceni": null
   },
   {
     "id": "auto-vz-844",
@@ -15116,7 +15142,8 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "termin_dokonceni": null
   },
   {
     "id": "auto-vz-838",
@@ -15410,7 +15437,8 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "termin_dokonceni": null
   },
   {
     "id": "auto-vz-835",
@@ -15730,7 +15758,8 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "termin_dokonceni": null
   },
   {
     "id": "auto-vz-829",
@@ -16523,7 +16552,8 @@
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/34915761"
     },
-    "sprm": []
+    "sprm": [],
+    "termin_dokonceni": null
   },
   {
     "id": "auto-vz-826",
@@ -17123,7 +17153,8 @@
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/32937788"
     },
-    "sprm": []
+    "sprm": [],
+    "termin_dokonceni": null
   },
   {
     "id": "auto-vz-824",
@@ -17367,7 +17398,8 @@
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/30443016"
     },
-    "sprm": []
+    "sprm": [],
+    "termin_dokonceni": null
   },
   {
     "id": "auto-vz-823",
@@ -17673,6 +17705,7 @@
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/30583216"
     },
-    "sprm": []
+    "sprm": [],
+    "termin_dokonceni": null
   }
 ]

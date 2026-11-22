@@ -170,6 +170,15 @@ def main() -> int:
     for c in chyby:
         print("CHYBA:", c, file=sys.stderr)
     print(f"Registr smluv: změněno {len(zmeny)} souborů, chyb {len(chyby)}")
+    # termíny dokončení z příloh smluv na stavbu (#205); chyba příloh nezastaví běh
+    from pipeline.zdroje import prilohy_smluv
+    try:
+        nove, chyby_p = prilohy_smluv.stahni()
+        print(f"Přílohy smluv (termíny): {nove} nových smluv, chyb {len(chyby_p)}")
+        for c in chyby_p:
+            print("CHYBA příloha:", c, file=sys.stderr)
+    except Exception as e:  # noqa: BLE001 – přílohy jsou doplněk, běh registru nesmí shodit
+        print(f"CHYBA přílohy smluv: {e}", file=sys.stderr)
     return 1 if chyby else 0
 
 

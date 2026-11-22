@@ -8,6 +8,7 @@
 - `soutez`   – od zahájení zakázky na stavbu (E-ZAK) do smlouvy o dílo,
 - `stavba`   – od smlouvy o dílo; u dokončené akce do posledního dokladu ke stavbě (dodatek, smlouva) –
   skutečné předání stavby v datech není, proto `konec_jistota = "posledni_doklad"`,
+  Plánovaný konec podle smlouvy (`planovany_konec`, #205) je zvlášť: termín ze smlouvy nebo posledního dodatku.
 - `prubeh`   – dlouhodobý neinvestiční projekt: od prvního doloženého milníku (usnesení).
 
 Otevřený úsek (`otevreno`, `do = None`) web kreslí do dnešního dne (data tak nezávisí na dni sestavení). Data úseků jsou data dokladů, ne plánované termíny města.
@@ -66,8 +67,11 @@ def karta(k: dict, zakazky: dict) -> dict | None:
             else:
                 konec = max(e["datum"] for e in ud if e.get("role") == "stavba")
                 konec_jistota = "posledni_doklad"
+        t = k.get("termin_dokonceni")
+        plan = ({"datum": t["datum"], "druh": t["druh"], "citace": t["citace"], "url": t["url"], "podle": t.get("podle")}
+                if t else None)
         useky.append(_usek("stavba", zacatek_stavby, konec, url=sml[0].get("url"), jistota="dolozeno",
-                           konec_jistota=konec_jistota))
+                           konec_jistota=konec_jistota, planovany_konec=plan))
     milniky = [{"datum": e["datum"], "typ": e["typ"], "text": e.get("kratce") or e.get("text"), "url": e.get("url")}
                for e in ud if e["typ"] in ("dodatek", "usneseni") or (e["typ"] == "soutez" and e.get("zruseno"))]
     return {"typ": "investice", "id": k["id"], "nazev": k["nazev"], "oblast": k.get("oblast"), "faze": k.get("faze"),
