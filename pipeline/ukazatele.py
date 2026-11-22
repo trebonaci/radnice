@@ -151,8 +151,48 @@ def projekty(projekty: list[dict], zasobnik: list[dict]) -> dict:
                      zasobnik=v_zasobniku, namety=namety)
 
 
+def _plus(a, b):
+    return b if a is None else a if b is None else round(a + b, 2)
+
+
+def priprava_zasobniku(zasobnik: list[dict], subjekty: dict) -> dict | None:
+    """Smluvní ceny přípravy (studie, projekty, průzkumy) u položek zásobníku, které se ještě nestaví (#194).
+
+    Sčítá se zvlášť s DPH a jen bez DPH, dodatky a zaplaceno (E-ZAK) zvlášť; po nositelích (zadavatel dokladů)."""
+    polozky = [z for z in zasobnik if z["typ"] == "polozka" and z.get("faze") in ("zasobnik", "stavba")
+               and z.get("cena_pripravy")]
+    if not polozky:
+        return None
+    rada = {}
+    for z in polozky:
+        c = z["cena_pripravy"]
+        ico = (z.get("nositele") or [{}])[0].get("ico") or "nevime"
+        r = rada.setdefault(ico, {"klic": ico, "nazev": subjekty.get(ico, "nositel neznámý"), "polozek": 0,
+                                  "s_dph": None, "bez_dph": None, "dodatky_s_dph": None, "dodatky_bez_dph": None,
+                                  "zaplaceno_s_dph": None})
+        r["polozek"] += 1
+        r["s_dph"] = _plus(r["s_dph"], c["smlouvy"]["s_dph"])
+        r["bez_dph"] = _plus(r["bez_dph"], c["smlouvy"]["bez_dph"])
+        r["dodatky_s_dph"] = _plus(r["dodatky_s_dph"], c["dodatky"]["s_dph"])
+        r["dodatky_bez_dph"] = _plus(r["dodatky_bez_dph"], c["dodatky"]["bez_dph"])
+        r["zaplaceno_s_dph"] = _plus(r["zaplaceno_s_dph"], c["zaplaceno"]["s_dph"])
+    hodnota = sorted(rada.values(), key=lambda r: -(r["s_dph"] or 0) - (r["bez_dph"] or 0))
+    celkem = {k: None for k in ("s_dph", "bez_dph", "dodatky_s_dph", "dodatky_bez_dph", "zaplaceno_s_dph")}
+    for r in hodnota:
+        for k in celkem:
+            celkem[k] = _plus(celkem[k], r[k])
+    return _ukazatel("zasobnik-priprava", "Cena přípravy projektů v zásobníku", hodnota, "Kč", None, None,
+                     "Smluvní ceny studií, projektových dokumentací a průzkumů u projektů v zásobníku (ještě bez stavby), "
+                     "podle registru smluv a E-ZAK. Ceny s DPH a ceny uvedené jen bez DPH se sčítají zvlášť, dodatky a "
+                     "zaplaceno zvlášť. Přiřazení smluv k projektu je naše propojení podle názvu.",
+                     "priprava_zasobniku", [ZDROJ_REGISTR, ZDROJ_EZAK],
+                     "Drobné objednávky pod 50 000 Kč bez DPH se do registru smluv nezveřejňují, proto tu chybí.",
+                     druh="smluvni", celkem=celkem, polozek=len(polozky))
+
+
 def sestav(vystup: dict, subjekty: dict) -> list[dict]:
     vysledek = [jednani(vystup["jednani"]), usneseni_oblasti(vystup["usneseni"], vystup["jednani"]),
                 smlouvy(vystup["smlouvy"], subjekty), zakazky(vystup["zakazky"], subjekty), dotace(vystup["dotace"]),
-                investice(vystup.get("investice") or []), projekty(vystup["projekty"], vystup.get("zasobnik") or [])]
+                investice(vystup.get("investice") or []), projekty(vystup["projekty"], vystup.get("zasobnik") or []),
+                priprava_zasobniku(vystup.get("zasobnik") or [], subjekty)]
     return [u for u in vysledek if u]

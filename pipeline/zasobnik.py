@@ -12,12 +12,16 @@ Záznamy výstupu (`typ`):
   (podklad pro doplnění zásobníku, nic se z něj nevyvozuje).
 - `namet`    – aktivita Strategického plánu se stavem „Plánováno“ v evidenci, ke které není karta ani položka.
 
-Částky se nesčítají ani neodhadují: odhad nákladů je jen ten, který je ručně opsaný ze zdroje.
+Odhad nákladů stavby je jen ten, který je ručně opsaný ze zdroje. Cena přípravy (#194) = smluvní ceny dokladů
+položky (registr smluv, vítěz v E-ZAK) a zaplaceno podle E-ZAK; kód sčítá zvlášť ceny s DPH a ceny uvedené jen bez
+DPH, dodatky zvlášť od původních smluv a zaplaceno zvlášť od smluvních cen. Zakázka a smlouva se stejnou smluvní cenou
+(nebo dvě smlouvy se stejnou cenou do 60 dnů) se započtou jednou.
 """
 from __future__ import annotations
 
 import html
 import re
+from datetime import date
 from pathlib import Path
 
 import yaml
@@ -66,6 +70,23 @@ def nacti(koren: Path) -> list[dict]:
     return (yaml.safe_load(cesta.read_text(encoding="utf-8")) or {}).get("polozky") or []
 
 
+def _cena(castky: list[dict], druh: str = "smluvni") -> dict | None:
+    """Cena dokladu z doslovně opsaných částek: s DPH a bez DPH, jak je uvádí zdroj (nulové = neuvedeno)."""
+    vybrane = [c for c in castky or [] if c.get("druh") == druh and c.get("hodnota")]
+    if not vybrane:
+        return None
+    s = [c for c in vybrane if c.get("s_dph") is True]
+    b = [c for c in vybrane if c.get("s_dph") is False]
+    return {"s_dph": round(sum(c["hodnota"] for c in s), 2) if s else None,
+            "bez_dph": round(sum(c["hodnota"] for c in b), 2) if b else None,
+            "citace": [c["citace"] for c in s + b]}
+
+
+def _cena_zakazky(z: dict, druh: str) -> dict | None:
+    castky = [c for cast in z.get("casti", []) for v in cast.get("vitezove", []) for c in v.get("castky", [])]
+    return _cena(castky, druh)
+
+
 def _doklady(data: dict) -> list[dict]:
     """Smlouvy a zakázky na přípravu stavby, sjednocené do jednoho tvaru."""
     vysledek = []
@@ -73,12 +94,71 @@ def _doklady(data: dict) -> list[dict]:
         # zakázka dokládá zadání jen s vybraným dodavatelem (zrušená nebo běžící soutěž ne)
         if je_priprava(z["nazev"]) and _zadano(z):
             vysledek.append({"typ": "zakazka", "id": z["id"], "text": " ".join(html.unescape(z["nazev"]).split()),
-                             "datum": z.get("datum_zahajeni"), "ico": z.get("subjekt_ico"), "url": z.get("url")})
+                             "datum": z.get("datum_zahajeni"), "ico": z.get("subjekt_ico"), "url": z.get("url"),
+                             "cena": _cena_zakazky(z, "smluvni"), "zaplaceno": _cena_zakazky(z, "zaplaceno"),
+                             "dodatek": False})
     for s in data.get("smlouvy", []):
         if je_priprava(s.get("predmet")):
-            vysledek.append({"typ": "smlouva", "id": s["id"], "text": " ".join(html.unescape(s["predmet"]).split()),
-                             "datum": s.get("datum_uzavreni"), "ico": s.get("subjekt_ico"), "url": s.get("url")})
+            text = " ".join(html.unescape(s["predmet"]).split())
+            vysledek.append({"typ": "smlouva", "id": s["id"], "text": text,
+                             "datum": s.get("datum_uzavreni"), "ico": s.get("subjekt_ico"), "url": s.get("url"),
+                             "cena": _cena(s.get("castky")), "zaplaceno": None,
+                             "dodatek": bool(s.get("navazuje_na") or modul_projekty.RE_DODATEK.search(text))})
     return vysledek
+
+
+def _hodnoty(cena: dict | None) -> set[tuple[float, bool]]:
+    if not cena:
+        return set()
+    return {(v, k == "s_dph") for k in ("s_dph", "bez_dph") if (v := cena.get(k)) is not None}
+
+
+def _dny(a: str | None, b: str | None) -> int | None:
+    try:
+        return abs((date.fromisoformat(a) - date.fromisoformat(b)).days)
+    except (TypeError, ValueError):
+        return None
+
+
+def zapocti(doklady: list[dict]) -> list[dict]:
+    """Označí, které doklady se počítají do ceny přípravy (`zapocteno`), a proč ne (`nezapocteno`).
+
+    Zakázka a smlouva na stejnou práci mají obvykle stejnou smluvní cenu: smlouva má přednost (je to podepsaná cena),
+    zakázka se nezapočte. Dvě smlouvy se stejnou cenou do 60 dnů (smlouva + objednávka) se počítají jednou."""
+    smlouvy = [d for d in doklady if d["typ"] == "smlouva" and d.get("cena")]
+    vysledek = []
+    for d in doklady:
+        d = dict(d)
+        d["zapocteno"], d["nezapocteno"] = bool(d.get("cena")), None if d.get("cena") else "cena neuvedena"
+        h = _hodnoty(d.get("cena"))
+        if d["zapocteno"] and d["typ"] == "zakazka":
+            shoda = next((s for s in smlouvy if h & _hodnoty(s["cena"])), None)
+            if shoda:
+                d["zapocteno"], d["nezapocteno"] = False, f"stejná cena jako smlouva {shoda['id']}"
+        elif d["zapocteno"]:
+            shoda = next((v for v in vysledek if v["typ"] == "smlouva" and v["zapocteno"] and h & _hodnoty(v["cena"])
+                          and (_dny(v["datum"], d["datum"]) or 0) <= 60), None)
+            if shoda:
+                d["zapocteno"], d["nezapocteno"] = False, f"stejná cena jako smlouva {shoda['id']} (do 60 dnů)"
+        vysledek.append(d)
+    return vysledek
+
+
+def cena_pripravy(doklady: list[dict]) -> dict:
+    """Součty cen přípravy položky. Každý doklad přispívá jednou: cenou s DPH, a když ji zdroj neuvádí, cenou bez DPH
+    (ta se sčítá zvlášť). Dodatky a zaplaceno (E-ZAK) jsou samostatné součty a nepřičítají se ke smluvním cenám."""
+    def secti(polozky, pole="cena"):
+        s = [d[pole]["s_dph"] for d in polozky if d.get(pole) and d[pole]["s_dph"] is not None]
+        b = [d[pole]["bez_dph"] for d in polozky if d.get(pole) and d[pole]["s_dph"] is None and d[pole]["bez_dph"] is not None]
+        return {"s_dph": round(sum(s), 2) if s else None, "bez_dph": round(sum(b), 2) if b else None,
+                "pocet": len(s) + len(b)}
+    zapoctene = [d for d in doklady if d.get("zapocteno")]
+    return {"druh": "smluvni",
+            "smlouvy": secti([d for d in zapoctene if not d.get("dodatek")]),
+            "dodatky": secti([d for d in zapoctene if d.get("dodatek")]),
+            "zaplaceno": secti([d for d in doklady if d.get("zaplaceno")], "zaplaceno") | {"druh": "zaplaceno"},
+            "bez_ceny": sum(1 for d in doklady if not d.get("cena")),
+            "jistota": "nase_propojeni"}
 
 
 def _zadano(z: dict) -> bool:
@@ -112,7 +192,8 @@ def sestav_polozku(p: dict, doklady: list[dict], data: dict, v_kartach: set[str]
         "nositele": [{"ico": i, "nazev": subjekty.get(i, i)} for i in nositele],
         "nositel_jistota": "nase_propojeni" if nositele else "nevime",
         "pripravenost": pripravenost,
-        "doklady": [d | {"stupen": stupen(d["text"]), "jistota": "nase_propojeni"} for d in moje],
+        "doklady": (dokl := [d | {"stupen": stupen(d["text"]), "jistota": "nase_propojeni"} for d in zapocti(moje)]),
+        "cena_pripravy": cena_pripravy(dokl),
         "prvni_doklad": moje[0]["datum"] if moje else None,
         "odhad": _odhad(p.get("odhad")),
         "zdroj": p.get("zdroj"),

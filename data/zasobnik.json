@@ -21,7 +21,17 @@
         "text": "Úprava projektové dokumentace parkovacího domu v Třeboni.",
         "datum": "2026-04-24",
         "ico": "00247618",
-        "url": "https://smlouvy.gov.cz/smlouva/37709985"
+        "url": "https://smlouvy.gov.cz/smlouva/37709985",
+        "cena": {
+          "s_dph": 239662.28,
+          "bez_dph": 198068.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"239662.28\"",
+            "\"hodnotaBezDph\": \"198068\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false
       },
       "jistota": "dolozeno"
     },
@@ -33,6 +43,25 @@
         "datum": "2024-01-04",
         "ico": "00247618",
         "url": "https://zakazky.mesto-trebon.cz/contract_display_698.html",
+        "cena": {
+          "s_dph": 1179750.0,
+          "bez_dph": 975000.0,
+          "citace": [
+            "<smluvni_cena_s_DPH>1179750.00</smluvni_cena_s_DPH>",
+            "<smluvni_cena_bez_DPH>975000.00</smluvni_cena_bez_DPH>"
+          ]
+        },
+        "zaplaceno": {
+          "s_dph": 110715.0,
+          "bez_dph": 91500.0,
+          "citace": [
+            "<cena_za_rok_s_dph>110715.00</cena_za_rok_s_dph>",
+            "<cena_za_rok_bez_dph>91500.00</cena_za_rok_bez_dph>"
+          ]
+        },
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       },
@@ -43,10 +72,43 @@
         "datum": "2026-04-24",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/37709985",
+        "cena": {
+          "s_dph": 239662.28,
+          "bez_dph": 198068.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"239662.28\"",
+            "\"hodnotaBezDph\": \"198068\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       }
     ],
+    "cena_pripravy": {
+      "druh": "smluvni",
+      "smlouvy": {
+        "s_dph": 1419412.28,
+        "bez_dph": null,
+        "pocet": 2
+      },
+      "dodatky": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0
+      },
+      "zaplaceno": {
+        "s_dph": 110715.0,
+        "bez_dph": null,
+        "pocet": 1,
+        "druh": "zaplaceno"
+      },
+      "bez_ceny": 0,
+      "jistota": "nase_propojeni"
+    },
     "prvni_doklad": "2024-01-04",
     "odhad": null,
     "zdroj": null,
@@ -76,7 +138,17 @@
         "text": "Zpracování PD Stavební úpravy komunikace v Jateční ulici v Třeboni.",
         "datum": "2025-02-27",
         "ico": "00247618",
-        "url": "https://smlouvy.gov.cz/smlouva/32327428"
+        "url": "https://smlouvy.gov.cz/smlouva/32327428",
+        "cena": {
+          "s_dph": 419144.0,
+          "bez_dph": 346400.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"419144\"",
+            "\"hodnotaBezDph\": \"346400\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false
       },
       "jistota": "dolozeno"
     },
@@ -88,6 +160,25 @@
         "datum": "2024-01-04",
         "ico": "00247618",
         "url": "https://zakazky.mesto-trebon.cz/contract_display_697.html",
+        "cena": {
+          "s_dph": 470690.0,
+          "bez_dph": 389000.0,
+          "citace": [
+            "<smluvni_cena_s_DPH>470690.00</smluvni_cena_s_DPH>",
+            "<smluvni_cena_bez_DPH>389000.00</smluvni_cena_bez_DPH>"
+          ]
+        },
+        "zaplaceno": {
+          "s_dph": 264990.0,
+          "bez_dph": 219000.0,
+          "citace": [
+            "<cena_za_rok_s_dph>264990.00</cena_za_rok_s_dph>",
+            "<cena_za_rok_bez_dph>219000.00</cena_za_rok_bez_dph>"
+          ]
+        },
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       },
@@ -98,6 +189,18 @@
         "datum": "2024-02-29",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/27818027",
+        "cena": {
+          "s_dph": 108658.0,
+          "bez_dph": 89800.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"108658\"",
+            "\"hodnotaBezDph\": \"89800\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "studie",
         "jistota": "nase_propojeni"
       },
@@ -108,10 +211,43 @@
         "datum": "2025-02-27",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/32327428",
+        "cena": {
+          "s_dph": 419144.0,
+          "bez_dph": 346400.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"419144\"",
+            "\"hodnotaBezDph\": \"346400\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       }
     ],
+    "cena_pripravy": {
+      "druh": "smluvni",
+      "smlouvy": {
+        "s_dph": 998492.0,
+        "bez_dph": null,
+        "pocet": 3
+      },
+      "dodatky": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0
+      },
+      "zaplaceno": {
+        "s_dph": 264990.0,
+        "bez_dph": null,
+        "pocet": 1,
+        "druh": "zaplaceno"
+      },
+      "bez_ceny": 0,
+      "jistota": "nase_propojeni"
+    },
     "prvni_doklad": "2024-01-04",
     "odhad": null,
     "zdroj": null,
@@ -141,7 +277,17 @@
         "text": "Technická studie akce Stezka podél trati ČD z ulice Jateční do ulice Nádražní v Třeboni",
         "datum": "2025-03-10",
         "ico": "00247618",
-        "url": "https://smlouvy.gov.cz/smlouva/32440316"
+        "url": "https://smlouvy.gov.cz/smlouva/32440316",
+        "cena": {
+          "s_dph": 113377.0,
+          "bez_dph": 93700.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"113377\"",
+            "\"hodnotaBezDph\": \"93700\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false
       },
       "jistota": "dolozeno"
     },
@@ -153,10 +299,43 @@
         "datum": "2025-03-10",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/32440316",
+        "cena": {
+          "s_dph": 113377.0,
+          "bez_dph": 93700.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"113377\"",
+            "\"hodnotaBezDph\": \"93700\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "studie",
         "jistota": "nase_propojeni"
       }
     ],
+    "cena_pripravy": {
+      "druh": "smluvni",
+      "smlouvy": {
+        "s_dph": 113377.0,
+        "bez_dph": null,
+        "pocet": 1
+      },
+      "dodatky": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0
+      },
+      "zaplaceno": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0,
+        "druh": "zaplaceno"
+      },
+      "bez_ceny": 0,
+      "jistota": "nase_propojeni"
+    },
     "prvni_doklad": "2025-03-10",
     "odhad": null,
     "zdroj": null,
@@ -186,7 +365,17 @@
         "text": "Vypracování projektové dokumentace akce Oprava chodníku v Nádražní ulici v Třeboni",
         "datum": "2026-01-29",
         "ico": "00247618",
-        "url": "https://smlouvy.gov.cz/smlouva/36589129"
+        "url": "https://smlouvy.gov.cz/smlouva/36589129",
+        "cena": {
+          "s_dph": 144837.0,
+          "bez_dph": 119700.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"144837\"",
+            "\"hodnotaBezDph\": \"119700\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false
       },
       "jistota": "dolozeno"
     },
@@ -198,6 +387,27 @@
         "datum": "2024-02-05",
         "ico": "00247618",
         "url": "https://zakazky.mesto-trebon.cz/contract_display_701.html",
+        "cena": {
+          "s_dph": 839740.0,
+          "bez_dph": 694000.0,
+          "citace": [
+            "<smluvni_cena_s_DPH>839740.00</smluvni_cena_s_DPH>",
+            "<smluvni_cena_bez_DPH>694000.00</smluvni_cena_bez_DPH>"
+          ]
+        },
+        "zaplaceno": {
+          "s_dph": 788194.0,
+          "bez_dph": 651400.0,
+          "citace": [
+            "<cena_za_rok_s_dph>80828.00</cena_za_rok_s_dph>",
+            "<cena_za_rok_s_dph>707366.00</cena_za_rok_s_dph>",
+            "<cena_za_rok_bez_dph>66800.00</cena_za_rok_bez_dph>",
+            "<cena_za_rok_bez_dph>584600.00</cena_za_rok_bez_dph>"
+          ]
+        },
+        "dodatek": false,
+        "zapocteno": false,
+        "nezapocteno": "stejná cena jako smlouva rs-27521487",
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       },
@@ -208,6 +418,18 @@
         "datum": "2024-02-05",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/27521487",
+        "cena": {
+          "s_dph": 839740.0,
+          "bez_dph": 694000.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"839740\"",
+            "\"hodnotaBezDph\": \"694000\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       },
@@ -218,6 +440,17 @@
         "datum": "2025-07-03",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/33958253",
+        "cena": {
+          "s_dph": -48400.0,
+          "bez_dph": null,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"-48400\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": true,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       },
@@ -228,10 +461,43 @@
         "datum": "2026-01-29",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/36589129",
+        "cena": {
+          "s_dph": 144837.0,
+          "bez_dph": 119700.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"144837\"",
+            "\"hodnotaBezDph\": \"119700\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       }
     ],
+    "cena_pripravy": {
+      "druh": "smluvni",
+      "smlouvy": {
+        "s_dph": 984577.0,
+        "bez_dph": null,
+        "pocet": 2
+      },
+      "dodatky": {
+        "s_dph": -48400.0,
+        "bez_dph": null,
+        "pocet": 1
+      },
+      "zaplaceno": {
+        "s_dph": 788194.0,
+        "bez_dph": null,
+        "pocet": 1,
+        "druh": "zaplaceno"
+      },
+      "bez_ceny": 0,
+      "jistota": "nase_propojeni"
+    },
     "prvni_doklad": "2024-02-05",
     "odhad": null,
     "zdroj": null,
@@ -275,7 +541,17 @@
         "text": "Zpracování PD Stavebních úprav MK v ul. Ořechová v Třeboni",
         "datum": "2026-11-09",
         "ico": "00247618",
-        "url": "https://smlouvy.gov.cz/smlouva/40277401"
+        "url": "https://smlouvy.gov.cz/smlouva/40277401",
+        "cena": {
+          "s_dph": 769560.0,
+          "bez_dph": 636000.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"769560\"",
+            "\"hodnotaBezDph\": \"636000\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false
       },
       "jistota": "dolozeno"
     },
@@ -287,6 +563,18 @@
         "datum": "2026-10-23",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/40061089",
+        "cena": {
+          "s_dph": 94628.0,
+          "bez_dph": 81760.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"94628\"",
+            "\"hodnotaBezDph\": \"81760\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       },
@@ -297,10 +585,43 @@
         "datum": "2026-11-09",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/40277401",
+        "cena": {
+          "s_dph": 769560.0,
+          "bez_dph": 636000.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"769560\"",
+            "\"hodnotaBezDph\": \"636000\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       }
     ],
+    "cena_pripravy": {
+      "druh": "smluvni",
+      "smlouvy": {
+        "s_dph": 864188.0,
+        "bez_dph": null,
+        "pocet": 2
+      },
+      "dodatky": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0
+      },
+      "zaplaceno": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0,
+        "druh": "zaplaceno"
+      },
+      "bez_ceny": 0,
+      "jistota": "nase_propojeni"
+    },
     "prvni_doklad": "2026-10-23",
     "odhad": null,
     "zdroj": null,
@@ -344,7 +665,17 @@
         "text": "Stavební úpravy MK v Jiráskově ul. v Třeboni (zpracování PD)",
         "datum": "2026-03-30",
         "ico": "00247618",
-        "url": "https://smlouvy.gov.cz/smlouva/37372101"
+        "url": "https://smlouvy.gov.cz/smlouva/37372101",
+        "cena": {
+          "s_dph": 828850.0,
+          "bez_dph": 685000.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"828850\"",
+            "\"hodnotaBezDph\": \"685000\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false
       },
       "jistota": "dolozeno"
     },
@@ -356,6 +687,18 @@
         "datum": "2024-05-16",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/28715171",
+        "cena": {
+          "s_dph": 108295.0,
+          "bez_dph": 89500.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"108295\"",
+            "\"hodnotaBezDph\": \"89500\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       },
@@ -366,10 +709,43 @@
         "datum": "2026-03-30",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/37372101",
+        "cena": {
+          "s_dph": 828850.0,
+          "bez_dph": 685000.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"828850\"",
+            "\"hodnotaBezDph\": \"685000\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       }
     ],
+    "cena_pripravy": {
+      "druh": "smluvni",
+      "smlouvy": {
+        "s_dph": 937145.0,
+        "bez_dph": null,
+        "pocet": 2
+      },
+      "dodatky": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0
+      },
+      "zaplaceno": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0,
+        "druh": "zaplaceno"
+      },
+      "bez_ceny": 0,
+      "jistota": "nase_propojeni"
+    },
     "prvni_doklad": "2024-05-16",
     "odhad": null,
     "zdroj": null,
@@ -407,7 +783,17 @@
         "text": "Zpracování projektové dokumentace \"Stavební úpravy MK ve Staré Hlíně v úseku od silnice I/34 po polní cestu HPC 1\" - dodatek č. 2",
         "datum": "2026-05-18",
         "ico": "00247618",
-        "url": "https://smlouvy.gov.cz/smlouva/38002721"
+        "url": "https://smlouvy.gov.cz/smlouva/38002721",
+        "cena": {
+          "s_dph": 220341.0,
+          "bez_dph": 182100.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"220341\"",
+            "\"hodnotaBezDph\": \"182100\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": true
       },
       "jistota": "dolozeno"
     },
@@ -419,6 +805,18 @@
         "datum": "2024-11-12",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/30953920",
+        "cena": {
+          "s_dph": 987965.0,
+          "bez_dph": 816500.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"987965\"",
+            "\"hodnotaBezDph\": \"816500\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       },
@@ -429,6 +827,25 @@
         "datum": "2024-11-18",
         "ico": "00247618",
         "url": "https://zakazky.mesto-trebon.cz/contract_display_811.html",
+        "cena": {
+          "s_dph": 987965.0,
+          "bez_dph": 816500.0,
+          "citace": [
+            "<smluvni_cena_s_DPH>987965.00</smluvni_cena_s_DPH>",
+            "<smluvni_cena_bez_DPH>816500.00</smluvni_cena_bez_DPH>"
+          ]
+        },
+        "zaplaceno": {
+          "s_dph": 108658.0,
+          "bez_dph": 89800.0,
+          "citace": [
+            "<cena_za_rok_s_dph>108658.00</cena_za_rok_s_dph>",
+            "<cena_za_rok_bez_dph>89800.00</cena_za_rok_bez_dph>"
+          ]
+        },
+        "dodatek": false,
+        "zapocteno": false,
+        "nezapocteno": "stejná cena jako smlouva rs-30953920",
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       },
@@ -439,6 +856,18 @@
         "datum": "2025-05-15",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/33284428",
+        "cena": {
+          "s_dph": 98615.0,
+          "bez_dph": 81500.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"98615\"",
+            "\"hodnotaBezDph\": \"81500\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": true,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       },
@@ -449,10 +878,43 @@
         "datum": "2026-05-18",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/38002721",
+        "cena": {
+          "s_dph": 220341.0,
+          "bez_dph": 182100.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"220341\"",
+            "\"hodnotaBezDph\": \"182100\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": true,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       }
     ],
+    "cena_pripravy": {
+      "druh": "smluvni",
+      "smlouvy": {
+        "s_dph": 987965.0,
+        "bez_dph": null,
+        "pocet": 1
+      },
+      "dodatky": {
+        "s_dph": 318956.0,
+        "bez_dph": null,
+        "pocet": 2
+      },
+      "zaplaceno": {
+        "s_dph": 108658.0,
+        "bez_dph": null,
+        "pocet": 1,
+        "druh": "zaplaceno"
+      },
+      "bez_ceny": 0,
+      "jistota": "nase_propojeni"
+    },
     "prvni_doklad": "2024-11-12",
     "odhad": null,
     "zdroj": null,
@@ -482,7 +944,17 @@
         "text": "Stavební úpravy MK v ulici Dvorecké v Břilicích (zpracování PD)",
         "datum": "2026-09-21",
         "ico": "00247618",
-        "url": "https://smlouvy.gov.cz/smlouva/39611077"
+        "url": "https://smlouvy.gov.cz/smlouva/39611077",
+        "cena": {
+          "s_dph": 658845.0,
+          "bez_dph": 544500.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"658845\"",
+            "\"hodnotaBezDph\": \"544500\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false
       },
       "jistota": "dolozeno"
     },
@@ -494,10 +966,43 @@
         "datum": "2026-09-21",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/39611077",
+        "cena": {
+          "s_dph": 658845.0,
+          "bez_dph": 544500.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"658845\"",
+            "\"hodnotaBezDph\": \"544500\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       }
     ],
+    "cena_pripravy": {
+      "druh": "smluvni",
+      "smlouvy": {
+        "s_dph": 658845.0,
+        "bez_dph": null,
+        "pocet": 1
+      },
+      "dodatky": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0
+      },
+      "zaplaceno": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0,
+        "druh": "zaplaceno"
+      },
+      "bez_ceny": 0,
+      "jistota": "nase_propojeni"
+    },
     "prvni_doklad": "2026-09-21",
     "odhad": null,
     "zdroj": null,
@@ -527,7 +1032,17 @@
         "text": "Most přes rybník Vítek v k. ú. Stará Hlína (zpracování PD).",
         "datum": "2025-08-15",
         "ico": "00247618",
-        "url": "https://smlouvy.gov.cz/smlouva/34457265"
+        "url": "https://smlouvy.gov.cz/smlouva/34457265",
+        "cena": {
+          "s_dph": 479160.0,
+          "bez_dph": 396000.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"479160\"",
+            "\"hodnotaBezDph\": \"396000\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false
       },
       "jistota": "dolozeno"
     },
@@ -539,10 +1054,43 @@
         "datum": "2025-08-15",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/34457265",
+        "cena": {
+          "s_dph": 479160.0,
+          "bez_dph": 396000.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"479160\"",
+            "\"hodnotaBezDph\": \"396000\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       }
     ],
+    "cena_pripravy": {
+      "druh": "smluvni",
+      "smlouvy": {
+        "s_dph": 479160.0,
+        "bez_dph": null,
+        "pocet": 1
+      },
+      "dodatky": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0
+      },
+      "zaplaceno": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0,
+        "druh": "zaplaceno"
+      },
+      "bez_ceny": 0,
+      "jistota": "nase_propojeni"
+    },
     "prvni_doklad": "2025-08-15",
     "odhad": null,
     "zdroj": null,
@@ -572,7 +1120,17 @@
         "text": "Zpracování PD ve stupni pro povolení záměru a provedení stavby Táboritská ulice - propojení stezky pro chodce a cyklisty mezi okružní křižovatkou a ulicí Jablonského v Třeboni.",
         "datum": "2026-02-02",
         "ico": "00247618",
-        "url": "https://smlouvy.gov.cz/smlouva/36631737"
+        "url": "https://smlouvy.gov.cz/smlouva/36631737",
+        "cena": {
+          "s_dph": 165286.0,
+          "bez_dph": 136600.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"165286\"",
+            "\"hodnotaBezDph\": \"136600\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false
       },
       "jistota": "dolozeno"
     },
@@ -584,6 +1142,18 @@
         "datum": "2025-06-03",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/33547760",
+        "cena": {
+          "s_dph": 118580.0,
+          "bez_dph": 98000.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"118580\"",
+            "\"hodnotaBezDph\": \"98000\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       },
@@ -594,10 +1164,43 @@
         "datum": "2026-02-02",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/36631737",
+        "cena": {
+          "s_dph": 165286.0,
+          "bez_dph": 136600.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"165286\"",
+            "\"hodnotaBezDph\": \"136600\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt_provadeci",
         "jistota": "nase_propojeni"
       }
     ],
+    "cena_pripravy": {
+      "druh": "smluvni",
+      "smlouvy": {
+        "s_dph": 283866.0,
+        "bez_dph": null,
+        "pocet": 2
+      },
+      "dodatky": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0
+      },
+      "zaplaceno": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0,
+        "druh": "zaplaceno"
+      },
+      "bez_ceny": 0,
+      "jistota": "nase_propojeni"
+    },
     "prvni_doklad": "2025-06-03",
     "odhad": null,
     "zdroj": null,
@@ -627,7 +1230,17 @@
         "text": "Účelová komunikace k domu Táboritská 670 a 1049 v Třeboni - zpracování PD",
         "datum": "2025-04-23",
         "ico": "00247618",
-        "url": "https://smlouvy.gov.cz/smlouva/33011944"
+        "url": "https://smlouvy.gov.cz/smlouva/33011944",
+        "cena": {
+          "s_dph": 359975.0,
+          "bez_dph": 297500.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"359975\"",
+            "\"hodnotaBezDph\": \"297500\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false
       },
       "jistota": "dolozeno"
     },
@@ -639,10 +1252,43 @@
         "datum": "2025-04-23",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/33011944",
+        "cena": {
+          "s_dph": 359975.0,
+          "bez_dph": 297500.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"359975\"",
+            "\"hodnotaBezDph\": \"297500\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       }
     ],
+    "cena_pripravy": {
+      "druh": "smluvni",
+      "smlouvy": {
+        "s_dph": 359975.0,
+        "bez_dph": null,
+        "pocet": 1
+      },
+      "dodatky": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0
+      },
+      "zaplaceno": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0,
+        "druh": "zaplaceno"
+      },
+      "bez_ceny": 0,
+      "jistota": "nase_propojeni"
+    },
     "prvni_doklad": "2025-04-23",
     "odhad": null,
     "zdroj": null,
@@ -672,7 +1318,17 @@
         "text": "Zpracování studie podchodu pod silnicí I/34 v Třeboni včetně geodetického zaměření zájmového území a provedení předběžného inženýrsko-geologického průzkumu.",
         "datum": "2026-10-29",
         "ico": "00247618",
-        "url": "https://smlouvy.gov.cz/smlouva/40133385"
+        "url": "https://smlouvy.gov.cz/smlouva/40133385",
+        "cena": {
+          "s_dph": 471900.0,
+          "bez_dph": 390000.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"471900\"",
+            "\"hodnotaBezDph\": \"390000\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false
       },
       "jistota": "dolozeno"
     },
@@ -684,10 +1340,43 @@
         "datum": "2026-10-29",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/40133385",
+        "cena": {
+          "s_dph": 471900.0,
+          "bez_dph": 390000.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"471900\"",
+            "\"hodnotaBezDph\": \"390000\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "studie",
         "jistota": "nase_propojeni"
       }
     ],
+    "cena_pripravy": {
+      "druh": "smluvni",
+      "smlouvy": {
+        "s_dph": 471900.0,
+        "bez_dph": null,
+        "pocet": 1
+      },
+      "dodatky": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0
+      },
+      "zaplaceno": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0,
+        "druh": "zaplaceno"
+      },
+      "bez_ceny": 0,
+      "jistota": "nase_propojeni"
+    },
     "prvni_doklad": "2026-10-29",
     "odhad": null,
     "zdroj": null,
@@ -717,7 +1406,17 @@
         "text": "Zpracování PD Chodník z parkoviště v ul. Sportovní do ulice Svobody včetně inženýrské činnosti, zajištění povolení záměru, soupisu prací a položkového rozpočtu.",
         "datum": "2026-06-09",
         "ico": "00247618",
-        "url": "https://smlouvy.gov.cz/smlouva/38314861"
+        "url": "https://smlouvy.gov.cz/smlouva/38314861",
+        "cena": {
+          "s_dph": 159720.0,
+          "bez_dph": 132000.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"159720\"",
+            "\"hodnotaBezDph\": \"132000\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false
       },
       "jistota": "dolozeno"
     },
@@ -729,10 +1428,43 @@
         "datum": "2026-06-09",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/38314861",
+        "cena": {
+          "s_dph": 159720.0,
+          "bez_dph": 132000.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"159720\"",
+            "\"hodnotaBezDph\": \"132000\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       }
     ],
+    "cena_pripravy": {
+      "druh": "smluvni",
+      "smlouvy": {
+        "s_dph": 159720.0,
+        "bez_dph": null,
+        "pocet": 1
+      },
+      "dodatky": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0
+      },
+      "zaplaceno": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0,
+        "druh": "zaplaceno"
+      },
+      "bez_ceny": 0,
+      "jistota": "nase_propojeni"
+    },
     "prvni_doklad": "2026-06-09",
     "odhad": null,
     "zdroj": null,
@@ -780,7 +1512,17 @@
         "text": "Objednávka - projektová dokumentace Rekonstrukce VDJ",
         "datum": "2026-08-21",
         "ico": "28136853",
-        "url": "https://smlouvy.gov.cz/smlouva/39238778"
+        "url": "https://smlouvy.gov.cz/smlouva/39238778",
+        "cena": {
+          "s_dph": 477950.0,
+          "bez_dph": 395000.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"477950\"",
+            "\"hodnotaBezDph\": \"395000\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false
       },
       "jistota": "dolozeno"
     },
@@ -792,6 +1534,18 @@
         "datum": "2026-08-20",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/39202010",
+        "cena": {
+          "s_dph": 477950.0,
+          "bez_dph": 395000.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"477950\"",
+            "\"hodnotaBezDph\": \"395000\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       },
@@ -802,10 +1556,43 @@
         "datum": "2026-08-21",
         "ico": "28136853",
         "url": "https://smlouvy.gov.cz/smlouva/39238778",
+        "cena": {
+          "s_dph": 477950.0,
+          "bez_dph": 395000.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"477950\"",
+            "\"hodnotaBezDph\": \"395000\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": false,
+        "nezapocteno": "stejná cena jako smlouva rs-39202010 (do 60 dnů)",
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       }
     ],
+    "cena_pripravy": {
+      "druh": "smluvni",
+      "smlouvy": {
+        "s_dph": 477950.0,
+        "bez_dph": null,
+        "pocet": 1
+      },
+      "dodatky": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0
+      },
+      "zaplaceno": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0,
+        "druh": "zaplaceno"
+      },
+      "bez_ceny": 0,
+      "jistota": "nase_propojeni"
+    },
     "prvni_doklad": "2026-08-20",
     "odhad": null,
     "zdroj": null,
@@ -835,7 +1622,16 @@
         "text": "PD- úprava jednotné kanalizace ul. Táboritská",
         "datum": "2026-09-03",
         "ico": "00247618",
-        "url": "https://smlouvy.gov.cz/smlouva/39398801"
+        "url": "https://smlouvy.gov.cz/smlouva/39398801",
+        "cena": {
+          "s_dph": 54000.0,
+          "bez_dph": null,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"54000\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false
       },
       "jistota": "dolozeno"
     },
@@ -847,10 +1643,42 @@
         "datum": "2026-09-03",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/39398801",
+        "cena": {
+          "s_dph": 54000.0,
+          "bez_dph": null,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"54000\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       }
     ],
+    "cena_pripravy": {
+      "druh": "smluvni",
+      "smlouvy": {
+        "s_dph": 54000.0,
+        "bez_dph": null,
+        "pocet": 1
+      },
+      "dodatky": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0
+      },
+      "zaplaceno": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0,
+        "druh": "zaplaceno"
+      },
+      "bez_ceny": 0,
+      "jistota": "nase_propojeni"
+    },
     "prvni_doklad": "2026-09-03",
     "odhad": null,
     "zdroj": null,
@@ -894,7 +1722,17 @@
         "text": "Zpracování drojektové dokumentace - Páteřní dešťová kanalizace v úseku Nový Dvůr - Jablonského, Třeboň",
         "datum": "2026-08-03",
         "ico": "00247618",
-        "url": "https://smlouvy.gov.cz/smlouva/38983178"
+        "url": "https://smlouvy.gov.cz/smlouva/38983178",
+        "cena": {
+          "s_dph": 788920.0,
+          "bez_dph": 652000.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"788920\"",
+            "\"hodnotaBezDph\": \"652000\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false
       },
       "jistota": "dolozeno"
     },
@@ -906,6 +1744,18 @@
         "datum": "2026-06-25",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/38530380",
+        "cena": {
+          "s_dph": 155267.5,
+          "bez_dph": 134200.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"155267.5\"",
+            "\"hodnotaBezDph\": \"134200\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       },
@@ -916,10 +1766,43 @@
         "datum": "2026-08-03",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/38983178",
+        "cena": {
+          "s_dph": 788920.0,
+          "bez_dph": 652000.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"788920\"",
+            "\"hodnotaBezDph\": \"652000\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       }
     ],
+    "cena_pripravy": {
+      "druh": "smluvni",
+      "smlouvy": {
+        "s_dph": 944187.5,
+        "bez_dph": null,
+        "pocet": 2
+      },
+      "dodatky": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0
+      },
+      "zaplaceno": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0,
+        "druh": "zaplaceno"
+      },
+      "bez_ceny": 0,
+      "jistota": "nase_propojeni"
+    },
     "prvni_doklad": "2026-06-25",
     "odhad": null,
     "zdroj": null,
@@ -963,7 +1846,17 @@
         "text": "Předprojektová příprava - obnova stávajících šachet a potrubí kanalizace pod pivovarem, Třeboň",
         "datum": "2025-07-04",
         "ico": "00247618",
-        "url": "https://smlouvy.gov.cz/smlouva/33970217"
+        "url": "https://smlouvy.gov.cz/smlouva/33970217",
+        "cena": {
+          "s_dph": 136632.14,
+          "bez_dph": 118738.69,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"136632.14\"",
+            "\"hodnotaBezDph\": \"118738.69\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false
       },
       "jistota": "dolozeno"
     },
@@ -975,10 +1868,43 @@
         "datum": "2025-07-04",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/33970217",
+        "cena": {
+          "s_dph": 136632.14,
+          "bez_dph": 118738.69,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"136632.14\"",
+            "\"hodnotaBezDph\": \"118738.69\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       }
     ],
+    "cena_pripravy": {
+      "druh": "smluvni",
+      "smlouvy": {
+        "s_dph": 136632.14,
+        "bez_dph": null,
+        "pocet": 1
+      },
+      "dodatky": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0
+      },
+      "zaplaceno": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0,
+        "druh": "zaplaceno"
+      },
+      "bez_ceny": 0,
+      "jistota": "nase_propojeni"
+    },
     "prvni_doklad": "2025-07-04",
     "odhad": null,
     "zdroj": null,
@@ -1022,7 +1948,17 @@
         "text": "Studie odvodu dešťových vod v Břilicích",
         "datum": "2025-02-14",
         "ico": "00247618",
-        "url": "https://smlouvy.gov.cz/smlouva/32169484"
+        "url": "https://smlouvy.gov.cz/smlouva/32169484",
+        "cena": {
+          "s_dph": 244420.0,
+          "bez_dph": 202000.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"244420\"",
+            "\"hodnotaBezDph\": \"202000\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false
       },
       "jistota": "dolozeno"
     },
@@ -1034,10 +1970,43 @@
         "datum": "2025-02-14",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/32169484",
+        "cena": {
+          "s_dph": 244420.0,
+          "bez_dph": 202000.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"244420\"",
+            "\"hodnotaBezDph\": \"202000\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "studie",
         "jistota": "nase_propojeni"
       }
     ],
+    "cena_pripravy": {
+      "druh": "smluvni",
+      "smlouvy": {
+        "s_dph": 244420.0,
+        "bez_dph": null,
+        "pocet": 1
+      },
+      "dodatky": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0
+      },
+      "zaplaceno": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0,
+        "druh": "zaplaceno"
+      },
+      "bez_ceny": 0,
+      "jistota": "nase_propojeni"
+    },
     "prvni_doklad": "2025-02-14",
     "odhad": null,
     "zdroj": null,
@@ -1067,7 +2036,17 @@
         "text": "Volnočasové sportoviště ve SA Hliník - DSP/DPS a výkaz výměr - rozpočet.",
         "datum": "2026-09-07",
         "ico": "00247618",
-        "url": "https://smlouvy.gov.cz/smlouva/39460817"
+        "url": "https://smlouvy.gov.cz/smlouva/39460817",
+        "cena": {
+          "s_dph": 217485.0,
+          "bez_dph": 179740.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"217485\"",
+            "\"hodnotaBezDph\": \"179740\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false
       },
       "jistota": "dolozeno"
     },
@@ -1079,10 +2058,43 @@
         "datum": "2026-09-07",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/39460817",
+        "cena": {
+          "s_dph": 217485.0,
+          "bez_dph": 179740.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"217485\"",
+            "\"hodnotaBezDph\": \"179740\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt_provadeci",
         "jistota": "nase_propojeni"
       }
     ],
+    "cena_pripravy": {
+      "druh": "smluvni",
+      "smlouvy": {
+        "s_dph": 217485.0,
+        "bez_dph": null,
+        "pocet": 1
+      },
+      "dodatky": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0
+      },
+      "zaplaceno": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0,
+        "druh": "zaplaceno"
+      },
+      "bez_ceny": 0,
+      "jistota": "nase_propojeni"
+    },
     "prvni_doklad": "2026-09-07",
     "odhad": null,
     "zdroj": null,
@@ -1112,7 +2124,17 @@
         "text": "PD sportovní hala Třeboň - specializované činnosti projektanta pro vypracování PD ve stupních DSP, DZS a DPS.",
         "datum": "2025-12-04",
         "ico": "00247618",
-        "url": "https://smlouvy.gov.cz/smlouva/35901953"
+        "url": "https://smlouvy.gov.cz/smlouva/35901953",
+        "cena": {
+          "s_dph": 175450.0,
+          "bez_dph": 145000.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"175450\"",
+            "\"hodnotaBezDph\": \"145000\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false
       },
       "jistota": "dolozeno"
     },
@@ -1124,6 +2146,18 @@
         "datum": "2024-11-28",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/31186248",
+        "cena": {
+          "s_dph": 517275.0,
+          "bez_dph": 427500.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"517275\"",
+            "\"hodnotaBezDph\": \"427500\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       },
@@ -1134,6 +2168,18 @@
         "datum": "2025-12-04",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/35901953",
+        "cena": {
+          "s_dph": 175450.0,
+          "bez_dph": 145000.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"175450\"",
+            "\"hodnotaBezDph\": \"145000\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt_provadeci",
         "jistota": "nase_propojeni"
       },
@@ -1144,10 +2190,43 @@
         "datum": "2025-12-04",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/35902245",
+        "cena": {
+          "s_dph": 157300.0,
+          "bez_dph": 130000.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"157300\"",
+            "\"hodnotaBezDph\": \"130000\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       }
     ],
+    "cena_pripravy": {
+      "druh": "smluvni",
+      "smlouvy": {
+        "s_dph": 850025.0,
+        "bez_dph": null,
+        "pocet": 3
+      },
+      "dodatky": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0
+      },
+      "zaplaceno": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0,
+        "druh": "zaplaceno"
+      },
+      "bez_ceny": 0,
+      "jistota": "nase_propojeni"
+    },
     "prvni_doklad": "2024-11-28",
     "odhad": null,
     "zdroj": null,
@@ -1185,7 +2264,17 @@
         "text": "Stavební úpravy fotbalových kabin v Břilicích - sever - DSP-DZS, IS,výkaz výměr, rozpočet.",
         "datum": "2025-01-31",
         "ico": "00247618",
-        "url": "https://smlouvy.gov.cz/smlouva/31982392"
+        "url": "https://smlouvy.gov.cz/smlouva/31982392",
+        "cena": {
+          "s_dph": 149798.0,
+          "bez_dph": 123800.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"149798\"",
+            "\"hodnotaBezDph\": \"123800\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false
       },
       "jistota": "dolozeno"
     },
@@ -1197,10 +2286,43 @@
         "datum": "2025-01-31",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/31982392",
+        "cena": {
+          "s_dph": 149798.0,
+          "bez_dph": 123800.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"149798\"",
+            "\"hodnotaBezDph\": \"123800\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt_povoleni",
         "jistota": "nase_propojeni"
       }
     ],
+    "cena_pripravy": {
+      "druh": "smluvni",
+      "smlouvy": {
+        "s_dph": 149798.0,
+        "bez_dph": null,
+        "pocet": 1
+      },
+      "dodatky": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0
+      },
+      "zaplaceno": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0,
+        "druh": "zaplaceno"
+      },
+      "bez_ceny": 0,
+      "jistota": "nase_propojeni"
+    },
     "prvni_doklad": "2025-01-31",
     "odhad": null,
     "zdroj": null,
@@ -1230,7 +2352,17 @@
         "text": "Vypracování DVZ/ DPS, vč. položkového rozpočtu na stavbu SÚ hygienického zázemí pro diváky v divadle J. K. Tyla.",
         "datum": "2026-05-15",
         "ico": "00247618",
-        "url": "https://smlouvy.gov.cz/smlouva/37981845"
+        "url": "https://smlouvy.gov.cz/smlouva/37981845",
+        "cena": {
+          "s_dph": 66914.0,
+          "bez_dph": 55300.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"66914\"",
+            "\"hodnotaBezDph\": \"55300\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false
       },
       "jistota": "dolozeno"
     },
@@ -1242,10 +2374,43 @@
         "datum": "2026-05-15",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/37981845",
+        "cena": {
+          "s_dph": 66914.0,
+          "bez_dph": 55300.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"66914\"",
+            "\"hodnotaBezDph\": \"55300\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt_provadeci",
         "jistota": "nase_propojeni"
       }
     ],
+    "cena_pripravy": {
+      "druh": "smluvni",
+      "smlouvy": {
+        "s_dph": 66914.0,
+        "bez_dph": null,
+        "pocet": 1
+      },
+      "dodatky": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0
+      },
+      "zaplaceno": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0,
+        "druh": "zaplaceno"
+      },
+      "bez_ceny": 0,
+      "jistota": "nase_propojeni"
+    },
     "prvni_doklad": "2026-05-15",
     "odhad": null,
     "zdroj": null,
@@ -1275,7 +2440,17 @@
         "text": "DPS Oprava radniční věže č.p. 1/I v Třeboni, výkaz výměr a položkový rozpočet.",
         "datum": "2026-11-10",
         "ico": "00247618",
-        "url": "https://smlouvy.gov.cz/smlouva/40426169"
+        "url": "https://smlouvy.gov.cz/smlouva/40426169",
+        "cena": {
+          "s_dph": 81675.0,
+          "bez_dph": 67500.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"81675\"",
+            "\"hodnotaBezDph\": \"67500\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false
       },
       "jistota": "dolozeno"
     },
@@ -1287,6 +2462,18 @@
         "datum": "2025-03-31",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/32810536",
+        "cena": {
+          "s_dph": 232014.0,
+          "bez_dph": 191747.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"232014\"",
+            "\"hodnotaBezDph\": \"191747\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt_provadeci",
         "jistota": "nase_propojeni"
       },
@@ -1297,10 +2484,43 @@
         "datum": "2026-11-10",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/40426169",
+        "cena": {
+          "s_dph": 81675.0,
+          "bez_dph": 67500.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"81675\"",
+            "\"hodnotaBezDph\": \"67500\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt_provadeci",
         "jistota": "nase_propojeni"
       }
     ],
+    "cena_pripravy": {
+      "druh": "smluvni",
+      "smlouvy": {
+        "s_dph": 313689.0,
+        "bez_dph": null,
+        "pocet": 2
+      },
+      "dodatky": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0
+      },
+      "zaplaceno": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0,
+        "druh": "zaplaceno"
+      },
+      "bez_ceny": 0,
+      "jistota": "nase_propojeni"
+    },
     "prvni_doklad": "2025-03-31",
     "odhad": null,
     "zdroj": null,
@@ -1330,7 +2550,17 @@
         "text": "Vypracování DPS \"Stavební úpravy části objektu KZ Branná na prodejnu smíšeného zboží\". vč. VV, rozpočtu a činnosti IS.",
         "datum": "2026-04-27",
         "ico": "00247618",
-        "url": "https://smlouvy.gov.cz/smlouva/37740053"
+        "url": "https://smlouvy.gov.cz/smlouva/37740053",
+        "cena": {
+          "s_dph": 100430.0,
+          "bez_dph": 83000.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"100430\"",
+            "\"hodnotaBezDph\": \"83000\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false
       },
       "jistota": "dolozeno"
     },
@@ -1342,10 +2572,43 @@
         "datum": "2026-04-27",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/37740053",
+        "cena": {
+          "s_dph": 100430.0,
+          "bez_dph": 83000.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"100430\"",
+            "\"hodnotaBezDph\": \"83000\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt_provadeci",
         "jistota": "nase_propojeni"
       }
     ],
+    "cena_pripravy": {
+      "druh": "smluvni",
+      "smlouvy": {
+        "s_dph": 100430.0,
+        "bez_dph": null,
+        "pocet": 1
+      },
+      "dodatky": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0
+      },
+      "zaplaceno": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0,
+        "druh": "zaplaceno"
+      },
+      "bez_ceny": 0,
+      "jistota": "nase_propojeni"
+    },
     "prvni_doklad": "2026-04-27",
     "odhad": null,
     "zdroj": null,
@@ -1375,7 +2638,17 @@
         "text": "Zpracování PD Stavebních úprav kotelen a výměny plynových kotlů v objektu DPS IA a DPS IC, Chelčického 1, Třeboň",
         "datum": "2026-02-02",
         "ico": "00247618",
-        "url": "https://smlouvy.gov.cz/smlouva/36642205"
+        "url": "https://smlouvy.gov.cz/smlouva/36642205",
+        "cena": {
+          "s_dph": 143990.0,
+          "bez_dph": 119000.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"143990\"",
+            "\"hodnotaBezDph\": \"119000\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false
       },
       "jistota": "dolozeno"
     },
@@ -1387,10 +2660,43 @@
         "datum": "2026-02-02",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/36642205",
+        "cena": {
+          "s_dph": 143990.0,
+          "bez_dph": 119000.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"143990\"",
+            "\"hodnotaBezDph\": \"119000\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       }
     ],
+    "cena_pripravy": {
+      "druh": "smluvni",
+      "smlouvy": {
+        "s_dph": 143990.0,
+        "bez_dph": null,
+        "pocet": 1
+      },
+      "dodatky": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0
+      },
+      "zaplaceno": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0,
+        "druh": "zaplaceno"
+      },
+      "bez_ceny": 0,
+      "jistota": "nase_propojeni"
+    },
     "prvni_doklad": "2026-02-02",
     "odhad": null,
     "zdroj": null,
@@ -1420,7 +2726,26 @@
         "text": "Zpracování projektové dokumentace – Novostavba městského bytového domu v ul. Lázeňská na p. č. 1087/17 v obci a k. ú. Třeboň",
         "datum": "2023-07-21",
         "ico": "00247618",
-        "url": "https://zakazky.mesto-trebon.cz/contract_display_642.html"
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_642.html",
+        "cena": {
+          "s_dph": 875000.0,
+          "bez_dph": 875000.0,
+          "citace": [
+            "<smluvni_cena_s_DPH>875000.00</smluvni_cena_s_DPH>",
+            "<smluvni_cena_bez_DPH>875000.00</smluvni_cena_bez_DPH>"
+          ]
+        },
+        "zaplaceno": {
+          "s_dph": 432500.0,
+          "bez_dph": 432500.0,
+          "citace": [
+            "<cena_za_rok_s_dph>86500.00</cena_za_rok_s_dph>",
+            "<cena_za_rok_s_dph>346000.00</cena_za_rok_s_dph>",
+            "<cena_za_rok_bez_dph>86500.00</cena_za_rok_bez_dph>",
+            "<cena_za_rok_bez_dph>346000.00</cena_za_rok_bez_dph>"
+          ]
+        },
+        "dodatek": false
       },
       "jistota": "dolozeno"
     },
@@ -1432,10 +2757,52 @@
         "datum": "2023-07-21",
         "ico": "00247618",
         "url": "https://zakazky.mesto-trebon.cz/contract_display_642.html",
+        "cena": {
+          "s_dph": 875000.0,
+          "bez_dph": 875000.0,
+          "citace": [
+            "<smluvni_cena_s_DPH>875000.00</smluvni_cena_s_DPH>",
+            "<smluvni_cena_bez_DPH>875000.00</smluvni_cena_bez_DPH>"
+          ]
+        },
+        "zaplaceno": {
+          "s_dph": 432500.0,
+          "bez_dph": 432500.0,
+          "citace": [
+            "<cena_za_rok_s_dph>86500.00</cena_za_rok_s_dph>",
+            "<cena_za_rok_s_dph>346000.00</cena_za_rok_s_dph>",
+            "<cena_za_rok_bez_dph>86500.00</cena_za_rok_bez_dph>",
+            "<cena_za_rok_bez_dph>346000.00</cena_za_rok_bez_dph>"
+          ]
+        },
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       }
     ],
+    "cena_pripravy": {
+      "druh": "smluvni",
+      "smlouvy": {
+        "s_dph": 875000.0,
+        "bez_dph": null,
+        "pocet": 1
+      },
+      "dodatky": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0
+      },
+      "zaplaceno": {
+        "s_dph": 432500.0,
+        "bez_dph": null,
+        "pocet": 1,
+        "druh": "zaplaceno"
+      },
+      "bez_ceny": 0,
+      "jistota": "nase_propojeni"
+    },
     "prvni_doklad": "2023-07-21",
     "odhad": null,
     "zdroj": null,
@@ -1465,7 +2832,16 @@
         "text": "Smlouva o dílo - Zhotovení PD, příkazní činnosti a výkon AD pro Modernizaci objektu B LDA",
         "datum": "2026-08-04",
         "ico": "25179896",
-        "url": "https://smlouvy.gov.cz/smlouva/39002054"
+        "url": "https://smlouvy.gov.cz/smlouva/39002054",
+        "cena": {
+          "s_dph": null,
+          "bez_dph": 4195000.0,
+          "citace": [
+            "\"hodnotaBezDph\": \"4195000\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false
       },
       "jistota": "dolozeno"
     },
@@ -1477,6 +2853,18 @@
         "datum": "2026-05-06",
         "ico": "25179896",
         "url": "https://zakazky.mesto-trebon.cz/contract_display_940.html",
+        "cena": {
+          "s_dph": 5075950.0,
+          "bez_dph": 4195000.0,
+          "citace": [
+            "<smluvni_cena_s_DPH>5075950.00</smluvni_cena_s_DPH>",
+            "<smluvni_cena_bez_DPH>4195000.00</smluvni_cena_bez_DPH>"
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": false,
+        "nezapocteno": "stejná cena jako smlouva rs-39002054",
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       },
@@ -1487,10 +2875,42 @@
         "datum": "2026-08-04",
         "ico": "25179896",
         "url": "https://smlouvy.gov.cz/smlouva/39002054",
+        "cena": {
+          "s_dph": null,
+          "bez_dph": 4195000.0,
+          "citace": [
+            "\"hodnotaBezDph\": \"4195000\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       }
     ],
+    "cena_pripravy": {
+      "druh": "smluvni",
+      "smlouvy": {
+        "s_dph": null,
+        "bez_dph": 4195000.0,
+        "pocet": 1
+      },
+      "dodatky": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0
+      },
+      "zaplaceno": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0,
+        "druh": "zaplaceno"
+      },
+      "bez_ceny": 0,
+      "jistota": "nase_propojeni"
+    },
     "prvni_doklad": "2026-05-06",
     "odhad": null,
     "zdroj": null,
@@ -1520,7 +2940,16 @@
         "text": "Smlouva o dílo - Zhotov.PD, příkaz.činnosti a výkon AD pro přesun ordinací na 1. NP objektů D až E LDA",
         "datum": "2026-11-18",
         "ico": "25179896",
-        "url": "https://smlouvy.gov.cz/smlouva/40408421"
+        "url": "https://smlouvy.gov.cz/smlouva/40408421",
+        "cena": {
+          "s_dph": null,
+          "bez_dph": 985500.0,
+          "citace": [
+            "\"hodnotaBezDph\": \"985500\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false
       },
       "jistota": "dolozeno"
     },
@@ -1532,6 +2961,18 @@
         "datum": "2026-10-19",
         "ico": "25179896",
         "url": "https://zakazky.mesto-trebon.cz/contract_display_964.html",
+        "cena": {
+          "s_dph": 985500.0,
+          "bez_dph": 985500.0,
+          "citace": [
+            "<smluvni_cena_s_DPH>985500.00</smluvni_cena_s_DPH>",
+            "<smluvni_cena_bez_DPH>985500.00</smluvni_cena_bez_DPH>"
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": false,
+        "nezapocteno": "stejná cena jako smlouva rs-40408421",
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       },
@@ -1542,10 +2983,42 @@
         "datum": "2026-11-18",
         "ico": "25179896",
         "url": "https://smlouvy.gov.cz/smlouva/40408421",
+        "cena": {
+          "s_dph": null,
+          "bez_dph": 985500.0,
+          "citace": [
+            "\"hodnotaBezDph\": \"985500\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       }
     ],
+    "cena_pripravy": {
+      "druh": "smluvni",
+      "smlouvy": {
+        "s_dph": null,
+        "bez_dph": 985500.0,
+        "pocet": 1
+      },
+      "dodatky": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0
+      },
+      "zaplaceno": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0,
+        "druh": "zaplaceno"
+      },
+      "bez_ceny": 0,
+      "jistota": "nase_propojeni"
+    },
     "prvni_doklad": "2026-10-19",
     "odhad": null,
     "zdroj": null,
@@ -1575,7 +3048,16 @@
         "text": "Smlouva o dílo - Zhotov.PD, příkaz.činnost a výkon AD pro přemístění provozu rest.LDA",
         "datum": "2025-11-11",
         "ico": "25179896",
-        "url": "https://smlouvy.gov.cz/smlouva/35578073"
+        "url": "https://smlouvy.gov.cz/smlouva/35578073",
+        "cena": {
+          "s_dph": null,
+          "bez_dph": 3998500.0,
+          "citace": [
+            "\"hodnotaBezDph\": \"3998500\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false
       },
       "jistota": "dolozeno"
     },
@@ -1587,6 +3069,17 @@
         "datum": "2024-04-16",
         "ico": "25179896",
         "url": "https://smlouvy.gov.cz/smlouva/28361767",
+        "cena": {
+          "s_dph": null,
+          "bez_dph": 186500.0,
+          "citace": [
+            "\"hodnotaBezDph\": \"186500\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "studie",
         "jistota": "nase_propojeni"
       },
@@ -1597,6 +3090,25 @@
         "datum": "2024-04-17",
         "ico": "25179896",
         "url": "https://zakazky.mesto-trebon.cz/contract_display_732.html",
+        "cena": {
+          "s_dph": 225665.0,
+          "bez_dph": 186500.0,
+          "citace": [
+            "<smluvni_cena_s_DPH>225665.00</smluvni_cena_s_DPH>",
+            "<smluvni_cena_bez_DPH>186500.00</smluvni_cena_bez_DPH>"
+          ]
+        },
+        "zaplaceno": {
+          "s_dph": 225665.0,
+          "bez_dph": 186500.0,
+          "citace": [
+            "<cena_za_rok_s_dph>225665.00</cena_za_rok_s_dph>",
+            "<cena_za_rok_bez_dph>186500.00</cena_za_rok_bez_dph>"
+          ]
+        },
+        "dodatek": false,
+        "zapocteno": false,
+        "nezapocteno": "stejná cena jako smlouva rs-28361767",
         "stupen": "studie",
         "jistota": "nase_propojeni"
       },
@@ -1607,6 +3119,18 @@
         "datum": "2025-09-04",
         "ico": "25179896",
         "url": "https://zakazky.mesto-trebon.cz/contract_display_884.html",
+        "cena": {
+          "s_dph": 4838185.0,
+          "bez_dph": 3998500.0,
+          "citace": [
+            "<smluvni_cena_s_DPH>4838185.00</smluvni_cena_s_DPH>",
+            "<smluvni_cena_bez_DPH>3998500.00</smluvni_cena_bez_DPH>"
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": false,
+        "nezapocteno": "stejná cena jako smlouva rs-35578073",
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       },
@@ -1617,10 +3141,42 @@
         "datum": "2025-11-11",
         "ico": "25179896",
         "url": "https://smlouvy.gov.cz/smlouva/35578073",
+        "cena": {
+          "s_dph": null,
+          "bez_dph": 3998500.0,
+          "citace": [
+            "\"hodnotaBezDph\": \"3998500\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       }
     ],
+    "cena_pripravy": {
+      "druh": "smluvni",
+      "smlouvy": {
+        "s_dph": null,
+        "bez_dph": 4185000.0,
+        "pocet": 2
+      },
+      "dodatky": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0
+      },
+      "zaplaceno": {
+        "s_dph": 225665.0,
+        "bez_dph": null,
+        "pocet": 1,
+        "druh": "zaplaceno"
+      },
+      "bez_ceny": 0,
+      "jistota": "nase_propojeni"
+    },
     "prvni_doklad": "2024-04-16",
     "odhad": null,
     "zdroj": null,
@@ -1650,7 +3206,16 @@
         "text": "Objednávka KAPACITNÍ STUDIE na zřízení odborně léčebného ústavu (OLÚ)",
         "datum": "2026-10-12",
         "ico": "25179896",
-        "url": "https://smlouvy.gov.cz/smlouva/40024397"
+        "url": "https://smlouvy.gov.cz/smlouva/40024397",
+        "cena": {
+          "s_dph": null,
+          "bez_dph": 97500.0,
+          "citace": [
+            "\"hodnotaBezDph\": \"97500\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false
       },
       "jistota": "dolozeno"
     },
@@ -1662,10 +3227,42 @@
         "datum": "2026-10-12",
         "ico": "25179896",
         "url": "https://smlouvy.gov.cz/smlouva/40024397",
+        "cena": {
+          "s_dph": null,
+          "bez_dph": 97500.0,
+          "citace": [
+            "\"hodnotaBezDph\": \"97500\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "studie",
         "jistota": "nase_propojeni"
       }
     ],
+    "cena_pripravy": {
+      "druh": "smluvni",
+      "smlouvy": {
+        "s_dph": null,
+        "bez_dph": 97500.0,
+        "pocet": 1
+      },
+      "dodatky": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0
+      },
+      "zaplaceno": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0,
+        "druh": "zaplaceno"
+      },
+      "bez_ceny": 0,
+      "jistota": "nase_propojeni"
+    },
     "prvni_doklad": "2026-10-12",
     "odhad": null,
     "zdroj": null,
@@ -1695,7 +3292,16 @@
         "text": "Zpracování PD - Chodník v parku lázní Aurora v Třeboni",
         "datum": "2026-09-04",
         "ico": "00247618",
-        "url": "https://smlouvy.gov.cz/smlouva/39439905"
+        "url": "https://smlouvy.gov.cz/smlouva/39439905",
+        "cena": {
+          "s_dph": 192027.0,
+          "bez_dph": null,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"192027\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false
       },
       "jistota": "dolozeno"
     },
@@ -1707,10 +3313,42 @@
         "datum": "2026-09-04",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/39439905",
+        "cena": {
+          "s_dph": 192027.0,
+          "bez_dph": null,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"192027\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       }
     ],
+    "cena_pripravy": {
+      "druh": "smluvni",
+      "smlouvy": {
+        "s_dph": 192027.0,
+        "bez_dph": null,
+        "pocet": 1
+      },
+      "dodatky": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0
+      },
+      "zaplaceno": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0,
+        "druh": "zaplaceno"
+      },
+      "bez_ceny": 0,
+      "jistota": "nase_propojeni"
+    },
     "prvni_doklad": "2026-09-04",
     "odhad": null,
     "zdroj": null,
@@ -1754,7 +3392,16 @@
         "text": "Objednávka - projektová dokumentace - 2 kurty pro Padel - LDB",
         "datum": "2026-02-27",
         "ico": "25179896",
-        "url": "https://smlouvy.gov.cz/smlouva/37068121"
+        "url": "https://smlouvy.gov.cz/smlouva/37068121",
+        "cena": {
+          "s_dph": null,
+          "bez_dph": 230500.0,
+          "citace": [
+            "\"hodnotaBezDph\": \"230500\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false
       },
       "jistota": "dolozeno"
     },
@@ -1766,10 +3413,42 @@
         "datum": "2026-02-27",
         "ico": "25179896",
         "url": "https://smlouvy.gov.cz/smlouva/37068121",
+        "cena": {
+          "s_dph": null,
+          "bez_dph": 230500.0,
+          "citace": [
+            "\"hodnotaBezDph\": \"230500\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       }
     ],
+    "cena_pripravy": {
+      "druh": "smluvni",
+      "smlouvy": {
+        "s_dph": null,
+        "bez_dph": 230500.0,
+        "pocet": 1
+      },
+      "dodatky": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0
+      },
+      "zaplaceno": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0,
+        "druh": "zaplaceno"
+      },
+      "bez_ceny": 0,
+      "jistota": "nase_propojeni"
+    },
     "prvni_doklad": "2026-02-27",
     "odhad": null,
     "zdroj": null,
@@ -1799,7 +3478,26 @@
         "text": "Stavební úpravy MK v ul. Na Chmelnici a části ul. Vrchlického v Třeboni (PD)",
         "datum": "2024-01-04",
         "ico": "00247618",
-        "url": "https://zakazky.mesto-trebon.cz/contract_display_699.html"
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_699.html",
+        "cena": {
+          "s_dph": 843370.0,
+          "bez_dph": 697000.0,
+          "citace": [
+            "<smluvni_cena_s_DPH>843370.00</smluvni_cena_s_DPH>",
+            "<smluvni_cena_bez_DPH>697000.00</smluvni_cena_bez_DPH>"
+          ]
+        },
+        "zaplaceno": {
+          "s_dph": 827277.0,
+          "bez_dph": 683700.0,
+          "citace": [
+            "<cena_za_rok_s_dph>809490.00</cena_za_rok_s_dph>",
+            "<cena_za_rok_s_dph>17787.00</cena_za_rok_s_dph>",
+            "<cena_za_rok_bez_dph>669000.00</cena_za_rok_bez_dph>",
+            "<cena_za_rok_bez_dph>14700.00</cena_za_rok_bez_dph>"
+          ]
+        },
+        "dodatek": false
       },
       "jistota": "dolozeno"
     },
@@ -1811,10 +3509,52 @@
         "datum": "2024-01-04",
         "ico": "00247618",
         "url": "https://zakazky.mesto-trebon.cz/contract_display_699.html",
+        "cena": {
+          "s_dph": 843370.0,
+          "bez_dph": 697000.0,
+          "citace": [
+            "<smluvni_cena_s_DPH>843370.00</smluvni_cena_s_DPH>",
+            "<smluvni_cena_bez_DPH>697000.00</smluvni_cena_bez_DPH>"
+          ]
+        },
+        "zaplaceno": {
+          "s_dph": 827277.0,
+          "bez_dph": 683700.0,
+          "citace": [
+            "<cena_za_rok_s_dph>809490.00</cena_za_rok_s_dph>",
+            "<cena_za_rok_s_dph>17787.00</cena_za_rok_s_dph>",
+            "<cena_za_rok_bez_dph>669000.00</cena_za_rok_bez_dph>",
+            "<cena_za_rok_bez_dph>14700.00</cena_za_rok_bez_dph>"
+          ]
+        },
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       }
     ],
+    "cena_pripravy": {
+      "druh": "smluvni",
+      "smlouvy": {
+        "s_dph": 843370.0,
+        "bez_dph": null,
+        "pocet": 1
+      },
+      "dodatky": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0
+      },
+      "zaplaceno": {
+        "s_dph": 827277.0,
+        "bez_dph": null,
+        "pocet": 1,
+        "druh": "zaplaceno"
+      },
+      "bez_ceny": 0,
+      "jistota": "nase_propojeni"
+    },
     "prvni_doklad": "2024-01-04",
     "odhad": null,
     "zdroj": null,
@@ -1866,7 +3606,26 @@
         "text": "Stavební úpravy MK v ulici U sv. Petra a Pavla v Třeboni - 2. etapa (PD)",
         "datum": "2024-01-04",
         "ico": "00247618",
-        "url": "https://zakazky.mesto-trebon.cz/contract_display_696.html"
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_696.html",
+        "cena": {
+          "s_dph": 986150.0,
+          "bez_dph": 815000.0,
+          "citace": [
+            "<smluvni_cena_s_DPH>986150.00</smluvni_cena_s_DPH>",
+            "<smluvni_cena_bez_DPH>815000.00</smluvni_cena_bez_DPH>"
+          ]
+        },
+        "zaplaceno": {
+          "s_dph": 945494.0,
+          "bez_dph": 781400.0,
+          "citace": [
+            "<cena_za_rok_s_dph>93775.00</cena_za_rok_s_dph>",
+            "<cena_za_rok_s_dph>851719.00</cena_za_rok_s_dph>",
+            "<cena_za_rok_bez_dph>77500.00</cena_za_rok_bez_dph>",
+            "<cena_za_rok_bez_dph>703900.00</cena_za_rok_bez_dph>"
+          ]
+        },
+        "dodatek": false
       },
       "jistota": "dolozeno"
     },
@@ -1878,6 +3637,18 @@
         "datum": "2023-11-22",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/26582843",
+        "cena": {
+          "s_dph": 95832.0,
+          "bez_dph": 79200.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"95832\"",
+            "\"hodnotaBezDph\": \"79200\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       },
@@ -1888,6 +3659,27 @@
         "datum": "2024-01-04",
         "ico": "00247618",
         "url": "https://zakazky.mesto-trebon.cz/contract_display_695.html",
+        "cena": {
+          "s_dph": 619520.0,
+          "bez_dph": 512000.0,
+          "citace": [
+            "<smluvni_cena_s_DPH>619520.00</smluvni_cena_s_DPH>",
+            "<smluvni_cena_bez_DPH>512000.00</smluvni_cena_bez_DPH>"
+          ]
+        },
+        "zaplaceno": {
+          "s_dph": 610808.0,
+          "bez_dph": 504800.0,
+          "citace": [
+            "<cena_za_rok_s_dph>580800.00</cena_za_rok_s_dph>",
+            "<cena_za_rok_s_dph>30008.00</cena_za_rok_s_dph>",
+            "<cena_za_rok_bez_dph>480000.00</cena_za_rok_bez_dph>",
+            "<cena_za_rok_bez_dph>24800.00</cena_za_rok_bez_dph>"
+          ]
+        },
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       },
@@ -1898,10 +3690,52 @@
         "datum": "2024-01-04",
         "ico": "00247618",
         "url": "https://zakazky.mesto-trebon.cz/contract_display_696.html",
+        "cena": {
+          "s_dph": 986150.0,
+          "bez_dph": 815000.0,
+          "citace": [
+            "<smluvni_cena_s_DPH>986150.00</smluvni_cena_s_DPH>",
+            "<smluvni_cena_bez_DPH>815000.00</smluvni_cena_bez_DPH>"
+          ]
+        },
+        "zaplaceno": {
+          "s_dph": 945494.0,
+          "bez_dph": 781400.0,
+          "citace": [
+            "<cena_za_rok_s_dph>93775.00</cena_za_rok_s_dph>",
+            "<cena_za_rok_s_dph>851719.00</cena_za_rok_s_dph>",
+            "<cena_za_rok_bez_dph>77500.00</cena_za_rok_bez_dph>",
+            "<cena_za_rok_bez_dph>703900.00</cena_za_rok_bez_dph>"
+          ]
+        },
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       }
     ],
+    "cena_pripravy": {
+      "druh": "smluvni",
+      "smlouvy": {
+        "s_dph": 1701502.0,
+        "bez_dph": null,
+        "pocet": 3
+      },
+      "dodatky": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0
+      },
+      "zaplaceno": {
+        "s_dph": 1556302.0,
+        "bez_dph": null,
+        "pocet": 2,
+        "druh": "zaplaceno"
+      },
+      "bez_ceny": 0,
+      "jistota": "nase_propojeni"
+    },
     "prvni_doklad": "2023-11-22",
     "odhad": null,
     "zdroj": null,
@@ -1960,7 +3794,28 @@
         "text": "Zpracování projektové dokumentace – Stavební úpravy MK v ul. Šustova a 2. etapy ul. Polní v Třeboni",
         "datum": "2023-06-30",
         "ico": "00247618",
-        "url": "https://zakazky.mesto-trebon.cz/contract_display_639.html"
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_639.html",
+        "cena": {
+          "s_dph": 959530.0,
+          "bez_dph": 793000.0,
+          "citace": [
+            "<smluvni_cena_s_DPH>959530.00</smluvni_cena_s_DPH>",
+            "<smluvni_cena_bez_DPH>793000.00</smluvni_cena_bez_DPH>"
+          ]
+        },
+        "zaplaceno": {
+          "s_dph": 959530.0,
+          "bez_dph": 793000.0,
+          "citace": [
+            "<cena_za_rok_s_dph>470690.00</cena_za_rok_s_dph>",
+            "<cena_za_rok_s_dph>470690.00</cena_za_rok_s_dph>",
+            "<cena_za_rok_s_dph>18150.00</cena_za_rok_s_dph>",
+            "<cena_za_rok_bez_dph>389000.00</cena_za_rok_bez_dph>",
+            "<cena_za_rok_bez_dph>389000.00</cena_za_rok_bez_dph>",
+            "<cena_za_rok_bez_dph>15000.00</cena_za_rok_bez_dph>"
+          ]
+        },
+        "dodatek": false
       },
       "jistota": "dolozeno"
     },
@@ -1972,10 +3827,54 @@
         "datum": "2023-06-30",
         "ico": "00247618",
         "url": "https://zakazky.mesto-trebon.cz/contract_display_639.html",
+        "cena": {
+          "s_dph": 959530.0,
+          "bez_dph": 793000.0,
+          "citace": [
+            "<smluvni_cena_s_DPH>959530.00</smluvni_cena_s_DPH>",
+            "<smluvni_cena_bez_DPH>793000.00</smluvni_cena_bez_DPH>"
+          ]
+        },
+        "zaplaceno": {
+          "s_dph": 959530.0,
+          "bez_dph": 793000.0,
+          "citace": [
+            "<cena_za_rok_s_dph>470690.00</cena_za_rok_s_dph>",
+            "<cena_za_rok_s_dph>470690.00</cena_za_rok_s_dph>",
+            "<cena_za_rok_s_dph>18150.00</cena_za_rok_s_dph>",
+            "<cena_za_rok_bez_dph>389000.00</cena_za_rok_bez_dph>",
+            "<cena_za_rok_bez_dph>389000.00</cena_za_rok_bez_dph>",
+            "<cena_za_rok_bez_dph>15000.00</cena_za_rok_bez_dph>"
+          ]
+        },
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       }
     ],
+    "cena_pripravy": {
+      "druh": "smluvni",
+      "smlouvy": {
+        "s_dph": 959530.0,
+        "bez_dph": null,
+        "pocet": 1
+      },
+      "dodatky": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0
+      },
+      "zaplaceno": {
+        "s_dph": 959530.0,
+        "bez_dph": null,
+        "pocet": 1,
+        "druh": "zaplaceno"
+      },
+      "bez_ceny": 0,
+      "jistota": "nase_propojeni"
+    },
     "prvni_doklad": "2023-06-30",
     "odhad": null,
     "zdroj": null,
@@ -2027,7 +3926,17 @@
         "text": "Smlouva o dílo na zpracování projektové dokumentace - odkanalizování lokality Holičky - dodatek č. 1",
         "datum": "2025-05-28",
         "ico": "00247618",
-        "url": "https://smlouvy.gov.cz/smlouva/33452264"
+        "url": "https://smlouvy.gov.cz/smlouva/33452264",
+        "cena": {
+          "s_dph": 11495.0,
+          "bez_dph": 9500.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"11495\"",
+            "\"hodnotaBezDph\": \"9500\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": true
       },
       "jistota": "dolozeno"
     },
@@ -2039,10 +3948,43 @@
         "datum": "2025-05-28",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/33452264",
+        "cena": {
+          "s_dph": 11495.0,
+          "bez_dph": 9500.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"11495\"",
+            "\"hodnotaBezDph\": \"9500\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": true,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       }
     ],
+    "cena_pripravy": {
+      "druh": "smluvni",
+      "smlouvy": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0
+      },
+      "dodatky": {
+        "s_dph": 11495.0,
+        "bez_dph": null,
+        "pocet": 1
+      },
+      "zaplaceno": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0,
+        "druh": "zaplaceno"
+      },
+      "bez_ceny": 0,
+      "jistota": "nase_propojeni"
+    },
     "prvni_doklad": "2025-05-28",
     "odhad": null,
     "zdroj": null,
@@ -2080,7 +4022,17 @@
         "text": "Zpracování projektové dokumentace - Odbahnění návesního rybníku na pozemku p . č. 156/1 v Branné",
         "datum": "2024-08-12",
         "ico": "00247618",
-        "url": "https://smlouvy.gov.cz/smlouva/29773180"
+        "url": "https://smlouvy.gov.cz/smlouva/29773180",
+        "cena": {
+          "s_dph": 250470.0,
+          "bez_dph": 207000.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"250470\"",
+            "\"hodnotaBezDph\": \"207000\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false
       },
       "jistota": "dolozeno"
     },
@@ -2092,6 +4044,27 @@
         "datum": "2024-07-17",
         "ico": "00247618",
         "url": "https://zakazky.mesto-trebon.cz/contract_display_770.html",
+        "cena": {
+          "s_dph": 250470.0,
+          "bez_dph": 207000.0,
+          "citace": [
+            "<smluvni_cena_s_DPH>250470.00</smluvni_cena_s_DPH>",
+            "<smluvni_cena_bez_DPH>207000.00</smluvni_cena_bez_DPH>"
+          ]
+        },
+        "zaplaceno": {
+          "s_dph": 246840.0,
+          "bez_dph": 204000.0,
+          "citace": [
+            "<cena_za_rok_s_dph>235950.00</cena_za_rok_s_dph>",
+            "<cena_za_rok_s_dph>10890.00</cena_za_rok_s_dph>",
+            "<cena_za_rok_bez_dph>195000.00</cena_za_rok_bez_dph>",
+            "<cena_za_rok_bez_dph>9000.00</cena_za_rok_bez_dph>"
+          ]
+        },
+        "dodatek": false,
+        "zapocteno": false,
+        "nezapocteno": "stejná cena jako smlouva rs-29773180",
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       },
@@ -2102,10 +4075,43 @@
         "datum": "2024-08-12",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/29773180",
+        "cena": {
+          "s_dph": 250470.0,
+          "bez_dph": 207000.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"250470\"",
+            "\"hodnotaBezDph\": \"207000\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       }
     ],
+    "cena_pripravy": {
+      "druh": "smluvni",
+      "smlouvy": {
+        "s_dph": 250470.0,
+        "bez_dph": null,
+        "pocet": 1
+      },
+      "dodatky": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0
+      },
+      "zaplaceno": {
+        "s_dph": 246840.0,
+        "bez_dph": null,
+        "pocet": 1,
+        "druh": "zaplaceno"
+      },
+      "bez_ceny": 0,
+      "jistota": "nase_propojeni"
+    },
     "prvni_doklad": "2024-07-17",
     "odhad": null,
     "zdroj": null,
@@ -2143,7 +4149,16 @@
         "text": "Zpracování projektové dokumentace „Revitalizace živých plotů – ulice Dukelská“",
         "datum": "2024-09-10",
         "ico": "00247618",
-        "url": "https://smlouvy.gov.cz/smlouva/30159604"
+        "url": "https://smlouvy.gov.cz/smlouva/30159604",
+        "cena": {
+          "s_dph": 26200.0,
+          "bez_dph": null,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"26200\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false
       },
       "jistota": "dolozeno"
     },
@@ -2155,10 +4170,42 @@
         "datum": "2024-09-10",
         "ico": "00247618",
         "url": "https://smlouvy.gov.cz/smlouva/30159604",
+        "cena": {
+          "s_dph": 26200.0,
+          "bez_dph": null,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"26200\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       }
     ],
+    "cena_pripravy": {
+      "druh": "smluvni",
+      "smlouvy": {
+        "s_dph": 26200.0,
+        "bez_dph": null,
+        "pocet": 1
+      },
+      "dodatky": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0
+      },
+      "zaplaceno": {
+        "s_dph": null,
+        "bez_dph": null,
+        "pocet": 0,
+        "druh": "zaplaceno"
+      },
+      "bez_ceny": 0,
+      "jistota": "nase_propojeni"
+    },
     "prvni_doklad": "2024-09-10",
     "odhad": null,
     "zdroj": null,
@@ -2190,7 +4237,17 @@
       "text": "Vypracování projektové dokumentace včetně rozpočtu a výkazu výměr pro výběrové řízení na stavební opravy bytu č. 1 Dukelská 148",
       "datum": "2026-11-19",
       "ico": "00247618",
-      "url": "https://smlouvy.gov.cz/smlouva/40412709"
+      "url": "https://smlouvy.gov.cz/smlouva/40412709",
+      "cena": {
+        "s_dph": 64674.5,
+        "bez_dph": 53450.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"64674.5\"",
+          "\"hodnotaBezDph\": \"53450\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
     },
     "stupen": "projekt",
     "jistota": "nase_propojeni"
@@ -2211,7 +4268,17 @@
       "text": "Zpracování PD včetně inženýrské činnosti a zajištění povolení stavby pro doplnění záchytného zařízení na komunikaci na p. p. č. 160/1, k. ú. Branná (u Kulturního zařízení Branná).",
       "datum": "2026-05-06",
       "ico": "00247618",
-      "url": "https://smlouvy.gov.cz/smlouva/37858033"
+      "url": "https://smlouvy.gov.cz/smlouva/37858033",
+      "cena": {
+        "s_dph": 88935.0,
+        "bez_dph": 73500.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"88935\"",
+          "\"hodnotaBezDph\": \"73500\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
     },
     "stupen": "projekt_povoleni",
     "jistota": "nase_propojeni"
@@ -2232,7 +4299,16 @@
       "text": "Dodatek č. 1 ke Smlouvě o dílo - zhotovení PD",
       "datum": "2025-07-08",
       "ico": "25179896",
-      "url": "https://smlouvy.gov.cz/smlouva/34005077"
+      "url": "https://smlouvy.gov.cz/smlouva/34005077",
+      "cena": {
+        "s_dph": null,
+        "bez_dph": 112000.0,
+        "citace": [
+          "\"hodnotaBezDph\": \"112000\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": true
     },
     "stupen": "projekt",
     "jistota": "nase_propojeni"
@@ -2253,7 +4329,17 @@
       "text": "Zpracování projektové dokumentace akce \"Zkapacitnění propustků a koryta - Třeboň, Břilice\"",
       "datum": "2025-06-30",
       "ico": "00247618",
-      "url": "https://smlouvy.gov.cz/smlouva/33899865"
+      "url": "https://smlouvy.gov.cz/smlouva/33899865",
+      "cena": {
+        "s_dph": 301290.0,
+        "bez_dph": 249000.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"301290\"",
+          "\"hodnotaBezDph\": \"249000\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
     },
     "stupen": "projekt",
     "jistota": "nase_propojeni"
@@ -2274,7 +4360,17 @@
       "text": "Vypracování DPS, IS, výkazu výměr a rozpočtu na stavbu \"Oprava hřbitovní zdi - sever\".",
       "datum": "2025-05-05",
       "ico": "00247618",
-      "url": "https://smlouvy.gov.cz/smlouva/33174696"
+      "url": "https://smlouvy.gov.cz/smlouva/33174696",
+      "cena": {
+        "s_dph": 79860.0,
+        "bez_dph": 66000.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"79860\"",
+          "\"hodnotaBezDph\": \"66000\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
     },
     "stupen": "projekt_provadeci",
     "jistota": "nase_propojeni"
@@ -2295,7 +4391,17 @@
       "text": "Zpracování Projektové dokumentace Snížení energetické náročnosti objektu DPS III, [jméno] 20, Třeboň",
       "datum": "2025-04-23",
       "ico": "00247618",
-      "url": "https://smlouvy.gov.cz/smlouva/33013444"
+      "url": "https://smlouvy.gov.cz/smlouva/33013444",
+      "cena": {
+        "s_dph": 480975.0,
+        "bez_dph": 397500.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"480975\"",
+          "\"hodnotaBezDph\": \"397500\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
     },
     "stupen": "projekt",
     "jistota": "nase_propojeni"
@@ -2316,7 +4422,17 @@
       "text": "Vypracování studie, DSP+ DPS, IS, rozpočtu a výkazu výměr na provedení stavebních a architektonických úprav vstupního vestibulu sportovní haly.",
       "datum": "2025-03-31",
       "ico": "00247618",
-      "url": "https://smlouvy.gov.cz/smlouva/32810632"
+      "url": "https://smlouvy.gov.cz/smlouva/32810632",
+      "cena": {
+        "s_dph": 375100.0,
+        "bez_dph": 310000.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"375100\"",
+          "\"hodnotaBezDph\": \"310000\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
     },
     "stupen": "studie",
     "jistota": "nase_propojeni"
@@ -2337,7 +4453,17 @@
       "text": "Zpracování PD pro akci Třeboň - úprava plochy na pozemku parc. č. 767.",
       "datum": "2025-03-31",
       "ico": "00247618",
-      "url": "https://smlouvy.gov.cz/smlouva/32722812"
+      "url": "https://smlouvy.gov.cz/smlouva/32722812",
+      "cena": {
+        "s_dph": 90750.0,
+        "bez_dph": 75000.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"90750\"",
+          "\"hodnotaBezDph\": \"75000\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
     },
     "stupen": "projekt",
     "jistota": "nase_propojeni"
@@ -2358,7 +4484,16 @@
       "text": "Smlouva o dílo - Zhotovení PD, příkazní činnost a výkon AD, výstavba bytů a admin.zázemí",
       "datum": "2025-03-20",
       "ico": "25179896",
-      "url": "https://smlouvy.gov.cz/smlouva/32584604"
+      "url": "https://smlouvy.gov.cz/smlouva/32584604",
+      "cena": {
+        "s_dph": null,
+        "bez_dph": 1982000.0,
+        "citace": [
+          "\"hodnotaBezDph\": \"1982000\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
     },
     "stupen": "projekt",
     "jistota": "nase_propojeni"
@@ -2379,7 +4514,24 @@
       "text": "Zhotovení PD, příkazní činnost a výkon AD - Výměna zásobníků TUV - LDA",
       "datum": "2024-12-11",
       "ico": "25179896",
-      "url": "https://zakazky.mesto-trebon.cz/contract_display_816.html"
+      "url": "https://zakazky.mesto-trebon.cz/contract_display_816.html",
+      "cena": {
+        "s_dph": 686070.0,
+        "bez_dph": 567000.0,
+        "citace": [
+          "<smluvni_cena_s_DPH>686070.00</smluvni_cena_s_DPH>",
+          "<smluvni_cena_bez_DPH>567000.00</smluvni_cena_bez_DPH>"
+        ]
+      },
+      "zaplaceno": {
+        "s_dph": 686070.0,
+        "bez_dph": 567000.0,
+        "citace": [
+          "<cena_za_rok_s_dph>686070.00</cena_za_rok_s_dph>",
+          "<cena_za_rok_bez_dph>567000.00</cena_za_rok_bez_dph>"
+        ]
+      },
+      "dodatek": false
     },
     "stupen": "projekt",
     "jistota": "nase_propojeni"
@@ -2400,7 +4552,16 @@
       "text": "Smlouva o dílo - zhotovení PD",
       "datum": "2024-11-07",
       "ico": "25179896",
-      "url": "https://smlouvy.gov.cz/smlouva/30907580"
+      "url": "https://smlouvy.gov.cz/smlouva/30907580",
+      "cena": {
+        "s_dph": null,
+        "bez_dph": 1885000.0,
+        "citace": [
+          "\"hodnotaBezDph\": \"1885000\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
     },
     "stupen": "projekt",
     "jistota": "nase_propojeni"
@@ -2421,7 +4582,16 @@
       "text": "Dodatek č. 1 PD - Modernizace rezervační kanceláře LDA",
       "datum": "2024-09-24",
       "ico": "25179896",
-      "url": "https://smlouvy.gov.cz/smlouva/30300108"
+      "url": "https://smlouvy.gov.cz/smlouva/30300108",
+      "cena": {
+        "s_dph": null,
+        "bez_dph": 145000.0,
+        "citace": [
+          "\"hodnotaBezDph\": \"145000\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": true
     },
     "stupen": "projekt",
     "jistota": "nase_propojeni"
@@ -2442,7 +4612,16 @@
       "text": "Objednávka zpracování projektové dokumentace",
       "datum": "2024-09-11",
       "ico": "25179896",
-      "url": "https://smlouvy.gov.cz/smlouva/30172840"
+      "url": "https://smlouvy.gov.cz/smlouva/30172840",
+      "cena": {
+        "s_dph": null,
+        "bez_dph": 96000.0,
+        "citace": [
+          "\"hodnotaBezDph\": \"96000\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
     },
     "stupen": "projekt",
     "jistota": "nase_propojeni"
@@ -2463,7 +4642,16 @@
       "text": "Smlouva o dílo - projektová dokumentace",
       "datum": "2024-07-19",
       "ico": "25179896",
-      "url": "https://smlouvy.gov.cz/smlouva/29562236"
+      "url": "https://smlouvy.gov.cz/smlouva/29562236",
+      "cena": {
+        "s_dph": null,
+        "bez_dph": 130000.0,
+        "citace": [
+          "\"hodnotaBezDph\": \"130000\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
     },
     "stupen": "projekt",
     "jistota": "nase_propojeni"
@@ -2484,7 +4672,17 @@
       "text": "Zpracování studie alternativ připojení prostoru ulice Za Nádražím v Třeboni",
       "datum": "2024-06-05",
       "ico": "00247618",
-      "url": "https://smlouvy.gov.cz/smlouva/28957516"
+      "url": "https://smlouvy.gov.cz/smlouva/28957516",
+      "cena": {
+        "s_dph": 66671.0,
+        "bez_dph": 55100.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"66671\"",
+          "\"hodnotaBezDph\": \"55100\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
     },
     "stupen": "studie",
     "jistota": "nase_propojeni"
@@ -2505,7 +4703,17 @@
       "text": "Zpracování projektové dokumentace - Stavební úpravy místní komunikace ulice Sídliště v úseku od REPROGENu po čp. 1158 Třeboň",
       "datum": "2024-05-27",
       "ico": "00247618",
-      "url": "https://smlouvy.gov.cz/smlouva/28835860"
+      "url": "https://smlouvy.gov.cz/smlouva/28835860",
+      "cena": {
+        "s_dph": 289795.0,
+        "bez_dph": 239500.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"289795\"",
+          "\"hodnotaBezDph\": \"239500\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
     },
     "stupen": "projekt",
     "jistota": "nase_propojeni"
@@ -2526,7 +4734,17 @@
       "text": "Zpracování PD pro opravu vozovky MK v ulici Svobody v Třeboni.",
       "datum": "2024-05-16",
       "ico": "00247618",
-      "url": "https://smlouvy.gov.cz/smlouva/28715827"
+      "url": "https://smlouvy.gov.cz/smlouva/28715827",
+      "cena": {
+        "s_dph": 118096.0,
+        "bez_dph": 97600.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"118096\"",
+          "\"hodnotaBezDph\": \"97600\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
     },
     "stupen": "projekt",
     "jistota": "nase_propojeni"
@@ -2547,7 +4765,17 @@
       "text": "Smlouva o dílo na zhotovení projektové dokumentace \"revitalizace Komenského sady\"",
       "datum": "2024-04-29",
       "ico": "00247618",
-      "url": "https://smlouvy.gov.cz/smlouva/28525763"
+      "url": "https://smlouvy.gov.cz/smlouva/28525763",
+      "cena": {
+        "s_dph": 343640.0,
+        "bez_dph": 284000.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"343640\"",
+          "\"hodnotaBezDph\": \"284000\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
     },
     "stupen": "projekt",
     "jistota": "nase_propojeni"
@@ -2568,7 +4796,17 @@
       "text": "Vypracování jednostupňové PD, výkazu výměr, položkového rozpočtu a zajištění IČ na akci \"Technologická šachta Jordánovy kašny\".",
       "datum": "2024-04-05",
       "ico": "00247618",
-      "url": "https://smlouvy.gov.cz/smlouva/28237275"
+      "url": "https://smlouvy.gov.cz/smlouva/28237275",
+      "cena": {
+        "s_dph": 119450.0,
+        "bez_dph": 98719.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"119450\"",
+          "\"hodnotaBezDph\": \"98719\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
     },
     "stupen": "projekt",
     "jistota": "nase_propojeni"
@@ -2589,7 +4827,17 @@
       "text": "Zpracování PD Prodloužení MK v ulici Zahradní v Třeboni k domům čp. 1081, 1082 a 354.",
       "datum": "2024-03-15",
       "ico": "00247618",
-      "url": "https://smlouvy.gov.cz/smlouva/28000023"
+      "url": "https://smlouvy.gov.cz/smlouva/28000023",
+      "cena": {
+        "s_dph": 117975.0,
+        "bez_dph": 97500.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"117975\"",
+          "\"hodnotaBezDph\": \"97500\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
     },
     "stupen": "projekt",
     "jistota": "nase_propojeni"
@@ -2610,7 +4858,17 @@
       "text": "Parkoviště pro potřeby lázní v Lázeňské ulici v Třeboni (zpracování PD)",
       "datum": "2024-03-11",
       "ico": "00247618",
-      "url": "https://smlouvy.gov.cz/smlouva/27936991"
+      "url": "https://smlouvy.gov.cz/smlouva/27936991",
+      "cena": {
+        "s_dph": 254402.5,
+        "bez_dph": 210250.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"254402.5\"",
+          "\"hodnotaBezDph\": \"210250\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
     },
     "stupen": "projekt",
     "jistota": "nase_propojeni"
@@ -2631,7 +4889,17 @@
       "text": "Zpracování projektové dokumentace Novostavba ocelové haly v areálu Technických služeb Třeboň",
       "datum": "2024-03-11",
       "ico": "00247618",
-      "url": "https://smlouvy.gov.cz/smlouva/27936867"
+      "url": "https://smlouvy.gov.cz/smlouva/27936867",
+      "cena": {
+        "s_dph": 259000.0,
+        "bez_dph": 259000.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"259000\"",
+          "\"hodnotaBezDph\": \"259000\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
     },
     "stupen": "projekt",
     "jistota": "nase_propojeni"
@@ -2652,7 +4920,17 @@
       "text": "Vypracování projektové dokumentace - oprava fasádních omítek na objektu čp. 20/I, Masarykovo nám., Třeboň",
       "datum": "2024-02-26",
       "ico": "00247618",
-      "url": "https://smlouvy.gov.cz/smlouva/27768507"
+      "url": "https://smlouvy.gov.cz/smlouva/27768507",
+      "cena": {
+        "s_dph": 99220.0,
+        "bez_dph": 82000.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"99220\"",
+          "\"hodnotaBezDph\": \"82000\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
     },
     "stupen": "projekt",
     "jistota": "nase_propojeni"
@@ -2673,7 +4951,17 @@
       "text": "Projektová dokumentace - úprava vodohospodářsdkých sítí ulice Táboritská",
       "datum": "2024-02-05",
       "ico": "00247618",
-      "url": "https://smlouvy.gov.cz/smlouva/27521215"
+      "url": "https://smlouvy.gov.cz/smlouva/27521215",
+      "cena": {
+        "s_dph": 84700.0,
+        "bez_dph": 70000.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"84700\"",
+          "\"hodnotaBezDph\": \"70000\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
     },
     "stupen": "projekt",
     "jistota": "nase_propojeni"
@@ -2694,7 +4982,17 @@
       "text": "Projektová dokumentace - rekonstrukce části kanalizace ulice Daskabát",
       "datum": "2024-02-05",
       "ico": "00247618",
-      "url": "https://smlouvy.gov.cz/smlouva/27521195"
+      "url": "https://smlouvy.gov.cz/smlouva/27521195",
+      "cena": {
+        "s_dph": 77440.0,
+        "bez_dph": 64000.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"77440\"",
+          "\"hodnotaBezDph\": \"64000\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
     },
     "stupen": "projekt",
     "jistota": "nase_propojeni"
@@ -2715,7 +5013,17 @@
       "text": "Vyprojektování projektové dokumentace na výběr zhotovitele fotovoltaické elektrárny ke snížení energetického řešení u dodávky elektřiny v napěťové hladině VN budov a technologických zařízení v areálu ČOV Třeboň",
       "datum": "2024-01-25",
       "ico": "00247618",
-      "url": "https://smlouvy.gov.cz/smlouva/27402835"
+      "url": "https://smlouvy.gov.cz/smlouva/27402835",
+      "cena": {
+        "s_dph": 116160.0,
+        "bez_dph": 96000.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"116160\"",
+          "\"hodnotaBezDph\": \"96000\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
     },
     "stupen": "projekt",
     "jistota": "nase_propojeni"
@@ -2736,7 +5044,17 @@
       "text": "Zpracování PD Šustova alej",
       "datum": "2024-01-25",
       "ico": "00247618",
-      "url": "https://smlouvy.gov.cz/smlouva/27396527"
+      "url": "https://smlouvy.gov.cz/smlouva/27396527",
+      "cena": {
+        "s_dph": 108900.0,
+        "bez_dph": 90000.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"108900\"",
+          "\"hodnotaBezDph\": \"90000\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
     },
     "stupen": "projekt",
     "jistota": "nase_propojeni"
@@ -2757,7 +5075,16 @@
       "text": "Smlouva o dílo PD Lymfodrenáže",
       "datum": "2024-01-15",
       "ico": "25179896",
-      "url": "https://smlouvy.gov.cz/smlouva/27688947"
+      "url": "https://smlouvy.gov.cz/smlouva/27688947",
+      "cena": {
+        "s_dph": null,
+        "bez_dph": 130000.0,
+        "citace": [
+          "\"hodnotaBezDph\": \"130000\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
     },
     "stupen": "projekt",
     "jistota": "nase_propojeni"
@@ -2778,7 +5105,10 @@
       "text": "Smlouva o výpůjčce (nebytové prostory - klubovna důchodců DPS Třeboň)",
       "datum": "2024-01-08",
       "ico": "00247618",
-      "url": "https://smlouvy.gov.cz/smlouva/27182587"
+      "url": "https://smlouvy.gov.cz/smlouva/27182587",
+      "cena": null,
+      "zaplaceno": null,
+      "dodatek": true
     },
     "stupen": "projekt_provadeci",
     "jistota": "nase_propojeni"
@@ -2799,7 +5129,10 @@
       "text": "Smlouva o výpůjčce (nebytové prostory- klubovna důchodců DPS Třeboň)",
       "datum": "2024-01-04",
       "ico": "00247618",
-      "url": "https://smlouvy.gov.cz/smlouva/27165971"
+      "url": "https://smlouvy.gov.cz/smlouva/27165971",
+      "cena": null,
+      "zaplaceno": null,
+      "dodatek": false
     },
     "stupen": "projekt_provadeci",
     "jistota": "nase_propojeni"
@@ -2820,7 +5153,10 @@
       "text": "Smlouva o výpůjčce (nebytové prostory - klubovna důchodců DPS Třeboň)",
       "datum": "2024-01-04",
       "ico": "00247618",
-      "url": "https://smlouvy.gov.cz/smlouva/27163447"
+      "url": "https://smlouvy.gov.cz/smlouva/27163447",
+      "cena": null,
+      "zaplaceno": null,
+      "dodatek": true
     },
     "stupen": "projekt_provadeci",
     "jistota": "nase_propojeni"
@@ -2841,7 +5177,17 @@
       "text": "Aktualizace PD z roku 2013 Rekonstrukce ulice Novohradská a Trocnovské nám. - II. etapa, včetně IČ, VV a pol. rozpočtu.",
       "datum": "2023-12-20",
       "ico": "00247618",
-      "url": "https://smlouvy.gov.cz/smlouva/27044403"
+      "url": "https://smlouvy.gov.cz/smlouva/27044403",
+      "cena": {
+        "s_dph": 175389.5,
+        "bez_dph": 144950.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"175389.5\"",
+          "\"hodnotaBezDph\": \"144950\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
     },
     "stupen": "projekt",
     "jistota": "nase_propojeni"
@@ -2862,7 +5208,17 @@
       "text": "Zpracování projektové dokumentace - Stavební úpravy místní komunikace ulice Sídliště v úseku od silnice III/15512 po REPROGEN v Třeboni",
       "datum": "2023-12-18",
       "ico": "00247618",
-      "url": "https://smlouvy.gov.cz/smlouva/26955479"
+      "url": "https://smlouvy.gov.cz/smlouva/26955479",
+      "cena": {
+        "s_dph": 947430.0,
+        "bez_dph": 783000.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"947430\"",
+          "\"hodnotaBezDph\": \"783000\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
     },
     "stupen": "projekt",
     "jistota": "nase_propojeni"
@@ -2883,7 +5239,17 @@
       "text": "Vypracování redukované PD na akci Zateplení přístavby ZŠ Na Sadech, vč. výkazu výměr, položkového rozpočtu a provádění AD.",
       "datum": "2023-11-21",
       "ico": "00247618",
-      "url": "https://smlouvy.gov.cz/smlouva/26583683"
+      "url": "https://smlouvy.gov.cz/smlouva/26583683",
+      "cena": {
+        "s_dph": 173877.0,
+        "bez_dph": 143700.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"173877\"",
+          "\"hodnotaBezDph\": \"143700\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
     },
     "stupen": "projekt",
     "jistota": "nase_propojeni"
@@ -2904,7 +5270,17 @@
       "text": "Aktualizace projektové dokumentace pro opakované výběrové řízení na zhotovení stavby: Úprava prostranství u Českobudějovické brány, Třeboň",
       "datum": "2023-11-15",
       "ico": "00247618",
-      "url": "https://smlouvy.gov.cz/smlouva/26503247"
+      "url": "https://smlouvy.gov.cz/smlouva/26503247",
+      "cena": {
+        "s_dph": 91960.0,
+        "bez_dph": 76000.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"91960\"",
+          "\"hodnotaBezDph\": \"76000\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
     },
     "stupen": "projekt",
     "jistota": "nase_propojeni"
@@ -2925,7 +5301,17 @@
       "text": "Vypracování projektových dokumentací snižujících energetickou náročnost objektů pro výběr dodavatele fotovoltaických panelů na střechy a pozemky vybraných vodohospodářských budov připojených ze sítí NN",
       "datum": "2023-11-13",
       "ico": "00247618",
-      "url": "https://smlouvy.gov.cz/smlouva/26465771"
+      "url": "https://smlouvy.gov.cz/smlouva/26465771",
+      "cena": {
+        "s_dph": 66792.0,
+        "bez_dph": 55200.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"66792\"",
+          "\"hodnotaBezDph\": \"55200\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
     },
     "stupen": "projekt",
     "jistota": "nase_propojeni"

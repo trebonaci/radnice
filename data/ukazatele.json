@@ -523,5 +523,59 @@
     "srovnatelnost": "Karty zakládáme postupně; automaticky pro stavební zakázky města od roku 2025 nad 1 mil. Kč.",
     "zasobnik": 32,
     "namety": 37
+  },
+  {
+    "id": "zasobnik-priprava",
+    "nazev": "Cena přípravy projektů v zásobníku",
+    "hodnota": [
+      {
+        "klic": "00247618",
+        "nazev": "Město Třeboň",
+        "polozek": 27,
+        "s_dph": 13485169.92,
+        "bez_dph": null,
+        "dodatky_s_dph": 270556.0,
+        "dodatky_bez_dph": null,
+        "zaplaceno_s_dph": 1705057.0
+      },
+      {
+        "klic": "25179896",
+        "nazev": "Slatinné lázně Třeboň s.r.o.",
+        "polozek": 5,
+        "s_dph": null,
+        "bez_dph": 9693500.0,
+        "dodatky_s_dph": null,
+        "dodatky_bez_dph": null,
+        "zaplaceno_s_dph": 225665.0
+      }
+    ],
+    "jednotka": "Kč",
+    "obdobi": {
+      "od": null,
+      "do": null
+    },
+    "definice": "Smluvní ceny studií, projektových dokumentací a průzkumů u projektů v zásobníku (ještě bez stavby), podle registru smluv a E-ZAK. Ceny s DPH a ceny uvedené jen bez DPH se sčítají zvlášť, dodatky a zaplaceno zvlášť. Přiřazení smluv k projektu je naše propojení podle názvu.",
+    "vypocet": "pipeline/ukazatele.py:priprava_zasobniku",
+    "zdroj": [
+      {
+        "nazev": "Registr smluv (otevřená data)",
+        "url": "https://data.smlouvy.gov.cz/"
+      },
+      {
+        "nazev": "Profily zadavatelů E-ZAK",
+        "url": "https://zakazky.mesto-trebon.cz/"
+      }
+    ],
+    "zkontrolovano": null,
+    "srovnatelnost": "Drobné objednávky pod 50 000 Kč bez DPH se do registru smluv nezveřejňují, proto tu chybí.",
+    "druh": "smluvni",
+    "celkem": {
+      "s_dph": 13485169.92,
+      "bez_dph": 9693500.0,
+      "dodatky_s_dph": 270556.0,
+      "dodatky_bez_dph": null,
+      "zaplaceno_s_dph": 1930722.0
+    },
+    "polozek": 32
   }
 ]

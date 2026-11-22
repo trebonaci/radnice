@@ -10,6 +10,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import shutil
 from pathlib import Path
 
 KOREN = Path(__file__).resolve().parent.parent
@@ -44,6 +45,8 @@ def sestav(nahled: bool = False) -> str:
         "__ZASOBNIK__": _vloz(_json("zasobnik")),
         "__MISTA__": _vloz(_json("mista")),
         "__ZMENY__": _vloz(_json("zmeny")),
+        "__HARMONOGRAM__": _vloz(_json("harmonogram")),
+        "__UKAZATELE__": _vloz(_json("ukazatele")),
         "__INVESTICE__": _vloz((investice or [None])[-1]),
         "__STITEK__": stitek,
         "__DATUM__": datum,
@@ -65,6 +68,8 @@ def main() -> None:
     cil = Path(args.vystup)
     cil.mkdir(parents=True, exist_ok=True)
     (cil / "index.html").write_text(sestav(args.nahled), encoding="utf-8")
+    # obrázky šablony (logo Třeboňáků)
+    shutil.copytree(SABLONA.parent / "obr", cil / "obr", dirs_exist_ok=True)
     # Cloudflare Pages: bez indexování náhledů, základní bezpečnostní hlavičky
     (cil / "_headers").write_text(
         "/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n"

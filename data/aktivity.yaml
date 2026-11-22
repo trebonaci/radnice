@@ -1,0 +1,29 @@
+# Dlouhodobé neinvestiční projekty pro harmonogram (#194, zadání Ondřeje 22. 11. 2026).
+#
+# Projekt, který běží měsíce až roky a nekončí stavbou (územní plán, strategie, plány služeb).
+# Milníky = přijatá usnesení, jejichž text odpovídá vzorům `vazby.hledat` (naše propojení).
+# Spravuje se ručně.
+#
+#   id                 krátký identifikátor
+#   nazev              jak projekt lidé znají
+#   oblast             uzemni_plan | socialni | kultura | sport | skolstvi | doprava | komunity_spolky | jine …
+#   popis              volitelně, jedna věta
+#   vazby.hledat       regulární výrazy hledané v textu usnesení
+#   zacatek_pred_daty  true = projekt začal dřív, než sahají naše data (zápisy od září 2026)
+#   ukonceno           volitelně {datum, url}: doložené ukončení (např. vydání změny)
+
+aktivity:
+  - id: zmena-9-uzemniho-planu
+    nazev: Změna č. 9 územního plánu
+    oblast: uzemni_plan
+    popis: Prověření podnětů ze Zprávy o uplatňování územního plánu za období 2020–2024.
+    vazby:
+      hledat: ['Změn\w* č\. ?9[ab]? územního plánu']
+    zacatek_pred_daty: true
+  - id: zmena-3-regulacniho-planu
+    nazev: Změna č. 3 regulačního plánu
+    oblast: uzemni_plan
+    popis: Změna regulačního plánu Třeboň včetně lokality BV6 v Břilicích.
+    vazby:
+      hledat: ['Změn\w* č\. ?3 regulačního plánu']
+    zacatek_pred_daty: true
