@@ -34,6 +34,28 @@ def _datum(beh: dict) -> str:
     return f"{int(den)}. {int(m)}. {r}"
 
 
+def usneseni_pro_web(usneseni: list[dict], jednani: list[dict]) -> list[dict]:
+    """Výběr polí usnesení pro stránku #usneseni (#198): nic se nepočítá, jen se vybírá a doplní odkaz na stranu zápisu."""
+    j = {x["id"]: x for x in jednani}
+    vysledek = []
+    for u in usneseni:
+        jd = j.get(u["jednani_id"], {})
+        url = (jd.get("dokument") or {}).get("url")
+        strany = (u.get("citace") or {}).get("strany") or []
+        po = u.get("pro_obcany") or {}
+        vysledek.append({
+            "id": u["id"], "cislo": u.get("cislo"), "jednani_id": u["jednani_id"], "datum": jd.get("datum"),
+            "organ": jd.get("organ"), "jednani_cislo": jd.get("cislo"), "bod": u.get("bod"),
+            "vysledek": u.get("vysledek_hlasovani"), "tema": u.get("tema"), "tema_ai": u.get("tema_ai"),
+            "shrnuti": po.get("text") or u.get("shrnuti"),
+            "shrnuti_ai": bool(u.get("pro_obcany_ai") if po.get("text") else u.get("shrnuti_ai")),
+            "kategorie": u.get("kategorie") or ["ostatni"], "strana": strany[0] if strany else None,
+            "url": f"{url}#page={strany[0]}" if url and strany else url, "zapis": url,
+        })
+    vysledek.sort(key=lambda x: (x["datum"] or "", x["organ"] or "", x["cislo"] or ""), reverse=True)
+    return vysledek
+
+
 def sestav(nahled: bool = False) -> str:
     beh = json.loads((KOREN / "data" / "beh.json").read_text(encoding="utf-8")) if (KOREN / "data" / "beh.json").exists() else {}
     datum = _datum(beh)
@@ -47,6 +69,7 @@ def sestav(nahled: bool = False) -> str:
         "__ZMENY__": _vloz(_json("zmeny")),
         "__HARMONOGRAM__": _vloz(_json("harmonogram")),
         "__UKAZATELE__": _vloz(_json("ukazatele")),
+        "__USNESENI__": _vloz(usneseni_pro_web(_json("usneseni"), _json("jednani"))),
         "__INVESTICE__": _vloz((investice or [None])[-1]),
         "__STITEK__": stitek,
         "__DATUM__": datum,

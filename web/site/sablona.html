@@ -181,9 +181,17 @@ h1:focus{outline:none}
 @media(max-width:560px){.sez a{grid-template-columns:1fr;gap:4px}.sez .c{text-align:left}.sez .c small{display:inline;margin-left:6px}}
 .gi{grid-column:1/-1;background:var(--soft);border-radius:var(--r-sm);padding:10px 14px;font-size:14px}
 @media(max-width:760px){.lista .wrap{flex-wrap:wrap;min-height:0;padding-top:8px}.lista nav{display:flex;margin-left:0;flex-wrap:nowrap;overflow-x:auto;width:100%;padding-bottom:4px}.lista nav a{white-space:nowrap;flex:0 0 auto}.lista .bd{display:none}.osa{top:100px}}
+/* usnesení (#198) */
+.jd{background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);padding:6px 22px 10px;margin-bottom:16px;box-shadow:var(--shadow-card)}
+.jd>h2{font:800 18px/1.3 var(--font);margin:14px 0 4px;letter-spacing:-.01em}.jd>h2 small{font:400 14px var(--font);color:var(--mute);margin-left:6px}
+.us{list-style:none;margin:0;padding:0}.us li{padding:10px 0;border-top:1px solid var(--line)}
+.us b{display:block;font-size:16px}.us p{margin:3px 0;font-size:15px}.us small{display:block;font-size:13px;color:var(--mute)}
+.us .ob{display:inline-block;font-size:12px;background:var(--soft);border-radius:var(--r-pill);padding:1px 8px;margin:2px 4px 0 0;color:var(--ink);border:0}
+.us .np{display:inline-block;font-size:12px;font-weight:700;color:var(--k-soutez);border:1px solid currentColor;border-radius:var(--r-pill);padding:0 7px;margin-left:6px}
+.sl a{color:inherit}
 </style></head><body>
 <div class="lista"><div class="wrap"><a class="zn" href="https://trebonaci.cz"><img src="obr/logo-trebonaci.jpg" alt=""><span><b>Třeboňáci</b></span></a><span class="bd">Co se děje na radnici</span>
-<nav id="menu" aria-label="Sekce"><a href="#">Investice</a><a href="#casova-osa">Časová osa</a><a href="#pripravovane">Připravované projekty</a><a href="#mista">Místa a služby</a><a href="#rozpocet">Rozpočet</a><a href="#cisla">V číslech</a><a href="#jak">Jak vzniká přehled</a></nav></div></div>
+<nav id="menu" aria-label="Sekce"><a href="#">Investice</a><a href="#usneseni">Usnesení</a><a href="#casova-osa">Časová osa</a><a href="#pripravovane">Připravované projekty</a><a href="#mista">Místa a služby</a><a href="#rozpocet">Rozpočet</a><a href="#cisla">V číslech</a><a href="#jak">Jak vzniká přehled</a></nav></div></div>
 <header class="band"><div class="wrap"><span class="tag">__STITEK__</span>
 <span class="eyebrow">Co se děje na radnici v Třeboni</span><h1>Sledujeme pro vás</h1><p class="lead">Co radnice rozhodla, co se staví a připravuje, kdo to dělá a kolik to stojí. U každého údaje odkaz na dokument.</p></div></header>
 <main class="band" style="padding-top:18px"><div class="wrap"><p class="vyd">Přehled připravují <b>Třeboňáci</b> z veřejných dokumentů města · data k __DATUM__ · <a href="#jak">Jak vzniká přehled</a></p></div><div class="wrap" id="karty"></div>
@@ -196,6 +204,7 @@ const M=__MISTA__;
 const ZM=__ZMENY__;
 const H=__HARMONOGRAM__;
 const U=__UKAZATELE__;
+const US=__USNESENI__;
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const kc=v=>v==null?"–":Math.abs(v)>=1e6?(v/1e6).toLocaleString("cs-CZ",{minimumFractionDigits:1,maximumFractionDigits:1})+" mil. Kč":new Intl.NumberFormat("cs-CZ",{maximumFractionDigits:0}).format(v)+" Kč";
 const kcp=v=>v==null?"–":new Intl.NumberFormat("cs-CZ",{maximumFractionDigits:0}).format(v)+" Kč";
@@ -445,11 +454,11 @@ function harmonogram(){
 // ---------- v číslech (#cisla): ukazatele z pipeline/ukazatele.py, web nic nepočítá ----------
 const cis=n=>new Intl.NumberFormat("cs-CZ").format(n);
 function sloupce(u,rada,f=cis){const max=Math.max(1,...rada.map(r=>r.hodnota));
-  return `<ul class="sl">${rada.map(r=>`<li><span>${esc(r.nazev)}${r.pocet!=null?` <small class="pozn">(${r.pocet})</small>`:""}</span><span class="o" aria-hidden="true"><i style="width:${Math.max(1.5,100*r.hodnota/max).toFixed(1)}%"></i></span><span class="h">${f(r.hodnota)}</span></li>`).join("")}</ul>`;}
+  return `<ul class="sl">${rada.map(r=>`<li><span>${r.odkaz?`<a href="${r.odkaz}">${esc(r.nazev)}</a>`:esc(r.nazev)}${r.pocet!=null?` <small class="pozn">(${r.pocet})</small>`:""}</span><span class="o" aria-hidden="true"><i style="width:${Math.max(1.5,100*r.hodnota/max).toFixed(1)}%"></i></span><span class="h">${f(r.hodnota)}</span></li>`).join("")}</ul>`;}
 function zdrojUk(u){const o=u.obdobi||{};const obd=o.od&&o.do?` Období: ${dat(o.od)} – ${dat(o.do)}.`:"";
   return `<p class="pozn">${esc(u.definice)}${u.srovnatelnost?" "+esc(u.srovnatelnost):""}${obd} Zdroj: ${(u.zdroj||[]).map(z=>`<a href="${esc(z.url)}" target="_blank" rel="noopener">${esc(z.nazev)}</a>`).join(", ")}.</p>`;}
 const UKV={
-  "usneseni-oblasti":u=>`<div class="vel">${cis(u.celkem)}<small>přijatých usnesení</small></div>${sloupce(u,u.hodnota)}`,
+  "usneseni-oblasti":u=>`<div class="vel">${cis(u.celkem)}<small>zpracovaných usnesení</small></div>${sloupce(u,u.hodnota.map(r=>({...r,nazev:r.nazev,odkaz:"#usneseni-"+r.klic})))}<p><a href="#usneseni">Všechna usnesení →</a></p>`,
   "jednani":u=>sloupce(u,u.hodnota),
   "investicni-akce":u=>sloupce(u,u.hodnota),
   "smlouvy-organizace":u=>`<div class="vel">${cis(u.celkem)}<small>smluv v registru</small></div>${sloupce(u,u.hodnota)}`,
@@ -458,6 +467,40 @@ const UKV={
 function cisla(){
   return `<section><h1 class="st" tabindex="-1">V číslech</h1><p class="pozn" style="font-size:15px;max-width:62ch">Co rada a zastupitelstvo schválily, kolik smluv a zakázek město a jeho společnosti uzavírají a komu jdou dotace. Počty a součty počítá testovaný kód ze zveřejněných dat.</p>
   ${Object.keys(UKV).map(k=>U.find(u=>u.id===k)).filter(Boolean).map(u=>`<div class="uk"><h3>${esc(u.nazev)}</h3>${UKV[u.id](u)}${zdrojUk(u)}</div>`).join("")}</section>`;}
+
+// ---------- usnesení rady a zastupitelstva (#usneseni, #198) ----------
+const OBL_U=Object.fromEntries((U.find(u=>u.id==="usneseni-oblasti")?.hodnota||[]).map(r=>[r.klic,r.nazev]));
+const FU={organ:"",oblast:"",hledat:"",nepr:false};
+function usneseniFiltr(){const t=koreny(FU.hledat);
+  return US.filter(u=>(!FU.organ||u.organ===FU.organ)&&(!FU.oblast||u.kategorie.includes(FU.oblast))
+    &&(!t.length||t.every(w=>bezDia([u.tema,u.shrnuti,u.cislo].join(" ")).includes(w))));}
+function usneseniSeznam(){const r=usneseniFiltr();const jd=[...new Set(r.map(u=>u.jednani_id))];
+  const filtr=FU.organ||FU.oblast||FU.hledat;
+  const hl=`<p class="pocet" aria-live="polite">${pl(r.length,"usnesení","usnesení","usnesení")}${r.some(u=>u.vysledek==="neprijato")?` · z toho ${pl(r.filter(u=>u.vysledek==="neprijato").length,"nepřijaté","nepřijatá","nepřijatých")}`:""}${filtr?` · <button class="tl" data-uzrusit>Zrušit filtry</button>`:""}</p>`;
+  if(!r.length)return hl+`<div class="sez prazdne"><p style="margin:0 0 10px">Žádné usnesení neodpovídá výběru.</p><button data-uzrusit>Zrušit filtry a hledání</button></div>`;
+  return hl+jd.map(id=>{const us=r.filter(u=>u.jednani_id===id);const a=us[0];const z=a.organ==="zastupitelstvo";
+    return `<section class="jd"><h2>${z?"Zastupitelstvo":"Rada"} ${dat(a.datum)}<small>${a.jednani_cislo?`${a.jednani_cislo}. jednání · `:""}${pl(us.length,"usnesení","usnesení","usnesení")}${a.zapis?` · <a href="${esc(a.zapis)}" target="_blank" rel="noopener">zápis (PDF)</a>`:""}</small></h2>
+    <ul class="us">${us.map(u=>`<li id="${u.id}"><b>${esc(u.tema||u.cislo)}${u.vysledek==="neprijato"?'<span class="np">nepřijato</span>':""}</b>${u.shrnuti?`<p>${esc(u.shrnuti)}</p>`:""}
+     <small>${u.kategorie.map(k=>`<span class="ob">${esc(OBL_U[k]||k)}</span>`).join("")}</small>
+     <small>${u.url?`<a href="${esc(u.url)}" target="_blank" rel="noopener">Usnesení ${esc(u.cislo)}${u.strana?`, str. ${u.strana} zápisu`:""} ↗</a>`:esc(u.cislo)}${u.shrnuti_ai||u.tema_ai?" · název a shrnutí napsala AI, závazné je znění v zápisu":""}</small></li>`).join("")}</ul></section>`;}).join("");}
+function usneseniStranka(){
+  const ob=(U.find(u=>u.id==="usneseni-oblasti")?.hodnota||[]);
+  const nR=US.filter(u=>u.organ==="rada").length,nZ=US.filter(u=>u.organ==="zastupitelstvo").length;
+  const d=US.map(u=>u.datum).filter(Boolean).sort();
+  return `<section><h1 class="st" tabindex="-1">Usnesení rady a zastupitelstva</h1>
+  <p style="max-width:64ch">Co rada a zastupitelstvo na svých jednáních odhlasovaly – srozumitelně a s odkazem na stranu zápisu. ${pl(US.length,"usnesení","usnesení","usnesení")} z jednání od ${dat(d[0])} do ${dat(d.at(-1))}: rada ${nR}, zastupitelstvo ${nZ}.</p>
+  <div class="hledani"><label class="sr" for="uq">Hledat v usneseních</label><input id="uq" type="search" autocomplete="off" placeholder="Hledat v usneseních (ulice, budova, téma…)" value="${esc(FU.hledat)}"></div>
+  <div class="chips" role="group" aria-label="Orgán">${[["","Vše",US.length],["rada","Rada",nR],["zastupitelstvo","Zastupitelstvo",nZ]].map(([k,n,c])=>`<button data-uorgan="${k}" aria-pressed="${FU.organ===k}" class="${FU.organ===k?"on":""}">${n} <span>${c}</span></button>`).join("")}</div>
+  <label class="sr" for="uob">Oblast</label><select id="uob" style="font:15px var(--font);padding:8px 10px;border:1px solid var(--line);border-radius:var(--r-sm);margin:4px 0 8px"><option value="">Všechny oblasti</option>${ob.map(o=>`<option value="${esc(o.klic)}" ${FU.oblast===o.klic?"selected":""}>${esc(o.nazev)} (${o.hodnota})</option>`).join("")}</select>
+  <div id="useznam">${usneseniSeznam()}</div>
+  <p class="pozn">Názvy a shrnutí připravuje AI; každé shrnutí má doslovnou citaci, kterou kontroluje kód. Závazné je znění usnesení v zápisu. Jedno usnesení může patřit do více oblastí.</p></section>`;}
+function usneseniOvl(el){
+  const obnov=()=>{el.querySelector("#useznam").innerHTML=usneseniSeznam();};
+  el.querySelector("#uq").oninput=e=>{FU.hledat=e.target.value;obnov();};
+  el.querySelectorAll("[data-uorgan]").forEach(b=>b.onclick=()=>{FU.organ=b.dataset.uorgan;el.querySelectorAll("[data-uorgan]").forEach(x=>{const on=x===b;x.classList.toggle("on",on);x.setAttribute("aria-pressed",on);});obnov();});
+  el.querySelector("#uob").onchange=e=>{FU.oblast=e.target.value;obnov();};
+  el.addEventListener("click",e=>{if(e.target.closest("[data-uzrusit]")){Object.assign(FU,{organ:"",oblast:"",hledat:""});render();}});
+}
 
 // ---------- místa a služby + co se mění (#mista, #183) ----------
 const ZMP=Object.fromEntries(ZM.map(z=>[z.id,z]));
@@ -526,6 +569,7 @@ function prehled(){
   <div id="vysledky">${vysledky(r,filtr)}</div>
   <h2 style="margin-top:30px">Další přehledy</h2>
   <div class="odkazy">
+   <a href="#usneseni"><b>Usnesení rady a zastupitelstva</b><span>${pl(US.filter(u=>u.vysledek==="prijato").length,"přijaté usnesení","přijatá usnesení","přijatých usnesení")} s odkazem do zápisu</span></a>
    <a href="#casova-osa"><b>Časová osa projektů</b><span>${pl(H.filter(x=>x.typ==="investice").length,"investice","investice","investic")} a ${pl(zPol().length,"připravovaný projekt","připravované projekty","připravovaných projektů")} v čase</span></a>
    <a href="#pripravovane"><b>Připravované projekty</b><span>${pl(zPol().length,"projekt","projekty","projektů")} v přípravě · ${pl(zNam().length,"námět","náměty","námětů")}</span></a>
    <a href="#mista"><b>Místa a služby</b><span>${pl(ZM.length,"změna","změny","změn")} z usnesení</span></a>
@@ -556,6 +600,8 @@ function render(){
   if(h==="casova-osa"){zobraz(el,harmonogram(),h,"Časová osa projektů");window.scrollTo(0,0);casovaOsa(el);return;}
   if(h==="pripravovane"){zobraz(el,zasobnik(),h,"Připravované projekty");window.scrollTo(0,0);return;}
   if(h==="cisla"){zobraz(el,cisla(),h,"V číslech");window.scrollTo(0,0);return;}
+  if(h==="usneseni"||h.startsWith("usneseni-")){if(h.startsWith("usneseni-"))Object.assign(FU,{organ:"",hledat:"",oblast:h.slice(9)});zobraz(el,usneseniStranka(),"usneseni","Usnesení rady a zastupitelstva");usneseniOvl(el);window.scrollTo(0,0);return;}
+  if(/^(rm|zm)-\d{4}-/.test(h)&&US.some(u=>u.id===h)){Object.assign(FU,{organ:"",oblast:"",hledat:""});zobraz(el,usneseniStranka(),"usneseni","Usnesení rady a zastupitelstva");usneseniOvl(el);const t=document.getElementById(h);t&&t.scrollIntoView();return;}
   if(h==="jak"){zobraz(el,`<h1 class="st" tabindex="-1">Jak vzniká přehled</h1><div class="karta">${document.getElementById("paticka").innerHTML}</div>`,h,"Jak vzniká přehled");window.scrollTo(0,0);return;}
   const p=P.find(x=>x.id===h);
   if(p){zobraz(el,detail(p),"detail",p.nazev,true);window.scrollTo(0,0);
