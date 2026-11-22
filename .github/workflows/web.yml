@@ -56,6 +56,12 @@ jobs:
           NAHLED: ${{ steps.sablona.outputs.nahled }}
         run: python -m web.build --vystup _site $NAHLED
 
+      - name: Projekt Cloudflare Pages (založí se při prvním nasazení)
+        if: env.CLOUDFLARE_API_TOKEN != ''
+        run: |
+          npx --yes wrangler@4 pages project list | grep -q "radnice-trebonaci" \
+            || npx --yes wrangler@4 pages project create radnice-trebonaci --production-branch=main
+
       - name: Nasazení na Cloudflare Pages
         if: env.CLOUDFLARE_API_TOKEN != ''
         env:
