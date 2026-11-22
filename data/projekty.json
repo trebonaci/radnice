@@ -14841,6 +14841,30 @@
         "souhlas_zaplaceno": true,
         "souhlas_ezak": null,
         "dodatky_bez_dph": null
+      },
+      {
+        "role": "stavba",
+        "dodavatel": {
+          "nazev": "fyzická osoba",
+          "jmeno_podnikatele": "Jokl Jiří"
+        },
+        "puvodni": {
+          "bez_dph": 3572571.62,
+          "s_dph": 4322811.66,
+          "zdroj_id": "rs-25578403",
+          "url": "https://smlouvy.gov.cz/smlouva/25578403"
+        },
+        "vazba_dodatku": "dolozeno",
+        "dodatky": [],
+        "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
+        "cena_po_dodatcich": 3572571.62,
+        "neuplne_cena_po_dodatcich": [],
+        "cena_po_dodatcich_s_dph": 4322811.66,
+        "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
+        "souhlas_ezak": null,
+        "dodatky_bez_dph": null
       }
     ],
     "souhrn": {
@@ -14854,20 +14878,20 @@
         "jistota": "nevime"
       },
       "smluvni_bez_dph": {
-        "celkem": 3815638.97,
+        "celkem": 7388210.59,
         "druh": "smluvni",
         "s_dph": false,
         "mena": "CZK",
-        "po_dodatcich": 3815638.97,
+        "po_dodatcich": 7388210.59,
         "neuplne": [],
         "jistota": "nase_propojeni"
       },
       "smluvni_s_dph": {
-        "celkem": 4616923.15,
+        "celkem": 8939734.81,
         "druh": "smluvni",
         "s_dph": true,
         "mena": "CZK",
-        "po_dodatcich": 4616923.15,
+        "po_dodatcich": 8939734.81,
         "neuplne": [],
         "jistota": "nase_propojeni"
       },
@@ -14875,15 +14899,15 @@
         {
           "skupina": "stavba",
           "nazev": "Stavba",
-          "casti": 1,
-          "castka": 4616923.15,
+          "casti": 2,
+          "castka": 8939734.81,
           "nezname": [],
           "druh": "smluvni",
           "s_dph": true
         }
       ],
       "celkova_cena_s_dph": {
-        "castka": 4616923.15,
+        "castka": 8939734.81,
         "neuplne": [],
         "druh": "smluvni",
         "s_dph": true,
@@ -14950,6 +14974,43 @@
     ],
     "smlouvy": [
       {
+        "id": "rs-25578403",
+        "id_smlouvy": "23878567",
+        "navazuje_na": null,
+        "cislo_smlouvy": "750/7649/23",
+        "predmet": "Rozšíření části MK a úprava plochy v Jateční ulici v Třeboni.",
+        "role": "stavba",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2023-08-29",
+        "strany": [
+          {
+            "nazev": "fyzická osoba",
+            "jmeno_podnikatele": "Jokl Jiří",
+            "ico": null
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 3572571.62,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 4322811.66,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/25578403",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
         "id": "rs-33229332",
         "id_smlouvy": "31131720",
         "navazuje_na": null,
@@ -14990,6 +15051,17 @@
     "usneseni": [],
     "posledni_dodatek": {},
     "udalosti": [
+      {
+        "datum": "2023-08-29",
+        "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "smlouva o dílo",
+        "text": "Rozšíření části MK a úprava plochy v Jateční ulici v Třeboni.",
+        "role": "stavba",
+        "zdroj_id": "rs-25578403",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/25578403"
+      },
       {
         "datum": "2025-04-16",
         "typ": "soutez",
