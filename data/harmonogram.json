@@ -71,6 +71,28 @@
   },
   {
     "typ": "investice",
+    "id": "auto-vz-844",
+    "nazev": "Úprava plochy v Jateční ulici v Třeboni",
+    "oblast": "doprava",
+    "faze": "dokonceno",
+    "faze_jistota": "nase_propojeni",
+    "useky": [
+      {
+        "faze": "stavba",
+        "nazev": "stavba",
+        "od": "2023-08-29",
+        "do": "2025-05-12",
+        "otevreno": false,
+        "url": "https://smlouvy.gov.cz/smlouva/25578403",
+        "jistota": "dolozeno",
+        "konec_jistota": "posledni_doklad"
+      }
+    ],
+    "milniky": [],
+    "odkaz": "#auto-vz-844"
+  },
+  {
+    "typ": "investice",
     "id": "mk-sidliste",
     "nazev": "Ulice Sídliště – stavební úpravy",
     "oblast": "doprava",
@@ -911,37 +933,6 @@
       }
     ],
     "odkaz": "#vo-taboritska"
-  },
-  {
-    "typ": "investice",
-    "id": "auto-vz-844",
-    "nazev": "Úprava plochy v Jateční ulici v Třeboni",
-    "oblast": "doprava",
-    "faze": "dokonceno",
-    "faze_jistota": "nase_propojeni",
-    "useky": [
-      {
-        "faze": "soutez",
-        "nazev": "výběr dodavatele",
-        "od": "2025-04-16",
-        "do": "2025-05-12",
-        "otevreno": false,
-        "url": "https://zakazky.mesto-trebon.cz/contract_display_844.html",
-        "jistota": "dolozeno"
-      },
-      {
-        "faze": "stavba",
-        "nazev": "stavba",
-        "od": "2025-05-12",
-        "do": "2025-05-12",
-        "otevreno": false,
-        "url": "https://smlouvy.gov.cz/smlouva/33229332",
-        "jistota": "dolozeno",
-        "konec_jistota": "posledni_doklad"
-      }
-    ],
-    "milniky": [],
-    "odkaz": "#auto-vz-844"
   },
   {
     "typ": "investice",

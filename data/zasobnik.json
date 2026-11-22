@@ -5317,6 +5317,116 @@
     "jistota": "nase_propojeni"
   },
   {
+    "typ": "kandidat",
+    "id": "kandidat-rs-25945271",
+    "nazev": "Objednávka PD modernizace EPS",
+    "nositele": [
+      {
+        "ico": "25179896",
+        "nazev": "Slatinné lázně Třeboň s.r.o."
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-25945271",
+      "text": "Objednávka PD modernizace EPS",
+      "datum": "2023-09-26",
+      "ico": "25179896",
+      "url": "https://smlouvy.gov.cz/smlouva/25945271",
+      "cena": null,
+      "zaplaceno": null,
+      "dodatek": false
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-25457075",
+    "nazev": "Objednávka - vypracování projektové dokumentace opravy fasád a výplní otvorů technického dvora SLT",
+    "nositele": [
+      {
+        "ico": "25179896",
+        "nazev": "Slatinné lázně Třeboň s.r.o."
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-25457075",
+      "text": "Objednávka - vypracování projektové dokumentace opravy fasád a výplní otvorů technického dvora SLT",
+      "datum": "2023-08-16",
+      "ico": "25179896",
+      "url": "https://smlouvy.gov.cz/smlouva/25457075",
+      "cena": null,
+      "zaplaceno": null,
+      "dodatek": false
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-25308747",
+    "nazev": "Projektová dokumentace „Chodník v ulicích Pod Kopečkem, Na Kopečku a podél silnice I/24 Třeboň“ - dodatek č. 1 ke Smlouvě o dílo",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-25308747",
+      "text": "Projektová dokumentace „Chodník v ulicích Pod Kopečkem, Na Kopečku a podél silnice I/24 Třeboň“ - dodatek č. 1 ke Smlouvě o dílo",
+      "datum": "2023-08-01",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/25308747",
+      "cena": {
+        "s_dph": 75625.0,
+        "bez_dph": 62500.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"75625\"",
+          "\"hodnotaBezDph\": \"62500\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": true
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-25088263",
+    "nazev": "Stezka na Hvízdalky (zpracování PD)",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-25088263",
+      "text": "Stezka na Hvízdalky (zpracování PD)",
+      "datum": "2023-07-11",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/25088263",
+      "cena": {
+        "s_dph": 327547.0,
+        "bez_dph": 270700.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"327547\"",
+          "\"hodnotaBezDph\": \"270700\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni"
+  },
+  {
     "typ": "namet",
     "id": "sprm-274",
     "nazev": "Řešení kapacity kruhových objezdů",
