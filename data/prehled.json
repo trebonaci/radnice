@@ -1101,6 +1101,32 @@
     "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt)."
   },
   {
+    "id": "investice-auto-vz-945",
+    "druh": "investice",
+    "typ": "Investice",
+    "oblast": "voda_odpady",
+    "oblast_nazev": "Voda a odpady",
+    "stav": "realizuje_se",
+    "stav_jistota": "nase_propojeni",
+    "titulek": "Oprava vodovodu v úseku Sádecká ulice - autokemp Třeboňský ráj",
+    "shrnuti": "",
+    "posledni_udalost": "smlouva o dílo",
+    "datum": "2026-05-29",
+    "zdroj": {
+      "nazev": "Registr smluv: smlouva o dílo, 29. 5. 2026",
+      "url": "https://zakazky.mesto-trebon.cz/contract_display_945.html",
+      "druh": "Registr smluv",
+      "pdf": false,
+      "strana": null,
+      "datum": "2026-05-29"
+    },
+    "dalsi_krok": null,
+    "karta_id": "auto-vz-945",
+    "text_ai": false,
+    "stav_nazev": "Realizuje se",
+    "stav_popis": "Smlouva je uzavřená, práce probíhají."
+  },
+  {
     "id": "investice-auto-vz-930",
     "druh": "investice",
     "typ": "Investice",
@@ -1174,32 +1200,6 @@
     "text_ai": false,
     "stav_nazev": "Dokončeno",
     "stav_popis": "Stavba je předaná nebo zaplacená."
-  },
-  {
-    "id": "investice-auto-vz-945",
-    "druh": "investice",
-    "typ": "Investice",
-    "oblast": "voda_odpady",
-    "oblast_nazev": "Voda a odpady",
-    "stav": "realizuje_se",
-    "stav_jistota": "nase_propojeni",
-    "titulek": "Oprava vodovodu v úseku Sádecká ulice - autokemp Třeboňský ráj",
-    "shrnuti": "",
-    "posledni_udalost": "stavba, smlouva 11 dní po podání nabídek (vyhlášení zveřejněno až dodatečně), 3 nabídky",
-    "datum": "2026-05-18",
-    "zdroj": {
-      "nazev": "Veřejná zakázka (E-ZAK): stavba, smlouva 11 dní po podání nabídek (vyhlášení zveřejněno až dodatečně), 3 nabídky, 18. 5. 2026",
-      "url": "https://zakazky.mesto-trebon.cz/contract_display_945.html",
-      "druh": "Veřejná zakázka (E-ZAK)",
-      "pdf": false,
-      "strana": null,
-      "datum": "2026-05-18"
-    },
-    "dalsi_krok": null,
-    "karta_id": "auto-vz-945",
-    "text_ai": false,
-    "stav_nazev": "Realizuje se",
-    "stav_popis": "Smlouva je uzavřená, práce probíhají."
   },
   {
     "id": "zasobnik-divadlo-zazemi",
