@@ -32,8 +32,26 @@
     "nazev": "Fotovoltaika na ZŠ Na Sadech",
     "faze": "probiha",
     "oblast": "skolstvi",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "adresa",
+        "nazev": "ZŠ Na Sadech",
+        "bod": [
+          14.765894,
+          49.005369
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "RÚIAN",
+        "ruian_kod": "14835487"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.765894,
+        49.005369
+      ]
+    }
   },
   {
     "id": "hrbitov-sv-alzbety",
@@ -8799,8 +8817,26 @@
     "nazev": "ZŠ Na Sadech",
     "faze": null,
     "oblast": "skolstvi",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "adresa",
+        "nazev": "Na sadech 375",
+        "bod": [
+          14.765894,
+          49.005369
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "RÚIAN",
+        "ruian_kod": "14835487"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.765894,
+        49.005369
+      ]
+    }
   },
   {
     "id": "zs-sokolska",
