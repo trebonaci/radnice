@@ -54,7 +54,12 @@ jobs:
       - name: Sestavení
         env:
           NAHLED: ${{ steps.sablona.outputs.nahled }}
-        run: python -m web.build --vystup _site $NAHLED
+        run: |
+          if [ -n "$NAHLED" ]; then
+            python -m web.build --vystup _site --nahled
+          else
+            python -m web.build --vystup _site
+          fi
 
       - name: Projekt Cloudflare Pages (založí se při prvním nasazení)
         if: env.CLOUDFLARE_API_TOKEN != ''
