@@ -1,0 +1,78 @@
+name: Web radnice.trebonaci.cz
+
+# Statický web z tohoto repozitáře na Cloudflare Pages (#191).
+# Zveřejnění (rozhodnutí Ondřeje 22. 11. 2026): vzhled a typy obsahu schvaluje Ondřej – šablona webu (`web/`)
+# se bere ze schválené větve `verejne`; denní data (`data/`) z `main` jdou ven automaticky.
+# Dokud větev `verejne` neexistuje, nasazuje se jen náhled (větev Pages `nahled`, noindex).
+# Sloučení přes GITHUB_TOKEN další workflow nespouští, proto i pravidelný běh.
+
+on:
+  push:
+    branches: [main, verejne]
+  schedule:
+    - cron: "41 */3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: web-radnice
+  cancel-in-progress: false
+
+jobs:
+  nasazeni:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Šablona webu ze schválené větve verejne
+        id: sablona
+        run: |
+          if git rev-parse --verify --quiet origin/verejne >/dev/null; then
+            git checkout origin/verejne -- web/
+            echo "vetev=main" >> "$GITHUB_OUTPUT"
+            echo "nahled=" >> "$GITHUB_OUTPUT"
+          else
+            echo "::notice::Větev verejne neexistuje – vzhled zatím není schválený, nasazuje se jen náhled."
+            echo "vetev=nahled" >> "$GITHUB_OUTPUT"
+            echo "nahled=--nahled" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Sestavení
+        env:
+          NAHLED: ${{ steps.sablona.outputs.nahled }}
+        run: |
+          if [ -n "$NAHLED" ]; then
+            python -m web.build --vystup _site --nahled
+          else
+            python -m web.build --vystup _site
+          fi
+
+      - name: Projekt Cloudflare Pages (založí se při prvním nasazení)
+        if: env.CLOUDFLARE_API_TOKEN != ''
+        run: |
+          npx --yes wrangler@4 pages project list | grep -q "radnice-trebonaci" \
+            || npx --yes wrangler@4 pages project create radnice-trebonaci --production-branch=main
+
+      - name: Nasazení na Cloudflare Pages
+        if: env.CLOUDFLARE_API_TOKEN != ''
+        env:
+          VETEV: ${{ steps.sablona.outputs.vetev }}
+        run: npx --yes wrangler@4 pages deploy _site --project-name=radnice-trebonaci --branch="$VETEV" --commit-dirty=true
+
+      - name: Bez přístupu ke Cloudflare
+        if: env.CLOUDFLARE_API_TOKEN == ''
+        run: echo "::warning::Chybí secrets CLOUDFLARE_API_TOKEN / CLOUDFLARE_ACCOUNT_ID – web se sestavil, ale nenasadil."
