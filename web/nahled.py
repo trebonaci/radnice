@@ -1,32 +1,49 @@
-"""Samostatný náhled datového přehledu (#177): python -m web.nahled [výstup.html]
+"""Samostatný náhled přehledu radnice (#177, #187) bez WordPressu.
 
-Vloží data/ukazatele.json, radnice.css a radnice.js do jedné stránky ke schválení (bez WordPressu)."""
+    python -m web.nahled nahled.html [--sablona CESTA_K_TREBONACI_THEME]
+
+Vloží data (prehled, ukazatele, beh) a styl i skript stránky. S `--sablona` použije skutečné tokeny,
+základ, layout a hero ze šablony trebonaci-theme (soubory šablony se do repozitáře nekopírují)."""
+import argparse
 import json
-import sys
 from pathlib import Path
 
 KOREN = Path(__file__).resolve().parent.parent
 MODUL = KOREN / "web" / "radnice"
+SABLONA_CSS = ("css/01-tokens.css", "css/02-base.css", "css/03-layout.css", "css/components/hero.css")
 
 
-def sestav() -> str:
-    data = json.loads((KOREN / "data" / "ukazatele.json").read_text(encoding="utf-8"))
-    css = (MODUL / "radnice.css").read_text(encoding="utf-8")
-    js = (MODUL / "radnice.js").read_text(encoding="utf-8")
+def _data(nazev):
+    cesta = KOREN / "data" / f"{nazev}.json"
+    return json.loads(cesta.read_text(encoding="utf-8")) if cesta.exists() else None
+
+
+def sestav(sablona: Path | None = None) -> str:
+    data = {"prehled": _data("prehled"), "ukazatele": _data("ukazatele"), "beh": _data("beh")}
+    css_sablony = "\n".join((sablona / c).read_text(encoding="utf-8") for c in SABLONA_CSS if sablona and (sablona / c).exists())
+    css = (MODUL / "css" / "pages" / "radnice-prehled.css").read_text(encoding="utf-8")
+    js = (MODUL / "js" / "radnice-prehled.js").read_text(encoding="utf-8")
+    php = (MODUL / "page-radnice-prehled.php").read_text(encoding="utf-8")
+    telo = php[php.index("<main"):php.index("</main>") + len("</main>")]
+    telo = telo.replace("<?php the_title(); ?>", "Co se děje na radnici")
+    for atribut in ("data-prehled", "data-ukazatele", "data-beh"):
+        zacatek = telo.index(atribut + '="')
+        konec = telo.index('"', zacatek + len(atribut) + 2)
+        telo = telo[:zacatek] + atribut + '=""' + telo[konec + 1:]
     vlozena = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
     return f"""<!DOCTYPE html><html lang="cs"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Přehled radnice – náhled</title><style>body{{margin:0;background:#fbfaf7;font:16px/1.5 system-ui,sans-serif}}{css}</style></head><body>
-<main class="trb-radnice" id="trb-radnice" data-src="">
-<header class="trb-radnice__hlava"><span class="trb-radnice__stitek">Přehled radnice · náhled, neschváleno ke zveřejnění</span>
-<h1>Co se děje na radnici</h1>
-<p class="trb-radnice__lead">Co rada a zastupitelstvo projednávají, jaké smlouvy a zakázky město a jeho organizace uzavírají a kam jdou investice. Čísla počítá kód z veřejných zdrojů uvedených u každého údaje.</p></header>
-<div class="trb-radnice__obsah" aria-live="polite"></div>
-<p class="trb-radnice__pata">Nejde o web Města Třeboň. Data pocházejí z veřejných zdrojů uvedených u každého údaje.</p></main>
+<title>Přehled radnice – náhled</title><style>{css_sablony}
+{css}</style></head><body class="page-template-page-radnice-prehled">
+<p style="margin:0;padding:8px 24px;background:#fff3cd;font:14px system-ui">Náhled mimo WordPress · neschváleno ke zveřejnění · hlavička a patička webu chybí</p>
+{telo}
 <script>window.TRB_RADNICE_DATA={vlozena};</script><script>{js}</script></body></html>
 """
 
 
 if __name__ == "__main__":
-    vystup = Path(sys.argv[1] if len(sys.argv) > 1 else "nahled-radnice.html")
-    vystup.write_text(sestav(), encoding="utf-8")
-    print(vystup)
+    a = argparse.ArgumentParser()
+    a.add_argument("vystup", nargs="?", default="nahled-radnice.html")
+    a.add_argument("--sablona", type=Path)
+    args = a.parse_args()
+    Path(args.vystup).write_text(sestav(args.sablona), encoding="utf-8")
+    print(args.vystup)

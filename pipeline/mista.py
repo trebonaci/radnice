@@ -61,6 +61,7 @@ def zmeny(data: dict) -> list[dict]:
         vysledek.append({"id": f"zmena-{u['id']}", "text": po["text"], "kdo": po.get("kdo"), "oblast": po.get("oblast"),
                          "plati_od": po.get("plati_od"), "datum": j.get("datum"), "organ": j.get("organ"),
                          "usneseni_id": u["id"], "usneseni_cislo": u.get("cislo"),
+                         "ukony": sorted({x["ukon"] for x in u.get("ukony") or [] if x.get("ukon")}),
                          "url": f"{url}#page={strany[0]}" if url and strany else url,
                          "pro_obcany_ai": bool(u.get("pro_obcany_ai")), "overeni": u.get("overeni"), "misto_id": None,
                          "misto_jistota": None})

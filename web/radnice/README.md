@@ -1,22 +1,42 @@
-# Datový přehled radnice – modul pro trebonaci-theme (#177)
+# Přehled dění na radnici – modul pro trebonaci-theme (#177, #187)
 
-Stránka čte `ukazatele.json` v prohlížeči (nezávisle na WP Super Cache, ZADANI.md kap. 6). Čísla jen zobrazuje; počítá je `pipeline/ukazatele.py`.
+Stránka podle designových pravidel `docs/DESIGN-PREHLED-RADNICE.md`. Data čte v prohlížeči z JSON (nezávisle na WP Super Cache); čísla jen zobrazuje, počítá je pipeline (`pipeline/prehled.py`, `pipeline/ukazatele.py`).
 
 **Zveřejnit až po „schváleno ke zveřejnění“ (Ondřej).**
 
-## Instalace (ručně, FTP na Vedos)
-1. Do složky šablony `wp-content/themes/trebonaci-theme/`:
-   - `page-radnice.php` do kořene šablony,
-   - `radnice.css` a `radnice.js` do podsložky `radnice/`.
-2. `data/ukazatele.json` z repozitáře do `wp-content/uploads/radnice/ukazatele.json`.
-3. Ve WordPressu: nová stránka (např. „Co se děje na radnici“), šablona stránky **Přehled radnice**, publikovat.
-4. Vyprázdnit cache: wp-admin → Nastavení → WP Super Cache → Delete Cache.
+## Soubory (cesty uvnitř šablony `trebonaci-theme`)
+| Soubor v tomto repozitáři | Kam v šabloně |
+|---|---|
+| `web/radnice/page-radnice-prehled.php` | `page-radnice-prehled.php` |
+| `web/radnice/css/pages/radnice-prehled.css` | `css/pages/radnice-prehled.css` |
+| `web/radnice/js/radnice-prehled.js` | `js/radnice-prehled.js` |
+| `data/prehled.json`, `data/ukazatele.json`, `data/beh.json` | `wp-content/uploads/radnice/` |
 
-Při aktualizaci dat stačí znovu nahrát `ukazatele.json` (stránka ho načítá bez cache).
+## Napojení v `inc/enqueue.php` (jen pro tuto šablonu)
+1. `trebonaci_css_files()` – za `'map-chrome'` přidat:
+   `'radnice-prehled' => 'css/pages/radnice-prehled.css',`
+2. `trebonaci_page_css()` – před `return`:
+   ```php
+   if (is_page_template('page-radnice-prehled.php')) {
+       $css[] = 'radnice-prehled';
+   }
+   ```
+3. `trebonaci_enqueue()` – před `wp_enqueue_script('trebonaci-main', …)`:
+   ```php
+   if (is_page_template('page-radnice-prehled.php')) {
+       wp_enqueue_script('trebonaci-radnice-prehled', $theme . '/js/radnice-prehled.js', [],
+           file_exists($dir . '/js/radnice-prehled.js') ? filemtime($dir . '/js/radnice-prehled.js') : '1.0', true);
+   }
+   ```
 
-## Před nasazením ověřit v šabloně
-- Názvy tokenů v `css/01-tokens.css`: modul používá `--text`, `--muted`, `--primary`, `--bg-soft`, `--border`, `--surface` s náhradními hodnotami. Kde se jmenují jinak, upravit první řádek `radnice.css` (pravidla `PRAVIDLA-STYLU.md`: žádné pevné barvy mimo náhradní hodnoty).
-- Zda `get_header()` / `get_footer()` šablony obalují obsah vlastním kontejnerem (pak odebrat `max-width` z `.trb-radnice`).
+## Nasazení (ručně, FTP)
+1. Nahrát tři soubory šablony a upravený `inc/enqueue.php`.
+2. Nahrát tři JSON do `wp-content/uploads/radnice/`.
+3. WordPress: nová stránka „Co se děje na radnici“, šablona **Přehled dění na radnici**; položku menu přidat v administraci.
+4. Vyprázdnit WP Super Cache (wp-admin → Nastavení → WP Super Cache → Delete Cache).
+
+## Kontrola před předáním (pravidla §8)
+Desktop i mobil, klávesnice a focus, stav bez výsledků (filtr, který nic nenajde), dlouhé titulky, položka bez volitelného údaje (bez dalšího kroku), CSS se nenačítá na jiných stránkách, odkazy na zdroje.
 
 ## Náhled bez WordPressu
-`python -m web.nahled nahled.html` – jedna stránka s vloženými daty.
+`python -m web.nahled nahled.html --sablona <cesta k trebonaci-theme>` – použije skutečné tokeny, layout a hero šablony; hlavička a patička webu v náhledu chybí.
