@@ -5,3 +5,4 @@ data/.beh.lock
 *.tmp
 data/.beh-zapis.json
 data/.beh-zaloha/
+_site/
