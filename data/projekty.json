@@ -1919,6 +1919,331 @@
     ]
   },
   {
+    "id": "jiraskova-oprava-vozovky",
+    "nazev": "Jiráskova ulice – oprava vozovky",
+    "popis": null,
+    "oblast": "doprava",
+    "druh": "investicni",
+    "vlastnik_subjekt_id": "00247618",
+    "poznamka": null,
+    "automaticka": false,
+    "faze": "dokonceno",
+    "faze_jistota": "nase_propojeni",
+    "dokonceni": null,
+    "doplaceno": true,
+    "rozpocet": [],
+    "schvaleny_rozpocet": [],
+    "casti": [
+      {
+        "role": "stavba",
+        "dodavatel": {
+          "nazev": "SWIETELSKY stavební s.r.o.",
+          "jmeno_podnikatele": null
+        },
+        "puvodni": {
+          "bez_dph": 780250.45,
+          "s_dph": 944103.04,
+          "zdroj_id": "rs-30709184",
+          "url": "https://smlouvy.gov.cz/smlouva/30709184",
+          "zdroj_druh": "registr",
+          "muze_obsahovat_dodatky": false,
+          "zaklady_z_ezak_po_dodatcich": []
+        },
+        "vysoutezena": null,
+        "ezak_smluvni": {
+          "bez_dph": 780250.45,
+          "s_dph": 944103.04
+        },
+        "ezak_url": "https://zakazky.mesto-trebon.cz/contract_display_799.html",
+        "ukonceno_plneni": true,
+        "ezak_zaplaceno": {
+          "bez_dph": 780250.45,
+          "s_dph": 944103.04
+        },
+        "vazba_dodatku": "nase_propojeni",
+        "dodatky": [],
+        "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
+        "cena_po_dodatcich": 780250.45,
+        "neuplne_cena_po_dodatcich": [],
+        "cena_po_dodatcich_s_dph": 944103.04,
+        "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": true,
+        "souhlas_ezak": null,
+        "dodatky_bez_dph": null
+      },
+      {
+        "role": "projekt",
+        "dodavatel": {
+          "nazev": "WAY project s.r.o.",
+          "jmeno_podnikatele": null
+        },
+        "puvodni": {
+          "bez_dph": 89500.0,
+          "s_dph": 108295.0,
+          "zdroj_id": "rs-28715171",
+          "url": "https://smlouvy.gov.cz/smlouva/28715171"
+        },
+        "vazba_dodatku": "dolozeno",
+        "dodatky": [],
+        "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
+        "cena_po_dodatcich": 89500.0,
+        "neuplne_cena_po_dodatcich": [],
+        "cena_po_dodatcich_s_dph": 108295.0,
+        "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
+        "souhlas_ezak": null,
+        "dodatky_bez_dph": null
+      }
+    ],
+    "souhrn": {
+      "rozpocet": {
+        "celkem": null,
+        "investicni": null,
+        "neinvesticni": null,
+        "druh": "rozpocet_upraveny",
+        "s_dph": null,
+        "polozek": 0,
+        "jistota": "nevime"
+      },
+      "smluvni_bez_dph": {
+        "celkem": 869750.45,
+        "druh": "smluvni",
+        "s_dph": false,
+        "mena": "CZK",
+        "po_dodatcich": 869750.45,
+        "neuplne": [],
+        "jistota": "nase_propojeni"
+      },
+      "smluvni_s_dph": {
+        "celkem": 1052398.04,
+        "druh": "smluvni",
+        "s_dph": true,
+        "mena": "CZK",
+        "po_dodatcich": 1052398.04,
+        "neuplne": [],
+        "jistota": "nase_propojeni"
+      },
+      "skladba_s_dph": [
+        {
+          "skupina": "stavba",
+          "nazev": "Stavba",
+          "casti": 1,
+          "castka": 944103.04,
+          "nezname": [],
+          "druh": "smluvni",
+          "s_dph": true
+        },
+        {
+          "skupina": "priprava",
+          "nazev": "Projekt a výběrové řízení",
+          "casti": 1,
+          "castka": 108295.0,
+          "nezname": [],
+          "druh": "smluvni",
+          "s_dph": true
+        }
+      ],
+      "celkova_cena_s_dph": {
+        "castka": 1052398.04,
+        "neuplne": [],
+        "druh": "smluvni",
+        "s_dph": true,
+        "jistota": "nase_propojeni"
+      },
+      "schvaleny": []
+    },
+    "zakazky": [
+      {
+        "id": "ezak-VZ-799",
+        "nazev": "Oprava vozovky MK v Jiráskově ulici v Třeboni",
+        "role": "stavba",
+        "stav": "ukončeno plnění",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_799.html",
+        "casti": [
+          {
+            "nazev": "Oprava vozovky MK v Jiráskově ulici v Třeboni",
+            "stav": "ukončeno plnění",
+            "pocet_nabidek": 3,
+            "datum_uverejneni": "2024-09-20",
+            "datum_uzavreni_smlouvy": "2024-10-25",
+            "vitezove": [
+              {
+                "nazev": "SWIETELSKY stavební s.r.o.",
+                "jmeno_podnikatele": null,
+                "ico": "48035599",
+                "smluvni": [
+                  {
+                    "hodnota": 944103.04,
+                    "s_dph": true,
+                    "druh": "smluvni",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
+                  },
+                  {
+                    "hodnota": 780250.45,
+                    "s_dph": false,
+                    "druh": "smluvni",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
+                  }
+                ],
+                "nabidkova": [],
+                "zaplaceno": [
+                  {
+                    "obdobi": "2024",
+                    "hodnota": 944103.04,
+                    "s_dph": true
+                  },
+                  {
+                    "obdobi": "2024",
+                    "hodnota": 780250.45,
+                    "s_dph": false
+                  }
+                ]
+              }
+            ],
+            "datum_zruseni": null,
+            "registr_smluv": []
+          }
+        ],
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "smlouvy": [
+      {
+        "id": "rs-28715171",
+        "id_smlouvy": "26842627",
+        "navazuje_na": null,
+        "cislo_smlouvy": "750/8163/24",
+        "predmet": "Zpracování PD pro opravu vozovky MK v Jiráskově ulici v Třeboni.",
+        "role": "projekt",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2024-05-16",
+        "strany": [
+          {
+            "nazev": "WAY project s.r.o.",
+            "jmeno_podnikatele": null,
+            "ico": "63906601"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 89500.0,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 108295.0,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/28715171",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-30709184",
+        "id_smlouvy": "28729728",
+        "navazuje_na": null,
+        "cislo_smlouvy": "750/8373/24",
+        "predmet": "Oprava vozovky MK v Jiráskově ulici v Třeboni.",
+        "role": "stavba",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2024-10-25",
+        "strany": [
+          {
+            "nazev": "SWIETELSKY stavební s.r.o.",
+            "jmeno_podnikatele": null,
+            "ico": "48035599"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 780250.45,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 944103.04,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/30709184",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "usneseni": [],
+    "posledni_dodatek": {},
+    "udalosti": [
+      {
+        "datum": "2024-05-16",
+        "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "projektová dokumentace",
+        "text": "Zpracování PD pro opravu vozovky MK v Jiráskově ulici v Třeboni.",
+        "role": "projekt",
+        "zdroj_id": "rs-28715171",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/28715171"
+      },
+      {
+        "datum": "2024-09-20",
+        "typ": "soutez",
+        "text": "Soutěž: Oprava vozovky MK v Jiráskově ulici v Třeboni",
+        "kategorie": "výběrové řízení",
+        "kratce": "stavba, od vyhlášení do smlouvy 35 dní (lhůta pro nabídky 13 dní), 3 nabídky",
+        "lhuta_dni": 13,
+        "rizeni_dni": 35,
+        "po_nabidkach_dni": 22,
+        "zruseno": false,
+        "datum_zruseni": null,
+        "pocet_nabidek": 3,
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_799.html",
+        "role": "stavba",
+        "zdroj_id": "ezak-VZ-799",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2024-10-25",
+        "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "smlouva o dílo",
+        "text": "Oprava vozovky MK v Jiráskově ulici v Třeboni.",
+        "role": "stavba",
+        "zdroj_id": "rs-30709184",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/30709184"
+      }
+    ],
+    "posledni_udalost": {
+      "datum": "2024-10-25",
+      "typ": "smlouva",
+      "kategorie": "smlouva",
+      "kratce": "smlouva o dílo",
+      "text": "Oprava vozovky MK v Jiráskově ulici v Třeboni.",
+      "role": "stavba",
+      "zdroj_id": "rs-30709184",
+      "jistota": "nase_propojeni",
+      "url": "https://smlouvy.gov.cz/smlouva/30709184"
+    },
+    "sprm": []
+  },
+  {
     "id": "lazne-balneo-etapa1",
     "nazev": "Rozšíření balneo provozu v Lázeňském domě Aurora (1. etapa)",
     "popis": "Modernizace a rozšíření balneo provozu Lázeňského domu Aurora. Investuje Slatinné lázně Třeboň, městská společnost, na majetku města.",
@@ -6758,6 +7083,1572 @@
       "zdroj_id": "rs-39062598",
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/39062598"
+    },
+    "sprm": []
+  },
+  {
+    "id": "sportovni-hala-revitalizace",
+    "nazev": "Revitalizace sportovní haly včetně občerstvení",
+    "popis": "Stavební úpravy sportovní haly. Výstavbu občerstvení v prvním podzemním podlaží doplnil dodatek č. 4.",
+    "oblast": "sport",
+    "druh": "investicni",
+    "vlastnik_subjekt_id": "00247618",
+    "poznamka": null,
+    "automaticka": false,
+    "faze": "dokonceno",
+    "faze_jistota": "nase_propojeni",
+    "dokonceni": null,
+    "doplaceno": true,
+    "rozpocet": [],
+    "schvaleny_rozpocet": [],
+    "casti": [
+      {
+        "role": "stavba",
+        "dodavatel": {
+          "nazev": "HOCHTIEF CZ a. s.",
+          "jmeno_podnikatele": null
+        },
+        "puvodni": {
+          "bez_dph": 82306476.0,
+          "s_dph": 99590835.96,
+          "zdroj_id": "rs-29164576",
+          "url": "https://smlouvy.gov.cz/smlouva/29164576",
+          "zdroj_druh": "registr",
+          "muze_obsahovat_dodatky": false,
+          "zaklady_z_ezak_po_dodatcich": []
+        },
+        "vysoutezena": {
+          "bez_dph": 82306476.0,
+          "s_dph": 99590835.96
+        },
+        "ezak_smluvni": {
+          "bez_dph": 107523168.71,
+          "s_dph": 130103034.14
+        },
+        "ezak_url": "https://zakazky.mesto-trebon.cz/contract_display_706.html",
+        "ukonceno_plneni": true,
+        "ezak_zaplaceno": {
+          "bez_dph": 107523168.71,
+          "s_dph": 130103034.15
+        },
+        "vazba_dodatku": "nase_propojeni",
+        "dodatky": [
+          {
+            "cislo": 1,
+            "bez_dph": 3585094.69,
+            "s_dph": 4337964.57,
+            "jen_termin": false,
+            "doklad_usneseni": null,
+            "bez_castky": false,
+            "datum": "2024-11-27",
+            "zdroj_id": "rs-31161940",
+            "url": "https://smlouvy.gov.cz/smlouva/31161940"
+          },
+          {
+            "cislo": 2,
+            "bez_dph": 812585.43,
+            "s_dph": 983228.37,
+            "jen_termin": false,
+            "doklad_usneseni": null,
+            "bez_castky": false,
+            "datum": "2025-01-17",
+            "zdroj_id": "rs-31935344",
+            "url": "https://smlouvy.gov.cz/smlouva/31935344"
+          },
+          {
+            "cislo": 3,
+            "bez_dph": 515143.77,
+            "s_dph": 623323.96,
+            "jen_termin": false,
+            "doklad_usneseni": null,
+            "bez_castky": false,
+            "datum": "2025-03-25",
+            "zdroj_id": "rs-32677168",
+            "url": "https://smlouvy.gov.cz/smlouva/32677168"
+          },
+          {
+            "cislo": 4,
+            "bez_dph": 11851333.6,
+            "s_dph": 14340113.65,
+            "jen_termin": false,
+            "doklad_usneseni": null,
+            "bez_castky": false,
+            "datum": "2025-04-25",
+            "zdroj_id": "rs-33042828",
+            "url": "https://smlouvy.gov.cz/smlouva/33042828"
+          },
+          {
+            "cislo": 5,
+            "bez_dph": 2229091.37,
+            "s_dph": 2697200.56,
+            "jen_termin": false,
+            "doklad_usneseni": null,
+            "bez_castky": false,
+            "datum": "2025-08-12",
+            "zdroj_id": "rs-34511277",
+            "url": "https://smlouvy.gov.cz/smlouva/34511277"
+          },
+          {
+            "cislo": 6,
+            "bez_dph": 4090420.37,
+            "s_dph": 4949408.65,
+            "jen_termin": false,
+            "doklad_usneseni": null,
+            "bez_castky": false,
+            "datum": "2025-09-02",
+            "zdroj_id": "rs-34664981",
+            "url": "https://smlouvy.gov.cz/smlouva/34664981"
+          },
+          {
+            "cislo": 7,
+            "bez_dph": 345214.23,
+            "s_dph": 417709.22,
+            "jen_termin": false,
+            "doklad_usneseni": null,
+            "bez_castky": false,
+            "datum": "2025-09-26",
+            "zdroj_id": "rs-35109705",
+            "url": "https://smlouvy.gov.cz/smlouva/35109705"
+          },
+          {
+            "cislo": 8,
+            "bez_dph": 1568161.93,
+            "s_dph": 1897475.93,
+            "jen_termin": false,
+            "doklad_usneseni": null,
+            "bez_castky": false,
+            "datum": "2025-10-13",
+            "zdroj_id": "rs-35224705",
+            "url": "https://smlouvy.gov.cz/smlouva/35224705"
+          },
+          {
+            "cislo": 9,
+            "bez_dph": 219092.71,
+            "s_dph": 265102.18,
+            "jen_termin": false,
+            "doklad_usneseni": null,
+            "bez_castky": false,
+            "datum": "2025-11-20",
+            "zdroj_id": "rs-35693925",
+            "url": "https://smlouvy.gov.cz/smlouva/35693925"
+          },
+          {
+            "cislo": 10,
+            "bez_dph": 554.61,
+            "s_dph": 671.08,
+            "jen_termin": false,
+            "doklad_usneseni": null,
+            "bez_castky": false,
+            "datum": "2025-12-02",
+            "zdroj_id": "rs-35857689",
+            "url": "https://smlouvy.gov.cz/smlouva/35857689"
+          }
+        ],
+        "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
+        "cena_po_dodatcich": 107523168.71,
+        "neuplne_cena_po_dodatcich": [],
+        "cena_po_dodatcich_s_dph": 130103034.13,
+        "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": true,
+        "souhlas_ezak": true,
+        "dodatky_bez_dph": 25216692.71
+      },
+      {
+        "role": "stavba",
+        "dodavatel": {
+          "nazev": "JK - STAVPROJEKT, s.r.o.",
+          "jmeno_podnikatele": null
+        },
+        "puvodni": {
+          "bez_dph": 130000.0,
+          "s_dph": 157300.0,
+          "zdroj_id": "rs-35902245",
+          "url": "https://smlouvy.gov.cz/smlouva/35902245"
+        },
+        "vazba_dodatku": "dolozeno",
+        "dodatky": [],
+        "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
+        "cena_po_dodatcich": 130000.0,
+        "neuplne_cena_po_dodatcich": [],
+        "cena_po_dodatcich_s_dph": 157300.0,
+        "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
+        "souhlas_ezak": null,
+        "dodatky_bez_dph": null
+      },
+      {
+        "role": "projekt",
+        "dodavatel": {
+          "nazev": "JK - STAVPROJEKT, s.r.o.",
+          "jmeno_podnikatele": null
+        },
+        "puvodni": {
+          "bez_dph": 145000.0,
+          "s_dph": 175450.0,
+          "zdroj_id": "rs-35901953",
+          "url": "https://smlouvy.gov.cz/smlouva/35901953"
+        },
+        "vazba_dodatku": "dolozeno",
+        "dodatky": [],
+        "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
+        "cena_po_dodatcich": 145000.0,
+        "neuplne_cena_po_dodatcich": [],
+        "cena_po_dodatcich_s_dph": 175450.0,
+        "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
+        "souhlas_ezak": null,
+        "dodatky_bez_dph": null
+      },
+      {
+        "role": "projekt",
+        "dodavatel": {
+          "nazev": "JK - STAVPROJEKT, s.r.o.",
+          "jmeno_podnikatele": null
+        },
+        "puvodni": {
+          "bez_dph": 427500.0,
+          "s_dph": 517275.0,
+          "zdroj_id": "rs-31186248",
+          "url": "https://smlouvy.gov.cz/smlouva/31186248"
+        },
+        "vazba_dodatku": "dolozeno",
+        "dodatky": [],
+        "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
+        "cena_po_dodatcich": 427500.0,
+        "neuplne_cena_po_dodatcich": [],
+        "cena_po_dodatcich_s_dph": 517275.0,
+        "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
+        "souhlas_ezak": null,
+        "dodatky_bez_dph": null
+      },
+      {
+        "role": "technicky_dozor",
+        "dodavatel": {
+          "nazev": "fyzická osoba",
+          "jmeno_podnikatele": "Zdeněk Musil"
+        },
+        "puvodni": {
+          "bez_dph": 252000.0,
+          "s_dph": 252000.0,
+          "zdroj_id": "rs-28103823",
+          "url": "https://smlouvy.gov.cz/smlouva/28103823"
+        },
+        "vazba_dodatku": "dolozeno",
+        "dodatky": [
+          {
+            "cislo": 1,
+            "bez_dph": 140000.0,
+            "s_dph": 140000.0,
+            "jen_termin": false,
+            "doklad_usneseni": null,
+            "bez_castky": false,
+            "datum": "2025-04-25",
+            "zdroj_id": "rs-33043180",
+            "url": "https://smlouvy.gov.cz/smlouva/33043180"
+          },
+          {
+            "cislo": 2,
+            "bez_dph": 56933.13,
+            "s_dph": 56933.13,
+            "jen_termin": false,
+            "doklad_usneseni": null,
+            "bez_castky": false,
+            "datum": "2025-08-27",
+            "zdroj_id": "rs-34657589",
+            "url": "https://smlouvy.gov.cz/smlouva/34657589"
+          }
+        ],
+        "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
+        "cena_po_dodatcich": 448933.13,
+        "neuplne_cena_po_dodatcich": [],
+        "cena_po_dodatcich_s_dph": 448933.13,
+        "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
+        "souhlas_ezak": null,
+        "dodatky_bez_dph": 196933.13
+      },
+      {
+        "role": "bozp",
+        "dodavatel": {
+          "nazev": "STAVEBNÍ PORADNA, spol. s r.o.",
+          "jmeno_podnikatele": null
+        },
+        "puvodni": {
+          "bez_dph": 273000.0,
+          "s_dph": 330330.0,
+          "zdroj_id": "rs-28020999",
+          "url": "https://smlouvy.gov.cz/smlouva/28020999"
+        },
+        "vazba_dodatku": "dolozeno",
+        "dodatky": [
+          {
+            "cislo": 1,
+            "bez_dph": 136500.0,
+            "s_dph": 165165.0,
+            "jen_termin": false,
+            "doklad_usneseni": null,
+            "bez_castky": false,
+            "datum": "2025-05-02",
+            "zdroj_id": "rs-33125648",
+            "url": "https://smlouvy.gov.cz/smlouva/33125648"
+          },
+          {
+            "cislo": 2,
+            "bez_dph": 66733.26,
+            "s_dph": 80747.25,
+            "jen_termin": false,
+            "doklad_usneseni": null,
+            "bez_castky": false,
+            "datum": "2025-08-28",
+            "zdroj_id": "rs-34655669",
+            "url": "https://smlouvy.gov.cz/smlouva/34655669"
+          }
+        ],
+        "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
+        "cena_po_dodatcich": 476233.26,
+        "neuplne_cena_po_dodatcich": [],
+        "cena_po_dodatcich_s_dph": 576242.25,
+        "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
+        "souhlas_ezak": null,
+        "dodatky_bez_dph": 203233.26
+      },
+      {
+        "role": "administrace",
+        "dodavatel": {
+          "nazev": "GPL - INVEST s.r.o.",
+          "jmeno_podnikatele": null
+        },
+        "puvodni": {
+          "bez_dph": 75000.0,
+          "s_dph": 90750.0,
+          "zdroj_id": "rs-27511667",
+          "url": "https://smlouvy.gov.cz/smlouva/27511667"
+        },
+        "vazba_dodatku": "dolozeno",
+        "dodatky": [],
+        "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
+        "cena_po_dodatcich": 75000.0,
+        "neuplne_cena_po_dodatcich": [],
+        "cena_po_dodatcich_s_dph": 90750.0,
+        "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
+        "souhlas_ezak": null,
+        "dodatky_bez_dph": null
+      }
+    ],
+    "souhrn": {
+      "rozpocet": {
+        "celkem": null,
+        "investicni": null,
+        "neinvesticni": null,
+        "druh": "rozpocet_upraveny",
+        "s_dph": null,
+        "polozek": 0,
+        "jistota": "nevime"
+      },
+      "smluvni_bez_dph": {
+        "celkem": 83608976.0,
+        "druh": "smluvni",
+        "s_dph": false,
+        "mena": "CZK",
+        "po_dodatcich": 109225835.1,
+        "neuplne": [],
+        "jistota": "nase_propojeni"
+      },
+      "smluvni_s_dph": {
+        "celkem": 101113940.96,
+        "druh": "smluvni",
+        "s_dph": true,
+        "mena": "CZK",
+        "po_dodatcich": 132068984.51,
+        "neuplne": [],
+        "jistota": "nase_propojeni"
+      },
+      "skladba_s_dph": [
+        {
+          "skupina": "stavba",
+          "nazev": "Stavba",
+          "casti": 2,
+          "castka": 130260334.13,
+          "nezname": [],
+          "druh": "smluvni",
+          "s_dph": true
+        },
+        {
+          "skupina": "priprava",
+          "nazev": "Projekt a výběrové řízení",
+          "casti": 3,
+          "castka": 783475.0,
+          "nezname": [],
+          "druh": "smluvni",
+          "s_dph": true
+        },
+        {
+          "skupina": "dozor",
+          "nazev": "Technický dozor a BOZP",
+          "casti": 2,
+          "castka": 1025175.38,
+          "nezname": [],
+          "druh": "smluvni",
+          "s_dph": true
+        }
+      ],
+      "celkova_cena_s_dph": {
+        "castka": 132068984.51,
+        "neuplne": [],
+        "druh": "smluvni",
+        "s_dph": true,
+        "jistota": "nase_propojeni"
+      },
+      "schvaleny": []
+    },
+    "zakazky": [
+      {
+        "id": "ezak-VZ-706",
+        "nazev": "Stavební úpravy a revitalizace sportovní haly v Třeboni",
+        "role": "stavba",
+        "stav": "ukončeno plnění",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_706.html",
+        "casti": [
+          {
+            "nazev": "Stavební úpravy a revitalizace sportovní haly v Třeboni",
+            "stav": "ukončeno plnění",
+            "pocet_nabidek": 11,
+            "datum_uverejneni": "2024-02-15",
+            "datum_uzavreni_smlouvy": "2024-06-20",
+            "vitezove": [
+              {
+                "nazev": "HOCHTIEF CZ a. s.",
+                "jmeno_podnikatele": null,
+                "ico": "46678468",
+                "smluvni": [
+                  {
+                    "hodnota": 130103034.14,
+                    "s_dph": true,
+                    "druh": "smluvni",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
+                  },
+                  {
+                    "hodnota": 107523168.71,
+                    "s_dph": false,
+                    "druh": "smluvni",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
+                  }
+                ],
+                "nabidkova": [
+                  {
+                    "hodnota": 99590835.96,
+                    "s_dph": true,
+                    "druh": "nabidkova",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
+                  },
+                  {
+                    "hodnota": 82306476.0,
+                    "s_dph": false,
+                    "druh": "nabidkova",
+                    "mena": "CZK",
+                    "jednotka": "Kč"
+                  }
+                ],
+                "zaplaceno": [
+                  {
+                    "obdobi": "2024",
+                    "hodnota": 23708485.02,
+                    "s_dph": true
+                  },
+                  {
+                    "obdobi": "2024",
+                    "hodnota": 19593789.27,
+                    "s_dph": false
+                  },
+                  {
+                    "obdobi": "2025",
+                    "hodnota": 106394549.13,
+                    "s_dph": true
+                  },
+                  {
+                    "obdobi": "2025",
+                    "hodnota": 87929379.44,
+                    "s_dph": false
+                  }
+                ]
+              }
+            ],
+            "datum_zruseni": null,
+            "registr_smluv": [
+              "https://smlouvy.gov.cz/smlouva/31161940",
+              "https://smlouvy.gov.cz/smlouva/31935344",
+              "https://smlouvy.gov.cz/smlouva/32677168",
+              "https://smlouvy.gov.cz/smlouva/33042828",
+              "https://smlouvy.gov.cz/smlouva/34511277",
+              "https://smlouvy.gov.cz/smlouva/34664981",
+              "https://smlouvy.gov.cz/smlouva/35109705",
+              "https://smlouvy.gov.cz/smlouva/35224705",
+              "https://smlouvy.gov.cz/smlouva/35693925",
+              "https://smlouvy.gov.cz/smlouva/35857689"
+            ]
+          }
+        ],
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "smlouvy": [
+      {
+        "id": "rs-27511667",
+        "id_smlouvy": "25695379",
+        "navazuje_na": "23592055",
+        "cislo_smlouvy": "750/7984/24",
+        "predmet": "Administrace zadávacího řízení formou otevřeného podlimitního řízení na veřejnou zakázku \"Stavební úpravy a revitalizace sportovní haly\", v rozsahu plnění Rámcové příkazní smlouvy č. 750/7656/23.",
+        "role": "administrace",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2024-02-02",
+        "strany": [
+          {
+            "nazev": "GPL - INVEST s.r.o.",
+            "jmeno_podnikatele": null,
+            "ico": "26070766"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 75000.0,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 90750.0,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/27511667",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-28020999",
+        "id_smlouvy": "26177659",
+        "navazuje_na": null,
+        "cislo_smlouvy": "750/8064/24",
+        "predmet": "Příkazní smlouva - Výkon koordinátora BOZP na akci Stavební úpravy a revitalizace sportovní haly v Třeboni",
+        "role": "bozp",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2024-03-18",
+        "strany": [
+          {
+            "nazev": "STAVEBNÍ PORADNA, spol. s r.o.",
+            "jmeno_podnikatele": null,
+            "ico": "62508822"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 273000.0,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 330330.0,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/28020999",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-28103823",
+        "id_smlouvy": "26256679",
+        "navazuje_na": null,
+        "cislo_smlouvy": "750/8072/24",
+        "predmet": "Příkazní smlouva - TDS na akci Stavební úpravy a revitalizace sportovní haly v Třeboni",
+        "role": "technicky_dozor",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2024-03-21",
+        "strany": [
+          {
+            "nazev": "fyzická osoba",
+            "jmeno_podnikatele": "Zdeněk Musil",
+            "ico": null
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 252000.0,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 252000.0,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/28103823",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-29164576",
+        "id_smlouvy": "27274004",
+        "navazuje_na": null,
+        "cislo_smlouvy": "750/8196/24",
+        "predmet": "SOD Stavební úpravy a revitalizace sportovní haly v Třeboni.",
+        "role": "stavba",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2024-06-20",
+        "strany": [
+          {
+            "nazev": "HOCHTIEF CZ a. s.",
+            "jmeno_podnikatele": null,
+            "ico": "46678468"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 82306476.0,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 99590835.96,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/29164576",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-31161940",
+        "id_smlouvy": "29159748",
+        "navazuje_na": "27274004",
+        "cislo_smlouvy": "750/8196/24/1",
+        "predmet": "SOD Stavební úpravy a revitalizace sportovní haly v Třeboni - Dodatek č. 1",
+        "role": "stavba",
+        "dodatek_cislo": 1,
+        "datum_uzavreni": "2024-11-27",
+        "strany": [
+          {
+            "nazev": "HOCHTIEF CZ a. s.",
+            "jmeno_podnikatele": null,
+            "ico": "46678468"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 3585094.69,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 4337964.57,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/31161940",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-31186248",
+        "id_smlouvy": "29182892",
+        "navazuje_na": null,
+        "cislo_smlouvy": "750/8521/24",
+        "predmet": "Zpracování projektové dokumentace – „Stavební úpravy a revitalizace sportovní haly Třeboň – občerstvení“",
+        "role": "projekt",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2024-11-28",
+        "strany": [
+          {
+            "nazev": "JK - STAVPROJEKT, s.r.o.",
+            "jmeno_podnikatele": null,
+            "ico": "26112779"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 427500.0,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 517275.0,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/31186248",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-31935344",
+        "id_smlouvy": "29896208",
+        "navazuje_na": "27274004",
+        "cislo_smlouvy": "750/8196/24/2",
+        "predmet": "SOD Stavební úpravy a revitalizace sportovní haly v Třeboni - Dodatek č. 2.",
+        "role": "stavba",
+        "dodatek_cislo": 2,
+        "datum_uzavreni": "2025-01-17",
+        "strany": [
+          {
+            "nazev": "HOCHTIEF CZ a. s.",
+            "jmeno_podnikatele": null,
+            "ico": "46678468"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 812585.43,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 983228.37,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/31935344",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-32677168",
+        "id_smlouvy": "30603408",
+        "navazuje_na": "27274004",
+        "cislo_smlouvy": "750/8196/24/3",
+        "predmet": "SOD Stavební úpravy a revitalizace sportovní haly v Třeboni - Dodatek č. 3",
+        "role": "stavba",
+        "dodatek_cislo": 3,
+        "datum_uzavreni": "2025-03-25",
+        "strany": [
+          {
+            "nazev": "HOCHTIEF CZ a. s.",
+            "jmeno_podnikatele": null,
+            "ico": "46678468"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 515143.77,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 623323.96,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/32677168",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-33042828",
+        "id_smlouvy": "30952224",
+        "navazuje_na": "27274004",
+        "cislo_smlouvy": "750/8196/24/4",
+        "predmet": "SOD Stavební úpravy a revitalizace sportovní haly v Třeboni - Dodatek č. 4.",
+        "role": "stavba",
+        "dodatek_cislo": 4,
+        "datum_uzavreni": "2025-04-25",
+        "strany": [
+          {
+            "nazev": "HOCHTIEF CZ a. s.",
+            "jmeno_podnikatele": null,
+            "ico": "46678468"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 11851333.6,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 14340113.65,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/33042828",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-33043180",
+        "id_smlouvy": "30952564",
+        "navazuje_na": "26256679",
+        "cislo_smlouvy": "750/8072/24/1",
+        "predmet": "Příkazní smlouva - TDS na akci Stavební úpravy a revitalizace sportovní haly v Třeboni - Dodatek č. 1",
+        "role": "technicky_dozor",
+        "dodatek_cislo": 1,
+        "datum_uzavreni": "2025-04-25",
+        "strany": [
+          {
+            "nazev": "fyzická osoba",
+            "jmeno_podnikatele": "Zdeněk Musil",
+            "ico": null
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 140000.0,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 140000.0,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/33043180",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-33125648",
+        "id_smlouvy": "31031832",
+        "navazuje_na": "26177659",
+        "cislo_smlouvy": "750/8064/24/1",
+        "predmet": "Příkazní smlouva - Výkon koordinátora BOZP na akci Stavební úpravy a revitalizace sportovní haly v Třeboni - Dodatek č. 1",
+        "role": "bozp",
+        "dodatek_cislo": 1,
+        "datum_uzavreni": "2025-05-02",
+        "strany": [
+          {
+            "nazev": "STAVEBNÍ PORADNA, spol. s r.o.",
+            "jmeno_podnikatele": null,
+            "ico": "62508822"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 136500.0,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 165165.0,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/33125648",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-34511277",
+        "id_smlouvy": "32354889",
+        "navazuje_na": "27274004",
+        "cislo_smlouvy": "750/8196/24/5",
+        "predmet": "SOD Stavební úpravy a revitalizace sportovní haly v Třeboni - Dodatek č. 5.",
+        "role": "stavba",
+        "dodatek_cislo": 5,
+        "datum_uzavreni": "2025-08-12",
+        "strany": [
+          {
+            "nazev": "HOCHTIEF CZ a. s.",
+            "jmeno_podnikatele": null,
+            "ico": "46678468"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 2229091.37,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 2697200.56,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/34511277",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-34657589",
+        "id_smlouvy": "32494433",
+        "navazuje_na": "26256679",
+        "cislo_smlouvy": "750/8072/24/2",
+        "predmet": "Příkazní smlouva - TDS na akci Stavební úpravy a revitalizace sportovní haly v Třeboni - Dodatek č. 2",
+        "role": "technicky_dozor",
+        "dodatek_cislo": 2,
+        "datum_uzavreni": "2025-08-27",
+        "strany": [
+          {
+            "nazev": "fyzická osoba",
+            "jmeno_podnikatele": "Zdeněk Musil",
+            "ico": null
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 56933.13,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 56933.13,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/34657589",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-34655669",
+        "id_smlouvy": "32492625",
+        "navazuje_na": "26177659",
+        "cislo_smlouvy": "750/8064/24/2",
+        "predmet": "Příkazní smlouva - Výkon koordinátora BOZP na akci Stavební úpravy a revitalizace sportovní haly v Třeboni - Dodatek č. 2",
+        "role": "bozp",
+        "dodatek_cislo": 2,
+        "datum_uzavreni": "2025-08-28",
+        "strany": [
+          {
+            "nazev": "STAVEBNÍ PORADNA, spol. s r.o.",
+            "jmeno_podnikatele": null,
+            "ico": "62508822"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 66733.26,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 80747.25,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/34655669",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-34664981",
+        "id_smlouvy": "32501485",
+        "navazuje_na": "27274004",
+        "cislo_smlouvy": "750/8196/24/6",
+        "predmet": "SOD Stavební úpravy a revitalizace sportovní haly v Třeboni - Dodatek č. 6",
+        "role": "stavba",
+        "dodatek_cislo": 6,
+        "datum_uzavreni": "2025-09-02",
+        "strany": [
+          {
+            "nazev": "HOCHTIEF CZ a. s.",
+            "jmeno_podnikatele": null,
+            "ico": "46678468"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 4090420.37,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 4949408.65,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/34664981",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-35109705",
+        "id_smlouvy": "32927553",
+        "navazuje_na": "27274004",
+        "cislo_smlouvy": "750/8196/24/7",
+        "predmet": "SOD Stavební úpravy a revitalizace sportovní haly v Třeboni - Dodatek č. 7",
+        "role": "stavba",
+        "dodatek_cislo": 7,
+        "datum_uzavreni": "2025-09-26",
+        "strany": [
+          {
+            "nazev": "HOCHTIEF CZ a. s.",
+            "jmeno_podnikatele": null,
+            "ico": "46678468"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 345214.23,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 417709.22,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/35109705",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-35224705",
+        "id_smlouvy": "33038037",
+        "navazuje_na": "27274004",
+        "cislo_smlouvy": "750/8196/24/8",
+        "predmet": "SOD Stavební úpravy a revitalizace sportovní haly v Třeboni - Dodatek č. 8",
+        "role": "stavba",
+        "dodatek_cislo": 8,
+        "datum_uzavreni": "2025-10-13",
+        "strany": [
+          {
+            "nazev": "HOCHTIEF CZ a. s.",
+            "jmeno_podnikatele": null,
+            "ico": "46678468"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 1568161.93,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 1897475.93,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/35224705",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-35693925",
+        "id_smlouvy": "33486649",
+        "navazuje_na": "27274004",
+        "cislo_smlouvy": "750/8196/24/9",
+        "predmet": "SOD Stavební úpravy a revitalizace sportovní haly v Třeboni - Dodatek č. 9.",
+        "role": "stavba",
+        "dodatek_cislo": 9,
+        "datum_uzavreni": "2025-11-20",
+        "strany": [
+          {
+            "nazev": "HOCHTIEF CZ a. s.",
+            "jmeno_podnikatele": null,
+            "ico": "46678468"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 219092.71,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 265102.18,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/35693925",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-35857689",
+        "id_smlouvy": "33642985",
+        "navazuje_na": "27274004",
+        "cislo_smlouvy": "750/8196/24/10",
+        "predmet": "SOD Stavební úpravy a revitalizace sportovní haly v Třeboni - Dodatek č. 10.",
+        "role": "stavba",
+        "dodatek_cislo": 10,
+        "datum_uzavreni": "2025-12-02",
+        "strany": [
+          {
+            "nazev": "HOCHTIEF CZ a. s.",
+            "jmeno_podnikatele": null,
+            "ico": "46678468"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 554.61,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 671.08,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/35857689",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-35901953",
+        "id_smlouvy": "33685237",
+        "navazuje_na": null,
+        "cislo_smlouvy": "750/9209/25",
+        "predmet": "PD sportovní hala Třeboň - specializované činnosti projektanta pro vypracování PD ve stupních DSP, DZS a DPS.",
+        "role": "projekt",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2025-12-04",
+        "strany": [
+          {
+            "nazev": "JK - STAVPROJEKT, s.r.o.",
+            "jmeno_podnikatele": null,
+            "ico": "26112779"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 145000.0,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 175450.0,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/35901953",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-35902245",
+        "id_smlouvy": "33685525",
+        "navazuje_na": null,
+        "cislo_smlouvy": "750/9210/25",
+        "predmet": "PD změn dispozic stavby SÚ a revitalizace sportovní haly v 1.PP - VZT, infrasauna, masérna.",
+        "role": "stavba",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2025-12-04",
+        "strany": [
+          {
+            "nazev": "JK - STAVPROJEKT, s.r.o.",
+            "jmeno_podnikatele": null,
+            "ico": "26112779"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 130000.0,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 157300.0,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/35902245",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      }
+    ],
+    "usneseni": [],
+    "posledni_dodatek": {
+      "bozp": 2,
+      "stavba": 10,
+      "technicky_dozor": 2
+    },
+    "udalosti": [
+      {
+        "datum": "2024-02-02",
+        "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "administrace výběrového řízení",
+        "text": "Administrace zadávacího řízení formou otevřeného podlimitního řízení na veřejnou zakázku \"Stavební úpravy a revitalizace sportovní haly\", v rozsahu plnění Rámcové příkazní smlouvy č. 750/7656/23.",
+        "role": "administrace",
+        "zdroj_id": "rs-27511667",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/27511667"
+      },
+      {
+        "datum": "2024-02-15",
+        "typ": "soutez",
+        "text": "Soutěž: Stavební úpravy a revitalizace sportovní haly v Třeboni",
+        "kategorie": "výběrové řízení",
+        "kratce": "stavba, od vyhlášení do smlouvy 126 dní (lhůta pro nabídky 74 dní), 11 nabídek",
+        "lhuta_dni": 74,
+        "rizeni_dni": 126,
+        "po_nabidkach_dni": 52,
+        "zruseno": false,
+        "datum_zruseni": null,
+        "pocet_nabidek": 11,
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_706.html",
+        "role": "stavba",
+        "zdroj_id": "ezak-VZ-706",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2024-03-18",
+        "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "BOZP",
+        "text": "Příkazní smlouva - Výkon koordinátora BOZP na akci Stavební úpravy a revitalizace sportovní haly v Třeboni",
+        "role": "bozp",
+        "zdroj_id": "rs-28020999",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/28020999"
+      },
+      {
+        "datum": "2024-03-21",
+        "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "technický dozor",
+        "text": "Příkazní smlouva - TDS na akci Stavební úpravy a revitalizace sportovní haly v Třeboni",
+        "role": "technicky_dozor",
+        "zdroj_id": "rs-28103823",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/28103823"
+      },
+      {
+        "datum": "2024-06-20",
+        "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "smlouva o dílo",
+        "text": "SOD Stavební úpravy a revitalizace sportovní haly v Třeboni.",
+        "role": "stavba",
+        "zdroj_id": "rs-29164576",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/29164576"
+      },
+      {
+        "datum": "2024-11-27",
+        "typ": "dodatek",
+        "kategorie": "smlouva",
+        "kratce": "dodatek 1 (smlouva o dílo)",
+        "text": "SOD Stavební úpravy a revitalizace sportovní haly v Třeboni - Dodatek č. 1",
+        "role": "stavba",
+        "zdroj_id": "rs-31161940",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/31161940"
+      },
+      {
+        "datum": "2024-11-28",
+        "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "projektová dokumentace",
+        "text": "Zpracování projektové dokumentace – „Stavební úpravy a revitalizace sportovní haly Třeboň – občerstvení“",
+        "role": "projekt",
+        "zdroj_id": "rs-31186248",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/31186248"
+      },
+      {
+        "datum": "2025-01-17",
+        "typ": "dodatek",
+        "kategorie": "smlouva",
+        "kratce": "dodatek 2 (smlouva o dílo)",
+        "text": "SOD Stavební úpravy a revitalizace sportovní haly v Třeboni - Dodatek č. 2.",
+        "role": "stavba",
+        "zdroj_id": "rs-31935344",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/31935344"
+      },
+      {
+        "datum": "2025-03-25",
+        "typ": "dodatek",
+        "kategorie": "smlouva",
+        "kratce": "dodatek 3 (smlouva o dílo)",
+        "text": "SOD Stavební úpravy a revitalizace sportovní haly v Třeboni - Dodatek č. 3",
+        "role": "stavba",
+        "zdroj_id": "rs-32677168",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/32677168"
+      },
+      {
+        "datum": "2025-04-25",
+        "typ": "dodatek",
+        "kategorie": "smlouva",
+        "kratce": "dodatek 1 (technický dozor)",
+        "text": "Příkazní smlouva - TDS na akci Stavební úpravy a revitalizace sportovní haly v Třeboni - Dodatek č. 1",
+        "role": "technicky_dozor",
+        "zdroj_id": "rs-33043180",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/33043180"
+      },
+      {
+        "datum": "2025-04-25",
+        "typ": "dodatek",
+        "kategorie": "smlouva",
+        "kratce": "dodatek 4 (smlouva o dílo)",
+        "text": "SOD Stavební úpravy a revitalizace sportovní haly v Třeboni - Dodatek č. 4.",
+        "role": "stavba",
+        "zdroj_id": "rs-33042828",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/33042828"
+      },
+      {
+        "datum": "2025-05-02",
+        "typ": "dodatek",
+        "kategorie": "smlouva",
+        "kratce": "dodatek 1 (BOZP)",
+        "text": "Příkazní smlouva - Výkon koordinátora BOZP na akci Stavební úpravy a revitalizace sportovní haly v Třeboni - Dodatek č. 1",
+        "role": "bozp",
+        "zdroj_id": "rs-33125648",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/33125648"
+      },
+      {
+        "datum": "2025-08-12",
+        "typ": "dodatek",
+        "kategorie": "smlouva",
+        "kratce": "dodatek 5 (smlouva o dílo)",
+        "text": "SOD Stavební úpravy a revitalizace sportovní haly v Třeboni - Dodatek č. 5.",
+        "role": "stavba",
+        "zdroj_id": "rs-34511277",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/34511277"
+      },
+      {
+        "datum": "2025-08-27",
+        "typ": "dodatek",
+        "kategorie": "smlouva",
+        "kratce": "dodatek 2 (technický dozor)",
+        "text": "Příkazní smlouva - TDS na akci Stavební úpravy a revitalizace sportovní haly v Třeboni - Dodatek č. 2",
+        "role": "technicky_dozor",
+        "zdroj_id": "rs-34657589",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/34657589"
+      },
+      {
+        "datum": "2025-08-28",
+        "typ": "dodatek",
+        "kategorie": "smlouva",
+        "kratce": "dodatek 2 (BOZP)",
+        "text": "Příkazní smlouva - Výkon koordinátora BOZP na akci Stavební úpravy a revitalizace sportovní haly v Třeboni - Dodatek č. 2",
+        "role": "bozp",
+        "zdroj_id": "rs-34655669",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/34655669"
+      },
+      {
+        "datum": "2025-09-02",
+        "typ": "dodatek",
+        "kategorie": "smlouva",
+        "kratce": "dodatek 6 (smlouva o dílo)",
+        "text": "SOD Stavební úpravy a revitalizace sportovní haly v Třeboni - Dodatek č. 6",
+        "role": "stavba",
+        "zdroj_id": "rs-34664981",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/34664981"
+      },
+      {
+        "datum": "2025-09-26",
+        "typ": "dodatek",
+        "kategorie": "smlouva",
+        "kratce": "dodatek 7 (smlouva o dílo)",
+        "text": "SOD Stavební úpravy a revitalizace sportovní haly v Třeboni - Dodatek č. 7",
+        "role": "stavba",
+        "zdroj_id": "rs-35109705",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/35109705"
+      },
+      {
+        "datum": "2025-10-13",
+        "typ": "dodatek",
+        "kategorie": "smlouva",
+        "kratce": "dodatek 8 (smlouva o dílo)",
+        "text": "SOD Stavební úpravy a revitalizace sportovní haly v Třeboni - Dodatek č. 8",
+        "role": "stavba",
+        "zdroj_id": "rs-35224705",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/35224705"
+      },
+      {
+        "datum": "2025-11-20",
+        "typ": "dodatek",
+        "kategorie": "smlouva",
+        "kratce": "dodatek 9 (smlouva o dílo)",
+        "text": "SOD Stavební úpravy a revitalizace sportovní haly v Třeboni - Dodatek č. 9.",
+        "role": "stavba",
+        "zdroj_id": "rs-35693925",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/35693925"
+      },
+      {
+        "datum": "2025-12-02",
+        "typ": "dodatek",
+        "kategorie": "smlouva",
+        "kratce": "dodatek 10 (smlouva o dílo)",
+        "text": "SOD Stavební úpravy a revitalizace sportovní haly v Třeboni - Dodatek č. 10.",
+        "role": "stavba",
+        "zdroj_id": "rs-35857689",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/35857689"
+      },
+      {
+        "datum": "2025-12-04",
+        "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "smlouva o dílo",
+        "text": "PD změn dispozic stavby SÚ a revitalizace sportovní haly v 1.PP - VZT, infrasauna, masérna.",
+        "role": "stavba",
+        "zdroj_id": "rs-35902245",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/35902245"
+      },
+      {
+        "datum": "2025-12-04",
+        "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "projekt pro stavební řízení a prováděcí",
+        "text": "PD sportovní hala Třeboň - specializované činnosti projektanta pro vypracování PD ve stupních DSP, DZS a DPS.",
+        "role": "projekt",
+        "zdroj_id": "rs-35901953",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/35901953"
+      }
+    ],
+    "posledni_udalost": {
+      "datum": "2025-12-04",
+      "typ": "smlouva",
+      "kategorie": "smlouva",
+      "kratce": "projekt pro stavební řízení a prováděcí",
+      "text": "PD sportovní hala Třeboň - specializované činnosti projektanta pro vypracování PD ve stupních DSP, DZS a DPS.",
+      "role": "projekt",
+      "zdroj_id": "rs-35901953",
+      "jistota": "nase_propojeni",
+      "url": "https://smlouvy.gov.cz/smlouva/35901953"
     },
     "sprm": []
   },

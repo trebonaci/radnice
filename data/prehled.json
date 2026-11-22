@@ -55,7 +55,7 @@
     "oblast": "kultura",
     "oblast_nazev": "Kultura a památky",
     "stav": "planuje_se",
-    "titulek": "Stará radnice – oprava věže a fasády",
+    "titulek": "Stará radnice – navazující příprava opravy věže",
     "shrnuti": "Připravuje se: prováděcí projekt zadán.",
     "datum": "2026-11-10",
     "zdroj": {
@@ -1303,7 +1303,7 @@
     "oblast": "doprava",
     "oblast_nazev": "Doprava a ulice",
     "stav": "planuje_se",
-    "titulek": "Jiráskova ulice",
+    "titulek": "Jiráskova ulice – navazující stavební úpravy",
     "shrnuti": "Připravuje se: projektová dokumentace zadána.",
     "datum": "2026-03-30",
     "zdroj": {
@@ -1355,29 +1355,6 @@
     "zdroj": {
       "nazev": "Registr smluv: Zpracování PD ve stupni pro povolení záměru a provedení stavby Táboritská ulice - propojení stezky pro chodce a cyklisty mezi okružní křižovatkou a ulicí Jablonského v Třeboni., 2. 2. 2026",
       "url": "https://smlouvy.gov.cz/smlouva/36631737",
-      "druh": "Registr smluv",
-      "pdf": false,
-      "strana": null,
-      "datum": "2026-02-02"
-    },
-    "dalsi_krok": null,
-    "text_ai": false,
-    "stav_nazev": "Plánuje se",
-    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt)."
-  },
-  {
-    "id": "zasobnik-dps1-kotelny",
-    "druh": "zasobnik",
-    "typ": "Příprava investice",
-    "oblast": "socialni",
-    "oblast_nazev": "Sociální služby",
-    "stav": "planuje_se",
-    "titulek": "Kotelny a plynové kotle v domě s pečovatelskou službou I (Chelčického)",
-    "shrnuti": "Připravuje se: projektová dokumentace zadána.",
-    "datum": "2026-02-02",
-    "zdroj": {
-      "nazev": "Registr smluv: Zpracování PD Stavebních úprav kotelen a výměny plynových kotlů v objektu DPS IA a DPS IC, Chelčického 1, Třeboň, 2. 2. 2026",
-      "url": "https://smlouvy.gov.cz/smlouva/36642205",
       "druh": "Registr smluv",
       "pdf": false,
       "strana": null,
@@ -1490,17 +1467,19 @@
     "stav_popis": "Smlouva je uzavřená, práce probíhají."
   },
   {
-    "id": "zasobnik-sportovni-hala-revitalizace",
-    "druh": "zasobnik",
-    "typ": "Příprava investice",
+    "id": "investice-sportovni-hala-revitalizace",
+    "druh": "investice",
+    "typ": "Investice",
     "oblast": "sport",
     "oblast_nazev": "Sport",
-    "stav": "planuje_se",
-    "titulek": "Revitalizace sportovní haly (občerstvení, zázemí v 1. podzemním podlaží)",
-    "shrnuti": "Připravuje se: prováděcí projekt zadán.",
+    "stav": "dokonceno",
+    "stav_jistota": "nase_propojeni",
+    "titulek": "Revitalizace sportovní haly včetně občerstvení",
+    "shrnuti": "Stavební úpravy sportovní haly. Výstavbu občerstvení v prvním podzemním podlaží doplnil dodatek č. 4.",
+    "posledni_udalost": "projekt pro stavební řízení a prováděcí",
     "datum": "2025-12-04",
     "zdroj": {
-      "nazev": "Registr smluv: PD sportovní hala Třeboň - specializované činnosti projektanta pro vypracování PD ve stupních DSP, DZS a DPS., 4. 12. 2025",
+      "nazev": "Registr smluv: projekt pro stavební řízení a prováděcí, 4. 12. 2025",
       "url": "https://smlouvy.gov.cz/smlouva/35901953",
       "druh": "Registr smluv",
       "pdf": false,
@@ -1508,9 +1487,10 @@
       "datum": "2025-12-04"
     },
     "dalsi_krok": null,
+    "karta_id": "sportovni-hala-revitalizace",
     "text_ai": false,
-    "stav_nazev": "Plánuje se",
-    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt)."
+    "stav_nazev": "Dokončeno",
+    "stav_popis": "Stavba je předaná nebo zaplacená."
   },
   {
     "id": "zasobnik-lazne-restaurace",
@@ -1816,7 +1796,7 @@
     "oblast": "doprava",
     "oblast_nazev": "Doprava a ulice",
     "stav": "planuje_se",
-    "titulek": "Jateční ulice – parkoviště a komunikace",
+    "titulek": "Jateční ulice – další úpravy komunikace",
     "shrnuti": "Připravuje se: projektová dokumentace zadána.",
     "datum": "2025-02-27",
     "zdroj": {
@@ -1877,6 +1857,32 @@
     "text_ai": false,
     "stav_nazev": "Plánuje se",
     "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt)."
+  },
+  {
+    "id": "investice-jiraskova-oprava-vozovky",
+    "druh": "investice",
+    "typ": "Investice",
+    "oblast": "doprava",
+    "oblast_nazev": "Doprava a ulice",
+    "stav": "dokonceno",
+    "stav_jistota": "nase_propojeni",
+    "titulek": "Jiráskova ulice – oprava vozovky",
+    "shrnuti": "",
+    "posledni_udalost": "smlouva o dílo",
+    "datum": "2024-10-25",
+    "zdroj": {
+      "nazev": "Registr smluv: smlouva o dílo, 25. 10. 2024",
+      "url": "https://smlouvy.gov.cz/smlouva/30709184",
+      "druh": "Registr smluv",
+      "pdf": false,
+      "strana": null,
+      "datum": "2024-10-25"
+    },
+    "dalsi_krok": null,
+    "karta_id": "jiraskova-oprava-vozovky",
+    "text_ai": false,
+    "stav_nazev": "Dokončeno",
+    "stav_popis": "Stavba je předaná nebo zaplacená."
   },
   {
     "id": "investice-auto-vz-823",
