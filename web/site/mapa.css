@@ -53,3 +53,6 @@ body[data-str=mapa] #karty{max-width:1180px}
 }
 
 .zs > [id^="priprava-"]{scroll-margin-top:100px}
+
+.gis-pin.gis-service,.gis-key i.gis-service{border-radius:3px}
+.gis-card .zm{margin:8px 0}

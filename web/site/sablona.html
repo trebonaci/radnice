@@ -544,7 +544,7 @@ function zmRadek(z,sMistem){const m=sMistem&&z.misto_id?M.find(x=>x.id===z.misto
   return `<li><span class="d">${dat(z.datum)}</span><span>${m?`<a href="#misto-${m.id}"><b>${esc(m.nazev)}</b></a><br>`:""}${esc(z.text)}<small>${z.plati_od?"<b>Platí od "+dat(z.plati_od)+".</b> ":""}${z.url?`<a href="${esc(z.url)}" target="_blank" rel="noopener">${kde}</a>`:kde} (${esc(z.usneseni_cislo)})${z.pro_obcany_ai?" · shrnutí AI ověřené citací":""}</small></span></li>`;}
 function mistaStranka(){
   const ms=[...M].sort((a,b)=>(b.posledni_zmena||"").localeCompare(a.posledni_zmena||"")||a.nazev.localeCompare(b.nazev,"cs"));
-  return `<section><h1 class="st" tabindex="-1">Místa a služby</h1>
+  return `<section><h1 class="st" tabindex="-1">Místa a služby</h1><p><a href="#mapa">Zobrazit změny na mapě →</a></p>
   <p class="pozn" style="font-size:15px;max-width:62ch">Co se mění v místech a službách, které lidé používají – a co se v nich staví. Změny vybírá z usnesení AI s ověřenou citací, odkaz vede na stranu zápisu.</p>
   ${ms.map(m=>`<article class="ms" id="misto-${m.id}"><h3>${esc(rozepis(m.nazev))}</h3><p class="po">${OBLAST[m.oblast]||"Ostatní"}${m.popis?" · "+esc(m.popis):""}</p>
    ${m.zmeny.length?`<ul class="zm">${m.zmeny.map(i=>zmRadek(ZMP[i],false)).join("")}</ul>`:'<p class="pozn">Zatím žádná změna v usneseních od září 2026.</p>'}

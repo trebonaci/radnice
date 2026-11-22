@@ -4,6 +4,7 @@ const GIS_STATES = {
   probiha: { label: "Probíhá", color: "#006684" },
   hotovo: { label: "Dokončeno", color: "#386125" },
 };
+const GIS_SERVICE = { label: "Změny v místech a službách", color: "#68428a" };
 const GIS_TOPICS = [
   ["prostor", "Doprava a veřejný prostor", ["doprava","zelen","voda_odpady","energie","zivotni_prostredi"]],
   ["pece", "Bydlení a péče", ["bydleni","socialni","zdravotnictvi"]],
@@ -42,32 +43,39 @@ function loadLeaflet() {
 
 function gisProjects() {
   const geo = new Map(GIS.map(item => [item.typ + "/" + item.id, item]));
-  function entry(p, type) {
+  function entry(p, type, changes = []) {
     const id = type + "/" + p.id;
     const loc = geo.get(id);
     const state = p.faze === "dokonceno" ? "hotovo" : p.faze === "probiha" ? "probiha" : "priprava";
     const topic = GIS_TOPICS.find(([, , areas]) => areas.includes(p.oblast));
     const places = (loc?.misto || []).filter(place => place.bod || place.linie?.length);
     return {
-      id, p, type, state, places, geometry: loc?.geometrie,
+      id, p, type, state: type === "misto" ? "sluzby" : state, changes, places, geometry: loc?.geometrie,
       topic: topic?.[0] || "ostatni",
       topicLabel: topic?.[1] || OBLAST[p.oblast] || "Ostatní",
       approx: places.some(place => place.jistota !== "dolozeno"),
-      text: bezDia([p.nazev,p.popis,topic?.[1],...places.map(place => place.nazev)].filter(Boolean).join(" ")),
+      text: bezDia([p.nazev,p.popis,topic?.[1],...changes.map(change => change.text),...places.map(place => place.nazev)].filter(Boolean).join(" ")),
     };
   }
-  return [...P.map(p => entry(p,"investice")), ...zPol().map(p => entry(p,"zasobnik"))]
+  const services = M.flatMap(place => {
+    const changes = ZM.filter(change => change.misto_id === place.id);
+    return changes.length ? [entry(place,"misto",changes)] : [];
+  });
+  const unlocated = ZM.filter(change => !M.some(place => place.id === change.misto_id)).map(change =>
+    entry({id:change.id,nazev:change.kdo || change.text,oblast:change.oblast},"misto",[change]));
+  return [...P.map(p => entry(p,"investice")), ...zPol().map(p => entry(p,"zasobnik")), ...services, ...unlocated]
     .sort((a,b) => a.p.nazev.localeCompare(b.p.nazev,"cs"));
 }
 
 function gisHtml(projects) {
   const topics = [...GIS_TOPICS,["ostatni","Ostatní"]].filter(([key]) => projects.some(p => p.topic === key));
-  return '<section><h1 class="st" tabindex="-1">Mapa staveb a oprav</h1>' +
-    '<p class="gis-intro">Najděte stavby, opravy a připravované projekty podle ulice nebo tématu.</p>' +
+  return '<section><h1 class="st" tabindex="-1">Mapa staveb, oprav a služeb</h1>' +
+    '<p class="gis-intro">Najděte stavby, opravy a změny v místních službách podle ulice nebo tématu.</p>' +
     '<div class="gis-controls">' +
-    '<label>Hledat<input data-gis-query type="search" placeholder="Ulice, místo nebo název projektu" value="' + esc(gisFilters.q) + '"></label>' +
-    '<label>Stav<select data-gis-state><option value="">Všechny stavy</option>' +
+    '<label>Hledat<input data-gis-query type="search" placeholder="Ulice, místo nebo název akce" value="' + esc(gisFilters.q) + '"></label>' +
+    '<label>Co zobrazit<select data-gis-state><option value="">Vše</option><option value="stavby"' + (gisFilters.state==="stavby"?' selected':'') + '>Všechny stavby a opravy</option>' +
     Object.entries(GIS_STATES).map(([k,s]) => '<option value="' + k + '"' + (gisFilters.state===k?' selected':'') + '>' + s.label + '</option>').join("") +
+    '<option value="sluzby"' + (gisFilters.state==="sluzby"?' selected':'') + '>Změny v místech a službách</option>' +
     '</select></label><label>Téma<select data-gis-topic><option value="">Všechna témata</option>' +
     topics.map(([k,label]) => '<option value="' + k + '"' + (gisFilters.topic===k?' selected':'') + '>' + label + '</option>').join("") +
     '</select></label><div role="group" aria-label="Zobrazení">' +
@@ -75,23 +83,35 @@ function gisHtml(projects) {
     '<p class="gis-summary" data-gis-summary aria-live="polite"></p>' +
     '<div class="gis-layout"><div class="gis-map-frame"><div class="gis-canvas" role="region" aria-label="Interaktivní mapa Třeboně"></div>' +
     '<p class="gis-status pozn" role="status"></p><div class="gis-tools"><button type="button" class="gis-reset">Ukázat celý výběr</button>' +
-    '<ul class="gis-key" aria-label="Stav projektů">' +
+    '<ul class="gis-key" aria-label="Legenda mapy">' +
     Object.values(GIS_STATES).map(s => '<li><i aria-hidden="true" style="--gis-color:' + s.color + '"></i>' + s.label + '</li>').join("") +
+    '<li><i class="gis-service" aria-hidden="true" style="--gis-color:' + GIS_SERVICE.color + '"></i>' + GIS_SERVICE.label + '</li>' +
     '</ul></div><p class="pozn">Přerušovaná značka označuje přibližnou polohu. Čára ukazuje ulici či trasu, rozsah prací ověřte v dokladech.</p></div>' +
-    '<div class="gis-panel"><section class="gis-overlap" tabindex="-1" aria-label="Projekty v okolí vybraného bodu"></section>' +
-    '<section class="gis-card" tabindex="-1" aria-label="Vybraný projekt"></section>' +
-    '<section class="gis-results"><h2>Projekty ve výběru</h2><div class="gis-list"></div></section></div></div></section>';
+    '<div class="gis-panel"><section class="gis-overlap" tabindex="-1" aria-label="Akce v okolí vybraného bodu"></section>' +
+    '<section class="gis-card" tabindex="-1" aria-label="Vybraná akce"></section>' +
+    '<section class="gis-results"><h2>Výsledky</h2><div class="gis-list"></div></section></div></div></section>';
+}
+
+function gisSymbol(entry) {
+  return entry.type === "misto" ? GIS_SERVICE : GIS_STATES[entry.state];
 }
 
 function gisRow(entry) {
   const situation = !entry.geometry ? "Poloha není doložena" : entry.approx ? "Přibližná poloha" : "Poloha v mapě";
   return '<li><button type="button" class="gis-row" data-gis-project="' + esc(entry.id) + '" aria-pressed="' +
     (gisFilters.selected===entry.id) + '"><strong>' + esc(rozepis(entry.p.nazev)) + '</strong><small>' +
-    GIS_STATES[entry.state].label + ' · ' + situation + '</small></button></li>';
+    gisSymbol(entry).label + ' · ' + situation + '</small></button></li>';
 }
 
 function gisCard(entry) {
   const { p, type, approx, geometry, places } = entry;
+  if (type === "misto") {
+    const place = M.find(item => item.id === p.id);
+    return '<h2>' + esc(p.nazev) + '</h2><p class="pozn">' + esc(entry.topicLabel) + '</p>' +
+      '<ul class="zm">' + entry.changes.map(change => zmRadek(change,false)).join("") + '</ul>' +
+      '<p class="pozn">' + (geometry ? 'Značka ukazuje adresu místa nebo sídlo služby.' : 'Změna je dostupná v seznamu bez značky na mapě.') + '</p>' +
+      (place ? '<a class="gis-detail" href="#misto-' + esc(place.id) + '">Místo a související akce →</a>' : '');
+  }
   let amount, priceLabel, href;
   if (type === "investice") {
     [priceLabel,amount] = hlavni(p);
@@ -109,7 +129,7 @@ function gisCard(entry) {
   }
   const sources = [...new Set(places.map(place => place.zdroj).filter(Boolean))].join(" · ");
   return '<h2>' + esc(rozepis(p.nazev)) + '</h2><p class="pozn">' +
-    esc((type === "investice" && stavText(p)) || GIS_STATES[entry.state].label) + ' · ' + esc(entry.topicLabel) + '</p>' +
+    esc((type === "investice" && stavText(p)) || gisSymbol(entry).label) + ' · ' + esc(entry.topicLabel) + '</p>' +
     (amount ? '<p><b>' + esc(amount) + '</b> · ' + esc(priceLabel) + '</p>' : '') +
     '<p class="pozn">' + (!geometry ? "Polohu zatím nemáme doloženou." :
       (approx ? "Přibližná poloha" : "Doložená poloha") + (sources ? " · " + esc(sources) : "") +
@@ -133,7 +153,7 @@ function gisNearPoint(L, map, layer, point) {
 
 function openGis(el) {
   const projects = gisProjects();
-  zobraz(el,gisHtml(projects),"mapa","Mapa staveb a oprav");
+  zobraz(el,gisHtml(projects),"mapa","Mapa staveb, oprav a služeb");
   window.scrollTo(0,0);
   const layout = el.querySelector(".gis-layout");
   const frame = el.querySelector(".gis-map-frame");
@@ -184,7 +204,7 @@ function openGis(el) {
     const nearby = filtered.filter(p => p.id === entry.id ||
       (shapes.has(p.id) && gisNearPoint(L,map,shapes.get(p.id),point)));
     if (nearby.length === 1) return select(entry,false);
-    overlap.innerHTML = '<h2>Projekty na tomto místě</h2><ul>' + nearby.map(gisRow).join("") + '</ul>';
+    overlap.innerHTML = '<h2>Akce na tomto místě</h2><ul>' + nearby.map(gisRow).join("") + '</ul>';
     showPanel(overlap);
   }
 
@@ -206,15 +226,15 @@ function openGis(el) {
     layers.clearLayers();
     for (const entry of filtered) {
       if (!entry.geometry) continue;
-      const color = GIS_STATES[entry.state].color;
+      const color = gisSymbol(entry).color;
       const shape = L.geoJSON(entry.geometry,{
         style: {color,weight:5,opacity:.91,dashArray:entry.approx ? "7 6" : null,className:"gis-path"},
         pointToLayer: (_,latlng) => L.marker(latlng,{
-          title:entry.p.nazev + ' · ' + GIS_STATES[entry.state].label,
-          alt:entry.p.nazev + ' · ' + GIS_STATES[entry.state].label,
+          title:entry.p.nazev + ' · ' + gisSymbol(entry).label,
+          alt:entry.p.nazev + ' · ' + gisSymbol(entry).label,
           icon:L.divIcon({
             className:"gis-marker",iconSize:[16,16],
-            html:'<span aria-hidden="true" class="gis-pin' + (entry.approx?' approx':'') + '" style="--gis-color:' + color + '"></span>',
+            html:'<span aria-hidden="true" class="gis-pin' + (entry.approx?' approx':'') + (entry.type==="misto"?' gis-service':'') + '" style="--gis-color:' + color + '"></span>',
           }),
         }),
       }).addTo(layers);
@@ -238,7 +258,7 @@ function openGis(el) {
       const tiles = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{
         maxZoom:19, attribution:'© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
       }).addTo(map);
-      tiles.on("tileerror",() => { message.textContent = "Část podkladové mapy se nepodařilo načíst. Polohy projektů a seznam jsou dál k dispozici."; });
+      tiles.on("tileerror",() => { message.textContent = "Část podkladové mapy se nepodařilo načíst. Značky a seznam jsou dál k dispozici."; });
       layers = L.featureGroup().addTo(map);
       redrawMap();
       if (gisFilters.q || gisFilters.state || gisFilters.topic) fit();
@@ -251,7 +271,7 @@ function openGis(el) {
       if (map) map.remove();
       map = layers = null;
       canvas.hidden = true;
-      message.textContent = "Mapu se nepodařilo načíst. Projekty a doklady najdete v seznamu níže.";
+      message.textContent = "Mapu se nepodařilo načíst. Akce a doklady najdete v seznamu níže.";
     } finally {
       pending = false;
     }
@@ -259,15 +279,16 @@ function openGis(el) {
 
   function refresh() {
     const words = koreny(gisFilters.q);
-    filtered = projects.filter(p => (!gisFilters.state || p.state === gisFilters.state) &&
+    const state = gisFilters.state;
+    filtered = projects.filter(p => (!state || p.state === state || (state === "stavby" && p.type !== "misto")) &&
       (!gisFilters.topic || p.topic === gisFilters.topic) && words.every(word => p.text.includes(word)));
     const mapped = filtered.filter(p => p.geometry);
     const missing = filtered.filter(p => !p.geometry);
     summary.textContent = filtered.length ?
-      pl(filtered.length,"projekt","projekty","projektů") + " · v mapě " + mapped.length + " · bez polohy " + missing.length :
-      "Výběru neodpovídá žádný projekt.";
+      pl(filtered.length,"výsledek","výsledky","výsledků") + " · v mapě " + mapped.length + " · bez polohy " + missing.length :
+      "Výběru neodpovídá žádný záznam.";
     result.innerHTML = (mapped.length ? '<ul>' + mapped.map(gisRow).join("") + '</ul>' : '') +
-      (missing.length ? '<h3>Projekty bez doložené polohy</h3><ul>' + missing.map(gisRow).join("") + '</ul>' : '');
+      (missing.length ? '<h3>Bez značky na mapě</h3><ul>' + missing.map(gisRow).join("") + '</ul>' : '');
     if (!filtered.some(p => p.id === gisFilters.selected)) {
       gisFilters.selected = "";
       card.innerHTML = "";
