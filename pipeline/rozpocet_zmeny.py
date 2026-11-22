@@ -288,6 +288,12 @@ def prehled_investic(rozpocet: list[dict], radky: list[dict], projekty: list[dic
             naprojekt[(s["rok"], normalizuj_nazev(s["nazev"]), s["trida"])] = p["id"]
     polozky = []
     v_rozpoctu = set()
+    ro_zdroje: dict[tuple, list[dict]] = {}
+    for x in radky:
+        c = x.get("citace") or {}
+        if c.get("dokument"):
+            ro_zdroje.setdefault(_klic(x), []).append({"cislo_ro": x["cislo_ro"], "url": c["dokument"],
+                                                       "strana": c.get("strana")})
     for r in rozpocet:
         if r["rok"] != rok or r["trida"] != "kapitalove":
             continue
@@ -295,7 +301,9 @@ def prehled_investic(rozpocet: list[dict], radky: list[dict], projekty: list[dic
         po = r["po_zmenach"]["hodnota"] if r.get("po_zmenach") else r["castka"]["hodnota"]
         polozky.append({"nazev": r["nazev"], "orj": r["orj"], "oddil": r["oddil"], "schvaleny": r["castka"]["hodnota"],
                         "stav_zmen": r.get("stav_zmen", "beze_zmeny"),
-                        "po_zmenach": po, "zmeny_ro": r.get("zmeny_ro", []), "nova": False, "zdroj_id": r["id"]})
+                        "po_zmenach": po, "zmeny_ro": r.get("zmeny_ro", []), "nova": False, "zdroj_id": r["id"],
+                        "zdroj": {"url": r["citace"]["dokument"], "strana": r["citace"].get("strana")},
+                        "zdroje_ro": ro_zdroje.get((rok,) + klic_polozky(r["orj"], r["oddil"], "KV", r["nazev"]), [])})
     prvni: dict[tuple, dict] = {}
     for x in radky:
         prvni.setdefault(_klic(x), x)
@@ -306,7 +314,8 @@ def prehled_investic(rozpocet: list[dict], radky: list[dict], projekty: list[dic
                             "stav_zmen": "zmeneno",
                             "po_zmenach": float(r["po_zmene"]),
                             "zmeny_ro": [x["cislo_ro"] for x in radky if _klic(x) == k],
-                            "nova": True, "zdroj_id": r["id"]})
+                            "nova": True, "zdroj_id": r["id"], "zdroj": None,
+                            "zdroje_ro": ro_zdroje.get(k, [])})
     for p in polozky:
         p["oblast"] = ODDILY.get(p["oddil"], f"Oddíl {p['oddil']}")
         p["projekt_id"] = naprojekt.get((rok, normalizuj_nazev(p["nazev"]), "kapitalove"))
