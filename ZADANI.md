@@ -120,7 +120,7 @@ zpracování → data/*.json  ───────────▶   čte JSON a
 - Repozitář je jediný zdroj pravdy. `AGENTS.md` (Codex) a `CLAUDE.md` (Claude) mají stejná pravidla.
 - Postup práce se zdroji: `METODIKA.md`; opakovatelné prompty pro analytika a kontrolora: `PROMPTY.md`.
 - Úkoly = GitHub issues; každá změna přes PR; kdo napsal, ten nereviewuje; merguje Ondřej.
-- **Merge ≠ zveřejnění.** Zveřejnění je samostatný krok s výslovným souhlasem Ondřeje (komentář „schváleno ke zveřejnění“ v PR nebo issue).
+- **Merge ≠ zveřejnění.** Zveřejnění je samostatný krok s výslovným souhlasem Ondřeje (komentář „schváleno ke zveřejnění“ v PR nebo issue). Pro radnice.trebonaci.cz (rozhodnutí 22. 11. 2026): Ondřej schvaluje vzhled a typy obsahu, denní data z ověřené pipeline se pak zveřejňují automaticky.
 - Dělba se určuje u každého issue; výchozí: Claude zpracování a kód, Codex kontrola faktů a review.
 
 ## 9. Fáze
