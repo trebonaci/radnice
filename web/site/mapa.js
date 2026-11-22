@@ -113,8 +113,10 @@ function gisCard(entry) {
     (amount ? '<p><b>' + esc(amount) + '</b> · ' + esc(priceLabel) + '</p>' : '') +
     '<p class="pozn">' + (!geometry ? "Polohu zatím nemáme doloženou." :
       (approx ? "Přibližná poloha" : "Doložená poloha") + (sources ? " · " + esc(sources) : "") +
-      (places.some(place => place.linie?.length) ? ". Čára může zahrnovat i úsek ulice mimo stavbu." : ".")) +
-    '</p><a class="gis-detail" href="' + esc(href) + '">' + (type === "investice" ? "Detail a doklady" : "Příprava a doklady") + ' →</a>';
+      (places.some(place => place.druh === "ulice") ? ". Čára může zahrnovat i úsek ulice mimo stavbu." : ".")) +
+    '</p>' + places.filter(place => place.druh === 'usek' && place.zdroj_url?.startsWith('https://')).map(place =>
+      '<p><a href="' + esc(place.zdroj_url) + '">' + esc(place.nazev || 'Doklad k rozsahu úseku') + '</a></p>'
+    ).join('') + '<a class="gis-detail" href="' + esc(href) + '">' + (type === "investice" ? "Detail a doklady" : "Příprava a doklady") + ' →</a>';
 }
 
 function gisNearPoint(L, map, layer, point) {
