@@ -202,9 +202,10 @@ h1:focus{outline:none}
 .zs>div+div{border-top:1px solid var(--line)}
 .temata{margin-top:4px}
 @media(max-width:640px){.chips{flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px;scrollbar-width:thin}.chips button{flex:0 0 auto}}
+.archiv-rok{border-bottom:1px solid var(--line);padding:.6rem 0}.archiv-rok summary{cursor:pointer;font-weight:700;padding:.5rem 0}.archiv-rok ul{list-style:none;padding:0}.archiv-rok li{border-top:1px solid var(--line);padding:.75rem 0}.archiv-rok h3,.archiv-rok p{margin:.3rem 0}
 </style></head><body>
 <div class="lista"><div class="wrap"><a class="zn" href="https://trebonaci.cz"><img src="obr/logo-trebonaci.jpg" alt=""><span><b>Třeboňáci</b></span></a><span class="bd">Co se děje na radnici</span>
-<nav id="menu" aria-label="Sekce"><a href="#">Investice</a><a href="#usneseni">Usnesení</a><a href="#casova-osa">Časová osa</a><a href="#pripravovane">Připravované projekty</a><a href="#mista">Místa a služby</a><a href="#rozpocet">Rozpočet</a><a href="#cisla">V číslech</a></nav></div></div>
+<nav id="menu" aria-label="Sekce"><a href="#">Investice</a><a href="#usneseni">Usnesení</a><a href="#casova-osa">Časová osa</a><a href="#pripravovane">Připravované projekty</a><a href="#dokoncene">Dokončené projekty</a><a href="#mista">Místa a služby</a><a href="#rozpocet">Rozpočet</a><a href="#cisla">V číslech</a></nav></div></div>
 <header class="band"><div class="wrap"><span class="tag">__STITEK__</span>
 <span class="eyebrow">Co se děje na radnici v Třeboni</span><h1>Sledujeme pro vás</h1><p class="lead">Co radnice rozhodla, co se staví a připravuje, kdo to dělá a kolik to stojí. U každého údaje odkaz na dokument.</p></div></header>
 <main class="band" style="padding-top:18px"><div class="wrap"><p class="vyd">Přehled připravují <b>Třeboňáci</b> z veřejných dokumentů města · data k __DATUM__ · <a href="#paticka" data-paticka>Jak vzniká přehled</a></p></div><div class="wrap" id="karty"></div>
@@ -604,6 +605,7 @@ function prehled(){
   <div class="odkazy">
    <a href="#usneseni"><b>Usnesení rady a zastupitelstva</b><span>${pocetUsneseni()} s odkazem do zápisu</span></a>
    <a href="#casova-osa"><b>Časová osa projektů</b><span>${pl(H.filter(x=>x.typ==="investice").length,"investice","investice","investic")} a ${pl(zPol().length,"připravovaný projekt","připravované projekty","připravovaných projektů")} v čase</span></a>
+   <a href="#dokoncene"><b>Dokončené projekty</b><span>Archiv investic podle roku dokončení</span></a>
    <a href="#pripravovane"><b>Připravované projekty</b><span>${pl(zPol().length,"projekt","projekty","projektů")} v přípravě · ${pl(zNam().length,"námět","náměty","námětů")}</span></a>
    <a href="#mista"><b>Místa a služby</b><span>${pl(ZM.length,"změna","změny","změn")} z usnesení</span></a>
    <a href="#rozpocet"><b>Rozpočet ${I?.rok??""}</b><span>${I?kc(I.bez_rezervy_po_zmenach)+" na investice po změnách, bez rezervy":""}</span></a>
@@ -626,9 +628,37 @@ const ALIAS={harmonogram:"casova-osa",zasobnik:"pripravovane"};
 document.addEventListener("click",e=>{const a=e.target.closest("[data-paticka]");if(a){e.preventDefault();const f=document.getElementById("paticka");f.scrollIntoView({behavior:"smooth"});f.focus({preventScroll:true});}});
 function zobraz(el,html,h,nazev,vlastniZpet){el.innerHTML=(vlastniZpet?"":`<div class="zpet"><a href="#">← Přehled investic</a><span></span></div>`)+html;document.body.dataset.str=h;document.title=nazev+" – "+TITUL;menu(h==="detail"?"":h);
   const t=el.querySelector("h1");if(t)t.focus({preventScroll:true});}
+function archivProjektu(projekty){
+  const skupiny = new Map();
+  for (const projekt of projekty.filter(p => p.faze === "dokonceno")) {
+    const doklad = projekt.dokonceni;
+    const rok = doklad?.datum && /^https?:\/\//i.test(doklad.url || "") ? String(doklad.datum).slice(0,4) : "";
+    if (!skupiny.has(rok)) skupiny.set(rok, []);
+    skupiny.get(rok).push(projekt);
+  }
+  function polozka(p, rok) {
+    const [druhCeny, cena] = hlavni(p);
+    const doklad = rok ? `<p>Dokončeno ${dat(p.dokonceni.datum)} · <a href="${esc(p.dokonceni.url)}">Doklad o dokončení</a></p>` : "";
+    return `<li><h3><a href="#${esc(p.id)}">${esc(rozepis(p.nazev))}</a></h3>
+      ${p.popis && p.popis !== p.nazev ? `<p>${esc(p.popis)}</p>` : ""}
+      <p>${esc(OBLAST[p.oblast] || "Ostatní")}${cena ? ` · ${esc(druhCeny)}: ${esc(cena)}` : ""}</p>${doklad}</li>`;
+  }
+  const roky = [...skupiny.keys()].sort().reverse();
+  const obsah = roky.map((rok, index) => {
+    const projektyRoku = skupiny.get(rok).sort((a,b) => 
+      (rok && b.dokonceni.datum.localeCompare(a.dokonceni.datum)) || a.nazev.localeCompare(b.nazev, "cs") || a.id.localeCompare(b.id));
+    return `<details class="archiv-rok" ${index === 0 ? "open" : ""}><summary>${rok || "Rok dokončení není doložen"} (${projektyRoku.length})</summary>
+      <ul>${projektyRoku.map(p => polozka(p, rok)).join("")}</ul></details>`;
+  }).join("");
+  return `<section><h1 class="st" tabindex="-1">Dokončené projekty</h1>
+    <p>Rok vychází z dokladu o předání nebo dokončení stavby. Pokud známe jen ukončení zakázky, najdete projekt ve skupině bez doloženého roku.</p>
+    ${obsah || "<p>V evidenci zatím nejsou dokončené projekty.</p>"}</section>`;
+}
+
 function render(){
   let h=decodeURIComponent(location.hash.slice(1));if(ALIAS[h]){history.replaceState(null,"","#"+ALIAS[h]);h=ALIAS[h];}
   const el=document.getElementById("karty");
+  if(h==="dokoncene"){zobraz(el,archivProjektu(P),h,"Dokončené projekty");window.scrollTo(0,0);return;}
   if(h==="rozpocet"){zobraz(el,investice(INV),h,"Rozpočet");window.scrollTo(0,0);return;}
   if(h==="mista"||h.startsWith("misto-")){zobraz(el,mistaStranka(),"mista","Místa a služby");const t=h.startsWith("misto-")&&document.getElementById(h);t?t.scrollIntoView():window.scrollTo(0,0);return;}
   if(h==="casova-osa"){zobraz(el,harmonogram(),h,"Časová osa projektů");window.scrollTo(0,0);casovaOsa(el);return;}
