@@ -622,8 +622,26 @@
     "nazev": "Přístavba dvou tělocvičen sportovní haly",
     "faze": "probiha",
     "oblast": "sport",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "adresa",
+        "nazev": "Lázeňská 1005",
+        "bod": [
+          14.75636,
+          49.002223
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "RÚIAN",
+        "ruian_kod": "14841819"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.75636,
+        49.002223
+      ]
+    }
   },
   {
     "id": "propustek-brilice",
@@ -640,8 +658,26 @@
     "nazev": "Ubytování ve sportovní hale (nástavba a přístavba)",
     "faze": "probiha",
     "oblast": "sport",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "adresa",
+        "nazev": "Lázeňská 1005",
+        "bod": [
+          14.75636,
+          49.002223
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "RÚIAN",
+        "ruian_kod": "14841819"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.75636,
+        49.002223
+      ]
+    }
   },
   {
     "id": "u-sveta-sportovni",
@@ -6495,8 +6531,26 @@
     "nazev": "Revitalizace sportovní haly (občerstvení, zázemí v 1. podzemním podlaží)",
     "faze": "zasobnik",
     "oblast": "sport",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "adresa",
+        "nazev": "Lázeňská 1005",
+        "bod": [
+          14.75636,
+          49.002223
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "RÚIAN",
+        "ruian_kod": "14841819"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.75636,
+        49.002223
+      ]
+    }
   },
   {
     "id": "kabiny-brilice",
@@ -8039,8 +8093,26 @@
     "nazev": "Sportovní hala",
     "faze": null,
     "oblast": "sport",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "adresa",
+        "nazev": "Lázeňská 1005",
+        "bod": [
+          14.75636,
+          49.002223
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "RÚIAN",
+        "ruian_kod": "14841819"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.75636,
+        49.002223
+      ]
+    }
   },
   {
     "id": "muzeum",

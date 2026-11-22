@@ -102,6 +102,8 @@ polozky:
   - id: sportovni-hala-revitalizace
     nazev: Revitalizace sportovní haly (občerstvení, zázemí v 1. podzemním podlaží)
     oblast: sport
+    misto:
+      - adresa: Lázeňská 1005
     vazby: {hledat: ['revitalizace sportovní haly', 'PD sportovní hala Třeboň']}
   - id: kabiny-brilice
     nazev: Fotbalové kabiny v Břilicích
