@@ -95,7 +95,7 @@
     });
     form.elements.oblast.insertAdjacentHTML("beforeend", Object.keys(oblasti).sort(function (a, b) { return a.localeCompare(b, "cs"); })
       .map(function (o) { return '<option value="' + esc(o) + '">' + esc(o) + " (" + oblasti[o] + ")</option>"; }).join(""));
-    var poradi = ["rozhodnuto", "navrzeno", "projednava_se", "planuje_se", "realizuje_se", "dokonceno"];
+    var poradi = ["rozhodnuto", "vzato_na_vedomi", "navrzeno", "projednava_se", "planuje_se", "realizuje_se", "dokonceno"];
     var pouzite = poradi.filter(function (s) { return stavy[s]; });
     $("[data-trb-radnice-stavy]").innerHTML = pouzite.map(function (s) {
       return '<label class="trb-radnice-volba"><input type="checkbox" name="stav" value="' + s + '"> <span>' +

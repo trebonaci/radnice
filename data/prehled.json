@@ -546,7 +546,7 @@
     "typ": "Rada města",
     "oblast": "socialni",
     "oblast_nazev": "Sociální služby",
-    "stav": "rozhodnuto",
+    "stav": "vzato_na_vedomi",
     "titulek": "Hospicová péče sv. Kleofáše",
     "shrnuti": "Hospicová péče sv. Kleofáše končí ke konci roku 2026 v nebytových prostorách domu čp. 20/II v ulici Svatopluka Čecha.",
     "datum": "2026-10-07",
@@ -561,8 +561,8 @@
     "dalsi_krok": "Platí od 31. 12. 2026.",
     "text_ai": true,
     "misto_id": "dum-svatopluka-cecha-20",
-    "stav_nazev": "Rozhodnuto",
-    "stav_popis": "Rada nebo zastupitelstvo usnesení přijalo."
+    "stav_nazev": "Vzato na vědomí",
+    "stav_popis": "Rada nebo zastupitelstvo informaci jen vzalo na vědomí, o věci nerozhodovalo."
   },
   {
     "id": "investice-lazne-budova-g",

@@ -20,6 +20,7 @@
 /* Stav = vždy textový štítek; barva jen doplňuje */
 .trb-radnice-prehled .trb-radnice-stav { display: inline-block; margin: 0; padding: 2px 10px; border: 1px solid var(--border-mid); border-radius: var(--r-pill); font-size: var(--text-xs); font-weight: 700; line-height: 1.6; color: var(--text-color); background: var(--surface-container-lowest); }
 .trb-radnice-prehled .trb-radnice-stav--rozhodnuto { background: var(--green-bg); border-color: var(--green-dark); }
+.trb-radnice-prehled .trb-radnice-stav--vzato_na_vedomi { background: var(--blue-bg); border-color: var(--blue-dark); }
 .trb-radnice-prehled .trb-radnice-stav--planuje_se { background: var(--blue-bg); border-color: var(--blue-dark); }
 .trb-radnice-prehled .trb-radnice-stav--realizuje_se { border-color: var(--primary); color: var(--primary); }
 .trb-radnice-prehled .trb-radnice-stav--dokonceno { background: var(--canvas); }

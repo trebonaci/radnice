@@ -14,6 +14,7 @@ from __future__ import annotations
 
 STAVY = {
     "rozhodnuto": {"nazev": "Rozhodnuto", "popis": "Rada nebo zastupitelstvo usnesení přijalo."},
+    "vzato_na_vedomi": {"nazev": "Vzato na vědomí", "popis": "Rada nebo zastupitelstvo informaci jen vzalo na vědomí, o věci nerozhodovalo."},
     "navrzeno": {"nazev": "Navrženo", "popis": "Návrh je předložený, o něm se zatím nerozhodlo."},
     "projednava_se": {"nazev": "Projednává se", "popis": "Věc je na programu jednání nebo běží výběrové řízení."},
     "planuje_se": {"nazev": "Plánuje se", "popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt)."},
@@ -68,7 +69,8 @@ def ze_zmen(zmeny: list[dict]) -> list[dict]:
         vysledek.append({
             "id": z["id"], "druh": "zmena", "typ": ORGAN.get(z.get("organ"), "Radnice"),
             "oblast": z.get("oblast"), "oblast_nazev": OBLASTI.get(z.get("oblast"), "Ostatní"),
-            "stav": "rozhodnuto", "titulek": z.get("kdo") or "Změna pro občany", "shrnuti": z["text"],
+            "stav": "vzato_na_vedomi" if z.get("ukony") == ["bere_na_vedomi"] else "rozhodnuto",
+            "titulek": z.get("kdo") or "Změna pro občany", "shrnuti": z["text"],
             "datum": z.get("datum"), "zdroj": zdroj,
             "dalsi_krok": f"Platí od {_datum_cz(z['plati_od'])}." if z.get("plati_od") else None,
             "text_ai": bool(z.get("pro_obcany_ai")), "misto_id": z.get("misto_id"),
