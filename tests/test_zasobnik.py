@@ -108,3 +108,49 @@ def test_beh_kopiruje_zasobnik_do_stagingu():
     from pipeline import beh
     assert "data/zasobnik.yaml" in beh.RUCNI_SOUBORY and "zasobnik" in beh.VYSTUPY
     assert not [c for c in beh.kontrola_poklesu({"zasobnik": []}, beh.KOREN) if "zasobnik" in c]
+
+
+def _castka(h, s_dph, druh="smluvni"):
+    return {"hodnota": h, "s_dph": s_dph, "druh": druh, "citace": f"{h}"}
+
+
+def test_cena_dokladu_z_castek():
+    c = zasobnik._cena([_castka(81675.0, True), _castka(67500.0, False), _castka(0.0, True, "zaplaceno")])
+    assert (c["s_dph"], c["bez_dph"]) == (81675.0, 67500.0)
+    assert zasobnik._cena([_castka(0.0, True)]) is None
+    z = {"casti": [{"vitezove": [{"castky": [_castka(1179750.0, True), _castka(975000.0, False),
+                                             _castka(110715.0, True, "zaplaceno"), _castka(0.0, True, "zaplaceno")]}]}]}
+    assert zasobnik._cena_zakazky(z, "smluvni")["s_dph"] == 1179750.0
+    assert zasobnik._cena_zakazky(z, "zaplaceno")["s_dph"] == 110715.0
+
+
+def test_zakazka_a_smlouva_se_stejnou_cenou_jednou():
+    dokl = [
+        {"typ": "zakazka", "id": "ezak-1", "datum": "2024-02-05", "cena": {"s_dph": 839740.0, "bez_dph": 694000.0},
+         "zaplaceno": {"s_dph": 788194.0, "bez_dph": None}, "dodatek": False},
+        {"typ": "smlouva", "id": "rs-1", "datum": "2024-02-05", "cena": {"s_dph": 839740.0, "bez_dph": 694000.0},
+         "zaplaceno": None, "dodatek": False},
+        {"typ": "smlouva", "id": "rs-2", "datum": "2025-07-03", "cena": {"s_dph": -48400.0, "bez_dph": None},
+         "zaplaceno": None, "dodatek": True},
+        {"typ": "smlouva", "id": "rs-3", "datum": "2026-01-29", "cena": {"s_dph": None, "bez_dph": 119700.0},
+         "zaplaceno": None, "dodatek": False},
+        # objednávka se stejnou cenou den po smlouvě = stejná práce
+        {"typ": "smlouva", "id": "rs-4", "datum": "2026-01-30", "cena": {"s_dph": None, "bez_dph": 119700.0},
+         "zaplaceno": None, "dodatek": False},
+        {"typ": "smlouva", "id": "rs-5", "datum": "2026-03-01", "cena": None, "zaplaceno": None, "dodatek": False},
+    ]
+    z = zasobnik.zapocti(dokl)
+    assert [d["zapocteno"] for d in z] == [False, True, True, True, False, False]
+    assert "rs-1" in z[0]["nezapocteno"] and "rs-3" in z[4]["nezapocteno"] and z[5]["nezapocteno"] == "cena neuvedena"
+    c = zasobnik.cena_pripravy(z)
+    # s DPH a jen bez DPH se nesčítají; dodatek a zaplaceno jsou samostatné součty
+    assert c["smlouvy"] == {"s_dph": 839740.0, "bez_dph": 119700.0, "pocet": 2}
+    assert c["dodatky"] == {"s_dph": -48400.0, "bez_dph": None, "pocet": 1}
+    assert c["zaplaceno"]["s_dph"] == 788194.0 and c["zaplaceno"]["druh"] == "zaplaceno"
+    assert c["bez_ceny"] == 1
+
+
+def test_stejna_cena_po_vice_nez_60_dnech_se_pocita():
+    dokl = [{"typ": "smlouva", "id": "a", "datum": "2025-01-01", "cena": {"s_dph": 100.0, "bez_dph": None}},
+            {"typ": "smlouva", "id": "b", "datum": "2025-06-01", "cena": {"s_dph": 100.0, "bez_dph": None}}]
+    assert [d["zapocteno"] for d in zasobnik.zapocti(dokl)] == [True, True]

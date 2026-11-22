@@ -26,6 +26,7 @@ from pipeline.jmena import zakryj_jmena
 from pipeline import dotace as modul_dotace
 from pipeline import projekty as modul_projekty
 from pipeline import zasobnik as modul_zasobnik
+from pipeline import harmonogram as modul_harmonogram
 from pipeline import ukazatele as modul_ukazatele
 from pipeline import mapa as modul_mapa
 from pipeline import mista as modul_mista
@@ -406,6 +407,9 @@ def sestav(koren: Path | None = None) -> tuple[dict[str, list], list[str]]:
     chyby += chyby_mi
     vystup["mapa"] += [{"id": m["id"], "typ": "misto", "nazev": m["nazev"], "faze": None, "oblast": m["oblast"],
                         "misto": m["misto"], "geometrie": m["geometrie"]} for m in vystup["mista"]]
+    # harmonogram investic, zásobníku a dlouhodobých neinvestičních projektů (#194)
+    vystup["harmonogram"], chyby_h = modul_harmonogram.sestav(koren, vystup, vystup["projekty"], vystup["zasobnik"])
+    chyby += chyby_h
     # přehled investic roku (kapitálové výdaje po změnách, #138) – jen když je rozpočet stažený
     roky = sorted({r["rok"] for r in rozpocet})
     vystup["investice"] = [modul_rozpocet_zmeny.prehled_investic(rozpocet, rozpocet_zmeny, vystup["projekty"], r)

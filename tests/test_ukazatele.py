@@ -73,3 +73,15 @@ def test_investice_bez_rezervy():
     u = ukazatele.investice(i)
     assert [r["klic"] for r in u["hodnota"]] == ["Sport"]
     assert u["schvaleny"] == 100.0 and u["po_zmenach"] == 110.0
+
+
+def test_cena_pripravy_zasobniku_po_nositelich():
+    def pol(ico, s, b, faze="zasobnik"):
+        return {"typ": "polozka", "faze": faze, "nositele": [{"ico": ico}],
+                "cena_pripravy": {"smlouvy": {"s_dph": s, "bez_dph": b}, "dodatky": {"s_dph": None, "bez_dph": None},
+                                  "zaplaceno": {"s_dph": None}}}
+    u = ukazatele.priprava_zasobniku([pol("1", 100.0, None), pol("1", 50.5, 10.0), pol("2", None, 300.0),
+                                      pol("1", 999.0, None, "realizovano")], {"1": "Město", "2": "Lázně"})
+    assert u["polozek"] == 3
+    assert u["celkem"]["s_dph"] == 150.5 and u["celkem"]["bez_dph"] == 310.0
+    assert [(r["nazev"], r["s_dph"], r["bez_dph"]) for r in u["hodnota"]] == [("Lázně", None, 300.0), ("Město", 150.5, 10.0)]

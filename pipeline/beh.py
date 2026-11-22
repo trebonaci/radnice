@@ -42,10 +42,10 @@ KOREN = Path(__file__).resolve().parent.parent
 ZAMEK_STARY = 2 * 3600     # zámek starší než 2 hodiny považujeme za zbylý po pádu
 POKLES = 0.5               # výstup pod touto částí dosavadního počtu = podezřelý pokles
 # ručně spravované soubory mimo podadresáře, které sestavení čte (#153: zásobník projektů)
-RUCNI_SOUBORY = ("data/zasobnik.yaml", "data/mista.yaml")
+RUCNI_SOUBORY = ("data/zasobnik.yaml", "data/mista.yaml", "data/aktivity.yaml")
 # zásobník se legitimně zmenšuje (položka se stane kartou, kandidát se zařadí)
-BEZ_KONTROLY_POKLESU = {"zasobnik", "ukazatele", "mapa"}
-VYSTUPY = ("jednani", "usneseni", "hlasovani", "zakazky", "smlouvy", "rozpoctova_opatreni", "rozpocet", "rozpocet_zmeny", "projekty", "investice", "dotace", "zasobnik", "ukazatele", "mapa", "mista", "zmeny")
+BEZ_KONTROLY_POKLESU = {"zasobnik", "ukazatele", "mapa", "harmonogram"}
+VYSTUPY = ("jednani", "usneseni", "hlasovani", "zakazky", "smlouvy", "rozpoctova_opatreni", "rozpocet", "rozpocet_zmeny", "projekty", "investice", "dotace", "zasobnik", "ukazatele", "mapa", "mista", "zmeny", "harmonogram")
 
 
 class ZamekObsazen(Exception):

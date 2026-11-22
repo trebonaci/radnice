@@ -1,33 +1,48 @@
 <!DOCTYPE html><html lang="cs"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Co se děje na radnici v Třeboni – Třeboňáci</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="obr/logo-trebonaci.jpg">
 <style>
-:root{color-scheme:light dark;--bg:light-dark(#fbfaf7,#0c1718);--ink:light-dark(#14201f,#e7eeec);--mute:light-dark(#5d6966,#9fb0ad);
---pond:light-dark(#0e4f55,#0b3a3e);--pondink:#eef6f4;--card:light-dark(#fff,#132324);--line:light-dark(#e6ebe8,#22393a);--carp:#e07a2e;--soft:light-dark(#f3f6f4,#18292a);
---k-smlouva:light-dark(#2f6db5,#7fb0ea);--k-dodatek:light-dark(#6a56b3,#b3a5ef);--k-soutez:light-dark(#b8611d,#f0a560);--k-rada:light-dark(#2f7d5b,#79c9a3);
---k-zm:light-dark(#1f6b6f,#6fc3c7);--k-rozpocet:light-dark(#8a6d12,#e0c25a);--k-hotovo:light-dark(#3c8f5a,#7fd39c)}
-*{box-sizing:border-box;min-width:0}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 Inter,system-ui,sans-serif}
+:root{color-scheme:light;
+/* vizuál Třeboňáků: tokeny šablony trebonaci.cz (css/01-tokens.css) */
+--primary:#006684;--primary-dim:#005570;--navy:#1b3d4f;--canvas:#f6f8f5;--text-color:#192d1e;--text-mid:#4a6155;
+--green:#8aba3b;--green-dark:#6d9a28;--green-bg:#f0f7e4;--blue:#5bbde4;--blue-dark:#3a9ecb;--blue-bg:#e7f5fc;--blue-light:#b0dcf8;
+--border-color:#e2e8e0;--border-mid:#cfd8cc;--r-sm:12px;--r-md:18px;--r-lg:24px;--r-pill:999px;
+--shadow-card:0 2px 12px rgba(0,29,52,.04);
+--font:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+--bg:var(--canvas);--ink:var(--text-color);--mute:var(--text-mid);--pond:var(--primary);--pondink:#fff;--card:#fff;
+--line:var(--border-color);--carp:var(--primary);--soft:#f0f4ee;
+--k-smlouva:#2f6db5;--k-dodatek:#6a56b3;--k-soutez:#b8611d;--k-rada:#2f7d5b;--k-zm:#1f6b6f;--k-rozpocet:#8a6d12;--k-hotovo:var(--green-dark);
+/* harmonogram: fáze investice jako jednobarevná řada od světlé (příprava) po tmavou (stavba) */
+--g-priprava:#9fd3ee;--g-soutez:var(--blue-dark);--g-stavba:var(--primary);--g-prubeh:var(--green-dark)}
+*{box-sizing:border-box;min-width:0}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 var(--font)}
 a{color:inherit}
 .band{padding:clamp(28px,4vw,52px) max(5vw,16px)}.wrap{max-width:900px;margin:0 auto}
-header.band{background:var(--pond);color:var(--pondink)}
-.tag{display:inline-block;font-size:13px;background:rgba(255,255,255,.12);padding:3px 10px;border-radius:99px;margin-bottom:14px}
-h1{font:700 clamp(32px,4.4vw,48px)/1.05 "Source Serif 4",Georgia,serif;margin:0 0 8px}
-h2{font:700 clamp(22px,2.8vw,28px)/1.2 "Source Serif 4",Georgia,serif;margin:0}
+header.band{background:linear-gradient(180deg,#fff 0,var(--canvas) 100%);padding-top:clamp(24px,3vw,40px)}
+.lista{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.92);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid rgba(12,35,56,.08)}
+.lista .wrap{display:flex;align-items:center;gap:12px;min-height:64px;padding:0 max(5vw,16px);max-width:none}
+.lista .zn{display:flex;align-items:center;gap:10px;text-decoration:none}.lista img{width:40px;height:40px;border-radius:50%}
+.lista b{font-weight:800;font-size:16px;letter-spacing:-.02em}.lista .bd{font-size:11px;font-weight:600;color:var(--mute);border:1px solid rgba(0,86,165,.14);background:rgba(0,86,165,.06);border-radius:var(--r-pill);padding:3px 9px}
+.lista nav{margin-left:auto;display:flex;gap:2px;flex-wrap:wrap}.lista nav a{font-size:14px;font-weight:650;color:var(--mute);text-decoration:none;padding:8px 12px;border-radius:var(--r-pill)}
+.lista nav a:hover{background:rgba(12,35,56,.06);color:var(--ink)}.lista nav a.on{color:var(--ink);box-shadow:inset 0 -2px 0 var(--green)}
+@media(max-width:760px){.lista nav{display:none}}
+.eyebrow{display:block;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--green-dark);margin-bottom:10px}
+.tag{display:inline-block;font-size:13px;font-weight:600;background:var(--green-bg);color:var(--green-dark);padding:4px 12px;border-radius:var(--r-pill);margin-bottom:14px}
+h1{font:800 clamp(34px,5vw,54px)/1.04 var(--font);letter-spacing:-.025em;margin:0 0 10px}
+h2{font:800 clamp(22px,2.8vw,30px)/1.15 var(--font);letter-spacing:-.02em;margin:0}
 .lead{max-width:60ch;margin:0;font-size:17px;opacity:.92}
-.karta{background:var(--card);border-radius:14px;padding:clamp(20px,3vw,30px);margin-bottom:24px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.karta{background:var(--card);border-radius:var(--r-lg);padding:clamp(20px,3vw,30px);margin-bottom:24px;box-shadow:var(--shadow-card);border:1px solid var(--line)}
 .hlava{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;flex-wrap:wrap}
 .faze{font-size:13px;font-weight:600;color:#fff;background:var(--carp);padding:4px 12px;border-radius:99px;white-space:nowrap}
 .fj{display:block;font-size:11px;color:var(--mute);margin-top:4px;text-align:right;max-width:150px}.zdr summary{font-size:12px;color:var(--mute);cursor:pointer}.zdr small{display:block;font-size:12px}
-.faze.hotovo{background:#3c8f5a}.faze.priprava{background:var(--mute)}
+.faze.hotovo{background:var(--green-dark)}.faze.priprava{background:var(--mute)}
 .popis{color:var(--mute);margin:4px 0 0}
 .stav{font-size:14px;color:var(--mute);margin-top:8px}
 .cisla{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:22px 0}
-.cislo{background:var(--soft);border-radius:10px;padding:14px 16px}
-.cislo span{font-size:14px;color:var(--mute)}.cislo b{display:block;font:700 28px/1.15 "Source Serif 4",Georgia,serif;font-variant-numeric:tabular-nums}
+.cislo{background:var(--soft);border-radius:var(--r-sm);padding:14px 16px}
+.cislo span{font-size:14px;color:var(--mute)}.cislo b{display:block;font:700 28px/1.15 var(--font);font-variant-numeric:tabular-nums}
 .cislo small{display:block;font-size:13px;color:var(--mute);margin-top:4px}
 .ok{color:var(--k-hotovo);font-weight:600}
-.hh{font:600 13px Inter,sans-serif;text-transform:uppercase;letter-spacing:.06em;color:var(--mute);margin:24px 0 6px}
+.hh{font:600 13px var(--font);text-transform:uppercase;letter-spacing:.06em;color:var(--mute);margin:24px 0 6px}
 table.t{width:100%;border-collapse:collapse;font-size:15px}
 .t td{padding:8px 0;vertical-align:top}.t tr+tr td{border-top:1px solid var(--line)}
 .t .r{color:var(--mute);font-size:14px;width:30%;padding-right:12px}
@@ -55,8 +70,8 @@ table.t{width:100%;border-collapse:collapse;font-size:15px}
  .t .r{width:auto;display:block;padding:0}.t td{display:block;padding:2px 0}.t tr td:first-child{padding-top:10px}.t .c{text-align:left;padding:0 0 10px}}
 .pozn{font-size:13px;color:var(--mute)}
 .sez small.sp{font-size:12px}.sp2 i,.sez small.sp i{font-style:normal;color:var(--k-soutez)}
-.inv{background:var(--card);border-radius:14px;padding:clamp(20px,3vw,30px);margin-bottom:28px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
-.inv .vel{font:700 clamp(30px,4vw,40px)/1.1 "Source Serif 4",Georgia,serif;font-variant-numeric:tabular-nums;margin:6px 0 2px}
+.inv{background:var(--card);border-radius:var(--r-lg);padding:clamp(20px,3vw,30px);margin-bottom:28px;box-shadow:var(--shadow-card);border:1px solid var(--line)}
+.inv .vel{font:700 clamp(30px,4vw,40px)/1.1 var(--font);font-variant-numeric:tabular-nums;margin:6px 0 2px}
 .ob{border-top:1px solid var(--line)}.ob:first-of-type{border-top:0}
 .ob>summary{display:grid;grid-template-columns:minmax(0,1fr) 140px;gap:12px;padding:10px 0;cursor:pointer;list-style:none;align-items:center}
 .ob>summary::-webkit-details-marker{display:none}
@@ -70,15 +85,15 @@ table.t{width:100%;border-collapse:collapse;font-size:15px}
 .pol .nova{font-size:11px;font-weight:600;color:var(--k-soutez);border:1px solid currentColor;border-radius:99px;padding:0 6px;margin-left:6px}
 .pol .hl{font-size:12px;color:var(--mute)}
 @media(max-width:560px){.pol li{grid-template-columns:minmax(0,1fr) auto}.pol .m{display:none}}
-.sez{background:var(--card);border-radius:14px;padding:8px 22px;margin-bottom:28px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.sez{background:var(--card);border-radius:var(--r-lg);padding:8px 22px;margin-bottom:28px;box-shadow:var(--shadow-card);border:1px solid var(--line)}
 .sez a{display:grid;grid-template-columns:130px minmax(0,1fr) auto;gap:14px;align-items:center;padding:11px 0;text-decoration:none}
 .sez a+a{border-top:1px solid var(--line)}.sez a:hover b{text-decoration:underline}
 .sez .f{font-size:12px;font-weight:600;color:#fff;background:var(--carp);border-radius:99px;padding:2px 9px;justify-self:start}
-.sez .f.priprava{background:var(--mute)}.sez .f.hotovo{background:#3c8f5a}.sez .c{font-variant-numeric:tabular-nums;white-space:nowrap;text-align:right}
+.sez .f.priprava{background:var(--mute)}.sez .f.hotovo{background:var(--green-dark)}.sez .c{font-variant-numeric:tabular-nums;white-space:nowrap;text-align:right}
 .sez small{display:block;color:var(--mute);font-size:13px}
 @media(max-width:560px){.sez a{grid-template-columns:1fr auto}.sez .f{grid-column:1/-1}}
-.rozp{display:flex;justify-content:space-between;align-items:center;gap:12px;background:var(--pond);color:var(--pondink);border-radius:14px;padding:16px 22px;margin-bottom:18px;text-decoration:none}
-.zs{background:var(--card);border-radius:14px;padding:6px 22px;margin-bottom:22px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.rozp{display:flex;justify-content:space-between;align-items:center;gap:12px;background:var(--pond);color:var(--pondink);border-radius:var(--r-lg);padding:16px 22px;margin-bottom:18px;text-decoration:none}
+.zs{background:var(--card);border-radius:var(--r-lg);padding:6px 22px;margin-bottom:22px;box-shadow:var(--shadow-card);border:1px solid var(--line)}
 .zs>div{display:grid;grid-template-columns:150px minmax(0,1fr) auto;gap:14px;align-items:start;padding:12px 0}
 .zs>div+div{border-top:1px solid var(--line)}.zs small{display:block;color:var(--mute);font-size:13px}
 .zs .st{font-size:12px;font-weight:600;border-radius:99px;padding:2px 9px;justify-self:start;border:1px solid var(--mute);color:var(--mute)}
@@ -88,26 +103,48 @@ table.t{width:100%;border-collapse:collapse;font-size:15px}
 .zs ul.nm{margin:6px 0 4px;padding-left:18px}.zs ul.nm li{margin:3px 0}
 .rozp.zas{background:var(--soft);color:var(--ink)}
 @media(max-width:560px){.zs>div{grid-template-columns:1fr auto}.zs .st{grid-column:1/-1}}
-.ms{background:var(--card);border-radius:14px;padding:clamp(18px,3vw,26px);margin-bottom:18px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
-.ms h3{font:700 21px/1.25 "Source Serif 4",Georgia,serif;margin:0 0 2px}.ms .po{color:var(--mute);font-size:14px;margin:0 0 12px}
+.ms{background:var(--card);border-radius:var(--r-lg);padding:clamp(18px,3vw,26px);margin-bottom:18px;box-shadow:var(--shadow-card);border:1px solid var(--line)}
+.ms h3{font:700 21px/1.25 var(--font);margin:0 0 2px}.ms .po{color:var(--mute);font-size:14px;margin:0 0 12px}
 .zm{list-style:none;margin:0;padding:0}.zm li{display:grid;grid-template-columns:96px minmax(0,1fr);gap:12px;padding:9px 0;border-top:1px solid var(--line)}
 .zm .d{font-size:13px;color:var(--mute);font-variant-numeric:tabular-nums}.zm small{display:block;color:var(--mute);font-size:12.5px;margin-top:2px}
 .zm small a{color:inherit}.ms .inv{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
 .ms .inv a,.ms .inv span{font-size:13px;border:1px solid var(--line);border-radius:99px;padding:3px 10px;text-decoration:none}
 .ms .inv a b{color:var(--carp);font-weight:600}
-.rozp small{display:block;opacity:.8;font-size:13px}.rozp .c{font:700 22px "Source Serif 4",Georgia,serif;white-space:nowrap}
+.rozp small{display:block;opacity:.8;font-size:13px}.rozp .c{font:700 22px var(--font);white-space:nowrap}
 .filtr{position:sticky;top:0;z-index:5;background:var(--bg);padding:10px 0;margin-bottom:6px}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}
-.chips button{font:500 14px Inter,sans-serif;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:99px;padding:5px 12px;cursor:pointer}
-.chips button span{color:var(--mute);margin-left:4px}.chips button.on{background:var(--pond);color:var(--pondink);border-color:var(--pond)}.chips button.on span{color:var(--pondink);opacity:.8}
+.chips button{font:500 14px var(--font);border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:99px;padding:5px 12px;cursor:pointer}
+.chips button span{color:var(--mute);margin-left:4px}.chips button.on{background:var(--navy);color:#fff;border-color:var(--navy)}.chips button.on span{color:var(--pondink);opacity:.8}
 .ovl{display:flex;gap:8px;flex-wrap:wrap}.ovl input{flex:1 1 220px}
-.ovl input,.ovl select{font:15px Inter,sans-serif;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink)}
+.ovl input,.ovl select{font:15px var(--font);padding:8px 10px;border:1px solid var(--line);border-radius:var(--r-sm);background:var(--card);color:var(--ink)}
 .zpet{position:sticky;top:0;z-index:5;background:var(--bg);display:flex;justify-content:space-between;padding:10px 0;margin-bottom:8px;font-weight:600}
 .zpet a{text-decoration:none;color:var(--pond)}.zpet span a{margin-left:16px;font-weight:500}
-@media(prefers-color-scheme:dark){.zpet a{color:#8fd3d0}}
+/* harmonogram (#194) */
+.leg{display:flex;flex-wrap:wrap;gap:14px;font-size:14px;color:var(--mute);margin:12px 0 4px}.leg i{display:inline-block;width:22px;height:10px;border-radius:4px;vertical-align:middle;margin-right:6px}
+.leg .md{display:inline-block;width:9px;height:9px;transform:rotate(45deg);background:var(--navy);margin:0 6px 0 4px;vertical-align:middle;border-radius:1px;padding:0;box-shadow:none;border:0}
+.gan{background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);padding:14px 22px 10px;margin-bottom:22px;box-shadow:var(--shadow-card)}
+.gr{display:grid;grid-template-columns:minmax(0,250px) minmax(0,1fr);gap:14px;align-items:center;padding:7px 0}.gr+.gr{border-top:1px solid var(--line)}
+.gr .n{font-size:14.5px;line-height:1.3}.gr .n a{text-decoration:none;font-weight:600}.gr .n a:hover{text-decoration:underline}.gr .n small{display:block;color:var(--mute);font-size:12.5px}
+.tr{position:relative;height:22px}.tr .rk{position:absolute;top:0;bottom:0;width:1px;background:var(--line)}.tr .dn{position:absolute;top:-4px;bottom:-4px;width:2px;background:var(--green);border-radius:1px}
+.tr a.u{position:absolute;top:4px;height:14px;border-radius:4px;display:block;box-shadow:inset -2px 0 0 #fff}.tr a.u:hover{filter:brightness(1.08);outline:2px solid var(--navy);outline-offset:1px}
+.u.priprava{background:var(--g-priprava);border:1px solid var(--g-soutez)}.u.soutez{background:var(--g-soutez)}.u.stavba{background:var(--g-stavba)}.u.prubeh{background:var(--g-prubeh)}
+.u.otevreno{border-top-right-radius:0;border-bottom-right-radius:0;-webkit-mask:linear-gradient(90deg,#000 calc(100% - 14px),rgba(0,0,0,.35));mask:linear-gradient(90deg,#000 calc(100% - 14px),rgba(0,0,0,.35))}
+.u.drive{border-top-left-radius:0;border-bottom-left-radius:0}
+.tr .m{position:absolute;top:7px;width:8px;height:8px;margin-left:-4px;transform:rotate(45deg);background:var(--navy);border:1px solid #fff;border-radius:1px}
+.osa{display:grid;grid-template-columns:minmax(0,250px) minmax(0,1fr);gap:14px;position:sticky;top:64px;z-index:4;background:var(--card);padding:6px 0 4px;border-bottom:1px solid var(--line)}
+.osa .tr{height:18px}.osa .tr span{position:absolute;font-size:12px;color:var(--mute);transform:translateX(4px);font-variant-numeric:tabular-nums}
+.gan details>summary{cursor:pointer;color:var(--mute);font-size:14px;padding:8px 0}
+@media(max-width:640px){.gr,.osa{grid-template-columns:1fr;gap:4px}.osa>span:first-child{display:none}}
+.cp{font-size:14px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}.cp b{display:block;font-size:16px;color:var(--ink)}.cp small{display:block;color:var(--mute);font-size:12.5px}
+.souhrn{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:18px 0 26px}
+.souhrn div{background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);padding:16px 18px;box-shadow:var(--shadow-card)}
+.souhrn span{font-size:14px;color:var(--mute)}.souhrn b{display:block;font:800 28px/1.15 var(--font);letter-spacing:-.02em;font-variant-numeric:tabular-nums;margin:2px 0}.souhrn small{display:block;font-size:13px;color:var(--mute)}
+.nz{color:var(--k-soutez)}
 </style></head><body>
+<div class="lista"><div class="wrap"><a class="zn" href="https://trebonaci.cz"><img src="obr/logo-trebonaci.jpg" alt=""><span><b>Třeboňáci</b></span></a><span class="bd">Co se děje na radnici</span>
+<nav id="menu"><a href="#">Investice</a><a href="#harmonogram">Harmonogram</a><a href="#zasobnik">Zásobník</a><a href="#mista">Místa a služby</a><a href="#rozpocet">Rozpočet</a></nav></div></div>
 <header class="band"><div class="wrap"><span class="tag">__STITEK__</span>
-<h1>Investice města</h1><p class="lead">Co se staví, kdo to dělá a kolik to stojí. Ceny s DPH.</p></div></header>
+<span class="eyebrow">Přehled radnice Třeboň</span><h1>Investice města</h1><p class="lead">Co se staví, kdo to dělá a kolik to stojí. Ceny s DPH.</p></div></header>
 <main class="band"><div class="wrap" id="karty"></div>
 <div class="wrap pozn"><p style="margin:0 0 10px"><b>Třeboňáci</b> · přehled radnice · <a href="https://trebonaci.cz">trebonaci.cz</a>. Nejde o web Města Třeboň. Data pocházejí z veřejných zdrojů uvedených u každého údaje.</p>Ceny smluv a dodatků jsou s DPH (rozpočet města počítá s cenou včetně DPH); kde zdroj uvádí jen cenu bez DPH, je to u částky napsáno. Vysoutěžená cena = cena podepsané smlouvy (registr smluv), případně nabídka vítěze v E-ZAK. Dodatek „jen termín“ podle usnesení rady cenu nemění. Zdroje: zápisy rady a zastupitelstva, rozpočet města, profil zadavatele E-ZAK, registr smluv. Přiřazení smluv a rozpočtových položek k akci jsme odvodili z jejich názvů. Přiřazení ke Strategickému plánu rozvoje města 2021–2030 vychází z evidence aktivit na trebonaci.cz; „návrh“ zatím nikdo nepotvrdil.</div></main>
 <script>
@@ -116,6 +153,8 @@ const INV=__INVESTICE__;
 const Z=__ZASOBNIK__;
 const M=__MISTA__;
 const ZM=__ZMENY__;
+const H=__HARMONOGRAM__;
+const U=__UKAZATELE__;
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const kc=v=>v==null?"–":Math.abs(v)>=1e6?(v/1e6).toLocaleString("cs-CZ",{minimumFractionDigits:1,maximumFractionDigits:1})+" mil. Kč":new Intl.NumberFormat("cs-CZ",{maximumFractionDigits:0}).format(v)+" Kč";
 const kcp=v=>v==null?"–":new Intl.NumberFormat("cs-CZ",{maximumFractionDigits:0}).format(v)+" Kč";
@@ -234,22 +273,68 @@ const zPol=()=>Z.filter(x=>x.typ==="polozka"&&x.faze!=="realizovano");
 const zNam=()=>Z.filter(x=>x.typ==="namet");
 function zRadek(x){const s=STUPEN[x.pripravenost.stupen]??0;
   const nos=x.nositele.filter(n=>n.ico!=="00247618").map(n=>esc(n.nazev)).join(", ");
-  const dok=x.doklady.map(d=>`<li>${dat(d.datum)} · ${d.typ==="smlouva"?"smlouva":"zakázka"}: ${d.url?`<a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.text)}</a>`:esc(d.text)}</li>`).join("");
+  const dok=x.doklady.map(d=>`<li>${dat(d.datum)} · ${d.dodatek?"dodatek":d.typ==="smlouva"?"smlouva":"zakázka"}: ${d.url?`<a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.text)}</a>`:esc(d.text)}${d.cena?` · <b>${kcs(d.cena.s_dph,d.cena.bez_dph)}</b>`:" · cena neuvedena"}${d.cena&&!d.zapocteno?` <span class="nz">(nezapočteno: ${esc(d.nezapocteno)})</span>`:""}${d.zaplaceno?.s_dph!=null?` · zaplaceno ${kcp(d.zaplaceno.s_dph)}`:""}</li>`).join("");
   const sp=x.sprm?.length?`<small class="sp">${sprmText(x,true)}</small>`:"";
   const stavba=x.faze==="stavba"?`<small class="sp"><i>Už se soutěží stavba – patří mezi investice.</i></small>`:"";
-  return `<div><span class="st s${s}">${STUPEN_KRATCE[s]}</span><span><b>${esc(x.nazev)}</b><small>${[nos?"nositel "+nos:"",x.doklady.length?"první doklad "+dat(x.doklady[0].datum):""].filter(Boolean).join(" · ")||"&nbsp;"}</small>${sp}${stavba}${dok?`<details><summary>Doklady (${x.doklady.length})</summary><ul>${dok}</ul></details>`:x.zdroj?.url?`<small><a href="${esc(x.zdroj.url)}" target="_blank" rel="noopener">zdroj</a></small>`:""}</span><span class="c">${x.odhad?"odhad "+kc(x.odhad.hodnota):"neoceněno"}</span></div>`;}
+  return `<div><span class="st s${s}">${STUPEN_KRATCE[s]}</span><span><b>${esc(x.nazev)}</b><small>${[nos?"nositel "+nos:"",x.doklady.length?"první doklad "+dat(x.doklady[0].datum):""].filter(Boolean).join(" · ")||"&nbsp;"}</small>${sp}${stavba}${dok?`<details><summary>Doklady (${x.doklady.length})</summary><ul>${dok}</ul></details>`:x.zdroj?.url?`<small><a href="${esc(x.zdroj.url)}" target="_blank" rel="noopener">zdroj</a></small>`:""}</span>${cenaPripravy(x)}</div>`;}
+function cenaPripravy(x){const c=x.cena_pripravy;const sm=c?.smlouvy||{};const dd=c?.dodatky||{};
+  const hl=sm.s_dph!=null?kc(sm.s_dph)+(sm.bez_dph!=null?` + ${kc(sm.bez_dph)} bez DPH`:""):sm.bez_dph!=null?kc(sm.bez_dph)+" bez DPH":"–";
+  const dod=dd.pocet?`<small>dodatky ${dd.s_dph!=null?plus(dd.s_dph):""}${dd.bez_dph!=null?" "+plus(dd.bez_dph)+" bez DPH":""}</small>`:"";
+  const zap=c?.zaplaceno?.s_dph!=null?`<small>zaplaceno ${kc(c.zaplaceno.s_dph)} (E-ZAK)</small>`:"";
+  return `<span class="cp">${sm.pocet||dd.pocet?`<small>příprava podle smluv</small><b>${hl}</b>${dod}${zap}`:"<small>příprava</small><b>bez smlouvy</b>"}<small>${x.odhad?"odhad stavby "+kc(x.odhad.hodnota):"stavba neoceněna"}</small></span>`;}
+function souhrnPripravy(){const u=U.find(x=>x.id==="zasobnik-priprava");if(!u)return "";
+  return `<div class="souhrn">${u.hodnota.map(r=>`<div><span>${esc(r.nazev)} · ${r.polozek} ${r.polozek===1?"projekt":r.polozek<5?"projekty":"projektů"}</span><b>${r.s_dph!=null?kc(r.s_dph):kc(r.bez_dph)+" bez DPH"}</b><small>${r.s_dph!=null?"s DPH":"smlouvy uvádějí cenu bez DPH"}${r.s_dph!=null&&r.bez_dph!=null?` · další ${kc(r.bez_dph)} bez DPH`:""}${r.dodatky_s_dph!=null?` · dodatky ${plus(r.dodatky_s_dph)}`:""}</small>${r.zaplaceno_s_dph!=null?`<small>z toho podle E-ZAK už zaplaceno ${kc(r.zaplaceno_s_dph)}</small>`:""}</div>`).join("")}</div>
+  <p class="pozn" style="max-width:62ch;margin-top:-12px">Kolik stojí příprava projektů, které se zatím nestaví: smluvní ceny studií, projektových dokumentací a průzkumů (registr smluv, E-ZAK). Zakázka a smlouva na tutéž práci se počítají jednou. ${esc(u.srovnatelnost||"")}</p>`;}
 function zasobnik(){
   const pol=zPol().sort((a,b)=>(STUPEN[b.pripravenost.stupen]-STUPEN[a.pripravenost.stupen])||a.nazev.localeCompare(b.nazev,"cs"));
   const ob=[...new Set(pol.map(x=>x.oblast))].sort((a,b)=>(OBLAST[a]||a).localeCompare(OBLAST[b]||b,"cs"));
   const osy=[...new Set(zNam().map(x=>x.osa))];
   const kand=Z.filter(x=>x.typ==="kandidat");
   return `<section><h2>Zásobník projektů</h2>
-  <p class="pozn" style="font-size:15px;max-width:62ch">Projekty, které se připravují, ale ještě nemají zakázku na stavbu ani peníze v rozpočtu. <b>Pracovní přehled, ne dokument schválený městem.</b> Stupeň připravenosti říká, co bylo zadáno (smlouva nebo zakázka na studii či projekt), ne že je hotovo. Odhad nákladů uvádíme, jen když je ve zdroji.</p>
+  <p class="pozn" style="font-size:15px;max-width:62ch">Projekty, které se připravují, ale ještě nemají zakázku na stavbu ani peníze v rozpočtu. <b>Pracovní přehled, ne dokument schválený městem.</b> Stupeň připravenosti říká, co bylo zadáno (smlouva nebo zakázka na studii či projekt), ne že je hotovo. Odhad nákladů stavby uvádíme, jen když je ve zdroji.</p>
+  ${souhrnPripravy()}
   ${ob.map(o=>`<div class="hh">${OBLAST[o]||o}</div><div class="zs">${pol.filter(x=>x.oblast===o).map(zRadek).join("")}</div>`).join("")}
   <h2 style="margin-top:34px">Náměty ze Strategického plánu</h2>
   <p class="pozn" style="font-size:15px;max-width:62ch">Aktivity Strategického plánu rozvoje města 2021–2030, které jsou v evidenci vedené jako „plánované“ a zatím k nim není konkrétní projekt ani investice. Bez peněz a bez termínu.</p>
   ${osy.map(o=>`<div class="hh">${esc(o)}</div><div class="zs" style="padding:8px 22px"><ul class="nm">${zNam().filter(x=>x.osa===o).map(x=>`<li>${esc(x.nazev)}${x.komentar?` <small style="display:inline">– ${esc(x.komentar)}</small>`:""}</li>`).join("")}</ul></div>`).join("")}
   <details class="pozn" style="margin-top:26px"><summary>Pro redakci: smlouvy a zakázky na přípravu, které zatím nejsou v zásobníku ani v investicích (${kand.length})</summary><ul>${kand.map(x=>`<li>${dat(x.doklad.datum)} · ${esc(x.nositele[0]?.nazev||"")} · ${x.doklad.url?`<a href="${esc(x.doklad.url)}" target="_blank" rel="noopener">${esc(x.nazev)}</a>`:esc(x.nazev)}</li>`).join("")}</ul></details>
+  </section>`;
+}
+
+
+// ---------- harmonogram (#harmonogram, #194) ----------
+const DNES=new Date().toISOString().slice(0,10);
+const FAZE_G={priprava:"Příprava",soutez:"Výběr dodavatele",stavba:"Stavba",prubeh:"Probíhá"};
+function harmonogram(){
+  if(!H.length)return "<p>Harmonogram zatím nemá data.</p>";
+  const OD="2023-01-01";
+  const kon=new Date(DNES);kon.setMonth(kon.getMonth()+3);const DO=kon.toISOString().slice(0,10);
+  const t=d=>new Date(d).getTime();const T0=t(OD),T1=t(DO);
+  const x=d=>Math.max(0,Math.min(100,100*(t(d)-T0)/(T1-T0)));
+  const roky=[];for(let r=2023;r<=+DO.slice(0,4);r++)roky.push(r);
+  const rysky=roky.map(r=>`<i class="rk" style="left:${x(r+"-01-01").toFixed(2)}%"></i>`).join("")+`<i class="dn" style="left:${x(DNES).toFixed(2)}%" title="dnes"></i>`;
+  const osa=`<div class="osa"><span></span><div class="tr">${roky.map(r=>`<span style="left:${x(r+"-01-01").toFixed(2)}%">${r}</span>`).join("")}<span style="left:${x(DNES).toFixed(2)}%;color:var(--green-dark);font-weight:700;transform:translateX(-50%) translateY(-1px)">dnes</span></div></div>`;
+  const usek=(u,r)=>{const od=u.od<OD?OD:u.od, doo=u.do||DNES;const l=x(od), w=Math.max(.6,x(doo)-l);
+    const popis=`${r.nazev} – ${FAZE_G[u.faze]}: ${dat(u.od)} – ${u.otevreno?"dosud":dat(u.do)}${u.konec_jistota==="posledni_doklad"?" (konec = poslední doklad ke stavbě)":""}${u.zacatek_pred_daty?" (začalo dřív, než sahají naše data)":""}`;
+    return `<a class="u ${u.faze}${u.otevreno?" otevreno":""}${u.od<OD||u.zacatek_pred_daty?" drive":""}" style="left:${l.toFixed(2)}%;width:${w.toFixed(2)}%" ${u.url?`href="${esc(u.url)}" target="_blank" rel="noopener"`:""} title="${esc(popis)}" aria-label="${esc(popis)}"></a>`;};
+  const mil=(m,r)=>m.datum&&m.datum>=OD&&(m.typ==="dodatek"||m.typ==="usneseni"&&r.typ==="aktivita")?`<a class="m" style="left:${x(m.datum).toFixed(2)}%" ${m.url?`href="${esc(m.url)}" target="_blank" rel="noopener"`:""} title="${esc(dat(m.datum)+" · "+(m.cislo?m.cislo+": ":"")+(m.text||m.typ))}"></a>`:"";
+  const radek=r=>{const pod=r.typ==="investice"?(FAZE[r.faze]||[""])[0]:r.typ==="aktivita"?(OBLAST[r.oblast]||({uzemni_plan:"Územní plán"})[r.oblast]||""):"zásobník – připravuje se";
+    const nz=r.odkaz?`<a href="${r.odkaz}">${esc(r.nazev)}</a>`:`<b>${esc(r.nazev)}</b>`;
+    return `<div class="gr"><div class="n">${nz}<small>${esc(pod)}${r.typ!=="zasobnik"&&r.faze_jistota==="nase_propojeni"&&r.typ==="investice"?" · fáze podle dokladů":""}</small></div><div class="tr">${rysky}${r.useky.map(u=>usek(u,r)).join("")}${r.milniky.map(m=>mil(m,r)).join("")}</div></div>`;};
+  const zacatek=r=>r.useky.reduce((m,u)=>u.od<m?u.od:m,"9999");
+  const inv=H.filter(r=>r.typ==="investice");
+  const sk=[["Dlouhodobé projekty bez stavby",H.filter(r=>r.typ==="aktivita"),"Územní plán a další projekty, které běží měsíce až roky. Milníky jsou usnesení rady a zastupitelstva (naše data sahají od září 2026)."],
+    ["Investice – stavba probíhá",inv.filter(r=>r.faze==="probiha"||r.faze==="soutezi_se"),""],
+    ["Investice – připravují se",inv.filter(r=>r.faze==="pripravuje_se"),""],
+    ["Zásobník – co se projektuje",H.filter(r=>r.typ==="zasobnik"),"Od první smlouvy nebo zakázky na studii či projekt. Stavba zatím není zadaná."],
+    ["Investice – dokončené",inv.filter(r=>r.faze==="dokonceno"),"Konec stavby = poslední doklad ke stavbě (dodatek, smlouva); den předání stavby v datech není."]];
+  const tab=H.map(r=>`<tr><td>${esc(r.nazev)}</td><td>${r.useky.map(u=>`${FAZE_G[u.faze]} ${dat(u.od)} – ${u.otevreno?"dosud":dat(u.do)}`).join("<br>")}</td></tr>`).join("");
+  return `<section><h2>Harmonogram</h2>
+  <p class="pozn" style="font-size:15px;max-width:64ch">Kdy se co připravovalo, soutěžilo a stavělo. Začátek a konec každé fáze je datum dokladu – smlouvy, zakázky v E-ZAK nebo usnesení –, ne plánovaný termín města. Najeďte na úsek pro data, klikněte pro doklad.</p>
+  <div class="leg"><span><i style="background:var(--g-priprava);border:1px solid var(--g-soutez)"></i>příprava (studie, projekt)</span><span><i style="background:var(--g-soutez)"></i>výběr dodavatele</span><span><i style="background:var(--g-stavba)"></i>stavba</span><span><i style="background:var(--g-prubeh)"></i>dlouhodobý projekt</span><span><span class="md"></span>dodatek / usnesení</span><span><i style="background:linear-gradient(90deg,var(--g-stavba),rgba(0,102,132,.3))"></i>stále běží</span></div>
+  ${sk.filter(([,r])=>r.length).map(([n,r,pz])=>{const telo=r.sort((a,b)=>zacatek(a).localeCompare(zacatek(b))).map(radek).join("");
+    return `<div class="hh">${n} (${r.length})</div>${pz?`<p class="pozn" style="margin:0 0 8px">${pz}</p>`:""}<div class="gan">${osa}${n.endsWith("dokončené")?`<details><summary>Zobrazit dokončené</summary>${telo}</details>`:telo}</div>`;}).join("")}
+  <details class="pozn"><summary>Harmonogram jako tabulka</summary><table class="t"><tr><td class="r">Akce</td><td>Fáze</td></tr>${tab}</table></details>
   </section>`;
 }
 
@@ -296,6 +381,7 @@ function prehled(){
   const I=INV;
   return `<a class="rozp" href="#rozpocet"><span><b>Investice v rozpočtu ${I?.rok??""}</b><small>po rozpočtových změnách, podle oblastí</small></span><span class="c">${I?kc(I.bez_rezervy_po_zmenach):""} ›</span></a>
   <a class="rozp zas" href="#mista"><span><b>Místa a služby – co se mění</b><small>knihovna, DPS, sportovní hala, školy… změny z usnesení i investice</small></span><span class="c">${ZM.length} ›</span></a>
+  <a class="rozp zas" href="#harmonogram"><span><b>Harmonogram</b><small>příprava, výběr dodavatele a stavba v čase – investice i dlouhodobé projekty</small></span><span class="c">${H.length} ›</span></a>
   <a class="rozp zas" href="#zasobnik"><span><b>Zásobník projektů a náměty</b><small>co se připravuje a co je ve Strategickém plánu – pracovní přehled</small></span><span class="c">${zPol().length} + ${zNam().length} ›</span></a>
   <div class="filtr">
    <div class="chips">${STAV.filter(([k])=>pocty[k]).map(([k,n])=>`<button data-stav="${k}" class="${F.stav===k?"on":""}">${n} <span>${pocty[k]}</span></button>`).join("")}</div>
@@ -311,11 +397,13 @@ function detail(p){
   const pred=i>0?r[i-1]:null, dal=i>=0&&i<r.length-1?r[i+1]:null;
   return `<div class="zpet"><a href="#">← Přehled investic</a><span>${pred?`<a href="#${pred.id}" title="${esc(pred.nazev)}">‹ předchozí</a>`:""}${dal?`<a href="#${dal.id}" title="${esc(dal.nazev)}">další ›</a>`:""}</span></div>${karta(p)}`;
 }
+function menu(h){document.querySelectorAll("#menu a").forEach(a=>a.classList.toggle("on",a.getAttribute("href").slice(1)===(h.startsWith("misto-")?"mista":h)));}
 function render(){
-  const h=decodeURIComponent(location.hash.slice(1));
+  const h=decodeURIComponent(location.hash.slice(1));menu(P.some(x=>x.id===h)?"":h);
   const el=document.getElementById("karty");
   if(h==="rozpocet"){el.innerHTML=`<div class="zpet"><a href="#">← Přehled investic</a><span></span></div>`+investice(INV);window.scrollTo(0,0);return;}
   if(h==="mista"||h.startsWith("misto-")){el.innerHTML=`<div class="zpet"><a href="#">← Přehled investic</a><span></span></div>`+mistaStranka();const t=h.startsWith("misto-")&&document.getElementById(h);t?t.scrollIntoView():window.scrollTo(0,0);return;}
+  if(h==="harmonogram"){el.innerHTML=`<div class="zpet"><a href="#">← Přehled investic</a><span></span></div>`+harmonogram();window.scrollTo(0,0);menu(h);return;}
   if(h==="zasobnik"){el.innerHTML=`<div class="zpet"><a href="#">← Přehled investic</a><span></span></div>`+zasobnik();window.scrollTo(0,0);return;}
   const p=P.find(x=>x.id===h);
   if(p){el.innerHTML=detail(p);window.scrollTo(0,0);return;}
