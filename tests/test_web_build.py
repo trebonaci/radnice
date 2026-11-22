@@ -16,3 +16,17 @@ def test_nahled_je_oznaceny():
 def test_datum_z_behu():
     assert build._datum({"zacatek": "2026-11-21T13:41:17+00:00"}) == "21. 11. 2026"
     assert build._datum({}) == ""
+
+
+def test_usneseni_pro_web_odkaz_na_stranu_a_razeni():
+    from web.build import usneseni_pro_web
+    jd = [{"id": "rm-1", "organ": "rada", "cislo": "1", "datum": "2026-11-04", "dokument": {"url": "https://z.pdf"}},
+          {"id": "zm-1", "organ": "zastupitelstvo", "cislo": "1", "datum": "2026-11-02", "dokument": {"url": "https://y.pdf"}}]
+    us = [{"id": "zm-1-u1", "cislo": "ZM 1/2026-1", "jednani_id": "zm-1", "vysledek_hlasovani": "prijato",
+           "shrnuti": "S", "shrnuti_ai": True, "kategorie": ["samosprava"], "citace": {"strany": [4]}},
+          {"id": "rm-1-u1", "cislo": "RM 1/2026-1", "jednani_id": "rm-1", "vysledek_hlasovani": "neprijato",
+           "pro_obcany": {"text": "P"}, "pro_obcany_ai": True, "kategorie": [], "citace": {"strany": []}}]
+    r = usneseni_pro_web(us, jd)
+    assert [x["id"] for x in r] == ["rm-1-u1", "zm-1-u1"]
+    assert r[1]["url"] == "https://y.pdf#page=4" and r[0]["url"] == "https://z.pdf"
+    assert r[0]["shrnuti"] == "P" and r[0]["kategorie"] == ["ostatni"] and r[0]["vysledek"] == "neprijato"
