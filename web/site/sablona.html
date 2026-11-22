@@ -202,15 +202,17 @@ h1:focus{outline:none}
 .zs>div+div{border-top:1px solid var(--line)}
 .temata{margin-top:4px}
 @media(max-width:640px){.chips{flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px;scrollbar-width:thin}.chips button{flex:0 0 auto}}
+__GISCSS__
 </style></head><body>
 <div class="lista"><div class="wrap"><a class="zn" href="https://trebonaci.cz"><img src="obr/logo-trebonaci.jpg" alt=""><span><b>Třeboňáci</b></span></a><span class="bd">Co se děje na radnici</span>
-<nav id="menu" aria-label="Sekce"><a href="#">Investice</a><a href="#usneseni">Usnesení</a><a href="#casova-osa">Časová osa</a><a href="#pripravovane">Připravované projekty</a><a href="#mista">Místa a služby</a><a href="#rozpocet">Rozpočet</a><a href="#cisla">V číslech</a></nav></div></div>
+<nav id="menu" aria-label="Sekce"><a href="#">Investice</a><a href="#mapa">Mapa</a><a href="#usneseni">Usnesení</a><a href="#casova-osa">Časová osa</a><a href="#pripravovane">Připravované projekty</a><a href="#mista">Místa a služby</a><a href="#rozpocet">Rozpočet</a><a href="#cisla">V číslech</a></nav></div></div>
 <header class="band"><div class="wrap"><span class="tag">__STITEK__</span>
 <span class="eyebrow">Co se děje na radnici v Třeboni</span><h1>Sledujeme pro vás</h1><p class="lead">Co radnice rozhodla, co se staví a připravuje, kdo to dělá a kolik to stojí. U každého údaje odkaz na dokument.</p></div></header>
 <main class="band" style="padding-top:18px"><div class="wrap"><p class="vyd">Přehled připravují <b>Třeboňáci</b> z veřejných dokumentů města · data k __DATUM__ · <a href="#paticka" data-paticka>Jak vzniká přehled</a></p></div><div class="wrap" id="karty"></div>
 <div class="wrap pozn" id="paticka" tabindex="-1"><p style="margin:0 0 10px"><b>Třeboňáci</b> · přehled radnice · <a href="https://trebonaci.cz">trebonaci.cz</a>. Nejde o web Města Třeboň. Data pocházejí z veřejných zdrojů uvedených u každého údaje.</p>Ceny smluv a dodatků jsou s DPH (rozpočet města počítá s cenou včetně DPH); kde zdroj uvádí jen cenu bez DPH, je to u částky napsáno. Vysoutěžená cena = cena podepsané smlouvy (registr smluv), případně nabídka vítěze v E-ZAK. Dodatek „jen termín“ podle usnesení rady cenu nemění. Zdroje: zápisy rady a zastupitelstva, rozpočet města, profil zadavatele E-ZAK, registr smluv. Přiřazení smluv a rozpočtových položek k akci jsme odvodili z jejich názvů. Přiřazení ke Strategickému plánu rozvoje města 2021–2030 vychází z evidence aktivit na trebonaci.cz; „návrh“ zatím nikdo nepotvrdil.</div></main>
 <script>
 const P=__DATA__;
+const GIS=__MAPA__;
 const INV=__INVESTICE__;
 const Z=__ZASOBNIK__;
 const M=__MISTA__;
@@ -413,7 +415,7 @@ function zRadek(x){const s=STUPEN[x.pripravenost.stupen]??0;
   const dok=x.doklady.map(d=>`<li>${dat(d.datum)} · ${d.dodatek?"dodatek":d.typ==="smlouva"?"smlouva":"zakázka"}: ${d.url?`<a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(rozepis(d.text))}</a>`:esc(rozepis(d.text))}${d.cena?` · <b>${kcs(d.cena.s_dph,d.cena.bez_dph)}</b>`:" · cena neuvedena"}${d.cena&&!d.zapocteno?` <span class="nz">(nezapočteno: ${esc(d.nezapocteno)})</span>`:""}${d.zaplaceno?.s_dph!=null?` · zaplaceno ${kcp(d.zaplaceno.s_dph)}`:""}</li>`).join("");
   const sp=x.sprm?.length?`<small class="sp">${sprmText(x,true)}</small>`:"";
   const stavba=x.faze==="stavba"?`<small class="sp"><i>Už se soutěží stavba – patří mezi investice.</i></small>`:"";
-  return `<div><span class="st s${s}">${STUPEN_KRATCE[s]}</span><span><b>${esc(rozepis(x.nazev))}</b><small>${[nos?"nositel "+nos:"",x.doklady.length?"první doklad "+dat(x.doklady[0].datum):""].filter(Boolean).join(" · ")||"&nbsp;"}</small>${sp}${stavba}${dok?`<details><summary>Doklady (${x.doklady.length})</summary><ul>${dok}</ul></details>`:x.zdroj?.url?`<small><a href="${esc(x.zdroj.url)}" target="_blank" rel="noopener">zdroj</a></small>`:""}</span>${cenaPripravy(x)}</div>`;}
+  return `<div id="priprava-${esc(x.id)}"><span class="st s${s}">${STUPEN_KRATCE[s]}</span><span><b>${esc(rozepis(x.nazev))}</b><small>${[nos?"nositel "+nos:"",x.doklady.length?"první doklad "+dat(x.doklady[0].datum):""].filter(Boolean).join(" · ")||"&nbsp;"}</small>${sp}${stavba}${dok?`<details><summary>Doklady (${x.doklady.length})</summary><ul>${dok}</ul></details>`:x.zdroj?.url?`<small><a href="${esc(x.zdroj.url)}" target="_blank" rel="noopener">zdroj</a></small>`:""}</span>${cenaPripravy(x)}</div>`;}
 function cenaPripravy(x){const c=x.cena_pripravy;const sm=c?.smlouvy||{};const dd=c?.dodatky||{};
   const hl=sm.s_dph!=null?kc(sm.s_dph)+(sm.bez_dph!=null?` + ${kc(sm.bez_dph)} bez DPH`:""):sm.bez_dph!=null?kc(sm.bez_dph)+" bez DPH":"–";
   const dod=dd.pocet?`<small>dodatky ${dd.s_dph!=null?plus(dd.s_dph):""}${dd.bez_dph!=null?" "+plus(dd.bez_dph)+" bez DPH":""}</small>`:"";
@@ -592,6 +594,7 @@ function prehled(){
   const oblasti=[...new Set(P.map(p=>p.oblast))].sort((a,b)=>(OBLAST[a]||a).localeCompare(OBLAST[b]||b,"cs"));
   const I=INV;const filtr=F.stav!=="vse"||F.oblast||F.osa||F.hledat;
   return `<div class="hledani"><label class="sr" for="q">Hledat ulici, místo, projekt nebo firmu</label><input id="q" type="search" autocomplete="off" placeholder="Hledat ulici, místo, projekt nebo firmu" value="${esc(F.hledat)}"></div>
+  <p><a href="#mapa">Zobrazit stavby a opravy na mapě →</a></p>
   <div class="filtr">
    <div class="chips" role="group" aria-label="Stav investice">${STAV.filter(([k])=>pocty[k]).map(([k,n])=>`<button data-stav="${k}" aria-pressed="${F.stav===k}" class="${F.stav===k?"on":""}">${n} <span>${pocty[k]}</span></button>`).join("")}</div>
    ${temaChips(oblasti,F.oblast,"tema")}
@@ -626,13 +629,17 @@ const ALIAS={harmonogram:"casova-osa",zasobnik:"pripravovane"};
 document.addEventListener("click",e=>{const a=e.target.closest("[data-paticka]");if(a){e.preventDefault();const f=document.getElementById("paticka");f.scrollIntoView({behavior:"smooth"});f.focus({preventScroll:true});}});
 function zobraz(el,html,h,nazev,vlastniZpet){el.innerHTML=(vlastniZpet?"":`<div class="zpet"><a href="#">← Přehled investic</a><span></span></div>`)+html;document.body.dataset.str=h;document.title=nazev+" – "+TITUL;menu(h==="detail"?"":h);
   const t=el.querySelector("h1");if(t)t.focus({preventScroll:true});}
+__GISJS__
 function render(){
+  closeGis?.();
+  closeGis = null;
   let h=decodeURIComponent(location.hash.slice(1));if(ALIAS[h]){history.replaceState(null,"","#"+ALIAS[h]);h=ALIAS[h];}
   const el=document.getElementById("karty");
+  if(h==="mapa"){openGis(el);return;}
   if(h==="rozpocet"){zobraz(el,investice(INV),h,"Rozpočet");window.scrollTo(0,0);return;}
   if(h==="mista"||h.startsWith("misto-")){zobraz(el,mistaStranka(),"mista","Místa a služby");const t=h.startsWith("misto-")&&document.getElementById(h);t?t.scrollIntoView():window.scrollTo(0,0);return;}
   if(h==="casova-osa"){zobraz(el,harmonogram(),h,"Časová osa projektů");window.scrollTo(0,0);casovaOsa(el);return;}
-  if(h==="pripravovane"){zobraz(el,zasobnik(),h,"Připravované projekty");window.scrollTo(0,0);return;}
+  if(h==="pripravovane"||h.startsWith("priprava-")){zobraz(el,zasobnik(),"pripravovane","Připravované projekty");const target=document.getElementById(h);target?target.scrollIntoView():window.scrollTo(0,0);return;}
   if(h==="cisla"){zobraz(el,cisla(),h,"V číslech");window.scrollTo(0,0);return;}
   if(h==="usneseni"||h.startsWith("usneseni-")){if(h.startsWith("usneseni-"))Object.assign(FU,{organ:"",hledat:"",oblast:temaU(h.slice(9))});zobraz(el,usneseniStranka(),"usneseni","Usnesení rady a zastupitelstva");usneseniOvl(el);window.scrollTo(0,0);return;}
   if(/^(rm|zm)-\d{4}-/.test(h)&&US.some(u=>u.id===h)){Object.assign(FU,{organ:"",oblast:"",hledat:""});zobraz(el,usneseniStranka(),"usneseni","Usnesení rady a zastupitelstva");usneseniOvl(el);const t=document.getElementById(h);t&&t.scrollIntoView();return;}

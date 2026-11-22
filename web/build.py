@@ -64,6 +64,9 @@ def sestav(nahled: bool = False) -> str:
               else f"Data aktualizována {datum}" if datum else "Data z veřejných zdrojů")
     nahrady = {
         "__DATA__": _vloz(_json("projekty")),
+        "__MAPA__": _vloz(_json("mapa")),
+        "__GISCSS__": (SABLONA.parent / "mapa.css").read_text(encoding="utf-8"),
+        "__GISJS__": (SABLONA.parent / "mapa.js").read_text(encoding="utf-8"),
         "__ZASOBNIK__": _vloz(_json("zasobnik")),
         "__MISTA__": _vloz(_json("mista")),
         "__ZMENY__": _vloz(_json("zmeny")),
