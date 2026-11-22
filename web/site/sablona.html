@@ -18,6 +18,7 @@ h2{font:700 clamp(22px,2.8vw,28px)/1.2 "Source Serif 4",Georgia,serif;margin:0}
 .karta{background:var(--card);border-radius:14px;padding:clamp(20px,3vw,30px);margin-bottom:24px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
 .hlava{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;flex-wrap:wrap}
 .faze{font-size:13px;font-weight:600;color:#fff;background:var(--carp);padding:4px 12px;border-radius:99px;white-space:nowrap}
+.fj{display:block;font-size:11px;color:var(--mute);margin-top:4px;text-align:right;max-width:150px}.zdr summary{font-size:12px;color:var(--mute);cursor:pointer}.zdr small{display:block;font-size:12px}
 .faze.hotovo{background:#3c8f5a}.faze.priprava{background:var(--mute)}
 .popis{color:var(--mute);margin:4px 0 0}
 .stav{font-size:14px;color:var(--mute);margin-top:8px}
@@ -193,7 +194,7 @@ function karta(p){
   const historie=`<h3 class="hh">Historie</h3><ol class="hist">${ud.slice(0,N).map(e=>radek(e,p)).join("")}</ol>${ud.length>N?`<details class="vic"><summary>▸ Starší (${ud.length-N})</summary><ol class="hist">${ud.slice(N).map(e=>radek(e,p)).join("")}</ol></details>`:""}`;
   const sch=(p.souhrn.schvaleny||[]).at(-1);const upr=p.souhrn.rozpocet;const cc=p.souhrn.celkova_cena_s_dph;
   const stav=p.dokonceni?`Dokončeno ${dat(String(p.dokonceni.datum))}${p.doplaceno?" · doplaceno":" · doplacení zatím není v E-ZAK"}`:p.doplaceno?"Doplaceno (E-ZAK: ukončeno plnění)":"";
-  return `<article class="karta" id="${p.id}"><div class="hlava"><div><h2>${esc(p.nazev)}</h2><p class="popis">${p.popis?esc(p.popis):p.automaticka?"Karta sestavená automaticky ze zakázky v E-ZAK a smluv se stejným názvem.":""}</p>${stav?`<p class="stav">${stav}</p>`:""}<p class="stav sp2"><b>Strategický plán rozvoje města:</b> ${sprmText(p,false)}</p></div><span class="faze ${f[1]}">${f[0]}</span></div>
+  return `<article class="karta" id="${p.id}"><div class="hlava"><div><h2>${esc(p.nazev)}</h2><p class="popis">${p.popis?esc(p.popis):p.automaticka?"Karta sestavená automaticky ze zakázky v E-ZAK a smluv se stejným názvem.":""}</p>${stav?`<p class="stav">${stav}</p>`:""}<p class="stav sp2"><b>Strategický plán rozvoje města:</b> ${sprmText(p,false)}</p></div><span class="faze ${f[1]}">${f[0]}</span>${p.faze_jistota==="nase_propojeni"?`<small class="fj">návrh z dokladů, ne potvrzení města</small>`:""}</div>
   <div class="cisla">
    <div class="cislo"><span>Schválený rozpočet ${sch?.rok??""}</span><b>${sch||upr.celkem!=null?kc(sch?.celkem??upr.celkem):"–"}</b>${!sch&&upr.celkem==null?(p.vlastnik_subjekt_id&&p.vlastnik_subjekt_id!=="00247618"?`<small>investuje městská společnost, její rozpočet není veřejný</small>`:`<small>v rozpočtu 2026 není jako samostatná položka</small>`):""}<small>${sch?.po_zmenach?.zmeneno?`po změnách ${kc(sch.po_zmenach.celkem)} · ${[...new Set(p.schvaleny_rozpocet.flatMap(x=>x.zmeny_ro))].filter(x=>x!=null).length} rozpočtových opatření`:sch?"beze změn":""}</small></div>
    <div class="cislo"><span>Stavba – vysoutěžená cena</span><b>${st?kcs(st.puvodni?.s_dph,st.puvodni?.bez_dph,kc):"–"}</b><small>${st?.puvodni?.zdroj_id?"smlouva "+dat(p.smlouvy.find(s=>s.id===st.puvodni.zdroj_id)?.datum_uzavreni):""}</small></div>
@@ -209,6 +210,11 @@ function hlavni(p){const cc=p.souhrn.celkova_cena_s_dph;
  if(cc?.castka!=null)return ["celkem podle smluv",kc(cc.castka)];
  const st=p.casti.find(c=>c.role==="stavba");if(st)return ["stavba",kc(st.cena_po_dodatcich_s_dph??st.puvodni?.s_dph)];
  const r=p.souhrn.rozpocet.celkem??(p.souhrn.schvaleny||[]).at(-1)?.celkem;return r!=null?["v rozpočtu",kc(r)]:["",""];}
+function zdrojePol(p){
+  const o=[];if(p.zdroj?.url)o.push(`<a href="${esc(p.zdroj.url)}" target="_blank" rel="noopener">schválený rozpočet${p.zdroj.strana?", s. "+p.zdroj.strana:""}</a>`);
+  const ro=new Map();for(const z of p.zdroje_ro||[])if(!ro.has(z.cislo_ro))ro.set(z.cislo_ro,z);
+  for(const z of ro.values())o.push(`<a href="${esc(z.url)}" target="_blank" rel="noopener">rozpočtové opatření č. ${z.cislo_ro}${z.strana?", s. "+z.strana:""}</a>`);
+  return o.length?`<details class="zdr"><summary>Zdroje</summary><small>${o.join(" · ")}</small></details>`:"";}
 function investice(I){
   if(!I)return "";
   const max=Math.max(...I.oblasti.map(o=>o.po_zmenach));
