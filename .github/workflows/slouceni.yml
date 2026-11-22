@@ -172,6 +172,12 @@ jobs:
                     ? `Automaticky sloučeno (${sha.slice(0, 7)}): PR z denního běhu, CI zelená, bez nevyřešených nálezů P0/P1 (bez Codex review, #166). Sloučení ≠ zveřejnění.`
                     : `Automaticky sloučeno (${sha.slice(0, 7)}): CI zelená, Codex review dokončeno, bez nevyřešených nálezů P0/P1. Sloučení ≠ zveřejnění.`});
                 core.info(`${kdo}: sloučeno`);
+                // sloučení přes GITHUB_TOKEN nespustí push workflow (#200): web radnice.trebonaci.cz se nasadí přímo
+                try {
+                  await github.rest.actions.createWorkflowDispatch({owner, repo, workflow_id: 'web.yml', ref: 'main'});
+                } catch (e) {
+                  core.warning(`${kdo}: spuštění web.yml selhalo: ${e.message}`);
+                }
               } catch (e) {
                 core.warning(`${kdo}: sloučení selhalo: ${e.message}`);
               }
