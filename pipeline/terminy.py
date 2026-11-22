@@ -13,6 +13,7 @@ from datetime import date
 
 DATUM = r"(\d{1,2})\.\s?(\d{1,2})\.\s?(20\d{2})"
 KLIC = (r"(?:term[ií]n\w*\s+(?:dokon[čc]en\w*|p[řr]ed[aá]n[ií]\s+(?:d[ií]la|stavby|prac[ií]|v[šs]ech\s+prac[ií])\b)"
+        r"|lh[ůu]ta\s+pro\s+dokon[čc]en[ií]\s+prac[ií]"
         r"|dokon[čc]it\s+(?:d[ií]lo|stavbu)|p[řr]edat\s+(?:d[ií]lo|stavbu)|dokon[čc]en[ií]\s+(?:d[ií]la|stavby))")
 # mezi klíčovým slovem a datem nesmí být jiný termín (zahájení) ani konec věty
 MEZI = r"(?:(?!zah[aá]jen|\.\s+[A-ZČŘŠŽ])[^;]){0,90}?"

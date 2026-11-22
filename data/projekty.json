@@ -4042,7 +4042,17 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
-    "termin_dokonceni": null
+    "termin_dokonceni": {
+      "zdroj_id": "rs-40262621",
+      "druh": "lhuta",
+      "datum": null,
+      "citace": "Lhůta pro dokončení prací: do 270 kalendářních dnů od převzetí staveniště zhotovitelem",
+      "strana": 8,
+      "url": "https://smlouvy.gov.cz/smlouva/soubor/48498493/Smlouva%20o%20d%C3%ADlo_anonymizovan%C3%A1.pdf#page=8",
+      "smlouva_url": "https://smlouvy.gov.cz/smlouva/40262621",
+      "jistota": "dolozeno",
+      "podle": "smlouva"
+    }
   },
   {
     "id": "mk-sidliste",

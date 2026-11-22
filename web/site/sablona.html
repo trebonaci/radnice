@@ -596,7 +596,7 @@ function sprmText(p,kratce){const odkaz=`<a href="${SPRM_URL}" target="_blank" r
   return (kratce?"":`Podle dokumentu ${odkaz}:<br>`)+p.sprm.map(x=>`${kratce?"Strategický plán: ":""}${esc(x.osa)} › ${esc((x.opatreni||"").replace(/^\d+\.\s*/,""))} › ${esc(x.aktivita)}${x.potvrzeno?"":" <i>(návrh)</i>"}`).join(kratce?"; ":"<br>");
 }
 function radekPrehledu(p){const f=FAZE[p.faze]||["",""];const [co,kolik]=hlavni(p);const pu=posledniUdalost(p);const z=pu?zmenaVeta(p,pu):null;
-  return `<a href="#${p.id}" class="k-${p.faze}"><span><b>${esc(rozepis(p.nazev))}</b>${z?`<small class="pz">${esc(z.kratce)}</small>`:""}<small class="sv"><i class="${f[1]}" aria-hidden="true"></i>${esc(stavText(p))}${p.faze==="probiha"&&p.termin_dokonceni?.datum?` · dokončení podle smlouvy ${dat(p.termin_dokonceni.datum)}`:""} · ${OBLAST[p.oblast]||"Ostatní"}</small></span><span class="c">${kolik||"–"}<small>${co}</small></span></a>`;}
+  return `<a href="#${p.id}" class="k-${p.faze}"><span><b>${esc(rozepis(p.nazev))}</b>${z?`<small class="pz">${esc(z.kratce)}</small>`:""}<small class="sv"><i class="${f[1]}" aria-hidden="true"></i>${esc(stavText(p))}${p.faze==="probiha"&&p.termin_dokonceni?.datum?` · dokončení podle smlouvy ${dat(p.termin_dokonceni.datum)}`:p.faze==="probiha"&&p.termin_dokonceni?.druh==="lhuta"?` · ${esc(p.termin_dokonceni.citace)}`:""} · ${OBLAST[p.oblast]||"Ostatní"}</small></span><span class="c">${kolik||"–"}<small>${co}</small></span></a>`;}
 function prehled(){
   const r=filtrovane();
   const pocty=Object.fromEntries(STAV.map(([k])=>[k,P.filter(p=>k==="vse"||p.faze===k).length]));

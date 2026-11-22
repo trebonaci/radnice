@@ -573,7 +573,13 @@
         "url": "https://smlouvy.gov.cz/smlouva/40262621",
         "jistota": "dolozeno",
         "konec_jistota": null,
-        "planovany_konec": null
+        "planovany_konec": {
+          "datum": null,
+          "druh": "lhuta",
+          "citace": "Lhůta pro dokončení prací: do 270 kalendářních dnů od převzetí staveniště zhotovitelem",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/48498493/Smlouva%20o%20d%C3%ADlo_anonymizovan%C3%A1.pdf#page=8",
+          "podle": "smlouva"
+        }
       }
     ],
     "milniky": [
