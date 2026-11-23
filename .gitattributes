@@ -1,0 +1,6 @@
+# Konce řádků LF i při práci z Windows (#212: CRLF v data/ shodilo kontrolu shody se sestavením)
+* text=auto eol=lf
+*.pdf binary
+*.png binary
+*.jpg binary
+*.xlsx binary

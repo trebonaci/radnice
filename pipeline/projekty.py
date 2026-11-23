@@ -304,6 +304,7 @@ def sestav_projekt(p: dict, data: dict) -> dict:
     stavby_ = [z for z in zakazky if z["role"] == "stavba"]
     doplaceno = bool(stavby_) and all(c["stav"] == "ukončeno plnění" for z in stavby_ for c in z["casti"])
 
+    casti = casti_akce(zakazky, smlouvy, dodatky_jen_termin(data["usneseni"]), udalosti)
     udalosti.sort(key=lambda e: (e["datum"] or "", e["typ"]))
     rozpocet = sorted(polozky.values(), key=lambda x: (not x["kapitalova"], x["nazev"]))
     return {
@@ -317,7 +318,7 @@ def sestav_projekt(p: dict, data: dict) -> dict:
         "doplaceno": doplaceno,
         "rozpocet": rozpocet,
         "schvaleny_rozpocet": schvaleny,
-        "casti": (casti := casti_akce(zakazky, smlouvy, dodatky_jen_termin(data["usneseni"]))),
+        "casti": casti,
         "souhrn": souhrn(rozpocet, casti) | {"schvaleny": souhrn_schvaleny(schvaleny)},
         "zakazky": sorted(zakazky, key=lambda z: z["id"]),
         "smlouvy": sorted(smlouvy, key=lambda s: (s["datum_uzavreni"] or "", s["id"])),
@@ -484,7 +485,8 @@ def doplnit_dph(c: dict) -> None:
             x["sazba_dph_zdroj"] = "jina_polozka_smlouvy" if zjistena else "zakladni_sazba"
 
 
-def casti_akce(zakazky: list[dict], smlouvy: list[dict], jen_termin: dict[str, str] | None = None) -> list[dict]:
+def casti_akce(zakazky: list[dict], smlouvy: list[dict], jen_termin: dict[str, str] | None = None,
+               udalosti: list[dict] | None = None) -> list[dict]:
     """Části akce (stavba, projekt, dozor, BOZP, vybavení…): původní smlouva + její dodatky.
 
     - Dodatek patří k původní smlouvě přes `navazuje_na` z registru (doloženo); bez něj tvoří vlastní skupinu.
@@ -579,6 +581,13 @@ def casti_akce(zakazky: list[dict], smlouvy: list[dict], jen_termin: dict[str, s
                 if zdroj_s == zdroj:
                     zdroj_s = None
                 ezak_akt = {"bez_dph": _bez_dph(v["smluvni"]), "s_dph": _s_dph(v["smluvni"])}
+                if udalosti is not None and not g["puvodni"] and c.get("datum_uzavreni_smlouvy"):
+                    udalosti.append({
+                        "datum": c["datum_uzavreni_smlouvy"], "typ": "smlouva", "kategorie": "smlouva",
+                        "kratce": kratky_popis(z["role"], z["nazev"]), "text": c.get("nazev") or z["nazev"],
+                        "role": z["role"], **ezak, "jistota": "nase_propojeni",
+                        "ezak_smlouva": {"dodavatel": v["nazev"], **ezak_akt},
+                    })
                 nabidka = {"bez_dph": _bez_dph(v.get("nabidkova", [])), "s_dph": _s_dph(v.get("nabidkova", []))}
                 casti.append({"role": z["role"], "dodavatel": {"nazev": v["nazev"],
                                                                "jmeno_podnikatele": v.get("jmeno_podnikatele")},

@@ -119,7 +119,7 @@
   {
     "typ": "polozka",
     "id": "jatecni-ulice",
-    "nazev": "Jateční ulice – parkoviště a komunikace",
+    "nazev": "Jateční ulice – další úpravy komunikace",
     "popis": null,
     "oblast": "doprava",
     "nositele": [
@@ -154,57 +154,6 @@
     },
     "doklady": [
       {
-        "typ": "zakazka",
-        "id": "ezak-VZ-697",
-        "text": "Parkoviště v Jateční ulici v Třeboni (PD)",
-        "datum": "2024-01-04",
-        "ico": "00247618",
-        "url": "https://zakazky.mesto-trebon.cz/contract_display_697.html",
-        "cena": {
-          "s_dph": 470690.0,
-          "bez_dph": 389000.0,
-          "citace": [
-            "<smluvni_cena_s_DPH>470690.00</smluvni_cena_s_DPH>",
-            "<smluvni_cena_bez_DPH>389000.00</smluvni_cena_bez_DPH>"
-          ]
-        },
-        "zaplaceno": {
-          "s_dph": 264990.0,
-          "bez_dph": 219000.0,
-          "citace": [
-            "<cena_za_rok_s_dph>264990.00</cena_za_rok_s_dph>",
-            "<cena_za_rok_bez_dph>219000.00</cena_za_rok_bez_dph>"
-          ]
-        },
-        "dodatek": false,
-        "zapocteno": true,
-        "nezapocteno": null,
-        "stupen": "projekt",
-        "jistota": "nase_propojeni"
-      },
-      {
-        "typ": "smlouva",
-        "id": "rs-27818027",
-        "text": "Studie dopravního řešení MK a PD DÚR + DPS VO v Jateční ulici v Třeboni.",
-        "datum": "2024-02-29",
-        "ico": "00247618",
-        "url": "https://smlouvy.gov.cz/smlouva/27818027",
-        "cena": {
-          "s_dph": 108658.0,
-          "bez_dph": 89800.0,
-          "citace": [
-            "\"hodnotaVcetneDph\": \"108658\"",
-            "\"hodnotaBezDph\": \"89800\""
-          ]
-        },
-        "zaplaceno": null,
-        "dodatek": false,
-        "zapocteno": true,
-        "nezapocteno": null,
-        "stupen": "studie",
-        "jistota": "nase_propojeni"
-      },
-      {
         "typ": "smlouva",
         "id": "rs-32327428",
         "text": "Zpracování PD Stavební úpravy komunikace v Jateční ulici v Třeboni.",
@@ -230,9 +179,9 @@
     "cena_pripravy": {
       "druh": "smluvni",
       "smlouvy": {
-        "s_dph": 998492.0,
+        "s_dph": 419144.0,
         "bez_dph": null,
-        "pocet": 3
+        "pocet": 1
       },
       "dodatky": {
         "s_dph": null,
@@ -240,15 +189,15 @@
         "pocet": 0
       },
       "zaplaceno": {
-        "s_dph": 264990.0,
+        "s_dph": null,
         "bez_dph": null,
-        "pocet": 1,
+        "pocet": 0,
         "druh": "zaplaceno"
       },
       "bez_ceny": 0,
       "jistota": "nase_propojeni"
     },
-    "prvni_doklad": "2024-01-04",
+    "prvni_doklad": "2025-02-27",
     "odhad": null,
     "zdroj": null,
     "stavby": [],
@@ -646,7 +595,7 @@
   {
     "typ": "polozka",
     "id": "mk-jiraskova",
-    "nazev": "Jiráskova ulice",
+    "nazev": "Jiráskova ulice – navazující stavební úpravy",
     "popis": null,
     "oblast": "doprava",
     "nositele": [
@@ -682,28 +631,6 @@
     "doklady": [
       {
         "typ": "smlouva",
-        "id": "rs-28715171",
-        "text": "Zpracování PD pro opravu vozovky MK v Jiráskově ulici v Třeboni.",
-        "datum": "2024-05-16",
-        "ico": "00247618",
-        "url": "https://smlouvy.gov.cz/smlouva/28715171",
-        "cena": {
-          "s_dph": 108295.0,
-          "bez_dph": 89500.0,
-          "citace": [
-            "\"hodnotaVcetneDph\": \"108295\"",
-            "\"hodnotaBezDph\": \"89500\""
-          ]
-        },
-        "zaplaceno": null,
-        "dodatek": false,
-        "zapocteno": true,
-        "nezapocteno": null,
-        "stupen": "projekt",
-        "jistota": "nase_propojeni"
-      },
-      {
-        "typ": "smlouva",
         "id": "rs-37372101",
         "text": "Stavební úpravy MK v Jiráskově ul. v Třeboni (zpracování PD)",
         "datum": "2026-03-30",
@@ -728,9 +655,9 @@
     "cena_pripravy": {
       "druh": "smluvni",
       "smlouvy": {
-        "s_dph": 937145.0,
+        "s_dph": 828850.0,
         "bez_dph": null,
-        "pocet": 2
+        "pocet": 1
       },
       "dodatky": {
         "s_dph": null,
@@ -746,18 +673,10 @@
       "bez_ceny": 0,
       "jistota": "nase_propojeni"
     },
-    "prvni_doklad": "2024-05-16",
+    "prvni_doklad": "2026-03-30",
     "odhad": null,
     "zdroj": null,
-    "stavby": [
-      {
-        "id": "ezak-VZ-799",
-        "nazev": "Oprava vozovky MK v Jiráskově ulici v Třeboni",
-        "datum": "2024-09-20",
-        "stav": "ukončeno plnění",
-        "url": "https://zakazky.mesto-trebon.cz/contract_display_799.html"
-      }
-    ],
+    "stavby": [],
     "faze": "zasobnik",
     "sprm": []
   },
@@ -2104,146 +2023,6 @@
   },
   {
     "typ": "polozka",
-    "id": "sportovni-hala-revitalizace",
-    "nazev": "Revitalizace sportovní haly (občerstvení, zázemí v 1. podzemním podlaží)",
-    "popis": null,
-    "oblast": "sport",
-    "nositele": [
-      {
-        "ico": "00247618",
-        "nazev": "Město Třeboň"
-      }
-    ],
-    "nositel_jistota": "nase_propojeni",
-    "pripravenost": {
-      "stupen": "projekt_provadeci",
-      "nazev": "prováděcí projekt zadán",
-      "doklad": {
-        "typ": "smlouva",
-        "id": "rs-35901953",
-        "text": "PD sportovní hala Třeboň - specializované činnosti projektanta pro vypracování PD ve stupních DSP, DZS a DPS.",
-        "datum": "2025-12-04",
-        "ico": "00247618",
-        "url": "https://smlouvy.gov.cz/smlouva/35901953",
-        "cena": {
-          "s_dph": 175450.0,
-          "bez_dph": 145000.0,
-          "citace": [
-            "\"hodnotaVcetneDph\": \"175450\"",
-            "\"hodnotaBezDph\": \"145000\""
-          ]
-        },
-        "zaplaceno": null,
-        "dodatek": false
-      },
-      "jistota": "dolozeno"
-    },
-    "doklady": [
-      {
-        "typ": "smlouva",
-        "id": "rs-31186248",
-        "text": "Zpracování projektové dokumentace – „Stavební úpravy a revitalizace sportovní haly Třeboň – občerstvení“",
-        "datum": "2024-11-28",
-        "ico": "00247618",
-        "url": "https://smlouvy.gov.cz/smlouva/31186248",
-        "cena": {
-          "s_dph": 517275.0,
-          "bez_dph": 427500.0,
-          "citace": [
-            "\"hodnotaVcetneDph\": \"517275\"",
-            "\"hodnotaBezDph\": \"427500\""
-          ]
-        },
-        "zaplaceno": null,
-        "dodatek": false,
-        "zapocteno": true,
-        "nezapocteno": null,
-        "stupen": "projekt",
-        "jistota": "nase_propojeni"
-      },
-      {
-        "typ": "smlouva",
-        "id": "rs-35901953",
-        "text": "PD sportovní hala Třeboň - specializované činnosti projektanta pro vypracování PD ve stupních DSP, DZS a DPS.",
-        "datum": "2025-12-04",
-        "ico": "00247618",
-        "url": "https://smlouvy.gov.cz/smlouva/35901953",
-        "cena": {
-          "s_dph": 175450.0,
-          "bez_dph": 145000.0,
-          "citace": [
-            "\"hodnotaVcetneDph\": \"175450\"",
-            "\"hodnotaBezDph\": \"145000\""
-          ]
-        },
-        "zaplaceno": null,
-        "dodatek": false,
-        "zapocteno": true,
-        "nezapocteno": null,
-        "stupen": "projekt_provadeci",
-        "jistota": "nase_propojeni"
-      },
-      {
-        "typ": "smlouva",
-        "id": "rs-35902245",
-        "text": "PD změn dispozic stavby SÚ a revitalizace sportovní haly v 1.PP - VZT, infrasauna, masérna.",
-        "datum": "2025-12-04",
-        "ico": "00247618",
-        "url": "https://smlouvy.gov.cz/smlouva/35902245",
-        "cena": {
-          "s_dph": 157300.0,
-          "bez_dph": 130000.0,
-          "citace": [
-            "\"hodnotaVcetneDph\": \"157300\"",
-            "\"hodnotaBezDph\": \"130000\""
-          ]
-        },
-        "zaplaceno": null,
-        "dodatek": false,
-        "zapocteno": true,
-        "nezapocteno": null,
-        "stupen": "projekt",
-        "jistota": "nase_propojeni"
-      }
-    ],
-    "cena_pripravy": {
-      "druh": "smluvni",
-      "smlouvy": {
-        "s_dph": 850025.0,
-        "bez_dph": null,
-        "pocet": 3
-      },
-      "dodatky": {
-        "s_dph": null,
-        "bez_dph": null,
-        "pocet": 0
-      },
-      "zaplaceno": {
-        "s_dph": null,
-        "bez_dph": null,
-        "pocet": 0,
-        "druh": "zaplaceno"
-      },
-      "bez_ceny": 0,
-      "jistota": "nase_propojeni"
-    },
-    "prvni_doklad": "2024-11-28",
-    "odhad": null,
-    "zdroj": null,
-    "stavby": [
-      {
-        "id": "ezak-VZ-706",
-        "nazev": "Stavební úpravy a revitalizace sportovní haly v Třeboni",
-        "datum": "2024-02-15",
-        "stav": "ukončeno plnění",
-        "url": "https://zakazky.mesto-trebon.cz/contract_display_706.html"
-      }
-    ],
-    "faze": "zasobnik",
-    "sprm": []
-  },
-  {
-    "typ": "polozka",
     "id": "kabiny-brilice",
     "nazev": "Fotbalové kabiny v Břilicích",
     "popis": null,
@@ -2421,7 +2200,7 @@
   {
     "typ": "polozka",
     "id": "stara-radnice-vez-fasada",
-    "nazev": "Stará radnice – oprava věže a fasády",
+    "nazev": "Stará radnice – navazující příprava opravy věže",
     "popis": null,
     "oblast": "kultura",
     "nositele": [
@@ -2457,28 +2236,6 @@
     "doklady": [
       {
         "typ": "smlouva",
-        "id": "rs-32810536",
-        "text": "Vypracování DPS, položkového rozpočtu, výkazu výměr a zajištění IS na stavbu Oprava fasády čp. 1/I v Třeboni.",
-        "datum": "2025-03-31",
-        "ico": "00247618",
-        "url": "https://smlouvy.gov.cz/smlouva/32810536",
-        "cena": {
-          "s_dph": 232014.0,
-          "bez_dph": 191747.0,
-          "citace": [
-            "\"hodnotaVcetneDph\": \"232014\"",
-            "\"hodnotaBezDph\": \"191747\""
-          ]
-        },
-        "zaplaceno": null,
-        "dodatek": false,
-        "zapocteno": true,
-        "nezapocteno": null,
-        "stupen": "projekt_provadeci",
-        "jistota": "nase_propojeni"
-      },
-      {
-        "typ": "smlouva",
         "id": "rs-40426169",
         "text": "DPS Oprava radniční věže č.p. 1/I v Třeboni, výkaz výměr a položkový rozpočet.",
         "datum": "2026-11-10",
@@ -2503,9 +2260,9 @@
     "cena_pripravy": {
       "druh": "smluvni",
       "smlouvy": {
-        "s_dph": 313689.0,
+        "s_dph": 81675.0,
         "bez_dph": null,
-        "pocet": 2
+        "pocet": 1
       },
       "dodatky": {
         "s_dph": null,
@@ -2521,7 +2278,7 @@
       "bez_ceny": 0,
       "jistota": "nase_propojeni"
     },
-    "prvni_doklad": "2025-03-31",
+    "prvni_doklad": "2026-11-10",
     "odhad": null,
     "zdroj": null,
     "stavby": [],
@@ -2610,94 +2367,6 @@
       "jistota": "nase_propojeni"
     },
     "prvni_doklad": "2026-04-27",
-    "odhad": null,
-    "zdroj": null,
-    "stavby": [],
-    "faze": "zasobnik",
-    "sprm": []
-  },
-  {
-    "typ": "polozka",
-    "id": "dps1-kotelny",
-    "nazev": "Kotelny a plynové kotle v domě s pečovatelskou službou I (Chelčického)",
-    "popis": null,
-    "oblast": "socialni",
-    "nositele": [
-      {
-        "ico": "00247618",
-        "nazev": "Město Třeboň"
-      }
-    ],
-    "nositel_jistota": "nase_propojeni",
-    "pripravenost": {
-      "stupen": "projekt",
-      "nazev": "projektová dokumentace zadána",
-      "doklad": {
-        "typ": "smlouva",
-        "id": "rs-36642205",
-        "text": "Zpracování PD Stavebních úprav kotelen a výměny plynových kotlů v objektu DPS IA a DPS IC, Chelčického 1, Třeboň",
-        "datum": "2026-02-02",
-        "ico": "00247618",
-        "url": "https://smlouvy.gov.cz/smlouva/36642205",
-        "cena": {
-          "s_dph": 143990.0,
-          "bez_dph": 119000.0,
-          "citace": [
-            "\"hodnotaVcetneDph\": \"143990\"",
-            "\"hodnotaBezDph\": \"119000\""
-          ]
-        },
-        "zaplaceno": null,
-        "dodatek": false
-      },
-      "jistota": "dolozeno"
-    },
-    "doklady": [
-      {
-        "typ": "smlouva",
-        "id": "rs-36642205",
-        "text": "Zpracování PD Stavebních úprav kotelen a výměny plynových kotlů v objektu DPS IA a DPS IC, Chelčického 1, Třeboň",
-        "datum": "2026-02-02",
-        "ico": "00247618",
-        "url": "https://smlouvy.gov.cz/smlouva/36642205",
-        "cena": {
-          "s_dph": 143990.0,
-          "bez_dph": 119000.0,
-          "citace": [
-            "\"hodnotaVcetneDph\": \"143990\"",
-            "\"hodnotaBezDph\": \"119000\""
-          ]
-        },
-        "zaplaceno": null,
-        "dodatek": false,
-        "zapocteno": true,
-        "nezapocteno": null,
-        "stupen": "projekt",
-        "jistota": "nase_propojeni"
-      }
-    ],
-    "cena_pripravy": {
-      "druh": "smluvni",
-      "smlouvy": {
-        "s_dph": 143990.0,
-        "bez_dph": null,
-        "pocet": 1
-      },
-      "dodatky": {
-        "s_dph": null,
-        "bez_dph": null,
-        "pocet": 0
-      },
-      "zaplaceno": {
-        "s_dph": null,
-        "bez_dph": null,
-        "pocet": 0,
-        "druh": "zaplaceno"
-      },
-      "bez_ceny": 0,
-      "jistota": "nase_propojeni"
-    },
-    "prvni_doklad": "2026-02-02",
     "odhad": null,
     "zdroj": null,
     "stavby": [],
@@ -4285,6 +3954,37 @@
   },
   {
     "typ": "kandidat",
+    "id": "kandidat-rs-36642205",
+    "nazev": "Zpracování PD Stavebních úprav kotelen a výměny plynových kotlů v objektu DPS IA a DPS IC, Chelčického 1, Třeboň",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-36642205",
+      "text": "Zpracování PD Stavebních úprav kotelen a výměny plynových kotlů v objektu DPS IA a DPS IC, Chelčického 1, Třeboň",
+      "datum": "2026-02-02",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/36642205",
+      "cena": {
+        "s_dph": 143990.0,
+        "bez_dph": 119000.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"143990\"",
+          "\"hodnotaBezDph\": \"119000\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
     "id": "kandidat-rs-34005077",
     "nazev": "Dodatek č. 1 ke Smlouvě o dílo - zhotovení PD",
     "nositele": [
@@ -4435,6 +4135,37 @@
       "dodatek": false
     },
     "stupen": "studie",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-32810536",
+    "nazev": "Vypracování DPS, položkového rozpočtu, výkazu výměr a zajištění IS na stavbu Oprava fasády čp. 1/I v Třeboni.",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-32810536",
+      "text": "Vypracování DPS, položkového rozpočtu, výkazu výměr a zajištění IS na stavbu Oprava fasády čp. 1/I v Třeboni.",
+      "datum": "2025-03-31",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/32810536",
+      "cena": {
+        "s_dph": 232014.0,
+        "bez_dph": 191747.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"232014\"",
+          "\"hodnotaBezDph\": \"191747\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
+    },
+    "stupen": "projekt_provadeci",
     "jistota": "nase_propojeni"
   },
   {
@@ -4906,6 +4637,37 @@
   },
   {
     "typ": "kandidat",
+    "id": "kandidat-rs-27818027",
+    "nazev": "Studie dopravního řešení MK a PD DÚR + DPS VO v Jateční ulici v Třeboni.",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-27818027",
+      "text": "Studie dopravního řešení MK a PD DÚR + DPS VO v Jateční ulici v Třeboni.",
+      "datum": "2024-02-29",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/27818027",
+      "cena": {
+        "s_dph": 108658.0,
+        "bez_dph": 89800.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"108658\"",
+          "\"hodnotaBezDph\": \"89800\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
+    },
+    "stupen": "studie",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
     "id": "kandidat-rs-27768507",
     "nazev": "Vypracování projektové dokumentace - oprava fasádních omítek na objektu čp. 20/I, Masarykovo nám., Třeboň",
     "nositele": [
@@ -5159,6 +4921,44 @@
       "dodatek": true
     },
     "stupen": "projekt_provadeci",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-ezak-VZ-697",
+    "nazev": "Parkoviště v Jateční ulici v Třeboni (PD)",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "zakazka",
+      "id": "ezak-VZ-697",
+      "text": "Parkoviště v Jateční ulici v Třeboni (PD)",
+      "datum": "2024-01-04",
+      "ico": "00247618",
+      "url": "https://zakazky.mesto-trebon.cz/contract_display_697.html",
+      "cena": {
+        "s_dph": 470690.0,
+        "bez_dph": 389000.0,
+        "citace": [
+          "<smluvni_cena_s_DPH>470690.00</smluvni_cena_s_DPH>",
+          "<smluvni_cena_bez_DPH>389000.00</smluvni_cena_bez_DPH>"
+        ]
+      },
+      "zaplaceno": {
+        "s_dph": 264990.0,
+        "bez_dph": 219000.0,
+        "citace": [
+          "<cena_za_rok_s_dph>264990.00</cena_za_rok_s_dph>",
+          "<cena_za_rok_bez_dph>219000.00</cena_za_rok_bez_dph>"
+        ]
+      },
+      "dodatek": false
+    },
+    "stupen": "projekt",
     "jistota": "nase_propojeni"
   },
   {

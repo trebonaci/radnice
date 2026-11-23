@@ -28,6 +28,7 @@ from pipeline import projekty as modul_projekty
 from pipeline import zasobnik as modul_zasobnik
 from pipeline import harmonogram as modul_harmonogram
 from pipeline import terminy as modul_terminy
+from pipeline import ukonceni as modul_ukonceni
 from pipeline import ukazatele as modul_ukazatele
 from pipeline import mapa as modul_mapa
 from pipeline import mista as modul_mista
@@ -418,6 +419,11 @@ def sestav(koren: Path | None = None) -> tuple[dict[str, list], list[str]]:
     podle_id = {t["zdroj_id"]: t for t in vystup["terminy"]}
     for k in vystup["projekty"]:
         k["termin_dokonceni"] = modul_terminy.pro_kartu(k, podle_id)
+    # doložené ukončení plnění stavební smlouvy z E-ZAK (#207): archiv dokončených projektů po letech
+    cesta_pl = koren / "raw" / "ezak" / "plneni.json"
+    plneni = json.loads(cesta_pl.read_text(encoding="utf-8")) if cesta_pl.exists() else {}
+    for k in vystup["projekty"]:
+        k["ukonceni_plneni"] = modul_ukonceni.pro_kartu(k, plneni)
     # harmonogram investic, zásobníku a dlouhodobých neinvestičních projektů (#194)
     vystup["harmonogram"], chyby_h = modul_harmonogram.sestav(koren, vystup, vystup["projekty"], vystup["zasobnik"])
     chyby += chyby_h

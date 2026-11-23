@@ -207,7 +207,7 @@ h1:focus{outline:none}
 @media(max-width:640px){.chips{flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px;scrollbar-width:thin}.chips button{flex:0 0 auto}}
 </style></head><body>
 <div class="lista"><div class="wrap"><a class="zn" href="https://trebonaci.cz"><img src="obr/logo-trebonaci.jpg" alt=""><span><b>Třeboňáci</b></span></a><span class="bd">Co se děje na radnici</span>
-<nav id="menu" aria-label="Sekce"><a href="#">Investice</a><a href="#usneseni">Usnesení</a><a href="#casova-osa">Časová osa</a><a href="#pripravovane">Připravované projekty</a><a href="#mista">Místa a služby</a><a href="#rozpocet">Rozpočet</a><a href="#cisla">V číslech</a></nav></div></div>
+<nav id="menu" aria-label="Sekce"><a href="#">Investice</a><a href="#usneseni">Usnesení</a><a href="#casova-osa">Časová osa</a><a href="#pripravovane">Připravované projekty</a><a href="#dokoncene">Dokončené projekty</a><a href="#mista">Místa a služby</a><a href="#rozpocet">Rozpočet</a><a href="#cisla">V číslech</a></nav></div></div>
 <header class="band"><div class="wrap"><span class="tag">__STITEK__</span>
 <span class="eyebrow">Co se děje na radnici v Třeboni</span><h1>Sledujeme pro vás</h1><p class="lead">Co radnice rozhodla, co se staví a připravuje, kdo to dělá a kolik to stojí. U každého údaje odkaz na dokument.</p></div></header>
 <main class="band" style="padding-top:18px"><div class="wrap"><p class="vyd">Přehled připravují <b>Třeboňáci</b> z veřejných dokumentů města · data k __DATUM__ · <a href="#paticka" data-paticka>Jak vzniká přehled</a></p></div><div class="wrap" id="karty"></div>
@@ -252,10 +252,11 @@ function zmenaVeta(p,e,kratce){
     else if(x?.s_dph!=null||x?.bez_dph!=null)cena=`Cena se změnila o ${x.s_dph!=null?plus(x.s_dph):plus(x.bez_dph)+" bez DPH"}${po?`, po dodatcích je ${po}`:""}.`;
     else cena="Změnu ceny registr neuvádí.";
     odkaz=`Otevřít dodatek č. ${n} v registru smluv`;}
-  else if(e.typ==="smlouva"){const d=c?kdo(c.dodavatel):sm?.strany?.map(kdo).filter(x=>x&&x!=="fyzická osoba").join(", ");
+  else if(e.typ==="smlouva"){const d=e.ezak_smlouva?.dodavatel || (c?kdo(c.dodavatel):sm?.strany?.map(kdo).filter(x=>x&&x!=="fyzická osoba").join(", "));
     v=`byla uzavřena ${naz}${d?` s dodavatelem ${d}`:""}`;
     if(x&&(x.s_dph!=null||x.bez_dph!=null))cena=`Cena podle smlouvy ${kcs(x.s_dph,x.bez_dph)}${x.s_dph!=null?" s DPH":""}.`;
-    odkaz="Otevřít smlouvu v registru smluv";}
+    if(e.ezak_smlouva)cena=cenaSmlouvyEzak(e.ezak_smlouva);
+    odkaz=e.ezak_smlouva?"Otevřít zakázku v E-ZAK":"Otevřít smlouvu v registru smluv";}
   else if(e.typ==="soutez"){const co=e.kratce.split(", ")[0];v=e.zruseno?`byl zrušen výběr dodavatele (${co})`:`byl vyhlášen výběr dodavatele (${co})`;odkaz="Otevřít zakázku v E-ZAK";}
   else if(e.typ==="rozpocet"){v=`se rozpočtovým opatřením ${e.zmena>0?"navýšil":"snížil"} rozpočet položky ${e.polozka||""}`;cena=`Změna ${plus(e.zmena)}.`;odkaz="Otevřít usnesení v zápisu";}
   else if(e.typ==="usneseni"){const z=e.kategorie==="zastupitelstvo";const kdo_=z?"zastupitelstvo":"rada",a=z?"o":"a";const m=e.kratce.match(/^schválení dodatku (\d+)/);
@@ -270,6 +271,7 @@ function stavDoklad(p){
   const st=p.udalosti.filter(e=>e.datum&&(e.typ==="smlouva"&&p.casti.some(c=>c.role==="stavba"&&c.puvodni?.zdroj_id===e.zdroj_id))).sort((a,b)=>a.datum.localeCompare(b.datum))[0];
   const t=p.termin_dokonceni;const tt=t?(t.datum?`Dokončení podle smlouvy${t.podle&&t.podle!=="smlouva"?" ("+t.podle+")":""}: <a href="${esc(t.url)}" target="_blank" rel="noopener"><b>${dat(t.datum)}</b></a>.`:`Termín podle smlouvy: „${esc(t.citace)}“ (<a href="${esc(t.url)}" target="_blank" rel="noopener">strana ${t.strana}</a>).`):"Termín dokončení podle smlouvy zatím nemáme.";
   if(p.faze==="probiha")return st?`Odvozujeme ho z podpisu smlouvy o dílo ${dat(st.datum)}. ${tt} Skutečný postup prací v datech není.`:"Stav odvozujeme z dokladů.";
+  if(p.faze==="dokonceno" && !p.dokonceni && p.ukonceni_plneni)return `Podle E-ZAK bylo plnění stavební smlouvy ukončeno ${dat(p.ukonceni_plneni.datum)}.`;
   if(p.faze==="dokonceno")return p.dokonceni?`Dokončení doloženo ${dat(String(p.dokonceni.datum))}.`:"Dokončení odvozujeme z dokladů (E-ZAK: ukončeno plnění). Den předání stavby v datech nemáme.";
   if(p.faze==="soutezi_se")return "Probíhá výběr dodavatele, smlouva o dílo zatím není.";
   return "Stavba zatím nemá dodavatele. Stav odvozujeme z dokladů.";}
@@ -303,10 +305,14 @@ function cenaAkce(p){
 function kat(e){if(e.typ==="usneseni")return e.kategorie==="zastupitelstvo"?["zastupitelstvo","Zastupitelstvo"]:["rada","Rada"];
   if(e.typ==="soutez"&&e.zruseno)return ["soutez","Zrušeno"];
   return {soutez:["soutez","Soutěž"],smlouva:["smlouva","Smlouva"],dodatek:["dodatek","Dodatek"],rozpocet:["rozpocet","Rozpočet"],dokonceni:["dokonceni","Dokončení"]}[e.typ]||["",e.kategorie];}
+function cenaSmlouvyEzak(s){
+  if(s.s_dph==null && s.bez_dph==null)return "";
+  return "Smluvní cena podle E-ZAK: "+(s.s_dph!=null?kcp(s.s_dph)+" s DPH":kcp(s.bez_dph)+" bez DPH");
+}
 function veta(e,p){
   const sm=p.smlouvy.find(s=>s.id===e.zdroj_id);
-  if(e.typ==="smlouva"){const role=sm?.role;const naz={stavba:"Podepsána smlouva o dílo",projekt:"Podepsána smlouva na projekt",technicky_dozor:"Podepsána smlouva s technickým dozorem",bozp:"Podepsána smlouva s koordinátorem BOZP",vybaveni:"Podepsána smlouva na vybavení",administrace:"Podepsána smlouva na výběrové řízení"}[role]||"Podepsána smlouva";
-    const d=sm?.strany?.map(kdo).filter(x=>x&&x!=="fyzická osoba").join(", ");return [naz+(d?` – ${esc(d)}`:""),""];}
+  if(e.typ==="smlouva"){const role=e.role||sm?.role;const naz={stavba:"Podepsána smlouva o dílo",projekt:"Podepsána smlouva na projekt",technicky_dozor:"Podepsána smlouva s technickým dozorem",bozp:"Podepsána smlouva s koordinátorem BOZP",vybaveni:"Podepsána smlouva na vybavení",administrace:"Podepsána smlouva na výběrové řízení"}[role]||"Podepsána smlouva";
+    const d=e.ezak_smlouva?.dodavatel || sm?.strany?.map(kdo).filter(x=>x&&x!=="fyzická osoba").join(", ");return [naz+(d?` – ${esc(d)}`:""),""];}
   if(e.typ==="dodatek"){const m=e.kratce.match(/dodatek (\d+)/);return [`Uzavřen dodatek č. ${m?m[1]:""} ke ${ROLE_SML[sm?.role]||"smlouvě"}`,""];}
   if(e.typ==="soutez"){const [co,...zb]=e.kratce.split(", ");const maSml=p.udalosti.some(x=>x.typ==="smlouva");
     // historický záznam: „smlouva zatím není“ platilo v době soutěže, ne dnes
@@ -320,6 +326,7 @@ function veta(e,p){
   return [esc(e.kratce),""];
 }
 function cena(e,p){
+  if(e.ezak_smlouva)return [cenaSmlouvyEzak(e.ezak_smlouva),""];
   if(e.typ==="rozpocet")return [plus(e.zmena),""];
   if(e.typ==="smlouva"||e.typ==="dodatek"){
     for(const c of p.casti){const x=c.puvodni?.zdroj_id===e.zdroj_id?c.puvodni:c.dodatky.find(d=>d.zdroj_id===e.zdroj_id);
@@ -329,7 +336,7 @@ function cena(e,p){
 }
 function radek(e,p){
   const [kl,kn]=kat(e);const [v,pod]=veta(e,p);const [c,cm]=cena(e,p);
-  const odk=e.url?(e.typ==="usneseni"||e.typ==="rozpocet")?`<a href="${e.url}">usnesení ${esc(e.usneseni_cislo||"")} v zápisu</a>`:`<a href="${e.url}">${e.typ==="soutez"?"zakázka v E-ZAK":e.typ==="dokonceni"?"doklad":"smlouva v registru"}</a>`:"";
+  const odk=e.url?(e.typ==="usneseni"||e.typ==="rozpocet")?`<a href="${e.url}">usnesení ${esc(e.usneseni_cislo||"")} v zápisu</a>`:`<a href="${e.url}">${e.typ==="soutez"||e.ezak_smlouva?"zakázka v E-ZAK":e.typ==="dokonceni"?"doklad":"smlouva v registru"}</a>`:"";
   return `<li><details><summary><span class="d">${dd(e.datum)}</span><span class="k ${kl}">${kn}</span><span class="x">${v}${pod?`<small>${pod}</small>`:""}</span><span class="c ${cm}">${c}</span></summary>
   <div class="det">${esc(e.text)}${odk?` · ${odk}`:""}</div></details></li>`;
 }
@@ -459,7 +466,7 @@ function harmonogram(){
   const rysky=roky.map(r=>`<i class="rk" style="left:${x(r+"-01-01").toFixed(2)}%"></i>`).join("")+`<i class="dn" style="left:${x(DNES).toFixed(2)}%" title="dnes"></i>`;
   const osa=`<div class="osa"><span></span><div class="tr">${roky.map(r=>`<span style="left:${x(r+"-01-01").toFixed(2)}%">${r}</span>`).join("")}<span style="left:${x(DNES).toFixed(2)}%;color:var(--green-dark);font-weight:700;transform:translateX(-50%) translateY(-1px)">dnes</span></div></div>`;
   const usek=(u,r)=>{const od=u.od<OD?OD:u.od, doo=u.do||DNES;const l=x(od), w=Math.max(.6,x(doo)-l);
-    const popis=`${r.nazev} – ${FAZE_G[u.faze]}: ${dat(u.od)} – ${u.otevreno?"dosud":dat(u.do)}${u.konec_jistota==="posledni_doklad"?" (konec = poslední doklad ke stavbě)":""}${u.zacatek_pred_daty?" (začalo dřív, než sahají naše data)":""}`;
+    const popis=`${r.nazev} – ${FAZE_G[u.faze]}: ${dat(u.od)} – ${u.otevreno?"dosud":dat(u.do)}${u.konec_jistota==="posledni_doklad"?" (konec = poslední doklad ke stavbě)":u.konec_jistota==="ukonceni_plneni"?" (konec = ukončení plnění smlouvy podle E-ZAK)":""}${u.zacatek_pred_daty?" (začalo dřív, než sahají naše data)":""}`;
     const pk=u.planovany_konec;
     const plan=u.faze==="stavba"&&u.otevreno?(pk?.datum?` Dokončení podle smlouvy${pk.podle&&pk.podle!=="smlouva"?" ("+pk.podle+")":""}: ${dat(pk.datum)}.`:pk?` Termín podle smlouvy: ${pk.citace}.`:" Termín dokončení podle smlouvy zatím nemáme."):"";
     const fazeIndex=GI.length;
@@ -479,7 +486,7 @@ function harmonogram(){
     ["Investice – stavba probíhá",inv.filter(r=>r.faze==="probiha"||r.faze==="soutezi_se"),""],
     ["Investice – připravují se",inv.filter(r=>r.faze==="pripravuje_se"),""],
     ["Připravované projekty – co se projektuje",H.filter(r=>r.typ==="zasobnik"),"Od první smlouvy nebo zakázky na studii či projekt. Stavba zatím není zadaná."],
-    ["Investice – dokončené",inv.filter(r=>r.faze==="dokonceno"),"Konec stavby = poslední doklad ke stavbě (dodatek, smlouva); den předání stavby v datech není."]];
+    ["Investice – dokončené",inv.filter(r=>r.faze==="dokonceno"),"Konec stavby = ukončení plnění stavební smlouvy podle E-ZAK, kde ho máme, jinak poslední doklad ke stavbě; den předání stavby v datech není."]];
   const tab=H.map(r=>`<tr><td>${esc(r.nazev)}</td><td>${r.useky.map(u=>`${FAZE_G[u.faze]} ${dat(u.od)} – ${u.otevreno?"dosud":dat(u.do)}`).join("<br>")}</td></tr>`).join("");
   const nI=H.filter(r=>r.typ==="investice").length,nZ=H.filter(r=>r.typ==="zasobnik").length,nA=H.filter(r=>r.typ==="aktivita").length;
   return `<section><h1 class="st" tabindex="-1">Časová osa projektů</h1>
@@ -615,6 +622,7 @@ function prehled(){
   <div class="odkazy">
    <a href="#usneseni"><b>Usnesení rady a zastupitelstva</b><span>${pocetUsneseni()} s odkazem do zápisu</span></a>
    <a href="#casova-osa"><b>Časová osa projektů</b><span>${pl(H.filter(x=>x.typ==="investice").length,"investice","investice","investic")} a ${pl(zPol().length,"připravovaný projekt","připravované projekty","připravovaných projektů")} v čase</span></a>
+   <a href="#dokoncene"><b>Dokončené projekty</b><span>${pl(P.filter(p=>p.faze==="dokonceno").length,"investice","investice","investic")} podle roku dokončení</span></a>
    <a href="#pripravovane"><b>Připravované projekty</b><span>${pl(zPol().length,"projekt","projekty","projektů")} v přípravě · ${pl(zNam().length,"námět","náměty","námětů")}</span></a>
    <a href="#mista"><b>Místa a služby</b><span>${pl(ZM.length,"změna","změny","změn")} z usnesení</span></a>
    <a href="#rozpocet"><b>Rozpočet ${I?.rok??""}</b><span>${I?kc(I.bez_rezervy_po_zmenach)+" na investice po změnách, bez rezervy":""}</span></a>
@@ -637,9 +645,29 @@ const ALIAS={harmonogram:"casova-osa",zasobnik:"pripravovane"};
 document.addEventListener("click",e=>{const a=e.target.closest("[data-paticka]");if(a){e.preventDefault();const f=document.getElementById("paticka");f.scrollIntoView({behavior:"smooth"});f.focus({preventScroll:true});}});
 function zobraz(el,html,h,nazev,vlastniZpet){el.innerHTML=(vlastniZpet?"":`<div class="zpet"><a href="#">← Přehled investic</a><span></span></div>`)+html;document.body.dataset.str=h;document.title=nazev+" – "+TITUL;menu(h==="detail"?"":h);
   const t=el.querySelector("h1");if(t)t.focus({preventScroll:true});}
+// archiv dokončených projektů po letech (#207): rok = doložené dokončení, jinak ukončení plnění stavební smlouvy v E-ZAK
+const FA={tema:""};
+function archivProjektu(projekty){
+  const hotove=projekty.filter(p=>p.faze==="dokonceno");
+  const doklad=p=>p.dokonceni?.datum?{datum:String(p.dokonceni.datum),url:p.dokonceni.url,co:"Dokončeno"}:p.ukonceni_plneni?{datum:p.ukonceni_plneni.datum,url:p.ukonceni_plneni.url,co:"Plnění stavební smlouvy ukončeno",citace:p.ukonceni_plneni.citace}:null;
+  const vyber=hotove.filter(p=>!FA.tema||p.oblast===FA.tema);
+  const skupiny=new Map();
+  for(const p of vyber){const d=doklad(p);const rok=d?d.datum.slice(0,4):"";if(!skupiny.has(rok))skupiny.set(rok,[]);skupiny.get(rok).push(p);}
+  const roky=[...skupiny.keys()].sort((a,b)=>(b||"0").localeCompare(a||"0"));
+  const box=p=>{const [co,kolik]=hlavni(p);const d=doklad(p);
+    return `<a href="#${esc(p.id)}" class="k-dokonceno"><span><b>${esc(rozepis(p.nazev))}</b>${d?`<small class="pz">${esc(d.co)} ${dat(d.datum)}</small>`:""}<small class="sv">${OBLAST[p.oblast]||"Ostatní"}</small></span><span class="c">${kolik||"–"}<small>${co}</small></span></a>`;};
+  return `<section><h1 class="st" tabindex="-1">Dokončené projekty</h1>
+   <p style="max-width:64ch">${pl(hotove.length,"dokončená investice","dokončené investice","dokončených investic")} podle roku. Rok je datum doloženého dokončení, nebo – častěji – datum, kdy E-ZAK uvádí „Plnění smlouvy ukončeno“ u stavební zakázky. Kolaudaci ani předání stavby veřejnosti v datech nemáme.</p>
+   ${temaChips([...new Set(hotove.map(p=>p.oblast))],FA.tema,"atema")}
+   ${roky.map(r=>`<h2 style="margin:26px 0 10px">${r||"Rok dokončení není doložen"} <small class="pozn" style="font-weight:400">· ${pl(skupiny.get(r).length,"projekt","projekty","projektů")}</small></h2>
+    <nav class="sez" aria-label="Dokončeno ${r}">${skupiny.get(r).sort((a,b)=>(doklad(b)?.datum||"").localeCompare(doklad(a)?.datum||"")||a.nazev.localeCompare(b.nazev,"cs")).map(box).join("")}</nav>`).join("")||"<p>Žádný dokončený projekt neodpovídá výběru.</p>"}
+  </section>`;
+}
+
 function render(){
   let h=decodeURIComponent(location.hash.slice(1));if(ALIAS[h]){history.replaceState(null,"","#"+ALIAS[h]);h=ALIAS[h];}
   const el=document.getElementById("karty");
+  if(h==="dokoncene"){zobraz(el,archivProjektu(P),h,"Dokončené projekty");window.scrollTo(0,0);el.querySelectorAll("[data-atema]").forEach(b=>b.onclick=()=>{FA.tema=b.dataset.atema;render();});return;}
   if(h==="rozpocet"){zobraz(el,investice(INV),h,"Rozpočet");window.scrollTo(0,0);return;}
   if(h==="mista"||h.startsWith("misto-")){zobraz(el,mistaStranka(),"mista","Místa a služby");const t=h.startsWith("misto-")&&document.getElementById(h);t?t.scrollIntoView():window.scrollTo(0,0);return;}
   if(h==="casova-osa"){zobraz(el,harmonogram(),h,"Časová osa projektů");window.scrollTo(0,0);casovaOsa(el);return;}
