@@ -229,6 +229,171 @@
   },
   {
     "typ": "investice",
+    "id": "sportovni-hala-revitalizace",
+    "nazev": "Revitalizace sportovní haly včetně občerstvení",
+    "oblast": "sport",
+    "faze": "dokonceno",
+    "faze_jistota": "nase_propojeni",
+    "useky": [
+      {
+        "faze": "priprava",
+        "nazev": "příprava",
+        "od": "2024-02-02",
+        "do": "2024-02-15",
+        "otevreno": false,
+        "url": "https://smlouvy.gov.cz/smlouva/27511667",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "faze": "soutez",
+        "nazev": "výběr dodavatele",
+        "od": "2024-02-15",
+        "do": "2024-06-20",
+        "otevreno": false,
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_706.html",
+        "jistota": "dolozeno"
+      },
+      {
+        "faze": "stavba",
+        "nazev": "stavba",
+        "od": "2024-06-20",
+        "do": "2025-12-04",
+        "otevreno": false,
+        "url": "https://smlouvy.gov.cz/smlouva/29164576",
+        "jistota": "dolozeno",
+        "konec_jistota": "posledni_doklad"
+      }
+    ],
+    "milniky": [
+      {
+        "datum": "2024-11-27",
+        "typ": "dodatek",
+        "text": "dodatek 1 (smlouva o dílo)",
+        "url": "https://smlouvy.gov.cz/smlouva/31161940"
+      },
+      {
+        "datum": "2025-01-17",
+        "typ": "dodatek",
+        "text": "dodatek 2 (smlouva o dílo)",
+        "url": "https://smlouvy.gov.cz/smlouva/31935344"
+      },
+      {
+        "datum": "2025-03-25",
+        "typ": "dodatek",
+        "text": "dodatek 3 (smlouva o dílo)",
+        "url": "https://smlouvy.gov.cz/smlouva/32677168"
+      },
+      {
+        "datum": "2025-04-25",
+        "typ": "dodatek",
+        "text": "dodatek 1 (technický dozor)",
+        "url": "https://smlouvy.gov.cz/smlouva/33043180"
+      },
+      {
+        "datum": "2025-04-25",
+        "typ": "dodatek",
+        "text": "dodatek 4 (smlouva o dílo)",
+        "url": "https://smlouvy.gov.cz/smlouva/33042828"
+      },
+      {
+        "datum": "2025-05-02",
+        "typ": "dodatek",
+        "text": "dodatek 1 (BOZP)",
+        "url": "https://smlouvy.gov.cz/smlouva/33125648"
+      },
+      {
+        "datum": "2025-08-12",
+        "typ": "dodatek",
+        "text": "dodatek 5 (smlouva o dílo)",
+        "url": "https://smlouvy.gov.cz/smlouva/34511277"
+      },
+      {
+        "datum": "2025-08-27",
+        "typ": "dodatek",
+        "text": "dodatek 2 (technický dozor)",
+        "url": "https://smlouvy.gov.cz/smlouva/34657589"
+      },
+      {
+        "datum": "2025-08-28",
+        "typ": "dodatek",
+        "text": "dodatek 2 (BOZP)",
+        "url": "https://smlouvy.gov.cz/smlouva/34655669"
+      },
+      {
+        "datum": "2025-09-02",
+        "typ": "dodatek",
+        "text": "dodatek 6 (smlouva o dílo)",
+        "url": "https://smlouvy.gov.cz/smlouva/34664981"
+      },
+      {
+        "datum": "2025-09-26",
+        "typ": "dodatek",
+        "text": "dodatek 7 (smlouva o dílo)",
+        "url": "https://smlouvy.gov.cz/smlouva/35109705"
+      },
+      {
+        "datum": "2025-10-13",
+        "typ": "dodatek",
+        "text": "dodatek 8 (smlouva o dílo)",
+        "url": "https://smlouvy.gov.cz/smlouva/35224705"
+      },
+      {
+        "datum": "2025-11-20",
+        "typ": "dodatek",
+        "text": "dodatek 9 (smlouva o dílo)",
+        "url": "https://smlouvy.gov.cz/smlouva/35693925"
+      },
+      {
+        "datum": "2025-12-02",
+        "typ": "dodatek",
+        "text": "dodatek 10 (smlouva o dílo)",
+        "url": "https://smlouvy.gov.cz/smlouva/35857689"
+      }
+    ],
+    "odkaz": "#sportovni-hala-revitalizace"
+  },
+  {
+    "typ": "investice",
+    "id": "jiraskova-oprava-vozovky",
+    "nazev": "Jiráskova ulice – oprava vozovky",
+    "oblast": "doprava",
+    "faze": "dokonceno",
+    "faze_jistota": "nase_propojeni",
+    "useky": [
+      {
+        "faze": "priprava",
+        "nazev": "příprava",
+        "od": "2024-05-16",
+        "do": "2024-09-20",
+        "otevreno": false,
+        "url": "https://smlouvy.gov.cz/smlouva/28715171",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "faze": "soutez",
+        "nazev": "výběr dodavatele",
+        "od": "2024-09-20",
+        "do": "2024-10-25",
+        "otevreno": false,
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_799.html",
+        "jistota": "dolozeno"
+      },
+      {
+        "faze": "stavba",
+        "nazev": "stavba",
+        "od": "2024-10-25",
+        "do": "2024-10-25",
+        "otevreno": false,
+        "url": "https://smlouvy.gov.cz/smlouva/30709184",
+        "jistota": "dolozeno",
+        "konec_jistota": "posledni_doklad"
+      }
+    ],
+    "milniky": [],
+    "odkaz": "#jiraskova-oprava-vozovky"
+  },
+  {
+    "typ": "investice",
     "id": "auto-vz-826",
     "nazev": "Stavební úpravy pro technologii Jordánovy kašny",
     "oblast": "voda_odpady",
@@ -1748,46 +1913,6 @@
   },
   {
     "typ": "zasobnik",
-    "id": "jatecni-ulice",
-    "nazev": "Jateční ulice – parkoviště a komunikace",
-    "oblast": "doprava",
-    "faze": "zasobnik",
-    "faze_jistota": "nase_propojeni",
-    "useky": [
-      {
-        "faze": "priprava",
-        "nazev": "příprava",
-        "od": "2024-01-04",
-        "do": null,
-        "otevreno": true,
-        "jistota": "nase_propojeni",
-        "url": "https://zakazky.mesto-trebon.cz/contract_display_697.html"
-      }
-    ],
-    "milniky": [
-      {
-        "datum": "2024-01-04",
-        "typ": "zakazka",
-        "text": "Parkoviště v Jateční ulici v Třeboni (PD)",
-        "url": "https://zakazky.mesto-trebon.cz/contract_display_697.html"
-      },
-      {
-        "datum": "2024-02-29",
-        "typ": "smlouva",
-        "text": "Studie dopravního řešení MK a PD DÚR + DPS VO v Jateční ulici v Třeboni.",
-        "url": "https://smlouvy.gov.cz/smlouva/27818027"
-      },
-      {
-        "datum": "2025-02-27",
-        "typ": "smlouva",
-        "text": "Zpracování PD Stavební úpravy komunikace v Jateční ulici v Třeboni.",
-        "url": "https://smlouvy.gov.cz/smlouva/32327428"
-      }
-    ],
-    "odkaz": "#zasobnik"
-  },
-  {
-    "typ": "zasobnik",
     "id": "nadrazni-ulice",
     "nazev": "Nádražní ulice – komunikace a chodník",
     "oblast": "doprava",
@@ -1880,40 +2005,6 @@
   },
   {
     "typ": "zasobnik",
-    "id": "mk-jiraskova",
-    "nazev": "Jiráskova ulice",
-    "oblast": "doprava",
-    "faze": "zasobnik",
-    "faze_jistota": "nase_propojeni",
-    "useky": [
-      {
-        "faze": "priprava",
-        "nazev": "příprava",
-        "od": "2024-05-16",
-        "do": null,
-        "otevreno": true,
-        "jistota": "nase_propojeni",
-        "url": "https://smlouvy.gov.cz/smlouva/28715171"
-      }
-    ],
-    "milniky": [
-      {
-        "datum": "2024-05-16",
-        "typ": "smlouva",
-        "text": "Zpracování PD pro opravu vozovky MK v Jiráskově ulici v Třeboni.",
-        "url": "https://smlouvy.gov.cz/smlouva/28715171"
-      },
-      {
-        "datum": "2026-03-30",
-        "typ": "smlouva",
-        "text": "Stavební úpravy MK v Jiráskově ul. v Třeboni (zpracování PD)",
-        "url": "https://smlouvy.gov.cz/smlouva/37372101"
-      }
-    ],
-    "odkaz": "#zasobnik"
-  },
-  {
-    "typ": "zasobnik",
     "id": "mk-stara-hlina",
     "nazev": "Místní komunikace ve Staré Hlíně (od I/34 k polní cestě)",
     "oblast": "doprava",
@@ -1954,46 +2045,6 @@
         "typ": "smlouva",
         "text": "Zpracování projektové dokumentace \"Stavební úpravy MK ve Staré Hlíně v úseku od silnice I/34 po polní cestu HPC 1\" - dodatek č. 2",
         "url": "https://smlouvy.gov.cz/smlouva/38002721"
-      }
-    ],
-    "odkaz": "#zasobnik"
-  },
-  {
-    "typ": "zasobnik",
-    "id": "sportovni-hala-revitalizace",
-    "nazev": "Revitalizace sportovní haly (občerstvení, zázemí v 1. podzemním podlaží)",
-    "oblast": "sport",
-    "faze": "zasobnik",
-    "faze_jistota": "nase_propojeni",
-    "useky": [
-      {
-        "faze": "priprava",
-        "nazev": "příprava",
-        "od": "2024-11-28",
-        "do": null,
-        "otevreno": true,
-        "jistota": "nase_propojeni",
-        "url": "https://smlouvy.gov.cz/smlouva/31186248"
-      }
-    ],
-    "milniky": [
-      {
-        "datum": "2024-11-28",
-        "typ": "smlouva",
-        "text": "Zpracování projektové dokumentace – „Stavební úpravy a revitalizace sportovní haly Třeboň – občerstvení“",
-        "url": "https://smlouvy.gov.cz/smlouva/31186248"
-      },
-      {
-        "datum": "2025-12-04",
-        "typ": "smlouva",
-        "text": "PD sportovní hala Třeboň - specializované činnosti projektanta pro vypracování PD ve stupních DSP, DZS a DPS.",
-        "url": "https://smlouvy.gov.cz/smlouva/35901953"
-      },
-      {
-        "datum": "2025-12-04",
-        "typ": "smlouva",
-        "text": "PD změn dispozic stavby SÚ a revitalizace sportovní haly v 1.PP - VZT, infrasauna, masérna.",
-        "url": "https://smlouvy.gov.cz/smlouva/35902245"
       }
     ],
     "odkaz": "#zasobnik"
@@ -2056,6 +2107,34 @@
   },
   {
     "typ": "zasobnik",
+    "id": "jatecni-ulice",
+    "nazev": "Jateční ulice – další úpravy komunikace",
+    "oblast": "doprava",
+    "faze": "zasobnik",
+    "faze_jistota": "nase_propojeni",
+    "useky": [
+      {
+        "faze": "priprava",
+        "nazev": "příprava",
+        "od": "2025-02-27",
+        "do": null,
+        "otevreno": true,
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/32327428"
+      }
+    ],
+    "milniky": [
+      {
+        "datum": "2025-02-27",
+        "typ": "smlouva",
+        "text": "Zpracování PD Stavební úpravy komunikace v Jateční ulici v Třeboni.",
+        "url": "https://smlouvy.gov.cz/smlouva/32327428"
+      }
+    ],
+    "odkaz": "#zasobnik"
+  },
+  {
+    "typ": "zasobnik",
     "id": "stezka-jatecni-nadrazni",
     "nazev": "Stezka podél trati z Jateční do Nádražní ulice",
     "oblast": "doprava",
@@ -2078,40 +2157,6 @@
         "typ": "smlouva",
         "text": "Technická studie akce Stezka podél trati ČD z ulice Jateční do ulice Nádražní v Třeboni",
         "url": "https://smlouvy.gov.cz/smlouva/32440316"
-      }
-    ],
-    "odkaz": "#zasobnik"
-  },
-  {
-    "typ": "zasobnik",
-    "id": "stara-radnice-vez-fasada",
-    "nazev": "Stará radnice – oprava věže a fasády",
-    "oblast": "kultura",
-    "faze": "zasobnik",
-    "faze_jistota": "nase_propojeni",
-    "useky": [
-      {
-        "faze": "priprava",
-        "nazev": "příprava",
-        "od": "2025-03-31",
-        "do": null,
-        "otevreno": true,
-        "jistota": "nase_propojeni",
-        "url": "https://smlouvy.gov.cz/smlouva/32810536"
-      }
-    ],
-    "milniky": [
-      {
-        "datum": "2025-03-31",
-        "typ": "smlouva",
-        "text": "Vypracování DPS, položkového rozpočtu, výkazu výměr a zajištění IS na stavbu Oprava fasády čp. 1/I v Třeboni.",
-        "url": "https://smlouvy.gov.cz/smlouva/32810536"
-      },
-      {
-        "datum": "2026-11-10",
-        "typ": "smlouva",
-        "text": "DPS Oprava radniční věže č.p. 1/I v Třeboni, výkaz výměr a položkový rozpočet.",
-        "url": "https://smlouvy.gov.cz/smlouva/40426169"
       }
     ],
     "odkaz": "#zasobnik"
@@ -2236,34 +2281,6 @@
   },
   {
     "typ": "zasobnik",
-    "id": "dps1-kotelny",
-    "nazev": "Kotelny a plynové kotle v domě s pečovatelskou službou I (Chelčického)",
-    "oblast": "socialni",
-    "faze": "zasobnik",
-    "faze_jistota": "nase_propojeni",
-    "useky": [
-      {
-        "faze": "priprava",
-        "nazev": "příprava",
-        "od": "2026-02-02",
-        "do": null,
-        "otevreno": true,
-        "jistota": "nase_propojeni",
-        "url": "https://smlouvy.gov.cz/smlouva/36642205"
-      }
-    ],
-    "milniky": [
-      {
-        "datum": "2026-02-02",
-        "typ": "smlouva",
-        "text": "Zpracování PD Stavebních úprav kotelen a výměny plynových kotlů v objektu DPS IA a DPS IC, Chelčického 1, Třeboň",
-        "url": "https://smlouvy.gov.cz/smlouva/36642205"
-      }
-    ],
-    "odkaz": "#zasobnik"
-  },
-  {
-    "typ": "zasobnik",
     "id": "lazne-padel",
     "nazev": "Dva kurty na padel (Bertiny lázně)",
     "oblast": "lazne",
@@ -2286,6 +2303,34 @@
         "typ": "smlouva",
         "text": "Objednávka - projektová dokumentace - 2 kurty pro Padel - LDB",
         "url": "https://smlouvy.gov.cz/smlouva/37068121"
+      }
+    ],
+    "odkaz": "#zasobnik"
+  },
+  {
+    "typ": "zasobnik",
+    "id": "mk-jiraskova",
+    "nazev": "Jiráskova ulice – navazující stavební úpravy",
+    "oblast": "doprava",
+    "faze": "zasobnik",
+    "faze_jistota": "nase_propojeni",
+    "useky": [
+      {
+        "faze": "priprava",
+        "nazev": "příprava",
+        "od": "2026-03-30",
+        "do": null,
+        "otevreno": true,
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/37372101"
+      }
+    ],
+    "milniky": [
+      {
+        "datum": "2026-03-30",
+        "typ": "smlouva",
+        "text": "Stavební úpravy MK v Jiráskově ul. v Třeboni (zpracování PD)",
+        "url": "https://smlouvy.gov.cz/smlouva/37372101"
       }
     ],
     "odkaz": "#zasobnik"
@@ -2708,6 +2753,34 @@
         "typ": "smlouva",
         "text": "Zpracování studie podchodu pod silnicí I/34 v Třeboni včetně geodetického zaměření zájmového území a provedení předběžného inženýrsko-geologického průzkumu.",
         "url": "https://smlouvy.gov.cz/smlouva/40133385"
+      }
+    ],
+    "odkaz": "#zasobnik"
+  },
+  {
+    "typ": "zasobnik",
+    "id": "stara-radnice-vez-fasada",
+    "nazev": "Stará radnice – navazující příprava opravy věže",
+    "oblast": "kultura",
+    "faze": "zasobnik",
+    "faze_jistota": "nase_propojeni",
+    "useky": [
+      {
+        "faze": "priprava",
+        "nazev": "příprava",
+        "od": "2026-11-10",
+        "do": null,
+        "otevreno": true,
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/40426169"
+      }
+    ],
+    "milniky": [
+      {
+        "datum": "2026-11-10",
+        "typ": "smlouva",
+        "text": "DPS Oprava radniční věže č.p. 1/I v Třeboni, výkaz výměr a položkový rozpočet.",
+        "url": "https://smlouvy.gov.cz/smlouva/40426169"
       }
     ],
     "odkaz": "#zasobnik"

@@ -16,14 +16,7 @@
         "jistota": "dolozeno"
       }
     ],
-    "zasobnik": [
-      {
-        "id": "dps1-kotelny",
-        "nazev": "Kotelny a plynové kotle v domě s pečovatelskou službou I (Chelčického)",
-        "pripravenost": "projektová dokumentace zadána",
-        "jistota": "dolozeno"
-      }
-    ],
+    "zasobnik": [],
     "misto": [
       {
         "druh": "budova",
@@ -85,16 +78,15 @@
         "nazev": "Ubytování ve sportovní hale (nástavba a přístavba)",
         "faze": "probiha",
         "jistota": "dolozeno"
-      }
-    ],
-    "zasobnik": [
+      },
       {
         "id": "sportovni-hala-revitalizace",
-        "nazev": "Revitalizace sportovní haly (občerstvení, zázemí v 1. podzemním podlaží)",
-        "pripravenost": "prováděcí projekt zadán",
+        "nazev": "Revitalizace sportovní haly včetně občerstvení",
+        "faze": "dokonceno",
         "jistota": "dolozeno"
       }
     ],
+    "zasobnik": [],
     "misto": [],
     "geometrie": null,
     "posledni_zmena": "2026-10-21"

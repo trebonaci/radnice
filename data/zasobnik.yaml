@@ -26,9 +26,9 @@ polozky:
     oblast: doprava
     vazby: {hledat: ['[Pp]arkovací\w* dům', 'parkovacího domu']}
   - id: jatecni-ulice
-    nazev: Jateční ulice – parkoviště a komunikace
+    nazev: Jateční ulice – další úpravy komunikace
     oblast: doprava
-    vazby: {hledat: ['Jateční ulic']}
+    vazby: {hledat: ['PD Stavební úpravy komunikace v Jateční ulici']}
   - id: stezka-jatecni-nadrazni
     nazev: Stezka podél trati z Jateční do Nádražní ulice
     oblast: doprava
@@ -42,9 +42,9 @@ polozky:
     oblast: doprava
     vazby: {hledat: ['Ořechov']}
   - id: mk-jiraskova
-    nazev: Jiráskova ulice
+    nazev: Jiráskova ulice – navazující stavební úpravy
     oblast: doprava
-    vazby: {hledat: ['Jiráskov\w* ul']}
+    vazby: {hledat: ['Stavební úpravy MK v Jiráskově ul']}
   - id: mk-stara-hlina
     nazev: Místní komunikace ve Staré Hlíně (od I/34 k polní cestě)
     oblast: doprava
@@ -99,10 +99,6 @@ polozky:
     nazev: Volnočasové sportoviště ve sportovním areálu Hliník
     oblast: sport
     vazby: {hledat: ['SA Hliník']}
-  - id: sportovni-hala-revitalizace
-    nazev: Revitalizace sportovní haly (občerstvení, zázemí v 1. podzemním podlaží)
-    oblast: sport
-    vazby: {hledat: ['revitalizace sportovní haly', 'PD sportovní hala Třeboň']}
   - id: kabiny-brilice
     nazev: Fotbalové kabiny v Břilicích
     oblast: sport
@@ -113,18 +109,14 @@ polozky:
     oblast: kultura
     vazby: {hledat: ['zázemí pro diváky']}
   - id: stara-radnice-vez-fasada
-    nazev: Stará radnice – oprava věže a fasády
+    nazev: Stará radnice – navazující příprava opravy věže
     oblast: kultura
-    vazby: {hledat: ['radniční věže', 'fasády čp\. 1/I']}
+    vazby: {hledat: ['DPS Oprava radniční věže']}
   - id: kz-branna-prodejna
     nazev: Prodejna smíšeného zboží v kulturním zařízení v Branné
     oblast: jine
     vazby: {hledat: ['KZ Branná']}
   # --- Sociální oblast a bydlení ---
-  - id: dps1-kotelny
-    nazev: Kotelny a plynové kotle v domě s pečovatelskou službou I (Chelčického)
-    oblast: socialni
-    vazby: {hledat: ['kotelen a výměny plynových kotlů']}
   - id: bytovy-dum-lazenska
     nazev: Městský bytový dům v Lázeňské ulici
     oblast: bydleni
