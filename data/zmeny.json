@@ -17,7 +17,9 @@
     "pro_obcany_ai": true,
     "overeni": "overeno_kodem",
     "misto_id": "zs-sokolska",
-    "misto_jistota": "nase_propojeni"
+    "misto_jistota": "nase_propojeni",
+    "okruh": "skoly",
+    "okruh_podle": "téma"
   },
   {
     "id": "zmena-rm-2026-j1-u3",
@@ -37,7 +39,9 @@
     "pro_obcany_ai": true,
     "overeni": "overeno_kodem",
     "misto_id": "preseka-cp3",
-    "misto_jistota": "nase_propojeni"
+    "misto_jistota": "nase_propojeni",
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "zmena-rm-2026-j113-u544",
@@ -57,7 +61,9 @@
     "pro_obcany_ai": true,
     "overeni": "overeno_kodem",
     "misto_id": "ms-slunicko",
-    "misto_jistota": "nase_propojeni"
+    "misto_jistota": "nase_propojeni",
+    "okruh": "skoly",
+    "okruh_podle": "téma"
   },
   {
     "id": "zmena-rm-2026-j113-u541",
@@ -77,7 +83,9 @@
     "pro_obcany_ai": true,
     "overeni": "overeno_kodem",
     "misto_id": "sportovni-hala",
-    "misto_jistota": "nase_propojeni"
+    "misto_jistota": "nase_propojeni",
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "zmena-rm-2026-j113-u533",
@@ -97,7 +105,9 @@
     "pro_obcany_ai": true,
     "overeni": "overeno_kodem",
     "misto_id": "knihovna",
-    "misto_jistota": "nase_propojeni"
+    "misto_jistota": "nase_propojeni",
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "zmena-rm-2026-j113-u525",
@@ -117,7 +127,9 @@
     "pro_obcany_ai": true,
     "overeni": "overeno_kodem",
     "misto_id": "zs-sokolska",
-    "misto_jistota": "nase_propojeni"
+    "misto_jistota": "nase_propojeni",
+    "okruh": "skoly",
+    "okruh_podle": "téma"
   },
   {
     "id": "zmena-rm-2026-j113-u521",
@@ -137,7 +149,9 @@
     "pro_obcany_ai": true,
     "overeni": "overeno_kodem",
     "misto_id": null,
-    "misto_jistota": null
+    "misto_jistota": null,
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "zmena-rm-2026-j112-u511",
@@ -157,7 +171,9 @@
     "pro_obcany_ai": true,
     "overeni": "overeno_kodem",
     "misto_id": "muzeum",
-    "misto_jistota": "nase_propojeni"
+    "misto_jistota": "nase_propojeni",
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "zmena-rm-2026-j112-u497",
@@ -176,7 +192,9 @@
     "pro_obcany_ai": true,
     "overeni": "overeno_kodem",
     "misto_id": "dum-svatopluka-cecha-20",
-    "misto_jistota": "nase_propojeni"
+    "misto_jistota": "nase_propojeni",
+    "okruh": "bydleni_pece",
+    "okruh_podle": "téma"
   },
   {
     "id": "zmena-rm-2026-j111-u486",
@@ -196,7 +214,9 @@
     "pro_obcany_ai": true,
     "overeni": "overeno_kodem",
     "misto_id": "zs-na-sadech",
-    "misto_jistota": "nase_propojeni"
+    "misto_jistota": "nase_propojeni",
+    "okruh": "skoly",
+    "okruh_podle": "téma"
   },
   {
     "id": "zmena-rm-2026-j111-u481",
@@ -216,7 +236,9 @@
     "pro_obcany_ai": true,
     "overeni": "overeno_kodem",
     "misto_id": null,
-    "misto_jistota": null
+    "misto_jistota": null,
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "zmena-zm-2026-j31-u86",
@@ -237,7 +259,9 @@
     "pro_obcany_ai": true,
     "overeni": "overeno_kodem",
     "misto_id": null,
-    "misto_jistota": null
+    "misto_jistota": null,
+    "okruh": "rozvoj_sprava",
+    "okruh_podle": "téma"
   },
   {
     "id": "zmena-rm-2026-j110-u468",
@@ -257,7 +281,9 @@
     "pro_obcany_ai": true,
     "overeni": "overeno_kodem",
     "misto_id": "verejna-doprava",
-    "misto_jistota": "nase_propojeni"
+    "misto_jistota": "nase_propojeni",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "zmena-rm-2026-j110-u461",
@@ -277,7 +303,9 @@
     "pro_obcany_ai": true,
     "overeni": "overeno_kodem",
     "misto_id": "dps-chelcickeho",
-    "misto_jistota": "nase_propojeni"
+    "misto_jistota": "nase_propojeni",
+    "okruh": "bydleni_pece",
+    "okruh_podle": "téma"
   },
   {
     "id": "zmena-rm-2026-j110-u458",
@@ -297,6 +325,8 @@
     "pro_obcany_ai": true,
     "overeni": "overeno_kodem",
     "misto_id": "dps-chelcickeho",
-    "misto_jistota": "nase_propojeni"
+    "misto_jistota": "nase_propojeni",
+    "okruh": "bydleni_pece",
+    "okruh_podle": "téma"
   }
 ]

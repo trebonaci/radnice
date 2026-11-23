@@ -23,7 +23,9 @@
     "karta_id": "vo-branna",
     "text_ai": false,
     "stav_nazev": "Realizuje se",
-    "stav_popis": "Smlouva je uzavřená, práce probíhají."
+    "stav_popis": "Smlouva je uzavřená, práce probíhají.",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "zasobnik-lazne-ordinace",
@@ -46,7 +48,9 @@
     "dalsi_krok": null,
     "text_ai": false,
     "stav_nazev": "Plánuje se",
-    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt)."
+    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt).",
+    "okruh": "spolecnosti",
+    "okruh_podle": "téma"
   },
   {
     "id": "zasobnik-stara-radnice-vez-fasada",
@@ -69,7 +73,9 @@
     "dalsi_krok": null,
     "text_ai": false,
     "stav_nazev": "Plánuje se",
-    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt)."
+    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt).",
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "zasobnik-mk-orechova",
@@ -92,7 +98,9 @@
     "dalsi_krok": null,
     "text_ai": false,
     "stav_nazev": "Plánuje se",
-    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt)."
+    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt).",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "investice-mk-hermankova-daskabat",
@@ -118,7 +126,9 @@
     "karta_id": "mk-hermankova-daskabat",
     "text_ai": false,
     "stav_nazev": "Realizuje se",
-    "stav_popis": "Smlouva je uzavřená, práce probíhají."
+    "stav_popis": "Smlouva je uzavřená, práce probíhají.",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "zmena-rm-2026-j1-u8",
@@ -142,7 +152,9 @@
     "text_ai": true,
     "misto_id": "zs-sokolska",
     "stav_nazev": "Rozhodnuto",
-    "stav_popis": "Rada nebo zastupitelstvo usnesení přijalo."
+    "stav_popis": "Rada nebo zastupitelstvo usnesení přijalo.",
+    "okruh": "skoly",
+    "okruh_podle": "téma"
   },
   {
     "id": "zmena-rm-2026-j1-u3",
@@ -166,7 +178,9 @@
     "text_ai": true,
     "misto_id": "preseka-cp3",
     "stav_nazev": "Rozhodnuto",
-    "stav_popis": "Rada nebo zastupitelstvo usnesení přijalo."
+    "stav_popis": "Rada nebo zastupitelstvo usnesení přijalo.",
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "investice-pristavba-telocvicen",
@@ -192,7 +206,9 @@
     "karta_id": "pristavba-telocvicen",
     "text_ai": false,
     "stav_nazev": "Realizuje se",
-    "stav_popis": "Smlouva je uzavřená, práce probíhají."
+    "stav_popis": "Smlouva je uzavřená, práce probíhají.",
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "zasobnik-podchod-i34",
@@ -215,7 +231,9 @@
     "dalsi_krok": null,
     "text_ai": false,
     "stav_nazev": "Plánuje se",
-    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt)."
+    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt).",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "investice-sportovni-hala-ubytovani",
@@ -241,7 +259,9 @@
     "karta_id": "sportovni-hala-ubytovani",
     "text_ai": false,
     "stav_nazev": "Realizuje se",
-    "stav_popis": "Smlouva je uzavřená, práce probíhají."
+    "stav_popis": "Smlouva je uzavřená, práce probíhají.",
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "investice-auto-vz-961",
@@ -267,7 +287,9 @@
     "karta_id": "auto-vz-961",
     "text_ai": false,
     "stav_nazev": "Realizuje se",
-    "stav_popis": "Smlouva je uzavřená, práce probíhají."
+    "stav_popis": "Smlouva je uzavřená, práce probíhají.",
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "investice-auto-vz-914",
@@ -293,7 +315,9 @@
     "karta_id": "auto-vz-914",
     "text_ai": false,
     "stav_nazev": "Realizuje se",
-    "stav_popis": "Smlouva je uzavřená, práce probíhají."
+    "stav_popis": "Smlouva je uzavřená, práce probíhají.",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "zmena-rm-2026-j113-u544",
@@ -317,7 +341,9 @@
     "text_ai": true,
     "misto_id": "ms-slunicko",
     "stav_nazev": "Rozhodnuto",
-    "stav_popis": "Rada nebo zastupitelstvo usnesení přijalo."
+    "stav_popis": "Rada nebo zastupitelstvo usnesení přijalo.",
+    "okruh": "skoly",
+    "okruh_podle": "téma"
   },
   {
     "id": "zmena-rm-2026-j113-u541",
@@ -341,7 +367,9 @@
     "text_ai": true,
     "misto_id": "sportovni-hala",
     "stav_nazev": "Rozhodnuto",
-    "stav_popis": "Rada nebo zastupitelstvo usnesení přijalo."
+    "stav_popis": "Rada nebo zastupitelstvo usnesení přijalo.",
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "zmena-rm-2026-j113-u533",
@@ -365,7 +393,9 @@
     "text_ai": true,
     "misto_id": "knihovna",
     "stav_nazev": "Rozhodnuto",
-    "stav_popis": "Rada nebo zastupitelstvo usnesení přijalo."
+    "stav_popis": "Rada nebo zastupitelstvo usnesení přijalo.",
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "zmena-rm-2026-j113-u525",
@@ -389,7 +419,9 @@
     "text_ai": true,
     "misto_id": "zs-sokolska",
     "stav_nazev": "Rozhodnuto",
-    "stav_popis": "Rada nebo zastupitelstvo usnesení přijalo."
+    "stav_popis": "Rada nebo zastupitelstvo usnesení přijalo.",
+    "okruh": "skoly",
+    "okruh_podle": "téma"
   },
   {
     "id": "zmena-rm-2026-j113-u521",
@@ -413,7 +445,9 @@
     "text_ai": true,
     "misto_id": null,
     "stav_nazev": "Rozhodnuto",
-    "stav_popis": "Rada nebo zastupitelstvo usnesení přijalo."
+    "stav_popis": "Rada nebo zastupitelstvo usnesení přijalo.",
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "investice-dps3-energie",
@@ -439,7 +473,9 @@
     "karta_id": "dps3-energie",
     "text_ai": false,
     "stav_nazev": "Plánuje se",
-    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt)."
+    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt).",
+    "okruh": "bydleni_pece",
+    "okruh_podle": "téma"
   },
   {
     "id": "zasobnik-lazne-olu",
@@ -462,7 +498,9 @@
     "dalsi_krok": null,
     "text_ai": false,
     "stav_nazev": "Plánuje se",
-    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt)."
+    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt).",
+    "okruh": "spolecnosti",
+    "okruh_podle": "téma"
   },
   {
     "id": "investice-mk-sidliste",
@@ -488,7 +526,9 @@
     "karta_id": "mk-sidliste",
     "text_ai": false,
     "stav_nazev": "Realizuje se",
-    "stav_popis": "Smlouva je uzavřená, práce probíhají."
+    "stav_popis": "Smlouva je uzavřená, práce probíhají.",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "investice-fve-zs-na-sadech",
@@ -514,7 +554,9 @@
     "karta_id": "fve-zs-na-sadech",
     "text_ai": false,
     "stav_nazev": "Realizuje se",
-    "stav_popis": "Smlouva je uzavřená, práce probíhají."
+    "stav_popis": "Smlouva je uzavřená, práce probíhají.",
+    "okruh": "skoly",
+    "okruh_podle": "téma"
   },
   {
     "id": "zmena-rm-2026-j112-u511",
@@ -538,7 +580,9 @@
     "text_ai": true,
     "misto_id": "muzeum",
     "stav_nazev": "Rozhodnuto",
-    "stav_popis": "Rada nebo zastupitelstvo usnesení přijalo."
+    "stav_popis": "Rada nebo zastupitelstvo usnesení přijalo.",
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "zmena-rm-2026-j112-u497",
@@ -562,7 +606,9 @@
     "text_ai": true,
     "misto_id": "dum-svatopluka-cecha-20",
     "stav_nazev": "Vzato na vědomí",
-    "stav_popis": "Rada nebo zastupitelstvo informaci jen vzalo na vědomí, o věci nerozhodovalo."
+    "stav_popis": "Rada nebo zastupitelstvo informaci jen vzalo na vědomí, o věci nerozhodovalo.",
+    "okruh": "bydleni_pece",
+    "okruh_podle": "téma"
   },
   {
     "id": "investice-lazne-budova-g",
@@ -588,7 +634,9 @@
     "karta_id": "lazne-budova-g",
     "text_ai": false,
     "stav_nazev": "Realizuje se",
-    "stav_popis": "Smlouva je uzavřená, práce probíhají."
+    "stav_popis": "Smlouva je uzavřená, práce probíhají.",
+    "okruh": "spolecnosti",
+    "okruh_podle": "téma"
   },
   {
     "id": "investice-fve-cov-brilice",
@@ -614,7 +662,9 @@
     "karta_id": "fve-cov-brilice",
     "text_ai": false,
     "stav_nazev": "Realizuje se",
-    "stav_popis": "Smlouva je uzavřená, práce probíhají."
+    "stav_popis": "Smlouva je uzavřená, práce probíhají.",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "investice-auto-vz-935",
@@ -640,7 +690,9 @@
     "karta_id": "auto-vz-935",
     "text_ai": false,
     "stav_nazev": "Realizuje se",
-    "stav_popis": "Smlouva je uzavřená, práce probíhají."
+    "stav_popis": "Smlouva je uzavřená, práce probíhají.",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "zmena-rm-2026-j111-u486",
@@ -664,7 +716,9 @@
     "text_ai": true,
     "misto_id": "zs-na-sadech",
     "stav_nazev": "Rozhodnuto",
-    "stav_popis": "Rada nebo zastupitelstvo usnesení přijalo."
+    "stav_popis": "Rada nebo zastupitelstvo usnesení přijalo.",
+    "okruh": "skoly",
+    "okruh_podle": "téma"
   },
   {
     "id": "zmena-rm-2026-j111-u481",
@@ -688,7 +742,9 @@
     "text_ai": true,
     "misto_id": null,
     "stav_nazev": "Rozhodnuto",
-    "stav_popis": "Rada nebo zastupitelstvo usnesení přijalo."
+    "stav_popis": "Rada nebo zastupitelstvo usnesení přijalo.",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "zmena-zm-2026-j31-u86",
@@ -712,7 +768,9 @@
     "text_ai": true,
     "misto_id": null,
     "stav_nazev": "Rozhodnuto",
-    "stav_popis": "Rada nebo zastupitelstvo usnesení přijalo."
+    "stav_popis": "Rada nebo zastupitelstvo usnesení přijalo.",
+    "okruh": "rozvoj_sprava",
+    "okruh_podle": "téma"
   },
   {
     "id": "zasobnik-mk-dvorecka-brilice",
@@ -735,7 +793,9 @@
     "dalsi_krok": null,
     "text_ai": false,
     "stav_nazev": "Plánuje se",
-    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt)."
+    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt).",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "zmena-rm-2026-j110-u468",
@@ -759,7 +819,9 @@
     "text_ai": true,
     "misto_id": "verejna-doprava",
     "stav_nazev": "Rozhodnuto",
-    "stav_popis": "Rada nebo zastupitelstvo usnesení přijalo."
+    "stav_popis": "Rada nebo zastupitelstvo usnesení přijalo.",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "zmena-rm-2026-j110-u461",
@@ -783,7 +845,9 @@
     "text_ai": true,
     "misto_id": "dps-chelcickeho",
     "stav_nazev": "Rozhodnuto",
-    "stav_popis": "Rada nebo zastupitelstvo usnesení přijalo."
+    "stav_popis": "Rada nebo zastupitelstvo usnesení přijalo.",
+    "okruh": "bydleni_pece",
+    "okruh_podle": "téma"
   },
   {
     "id": "zmena-rm-2026-j110-u458",
@@ -807,7 +871,9 @@
     "text_ai": true,
     "misto_id": "dps-chelcickeho",
     "stav_nazev": "Rozhodnuto",
-    "stav_popis": "Rada nebo zastupitelstvo usnesení přijalo."
+    "stav_popis": "Rada nebo zastupitelstvo usnesení přijalo.",
+    "okruh": "bydleni_pece",
+    "okruh_podle": "téma"
   },
   {
     "id": "investice-lazne-balneo-etapa1",
@@ -833,7 +899,9 @@
     "karta_id": "lazne-balneo-etapa1",
     "text_ai": true,
     "stav_nazev": "Dokončeno",
-    "stav_popis": "Stavba je předaná nebo zaplacená."
+    "stav_popis": "Stavba je předaná nebo zaplacená.",
+    "okruh": "spolecnosti",
+    "okruh_podle": "téma"
   },
   {
     "id": "zasobnik-sportoviste-hlinik",
@@ -856,7 +924,9 @@
     "dalsi_krok": null,
     "text_ai": false,
     "stav_nazev": "Plánuje se",
-    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt)."
+    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt).",
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "zasobnik-lazne-chodnik-park",
@@ -879,7 +949,9 @@
     "dalsi_krok": null,
     "text_ai": false,
     "stav_nazev": "Plánuje se",
-    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt)."
+    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt).",
+    "okruh": "spolecnosti",
+    "okruh_podle": "téma"
   },
   {
     "id": "zasobnik-kanalizace-taboritska",
@@ -902,7 +974,9 @@
     "dalsi_krok": null,
     "text_ai": false,
     "stav_nazev": "Plánuje se",
-    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt)."
+    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt).",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "investice-auto-vz-941",
@@ -928,7 +1002,9 @@
     "karta_id": "auto-vz-941",
     "text_ai": false,
     "stav_nazev": "Realizuje se",
-    "stav_popis": "Smlouva je uzavřená, práce probíhají."
+    "stav_popis": "Smlouva je uzavřená, práce probíhají.",
+    "okruh": "bydleni_pece",
+    "okruh_podle": "téma"
   },
   {
     "id": "zasobnik-vodojem-kopecek",
@@ -951,7 +1027,9 @@
     "dalsi_krok": null,
     "text_ai": false,
     "stav_nazev": "Plánuje se",
-    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt)."
+    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt).",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "investice-propustek-brilice",
@@ -977,7 +1055,9 @@
     "karta_id": "propustek-brilice",
     "text_ai": false,
     "stav_nazev": "Realizuje se",
-    "stav_popis": "Smlouva je uzavřená, práce probíhají."
+    "stav_popis": "Smlouva je uzavřená, práce probíhají.",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "zasobnik-lazne-objekt-b",
@@ -1000,7 +1080,9 @@
     "dalsi_krok": null,
     "text_ai": false,
     "stav_nazev": "Plánuje se",
-    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt)."
+    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt).",
+    "okruh": "spolecnosti",
+    "okruh_podle": "téma"
   },
   {
     "id": "zasobnik-destova-kanalizace-novy-dvur",
@@ -1023,7 +1105,9 @@
     "dalsi_krok": null,
     "text_ai": false,
     "stav_nazev": "Plánuje se",
-    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt)."
+    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt).",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "investice-hriste-kopecek",
@@ -1049,7 +1133,9 @@
     "karta_id": "hriste-kopecek",
     "text_ai": false,
     "stav_nazev": "Dokončeno",
-    "stav_popis": "Stavba je předaná nebo zaplacená."
+    "stav_popis": "Stavba je předaná nebo zaplacená.",
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "investice-hrbitov-sv-alzbety",
@@ -1075,7 +1161,9 @@
     "karta_id": "hrbitov-sv-alzbety",
     "text_ai": false,
     "stav_nazev": "Plánuje se",
-    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt)."
+    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt).",
+    "okruh": "rozvoj_sprava",
+    "okruh_podle": "téma"
   },
   {
     "id": "zasobnik-chodnik-sportovni-svobody",
@@ -1098,7 +1186,9 @@
     "dalsi_krok": null,
     "text_ai": false,
     "stav_nazev": "Plánuje se",
-    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt)."
+    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt).",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "investice-auto-vz-945",
@@ -1124,7 +1214,9 @@
     "karta_id": "auto-vz-945",
     "text_ai": false,
     "stav_nazev": "Realizuje se",
-    "stav_popis": "Smlouva je uzavřená, práce probíhají."
+    "stav_popis": "Smlouva je uzavřená, práce probíhají.",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "investice-auto-vz-930",
@@ -1150,7 +1242,9 @@
     "karta_id": "auto-vz-930",
     "text_ai": false,
     "stav_nazev": "Dokončeno",
-    "stav_popis": "Stavba je předaná nebo zaplacená."
+    "stav_popis": "Stavba je předaná nebo zaplacená.",
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "zasobnik-mk-stara-hlina",
@@ -1173,7 +1267,9 @@
     "dalsi_krok": null,
     "text_ai": false,
     "stav_nazev": "Plánuje se",
-    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt)."
+    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt).",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "investice-chodniky-husova-kaple",
@@ -1199,7 +1295,9 @@
     "karta_id": "chodniky-husova-kaple",
     "text_ai": false,
     "stav_nazev": "Dokončeno",
-    "stav_popis": "Stavba je předaná nebo zaplacená."
+    "stav_popis": "Stavba je předaná nebo zaplacená.",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "zasobnik-divadlo-zazemi",
@@ -1222,7 +1320,9 @@
     "dalsi_krok": null,
     "text_ai": false,
     "stav_nazev": "Plánuje se",
-    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt)."
+    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt).",
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "investice-vo-taboritska",
@@ -1248,7 +1348,9 @@
     "karta_id": "vo-taboritska",
     "text_ai": false,
     "stav_nazev": "Dokončeno",
-    "stav_popis": "Stavba je předaná nebo zaplacená."
+    "stav_popis": "Stavba je předaná nebo zaplacená.",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "zasobnik-kz-branna-prodejna",
@@ -1271,7 +1373,9 @@
     "dalsi_krok": null,
     "text_ai": false,
     "stav_nazev": "Plánuje se",
-    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt)."
+    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt).",
+    "okruh": "rozvoj_sprava",
+    "okruh_podle": "téma"
   },
   {
     "id": "zasobnik-parkovaci-dum",
@@ -1294,7 +1398,9 @@
     "dalsi_krok": null,
     "text_ai": false,
     "stav_nazev": "Plánuje se",
-    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt)."
+    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt).",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "zasobnik-mk-jiraskova",
@@ -1317,7 +1423,9 @@
     "dalsi_krok": null,
     "text_ai": false,
     "stav_nazev": "Plánuje se",
-    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt)."
+    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt).",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "zasobnik-lazne-padel",
@@ -1340,7 +1448,9 @@
     "dalsi_krok": null,
     "text_ai": false,
     "stav_nazev": "Plánuje se",
-    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt)."
+    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt).",
+    "okruh": "spolecnosti",
+    "okruh_podle": "téma"
   },
   {
     "id": "zasobnik-taboritska-stezka",
@@ -1363,7 +1473,9 @@
     "dalsi_krok": null,
     "text_ai": false,
     "stav_nazev": "Plánuje se",
-    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt)."
+    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt).",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "zasobnik-nadrazni-ulice",
@@ -1386,7 +1498,9 @@
     "dalsi_krok": null,
     "text_ai": false,
     "stav_nazev": "Plánuje se",
-    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt)."
+    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt).",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "investice-ulice-valy",
@@ -1412,7 +1526,9 @@
     "karta_id": "ulice-valy",
     "text_ai": false,
     "stav_nazev": "Dokončeno",
-    "stav_popis": "Stavba je předaná nebo zaplacená."
+    "stav_popis": "Stavba je předaná nebo zaplacená.",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "investice-u-sveta-sportovni",
@@ -1438,7 +1554,9 @@
     "karta_id": "u-sveta-sportovni",
     "text_ai": false,
     "stav_nazev": "Dokončeno",
-    "stav_popis": "Stavba je předaná nebo zaplacená."
+    "stav_popis": "Stavba je předaná nebo zaplacená.",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "investice-auto-vz-858",
@@ -1464,7 +1582,9 @@
     "karta_id": "auto-vz-858",
     "text_ai": false,
     "stav_nazev": "Realizuje se",
-    "stav_popis": "Smlouva je uzavřená, práce probíhají."
+    "stav_popis": "Smlouva je uzavřená, práce probíhají.",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "investice-sportovni-hala-revitalizace",
@@ -1490,7 +1610,9 @@
     "karta_id": "sportovni-hala-revitalizace",
     "text_ai": false,
     "stav_nazev": "Dokončeno",
-    "stav_popis": "Stavba je předaná nebo zaplacená."
+    "stav_popis": "Stavba je předaná nebo zaplacená.",
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "zasobnik-lazne-restaurace",
@@ -1513,7 +1635,9 @@
     "dalsi_krok": null,
     "text_ai": false,
     "stav_nazev": "Plánuje se",
-    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt)."
+    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt).",
+    "okruh": "spolecnosti",
+    "okruh_podle": "téma"
   },
   {
     "id": "investice-auto-vz-848",
@@ -1539,7 +1663,9 @@
     "karta_id": "auto-vz-848",
     "text_ai": false,
     "stav_nazev": "Dokončeno",
-    "stav_popis": "Stavba je předaná nebo zaplacená."
+    "stav_popis": "Stavba je předaná nebo zaplacená.",
+    "okruh": "skoly",
+    "okruh_podle": "téma"
   },
   {
     "id": "investice-auto-vz-829",
@@ -1565,7 +1691,9 @@
     "karta_id": "auto-vz-829",
     "text_ai": false,
     "stav_nazev": "Dokončeno",
-    "stav_popis": "Stavba je předaná nebo zaplacená."
+    "stav_popis": "Stavba je předaná nebo zaplacená.",
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "investice-auto-vz-895",
@@ -1591,7 +1719,9 @@
     "karta_id": "auto-vz-895",
     "text_ai": false,
     "stav_nazev": "Dokončeno",
-    "stav_popis": "Stavba je předaná nebo zaplacená."
+    "stav_popis": "Stavba je předaná nebo zaplacená.",
+    "okruh": "bydleni_pece",
+    "okruh_podle": "téma"
   },
   {
     "id": "zasobnik-most-vitek",
@@ -1614,7 +1744,9 @@
     "dalsi_krok": null,
     "text_ai": false,
     "stav_nazev": "Plánuje se",
-    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt)."
+    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt).",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "investice-auto-vz-838",
@@ -1640,7 +1772,9 @@
     "karta_id": "auto-vz-838",
     "text_ai": false,
     "stav_nazev": "Dokončeno",
-    "stav_popis": "Stavba je předaná nebo zaplacená."
+    "stav_popis": "Stavba je předaná nebo zaplacená.",
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "zasobnik-kanalizace-pivovar",
@@ -1663,7 +1797,9 @@
     "dalsi_krok": null,
     "text_ai": false,
     "stav_nazev": "Plánuje se",
-    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt)."
+    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt).",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "investice-auto-vz-844",
@@ -1689,7 +1825,9 @@
     "karta_id": "auto-vz-844",
     "text_ai": false,
     "stav_nazev": "Dokončeno",
-    "stav_popis": "Stavba je předaná nebo zaplacená."
+    "stav_popis": "Stavba je předaná nebo zaplacená.",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "investice-auto-vz-835",
@@ -1715,7 +1853,9 @@
     "karta_id": "auto-vz-835",
     "text_ai": false,
     "stav_nazev": "Dokončeno",
-    "stav_popis": "Stavba je předaná nebo zaplacená."
+    "stav_popis": "Stavba je předaná nebo zaplacená.",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "zasobnik-ucelova-komunikace-taboritska",
@@ -1738,7 +1878,9 @@
     "dalsi_krok": null,
     "text_ai": false,
     "stav_nazev": "Plánuje se",
-    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt)."
+    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt).",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "investice-auto-vz-826",
@@ -1764,7 +1906,9 @@
     "karta_id": "auto-vz-826",
     "text_ai": false,
     "stav_nazev": "Dokončeno",
-    "stav_popis": "Stavba je předaná nebo zaplacená."
+    "stav_popis": "Stavba je předaná nebo zaplacená.",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "zasobnik-stezka-jatecni-nadrazni",
@@ -1787,7 +1931,9 @@
     "dalsi_krok": null,
     "text_ai": false,
     "stav_nazev": "Plánuje se",
-    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt)."
+    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt).",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "zasobnik-jatecni-ulice",
@@ -1810,7 +1956,9 @@
     "dalsi_krok": null,
     "text_ai": false,
     "stav_nazev": "Plánuje se",
-    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt)."
+    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt).",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "zasobnik-destove-vody-brilice",
@@ -1833,7 +1981,9 @@
     "dalsi_krok": null,
     "text_ai": false,
     "stav_nazev": "Plánuje se",
-    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt)."
+    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt).",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "zasobnik-kabiny-brilice",
@@ -1856,7 +2006,9 @@
     "dalsi_krok": null,
     "text_ai": false,
     "stav_nazev": "Plánuje se",
-    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt)."
+    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt).",
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "investice-jiraskova-oprava-vozovky",
@@ -1882,7 +2034,9 @@
     "karta_id": "jiraskova-oprava-vozovky",
     "text_ai": false,
     "stav_nazev": "Dokončeno",
-    "stav_popis": "Stavba je předaná nebo zaplacená."
+    "stav_popis": "Stavba je předaná nebo zaplacená.",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "investice-auto-vz-823",
@@ -1908,7 +2062,9 @@
     "karta_id": "auto-vz-823",
     "text_ai": false,
     "stav_nazev": "Dokončeno",
-    "stav_popis": "Stavba je předaná nebo zaplacená."
+    "stav_popis": "Stavba je předaná nebo zaplacená.",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "investice-auto-vz-824",
@@ -1934,7 +2090,9 @@
     "karta_id": "auto-vz-824",
     "text_ai": false,
     "stav_nazev": "Dokončeno",
-    "stav_popis": "Stavba je předaná nebo zaplacená."
+    "stav_popis": "Stavba je předaná nebo zaplacená.",
+    "okruh": "bydleni_pece",
+    "okruh_podle": "téma"
   },
   {
     "id": "zasobnik-bytovy-dum-lazenska",
@@ -1957,6 +2115,8 @@
     "dalsi_krok": null,
     "text_ai": false,
     "stav_nazev": "Plánuje se",
-    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt)."
+    "stav_popis": "Město má peníze v rozpočtu nebo zadalo přípravu (studii, projekt).",
+    "okruh": "bydleni_pece",
+    "okruh_podle": "téma"
   }
 ]

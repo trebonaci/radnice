@@ -79,11 +79,6 @@
         "hodnota": 12
       },
       {
-        "klic": "socialni",
-        "nazev": "Sociální služby",
-        "hodnota": 11
-      },
-      {
         "klic": "verejne_zakazky",
         "nazev": "Zakázky",
         "hodnota": 11
@@ -91,6 +86,11 @@
       {
         "klic": "kultura",
         "nazev": "Kultura",
+        "hodnota": 10
+      },
+      {
+        "klic": "socialni",
+        "nazev": "Sociální služby",
         "hodnota": 10
       },
       {

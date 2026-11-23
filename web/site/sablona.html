@@ -380,8 +380,8 @@ function karta(p){
   </article>`}
 // jedna sada témat pro investice, připravované projekty, místa i usnesení (#202)
 const OBLAST={doprava:"Doprava a ulice",voda_odpady:"Voda, kanalizace a odpady",skolstvi:"Školy a školky",socialni:"Sociální služby",sport:"Sport",kultura:"Kultura a památky",komunity_spolky:"Spolky a setkávání",bydleni:"Bydlení",zelen:"Zeleň",uzemni_plan:"Územní plán",lazne:"Lázně a městské firmy",majetek:"Majetek města",rozpocet:"Rozpočet a dotace",zakazky:"Investice a zakázky",urad:"Úřad a samospráva",jine:"Ostatní"};
-// kategorie usnesení (pipeline/ukazatele.py) → téma
-const USN_TEMA={samosprava:"urad",personalni:"urad",prispevkove_organizace:"urad",majetek_najem:"majetek",majetek_prevod:"majetek",rozpocet:"rozpocet",dotace_dary:"rozpocet",investice:"zakazky",verejne_zakazky:"zakazky",lazne_spolecnosti:"lazne",ostatni:"jine"};
+// kategorie usnesení → téma (stejné jako config/okruhy.yaml kategorie_usneseni; hlídá test)
+const USN_TEMA={samosprava:"urad",personalni:"urad",prispevkove_organizace:"urad",podnety:"urad",majetek_najem:"majetek",majetek_prevod:"majetek",rozpocet:"rozpocet",dotace_dary:"rozpocet",investice:"zakazky",verejne_zakazky:"zakazky",lazne_spolecnosti:"lazne",ostatni:"jine"};
 const temaU=k=>USN_TEMA[k]||(OBLAST[k]?k:"jine");
 const temataU=u=>[...new Set(u.kategorie.map(temaU))];
 // stejné ovládání témat ve všech záložkách
