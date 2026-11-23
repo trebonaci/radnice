@@ -96,6 +96,8 @@ def main() -> None:
     (cil / "index.html").write_text(sestav(args.nahled), encoding="utf-8")
     # obrázky šablony (logo Třeboňáků)
     shutil.copytree(SABLONA.parent / "obr", cil / "obr", dirs_exist_ok=True)
+    # knihovna mapy Leaflet (#208) – z vlastního webu, ne z CDN
+    shutil.copytree(SABLONA.parent / "leaflet", cil / "leaflet", dirs_exist_ok=True)
     # Cloudflare Pages: bez indexování náhledů, základní bezpečnostní hlavičky
     (cil / "_headers").write_text(
         "/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n"

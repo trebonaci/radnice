@@ -5,21 +5,15 @@ const GIS_STATES = {
   hotovo: { label: "Dokončeno", color: "#386125" },
 };
 const GIS_SERVICE = { label: "Změny v místech a službách", color: "#68428a" };
-const GIS_TOPICS = [
-  ["prostor", "Doprava a veřejný prostor", ["doprava","zelen","voda_odpady","energie","zivotni_prostredi"]],
-  ["pece", "Bydlení a péče", ["bydleni","socialni","zdravotnictvi"]],
-  ["skoly", "Školy a školky", ["skolstvi"]],
-  ["volny-cas", "Sport, kultura a spolky", ["sport","kultura","komunity_spolky"]],
-  ["firmy", "Městské společnosti", ["lazne","lazne_spolecnosti"]],
-  ["rozvoj", "Rozvoj a správa města", ["uzemni_plan","majetek","rozpocet","sprava","urad","zakazky"]],
-];
+// témata stejná jako v ostatních záložkách (OBLAST, temaChips v sablona.html; připomínka uživatelů 22. 11.)
 const gisFilters = { q: "", state: "", topic: "", view: "map", selected: "" };
 let closeGis;
 let leafletAssets;
 
 function loadLeaflet() {
   if (leafletAssets) return leafletAssets;
-  const base = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.";
+  // Leaflet 1.9.4 přibalený k webu (web/site/leaflet, licence BSD-2) – bez načítání z cizího CDN
+  const base = "leaflet/leaflet.";
   const css = document.createElement("link");
   css.rel = "stylesheet";
   css.href = base + "css";
@@ -47,14 +41,14 @@ function gisProjects() {
     const id = type + "/" + p.id;
     const loc = geo.get(id);
     const state = p.faze === "dokonceno" ? "hotovo" : p.faze === "probiha" ? "probiha" : "priprava";
-    const topic = GIS_TOPICS.find(([, , areas]) => areas.includes(p.oblast));
+    const topic = OBLAST[p.oblast] ? p.oblast : "jine";
     const places = (loc?.misto || []).filter(place => place.bod || place.linie?.length);
     return {
       id, p, type, state: type === "misto" ? "sluzby" : state, changes, places, geometry: loc?.geometrie,
-      topic: topic?.[0] || "ostatni",
-      topicLabel: topic?.[1] || OBLAST[p.oblast] || "Ostatní",
+      topic,
+      topicLabel: OBLAST[topic],
       approx: places.some(place => place.jistota !== "dolozeno"),
-      text: bezDia([p.nazev,p.popis,topic?.[1],...changes.map(change => change.text),...places.map(place => place.nazev)].filter(Boolean).join(" ")),
+      text: bezDia([p.nazev,p.popis,OBLAST[topic],...changes.map(change => change.text),...places.map(place => place.nazev)].filter(Boolean).join(" ")),
     };
   }
   const services = M.flatMap(place => {
@@ -68,7 +62,7 @@ function gisProjects() {
 }
 
 function gisHtml(projects) {
-  const topics = [...GIS_TOPICS,["ostatni","Ostatní"]].filter(([key]) => projects.some(p => p.topic === key));
+  const topics = [...new Set(projects.map(p => p.topic))];
   return '<section><h1 class="st" tabindex="-1">Mapa staveb, oprav a služeb</h1>' +
     '<p class="gis-intro">Najděte stavby, opravy a změny v místních službách podle ulice nebo tématu.</p>' +
     '<div class="gis-controls">' +
@@ -76,10 +70,9 @@ function gisHtml(projects) {
     '<label>Co zobrazit<select data-gis-state><option value="">Vše</option><option value="stavby"' + (gisFilters.state==="stavby"?' selected':'') + '>Všechny stavby a opravy</option>' +
     Object.entries(GIS_STATES).map(([k,s]) => '<option value="' + k + '"' + (gisFilters.state===k?' selected':'') + '>' + s.label + '</option>').join("") +
     '<option value="sluzby"' + (gisFilters.state==="sluzby"?' selected':'') + '>Změny v místech a službách</option>' +
-    '</select></label><label>Téma<select data-gis-topic><option value="">Všechna témata</option>' +
-    topics.map(([k,label]) => '<option value="' + k + '"' + (gisFilters.topic===k?' selected':'') + '>' + label + '</option>').join("") +
     '</select></label><div role="group" aria-label="Zobrazení">' +
     '<button type="button" data-gis-view="map">Mapa</button><button type="button" data-gis-view="list">Seznam</button></div></div>' +
+    temaChips(topics, gisFilters.topic, "gtema") +
     '<p class="gis-summary" data-gis-summary aria-live="polite"></p>' +
     '<div class="gis-layout"><div class="gis-map-frame"><div class="gis-canvas" role="region" aria-label="Interaktivní mapa Třeboně"></div>' +
     '<p class="gis-status pozn" role="status"></p><div class="gis-tools"><button type="button" class="gis-reset">Ukázat celý výběr</button>' +
@@ -299,7 +292,11 @@ function openGis(el) {
 
   el.querySelector("[data-gis-query]").oninput = e => { gisFilters.q = e.target.value; refresh(); };
   el.querySelector("[data-gis-state]").onchange = e => { gisFilters.state = e.target.value; refresh(); if (map) fit(); };
-  el.querySelector("[data-gis-topic]").onchange = e => { gisFilters.topic = e.target.value; refresh(); if (map) fit(); };
+  el.querySelectorAll("[data-gtema]").forEach(b => b.onclick = () => {
+    gisFilters.topic = b.dataset.gtema;
+    el.querySelectorAll("[data-gtema]").forEach(x => { const on = x === b; x.classList.toggle("on", on); x.setAttribute("aria-pressed", on); });
+    refresh(); if (map) fit();
+  });
   for (const panel of [result,overlap]) {
     panel.onclick = e => {
       const button = e.target.closest("[data-gis-project]");
