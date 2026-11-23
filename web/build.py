@@ -98,6 +98,8 @@ def main() -> None:
     (cil / "index.html").write_text(sestav(args.nahled), encoding="utf-8")
     # obrázky šablony (logo Třeboňáků)
     shutil.copytree(SABLONA.parent / "obr", cil / "obr", dirs_exist_ok=True)
+    # písma Plus Jakarta Sans a Inter (licence OFL) – z vlastního webu, ne z Google Fonts
+    shutil.copytree(SABLONA.parent / "fonts", cil / "fonts", dirs_exist_ok=True)
     # knihovna mapy Leaflet (#208) – z vlastního webu, ne z CDN
     shutil.copytree(SABLONA.parent / "leaflet", cil / "leaflet", dirs_exist_ok=True)
     # Cloudflare Pages: bez indexování náhledů, základní bezpečnostní hlavičky
