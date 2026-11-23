@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+
+<html lang="cs"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-error-container": "#93000a", "primary-fixed-dim": "#91db2a", "category-kriticke": "#ef4444", "surface-variant": "#d3e4fe", "tertiary-fixed": "#cce5ff", "secondary-fixed": "#dae2fd", "secondary-fixed-dim": "#bec6e0", "surface-light": "#f8fafc", "surface-container-lowest": "#ffffff", "on-secondary": "#ffffff", "outline-variant": "#c1cab0", "surface-tint": "#416900", "secondary-container": "#dae2fd", "on-secondary-fixed-variant": "#3f465c", "on-error": "#ffffff", "tertiary-fixed-dim": "#93ccff", "on-secondary-container": "#5c647a", "on-primary-fixed-variant": "#304f00", "surface-bright": "#f8f9ff", "primary-container": "#84cc16", "on-primary-fixed": "#102000", "category-rozhodnuti": "#3b82f6", "on-primary": "#ffffff", "inverse-surface": "#213145", "on-tertiary-fixed": "#001d31", "accent-lime-light": "#ecfccb", "on-tertiary-fixed-variant": "#004b73", "error-container": "#ffdad6", "border-subtle": "#e2e8f0", "on-tertiary-container": "#004d77", "secondary": "#565e74", "tertiary-container": "#70bfff", "on-surface-variant": "#424936", "surface-container": "#e5eeff", "category-stavba": "#f59e0b", "background": "#f8f9ff", "primary-fixed": "#acf847", "primary": "#416900", "on-tertiary": "#ffffff", "accent-lime": "#94C83D", "surface-container-low": "#eff4ff", "tertiary": "#006398", "surface-card": "#ffffff", "surface-container-highest": "#d3e4fe", "error": "#ba1a1a", "surface-dark-subtle": "#1f2937", "accent-lime-dark": "#4d7c0f", "border-dark": "#334155", "category-zmena": "#84cc16", "surface-dark": "#111827", "outline": "#727a64", "on-surface": "#0b1c30", "on-primary-container": "#315200", "surface-dim": "#cbdbf5", "surface": "#f8f9ff", "inverse-primary": "#91db2a", "on-background": "#0b1c30", "surface-container-high": "#dce9ff", "inverse-on-surface": "#eaf1ff", "on-secondary-fixed": "#131b2e" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "2rem", "margin": "2rem", "space-2xs": "0.25rem", "space-md": "1rem", "gutter-mobile": "1rem", "space-4xl": "6rem", "space-xs": "0.5rem", "space-sm": "0.75rem", "margin-mobile": "1rem", "space-2xl": "3rem", "space-lg": "1.5rem", "space-3xl": "4.5rem", "space-3xs": "0.125rem", "gutter": "1.5rem" }, "fontFamily": { "display-hero-mobile": [ "Plus Jakarta Sans" ], "kpi-metric": [ "Plus Jakarta Sans" ], "label-uppercase": [ "Inter" ], "kpi-metric-mobile": [ "Plus Jakarta Sans" ], "body-sm": [ "Inter" ], "headline-lg": [ "Plus Jakarta Sans" ], "body-lg": [ "Inter" ], "label-badge": [ "Inter" ], "headline-lg-mobile": [ "Plus Jakarta Sans" ], "code-data": [ "Inter" ], "display-hero": [ "Plus Jakarta Sans" ], "headline-md": [ "Plus Jakarta Sans" ], "headline-sm": [ "Plus Jakarta Sans" ], "body-md": [ "Inter" ] }, "fontSize": { "display-hero-mobile": [ "36px", { "lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "kpi-metric": [ "48px", { "lineHeight": "52px", "letterSpacing": "-0.03em", "fontWeight": "800" } ], "label-uppercase": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" } ], "kpi-metric-mobile": [ "36px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "body-sm": [ "13px", { "lineHeight": "18px", "fontWeight": "400" } ], "headline-lg": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "700" } ], "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], "label-badge": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "600" } ], "headline-lg-mobile": [ "26px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "code-data": [ "13px", { "lineHeight": "18px", "fontWeight": "500" } ], "display-hero": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800" } ], "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" } ], "headline-sm": [ "18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-md": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-dark/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.12)]"><div class="h-20 max-w-[1280px] mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-shrink-0"><div class="flex items-center gap-space-xs"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center font-headline-sm text-surface-dark font-extrabold shadow-sm">T</div><div class="flex flex-col"><div class="flex items-center gap-space-2xs"><span class="font-headline-sm text-headline-sm text-surface-container-lowest font-bold tracking-tight">Třeboňáci</span><span class="font-label-uppercase text-label-uppercase text-accent-lime uppercase tracking-wider bg-surface-dark-subtle px-1.5 py-0.5 rounded">Radnice &amp; Data</span></div><span class="font-code-data text-[11px] text-surface-variant/70">Samospráva &amp; Otevřená data města Třeboň</span></div></div><div class="hidden xl:flex items-center gap-space-2xs pl-space-sm border-l border-border-dark"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span><span class="font-code-data text-code-data text-surface-variant/80">Aktualizace: Dnes 04:30</span></div></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm"><a class="px-3 py-2 font-body-sm text-body-sm text-surface-variant/80 hover:bg-surface-dark-subtle hover:text-surface-container-lowest rounded-lg transition-colors" data-path="prehled-deni" href="#">Přehled dění</a><a class="px-3 py-2 font-body-sm text-body-sm text-surface-variant/80 hover:bg-surface-dark-subtle hover:text-surface-container-lowest rounded-lg transition-colors" data-path="stavby-a-opravy" href="#">Stavby a opravy</a><a class="px-3 py-2 font-body-sm text-body-sm text-surface-variant/80 hover:bg-surface-dark-subtle hover:text-surface-container-lowest rounded-lg transition-colors" data-path="rozhodnuti-rady" href="#">Rozhodnutí rady</a><a class="px-3 py-2 font-body-sm text-body-sm text-surface-variant/80 hover:bg-surface-dark-subtle hover:text-surface-container-lowest rounded-lg transition-colors" data-path="mista-a-sluzby" href="#">Místa a služby</a><a class="px-3 py-2 font-body-sm text-body-sm text-surface-variant/80 hover:bg-surface-dark-subtle hover:text-surface-container-lowest rounded-lg transition-colors" data-path="rozpocet" href="#">Rozpočet</a><a class="px-3 py-2 font-body-sm text-body-sm text-surface-variant/80 hover:bg-surface-dark-subtle hover:text-surface-container-lowest rounded-lg transition-colors" data-path="interaktivni-mapa" href="#">Interaktivní mapa</a></nav><div class="flex items-center gap-space-sm flex-shrink-0"><div class="hidden sm:flex items-center gap-space-2xs bg-surface-dark-subtle px-3 py-1.5 rounded-lg text-surface-variant/70 border border-border-dark"><span class="material-symbols-outlined text-[16px]">search</span><span class="font-code-data text-[12px]">Hledat v datech</span><kbd class="font-code-data text-[10px] bg-surface-dark px-1.5 py-0.5 rounded text-surface-variant/90 border border-border-dark">⌘K</kbd></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background flex-1"><div class="flex flex-col w-full">
+<!-- Hlavní kontejner stránky s responzivními okraji -->
+<div class="max-w-[1280px] w-full mx-auto px-margin-mobile lg:px-margin flex flex-col gap-space-xl pb-space-3xl">
+<!-- 1. SUB-HEADER & METRIKY SECTION -->
+<header class="flex flex-col gap-space-lg pt-space-lg">
+<!-- Breadcrumb & Live GIS meta badge -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-uppercase text-label-uppercase text-secondary tracking-wider uppercase">GIS &amp; Otevřená data</span>
+<span class="text-secondary/40 font-code-data text-code-data">/</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Prostorová lokalizace investic a staveb města Třeboň</span>
+</div>
+<div class="inline-flex items-center gap-2 bg-surface-container px-3 py-1 rounded-full shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-code-data text-code-data text-on-surface font-semibold">Geodatabáze live: RÚIAN + E-ZAK + Katastr 2026</span>
+<span class="font-code-data text-[11px] text-secondary bg-surface-container-lowest px-1.5 py-0.5 rounded">v2.4.1</span>
+</div>
+</div>
+<!-- Titul, anotace a primární nástrojové akce -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-extrabold">
+            Interaktivní mapa projektů a investic v Třeboni
+          </h1>
+<p class="font-body-lg text-body-lg text-secondary">
+            Kde přesně ve městě se staví, opravuje a investuje – každá stavba má přímou vazbu na smlouvy v Registru smluv, veřejné zakázky v E-ZAK a usnesení Rady města.
+          </p>
+</div>
+<!-- Akční tlačítka vpravo -->
+<div class="flex flex-wrap items-center gap-space-xs flex-shrink-0">
+<button class="inline-flex items-center gap-2 px-3.5 py-2.5 rounded-lg bg-surface-card text-on-surface font-headline-sm text-sm font-semibold shadow-sm hover:bg-surface-container transition-all" id="btn-toggle-layers">
+<span class="material-symbols-outlined text-[18px] text-primary">layers</span>
+<span>Vrstvy mapy</span>
+</button>
+<button class="inline-flex items-center gap-2 px-3.5 py-2.5 rounded-lg bg-surface-card text-on-surface font-headline-sm text-sm font-semibold shadow-sm hover:bg-surface-container transition-all" id="btn-export-data">
+<span class="material-symbols-outlined text-[18px] text-secondary">download</span>
+<span>Export GeoJSON / CSV</span>
+</button>
+<button class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-sm font-bold shadow-sm hover:brightness-105 transition-all" id="btn-report-issue">
+<span class="material-symbols-outlined text-[18px]">add_alert</span>
+<span>Nahlásit nepřesnost</span>
+</button>
+</div>
+</div>
+<!-- KPI Karty - datové metriky -->
+<div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-space-sm pt-space-xs">
+<!-- Celkem v mapě -->
+<div class="bg-surface-card rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-uppercase text-label-uppercase text-secondary uppercase">Celkem v mapě</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">pin_drop</span>
+</div>
+<div class="my-space-xs flex items-baseline gap-2">
+<span class="font-kpi-metric text-kpi-metric text-on-surface">48</span>
+<span class="font-code-data text-code-data text-secondary">lokalit</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary/80">ze 148 evidovaných v GIS</span>
+</div>
+<!-- Aktivní staveniště -->
+<div class="bg-surface-card rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-uppercase text-label-uppercase text-category-stavba uppercase">Aktivní staveniště</span>
+<span class="w-2.5 h-2.5 rounded-full bg-category-stavba animate-ping"></span>
+</div>
+<div class="my-space-xs flex items-baseline gap-2">
+<span class="font-kpi-metric text-kpi-metric text-on-surface text-category-stavba">14</span>
+<span class="font-code-data text-code-data text-secondary">staveb</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary/80">zábor komunikací či staveniště</span>
+</div>
+<!-- V přípravě & projektování -->
+<div class="bg-surface-card rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-uppercase text-label-uppercase text-category-rozhodnuti uppercase">V přípravě &amp; projektování</span>
+<span class="material-symbols-outlined text-category-rozhodnuti text-[18px]">architecture</span>
+</div>
+<div class="my-space-xs flex items-baseline gap-2">
+<span class="font-kpi-metric text-kpi-metric text-on-surface text-category-rozhodnuti">22</span>
+<span class="font-code-data text-code-data text-secondary">míst</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary/80">studie, DÚR, DSP a směny</span>
+</div>
+<!-- Dokončeno -->
+<div class="bg-surface-card rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-uppercase text-label-uppercase text-primary uppercase">Dokončeno (12 měs.)</span>
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+</div>
+<div class="my-space-xs flex items-baseline gap-2">
+<span class="font-kpi-metric text-kpi-metric text-on-surface">12</span>
+<span class="font-code-data text-code-data text-secondary">kolaudací</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary/80">předáno do majetku města</span>
+</div>
+<!-- Objem na mapě -->
+<div class="bg-surface-card rounded-xl p-space-md shadow-sm flex flex-col justify-between col-span-2 md:col-span-3 xl:col-span-1">
+<div class="flex items-center justify-between">
+<span class="font-label-uppercase text-label-uppercase text-secondary uppercase">Objem na mapě</span>
+<span class="material-symbols-outlined text-accent-lime-dark text-[18px]">payments</span>
+</div>
+<div class="my-space-xs flex items-baseline gap-1">
+<span class="font-kpi-metric text-kpi-metric text-on-surface">142,8</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">mil. Kč</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary/80">vysoutěženo vč. DPH (E-ZAK)</span>
+</div>
+</div>
+</header>
+<!-- 2. HLAVNÍ PRACOVNÍ PLOCHA (SPLIT LAYOUT) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- A) LEVÝ GIS BOČNÍ PANEL (cca 420px na velkém monitoru: 4 sloupce z 12, popř. 5 z 12) -->
+<aside class="lg:col-span-5 xl:col-span-4 flex flex-col gap-space-md bg-surface-card p-space-md rounded-2xl shadow-sm">
+<!-- Vyhledávání v mapových datech -->
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-secondary text-[20px]">search</span>
+<input class="w-full pl-10 pr-20 py-2.5 bg-surface-container-low rounded-lg text-on-surface font-body-md placeholder:text-secondary/70 focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container shadow-inner text-sm transition-all" id="map-search-input" placeholder="Hledat ulici, parcelu, školu či zakázku..." type="text"/>
+<div class="absolute right-2.5 top-1/2 -translate-y-1/2 flex items-center gap-1">
+<button class="hidden text-secondary hover:text-on-surface p-1 rounded-full" id="clear-search-btn">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+<kbd class="font-code-data text-[10px] bg-surface-card px-1.5 py-0.5 rounded text-secondary shadow-sm">⌘K</kbd>
+</div>
+</div>
+<!-- Rychlé filtry stavu (Chips) -->
+<div class="flex flex-col gap-space-2xs">
+<span class="font-label-uppercase text-label-uppercase text-secondary uppercase">Stav realizace</span>
+<div class="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none" id="status-chips-container">
+<button class="status-chip active flex-shrink-0 px-3 py-1.5 rounded-full text-xs font-semibold bg-surface-dark text-surface-container-lowest transition-colors flex items-center gap-1.5" data-filter="all">
+<span>Všechny</span>
+<span class="bg-surface-dark-subtle px-1.5 py-0.2 rounded-full text-[10px] text-accent-lime font-code-data">48</span>
+</button>
+<button class="status-chip flex-shrink-0 px-3 py-1.5 rounded-full text-xs font-semibold bg-surface-container text-secondary hover:bg-surface-variant transition-colors flex items-center gap-1.5" data-filter="active">
+<span class="w-2 h-2 rounded-full bg-category-stavba"></span>
+<span>Stavba</span>
+<span class="font-code-data text-[10px] text-secondary">14</span>
+</button>
+<button class="status-chip flex-shrink-0 px-3 py-1.5 rounded-full text-xs font-semibold bg-surface-container text-secondary hover:bg-surface-variant transition-colors flex items-center gap-1.5" data-filter="delay">
+<span class="text-category-kriticke font-bold text-[12px]">⚠️</span>
+<span>Zpoždění</span>
+<span class="font-code-data text-[10px] text-secondary">3</span>
+</button>
+<button class="status-chip flex-shrink-0 px-3 py-1.5 rounded-full text-xs font-semibold bg-surface-container text-secondary hover:bg-surface-variant transition-colors flex items-center gap-1.5" data-filter="tender">
+<span>E-ZAK soutěž</span>
+<span class="font-code-data text-[10px] text-secondary">5</span>
+</button>
+<button class="status-chip flex-shrink-0 px-3 py-1.5 rounded-full text-xs font-semibold bg-surface-container text-secondary hover:bg-surface-variant transition-colors flex items-center gap-1.5" data-filter="study">
+<span>Ve studii</span>
+<span class="font-code-data text-[10px] text-secondary">22</span>
+</button>
+</div>
+</div>
+<!-- Výběr tematických vrstev -->
+<div class="flex flex-col gap-space-2xs bg-surface-container-low p-space-sm rounded-xl">
+<div class="flex items-center justify-between">
+<span class="font-label-uppercase text-label-uppercase text-secondary uppercase">Tematické vrstvy GIS</span>
+<span class="font-code-data text-[11px] text-primary font-bold">5 aktivních</span>
+</div>
+<div class="grid grid-cols-2 gap-1.5 pt-1">
+<label class="flex items-center gap-2 p-1.5 rounded-lg bg-surface-card hover:bg-surface-container transition-colors cursor-pointer text-xs font-medium text-on-surface shadow-2xs">
+<input checked="" class="w-3.5 h-3.5 accent-primary rounded cursor-pointer" type="checkbox"/>
+<span class="truncate">Doprava &amp; cesty</span>
+<span class="ml-auto font-code-data text-[10px] text-secondary">18</span>
+</label>
+<label class="flex items-center gap-2 p-1.5 rounded-lg bg-surface-card hover:bg-surface-container transition-colors cursor-pointer text-xs font-medium text-on-surface shadow-2xs">
+<input checked="" class="w-3.5 h-3.5 accent-primary rounded cursor-pointer" type="checkbox"/>
+<span class="truncate">Bydlení &amp; DPS</span>
+<span class="ml-auto font-code-data text-[10px] text-secondary">6</span>
+</label>
+<label class="flex items-center gap-2 p-1.5 rounded-lg bg-surface-card hover:bg-surface-container transition-colors cursor-pointer text-xs font-medium text-on-surface shadow-2xs">
+<input checked="" class="w-3.5 h-3.5 accent-primary rounded cursor-pointer" type="checkbox"/>
+<span class="truncate">Školství &amp; sport</span>
+<span class="ml-auto font-code-data text-[10px] text-secondary">9</span>
+</label>
+<label class="flex items-center gap-2 p-1.5 rounded-lg bg-surface-card hover:bg-surface-container transition-colors cursor-pointer text-xs font-medium text-on-surface shadow-2xs">
+<input checked="" class="w-3.5 h-3.5 accent-primary rounded cursor-pointer" type="checkbox"/>
+<span class="truncate">Lázně a parky</span>
+<span class="ml-auto font-code-data text-[10px] text-secondary">8</span>
+</label>
+</div>
+</div>
+<!-- Seznam projektových karet -->
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-uppercase text-label-uppercase text-secondary uppercase">Vybrané akce v zobrazení (4)</span>
+<span class="font-code-data text-code-data text-secondary">Řazeno: dle investice</span>
+</div>
+<div class="flex flex-col gap-space-sm max-h-[580px] overflow-y-auto pr-1">
+<!-- Karta 1: Aktivní / Vybraná v mapě -->
+<div class="project-card cursor-pointer bg-surface-container-lowest p-space-md rounded-xl shadow-md transition-all duration-200 relative overflow-hidden bg-gradient-to-r from-primary-container/10 via-surface-card to-surface-card" id="card-pin-01">
+<div class="flex items-start justify-between gap-2 mb-2">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-category-stavba/15 text-category-stavba flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-category-stavba"></span>
+                  Stavba probíhá (64 %)
+                </span>
+<span class="font-code-data text-code-data text-secondary bg-surface-container px-1.5 py-0.5 rounded">PIN #01</span>
+</div>
+<span class="font-code-data text-[11px] text-secondary font-medium">Třeboň II</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-snug">
+              Stavební úpravy ul. Budějovická (Dukelská – Táboritská)
+            </h3>
+<p class="font-body-sm text-body-sm text-secondary mt-1.5 line-clamp-2">
+              Kompletní rekonstrukce povrchů, nové zastávky MHD s přístřešky a podzemní vsakovací retenční rýhy.
+            </p>
+<!-- Rozpočet a zhotovitel -->
+<div class="mt-3 pt-3 bg-surface-container-low p-2.5 rounded-lg flex flex-col gap-1.5">
+<div class="flex items-center justify-between text-xs">
+<span class="font-label-uppercase text-label-uppercase text-secondary uppercase">Rozpočet ze smlouvy</span>
+<span class="font-code-data text-code-data text-on-surface font-bold">19,57 mil. Kč vč. DPH</span>
+</div>
+<div class="flex items-center justify-between text-xs">
+<span class="font-label-uppercase text-label-uppercase text-secondary uppercase">Zhotovitel</span>
+<span class="font-body-sm text-xs font-semibold text-on-surface truncate">STRABAG a.s.</span>
+</div>
+<div class="flex items-center justify-between text-xs text-secondary font-code-data">
+<span>GPS: 49.0034° N, 14.7706° E</span>
+<span class="text-primary font-semibold">Kolaudace: 15. 1. 2027</span>
+</div>
+</div>
+<div class="mt-3 flex items-center justify-between pt-1">
+<span class="font-code-data text-[11px] text-secondary">E-ZAK: VZ-2026-089</span>
+<a class="inline-flex items-center gap-1 font-headline-sm text-xs font-bold text-primary hover:text-accent-lime-dark transition-colors" href="#">
+                Detail karty projektu
+                <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Karta 2: Bertiny lázně -->
+<div class="project-card cursor-pointer bg-surface-card p-space-md rounded-xl shadow-sm hover:shadow-md transition-all duration-200" id="card-pin-04">
+<div class="flex items-start justify-between gap-2 mb-2">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-primary-container/20 text-on-primary-container flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                  Realizace stavby
+                </span>
+<span class="font-code-data text-code-data text-secondary bg-surface-container px-1.5 py-0.5 rounded">PIN #04</span>
+</div>
+<span class="font-code-data text-[11px] text-secondary font-medium">Bertiny lázně</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-snug">
+              Revitalizace kolonády a parku Bertiných lázní
+            </h3>
+<p class="font-body-sm text-body-sm text-secondary mt-1.5 line-clamp-2">
+              Bezbariérové propojení s historickým jádrem, nová lázeňská alej podél Zlaté stoky a energeticky úsporné LED lucerny.
+            </p>
+<div class="mt-3 pt-3 bg-surface-container-low p-2.5 rounded-lg flex flex-col gap-1.5">
+<div class="flex items-center justify-between text-xs">
+<span class="font-label-uppercase text-label-uppercase text-secondary uppercase">Rozpočet</span>
+<span class="font-code-data text-code-data text-on-surface font-bold">14,20 mil. Kč vč. DPH</span>
+</div>
+<div class="flex items-center justify-between text-xs">
+<span class="font-label-uppercase text-label-uppercase text-secondary uppercase">Zhotovitel</span>
+<span class="font-body-sm text-xs font-semibold text-on-surface truncate">Swietelsky stavební s.r.o.</span>
+</div>
+</div>
+<div class="mt-3 flex items-center justify-between pt-1">
+<span class="font-code-data text-[11px] text-secondary">Kolaudace: 12/2026</span>
+<a class="inline-flex items-center gap-1 font-headline-sm text-xs font-semibold text-secondary hover:text-on-surface transition-colors" href="#">
+                Zobrazit na mapě
+                <span class="material-symbols-outlined text-[16px]">my_location</span>
+</a>
+</div>
+</div>
+<!-- Karta 3: Táboritská (Varování zpoždění) -->
+<div class="project-card cursor-pointer bg-surface-card p-space-md rounded-xl shadow-sm hover:shadow-md transition-all duration-200" id="card-pin-05">
+<div class="flex items-start justify-between gap-2 mb-2">
+<span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-category-kriticke/15 text-category-kriticke flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+                Zpoždění dodávky (+35 dní)
+              </span>
+<span class="font-code-data text-code-data text-secondary bg-surface-container px-1.5 py-0.5 rounded">PIN #05</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-snug">
+              Rekonstrukce vnitrobloku ul. Táboritská
+            </h3>
+<p class="font-body-sm text-body-sm text-secondary mt-1.5 line-clamp-2">
+              Odhalena nepředvídaná podzemní kabelová trasa E.ON bez předchozí evidence v GIS. Řešeno dodatkem č. 2 v Radě města.
+            </p>
+<div class="mt-3 pt-3 bg-error-container/40 p-2.5 rounded-lg flex flex-col gap-1.5">
+<div class="flex items-center justify-between text-xs">
+<span class="font-label-uppercase text-label-uppercase text-secondary uppercase">Rozpočet</span>
+<span class="font-code-data text-code-data text-on-surface font-bold">6,84 mil. Kč vč. DPH</span>
+</div>
+<div class="flex items-center justify-between text-xs">
+<span class="font-label-uppercase text-label-uppercase text-secondary uppercase">Zhotovitel</span>
+<span class="font-body-sm text-xs font-semibold text-on-surface truncate">VKB stavby s.r.o.</span>
+</div>
+</div>
+<div class="mt-3 flex items-center justify-between pt-1">
+<span class="font-code-data text-[11px] text-category-kriticke font-semibold">Dodatek č. 2 schválen</span>
+<a class="inline-flex items-center gap-1 font-headline-sm text-xs font-semibold text-secondary hover:text-on-surface transition-colors" href="#">
+                Zápis z rady →
+              </a>
+</div>
+</div>
+<!-- Karta 4: Nádražní ulice -->
+<div class="project-card cursor-pointer bg-surface-card p-space-md rounded-xl shadow-sm hover:shadow-md transition-all duration-200" id="card-pin-12">
+<div class="flex items-start justify-between gap-2 mb-2">
+<span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-category-rozhodnuti/15 text-category-rozhodnuti flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-category-rozhodnuti"></span>
+                Příprava DSP / Projekt
+              </span>
+<span class="font-code-data text-code-data text-secondary bg-surface-container px-1.5 py-0.5 rounded">PIN #12</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-snug">
+              Nádražní ulice – rekonstrukce chodníků a cyklostezka
+            </h3>
+<p class="font-body-sm text-body-sm text-secondary mt-1.5 line-clamp-2">
+              Propojení vlakového nádraží Třeboň lázně s centrem města, bezpečná okružní křižovatka u ZŠ a výsadba 24 platanů.
+            </p>
+<div class="mt-3 pt-3 bg-surface-container-low p-2.5 rounded-lg flex flex-col gap-1.5">
+<div class="flex items-center justify-between text-xs">
+<span class="font-label-uppercase text-label-uppercase text-secondary uppercase">Odhadovaný rozpočet</span>
+<span class="font-code-data text-code-data text-on-surface font-bold">12,40 mil. Kč</span>
+</div>
+<div class="flex items-center justify-between text-xs">
+<span class="font-label-uppercase text-label-uppercase text-secondary uppercase">Fáze</span>
+<span class="font-body-sm text-xs font-semibold text-on-surface">Zahájení Q2 2027</span>
+</div>
+</div>
+<div class="mt-3 flex items-center justify-between pt-1">
+<span class="font-code-data text-[11px] text-secondary">Projektant vybrán</span>
+<a class="inline-flex items-center gap-1 font-headline-sm text-xs font-semibold text-secondary hover:text-on-surface transition-colors" href="#">
+                Zobrazit na mapě
+                <span class="material-symbols-outlined text-[16px]">my_location</span>
+</a>
+</div>
+</div>
+</div>
+</aside>
+<!-- B) PRAVÉ MAPOVÉ PLÁTNO (DYNAMICKÁ GIS VIZUALIZACE) -->
+<main class="lg:col-span-7 xl:col-span-8 flex flex-col gap-space-sm">
+<!-- Horní ovládací lišta mapy -->
+<div class="bg-surface-card p-space-xs rounded-xl shadow-sm flex flex-wrap items-center justify-between gap-space-xs">
+<!-- Přepínače mapové vrstvy -->
+<div class="flex items-center gap-1 bg-surface-container-low p-1 rounded-lg">
+<button class="layer-tab active px-3 py-1.5 rounded-md font-body-sm text-xs font-bold bg-surface-dark text-surface-container-lowest transition-all">
+              Základní GIS
+            </button>
+<button class="layer-tab px-3 py-1.5 rounded-md font-body-sm text-xs font-medium text-secondary hover:text-on-surface transition-all">
+              Letecká 2025/2026
+            </button>
+<button class="layer-tab px-3 py-1.5 rounded-md font-body-sm text-xs font-medium text-secondary hover:text-on-surface transition-all">
+              Katastr (ČÚZK)
+            </button>
+<button class="layer-tab px-3 py-1.5 rounded-md font-body-sm text-xs font-medium text-secondary hover:text-on-surface transition-all">
+              Územní plán 2030
+            </button>
+</div>
+<!-- GIS ovládací prvky -->
+<div class="flex items-center gap-1.5">
+<div class="flex items-center bg-surface-container-low rounded-lg p-0.5">
+<button class="p-1.5 hover:bg-surface-card rounded text-secondary hover:text-on-surface" id="zoom-in" title="Přiblížit">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+<button class="p-1.5 hover:bg-surface-card rounded text-secondary hover:text-on-surface" id="zoom-out" title="Oddálit">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+</div>
+<button class="p-1.5 bg-surface-container-low hover:bg-surface-card rounded-lg text-secondary hover:text-on-surface" title="Měřit vzdálenost">
+<span class="material-symbols-outlined text-[18px]">straighten</span>
+</button>
+<button class="p-1.5 bg-surface-container-low hover:bg-surface-card rounded-lg text-secondary hover:text-on-surface" title="Moje poloha">
+<span class="material-symbols-outlined text-[18px]">near_me</span>
+</button>
+<button class="p-1.5 bg-surface-container-low hover:bg-surface-card rounded-lg text-secondary hover:text-on-surface" title="Zvětšit na celou obrazovku">
+<span class="material-symbols-outlined text-[18px]">fullscreen</span>
+</button>
+</div>
+</div>
+<!-- GIS Canvas Kontejner -->
+<div class="relative w-full h-[620px] rounded-2xl overflow-hidden shadow-md bg-surface-container-low flex flex-col justify-between select-none">
+<!-- Podkladová GIS vektorová mapa Třeboně (SVGs stylizované jako kartografické vrstvy) -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none" fill="none" preserveaspectratio="xMidYMid slice" viewbox="0 0 900 620">
+<!-- Pozadí terénu města -->
+<rect fill="#f1f5f9" height="620" width="900"></rect>
+<!-- Lesní a zelené plochy (Zámecký park, břehy rybníků) -->
+<path d="M 120 180 C 180 150, 260 170, 290 220 C 310 260, 280 320, 230 330 C 170 340, 130 300, 110 250 Z" fill="#dcfce7" opacity="0.8"></path>
+<path d="M 680 80 C 760 90, 830 140, 810 220 C 790 280, 710 290, 660 250 C 620 220, 640 120, 680 80 Z" fill="#dcfce7" opacity="0.7"></path>
+<path d="M 400 480 C 500 460, 560 520, 530 580 C 480 620, 390 610, 370 550 Z" fill="#dcfce7" opacity="0.8"></path>
+<!-- Rybník Svět (výrazná vodní plocha na jihu Třeboně) -->
+<path d="M 80 390 C 140 370, 220 380, 270 420 C 320 460, 350 540, 310 600 C 240 640, 120 620, 70 560 C 30 510, 40 430, 80 390 Z" fill="#bae6fd" stroke="#7dd3fc" stroke-width="2"></path>
+<!-- Opatovický rybník (jihovýchod) -->
+<path d="M 450 490 C 520 470, 650 510, 690 560 C 720 600, 670 640, 580 640 C 490 640, 420 560, 450 490 Z" fill="#bae6fd" stroke="#7dd3fc" stroke-width="2"></path>
+<!-- Zlatá stoka (historický vodní kanál protínající město z jihu na sever) -->
+<path d="M 120 610 Q 180 470 230 380 T 310 260 T 360 170 T 420 80 T 470 0" fill="none" stroke="#38bdf8" stroke-dasharray="6 3" stroke-linecap="round" stroke-width="4"></path>
+<!-- Hlavní komunikační síť (Silnice I/34, Dukelská, Táboritská, Budějovická, Jiráskova) -->
+<!-- Obchvat / I/34 -->
+<path d="M 0 140 C 200 130, 450 110, 890 90" fill="none" stroke="#cbd5e1" stroke-linecap="round" stroke-width="8"></path>
+<!-- Budějovická ulice (ústřední rekonstruovaná tepna) -->
+<path d="M 240 370 L 460 280 L 610 220" fill="none" stroke="#fdba74" stroke-linecap="round" stroke-width="6"></path>
+<!-- Dukelská a Táboritská -->
+<path d="M 330 150 L 370 270 L 410 420 L 450 530" fill="none" stroke="#e2e8f0" stroke-linecap="round" stroke-width="5"></path>
+<path d="M 460 280 L 480 390 L 520 470" fill="none" stroke="#fca5a5" stroke-dasharray="4 2" stroke-linecap="round" stroke-width="4"></path>
+<!-- Nádražní ulice směrem k vlakovému nádraží -->
+<path d="M 380 230 L 630 160 L 760 120" fill="none" stroke="#93c5fd" stroke-dasharray="5 3" stroke-width="4"></path>
+<!-- Budovy & urbanistické bloky (městské jádro a zástavba) -->
+<rect fill="#cbd5e1" height="40" opacity="0.6" rx="3" width="35" x="290" y="270"></rect>
+<rect fill="#cbd5e1" height="25" opacity="0.6" rx="3" width="40" x="335" y="290"></rect>
+<rect fill="#cbd5e1" height="30" opacity="0.6" rx="3" width="55" x="310" y="325"></rect>
+<rect fill="#cbd5e1" height="35" opacity="0.6" rx="3" width="45" x="420" y="230"></rect>
+<rect fill="#cbd5e1" height="40" opacity="0.5" rx="3" width="60" x="520" y="240"></rect>
+<rect fill="#cbd5e1" height="45" opacity="0.5" rx="3" width="50" x="480" y="310"></rect>
+</svg>
+<!-- Topografické a geografické štítky (Názvy čtvrtí, rybníků a památek) -->
+<div class="absolute inset-0 pointer-events-none">
+<!-- Názvy rybníků -->
+<span class="absolute left-20 bottom-36 font-headline-sm text-xs font-bold tracking-widest uppercase text-sky-800/60 rotate-[-12deg]">
+              Rybník Svět
+            </span>
+<span class="absolute right-48 bottom-16 font-headline-sm text-xs font-bold tracking-widest uppercase text-sky-800/60 rotate-[6deg]">
+              Opatovický rybník
+            </span>
+<span class="absolute left-64 top-40 font-code-data text-[11px] font-semibold text-sky-600/70 rotate-[35deg]">
+              ~ Zlatá stoka ~
+            </span>
+<!-- Názvy městských částí -->
+<span class="absolute left-72 top-64 font-headline-sm text-sm font-extrabold text-on-surface/75 bg-surface-card/60 backdrop-blur-xs px-2 py-0.5 rounded">
+              Třeboň – Historické jádro &amp; Zámek
+            </span>
+<span class="absolute right-48 top-44 font-headline-sm text-xs font-bold text-secondary/70">
+              Třeboň II
+            </span>
+<span class="absolute right-24 top-24 font-headline-sm text-xs font-bold text-secondary/60">
+              Kopeček
+            </span>
+<span class="absolute left-40 top-32 font-headline-sm text-xs font-bold text-secondary/70">
+              Bertiny lázně
+            </span>
+<span class="absolute left-16 top-52 font-headline-sm text-xs font-bold text-secondary/60">
+              Lázně Aurora
+            </span>
+</div>
+<!-- Klastry projektů v mapě -->
+<div class="absolute left-[330px] top-[260px] cursor-pointer group" title="8 projektů v Historickém centru">
+<div class="w-7 h-7 rounded-full bg-surface-dark text-accent-lime font-code-data text-xs font-bold flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+              8
+            </div>
+<span class="absolute -bottom-4 left-1/2 -translate-x-1/2 whitespace-nowrap text-[10px] font-bold text-surface-dark bg-surface-card/90 px-1 rounded shadow-2xs">Centrum</span>
+</div>
+<div class="absolute right-[110px] top-[140px] cursor-pointer group" title="4 projekty v části Kopeček">
+<div class="w-6 h-6 rounded-full bg-surface-dark text-accent-lime font-code-data text-xs font-bold flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
+              4
+            </div>
+<span class="absolute -bottom-4 left-1/2 -translate-x-1/2 whitespace-nowrap text-[10px] font-bold text-surface-dark bg-surface-card/90 px-1 rounded shadow-2xs">Kopeček</span>
+</div>
+<!-- Mapové body (Piny) -->
+<!-- Pin #2: Bertiny lázně -->
+<div class="absolute left-[210px] top-[170px] cursor-pointer group" title="Revitalizace Bertiných lázní">
+<div class="relative flex items-center justify-center">
+<span class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container font-code-data text-xs font-extrabold flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
+                04
+              </span>
+<span class="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-primary"></span>
+</div>
+<span class="font-code-data text-[10px] font-semibold bg-surface-card/90 px-1.5 py-0.5 rounded shadow-sm text-on-surface block mt-1">Bertiny l.</span>
+</div>
+<!-- Pin #3: ZŠ Sokolská (Modrý bod studie) -->
+<div class="absolute left-[280px] top-[215px] cursor-pointer group" title="ZŠ Sokolská – nová tělocvična">
+<div class="w-6 h-6 rounded-full bg-category-rozhodnuti text-surface-container-lowest font-code-data text-[11px] font-bold flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
+              09
+            </div>
+</div>
+<!-- Pin #4: Nádraží lázně (Modrý bod) -->
+<div class="absolute right-[260px] top-[160px] cursor-pointer group" title="Nádražní ulice – chodníky">
+<div class="w-7 h-7 rounded-full bg-category-rozhodnuti text-surface-container-lowest font-code-data text-xs font-bold flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
+              12
+            </div>
+<span class="font-code-data text-[10px] font-semibold bg-surface-card/90 px-1.5 py-0.5 rounded shadow-sm text-on-surface block mt-1">Nádraží</span>
+</div>
+<!-- Pin #5: Táboritská (Varování zpoždění - oranžovo-červený) -->
+<div class="absolute right-[330px] top-[330px] cursor-pointer group" title="Rekonstrukce vnitrobloku Táboritská – Zpoždění">
+<div class="relative flex items-center justify-center">
+<div class="w-8 h-8 rounded-full bg-category-kriticke text-surface-container-lowest font-code-data text-xs font-bold flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[16px]">priority_high</span>
+</div>
+<span class="absolute -top-1 -right-1 w-3 h-3 rounded-full bg-error-container text-category-kriticke flex items-center justify-center font-bold text-[9px] shadow-sm">!</span>
+</div>
+<span class="font-code-data text-[10px] font-bold bg-category-kriticke/10 text-category-kriticke px-1.5 py-0.5 rounded block mt-1">Táboritská</span>
+</div>
+<!-- Pin #1 (Zvýrazněný aktivní bod + INTERAKTIVNÍ POP-UP ŠTÍTEK) -->
+<div class="absolute left-[390px] top-[270px] z-20 flex flex-col items-center">
+<!-- POP-UP KARTA přímo v mapovém plátně -->
+<div class="w-[340px] bg-surface-card p-space-sm rounded-xl shadow-xl border-2 border-primary-container relative -translate-y-2 mb-1 animate-fade-in">
+<!-- Hlavička popupu -->
+<div class="flex items-center justify-between gap-1 pb-1 mb-1 border-b border-surface-container">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-category-stavba animate-ping"></span>
+<span class="font-label-uppercase text-[10px] text-category-stavba font-bold tracking-wider uppercase">Stavba probíhá (64 %)</span>
+</div>
+<span class="font-code-data text-[10px] text-secondary">VZ-2026-089 / E-ZAK</span>
+</div>
+<!-- Obsah popupu -->
+<h4 class="font-headline-sm text-sm text-on-surface font-extrabold leading-tight">
+                Stavební úpravy ul. Budějovická
+              </h4>
+<p class="font-code-data text-[11px] text-secondary mt-0.5">
+                Úsek: Dukelská – Táboritská (km 0,000 – 0,840)
+              </p>
+<!-- Stav a zhotovitel -->
+<div class="mt-2 bg-surface-container-low p-2 rounded-lg text-xs flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="text-secondary font-medium">Zhotovitel:</span>
+<span class="font-semibold text-on-surface">STRABAG a.s.</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-secondary font-medium">Smluvní cena:</span>
+<span class="font-code-data font-bold text-on-surface">19 570 000 Kč vč. DPH</span>
+</div>
+<div class="flex items-center justify-between text-primary font-semibold">
+<span>Kolaudace:</span>
+<span class="font-code-data">15. 1. 2027 (Zbývá 53 dní)</span>
+</div>
+</div>
+<p class="font-body-sm text-[11px] text-secondary mt-1.5">
+<strong class="text-on-surface">Aktuální stav:</strong> Probíhá pokládka podkladních asfaltových vrstev a osazování obrubníků.
+              </p>
+<div class="mt-2.5 flex items-center justify-between">
+<button class="font-headline-sm text-xs font-bold text-primary hover:text-accent-lime-dark inline-flex items-center gap-1">
+                  Otevřít celou kartu projektu
+                  <span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</button>
+<span class="font-code-data text-[10px] text-secondary bg-surface-container px-1 py-0.5 rounded">RÚIAN: 547280</span>
+</div>
+<!-- Malý trojúhelníkový zobáček popupu -->
+<div class="w-3 h-3 bg-surface-card rotate-45 border-r-2 border-b-2 border-primary-container absolute -bottom-1.5 left-1/2 -translate-x-1/2"></div>
+</div>
+<!-- Samotný pulzující Pin na Budějovické -->
+<div class="relative flex items-center justify-center cursor-pointer">
+<span class="absolute w-8 h-8 rounded-full bg-primary-container/40 animate-ping"></span>
+<div class="w-7 h-7 rounded-full bg-primary-container text-on-primary-container font-headline-sm text-xs font-black flex items-center justify-center shadow-lg border-2 border-surface-card">
+                01
+              </div>
+</div>
+</div>
+<!-- Spodní GIS ovládací prvky (Severka, Měřítko, Souřadnice) -->
+<div class="absolute right-4 bottom-14 flex flex-col items-end gap-2">
+<!-- Severka -->
+<div class="w-9 h-9 rounded-full bg-surface-card/90 backdrop-blur-md shadow-md flex items-center justify-center text-on-surface font-code-data text-xs font-bold" title="Sever">
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[14px] text-category-kriticke">navigation</span>
+<span class="text-[9px] -mt-1 font-extrabold">S</span>
+</div>
+</div>
+<!-- Grafické měřítko -->
+<div class="bg-surface-card/90 backdrop-blur-md px-2 py-1 rounded shadow-sm flex flex-col items-center">
+<div class="w-24 h-1.5 border-b-2 border-x-2 border-on-surface flex justify-between text-[8px] font-code-data text-secondary">
+<span>0</span>
+<span>100 m</span>
+<span>250 m</span>
+</div>
+</div>
+</div>
+<!-- Spodní lišta legendy přímo na mapě -->
+<div class="w-full bg-surface-card/95 backdrop-blur-md px-space-md py-2 border-t border-surface-container flex flex-wrap items-center justify-between gap-space-xs text-xs z-10">
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-category-stavba"></span>
+<span class="font-body-sm text-xs text-secondary font-medium">Stavba v realizaci</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-category-rozhodnuti"></span>
+<span class="font-body-sm text-xs text-secondary font-medium">V přípravě / studii</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-accent-lime-dark"></span>
+<span class="font-body-sm text-xs text-secondary font-medium">E-ZAK soutěž</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-category-kriticke"></span>
+<span class="font-body-sm text-xs text-secondary font-medium">Zpoždění / Dodatek</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs text-secondary font-code-data text-[11px]">
+<span>Systém: EPSG:5514 (S-JTSK) &amp; WGS84</span>
+<span>•</span>
+<span class="text-on-surface font-semibold">Třeboň GIS Server 2026</span>
+</div>
+</div>
+</div>
+<!-- Rychlý panel pod mapou: Výpis detailu souřadnic a napojení -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-xs bg-surface-card p-space-sm rounded-xl shadow-sm text-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">verified_user</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-xs text-on-surface font-semibold">Katastrální území</span>
+<span class="font-code-data text-[11px] text-secondary">k.ú. Třeboň [770230], parc. 1420/12</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">account_balance</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-xs text-on-surface font-semibold">Usnesení Rady města</span>
+<span class="font-code-data text-[11px] text-secondary">Číslo usnesení: UR-412/25 ze dne 14.10.</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-accent-lime-dark text-[18px]">contract</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-xs text-on-surface font-semibold">Registr smluv ČR</span>
+<span class="font-code-data text-[11px] text-secondary">ID smlouvy: 18492041 (platná)</span>
+</div>
+</div>
+</div>
+</main>
+</div>
+<!-- 3. SPODNÍ METODICKÁ A NAVIGAČNÍ SEKCE -->
+<section class="mt-space-lg bg-surface-card rounded-2xl p-space-xl shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-xl">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="flex items-center gap-2 text-primary font-headline-sm text-xs uppercase tracking-wider font-bold">
+<span class="material-symbols-outlined text-[18px]">sync_alt</span>
+<span>Automatizované párování datové vrstvy</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-extrabold tracking-tight">
+          Jak párujeme místa s usneseními, smlouvami a rozpočtem města?
+        </h2>
+<p class="font-body-md text-body-md text-secondary">
+          Každý mapový bod v Třeboni je automatizovaně syntetizován robotem portálu Třeboňáci. Propojujeme geometrii parcel z ČÚZK s položkami schváleného investičního rozpočtu, otevřenými zakázkami v systému E-ZAK a finálními dodatky zveřejněnými v Registru smluv ČR. Pokud objevíte na staveništi nesrovnalost, jedním kliknutím zašlete podnět radním.
+        </p>
+</div>
+<!-- Akční navigace dál do portálu -->
+<div class="flex flex-col sm:flex-row md:flex-col lg:flex-row gap-space-xs w-full md:w-auto flex-shrink-0">
+<a class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg bg-surface-dark text-surface-container-lowest font-headline-sm text-sm font-semibold hover:bg-surface-dark-subtle transition-all text-center" href="#">
+<span class="material-symbols-outlined text-[18px] text-accent-lime">timeline</span>
+<span>Časová osa projektů →</span>
+</a>
+<a class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg bg-surface-container-high text-on-surface font-headline-sm text-sm font-semibold hover:bg-surface-container transition-all text-center" href="#">
+<span class="material-symbols-outlined text-[18px]">gavel</span>
+<span>Rozhodnutí Rady města →</span>
+</a>
+</div>
+</section>
+</div>
+</div>
+<script>
+  // Jednoduchá mikrologika pro přepínání filtrů a interakci s vyhledáváním
+  document.addEventListener('DOMContentLoaded', () => {
+    // Ovládání chips filtrů stavu
+    const chips = document.querySelectorAll('.status-chip');
+    chips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        chips.forEach(c => {
+          c.classList.remove('active', 'bg-surface-dark', 'text-surface-container-lowest');
+          c.classList.add('bg-surface-container', 'text-secondary');
+        });
+        chip.classList.add('active', 'bg-surface-dark', 'text-surface-container-lowest');
+        chip.classList.remove('bg-surface-container', 'text-secondary');
+      });
+    });
+
+    // Ovládání přepínačů vrstev
+    const layerTabs = document.querySelectorAll('.layer-tab');
+    layerTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        layerTabs.forEach(t => {
+          t.classList.remove('active', 'bg-surface-dark', 'text-surface-container-lowest', 'font-bold');
+          t.classList.add('text-secondary', 'font-medium');
+        });
+        tab.classList.add('active', 'bg-surface-dark', 'text-surface-container-lowest', 'font-bold');
+        tab.classList.remove('text-secondary', 'font-medium');
+      });
+    });
+
+    // Interaktivní vyhledávání s křížkem
+    const searchInput = document.getElementById('map-search-input');
+    const clearBtn = document.getElementById('clear-search-btn');
+
+    if (searchInput && clearBtn) {
+      searchInput.addEventListener('input', (e) => {
+        if (e.target.value.length > 0) {
+          clearBtn.classList.remove('hidden');
+        } else {
+          clearBtn.classList.add('hidden');
+        }
+      });
+
+      clearBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        clearBtn.classList.add('hidden');
+        searchInput.focus();
+      });
+    }
+
+    // Zkratka ⌘K pro fokus do vyhledávání
+    window.addEventListener('keydown', (e) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault();
+        searchInput?.focus();
+      }
+    });
+
+    // Proklik projektové karty zvýrazní styl
+    const projectCards = document.querySelectorAll('.project-card');
+    projectCards.forEach(card => {
+      card.addEventListener('click', () => {
+        projectCards.forEach(c => c.classList.remove('ring-2', 'ring-primary-container'));
+        card.classList.add('ring-2', 'ring-primary-container');
+      });
+    });
+  });
+</script></main><footer class="w-full bg-surface-dark text-surface-container-lowest pt-space-3xl pb-space-2xl mt-space-3xl"><div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl pb-space-2xl border-b border-border-dark"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-xs"><div class="w-7 h-7 rounded bg-primary-container flex items-center justify-center font-headline-sm text-surface-dark font-bold text-sm">T</div><span class="font-headline-sm text-headline-sm text-surface-container-lowest font-bold tracking-tight">Třeboňáci</span></div><p class="font-body-sm text-body-sm text-surface-variant/70">Nezávislý analytický a informační portál pro transparentní samosprávu města Třeboň a jeho místních částí.</p><div class="flex items-center gap-space-2xs text-accent-lime font-code-data text-code-data"><span class="w-2 h-2 rounded-full bg-primary-container"></span>Veřejná data aktualizována denně</div></div><div class="flex flex-col gap-space-xs"><span class="font-label-uppercase text-label-uppercase text-surface-variant/60 uppercase">Zdroje a registry</span><ul class="flex flex-col gap-space-xs pt-space-2xs"><li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-accent-lime text-[16px]">database</span><a class="font-body-sm text-body-sm text-surface-variant hover:text-accent-lime transition-colors" data-path="otevrena-data" href="#">Otevřená data (CKAN)</a></li><li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-accent-lime text-[16px]">gavel</span><a class="font-body-sm text-body-sm text-surface-variant hover:text-accent-lime transition-colors" data-path="e-zak" href="#">E-ZAK Veřejné zakázky</a></li><li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-accent-lime text-[16px]">description</span><a class="font-body-sm text-body-sm text-surface-variant hover:text-accent-lime transition-colors" data-path="registr-smluv" href="#">Registr smluv ČR</a></li><li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-accent-lime text-[16px]">verified</span><a class="font-body-sm text-body-sm text-surface-variant hover:text-accent-lime transition-colors" data-path="metodika-overovani" href="#">Metodika ověřování</a></li></ul></div><div class="flex flex-col gap-space-xs"><span class="font-label-uppercase text-label-uppercase text-surface-variant/60 uppercase">Struktura portálu</span><ul class="flex flex-col gap-space-xs pt-space-2xs"><li><a class="font-body-sm text-body-sm text-surface-variant hover:text-accent-lime transition-colors" data-path="prehled-deni" href="#">Přehled dění na radnici</a></li><li><a class="font-body-sm text-body-sm text-surface-variant hover:text-accent-lime transition-colors" data-path="stavby-a-opravy" href="#">Mapa a harmonogram investic</a></li><li><a class="font-body-sm text-body-sm text-surface-variant hover:text-accent-lime transition-colors" data-path="rozhodnuti-rady" href="#">Zápisy a usnesení Rady</a></li><li><a class="font-body-sm text-body-sm text-surface-variant hover:text-accent-lime transition-colors" data-path="rozpocet" href="#">Klikací rozpočet města</a></li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-label-uppercase text-label-uppercase text-surface-variant/60 uppercase">Otevřenost &amp; Licence</span><p class="font-body-sm text-body-sm text-surface-variant/70">Všechna strojová data a vizualizace jsou publikována pod licencí Creative Commons CC-BY 4.0. Zpracováno z oficiálních zdrojů Městského úřadu Třeboň.</p><div class="p-space-sm rounded-lg bg-surface-dark-subtle border border-border-dark flex items-center justify-between"><span class="font-code-data text-code-data text-surface-variant">API Endpoint</span><span class="font-code-data text-code-data text-accent-lime font-bold">/v2/trebon/api</span></div></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md text-surface-variant/60"><span class="font-body-sm text-body-sm">© 2024 Třeboňáci. Občanská platforma pro otevřenou samosprávu.</span><div class="flex items-center gap-space-md font-body-sm text-body-sm"><a class="hover:text-surface-container-lowest transition-colors" href="#">Ochrana soukromí</a><a class="hover:text-surface-container-lowest transition-colors" href="#">Prohlášení o přístupnosti</a><a class="hover:text-surface-container-lowest transition-colors" href="#">Kontakt redakce</a></div></div></div></footer></body></html>
