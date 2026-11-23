@@ -97,7 +97,7 @@ def _urci_okruh(cfg: dict, nazev: str | None, karta_okruh: str | None, zalozni: 
     return okruh
 
 
-def sestav(vystup: dict, cfg: dict) -> list[dict]:
+def sestav(vystup: dict, cfg: dict, subjekty: dict[str, str] | None = None) -> list[dict]:
     """Zprávy ze sestavených výstupů (po označení okruhů). Nejnovější nahoře."""
     jednani = {j["id"]: j for j in vystup.get("jednani") or []}
     usneseni = {u["id"]: u for u in vystup.get("usneseni") or []}
@@ -250,24 +250,30 @@ def sestav(vystup: dict, cfg: dict) -> list[dict]:
         zdroj = [{"nazev": f"Zadávací profil (E-ZAK): {z['nazev']}", "url": z["url"]}]
 
         def pridej(udalost: str, datum: str | None, titulek: str, shrnuti: str, castka: dict | None = None,
-                  extra: dict | None = None) -> None:
+                  extra: dict | None = None, cast: str = "") -> None:
             if datum:
-                zpravy.append((extra or {}) | {"id": f"zprava-{z['id']}-{udalost}-{datum}", "druh": "vyberove_rizeni", "datum": datum,
+                zpravy.append((extra or {}) | {"id": f"zprava-{z['id']}{cast}-{udalost}-{datum}", "druh": "vyberove_rizeni", "datum": datum,
                                "okruh": okruh, "titulek": titulek, "shrnuti": shrnuti, "castka": castka,
                                "projekt_id": karta_id, "zdroje": zdroj, "jistota": jistota})
 
+        # zadavatel podle IČO ze zdrojového záznamu (config/subjekty.yaml); bez názvu neutrálně (review #252)
+        zadavatel = (subjekty or {}).get(str(z.get("subjekt_ico") or ""))
         pridej("vyhlaseni", z.get("datum_zahajeni"), f"Výběrové řízení vyhlášeno: {z['nazev']}",
-               f"Město vyhlásilo výběrové řízení „{z['nazev']}“ (řízení: {z.get('rezim') or 'neuvedeno'}).")
-        for c in z.get("casti") or []:
+               (f"Zadavatel {zadavatel} vyhlásil výběrové řízení" if zadavatel else "Bylo vyhlášeno výběrové řízení")
+               + f" „{z['nazev']}“ (řízení: {z.get('rezim') or 'neuvedeno'}).")
+        vice_casti = len(z.get("casti") or []) > 1
+        for i, c in enumerate(z.get("casti") or [], 1):
+            # u vícedílné zakázky rozlišit část, jinak by podpis nebo zrušení dvou částí v jeden den dalo stejné ID
+            cast = f"-cast{i}" if vice_casti else ""
             vitez = [v for v in c.get("vitezove") or [] if v.get("smlouva_uzavrena")]
             if c.get("datum_uzavreni_smlouvy"):
                 kdo = _dodavatel(vitez[:1])[0] if vitez else None
                 castka = _vyber_castku(vitez[0].get("castky") or []) if len(vitez) == 1 else None
                 pridej("vyber", c["datum_uzavreni_smlouvy"], f"Vybrán dodavatel: {c['nazev']}",
                        f"Ve výběrovém řízení „{c['nazev']}“ byla uzavřena smlouva" + (f" s dodavatelem {kdo.rstrip('.')}" if kdo else "") + ".",
-                       castka, _jmeno_podnikatele(vitez[:1]))
+                       castka, _jmeno_podnikatele(vitez[:1]), cast)
             pridej("zruseni", c.get("datum_zruseni"), f"Výběrové řízení zrušeno: {c['nazev']}",
-                   f"Výběrové řízení „{c['nazev']}“ bylo zrušeno.")
+                   f"Výběrové řízení „{c['nazev']}“ bylo zrušeno.", cast=cast)
         u_pl = ukonceni.get(karta_id) if karta_id else None
         if u_pl and u_pl.get("zakazka_id") == z["id"]:
             pridej("ukonceni", u_pl["datum"], f"Plnění ukončeno: {z['nazev']}",

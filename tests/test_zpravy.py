@@ -123,3 +123,28 @@ def test_vyberove_rizeni_udalosti_a_skupina_v_jeden_den():
 def test_razeni_nejnovejsi_nahore():
     z = sestav(smlouvy=[smlouva(1, "A", 900_000, datum="2026-10-01"), smlouva(2, "B", 900_000, datum="2026-11-01")])
     assert [x["id"] for x in z] == ["zprava-rs-2", "zprava-rs-1"]
+
+
+def test_zadavatel_podle_ico_a_neutralne_bez_nazvu():
+    """Review #252 (P1): „Město vyhlásilo“ se nesmí psát u zakázek městských společností."""
+    zak = {"id": "ezak-VZ-950", "subjekt_ico": "25179896", "nazev": "Oprava pavilonu", "url": "u", "rezim": "VZMR",
+           "datum_zahajeni": "2026-10-01", "casti": []}
+    z = zpravy.sestav({"jednani": [J], "zakazky": [zak]}, CFG, {"25179896": "Slatinné lázně Třeboň s.r.o."})
+    assert z[0]["shrnuti"].startswith("Zadavatel Slatinné lázně Třeboň s.r.o. vyhlásil výběrové řízení")
+    z = zpravy.sestav({"jednani": [J], "zakazky": [zak]}, CFG)
+    assert z[0]["shrnuti"].startswith("Bylo vyhlášeno výběrové řízení") and "Město" not in z[0]["shrnuti"]
+
+
+def test_vicedilna_zakazka_ma_unikatni_id_casti():
+    cast = lambda n: {"nazev": f"Část {n}", "datum_uzavreni_smlouvy": "2026-10-19", "datum_zruseni": None,
+                      "vitezove": [{"nazev": "Stavby a.s.", "fyzicka_osoba": False, "smlouva_uzavrena": True, "castky": []}]}
+    zak = {"id": "ezak-VZ-950", "nazev": "Dvě části", "url": "u", "datum_zahajeni": None, "casti": [cast(1), cast(3)]}
+    ids = [x["id"] for x in sestav(zakazky=[zak])]
+    assert ids == sorted(set(ids), reverse=True) and len(ids) == 2
+
+
+def test_id_zprav_v_datech_jsou_unikatni():
+    import json
+    data = Path(__file__).resolve().parent.parent / "data" / "zpravy.json"
+    ids = [x["id"] for x in json.loads(data.read_text(encoding="utf-8"))]
+    assert len(ids) == len(set(ids))
