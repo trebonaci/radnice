@@ -693,7 +693,7 @@ function detail(p){
   return `<div class="zpet"><a href="#stavby">← Stavby a opravy</a><span>${pred?`<a href="#${pred.id}" title="${esc(pred.nazev)}">‹ předchozí</a>`:""}${dal?`<a href="#${dal.id}" title="${esc(dal.nazev)}">další ›</a>`:""}</span></div>${karta(p)}`;
 }
 function menu(h){document.querySelectorAll("#menu a").forEach(a=>{const zak=(a.dataset.zak??=a.getAttribute("href"));
-    a.setAttribute("href",FO.okruh&&["#stavby","#usneseni","#mista"].includes(zak)?zak+"/"+FO.okruh:zak);const on=zak.slice(1)===h;a.classList.toggle("on",on);on?a.setAttribute("aria-current","page"):a.removeAttribute("aria-current");});}
+    a.setAttribute("href",FO.okruh&&["#stavby","#usneseni","#mista","#mapa"].includes(zak)?zak+"/"+FO.okruh:zak);const on=zak.slice(1)===h;a.classList.toggle("on",on);on?a.setAttribute("aria-current","page"):a.removeAttribute("aria-current");});}
 const TITUL="Sledujeme pro vás · Třeboňáci";
 const ALIAS={harmonogram:"casova-osa",zasobnik:"pripravovane"};
 document.addEventListener("click",e=>{const a=e.target.closest("[data-paticka]");if(a){e.preventDefault();const f=document.getElementById("paticka");f.scrollIntoView({behavior:"smooth"});f.focus({preventScroll:true});}});
@@ -761,9 +761,9 @@ function render(){
   closeGis?.();
   closeGis = null;
   let h=decodeURIComponent(location.hash.slice(1));if(ALIAS[h]){history.replaceState(null,"","#"+ALIAS[h]);h=ALIAS[h];}
-  // okruh v adrese: #stavby/skoly, #usneseni/skoly, #mista/skoly
+  // okruh v adrese: #stavby/skoly, #usneseni/skoly, #mista/skoly, #mapa/skoly
   const [str,ok]=h.split("/");
-  if(["stavby","usneseni","mista"].includes(str)){FO.okruh=OKN[ok]?ok:"";h=str;document.body.dataset.cil=str;}
+  if(["stavby","usneseni","mista","mapa"].includes(str)){FO.okruh=OKN[ok]?ok:"";h=str;document.body.dataset.cil=str;}
   const el=document.getElementById("karty");
   if(h==="mapa"){openGis(el);return;}
   if(h==="dokoncene"){zobraz(el,archivProjektu(P),h,"Dokončené projekty");window.scrollTo(0,0);el.querySelectorAll("[data-atema]").forEach(b=>b.onclick=()=>{FA.tema=b.dataset.atema;render();});return;}

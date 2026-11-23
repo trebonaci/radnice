@@ -5,8 +5,8 @@ const GIS_STATES = {
   hotovo: { label: "Dokončeno", color: "#386125" },
 };
 const GIS_SERVICE = { label: "Změny v místech a službách", color: "#68428a" };
-// témata stejná jako v ostatních záložkách (OBLAST, temaChips v sablona.html; připomínka uživatelů 22. 11.)
-const gisFilters = { q: "", state: "", topic: "", view: "map", selected: "" };
+// okruh stejný jako na ostatních stránkách (FO a okruhChips v sablona.html; je v adrese #mapa/<okruh>, 23. 11. 2026)
+const gisFilters = { q: "", state: "", view: "map", selected: "" };
 let closeGis;
 let leafletAssets;
 
@@ -37,7 +37,7 @@ function loadLeaflet() {
 
 function gisProjects() {
   const geo = new Map(GIS.map(item => [item.typ + "/" + item.id, item]));
-  function entry(p, type, changes = []) {
+  function entry(p, type, changes = [], okruh = p.okruh) {
     const id = type + "/" + p.id;
     const loc = geo.get(id);
     const state = p.faze === "dokonceno" ? "hotovo" : p.faze === "probiha" ? "probiha" : "priprava";
@@ -47,8 +47,9 @@ function gisProjects() {
       id, p, type, state: type === "misto" ? "sluzby" : state, changes, places, geometry: loc?.geometrie,
       topic,
       topicLabel: OBLAST[topic],
+      okruh: OKN[okruh] ? okruh : "rozvoj_sprava",
       approx: places.some(place => place.jistota !== "dolozeno"),
-      text: bezDia([p.nazev,p.popis,OBLAST[topic],...changes.map(change => change.text),...places.map(place => place.nazev)].filter(Boolean).join(" ")),
+      text: bezDia([p.nazev,p.popis,OBLAST[topic],OKN[okruh]?.nazev,...changes.map(change => change.text),...places.map(place => place.nazev)].filter(Boolean).join(" ")),
     };
   }
   const services = M.flatMap(place => {
@@ -56,15 +57,14 @@ function gisProjects() {
     return changes.length ? [entry(place,"misto",changes)] : [];
   });
   const unlocated = ZM.filter(change => !M.some(place => place.id === change.misto_id)).map(change =>
-    entry({id:change.id,nazev:change.kdo || change.text,oblast:change.oblast},"misto",[change]));
+    entry({id:change.id,nazev:change.kdo || change.text,oblast:change.oblast},"misto",[change],change.okruh));
   return [...P.map(p => entry(p,"investice")), ...zPol().map(p => entry(p,"zasobnik")), ...services, ...unlocated]
     .sort((a,b) => a.p.nazev.localeCompare(b.p.nazev,"cs"));
 }
 
 function gisHtml(projects) {
-  const topics = [...new Set(projects.map(p => p.topic))];
   return '<section><h1 class="st" tabindex="-1">Mapa staveb, oprav a služeb</h1>' +
-    '<p class="gis-intro">Najděte stavby, opravy a změny v místních službách podle ulice nebo tématu.</p>' +
+    '<p class="gis-intro">Najděte stavby, opravy a změny v místních službách podle ulice nebo okruhu.</p>' +
     '<div class="gis-controls">' +
     '<label>Hledat<input data-gis-query type="search" placeholder="Ulice, místo nebo název akce" value="' + esc(gisFilters.q) + '"></label>' +
     '<label>Co zobrazit<select data-gis-state><option value="">Vše</option><option value="stavby"' + (gisFilters.state==="stavby"?' selected':'') + '>Všechny stavby a opravy</option>' +
@@ -72,7 +72,7 @@ function gisHtml(projects) {
     '<option value="sluzby"' + (gisFilters.state==="sluzby"?' selected':'') + '>Změny v místech a službách</option>' +
     '</select></label><div role="group" aria-label="Zobrazení">' +
     '<button type="button" data-gis-view="map">Mapa</button><button type="button" data-gis-view="list">Seznam</button></div></div>' +
-    temaChips(topics, gisFilters.topic, "gtema") +
+    okruhChips("mapa") +
     '<p class="gis-summary" data-gis-summary aria-live="polite"></p>' +
     '<div class="gis-layout"><div class="gis-map-frame"><div class="gis-canvas" role="region" aria-label="Interaktivní mapa Třeboně"></div>' +
     '<p class="gis-status pozn" role="status"></p><div class="gis-tools"><button type="button" class="gis-reset">Ukázat celý výběr</button>' +
@@ -100,7 +100,7 @@ function gisCard(entry) {
   const { p, type, approx, geometry, places } = entry;
   if (type === "misto") {
     const place = M.find(item => item.id === p.id);
-    return '<h2>' + esc(p.nazev) + '</h2><p class="pozn">' + esc(entry.topicLabel) + '</p>' +
+    return '<h2>' + esc(p.nazev) + '</h2><p class="pozn">' + esc(OKN[entry.okruh].nazev) + '</p>' +
       '<ul class="zm">' + entry.changes.map(change => zmRadek(change,false)).join("") + '</ul>' +
       '<p class="pozn">' + (geometry ? 'Značka ukazuje adresu místa nebo sídlo služby.' : 'Změna je dostupná v seznamu bez značky na mapě.') + '</p>' +
       (place ? '<a class="gis-detail" href="#misto-' + esc(place.id) + '">Místo a související akce →</a>' : '');
@@ -122,7 +122,7 @@ function gisCard(entry) {
   }
   const sources = [...new Set(places.map(place => place.zdroj).filter(Boolean))].join(" · ");
   return '<h2>' + esc(rozepis(p.nazev)) + '</h2><p class="pozn">' +
-    esc((type === "investice" && stavText(p)) || gisSymbol(entry).label) + ' · ' + esc(entry.topicLabel) + '</p>' +
+    esc((type === "investice" && stavText(p)) || gisSymbol(entry).label) + ' · ' + esc(OKN[entry.okruh].nazev) + '</p>' +
     (amount ? '<p><b>' + esc(amount) + '</b> · ' + esc(priceLabel) + '</p>' : '') +
     '<p class="pozn">' + (!geometry ? "Polohu zatím nemáme doloženou." :
       (approx ? "Přibližná poloha" : "Doložená poloha") + (sources ? " · " + esc(sources) : "") +
@@ -270,7 +270,7 @@ function openGis(el) {
         vrstva.on("tileerror",() => { message.textContent = "Část podkladové mapy se nepodařilo načíst. Značky a seznam jsou dál k dispozici."; });
       layers = L.featureGroup().addTo(map);
       redrawMap();
-      if (gisFilters.q || gisFilters.state || gisFilters.topic) fit();
+      if (gisFilters.q || gisFilters.state || FO.okruh) fit();
       else map.setView([49.004,14.772],14,{animate:false});
       emphasize();
       message.textContent = "";
@@ -290,14 +290,20 @@ function openGis(el) {
     const words = koreny(gisFilters.q);
     const state = gisFilters.state;
     filtered = projects.filter(p => (!state || p.state === state || (state === "stavby" && p.type !== "misto")) &&
-      (!gisFilters.topic || p.topic === gisFilters.topic) && words.every(word => p.text.includes(word)));
+      (!FO.okruh || p.okruh === FO.okruh) && words.every(word => p.text.includes(word)));
     const mapped = filtered.filter(p => p.geometry);
     const missing = filtered.filter(p => !p.geometry);
     summary.textContent = filtered.length ?
       pl(filtered.length,"výsledek","výsledky","výsledků") + " · v mapě " + mapped.length + " · bez polohy " + missing.length :
       "Výběru neodpovídá žádný záznam.";
-    result.innerHTML = (mapped.length ? '<ul>' + mapped.map(gisRow).join("") + '</ul>' : '') +
-      (missing.length ? '<h3>Bez značky na mapě</h3><ul>' + missing.map(gisRow).join("") + '</ul>' : '');
+    // výsledky po okruzích ve stejném pořadí jako na ostatních stránkách; v okruhu nejdřív akce se značkou
+    result.innerHTML = OK.map(o => {
+      const v = filtered.filter(p => p.okruh === o.id);
+      if (!v.length) return "";
+      const bez = v.filter(p => !p.geometry).length;
+      return '<h3 class="gis-okruh">' + esc(o.nazev) + ' <small>' + v.length + (bez ? ' · bez polohy ' + bez : '') + '</small></h3><ul>' +
+        [...v.filter(p => p.geometry), ...v.filter(p => !p.geometry)].map(gisRow).join("") + '</ul>';
+    }).join("");
     if (!filtered.some(p => p.id === gisFilters.selected)) {
       gisFilters.selected = "";
       card.innerHTML = "";
@@ -308,11 +314,6 @@ function openGis(el) {
 
   el.querySelector("[data-gis-query]").oninput = e => { gisFilters.q = e.target.value; refresh(); };
   el.querySelector("[data-gis-state]").onchange = e => { gisFilters.state = e.target.value; refresh(); if (map) fit(); };
-  el.querySelectorAll("[data-gtema]").forEach(b => b.onclick = () => {
-    gisFilters.topic = b.dataset.gtema;
-    el.querySelectorAll("[data-gtema]").forEach(x => { const on = x === b; x.classList.toggle("on", on); x.setAttribute("aria-pressed", on); });
-    refresh(); if (map) fit();
-  });
   for (const panel of [result,overlap]) {
     panel.onclick = e => {
       const button = e.target.closest("[data-gis-project]");
