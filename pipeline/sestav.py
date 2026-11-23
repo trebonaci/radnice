@@ -39,6 +39,7 @@ from pipeline import rozpocet_akce as modul_rozpocet_akce
 from pipeline import rozpocet_zmeny as modul_rozpocet_zmeny
 from pipeline import schvaleni as modul_schvaleni
 from pipeline import zakazky as modul_zakazky
+from pipeline import zpravy as modul_zpravy
 from pipeline.verze import zkontroluj as zkontroluj_verze
 from pipeline.zapisy import normalizuj, rozloz
 
@@ -433,6 +434,8 @@ def sestav(koren: Path | None = None) -> tuple[dict[str, list], list[str]]:
     # šest okruhů webu (audit 23. 11. 2026): téma → okruh u všech položek, usnesení i věcný okruh
     chyby += modul_okruhy.oznac(okruhy_cfg, vystup)
     vystup["okruhy"] = modul_okruhy.ciselnik(okruhy_cfg)
+    # zprávy pro „Co se děje“ (#243): usnesení, změny, výběrová řízení, smlouvy, dodatky, rozpočtová opatření
+    vystup["zpravy"] = modul_zpravy.sestav(vystup, okruhy_cfg, modul_zasobnik.nacti_subjekty(koren))
     # přehled investic roku (kapitálové výdaje po změnách, #138) – jen když je rozpočet stažený
     roky = sorted({r["rok"] for r in rozpocet})
     vystup["investice"] = [modul_rozpocet_zmeny.prehled_investic(rozpocet, rozpocet_zmeny, vystup["projekty"], r)
@@ -465,7 +468,7 @@ def main() -> int:
         (data / f"{nazev}.json").write_text(serializuj(obsah), encoding="utf-8")
     print(f"jednání {len(vystup['jednani'])}, usnesení {len(vystup['usneseni'])}, hlasování {len(vystup['hlasovani'])}, "
           f"zakázky {len(vystup['zakazky'])}, smlouvy {len(vystup['smlouvy'])}, "
-          f"položky RO {len(vystup['rozpoctova_opatreni'])}, rozpočet {len(vystup['rozpocet'])}, změny rozpočtu {len(vystup['rozpocet_zmeny'])}, projekty {len(vystup['projekty'])}, zásobník {len(vystup['zasobnik'])}, ukazatele {len(vystup['ukazatele'])}, mapa {sum(1 for m in vystup['mapa'] if m['geometrie'])}/{len(vystup['mapa'])}, místa {len(vystup['mista'])}, změny {len(vystup['zmeny'])}, přehled {len(vystup['prehled'])}, okruhy {len(vystup['okruhy'])}, dotace {len(vystup['dotace'])}")
+          f"položky RO {len(vystup['rozpoctova_opatreni'])}, rozpočet {len(vystup['rozpocet'])}, změny rozpočtu {len(vystup['rozpocet_zmeny'])}, projekty {len(vystup['projekty'])}, zásobník {len(vystup['zasobnik'])}, ukazatele {len(vystup['ukazatele'])}, mapa {sum(1 for m in vystup['mapa'] if m['geometrie'])}/{len(vystup['mapa'])}, místa {len(vystup['mista'])}, změny {len(vystup['zmeny'])}, přehled {len(vystup['prehled'])}, okruhy {len(vystup['okruhy'])}, zprávy {len(vystup['zpravy'])}, dotace {len(vystup['dotace'])}")
     for c in chyby:
         print("CHYBA:", c, file=sys.stderr)
     return 1 if chyby else 0
