@@ -171,8 +171,13 @@ function openGis(el) {
     if (matchMedia("(max-width:760px)").matches) panel.scrollIntoView({block:"nearest"});
   }
 
+  // Výchozí výřez drží Třeboňsko; vzdálené body (např. rybník mimo území města) do něj nezahrnuje,
+  // pokud je v mapě i něco blíž. Na vzdálený bod se mapa přiblíží po jeho výběru.
+  const OKOLI = [[48.94,14.68],[49.07,14.87]];
   function fit() {
-    const bounds = layers.getBounds();
+    const okoli = L.latLngBounds(OKOLI), blizko = L.latLngBounds([]);
+    layers.eachLayer(l => { const b = l.getBounds(); if (b.isValid() && okoli.contains(b.getCenter())) blizko.extend(b); });
+    const bounds = blizko.isValid() ? blizko : layers.getBounds();
     if (bounds.isValid()) map.fitBounds(bounds,{padding:[28,28],maxZoom:16,animate:false});
     else map.setView([49.004,14.772],13,{animate:false});
   }

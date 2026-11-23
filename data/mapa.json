@@ -112,8 +112,26 @@
     "nazev": "Hřbitov sv. Alžběty – stavební úpravy",
     "faze": "pripravuje_se",
     "oblast": "jine",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.75633,
+          49.00509
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "OpenStreetMap podle názvu akce",
+        "zdroj_url": "https://www.openstreetmap.org/way/227676500"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.75633,
+        49.00509
+      ]
+    }
   },
   {
     "id": "hriste-kopecek",
@@ -2920,8 +2938,25 @@
     "nazev": "Stavební úpravy pro technologii Jordánovy kašny",
     "faze": "dokonceno",
     "oblast": "voda_odpady",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.771195,
+          49.003923
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "RÚIAN – střed adres Masarykova náměstí podle názvu akce"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.771195,
+        49.003923
+      ]
+    }
   },
   {
     "id": "auto-vz-824",
@@ -2956,8 +2991,26 @@
     "nazev": "Oprava hráze rybníka Veský – 3. etapa",
     "faze": "dokonceno",
     "oblast": "voda_odpady",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.7275592,
+          48.8712358
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "OpenStreetMap podle názvu akce",
+        "zdroj_url": "https://www.openstreetmap.org/way/51684609"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.7275592,
+        48.8712358
+      ]
+    }
   },
   {
     "id": "parkovaci-dum",
