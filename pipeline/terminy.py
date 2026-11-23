@@ -18,6 +18,7 @@ KLIC = (r"(?:term[ií]n\w*\s+(?:dokon[čc]en\w*|p[řr]ed[aá]n[ií]\s+(?:d[ií]l
 # mezi klíčovým slovem a datem nesmí být jiný termín (zahájení) ani konec věty
 MEZI = r"(?:(?!zah[aá]jen|\.\s+[A-ZČŘŠŽ])[^;]){0,90}?"
 RE_DATUM = re.compile(KLIC + MEZI + DATUM, re.I)
+RE_KLIC_POZICE = re.compile(KLIC, re.I)
 RE_LHUTA_PRED = re.compile(r"\d{1,4}\s+(?:kalend[aá][řr]n[ií]ch\s+|pracovn[ií]ch\s+)?(?:dn[ůuí]|t[ýy]dn[ůu]|m[ěe]s[ií]c[ůu])", re.I)
 RE_NOVE_DATUM = re.compile(r"\s+na\s+" + DATUM, re.I)
 RE_LHUTA = re.compile(KLIC + MEZI + r"(\d{1,4})\s+(?:kalend[aá][řr]n[ií]ch\s+|pracovn[ií]ch\s+)?(?:dn[ůuí]|t[ýy]dn[ůu]|m[ěe]s[ií]c[ůu])"
@@ -31,20 +32,30 @@ def _datum(d: str, m: str, r: str) -> str | None:
         return None
 
 
+# dodatky citují i starý termín („dosavadní termín … byl do 14.04.2025“, „ruší věta „Dokončení díla: …“) – ten neplatí
+RE_STARY = re.compile(r"dosavadn|ru[šs][ií]\s+(?:se\s+)?v[ěe]t|p[ůu]vodn|byl[ao]?\s+(?:dle|podle)|se\s+ru[šs][ií]", re.I)
+
+
+def _stary(text: str, m: re.Match) -> bool:
+    """Shoda je citace starého termínu: varovné slovo v 60 znacích před ní nebo v ní před datem."""
+    return bool(RE_STARY.search(text[max(0, m.start() - 60):m.start()]) or RE_STARY.search(m.group(0)))
+
+
 def z_uryvku(text: str) -> dict | None:
-    """První termín dokončení v úryvku: {druh, datum, citace} nebo None."""
-    m = RE_DATUM.search(text)
-    # „do 120 dnů od předání staveniště dne 1. 4. 2026“: datum je začátek lhůty, ne termín dokončení
-    if m and RE_LHUTA_PRED.search(m.group(0)):
-        m = None
-    if m:
+    """První platný termín dokončení v úryvku: {druh, datum, citace} nebo None."""
+    # shody se hledají od každého klíčového slova zvlášť: přeskočená citace starého termínu nesmí „spolknout“ nové znění za ní
+    starty = [k.start() for k in RE_KLIC_POZICE.finditer(text)]
+    for m in (x for x in (RE_DATUM.match(text, i) for i in starty) if x):
+        # „do 120 dnů od předání staveniště dne 1. 4. 2026“: datum je začátek lhůty, ne termín dokončení
+        if RE_LHUTA_PRED.search(m.group(0)) or _stary(text, m):
+            continue
         nove = RE_NOVE_DATUM.match(text, m.end())
         dt = _datum(*(nove or m).groups()[-3:])
         if dt:
             return {"druh": "datum", "datum": dt, "citace": text[m.start():(nove or m).end()]}
-    m = RE_LHUTA.search(text)
-    if m:
-        return {"druh": "lhuta", "datum": None, "citace": m.group(0).strip()}
+    for m in (x for x in (RE_LHUTA.match(text, i) for i in starty) if x):
+        if not _stary(text, m):
+            return {"druh": "lhuta", "datum": None, "citace": m.group(0).strip()}
     return None
 
 
