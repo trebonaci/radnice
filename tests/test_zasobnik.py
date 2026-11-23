@@ -154,3 +154,19 @@ def test_stejna_cena_po_vice_nez_60_dnech_se_pocita():
     dokl = [{"typ": "smlouva", "id": "a", "datum": "2025-01-01", "cena": {"s_dph": 100.0, "bez_dph": None}},
             {"typ": "smlouva", "id": "b", "datum": "2025-06-01", "cena": {"s_dph": 100.0, "bez_dph": None}}]
     assert [d["zapocteno"] for d in zasobnik.zapocti(dokl)] == [True, True]
+
+
+def test_vicedilna_zakazka_s_jedinou_smlouvou_v_registru():
+    """Codex v #217: zakázka se dvěma částmi (300), v registru jen smlouva jedné části (100) se stejným datem.
+    Cena zakázky zůstává, smlouva části se nezapočte – součet je 300, ne 100."""
+    dokl = [{"typ": "zakazka", "id": "ezak-9", "datum": "2025-03-01", "cena": {"s_dph": 300.0, "bez_dph": None},
+             "data_smluv": ["2025-03-10", "2025-04-02"], "dodatek": False},
+            {"typ": "smlouva", "id": "rs-9", "datum": "2025-03-10", "cena": {"s_dph": 100.0, "bez_dph": None}, "dodatek": False}]
+    z = zasobnik.zapocti(dokl)
+    assert [d["zapocteno"] for d in z] == [True, False] and "ezak-9" in z[1]["nezapocteno"]
+    assert zasobnik.cena_pripravy(z)["smlouvy"]["s_dph"] == 300.0
+    # obě části v registru: zakázka se nezapočte, platí smlouvy
+    dokl.append({"typ": "smlouva", "id": "rs-10", "datum": "2025-04-02", "cena": {"s_dph": 200.0, "bez_dph": None}, "dodatek": False})
+    z = zasobnik.zapocti(dokl)
+    assert [d["zapocteno"] for d in z] == [False, True, True]
+    assert zasobnik.cena_pripravy(z)["smlouvy"]["s_dph"] == 300.0
