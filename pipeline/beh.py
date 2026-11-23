@@ -44,8 +44,8 @@ POKLES = 0.5               # výstup pod touto částí dosavadního počtu = po
 # ručně spravované soubory mimo podadresáře, které sestavení čte (#153: zásobník projektů)
 RUCNI_SOUBORY = ("data/zasobnik.yaml", "data/mista.yaml", "data/aktivity.yaml")
 # zásobník se legitimně zmenšuje (položka se stane kartou, kandidát se zařadí)
-BEZ_KONTROLY_POKLESU = {"zasobnik", "ukazatele", "mapa", "harmonogram", "prehled", "terminy"}
-VYSTUPY = ("jednani", "usneseni", "hlasovani", "zakazky", "smlouvy", "rozpoctova_opatreni", "rozpocet", "rozpocet_zmeny", "projekty", "investice", "dotace", "zasobnik", "ukazatele", "mapa", "mista", "zmeny", "harmonogram", "prehled", "terminy")
+BEZ_KONTROLY_POKLESU = {"zasobnik", "ukazatele", "mapa", "harmonogram", "prehled", "terminy", "zpravy"}
+VYSTUPY = ("jednani", "usneseni", "hlasovani", "zakazky", "smlouvy", "rozpoctova_opatreni", "rozpocet", "rozpocet_zmeny", "projekty", "investice", "dotace", "zasobnik", "ukazatele", "mapa", "mista", "zmeny", "harmonogram", "prehled", "terminy", "zpravy")
 
 
 class ZamekObsazen(Exception):
