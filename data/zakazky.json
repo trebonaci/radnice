@@ -1019,7 +1019,7 @@
                 "obdobi": null,
                 "k_datu": null,
                 "citace": "<smluvni_cena_s_DPH>1998729.97</smluvni_cena_s_DPH>",
-                "poznamka": "00247618/2026-1.xml; zakázka VZ-945, část 945, dodavatel č. 1"
+                "poznamka": "00247618/2026-2.xml; zakázka VZ-945, část 945, dodavatel č. 1"
               },
               {
                 "hodnota": 1651842.95,
@@ -1030,7 +1030,7 @@
                 "obdobi": null,
                 "k_datu": null,
                 "citace": "<smluvni_cena_bez_DPH>1651842.95</smluvni_cena_bez_DPH>",
-                "poznamka": "00247618/2026-1.xml; zakázka VZ-945, část 945, dodavatel č. 1"
+                "poznamka": "00247618/2026-2.xml; zakázka VZ-945, část 945, dodavatel č. 1"
               }
             ]
           }
@@ -1039,7 +1039,7 @@
       }
     ],
     "url": "https://zakazky.mesto-trebon.cz/contract_display_945.html",
-    "zdroj": "00247618/2026-1.xml"
+    "zdroj": "00247618/2026-2.xml"
   },
   {
     "id": "ezak-VZ-944",
@@ -1389,13 +1389,13 @@
     "rezim": "Veřejné zakázky malého rozsahu",
     "predmet": "Předmětem akce je dodávka a montáž vybavení interiéru nástavby a přístavby objektu ubytování sportovní haly v Třeboni, čp. 1005, Lázeňská ulice, Třeboň.",
     "cpv": "39200000",
-    "stav": "dokončen",
+    "stav": "ukončeno plnění",
     "datum_zahajeni": "2026-04-20",
     "casti": [
       {
         "id": "936",
         "nazev": "Sportovní hala Třeboň - nástavba a přístavba ubytování - vybavení interiéru",
-        "stav": "dokončen",
+        "stav": "ukončeno plnění",
         "druh_rizeni": "otevřená výzva",
         "datum_uverejneni": "2026-04-20",
         "lhuta_nabidek": "2026-05-06",
@@ -1430,6 +1430,28 @@
                 "obdobi": null,
                 "k_datu": null,
                 "citace": "<smluvni_cena_bez_DPH>1674348.00</smluvni_cena_bez_DPH>",
+                "poznamka": "00247618/2026-2.xml; zakázka VZ-936, část 936, dodavatel č. 1"
+              },
+              {
+                "hodnota": 2263906.37,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": true,
+                "druh": "zaplaceno",
+                "obdobi": "2026",
+                "k_datu": null,
+                "citace": "<cena_za_rok_s_dph>2263906.37</cena_za_rok_s_dph>",
+                "poznamka": "00247618/2026-2.xml; zakázka VZ-936, část 936, dodavatel č. 1"
+              },
+              {
+                "hodnota": 1870997.0,
+                "mena": "CZK",
+                "jednotka": "Kč",
+                "s_dph": false,
+                "druh": "zaplaceno",
+                "obdobi": "2026",
+                "k_datu": null,
+                "citace": "<cena_za_rok_bez_dph>1870997.00</cena_za_rok_bez_dph>",
                 "poznamka": "00247618/2026-2.xml; zakázka VZ-936, část 936, dodavatel č. 1"
               }
             ]
@@ -4006,7 +4028,7 @@
                 "obdobi": null,
                 "k_datu": null,
                 "citace": "<smluvni_cena_s_DPH>945000.00</smluvni_cena_s_DPH>",
-                "poznamka": "00247618/2026-1.xml; zakázka VZ-877, část 877, dodavatel č. 1"
+                "poznamka": "00247618/2026-2.xml; zakázka VZ-877, část 877, dodavatel č. 1"
               },
               {
                 "hodnota": 945000.0,
@@ -4017,7 +4039,7 @@
                 "obdobi": null,
                 "k_datu": null,
                 "citace": "<smluvni_cena_bez_DPH>945000.00</smluvni_cena_bez_DPH>",
-                "poznamka": "00247618/2026-1.xml; zakázka VZ-877, část 877, dodavatel č. 1"
+                "poznamka": "00247618/2026-2.xml; zakázka VZ-877, část 877, dodavatel č. 1"
               },
               {
                 "hodnota": 900000.0,
@@ -4028,7 +4050,7 @@
                 "obdobi": "2025",
                 "k_datu": null,
                 "citace": "<cena_za_rok_s_dph>900000.00</cena_za_rok_s_dph>",
-                "poznamka": "00247618/2026-1.xml; zakázka VZ-877, část 877, dodavatel č. 1"
+                "poznamka": "00247618/2026-2.xml; zakázka VZ-877, část 877, dodavatel č. 1"
               },
               {
                 "hodnota": 900000.0,
@@ -4039,7 +4061,7 @@
                 "obdobi": "2025",
                 "k_datu": null,
                 "citace": "<cena_za_rok_bez_dph>900000.00</cena_za_rok_bez_dph>",
-                "poznamka": "00247618/2026-1.xml; zakázka VZ-877, část 877, dodavatel č. 1"
+                "poznamka": "00247618/2026-2.xml; zakázka VZ-877, část 877, dodavatel č. 1"
               }
             ]
           }
@@ -4048,7 +4070,7 @@
       }
     ],
     "url": "https://zakazky.mesto-trebon.cz/contract_display_877.html",
-    "zdroj": "00247618/2026-1.xml"
+    "zdroj": "00247618/2026-2.xml"
   },
   {
     "id": "ezak-VZ-873",
@@ -8054,7 +8076,7 @@
                 "obdobi": null,
                 "k_datu": null,
                 "citace": "<smluvni_cena_s_DPH>873000.00</smluvni_cena_s_DPH>",
-                "poznamka": "00247618/2026-1.xml; zakázka VZ-810, část 810, dodavatel č. 1"
+                "poznamka": "00247618/2026-2.xml; zakázka VZ-810, část 810, dodavatel č. 1"
               },
               {
                 "hodnota": 873000.0,
@@ -8065,7 +8087,7 @@
                 "obdobi": null,
                 "k_datu": null,
                 "citace": "<smluvni_cena_bez_DPH>873000.00</smluvni_cena_bez_DPH>",
-                "poznamka": "00247618/2026-1.xml; zakázka VZ-810, část 810, dodavatel č. 1"
+                "poznamka": "00247618/2026-2.xml; zakázka VZ-810, část 810, dodavatel č. 1"
               },
               {
                 "hodnota": 85000.0,
@@ -8076,7 +8098,7 @@
                 "obdobi": "2024",
                 "k_datu": null,
                 "citace": "<cena_za_rok_s_dph>85000.00</cena_za_rok_s_dph>",
-                "poznamka": "00247618/2026-1.xml; zakázka VZ-810, část 810, dodavatel č. 1"
+                "poznamka": "00247618/2026-2.xml; zakázka VZ-810, část 810, dodavatel č. 1"
               },
               {
                 "hodnota": 85000.0,
@@ -8087,7 +8109,7 @@
                 "obdobi": "2024",
                 "k_datu": null,
                 "citace": "<cena_za_rok_bez_dph>85000.00</cena_za_rok_bez_dph>",
-                "poznamka": "00247618/2026-1.xml; zakázka VZ-810, část 810, dodavatel č. 1"
+                "poznamka": "00247618/2026-2.xml; zakázka VZ-810, část 810, dodavatel č. 1"
               },
               {
                 "hodnota": 595000.0,
@@ -8098,7 +8120,7 @@
                 "obdobi": "2025",
                 "k_datu": null,
                 "citace": "<cena_za_rok_s_dph>595000.00</cena_za_rok_s_dph>",
-                "poznamka": "00247618/2026-1.xml; zakázka VZ-810, část 810, dodavatel č. 1"
+                "poznamka": "00247618/2026-2.xml; zakázka VZ-810, část 810, dodavatel č. 1"
               },
               {
                 "hodnota": 595000.0,
@@ -8109,7 +8131,7 @@
                 "obdobi": "2025",
                 "k_datu": null,
                 "citace": "<cena_za_rok_bez_dph>595000.00</cena_za_rok_bez_dph>",
-                "poznamka": "00247618/2026-1.xml; zakázka VZ-810, část 810, dodavatel č. 1"
+                "poznamka": "00247618/2026-2.xml; zakázka VZ-810, část 810, dodavatel č. 1"
               }
             ]
           }
@@ -8118,7 +8140,7 @@
       }
     ],
     "url": "https://zakazky.mesto-trebon.cz/contract_display_810.html",
-    "zdroj": "00247618/2026-1.xml"
+    "zdroj": "00247618/2026-2.xml"
   },
   {
     "id": "ezak-VZ-809",
