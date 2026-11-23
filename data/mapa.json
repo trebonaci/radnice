@@ -5,8 +5,26 @@
     "nazev": "Chodníky u Husovy kaple",
     "faze": "dokonceno",
     "oblast": "doprava",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.7635,
+          49.00661
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "OpenStreetMap podle názvu akce",
+        "zdroj_url": "https://www.openstreetmap.org/way/115619217"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.7635,
+        49.00661
+      ]
+    }
   },
   {
     "id": "dps3-energie",
@@ -14,8 +32,26 @@
     "nazev": "Úspory energie v DPS 3",
     "faze": "pripravuje_se",
     "oblast": "socialni",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "adresa",
+        "nazev": "Svatopluka Čecha 20",
+        "bod": [
+          14.765423,
+          49.004505
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "RÚIAN podle názvu akce",
+        "ruian_kod": "14831945"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.765423,
+        49.004505
+      ]
+    }
   },
   {
     "id": "fve-cov-brilice",
@@ -23,8 +59,25 @@
     "nazev": "Fotovoltaika na ČOV Břilice",
     "faze": "probiha",
     "oblast": "voda_odpady",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "cast_obce",
+        "nazev": "Břilice",
+        "bod": [
+          14.742471,
+          49.017659
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "RÚIAN – přibližně střed části obce podle názvu akce"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.742471,
+        49.017659
+      ]
+    }
   },
   {
     "id": "fve-zs-na-sadech",
@@ -536,8 +589,26 @@
     "nazev": "Rozšíření balneo provozu v Lázeňském domě Aurora (1. etapa)",
     "faze": "dokonceno",
     "oblast": "lazne",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "adresa",
+        "nazev": "Lázeňská 1001",
+        "bod": [
+          14.751245,
+          49.002378
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "RÚIAN podle názvu akce",
+        "ruian_kod": "14841746"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.751245,
+        49.002378
+      ]
+    }
   },
   {
     "id": "lazne-budova-g",
@@ -545,8 +616,26 @@
     "nazev": "Nástavba budovy G v Lázeňském domě Aurora",
     "faze": "probiha",
     "oblast": "lazne",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "adresa",
+        "nazev": "Lázeňská 1001",
+        "bod": [
+          14.751245,
+          49.002378
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "RÚIAN podle názvu akce",
+        "ruian_kod": "14841746"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.751245,
+        49.002378
+      ]
+    }
   },
   {
     "id": "mk-hermankova-daskabat",
@@ -1108,8 +1197,26 @@
     "nazev": "Větší propustek v Břilicích",
     "faze": "probiha",
     "oblast": "voda_odpady",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": "pozemek p. č. 4203, k. ú. Břilice",
+        "bod": [
+          14.729945,
+          49.014763
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "RÚIAN – definiční bod parcely",
+        "zdroj_url": "https://zakazky.mesto-trebon.cz/contract_display_960.html"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.729945,
+        49.014763
+      ]
+    }
   },
   {
     "id": "sportovni-hala-revitalizace",
@@ -1453,8 +1560,25 @@
     "nazev": "Veřejné osvětlení v Branné",
     "faze": "probiha",
     "oblast": "doprava",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "cast_obce",
+        "nazev": "Branná",
+        "bod": [
+          14.782797,
+          48.9634
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "RÚIAN – přibližně střed části obce podle názvu akce"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.782797,
+        48.9634
+      ]
+    }
   },
   {
     "id": "vo-taboritska",
@@ -1561,8 +1685,26 @@
     "nazev": "Revitalizace kolonády Bertiných lázní",
     "faze": "probiha",
     "oblast": "kultura",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.77006,
+          49.00618
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "OpenStreetMap podle názvu akce",
+        "zdroj_url": "https://www.openstreetmap.org/relation/1605882"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.77006,
+        49.00618
+      ]
+    }
   },
   {
     "id": "auto-vz-945",
@@ -1863,8 +2005,26 @@
     "nazev": "Svět pohybu, Třeboň",
     "faze": "dokonceno",
     "oblast": "sport",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.76737,
+          49.0057
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "OpenStreetMap podle názvu akce",
+        "zdroj_url": "https://www.openstreetmap.org/way/54791284"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.76737,
+        49.0057
+      ]
+    }
   },
   {
     "id": "auto-vz-914",
@@ -2209,8 +2369,26 @@
     "nazev": "Rekonstrukce fasády staré budovy ZŠ Na Sadech – západní strana, dvorní část",
     "faze": "dokonceno",
     "oblast": "skolstvi",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "adresa",
+        "nazev": "Na Sadech 375",
+        "bod": [
+          14.765894,
+          49.005369
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "RÚIAN podle názvu akce",
+        "ruian_kod": "14835487"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.765894,
+        49.005369
+      ]
+    }
   },
   {
     "id": "auto-vz-844",
@@ -4069,8 +4247,25 @@
     "nazev": "Místní komunikace ve Staré Hlíně (od I/34 k polní cestě)",
     "faze": "zasobnik",
     "oblast": "doprava",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "cast_obce",
+        "nazev": "Stará Hlína",
+        "bod": [
+          14.810692,
+          49.040127
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "RÚIAN – přibližně střed části obce podle názvu akce"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.810692,
+        49.040127
+      ]
+    }
   },
   {
     "id": "mk-dvorecka-brilice",
@@ -4301,8 +4496,26 @@
     "nazev": "Most přes rybník Vítek ve Staré Hlíně",
     "faze": "zasobnik",
     "oblast": "doprava",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.80616,
+          49.03294
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "OpenStreetMap podle názvu akce",
+        "zdroj_url": "https://www.openstreetmap.org/relation/4018884"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.80616,
+        49.03294
+      ]
+    }
   },
   {
     "id": "taboritska-stezka",
@@ -6149,8 +6362,26 @@
     "nazev": "Rekonstrukce vodojemu Na Kopečku",
     "faze": "zasobnik",
     "oblast": "voda_odpady",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.78756,
+          49.01207
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "OpenStreetMap podle názvu akce",
+        "zdroj_url": "https://www.openstreetmap.org/node/4217489237"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.78756,
+        49.01207
+      ]
+    }
   },
   {
     "id": "kanalizace-taboritska",
@@ -6981,8 +7212,158 @@
     "nazev": "Páteřní dešťová kanalizace Nový Dvůr – Jablonského",
     "faze": "zasobnik",
     "oblast": "voda_odpady",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "ulice",
+        "nazev": "Jablonského",
+        "linie": [
+          [
+            [
+              14.761722,
+              49.007249
+            ],
+            [
+              14.760787,
+              49.007222
+            ]
+          ],
+          [
+            [
+              14.765517,
+              49.007423
+            ],
+            [
+              14.765392,
+              49.007398
+            ],
+            [
+              14.765237,
+              49.007372
+            ],
+            [
+              14.7631,
+              49.0073
+            ]
+          ],
+          [
+            [
+              14.758959,
+              49.007155
+            ],
+            [
+              14.757742,
+              49.007111
+            ]
+          ],
+          [
+            [
+              14.759881,
+              49.007187
+            ],
+            [
+              14.758959,
+              49.007155
+            ]
+          ],
+          [
+            [
+              14.7631,
+              49.0073
+            ],
+            [
+              14.761722,
+              49.007249
+            ]
+          ],
+          [
+            [
+              14.760787,
+              49.007222
+            ],
+            [
+              14.759881,
+              49.007187
+            ]
+          ]
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "RÚIAN podle názvu akce",
+        "ruian_kod": "180653"
+      }
+    ],
+    "geometrie": {
+      "type": "MultiLineString",
+      "coordinates": [
+        [
+          [
+            14.761722,
+            49.007249
+          ],
+          [
+            14.760787,
+            49.007222
+          ]
+        ],
+        [
+          [
+            14.765517,
+            49.007423
+          ],
+          [
+            14.765392,
+            49.007398
+          ],
+          [
+            14.765237,
+            49.007372
+          ],
+          [
+            14.7631,
+            49.0073
+          ]
+        ],
+        [
+          [
+            14.758959,
+            49.007155
+          ],
+          [
+            14.757742,
+            49.007111
+          ]
+        ],
+        [
+          [
+            14.759881,
+            49.007187
+          ],
+          [
+            14.758959,
+            49.007155
+          ]
+        ],
+        [
+          [
+            14.7631,
+            49.0073
+          ],
+          [
+            14.761722,
+            49.007249
+          ]
+        ],
+        [
+          [
+            14.760787,
+            49.007222
+          ],
+          [
+            14.759881,
+            49.007187
+          ]
+        ]
+      ]
+    }
   },
   {
     "id": "kanalizace-pivovar",
@@ -6990,8 +7371,26 @@
     "nazev": "Obnova šachet a potrubí kanalizace pod pivovarem",
     "faze": "zasobnik",
     "oblast": "voda_odpady",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "budova",
+        "nazev": "č. p. 124",
+        "bod": [
+          14.772295,
+          49.002635
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "RÚIAN podle názvu akce",
+        "ruian_kod": "14719738"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.772295,
+        49.002635
+      ]
+    }
   },
   {
     "id": "destove-vody-brilice",
@@ -6999,8 +7398,25 @@
     "nazev": "Odvod dešťových vod v Břilicích",
     "faze": "zasobnik",
     "oblast": "voda_odpady",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "cast_obce",
+        "nazev": "Břilice",
+        "bod": [
+          14.742471,
+          49.017659
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "RÚIAN – přibližně střed části obce podle názvu akce"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.742471,
+        49.017659
+      ]
+    }
   },
   {
     "id": "sportoviste-hlinik",
@@ -7017,8 +7433,25 @@
     "nazev": "Fotbalové kabiny v Břilicích",
     "faze": "zasobnik",
     "oblast": "sport",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "cast_obce",
+        "nazev": "Břilice",
+        "bod": [
+          14.742471,
+          49.017659
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "RÚIAN – přibližně střed části obce podle názvu akce"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.742471,
+        49.017659
+      ]
+    }
   },
   {
     "id": "divadlo-zazemi",
@@ -7026,8 +7459,26 @@
     "nazev": "Hygienické zázemí pro diváky v divadle J. K. Tyla",
     "faze": "zasobnik",
     "oblast": "kultura",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.77206,
+          49.00352
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "OpenStreetMap podle názvu akce",
+        "zdroj_url": "https://www.openstreetmap.org/node/12513881320"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.77206,
+        49.00352
+      ]
+    }
   },
   {
     "id": "stara-radnice-vez-fasada",
@@ -7062,8 +7513,25 @@
     "nazev": "Prodejna smíšeného zboží v kulturním zařízení v Branné",
     "faze": "zasobnik",
     "oblast": "jine",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "cast_obce",
+        "nazev": "Branná",
+        "bod": [
+          14.782797,
+          48.9634
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "RÚIAN – přibližně střed části obce podle názvu akce"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.782797,
+        48.9634
+      ]
+    }
   },
   {
     "id": "bytovy-dum-lazenska",
@@ -7073,286 +7541,22 @@
     "oblast": "bydleni",
     "misto": [
       {
-        "druh": "ulice",
-        "nazev": "Lázeňská",
-        "linie": [
-          [
-            [
-              14.754893,
-              49.00269
-            ],
-            [
-              14.754569,
-              49.003325
-            ]
-          ],
-          [
-            [
-              14.754569,
-              49.003325
-            ],
-            [
-              14.754352,
-              49.003865
-            ],
-            [
-              14.754328,
-              49.003943
-            ],
-            [
-              14.754282,
-              49.004271
-            ]
-          ],
-          [
-            [
-              14.758384,
-              49.001419
-            ],
-            [
-              14.758334,
-              49.001553
-            ],
-            [
-              14.758281,
-              49.001648
-            ],
-            [
-              14.758224,
-              49.001724
-            ],
-            [
-              14.758156,
-              49.001794
-            ],
-            [
-              14.758076,
-              49.001849
-            ],
-            [
-              14.757972,
-              49.001882
-            ],
-            [
-              14.757871,
-              49.001892
-            ],
-            [
-              14.757799,
-              49.001896
-            ],
-            [
-              14.757664,
-              49.001883
-            ],
-            [
-              14.757422,
-              49.001848
-            ]
-          ],
-          [
-            [
-              14.757422,
-              49.001848
-            ],
-            [
-              14.756383,
-              49.001715
-            ],
-            [
-              14.756262,
-              49.001706
-            ],
-            [
-              14.756169,
-              49.001706
-            ],
-            [
-              14.756073,
-              49.001718
-            ],
-            [
-              14.755889,
-              49.001755
-            ],
-            [
-              14.755711,
-              49.001806
-            ],
-            [
-              14.755523,
-              49.001886
-            ],
-            [
-              14.755402,
-              49.001952
-            ],
-            [
-              14.755273,
-              49.002051
-            ],
-            [
-              14.755188,
-              49.002147
-            ],
-            [
-              14.755108,
-              49.00226
-            ]
-          ],
-          [
-            [
-              14.755108,
-              49.00226
-            ],
-            [
-              14.754893,
-              49.00269
-            ]
-          ]
+        "druh": "bod",
+        "nazev": "pozemek p. č. 1087/17",
+        "bod": [
+          14.755434,
+          49.003963
         ],
-        "ruian_kod": "180491",
-        "jistota": "nase_propojeni",
-        "zdroj": "RÚIAN podle názvu akce"
+        "jistota": "dolozeno",
+        "zdroj": "RÚIAN – definiční bod parcely",
+        "zdroj_url": "https://zakazky.mesto-trebon.cz/contract_display_642.html"
       }
     ],
     "geometrie": {
-      "type": "MultiLineString",
+      "type": "Point",
       "coordinates": [
-        [
-          [
-            14.754893,
-            49.00269
-          ],
-          [
-            14.754569,
-            49.003325
-          ]
-        ],
-        [
-          [
-            14.754569,
-            49.003325
-          ],
-          [
-            14.754352,
-            49.003865
-          ],
-          [
-            14.754328,
-            49.003943
-          ],
-          [
-            14.754282,
-            49.004271
-          ]
-        ],
-        [
-          [
-            14.758384,
-            49.001419
-          ],
-          [
-            14.758334,
-            49.001553
-          ],
-          [
-            14.758281,
-            49.001648
-          ],
-          [
-            14.758224,
-            49.001724
-          ],
-          [
-            14.758156,
-            49.001794
-          ],
-          [
-            14.758076,
-            49.001849
-          ],
-          [
-            14.757972,
-            49.001882
-          ],
-          [
-            14.757871,
-            49.001892
-          ],
-          [
-            14.757799,
-            49.001896
-          ],
-          [
-            14.757664,
-            49.001883
-          ],
-          [
-            14.757422,
-            49.001848
-          ]
-        ],
-        [
-          [
-            14.757422,
-            49.001848
-          ],
-          [
-            14.756383,
-            49.001715
-          ],
-          [
-            14.756262,
-            49.001706
-          ],
-          [
-            14.756169,
-            49.001706
-          ],
-          [
-            14.756073,
-            49.001718
-          ],
-          [
-            14.755889,
-            49.001755
-          ],
-          [
-            14.755711,
-            49.001806
-          ],
-          [
-            14.755523,
-            49.001886
-          ],
-          [
-            14.755402,
-            49.001952
-          ],
-          [
-            14.755273,
-            49.002051
-          ],
-          [
-            14.755188,
-            49.002147
-          ],
-          [
-            14.755108,
-            49.00226
-          ]
-        ],
-        [
-          [
-            14.755108,
-            49.00226
-          ],
-          [
-            14.754893,
-            49.00269
-          ]
-        ]
+        14.755434,
+        49.003963
       ]
     }
   },
@@ -7362,8 +7566,26 @@
     "nazev": "Modernizace objektu B Lázeňského domu Aurora",
     "faze": "zasobnik",
     "oblast": "lazne",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "adresa",
+        "nazev": "Lázeňská 1001",
+        "bod": [
+          14.751245,
+          49.002378
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "RÚIAN podle názvu akce",
+        "ruian_kod": "14841746"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.751245,
+        49.002378
+      ]
+    }
   },
   {
     "id": "lazne-ordinace",
@@ -7371,8 +7593,26 @@
     "nazev": "Přesun ordinací do přízemí objektů D a E Lázeňského domu Aurora",
     "faze": "zasobnik",
     "oblast": "lazne",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "adresa",
+        "nazev": "Lázeňská 1001",
+        "bod": [
+          14.751245,
+          49.002378
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "RÚIAN podle názvu akce",
+        "ruian_kod": "14841746"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.751245,
+        49.002378
+      ]
+    }
   },
   {
     "id": "lazne-restaurace",
@@ -7380,8 +7620,26 @@
     "nazev": "Přemístění restaurace Lázeňského domu Aurora",
     "faze": "zasobnik",
     "oblast": "lazne",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "adresa",
+        "nazev": "Lázeňská 1001",
+        "bod": [
+          14.751245,
+          49.002378
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "RÚIAN podle názvu akce",
+        "ruian_kod": "14841746"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.751245,
+        49.002378
+      ]
+    }
   },
   {
     "id": "lazne-olu",
@@ -7398,8 +7656,26 @@
     "nazev": "Chodník v parku lázní Aurora",
     "faze": "zasobnik",
     "oblast": "lazne",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "adresa",
+        "nazev": "Lázeňská 1001",
+        "bod": [
+          14.751245,
+          49.002378
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "RÚIAN podle názvu akce",
+        "ruian_kod": "14841746"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.751245,
+        49.002378
+      ]
+    }
   },
   {
     "id": "lazne-padel",
@@ -7407,8 +7683,26 @@
     "nazev": "Dva kurty na padel (Bertiny lázně)",
     "faze": "zasobnik",
     "oblast": "lazne",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.77006,
+          49.00618
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "OpenStreetMap podle názvu akce",
+        "zdroj_url": "https://www.openstreetmap.org/relation/1605882"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.77006,
+        49.00618
+      ]
+    }
   },
   {
     "id": "sprm-274",
@@ -8516,8 +8810,26 @@
     "nazev": "Dům s pečovatelskou službou DPS 3",
     "faze": null,
     "oblast": "socialni",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "adresa",
+        "nazev": "Svatopluka Čecha 20",
+        "bod": [
+          14.765423,
+          49.004505
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "RÚIAN",
+        "ruian_kod": "14831945"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.765423,
+        49.004505
+      ]
+    }
   },
   {
     "id": "sportovni-hala",
@@ -8552,8 +8864,26 @@
     "nazev": "Muzeum města Třeboně",
     "faze": null,
     "oblast": "kultura",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "budova",
+        "nazev": "č. p. 1",
+        "bod": [
+          14.771668,
+          49.003786
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "RÚIAN",
+        "ruian_kod": "14718502"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.771668,
+        49.003786
+      ]
+    }
   },
   {
     "id": "knihovna",
@@ -8561,8 +8891,26 @@
     "nazev": "Městská knihovna",
     "faze": null,
     "oblast": "kultura",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "adresa",
+        "nazev": "Chelčického 2",
+        "bod": [
+          14.765701,
+          49.003865
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "RÚIAN",
+        "ruian_kod": "14831767"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.765701,
+        49.003865
+      ]
+    }
   },
   {
     "id": "dum-svatopluka-cecha-20",
@@ -8651,8 +8999,26 @@
     "nazev": "MŠ Sluníčko",
     "faze": null,
     "oblast": "skolstvi",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "adresa",
+        "nazev": "Svobody 1018",
+        "bod": [
+          14.761315,
+          49.002914
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "RÚIAN",
+        "ruian_kod": "14841932"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.761315,
+        49.002914
+      ]
+    }
   },
   {
     "id": "preseka-cp3",

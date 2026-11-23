@@ -18,8 +18,8 @@ body[data-str=mapa] #karty{max-width:1180px}
 .gis-map-frame{padding:10px;min-width:0}
 .gis-canvas{height:clamp(360px,60vh,660px);background:var(--blue-bg);border-radius:8px;isolation:isolate}
 .gis-canvas[hidden]{display:none}
-/* ztlumená ZTM: šedá a světlejší, aby barevné značky a čáry vynikly */
-.gis-tlumena{filter:grayscale(1) contrast(.85) brightness(1.12)}
+/* OSM podklad méně barevný, popisky ulic zůstávají čitelné; barevné značky a čáry vyniknou */
+.gis-osm{filter:saturate(.35) contrast(1.05) brightness(1.03)}
 .gis-tools{display:flex;flex-wrap:wrap;align-items:center;gap:12px;padding:8px 0 2px}
 .gis-key{display:flex;flex-wrap:wrap;gap:6px 12px;list-style:none;padding:0;margin:6px 0;font-size:.85rem}
 .gis-key li{display:flex;align-items:center;gap:5px}

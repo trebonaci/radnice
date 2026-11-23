@@ -122,3 +122,44 @@ def test_adresa_s_pismenem_neodpovida_cislu_bez_pismene(tmp_path):
                 {"kod": "2", "ulice": "Chelčického", "cislo_domovni": "6", "cislo_orientacni": "1", "pismeno": "a", "bod": [3, 4]}]
     assert r.adresa("Chelčického", "1")["kod"] == "1"
     assert r.adresa("Chelčického", "1", "a")["kod"] == "2"
+
+
+def test_budova_bez_cisla_neni_cela_ulice(tmp_path):
+    """Bytový dům v ulici bez čísla nesmí na mapě nakreslit celou ulici (připomínka 23. 11. 2026)."""
+    r = mapa.Ruian(_koren(tmp_path))
+    assert mapa.z_nazvu("Městský bytový dům v Budějovické ulici", r) == []
+    assert mapa.z_nazvu("Novostavba městského bytového domu v ul. Budějovické", r) == []
+    assert mapa.z_nazvu("Chodník v Budějovické ulici", r)[0]["druh"] == "ulice"
+    # s číslem zůstává adresa
+    assert mapa.z_nazvu("Výměna kotlů v objektu DPS IA, Chelčického 1, Třeboň", r)[0]["druh"] == "adresa"
+
+
+def test_misto_podle_nazvu_a_cast_obce(tmp_path):
+    koren = _koren(tmp_path)
+    (koren / "config").mkdir()
+    (koren / "config/mista_nazvy.yaml").write_text(
+        "mista:\n"
+        "  - vzor: 'Husov[ay] kaple'\n    misto: [{bod: [49.0066, 14.7635], zdroj: OpenStreetMap, zdroj_url: 'https://osm.org/way/1'}]\n"
+        "  - vzor: 'Třeboni I|Třeboň I'\n    misto: [{cast_obce: Třeboň I}]\n", encoding="utf-8")
+    karty = [{"id": "k", "nazev": "Chodníky u Husovy kaple"}, {"id": "v", "nazev": "Osvětlení v Třeboni I"},
+             {"id": "n", "nazev": "Něco jinde"}, {"id": "u", "nazev": "Chodník v Budějovické ulici u Husovy kaple"}]
+    vys, chyby, _ = mapa.sestav(koren, karty, [], [], {})
+    po = {m["id"]: m for m in vys}
+    assert chyby == []
+    assert po["k"]["geometrie"] == {"type": "Point", "coordinates": [14.7635, 49.0066]}
+    assert po["k"]["misto"][0]["jistota"] == "nase_propojeni" and po["k"]["misto"][0]["zdroj_url"] == "https://osm.org/way/1"
+    # střed části obce = medián budov z RÚIAN, vždy přibližně
+    assert po["v"]["misto"][0]["druh"] == "cast_obce" and po["v"]["misto"][0]["bod"] == [11, 12]
+    assert po["v"]["misto"][0]["jistota"] == "nase_propojeni"
+    assert po["n"]["geometrie"] is None
+    # RÚIAN z názvu má přednost před seznamem názvů
+    assert po["u"]["misto"][0]["druh"] == "ulice"
+
+
+def test_rucni_bod_se_zdrojem_a_priblizny(tmp_path):
+    r = mapa.Ruian(_koren(tmp_path))
+    casti, chyby, _ = mapa.vyres_rucni([{"bod": [49.0039, 14.7554], "zdroj": "RÚIAN – definiční bod parcely",
+                                         "zdroj_url": "https://z.cz/642"}], r, "k")
+    assert chyby == [] and casti[0]["jistota"] == "dolozeno" and casti[0]["zdroj_url"] == "https://z.cz/642"
+    casti, _, _ = mapa.vyres_rucni([{"bod": [49.0039, 14.7554], "priblizne": True}], r, "k")
+    assert casti[0]["jistota"] == "nase_propojeni" and casti[0]["zdroj"] == "ručně"
