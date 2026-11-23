@@ -34,7 +34,9 @@ MAX_PRILOH = 4
 RE_PRILOHA = re.compile(r'href="([^"]*/smlouva/soubor/\d+/[^"]+)"', re.I)
 RE_KLIC = re.compile(r"term[ií]n\w*\s+(dokon[čc]en|p[řr]ed[aá]n|pln[ěe]n|proveden)|dokon[čc]it\s+(d[ií]lo|stavbu)|datum\s+dokon[čc]en|dokon[čc]en[ií]\s+(d[ií]la|stavby)|"
                      r"p[řr]edat\s+(d[ií]lo|stavbu)|doba\s+(pln[ěe]n|proveden)|lh[ůu]t\w*\s+(?:pro\s+)?(pln[ěe]n|dokon[čc]en)", re.I)
-OKOLI = 350
+OKOLI = 600
+# verze 2: delší úryvek (dodatky: „ruší se věta … a nahrazuje se zněním …“); záznamy starší verze se stáhnou znovu
+VERZE_URYVKU = 2
 RE_OSOBNI = re.compile(
     r"kontakt\w*|zastoup\w+|jedn[aá]\w*\s+jm[ée]nem|jm[ée]nem|bytem|bydli\w+|trval\w+\s+pobyt\w*|"
     r"s[ií]dlo\w*|adres\w+|e-?mail\w*|\btel(?:efon\w*)?\b\.?|\bmobil\w*|podpis\w*|za\s+(?:objednatele|zhotovitele|prod[aá]vaj[ií]c[ií]ho)|"
@@ -108,7 +110,7 @@ def stahni(koren: Path = KOREN, ziskej=ziskej_url, extrahuj=extrahuj_pdftotext, 
     ulozeno = json.loads(cil.read_text(encoding="utf-8")) if cil.exists() else {}
     chyby, nove = [], 0
     for zid, url in smlouvy_ke_stazeni(projekty):
-        if zid in ulozeno or nove >= max_smluv:
+        if (zid in ulozeno and ulozeno[zid].get("verze", 1) >= VERZE_URYVKU) or nove >= max_smluv:
             continue
         try:
             stranka = ziskej(url).decode("utf-8", "replace")
@@ -124,7 +126,7 @@ def stahni(koren: Path = KOREN, ziskej=ziskej_url, extrahuj=extrahuj_pdftotext, 
         except ChybaZdroje as e:
             chyby.append(f"{zid}: {e}")
             continue
-        ulozeno[zid] = {"url": url, "stazeno": (dnes or date.today()).isoformat(), "soubory": soubory}
+        ulozeno[zid] = {"url": url, "stazeno": (dnes or date.today()).isoformat(), "verze": VERZE_URYVKU, "soubory": soubory}
         nove += 1
     if nove:
         cil.parent.mkdir(parents=True, exist_ok=True)

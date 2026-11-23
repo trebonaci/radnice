@@ -113,3 +113,24 @@ def test_dodatky_ze_stejneho_dne_podle_cisla():
                                 {"zdroj_id": "rs-3", "cislo": 2, "datum": "2026-11-19"}]}]}
     t = {"rs-2": {"druh": "datum", "datum": "2027-01-31"}, "rs-3": {"druh": "datum", "datum": "2027-03-31"}}
     assert terminy.pro_kartu(k, t)["datum"] == "2027-03-31"
+
+
+def test_dodatek_s_dosavadnim_terminem_bere_novy():
+    t = terminy.z_uryvku("změna dokončení díla – dosavadní termín dokončení díla byl dle SOD do 14.04.2025 - technologie "
+                         "D+M. Dosavadní čl. 6. se tímto ruší a nahrazuje se následujícím zněním: - dokončení díla: do 30.05.2025 – rozvaděče")
+    assert t["datum"] == "2025-05-30"
+    t = terminy.z_uryvku("V článku V. Doba plnění se v odst. 1. ruší věta „Dokončení díla: do 90 kalendářních dnů od zahájení díla“ "
+                         "a nahrazuje se větou „Dokončení díla: do 31. 10. 2025“.")
+    assert t["datum"] == "2025-10-31"
+    assert terminy.z_uryvku("Dosavadní termín dokončení díla byl dle SOD do 14.04.2025.") is None
+
+
+def test_stara_verze_uryvku_se_stahne_znovu(tmp_path):
+    (tmp_path / "data").mkdir()
+    (tmp_path / "data" / "projekty.json").write_text(json.dumps([{"casti": [
+        {"role": "stavba", "puvodni": {"zdroj_id": "rs-7", "url": "https://smlouvy.gov.cz/smlouva/7"}, "dodatky": []}]}]))
+    (tmp_path / "raw" / "smlouvy").mkdir(parents=True)
+    (tmp_path / "raw" / "smlouvy" / "terminy.json").write_text(json.dumps({"rs-7": {"url": "u", "soubory": []}}))
+    nove, _ = prilohy_smluv.stahni(tmp_path, lambda u: b"", lambda _: [])
+    assert nove == 1
+    assert json.loads((tmp_path / "raw" / "smlouvy" / "terminy.json").read_text())["rs-7"]["verze"] == prilohy_smluv.VERZE_URYVKU

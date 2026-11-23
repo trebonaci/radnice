@@ -31,20 +31,28 @@ def _datum(d: str, m: str, r: str) -> str | None:
         return None
 
 
+# dodatky citují i starý termín („dosavadní termín … byl do 14.04.2025“, „ruší věta „Dokončení díla: …“) – ten neplatí
+RE_STARY = re.compile(r"dosavadn|ru[šs][ií]\s+(?:se\s+)?v[ěe]t|p[ůu]vodn|byl[ao]?\s+(?:dle|podle)|se\s+ru[šs][ií]", re.I)
+
+
+def _stary(text: str, m: re.Match) -> bool:
+    """Shoda je citace starého termínu: varovné slovo v 60 znacích před ní nebo v ní před datem."""
+    return bool(RE_STARY.search(text[max(0, m.start() - 60):m.start()]) or RE_STARY.search(m.group(0)))
+
+
 def z_uryvku(text: str) -> dict | None:
-    """První termín dokončení v úryvku: {druh, datum, citace} nebo None."""
-    m = RE_DATUM.search(text)
-    # „do 120 dnů od předání staveniště dne 1. 4. 2026“: datum je začátek lhůty, ne termín dokončení
-    if m and RE_LHUTA_PRED.search(m.group(0)):
-        m = None
-    if m:
+    """První platný termín dokončení v úryvku: {druh, datum, citace} nebo None."""
+    for m in RE_DATUM.finditer(text):
+        # „do 120 dnů od předání staveniště dne 1. 4. 2026“: datum je začátek lhůty, ne termín dokončení
+        if RE_LHUTA_PRED.search(m.group(0)) or _stary(text, m):
+            continue
         nove = RE_NOVE_DATUM.match(text, m.end())
         dt = _datum(*(nove or m).groups()[-3:])
         if dt:
             return {"druh": "datum", "datum": dt, "citace": text[m.start():(nove or m).end()]}
-    m = RE_LHUTA.search(text)
-    if m:
-        return {"druh": "lhuta", "datum": None, "citace": m.group(0).strip()}
+    for m in RE_LHUTA.finditer(text):
+        if not _stary(text, m):
+            return {"druh": "lhuta", "datum": None, "citace": m.group(0).strip()}
     return None
 
 
