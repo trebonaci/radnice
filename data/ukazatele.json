@@ -148,6 +148,63 @@
     "kategorie_ai": true
   },
   {
+    "id": "usneseni-okruhy",
+    "nazev": "Usnesení podle okruhů",
+    "hodnota": [
+      {
+        "klic": "doprava_prostor",
+        "nazev": "Doprava a veřejný prostor",
+        "hodnota": 15
+      },
+      {
+        "klic": "bydleni_pece",
+        "nazev": "Bydlení a péče",
+        "hodnota": 11
+      },
+      {
+        "klic": "skoly",
+        "nazev": "Školy a školky",
+        "hodnota": 13
+      },
+      {
+        "klic": "sport_kultura",
+        "nazev": "Sport, kultura a spolky",
+        "hodnota": 24
+      },
+      {
+        "klic": "spolecnosti",
+        "nazev": "Městské společnosti",
+        "hodnota": 8
+      },
+      {
+        "klic": "rozvoj_sprava",
+        "nazev": "Rozvoj a správa města",
+        "hodnota": 68
+      }
+    ],
+    "jednotka": "usnesení",
+    "obdobi": {
+      "od": "2026-09-09",
+      "do": "2026-11-04"
+    },
+    "definice": "Počet usnesení podle hlavního okruhu. Usnesení s věcným okruhem (místo, služba, stavba) se počítá tam, čistě správní (pozemky, rozpočtová opatření, orgány) v Rozvoji a správě města. Řada se sčítá.",
+    "vypocet": "pipeline/ukazatele.py:usneseni_okruhy",
+    "zdroj": [
+      {
+        "nazev": "Zápisy z jednání rady města",
+        "url": "https://www.mesto-trebon.cz/cz/mestsky-urad-trebon/samosprava-mesta/rada-mesta/zapisy-z-jednani-rady-mesta/"
+      },
+      {
+        "nazev": "Zápisy zastupitelstva města",
+        "url": "https://www.mesto-trebon.cz/cz/mestsky-urad-trebon/samosprava-mesta/zastupitelstvo-mesta/zapisy-zastupitelstva-mesta/"
+      }
+    ],
+    "zkontrolovano": null,
+    "srovnatelnost": "Okruh odvozuje kód z kategorií (AI), odkazů z karet a změn a z názvu.",
+    "celkem": 139,
+    "kategorie_ai": true
+  },
+  {
     "id": "smlouvy-organizace",
     "nazev": "Smlouvy v registru podle organizací",
     "hodnota": [
@@ -391,64 +448,34 @@
     "nazev": "Investice v rozpočtu 2026",
     "hodnota": [
       {
-        "klic": "Sport a hřiště",
-        "nazev": "Sport a hřiště",
-        "schvaleny": 91750000.0,
-        "hodnota": 90692140.0
+        "klic": "doprava_prostor",
+        "nazev": "Doprava a veřejný prostor",
+        "schvaleny": 74580000.0,
+        "hodnota": 75514700.0
       },
       {
-        "klic": "Služby a cestovní ruch",
-        "nazev": "Služby a cestovní ruch",
-        "schvaleny": 56500000.0,
-        "hodnota": 63525000.0
+        "klic": "bydleni_pece",
+        "nazev": "Bydlení a péče",
+        "schvaleny": 34500000.0,
+        "hodnota": 26585000.0
       },
       {
-        "klic": "Doprava, ulice a chodníky",
-        "nazev": "Doprava, ulice a chodníky",
-        "schvaleny": 48000000.0,
-        "hodnota": 49500000.0
-      },
-      {
-        "klic": "Bydlení, osvětlení a budovy",
-        "nazev": "Bydlení, osvětlení a budovy",
-        "schvaleny": 47670000.0,
-        "hodnota": 39055000.0
-      },
-      {
-        "klic": "Voda a kanalizace",
-        "nazev": "Voda a kanalizace",
-        "schvaleny": 12480000.0,
-        "hodnota": 13330000.0
-      },
-      {
-        "klic": "Školy a školky",
+        "klic": "skoly",
         "nazev": "Školy a školky",
         "schvaleny": 3600000.0,
         "hodnota": 5700000.0
       },
       {
-        "klic": "Životní prostředí a zeleň",
-        "nazev": "Životní prostředí a zeleň",
-        "schvaleny": 2680000.0,
-        "hodnota": 2764700.0
+        "klic": "sport_kultura",
+        "nazev": "Sport, kultura a spolky",
+        "schvaleny": 150250000.0,
+        "hodnota": 156037140.0
       },
       {
-        "klic": "Kultura a památky",
-        "nazev": "Kultura a památky",
-        "schvaleny": 2000000.0,
-        "hodnota": 1820000.0
-      },
-      {
-        "klic": "Městský úřad",
-        "nazev": "Městský úřad",
-        "schvaleny": 1750000.0,
-        "hodnota": 1750000.0
-      },
-      {
-        "klic": "Bezpečnost",
-        "nazev": "Bezpečnost",
-        "schvaleny": 305000.0,
-        "hodnota": 300000.0
+        "klic": "rozvoj_sprava",
+        "nazev": "Rozvoj a správa města",
+        "schvaleny": 3805000.0,
+        "hodnota": 4600000.0
       }
     ],
     "jednotka": "Kč",
@@ -456,7 +483,7 @@
       "od": "2026-01-01",
       "do": "2026-12-31"
     },
-    "definice": "Kapitálové výdaje rozpočtu města po rozpočtových opatřeních, bez rezerv, podle oblastí.",
+    "definice": "Kapitálové výdaje rozpočtu města po rozpočtových opatřeních, bez rezerv, podle okruhů (položka napojená na projekt podle projektu, jinak podle názvu nebo oddílu rozpočtu).",
     "vypocet": "pipeline/ukazatele.py:investice",
     "zdroj": [
       {

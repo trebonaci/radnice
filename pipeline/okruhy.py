@@ -157,6 +157,42 @@ def oznac(cfg: dict, vystup: dict) -> list[str]:
     return chyby
 
 
+REZERVA_ODDIL = 64
+
+
+def oznac_investice(cfg: dict, prehledy: list[dict], projekty: list[dict]) -> list[str]:
+    """Rozpočet investic (data/investice.json) po okruzích: každá položka dostane `okruh` a `okruh_podle`
+    (karta / název / oddíl), přehled dostane `okruhy` se součty. Rezerva (oddíl 64) zůstává mimo okruhy.
+    Vrací chyby: součet okruhů a rezervy musí dát celek."""
+    chyby = []
+    karty = {p["id"]: p.get("okruh") for p in projekty}
+    oddily = {int(k): v for k, v in (cfg.get("oddily") or {}).items()}
+    for i in prehledy:
+        polozky = [p for o in i.get("oblasti") or [] for p in o["polozky"]]
+        for p in polozky:
+            if p["oddil"] == REZERVA_ODDIL:
+                p["okruh"], p["okruh_podle"] = None, "rezerva"
+            elif karty.get(p.get("projekt_id")):
+                p["okruh"], p["okruh_podle"] = karty[p["projekt_id"]], "karta"
+            elif shody := temata_z_nazvu(cfg, p["nazev"]):
+                p["okruh"], p["okruh_podle"] = okruh_tematu(cfg, shody[0][0]), "název"
+            else:
+                p["okruh"], p["okruh_podle"] = okruh_tematu(cfg, oddily.get(p["oddil"], "jine")), "oddíl"
+        i["okruhy"] = []
+        for o in cfg["okruhy"]:
+            v = [p for p in polozky if p["okruh"] == o["id"]]
+            i["okruhy"].append({"okruh": o["id"], "nazev": o["nazev"], "polozek": len(v),
+                                "schvaleny": round(sum(p["schvaleny"] for p in v), 2),
+                                "po_zmenach": round(sum(p["po_zmenach"] for p in v), 2)})
+        rezerva = round(sum(p["po_zmenach"] for p in polozky if p["okruh"] is None), 2)
+        soucet = round(sum(o["po_zmenach"] for o in i["okruhy"]), 2)
+        if abs(soucet + rezerva - i["po_zmenach"]) > 0.5:
+            chyby.append(f"investice {i['rok']}: okruhy {soucet} + rezerva {rezerva} ≠ celkem {i['po_zmenach']}")
+        if abs(soucet - i["bez_rezervy_po_zmenach"]) > 0.5:
+            chyby.append(f"investice {i['rok']}: okruhy {soucet} ≠ bez rezervy {i['bez_rezervy_po_zmenach']}")
+    return chyby
+
+
 def ciselnik(cfg: dict) -> list[dict]:
     """data/okruhy.json: okruhy v pořadí webu s tématy a názvy."""
     return [{"id": o["id"], "nazev": o["nazev"], "popis": o["popis"],

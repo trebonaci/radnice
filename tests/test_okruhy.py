@@ -79,3 +79,31 @@ def test_data_maji_okruh():
     usn = {u["id"]: u for u in json.loads((KOREN / "data" / "usneseni.json").read_text(encoding="utf-8"))}
     # hasiči v Branné nejsou sociální služby (oprava štítku 23. 11. 2026)
     assert usn["rm-2026-j113-u534"]["okruhy"] == ["rozvoj_sprava"]
+
+
+def test_rozpocet_investic_po_okruzich():
+    projekty = [{"id": "hala", "okruh": "sport_kultura"}]
+    prehled = {"rok": 2026, "po_zmenach": 175.0, "bez_rezervy_po_zmenach": 75.0, "oblasti": [
+        {"oblast": "Služby", "polozky": [{"nazev": "Ubytování sportovní hala", "oddil": 21, "projekt_id": "hala", "schvaleny": 40.0, "po_zmenach": 50.0}]},
+        {"oblast": "Bydlení", "polozky": [{"nazev": "Pasport VO", "oddil": 36, "schvaleny": 5.0, "po_zmenach": 5.0},
+                                         {"nazev": "Nákup pozemků", "oddil": 36, "schvaleny": 20.0, "po_zmenach": 20.0}]},
+        {"oblast": "Rezerva", "polozky": [{"nazev": "Rezervy kapitálových výdajů", "oddil": 64, "schvaleny": 100.0, "po_zmenach": 100.0}]}]}
+    assert okruhy.oznac_investice(CFG, [prehled], projekty) == []
+    pol = {p["nazev"]: (p["okruh"], p["okruh_podle"]) for o in prehled["oblasti"] for p in o["polozky"]}
+    assert pol["Ubytování sportovní hala"] == ("sport_kultura", "karta")      # karta má přednost před oddílem
+    assert pol["Pasport VO"] == ("doprava_prostor", "název")                  # „pasport“ není sport
+    assert pol["Nákup pozemků"] == ("rozvoj_sprava", "oddíl")
+    assert pol["Rezervy kapitálových výdajů"] == (None, "rezerva")
+    soucty = {o["okruh"]: o["po_zmenach"] for o in prehled["okruhy"]}
+    assert soucty == {"doprava_prostor": 5.0, "bydleni_pece": 0, "skoly": 0, "sport_kultura": 50.0,
+                      "spolecnosti": 0, "rozvoj_sprava": 20.0}
+    prehled["bez_rezervy_po_zmenach"] = 80.0
+    assert any("≠ bez rezervy" in c for c in okruhy.oznac_investice(CFG, [prehled], projekty))
+
+
+def test_ukazatel_usneseni_po_okruzich_se_scita():
+    from pipeline import ukazatele
+    jd = [{"id": "j", "datum": "2026-11-04"}]
+    us = [{"jednani_id": "j", "okruh": "skoly"}, {"jednani_id": "j", "okruh": "rozvoj_sprava"}, {"jednani_id": "j", "okruh": "skoly"}]
+    u = ukazatele.usneseni_okruhy(us, jd, okruhy.ciselnik(CFG))
+    assert [r["hodnota"] for r in u["hodnota"]] == [0, 0, 2, 0, 0, 1] and u["celkem"] == 3

@@ -55,7 +55,9 @@
               }
             ],
             "oblast": "Služby a cestovní ruch",
-            "projekt_id": "sportovni-hala-ubytovani"
+            "projekt_id": "sportovni-hala-ubytovani",
+            "okruh": "sport_kultura",
+            "okruh_podle": "karta"
           },
           {
             "nazev": "Ubytování sportovní hala - vybavení",
@@ -73,7 +75,9 @@
             },
             "zdroje_ro": [],
             "oblast": "Služby a cestovní ruch",
-            "projekt_id": "sportovni-hala-ubytovani"
+            "projekt_id": "sportovni-hala-ubytovani",
+            "okruh": "sport_kultura",
+            "okruh_podle": "karta"
           }
         ]
       },
@@ -98,7 +102,9 @@
             },
             "zdroje_ro": [],
             "oblast": "Doprava, ulice a chodníky",
-            "projekt_id": null
+            "projekt_id": null,
+            "okruh": "doprava_prostor",
+            "okruh_podle": "oddíl"
           },
           {
             "nazev": "Parkování, chodníky a stezky - realizace",
@@ -124,7 +130,9 @@
               }
             ],
             "oblast": "Doprava, ulice a chodníky",
-            "projekt_id": null
+            "projekt_id": null,
+            "okruh": "doprava_prostor",
+            "okruh_podle": "název"
           },
           {
             "nazev": "Ulice - projekty",
@@ -142,7 +150,9 @@
             },
             "zdroje_ro": [],
             "oblast": "Doprava, ulice a chodníky",
-            "projekt_id": null
+            "projekt_id": null,
+            "okruh": "doprava_prostor",
+            "okruh_podle": "oddíl"
           },
           {
             "nazev": "Parkování, chodníky a stezky - projekty",
@@ -160,7 +170,9 @@
             },
             "zdroje_ro": [],
             "oblast": "Doprava, ulice a chodníky",
-            "projekt_id": null
+            "projekt_id": null,
+            "okruh": "doprava_prostor",
+            "okruh_podle": "název"
           }
         ]
       },
@@ -185,7 +197,9 @@
             },
             "zdroje_ro": [],
             "oblast": "Voda a kanalizace",
-            "projekt_id": null
+            "projekt_id": null,
+            "okruh": "doprava_prostor",
+            "okruh_podle": "název"
           },
           {
             "nazev": "Energetické řešení budov města",
@@ -203,7 +217,9 @@
             },
             "zdroje_ro": [],
             "oblast": "Voda a kanalizace",
-            "projekt_id": null
+            "projekt_id": null,
+            "okruh": "doprava_prostor",
+            "okruh_podle": "oddíl"
           },
           {
             "nazev": "Propustky Břilice",
@@ -229,7 +245,9 @@
               }
             ],
             "oblast": "Voda a kanalizace",
-            "projekt_id": "propustek-brilice"
+            "projekt_id": "propustek-brilice",
+            "okruh": "doprava_prostor",
+            "okruh_podle": "karta"
           },
           {
             "nazev": "Projekty - vodohospodářská infrastruktura",
@@ -247,7 +265,9 @@
             },
             "zdroje_ro": [],
             "oblast": "Voda a kanalizace",
-            "projekt_id": null
+            "projekt_id": null,
+            "okruh": "doprava_prostor",
+            "okruh_podle": "název"
           },
           {
             "nazev": "Projekt páteře dešťové kanalizace",
@@ -265,7 +285,9 @@
             },
             "zdroje_ro": [],
             "oblast": "Voda a kanalizace",
-            "projekt_id": null
+            "projekt_id": null,
+            "okruh": "doprava_prostor",
+            "okruh_podle": "název"
           }
         ]
       },
@@ -290,7 +312,9 @@
             },
             "zdroje_ro": [],
             "oblast": "Školy a školky",
-            "projekt_id": null
+            "projekt_id": null,
+            "okruh": "skoly",
+            "okruh_podle": "název"
           },
           {
             "nazev": "FVE ZŠ Na Sadech",
@@ -313,7 +337,9 @@
               }
             ],
             "oblast": "Školy a školky",
-            "projekt_id": null
+            "projekt_id": null,
+            "okruh": "skoly",
+            "okruh_podle": "název"
           },
           {
             "nazev": "Projekty a studie ve školství - investice",
@@ -331,7 +357,9 @@
             },
             "zdroje_ro": [],
             "oblast": "Školy a školky",
-            "projekt_id": null
+            "projekt_id": null,
+            "okruh": "skoly",
+            "okruh_podle": "název"
           }
         ]
       },
@@ -364,7 +392,9 @@
               }
             ],
             "oblast": "Kultura a památky",
-            "projekt_id": null
+            "projekt_id": null,
+            "okruh": "sport_kultura",
+            "okruh_podle": "oddíl"
           }
         ]
       },
@@ -403,7 +433,9 @@
               }
             ],
             "oblast": "Sport a hřiště",
-            "projekt_id": "pristavba-telocvicen"
+            "projekt_id": "pristavba-telocvicen",
+            "okruh": "sport_kultura",
+            "okruh_podle": "karta"
           },
           {
             "nazev": "Dětská hřiště",
@@ -421,7 +453,9 @@
             },
             "zdroje_ro": [],
             "oblast": "Sport a hřiště",
-            "projekt_id": null
+            "projekt_id": null,
+            "okruh": "sport_kultura",
+            "okruh_podle": "název"
           },
           {
             "nazev": "Přístavba dvou tělocvičen sportovní haly Třeboň – dotace – KIF – JčK - INV",
@@ -444,7 +478,9 @@
               }
             ],
             "oblast": "Sport a hřiště",
-            "projekt_id": "pristavba-telocvicen"
+            "projekt_id": "pristavba-telocvicen",
+            "okruh": "sport_kultura",
+            "okruh_podle": "karta"
           },
           {
             "nazev": "Inv. přísp. spolku TJ Jiskra Třeboň, z.s. na modernizaci sport. areálu tenistů",
@@ -462,7 +498,9 @@
             },
             "zdroje_ro": [],
             "oblast": "Sport a hřiště",
-            "projekt_id": null
+            "projekt_id": null,
+            "okruh": "sport_kultura",
+            "okruh_podle": "název"
           },
           {
             "nazev": "Sportoviště - investice",
@@ -488,7 +526,9 @@
               }
             ],
             "oblast": "Sport a hřiště",
-            "projekt_id": null
+            "projekt_id": null,
+            "okruh": "sport_kultura",
+            "okruh_podle": "název"
           },
           {
             "nazev": "Projekty, studie - tělovýchova, sport, hřiště",
@@ -514,7 +554,9 @@
               }
             ],
             "oblast": "Sport a hřiště",
-            "projekt_id": null
+            "projekt_id": null,
+            "okruh": "sport_kultura",
+            "okruh_podle": "název"
           },
           {
             "nazev": "Rekonstrukce plochy pro volný pohyb psů",
@@ -532,7 +574,9 @@
             },
             "zdroje_ro": [],
             "oblast": "Sport a hřiště",
-            "projekt_id": null
+            "projekt_id": null,
+            "okruh": "sport_kultura",
+            "okruh_podle": "oddíl"
           }
         ]
       },
@@ -557,7 +601,9 @@
             },
             "zdroje_ro": [],
             "oblast": "Bydlení, osvětlení a budovy",
-            "projekt_id": null
+            "projekt_id": null,
+            "okruh": "bydleni_pece",
+            "okruh_podle": "název"
           },
           {
             "nazev": "VO - úsporná řešení",
@@ -575,7 +621,9 @@
             },
             "zdroje_ro": [],
             "oblast": "Bydlení, osvětlení a budovy",
-            "projekt_id": null
+            "projekt_id": null,
+            "okruh": "doprava_prostor",
+            "okruh_podle": "název"
           },
           {
             "nazev": "Snížení energetické náročnosti DPS 3",
@@ -619,7 +667,9 @@
               }
             ],
             "oblast": "Bydlení, osvětlení a budovy",
-            "projekt_id": "dps3-energie"
+            "projekt_id": "dps3-energie",
+            "okruh": "bydleni_pece",
+            "okruh_podle": "karta"
           },
           {
             "nazev": "Nákup pozemků",
@@ -637,7 +687,9 @@
             },
             "zdroje_ro": [],
             "oblast": "Bydlení, osvětlení a budovy",
-            "projekt_id": null
+            "projekt_id": null,
+            "okruh": "rozvoj_sprava",
+            "okruh_podle": "oddíl"
           },
           {
             "nazev": "Hřbitov sv. Alžběty – projekt",
@@ -660,7 +712,9 @@
               }
             ],
             "oblast": "Bydlení, osvětlení a budovy",
-            "projekt_id": null
+            "projekt_id": null,
+            "okruh": "rozvoj_sprava",
+            "okruh_podle": "oddíl"
           },
           {
             "nazev": "Nebytové prostory",
@@ -678,7 +732,9 @@
             },
             "zdroje_ro": [],
             "oblast": "Bydlení, osvětlení a budovy",
-            "projekt_id": null
+            "projekt_id": null,
+            "okruh": "rozvoj_sprava",
+            "okruh_podle": "oddíl"
           },
           {
             "nazev": "Projekty - byty",
@@ -696,7 +752,9 @@
             },
             "zdroje_ro": [],
             "oblast": "Bydlení, osvětlení a budovy",
-            "projekt_id": null
+            "projekt_id": null,
+            "okruh": "bydleni_pece",
+            "okruh_podle": "název"
           },
           {
             "nazev": "VO projekty",
@@ -714,7 +772,9 @@
             },
             "zdroje_ro": [],
             "oblast": "Bydlení, osvětlení a budovy",
-            "projekt_id": null
+            "projekt_id": null,
+            "okruh": "doprava_prostor",
+            "okruh_podle": "název"
           },
           {
             "nazev": "Územně plánovací dokumentace",
@@ -732,7 +792,9 @@
             },
             "zdroje_ro": [],
             "oblast": "Bydlení, osvětlení a budovy",
-            "projekt_id": null
+            "projekt_id": null,
+            "okruh": "rozvoj_sprava",
+            "okruh_podle": "název"
           },
           {
             "nazev": "Pasport VO",
@@ -758,7 +820,9 @@
               }
             ],
             "oblast": "Bydlení, osvětlení a budovy",
-            "projekt_id": null
+            "projekt_id": null,
+            "okruh": "doprava_prostor",
+            "okruh_podle": "název"
           }
         ]
       },
@@ -783,7 +847,9 @@
             },
             "zdroje_ro": [],
             "oblast": "Životní prostředí a zeleň",
-            "projekt_id": null
+            "projekt_id": null,
+            "okruh": "doprava_prostor",
+            "okruh_podle": "oddíl"
           },
           {
             "nazev": "Aktualizace pasportu zeleně",
@@ -801,7 +867,9 @@
             },
             "zdroje_ro": [],
             "oblast": "Životní prostředí a zeleň",
-            "projekt_id": null
+            "projekt_id": null,
+            "okruh": "doprava_prostor",
+            "okruh_podle": "oddíl"
           },
           {
             "nazev": "Stání pro kontejnery",
@@ -819,7 +887,9 @@
             },
             "zdroje_ro": [],
             "oblast": "Životní prostředí a zeleň",
-            "projekt_id": null
+            "projekt_id": null,
+            "okruh": "doprava_prostor",
+            "okruh_podle": "oddíl"
           },
           {
             "nazev": "Doplnění městského mobiliáře",
@@ -842,7 +912,9 @@
               }
             ],
             "oblast": "Životní prostředí a zeleň",
-            "projekt_id": null
+            "projekt_id": null,
+            "okruh": "doprava_prostor",
+            "okruh_podle": "oddíl"
           }
         ]
       },
@@ -875,7 +947,9 @@
               }
             ],
             "oblast": "Bezpečnost",
-            "projekt_id": null
+            "projekt_id": null,
+            "okruh": "rozvoj_sprava",
+            "okruh_podle": "oddíl"
           },
           {
             "nazev": "Modernizace kamerového systému",
@@ -893,7 +967,9 @@
             },
             "zdroje_ro": [],
             "oblast": "Bezpečnost",
-            "projekt_id": null
+            "projekt_id": null,
+            "okruh": "rozvoj_sprava",
+            "okruh_podle": "oddíl"
           }
         ]
       },
@@ -918,7 +994,9 @@
             },
             "zdroje_ro": [],
             "oblast": "Městský úřad",
-            "projekt_id": null
+            "projekt_id": null,
+            "okruh": "rozvoj_sprava",
+            "okruh_podle": "oddíl"
           },
           {
             "nazev": "Nové webové stránky",
@@ -936,7 +1014,9 @@
             },
             "zdroje_ro": [],
             "oblast": "Městský úřad",
-            "projekt_id": null
+            "projekt_id": null,
+            "okruh": "rozvoj_sprava",
+            "okruh_podle": "oddíl"
           }
         ]
       },
@@ -1005,11 +1085,57 @@
               }
             ],
             "oblast": "Rezerva",
-            "projekt_id": null
+            "projekt_id": null,
+            "okruh": null,
+            "okruh_podle": "rezerva"
           }
         ]
       }
     ],
-    "fondy_poznamka": "Investice z fondů (lázeňský investiční fond, fond obnovy vodohospodářského majetku) rozpočet uvádí jen souhrnně, nejsou zahrnuty."
+    "fondy_poznamka": "Investice z fondů (lázeňský investiční fond, fond obnovy vodohospodářského majetku) rozpočet uvádí jen souhrnně, nejsou zahrnuty.",
+    "okruhy": [
+      {
+        "okruh": "doprava_prostor",
+        "nazev": "Doprava a veřejný prostor",
+        "polozek": 16,
+        "schvaleny": 74580000.0,
+        "po_zmenach": 75514700.0
+      },
+      {
+        "okruh": "bydleni_pece",
+        "nazev": "Bydlení a péče",
+        "polozek": 3,
+        "schvaleny": 34500000.0,
+        "po_zmenach": 26585000.0
+      },
+      {
+        "okruh": "skoly",
+        "nazev": "Školy a školky",
+        "polozek": 3,
+        "schvaleny": 3600000.0,
+        "po_zmenach": 5700000.0
+      },
+      {
+        "okruh": "sport_kultura",
+        "nazev": "Sport, kultura a spolky",
+        "polozek": 10,
+        "schvaleny": 150250000.0,
+        "po_zmenach": 156037140.0
+      },
+      {
+        "okruh": "spolecnosti",
+        "nazev": "Městské společnosti",
+        "polozek": 0,
+        "schvaleny": 0,
+        "po_zmenach": 0
+      },
+      {
+        "okruh": "rozvoj_sprava",
+        "nazev": "Rozvoj a správa města",
+        "polozek": 8,
+        "schvaleny": 3805000.0,
+        "po_zmenach": 4600000.0
+      }
+    ]
   }
 ]

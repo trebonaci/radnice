@@ -53,4 +53,4 @@ def test_usneseni_pro_web_nese_okruhy():
 def test_mapa_po_okruzich():
     html = build.sestav()
     assert 'okruhChips("mapa")' in html and "data-gtema" not in html
-    assert '["stavby","usneseni","mista","mapa"].includes(str)' in html   # okruh v adrese i pro mapu
+    assert '["stavby","usneseni","mista","mapa","casova-osa"].includes(str)' in html   # okruh v adrese i pro mapu a časovou osu
