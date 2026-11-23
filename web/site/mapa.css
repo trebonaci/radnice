@@ -58,3 +58,4 @@ body[data-str=mapa] #karty{max-width:1180px}
 
 .gis-pin.gis-service,.gis-key i.gis-service{border-radius:3px}
 .gis-card .zm{margin:8px 0}
+.gis-okruh{font:700 15px/1.3 var(--font);margin:16px 0 4px}.gis-okruh:first-child{margin-top:4px}.gis-okruh small{font-weight:400;color:var(--mute);font-size:13px}

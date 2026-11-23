@@ -48,3 +48,9 @@ def test_usneseni_pro_web_nese_okruhy():
     from web.build import usneseni_pro_web
     r = usneseni_pro_web([{"id": "u", "jednani_id": "x", "okruh": "skoly", "okruhy": ["skoly", "rozvoj_sprava"]}], [])
     assert r[0]["okruh"] == "skoly" and r[0]["okruhy"] == ["skoly", "rozvoj_sprava"]
+
+
+def test_mapa_po_okruzich():
+    html = build.sestav()
+    assert 'okruhChips("mapa")' in html and "data-gtema" not in html
+    assert '["stavby","usneseni","mista","mapa"].includes(str)' in html   # okruh v adrese i pro mapu
