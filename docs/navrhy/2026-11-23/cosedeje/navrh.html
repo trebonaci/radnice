@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+
+<html lang="cs"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-dim":"#cbdbf5","on-primary-fixed":"#102000","on-surface-variant":"#424936","secondary-fixed":"#dae2fd","background":"#f8f9ff","surface-tint":"#416900","error-container":"#ffdad6","outline":"#727a64","primary-fixed-dim":"#91db2a","tertiary-fixed":"#cce5ff","accent-lime-light":"#ecfccb","on-secondary-fixed":"#131b2e","on-error":"#ffffff","secondary":"#565e74","surface-container":"#e5eeff","on-secondary-fixed-variant":"#3f465c","surface-bright":"#f8f9ff","on-primary-container":"#315200","category-zmena":"#84cc16","category-stavba":"#f59e0b","inverse-surface":"#213145","outline-variant":"#c1cab0","error":"#ba1a1a","primary-fixed":"#acf847","accent-lime":"#94C83D","surface-card":"#ffffff","tertiary-container":"#70bfff","secondary-container":"#dae2fd","surface-dark":"#111827","surface-container-high":"#dce9ff","tertiary-fixed-dim":"#93ccff","on-error-container":"#93000a","on-secondary-container":"#5c647a","on-tertiary":"#ffffff","surface-variant":"#d3e4fe","tertiary":"#006398","on-primary":"#ffffff","inverse-on-surface":"#eaf1ff","secondary-fixed-dim":"#bec6e0","surface-container-highest":"#d3e4fe","on-tertiary-fixed":"#001d31","surface-container-lowest":"#ffffff","surface-dark-subtle":"#1f2937","surface":"#f8f9ff","surface-container-low":"#eff4ff","category-kriticke":"#ef4444","on-secondary":"#ffffff","border-dark":"#334155","on-primary-fixed-variant":"#304f00","primary-container":"#84cc16","on-tertiary-container":"#004d77","on-surface":"#0b1c30","inverse-primary":"#91db2a","border-subtle":"#e2e8f0","category-rozhodnuti":"#3b82f6","surface-light":"#f8fafc","primary":"#416900","accent-lime-dark":"#4d7c0f","on-background":"#0b1c30","on-tertiary-fixed-variant":"#004b73"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-4xl":"6rem",margin:"2rem","space-3xl":"4.5rem","space-3xs":"0.125rem","margin-mobile":"1rem","space-xl":"2rem",gutter:"1.5rem","space-sm":"0.75rem","space-lg":"1.5rem","space-2xs":"0.25rem","space-xs":"0.5rem","space-2xl":"3rem","space-md":"1rem","gutter-mobile":"1rem"},fontFamily:{"body-lg":["Inter"],"body-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"],"label-uppercase":["Inter"],"label-badge":["Inter"],"display-hero":["Plus Jakarta Sans"],"body-sm":["Inter"],"code-data":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"kpi-metric-mobile":["Plus Jakarta Sans"],"kpi-metric":["Plus Jakarta Sans"]},fontSize:{"body-lg":["18px",{lineHeight:"28px",fontWeight:"400"}],"body-md":["15px",{lineHeight:"24px",fontWeight:"400"}],"headline-lg":["36px",{lineHeight:"44px",letterSpacing:"-0.025em",fontWeight:"700"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"700"}],"headline-sm":["18px",{lineHeight:"26px",letterSpacing:"-0.01em",fontWeight:"600"}],"display-hero-mobile":["36px",{lineHeight:"42px",letterSpacing:"-0.02em",fontWeight:"800"}],"label-uppercase":["11px",{lineHeight:"14px",letterSpacing:"0.08em",fontWeight:"700"}],"label-badge":["12px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"600"}],"display-hero":["56px",{lineHeight:"64px",letterSpacing:"-0.03em",fontWeight:"800"}],"body-sm":["13px",{lineHeight:"18px",fontWeight:"400"}],"code-data":["13px",{lineHeight:"18px",fontWeight:"500"}],"headline-lg-mobile":["26px",{lineHeight:"32px",letterSpacing:"-0.02em",fontWeight:"700"}],"kpi-metric-mobile":["36px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"800"}],"kpi-metric":["48px",{lineHeight:"52px",letterSpacing:"-0.03em",fontWeight:"800"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm group" data-path="prehled-deni" href="#"><div class="w-9 h-9 rounded-lg bg-surface-dark flex items-center justify-center"><span class="material-symbols-outlined text-primary-container text-[20px]">account_balance</span></div><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-surface-dark tracking-tight leading-none group-hover:text-primary transition-colors">Třeboňáci</span><span class="px-space-xs py-space-3xs rounded-full bg-accent-lime-light text-accent-lime-dark font-label-uppercase text-label-uppercase">RADNICE &amp; DATA</span></div><span class="font-body-sm text-body-sm text-secondary hidden sm:inline leading-tight">Co se děje na radnici v Třeboni</span></div></a><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-space-2xs rounded-full bg-surface-container-low"><span class="w-2 h-2 rounded-full bg-category-zmena animate-pulse"></span><span class="font-code-data text-code-data text-secondary">Aktualizace: 23. 11. 2026</span><span class="text-outline-variant text-[11px]">•</span><span class="font-label-badge text-label-badge text-tertiary">Otevřená radnice</span></div></div><div class="flex-1 max-w-md hidden md:block"><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-space-sm text-secondary text-[18px]">search</span><input class="w-full pl-9 pr-12 py-space-xs rounded-lg bg-surface-container-lowest font-body-sm text-body-sm text-on-surface placeholder:text-secondary focus:outline-none focus:ring-2 focus:ring-accent-lime shadow-[0_1px_4px_rgba(0,0,0,0.03)]" placeholder="Hledat v usneseních, smlouvách, zakázkách..." type="text"/><kbd class="absolute right-space-xs px-space-2xs py-space-3xs rounded bg-surface-container-high font-code-data text-[10px] text-secondary">⌘K</kbd></div></div><div class="flex items-center gap-space-md"><a class="hidden lg:flex items-center gap-space-3xs font-label-badge text-label-badge text-secondary hover:text-on-surface transition-colors" href="https://trebonaci.cz" rel="noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px]">public</span><span>trebonaci.cz</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="bg-surface-container-low shadow-[0_1px_4px_rgba(0,0,0,0.02)]"><div class="max-w-7xl mx-auto px-margin"><nav class="flex items-center gap-space-xs overflow-x-auto py-space-xs" data-active-classes="bg-primary-container text-on-surface font-headline-sm"><a class="px-space-md py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface whitespace-nowrap transition-colors" data-path="prehled-deni" href="#">Přehled dění</a><a class="px-space-md py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface whitespace-nowrap transition-colors" data-path="stavby-a-opravy" href="#">Stavby a opravy</a><a class="px-space-md py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface whitespace-nowrap transition-colors" data-path="rozhodnuti-rady" href="#">Rozhodnutí rady</a><a class="px-space-md py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface whitespace-nowrap transition-colors" data-path="mista-a-sluzby" href="#">Místa a služby</a><a class="px-space-md py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface whitespace-nowrap transition-colors" data-path="rozpocet" href="#">Rozpočet</a><a class="px-space-md py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface whitespace-nowrap transition-colors" data-path="interaktivni-mapa" href="#">Interaktivní mapa</a></nav></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-200px)]"><div class="flex flex-col w-full">
+<!-- Top Visual Hero / Municipal Intelligence Terminal -->
+<section class="w-full bg-surface-dark text-on-tertiary relative overflow-hidden -mt-20 pt-28 pb-space-2xl md:pb-space-3xl">
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="48" id="grid-pattern" patternunits="userSpaceOnUse" width="48">
+<path class="text-surface-container-highest" d="M 48 0 L 0 0 0 48" fill="none" stroke="currentColor" stroke-width="1"></path>
+</pattern>
+</defs>
+<rect fill="url(#grid-pattern)" height="100%" width="100%"></rect>
+</svg>
+</div>
+<!-- Glow Accents -->
+<div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-primary/20 blur-3xl pointer-events-none"></div>
+<div class="absolute bottom-0 right-1/4 w-80 h-80 rounded-full bg-category-zmena/15 blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-margin relative z-10">
+<!-- Top Meta Stream Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-lg">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="inline-flex items-center gap-space-2xs px-space-sm py-space-3xs rounded-full bg-surface-dark-subtle text-accent-lime font-label-uppercase text-label-uppercase">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+            RADNICE &amp; OTEVŘENÁ DATA
+          </span>
+<span class="text-secondary font-code-data text-code-data hidden sm:inline">•</span>
+<span class="font-code-data text-code-data text-secondary-fixed-dim">Data k 23. 11. 2026</span>
+<span class="text-secondary font-code-data text-code-data hidden sm:inline">•</span>
+<span class="px-space-xs py-space-3xs rounded bg-surface-dark-subtle text-category-stavba font-code-data text-code-data">Náhled (neschváleno ke zveřejnění)</span>
+</div>
+<a class="inline-flex items-center gap-space-3xs font-label-badge text-label-badge text-accent-lime hover:underline" href="#metodika">
+<span>Jak vzniká přehled</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+<!-- Main Headline + Giant Counter Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center pt-space-xs">
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<h1 class="font-display-hero text-display-hero text-surface-lowest tracking-tight leading-[1.08] text-white">
+            Co se děje na <span class="text-primary-container">radnici v Třeboni</span>
+</h1>
+<p class="font-body-lg text-body-lg text-secondary-fixed-dim max-w-2xl leading-relaxed">
+            Co se staví, co radnice rozhodla a co se mění ve službách – v šesti okruzích, nejnovější nahoře. U každého údaje je odkaz na oficiální dokument a smlouvu.
+          </p>
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<span class="font-body-sm text-body-sm text-secondary">Přehled nezávisle sestavují občané ze spolku</span>
+<span class="px-space-sm py-space-3xs rounded-full bg-white/10 text-white font-label-badge text-label-badge">Třeboňáci</span>
+<span class="font-body-sm text-body-sm text-secondary">z veřejných zdrojů MěÚ Třeboň</span>
+</div>
+</div>
+<!-- Giant KPI Disc / Hero Radial Component inspired by election specials -->
+<div class="lg:col-span-5 flex justify-center lg:justify-end">
+<div class="relative w-72 h-72 sm:w-80 sm:h-80 rounded-full bg-surface-dark-subtle flex flex-col items-center justify-center text-center p-space-lg shadow-2xl group transition-transform duration-500 hover:scale-[1.02]">
+<!-- Decorative concentric ring -->
+<div class="absolute inset-2 rounded-full border border-white/5 pointer-events-none"></div>
+<div class="absolute inset-0 rounded-full border-2 border-primary-container/30 pointer-events-none animate-pulse"></div>
+<span class="font-label-uppercase text-label-uppercase text-accent-lime uppercase tracking-widest">Aktivní monitoring</span>
+<div class="font-kpi-metric text-[76px] leading-none tracking-tight font-extrabold text-white my-space-xs flex items-baseline">
+              148
+            </div>
+<span class="font-headline-sm text-headline-sm text-white font-semibold">SLEDOVANÝCH POLOŽEK</span>
+<span class="font-body-sm text-body-sm text-secondary-fixed-dim mt-space-2xs max-w-[210px] leading-tight">investic, smluv, usnesení a provozních změn</span>
+<!-- Mini Live indicator -->
+<div class="mt-space-sm inline-flex items-center gap-space-2xs px-space-sm py-space-3xs rounded-full bg-primary-container/20 text-accent-lime font-code-data text-code-data">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+              6 sledovaných okruhů
+            </div>
+</div>
+</div>
+</div>
+<!-- Quick Metrics Bar (Sector breakdown) -->
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-space-sm mt-space-2xl pt-space-lg border-t border-white/10">
+<a class="group p-space-sm rounded-xl bg-surface-dark-subtle/70 hover:bg-surface-dark-subtle transition-all" href="#okruh-rozvoj">
+<div class="flex items-center justify-between">
+<span class="font-code-data text-code-data text-secondary-fixed-dim">Rozvoj města</span>
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+</div>
+<div class="font-headline-md text-headline-md text-white font-bold mt-space-2xs group-hover:text-primary-container transition-colors">56</div>
+<span class="font-label-uppercase text-[10px] text-secondary">usnesení &amp; správa</span>
+</a>
+<a class="group p-space-sm rounded-xl bg-surface-dark-subtle/70 hover:bg-surface-dark-subtle transition-all" href="#okruh-doprava">
+<div class="flex items-center justify-between">
+<span class="font-code-data text-code-data text-secondary-fixed-dim">Doprava &amp; prostor</span>
+<span class="w-2 h-2 rounded-full bg-category-stavba"></span>
+</div>
+<div class="font-headline-md text-headline-md text-white font-bold mt-space-2xs group-hover:text-category-stavba transition-colors">33</div>
+<span class="font-label-uppercase text-[10px] text-secondary">stavby a údržba</span>
+</a>
+<a class="group p-space-sm rounded-xl bg-surface-dark-subtle/70 hover:bg-surface-dark-subtle transition-all" href="#okruh-sport">
+<div class="flex items-center justify-between">
+<span class="font-code-data text-code-data text-secondary-fixed-dim">Sport &amp; kultura</span>
+<span class="w-2 h-2 rounded-full bg-category-rozhodnuti"></span>
+</div>
+<div class="font-headline-md text-headline-md text-white font-bold mt-space-2xs group-hover:text-accent-lime transition-colors">31</div>
+<span class="font-label-uppercase text-[10px] text-secondary">akce &amp; spolky</span>
+</a>
+<a class="group p-space-sm rounded-xl bg-surface-dark-subtle/70 hover:bg-surface-dark-subtle transition-all" href="#okruh-bydleni">
+<div class="flex items-center justify-between">
+<span class="font-code-data text-code-data text-secondary-fixed-dim">Bydlení &amp; péče</span>
+<span class="w-2 h-2 rounded-full bg-accent-lime"></span>
+</div>
+<div class="font-headline-md text-headline-md text-white font-bold mt-space-2xs group-hover:text-accent-lime transition-colors">17</div>
+<span class="font-label-uppercase text-[10px] text-secondary">sociální služby</span>
+</a>
+<a class="group p-space-sm rounded-xl bg-surface-dark-subtle/70 hover:bg-surface-dark-subtle transition-all" href="#okruh-skoly">
+<div class="flex items-center justify-between">
+<span class="font-code-data text-code-data text-secondary-fixed-dim">Školy &amp; školky</span>
+<span class="w-2 h-2 rounded-full bg-tertiary-container"></span>
+</div>
+<div class="font-headline-md text-headline-md text-white font-bold mt-space-2xs group-hover:text-tertiary-container transition-colors">15</div>
+<span class="font-label-uppercase text-[10px] text-secondary">vzdělávání dětí</span>
+</a>
+<a class="group p-space-sm rounded-xl bg-surface-dark-subtle/70 hover:bg-surface-dark-subtle transition-all" href="#okruh-spolecnosti">
+<div class="flex items-center justify-between">
+<span class="font-code-data text-code-data text-secondary-fixed-dim">Městské firmy</span>
+<span class="w-2 h-2 rounded-full bg-secondary-fixed"></span>
+</div>
+<div class="font-headline-md text-headline-md text-white font-bold mt-space-2xs group-hover:text-primary-container transition-colors">11</div>
+<span class="font-label-uppercase text-[10px] text-secondary">Lázně, služby apod.</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Interactive Search, Filter Chips & Visual Distribution Strip -->
+<section class="max-w-7xl mx-auto px-margin w-full -mt-7 relative z-20">
+<div class="bg-surface-card rounded-2xl shadow-xl p-space-md sm:p-space-lg flex flex-col gap-space-md">
+<!-- Search and Quick Category Chips -->
+<div class="flex flex-col md:flex-row items-center gap-space-md justify-between">
+<!-- Live filter search field -->
+<div class="relative w-full md:max-w-lg">
+<span class="material-symbols-outlined absolute left-space-md text-secondary text-[22px]">search</span>
+<input class="w-full pl-12 pr-10 py-space-sm rounded-xl bg-surface-container-low font-body-md text-body-md text-on-surface placeholder:text-secondary focus:outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all" id="filter-input" oninput="handleQuickFilter(this.value)" placeholder="Filtrovat podle ulice, dodavatele, školy, smlouvy (např. Branná, DPS, ZŠ)..." type="text"/>
+<button class="material-symbols-outlined absolute right-space-sm text-secondary hover:text-on-surface text-[18px]" onclick="clearSearch()">close</button>
+</div>
+<!-- Filter pills by action type -->
+<div class="flex items-center gap-space-2xs overflow-x-auto w-full md:w-auto pb-1 md:pb-0">
+<button class="type-filter-btn px-space-md py-space-xs rounded-full font-label-badge text-label-badge bg-surface-dark text-white shadow-sm whitespace-nowrap" onclick="filterType('all')">
+            Všechny typy (148)
+          </button>
+<button class="type-filter-btn px-space-md py-space-xs rounded-full font-label-badge text-label-badge bg-surface-container hover:bg-surface-container-high text-on-surface whitespace-nowrap transition-colors flex items-center gap-space-2xs" onclick="filterType('stavba')">
+<span class="w-2 h-2 rounded-full bg-category-stavba"></span>
+            Stavby
+          </button>
+<button class="type-filter-btn px-space-md py-space-xs rounded-full font-label-badge text-label-badge bg-surface-container hover:bg-surface-container-high text-on-surface whitespace-nowrap transition-colors flex items-center gap-space-2xs" onclick="filterType('rozhodnuti')">
+<span class="w-2 h-2 rounded-full bg-category-rozhodnuti"></span>
+            Rozhodnutí rady
+          </button>
+<button class="type-filter-btn px-space-md py-space-xs rounded-full font-label-badge text-label-badge bg-surface-container hover:bg-surface-container-high text-on-surface whitespace-nowrap transition-colors flex items-center gap-space-2xs" onclick="filterType('zmena')">
+<span class="w-2 h-2 rounded-full bg-category-zmena"></span>
+            Změny &amp; provoz
+          </button>
+</div>
+</div>
+<!-- Segmented Bar: Proportional Visualization of Topics -->
+<div class="flex flex-col gap-space-2xs pt-space-2xs">
+<div class="flex items-center justify-between text-body-sm font-code-data text-secondary">
+<span>Struktura agendy města (148 záznamů)</span>
+<span class="hidden sm:inline">Největší podíl: Rozvoj a správa (37,8 %)</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container-low overflow-hidden flex gap-[2px]">
+<div class="h-full bg-primary-container transition-all hover:opacity-80" style="width: 37.8%;" title="Rozvoj a správa: 56"></div>
+<div class="h-full bg-category-stavba transition-all hover:opacity-80" style="width: 22.3%;" title="Doprava a veřejný prostor: 33"></div>
+<div class="h-full bg-category-rozhodnuti transition-all hover:opacity-80" style="width: 20.9%;" title="Sport, kultura a spolky: 31"></div>
+<div class="h-full bg-accent-lime-dark transition-all hover:opacity-80" style="width: 11.5%;" title="Bydlení a péče: 17"></div>
+<div class="h-full bg-tertiary-container transition-all hover:opacity-80" style="width: 10.1%;" title="Školy a školky: 15"></div>
+<div class="h-full bg-secondary transition-all hover:opacity-80" style="width: 7.4%;" title="Městské společnosti: 11"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Navigation Shortcut Sub-bar -->
+<section class="max-w-7xl mx-auto px-margin w-full pt-space-xl pb-space-xs">
+<div class="flex items-center justify-between flex-wrap gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-category-zmena"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Šest klíčových okruhů samosprávy</h2>
+</div>
+<div class="flex items-center gap-space-xs text-body-sm font-code-data text-secondary">
+<span class="material-symbols-outlined text-[16px] text-accent-lime-dark">check_circle</span>
+<span>Seřazeno chronologicky od nejnovějších událostí</span>
+</div>
+</div>
+</section>
+<!-- 6 MAIN THEMATIC CLUSTERS (2-Column Grid of dense rich bento cards) -->
+<section class="max-w-7xl mx-auto px-margin w-full pt-space-md pb-space-3xl">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+<!-- Okruh 1: Doprava a veřejný prostor -->
+<article class="thematic-block bg-surface-card rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between" id="okruh-doprava">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-xl bg-amber-500/10 text-category-stavba flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">traffic</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface tracking-tight">Doprava a veřejný prostor</h3>
+<span class="font-body-sm text-body-sm text-secondary">Silnice, chodníky, veřejné osvětlení a zeleň</span>
+</div>
+</div>
+<span class="px-space-sm py-space-2xs rounded-full bg-amber-500/15 text-category-stavba font-label-badge text-label-badge font-bold">
+              33 položek
+            </span>
+</div>
+<!-- Entries Container -->
+<div class="flex flex-col gap-space-sm pt-space-2xs">
+<!-- Item 1 -->
+<div class="record-item group p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex flex-col gap-space-2xs" data-category="stavba">
+<div class="flex items-center justify-between gap-space-xs">
+<span class="inline-flex items-center gap-space-2xs px-space-xs py-space-3xs rounded-full bg-amber-500/20 text-amber-800 font-label-badge text-label-badge">
+<span class="w-1.5 h-1.5 rounded-full bg-category-stavba"></span>
+                  STAVBA
+                </span>
+<span class="font-code-data text-code-data text-secondary">19. 11. 2026</span>
+</div>
+<h4 class="font-headline-sm text-[16px] text-on-surface font-semibold group-hover:text-primary transition-colors">
+                Veřejné osvětlení v Branné
+              </h4>
+<p class="font-body-sm text-body-sm text-secondary leading-snug">
+                Byl uzavřen dodatek č. 2 ke smlouvě o dílo s rozšířením trasy a koordinací s E.ON Distribuce.
+              </p>
+<div class="flex items-center gap-space-xs pt-space-3xs text-secondary font-code-data text-[12px]">
+<span class="material-symbols-outlined text-[15px] text-accent-lime-dark">description</span>
+<span>Smlouva o dílo č. 2026/0412 · Registr smluv</span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="record-item group p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex flex-col gap-space-2xs" data-category="stavba">
+<div class="flex items-center justify-between gap-space-xs">
+<span class="inline-flex items-center gap-space-2xs px-space-xs py-space-3xs rounded-full bg-amber-500/20 text-amber-800 font-label-badge text-label-badge">
+<span class="w-1.5 h-1.5 rounded-full bg-category-stavba"></span>
+                  STAVBA
+                </span>
+<span class="font-code-data text-code-data text-secondary">6. 11. 2026</span>
+</div>
+<h4 class="font-headline-sm text-[16px] text-on-surface font-semibold group-hover:text-primary transition-colors">
+                Ulice Heřmánkova a Daskabát
+              </h4>
+<p class="font-body-sm text-body-sm text-secondary leading-snug">
+                Byla uzavřena smlouva o dílo s dodavatelem VKB stavby s.r.o. na celkovou rekonstrukci povrchů a odvodnění.
+              </p>
+<div class="flex items-center gap-space-xs pt-space-3xs text-secondary font-code-data text-[12px]">
+<span class="material-symbols-outlined text-[15px] text-primary">handshake</span>
+<span>Vysoutěženo v E-ZAK · Dodavatel VKB stavby s.r.o.</span>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-sm border-t border-surface-container flex items-center justify-between">
+<span class="font-code-data text-[12px] text-secondary">Aktualizováno před 4 dny</span>
+<a class="inline-flex items-center gap-space-2xs text-primary font-headline-sm text-[14px] hover:text-accent-lime-dark font-semibold group" href="#">
+<span>Zobrazit všech 33 záznamů</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Okruh 2: Bydlení a péče -->
+<article class="thematic-block bg-surface-card rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between" id="okruh-bydleni">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-xl bg-lime-500/10 text-accent-lime-dark flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">volunteer_activism</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface tracking-tight">Bydlení a péče</h3>
+<span class="font-body-sm text-body-sm text-secondary">DPS, sociální fondy a dostupné bydlení</span>
+</div>
+</div>
+<span class="px-space-sm py-space-2xs rounded-full bg-accent-lime-light text-accent-lime-dark font-label-badge text-label-badge font-bold">
+              17 položek
+            </span>
+</div>
+<!-- Entries Container -->
+<div class="flex flex-col gap-space-sm pt-space-2xs">
+<!-- Item 1 -->
+<div class="record-item group p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex flex-col gap-space-2xs" data-category="rozhodnuti">
+<div class="flex items-center justify-between gap-space-xs">
+<span class="inline-flex items-center gap-space-2xs px-space-xs py-space-3xs rounded-full bg-blue-500/15 text-blue-800 font-label-badge text-label-badge">
+<span class="w-1.5 h-1.5 rounded-full bg-category-rozhodnuti"></span>
+                  ROZHODNUTÍ
+                </span>
+<span class="font-code-data text-code-data text-secondary">30. 10. 2026</span>
+</div>
+<h4 class="font-headline-sm text-[16px] text-on-surface font-semibold group-hover:text-primary transition-colors">
+                Dotace v oblasti sociálních služeb a zdravotnictví 2026
+              </h4>
+<p class="font-body-sm text-body-sm text-secondary leading-snug">
+                Rada města schválila dotační program na podporu registrovaných terénních a lůžkových sociálních služeb na území města.
+              </p>
+<div class="flex items-center gap-space-xs pt-space-3xs text-secondary font-code-data text-[12px]">
+<span class="material-symbols-outlined text-[15px] text-category-rozhodnuti">gavel</span>
+<span>Usnesení RM č. 712/2026 · Rada města</span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="record-item group p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex flex-col gap-space-2xs" data-category="stavba">
+<div class="flex items-center justify-between gap-space-xs">
+<span class="inline-flex items-center gap-space-2xs px-space-xs py-space-3xs rounded-full bg-amber-500/20 text-amber-800 font-label-badge text-label-badge">
+<span class="w-1.5 h-1.5 rounded-full bg-category-stavba"></span>
+                  STAVBA
+                </span>
+<span class="font-code-data text-code-data text-secondary">21. 10. 2026</span>
+</div>
+<h4 class="font-headline-sm text-[16px] text-on-surface font-semibold group-hover:text-primary transition-colors">
+                Úspory energie v domě s pečovatelskou službou 3
+              </h4>
+<p class="font-body-sm text-body-sm text-secondary leading-snug">
+                Rozpočtovým opatřením se snížil rozpočet položky Snížení energetické náročnosti DPS 3 v návaznosti na schválenou dotaci NZÚ.
+              </p>
+<div class="flex items-center gap-space-xs pt-space-3xs text-secondary font-code-data text-[12px]">
+<span class="material-symbols-outlined text-[15px] text-category-stavba">account_balance_wallet</span>
+<span>Rozpočtová úprava č. 59 · Investiční úsek</span>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-sm border-t border-surface-container flex items-center justify-between">
+<span class="font-code-data text-[12px] text-secondary">Aktualizováno před 3 týdny</span>
+<a class="inline-flex items-center gap-space-2xs text-primary font-headline-sm text-[14px] hover:text-accent-lime-dark font-semibold group" href="#">
+<span>Zobrazit všech 17 záznamů</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Okruh 3: Školy a školky -->
+<article class="thematic-block bg-surface-card rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between" id="okruh-skoly">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-xl bg-blue-500/10 text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">school</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface tracking-tight">Školy a školky</h3>
+<span class="font-body-sm text-body-sm text-secondary">Základní školy, mateřinky a jídelny</span>
+</div>
+</div>
+<span class="px-space-sm py-space-2xs rounded-full bg-surface-container text-tertiary font-label-badge text-label-badge font-bold">
+              15 položek
+            </span>
+</div>
+<div class="flex flex-col gap-space-sm pt-space-2xs">
+<!-- Item 1 -->
+<div class="record-item group p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex flex-col gap-space-2xs" data-category="zmena">
+<div class="flex items-center justify-between gap-space-xs">
+<span class="inline-flex items-center gap-space-2xs px-space-xs py-space-3xs rounded-full bg-lime-500/20 text-lime-900 font-label-badge text-label-badge">
+<span class="w-1.5 h-1.5 rounded-full bg-category-zmena"></span>
+                  ZMĚNA
+                </span>
+<span class="font-code-data text-code-data text-secondary">4. 11. 2026</span>
+</div>
+<h4 class="font-headline-sm text-[16px] text-on-surface font-semibold group-hover:text-primary transition-colors">
+                ZŠ Sokolská – dar dětských bruslí
+              </h4>
+<p class="font-body-sm text-body-sm text-secondary leading-snug">
+                ZŠ Sokolská může od spolku Děti do bruslí přijmout darem 10 párů dětských bruslí pro zimní výuku tělesné výchovy na městském kluzišti.
+              </p>
+<div class="flex items-center gap-space-xs pt-space-3xs text-secondary font-code-data text-[12px]">
+<span class="material-symbols-outlined text-[15px] text-primary">card_giftcard</span>
+<span>Usnesení Rady č. 734/2026 · Bez finančního nákladu města</span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="record-item group p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex flex-col gap-space-2xs" data-category="zmena">
+<div class="flex items-center justify-between gap-space-xs">
+<span class="inline-flex items-center gap-space-2xs px-space-xs py-space-3xs rounded-full bg-lime-500/20 text-lime-900 font-label-badge text-label-badge">
+<span class="w-1.5 h-1.5 rounded-full bg-category-zmena"></span>
+                  ZMĚNA
+                </span>
+<span class="font-code-data text-code-data text-secondary">21. 10. 2026</span>
+</div>
+<h4 class="font-headline-sm text-[16px] text-on-surface font-semibold group-hover:text-primary transition-colors">
+                MŠ Sluníčko – výjimka z počtu dětí
+              </h4>
+<p class="font-body-sm text-body-sm text-secondary leading-snug">
+                Ve třech třídách MŠ Sluníčko může být letos víc dětí, než je běžný limit; celková schválená kapacita školky se tím nepřekročí.
+              </p>
+<div class="flex items-center gap-space-xs pt-space-3xs text-secondary font-code-data text-[12px]">
+<span class="material-symbols-outlined text-[15px] text-tertiary">groups</span>
+<span>Usnesení Rady města č. 698/2026</span>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-sm border-t border-surface-container flex items-center justify-between">
+<span class="font-code-data text-[12px] text-secondary">Aktualizováno před 2 týdny</span>
+<a class="inline-flex items-center gap-space-2xs text-primary font-headline-sm text-[14px] hover:text-accent-lime-dark font-semibold group" href="#">
+<span>Zobrazit všech 15 záznamů</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Okruh 4: Sport, kultura a spolky -->
+<article class="thematic-block bg-surface-card rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between" id="okruh-sport">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-xl bg-purple-500/10 text-purple-700 flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">theater_comedy</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface tracking-tight">Sport, kultura a spolky</h3>
+<span class="font-body-sm text-body-sm text-secondary">Komunitní centra, sportoviště a dotace</span>
+</div>
+</div>
+<span class="px-space-sm py-space-2xs rounded-full bg-purple-500/15 text-purple-800 font-label-badge text-label-badge font-bold">
+              31 položek
+            </span>
+</div>
+<div class="flex flex-col gap-space-sm pt-space-2xs">
+<!-- Item 1 -->
+<div class="record-item group p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex flex-col gap-space-2xs" data-category="zmena">
+<div class="flex items-center justify-between gap-space-xs">
+<span class="inline-flex items-center gap-space-2xs px-space-xs py-space-3xs rounded-full bg-lime-500/20 text-lime-900 font-label-badge text-label-badge">
+<span class="w-1.5 h-1.5 rounded-full bg-category-zmena"></span>
+                  ZMĚNA
+                </span>
+<span class="font-code-data text-code-data text-secondary">4. 11. 2026</span>
+</div>
+<h4 class="font-headline-sm text-[16px] text-on-surface font-semibold group-hover:text-primary transition-colors">
+                Místnost v budově čp. 3 v Přesece
+              </h4>
+<p class="font-body-sm text-body-sm text-secondary leading-snug">
+                Místnost bude v lednu až březnu a v listopadu 2027 sloužit sportovním, kulturním a společenským setkáním místních občanů.
+              </p>
+<div class="flex items-center gap-space-xs pt-space-3xs text-secondary font-code-data text-[12px]">
+<span class="material-symbols-outlined text-[15px] text-accent-lime-dark">event_available</span>
+<span>Usnesení rady · Platnost od 1. 1. 2027</span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="record-item group p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex flex-col gap-space-2xs" data-category="rozhodnuti">
+<div class="flex items-center justify-between gap-space-xs">
+<span class="inline-flex items-center gap-space-2xs px-space-xs py-space-3xs rounded-full bg-blue-500/15 text-blue-800 font-label-badge text-label-badge">
+<span class="w-1.5 h-1.5 rounded-full bg-category-rozhodnuti"></span>
+                  ROZHODNUTÍ
+                </span>
+<span class="font-code-data text-code-data text-secondary">4. 11. 2026</span>
+</div>
+<h4 class="font-headline-sm text-[16px] text-on-surface font-semibold group-hover:text-primary transition-colors">
+                Hospodaření Městské sportovní Třeboň k 30. 9. 2026
+              </h4>
+<p class="font-body-sm text-body-sm text-secondary leading-snug">
+                Rada města vzala na vědomí průběžnou zprávu o hospodaření a nákladech na provoz sportovních areálů za tři kvartály 2026.
+              </p>
+<div class="flex items-center gap-space-xs pt-space-3xs text-secondary font-code-data text-[12px]">
+<span class="material-symbols-outlined text-[15px] text-category-rozhodnuti">query_stats</span>
+<span>Finanční monitoring · Městská sportovní s.r.o.</span>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-sm border-t border-surface-container flex items-center justify-between">
+<span class="font-code-data text-[12px] text-secondary">Aktualizováno před 2 týdny</span>
+<a class="inline-flex items-center gap-space-2xs text-primary font-headline-sm text-[14px] hover:text-accent-lime-dark font-semibold group" href="#">
+<span>Zobrazit všech 31 záznamů</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Okruh 5: Městské společnosti -->
+<article class="thematic-block bg-surface-card rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between" id="okruh-spolecnosti">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-xl bg-teal-500/10 text-teal-700 flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">corporate_fare</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface tracking-tight">Městské společnosti</h3>
+<span class="font-body-sm text-body-sm text-secondary">Slatinné lázně Třeboň, TS, vodovody</span>
+</div>
+</div>
+<span class="px-space-sm py-space-2xs rounded-full bg-teal-500/15 text-teal-800 font-label-badge text-label-badge font-bold">
+              11 položek
+            </span>
+</div>
+<div class="flex flex-col gap-space-sm pt-space-2xs">
+<!-- Item 1 -->
+<div class="record-item group p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex flex-col gap-space-2xs" data-category="rozhodnuti">
+<div class="flex items-center justify-between gap-space-xs">
+<span class="inline-flex items-center gap-space-2xs px-space-xs py-space-3xs rounded-full bg-blue-500/15 text-blue-800 font-label-badge text-label-badge">
+<span class="w-1.5 h-1.5 rounded-full bg-category-rozhodnuti"></span>
+                  ROZHODNUTÍ
+                </span>
+<span class="font-code-data text-code-data text-secondary">21. 10. 2026</span>
+</div>
+<h4 class="font-headline-sm text-[16px] text-on-surface font-semibold group-hover:text-primary transition-colors">
+                Slatinné lázně – dodatek ke smlouvě o IS
+              </h4>
+<p class="font-body-sm text-body-sm text-secondary leading-snug">
+                Rada v působnosti valné hromady schválila dodatek ke smlouvě na dodávku a podporu lázeňského informačního systému.
+              </p>
+<div class="flex items-center gap-space-xs pt-space-3xs text-secondary font-code-data text-[12px]">
+<span class="material-symbols-outlined text-[15px] text-tertiary">vpn_key</span>
+<span>Valná hromada SLT s.r.o. · Zápis RM</span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="record-item group p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex flex-col gap-space-2xs" data-category="rozhodnuti">
+<div class="flex items-center justify-between gap-space-xs">
+<span class="inline-flex items-center gap-space-2xs px-space-xs py-space-3xs rounded-full bg-blue-500/15 text-blue-800 font-label-badge text-label-badge">
+<span class="w-1.5 h-1.5 rounded-full bg-category-rozhodnuti"></span>
+                  ROZHODNUTÍ
+                </span>
+<span class="font-code-data text-code-data text-secondary">21. 10. 2026</span>
+</div>
+<h4 class="font-headline-sm text-[16px] text-on-surface font-semibold group-hover:text-primary transition-colors">
+                Slatinné lázně – převod dvou bytových jednotek
+              </h4>
+<p class="font-body-sm text-body-sm text-secondary leading-snug">
+                Byl odsouhlasen majetkový převod dvou služebních bytových jednotek ve vlastnictví lázeňské společnosti.
+              </p>
+<div class="flex items-center gap-space-xs pt-space-3xs text-secondary font-code-data text-[12px]">
+<span class="material-symbols-outlined text-[15px] text-category-rozhodnuti">real_estate_agent</span>
+<span>Zápis z valné hromady · Majetkový převod</span>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-sm border-t border-surface-container flex items-center justify-between">
+<span class="font-code-data text-[12px] text-secondary">Aktualizováno před 3 týdny</span>
+<a class="inline-flex items-center gap-space-2xs text-primary font-headline-sm text-[14px] hover:text-accent-lime-dark font-semibold group" href="#">
+<span>Zobrazit všech 11 záznamů</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Okruh 6: Rozvoj a správa města -->
+<article class="thematic-block bg-surface-card rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between" id="okruh-rozvoj">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-xl bg-lime-600/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">account_balance</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface tracking-tight">Rozvoj a správa města</h3>
+<span class="font-body-sm text-body-sm text-secondary">Pronájmy, rozpočtová opatření, vnitřní správa</span>
+</div>
+</div>
+<span class="px-space-sm py-space-2xs rounded-full bg-primary-container text-on-surface font-label-badge text-label-badge font-bold">
+              56 položek
+            </span>
+</div>
+<div class="flex flex-col gap-space-sm pt-space-2xs">
+<!-- Item 1 -->
+<div class="record-item group p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex flex-col gap-space-2xs" data-category="rozhodnuti">
+<div class="flex items-center justify-between gap-space-xs">
+<span class="inline-flex items-center gap-space-2xs px-space-xs py-space-3xs rounded-full bg-blue-500/15 text-blue-800 font-label-badge text-label-badge">
+<span class="w-1.5 h-1.5 rounded-full bg-category-rozhodnuti"></span>
+                  ROZHODNUTÍ
+                </span>
+<span class="font-code-data text-code-data text-secondary">4. 11. 2026</span>
+</div>
+<h4 class="font-headline-sm text-[16px] text-on-surface font-semibold group-hover:text-primary transition-colors">
+                Rozpočtové opatření č. 61 – cestovné
+              </h4>
+<p class="font-body-sm text-body-sm text-secondary leading-snug">
+                Rada města schválila úpravu rozpočtové položky na krytí zvýšených nákladů na zahraniční a tuzemské služební cesty.
+              </p>
+<div class="flex items-center gap-space-xs pt-space-3xs text-secondary font-code-data text-[12px]">
+<span class="material-symbols-outlined text-[15px] text-primary">payments</span>
+<span>Usnesení RM č. 748/2026 · Finanční odbor</span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="record-item group p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex flex-col gap-space-2xs" data-category="rozhodnuti">
+<div class="flex items-center justify-between gap-space-xs">
+<span class="inline-flex items-center gap-space-2xs px-space-xs py-space-3xs rounded-full bg-blue-500/15 text-blue-800 font-label-badge text-label-badge">
+<span class="w-1.5 h-1.5 rounded-full bg-category-rozhodnuti"></span>
+                  ROZHODNUTÍ
+                </span>
+<span class="font-code-data text-code-data text-secondary">4. 11. 2026</span>
+</div>
+<h4 class="font-headline-sm text-[16px] text-on-surface font-semibold group-hover:text-primary transition-colors">
+                Pronájem kanceláře ve 2. NP domu č. p. 106/II
+              </h4>
+<p class="font-body-sm text-body-sm text-secondary leading-snug">
+                Rada schválila uzavření nájemní smlouvy na nebytový prostor v městském objektu na základě záměru schváleného v září.
+              </p>
+<div class="flex items-center gap-space-xs pt-space-3xs text-secondary font-code-data text-[12px]">
+<span class="material-symbols-outlined text-[15px] text-category-rozhodnuti">apartment</span>
+<span>Majetkový odbor · Nájemní smlouva na dobu určitou</span>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-sm border-t border-surface-container flex items-center justify-between">
+<span class="font-code-data text-[12px] text-secondary">Aktualizováno před 2 týdny</span>
+<a class="inline-flex items-center gap-space-2xs text-primary font-headline-sm text-[14px] hover:text-accent-lime-dark font-semibold group" href="#">
+<span>Zobrazit všech 56 záznamů</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</article>
+</div>
+</section>
+<!-- Visual Civic Context & Photo Strip (Třeboň Projects in Real Life) -->
+<section class="max-w-7xl mx-auto px-margin w-full pb-space-3xl">
+<div class="bg-surface-container-low rounded-3xl p-space-lg md:p-space-xl flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row items-start md:items-end justify-between gap-space-sm">
+<div class="flex flex-col gap-space-2xs max-w-xl">
+<span class="font-label-uppercase text-label-uppercase text-primary">LIDÉ A PROSTŘEDÍ TŘEBONĚ</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface">Data spojená s konkrétními místy</h3>
+<p class="font-body-md text-body-md text-secondary">
+            Každá rozpočtová řádka nebo usnesení rady má reálný dopad na ulici, náměstí, školní třídu či lázeňský park.
+          </p>
+</div>
+<a class="inline-flex items-center gap-space-2xs px-space-md py-space-sm rounded-xl bg-surface-dark text-white font-headline-sm text-[14px] hover:bg-black transition-colors shadow-sm" data-path="interaktivni-mapa" href="#">
+<span class="material-symbols-outlined text-[18px] text-accent-lime">map</span>
+<span>Otevřít interaktivní mapu města</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Photo Card 1 -->
+<div class="relative rounded-2xl overflow-hidden shadow-md group h-72">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Historic cobblestone streets and colorful Renaissance houses of Trebon square during warm golden hour light, reflecting civic urban care in South Bohemia" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDN5ssvEnrukWOkFahQlarFgJIB5x7gwpg-QF98cCSIuu-xds86hE1wa8Ztl540hf9_sxG7OSTdJylW0d0sRhIMOxDHSI-uIs9IIVgkoc1Mv1snuJrKnN-qtIbbudLre_W2IJK1psU1lRmoUgLPkU9tJ7lrDXYOnb7OCTVqImcfyE0EhOWiG6is24gsvhcAfHE5uGEpORjiN7OK6_klGag9IaFyQjXwh3fXLVCA2-w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent flex flex-col justify-end p-space-md">
+<span class="px-space-xs py-space-3xs rounded bg-white/20 text-white font-label-badge text-label-badge w-max mb-space-2xs backdrop-blur-sm">Historické centrum</span>
+<h4 class="font-headline-sm text-headline-sm text-white font-bold leading-tight">Revitalizace veřejných prostranství</h4>
+<p class="font-body-sm text-body-sm text-surface-container-high line-clamp-2 mt-space-3xs">Pravidelná údržba dlažeb, osvětlení a koordinace s památkovou péčí.</p>
+</div>
+</div>
+<!-- Photo Card 2 -->
+<div class="relative rounded-2xl overflow-hidden shadow-md group h-72">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Modern educational facility with children playground and garden in South Bohemian town of Trebon, contemporary clean architecture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPasysAJxDvlyquJnE1ywkyE3GT-HHgoxHfKQu8aYGW5N8BKHrAr2qm1K-4h48ycCUSJnPhLkC5EVMR0poBU_5HE6_Vw64vioxYYX13JAon08H4SlIBhkKSpjCBgX_Eb6j9e0Hwv-i6ckDDD-CAJn8YuOJPNjWxJ8Fx_OJWyLeiW-iqCzcVFxzZUnxDqcOWZ4_ZVJ0KN4u7GDn4c342y0Bfxl4IQQ-3n1VADBu57I"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent flex flex-col justify-end p-space-md">
+<span class="px-space-xs py-space-3xs rounded bg-accent-lime/30 text-accent-lime font-label-badge text-label-badge w-max mb-space-2xs backdrop-blur-sm">Místní školství</span>
+<h4 class="font-headline-sm text-headline-sm text-white font-bold leading-tight">MŠ Sluníčko a ZŠ Sokolská</h4>
+<p class="font-body-sm text-body-sm text-surface-container-high line-clamp-2 mt-space-3xs">Investice do vybavení, rozšíření kapacit tříd a podpora dětského sportu.</p>
+</div>
+</div>
+<!-- Photo Card 3 -->
+<div class="relative rounded-2xl overflow-hidden shadow-md group h-72">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="The serene spa park and historic colonnade in Trebon with autumnal trees, calm lake in background and modern pedestrian paths" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwlSd9-xOi_MLi2RnQ6M776BPDp5TqNXqdzM_xAHNS9C5A3U_dz1XZuciPHeRAaQUBZ-VQ1Xzn_TuTAQaCdSubEW2ToifwBOQRwTaYksJcNbR-UO2dleI-VC3Be6z03hDSBUplWcTdXaimyv0tgwgbHu4150lLsLRB5CRMC39kXbiGCAmrm_7mReZD63tVyvNkPnlO8rhp78uvMAi4oKAxDQZGe-xUplqB9dsF6Oo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent flex flex-col justify-end p-space-md">
+<span class="px-space-xs py-space-3xs rounded bg-category-rozhodnuti/30 text-white font-label-badge text-label-badge w-max mb-space-2xs backdrop-blur-sm">Lázeňství</span>
+<h4 class="font-headline-sm text-headline-sm text-white font-bold leading-tight">Slatinné lázně Třeboň</h4>
+<p class="font-body-sm text-body-sm text-surface-container-high line-clamp-2 mt-space-3xs">Pravidelná usnesení rady v působnosti valné hromady a investice do systémů.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION: DALŠÍ PŘEHLEDY & ANALYTICKÉ NÁHLEDY (Inspired by Trebonaci reference footer links) -->
+<section class="max-w-7xl mx-auto px-margin w-full pb-space-3xl">
+<div class="flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-2xs">
+<span class="font-label-uppercase text-label-uppercase text-secondary">SPECIÁLNÍ ANALÝZY</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface">Další přehledy a analytické pohledy</h3>
+<p class="font-body-md text-body-md text-secondary">Rychlý přechod do specializovaných sekcí obecního datového archivu.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-md">
+<!-- Link Card 1 -->
+<a class="p-space-md rounded-2xl bg-surface-card hover:bg-surface-container-low shadow-sm hover:shadow-md transition-all flex flex-col justify-between group" href="#">
+<div class="flex flex-col gap-space-xs">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-on-surface group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[20px]">timeline</span>
+</div>
+<h4 class="font-headline-sm text-[16px] text-on-surface font-bold mt-space-2xs">Časová osa</h4>
+<p class="font-body-sm text-body-sm text-secondary">Kompletní chronologie kroků od ledna 2026.</p>
+</div>
+<div class="pt-space-md flex items-center gap-space-2xs text-primary font-label-badge text-label-badge font-semibold">
+<span>Otevřít osu</span>
+<span class="material-symbols-outlined text-[14px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</a>
+<!-- Link Card 2 -->
+<a class="p-space-md rounded-2xl bg-surface-card hover:bg-surface-container-low shadow-sm hover:shadow-md transition-all flex flex-col justify-between group" href="#">
+<div class="flex flex-col gap-space-xs">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-on-surface group-hover:bg-category-stavba group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[20px]">pending_actions</span>
+</div>
+<h4 class="font-headline-sm text-[16px] text-on-surface font-bold mt-space-2xs">Připravované projekty</h4>
+<p class="font-body-sm text-body-sm text-secondary">Investiční pipeline a projekční příprava.</p>
+</div>
+<div class="pt-space-md flex items-center gap-space-2xs text-category-stavba font-label-badge text-label-badge font-semibold">
+<span>Zobrazit záměry</span>
+<span class="material-symbols-outlined text-[14px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</a>
+<!-- Link Card 3 -->
+<a class="p-space-md rounded-2xl bg-surface-card hover:bg-surface-container-low shadow-sm hover:shadow-md transition-all flex flex-col justify-between group" href="#">
+<div class="flex flex-col gap-space-xs">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-on-surface group-hover:bg-accent-lime-dark group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[20px]">task_alt</span>
+</div>
+<h4 class="font-headline-sm text-[16px] text-on-surface font-bold mt-space-2xs">Dokončené projekty</h4>
+<p class="font-body-sm text-body-sm text-secondary">Kolaudované investice a vyhodnocení cílů.</p>
+</div>
+<div class="pt-space-md flex items-center gap-space-2xs text-accent-lime-dark font-label-badge text-label-badge font-semibold">
+<span>Výsledky akcí</span>
+<span class="material-symbols-outlined text-[14px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</a>
+<!-- Link Card 4 -->
+<a class="p-space-md rounded-2xl bg-surface-card hover:bg-surface-container-low shadow-sm hover:shadow-md transition-all flex flex-col justify-between group" href="#">
+<div class="flex flex-col gap-space-xs">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-on-surface group-hover:bg-category-rozhodnuti group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[20px]">savings</span>
+</div>
+<h4 class="font-headline-sm text-[16px] text-on-surface font-bold mt-space-2xs">Rozpočet města</h4>
+<p class="font-body-sm text-body-sm text-secondary">Příjmy, výdaje a rozpočtová opatření.</p>
+</div>
+<div class="pt-space-md flex items-center gap-space-2xs text-category-rozhodnuti font-label-badge text-label-badge font-semibold">
+<span>Čerpání rozpočtu</span>
+<span class="material-symbols-outlined text-[14px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</a>
+<!-- Link Card 5 -->
+<a class="p-space-md rounded-2xl bg-surface-card hover:bg-surface-container-low shadow-sm hover:shadow-md transition-all flex flex-col justify-between group" href="#">
+<div class="flex flex-col gap-space-xs">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-on-surface group-hover:bg-purple-600 group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[20px]">analytics</span>
+</div>
+<h4 class="font-headline-sm text-[16px] text-on-surface font-bold mt-space-2xs">V číslech</h4>
+<p class="font-body-sm text-body-sm text-secondary">Interaktivní grafy, dodavatelé a poměry.</p>
+</div>
+<div class="pt-space-md flex items-center gap-space-2xs text-purple-700 font-label-badge text-label-badge font-semibold">
+<span>Statistická data</span>
+<span class="material-symbols-outlined text-[14px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!-- METHODOLOGY & TRANSPARENCY SPECIFICATION (Detailed Box matching original spec) -->
+<section class="max-w-7xl mx-auto px-margin w-full pb-space-4xl" id="metodika">
+<div class="bg-surface-card rounded-3xl p-space-lg md:p-space-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-sm border-b border-surface-container">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-primary-container"></span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Metodika, ověřování a zdroje dat</h4>
+</div>
+<div class="flex items-center gap-space-2xs">
+<span class="px-space-sm py-space-3xs rounded-full bg-accent-lime-light text-accent-lime-dark font-label-badge text-label-badge">
+            Nezávislý občanský dohled
+          </span>
+<span class="px-space-sm py-space-3xs rounded-full bg-surface-container text-secondary font-code-data text-code-data">
+            100% veřejné zdroje
+          </span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg pt-space-xs">
+<div class="lg:col-span-8 flex flex-col gap-space-sm font-body-sm text-body-sm text-secondary leading-relaxed">
+<p>
+<strong class="text-on-surface font-semibold">Třeboňáci · přehled radnice · <a class="text-primary hover:underline" href="https://trebonaci.cz" rel="noreferrer" target="_blank">trebonaci.cz</a>.</strong>
+            Nejde o oficiální stránky Města Třeboň. Data pocházejí výhradně z oficiálních veřejných zdrojů uvedených u každého údaje (zápisy ze schůzí rady a zastupitelstva, úřední deska, registr smluv a profil zadavatele E-ZAK).
+          </p>
+<p>
+<strong class="text-on-surface font-semibold">Ceny smluv a dodatků jsou uvedeny včetně DPH</strong> (rozpočet města počítá s cenou včetně DPH); kde zdroj uvádí jen cenu bez DPH, je to u částky výslovně označeno. Vysoutěžená cena odpovídá hodnotě podepsané smlouvy v Registru smluv ČR, případně nabídce vítěze v profilu E-ZAK. Dodatek označený jako „jen termín“ podle usnesení rady cenu zakázky nemění.
+          </p>
+<p>
+            Přiřazení smluv a rozpočtových položek ke konkrétní akci jsme odvodili z jejich oficiálních názvů a popisů. Přiřazení ke <strong class="text-on-surface font-medium">Strategickému plánu rozvoje města 2021–2030</strong> vychází z nezávislé evidence aktivit na webu trebonaci.cz; stav označený slovem „návrh“ doposud nebyl zastupitelstvem formálně schválen.
+          </p>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-space-xs p-space-md rounded-2xl bg-surface-container-low">
+<span class="font-label-uppercase text-label-uppercase text-on-surface">Auditované datové kanály</span>
+<div class="flex flex-col gap-space-xs mt-space-2xs">
+<div class="flex items-center justify-between text-body-sm">
+<span class="flex items-center gap-space-2xs text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-accent-lime-dark">check</span>
+                Zápisy Rady &amp; Zastupitelstva
+              </span>
+<span class="font-code-data text-code-data text-secondary">Aktuální</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="flex items-center gap-space-2xs text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-accent-lime-dark">check</span>
+                Profil zadavatele E-ZAK
+              </span>
+<span class="font-code-data text-code-data text-secondary">Denně</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="flex items-center gap-space-2xs text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-accent-lime-dark">check</span>
+                Registr smluv (MV ČR)
+              </span>
+<span class="font-code-data text-code-data text-secondary">API sync</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="flex items-center gap-space-2xs text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-accent-lime-dark">check</span>
+                Úřední deska MěÚ Třeboň
+              </span>
+<span class="font-code-data text-code-data text-secondary">Automaticky</span>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs border-t border-surface-container flex items-center justify-between">
+<span class="font-code-data text-[11px] text-secondary">Stav integrity: 100 %</span>
+<a class="text-primary hover:text-accent-lime-dark font-label-badge text-label-badge font-semibold" href="#">Podmínky užití dat</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive JavaScript for filtering & searching -->
+<script>
+    function handleQuickFilter(val) {
+      const query = val.toLowerCase().trim();
+      const records = document.querySelectorAll('.record-item');
+      
+      records.forEach(item => {
+        const text = item.innerText.toLowerCase();
+        if (query === '' || text.includes(query)) {
+          item.style.display = 'flex';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+
+    function clearSearch() {
+      const input = document.getElementById('filter-input');
+      if (input) {
+        input.value = '';
+        handleQuickFilter('');
+      }
+    }
+
+    function filterType(type) {
+      // Update chip styling
+      const buttons = document.querySelectorAll('.type-filter-btn');
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-surface-dark', 'text-white');
+        btn.classList.add('bg-surface-container', 'text-on-surface');
+      });
+
+      const currentBtn = event.currentTarget;
+      if (currentBtn) {
+        currentBtn.classList.remove('bg-surface-container', 'text-on-surface');
+        currentBtn.classList.add('bg-surface-dark', 'text-white');
+      }
+
+      const records = document.querySelectorAll('.record-item');
+      records.forEach(item => {
+        if (type === 'all' || item.getAttribute('data-category') === type) {
+          item.style.display = 'flex';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-dark text-on-tertiary mt-space-3xl"><div class="max-w-7xl mx-auto px-margin py-space-2xl"><div class="grid grid-cols-1 md:grid-cols-4 gap-space-xl pb-space-xl"><div class="md:col-span-2 flex flex-col gap-space-sm"><div class="flex items-center gap-space-xs"><span class="w-3 h-3 rounded-full bg-category-zmena"></span><span class="font-headline-md text-headline-md text-surface-lowest text-white">Třeboňáci • Otevřená radnice</span></div><p class="font-body-sm text-body-sm text-secondary-fixed-dim max-w-lg leading-relaxed">Nezávislý občanský portál pro monitoring, analýzu a přehledné zpřístupnění veřejných dat města Třeboně. Usilujeme o maximální transparentnost hospodaření, investic a rozhodovacích procesů samosprávy.</p><div class="flex items-center gap-space-xs pt-space-xs"><span class="px-space-sm py-space-3xs rounded-full bg-surface-dark-subtle text-accent-lime font-code-data text-code-data">Verze datového parseru 3.2.4</span><span class="px-space-sm py-space-3xs rounded-full bg-surface-dark-subtle text-tertiary-fixed font-code-data text-code-data">Aktualizováno: 23. 11. 2026</span></div></div><div class="flex flex-col gap-space-xs"><span class="font-label-uppercase text-label-uppercase text-accent-lime">Zdroje veřejných dat</span><ul class="flex flex-col gap-space-2xs font-body-sm text-body-sm text-secondary-fixed-dim"><li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-accent-lime">verified</span>E-ZAK Město Třeboň</li><li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-accent-lime">verified</span>Registr smluv ČR</li><li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-accent-lime">verified</span>Zápisy a usnesení Rady města</li><li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-accent-lime">verified</span>Úřední deska MěÚ Třeboň</li></ul></div><div class="flex flex-col gap-space-xs"><span class="font-label-uppercase text-label-uppercase text-accent-lime">Metodika a občané</span><ul class="flex flex-col gap-space-2xs font-body-sm text-body-sm text-secondary-fixed-dim"><li><a class="hover:text-white transition-colors" data-path="metodika-a-zdroje" href="#">Metodika párování zakázek</a></li><li><a class="hover:text-white transition-colors" data-path="archiv-zasedani" href="#">Archiv zasedání zastupitelstva</a></li><li><a class="hover:text-accent-lime transition-colors flex items-center gap-space-3xs" href="https://trebonaci.cz" rel="noreferrer" target="_blank"><span>Portál hnutí trebonaci.cz</span><span class="material-symbols-outlined text-[14px]">arrow_outward</span></a></li><li><a class="hover:text-white transition-colors" data-path="zadat-podnet" href="#">Zadat občanský podnět</a></li></ul></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-secondary-fixed-dim"><p>© 2026 Třeboňáci. Veškerá veřejná data jsou publikována v souladu se zákonem č. 106/1999 Sb.</p><div class="flex items-center gap-space-lg"><a class="hover:text-white transition-colors" data-path="podminky-uziti" href="#">Podmínky užití dat</a><a class="hover:text-white transition-colors" data-path="ochrana-soukromi" href="#">Ochrana soukromí</a><a class="hover:text-accent-lime transition-colors" data-path="api-rozhrani" href="#">Otevřené API</a></div></div></div></footer></body></html>
