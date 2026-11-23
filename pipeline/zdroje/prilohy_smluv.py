@@ -32,7 +32,7 @@ ZAKLAD = "https://smlouvy.gov.cz/smlouva/"
 MAX_SMLUV = 25
 MAX_PRILOH = 4
 RE_PRILOHA = re.compile(r'href="([^"]*/smlouva/soubor/\d+/[^"]+)"', re.I)
-RE_KLIC = re.compile(r"term[ií]n\w*\s+(dokon[čc]en|p[řr]ed[aá]n|pln[ěe]n|proveden)|dokon[čc]it\s+d[ií]lo|"
+RE_KLIC = re.compile(r"term[ií]n\w*\s+(dokon[čc]en|p[řr]ed[aá]n|pln[ěe]n|proveden)|dokon[čc]it\s+(d[ií]lo|stavbu)|datum\s+dokon[čc]en|dokon[čc]en[ií]\s+(d[ií]la|stavby)|"
                      r"p[řr]edat\s+(d[ií]lo|stavbu)|doba\s+(pln[ěe]n|proveden)|lh[ůu]t\w*\s+(?:pro\s+)?(pln[ěe]n|dokon[čc]en)", re.I)
 OKOLI = 350
 RE_OSOBNI = re.compile(

@@ -36,14 +36,16 @@ def test_sestav_preferuje_datum_a_odkaz_na_stranu():
     assert v[0]["url"] == "https://smlouvy.gov.cz/smlouva/soubor/9/SOD.pdf#page=3" and v[0]["jistota"] == "dolozeno"
 
 
-def test_karta_bere_posledni_dodatek_s_datem():
+def test_karta_bere_posledni_dodatek_s_terminem():
     k = {"casti": [{"role": "stavba", "puvodni": {"zdroj_id": "rs-1"},
                     "dodatky": [{"zdroj_id": "rs-2", "cislo": 1, "datum": "2026-11-01"},
                                 {"zdroj_id": "rs-3", "cislo": 2, "datum": "2026-11-19"}]}]}
     t = {"rs-1": {"druh": "datum", "datum": "2026-12-31"}, "rs-2": {"druh": "datum", "datum": "2027-03-31"},
          "rs-3": {"druh": "lhuta", "datum": None}}
     r = terminy.pro_kartu(k, t)
-    assert (r["datum"], r["podle"]) == ("2027-03-31", "dodatek č. 1")
+    assert (r["druh"], r["podle"]) == ("lhuta", "dodatek č. 2")
+    del t["rs-3"]
+    assert terminy.pro_kartu(k, t)["podle"] == "dodatek č. 1"
     assert terminy.pro_kartu({"casti": [{"role": "projekt"}]}, t) is None
 
 
@@ -90,3 +92,16 @@ def test_slova_objednatel_a_zhotovitel_uryvek_nezkrati():
     assert "zhotovitelem" in u[0]["text"]
     u = prilohy_smluv.uryvky(["Termín dokončení díla: 30. 9. 2026. Kontaktní osoba: Jan Novák, tel. 777 123 456"])
     assert "Novák" not in u[0]["text"] and "30. 9. 2026" in u[0]["text"]
+
+
+def test_klic_stahovani_odpovida_cteni_terminu():
+    for veta in ("Zhotovitel se zavazuje dokončit stavbu do 30. 9. 2026.", "Datum dokončení díla: 30. 9. 2026."):
+        u = prilohy_smluv.uryvky([veta])
+        assert u and terminy.z_uryvku(u[0]["text"])["datum"] == "2026-09-30"
+
+
+def test_dodatek_se_lhutou_nahrazuje_starsi_datum():
+    k = {"casti": [{"role": "stavba", "puvodni": {"zdroj_id": "rs-1"},
+                    "dodatky": [{"zdroj_id": "rs-2", "cislo": 1, "datum": "2026-11-01"}]}]}
+    t = {"rs-1": {"druh": "datum", "datum": "2026-12-31"}, "rs-2": {"druh": "lhuta", "datum": None}}
+    assert terminy.pro_kartu(k, t)["podle"] == "dodatek č. 1"

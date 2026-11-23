@@ -88,7 +88,8 @@ def _pro_cast(st: dict, terminy: dict) -> dict | None:
     kandidati.append(("", "smlouva", st.get("puvodni") or {}))
     for _, odkud, d in kandidati:
         t = terminy.get(d.get("zdroj_id"))
-        if t and (t["druh"] == "datum" or odkud == "smlouva"):
+        # platí nejnovější dokument s termínem – i dodatek, který pevné datum nahradil lhůtou
+        if t:
             cislo = d.get("cislo")
             return t | {"podle": f"dodatek č. {cislo}" if odkud == "dodatek" and cislo else odkud}
     return None
