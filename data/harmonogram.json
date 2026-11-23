@@ -798,10 +798,20 @@
         "faze": "soutez",
         "nazev": "výběr dodavatele",
         "od": "2026-05-18",
+        "do": "2026-05-29",
+        "otevreno": false,
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_945.html",
+        "jistota": "dolozeno"
+      },
+      {
+        "faze": "stavba",
+        "nazev": "stavba",
+        "od": "2026-05-29",
         "do": null,
         "otevreno": true,
         "url": "https://zakazky.mesto-trebon.cz/contract_display_945.html",
-        "jistota": "dolozeno"
+        "jistota": "dolozeno",
+        "konec_jistota": null
       }
     ],
     "milniky": [],
@@ -819,10 +829,20 @@
         "faze": "soutez",
         "nazev": "výběr dodavatele",
         "od": "2025-03-14",
-        "do": null,
-        "otevreno": true,
+        "do": "2025-04-10",
+        "otevreno": false,
         "url": "https://zakazky.mesto-trebon.cz/contract_display_838.html",
         "jistota": "dolozeno"
+      },
+      {
+        "faze": "stavba",
+        "nazev": "stavba",
+        "od": "2025-04-10",
+        "do": "2025-04-10",
+        "otevreno": false,
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_838.html",
+        "jistota": "dolozeno",
+        "konec_jistota": "posledni_doklad"
       }
     ],
     "milniky": [],

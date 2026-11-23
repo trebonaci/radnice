@@ -2546,6 +2546,22 @@
         "jistota": "nase_propojeni"
       },
       {
+        "datum": "2024-11-07",
+        "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "projektová dokumentace",
+        "text": "Zhotovení PD, příkazní činnost a výkon AD pro – Rozšíření balneo provozu – lázeňský dům Aurora – opakované řízení",
+        "role": "projekt",
+        "zdroj_id": "ezak-VZ-805",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_805.html",
+        "jistota": "nase_propojeni",
+        "ezak_smlouva": {
+          "dodavatel": "A-Z eko ateliér s.r.o.",
+          "bez_dph": 1997000.0,
+          "s_dph": 2416370.0
+        }
+      },
+      {
         "datum": "2025-08-21",
         "typ": "soutez",
         "text": "Soutěž: Modernizace a rozšíření balneo provozu Lázeňský dům Aurora – Etapa I Rozšíření slatinných koupelí",
@@ -2589,6 +2605,22 @@
         "zdroj_id": "rs-35362133",
         "jistota": "nase_propojeni",
         "url": "https://smlouvy.gov.cz/smlouva/35362133"
+      },
+      {
+        "datum": "2025-10-29",
+        "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "technický dozor",
+        "text": "Výkon technického dozoru stavebníka a koordinátora BOZP - Modernizace a rozšíření balneo provozu Lázeňský dům AURORA - Etapa I Rozšíření slatinných koupelí",
+        "role": "technicky_dozor",
+        "zdroj_id": "ezak-VZ-893",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_893.html",
+        "jistota": "nase_propojeni",
+        "ezak_smlouva": {
+          "dodavatel": "fyzická osoba",
+          "bez_dph": 390000.0,
+          "s_dph": 390000.0
+        }
       },
       {
         "datum": "2026-04-01",
@@ -3335,6 +3367,22 @@
         "jistota": "nase_propojeni"
       },
       {
+        "datum": "2025-03-20",
+        "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "projektová dokumentace",
+        "text": "Zhotovení PD, příkazní činnost a výkon AD pro Výstavba bytů a administrativního zázemí - budova G - LDA",
+        "role": "projekt",
+        "zdroj_id": "ezak-VZ-837",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_837.html",
+        "jistota": "nase_propojeni",
+        "ezak_smlouva": {
+          "dodavatel": "JK - STAVPROJEKT, s.r.o.",
+          "bez_dph": 1982000.0,
+          "s_dph": 2401850.0
+        }
+      },
+      {
         "datum": "2025-08-13",
         "typ": "smlouva",
         "kategorie": "smlouva",
@@ -3408,6 +3456,22 @@
         "jistota": "nase_propojeni"
       },
       {
+        "datum": "2026-02-11",
+        "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "technický dozor",
+        "text": "Výkon technického dozoru stavebníka a koordinátora BOZP - Stavební úpravy budovy G - LDA s nástavbou administrativních a ubytovacích kapacit",
+        "role": "technicky_dozor",
+        "zdroj_id": "ezak-VZ-913",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_913.html",
+        "jistota": "nase_propojeni",
+        "ezak_smlouva": {
+          "dodavatel": "IPD-MYŠY s.r.o.",
+          "bez_dph": 648000.0,
+          "s_dph": 784080.0
+        }
+      },
+      {
         "datum": "2026-06-05",
         "typ": "soutez",
         "text": "Soutěž: Dodávka a montáž kuchyní a souvisejícího vybavení (mobiliář – budova G-LDA)",
@@ -3423,6 +3487,22 @@
         "role": "vybaveni",
         "zdroj_id": "ezak-VZ-946",
         "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-08-20",
+        "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "vybavení",
+        "text": "Dodávka a montáž kuchyní a souvisejícího vybavení (mobiliář – budova G-LDA)",
+        "role": "vybaveni",
+        "zdroj_id": "ezak-VZ-946",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_946.html",
+        "jistota": "nase_propojeni",
+        "ezak_smlouva": {
+          "dodavatel": "SANTAL spol. s r. o.",
+          "bez_dph": 3686654.0,
+          "s_dph": 4460851.34
+        }
       },
       {
         "datum": "2026-09-09",
@@ -4803,6 +4883,22 @@
         "role": "projekt",
         "zdroj_id": "ezak-VZ-694",
         "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2023-12-18",
+        "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "projektová dokumentace",
+        "text": "Projektová dokumentace \"Stavební úpravy MK ul. Sídliště v úseku od silnice III/15512 po REPROGEN v Třeboni\"",
+        "role": "projekt",
+        "zdroj_id": "ezak-VZ-694",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_694.html",
+        "jistota": "nase_propojeni",
+        "ezak_smlouva": {
+          "dodavatel": "WAY PROJECT s.r.o.",
+          "bez_dph": 783000.0,
+          "s_dph": 947430.0
+        }
       },
       {
         "datum": "2025-09-01",
@@ -11587,24 +11683,39 @@
         "role": "stavba",
         "zdroj_id": "ezak-VZ-945",
         "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2026-05-29",
+        "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "smlouva o dílo",
+        "text": "Oprava vodovodu v úseku Sádecká ulice - autokemp Třeboňský ráj",
+        "role": "stavba",
+        "zdroj_id": "ezak-VZ-945",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_945.html",
+        "jistota": "nase_propojeni",
+        "ezak_smlouva": {
+          "dodavatel": "Stavební firma HUKO s.r.o.",
+          "bez_dph": 1651842.95,
+          "s_dph": 1998729.97
+        }
       }
     ],
     "posledni_udalost": {
-      "datum": "2026-05-18",
-      "typ": "soutez",
-      "text": "Soutěž: Oprava vodovodu v úseku Sádecká ulice - autokemp Třeboňský ráj",
-      "kategorie": "výběrové řízení",
-      "kratce": "stavba, smlouva 11 dní po podání nabídek (vyhlášení zveřejněno až dodatečně), 3 nabídky",
-      "lhuta_dni": null,
-      "rizeni_dni": null,
-      "po_nabidkach_dni": 11,
-      "zruseno": false,
-      "datum_zruseni": null,
-      "pocet_nabidek": 3,
-      "url": "https://zakazky.mesto-trebon.cz/contract_display_945.html",
+      "datum": "2026-05-29",
+      "typ": "smlouva",
+      "kategorie": "smlouva",
+      "kratce": "smlouva o dílo",
+      "text": "Oprava vodovodu v úseku Sádecká ulice - autokemp Třeboňský ráj",
       "role": "stavba",
       "zdroj_id": "ezak-VZ-945",
-      "jistota": "nase_propojeni"
+      "url": "https://zakazky.mesto-trebon.cz/contract_display_945.html",
+      "jistota": "nase_propojeni",
+      "ezak_smlouva": {
+        "dodavatel": "Stavební firma HUKO s.r.o.",
+        "bez_dph": 1651842.95,
+        "s_dph": 1998729.97
+      }
     },
     "sprm": [
       {
@@ -12500,6 +12611,22 @@
         "role": "projekt",
         "zdroj_id": "ezak-VZ-831",
         "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2025-02-04",
+        "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "projektová dokumentace",
+        "text": "Zpracování projektové dokumentace – Stavební úpravy MK v ul. Souběžná, Heřmánkova, Daskabát v Třeboni",
+        "role": "projekt",
+        "zdroj_id": "ezak-VZ-831",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_831.html",
+        "jistota": "nase_propojeni",
+        "ezak_smlouva": {
+          "dodavatel": "INVENTE, s.r.o.",
+          "bez_dph": 876000.0,
+          "s_dph": 1059960.0
+        }
       },
       {
         "datum": "2026-04-02",
@@ -15372,6 +15499,22 @@
         "role": "stavba",
         "zdroj_id": "ezak-VZ-838",
         "jistota": "nase_propojeni"
+      },
+      {
+        "datum": "2025-04-10",
+        "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "smlouva o dílo",
+        "text": "Oprava staré radnice č.p. 1/I – V. etapa – V, S a Z fasáda a radniční věž",
+        "role": "stavba",
+        "zdroj_id": "ezak-VZ-838",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_838.html",
+        "jistota": "nase_propojeni",
+        "ezak_smlouva": {
+          "dodavatel": "VIDOX s.r.o.",
+          "bez_dph": 5781040.1,
+          "s_dph": 6995058.62
+        }
       },
       {
         "datum": "2025-07-30",

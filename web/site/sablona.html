@@ -249,10 +249,11 @@ function zmenaVeta(p,e,kratce){
     else if(x?.s_dph!=null||x?.bez_dph!=null)cena=`Cena se změnila o ${x.s_dph!=null?plus(x.s_dph):plus(x.bez_dph)+" bez DPH"}${po?`, po dodatcích je ${po}`:""}.`;
     else cena="Změnu ceny registr neuvádí.";
     odkaz=`Otevřít dodatek č. ${n} v registru smluv`;}
-  else if(e.typ==="smlouva"){const d=c?kdo(c.dodavatel):sm?.strany?.map(kdo).filter(x=>x&&x!=="fyzická osoba").join(", ");
+  else if(e.typ==="smlouva"){const d=e.ezak_smlouva?.dodavatel || (c?kdo(c.dodavatel):sm?.strany?.map(kdo).filter(x=>x&&x!=="fyzická osoba").join(", "));
     v=`byla uzavřena ${naz}${d?` s dodavatelem ${d}`:""}`;
     if(x&&(x.s_dph!=null||x.bez_dph!=null))cena=`Cena podle smlouvy ${kcs(x.s_dph,x.bez_dph)}${x.s_dph!=null?" s DPH":""}.`;
-    odkaz="Otevřít smlouvu v registru smluv";}
+    if(e.ezak_smlouva)cena=cenaSmlouvyEzak(e.ezak_smlouva);
+    odkaz=e.ezak_smlouva?"Otevřít zakázku v E-ZAK":"Otevřít smlouvu v registru smluv";}
   else if(e.typ==="soutez"){const co=e.kratce.split(", ")[0];v=e.zruseno?`byl zrušen výběr dodavatele (${co})`:`byl vyhlášen výběr dodavatele (${co})`;odkaz="Otevřít zakázku v E-ZAK";}
   else if(e.typ==="rozpocet"){v=`se rozpočtovým opatřením ${e.zmena>0?"navýšil":"snížil"} rozpočet položky ${e.polozka||""}`;cena=`Změna ${plus(e.zmena)}.`;odkaz="Otevřít usnesení v zápisu";}
   else if(e.typ==="usneseni"){const z=e.kategorie==="zastupitelstvo";const kdo_=z?"zastupitelstvo":"rada",a=z?"o":"a";const m=e.kratce.match(/^schválení dodatku (\d+)/);
@@ -299,10 +300,14 @@ function cenaAkce(p){
 function kat(e){if(e.typ==="usneseni")return e.kategorie==="zastupitelstvo"?["zastupitelstvo","Zastupitelstvo"]:["rada","Rada"];
   if(e.typ==="soutez"&&e.zruseno)return ["soutez","Zrušeno"];
   return {soutez:["soutez","Soutěž"],smlouva:["smlouva","Smlouva"],dodatek:["dodatek","Dodatek"],rozpocet:["rozpocet","Rozpočet"],dokonceni:["dokonceni","Dokončení"]}[e.typ]||["",e.kategorie];}
+function cenaSmlouvyEzak(s){
+  if(s.s_dph==null && s.bez_dph==null)return "";
+  return "Smluvní cena podle E-ZAK: "+(s.s_dph!=null?kcp(s.s_dph)+" s DPH":kcp(s.bez_dph)+" bez DPH");
+}
 function veta(e,p){
   const sm=p.smlouvy.find(s=>s.id===e.zdroj_id);
-  if(e.typ==="smlouva"){const role=sm?.role;const naz={stavba:"Podepsána smlouva o dílo",projekt:"Podepsána smlouva na projekt",technicky_dozor:"Podepsána smlouva s technickým dozorem",bozp:"Podepsána smlouva s koordinátorem BOZP",vybaveni:"Podepsána smlouva na vybavení",administrace:"Podepsána smlouva na výběrové řízení"}[role]||"Podepsána smlouva";
-    const d=sm?.strany?.map(kdo).filter(x=>x&&x!=="fyzická osoba").join(", ");return [naz+(d?` – ${esc(d)}`:""),""];}
+  if(e.typ==="smlouva"){const role=e.role||sm?.role;const naz={stavba:"Podepsána smlouva o dílo",projekt:"Podepsána smlouva na projekt",technicky_dozor:"Podepsána smlouva s technickým dozorem",bozp:"Podepsána smlouva s koordinátorem BOZP",vybaveni:"Podepsána smlouva na vybavení",administrace:"Podepsána smlouva na výběrové řízení"}[role]||"Podepsána smlouva";
+    const d=e.ezak_smlouva?.dodavatel || sm?.strany?.map(kdo).filter(x=>x&&x!=="fyzická osoba").join(", ");return [naz+(d?` – ${esc(d)}`:""),""];}
   if(e.typ==="dodatek"){const m=e.kratce.match(/dodatek (\d+)/);return [`Uzavřen dodatek č. ${m?m[1]:""} ke ${ROLE_SML[sm?.role]||"smlouvě"}`,""];}
   if(e.typ==="soutez"){const [co,...zb]=e.kratce.split(", ");const maSml=p.udalosti.some(x=>x.typ==="smlouva");
     // historický záznam: „smlouva zatím není“ platilo v době soutěže, ne dnes
@@ -316,6 +321,7 @@ function veta(e,p){
   return [esc(e.kratce),""];
 }
 function cena(e,p){
+  if(e.ezak_smlouva)return [cenaSmlouvyEzak(e.ezak_smlouva),""];
   if(e.typ==="rozpocet")return [plus(e.zmena),""];
   if(e.typ==="smlouva"||e.typ==="dodatek"){
     for(const c of p.casti){const x=c.puvodni?.zdroj_id===e.zdroj_id?c.puvodni:c.dodatky.find(d=>d.zdroj_id===e.zdroj_id);
@@ -325,7 +331,7 @@ function cena(e,p){
 }
 function radek(e,p){
   const [kl,kn]=kat(e);const [v,pod]=veta(e,p);const [c,cm]=cena(e,p);
-  const odk=e.url?(e.typ==="usneseni"||e.typ==="rozpocet")?`<a href="${e.url}">usnesení ${esc(e.usneseni_cislo||"")} v zápisu</a>`:`<a href="${e.url}">${e.typ==="soutez"?"zakázka v E-ZAK":e.typ==="dokonceni"?"doklad":"smlouva v registru"}</a>`:"";
+  const odk=e.url?(e.typ==="usneseni"||e.typ==="rozpocet")?`<a href="${e.url}">usnesení ${esc(e.usneseni_cislo||"")} v zápisu</a>`:`<a href="${e.url}">${e.typ==="soutez"||e.ezak_smlouva?"zakázka v E-ZAK":e.typ==="dokonceni"?"doklad":"smlouva v registru"}</a>`:"";
   return `<li><details><summary><span class="d">${dd(e.datum)}</span><span class="k ${kl}">${kn}</span><span class="x">${v}${pod?`<small>${pod}</small>`:""}</span><span class="c ${cm}">${c}</span></summary>
   <div class="det">${esc(e.text)}${odk?` · ${odk}`:""}</div></details></li>`;
 }
