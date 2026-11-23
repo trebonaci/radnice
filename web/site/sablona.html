@@ -189,6 +189,9 @@ h1:focus{outline:none}
 .us .ob{display:inline-block;font-size:12px;background:var(--soft);border-radius:var(--r-pill);padding:1px 8px;margin:2px 4px 0 0;color:var(--ink);border:0}
 .us .np{display:inline-block;font-size:12px;font-weight:700;color:var(--k-soutez);border:1px solid currentColor;border-radius:var(--r-pill);padding:0 7px;margin-left:6px}
 .sl a{color:inherit}
+.tr i.plan{position:absolute;top:10px;height:0;border-top:2px dashed var(--g-stavba)}
+.tr button.pk{position:absolute;top:3px;width:12px;height:12px;margin-left:-6px;transform:rotate(45deg);background:#fff;border:2px solid var(--navy);border-radius:2px;padding:0;cursor:pointer}
+.tr button.pk.pro{border-color:var(--k-soutez)}
 /* boxy (#202): každá položka samostatně, levý okraj podle stavu */
 .sez{background:none;border:0;box-shadow:none;padding:0}
 .sez a{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--carp);border-radius:var(--r-md);padding:14px 18px;margin-bottom:10px;box-shadow:var(--shadow-card)}
@@ -268,7 +271,8 @@ function zmenaVeta(p,e,kratce){
 function stavText(p){const f=(FAZE[p.faze]||["",""])[0];return p.faze_jistota==="nase_propojeni"?`${f} · podle dokladů`:f;}
 function stavDoklad(p){
   const st=p.udalosti.filter(e=>e.datum&&(e.typ==="smlouva"&&p.casti.some(c=>c.role==="stavba"&&c.puvodni?.zdroj_id===e.zdroj_id))).sort((a,b)=>a.datum.localeCompare(b.datum))[0];
-  if(p.faze==="probiha")return st?`Odvozujeme ho z podpisu smlouvy o dílo ${dat(st.datum)}. Postup prací ani plánovaný termín dokončení v datech nemáme.`:"Stav odvozujeme z dokladů.";
+  const t=p.termin_dokonceni;const tt=t?(t.datum?`Dokončení podle smlouvy${t.podle&&t.podle!=="smlouva"?" ("+t.podle+")":""}: <a href="${esc(t.url)}" target="_blank" rel="noopener"><b>${dat(t.datum)}</b></a>.`:`Termín podle smlouvy: „${esc(t.citace)}“ (<a href="${esc(t.url)}" target="_blank" rel="noopener">strana ${t.strana}</a>).`):"Termín dokončení podle smlouvy zatím nemáme.";
+  if(p.faze==="probiha")return st?`Odvozujeme ho z podpisu smlouvy o dílo ${dat(st.datum)}. ${tt} Skutečný postup prací v datech není.`:"Stav odvozujeme z dokladů.";
   if(p.faze==="dokonceno" && !p.dokonceni && p.ukonceni_plneni)return `Podle E-ZAK bylo plnění stavební smlouvy ukončeno ${dat(p.ukonceni_plneni.datum)}.`;
   if(p.faze==="dokonceno")return p.dokonceni?`Dokončení doloženo ${dat(String(p.dokonceni.datum))}.`:"Dokončení odvozujeme z dokladů (E-ZAK: ukončeno plnění). Den předání stavby v datech nemáme.";
   if(p.faze==="soutezi_se")return "Probíhá výběr dodavatele, smlouva o dílo zatím není.";
@@ -357,7 +361,7 @@ function karta(p){
   ${z?`<p class="souhrn1">${esc(z.text)} ${esc(z.cena)}</p>`:""}
   ${dod?`<p style="margin:0 0 6px">Dodavatelem stavby je <b>${esc(dod)}</b>${/\.$/.test(dod)?"":"."}</p>`:""}
   ${z?.url?`<a class="akce" href="${esc(z.url)}" target="_blank" rel="noopener">${esc(z.odkaz)} ↗</a>`:""}
-  <p class="stav"><b>Stav: ${esc(stavText(p))}.</b> ${esc(stavDoklad(p))}</p>
+  <p class="stav"><b>Stav: ${esc(stavText(p))}.</b> ${stavDoklad(p)}</p>
   ${p.popis?`<p class="popis">${esc(p.popis)}</p>`:p.automaticka?`<p class="popis pozn">Karta sestavená automaticky ze zakázky v E-ZAK a smluv se stejným názvem.</p>`:""}
   <div class="kotvy" role="navigation" aria-label="Části stránky"><button data-kotva="k-prubeh">Průběh projektu</button><button data-kotva="k-ceny">Smlouvy a ceny</button><button data-kotva="k-sprm">Vazba na Strategický plán</button></div>
   <h2 class="oddil" id="k-prubeh">Průběh projektu</h2>${historie}
@@ -456,7 +460,8 @@ function harmonogram(){
   GI.length=0;
   if(!H.length)return "<p>Harmonogram zatím nemá data.</p>";
   const OD="2023-01-01";
-  const kon=new Date(DNES);kon.setMonth(kon.getMonth()+3);const DO=kon.toISOString().slice(0,10);
+  const plany=H.flatMap(r=>r.useky.map(u=>u.planovany_konec?.datum).filter(Boolean));
+  const kon=new Date([DNES,...plany].sort().at(-1));kon.setMonth(kon.getMonth()+3);const DO=kon.toISOString().slice(0,10);
   const t=d=>new Date(d).getTime();const T0=t(OD),T1=t(DO);
   const x=d=>Math.max(0,Math.min(100,100*(t(d)-T0)/(T1-T0)));
   const roky=[];for(let r=2023;r<=+DO.slice(0,4);r++)roky.push(r);
@@ -464,13 +469,19 @@ function harmonogram(){
   const osa=`<div class="osa"><span></span><div class="tr">${roky.map(r=>`<span style="left:${x(r+"-01-01").toFixed(2)}%">${r}</span>`).join("")}<span style="left:${x(DNES).toFixed(2)}%;color:var(--green-dark);font-weight:700;transform:translateX(-50%) translateY(-1px)">dnes</span></div></div>`;
   const usek=(u,r)=>{const od=u.od<OD?OD:u.od, doo=u.do||DNES;const l=x(od), w=Math.max(.6,x(doo)-l);
     const popis=`${r.nazev} – ${FAZE_G[u.faze]}: ${dat(u.od)} – ${u.otevreno?"dosud":dat(u.do)}${u.konec_jistota==="posledni_doklad"?" (konec = poslední doklad ke stavbě)":u.konec_jistota==="ukonceni_plneni"?" (konec = ukončení plnění smlouvy podle E-ZAK)":""}${u.zacatek_pred_daty?" (začalo dřív, než sahají naše data)":""}`;
-    const plan=u.faze==="stavba"&&u.otevreno?" Plánovaný termín dokončení podle smlouvy v datech nemáme.":"";
+    const pk=u.planovany_konec;
+    const plan=u.faze==="stavba"&&u.otevreno?(pk?.datum?` Dokončení podle smlouvy${pk.podle&&pk.podle!=="smlouva"?" ("+pk.podle+")":""}: ${dat(pk.datum)}.`:pk?` Termín podle smlouvy: ${pk.citace}.`:" Termín dokončení podle smlouvy zatím nemáme."):"";
+    const fazeIndex=GI.length;
     GI.push({t:popis+"."+plan,url:u.url,odkaz:"Otevřít doklad k začátku fáze"});
-    return `<button type="button" class="u ${u.faze}${u.otevreno?" otevreno":""}${u.od<OD||u.zacatek_pred_daty?" drive":""}" style="left:${l.toFixed(2)}%;width:${w.toFixed(2)}%" data-gi="${GI.length-1}" title="${esc(popis)}" aria-label="${esc(popis)}"></button>`;};
+    const pl_=pk?.datum&&u.otevreno?(GI.push({t:`${r.nazev} – dokončení podle smlouvy${pk.podle&&pk.podle!=="smlouva"?" ("+pk.podle+")":""}: ${dat(pk.datum)}. Citace: „${pk.citace}“`,url:pk.url,odkaz:"Otevřít stranu smlouvy"}),
+      (pk.datum>DNES?`<i class="plan" style="left:${x(DNES).toFixed(2)}%;width:${Math.max(0,x(pk.datum)-x(DNES)).toFixed(2)}%"></i>`:"")+`<button type="button" class="pk${pk.datum<DNES?" pro":""}" style="left:${x(pk.datum).toFixed(2)}%" data-gi="${GI.length-1}" title="dokončení podle smlouvy ${dat(pk.datum)}" aria-label="${esc(r.nazev)}: dokončení podle smlouvy ${dat(pk.datum)}"></button>`):"";
+    return pl_+`<button type="button" class="u ${u.faze}${u.otevreno?" otevreno":""}${u.od<OD||u.zacatek_pred_daty?" drive":""}" style="left:${l.toFixed(2)}%;width:${w.toFixed(2)}%" data-gi="${fazeIndex}" title="${esc(popis)}" aria-label="${esc(popis)}"></button>`;};
   const mil=(m,r)=>m.datum&&m.datum>=OD&&(m.typ==="dodatek"||m.typ==="usneseni"&&r.typ==="aktivita")?(GI.push({t:dat(m.datum)+" · "+(m.cislo?m.cislo+": ":"")+(m.text||m.typ),url:m.url,odkaz:"Otevřít dokument"}),`<button type="button" class="m" style="left:${x(m.datum).toFixed(2)}%" data-gi="${GI.length-1}" title="${esc(dat(m.datum)+" · "+(m.cislo?m.cislo+": ":"")+(m.text||m.typ))}" aria-label="${esc(dat(m.datum)+" · "+(m.text||m.typ))}"></button>`):"";
+  const terminy=r=>{const st=r.useky.find(u=>u.faze==="stavba");if(!st)return "";const pk=st.planovany_konec;
+    return ` · stavba od ${dat(st.od)}${st.otevreno?(pk?.datum?`, dokončení podle smlouvy <b>${dat(pk.datum)}</b>`:", termín dokončení zatím nemáme"):`, poslední doklad ${dat(st.do)}`}`;};
   const radek=r=>{const pod=r.typ==="investice"?(FAZE[r.faze]||[""])[0]:r.typ==="aktivita"?(OBLAST[r.oblast]||({uzemni_plan:"Územní plán"})[r.oblast]||""):"připravovaný projekt";
     const nz=r.odkaz?`<a href="${r.odkaz}">${esc(rozepis(r.nazev))}</a>`:`<b>${esc(rozepis(r.nazev))}</b>`;
-    return `<div class="gr"><div class="n">${nz}<small>${esc(pod)}${r.typ!=="zasobnik"&&r.faze_jistota==="nase_propojeni"&&r.typ==="investice"?" · fáze podle dokladů":""}</small></div><div class="tr">${rysky}${r.useky.map(u=>usek(u,r)).join("")}${r.milniky.map(m=>mil(m,r)).join("")}</div></div>`;};
+    return `<div class="gr"><div class="n">${nz}<small>${esc(pod)}${r.typ!=="zasobnik"&&r.faze_jistota==="nase_propojeni"&&r.typ==="investice"?" · fáze podle dokladů":""}${r.typ==="investice"?terminy(r):""}</small></div><div class="tr">${rysky}${r.useky.map(u=>usek(u,r)).join("")}${r.milniky.map(m=>mil(m,r)).join("")}</div></div>`;};
   const zacatek=r=>r.useky.reduce((m,u)=>u.od<m?u.od:m,"9999");
   const inv=H.filter(r=>r.typ==="investice");
   const sk=[["Dlouhodobé projekty bez stavby",H.filter(r=>r.typ==="aktivita"),"Územní plán a další projekty, které běží měsíce až roky. Milníky jsou usnesení rady a zastupitelstva (naše data sahají od září 2026)."],
@@ -481,9 +492,9 @@ function harmonogram(){
   const tab=H.map(r=>`<tr><td>${esc(r.nazev)}</td><td>${r.useky.map(u=>`${FAZE_G[u.faze]} ${dat(u.od)} – ${u.otevreno?"dosud":dat(u.do)}`).join("<br>")}</td></tr>`).join("");
   const nI=H.filter(r=>r.typ==="investice").length,nZ=H.filter(r=>r.typ==="zasobnik").length,nA=H.filter(r=>r.typ==="aktivita").length;
   return `<section><h1 class="st" tabindex="-1">Časová osa projektů</h1>
-  <p style="max-width:64ch">Kdy se co připravovalo, soutěžilo a stavělo – podle dokumentů. Začátek a konec každého úseku je <b>datum dokumentu</b> (smlouvy, zakázky v E-ZAK, usnesení), ne plánovaný termín města. Plánované termíny dokončení ze smluv zatím v datech nemáme.</p>
+  <p style="max-width:64ch">Kdy se co připravovalo, soutěžilo a stavělo – podle dokumentů. Začátek a konec každého úseku je <b>datum dokumentu</b> (smlouvy, zakázky v E-ZAK, usnesení), ne plánovaný termín města. Termín dokončení podle smlouvy (◇) čteme z textu smlouvy nebo posledního dodatku v registru smluv; doplňuje se postupně.</p>
   <p class="pozn" style="font-size:15px">${pl(nI,"investice","investice","investic")} · ${pl(nZ,"připravovaný projekt","připravované projekty","připravovaných projektů")} · ${pl(nA,"dlouhodobý projekt","dlouhodobé projekty","dlouhodobých projektů")}. Klepněte na úsek nebo kosočtverec: ukáže se popis a odkaz na dokument. <a href="#casova-osa-seznam" data-seznam>Zobrazit jako seznam</a></p>
-  <div class="leg"><span><i style="background:var(--g-priprava);border:1px solid var(--g-soutez)"></i>příprava (studie, projekt)</span><span><i style="background:var(--g-soutez)"></i>výběr dodavatele</span><span><i style="background:var(--g-stavba)"></i>stavba</span><span><i style="background:var(--g-prubeh)"></i>dlouhodobý projekt</span><span><span class="md"></span>dodatek / usnesení</span><span><i style="background:linear-gradient(90deg,var(--g-stavba),rgba(0,102,132,.3))"></i>stále běží</span></div>
+  <div class="leg"><span><i style="background:var(--g-priprava);border:1px solid var(--g-soutez)"></i>příprava (studie, projekt)</span><span><i style="background:var(--g-soutez)"></i>výběr dodavatele</span><span><i style="background:var(--g-stavba)"></i>stavba</span><span><i style="background:var(--g-prubeh)"></i>dlouhodobý projekt</span><span><span class="md"></span>dodatek / usnesení</span><span><i style="background:linear-gradient(90deg,var(--g-stavba),rgba(0,102,132,.3))"></i>stále běží</span><span><span class="md" style="background:#fff;border:2px solid var(--navy)"></span>dokončení podle smlouvy</span></div>
   ${sk.filter(([,r])=>r.length).map(([n,r,pz])=>{const telo=r.sort((a,b)=>zacatek(a).localeCompare(zacatek(b))).map(radek).join("");
     return `<div class="hh">${n} · ${r.length}</div>${pz?`<p class="pozn" style="margin:0 0 8px">${pz}</p>`:""}<div class="gan">${osa}${n.endsWith("dokončené")?`<details><summary>Zobrazit dokončené</summary>${telo}</details>`:telo}</div>`;}).join("")}
   <details class="pozn" id="casova-osa-seznam"><summary>Časová osa jako seznam</summary><table class="t"><tr><td class="r">Projekt</td><td>Úseky podle dokumentů</td></tr>${tab}</table></details>
@@ -594,7 +605,7 @@ function sprmText(p,kratce){const odkaz=`<a href="${SPRM_URL}" target="_blank" r
   return (kratce?"":`Podle dokumentu ${odkaz}:<br>`)+p.sprm.map(x=>`${kratce?"Strategický plán: ":""}${esc(x.osa)} › ${esc((x.opatreni||"").replace(/^\d+\.\s*/,""))} › ${esc(x.aktivita)}${x.potvrzeno?"":" <i>(návrh)</i>"}`).join(kratce?"; ":"<br>");
 }
 function radekPrehledu(p){const f=FAZE[p.faze]||["",""];const [co,kolik]=hlavni(p);const pu=posledniUdalost(p);const z=pu?zmenaVeta(p,pu):null;
-  return `<a href="#${p.id}" class="k-${p.faze}"><span><b>${esc(rozepis(p.nazev))}</b>${z?`<small class="pz">${esc(z.kratce)}</small>`:""}<small class="sv"><i class="${f[1]}" aria-hidden="true"></i>${esc(stavText(p))} · ${OBLAST[p.oblast]||"Ostatní"}</small></span><span class="c">${kolik||"–"}<small>${co}</small></span></a>`;}
+  return `<a href="#${p.id}" class="k-${p.faze}"><span><b>${esc(rozepis(p.nazev))}</b>${z?`<small class="pz">${esc(z.kratce)}</small>`:""}<small class="sv"><i class="${f[1]}" aria-hidden="true"></i>${esc(stavText(p))}${p.faze==="probiha"&&p.termin_dokonceni?.datum?` · dokončení podle smlouvy ${dat(p.termin_dokonceni.datum)}`:p.faze==="probiha"&&p.termin_dokonceni?.druh==="lhuta"?` · ${esc(p.termin_dokonceni.citace)}`:""} · ${OBLAST[p.oblast]||"Ostatní"}</small></span><span class="c">${kolik||"–"}<small>${co}</small></span></a>`;}
 function prehled(){
   const r=filtrovane();
   const pocty=Object.fromEntries(STAV.map(([k])=>[k,P.filter(p=>k==="vse"||p.faze===k).length]));

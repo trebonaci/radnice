@@ -399,6 +399,7 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
+    "termin_dokonceni": null,
     "ukonceni_plneni": {
       "datum": "2026-05-07",
       "citace": "Plnění smlouvy ukončeno 07.05.2026",
@@ -609,6 +610,7 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
+    "termin_dokonceni": null,
     "ukonceni_plneni": null
   },
   {
@@ -938,6 +940,7 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
+    "termin_dokonceni": null,
     "ukonceni_plneni": null
   },
   {
@@ -1296,6 +1299,7 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
+    "termin_dokonceni": null,
     "ukonceni_plneni": null
   },
   {
@@ -1454,6 +1458,7 @@
       "url": "https://smlouvy.gov.cz/smlouva/38781444"
     },
     "sprm": [],
+    "termin_dokonceni": null,
     "ukonceni_plneni": null
   },
   {
@@ -1928,6 +1933,7 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
+    "termin_dokonceni": null,
     "ukonceni_plneni": {
       "datum": "2026-08-04",
       "citace": "Plnění smlouvy ukončeno 04.08.2026",
@@ -2260,6 +2266,7 @@
       "url": "https://smlouvy.gov.cz/smlouva/30709184"
     },
     "sprm": [],
+    "termin_dokonceni": null,
     "ukonceni_plneni": {
       "datum": "2024-12-13",
       "citace": "Plnění smlouvy ukončeno 13.12.2024",
@@ -3047,6 +3054,7 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
+    "termin_dokonceni": null,
     "ukonceni_plneni": {
       "datum": "2026-08-24",
       "citace": "Plnění smlouvy ukončeno 24.08.2026",
@@ -3952,6 +3960,7 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
+    "termin_dokonceni": null,
     "ukonceni_plneni": null
   },
   {
@@ -4472,6 +4481,17 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
+    "termin_dokonceni": {
+      "zdroj_id": "rs-40262621",
+      "druh": "lhuta",
+      "datum": null,
+      "citace": "Lhůta pro dokončení prací: do 270 kalendářních dnů od převzetí staveniště zhotovitelem",
+      "strana": 8,
+      "url": "https://smlouvy.gov.cz/smlouva/soubor/48498493/Smlouva%20o%20d%C3%ADlo_anonymizovan%C3%A1.pdf#page=8",
+      "smlouva_url": "https://smlouvy.gov.cz/smlouva/40262621",
+      "jistota": "dolozeno",
+      "podle": "smlouva"
+    },
     "ukonceni_plneni": null
   },
   {
@@ -5404,6 +5424,7 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
+    "termin_dokonceni": null,
     "ukonceni_plneni": null
   },
   {
@@ -6932,6 +6953,7 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
+    "termin_dokonceni": null,
     "ukonceni_plneni": null
   },
   {
@@ -7217,6 +7239,7 @@
       "url": "https://smlouvy.gov.cz/smlouva/39062598"
     },
     "sprm": [],
+    "termin_dokonceni": null,
     "ukonceni_plneni": null
   },
   {
@@ -8784,6 +8807,7 @@
       "url": "https://smlouvy.gov.cz/smlouva/35901953"
     },
     "sprm": [],
+    "termin_dokonceni": null,
     "ukonceni_plneni": {
       "datum": "2025-10-20",
       "citace": "Plnění smlouvy ukončeno 20.10.2025",
@@ -10757,6 +10781,7 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
+    "termin_dokonceni": null,
     "ukonceni_plneni": null
   },
   {
@@ -11364,6 +11389,7 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
+    "termin_dokonceni": null,
     "ukonceni_plneni": {
       "datum": "2025-12-17",
       "citace": "Plnění smlouvy ukončeno 17.12.2025",
@@ -12112,6 +12138,7 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
+    "termin_dokonceni": null,
     "ukonceni_plneni": {
       "datum": "2025-12-19",
       "citace": "Plnění smlouvy ukončeno 19.12.2025",
@@ -12419,6 +12446,7 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
+    "termin_dokonceni": null,
     "ukonceni_plneni": null
   },
   {
@@ -12818,6 +12846,7 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
+    "termin_dokonceni": null,
     "ukonceni_plneni": {
       "datum": "2026-04-29",
       "citace": "Plnění smlouvy ukončeno 29.04.2026",
@@ -13389,6 +13418,7 @@
       "url": "https://smlouvy.gov.cz/smlouva/40117897"
     },
     "sprm": [],
+    "termin_dokonceni": null,
     "ukonceni_plneni": null
   },
   {
@@ -13691,6 +13721,7 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
+    "termin_dokonceni": null,
     "ukonceni_plneni": null
   },
   {
@@ -13998,6 +14029,7 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
+    "termin_dokonceni": null,
     "ukonceni_plneni": null
   },
   {
@@ -14701,6 +14733,7 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
+    "termin_dokonceni": null,
     "ukonceni_plneni": null
   },
   {
@@ -15103,6 +15136,7 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
+    "termin_dokonceni": null,
     "ukonceni_plneni": {
       "datum": "2026-06-04",
       "citace": "Plnění smlouvy ukončeno 04.06.2026",
@@ -15777,6 +15811,7 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
+    "termin_dokonceni": null,
     "ukonceni_plneni": null
   },
   {
@@ -16022,6 +16057,7 @@
       "url": "https://smlouvy.gov.cz/smlouva/34569109"
     },
     "sprm": [],
+    "termin_dokonceni": null,
     "ukonceni_plneni": {
       "datum": "2025-12-15",
       "citace": "Plnění smlouvy ukončeno 15.12.2025",
@@ -16511,6 +16547,7 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
+    "termin_dokonceni": null,
     "ukonceni_plneni": null
   },
   {
@@ -16892,6 +16929,7 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
+    "termin_dokonceni": null,
     "ukonceni_plneni": {
       "datum": "2025-10-17",
       "citace": "Plnění smlouvy ukončeno 17.10.2025",
@@ -17229,6 +17267,7 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
+    "termin_dokonceni": null,
     "ukonceni_plneni": {
       "datum": "2025-06-27",
       "citace": "Plnění smlouvy ukončeno 27.06.2025",
@@ -17546,6 +17585,7 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
+    "termin_dokonceni": null,
     "ukonceni_plneni": {
       "datum": "2025-11-13",
       "citace": "Plnění smlouvy ukončeno 13.11.2025",
@@ -17873,6 +17913,7 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
+    "termin_dokonceni": null,
     "ukonceni_plneni": {
       "datum": "2025-04-15",
       "citace": "Plnění smlouvy ukončeno 15.04.2025",
@@ -18673,6 +18714,7 @@
       "url": "https://smlouvy.gov.cz/smlouva/34915761"
     },
     "sprm": [],
+    "termin_dokonceni": null,
     "ukonceni_plneni": {
       "datum": "2025-09-30",
       "citace": "Plnění smlouvy ukončeno 30.09.2025",
@@ -19280,6 +19322,7 @@
       "url": "https://smlouvy.gov.cz/smlouva/32937788"
     },
     "sprm": [],
+    "termin_dokonceni": null,
     "ukonceni_plneni": {
       "datum": "2025-05-30",
       "citace": "Plnění smlouvy ukončeno 30.05.2025",
@@ -19531,6 +19574,7 @@
       "url": "https://smlouvy.gov.cz/smlouva/30443016"
     },
     "sprm": [],
+    "termin_dokonceni": null,
     "ukonceni_plneni": {
       "datum": "2024-12-16",
       "citace": "Plnění smlouvy ukončeno 16.12.2024",
@@ -19844,6 +19888,7 @@
       "url": "https://smlouvy.gov.cz/smlouva/30583216"
     },
     "sprm": [],
+    "termin_dokonceni": null,
     "ukonceni_plneni": {
       "datum": "2024-11-26",
       "citace": "Plnění smlouvy ukončeno 26.11.2024",
