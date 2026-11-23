@@ -249,10 +249,11 @@ function openGis(el) {
       L.control.zoom({zoomInTitle:'Přiblížit',zoomOutTitle:'Oddálit'}).addTo(map);
       L.control.attribution({prefix:false}).addTo(map);
       // podklad: státní mapy ČÚZK (rozhodnutí Ondřeje 23. 11. 2026) – ZTM a ortofoto ve Web Mercatoru, bez limitu „heavy use“
-      const cuzk = (sluzba, nazev) => L.tileLayer("https://ags.cuzk.gov.cz/arcgis1/rest/services/" + sluzba + "/MapServer/tile/{z}/{y}/{x}", {
-        maxZoom:19, attribution:'© <a href="https://geoportal.cuzk.gov.cz">ČÚZK</a> – ' + nazev,
+      // základní mapa ztlumená do šedé (třída gis-tlumena v mapa.css), aby vynikly značky projektů (připomínka 23. 11. 2026)
+      const cuzk = (sluzba, nazev, trida) => L.tileLayer("https://ags.cuzk.gov.cz/arcgis1/rest/services/" + sluzba + "/MapServer/tile/{z}/{y}/{x}", {
+        maxZoom:19, className:trida || "", attribution:'© <a href="https://geoportal.cuzk.gov.cz">ČÚZK</a> – ' + nazev,
       });
-      const podklady = {"Základní mapa": cuzk("ZTM_WM", "Základní topografická mapa"), "Letecký snímek": cuzk("ORTOFOTO_WM", "Ortofoto ČR")};
+      const podklady = {"Základní mapa": cuzk("ZTM_WM", "Základní topografická mapa", "gis-tlumena"), "Letecký snímek": cuzk("ORTOFOTO_WM", "Ortofoto ČR")};
       const tiles = podklady["Základní mapa"].addTo(map);
       L.control.layers(podklady, null, {position:"topright", collapsed:false}).addTo(map);
       for (const vrstva of Object.values(podklady))
