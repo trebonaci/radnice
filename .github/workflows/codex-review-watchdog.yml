@@ -3,7 +3,16 @@ name: Codex review watchdog
 on:
   schedule:
     - cron: "*/15 * * * *"
+  # GitHub plánované běhy při zátěži odkládá o hodiny (#238): hlídač se spouští i po každé kontrole a sloučení,
+  # které běží při jakékoli aktivitě v repozitáři. Běh je idempotentní (značka codex-review-timeout).
+  workflow_run:
+    workflows: ["Kontrola", "Sloučení"]
+    types: [completed]
   workflow_dispatch:
+
+concurrency:
+  group: codex-review-watchdog
+  cancel-in-progress: false
 
 permissions:
   contents: read
