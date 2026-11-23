@@ -128,23 +128,34 @@ def zapocti(doklady: list[dict]) -> list[dict]:
     Zakázka a smlouva na stejnou práci mají obvykle stejnou smluvní cenu: smlouva má přednost (je to podepsaná cena),
     zakázka se nezapočte. Dvě smlouvy se stejnou cenou do 60 dnů (smlouva + objednávka) se počítají jednou."""
     smlouvy = [d for d in doklady if d["typ"] == "smlouva" and d.get("cena")]
-    vysledek = []
+    vysledek, castecne = [], {}
     for d in doklady:
         d = dict(d)
         d["zapocteno"], d["nezapocteno"] = bool(d.get("cena")), None if d.get("cena") else "cena neuvedena"
         h = _hodnoty(d.get("cena"))
         if d["zapocteno"] and d["typ"] == "zakazka":
-            # stejná cena, nebo stejné datum podpisu – E-ZAK po dodatku přepisuje smluvní cenu (#179)
-            shoda = next((s for s in smlouvy if not s.get("dodatek") and (h & _hodnoty(s["cena"])
-                          or (s.get("datum") and s["datum"] in d.get("data_smluv", [])))), None)
+            # stejná cena, nebo stejné datum podpisu – E-ZAK po dodatku přepisuje smluvní cenu (#179).
+            # Datum podpisu stačí, jen když registr pokrývá všechny části zakázky; cena zakázky je součet
+            # všech částí, jinak by se nezapočetly i části, jejichž smlouva v registru není (#179, Codex v #217).
+            data = set(d.get("data_smluv") or [])
+            kryte = [s for s in smlouvy if not s.get("dodatek") and s.get("datum") in data]
+            shoda = next((s for s in smlouvy if not s.get("dodatek") and h & _hodnoty(s["cena"])), None)
+            if not shoda and kryte and {s["datum"] for s in kryte} >= data:
+                shoda = kryte[0]
             if shoda:
                 d["zapocteno"], d["nezapocteno"] = False, f"stejná smlouva jako {shoda['id']} (cena nebo datum podpisu)"
+            elif kryte:
+                # zakázka zůstává (její cena zahrnuje i tyto části), smlouvy jednotlivých částí se nezapočtou
+                castecne.update({s["id"]: d["id"] for s in kryte})
         elif d["zapocteno"]:
             shoda = next((v for v in vysledek if v["typ"] == "smlouva" and v["zapocteno"] and h & _hodnoty(v["cena"])
                           and (_dny(v["datum"], d["datum"]) or 0) <= 60), None)
             if shoda:
                 d["zapocteno"], d["nezapocteno"] = False, f"stejná cena jako smlouva {shoda['id']} (do 60 dnů)"
         vysledek.append(d)
+    for v in vysledek:
+        if v["id"] in castecne and v["zapocteno"]:
+            v["zapocteno"], v["nezapocteno"] = False, f"část zakázky {castecne[v['id']]}, cena je v ceně zakázky"
     return vysledek
 
 
