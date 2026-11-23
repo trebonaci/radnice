@@ -577,13 +577,13 @@ function mistaStranka(){
   const ms=M.filter(m=>!FT.mista||tm(m)===FT.mista).sort((a,b)=>(b.posledni_zmena||"").localeCompare(a.posledni_zmena||"")||a.nazev.localeCompare(b.nazev,"cs"));
   return `<section><h1 class="st" tabindex="-1">Místa a služby</h1><p><a href="#mapa">Zobrazit změny na mapě →</a></p>
   <p class="pozn" style="font-size:15px;max-width:62ch">Co se mění v místech a službách, které lidé používají – a co se v nich staví. Změny vybírá z usnesení AI s ověřenou citací, odkaz vede na stranu zápisu.</p>
-  ${temaChips([...new Set(M.map(tm))],FT.mista,"mtema")}${FT.mista?`<p class="pocet">${pl(ms.length,"místo","místa","míst")} v tématu ${esc(OBLAST[FT.mista])} · <button class="tl" data-mtema="">Všechna témata</button></p>`:""}
+  ${temaChips([...new Set([...M.map(tm),...ZM.filter(z=>!M.some(m=>m.id===z.misto_id)).map(z=>OBLAST[z.oblast]?z.oblast:"jine")])],FT.mista,"mtema")}${FT.mista?`<p class="pocet">${pl(ms.length,"místo","místa","míst")} v tématu ${esc(OBLAST[FT.mista])} · <button class="tl" data-mtema="">Všechna témata</button></p>`:""}
   ${ms.map(m=>`<article class="ms" id="misto-${m.id}"><h3>${esc(rozepis(m.nazev))}</h3><p class="po">${OBLAST[m.oblast]||"Ostatní"}${m.popis?" · "+esc(m.popis):""}</p>
    ${m.zmeny.length?`<ul class="zm">${m.zmeny.map(i=>zmRadek(ZMP[i],false)).join("")}</ul>`:'<p class="pozn">Zatím žádná změna v usneseních od září 2026.</p>'}
    ${m.investice.length||m.zasobnik.length?`<div class="inv">${m.investice.map(i=>`<a href="#${i.id}"><b>${(FAZE[i.faze]||["Investice"])[0]}</b> · ${esc(i.nazev)}</a>`).join("")}${m.zasobnik.map(i=>`<a href="#zasobnik">Zásobník · ${esc(i.nazev)}</a>`).join("")}</div>`:""}
   </article>`).join("")}
   <h2 style="margin-top:34px">Co se mění – všechny změny</h2>
-  <div class="ms"><ul class="zm">${ZM.filter(z=>!FT.mista||ms.some(m=>m.id===z.misto_id)).map(z=>zmRadek(z,true)).join("")}</ul></div></section>`;
+  <div class="ms"><ul class="zm">${ZM.filter(z=>!FT.mista||ms.some(m=>m.id===z.misto_id)||(!M.some(m=>m.id===z.misto_id)&&(OBLAST[z.oblast]?z.oblast:"jine")===FT.mista)).map(z=>zmRadek(z,true)).join("")}</ul></div></section>`;
 }
 // ---------- navigace: přehled (#) · detail akce (#<id>) · rozpočet investic (#rozpocet) ----------
 const STAV=[["vse","Vše"],["probiha","Probíhá"],["dokonceno","Hotovo"],["pripravuje_se","Připravuje se"],["soutezi_se","Soutěž"]];
@@ -692,9 +692,9 @@ function render(){
   if(h==="mapa"){openGis(el);return;}
   if(h==="dokoncene"){zobraz(el,archivProjektu(P),h,"Dokončené projekty");window.scrollTo(0,0);el.querySelectorAll("[data-atema]").forEach(b=>b.onclick=()=>{FA.tema=b.dataset.atema;render();});return;}
   if(h==="rozpocet"){zobraz(el,investice(INV),h,"Rozpočet");window.scrollTo(0,0);return;}
-  if(h==="mista"||h.startsWith("misto-")){if(h.startsWith("misto-"))FT.mista="";zobraz(el,mistaStranka(),"mista","Místa a služby");el.querySelectorAll("[data-mtema]").forEach(b=>b.onclick=()=>{FT.mista=b.dataset.mtema;render();});const t=h.startsWith("misto-")&&document.getElementById(h);t?t.scrollIntoView():window.scrollTo(0,0);return;}
+  if(h==="mista"||h.startsWith("misto-")){if(h.startsWith("misto-"))FT.mista="";zobraz(el,mistaStranka(),"mista","Místa a služby");el.querySelectorAll("[data-mtema]").forEach(b=>b.onclick=()=>{FT.mista=b.dataset.mtema;history.replaceState(null,"","#mista");render();});const t=h.startsWith("misto-")&&document.getElementById(h);t?t.scrollIntoView():window.scrollTo(0,0);return;}
   if(h==="casova-osa"){zobraz(el,harmonogram(),h,"Časová osa projektů");window.scrollTo(0,0);casovaOsa(el);el.querySelectorAll("[data-htema]").forEach(b=>b.onclick=()=>{FT.osa=b.dataset.htema;render();});return;}
-  if(h==="pripravovane"||h.startsWith("priprava-")){if(h.startsWith("priprava-"))FT.zas="";zobraz(el,zasobnik(),"pripravovane","Připravované projekty");el.querySelectorAll("[data-ztema]").forEach(b=>b.onclick=()=>{FT.zas=b.dataset.ztema;render();});const target=document.getElementById(h);target?target.scrollIntoView():window.scrollTo(0,0);return;}
+  if(h==="pripravovane"||h.startsWith("priprava-")){if(h.startsWith("priprava-"))FT.zas="";zobraz(el,zasobnik(),"pripravovane","Připravované projekty");el.querySelectorAll("[data-ztema]").forEach(b=>b.onclick=()=>{FT.zas=b.dataset.ztema;history.replaceState(null,"","#pripravovane");render();});const target=document.getElementById(h);target?target.scrollIntoView():window.scrollTo(0,0);return;}
   if(h==="cisla"){zobraz(el,cisla(),h,"V číslech");window.scrollTo(0,0);return;}
   if(h==="usneseni"||h.startsWith("usneseni-")){if(h==="usneseni")FU.kat="";if(h.startsWith("usneseni-"))Object.assign(FU,{organ:"",hledat:"",oblast:"",kat:h.slice(9)});zobraz(el,usneseniStranka(),"usneseni","Usnesení rady a zastupitelstva");usneseniOvl(el);window.scrollTo(0,0);return;}
   if(/^(rm|zm)-\d{4}-/.test(h)&&US.some(u=>u.id===h)){Object.assign(FU,{organ:"",oblast:"",hledat:"",kat:""});zobraz(el,usneseniStranka(),"usneseni","Usnesení rady a zastupitelstva");usneseniOvl(el);const t=document.getElementById(h);t&&t.scrollIntoView();return;}
