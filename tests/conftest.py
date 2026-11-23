@@ -27,5 +27,5 @@ def jen_pilot(koren: Path) -> None:
     shutil.rmtree(koren / "raw" / "sprm", ignore_errors=True)
     shutil.rmtree(koren / "raw" / "ruian", ignore_errors=True)
     for nazev in ("beh.json", "udalosti.json", ".beh-zapis.json", "zakazky.json", "smlouvy.json",
-                  "rozpoctova_opatreni.json", "rozpocet.json", "rozpocet_zmeny.json", "projekty.json", "investice.json", "dotace.json", "zasobnik.json", "ukazatele.json", "mapa.json", "mista.json", "zmeny.json", "prehled.json"):
+                  "rozpoctova_opatreni.json", "rozpocet.json", "rozpocet_zmeny.json", "projekty.json", "investice.json", "dotace.json", "zasobnik.json", "ukazatele.json", "mapa.json", "mista.json", "zmeny.json", "prehled.json", "zpravy.json"):
         (koren / "data" / nazev).unlink(missing_ok=True)
