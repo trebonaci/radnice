@@ -437,6 +437,7 @@ def sestav(koren: Path | None = None) -> tuple[dict[str, list], list[str]]:
     roky = sorted({r["rok"] for r in rozpocet})
     vystup["investice"] = [modul_rozpocet_zmeny.prehled_investic(rozpocet, rozpocet_zmeny, vystup["projekty"], r)
                            for r in roky]
+    chyby += modul_okruhy.oznac_investice(okruhy_cfg, vystup["investice"], vystup["projekty"])
     # datový přehled (#177): ukazatele počítá kód z hotových výstupů
     vystup["ukazatele"] = modul_ukazatele.sestav(vystup, modul_zasobnik.nacti_subjekty(koren))
     # kontrola osobních údajů v celém výstupu (kromě doslovných citací, ty kontroluje sestavení)
