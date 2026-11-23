@@ -69,3 +69,11 @@ def test_stazeni_uklada_jen_uryvky(tmp_path):
     # podruhé se už nestahuje
     stazeno.clear()
     assert prilohy_smluv.stahni(tmp_path, ziskej, extrahuj) == (0, []) and stazeno == []
+
+
+def test_uryvky_odrizne_osobni_udaje_na_stejne_strane():
+    u = prilohy_smluv.uryvky(["Kontaktní osoba objednatele: Jan Novák, Lesní 5. Termín dokončení díla: 30. 9. 2026. "
+                              "Za zhotovitele podepsal Petr Svoboda, tel. 602 111 222."])
+    text = " ".join(x["text"] for x in u)
+    assert "30. 9. 2026" in text
+    assert "Novák" not in text and "Svoboda" not in text and "602" not in text

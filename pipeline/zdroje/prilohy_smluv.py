@@ -35,6 +35,11 @@ RE_PRILOHA = re.compile(r'href="([^"]*/smlouva/soubor/\d+/[^"]+)"', re.I)
 RE_KLIC = re.compile(r"term[ií]n\w*\s+(dokon[čc]en|p[řr]ed[aá]n|pln[ěe]n|proveden)|dokon[čc]it\s+d[ií]lo|"
                      r"p[řr]edat\s+(d[ií]lo|stavbu)|doba\s+(pln[ěe]n|proveden)|lh[ůu]t\w*\s+(?:pro\s+)?(pln[ěe]n|dokon[čc]en)", re.I)
 OKOLI = 350
+RE_OSOBNI = re.compile(
+    r"kontakt\w*|zastoup\w+|jedn[aá]\w*\s+jm[ée]nem|jm[ée]nem|bytem|bydli\w+|trval\w+\s+pobyt\w*|"
+    r"s[ií]dlo\w*|adres\w+|e-?mail\w*|tel(?:efon)?\w*\.?|mobil\w*|podpis\w*|za\s+(?:objednatele|zhotovitele|prod[aá]vaj[ií]c[ií]ho)|"
+    r"I[ČC]O?\b|DI[ČC]\b|[\w.+-]+@[\w-]+\.\w+|\+?\d{3}\s?\d{3}\s?\d{3}\b|\b\d{3}\s?\d{2}\s+[A-ZČŘŠŽÝÁÍÉ]\w+|"
+    r"datum\s+narozen\w*|r\.\s?[čc]\.|nar\.", re.I)
 
 
 def smlouvy_ke_stazeni(projekty: list[dict]) -> list[tuple[str, str]]:
@@ -60,14 +65,31 @@ def odkazy_priloh(stranka: str, zaklad: str = ZAKLAD) -> list[str]:
     return videno
 
 
+def _bez_osobnich(t: str, m: re.Match) -> tuple[int, int]:
+    """Meze úryvku kolem shody; okolí s osobními údaji (kontakt, podpis, adresa, e-mail, telefon) se odřízne.
+
+    Je-li značka osobních údajů v okolí před klíčem, úryvek začíná až klíčem; je-li za ním, končí před ní.
+    """
+    od, do = max(0, m.start() - 80), min(len(t), m.end() + OKOLI)
+    pred = [x for x in RE_OSOBNI.finditer(t, od, m.start())]
+    if pred:
+        od = m.start()
+    po = RE_OSOBNI.search(t, m.end(), do)
+    if po:
+        do = po.start()
+    return od, max(do, m.end())
+
+
 def uryvky(strany: list[str]) -> list[dict]:
-    """Úryvky textu kolem zmínek o termínu (mezery sjednocené, ±OKOLI znaků, překryvy sloučené)."""
+    """Úryvky textu kolem zmínek o termínu (mezery sjednocené, ±OKOLI znaků, překryvy sloučené).
+
+    Okolí s osobními údaji se do úryvku nedostane (AGENTS.md: jména fyzických osob se neukládají)."""
     vysledek = []
     for i, s in enumerate(strany, 1):
         t = " ".join(s.split())
         useky = []
         for m in RE_KLIC.finditer(t):
-            od, do = max(0, m.start() - 80), min(len(t), m.end() + OKOLI)
+            od, do = _bez_osobnich(t, m)
             if useky and od <= useky[-1][1]:
                 useky[-1][1] = max(useky[-1][1], do)
             else:
