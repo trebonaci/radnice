@@ -779,7 +779,7 @@ function kartaAkce(p,velka){const [co,kolik]=hlavni(p);const t=terminAk(p);
   return `<article class="ak k-${p.faze}${velka?" velka":""}"><div class="ak-h"><span class="fz">${esc(FAZE[p.faze]?.[0]||"")}${p.faze_jistota==="nase_propojeni"?" · podle dokladů":""}</span><span class="ok">${esc(OKN[p.okruh]?.nazev||"")}</span></div>
    <h3><a href="#${p.id}">${esc(rozepis(p.nazev))}</a></h3>
    ${velka&&p.popis?`<p class="pop">${esc(p.popis)}</p>`:""}
-   <dl class="ak-d"><div><dt>${esc(co)}</dt><dd class="cn">${kolik||"–"}</dd></div>${t?`<div><dt>${t.k}</dt><dd${t.po?' class="po"':""}>${t.h||t.pozn}${t.h&&t.pozn?`<small class="po">${t.pozn}</small>`:""}</dd></div>`:""}
+   <dl class="ak-d"><div><dt>${esc(co)}</dt><dd class="cn">${kolik||"–"}</dd></div>${t?`<div><dt>${t.k}</dt><dd${t.po?' class="po"':""}>${esc(t.h||t.pozn)}${t.h&&t.pozn?`<small class="po">${esc(t.pozn)}</small>`:""}</dd></div>`:""}
    <div class="sir"><dt>Dodavatel stavby</dt><dd>${esc(dodAk(p))}</dd></div></dl>
    ${z?`<p class="zm"><b>Nejnovější změna:</b> ${esc(z.text)}${z.url?` <a href="${esc(z.url)}" target="_blank" rel="noopener">${esc(z.odkaz)}</a>`:""}</p>`:""}
    <p class="od"><a href="#${p.id}">Karta akce</a>${sm?`<a href="${esc(sm)}" target="_blank" rel="noopener">Smlouva v registru smluv</a>`:""}${za?`<a href="${esc(za)}" target="_blank" rel="noopener">Zakázka v E-ZAK</a>`:""}</p></article>`;}

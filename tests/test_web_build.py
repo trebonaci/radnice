@@ -103,3 +103,11 @@ def test_investice_nema_nedolozene_ukazatele():
     for zakazane in ("termínová spolehlivost", "Termínová spolehlivost", "z toho dotace", "zpoždění"):
         assert zakazane not in html
     assert "Jak evidujeme investice" in html
+
+
+def test_lhuta_ze_smlouvy_se_na_karte_investice_escapuje():
+    """Review #255 (P1): citace lhůty ze smlouvy je text z dokumentu, do HTML se vkládá přes esc()."""
+    import re
+    html = build.sestav()
+    radek = re.search(r'<dl class="ak-d">.*?</dl>', html, re.S).group(0)
+    assert "${esc(t.h||t.pozn)}" in radek and "${esc(t.pozn)}" in radek
