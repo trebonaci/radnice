@@ -30,6 +30,8 @@ mista:
   - id: sportovni-hala
     nazev: Sportovní hala
     oblast: sport
+    misto:
+      - adresa: Lázeňská 1005
     popis: Sportovní hala s tělocvičnami a ubytováním (Hotel Sport).
     zmeny: ['[Ss]portovní hal', 'Hotel Sport']
     investice: [pristavba-telocvicen, sportovni-hala-ubytovani, sportovni-hala-revitalizace]

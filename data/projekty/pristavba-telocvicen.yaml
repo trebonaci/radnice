@@ -13,3 +13,5 @@ rozpocet:
 vazby:
   hledat: ["přístavb\\w* dvou tělocvič"]
   vyloucit: []
+misto:
+  - adresa: Lázeňská 1005

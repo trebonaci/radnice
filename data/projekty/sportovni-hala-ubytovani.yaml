@@ -13,3 +13,5 @@ rozpocet:
 vazby:
   hledat: ["nástavba a přístavba ubytování", "ubytovací objekt sportovní haly", "ubytování sportovní hal"]
   vyloucit: ["nájmu nebytových prostor", "servisní služby"]
+misto:
+  - adresa: Lázeňská 1005

@@ -3,7 +3,7 @@
 Budovy bodově, ulice liniově (celá definiční čára ulice z RÚIAN). Místo se bere:
 1. z ručního pole `misto` v `data/projekty/<id>.yaml` nebo v položce `data/zasobnik.yaml` (doloženo ručně):
    `- ulice: Valy` · `- adresa: Na Sadech 375` · `- cp: 1` + `cast_obce: Třeboň I` · `- bod: [49.0035, 14.7706]`
-   (+ volitelně `popis`),
+   nebo `usek: [[šířka, délka], ...]` se `zdroj_url` pro doložený rozsah (+ volitelně `popis`),
 2. jinak z názvu akce (naše propojení): „ul. Budějovické“, „v Jateční ulici“ → ulice; „Chelčického 1“ → adresa;
    „č.p. 1/I“ → budova v části Třeboň I,
 3. náměty SPRM mají bod z evidence na trebonaci.cz.
@@ -91,7 +91,24 @@ def vyres_rucni(misto: list[dict], ruian: Ruian, kdo: str) -> tuple[list[dict], 
     casti, chyby, upozorneni = [], [], []
     for m in misto or []:
         popis = m.get("popis")
-        if "bod" in m:
+        if "usek" in m:
+            usek = m["usek"]
+            url = m.get("zdroj_url")
+            if not isinstance(url, str) or not url.startswith("https://"):
+                chyby.append(f"mapa {kdo}: úsek musí mít odkaz na zdroj rozsahu")
+                continue
+            if (not isinstance(usek, list) or len(usek) < 2 or not all(
+                isinstance(b, list) and len(b) == 2
+                and all(isinstance(s, (float, int)) for s in b)
+                and 48.8 < b[0] < 49.2 and 14.5 < b[1] < 15.0
+                for b in usek
+            )):
+                chyby.append(f"mapa {kdo}: úsek potřebuje body na Třeboňsku ve formátu [šířka, délka]")
+                continue
+            casti.append({"druh": "usek", "nazev": popis,
+                          "linie": [[[lon, lat] for lat, lon in usek]],
+                          "jistota": "nase_propojeni", "zdroj": "RÚIAN a rozsah podle zakázky", "zdroj_url": url})
+        elif "bod" in m:
             lat, lon = m["bod"]
             if not (48.8 < lat < 49.2 and 14.5 < lon < 15.0):
                 chyby.append(f"mapa {kdo}: bod {m['bod']} není na Třeboňsku (zadávat [šířka, délka])")

@@ -102,3 +102,15 @@ def test_bez_ruian_jen_upozorneni(tmp_path):
 def test_adresa_bez_ohledu_na_velikost_pismen(tmp_path):
     r = mapa.Ruian(_koren(tmp_path))
     assert r.adresa("CHELČICKÉHO", "1")["kod"] == "200"
+
+
+def test_rucni_usek_potrebuje_zdroj_a_body_na_trebonsku(tmp_path):
+    r = mapa.Ruian(_koren(tmp_path))
+    usek = [[49.012229, 14.756283], [49.011026, 14.756617]]
+    casti, chyby, _ = mapa.vyres_rucni([{"usek": usek, "popis": "Táboritská", "zdroj_url": "https://z.cz/918"}], r, "k")
+    assert chyby == [] and casti[0]["druh"] == "usek" and casti[0]["linie"] == [[[14.756283, 49.012229], [14.756617, 49.011026]]]
+    assert casti[0]["zdroj_url"] == "https://z.cz/918" and casti[0]["jistota"] == "nase_propojeni"
+    _, chyby, _ = mapa.vyres_rucni([{"usek": usek}], r, "k")
+    assert "odkaz na zdroj" in chyby[0]
+    _, chyby, _ = mapa.vyres_rucni([{"usek": [[14.75, 49.01], [14.76, 49.01]], "zdroj_url": "https://z.cz"}], r, "k")
+    assert "Třeboňsku" in chyby[0]
