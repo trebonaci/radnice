@@ -134,3 +134,9 @@ def test_stara_verze_uryvku_se_stahne_znovu(tmp_path):
     nove, _ = prilohy_smluv.stahni(tmp_path, lambda u: b"", lambda _: [])
     assert nove == 1
     assert json.loads((tmp_path / "raw" / "smlouvy" / "terminy.json").read_text())["rs-7"]["verze"] == prilohy_smluv.VERZE_URYVKU
+
+
+def test_preskoceny_stary_termin_nespolkne_novy():
+    t = terminy.z_uryvku("bod „dokončení díla“, smlouvy o dílo se tímto ruší a nahrazuje se následujícím zněním: "
+                         "- dokončení díla: do 30.05.2025 – zemní elektrické rozvaděče")
+    assert t["datum"] == "2025-05-30"
