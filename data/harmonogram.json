@@ -71,6 +71,252 @@
   },
   {
     "typ": "investice",
+    "id": "sportovni-hala-revitalizace",
+    "nazev": "Revitalizace sportovní haly včetně občerstvení",
+    "oblast": "sport",
+    "faze": "dokonceno",
+    "faze_jistota": "nase_propojeni",
+    "useky": [
+      {
+        "faze": "priprava",
+        "nazev": "příprava",
+        "od": "2023-03-29",
+        "do": "2024-02-15",
+        "otevreno": false,
+        "url": "https://smlouvy.gov.cz/smlouva/23967769",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "faze": "soutez",
+        "nazev": "výběr dodavatele",
+        "od": "2024-02-15",
+        "do": "2024-06-20",
+        "otevreno": false,
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_706.html",
+        "jistota": "dolozeno"
+      },
+      {
+        "faze": "stavba",
+        "nazev": "stavba",
+        "od": "2024-06-20",
+        "do": "2025-10-20",
+        "otevreno": false,
+        "url": "https://smlouvy.gov.cz/smlouva/29164576",
+        "jistota": "dolozeno",
+        "konec_jistota": "ukonceni_plneni",
+        "planovany_konec": null
+      }
+    ],
+    "milniky": [
+      {
+        "datum": "2024-11-27",
+        "typ": "dodatek",
+        "text": "dodatek 1 (smlouva o dílo)",
+        "url": "https://smlouvy.gov.cz/smlouva/31161940"
+      },
+      {
+        "datum": "2025-01-17",
+        "typ": "dodatek",
+        "text": "dodatek 2 (smlouva o dílo)",
+        "url": "https://smlouvy.gov.cz/smlouva/31935344"
+      },
+      {
+        "datum": "2025-03-25",
+        "typ": "dodatek",
+        "text": "dodatek 3 (smlouva o dílo)",
+        "url": "https://smlouvy.gov.cz/smlouva/32677168"
+      },
+      {
+        "datum": "2025-04-25",
+        "typ": "dodatek",
+        "text": "dodatek 1 (technický dozor)",
+        "url": "https://smlouvy.gov.cz/smlouva/33043180"
+      },
+      {
+        "datum": "2025-04-25",
+        "typ": "dodatek",
+        "text": "dodatek 4 (smlouva o dílo)",
+        "url": "https://smlouvy.gov.cz/smlouva/33042828"
+      },
+      {
+        "datum": "2025-05-02",
+        "typ": "dodatek",
+        "text": "dodatek 1 (BOZP)",
+        "url": "https://smlouvy.gov.cz/smlouva/33125648"
+      },
+      {
+        "datum": "2025-08-12",
+        "typ": "dodatek",
+        "text": "dodatek 5 (smlouva o dílo)",
+        "url": "https://smlouvy.gov.cz/smlouva/34511277"
+      },
+      {
+        "datum": "2025-08-27",
+        "typ": "dodatek",
+        "text": "dodatek 2 (technický dozor)",
+        "url": "https://smlouvy.gov.cz/smlouva/34657589"
+      },
+      {
+        "datum": "2025-08-28",
+        "typ": "dodatek",
+        "text": "dodatek 2 (BOZP)",
+        "url": "https://smlouvy.gov.cz/smlouva/34655669"
+      },
+      {
+        "datum": "2025-09-02",
+        "typ": "dodatek",
+        "text": "dodatek 6 (smlouva o dílo)",
+        "url": "https://smlouvy.gov.cz/smlouva/34664981"
+      },
+      {
+        "datum": "2025-09-26",
+        "typ": "dodatek",
+        "text": "dodatek 7 (smlouva o dílo)",
+        "url": "https://smlouvy.gov.cz/smlouva/35109705"
+      },
+      {
+        "datum": "2025-10-13",
+        "typ": "dodatek",
+        "text": "dodatek 8 (smlouva o dílo)",
+        "url": "https://smlouvy.gov.cz/smlouva/35224705"
+      },
+      {
+        "datum": "2025-11-20",
+        "typ": "dodatek",
+        "text": "dodatek 9 (smlouva o dílo)",
+        "url": "https://smlouvy.gov.cz/smlouva/35693925"
+      },
+      {
+        "datum": "2025-12-02",
+        "typ": "dodatek",
+        "text": "dodatek 10 (smlouva o dílo)",
+        "url": "https://smlouvy.gov.cz/smlouva/35857689"
+      }
+    ],
+    "odkaz": "#sportovni-hala-revitalizace"
+  },
+  {
+    "typ": "investice",
+    "id": "auto-vz-835",
+    "nazev": "Chodník v Lázeňské ulici v Třeboni",
+    "oblast": "doprava",
+    "faze": "dokonceno",
+    "faze_jistota": "nase_propojeni",
+    "useky": [
+      {
+        "faze": "priprava",
+        "nazev": "příprava",
+        "od": "2023-06-07",
+        "do": "2025-01-23",
+        "otevreno": false,
+        "url": "https://smlouvy.gov.cz/smlouva/24699139",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "faze": "soutez",
+        "nazev": "výběr dodavatele",
+        "od": "2025-01-23",
+        "do": "2025-02-03",
+        "otevreno": false,
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_835.html",
+        "jistota": "dolozeno"
+      },
+      {
+        "faze": "stavba",
+        "nazev": "stavba",
+        "od": "2025-02-03",
+        "do": "2025-04-15",
+        "otevreno": false,
+        "url": "https://smlouvy.gov.cz/smlouva/31995368",
+        "jistota": "dolozeno",
+        "konec_jistota": "ukonceni_plneni",
+        "planovany_konec": {
+          "datum": "2025-04-30",
+          "druh": "datum",
+          "citace": "Dokončení díla: do 30.04.2025",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/39033548/SOD%20Chod%20Laz%20s%20pril%20RS.pdf#page=2",
+          "podle": "smlouva"
+        }
+      }
+    ],
+    "milniky": [
+      {
+        "datum": "2025-04-29",
+        "typ": "dodatek",
+        "text": "dodatek 1 (smlouva o dílo)",
+        "url": "https://smlouvy.gov.cz/smlouva/33096484"
+      }
+    ],
+    "odkaz": "#auto-vz-835"
+  },
+  {
+    "typ": "investice",
+    "id": "auto-vz-914",
+    "nazev": "Stavební úpravy MK v ul. Budějovické v Třeboni",
+    "oblast": "doprava",
+    "faze": "probiha",
+    "faze_jistota": "nase_propojeni",
+    "useky": [
+      {
+        "faze": "priprava",
+        "nazev": "příprava",
+        "od": "2023-06-08",
+        "do": "2026-02-09",
+        "otevreno": false,
+        "url": "https://smlouvy.gov.cz/smlouva/24741863",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "faze": "soutez",
+        "nazev": "výběr dodavatele",
+        "od": "2026-02-09",
+        "do": "2026-04-13",
+        "otevreno": false,
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_914.html",
+        "jistota": "dolozeno"
+      },
+      {
+        "faze": "stavba",
+        "nazev": "stavba",
+        "od": "2026-04-13",
+        "do": null,
+        "otevreno": true,
+        "url": "https://smlouvy.gov.cz/smlouva/37540741",
+        "jistota": "dolozeno",
+        "konec_jistota": null,
+        "planovany_konec": null
+      }
+    ],
+    "milniky": [
+      {
+        "datum": "2026-09-23",
+        "typ": "usneseni",
+        "text": "schválení dodatku 1",
+        "url": "https://www.mesto-trebon.cz/uploads/news/id15072/Z-111-26-09-23-A.pdf#page=6"
+      },
+      {
+        "datum": "2026-09-30",
+        "typ": "dodatek",
+        "text": "dodatek 1 (smlouva o dílo)",
+        "url": "https://smlouvy.gov.cz/smlouva/39737349"
+      },
+      {
+        "datum": "2026-10-21",
+        "typ": "usneseni",
+        "text": "schválení dodatku 2",
+        "url": "https://www.mesto-trebon.cz/uploads/news/id15164/Z-113-26-10-21-A.pdf#page=9"
+      },
+      {
+        "datum": "2026-10-27",
+        "typ": "dodatek",
+        "text": "dodatek 2 (smlouva o dílo)",
+        "url": "https://smlouvy.gov.cz/smlouva/40115661"
+      }
+    ],
+    "odkaz": "#auto-vz-914"
+  },
+  {
+    "typ": "investice",
     "id": "auto-vz-844",
     "nazev": "Úprava plochy v Jateční ulici v Třeboni",
     "oblast": "doprava",
@@ -199,7 +445,13 @@
         "url": "https://smlouvy.gov.cz/smlouva/33408284",
         "jistota": "dolozeno",
         "konec_jistota": "ukonceni_plneni",
-        "planovany_konec": null
+        "planovany_konec": {
+          "datum": null,
+          "druh": "lhuta",
+          "citace": "Termín dokončení prací: do 105 kalendářních dnů od předání staveniště",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/40665832/SOD%20%2B%20rozpo%C4%8Det%2C%20ul.%20Valy%20-%20anonymizovan%C3%A1.pdf#page=4",
+          "podle": "smlouva"
+        }
       }
     ],
     "milniky": [
@@ -229,132 +481,6 @@
       }
     ],
     "odkaz": "#ulice-valy"
-  },
-  {
-    "typ": "investice",
-    "id": "sportovni-hala-revitalizace",
-    "nazev": "Revitalizace sportovní haly včetně občerstvení",
-    "oblast": "sport",
-    "faze": "dokonceno",
-    "faze_jistota": "nase_propojeni",
-    "useky": [
-      {
-        "faze": "priprava",
-        "nazev": "příprava",
-        "od": "2024-02-02",
-        "do": "2024-02-15",
-        "otevreno": false,
-        "url": "https://smlouvy.gov.cz/smlouva/27511667",
-        "jistota": "nase_propojeni"
-      },
-      {
-        "faze": "soutez",
-        "nazev": "výběr dodavatele",
-        "od": "2024-02-15",
-        "do": "2024-06-20",
-        "otevreno": false,
-        "url": "https://zakazky.mesto-trebon.cz/contract_display_706.html",
-        "jistota": "dolozeno"
-      },
-      {
-        "faze": "stavba",
-        "nazev": "stavba",
-        "od": "2024-06-20",
-        "do": "2025-10-20",
-        "otevreno": false,
-        "url": "https://smlouvy.gov.cz/smlouva/29164576",
-        "jistota": "dolozeno",
-        "konec_jistota": "ukonceni_plneni",
-        "planovany_konec": null
-      }
-    ],
-    "milniky": [
-      {
-        "datum": "2024-11-27",
-        "typ": "dodatek",
-        "text": "dodatek 1 (smlouva o dílo)",
-        "url": "https://smlouvy.gov.cz/smlouva/31161940"
-      },
-      {
-        "datum": "2025-01-17",
-        "typ": "dodatek",
-        "text": "dodatek 2 (smlouva o dílo)",
-        "url": "https://smlouvy.gov.cz/smlouva/31935344"
-      },
-      {
-        "datum": "2025-03-25",
-        "typ": "dodatek",
-        "text": "dodatek 3 (smlouva o dílo)",
-        "url": "https://smlouvy.gov.cz/smlouva/32677168"
-      },
-      {
-        "datum": "2025-04-25",
-        "typ": "dodatek",
-        "text": "dodatek 1 (technický dozor)",
-        "url": "https://smlouvy.gov.cz/smlouva/33043180"
-      },
-      {
-        "datum": "2025-04-25",
-        "typ": "dodatek",
-        "text": "dodatek 4 (smlouva o dílo)",
-        "url": "https://smlouvy.gov.cz/smlouva/33042828"
-      },
-      {
-        "datum": "2025-05-02",
-        "typ": "dodatek",
-        "text": "dodatek 1 (BOZP)",
-        "url": "https://smlouvy.gov.cz/smlouva/33125648"
-      },
-      {
-        "datum": "2025-08-12",
-        "typ": "dodatek",
-        "text": "dodatek 5 (smlouva o dílo)",
-        "url": "https://smlouvy.gov.cz/smlouva/34511277"
-      },
-      {
-        "datum": "2025-08-27",
-        "typ": "dodatek",
-        "text": "dodatek 2 (technický dozor)",
-        "url": "https://smlouvy.gov.cz/smlouva/34657589"
-      },
-      {
-        "datum": "2025-08-28",
-        "typ": "dodatek",
-        "text": "dodatek 2 (BOZP)",
-        "url": "https://smlouvy.gov.cz/smlouva/34655669"
-      },
-      {
-        "datum": "2025-09-02",
-        "typ": "dodatek",
-        "text": "dodatek 6 (smlouva o dílo)",
-        "url": "https://smlouvy.gov.cz/smlouva/34664981"
-      },
-      {
-        "datum": "2025-09-26",
-        "typ": "dodatek",
-        "text": "dodatek 7 (smlouva o dílo)",
-        "url": "https://smlouvy.gov.cz/smlouva/35109705"
-      },
-      {
-        "datum": "2025-10-13",
-        "typ": "dodatek",
-        "text": "dodatek 8 (smlouva o dílo)",
-        "url": "https://smlouvy.gov.cz/smlouva/35224705"
-      },
-      {
-        "datum": "2025-11-20",
-        "typ": "dodatek",
-        "text": "dodatek 9 (smlouva o dílo)",
-        "url": "https://smlouvy.gov.cz/smlouva/35693925"
-      },
-      {
-        "datum": "2025-12-02",
-        "typ": "dodatek",
-        "text": "dodatek 10 (smlouva o dílo)",
-        "url": "https://smlouvy.gov.cz/smlouva/35857689"
-      }
-    ],
-    "odkaz": "#sportovni-hala-revitalizace"
   },
   {
     "typ": "investice",
@@ -391,7 +517,13 @@
         "url": "https://smlouvy.gov.cz/smlouva/30709184",
         "jistota": "dolozeno",
         "konec_jistota": "ukonceni_plneni",
-        "planovany_konec": null
+        "planovany_konec": {
+          "datum": null,
+          "druh": "lhuta",
+          "citace": "Dokončení díla: do 50 kalendářních dnů od předání staveniště",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/37552196/SOD%20Jir%C3%A1skova%20s%20p%C5%99%C3%ADl%20RS.pdf#page=2",
+          "podle": "smlouva"
+        }
       }
     ],
     "milniky": [],
@@ -468,7 +600,13 @@
         "url": "https://smlouvy.gov.cz/smlouva/29991764",
         "jistota": "dolozeno",
         "konec_jistota": "ukonceni_plneni",
-        "planovany_konec": null
+        "planovany_konec": {
+          "datum": "2024-12-09",
+          "druh": "datum",
+          "citace": "Dokončení díla: 09.12.2024",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/36723752/Smlouva%20o%20d%C3%ADlo%20-%20hr%C3%A1z%20rybn%C3%ADka%20Vesk%C3%BD%203.etapa_anonymizovan%C3%A1.pdf#page=2",
+          "podle": "smlouva"
+        }
       }
     ],
     "milniky": [
@@ -815,45 +953,6 @@
   },
   {
     "typ": "investice",
-    "id": "auto-vz-835",
-    "nazev": "Chodník v Lázeňské ulici v Třeboni",
-    "oblast": "doprava",
-    "faze": "dokonceno",
-    "faze_jistota": "nase_propojeni",
-    "useky": [
-      {
-        "faze": "soutez",
-        "nazev": "výběr dodavatele",
-        "od": "2025-01-23",
-        "do": "2025-02-03",
-        "otevreno": false,
-        "url": "https://zakazky.mesto-trebon.cz/contract_display_835.html",
-        "jistota": "dolozeno"
-      },
-      {
-        "faze": "stavba",
-        "nazev": "stavba",
-        "od": "2025-02-03",
-        "do": "2025-04-15",
-        "otevreno": false,
-        "url": "https://smlouvy.gov.cz/smlouva/31995368",
-        "jistota": "dolozeno",
-        "konec_jistota": "ukonceni_plneni",
-        "planovany_konec": null
-      }
-    ],
-    "milniky": [
-      {
-        "datum": "2025-04-29",
-        "typ": "dodatek",
-        "text": "dodatek 1 (smlouva o dílo)",
-        "url": "https://smlouvy.gov.cz/smlouva/33096484"
-      }
-    ],
-    "odkaz": "#auto-vz-835"
-  },
-  {
-    "typ": "investice",
     "id": "auto-vz-829",
     "nazev": "Oprava fasády objektu čp. 20/I Třeboň",
     "oblast": "kultura",
@@ -878,7 +977,13 @@
         "url": "https://smlouvy.gov.cz/smlouva/32508188",
         "jistota": "dolozeno",
         "konec_jistota": "ukonceni_plneni",
-        "planovany_konec": null
+        "planovany_konec": {
+          "datum": null,
+          "druh": "lhuta",
+          "citace": "Dokončení díla: do 152 kalendářních dnů od zahájení díla – 29",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/41977509/Dodatek%20%C4%8D.%202%20-%20registr%20smluv.pdf#page=2",
+          "podle": "dodatek č. 2"
+        }
       }
     ],
     "milniky": [
@@ -938,7 +1043,13 @@
         "url": "https://smlouvy.gov.cz/smlouva/34752997",
         "jistota": "dolozeno",
         "konec_jistota": "ukonceni_plneni",
-        "planovany_konec": null
+        "planovany_konec": {
+          "datum": null,
+          "druh": "lhuta",
+          "citace": "Termín dokončení díla: do 80 kalendářních dnů od předání staveniště",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/42220001/SOD%20registr%20smluv.pdf#page=3",
+          "podle": "smlouva"
+        }
       }
     ],
     "milniky": [
@@ -1272,7 +1383,13 @@
         "url": "https://smlouvy.gov.cz/smlouva/33353704",
         "jistota": "dolozeno",
         "konec_jistota": "ukonceni_plneni",
-        "planovany_konec": null
+        "planovany_konec": {
+          "datum": "2025-08-22",
+          "druh": "datum",
+          "citace": "dokončení díla: 22.08.2025",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/40603392/Smlouva%20o%20d%C3%ADlo%2C%20rozpo%C4%8Det.pdf#page=2",
+          "podle": "smlouva"
+        }
       }
     ],
     "milniky": [
@@ -1419,77 +1536,17 @@
         "url": "https://smlouvy.gov.cz/smlouva/34569109",
         "jistota": "dolozeno",
         "konec_jistota": "ukonceni_plneni",
-        "planovany_konec": null
+        "planovany_konec": {
+          "datum": "2025-11-14",
+          "druh": "datum",
+          "citace": "Dokončení díla: 14.11.2025",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/42004381/Smlouva%20o%20d%C3%ADlo%20-%20byty%201%20a%206%20St.%20Hl%C3%ADna%2027_anonymizovan%C3%A1.pdf#page=2",
+          "podle": "smlouva"
+        }
       }
     ],
     "milniky": [],
     "odkaz": "#auto-vz-895"
-  },
-  {
-    "typ": "investice",
-    "id": "auto-vz-914",
-    "nazev": "Stavební úpravy MK v ul. Budějovické v Třeboni",
-    "oblast": "doprava",
-    "faze": "probiha",
-    "faze_jistota": "nase_propojeni",
-    "useky": [
-      {
-        "faze": "priprava",
-        "nazev": "příprava",
-        "od": "2026-02-05",
-        "do": "2026-02-09",
-        "otevreno": false,
-        "url": "https://smlouvy.gov.cz/smlouva/36682021",
-        "jistota": "nase_propojeni"
-      },
-      {
-        "faze": "soutez",
-        "nazev": "výběr dodavatele",
-        "od": "2026-02-09",
-        "do": "2026-04-13",
-        "otevreno": false,
-        "url": "https://zakazky.mesto-trebon.cz/contract_display_914.html",
-        "jistota": "dolozeno"
-      },
-      {
-        "faze": "stavba",
-        "nazev": "stavba",
-        "od": "2026-04-13",
-        "do": null,
-        "otevreno": true,
-        "url": "https://smlouvy.gov.cz/smlouva/37540741",
-        "jistota": "dolozeno",
-        "konec_jistota": null,
-        "planovany_konec": null
-      }
-    ],
-    "milniky": [
-      {
-        "datum": "2026-09-23",
-        "typ": "usneseni",
-        "text": "schválení dodatku 1",
-        "url": "https://www.mesto-trebon.cz/uploads/news/id15072/Z-111-26-09-23-A.pdf#page=6"
-      },
-      {
-        "datum": "2026-09-30",
-        "typ": "dodatek",
-        "text": "dodatek 1 (smlouva o dílo)",
-        "url": "https://smlouvy.gov.cz/smlouva/39737349"
-      },
-      {
-        "datum": "2026-10-21",
-        "typ": "usneseni",
-        "text": "schválení dodatku 2",
-        "url": "https://www.mesto-trebon.cz/uploads/news/id15164/Z-113-26-10-21-A.pdf#page=9"
-      },
-      {
-        "datum": "2026-10-27",
-        "typ": "dodatek",
-        "text": "dodatek 2 (smlouva o dílo)",
-        "url": "https://smlouvy.gov.cz/smlouva/40115661"
-      }
-    ],
-    "odkaz": "#auto-vz-914"
   },
   {
     "typ": "investice",

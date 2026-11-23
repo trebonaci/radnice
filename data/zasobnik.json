@@ -3202,6 +3202,28 @@
     },
     "doklady": [
       {
+        "typ": "smlouva",
+        "id": "rs-24311793",
+        "text": "Stavební úpravy MK v ul. Na Chmelnici a části ul. Vrchlického v Třeboni (zpracování PD)",
+        "datum": "2023-05-03",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/24311793",
+        "cena": {
+          "s_dph": 843370.0,
+          "bez_dph": 697000.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"843370\"",
+            "\"hodnotaBezDph\": \"697000\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      },
+      {
         "typ": "zakazka",
         "id": "ezak-VZ-699",
         "text": "Stavební úpravy MK v ul. Na Chmelnici a části ul. Vrchlického v Třeboni (PD)",
@@ -3230,8 +3252,8 @@
         "data_smluv": [
           "2023-05-03"
         ],
-        "zapocteno": true,
-        "nezapocteno": null,
+        "zapocteno": false,
+        "nezapocteno": "stejná smlouva jako rs-24311793 (cena nebo datum podpisu)",
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       }
@@ -3257,7 +3279,7 @@
       "bez_ceny": 0,
       "jistota": "nase_propojeni"
     },
-    "prvni_doklad": "2024-01-04",
+    "prvni_doklad": "2023-05-03",
     "odhad": null,
     "zdroj": null,
     "stavby": [
@@ -5275,6 +5297,185 @@
         "citace": [
           "\"hodnotaVcetneDph\": \"327547\"",
           "\"hodnotaBezDph\": \"270700\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-24824627",
+    "nazev": "Parkoviště v Jateční ulici v Třeboni (za Novým dvorem) - zpracování PD - dodatek č. 1",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-24824627",
+      "text": "Parkoviště v Jateční ulici v Třeboni (za Novým dvorem) - zpracování PD - dodatek č. 1",
+      "datum": "2023-06-16",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/24824627",
+      "cena": null,
+      "zaplaceno": null,
+      "dodatek": true
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-24236917",
+    "nazev": "Zpracování projektové dokumentace Novostavba městského bytového domu v ulici Lázeňská na parcelním čísle 1087/17 v obci a katastrálním území Třeboň",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-24236917",
+      "text": "Zpracování projektové dokumentace Novostavba městského bytového domu v ulici Lázeňská na parcelním čísle 1087/17 v obci a katastrálním území Třeboň",
+      "datum": "2023-04-25",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/24236917",
+      "cena": {
+        "s_dph": 875000.0,
+        "bez_dph": 875000.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"875000\"",
+          "\"hodnotaBezDph\": \"875000\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-24173545",
+    "nazev": "Studie řešení odvodu dešťových vod z lokality Třeboň západ",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-24173545",
+      "text": "Studie řešení odvodu dešťových vod z lokality Třeboň západ",
+      "datum": "2023-04-20",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/24173545",
+      "cena": {
+        "s_dph": 556600.0,
+        "bez_dph": 460000.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"556600\"",
+          "\"hodnotaBezDph\": \"460000\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
+    },
+    "stupen": "studie",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-24160885",
+    "nazev": "Zpracování PD ve stupni ZDS/PDPS pro úpravu plochy na pozemku parc. č. 767 v k. ú. Třeboň.",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-24160885",
+      "text": "Zpracování PD ve stupni ZDS/PDPS pro úpravu plochy na pozemku parc. č. 767 v k. ú. Třeboň.",
+      "datum": "2023-04-19",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/24160885",
+      "cena": {
+        "s_dph": 106480.0,
+        "bez_dph": 88000.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"106480\"",
+          "\"hodnotaBezDph\": \"88000\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-24157549",
+    "nazev": "Zpracování PD ve stupni DÚSP a PDPS pro rozšíření části MK v Jateční ulici v Třeboni.",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-24157549",
+      "text": "Zpracování PD ve stupni DÚSP a PDPS pro rozšíření části MK v Jateční ulici v Třeboni.",
+      "datum": "2023-04-19",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/24157549",
+      "cena": {
+        "s_dph": 119790.0,
+        "bez_dph": 99000.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"119790\"",
+          "\"hodnotaBezDph\": \"99000\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-24156893",
+    "nazev": "Zpracování zjednodušené PD ve stupni ZDS včetně průzkumu inženýrských sítí a vypracování položkového soupisu prací pro stavební úpravy komunikace na pozemku parc. č. 4336 a 4346 v lokalitě Dvorce, k. ú. Břilice.",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-24156893",
+      "text": "Zpracování zjednodušené PD ve stupni ZDS včetně průzkumu inženýrských sítí a vypracování položkového soupisu prací pro stavební úpravy komunikace na pozemku parc. č. 4336 a 4346 v lokalitě Dvorce, k. ú. Břilice.",
+      "datum": "2023-04-19",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/24156893",
+      "cena": {
+        "s_dph": 240185.0,
+        "bez_dph": 198500.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"240185\"",
+          "\"hodnotaBezDph\": \"198500\""
         ]
       },
       "zaplaceno": null,

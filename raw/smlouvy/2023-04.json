@@ -1,0 +1,1606 @@
+[
+ {
+  "identifikator": {
+   "idSmlouvy": "22348329",
+   "idVerze": "23967769"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/23967769",
+  "casZverejneni": "2023-04-03T07:58:59+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "4cbbvj4",
+    "nazev": "Město Třeboň",
+    "ico": "00247618",
+    "adresa": "Město Třeboň,  Palackého nám. 46/II,  37901 Třeboň",
+    "utvar": "Neurčeno",
+    "platce": "1"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "7hqd3pq",
+    "nazev": "JK - STAVPROJEKT, s.r.o.",
+    "ico": "26112779",
+    "adresa": "Žižkova 742,  37806 Suchdol nad Lužnicí",
+    "prijemce": "1",
+    "identifikace": "PO"
+   },
+   "predmet": "SOD Revitalizace sportovní haly v Třeboni – projektová dokumentace",
+   "datumUzavreni": "2023-03-29",
+   "cisloSmlouvy": "750/7429/23",
+   "schvalil": "PaedDr. Jan Váňa",
+   "hodnotaBezDph": "1489000",
+   "hodnotaVcetneDph": "1801690"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22351481",
+   "idVerze": "23971165"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/23971165",
+  "casZverejneni": "2023-04-03T10:18:58+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "7pehv9f",
+    "nazev": "Slatinné lázně Třeboň s.r.o.",
+    "ico": "25179896",
+    "adresa": "Lázeňská 1001, 37901 Třeboň, CZ"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "xnfagw9",
+    "nazev": "VIDOX s.r.o.",
+    "ico": "25160168",
+    "adresa": "U Poráků 511, Horní Brána, 38101, Český Krumlov"
+   },
+   "predmet": "Objednávka - stavební práce na zřízení základu pod fontánu",
+   "datumUzavreni": "2023-02-10",
+   "cisloSmlouvy": "10OB230165",
+   "schvalil": "prof.JUDr. Vilém Kahoun, Ph.D.",
+   "cenaNeuvedena": "Obchodní tajemství"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22361897",
+   "idVerze": "23982017"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/23982017",
+  "casZverejneni": "2023-04-03T15:50:41+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "4cbbvj4",
+    "nazev": "Město Třeboň",
+    "ico": "00247618",
+    "adresa": "Město Třeboň,  Palackého nám. 46/II,  37901 Třeboň",
+    "utvar": "Městský úřad Třeboň"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "8qvdk3s",
+    "nazev": "Československá obchodní banka, a. s.",
+    "ico": "00001350",
+    "adresa": "Radlická 333/150,  15000 Praha",
+    "identifikace": "PO"
+   },
+   "predmet": "ČSOB - termínovaný vklad na dobu určitou",
+   "datumUzavreni": "2023-04-03",
+   "cisloSmlouvy": "800/5112/23",
+   "schvalil": "PaedDr. Jan Váňa",
+   "hodnotaVcetneDph": "200000"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22363757",
+   "idVerze": "23983993"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/23983993",
+  "casZverejneni": "2023-04-03T17:29:07+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "4cbbvj4",
+    "nazev": "Město Třeboň",
+    "ico": "00247618",
+    "adresa": "Město Třeboň,  Palackého nám. 46/II,  37901 Třeboň",
+    "utvar": "Městský úřad Třeboň",
+    "platce": "1"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "b556jqr",
+    "nazev": "Technické služby Třeboň, s.r.o.",
+    "ico": "62502735",
+    "adresa": "Rybářská 811,  37901 Třeboň",
+    "prijemce": "1",
+    "identifikace": "PO"
+   },
+   "predmet": "Havarijní oprava a vyčištění požární nádrže Nová Hlína",
+   "datumUzavreni": "2023-04-03",
+   "cisloSmlouvy": "750/7435/23",
+   "schvalil": "PaedDr. Jan Váňa",
+   "hodnotaVcetneDph": "89570.75"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22367445",
+   "idVerze": "23988065"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/23988065",
+  "casZverejneni": "2023-04-04T07:25:07+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "xhpkzg3",
+    "nazev": "Mateřská škola Sluníčko, Třeboň",
+    "ico": "63263777",
+    "adresa": "Svobody 1018, 37901 Třeboň, CZ"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "jmzjzzu",
+    "nazev": "Jan Činčura",
+    "ico": "72164328",
+    "adresa": "Dukelská 149, Třeboň I, 37901, Třeboň",
+    "prijemce": "1",
+    "identifikace": "PFO"
+   },
+   "predmet": "Vybavení kanceláře",
+   "datumUzavreni": "2023-02-20",
+   "hodnotaBezDph": "59859.5",
+   "hodnotaVcetneDph": "72430"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22371341",
+   "idVerze": "23992125"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/23992125",
+  "casZverejneni": "2023-04-04T09:56:20+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "7pehv9f",
+    "nazev": "Slatinné lázně Třeboň s.r.o.",
+    "ico": "25179896",
+    "adresa": "Lázeňská 1001, 37901 Třeboň, CZ"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "5mjw2hz",
+    "nazev": "BUILD4INNOVATION s.r.o.",
+    "ico": "62525174",
+    "adresa": "Třeboňská 570/7, 37371, Rudolfov"
+   },
+   "predmet": "Objednávka - zřízení automatické závlahy trávníků u bazénů TVS",
+   "datumUzavreni": "2023-03-24",
+   "cisloSmlouvy": "10OB230346",
+   "schvalil": "prof. JUDr. Vilém Kahoun, Ph.D.",
+   "cenaNeuvedena": "Obchodní tajemství"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22409717",
+   "idVerze": "24032217"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24032217",
+  "casZverejneni": "2023-04-06T14:06:56+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "4cbbvj4",
+    "nazev": "Město Třeboň",
+    "ico": "00247618",
+    "adresa": "Město Třeboň,  Palackého nám. 46/II,  37901 Třeboň",
+    "utvar": "Neurčeno",
+    "platce": "1"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "w58zqa4",
+    "nazev": "KASKA s.r.o.",
+    "ico": "26080966",
+    "adresa": "Prostřední 2860/3,  37004 České Budějovice",
+    "prijemce": "1",
+    "identifikace": "PO"
+   },
+   "predmet": "Svislé a vodorovné dopravní značení dělené stezky pro chodce a cyklisty v Dukelské ulici v Třeboni v úseku od ulice K Bertě k železničnímu přejezdu.",
+   "datumUzavreni": "2023-04-06",
+   "cisloSmlouvy": "750/7444/23",
+   "hodnotaBezDph": "68210",
+   "hodnotaVcetneDph": "82534.1"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22410697",
+   "idVerze": "24033253"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24033253",
+  "casZverejneni": "2023-04-06T14:56:11+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "4cbbvj4",
+    "nazev": "Město Třeboň",
+    "ico": "00247618",
+    "adresa": "Město Třeboň,  Palackého nám. 46/II,  37901 Třeboň",
+    "utvar": "Neurčeno",
+    "platce": "1"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "bcbz94z",
+    "nazev": "Městská Vodohospodářská s.r.o.",
+    "ico": "28136853",
+    "adresa": "Na Kopečku 1341,  37901 Třeboň II",
+    "prijemce": "1",
+    "identifikace": "PO"
+   },
+   "predmet": "Provedení čištění a monitoringu kamerovým průzkumem kanalizační sítě v ulici Šustova a v 2. etapě ulice Polní v rámci projektové přípravy",
+   "datumUzavreni": "2023-04-05",
+   "cisloSmlouvy": "750/7443/23",
+   "hodnotaBezDph": "67200",
+   "hodnotaVcetneDph": "76472"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22423085",
+   "idVerze": "24046017"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24046017",
+  "casZverejneni": "2023-04-11T11:39:35+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "7pehv9f",
+    "nazev": "Slatinné lázně Třeboň s.r.o.",
+    "ico": "25179896",
+    "adresa": "Lázeňská 1001, 37901 Třeboň, CZ"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "gqumsda",
+    "nazev": "APENEX, s.r.o.",
+    "ico": "26102692",
+    "adresa": "B. Němcové 756/66, České Budějovice 7, 37001, České Budějovice"
+   },
+   "predmet": "Smlouva na upgrade a rozšíření telefonní ústředny Slatinné lázně Třeboň",
+   "datumUzavreni": "2023-04-04",
+   "cisloSmlouvy": "10SM230132",
+   "schvalil": "prof. JUDr. Vilém Kahoun, Ph.D.",
+   "hodnotaBezDph": "1760000"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22423221",
+   "idVerze": "24046153"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24046153",
+  "casZverejneni": "2023-04-11T11:46:28+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "7pehv9f",
+    "nazev": "Slatinné lázně Třeboň s.r.o.",
+    "ico": "25179896",
+    "adresa": "Lázeňská 1001, 37901 Třeboň, CZ"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "gqumsda",
+    "nazev": "APENEX, s.r.o.",
+    "ico": "26102692",
+    "adresa": "B. Němcové 756/66, České Budějovice 7, 37001, České Budějovice"
+   },
+   "predmet": "Smlouva na poskytování servisní podpory telefonní ústředny Slatinné lázně Třeboň",
+   "datumUzavreni": "2023-04-04",
+   "cisloSmlouvy": "10SM230133",
+   "schvalil": "prof. JUDr. Vilém Kahoun, Ph.D."
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22426041",
+   "idVerze": "24049145"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24049145",
+  "casZverejneni": "2023-04-11T13:41:31+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "7pehv9f",
+    "nazev": "Slatinné lázně Třeboň s.r.o.",
+    "ico": "25179896",
+    "adresa": "Lázeňská 1001, 37901 Třeboň, CZ"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "unh7r2w",
+    "nazev": "Společenství vlastníků bytových jednotek Lázeňská 1004/II v Třeboni",
+    "ico": "26062011",
+    "adresa": "Lázeňská 1004, Třeboň II, 37901, Třeboň"
+   },
+   "predmet": "Smlouva o dodávce tepla",
+   "datumUzavreni": "2023-04-06",
+   "cisloSmlouvy": "10SM230129",
+   "schvalil": "prof.JUDr. Vilém Kahoun, Ph.D.",
+   "cenaNeuvedena": "cena závisí na množství odebraného tepla"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22426105",
+   "idVerze": "24049209"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24049209",
+  "casZverejneni": "2023-04-11T13:42:44+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "4cbbvj4",
+    "nazev": "Město Třeboň",
+    "ico": "00247618",
+    "adresa": "Město Třeboň,  Palackého nám. 46/II,  37901 Třeboň",
+    "utvar": "Městský úřad Třeboň",
+    "platce": "1"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "35hephg",
+    "nazev": "Albrechtová Martina, MUDr.  nar. 1989",
+    "adresa": "50003 Hradec Králové",
+    "prijemce": "1",
+    "identifikace": "FO"
+   },
+   "predmet": "Darovací smlouva na vodovodní řad a kanalizační stoku v k. ú. Třeboň",
+   "datumUzavreni": "2023-04-06",
+   "cisloSmlouvy": "800/5117/23",
+   "schvalil": "PaedDr. Jan Váňa",
+   "hodnotaVcetneDph": "450000"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22426149",
+   "idVerze": "24049253"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24049253",
+  "casZverejneni": "2023-04-11T13:43:38+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "7pehv9f",
+    "nazev": "Slatinné lázně Třeboň s.r.o.",
+    "ico": "25179896",
+    "adresa": "Lázeňská 1001, 37901 Třeboň, CZ"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "9swaix3",
+    "nazev": "Zdravotní pojišťovna ministerstva vnitra České republiky",
+    "ico": "47114304",
+    "adresa": "Vinohradská 2577/178, Vinohrady, 13000, Praha 3"
+   },
+   "predmet": "Smlouva o reklamě",
+   "datumUzavreni": "2023-03-22",
+   "cisloSmlouvy": "10SM230124",
+   "schvalil": "prof. JUDr. Vilém Kahoun, Ph.D.",
+   "cenaNeuvedena": "Obchodní tajemství"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22427089",
+   "idVerze": "24050233"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24050233",
+  "casZverejneni": "2023-04-11T14:17:58+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "4cbbvj4",
+    "nazev": "Město Třeboň",
+    "ico": "00247618",
+    "adresa": "Město Třeboň,  Palackého nám. 46/II,  37901 Třeboň",
+    "utvar": "Neurčeno",
+    "platce": "1"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "d5cd2ri",
+    "nazev": "Ing. David Zána",
+    "ico": "71979166",
+    "adresa": "Borová 2335/42,  37316 Dobrá Voda u Českých Budějovic",
+    "prijemce": "1",
+    "identifikace": "PFO"
+   },
+   "predmet": "Technický dozor stavebníka na akci „ODKANALIZOVÁNÍ LOKALITY SÍDLIŠTĚ GIGANT, TŘEBOŇ“",
+   "datumUzavreni": "2023-04-11",
+   "cisloSmlouvy": "750/7442/23",
+   "schvalil": "PaedDr. Jan Váňa",
+   "hodnotaBezDph": "79500",
+   "hodnotaVcetneDph": "79500"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22436597",
+   "idVerze": "24060389"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24060389",
+  "casZverejneni": "2023-04-12T11:07:04+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "4cbbvj4",
+    "nazev": "Město Třeboň",
+    "ico": "00247618",
+    "adresa": "Město Třeboň,  Palackého nám. 46/II,  37901 Třeboň",
+    "utvar": "Městský úřad Třeboň"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "7hqawjb",
+    "nazev": "Obec Majdalena",
+    "ico": "00247065",
+    "adresa": "78,  37803 Majdalena",
+    "identifikace": "OVM"
+   },
+   "predmet": "Kupní smlouva - rybník Fuks vč. pozemků v k. ú. Majdalena",
+   "datumUzavreni": "2023-04-11",
+   "cisloSmlouvy": "800/5098/23",
+   "schvalil": "PaedDr. Jan Váňa",
+   "hodnotaBezDph": "890000",
+   "hodnotaVcetneDph": "1076900"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22439373",
+   "idVerze": "24063333"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24063333",
+  "casZverejneni": "2023-04-12T13:15:10+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "4cbbvj4",
+    "nazev": "Město Třeboň",
+    "ico": "00247618",
+    "adresa": "Město Třeboň,  Palackého nám. 46/II,  37901 Třeboň",
+    "utvar": "Neurčeno",
+    "platce": "1"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "9jg4ewh",
+    "nazev": "STAVEBNÍ PORADNA, spol. s r.o.",
+    "ico": "62508822",
+    "adresa": "Průběžná 2521/48,  37004 České Budějovice",
+    "prijemce": "1",
+    "identifikace": "PO"
+   },
+   "predmet": "Koordinátor BOZP na akci „ODKANALIZOVÁNÍ LOKALITY SÍDLIŠTĚ GIGANT, TŘEBOŇ“",
+   "datumUzavreni": "2023-04-12",
+   "cisloSmlouvy": "750/7441/23",
+   "schvalil": "PaedDr. Jan Váňa",
+   "hodnotaBezDph": "65000",
+   "hodnotaVcetneDph": "78650"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22449293",
+   "idVerze": "24073669"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24073669",
+  "casZverejneni": "2023-04-13T09:34:50+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "4cbbvj4",
+    "nazev": "Město Třeboň",
+    "ico": "00247618",
+    "adresa": "Město Třeboň,  Palackého nám. 46/II,  37901 Třeboň",
+    "utvar": "Městský úřad Třeboň",
+    "platce": "1"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "bcbz94z",
+    "nazev": "Městská Vodohospodářská s.r.o.",
+    "ico": "28136853",
+    "adresa": "Na Kopečku 1341,  37901 Třeboň II",
+    "prijemce": "1",
+    "identifikace": "PO"
+   },
+   "predmet": "Obnova šachtových kanalizačních poklopů - ul. Dukelská, ul. Husova",
+   "datumUzavreni": "2023-04-13",
+   "cisloSmlouvy": "750/7451/23",
+   "schvalil": "PaedDr. Jan Váňa",
+   "hodnotaBezDph": "82851",
+   "hodnotaVcetneDph": "100250"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22452345",
+   "idVerze": "24076809"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24076809",
+  "casZverejneni": "2023-04-13T10:59:07+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "4cbbvj4",
+    "nazev": "Město Třeboň",
+    "ico": "00247618",
+    "adresa": "Město Třeboň,  Palackého nám. 46/II,  37901 Třeboň",
+    "utvar": "Městský úřad Třeboň",
+    "platce": "1"
+   },
+   "smluvniStrana": {
+    "nazev": "Pantheon production s.r.o.",
+    "ico": "28493494",
+    "adresa": "Ledčická 615/11,  18400 Praha",
+    "prijemce": "1",
+    "identifikace": "PFO"
+   },
+   "predmet": "Smlouva o pořádání divadelního představení a o poskytnutí licence - Benátky pod sněhem dne 17. dubna 2023 od 19:30 hod. v Divadle J. K. Tyla.",
+   "datumUzavreni": "2023-04-03",
+   "cisloSmlouvy": "900/5342/23",
+   "schvalil": "Ing. Alena Seberová",
+   "hodnotaVcetneDph": "66550"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22454293",
+   "idVerze": "24078833"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24078833",
+  "casZverejneni": "2023-04-13T12:07:45+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "7pehv9f",
+    "nazev": "Slatinné lázně Třeboň s.r.o.",
+    "ico": "25179896",
+    "adresa": "Lázeňská 1001, 37901 Třeboň, CZ"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "eerxcvt",
+    "nazev": "RESI Třeboň spol. s r.o.",
+    "ico": "25178989",
+    "adresa": "Novohradská 1153, Třeboň II, 37901, Třeboň"
+   },
+   "predmet": "Kupní smlouva - Rehabilitační a zábalová lehátka",
+   "datumUzavreni": "2023-04-12",
+   "cisloSmlouvy": "10SM230143",
+   "schvalil": "prof. JUDr. Vilém Kahoun, Ph.D.",
+   "hodnotaBezDph": "347202"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22459605",
+   "idVerze": "24084537"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24084537",
+  "casZverejneni": "2023-04-13T15:29:44+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "4cbbvj4",
+    "nazev": "Město Třeboň",
+    "ico": "00247618",
+    "adresa": "Město Třeboň,  Palackého nám. 46/II,  37901 Třeboň",
+    "utvar": "Neurčeno",
+    "platce": "1"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "bjpdzta",
+    "nazev": "EUROVIA CS, a.s.",
+    "ico": "45274924",
+    "adresa": "U Michelského lesa 1581/2,  14000 Praha",
+    "prijemce": "1",
+    "identifikace": "PO"
+   },
+   "predmet": "Třeboň, Na Rybníčku - výměna vandalismem poškozených 11 ks sloupkových svítidel veřejného osvětlení včetně revize.",
+   "datumUzavreni": "2023-04-13",
+   "cisloSmlouvy": "750/7461/23",
+   "hodnotaBezDph": "86918",
+   "hodnotaVcetneDph": "105170.78"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22466333",
+   "idVerze": "24091585"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24091585",
+  "casZverejneni": "2023-04-14T10:09:36+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "4cbbvj4",
+    "nazev": "Město Třeboň",
+    "ico": "00247618",
+    "adresa": "Město Třeboň,  Palackého nám. 46/II,  37901 Třeboň",
+    "utvar": "Městský úřad Třeboň",
+    "platce": "1"
+   },
+   "smluvniStrana": {
+    "nazev": "Sodexo Pass Česká republika a.s.",
+    "ico": "61860476",
+    "adresa": "Plzeňská 3350/18,  15000 Praha",
+    "prijemce": "1",
+    "identifikace": "PO"
+   },
+   "predmet": "Objednáváme 2090 ks elektronických stravenek pro zaměstnance MěÚ",
+   "datumUzavreni": "2023-04-14",
+   "cisloSmlouvy": "770/4264/23",
+   "hodnotaVcetneDph": "229900"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22472493",
+   "idVerze": "24097929"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24097929",
+  "casZverejneni": "2023-04-14T13:13:24+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "4cbbvj4",
+    "nazev": "Město Třeboň",
+    "ico": "00247618",
+    "adresa": "Město Třeboň,  Palackého nám. 46/II,  37901 Třeboň",
+    "utvar": "Městský úřad Třeboň",
+    "platce": "1"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "bcbz94z",
+    "nazev": "Městská Vodohospodářská s.r.o.",
+    "ico": "28136853",
+    "adresa": "Na Kopečku 1341,  37901 Třeboň II",
+    "prijemce": "1",
+    "identifikace": "PO"
+   },
+   "predmet": "Obnova zemních vodovodních poklopů ul. Táboritská - Třeboň, ul. Dunajovická - Břilice",
+   "datumUzavreni": "2023-04-13",
+   "cisloSmlouvy": "750/7449/23",
+   "schvalil": "PaedDr. Jan Váňa",
+   "hodnotaBezDph": "79030",
+   "hodnotaVcetneDph": "95626"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22472665",
+   "idVerze": "24098105"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24098105",
+  "casZverejneni": "2023-04-14T13:17:45+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "uccchjm",
+    "nazev": "Správa železnic, státní organizace",
+    "ico": "70994234",
+    "adresa": "Dlážděná 1003/7, 11000 Praha 1, CZ"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "b556jqr",
+    "nazev": "Technické služby Třeboň, s.r.o.",
+    "ico": "62502735",
+    "adresa": "Rybářská 811, Třeboň II, 37901, Třeboň"
+   },
+   "predmet": "Smlouva o provádění svozu a likvidaci směsného komunálního odpadu",
+   "datumUzavreni": "2023-03-14",
+   "cisloSmlouvy": "E654-S-1003/2022",
+   "cenaNeuvedena": "Nelze přesně stanovit - nepravidelné vývozy"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22472677",
+   "idVerze": "24098117"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24098117",
+  "casZverejneni": "2023-04-14T13:17:52+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "4cbbvj4",
+    "nazev": "Město Třeboň",
+    "ico": "00247618",
+    "adresa": "Město Třeboň,  Palackého nám. 46/II,  37901 Třeboň",
+    "utvar": "Městský úřad Třeboň",
+    "platce": "1"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "bcbz94z",
+    "nazev": "Městská Vodohospodářská s.r.o.",
+    "ico": "28136853",
+    "adresa": "Na Kopečku 1341,  37901 Třeboň II",
+    "prijemce": "1",
+    "identifikace": "PO"
+   },
+   "predmet": "Obnova mechanické části čerpadla č. 2 ve vodojemu na Kopečku",
+   "datumUzavreni": "2023-04-14",
+   "cisloSmlouvy": "750/7455/23",
+   "schvalil": "PaedDr. Jan Váňa",
+   "hodnotaBezDph": "98383",
+   "hodnotaVcetneDph": "119043"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22478785",
+   "idVerze": "24104465"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24104465",
+  "casZverejneni": "2023-04-15T19:13:38+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "u4zgr6q",
+    "nazev": "Horská služba ČR, o.p.s.",
+    "ico": "27467759",
+    "adresa": "260, 54351 Špindlerův Mlýn, CZ"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "7pehv9f",
+    "nazev": "Slatinné lázně Třeboň s.r.o.",
+    "ico": "25179896",
+    "adresa": "Lázeňská 1001, Třeboň II, 37901, Třeboň",
+    "prijemce": "1",
+    "identifikace": "PO"
+   },
+   "predmet": "objednavka_23-8-00049",
+   "datumUzavreni": "2023-03-24"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22493589",
+   "idVerze": "24119617"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24119617",
+  "casZverejneni": "2023-04-17T11:27:52+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "7pehv9f",
+    "nazev": "Slatinné lázně Třeboň s.r.o.",
+    "ico": "25179896",
+    "adresa": "Lázeňská 1001, 37901 Třeboň, CZ"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "wtzf732",
+    "nazev": "Schindler CZ, a.s.",
+    "ico": "27127010",
+    "adresa": "Walterovo náměstí 329/3, Jinonice, 15800, Praha 5"
+   },
+   "predmet": "Objednávka - Oprava výtahu č. 10815821 na LDBerta",
+   "datumUzavreni": "2023-04-14",
+   "cisloSmlouvy": "20OB230050",
+   "schvalil": "prof. JUDr. Vilém Kahoun, Ph.D.",
+   "cenaNeuvedena": "Obchodní tajemství"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22498665",
+   "idVerze": "24125177"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24125177",
+  "casZverejneni": "2023-04-17T14:24:16+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "4cbbvj4",
+    "nazev": "Město Třeboň",
+    "ico": "00247618",
+    "adresa": "Město Třeboň,  Palackého nám. 46/II,  37901 Třeboň",
+    "utvar": "Městský úřad Třeboň",
+    "platce": "1"
+   },
+   "smluvniStrana": {
+    "nazev": "POTS, s.r.o.",
+    "ico": "05627788",
+    "adresa": "Baarova 49,  46001 Liberec",
+    "prijemce": "1",
+    "identifikace": "PO"
+   },
+   "predmet": "Květináče DROP velikost 70 x 60 cm, 5 kusů",
+   "datumUzavreni": "2023-04-17",
+   "cisloSmlouvy": "750/7463/23",
+   "schvalil": "PaedDr. Jan Váňa",
+   "hodnotaBezDph": "119150",
+   "hodnotaVcetneDph": "144172"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22525249",
+   "idVerze": "24153497"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24153497",
+  "casZverejneni": "2023-04-19T11:54:11+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "7pehv9f",
+    "nazev": "Slatinné lázně Třeboň s.r.o.",
+    "ico": "25179896",
+    "adresa": "Lázeňská 1001, 37901 Třeboň, CZ"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "q2juzzp",
+    "nazev": "VALEK PVT s.r.o.",
+    "ico": "26068117",
+    "adresa": "Otín 406, 37701, Jindřichův Hradec"
+   },
+   "predmet": "Objednávka - výměna plynoměru",
+   "datumUzavreni": "2023-04-18",
+   "cisloSmlouvy": "10OB230453",
+   "schvalil": "Ing. Martin Blažek",
+   "hodnotaBezDph": "52610"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22528541",
+   "idVerze": "24156893"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24156893",
+  "casZverejneni": "2023-04-19T14:05:13+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "4cbbvj4",
+    "nazev": "Město Třeboň",
+    "ico": "00247618",
+    "adresa": "Město Třeboň,  Palackého nám. 46/II,  37901 Třeboň",
+    "utvar": "Neurčeno",
+    "platce": "1"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "ay4ur5q",
+    "nazev": "AFRY CZ s.r.o.",
+    "ico": "45306605",
+    "adresa": "Magistrů 1275/13,  14000 Praha 4",
+    "prijemce": "1",
+    "identifikace": "PO"
+   },
+   "predmet": "Zpracování zjednodušené PD ve stupni ZDS včetně průzkumu inženýrských sítí a vypracování položkového soupisu prací pro stavební úpravy komunikace na pozemku parc. č. 4336 a 4346 v lokalitě Dvorce, k. ú. Břilice.",
+   "datumUzavreni": "2023-04-19",
+   "cisloSmlouvy": "750/7466/23",
+   "hodnotaBezDph": "198500",
+   "hodnotaVcetneDph": "240185"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22529177",
+   "idVerze": "24157549"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24157549",
+  "casZverejneni": "2023-04-19T14:24:21+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "4cbbvj4",
+    "nazev": "Město Třeboň",
+    "ico": "00247618",
+    "adresa": "Město Třeboň,  Palackého nám. 46/II,  37901 Třeboň",
+    "utvar": "Neurčeno",
+    "platce": "1"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "ay4ur5q",
+    "nazev": "AFRY CZ s.r.o.",
+    "ico": "45306605",
+    "adresa": "Magistrů 1275/13,  14000 Praha 4",
+    "prijemce": "1",
+    "identifikace": "PO"
+   },
+   "predmet": "Zpracování PD ve stupni DÚSP a PDPS pro rozšíření části MK v Jateční ulici v Třeboni.",
+   "datumUzavreni": "2023-04-19",
+   "cisloSmlouvy": "750/7467/23",
+   "hodnotaBezDph": "99000",
+   "hodnotaVcetneDph": "119790"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22529333",
+   "idVerze": "24157709"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24157709",
+  "casZverejneni": "2023-04-19T14:30:41+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "4cbbvj4",
+    "nazev": "Město Třeboň",
+    "ico": "00247618",
+    "adresa": "Město Třeboň,  Palackého nám. 46/II,  37901 Třeboň",
+    "utvar": "Neurčeno",
+    "platce": "1"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "b556jqr",
+    "nazev": "Technické služby Třeboň, s.r.o.",
+    "ico": "62502735",
+    "adresa": "Rybářská 811,  37901 Třeboň",
+    "prijemce": "1",
+    "identifikace": "PO"
+   },
+   "predmet": "Oprava mostu přes Mlýnskou stoku na stezce v Dukelské ulici v Třeboni.",
+   "datumUzavreni": "2023-04-19",
+   "cisloSmlouvy": "750/7468/23",
+   "hodnotaBezDph": "70100.55",
+   "hodnotaVcetneDph": "84821.67"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22532485",
+   "idVerze": "24160885"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24160885",
+  "casZverejneni": "2023-04-19T17:09:50+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "4cbbvj4",
+    "nazev": "Město Třeboň",
+    "ico": "00247618",
+    "adresa": "Město Třeboň,  Palackého nám. 46/II,  37901 Třeboň",
+    "utvar": "Neurčeno",
+    "platce": "1"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "ay4ur5q",
+    "nazev": "AFRY CZ s.r.o.",
+    "ico": "45306605",
+    "adresa": "Magistrů 1275/13,  14000 Praha 4",
+    "prijemce": "1",
+    "identifikace": "PO"
+   },
+   "predmet": "Zpracování PD ve stupni ZDS/PDPS pro úpravu plochy na pozemku parc. č. 767 v k. ú. Třeboň.",
+   "datumUzavreni": "2023-04-19",
+   "cisloSmlouvy": "750/7476/23",
+   "hodnotaBezDph": "88000",
+   "hodnotaVcetneDph": "106480"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22535701",
+   "idVerze": "24164193"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24164193",
+  "casZverejneni": "2023-04-20T08:16:24+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "6uumtiy",
+    "nazev": "Základní škola Třeboň, Na Sadech 375",
+    "ico": "60816872",
+    "adresa": "Na sadech 375, 37901 Třeboň, CZ"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "kk47nhv",
+    "nazev": "Zbyněk Mikeš",
+    "ico": "12929620",
+    "adresa": "Svobody 1031, Třeboň II, 37901, Třeboň"
+   },
+   "predmet": "Dodávka elektro materiálu",
+   "datumUzavreni": "2023-04-20",
+   "hodnotaBezDph": "75050",
+   "hodnotaVcetneDph": "95000"
+  },
+  "platnyZaznam": "0"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22535773",
+   "idVerze": "24164261"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24164261",
+  "casZverejneni": "2023-04-20T08:21:52+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "4cbbvj4",
+    "nazev": "Město Třeboň",
+    "ico": "00247618",
+    "adresa": "Město Třeboň,  Palackého nám. 46/II,  37901 Třeboň",
+    "utvar": "Neurčeno",
+    "platce": "1"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "8uxd39k",
+    "nazev": "Renostav Třeboň s.r.o.",
+    "ico": "11774258",
+    "adresa": "Nádražní 641,  37901 Třeboň",
+    "prijemce": "1",
+    "identifikace": "PO"
+   },
+   "predmet": "Stavební úpravy bytu č. 23, Chelčického 1, Třeboň",
+   "datumUzavreni": "2023-04-19",
+   "cisloSmlouvy": "750/7474/23",
+   "schvalil": "PaedDr. Jan Váňa",
+   "hodnotaBezDph": "172430.9",
+   "hodnotaVcetneDph": "198295.54"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22539549",
+   "idVerze": "24168257"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24168257",
+  "casZverejneni": "2023-04-20T10:37:12+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "4cbbvj4",
+    "nazev": "Město Třeboň",
+    "ico": "00247618",
+    "adresa": "Město Třeboň,  Palackého nám. 46/II,  37901 Třeboň",
+    "utvar": "Městský úřad Třeboň",
+    "platce": "1"
+   },
+   "smluvniStrana": {
+    "nazev": "Novotná Simona,  nar. 1997",
+    "adresa": "37901 Třeboň",
+    "prijemce": "1",
+    "identifikace": "FO"
+   },
+   "predmet": "Darovací smlouva  - darování vodovodu a kanalizace v rámci akce &quot;Prodloužení vodovodu a kanalizace k p. č. 180/69 k. ú. Břilice&quot;",
+   "datumUzavreni": "2023-04-19",
+   "cisloSmlouvy": "800/5120/23",
+   "schvalil": "PaedDr. Jan Váňa",
+   "hodnotaVcetneDph": "370000"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22543313",
+   "idVerze": "24172249"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24172249",
+  "casZverejneni": "2023-04-20T13:11:36+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "4cbbvj4",
+    "nazev": "Město Třeboň",
+    "ico": "00247618",
+    "adresa": "Město Třeboň,  Palackého nám. 46/II,  37901 Třeboň",
+    "utvar": "Městský úřad Třeboň",
+    "platce": "1"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "pmhpgfn",
+    "nazev": "Lipno Centrum s.r.o.",
+    "ico": "28120957",
+    "adresa": "č. p.  277,  38279 Frymburk",
+    "prijemce": "1",
+    "identifikace": "PO"
+   },
+   "predmet": "Kupní smlouva -  mobilní buňka WC",
+   "datumUzavreni": "2023-04-20",
+   "cisloSmlouvy": "800/5162/23",
+   "schvalil": "PaedDr. Jan Váňa",
+   "hodnotaVcetneDph": "79900"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22544521",
+   "idVerze": "24173545"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24173545",
+  "casZverejneni": "2023-04-20T13:51:17+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "4cbbvj4",
+    "nazev": "Město Třeboň",
+    "ico": "00247618",
+    "adresa": "Město Třeboň,  Palackého nám. 46/II,  37901 Třeboň",
+    "utvar": "Neurčeno",
+    "platce": "1"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "4qfgxx3",
+    "nazev": "Vodohospodářský rozvoj a výstavba a.s.",
+    "ico": "47116901",
+    "adresa": "Nábřežní 90/4,  15000 Praha",
+    "prijemce": "1",
+    "identifikace": "PO"
+   },
+   "predmet": "Studie řešení odvodu dešťových vod z lokality Třeboň západ",
+   "datumUzavreni": "2023-04-20",
+   "cisloSmlouvy": "750/7445/23",
+   "schvalil": "PaedDr. Jan Váňa",
+   "hodnotaBezDph": "460000",
+   "hodnotaVcetneDph": "556600"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22551589",
+   "idVerze": "24180817"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24180817",
+  "casZverejneni": "2023-04-21T08:45:13+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "4cbbvj4",
+    "nazev": "Město Třeboň",
+    "ico": "00247618",
+    "adresa": "Město Třeboň,  Palackého nám. 46/II,  37901 Třeboň",
+    "utvar": "Městský úřad Třeboň"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "36d7kda",
+    "nazev": "TJ Jiskra Třeboň, z.s.",
+    "ico": "00512907",
+    "adresa": "Jiráskova 444,  37901 Třeboň",
+    "identifikace": "PO"
+   },
+   "predmet": "Dodatek č. 4 ke Smlouvě o nájmu nebytových prostor ze dne 30.05.2011",
+   "datumUzavreni": "2023-04-20",
+   "cisloSmlouvy": "800/4296/20/3",
+   "hodnotaVcetneDph": "-200205",
+   "navazanyZaznam": "12772816"
+  },
+  "platnyZaznam": "1",
+  "navazanyZaznam": "https://smlouvy.gov.cz/smlouva/12772816"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22555905",
+   "idVerze": "24185397"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24185397",
+  "casZverejneni": "2023-04-21T11:41:02+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "dkkdkdj",
+    "nazev": "Agentura ochrany přírody a krajiny ČR",
+    "ico": "62933591",
+    "adresa": "Agentura ochrany přírody a krajiny ČR\nKaplanova 1931/1\n148 00  Praha 11 - Chodov\nČesko",
+    "platce": "1"
+   },
+   "smluvniStrana": {
+    "nazev": "Město Třeboň",
+    "ico": "00247618",
+    "adresa": "Město Třeboň\n\nPalackého nám.  46\n379 01  Třeboň\nČeská republika",
+    "prijemce": "1"
+   },
+   "predmet": "Dod.č.2_DP Třeboňsko_navýšení odměny za provoz DPT",
+   "datumUzavreni": "2023-04-20",
+   "cisloSmlouvy": "S2331/0033",
+   "hodnotaBezDph": "11171",
+   "hodnotaVcetneDph": "13517",
+   "navazanyZaznam": "3664216"
+  },
+  "platnyZaznam": "0",
+  "navazanyZaznam": "https://smlouvy.gov.cz/smlouva/3664216"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22569577",
+   "idVerze": "24199573"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24199573",
+  "casZverejneni": "2023-04-24T10:33:52+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "7pehv9f",
+    "nazev": "Slatinné lázně Třeboň s.r.o.",
+    "ico": "25179896",
+    "adresa": "Lázeňská 1001, 37901 Třeboň, CZ"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "ycuetb3",
+    "nazev": "KONE, a.s.",
+    "ico": "00176842",
+    "adresa": "Evropská 423/178, Vokovice, 16000, Praha 6"
+   },
+   "predmet": "Dodatek č.3 k servisní smlouvě",
+   "datumUzavreni": "2023-04-19",
+   "cisloSmlouvy": "10SM230115",
+   "schvalil": "prof.JUDr. Vilém Kahoun, Ph.D.",
+   "cenaNeuvedena": "Obchodní tajemství"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22604337",
+   "idVerze": "24236265"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24236265",
+  "casZverejneni": "2023-04-26T12:14:17+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "7pehv9f",
+    "nazev": "Slatinné lázně Třeboň s.r.o.",
+    "ico": "25179896",
+    "adresa": "Lázeňská 1001, 37901 Třeboň, CZ"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "bxgeekq",
+    "nazev": "Hilding Anders Česká republika a.s.",
+    "ico": "26173212",
+    "adresa": "Branská 329, 51401, Jilemnice"
+   },
+   "predmet": "Kupní smlouva - Dodávka matrací a chráničů",
+   "datumUzavreni": "2023-04-25",
+   "cisloSmlouvy": "10SM230149",
+   "schvalil": "prof.JUDr. Vilém Kahoun, Ph.D.",
+   "hodnotaBezDph": "552540"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22604965",
+   "idVerze": "24236917"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24236917",
+  "casZverejneni": "2023-04-26T12:40:17+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "4cbbvj4",
+    "nazev": "Město Třeboň",
+    "ico": "00247618",
+    "adresa": "Město Třeboň,  Palackého nám. 46/II,  37901 Třeboň",
+    "utvar": "Neurčeno",
+    "platce": "1"
+   },
+   "smluvniStrana": {
+    "nazev": "Ing. Josef Kregl",
+    "ico": "67145566",
+    "adresa": "Žižkova 742,  37806 Suchdol nad Lužnicí",
+    "prijemce": "1",
+    "identifikace": "PFO"
+   },
+   "predmet": "Zpracování projektové dokumentace Novostavba městského bytového domu v ulici Lázeňská na parcelním čísle 1087/17 v obci a katastrálním území Třeboň",
+   "datumUzavreni": "2023-04-25",
+   "cisloSmlouvy": "750/7482/23",
+   "schvalil": "PaedDr. Jan Váňa",
+   "hodnotaBezDph": "875000",
+   "hodnotaVcetneDph": "875000"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22614441",
+   "idVerze": "24247065"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24247065",
+  "casZverejneni": "2023-04-27T08:13:21+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "4cbbvj4",
+    "nazev": "Město Třeboň",
+    "ico": "00247618",
+    "adresa": "Město Třeboň,  Palackého nám. 46/II,  37901 Třeboň",
+    "utvar": "Městský úřad Třeboň",
+    "platce": "1"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "bcbz94z",
+    "nazev": "Městská Vodohospodářská s.r.o.",
+    "ico": "28136853",
+    "adresa": "Na Kopečku 1341,  37901 Třeboň II",
+    "prijemce": "1",
+    "identifikace": "PO"
+   },
+   "predmet": "Obnova objektu přečerpávací stanice Břilice",
+   "datumUzavreni": "2023-04-26",
+   "cisloSmlouvy": "750/7483/23",
+   "schvalil": "PaedDr. Jan Váňa",
+   "hodnotaVcetneDph": "119149"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22621605",
+   "idVerze": "24254585"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24254585",
+  "casZverejneni": "2023-04-27T12:54:03+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "4cbbvj4",
+    "nazev": "Město Třeboň",
+    "ico": "00247618",
+    "adresa": "Město Třeboň,  Palackého nám. 46/II,  37901 Třeboň",
+    "utvar": "Neurčeno",
+    "platce": "1"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "vktdudk",
+    "nazev": "J.K. STAVEBNÍ s.r.o.",
+    "ico": "63911345",
+    "adresa": "Novohradská 215,  37901 Třeboň",
+    "prijemce": "1",
+    "identifikace": "PO"
+   },
+   "predmet": "SOD Oprava místní úřadovny v Břilicích.",
+   "datumUzavreni": "2023-04-26",
+   "cisloSmlouvy": "750/7487/23",
+   "schvalil": "PaedDr. Jan Váňa",
+   "hodnotaBezDph": "795434.76",
+   "hodnotaVcetneDph": "962476.06"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22621865",
+   "idVerze": "24254861"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24254861",
+  "casZverejneni": "2023-04-27T13:00:59+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "4cbbvj4",
+    "nazev": "Město Třeboň",
+    "ico": "00247618",
+    "adresa": "Město Třeboň,  Palackého nám. 46/II,  37901 Třeboň",
+    "utvar": "Neurčeno",
+    "platce": "1"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "vktdudk",
+    "nazev": "J.K. STAVEBNÍ s.r.o.",
+    "ico": "63911345",
+    "adresa": "Novohradská 215,  37901 Třeboň",
+    "prijemce": "1",
+    "identifikace": "PO"
+   },
+   "predmet": "SOD Oprava dílen SOŠ a SOU Třeboň",
+   "datumUzavreni": "2023-04-26",
+   "cisloSmlouvy": "750/7488/23",
+   "schvalil": "PaedDr. Jan Váňa",
+   "hodnotaBezDph": "694053.18",
+   "hodnotaVcetneDph": "839804.35"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22622045",
+   "idVerze": "24255049"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24255049",
+  "casZverejneni": "2023-04-27T13:07:54+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "4cbbvj4",
+    "nazev": "Město Třeboň",
+    "ico": "00247618",
+    "adresa": "Město Třeboň,  Palackého nám. 46/II,  37901 Třeboň",
+    "utvar": "Neurčeno",
+    "platce": "1"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "vktdudk",
+    "nazev": "J.K. STAVEBNÍ s.r.o.",
+    "ico": "63911345",
+    "adresa": "Novohradská 215,  37901 Třeboň",
+    "prijemce": "1",
+    "identifikace": "PO"
+   },
+   "predmet": "SOD Obnova výklenkové kapličky sv. Barbory u obce Branná",
+   "datumUzavreni": "2023-04-26",
+   "cisloSmlouvy": "750/7490/23",
+   "schvalil": "PaedDr. Jan Váňa",
+   "hodnotaBezDph": "57050.2",
+   "hodnotaVcetneDph": "69030.74"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22622625",
+   "idVerze": "24255669"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24255669",
+  "casZverejneni": "2023-04-27T13:27:05+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "7pehv9f",
+    "nazev": "Slatinné lázně Třeboň s.r.o.",
+    "ico": "25179896",
+    "adresa": "Lázeňská 1001, 37901 Třeboň, CZ"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "3f8sxbh",
+    "nazev": "Perfect System, s.r.o.",
+    "ico": "26480981",
+    "adresa": "Radlická 3301/68, Smíchov, 15000, Praha 5"
+   },
+   "predmet": "Objednávka - migrace systému Colosseum a konotrebon",
+   "datumUzavreni": "2023-02-03",
+   "cisloSmlouvy": "10OB230129",
+   "schvalil": "prof.JUDr. Vilém Kahoun, Ph.D.",
+   "hodnotaBezDph": "77500"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22622673",
+   "idVerze": "24255721"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24255721",
+  "casZverejneni": "2023-04-27T13:29:05+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "7pehv9f",
+    "nazev": "Slatinné lázně Třeboň s.r.o.",
+    "ico": "25179896",
+    "adresa": "Lázeňská 1001, 37901 Třeboň, CZ"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "iyk8z6w",
+    "nazev": "Green Center s.r.o.",
+    "ico": "47121572",
+    "adresa": "Mladoboleslavská 1121, Kbely, 19700, Praha 9"
+   },
+   "predmet": "Objednávka - Upgrade systému závor LD BL",
+   "datumUzavreni": "2023-03-15",
+   "cisloSmlouvy": "10OB230320",
+   "schvalil": "prof. JUDr. Vilém Kahoun, Ph.D.",
+   "hodnotaBezDph": "390427"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22623209",
+   "idVerze": "24256309"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24256309",
+  "casZverejneni": "2023-04-27T13:44:28+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "bcbz94z",
+    "nazev": "Městská Vodohospodářská s.r.o.",
+    "ico": "28136853",
+    "adresa": "Na Kopečku 1341, 37901 Třeboň, CZ"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "w2d3p3f",
+    "nazev": "POKLOPSYSTEM s.r.o.",
+    "ico": "61172375",
+    "adresa": "Hradec - Hradec 161, PSČ 33211"
+   },
+   "predmet": "Objednávka na montáž vodovodních poklopů",
+   "datumUzavreni": "2023-04-27",
+   "hodnotaBezDph": "75910",
+   "hodnotaVcetneDph": "91851.1"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22623273",
+   "idVerze": "24256373"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24256373",
+  "casZverejneni": "2023-04-27T13:46:10+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "bcbz94z",
+    "nazev": "Městská Vodohospodářská s.r.o.",
+    "ico": "28136853",
+    "adresa": "Na Kopečku 1341, 37901 Třeboň, CZ"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "w2d3p3f",
+    "nazev": "POKLOPSYSTEM s.r.o.",
+    "ico": "61172375",
+    "adresa": "Hradec - Hradec 161, PSČ 33211"
+   },
+   "predmet": "Objednávka na montáž kanalizačních poklopů",
+   "datumUzavreni": "2023-04-27",
+   "hodnotaBezDph": "80251",
+   "hodnotaVcetneDph": "97103.71"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22623369",
+   "idVerze": "24256481"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24256481",
+  "casZverejneni": "2023-04-27T13:49:52+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "bcbz94z",
+    "nazev": "Městská Vodohospodářská s.r.o.",
+    "ico": "28136853",
+    "adresa": "Na Kopečku 1341, 37901 Třeboň, CZ"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "j3jrxbg",
+    "nazev": "B.K.T. spol. s r. o.",
+    "ico": "16847431",
+    "adresa": "Roháčova 639/18, 39002, Tábor"
+   },
+   "predmet": "Objednávka - obnova mechanické části čerpadla č.2",
+   "datumUzavreni": "2023-04-25",
+   "hodnotaBezDph": "98383",
+   "hodnotaVcetneDph": "119043.43"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22632765",
+   "idVerze": "24266225"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24266225",
+  "casZverejneni": "2023-04-28T09:25:22+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "4cbbvj4",
+    "nazev": "Město Třeboň",
+    "ico": "00247618",
+    "adresa": "Město Třeboň,  Palackého nám. 46/II,  37901 Třeboň",
+    "utvar": "Městský úřad Třeboň",
+    "platce": "1"
+   },
+   "smluvniStrana": {
+    "nazev": "Att Investments CZ SE",
+    "ico": "03048900",
+    "adresa": "Pod Altánem 428/34,  10000 Praha 10 - Strašnice",
+    "prijemce": "1",
+    "identifikace": "OVM"
+   },
+   "predmet": "Zlaté slitky pro novorozence o gramáži 2,5g v množství 20 ks",
+   "datumUzavreni": "2023-04-26",
+   "cisloSmlouvy": "790/0068/23",
+   "hodnotaVcetneDph": "86800"
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "22635409",
+   "idVerze": "24269009"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/24269009",
+  "casZverejneni": "2023-04-28T10:50:12+02:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "4cbbvj4",
+    "nazev": "Město Třeboň",
+    "ico": "00247618",
+    "adresa": "Město Třeboň,  Palackého nám. 46/II,  37901 Třeboň",
+    "utvar": "Městský úřad Třeboň"
+   },
+   "smluvniStrana": {
+    "nazev": "Charita Třeboň",
+    "ico": "26520991",
+    "adresa": "Chelčického 2/II,  37901 Třeboň",
+    "identifikace": "OVM"
+   },
+   "predmet": "Smlouva o nájmu nebytového prostoru",
+   "datumUzavreni": "2023-04-27",
+   "cisloSmlouvy": "800/5138/23",
+   "hodnotaVcetneDph": "100800"
+  },
+  "platnyZaznam": "1"
+ }
+]
