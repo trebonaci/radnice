@@ -105,15 +105,15 @@ Vzor je `karta-projektu.html` (`karta-projektu.png`, `karta-projektu-mobil.png`)
 Na mobilu jsou fáze ve dvou sloupcích, ne pod sebou.
 
 ## Fotky
-Doporučení (rozhoduje Ondřej):
-- Úložiště **Cloudflare R2** s vlastní adresou (např. `foto.trebonaci.cz`).
-- Fotky **nepatří do gitu ani do nasazení Cloudflare Pages**: zvětšovaly by repozitář a každé nasazení. Pages mají limit 25 MiB na soubor a 20 000 souborů na web v tarifu zdarma.
-- R2 má zdarma 10 GB a za stažení se neplatí.
-- Postup:
-  1. Fotku vloží redakce přes formulář issue „Fotka k projektu“: autor, datum, licence a potvrzení „bez rozpoznatelných osob a SPZ, mám právo zveřejnit“.
-  2. GitHub Action fotku zmenší (WebP ve 3 šířkách), odstraní EXIF včetně GPS a nahraje do R2.
-  3. Action otevře PR s doplněním `fotky:` do `data/projekty/<slug>.yaml` (URL, autor, datum, licence, popis pro nevidomé).
-- Potřebné: bucket R2 a token jen pro zápis do něj v GitHub Secrets (zakládá Ondřej).
+Rozhodnutí Ondřeje 23. 11. 2026: **zůstáváme u současného Cloudflare Pages**, bez dalšího úložiště (R2).
+- Fotky jsou součástí webu: \`web/site/foto/<projekt>/<soubor>.webp\` a nasazují se s ním.
+- Do repozitáře jdou **jen zmenšené verze**, ne originály: WebP, šířka 640 a 1280 px, cíl do 250 kB na soubor. Pages mají limit 25 MiB na soubor a 20 000 souborů na web, což při desítkách až stovkách fotek stačí s rezervou.
+- Při každé fotce se odstraní EXIF včetně GPS.
+- **Postup:**
+  1. Redakce vloží fotku přes formulář issue „Fotka k projektu“ (autor, datum, licence, potvrzení „bez rozpoznatelných osob a SPZ, mám právo zveřejnit“).
+  2. GitHub Action fotku zmenší, uloží a otevře PR s doplněním \`fotky:\` do \`data/projekty/<slug>.yaml\` (soubor, autor, datum, licence, popis pro nevidomé).
+  3. Fotku zkontroluje člověk v PR.
+- **Pojistky:** CI hlídá velikost a počet souborů ve \`web/site/foto/\`. Kdyby fotek přibylo tolik, že by repozitář nebo nasazení výrazně rostly, vrátíme se k samostatnému úložišti.
 
 ## Pořadí PR
 1. Základ vzhledu (tokeny, písma, hlavička, menu, patička, přejmenování sekcí) – nejdřív, ostatní na něm stojí.
@@ -124,6 +124,6 @@ Doporučení (rozhoduje Ondřej):
 6. Projekty (časová osa).
 7. Usnesení.
 8. Mapa.
-9. Fotky – po rozhodnutí Ondřeje a založení R2.
+9. Fotky – v současném Cloudflare Pages (rozhodnutí Ondřeje 23. 11. 2026), po kartě projektu.
 
 Každý krok je samostatné issue a PR do náhledu. Na web jde až po „schváleno ke zveřejnění“.
