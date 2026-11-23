@@ -202,7 +202,6 @@ h1:focus{outline:none}
 .zs>div+div{border-top:1px solid var(--line)}
 .temata{margin-top:4px}
 @media(max-width:640px){.chips{flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px;scrollbar-width:thin}.chips button{flex:0 0 auto}}
-.archiv-rok{border-bottom:1px solid var(--line);padding:.6rem 0}.archiv-rok summary{cursor:pointer;font-weight:700;padding:.5rem 0}.archiv-rok ul{list-style:none;padding:0}.archiv-rok li{border-top:1px solid var(--line);padding:.75rem 0}.archiv-rok h3,.archiv-rok p{margin:.3rem 0}
 </style></head><body>
 <div class="lista"><div class="wrap"><a class="zn" href="https://trebonaci.cz"><img src="obr/logo-trebonaci.jpg" alt=""><span><b>Třeboňáci</b></span></a><span class="bd">Co se děje na radnici</span>
 <nav id="menu" aria-label="Sekce"><a href="#">Investice</a><a href="#usneseni">Usnesení</a><a href="#casova-osa">Časová osa</a><a href="#pripravovane">Připravované projekty</a><a href="#dokoncene">Dokončené projekty</a><a href="#mista">Místa a služby</a><a href="#rozpocet">Rozpočet</a><a href="#cisla">V číslech</a></nav></div></div>
@@ -462,7 +461,7 @@ function harmonogram(){
   const rysky=roky.map(r=>`<i class="rk" style="left:${x(r+"-01-01").toFixed(2)}%"></i>`).join("")+`<i class="dn" style="left:${x(DNES).toFixed(2)}%" title="dnes"></i>`;
   const osa=`<div class="osa"><span></span><div class="tr">${roky.map(r=>`<span style="left:${x(r+"-01-01").toFixed(2)}%">${r}</span>`).join("")}<span style="left:${x(DNES).toFixed(2)}%;color:var(--green-dark);font-weight:700;transform:translateX(-50%) translateY(-1px)">dnes</span></div></div>`;
   const usek=(u,r)=>{const od=u.od<OD?OD:u.od, doo=u.do||DNES;const l=x(od), w=Math.max(.6,x(doo)-l);
-    const popis=`${r.nazev} – ${FAZE_G[u.faze]}: ${dat(u.od)} – ${u.otevreno?"dosud":dat(u.do)}${u.konec_jistota==="posledni_doklad"?" (konec = poslední doklad ke stavbě)":""}${u.zacatek_pred_daty?" (začalo dřív, než sahají naše data)":""}`;
+    const popis=`${r.nazev} – ${FAZE_G[u.faze]}: ${dat(u.od)} – ${u.otevreno?"dosud":dat(u.do)}${u.konec_jistota==="posledni_doklad"?" (konec = poslední doklad ke stavbě)":u.konec_jistota==="ukonceni_plneni"?" (konec = ukončení plnění smlouvy podle E-ZAK)":""}${u.zacatek_pred_daty?" (začalo dřív, než sahají naše data)":""}`;
     const plan=u.faze==="stavba"&&u.otevreno?" Plánovaný termín dokončení podle smlouvy v datech nemáme.":"";
     GI.push({t:popis+"."+plan,url:u.url,odkaz:"Otevřít doklad k začátku fáze"});
     return `<button type="button" class="u ${u.faze}${u.otevreno?" otevreno":""}${u.od<OD||u.zacatek_pred_daty?" drive":""}" style="left:${l.toFixed(2)}%;width:${w.toFixed(2)}%" data-gi="${GI.length-1}" title="${esc(popis)}" aria-label="${esc(popis)}"></button>`;};
@@ -476,7 +475,7 @@ function harmonogram(){
     ["Investice – stavba probíhá",inv.filter(r=>r.faze==="probiha"||r.faze==="soutezi_se"),""],
     ["Investice – připravují se",inv.filter(r=>r.faze==="pripravuje_se"),""],
     ["Připravované projekty – co se projektuje",H.filter(r=>r.typ==="zasobnik"),"Od první smlouvy nebo zakázky na studii či projekt. Stavba zatím není zadaná."],
-    ["Investice – dokončené",inv.filter(r=>r.faze==="dokonceno"),"Konec stavby = poslední doklad ke stavbě (dodatek, smlouva); den předání stavby v datech není."]];
+    ["Investice – dokončené",inv.filter(r=>r.faze==="dokonceno"),"Konec stavby = ukončení plnění stavební smlouvy podle E-ZAK, kde ho máme, jinak poslední doklad ke stavbě; den předání stavby v datech není."]];
   const tab=H.map(r=>`<tr><td>${esc(r.nazev)}</td><td>${r.useky.map(u=>`${FAZE_G[u.faze]} ${dat(u.od)} – ${u.otevreno?"dosud":dat(u.do)}`).join("<br>")}</td></tr>`).join("");
   const nI=H.filter(r=>r.typ==="investice").length,nZ=H.filter(r=>r.typ==="zasobnik").length,nA=H.filter(r=>r.typ==="aktivita").length;
   return `<section><h1 class="st" tabindex="-1">Časová osa projektů</h1>
@@ -612,7 +611,7 @@ function prehled(){
   <div class="odkazy">
    <a href="#usneseni"><b>Usnesení rady a zastupitelstva</b><span>${pocetUsneseni()} s odkazem do zápisu</span></a>
    <a href="#casova-osa"><b>Časová osa projektů</b><span>${pl(H.filter(x=>x.typ==="investice").length,"investice","investice","investic")} a ${pl(zPol().length,"připravovaný projekt","připravované projekty","připravovaných projektů")} v čase</span></a>
-   <a href="#dokoncene"><b>Dokončené projekty</b><span>Archiv investic podle roku dokončení</span></a>
+   <a href="#dokoncene"><b>Dokončené projekty</b><span>${pl(P.filter(p=>p.faze==="dokonceno").length,"investice","investice","investic")} podle roku dokončení</span></a>
    <a href="#pripravovane"><b>Připravované projekty</b><span>${pl(zPol().length,"projekt","projekty","projektů")} v přípravě · ${pl(zNam().length,"námět","náměty","námětů")}</span></a>
    <a href="#mista"><b>Místa a služby</b><span>${pl(ZM.length,"změna","změny","změn")} z usnesení</span></a>
    <a href="#rozpocet"><b>Rozpočet ${I?.rok??""}</b><span>${I?kc(I.bez_rezervy_po_zmenach)+" na investice po změnách, bez rezervy":""}</span></a>
@@ -635,38 +634,29 @@ const ALIAS={harmonogram:"casova-osa",zasobnik:"pripravovane"};
 document.addEventListener("click",e=>{const a=e.target.closest("[data-paticka]");if(a){e.preventDefault();const f=document.getElementById("paticka");f.scrollIntoView({behavior:"smooth"});f.focus({preventScroll:true});}});
 function zobraz(el,html,h,nazev,vlastniZpet){el.innerHTML=(vlastniZpet?"":`<div class="zpet"><a href="#">← Přehled investic</a><span></span></div>`)+html;document.body.dataset.str=h;document.title=nazev+" – "+TITUL;menu(h==="detail"?"":h);
   const t=el.querySelector("h1");if(t)t.focus({preventScroll:true});}
+// archiv dokončených projektů po letech (#207): rok = doložené dokončení, jinak ukončení plnění stavební smlouvy v E-ZAK
+const FA={tema:""};
 function archivProjektu(projekty){
-  const skupiny = new Map();
-  for (const projekt of projekty.filter(p => p.faze === "dokonceno")) {
-    const doklad = projekt.dokonceni || projekt.ukonceni_plneni;
-    const rok = doklad?.datum && /^https?:\/\//i.test(doklad.url || "") ? String(doklad.datum).slice(0,4) : "";
-    if (!skupiny.has(rok)) skupiny.set(rok, []);
-    skupiny.get(rok).push(projekt);
-  }
-  function polozka(p, rok) {
-    const [druhCeny, cena] = hlavni(p);
-    const zdroj = p.dokonceni || p.ukonceni_plneni;
-    const doklad = rok ? `<p>${p.dokonceni ? "Dokončeno" : "Plnění stavební smlouvy ukončeno"} ${dat(zdroj.datum)} · <a href="${esc(zdroj.url)}">${p.dokonceni ? "Doklad o dokončení" : "Zakázka v E-ZAK"}</a></p>` : "";
-    return `<li><h3><a href="#${esc(p.id)}">${esc(rozepis(p.nazev))}</a></h3>
-      ${p.popis && p.popis !== p.nazev ? `<p>${esc(p.popis)}</p>` : ""}
-      <p>${esc(OBLAST[p.oblast] || "Ostatní")}${cena ? ` · ${esc(druhCeny)}: ${esc(cena)}` : ""}</p>${doklad}</li>`;
-  }
-  const roky = [...skupiny.keys()].sort().reverse();
-  const obsah = roky.map((rok, index) => {
-    const projektyRoku = skupiny.get(rok).sort((a,b) => 
-      (rok && (b.dokonceni || b.ukonceni_plneni).datum.localeCompare((a.dokonceni || a.ukonceni_plneni).datum)) || a.nazev.localeCompare(b.nazev, "cs") || a.id.localeCompare(b.id));
-    return `<details class="archiv-rok" ${index === 0 ? "open" : ""}><summary>${rok || "Rok dokončení není doložen"} (${projektyRoku.length})</summary>
-      <ul>${projektyRoku.map(p => polozka(p, rok)).join("")}</ul></details>`;
-  }).join("");
+  const hotove=projekty.filter(p=>p.faze==="dokonceno");
+  const doklad=p=>p.dokonceni?.datum?{datum:String(p.dokonceni.datum),url:p.dokonceni.url,co:"Dokončeno"}:p.ukonceni_plneni?{datum:p.ukonceni_plneni.datum,url:p.ukonceni_plneni.url,co:"Plnění stavební smlouvy ukončeno",citace:p.ukonceni_plneni.citace}:null;
+  const vyber=hotove.filter(p=>!FA.tema||p.oblast===FA.tema);
+  const skupiny=new Map();
+  for(const p of vyber){const d=doklad(p);const rok=d?d.datum.slice(0,4):"";if(!skupiny.has(rok))skupiny.set(rok,[]);skupiny.get(rok).push(p);}
+  const roky=[...skupiny.keys()].sort((a,b)=>(b||"0").localeCompare(a||"0"));
+  const box=p=>{const [co,kolik]=hlavni(p);const d=doklad(p);
+    return `<a href="#${esc(p.id)}" class="k-dokonceno"><span><b>${esc(rozepis(p.nazev))}</b>${d?`<small class="pz">${esc(d.co)} ${dat(d.datum)}</small>`:""}<small class="sv">${OBLAST[p.oblast]||"Ostatní"}</small></span><span class="c">${kolik||"–"}<small>${co}</small></span></a>`;};
   return `<section><h1 class="st" tabindex="-1">Dokončené projekty</h1>
-    <p>Projekty řadíme podle roku doloženého dokončení stavby nebo ukončení plnění stavební smlouvy v E-ZAK.</p>
-    ${obsah || "<p>V evidenci zatím nejsou dokončené projekty.</p>"}</section>`;
+   <p style="max-width:64ch">${pl(hotove.length,"dokončená investice","dokončené investice","dokončených investic")} podle roku. Rok je datum doloženého dokončení, nebo – častěji – datum, kdy E-ZAK uvádí „Plnění smlouvy ukončeno“ u stavební zakázky. Kolaudaci ani předání stavby veřejnosti v datech nemáme.</p>
+   ${temaChips([...new Set(hotove.map(p=>p.oblast))],FA.tema,"atema")}
+   ${roky.map(r=>`<h2 style="margin:26px 0 10px">${r||"Rok dokončení není doložen"} <small class="pozn" style="font-weight:400">· ${pl(skupiny.get(r).length,"projekt","projekty","projektů")}</small></h2>
+    <nav class="sez" aria-label="Dokončeno ${r}">${skupiny.get(r).sort((a,b)=>(doklad(b)?.datum||"").localeCompare(doklad(a)?.datum||"")||a.nazev.localeCompare(b.nazev,"cs")).map(box).join("")}</nav>`).join("")||"<p>Žádný dokončený projekt neodpovídá výběru.</p>"}
+  </section>`;
 }
 
 function render(){
   let h=decodeURIComponent(location.hash.slice(1));if(ALIAS[h]){history.replaceState(null,"","#"+ALIAS[h]);h=ALIAS[h];}
   const el=document.getElementById("karty");
-  if(h==="dokoncene"){zobraz(el,archivProjektu(P),h,"Dokončené projekty");window.scrollTo(0,0);return;}
+  if(h==="dokoncene"){zobraz(el,archivProjektu(P),h,"Dokončené projekty");window.scrollTo(0,0);el.querySelectorAll("[data-atema]").forEach(b=>b.onclick=()=>{FA.tema=b.dataset.atema;render();});return;}
   if(h==="rozpocet"){zobraz(el,investice(INV),h,"Rozpočet");window.scrollTo(0,0);return;}
   if(h==="mista"||h.startsWith("misto-")){zobraz(el,mistaStranka(),"mista","Místa a služby");const t=h.startsWith("misto-")&&document.getElementById(h);t?t.scrollIntoView():window.scrollTo(0,0);return;}
   if(h==="casova-osa"){zobraz(el,harmonogram(),h,"Časová osa projektů");window.scrollTo(0,0);casovaOsa(el);return;}

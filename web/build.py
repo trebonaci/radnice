@@ -62,16 +62,8 @@ def sestav(nahled: bool = False) -> str:
     investice = _json("investice")
     stitek = (f"Náhled · data k {datum} · neschváleno ke zveřejnění" if nahled
               else f"Data aktualizována {datum}" if datum else "Data z veřejných zdrojů")
-    projekty = _json("projekty")
-    ukonceni = _json("ukonceni_stavebnich_smluv") or {}
-    for projekt in projekty:
-        zaznam = ukonceni.get(projekt["id"])
-        stavby = [z for z in projekt.get("zakazky", []) if z.get("role") == "stavba"]
-        if (zaznam and projekt.get("faze") == "dokonceno" and len(stavby) == 1
-                and stavby[0].get("url") == zaznam["url"] and stavby[0].get("stav") == "ukončeno plnění"):
-            projekt["ukonceni_plneni"] = zaznam
     nahrady = {
-        "__DATA__": _vloz(projekty),
+        "__DATA__": _vloz(_json("projekty")),
         "__ZASOBNIK__": _vloz(_json("zasobnik")),
         "__MISTA__": _vloz(_json("mista")),
         "__ZMENY__": _vloz(_json("zmeny")),
