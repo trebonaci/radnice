@@ -30,3 +30,21 @@ def test_usneseni_pro_web_odkaz_na_stranu_a_razeni():
     assert [x["id"] for x in r] == ["rm-1-u1", "zm-1-u1"]
     assert r[1]["url"] == "https://y.pdf#page=4" and r[0]["url"] == "https://z.pdf"
     assert r[0]["shrnuti"] == "P" and r[0]["kategorie"] == ["ostatni"] and r[0]["vysledek"] == "neprijato"
+
+
+def test_co_se_deje_ma_sest_okruhu_a_pet_polozek_menu():
+    import re
+    html = build.sestav()
+    okruhy = re.search(r"const OK=(\[.*?\]);\n", html)
+    assert okruhy and okruhy.group(1).count('"popis"') == 6
+    menu = re.search(r'<nav id="menu"[^>]*>(.*?)</nav>', html).group(1)
+    assert re.findall(r'href="([^"]*)"', menu) == ["#", "#stavby", "#usneseni", "#mista", "#mapa"]
+    # Časová osa, Rozpočet a V číslech zůstávají dostupné z patičky
+    for h in ("#casova-osa", "#pripravovane", "#dokoncene", "#rozpocet", "#cisla"):
+        assert f'href="{h}"' in html
+
+
+def test_usneseni_pro_web_nese_okruhy():
+    from web.build import usneseni_pro_web
+    r = usneseni_pro_web([{"id": "u", "jednani_id": "x", "okruh": "skoly", "okruhy": ["skoly", "rozvoj_sprava"]}], [])
+    assert r[0]["okruh"] == "skoly" and r[0]["okruhy"] == ["skoly", "rozvoj_sprava"]
