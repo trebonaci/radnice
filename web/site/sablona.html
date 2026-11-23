@@ -291,6 +291,9 @@ h1:focus{outline:none}
 .rozlozeni{display:flex;height:10px;border-radius:999px;overflow:hidden;gap:2px;margin:12px 0 6px}
 .rozlozeni span{display:block;height:100%;min-width:3px}
 .rozlozeni-popis{font-size:12.5px;color:var(--mute);margin:0}
+.ceny-rozpor{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline;margin:2px 0}
+.ceny-rozpor small{flex:1 0 100%;font-size:12px;color:var(--mute)}
+.cena small{font-weight:500;color:var(--mute)}
 /* karty okruhů */
 .okruhy{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,460px),1fr));gap:16px}
 .okruh{padding:0 0 10px}
@@ -914,14 +917,18 @@ const FZ={druh:""};
 const zprDruhy=z=>z.druhy||[z.druh];
 const ROK_ZPET=(()=>{const d=new Date(ZP.kpi.do);d.setFullYear(d.getFullYear()-1);return d.toISOString().slice(0,10);})();
 const zprVyber=()=>ZP.zpravy.filter(z=>z.datum>=ROK_ZPET&&(!FZ.druh||zprDruhy(z).includes(FZ.druh)));
-function zprCastka(c){if(!c)return"";const dph=c.s_dph===true?"s DPH":c.s_dph===false?"bez DPH":"DPH neuvedeno";
-  return `<span class="cena">${kcp(c.hodnota)} · ${dph}${CASTKA_NAZEV[c.druh]?` (${CASTKA_NAZEV[c.druh]})`:""}</span>`;}
+const ZDROJ_2P={"Zadávací profil (E-ZAK)":"zadávacího profilu (E-ZAK)","Registr smluv":"registru smluv"};
+function zprCastka(c,zdroj){if(!c)return"";const dph=c.s_dph===true?"s DPH":c.s_dph===false?"bez DPH":"DPH neuvedeno";
+  return `<span class="cena">${kcp(c.hodnota)} · ${dph}${CASTKA_NAZEV[c.druh]?` (${CASTKA_NAZEV[c.druh]})`:""}${zdroj?` <small>podle ${esc(ZDROJ_2P[zdroj]||zdroj)}</small>`:""}</span>`;}
+// rozporné částky ze dvou zdrojů se neslučují ani nesčítají: ukážou se obě s uvedením zdroje (review #257)
+function zprCastky(z){if(z.castky)return `<div class="ceny-rozpor">${z.castky.map(c=>zprCastka(c,c.zdroj)).join("")}<small>Zdroje se liší, částky se nesčítají.</small></div>`;
+  return zprCastka(z.castka);}
 function zprZdroje(z){return `<p class="zdr">${z.zdroje.map(x=>`<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.nazev)} ↗</a>`).join("")}</p>`;}
 function zprava(z){
   const pillky=zprDruhy(z).map(d=>`<span class="pill ${d}">${DRUH_NAZEV[d]}</span>`).join(" ");
   const od=z.plati_od?` · platí od ${dat(z.plati_od)}`:"";
   return `<li><div class="hl2">${pillky}<span>${dat(z.datum)}${od}</span>${z.stitek?`<span>${esc(z.stitek)}</span>`:""}${z.jistota==="naše propojení"?`<span>naše propojení</span>`:""}</div>
-   <b class="t">${esc(z.titulek)}</b><p>${esc(z.shrnuti)}</p>${zprCastka(z.castka)}${zprZdroje(z)}${z.shrnuti_ai?`<span class="ai">Větu napsala AI, závazné je znění ve zdroji.</span>`:""}</li>`;}
+   <b class="t">${esc(z.titulek)}</b><p>${esc(z.shrnuti)}</p>${zprCastky(z)}${zprZdroje(z)}${z.shrnuti_ai?`<span class="ai">Větu napsala AI, závazné je znění ve zdroji.</span>`:""}</li>`;}
 // zprávy k jedné akci ve stejný den jsou pod jejím názvem (jedna položka bloku)
 function zprJednotky(v){const out=[];const sk=new Map();
   for(const z of v){if(z.skupina){let g=sk.get(z.skupina.id);if(!g){g={skupina:z.skupina,zpravy:[]};sk.set(z.skupina.id,g);out.push(g);}g.zpravy.push(z);}else out.push({zpravy:[z]});}
@@ -935,7 +942,7 @@ function blokOkruhu(o,vyber){const v=zprJednotky(vyber.filter(z=>z.okruh===o.id)
    <div class="hlava">${ikonaOkruhu(o.id)}<div><h2 id="h-${o.id}">${hlava}</h2><p class="op">${esc(o.popis)}</p></div>
    <span class="pocet-okruhu">${pocet?pl(pocet,"zpráva","zprávy","zpráv"):"zatím nic"}</span></div>
    ${v.length?`<ul class="zpr">${prvni.map(zprJednotka).join("")}</ul>`:`<p class="nic">Zatím nic nového.</p>`}
-   ${dalsi.length?`<details><summary>Zobrazit další (${v.length-2})</summary><ul class="zpr">${dalsi.map(zprJednotka).join("")}</ul>${v.length>dalsi.length+2?`<p class="nic">Starší zprávy najdete na stránkách Investice a opravy, Usnesení a Místa a služby.</p>`:""}</details>`:""}
+   ${dalsi.length?`<details><summary>Zobrazit další (${dalsi.length})</summary><ul class="zpr">${dalsi.map(zprJednotka).join("")}</ul>${v.length>dalsi.length+2?`<p class="nic"><a href="#deje/${o.id}">Celý okruh (${v.length}) →</a></p>`:""}${v.length>dalsi.length+2?`<p class="nic">Starší zprávy najdete na stránkách Investice a opravy, Usnesení a Místa a služby.</p>`:""}</details>`:""}
   </section>`;}
 // hero: medailon s počtem zpráv za 30 dní a pruh okruhů (návrh 23. 11. 2026)
 function heroMedailon(){const k=ZP.kpi;

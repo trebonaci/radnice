@@ -14,8 +14,8 @@ from datetime import date, timedelta
 
 DNI_KPI = 30
 RE_DODAVATEL = re.compile(r"dodavatelem\s+(.+?)\.?\s*$")
-POLE_WEB = ("id", "druh", "datum", "okruh", "titulek", "shrnuti", "castka", "projekt_id", "zdroje", "jistota",
-            "shrnuti_ai", "plati_od", "stitek", "skupina", "druhy")
+POLE_WEB = ("id", "druh", "datum", "okruh", "titulek", "shrnuti", "castka", "castky", "projekt_id", "zdroje",
+            "jistota", "shrnuti_ai", "plati_od", "stitek", "skupina", "druhy")
 
 
 def dodavatel(zprava: dict) -> str | None:
@@ -26,6 +26,22 @@ def dodavatel(zprava: dict) -> str | None:
 
 def _hodnota(zprava: dict):
     return (zprava.get("castka") or {}).get("hodnota")
+
+
+def _zdroj_zkratka(zprava: dict) -> str:
+    """Krátký název zdroje z prvního odkazu: „Zadávací profil (E-ZAK): …“ → „Zadávací profil (E-ZAK)“."""
+    nazev = (zprava.get("zdroje") or [{}])[0].get("nazev") or ""
+    return nazev.split(":")[0].strip() or "zdroj"
+
+
+def _castky_sloucene(vyber: dict, smlouva: dict) -> tuple[dict | None, list[dict] | None]:
+    """Jedna částka, když se zdroje shodují; jinak obě s uvedením zdroje (nesčítají se)."""
+    a, b = vyber.get("castka"), smlouva.get("castka")
+    if not a or not b:
+        return a or b, None
+    if (a.get("hodnota"), a.get("s_dph"), a.get("druh")) == (b.get("hodnota"), b.get("s_dph"), b.get("druh")):
+        return a, None
+    return None, [{**a, "zdroj": _zdroj_zkratka(vyber)}, {**b, "zdroj": _zdroj_zkratka(smlouva)}]
 
 
 def _stejna_zakazka(vyber: dict, smlouva: dict) -> bool:
@@ -47,10 +63,12 @@ def slouc_vyber_a_smlouvu(zpravy: list[dict]) -> list[dict]:
             s = next((x for x in smlouvy if x["id"] not in pouzite and _stejna_zakazka(z, x)), None)
             if s:
                 pouzite.add(s["id"])
-                castka = z["castka"] if (z.get("castka") or {}).get("s_dph") is not None else s.get("castka") or z.get("castka")
-                slite = {**z, "druhy": ["vyberove_rizeni", "smlouva"], "castka": castka,
+                castka, castky = _castky_sloucene(z, s)
+                slite = {**z, "druhy": ["vyberove_rizeni", "smlouva"], "castka": castka, "castky": castky,
                          "zdroje": z["zdroje"] + [x for x in s["zdroje"] if x not in z["zdroje"]],
                          "jistota": "naše propojení" if "naše propojení" in (z["jistota"], s["jistota"]) else z["jistota"]}
+                if castky is None:
+                    slite.pop("castky", None)
                 if s.get("skupina") and not z.get("skupina"):
                     slite["skupina"] = s["skupina"]
                 vysledek.append(slite)

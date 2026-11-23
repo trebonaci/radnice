@@ -23,11 +23,22 @@ def test_dodavatel_ze_shrnuti():
 
 def test_vyber_a_smlouva_jedne_zakazky_jsou_jeden_radek_se_dvema_zdroji():
     v = zp("v", "vyberove_rizeni", "2026-11-18", dod="ABC s.r.o.", castka=C)
+    v["zdroje"] = [{"nazev": "Zadávací profil (E-ZAK): T", "url": "https://x/v"}]
     s = zp("s", "smlouva", "2026-11-18", dod="ABC s.r.o.", castka={**C, "s_dph": False})
+    s["zdroje"] = [{"nazev": "Registr smluv: T", "url": "https://x/s"}]
     r = slouc_vyber_a_smlouvu([v, s])
     assert len(r) == 1 and r[0]["druhy"] == ["vyberove_rizeni", "smlouva"]
     assert [x["url"] for x in r[0]["zdroje"]] == ["https://x/v", "https://x/s"]
-    assert r[0]["castka"]["s_dph"] is True          # částka se opíše z jednoho zdroje, nesčítá se
+    # zdroje se liší v DPH: obě částky zůstanou s uvedením zdroje a nesčítají se (review #257)
+    assert r[0]["castka"] is None
+    assert [(c["s_dph"], c["zdroj"]) for c in r[0]["castky"]] == [(True, "Zadávací profil (E-ZAK)"), (False, "Registr smluv")]
+
+
+def test_shodna_castka_zustane_jedna():
+    v = zp("v", "vyberove_rizeni", "2026-11-18", dod="ABC s.r.o.", castka=C)
+    s = zp("s", "smlouva", "2026-11-18", dod="ABC s.r.o.", castka=dict(C))
+    r = slouc_vyber_a_smlouvu([v, s])
+    assert r[0]["castka"] == C and "castky" not in r[0]
 
 
 def test_ruzna_zakazka_se_neslucuje():
