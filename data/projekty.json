@@ -398,7 +398,14 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "ukonceni_plneni": {
+      "datum": "2026-05-07",
+      "citace": "Plnění smlouvy ukončeno 07.05.2026",
+      "url": "https://zakazky.mesto-trebon.cz/contract_display_916.html",
+      "zakazka_id": "ezak-VZ-916",
+      "jistota": "dolozeno"
+    }
   },
   {
     "id": "dps3-energie",
@@ -601,7 +608,8 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "ukonceni_plneni": null
   },
   {
     "id": "fve-cov-brilice",
@@ -929,7 +937,8 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "ukonceni_plneni": null
   },
   {
     "id": "fve-zs-na-sadech",
@@ -1286,7 +1295,8 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "ukonceni_plneni": null
   },
   {
     "id": "hrbitov-sv-alzbety",
@@ -1443,7 +1453,8 @@
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/38781444"
     },
-    "sprm": []
+    "sprm": [],
+    "ukonceni_plneni": null
   },
   {
     "id": "hriste-kopecek",
@@ -1916,7 +1927,14 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "ukonceni_plneni": {
+      "datum": "2026-08-04",
+      "citace": "Plnění smlouvy ukončeno 04.08.2026",
+      "url": "https://zakazky.mesto-trebon.cz/contract_display_929.html",
+      "zakazka_id": "ezak-VZ-929",
+      "jistota": "dolozeno"
+    }
   },
   {
     "id": "jiraskova-oprava-vozovky",
@@ -2241,7 +2259,14 @@
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/30709184"
     },
-    "sprm": []
+    "sprm": [],
+    "ukonceni_plneni": {
+      "datum": "2024-12-13",
+      "citace": "Plnění smlouvy ukončeno 13.12.2024",
+      "url": "https://zakazky.mesto-trebon.cz/contract_display_799.html",
+      "zakazka_id": "ezak-VZ-799",
+      "jistota": "dolozeno"
+    }
   },
   {
     "id": "lazne-balneo-etapa1",
@@ -3021,7 +3046,14 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "ukonceni_plneni": {
+      "datum": "2026-08-24",
+      "citace": "Plnění smlouvy ukončeno 24.08.2026",
+      "url": "https://zakazky.mesto-trebon.cz/contract_display_880.html",
+      "zakazka_id": "ezak-VZ-880",
+      "jistota": "dolozeno"
+    }
   },
   {
     "id": "lazne-budova-g",
@@ -3919,7 +3951,8 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "ukonceni_plneni": null
   },
   {
     "id": "mk-hermankova-daskabat",
@@ -4438,7 +4471,8 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "ukonceni_plneni": null
   },
   {
     "id": "mk-sidliste",
@@ -5369,7 +5403,8 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "ukonceni_plneni": null
   },
   {
     "id": "pristavba-telocvicen",
@@ -6896,7 +6931,8 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "ukonceni_plneni": null
   },
   {
     "id": "propustek-brilice",
@@ -7180,7 +7216,8 @@
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/39062598"
     },
-    "sprm": []
+    "sprm": [],
+    "ukonceni_plneni": null
   },
   {
     "id": "sportovni-hala-revitalizace",
@@ -8746,7 +8783,14 @@
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/35901953"
     },
-    "sprm": []
+    "sprm": [],
+    "ukonceni_plneni": {
+      "datum": "2025-10-20",
+      "citace": "Plnění smlouvy ukončeno 20.10.2025",
+      "url": "https://zakazky.mesto-trebon.cz/contract_display_706.html",
+      "zakazka_id": "ezak-VZ-706",
+      "jistota": "dolozeno"
+    }
   },
   {
     "id": "sportovni-hala-ubytovani",
@@ -10712,7 +10756,8 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "ukonceni_plneni": null
   },
   {
     "id": "u-sveta-sportovni",
@@ -11318,7 +11363,14 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "ukonceni_plneni": {
+      "datum": "2025-12-17",
+      "citace": "Plnění smlouvy ukončeno 17.12.2025",
+      "url": "https://zakazky.mesto-trebon.cz/contract_display_872.html",
+      "zakazka_id": "ezak-VZ-872",
+      "jistota": "dolozeno"
+    }
   },
   {
     "id": "ulice-valy",
@@ -12059,7 +12111,14 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "ukonceni_plneni": {
+      "datum": "2025-12-19",
+      "citace": "Plnění smlouvy ukončeno 19.12.2025",
+      "url": "https://zakazky.mesto-trebon.cz/contract_display_840.html",
+      "zakazka_id": "ezak-VZ-840",
+      "jistota": "dolozeno"
+    }
   },
   {
     "id": "vo-branna",
@@ -12359,7 +12418,8 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "ukonceni_plneni": null
   },
   {
     "id": "vo-taboritska",
@@ -12757,7 +12817,14 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "ukonceni_plneni": {
+      "datum": "2026-04-29",
+      "citace": "Plnění smlouvy ukončeno 29.04.2026",
+      "url": "https://zakazky.mesto-trebon.cz/contract_display_918.html",
+      "zakazka_id": "ezak-VZ-918",
+      "jistota": "dolozeno"
+    }
   },
   {
     "id": "auto-vz-961",
@@ -13321,7 +13388,8 @@
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/40117897"
     },
-    "sprm": []
+    "sprm": [],
+    "ukonceni_plneni": null
   },
   {
     "id": "auto-vz-945",
@@ -13622,7 +13690,8 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "ukonceni_plneni": null
   },
   {
     "id": "auto-vz-941",
@@ -13928,7 +13997,8 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "ukonceni_plneni": null
   },
   {
     "id": "auto-vz-935",
@@ -14630,7 +14700,8 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "ukonceni_plneni": null
   },
   {
     "id": "auto-vz-930",
@@ -15031,7 +15102,14 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "ukonceni_plneni": {
+      "datum": "2026-06-04",
+      "citace": "Plnění smlouvy ukončeno 04.06.2026",
+      "url": "https://zakazky.mesto-trebon.cz/contract_display_930.html",
+      "zakazka_id": "ezak-VZ-930",
+      "jistota": "dolozeno"
+    }
   },
   {
     "id": "auto-vz-914",
@@ -15698,7 +15776,8 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "ukonceni_plneni": null
   },
   {
     "id": "auto-vz-895",
@@ -15942,7 +16021,14 @@
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/34569109"
     },
-    "sprm": []
+    "sprm": [],
+    "ukonceni_plneni": {
+      "datum": "2025-12-15",
+      "citace": "Plnění smlouvy ukončeno 15.12.2025",
+      "url": "https://zakazky.mesto-trebon.cz/contract_display_895.html",
+      "zakazka_id": "ezak-VZ-895",
+      "jistota": "dolozeno"
+    }
   },
   {
     "id": "auto-vz-858",
@@ -16424,7 +16510,8 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "ukonceni_plneni": null
   },
   {
     "id": "auto-vz-848",
@@ -16804,7 +16891,14 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "ukonceni_plneni": {
+      "datum": "2025-10-17",
+      "citace": "Plnění smlouvy ukončeno 17.10.2025",
+      "url": "https://zakazky.mesto-trebon.cz/contract_display_848.html",
+      "zakazka_id": "ezak-VZ-848",
+      "jistota": "dolozeno"
+    }
   },
   {
     "id": "auto-vz-844",
@@ -17134,7 +17228,14 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "ukonceni_plneni": {
+      "datum": "2025-06-27",
+      "citace": "Plnění smlouvy ukončeno 27.06.2025",
+      "url": "https://zakazky.mesto-trebon.cz/contract_display_844.html",
+      "zakazka_id": "ezak-VZ-844",
+      "jistota": "dolozeno"
+    }
   },
   {
     "id": "auto-vz-838",
@@ -17444,7 +17545,14 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "ukonceni_plneni": {
+      "datum": "2025-11-13",
+      "citace": "Plnění smlouvy ukončeno 13.11.2025",
+      "url": "https://zakazky.mesto-trebon.cz/contract_display_838.html",
+      "zakazka_id": "ezak-VZ-838",
+      "jistota": "dolozeno"
+    }
   },
   {
     "id": "auto-vz-835",
@@ -17764,7 +17872,14 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "ukonceni_plneni": {
+      "datum": "2025-04-15",
+      "citace": "Plnění smlouvy ukončeno 15.04.2025",
+      "url": "https://zakazky.mesto-trebon.cz/contract_display_835.html",
+      "zakazka_id": "ezak-VZ-835",
+      "jistota": "dolozeno"
+    }
   },
   {
     "id": "auto-vz-829",
@@ -18557,7 +18672,14 @@
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/34915761"
     },
-    "sprm": []
+    "sprm": [],
+    "ukonceni_plneni": {
+      "datum": "2025-09-30",
+      "citace": "Plnění smlouvy ukončeno 30.09.2025",
+      "url": "https://zakazky.mesto-trebon.cz/contract_display_829.html",
+      "zakazka_id": "ezak-VZ-829",
+      "jistota": "dolozeno"
+    }
   },
   {
     "id": "auto-vz-826",
@@ -19157,7 +19279,14 @@
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/32937788"
     },
-    "sprm": []
+    "sprm": [],
+    "ukonceni_plneni": {
+      "datum": "2025-05-30",
+      "citace": "Plnění smlouvy ukončeno 30.05.2025",
+      "url": "https://zakazky.mesto-trebon.cz/contract_display_826.html",
+      "zakazka_id": "ezak-VZ-826",
+      "jistota": "dolozeno"
+    }
   },
   {
     "id": "auto-vz-824",
@@ -19401,7 +19530,14 @@
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/30443016"
     },
-    "sprm": []
+    "sprm": [],
+    "ukonceni_plneni": {
+      "datum": "2024-12-16",
+      "citace": "Plnění smlouvy ukončeno 16.12.2024",
+      "url": "https://zakazky.mesto-trebon.cz/contract_display_824.html",
+      "zakazka_id": "ezak-VZ-824",
+      "jistota": "dolozeno"
+    }
   },
   {
     "id": "auto-vz-823",
@@ -19707,6 +19843,13 @@
       "jistota": "nase_propojeni",
       "url": "https://smlouvy.gov.cz/smlouva/30583216"
     },
-    "sprm": []
+    "sprm": [],
+    "ukonceni_plneni": {
+      "datum": "2024-11-26",
+      "citace": "Plnění smlouvy ukončeno 26.11.2024",
+      "url": "https://zakazky.mesto-trebon.cz/contract_display_823.html",
+      "zakazka_id": "ezak-VZ-823",
+      "jistota": "dolozeno"
+    }
   }
 ]
