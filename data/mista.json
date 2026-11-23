@@ -37,7 +37,9 @@
         49.003865
       ]
     },
-    "posledni_zmena": "2026-09-09"
+    "posledni_zmena": "2026-09-09",
+    "okruh": "bydleni_pece",
+    "okruh_podle": "téma"
   },
   {
     "id": "dps-3",
@@ -74,7 +76,9 @@
         49.004505
       ]
     },
-    "posledni_zmena": null
+    "posledni_zmena": null,
+    "okruh": "bydleni_pece",
+    "okruh_podle": "téma"
   },
   {
     "id": "sportovni-hala",
@@ -125,7 +129,9 @@
         49.002223
       ]
     },
-    "posledni_zmena": "2026-10-21"
+    "posledni_zmena": "2026-10-21",
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "muzeum",
@@ -157,7 +163,9 @@
         49.003786
       ]
     },
-    "posledni_zmena": "2026-10-07"
+    "posledni_zmena": "2026-10-07",
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "knihovna",
@@ -189,7 +197,9 @@
         49.003865
       ]
     },
-    "posledni_zmena": "2026-10-21"
+    "posledni_zmena": "2026-10-21",
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "dum-svatopluka-cecha-20",
@@ -221,7 +231,9 @@
         49.004505
       ]
     },
-    "posledni_zmena": "2026-10-07"
+    "posledni_zmena": "2026-10-07",
+    "okruh": "bydleni_pece",
+    "okruh_podle": "téma"
   },
   {
     "id": "zs-na-sadech",
@@ -266,7 +278,9 @@
         49.005369
       ]
     },
-    "posledni_zmena": "2026-09-23"
+    "posledni_zmena": "2026-09-23",
+    "okruh": "skoly",
+    "okruh_podle": "téma"
   },
   {
     "id": "zs-sokolska",
@@ -299,7 +313,9 @@
         49.004744
       ]
     },
-    "posledni_zmena": "2026-11-04"
+    "posledni_zmena": "2026-11-04",
+    "okruh": "skoly",
+    "okruh_podle": "téma"
   },
   {
     "id": "ms-slunicko",
@@ -331,7 +347,9 @@
         49.002914
       ]
     },
-    "posledni_zmena": "2026-10-21"
+    "posledni_zmena": "2026-10-21",
+    "okruh": "skoly",
+    "okruh_podle": "téma"
   },
   {
     "id": "preseka-cp3",
@@ -363,7 +381,9 @@
         49.040255
       ]
     },
-    "posledni_zmena": "2026-11-04"
+    "posledni_zmena": "2026-11-04",
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "verejna-doprava",
@@ -377,6 +397,8 @@
     "zasobnik": [],
     "misto": [],
     "geometrie": null,
-    "posledni_zmena": "2026-09-09"
+    "posledni_zmena": "2026-09-09",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   }
 ]

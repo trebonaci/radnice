@@ -406,7 +406,9 @@
       "url": "https://zakazky.mesto-trebon.cz/contract_display_916.html",
       "zakazka_id": "ezak-VZ-916",
       "jistota": "dolozeno"
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "dps3-energie",
@@ -611,7 +613,9 @@
       }
     ],
     "termin_dokonceni": null,
-    "ukonceni_plneni": null
+    "ukonceni_plneni": null,
+    "okruh": "bydleni_pece",
+    "okruh_podle": "téma"
   },
   {
     "id": "fve-cov-brilice",
@@ -941,7 +945,9 @@
       }
     ],
     "termin_dokonceni": null,
-    "ukonceni_plneni": null
+    "ukonceni_plneni": null,
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "fve-zs-na-sadech",
@@ -1300,7 +1306,9 @@
       }
     ],
     "termin_dokonceni": null,
-    "ukonceni_plneni": null
+    "ukonceni_plneni": null,
+    "okruh": "skoly",
+    "okruh_podle": "téma"
   },
   {
     "id": "hrbitov-sv-alzbety",
@@ -1459,7 +1467,9 @@
     },
     "sprm": [],
     "termin_dokonceni": null,
-    "ukonceni_plneni": null
+    "ukonceni_plneni": null,
+    "okruh": "rozvoj_sprava",
+    "okruh_podle": "téma"
   },
   {
     "id": "hriste-kopecek",
@@ -1940,7 +1950,9 @@
       "url": "https://zakazky.mesto-trebon.cz/contract_display_929.html",
       "zakazka_id": "ezak-VZ-929",
       "jistota": "dolozeno"
-    }
+    },
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "jiraskova-oprava-vozovky",
@@ -2283,7 +2295,9 @@
       "url": "https://zakazky.mesto-trebon.cz/contract_display_799.html",
       "zakazka_id": "ezak-VZ-799",
       "jistota": "dolozeno"
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "lazne-balneo-etapa1",
@@ -3071,7 +3085,9 @@
       "url": "https://zakazky.mesto-trebon.cz/contract_display_880.html",
       "zakazka_id": "ezak-VZ-880",
       "jistota": "dolozeno"
-    }
+    },
+    "okruh": "spolecnosti",
+    "okruh_podle": "téma"
   },
   {
     "id": "lazne-budova-g",
@@ -3971,7 +3987,9 @@
       }
     ],
     "termin_dokonceni": null,
-    "ukonceni_plneni": null
+    "ukonceni_plneni": null,
+    "okruh": "spolecnosti",
+    "okruh_podle": "téma"
   },
   {
     "id": "mk-hermankova-daskabat",
@@ -4502,7 +4520,9 @@
       "jistota": "dolozeno",
       "podle": "smlouva"
     },
-    "ukonceni_plneni": null
+    "ukonceni_plneni": null,
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "mk-sidliste",
@@ -5445,7 +5465,9 @@
       "jistota": "dolozeno",
       "podle": "dodatek č. 2"
     },
-    "ukonceni_plneni": null
+    "ukonceni_plneni": null,
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "pristavba-telocvicen",
@@ -6984,7 +7006,9 @@
       "jistota": "dolozeno",
       "podle": "dodatek č. 5"
     },
-    "ukonceni_plneni": null
+    "ukonceni_plneni": null,
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "propustek-brilice",
@@ -7270,7 +7294,9 @@
     },
     "sprm": [],
     "termin_dokonceni": null,
-    "ukonceni_plneni": null
+    "ukonceni_plneni": null,
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "sportovni-hala-revitalizace",
@@ -8916,7 +8942,9 @@
       "url": "https://zakazky.mesto-trebon.cz/contract_display_706.html",
       "zakazka_id": "ezak-VZ-706",
       "jistota": "dolozeno"
-    }
+    },
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "sportovni-hala-ubytovani",
@@ -10905,7 +10933,9 @@
       "jistota": "dolozeno",
       "podle": "dodatek č. 2"
     },
-    "ukonceni_plneni": null
+    "ukonceni_plneni": null,
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "u-sveta-sportovni",
@@ -11529,7 +11559,9 @@
       "url": "https://zakazky.mesto-trebon.cz/contract_display_872.html",
       "zakazka_id": "ezak-VZ-872",
       "jistota": "dolozeno"
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "ulice-valy",
@@ -12288,7 +12320,9 @@
       "url": "https://zakazky.mesto-trebon.cz/contract_display_840.html",
       "zakazka_id": "ezak-VZ-840",
       "jistota": "dolozeno"
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "vo-branna",
@@ -12600,7 +12634,9 @@
       "jistota": "dolozeno",
       "podle": "dodatek č. 2"
     },
-    "ukonceni_plneni": null
+    "ukonceni_plneni": null,
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "vo-taboritska",
@@ -13006,7 +13042,9 @@
       "url": "https://zakazky.mesto-trebon.cz/contract_display_918.html",
       "zakazka_id": "ezak-VZ-918",
       "jistota": "dolozeno"
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-961",
@@ -13582,7 +13620,9 @@
       "jistota": "dolozeno",
       "podle": "dodatek č. 2"
     },
-    "ukonceni_plneni": null
+    "ukonceni_plneni": null,
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-945",
@@ -13885,7 +13925,9 @@
       }
     ],
     "termin_dokonceni": null,
-    "ukonceni_plneni": null
+    "ukonceni_plneni": null,
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-941",
@@ -14203,7 +14245,9 @@
       "jistota": "dolozeno",
       "podle": "smlouva"
     },
-    "ukonceni_plneni": null
+    "ukonceni_plneni": null,
+    "okruh": "bydleni_pece",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-935",
@@ -14917,7 +14961,9 @@
       "jistota": "dolozeno",
       "podle": "dodatek č. 1"
     },
-    "ukonceni_plneni": null
+    "ukonceni_plneni": null,
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-930",
@@ -15326,7 +15372,9 @@
       "url": "https://zakazky.mesto-trebon.cz/contract_display_930.html",
       "zakazka_id": "ezak-VZ-930",
       "jistota": "dolozeno"
-    }
+    },
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-914",
@@ -16077,7 +16125,9 @@
       "jistota": "dolozeno",
       "podle": "smlouva"
     },
-    "ukonceni_plneni": null
+    "ukonceni_plneni": null,
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-895",
@@ -16339,7 +16389,9 @@
       "url": "https://zakazky.mesto-trebon.cz/contract_display_895.html",
       "zakazka_id": "ezak-VZ-895",
       "jistota": "dolozeno"
-    }
+    },
+    "okruh": "bydleni_pece",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-858",
@@ -16823,7 +16875,9 @@
       }
     ],
     "termin_dokonceni": null,
-    "ukonceni_plneni": null
+    "ukonceni_plneni": null,
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-848",
@@ -17221,7 +17275,9 @@
       "url": "https://zakazky.mesto-trebon.cz/contract_display_848.html",
       "zakazka_id": "ezak-VZ-848",
       "jistota": "dolozeno"
-    }
+    },
+    "okruh": "skoly",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-844",
@@ -17559,7 +17615,9 @@
       "url": "https://zakazky.mesto-trebon.cz/contract_display_844.html",
       "zakazka_id": "ezak-VZ-844",
       "jistota": "dolozeno"
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-838",
@@ -17877,7 +17935,9 @@
       "url": "https://zakazky.mesto-trebon.cz/contract_display_838.html",
       "zakazka_id": "ezak-VZ-838",
       "jistota": "dolozeno"
-    }
+    },
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-835",
@@ -18296,7 +18356,9 @@
       "url": "https://zakazky.mesto-trebon.cz/contract_display_835.html",
       "zakazka_id": "ezak-VZ-835",
       "jistota": "dolozeno"
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-829",
@@ -19107,7 +19169,9 @@
       "url": "https://zakazky.mesto-trebon.cz/contract_display_829.html",
       "zakazka_id": "ezak-VZ-829",
       "jistota": "dolozeno"
-    }
+    },
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-826",
@@ -19715,7 +19779,9 @@
       "url": "https://zakazky.mesto-trebon.cz/contract_display_826.html",
       "zakazka_id": "ezak-VZ-826",
       "jistota": "dolozeno"
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-824",
@@ -19967,7 +20033,9 @@
       "url": "https://zakazky.mesto-trebon.cz/contract_display_824.html",
       "zakazka_id": "ezak-VZ-824",
       "jistota": "dolozeno"
-    }
+    },
+    "okruh": "bydleni_pece",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-823",
@@ -20291,6 +20359,8 @@
       "url": "https://zakazky.mesto-trebon.cz/contract_display_823.html",
       "zakazka_id": "ezak-VZ-823",
       "jistota": "dolozeno"
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   }
 ]

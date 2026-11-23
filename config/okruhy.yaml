@@ -1,0 +1,101 @@
+# Šest okruhů webu (audit 23. 11. 2026, dohoda s Codexem, potvrdil Ondřej 23. 11. 2026).
+# Každé téma patří právě do jednoho okruhu; téma zůstává jako krátký štítek u položky.
+# Položka se řadí podle toho, čeho se týká, ne kdo ji zajišťuje. Kód: pipeline/okruhy.py.
+
+# 16 témat (stejné klíče a názvy jako OBLAST ve web/site/sablona.html; hlídá test)
+temata:
+  doprava: Doprava a ulice
+  voda_odpady: Voda, kanalizace a odpady
+  skolstvi: Školy a školky
+  socialni: Sociální služby
+  sport: Sport
+  kultura: Kultura a památky
+  komunity_spolky: Spolky a setkávání
+  bydleni: Bydlení
+  zelen: Zeleň
+  uzemni_plan: Územní plán
+  lazne: Lázně a městské firmy
+  majetek: Majetek města
+  rozpocet: Rozpočet a dotace
+  zakazky: Investice a zakázky
+  urad: Úřad a samospráva
+  jine: Ostatní
+
+okruhy:
+  - id: doprava_prostor
+    nazev: Doprava a veřejný prostor
+    popis: Ulice, chodníky, parkování, cyklostezky, zeleň, voda a odpady
+    temata: [doprava, voda_odpady, zelen]
+  - id: bydleni_pece
+    nazev: Bydlení a péče
+    popis: Městské byty, sociální služby, péče o seniory, zdravotní služby
+    temata: [bydleni, socialni]
+  - id: skoly
+    nazev: Školy a školky
+    popis: Budovy, jídelny, vybavení a provoz
+    temata: [skolstvi]
+  - id: sport_kultura
+    nazev: Sport, kultura a spolky
+    popis: Sportoviště, kulturní akce, památky, komunitní život
+    temata: [sport, kultura, komunity_spolky]
+  - id: spolecnosti
+    nazev: Městské společnosti
+    popis: Lázně a další městské firmy – hospodaření, vedení, rozhodnutí o provozu
+    temata: [lazne]
+  - id: rozvoj_sprava
+    nazev: Rozvoj a správa města
+    popis: Územní plán, rozpočet, majetek, fungování radnice
+    temata: [uzemni_plan, urad, majetek, rozpocet, zakazky, jine]
+
+# Kategorie usnesení (config/kategorie.yaml) → téma; kategorie se stejným klíčem jako téma se nepřekládá.
+kategorie_usneseni:
+  samosprava: urad
+  personalni: urad
+  prispevkove_organizace: urad
+  podnety: urad
+  majetek_najem: majetek
+  majetek_prevod: majetek
+  rozpocet: rozpocet
+  dotace_dary: rozpocet
+  investice: zakazky
+  verejne_zakazky: zakazky
+  lazne_spolecnosti: lazne
+  ostatni: jine
+
+# Náměty Strategického plánu (SPRM): osa, případně „osa / opatření“ → téma.
+sprm:
+  Doprava: doprava
+  Životní prostředí: zelen
+  Životní prostředí / 3. Vodovody, kanalizace: voda_odpady
+  Sociální oblast: socialni
+  Sociální oblast / 3. Mateřské školy: skolstvi
+  Sociální oblast / 4. Základní školy: skolstvi
+  Sociální oblast / 5. Střední školy: skolstvi
+  Sociální oblast / 6. Volnočasové aktivity: komunity_spolky
+  Cestovní ruch: kultura
+  Cestovní ruch / 1. Lázeňství: lazne
+  Cestovní ruch / 4. Turistika a cykloturistika: doprava
+  Kultura: kultura
+  Podnikání: jine
+  Podnikání / 3. Spolupráce školy-podnikatelé: skolstvi
+  Podnikání / 5. Rozvoj bydlení: bydleni
+  Podnikání / 6. Brownfieldy: uzemni_plan
+
+# Věcné téma z názvu (naše propojení). Použije se u položek bez tématu (smlouvy na projekt, dotace)
+# a u usnesení navíc k tématům z kategorií – usnesení o konkrétním místě nebo službě tak dostane i věcný
+# okruh, ne jen „Rozvoj a správa“. U položky s jedním okruhem rozhoduje první shoda (pořadí je záměrné:
+# bytový dům v Lázeňské ulici je bydlení, parkoviště pro lázně je doprava). „DPS“ s číslem je dům
+# s pečovatelskou službou, samotné „DPS“ v názvu smlouvy je dokumentace pro provedení stavby.
+# Samotná „ulice“ okruh neurčuje (adresa domu není doprava), jen úprava nebo rekonstrukce ulice.
+vzory:
+  - {id: uzemni-plan, tema: uzemni_plan, vzor: 'územní\w* plán|regulační\w* plán'}
+  - {id: skoly, tema: skolstvi, vzor: '\bškol(?!en)|\bZŠ\b|\bMŠ\b|školk|Dom\w* dětí a mládeže|\bDDM\b'}
+  - {id: socialni, tema: socialni, vzor: '\bDPS ?(\d|I{1,3}[A-C]?\b|IV\b|Třeboň)|pečovatelsk|senior|důchodc|hospic|sociáln'}
+  - {id: byty, tema: bydleni, vzor: '\bbyt(u|y|ů|ech|ě)?\b|\bbytov\w* (dům|domu|domě|domy|jednot|komis)'}
+  - {id: sport, tema: sport, vzor: 'sport|tělocvič|tělovýchov|hřiš|bazén|stadion'}
+  - {id: kultura, tema: kultura, vzor: 'muze|knihovn|divadl|kaple|kostel|památ|kultur'}
+  - {id: spolky, tema: komunity_spolky, vzor: 'spol(ek|k\w)|zájmov\w* činnost|klubovn'}
+  - {id: voda, tema: voda_odpady, vzor: 'vodovod|kanaliz|\bČOV\b|dešťov|odpad|propust|rybník|vodohospodář'}
+  - {id: zelen, tema: zelen, vzor: 'zeleň|\balej\b|\bsad(y|ů)\b|stromů|kácení'}
+  - {id: doprava, tema: doprava, vzor: 'komunikac|\bMK\b|chodník|parkoviš|parkovac|cyklo|stezk|(rekonstrukc|úprav|oprav|prostoru)\w* ulic|silnic|vozovk|autobus|jízden|dopravn|BESIP'}
+  - {id: lazne, tema: lazne, vzor: 'lázn|\bLDA\b|Aurora|autokemp'}

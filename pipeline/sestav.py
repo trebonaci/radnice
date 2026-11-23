@@ -21,6 +21,7 @@ from pathlib import Path
 import yaml
 
 from pipeline import stitky as modul_stitky
+from pipeline import okruhy as modul_okruhy
 from pipeline import smlouvy as modul_smlouvy
 from pipeline.jmena import zakryj_jmena
 from pipeline import dotace as modul_dotace
@@ -346,6 +347,8 @@ def sestav(koren: Path | None = None) -> tuple[dict[str, list], list[str]]:
     stitky_cfg = modul_stitky.nacti_ciselnik(koren)
     kategorie = yaml.safe_load((koren / "config" / "kategorie.yaml").read_text(encoding="utf-8"))
     chyby += modul_stitky.zkontroluj_ciselnik(stitky_cfg, kategorie)
+    okruhy_cfg = modul_okruhy.nacti(koren)
+    chyby += modul_okruhy.zkontroluj(okruhy_cfg, kategorie)
     jednani, usneseni, hlasovani = [], [], []
     for jednani_id in sorted(manifest):
         if not (koren / "anotace" / f"{jednani_id}.yaml").exists():
@@ -427,6 +430,9 @@ def sestav(koren: Path | None = None) -> tuple[dict[str, list], list[str]]:
     # harmonogram investic, zásobníku a dlouhodobých neinvestičních projektů (#194)
     vystup["harmonogram"], chyby_h = modul_harmonogram.sestav(koren, vystup, vystup["projekty"], vystup["zasobnik"])
     chyby += chyby_h
+    # šest okruhů webu (audit 23. 11. 2026): téma → okruh u všech položek, usnesení i věcný okruh
+    chyby += modul_okruhy.oznac(okruhy_cfg, vystup)
+    vystup["okruhy"] = modul_okruhy.ciselnik(okruhy_cfg)
     # přehled investic roku (kapitálové výdaje po změnách, #138) – jen když je rozpočet stažený
     roky = sorted({r["rok"] for r in rozpocet})
     vystup["investice"] = [modul_rozpocet_zmeny.prehled_investic(rozpocet, rozpocet_zmeny, vystup["projekty"], r)
@@ -458,7 +464,7 @@ def main() -> int:
         (data / f"{nazev}.json").write_text(serializuj(obsah), encoding="utf-8")
     print(f"jednání {len(vystup['jednani'])}, usnesení {len(vystup['usneseni'])}, hlasování {len(vystup['hlasovani'])}, "
           f"zakázky {len(vystup['zakazky'])}, smlouvy {len(vystup['smlouvy'])}, "
-          f"položky RO {len(vystup['rozpoctova_opatreni'])}, rozpočet {len(vystup['rozpocet'])}, změny rozpočtu {len(vystup['rozpocet_zmeny'])}, projekty {len(vystup['projekty'])}, zásobník {len(vystup['zasobnik'])}, ukazatele {len(vystup['ukazatele'])}, mapa {sum(1 for m in vystup['mapa'] if m['geometrie'])}/{len(vystup['mapa'])}, místa {len(vystup['mista'])}, změny {len(vystup['zmeny'])}, přehled {len(vystup['prehled'])}, dotace {len(vystup['dotace'])}")
+          f"položky RO {len(vystup['rozpoctova_opatreni'])}, rozpočet {len(vystup['rozpocet'])}, změny rozpočtu {len(vystup['rozpocet_zmeny'])}, projekty {len(vystup['projekty'])}, zásobník {len(vystup['zasobnik'])}, ukazatele {len(vystup['ukazatele'])}, mapa {sum(1 for m in vystup['mapa'] if m['geometrie'])}/{len(vystup['mapa'])}, místa {len(vystup['mista'])}, změny {len(vystup['zmeny'])}, přehled {len(vystup['prehled'])}, okruhy {len(vystup['okruhy'])}, dotace {len(vystup['dotace'])}")
     for c in chyby:
         print("CHYBA:", c, file=sys.stderr)
     return 1 if chyby else 0
