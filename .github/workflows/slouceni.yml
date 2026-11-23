@@ -172,11 +172,14 @@ jobs:
                     ? `Automaticky sloučeno (${sha.slice(0, 7)}): PR z denního běhu, CI zelená, bez nevyřešených nálezů P0/P1 (bez Codex review, #166). Sloučení ≠ zveřejnění.`
                     : `Automaticky sloučeno (${sha.slice(0, 7)}): CI zelená, Codex review dokončeno, bez nevyřešených nálezů P0/P1. Sloučení ≠ zveřejnění.`});
                 core.info(`${kdo}: sloučeno`);
-                // sloučení přes GITHUB_TOKEN nespustí push workflow (#200): web radnice.trebonaci.cz se nasadí přímo
+                // sloučení přes GITHUB_TOKEN nespustí push workflow (#200): do main → nasadit web přímo;
+                // do větve jiného PR → spustit na ní CI, jinak nadřazený PR zůstane bez kontroly i bez review (#233)
+                const cil = pr.base.ref;
                 try {
-                  await github.rest.actions.createWorkflowDispatch({owner, repo, workflow_id: 'web.yml', ref: 'main'});
+                  await github.rest.actions.createWorkflowDispatch({owner, repo,
+                    workflow_id: cil === 'main' ? 'web.yml' : 'ci.yml', ref: cil});
                 } catch (e) {
-                  core.warning(`${kdo}: spuštění web.yml selhalo: ${e.message}`);
+                  core.warning(`${kdo}: spuštění ${cil === 'main' ? 'web.yml' : 'ci.yml'} na ${cil} selhalo: ${e.message}`);
                 }
               } catch (e) {
                 core.warning(`${kdo}: sloučení selhalo: ${e.message}`);
