@@ -163,3 +163,15 @@ def test_rucni_bod_se_zdrojem_a_priblizny(tmp_path):
     assert chyby == [] and casti[0]["jistota"] == "dolozeno" and casti[0]["zdroj_url"] == "https://z.cz/642"
     casti, _, _ = mapa.vyres_rucni([{"bod": [49.0039, 14.7554], "priblizne": True}], r, "k")
     assert casti[0]["jistota"] == "nase_propojeni" and casti[0]["zdroj"] == "ručně"
+
+
+def test_mista_upresnena_23_11(tmp_path):
+    """Hřbitov sv. Alžběty, Jordánova kašna a hráz rybníka Veský mají místo ze seznamu názvů."""
+    from pathlib import Path
+    nazvy = mapa.nacti_nazvy(Path(__file__).resolve().parents[1])
+    r = mapa.Ruian(_koren(tmp_path))
+    for nazev, bod in [("Hřbitov sv. Alžběty – stavební úpravy", [14.75633, 49.00509]),
+                       ("Stavební úpravy pro technologii Jordánovy kašny", [14.771195, 49.003923]),
+                       ("Oprava hráze rybníka Veský – 3. etapa", [14.7275592, 48.8712358])]:
+        casti, chyby = mapa.podle_nazvu(nazev, nazvy, r)
+        assert chyby == [] and casti[0]["bod"] == bod and casti[0]["jistota"] == "nase_propojeni", nazev

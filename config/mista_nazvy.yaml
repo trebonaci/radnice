@@ -24,6 +24,12 @@ mista:
     misto: [{bod: [49.03294, 14.80616], zdroj: OpenStreetMap, zdroj_url: 'https://www.openstreetmap.org/relation/4018884'}]
   - vzor: '\bNa Kopečku\b'
     misto: [{bod: [49.01207, 14.78756], priblizne: true, zdroj: OpenStreetMap, zdroj_url: 'https://www.openstreetmap.org/node/4217489237'}]
+  - vzor: '[Hh]řbitov\w* sv\. Alžběty'
+    misto: [{bod: [49.00509, 14.75633], zdroj: OpenStreetMap, zdroj_url: 'https://www.openstreetmap.org/way/227676500'}]   # upřesnění 23. 11. 2026: hřbitov severně od Svobody 266
+  - vzor: 'Jordánov\w* kašn'
+    misto: [{bod: [49.003923, 14.771195], priblizne: true, zdroj: RÚIAN – střed adres Masarykova náměstí}]   # upřesnění 23. 11. 2026: kašna uprostřed náměstí
+  - vzor: 'rybník\w* Veský'
+    misto: [{bod: [48.8712358, 14.7275592], zdroj: OpenStreetMap, zdroj_url: 'https://www.openstreetmap.org/way/51684609'}]   # upřesnění 23. 11. 2026; rybník leží v k. ú. Jílovice u Trhových Svinů (RÚIAN), mimo území Třeboně
   - vzor: '\bJablonského\b'
     misto: [{ulice: Jablonského}]
   - vzor: 'Břilic'
