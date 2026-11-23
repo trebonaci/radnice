@@ -49,7 +49,8 @@ def usneseni_pro_web(usneseni: list[dict], jednani: list[dict]) -> list[dict]:
             "vysledek": u.get("vysledek_hlasovani"), "tema": u.get("tema"), "tema_ai": u.get("tema_ai"),
             "shrnuti": po.get("text") or u.get("shrnuti"),
             "shrnuti_ai": bool(u.get("pro_obcany_ai") if po.get("text") else u.get("shrnuti_ai")),
-            "kategorie": u.get("kategorie") or ["ostatni"], "strana": strany[0] if strany else None,
+            "kategorie": u.get("kategorie") or ["ostatni"], "okruh": u.get("okruh"), "okruhy": u.get("okruhy") or [],
+            "strana": strany[0] if strany else None,
             "url": f"{url}#page={strany[0]}" if url and strany else url, "zapis": url,
         })
     vysledek.sort(key=lambda x: (x["datum"] or "", x["organ"] or "", x["cislo"] or ""), reverse=True)
@@ -70,6 +71,7 @@ def sestav(nahled: bool = False) -> str:
         "__ZASOBNIK__": _vloz(_json("zasobnik")),
         "__MISTA__": _vloz(_json("mista")),
         "__ZMENY__": _vloz(_json("zmeny")),
+        "__OKRUHY__": _vloz(_json("okruhy")),
         "__HARMONOGRAM__": _vloz(_json("harmonogram")),
         "__UKAZATELE__": _vloz(_json("ukazatele")),
         "__USNESENI__": _vloz(usneseni_pro_web(_json("usneseni"), _json("jednani"))),
