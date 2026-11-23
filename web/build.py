@@ -64,6 +64,9 @@ def sestav(nahled: bool = False) -> str:
               else f"Data aktualizována {datum}" if datum else "Data z veřejných zdrojů")
     nahrady = {
         "__DATA__": _vloz(_json("projekty")),
+        "__MAPA__": _vloz(_json("mapa")),
+        "__GISCSS__": (SABLONA.parent / "mapa.css").read_text(encoding="utf-8"),
+        "__GISJS__": (SABLONA.parent / "mapa.js").read_text(encoding="utf-8"),
         "__ZASOBNIK__": _vloz(_json("zasobnik")),
         "__MISTA__": _vloz(_json("mista")),
         "__ZMENY__": _vloz(_json("zmeny")),
@@ -93,6 +96,8 @@ def main() -> None:
     (cil / "index.html").write_text(sestav(args.nahled), encoding="utf-8")
     # obrázky šablony (logo Třeboňáků)
     shutil.copytree(SABLONA.parent / "obr", cil / "obr", dirs_exist_ok=True)
+    # knihovna mapy Leaflet (#208) – z vlastního webu, ne z CDN
+    shutil.copytree(SABLONA.parent / "leaflet", cil / "leaflet", dirs_exist_ok=True)
     # Cloudflare Pages: bez indexování náhledů, základní bezpečnostní hlavičky
     (cil / "_headers").write_text(
         "/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n"

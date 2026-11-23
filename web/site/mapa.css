@@ -1,0 +1,58 @@
+.gis-intro{max-width:65ch}
+body[data-str=mapa] #karty{max-width:1180px}
+.gis-controls{display:flex;flex-wrap:wrap;align-items:end;gap:12px;margin:18px 0}
+.gis-controls label{display:grid;gap:5px;font-weight:650;font-size:.88rem;min-width:0}
+.gis-controls label:first-child{flex:1 1 240px}
+.gis-controls input,.gis-controls select,.gis-controls button,.gis-reset{
+  padding:10px 12px;border:1px solid var(--border-mid);border-radius:8px;
+  min-height:44px;background:white;color:var(--ink);font:inherit
+}
+.gis-controls select{max-width:100%}
+.gis-controls button,.gis-reset{cursor:pointer}
+.gis-controls [aria-pressed=true]{background:var(--pond);color:var(--pondink);border-color:var(--pond)}
+.gis-controls [role=group]{display:flex;gap:4px}
+.gis-summary{color:var(--mute);margin:8px 0 14px}
+.gis-layout{display:grid;grid-template-columns:minmax(0,1.9fr) minmax(260px,1fr);gap:14px;align-items:start}
+.gis-layout.is-list{grid-template-columns:minmax(0,1fr)}
+.gis-map-frame,.gis-results,.gis-card,.gis-overlap{background:var(--card);border:1px solid var(--border-mid);border-radius:14px}
+.gis-map-frame{padding:10px;min-width:0}
+.gis-canvas{height:clamp(360px,60vh,660px);background:var(--blue-bg);border-radius:8px;isolation:isolate}
+.gis-canvas[hidden]{display:none}
+.gis-tools{display:flex;flex-wrap:wrap;align-items:center;gap:12px;padding:8px 0 2px}
+.gis-key{display:flex;flex-wrap:wrap;gap:6px 12px;list-style:none;padding:0;margin:6px 0;font-size:.85rem}
+.gis-key li{display:flex;align-items:center;gap:5px}
+.gis-pin,.gis-key i{display:block;width:16px;height:16px;border:2px solid white;border-radius:50%;
+  background:var(--gis-color,#006684);box-shadow:0 0 0 1px var(--gis-color,#006684)}
+.gis-pin.approx{background:white;border:2px dashed var(--gis-color);box-shadow:none}
+.gis-pin.selected{outline:2px solid var(--navy);outline-offset:3px}
+.gis-map-frame .leaflet-marker-icon{background:none;border:0}
+.gis-path{cursor:pointer}
+.gis-results{padding:12px;min-width:0}
+.gis-results h2,.gis-card h2,.gis-overlap h2{margin:0 0 10px;font-size:1.04rem}
+.gis-results ul,.gis-overlap ul{padding:0;margin:0;list-style:none}
+.gis-results .gis-list{max-height:470px;overflow:auto;overscroll-behavior:contain}
+.gis-layout.is-list .gis-results .gis-list{max-height:none;overflow:visible}
+.gis-row{width:100%;text-align:left;background:transparent;border:0;border-bottom:1px solid var(--border-color);
+  padding:10px 8px;cursor:pointer;color:var(--ink);font:inherit}
+.gis-row small{display:block;color:var(--mute);margin-top:3px}
+.gis-row[aria-pressed=true]{background:var(--green-bg);box-shadow:inset 3px 0 var(--pond)}
+.gis-card,.gis-overlap{padding:12px;margin:8px 0;scroll-margin-top:100px}
+.gis-card p{margin:7px 0}
+.gis-card h2{overflow-wrap:anywhere}
+.gis-card .gis-detail{display:inline-block;font-weight:700;padding:8px 0}
+.gis-tools .pozn,.gis-map-frame .pozn,.gis-card .pozn{margin:6px 0}
+.gis-map-frame .gis-status{margin:4px 0}
+.gis-overlap:empty,.gis-card:empty{display:none}
+.gis-panel{min-width:0;display:grid;gap:6px}
+@media(max-width:760px){
+  .gis-layout{grid-template-columns:minmax(0,1fr)}
+  .gis-canvas{height:clamp(290px,49vh,480px)}
+  .gis-results .gis-list{max-height:none;overflow:visible}
+  .gis-controls label:not(:first-child){flex:1 1 135px}
+  .gis-controls [role=group]{flex:1 1 100%}
+}
+
+.zs > [id^="priprava-"]{scroll-margin-top:100px}
+
+.gis-pin.gis-service,.gis-key i.gis-service{border-radius:3px}
+.gis-card .zm{margin:8px 0}
