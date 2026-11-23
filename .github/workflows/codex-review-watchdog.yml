@@ -16,7 +16,9 @@ concurrency:
 
 permissions:
   contents: read
-  pull-requests: read
+  # štítek potrebuje-cloveka na PR vyžaduje zápis do pull requests; s „read“ hlídač končil chybou 403
+  # a PR nikdy nepředal (běh 45280868729, #238)
+  pull-requests: write
   issues: write
 
 jobs:
