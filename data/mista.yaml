@@ -27,6 +27,7 @@ mista:
     oblast: socialni
     zmeny: ['DPS 3\b', 'DPS III']
     investice: [dps3-energie]
+    misto: [{adresa: Svatopluka Čecha 20}]
   - id: sportovni-hala
     nazev: Sportovní hala
     oblast: sport
@@ -39,10 +40,12 @@ mista:
     nazev: Muzeum města Třeboně
     oblast: kultura
     zmeny: ['Muzeum']
+    misto: [{cp: 1, cast_obce: Třeboň I}]   # Muzeum a galerie Třeboň, Masarykovo nám. 1
   - id: knihovna
     nazev: Městská knihovna
     oblast: kultura
     zmeny: ['[Kk]nihovn']
+    misto: [{adresa: Chelčického 2}]
   - id: dum-svatopluka-cecha-20
     nazev: Dům čp. 20/II v ulici Svatopluka Čecha
     oblast: socialni
@@ -68,6 +71,7 @@ mista:
     nazev: MŠ Sluníčko
     oblast: skolstvi
     zmeny: ['MŠ Sluníčko']
+    misto: [{adresa: Svobody 1018}]   # OZV 9/2025: MŠ Sluníčko, Svobody 1018
   - id: preseka-cp3
     nazev: Budova čp. 3 v Přesece
     oblast: sport

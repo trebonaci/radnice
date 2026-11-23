@@ -11,3 +11,8 @@ rozpocet:
 vazby:
   hledat: ["Zkapacitnění propustku - Třeboň, Břilice"]
   vyloucit: []
+misto:   # propustek na p. č. 4203 a 4194 k. ú. Břilice, silnice Břilice – Dvorce (zakázka VZ 960); definiční bod menší parcely 4203 z RÚIAN
+  - bod: [49.014763, 14.729945]
+    popis: pozemek p. č. 4203, k. ú. Břilice
+    zdroj: RÚIAN – definiční bod parcely
+    zdroj_url: 'https://zakazky.mesto-trebon.cz/contract_display_960.html'

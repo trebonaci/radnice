@@ -121,6 +121,11 @@ polozky:
     nazev: Městský bytový dům v Lázeňské ulici
     oblast: bydleni
     vazby: {hledat: ['bytového domu v ul\. Lázeňská']}
+    misto:   # novostavba na p. č. 1087/17 k. ú. Třeboň (zakázka VZ 642); definiční bod parcely z RÚIAN
+      - bod: [49.003963, 14.755434]
+        popis: pozemek p. č. 1087/17
+        zdroj: RÚIAN – definiční bod parcely
+        zdroj_url: 'https://zakazky.mesto-trebon.cz/contract_display_642.html'
   # --- Lázně (nositel Slatinné lázně Třeboň) ---
   - id: lazne-objekt-b
     nazev: Modernizace objektu B Lázeňského domu Aurora

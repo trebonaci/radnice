@@ -248,13 +248,18 @@ function openGis(el) {
       map = L.map(canvas,{scrollWheelZoom:false, attributionControl:false,zoomControl:false});
       L.control.zoom({zoomInTitle:'Přiblížit',zoomOutTitle:'Oddálit'}).addTo(map);
       L.control.attribution({prefix:false}).addTo(map);
-      // podklad: státní mapy ČÚZK (rozhodnutí Ondřeje 23. 11. 2026) – ZTM a ortofoto ve Web Mercatoru, bez limitu „heavy use“
-      // základní mapa ztlumená do šedé (třída gis-tlumena v mapa.css), aby vynikly značky projektů (připomínka 23. 11. 2026)
-      const cuzk = (sluzba, nazev, trida) => L.tileLayer("https://ags.cuzk.gov.cz/arcgis1/rest/services/" + sluzba + "/MapServer/tile/{z}/{y}/{x}", {
-        maxZoom:19, className:trida || "", attribution:'© <a href="https://geoportal.cuzk.gov.cz">ČÚZK</a> – ' + nazev,
+      // podklad: OpenStreetMap (rozhodnutí Ondřeje 23. 11. 2026 – ČÚZK ZTM byla špatně čitelná), mírně odbarvený
+      // (třída gis-osm v mapa.css), aby barevné značky vynikly; letecký snímek dál z ČÚZK.
+      // Dlaždice tile.openstreetmap.org: povolené při malém provozu s viditelnou atribucí (Tile Usage Policy).
+      const osm = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom:19, className:"gis-osm",
+        attribution:'© <a href="https://www.openstreetmap.org/copyright">přispěvatelé OpenStreetMap</a>',
       });
-      const podklady = {"Základní mapa": cuzk("ZTM_WM", "Základní topografická mapa", "gis-tlumena"), "Letecký snímek": cuzk("ORTOFOTO_WM", "Ortofoto ČR")};
-      const tiles = podklady["Základní mapa"].addTo(map);
+      const ortofoto = L.tileLayer("https://ags.cuzk.gov.cz/arcgis1/rest/services/ORTOFOTO_WM/MapServer/tile/{z}/{y}/{x}", {
+        maxZoom:19, attribution:'© <a href="https://geoportal.cuzk.gov.cz">ČÚZK</a> – Ortofoto ČR',
+      });
+      const podklady = {"Mapa": osm, "Letecký snímek": ortofoto};
+      const tiles = podklady["Mapa"].addTo(map);
       L.control.layers(podklady, null, {position:"topright", collapsed:false}).addTo(map);
       for (const vrstva of Object.values(podklady))
         vrstva.on("tileerror",() => { message.textContent = "Část podkladové mapy se nepodařilo načíst. Značky a seznam jsou dál k dispozici."; });

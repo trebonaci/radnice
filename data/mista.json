@@ -54,8 +54,26 @@
       }
     ],
     "zasobnik": [],
-    "misto": [],
-    "geometrie": null,
+    "misto": [
+      {
+        "druh": "adresa",
+        "nazev": "Svatopluka Čecha 20",
+        "bod": [
+          14.765423,
+          49.004505
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "RÚIAN",
+        "ruian_kod": "14831945"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.765423,
+        49.004505
+      ]
+    },
     "posledni_zmena": null
   },
   {
@@ -119,8 +137,26 @@
     ],
     "investice": [],
     "zasobnik": [],
-    "misto": [],
-    "geometrie": null,
+    "misto": [
+      {
+        "druh": "budova",
+        "nazev": "č. p. 1",
+        "bod": [
+          14.771668,
+          49.003786
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "RÚIAN",
+        "ruian_kod": "14718502"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.771668,
+        49.003786
+      ]
+    },
     "posledni_zmena": "2026-10-07"
   },
   {
@@ -133,8 +169,26 @@
     ],
     "investice": [],
     "zasobnik": [],
-    "misto": [],
-    "geometrie": null,
+    "misto": [
+      {
+        "druh": "adresa",
+        "nazev": "Chelčického 2",
+        "bod": [
+          14.765701,
+          49.003865
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "RÚIAN",
+        "ruian_kod": "14831767"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.765701,
+        49.003865
+      ]
+    },
     "posledni_zmena": "2026-10-21"
   },
   {
@@ -257,8 +311,26 @@
     ],
     "investice": [],
     "zasobnik": [],
-    "misto": [],
-    "geometrie": null,
+    "misto": [
+      {
+        "druh": "adresa",
+        "nazev": "Svobody 1018",
+        "bod": [
+          14.761315,
+          49.002914
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "RÚIAN",
+        "ruian_kod": "14841932"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.761315,
+        49.002914
+      ]
+    },
     "posledni_zmena": "2026-10-21"
   },
   {
