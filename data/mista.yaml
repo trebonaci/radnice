@@ -22,7 +22,6 @@ mista:
         cast_obce: Třeboň II
     zmeny: ['DPS Chelčického', 'Klubovna, Chelčického']
     investice: [auto-vz-941]
-    zasobnik: [dps1-kotelny]
   - id: dps-3
     nazev: Dům s pečovatelskou službou DPS 3
     oblast: socialni
@@ -35,8 +34,7 @@ mista:
       - adresa: Lázeňská 1005
     popis: Sportovní hala s tělocvičnami a ubytováním (Hotel Sport).
     zmeny: ['[Ss]portovní hal', 'Hotel Sport']
-    investice: [pristavba-telocvicen, sportovni-hala-ubytovani]
-    zasobnik: [sportovni-hala-revitalizace]
+    investice: [pristavba-telocvicen, sportovni-hala-ubytovani, sportovni-hala-revitalizace]
   - id: muzeum
     nazev: Muzeum města Třeboně
     oblast: kultura
