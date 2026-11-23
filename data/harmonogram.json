@@ -284,7 +284,13 @@
         "url": "https://smlouvy.gov.cz/smlouva/37540741",
         "jistota": "dolozeno",
         "konec_jistota": null,
-        "planovany_konec": null
+        "planovany_konec": {
+          "datum": null,
+          "druh": "lhuta",
+          "citace": "Lhůta pro dokončení prací: do 150 kalendářních dnů od převzetí staveniště zhotovitelem",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/45396397/SOD%20Budejovicka%20s%20prilohou%20RS.pdf#page=8",
+          "podle": "smlouva"
+        }
       }
     ],
     "milniky": [
@@ -373,7 +379,13 @@
         "url": "https://smlouvy.gov.cz/smlouva/35522661",
         "jistota": "dolozeno",
         "konec_jistota": null,
-        "planovany_konec": null
+        "planovany_konec": {
+          "datum": "2026-06-16",
+          "druh": "datum",
+          "citace": "termín dokončení díla: NE Objednatel: Datum: 16.06.2026",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/46567344/Dodatek%20%C4%8D.%202%20-%20registr%20smluv.pdf#page=4",
+          "podle": "dodatek č. 2"
+        }
       }
     ],
     "milniky": [
@@ -726,7 +738,13 @@
         "url": "https://smlouvy.gov.cz/smlouva/36192945",
         "jistota": "dolozeno",
         "konec_jistota": null,
-        "planovany_konec": null
+        "planovany_konec": {
+          "datum": "2026-06-04",
+          "druh": "datum",
+          "citace": "termín dokončení stavby: NE Objednatel: Datum: 04.06.2026",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/46537020/Dodatek%20%C4%8D.%202%20registr%20smluv.pdf#page=4",
+          "podle": "dodatek č. 2"
+        }
       }
     ],
     "milniky": [
@@ -932,7 +950,13 @@
         "url": "https://smlouvy.gov.cz/smlouva/38108657",
         "jistota": "dolozeno",
         "konec_jistota": null,
-        "planovany_konec": null
+        "planovany_konec": {
+          "datum": null,
+          "druh": "lhuta",
+          "citace": "termínu dokončení díla o 7 kalendářních dnů tedy do 30",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/47867377/Dodatek%20%C4%8D.1_anonymizovan%C3%BD.pdf#page=2",
+          "podle": "dodatek č. 1"
+        }
       }
     ],
     "milniky": [
@@ -1290,7 +1314,13 @@
         "url": "https://smlouvy.gov.cz/smlouva/36387317",
         "jistota": "dolozeno",
         "konec_jistota": null,
-        "planovany_konec": null
+        "planovany_konec": {
+          "datum": "2026-10-29",
+          "druh": "datum",
+          "citace": "termín dokončení díla: NE Přílohy: 1 x položkový rozpočet ZL 20 Datum: 29.10.2026",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/48386917/Dodatek%20%C4%8D.%205%20-%20registr%20smluv.pdf#page=4",
+          "podle": "dodatek č. 5"
+        }
       }
     ],
     "milniky": [
@@ -1717,7 +1747,13 @@
         "url": "https://smlouvy.gov.cz/smlouva/38004673",
         "jistota": "dolozeno",
         "konec_jistota": null,
-        "planovany_konec": null
+        "planovany_konec": {
+          "datum": "2026-08-31",
+          "druh": "datum",
+          "citace": "Dokončení díla: 31.08.2026",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/45926157/Smlouva%20o%20d%C3%ADlo%20-%20kotelny%20DPS%201A%201C_anonymizovan%C3%A1.pdf#page=2",
+          "podle": "smlouva"
+        }
       }
     ],
     "milniky": [
@@ -1756,7 +1792,13 @@
         "url": "https://smlouvy.gov.cz/smlouva/38721704",
         "jistota": "dolozeno",
         "konec_jistota": null,
-        "planovany_konec": null
+        "planovany_konec": {
+          "datum": "2026-12-09",
+          "druh": "datum",
+          "citace": "Dokončení díla: do 09.12.2026",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/48334957/Dodatek%20%C4%8D.2%20ke%20SOD%20-%20kolon%C3%A1da%20Bertiny%20l%C3%A1zn%C4%9B_anonymizovan%C3%BD.pdf#page=2",
+          "podle": "dodatek č. 2"
+        }
       }
     ],
     "milniky": [
@@ -1905,7 +1947,13 @@
         "url": "https://smlouvy.gov.cz/smlouva/39811609",
         "jistota": "dolozeno",
         "konec_jistota": null,
-        "planovany_konec": null
+        "planovany_konec": {
+          "datum": "2026-12-09",
+          "druh": "datum",
+          "citace": "Dokončení díla: do 09.12.2026",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/48670905/VO%20Brann%C3%A1%20dod%202%20RS.pdf#page=2",
+          "podle": "dodatek č. 2"
+        }
       }
     ],
     "milniky": [

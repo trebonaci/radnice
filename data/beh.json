@@ -1,12 +1,12 @@
 {
-  "zacatek": "2026-11-23T11:41:27+00:00",
+  "zacatek": "2026-11-23T16:19:56+00:00",
   "stav": "ok",
   "zdroje": [
     {
       "nazev": "zapisy_mesta",
       "stav": "ok",
       "odkazu": 8,
-      "stazeno": 8
+      "stazeno": 0
     }
   ],
   "chyby": [],
@@ -32,10 +32,10 @@
     "zmeny": 15,
     "harmonogram": 67,
     "prehled": 80,
-    "terminy": 17
+    "terminy": 35
   },
-  "posledni_uspesny": "2026-11-23T11:41:51+00:00",
+  "posledni_uspesny": "2026-11-23T16:20:02+00:00",
   "nove_dokumenty": 0,
   "nove_verze": 0,
-  "konec": "2026-11-23T11:41:51+00:00"
+  "konec": "2026-11-23T16:20:02+00:00"
 }
