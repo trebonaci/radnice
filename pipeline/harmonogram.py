@@ -63,6 +63,8 @@ def karta(k: dict, zakazky: dict) -> dict | None:
         if k.get("faze") == "dokonceno":
             if k.get("dokonceni") and k["dokonceni"].get("datum"):
                 konec, konec_jistota = str(k["dokonceni"]["datum"]), "dolozeno"
+            elif k.get("ukonceni_plneni"):
+                konec, konec_jistota = k["ukonceni_plneni"]["datum"], "ukonceni_plneni"
             else:
                 konec = max(e["datum"] for e in ud if e.get("role") == "stavba")
                 konec_jistota = "posledni_doklad"

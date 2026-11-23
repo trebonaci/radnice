@@ -150,6 +150,15 @@ def main() -> int:
         print("CHYBA:", c, file=sys.stderr)
     print(f"E-ZAK: změněno {len(zmeny)} souborů, chyb {len(chyby)} "
           f"({datetime.now(timezone.utc):%Y-%m-%d %H:%M} UTC)")
+    # datum ukončení plnění stavebních zakázek ze stránky zakázky (#207); chyba běh nezastaví
+    from pipeline.zdroje import ezak_plneni
+    try:
+        nove, chyby_p = ezak_plneni.stahni()
+        print(f"E-ZAK plnění: {nove} nových zakázek, chyb {len(chyby_p)}")
+        for c in chyby_p:
+            print("CHYBA plnění:", c, file=sys.stderr)
+    except Exception as e:  # noqa: BLE001
+        print(f"CHYBA E-ZAK plnění: {e}", file=sys.stderr)
     return 1 if chyby else 0
 
 
