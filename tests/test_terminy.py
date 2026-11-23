@@ -77,3 +77,16 @@ def test_uryvky_odrizne_osobni_udaje_na_stejne_strane():
     text = " ".join(x["text"] for x in u)
     assert "30. 9. 2026" in text
     assert "Novák" not in text and "Svoboda" not in text and "602" not in text
+
+
+def test_datum_zacatku_lhuty_neni_termin_dokonceni():
+    t = terminy.z_uryvku("Termín dokončení díla: do 120 dnů od předání staveniště dne 1. 4. 2026.")
+    assert t["druh"] == "lhuta" and t["datum"] is None
+
+
+def test_slova_objednatel_a_zhotovitel_uryvek_nezkrati():
+    u = prilohy_smluv.uryvky(["Lhůta pro dokončení prací: do 270 kalendářních dnů od převzetí staveniště zhotovitelem. "
+                              "Objednatel převezme dílo."])
+    assert "zhotovitelem" in u[0]["text"]
+    u = prilohy_smluv.uryvky(["Termín dokončení díla: 30. 9. 2026. Kontaktní osoba: Jan Novák, tel. 777 123 456"])
+    assert "Novák" not in u[0]["text"] and "30. 9. 2026" in u[0]["text"]

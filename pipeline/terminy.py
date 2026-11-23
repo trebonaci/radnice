@@ -18,6 +18,7 @@ KLIC = (r"(?:term[ií]n\w*\s+(?:dokon[čc]en\w*|p[řr]ed[aá]n[ií]\s+(?:d[ií]l
 # mezi klíčovým slovem a datem nesmí být jiný termín (zahájení) ani konec věty
 MEZI = r"(?:(?!zah[aá]jen|\.\s+[A-ZČŘŠŽ])[^;]){0,90}?"
 RE_DATUM = re.compile(KLIC + MEZI + DATUM, re.I)
+RE_LHUTA_PRED = re.compile(r"\d{1,4}\s+(?:kalend[aá][řr]n[ií]ch\s+|pracovn[ií]ch\s+)?(?:dn[ůuí]|t[ýy]dn[ůu]|m[ěe]s[ií]c[ůu])", re.I)
 RE_NOVE_DATUM = re.compile(r"\s+na\s+" + DATUM, re.I)
 RE_LHUTA = re.compile(KLIC + MEZI + r"(\d{1,4})\s+(?:kalend[aá][řr]n[ií]ch\s+|pracovn[ií]ch\s+)?(?:dn[ůuí]|t[ýy]dn[ůu]|m[ěe]s[ií]c[ůu])"
                       r"[^.;]{0,80}", re.I)
@@ -33,6 +34,9 @@ def _datum(d: str, m: str, r: str) -> str | None:
 def z_uryvku(text: str) -> dict | None:
     """První termín dokončení v úryvku: {druh, datum, citace} nebo None."""
     m = RE_DATUM.search(text)
+    # „do 120 dnů od předání staveniště dne 1. 4. 2026“: datum je začátek lhůty, ne termín dokončení
+    if m and RE_LHUTA_PRED.search(m.group(0)):
+        m = None
     if m:
         nove = RE_NOVE_DATUM.match(text, m.end())
         dt = _datum(*(nove or m).groups()[-3:])

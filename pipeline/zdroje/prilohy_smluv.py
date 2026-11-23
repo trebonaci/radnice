@@ -37,7 +37,7 @@ RE_KLIC = re.compile(r"term[ií]n\w*\s+(dokon[čc]en|p[řr]ed[aá]n|pln[ěe]n|pr
 OKOLI = 350
 RE_OSOBNI = re.compile(
     r"kontakt\w*|zastoup\w+|jedn[aá]\w*\s+jm[ée]nem|jm[ée]nem|bytem|bydli\w+|trval\w+\s+pobyt\w*|"
-    r"s[ií]dlo\w*|adres\w+|e-?mail\w*|tel(?:efon)?\w*\.?|mobil\w*|podpis\w*|za\s+(?:objednatele|zhotovitele|prod[aá]vaj[ií]c[ií]ho)|"
+    r"s[ií]dlo\w*|adres\w+|e-?mail\w*|\btel(?:efon\w*)?\b\.?|\bmobil\w*|podpis\w*|za\s+(?:objednatele|zhotovitele|prod[aá]vaj[ií]c[ií]ho)|"
     r"I[ČC]O?\b|DI[ČC]\b|[\w.+-]+@[\w-]+\.\w+|\+?\d{3}\s?\d{3}\s?\d{3}\b|\b\d{3}\s?\d{2}\s+[A-ZČŘŠŽÝÁÍÉ]\w+|"
     r"datum\s+narozen\w*|r\.\s?[čc]\.|nar\.", re.I)
 
