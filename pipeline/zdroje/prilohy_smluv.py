@@ -47,7 +47,9 @@ RE_OSOBNI = re.compile(
 def smlouvy_ke_stazeni(projekty: list[dict]) -> list[tuple[str, str]]:
     """[(zdroj_id, url záznamu)] smluv na stavbu a jejich dodatků z karet investic."""
     vysledek = {}
-    for k in projekty:
+    # nejdřív probíhající stavby – u nich čtenáře termín zajímá nejvíc
+    poradi = {"probiha": 0, "soutezi_se": 1, "pripravuje_se": 2}
+    for k in sorted(projekty, key=lambda k: poradi.get(k.get("faze"), 3)):
         for c in k.get("casti", []):
             if c.get("role") != "stavba":
                 continue
@@ -55,7 +57,7 @@ def smlouvy_ke_stazeni(projekty: list[dict]) -> list[tuple[str, str]]:
                 zid, url = d.get("zdroj_id"), d.get("url")
                 if zid and zid.startswith("rs-") and url:
                     vysledek[zid] = url
-    return sorted(vysledek.items())
+    return list(vysledek.items())
 
 
 def odkazy_priloh(stranka: str, zaklad: str = ZAKLAD) -> list[str]:
