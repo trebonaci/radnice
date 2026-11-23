@@ -114,3 +114,11 @@ def test_rucni_usek_potrebuje_zdroj_a_body_na_trebonsku(tmp_path):
     assert "odkaz na zdroj" in chyby[0]
     _, chyby, _ = mapa.vyres_rucni([{"usek": [[14.75, 49.01], [14.76, 49.01]], "zdroj_url": "https://z.cz"}], r, "k")
     assert "Třeboňsku" in chyby[0]
+
+
+def test_adresa_s_pismenem_neodpovida_cislu_bez_pismene(tmp_path):
+    r = mapa.Ruian(_koren(tmp_path))
+    r.adresy = [{"kod": "1", "ulice": "Chelčického", "cislo_domovni": "5", "cislo_orientacni": "1", "pismeno": None, "bod": [1, 2]},
+                {"kod": "2", "ulice": "Chelčického", "cislo_domovni": "6", "cislo_orientacni": "1", "pismeno": "a", "bod": [3, 4]}]
+    assert r.adresa("Chelčického", "1")["kod"] == "1"
+    assert r.adresa("Chelčického", "1", "a")["kod"] == "2"

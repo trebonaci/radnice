@@ -67,7 +67,7 @@ def test_aktivita_z_usneseni():
     r = harmonogram.aktivita(a, usn, {"j": {"datum": "2026-09-21", "organ": "zastupitelstvo"}}, {"d": "https://z.pdf"})
     assert [m["cislo"] for m in r["milniky"]] == ["ZM 86/2026-31"]
     assert r["milniky"][0]["url"] == "https://z.pdf#page=7" and r["milniky"][0]["text_ai"] is True
-    assert r["useky"][0] | {} == {"faze": "prubeh", "nazev": "probíhá", "od": "2026-09-21", "do": None, "otevreno": True,
+    assert r["useky"][0] | {} == {"faze": "prubeh", "nazev": "průběh", "od": "2026-09-21", "do": None, "otevreno": True,
                                   "jistota": "nase_propojeni", "url": "https://z.pdf#page=7", "zacatek_pred_daty": True}
 
 

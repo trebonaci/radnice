@@ -113,11 +113,12 @@ def dotace(dotace: list[dict]) -> dict:
     if len(druhy) > 1:
         raise ValueError(f"dotace: různé druhy částek {sorted(druhy)} se nesčítají")
     for d in dotace:
-        pocty[d["oblast"]] += 1
+        o = d.get("oblast") or "neuvedena"  # zdroj oblast programu nemusí uvádět (#179)
+        pocty[o] += 1
         if d.get("castka"):
-            soucty[d["oblast"]] += d["castka"]["hodnota"]
+            soucty[o] += d["castka"]["hodnota"]
     data = sorted(d["datum"] for d in dotace if d.get("datum"))
-    rada = [{"klic": o, "nazev": OBLAST_DOTACI.get(o, o[:1].upper() + o[1:]), "pocet": pocty[o], "hodnota": round(soucty[o], 2)}
+    rada = [{"klic": o, "nazev": "Oblast neuvedena" if o == "neuvedena" else OBLAST_DOTACI.get(o, o[:1].upper() + o[1:]), "pocet": pocty[o], "hodnota": round(soucty[o], 2)}
             for o in sorted(pocty, key=lambda o: (-soucty[o], o))]
     return _ukazatel("dotace-oblasti", "Dotace přiznané radou a zastupitelstvem", rada, "Kč", data[0] if data else None,
                      data[-1] if data else None, "Součet dotací přiznaných v usneseních, podle oblasti programu.",

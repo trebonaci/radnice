@@ -105,3 +105,11 @@ def test_dodatek_se_lhutou_nahrazuje_starsi_datum():
                     "dodatky": [{"zdroj_id": "rs-2", "cislo": 1, "datum": "2026-11-01"}]}]}
     t = {"rs-1": {"druh": "datum", "datum": "2026-12-31"}, "rs-2": {"druh": "lhuta", "datum": None}}
     assert terminy.pro_kartu(k, t)["podle"] == "dodatek č. 1"
+
+
+def test_dodatky_ze_stejneho_dne_podle_cisla():
+    k = {"casti": [{"role": "stavba", "puvodni": {"zdroj_id": "rs-1"},
+                    "dodatky": [{"zdroj_id": "rs-2", "cislo": 1, "datum": "2026-11-19"},
+                                {"zdroj_id": "rs-3", "cislo": 2, "datum": "2026-11-19"}]}]}
+    t = {"rs-2": {"druh": "datum", "datum": "2027-01-31"}, "rs-3": {"druh": "datum", "datum": "2027-03-31"}}
+    assert terminy.pro_kartu(k, t)["datum"] == "2027-03-31"

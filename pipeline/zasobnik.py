@@ -96,7 +96,9 @@ def _doklady(data: dict) -> list[dict]:
             vysledek.append({"typ": "zakazka", "id": z["id"], "text": " ".join(html.unescape(z["nazev"]).split()),
                              "datum": z.get("datum_zahajeni"), "ico": z.get("subjekt_ico"), "url": z.get("url"),
                              "cena": _cena_zakazky(z, "smluvni"), "zaplaceno": _cena_zakazky(z, "zaplaceno"),
-                             "dodatek": False})
+                             "dodatek": False,
+                             "data_smluv": sorted({c["datum_uzavreni_smlouvy"] for c in z.get("casti", [])
+                                                   if c.get("datum_uzavreni_smlouvy")})})
     for s in data.get("smlouvy", []):
         if je_priprava(s.get("predmet")):
             text = " ".join(html.unescape(s["predmet"]).split())
@@ -132,9 +134,11 @@ def zapocti(doklady: list[dict]) -> list[dict]:
         d["zapocteno"], d["nezapocteno"] = bool(d.get("cena")), None if d.get("cena") else "cena neuvedena"
         h = _hodnoty(d.get("cena"))
         if d["zapocteno"] and d["typ"] == "zakazka":
-            shoda = next((s for s in smlouvy if h & _hodnoty(s["cena"])), None)
+            # stejná cena, nebo stejné datum podpisu – E-ZAK po dodatku přepisuje smluvní cenu (#179)
+            shoda = next((s for s in smlouvy if not s.get("dodatek") and (h & _hodnoty(s["cena"])
+                          or (s.get("datum") and s["datum"] in d.get("data_smluv", [])))), None)
             if shoda:
-                d["zapocteno"], d["nezapocteno"] = False, f"stejná cena jako smlouva {shoda['id']}"
+                d["zapocteno"], d["nezapocteno"] = False, f"stejná smlouva jako {shoda['id']} (cena nebo datum podpisu)"
         elif d["zapocteno"]:
             shoda = next((v for v in vysledek if v["typ"] == "smlouva" and v["zapocteno"] and h & _hodnoty(v["cena"])
                           and (_dny(v["datum"], d["datum"]) or 0) <= 60), None)

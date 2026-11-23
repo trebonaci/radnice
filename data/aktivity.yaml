@@ -27,3 +27,5 @@ aktivity:
     vazby:
       hledat: ['Změn\w* č\. ?3 regulačního plánu']
     zacatek_pred_daty: true
+    # ZM 87/2026-31, část IV.: „schvaluje vydání Změny č. 3 regulačního plánu Třeboň“ (zápis ZM 21. 9. 2026, str. 11)
+    ukonceno: {datum: 2026-09-21, url: 'https://www.mesto-trebon.cz/uploads/news/id15066/Z-31-26-09-21-A.pdf#page=11'}
