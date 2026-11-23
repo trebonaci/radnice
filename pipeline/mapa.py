@@ -58,10 +58,13 @@ class Ruian:
                 return nazev
         return None
 
-    def adresa(self, ulice: str, cislo: str) -> dict | None:
+    def adresa(self, ulice: str, cislo: str, pismeno: str | None = None) -> dict | None:
         for a in self.adresy:
-            # RÚIAN píše „Na sadech“, lidé „Na Sadech“: název ulice se porovnává bez ohledu na velikost písmen
-            if (a.get("ulice") or "").casefold() == (ulice or "").casefold() and cislo in (a.get("cislo_domovni"), a.get("cislo_orientacni")):
+            # RÚIAN píše „Na sadech“, lidé „Na Sadech“: název ulice se porovnává bez ohledu na velikost písmen;
+            # písmeno čísla orientačního („1a“) musí sedět (#179)
+            if ((a.get("ulice") or "").casefold() == (ulice or "").casefold()
+                    and cislo in (a.get("cislo_domovni"), a.get("cislo_orientacni"))
+                    and (a.get("pismeno") or "").casefold() == (pismeno or "").casefold()):
                 return a
         return None
 
@@ -125,8 +128,8 @@ def vyres_rucni(misto: list[dict], ruian: Ruian, kdo: str) -> tuple[list[dict], 
                 else:
                     upozorneni.append(f"mapa {kdo}: ulice {nazev!r} – chybí data RÚIAN")
         elif "adresa" in m:
-            shoda = re.fullmatch(r"(.+?)\s+(\d+)\w?", m["adresa"].strip())
-            a = ruian.adresa(shoda.group(1), shoda.group(2)) if shoda else None
+            shoda = re.fullmatch(r"(.+?)\s+(\d+)([a-zA-Z]?)", m["adresa"].strip())
+            a = ruian.adresa(shoda.group(1), shoda.group(2), shoda.group(3) or None) if shoda else None
             if a:
                 casti.append({"druh": "adresa", "nazev": popis or m["adresa"], "bod": a["bod"], "jistota": "dolozeno",
                               "zdroj": "RÚIAN", "ruian_kod": a["kod"]})

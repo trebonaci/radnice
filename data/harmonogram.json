@@ -10,7 +10,7 @@
     "useky": [
       {
         "faze": "prubeh",
-        "nazev": "probíhá",
+        "nazev": "průběh",
         "od": "2026-09-21",
         "do": null,
         "otevreno": true,
@@ -40,15 +40,15 @@
     "nazev": "Změna č. 3 regulačního plánu",
     "popis": "Změna regulačního plánu Třeboň včetně lokality BV6 v Břilicích.",
     "oblast": "uzemni_plan",
-    "faze": "probiha",
+    "faze": "dokonceno",
     "faze_jistota": "nase_propojeni",
     "useky": [
       {
         "faze": "prubeh",
-        "nazev": "probíhá",
+        "nazev": "průběh",
         "od": "2026-09-21",
-        "do": null,
-        "otevreno": true,
+        "do": "2026-09-21",
+        "otevreno": false,
         "jistota": "nase_propojeni",
         "url": "https://www.mesto-trebon.cz/uploads/news/id15066/Z-31-26-09-21-A.pdf#page=7",
         "zacatek_pred_daty": true

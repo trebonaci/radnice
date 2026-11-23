@@ -84,7 +84,8 @@ def pro_kartu(k: dict, terminy: dict) -> dict | None:
 
 def _pro_cast(st: dict, terminy: dict) -> dict | None:
     kandidati = [(d.get("datum") or "", "dodatek", d) for d in st.get("dodatky") or []]
-    kandidati.sort(key=lambda x: x[0], reverse=True)
+    # novější dodatek první; ve stejný den rozhoduje vyšší číslo dodatku (#179)
+    kandidati.sort(key=lambda x: (x[0], x[2].get("cislo") or 0), reverse=True)
     kandidati.append(("", "smlouva", st.get("puvodni") or {}))
     for _, odkud, d in kandidati:
         t = terminy.get(d.get("zdroj_id"))
