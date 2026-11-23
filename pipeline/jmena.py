@@ -7,6 +7,7 @@ Raději zakryje víc (např. ulici „Boženy Němcové“) než méně.
 """
 from __future__ import annotations
 
+import json
 import re
 from functools import lru_cache
 from pathlib import Path
@@ -39,10 +40,25 @@ def _vzor(koren: str) -> re.Pattern:
                       rf"(?:-[{VELKE}][{MALE}]+)?")
 
 
+@lru_cache(maxsize=1)
+def _ulice(koren: str) -> frozenset[str]:
+    """Názvy ulic z RÚIAN (malými písmeny); ulice pojmenované po osobách nejsou jméno osoby (#228)."""
+    soubor = Path(koren) / "raw" / "ruian" / "ulice.json"
+    if not soubor.exists():
+        return frozenset()
+    return frozenset(u["nazev"].casefold() for u in json.loads(soubor.read_text(encoding="utf-8")))
+
+
 def zakryj_jmena(text: str | None, osoby: dict, koren: Path = KOREN) -> str | None:
     if not text:
         return text
     from pipeline.sestav import je_zastupitel     # pozdní import (sestav importuje zdroje)
     def nahrad(m: re.Match) -> str:
         return m.group(0) if je_zastupitel(m.group(0), osoby) else "[jméno]"
-    return _vzor(str(koren)).sub(nahrad, text)
+    ulice = _ulice(str(koren))
+    def nahrad_ulici(m: re.Match) -> str:
+        # název ulice z RÚIAN, za kterým následuje číslo domu, zůstane („Svatopluka Čecha 20“)
+        if m.group(0).casefold() in ulice and re.match(r"\s*\d", text[m.end():]):
+            return m.group(0)
+        return nahrad(m)
+    return _vzor(str(koren)).sub(nahrad_ulici, text)
