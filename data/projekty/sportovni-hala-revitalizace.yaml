@@ -1,0 +1,8 @@
+id: sportovni-hala-revitalizace
+nazev: Revitalizace sportovní haly včetně občerstvení
+popis: Stavební úpravy sportovní haly. Výstavbu občerstvení v prvním podzemním podlaží doplnil dodatek č. 4.
+oblast: sport
+druh: investicni
+vlastnik_subjekt_id: "00247618"
+vazby:
+  hledat: ['revitalizace sportovní haly', 'PD sportovní hala Třeboň']

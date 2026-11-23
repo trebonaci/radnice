@@ -1,0 +1,7 @@
+id: jiraskova-oprava-vozovky
+nazev: Jiráskova ulice – oprava vozovky
+oblast: doprava
+druh: investicni
+vlastnik_subjekt_id: "00247618"
+vazby:
+  hledat: ['oprav[auy] vozovky MK v Jiráskově ulici']
