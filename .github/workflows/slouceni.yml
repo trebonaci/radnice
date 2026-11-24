@@ -172,9 +172,18 @@ jobs:
                     ? `Automaticky sloučeno (${sha.slice(0, 7)}): PR z denního běhu, CI zelená, bez nevyřešených nálezů P0/P1 (bez Codex review, #166). Sloučení ≠ zveřejnění.`
                     : `Automaticky sloučeno (${sha.slice(0, 7)}): CI zelená, Codex review dokončeno, bez nevyřešených nálezů P0/P1. Sloučení ≠ zveřejnění.`});
                 core.info(`${kdo}: sloučeno`);
+                const cil = pr.base.ref;
+                // „Closes #N“ v popisu PR: issue se při sloučení přes API nezavřou samy (#175) – zavřít výslovně.
+                // Jen při sloučení do main: u navazujícího PR do cizí větve práce v main ještě není (review #218).
+                for (const m of (cil === 'main' ? pr.body || '' : '').matchAll(/\b(?:close[sd]?|fix(?:e[sd])?|resolve[sd]?)\s+#(\d+)/gi)) {
+                  try {
+                    await github.rest.issues.update({owner, repo, issue_number: Number(m[1]), state: 'closed', state_reason: 'completed'});
+                  } catch (e) {
+                    core.warning(`${kdo}: zavření #${m[1]} selhalo: ${e.message}`);
+                  }
+                }
                 // sloučení přes GITHUB_TOKEN nespustí push workflow (#200): do main → nasadit web přímo;
                 // do větve jiného PR → spustit na ní CI, jinak nadřazený PR zůstane bez kontroly i bez review (#233)
-                const cil = pr.base.ref;
                 try {
                   await github.rest.actions.createWorkflowDispatch({owner, repo,
                     workflow_id: cil === 'main' ? 'web.yml' : 'ci.yml', ref: cil});
