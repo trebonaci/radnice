@@ -148,3 +148,22 @@ def test_pripominky_24_11_filtr_menu_a_rozbalovani_stavu():
     # stavy na Investicích se rozbalují každý zvlášť
     assert '<details class="stav"' in html and 'Zobrazit další (${pocet-2})' in html
     assert '["Projektuje se",seznam,prip],["Hotovo",mrizka,hot],["Náměty ze Strategického plánu",namety,nam]' in html
+
+
+def test_vyberove_rizeni_je_soutez_na_dodavatele_stavby():
+    """Krok „Výběrové řízení“ v pruhu fází bere soutěž na dodavatele stavby (role==="stavba"),
+    ne první soutěž bez ohledu na roli – ta u akcí s výběrkem na PD ukazovala datum výběrka na projekt.
+    Regrese k #270."""
+    import re
+    html = build.sestav()
+    telo = re.search(r"function pruhFazi\(p\)\{(.*?)\n\}", html, re.S)
+    assert telo, "funkce pruhFazi ve webu chybí"
+    telo = telo.group(1)
+    # „Výběrové řízení“ se počítá z proměnné soutez
+    assert '["Výběrové řízení",soutez?.datum' in telo
+    # a ta filtruje soutěže na roli stavba a vynechává zrušené
+    assert 'const soutez=' in telo
+    sout = re.search(r"const soutez=(.*?);", telo).group(1)
+    assert 'e.typ==="soutez"' in sout and 'e.role==="stavba"' in sout and '!e.zruseno' in sout
+    # původní chyba: první soutěž bez ohledu na roli
+    assert 'prvni("soutez")' not in telo

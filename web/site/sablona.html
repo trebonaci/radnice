@@ -624,9 +624,10 @@ function radek(e,p){
 // pruh fází akce (návrh 23. 11. 2026): každý krok je doložený dokladem, nic se neodhaduje
 function pruhFazi(p){
   const ud=p.udalosti||[];
-  const prvni=t=>ud.filter(e=>e.typ===t).sort((a,b)=>(a.datum||"").localeCompare(b.datum||""))[0];
   const projekt=ud.filter(e=>e.role==="projekt").sort((a,b)=>(a.datum||"").localeCompare(b.datum||""))[0];
-  const soutez=prvni("soutez");
+  // „Výběrové řízení“ = soutěž na dodavatele stavby (role==="stavba"), ne soutěž na projekt/PD – ta patří ke kroku „Projekt“.
+  // Dřív se bral první soutěžní doklad bez ohledu na roli, takže u akcí s výběrkem na PD se u „Výběrového řízení“ ukazovalo datum výběrka na projekt místo na dodavatele stavby.
+  const soutez=ud.filter(e=>e.typ==="soutez"&&e.role==="stavba"&&!e.zruseno).sort((a,b)=>(a.datum||"").localeCompare(b.datum||""))[0];
   const sod=ud.filter(e=>e.typ==="smlouva"&&/smlouva o dílo|stavb/i.test(e.kratce||"")).map(e=>e.datum).sort()[0]||soutez?.datum;
   const hotovo=p.dokonceni?.datum||p.ukonceni_plneni?.datum;
   const posl=posledni(p);
