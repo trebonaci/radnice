@@ -861,7 +861,7 @@ function mistaBlok(o){
   const cely=ms.map(kartaMista).join("")+(bez.length?`<div class="hh">Změny bez konkrétního místa</div><div class="ms"><ul class="zm">${bez.map(z=>zmRadek(z,false)).join("")}</ul></div>`:"");
   return blokStranky(o,ms.length+bez.length,`<ol>${nahledPol.slice(0,2).map(radekOkruhu).join("")}</ol>`,cely);}
 function mistaStranka(){
-  return `<section><h1 class="st" tabindex="-1">Místa a služby</h1>
+  return `<section><span class="eyebrow">Co se mění v místech, která lidé používají</span><h1 class="st" tabindex="-1">Místa a služby</h1>
   <p style="max-width:62ch">Co se mění v místech a službách, které lidé používají, a co se v nich staví. <a href="#mapa">Na mapě →</a></p>
   ${okruhChips("mista")}
   <div class="okruhy">${vybraneOkruhy().map(mistaBlok).join("")}</div></section>`;
