@@ -757,8 +757,15 @@ function harmonogram(){
   const sk=vybraneOkruhy().map(o=>{const r=H.filter(x=>x.okruh===o.id);return [o.nazev,r.filter(x=>!hotovo(x)),r.filter(hotovo)];}).filter(([,a,d])=>a.length||d.length);
   const tab=H.map(r=>`<tr><td>${esc(r.nazev)}</td><td>${r.useky.map(u=>`${FAZE_G[u.faze]} ${dat(u.od)} – ${u.otevreno?"dosud":dat(u.do)}`).join("<br>")}</td></tr>`).join("");
   const nI=H.filter(r=>r.typ==="investice").length,nZ=H.filter(r=>r.typ==="zasobnik").length,nA=H.filter(r=>r.typ==="aktivita").length;
-  return `<section><h1 class="st" tabindex="-1">Projekty</h1>
+  const beh=inv.filter(r=>r.faze==="probiha").length,pri=inv.filter(r=>r.faze==="soutezi_se"||r.faze==="pripravuje_se").length;
+  const kpi=`<div class="kpis ak-kpi">
+   <div class="kpi"><span>Staví se</span><b>${cis(beh)}</b><small>podle dokladů probíhá stavba</small></div>
+   <div class="kpi"><span>V přípravě a projektování</span><b>${cis(pri+nZ)}</b><small>${cis(pri)} před stavbou, ${cis(nZ)} v zásobníku projektů</small></div>
+   <div class="kpi"><span>Dlouhodobé projekty</span><b>${cis(nA)}</b><small>územní plán a podobné</small></div>
+   <div class="kpi"><span>Dokončeno</span><b>${cis(inv.filter(r=>r.faze==="dokonceno").length)}</b><small>stavba podle dokladů skončila</small></div></div>`;
+  return `<section><span class="eyebrow">Fáze podle smluv a úředních dokumentů</span><h1 class="st" tabindex="-1">Projekty</h1>
   <p style="max-width:64ch">Kdy se co připravovalo, soutěžilo a stavělo – podle data dokumentů, ne podle plánů města. Klepnutím na úsek nebo kosočtverec se ukáže doklad.</p>
+  ${kpi}
   <p class="pozn" style="font-size:15px">${pl(nI,"investice","investice","investic")} · ${pl(nZ,"připravovaný projekt","připravované projekty","připravovaných projektů")} · ${pl(nA,"dlouhodobý projekt","dlouhodobé projekty","dlouhodobých projektů")} · <a href="#projekty-seznam" data-seznam>jako seznam</a></p>
   ${chips}${H.length?"":`<p class="pozn">V tomto okruhu zatím nic.</p>`}
   <div class="leg"><span><i style="background:var(--g-priprava);border:1px solid var(--g-soutez)"></i>příprava (studie, projekt)</span><span><i style="background:var(--g-soutez)"></i>výběr dodavatele</span><span><i style="background:var(--g-stavba)"></i>stavba</span><span><i style="background:var(--g-prubeh)"></i>dlouhodobý projekt</span><span><span class="md"></span>dodatek / usnesení</span><span><i style="background:linear-gradient(90deg,var(--g-stavba),rgba(0,102,132,.3))"></i>stále běží</span><span><span class="md" style="background:#fff;border:2px solid var(--navy)"></span>dokončení podle smlouvy</span></div>
