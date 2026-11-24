@@ -440,6 +440,7 @@ def sestav(koren: Path | None = None) -> tuple[dict[str, list], list[str]]:
     chyby += chyby_dd
     duvod_id = {x["zdroj_id"]: x for x in vystup["duvody_dodatku"]}
     usn_id = {u["id"]: u for u in vystup["usneseni"]}
+    jednani_dok = {j["id"]: j.get("dokument") for j in jednani}
     for k in vystup["projekty"]:
         for c in k["casti"]:
             for dd in c["dodatky"]:
@@ -449,11 +450,15 @@ def sestav(koren: Path | None = None) -> tuple[dict[str, list], list[str]]:
                                    "jistota": "dolozeno", "duvod_ai": False, "zdroj": "dodatek"}
                 elif dd.get("jen_termin"):
                     u = usn_id.get(dd.get("doklad_usneseni"))
-                    dd["duvod"] = {"text": "změna termínu dokončení díla",
-                                   "url": (u or {}).get("url") or dd.get("url"),
-                                   "usneseni_cislo": (u or {}).get("cislo"),
-                                   "jistota": "dolozeno", "duvod_ai": False,
-                                   "zdroj": "usnesení" if u else "dodatek"}
+                    dok = (jednani_dok.get((u or {}).get("jednani_id")) or {}) if u else {}
+                    strany = ((u or {}).get("citace") or {}).get("strany") or []
+                    fraze = "změna termínu dokončení díla"
+                    text_u = " ".join(((u or {}).get("text") or "").split())
+                    if u and dok.get("url") and fraze in text_u:
+                        url = dok["url"] + (f"#page={strany[0]}" if strany else "")
+                        dd["duvod"] = {"text": fraze, "citace": fraze, "url": url,
+                                       "usneseni_cislo": u.get("cislo"),
+                                       "jistota": "dolozeno", "duvod_ai": False, "zdroj": "usnesení"}
     # doložené ukončení plnění stavební smlouvy z E-ZAK (#207): archiv dokončených projektů po letech
     cesta_pl = koren / "raw" / "ezak" / "plneni.json"
     plneni = json.loads(cesta_pl.read_text(encoding="utf-8")) if cesta_pl.exists() else {}
