@@ -184,3 +184,22 @@ def test_harmonogram_filtr_stavu_a_oddeleni_v_kategoriich():
     assert 'class="harm" data-f="vse"' in html
     # pořád bez CDN
     assert "cdn." not in html and "fonts.googleapis" not in html and "Tailwind" not in html
+
+
+def test_detail_investice_v2_jen_dolozena_data():
+    """Nový layout karty investice (návrh 24. 11.): bohatší vzhled, ale jen doložená data –
+    skluz termínu a zaplaceno dle E-ZAK (jen když souhlasí s cenou), rozpad nákladů ze skladby,
+    zástupná ilustrace (ne vizualizace stavby). Žádné odhadované procento postupu."""
+    html = build.sestav()
+    # doložitelné metriky místo odhadovaného „% postupu"
+    assert "function postupVeta(p)" in html
+    assert "souhlas_zaplaceno" in html  # zaplaceno se ukáže jen když souhlasí se smluvní cenou
+    assert "Skutečný postup prací v datech není" in html  # fyzický postup se netvrdí
+    # rozpad nákladů jde ze souhrnu, ne z ručních čísel
+    assert "function rozpadNakladu(p)" in html and "skladba_s_dph" in html
+    # zástupná ilustrace dle okruhu, s možností nahradit reálným foto (p.foto)
+    assert "Zástupná ilustrace" in html and "p.foto" in html
+    # feed s filtrem
+    assert "function histFiltr" in html and 'data-kind=' in html
+    # pořád bez CDN
+    assert "cdn." not in html and "fonts.googleapis" not in html and "Tailwind" not in html
