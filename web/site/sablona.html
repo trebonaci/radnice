@@ -469,6 +469,30 @@ __GISCSS__
 .ak .od,.ak-box .od{display:flex;flex-wrap:wrap;gap:6px 16px;margin:auto 0 0;font-size:14px;font-weight:600}
 .ak.velka{grid-column:1/-1;border-left-width:6px}.ak-nej{margin:14px 0 4px}.ak-nej .ak.velka h3{font-size:24px}
 .ak-box{background:var(--surface-low);border-radius:var(--rounded-lg);padding:18px 22px;margin:26px 0}.ak-box h2{margin:0 0 6px;font-size:20px}.ak-box p{margin:0 0 10px;max-width:70ch}
+/* harmonogram: filtr podle stavu + oddělení stavů v kategorii, živější vzhled (návrh 25. 11. 2026) */
+.harm-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:2px 0 16px}
+.harm-tabs button{display:inline-flex;align-items:center;gap:7px;font:600 14px var(--font);color:var(--mute);background:var(--soft);border:1px solid var(--line);border-radius:var(--r-pill);padding:7px 15px;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
+.harm-tabs button:hover{color:var(--ink)}
+.harm-tabs button.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+.harm-tabs button b{font-weight:700}
+.sd{display:inline-block;width:9px;height:9px;border-radius:50%;flex:0 0 auto}
+.sd.beh{background:var(--g-stavba)}.sd.plan{background:var(--g-soutez)}.sd.hot{background:var(--green-dark)}
+.harm-tabs button.on .sd{box-shadow:0 0 0 2px rgba(255,255,255,.35)}
+.harm-skup{margin-bottom:22px}
+.sub{margin-top:2px}
+.sub-h{display:flex;align-items:center;gap:7px;font:700 12.5px var(--font);text-transform:uppercase;letter-spacing:.05em;color:var(--mute);margin:12px 0 2px;padding-top:9px;border-top:1px dashed var(--line)}
+.gan .sub:first-child .sub-h{border-top:0;padding-top:2px}
+.sub-h .pc,.gan details .pc{font-weight:700;color:var(--ink)}
+.gan .sub details>summary{display:flex;align-items:center;gap:7px}
+.gr{transition:background .12s;border-radius:6px}.gr:hover{background:var(--soft)}
+.tr .dn{animation:dnPulse 2.4s ease-in-out infinite}
+@keyframes dnPulse{0%,100%{box-shadow:0 0 0 0 rgba(21,128,61,0)}50%{box-shadow:0 0 7px 1px rgba(21,128,61,.6)}}
+.ak-kpi .kpi{position:relative;overflow:hidden}
+.ak-kpi .kpi::after{content:"";position:absolute;left:0;right:0;top:0;height:3px}
+.ak-kpi .kpi:nth-child(1)::after{background:var(--g-stavba)}
+.ak-kpi .kpi:nth-child(2)::after{background:var(--g-soutez)}
+.ak-kpi .kpi:nth-child(3)::after{background:var(--g-prubeh)}
+.ak-kpi .kpi:nth-child(4)::after{background:var(--green-dark)}
 </style></head><body>
 <header class="lista"><div class="hl"><a class="zn" href="https://trebonaci.cz"><img src="obr/logo-trebonaci.jpg" alt=""><span><b>Třeboňáci</b> <span>· Otevřená radnice</span></span></a><span class="bd">__STITEK__</span></div></header>
 <nav id="menu" aria-label="Sekce"><a href="#">Co se děje</a><a href="#investice">Investice a opravy</a><a href="#projekty">Projekty</a><a href="#usneseni">Usnesení</a><a href="#mista">Místa a služby</a><a href="#mapa">Mapa</a></nav>
@@ -777,6 +801,13 @@ function zasobnik(){
 // ---------- harmonogram (#harmonogram, #194) ----------
 const DNES=new Date().toISOString().slice(0,10);
 const FAZE_G={priprava:"Příprava",soutez:"Výběr dodavatele",stavba:"Stavba",prubeh:"Probíhá"};
+// filtr harmonogramu podle stavu (vše/běžící/plánované/dokončené): skryje nehodící se podskupiny i prázdné kategorie
+function harmFiltr(b,s){const w=document.querySelector(".harm");if(!w)return;w.dataset.f=s;
+  document.querySelectorAll(".harm-tabs button").forEach(x=>x.classList.toggle("on",x===b));
+  w.querySelectorAll(".harm-skup").forEach(g=>{let vis=0;
+    g.querySelectorAll(".sub").forEach(sub=>{const show=s==="vse"||sub.dataset.stav===s;sub.style.display=show?"":"none";
+      if(show){vis+=sub.querySelectorAll(".gr").length;if(s==="hot"){const d=sub.querySelector("details");if(d)d.open=true;}}});
+    g.style.display=vis?"":"none";});}
 const GI=[];
 function harmonogram(){
   GI.length=0;
@@ -803,15 +834,31 @@ function harmonogram(){
   const mil=(m,r)=>m.datum&&m.datum>=OD&&(m.typ==="dodatek"||m.typ==="usneseni"&&r.typ==="aktivita")?(GI.push({t:dat(m.datum)+" · "+(m.cislo?m.cislo+": ":"")+(m.text||m.typ),url:m.url,odkaz:"Otevřít dokument"}),`<button type="button" class="m" style="left:${x(m.datum).toFixed(2)}%" data-gi="${GI.length-1}" title="${esc(dat(m.datum)+" · "+(m.cislo?m.cislo+": ":"")+(m.text||m.typ))}" aria-label="${esc(dat(m.datum)+" · "+(m.text||m.typ))}"></button>`):"";
   const terminy=r=>{const st=r.useky.find(u=>u.faze==="stavba");if(!st)return "";const pk=st.planovany_konec;
     return ` · stavba od ${dat(st.od)}${st.otevreno?(pk?.datum?`, dokončení podle smlouvy <b>${dat(pk.datum)}</b>`:", termín dokončení zatím nemáme"):`, poslední doklad ${dat(st.do)}`}`;};
+  // stav akce pro filtr: běžící / plánované / dokončené (zásobník = plánované, dlouhodobý projekt běží)
+  const stavRadku=r=>r.typ==="investice"?(r.faze==="probiha"?"beh":r.faze==="dokonceno"?"hot":"plan"):r.typ==="zasobnik"?"plan":"beh";
+  const STAVY=[["beh","Běžící"],["plan","Plánované"],["hot","Dokončené"]];
   const radek=r=>{const pod=r.typ==="investice"?(FAZE[r.faze]||[""])[0]:r.typ==="aktivita"?(OBLAST[r.oblast]||({uzemni_plan:"Územní plán"})[r.oblast]||""):"připravovaný projekt";
     const nz=r.odkaz?`<a href="${r.odkaz}">${esc(rozepis(r.nazev))}</a>`:`<b>${esc(rozepis(r.nazev))}</b>`;
-    return `<div class="gr"><div class="n">${nz}<small>${esc(pod)}${r.typ!=="zasobnik"&&r.faze_jistota==="nase_propojeni"&&r.typ==="investice"?" · fáze podle dokladů":""}${r.typ==="investice"?terminy(r):""}</small></div><div class="tr">${rysky}${r.useky.map(u=>usek(u,r)).join("")}${r.milniky.map(m=>mil(m,r)).join("")}</div></div>`;};
+    return `<div class="gr" data-stav="${stavRadku(r)}"><div class="n">${nz}<small>${esc(pod)}${r.typ!=="zasobnik"&&r.faze_jistota==="nase_propojeni"&&r.typ==="investice"?" · fáze podle dokladů":""}${r.typ==="investice"?terminy(r):""}</small></div><div class="tr">${rysky}${r.useky.map(u=>usek(u,r)).join("")}${r.milniky.map(m=>mil(m,r)).join("")}</div></div>`;};
   const zacatek=r=>r.useky.reduce((m,u)=>u.od<m?u.od:m,"9999");
   const inv=H.filter(r=>r.typ==="investice");
-  // skupiny = okruhy (audit, fáze 4): nejdřív probíhající stavby, pak příprava, dlouhodobé projekty a projektování; dokončené sbalené
+  // skupiny = okruhy; uvnitř oddělené stavy (běžící / plánované / dokončené) – návrh 25. 11. 2026
   const poradi=r=>r.typ==="investice"?({probiha:0,soutezi_se:0,pripravuje_se:1}[r.faze]??2):r.typ==="aktivita"?3:4;
-  const hotovo=r=>r.typ==="investice"&&r.faze==="dokonceno";
-  const sk=vybraneOkruhy().map(o=>{const r=H.filter(x=>x.okruh===o.id);return [o.nazev,r.filter(x=>!hotovo(x)),r.filter(hotovo),o.id];}).filter(([,a,d])=>a.length||d.length);
+  const serad=rr=>rr.slice().sort((x,y)=>poradi(x)-poradi(y)||zacatek(x).localeCompare(zacatek(y)));
+  const skup=vybraneOkruhy().map(o=>[o,H.filter(x=>x.okruh===o.id)]).filter(([,rr])=>rr.length);
+  const pocetStav={beh:0,plan:0,hot:0};H.forEach(r=>pocetStav[stavRadku(r)]++);
+  const stavTab=`<div class="harm-tabs" role="tablist" aria-label="Filtr podle stavu">
+   <button class="on" type="button" onclick="harmFiltr(this,'vse')">Vše <b>${H.length}</b></button>
+   <button type="button" onclick="harmFiltr(this,'beh')"><i class="sd beh"></i>Běžící <b>${pocetStav.beh}</b></button>
+   <button type="button" onclick="harmFiltr(this,'plan')"><i class="sd plan"></i>Plánované <b>${pocetStav.plan}</b></button>
+   <button type="button" onclick="harmFiltr(this,'hot')"><i class="sd hot"></i>Dokončené <b>${pocetStav.hot}</b></button></div>`;
+  const skupHtml=skup.map(([o,rr])=>{
+    const subs=STAVY.map(([s,label])=>{const rows=serad(rr.filter(r=>stavRadku(r)===s));if(!rows.length)return "";
+      const inner=rows.map(radek).join("");
+      return s==="hot"
+        ?`<div class="sub" data-stav="hot"><details><summary><i class="sd hot"></i>Dokončené <span class="pc">${rows.length}</span></summary>${inner}</details></div>`
+        :`<div class="sub" data-stav="${s}"><div class="sub-h"><i class="sd ${s}"></i>${label} <span class="pc">${rows.length}</span></div>${inner}</div>`;}).join("");
+    return `<div class="harm-skup o-${o.id}"><div class="hh o-${o.id}"><i class="tec" aria-hidden="true"></i>${esc(o.nazev)} · ${rr.length}</div><div class="gan o-${o.id}">${osa}${subs}</div></div>`;}).join("");
   const tab=H.map(r=>`<tr><td>${esc(r.nazev)}</td><td>${r.useky.map(u=>`${FAZE_G[u.faze]} ${dat(u.od)} – ${u.otevreno?"dosud":dat(u.do)}`).join("<br>")}</td></tr>`).join("");
   const nI=H.filter(r=>r.typ==="investice").length,nZ=H.filter(r=>r.typ==="zasobnik").length,nA=H.filter(r=>r.typ==="aktivita").length;
   const beh=inv.filter(r=>r.faze==="probiha").length,pri=inv.filter(r=>r.faze==="soutezi_se"||r.faze==="pripravuje_se").length;
@@ -824,9 +871,9 @@ function harmonogram(){
   <p style="max-width:64ch">Kdy se co připravovalo, soutěžilo a stavělo – podle data dokumentů, ne podle plánů města. Klepnutím na úsek nebo kosočtverec se ukáže doklad.</p>
   ${kpi}
   <p class="pozn" style="font-size:15px">${pl(nI,"investice","investice","investic")} · ${pl(nZ,"připravovaný projekt","připravované projekty","připravovaných projektů")} · ${pl(nA,"dlouhodobý projekt","dlouhodobé projekty","dlouhodobých projektů")} · <a href="#projekty-seznam" data-seznam>jako seznam</a></p>
-  ${chips}${H.length?"":`<p class="pozn">V tomto okruhu zatím nic.</p>`}
+  ${chips}${H.length?stavTab:`<p class="pozn">V tomto okruhu zatím nic.</p>`}
   <div class="leg"><span><i style="background:var(--g-priprava);border:1px solid var(--g-soutez)"></i>příprava (studie, projekt)</span><span><i style="background:var(--g-soutez)"></i>výběr dodavatele</span><span><i style="background:var(--g-stavba)"></i>stavba</span><span><i style="background:var(--g-prubeh)"></i>dlouhodobý projekt</span><span><span class="md"></span>dodatek / usnesení</span><span><i style="background:linear-gradient(90deg,var(--g-stavba),rgba(0,102,132,.3))"></i>stále běží</span><span><span class="md" style="background:#fff;border:2px solid var(--navy)"></span>dokončení podle smlouvy</span></div>
-  ${sk.map(([n,a,d,oid])=>`<div class="hh o-${oid}"><i class="tec" aria-hidden="true"></i>${esc(n)} · ${a.length+d.length}</div><div class="gan o-${oid}">${osa}${a.sort((x,y)=>poradi(x)-poradi(y)||zacatek(x).localeCompare(zacatek(y))).map(radek).join("")}${d.length?`<details><summary>Dokončené (${d.length})</summary>${d.sort((x,y)=>zacatek(x).localeCompare(zacatek(y))).map(radek).join("")}</details>`:""}</div>`).join("")}
+  <div class="harm" data-f="vse">${skupHtml}</div>
   <p class="pozn" style="margin-top:10px">Dlouhodobé projekty (územní plán a podobně) mají milníky z usnesení rady a zastupitelstva, naše data sahají od září 2026. Projektování začíná první smlouvou nebo zakázkou na studii či projekt. Konec stavby = ukončení plnění stavební smlouvy podle E-ZAK, kde ho máme, jinak poslední doklad ke stavbě.</p>
   <details class="pozn" id="projekty-seznam"><summary>Projekty jako seznam</summary><table class="t"><tr><td class="r">Projekt</td><td>Úseky podle dokumentů</td></tr>${tab}</table></details>
   </section>`;

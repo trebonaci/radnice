@@ -167,3 +167,20 @@ def test_vyberove_rizeni_je_soutez_na_dodavatele_stavby():
     assert 'e.typ==="soutez"' in sout and 'e.role==="stavba"' in sout and '!e.zruseno' in sout
     # původní chyba: první soutěž bez ohledu na roli
     assert 'prvni("soutez")' not in telo
+
+
+def test_harmonogram_filtr_stavu_a_oddeleni_v_kategoriich():
+    """Harmonogram (návrh 25. 11.): filtr podle stavu (vše/běžící/plánované/dokončené) a oddělení stavů
+    uvnitř kategorie; jen z dat harmonogramu, nic vymyšleného."""
+    html = build.sestav()
+    # stavový filtr a jeho logika
+    assert "function harmFiltr" in html
+    assert "class=\"harm-tabs\"" in html
+    for s in ("Běžící", "Plánované", "Dokončené"):
+        assert f">{s} " in html  # tlačítko s počtem
+    # stav řádku a oddělené podskupiny v kategorii
+    assert "const stavRadku=" in html and 'data-stav="${stavRadku(r)}"' in html
+    assert 'class="sub" data-stav=' in html and 'class="sub-h"' in html
+    assert 'class="harm" data-f="vse"' in html
+    # pořád bez CDN
+    assert "cdn." not in html and "fonts.googleapis" not in html and "Tailwind" not in html
