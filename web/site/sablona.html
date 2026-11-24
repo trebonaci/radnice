@@ -278,8 +278,22 @@ h1:focus{outline:none}
 .okruh.cely{padding-bottom:16px}.okruh .hh{margin:16px 0 4px}
 .okruh .sez a{box-shadow:none;margin:0;border:0;border-top:1px solid var(--line);border-left:4px solid var(--carp);border-radius:0;padding:10px 0 10px 12px;background:none}.okruh .us li.box{box-shadow:none}
 .okruh .ms{box-shadow:none;border-left:0;border-right:0;border-radius:0;padding-left:0;padding-right:0}
-.shrnuti-akce{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:10px;margin:8px 0 4px}
-.shrnuti-akce>div{background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);padding:10px 14px}
+.k-stitky{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 10px}
+.pill.p-tich{background:var(--soft);color:var(--ink)}.pill.p-tich::before{display:none}
+.faze-pruh{display:grid;grid-template-columns:repeat(5,1fr);gap:0;list-style:none;margin:14px 0 18px;padding:18px 18px 14px;background:var(--card);border:1px solid var(--border-subtle);border-radius:var(--rounded-lg);box-shadow:var(--shadow-ambient)}
+.faze-pruh li{position:relative;padding-top:18px}
+.faze-pruh li::before{content:"";position:absolute;top:5px;left:0;right:0;height:4px;background:var(--border-subtle)}
+.faze-pruh li.hot::before{background:var(--accent-lime)}
+.faze-pruh li.ted::before{background:linear-gradient(90deg,var(--category-stavba) 50%,var(--border-subtle) 50%)}
+.faze-pruh li::after{content:"";position:absolute;top:0;left:0;width:14px;height:14px;border-radius:50%;background:#fff;border:3px solid var(--border-subtle)}
+.faze-pruh li.hot::after{border-color:var(--accent-lime);background:var(--accent-lime)}
+.faze-pruh li.ted::after{border-color:var(--category-stavba)}
+.faze-pruh b{display:block;font:700 14px var(--font-h)}.faze-pruh span{font-size:13px;color:var(--mute)}
+@media(max-width:700px){.faze-pruh{grid-template-columns:1fr 1fr;gap:10px 0}}
+.shrnuti-akce{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));gap:14px;margin:10px 0 4px}
+.shrnuti-akce>div{background:var(--card);border:1px solid var(--border-subtle);border-radius:var(--rounded-lg);padding:14px 16px 15px;box-shadow:var(--shadow-ambient);position:relative}
+.shrnuti-akce>div::after{content:"";position:absolute;left:16px;right:16px;top:0;height:3px;border-radius:0 0 3px 3px;background:var(--accent-lime)}
+.shrnuti-akce>div:nth-child(2)::after{background:var(--category-stavba)}.shrnuti-akce>div:nth-child(3)::after{background:var(--tertiary)}.shrnuti-akce>div:nth-child(4)::after{background:var(--border-mid)}
 .shrnuti-akce span{display:block;font-size:12.5px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--mute)}
 .shrnuti-akce b{display:block;font-size:18px;line-height:1.3;margin:2px 0}.shrnuti-akce small{display:block;font-size:13px;color:var(--mute)}
 /* karta filtrů nad okruhy */
@@ -551,6 +565,21 @@ function radek(e,p){
   <div class="det">${esc(e.text)}${odk?` · ${odk}`:""}</div></details></li>`;
 }
 
+// pruh fází akce (návrh 23. 11. 2026): každý krok je doložený dokladem, nic se neodhaduje
+function pruhFazi(p){
+  const ud=p.udalosti||[];
+  const prvni=t=>ud.filter(e=>e.typ===t).sort((a,b)=>(a.datum||"").localeCompare(b.datum||""))[0];
+  const projekt=ud.filter(e=>e.role==="projekt").sort((a,b)=>(a.datum||"").localeCompare(b.datum||""))[0];
+  const soutez=prvni("soutez");
+  const sod=ud.filter(e=>e.typ==="smlouva"&&/smlouva o dílo|stavb/i.test(e.kratce||"")).map(e=>e.datum).sort()[0]||soutez?.datum;
+  const hotovo=p.dokonceni?.datum||p.ukonceni_plneni?.datum;
+  const posl=posledni(p);
+  const kroky=[["Projekt",projekt?.datum,!!projekt],["Výběrové řízení",soutez?.datum,!!soutez],["Smlouva o dílo",sod,!!sod],
+    ["Staví se",p.faze==="probiha"?posl:(hotovo?sod:null),p.faze==="probiha"||p.faze==="dokonceno"],["Hotovo",hotovo,p.faze==="dokonceno"]];
+  const ted=p.faze==="dokonceno"?4:p.faze==="probiha"?3:kroky.findIndex(k=>!k[2]);
+  return `<ol class="faze-pruh" aria-label="Fáze akce">`+kroky.map(([n,d,ok],i)=>
+    `<li class="${ok&&i<ted?"hot":i===ted?"ted":""}"><b>${n}</b><span>${d?dat(String(d)):(ok?"datum nemáme":"zatím ne")}</span></li>`).join("")+`</ol>`;}
+
 // shrnutí nahoře v detailu stavby (audit, fáze 4): co, kolik, kdy hotovo, kdo + jak akci vede rozpočet
 function shrnutiAkce(p,dod,sch,upr){
   const [co,kolik]=hlavni(p);
@@ -580,9 +609,13 @@ function karta(p){
   const sk=p.souhrn.skladba_s_dph||[];
   const rozpocetText=sch||upr.celkem!=null?kc(sch?.celkem??upr.celkem):"–";
   const rozpocetPozn=!sch&&upr.celkem==null?(p.vlastnik_subjekt_id&&p.vlastnik_subjekt_id!=="00247618"?"investuje městská společnost, její rozpočet není veřejný":"v rozpočtu 2026 není jako samostatná položka – je součástí širší položky nebo se platí z jiného roku"):sch?.po_zmenach?.zmeneno?`po změnách ${kc(sch.po_zmenach.celkem)} · ${pl([...new Set(p.schvaleny_rozpocet.flatMap(x=>x.zmeny_ro))].filter(x=>x!=null).length,"rozpočtové opatření","rozpočtová opatření","rozpočtových opatření")}`:sch?"beze změn":"";
+  const zak=p.zakazky?.[0];
   return `<article class="karta" id="${p.id}">
+  <div class="k-stitky"><span class="pill ${p.faze==="probiha"?"stavba":p.faze==="dokonceno"?"zmena":"rozhodnuti"}">${esc((FAZE[p.faze]||["Akce"])[0])}</span>
+   <span class="pill p-tich">${esc(OKN[p.okruh]?.nazev||"")}</span>${zak?`<span class="pill p-tich">Výběrové řízení ${esc(zak.id.replace(/^ezak-/,""))}</span>`:""}</div>
   <h1 class="st" tabindex="-1">${esc(rozepis(p.nazev))}</h1>
   ${shrnutiAkce(p,dod,sch,upr)}
+  ${pruhFazi(p)}
   <p class="stav">${stavDoklad(p)}</p>
   ${z?`<p class="souhrn1"><span class="pozn" style="font-size:14px;display:block">Poslední událost</span>${esc(z.text)} ${esc(z.cena)}</p>`:""}
   ${z?.url?`<a class="akce" href="${esc(z.url)}" target="_blank" rel="noopener">${esc(z.odkaz)} ↗</a>`:""}
