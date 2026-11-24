@@ -314,8 +314,9 @@ function openGis(el) {
       const v = filtered.filter(p => p.okruh === o.id);
       if (!v.length) return "";
       const bez = v.filter(p => !p.geometry).length;
-      return '<h3 class="gis-okruh o-' + o.id + '">' + esc(o.nazev) + ' <small>' + v.length + (bez ? ' · bez polohy ' + bez : '') + '</small></h3><ul>' +
-        [...v.filter(p => p.geometry), ...v.filter(p => !p.geometry)].map(gisRow).join("") + '</ul>';
+      return '<details class="gis-okruh o-' + o.id + '"><summary>' + esc(o.nazev) + ' <small>' +
+        v.length + (bez ? ' · bez polohy ' + bez : '') + '</small></summary><ul>' +
+        [...v.filter(p => p.geometry), ...v.filter(p => !p.geometry)].map(gisRow).join("") + '</ul></details>';
     }).join("");
     if (!filtered.some(p => p.id === gisFilters.selected)) {
       gisFilters.selected = "";
