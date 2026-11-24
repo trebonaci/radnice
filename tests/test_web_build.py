@@ -58,8 +58,7 @@ def test_pisma_jsou_ve_webu_a_se_kopiruji(tmp_path, monkeypatch):
     import sys
     monkeypatch.setattr(sys, "argv", ["build", "--vystup", str(tmp_path)])
     build.main()
-    for f in ("inter-latin.woff2", "inter-latin-ext.woff2", "plus-jakarta-sans-latin.woff2",
-              "plus-jakarta-sans-latin-ext.woff2", "OFL-Inter.txt", "OFL-PlusJakartaSans.txt"):
+    for f in ("inter-latin.woff2", "inter-latin-ext.woff2", "OFL-Inter.txt"):
         assert (tmp_path / "fonts" / f).stat().st_size > 1000
     html = (tmp_path / "index.html").read_text(encoding="utf-8")
     assert "url(fonts/inter-latin.woff2)" in html

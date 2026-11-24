@@ -35,7 +35,8 @@ Jména osob v `navrh.html` jsou nahrazena značkou. Ve `screen.png` zůstala, al
   KPI karty ukazují jen čísla, která počítá testovaný kód z našich dat.
 - **„Zpoždění“** (červená kategorie): jen tam, kde data dokládají uplynulý smluvní termín, a to slovy „termín podle smlouvy uplynul“, ne „zpoždění +35 dní“.
 - **Fotky z návrhů** jsou vygenerované a nesmějí se použít jako fotky skutečných míst (viz Fotky níže).
-- **Tailwind z CDN a Google Fonts:** web nesmí načítat skripty a písma z cizích serverů. Styly píšeme do `web/site/*.css`, písma *Plus Jakarta Sans* a *Inter* (licence OFL) ukládáme do `web/site/fonts/`.
+- **Tailwind z CDN a Google Fonts:** web nesmí načítat skripty a písma z cizích serverů. Styly píšeme do `web/site/*.css`, písmo *Inter* (licence OFL) ukládáme do `web/site/fonts/`.
+- **Písmo:** návrhy počítají s *Plus Jakarta Sans* na nadpisech. Ondřej 24. 11. 2026 rozhodl, že oba weby mají jediné písmo **Inter** (platí i `PRAVIDLA-STYLU.md` hlavního webu). Nadpisy mají v šabloně vlastní proměnnou `--font-h`, dnes nastavenou na Inter, takže případná budoucí změna je na jednom řádku.
 
 ## Sekce a menu
 Pořadí menu: **Co se děje · Investice a opravy · Projekty · Usnesení · Místa a služby · Mapa**.

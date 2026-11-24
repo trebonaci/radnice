@@ -197,6 +197,8 @@ Pro označování městských agend jsou striktně dedikovány semantické barvy
 
 Typografický systém vytváří syntézu mezi moderním geometrickým charakterem a technickou čitelností dat:
 
+> **Písmo (24. 11. 2026):** Ondřej rozhodl, že oba weby používají jediné písmo **Inter**. Hodnoty `Plus Jakarta Sans` níže popisují původní grafické návrhy z 23. 11.; v šabloně se nepoužívají. Zbytek odstavce o typografii (tloušťky, záporné prostrkání) platí dál, jen v Interu.
+
 - **Nadpisy & KPI (`Plus Jakarta Sans`):** Vybrán pro moderní proporce a autoritativní tloušťky. Velká čísla a nadpisy sekcí mají záporný letter-spacing (-0.02em až -0.03em), což jim dodává kompaktní, publicistický vzhled v duchu Axios a Financial Times.
 - **Běžný text a tabulková data (`Inter`):** Optimální rozložení tahů a neutrální charakter zaručují bezchybnou čitelnost při velkých objemech textu, v tabulkách i na datových osách grafů. Využívá tabular numbers (`tnum`) pro vertikální srovnání číselných hodnot.
 - **Nadnadpisy sekcí (Kicker):** Formátovány přes `label-uppercase` – výhradně verzálkami s rozšířeným prostrkáním (+0.08em) pro okamžité uvedení do kontextu kapitoly.
