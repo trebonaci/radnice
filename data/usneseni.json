@@ -43,7 +43,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie samosprava"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "rm-2026-j110-u453",
@@ -130,7 +139,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": "zm-2026-j31-u80",
       "jistota": "nase_propojeni"
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie majetek_prevod"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "rm-2026-j110-u454",
@@ -186,7 +204,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie ostatni"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "rm-2026-j110-u455",
@@ -254,7 +281,17 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie investice",
+        "kategorie majetek_prevod"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "rm-2026-j110-u456",
@@ -331,7 +368,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie majetek_najem"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "rm-2026-j110-u457",
@@ -404,7 +450,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie investice"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "rm-2026-j110-u458",
@@ -530,7 +585,27 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "bydleni_pece",
+      "sport_kultura",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "bydleni_pece": [
+        "kategorie socialni",
+        "změna zmena-rm-2026-j110-u458",
+        "název (socialni)"
+      ],
+      "sport_kultura": [
+        "kategorie kultura",
+        "název (spolky)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie majetek_najem"
+      ]
+    },
+    "okruh": "bydleni_pece"
   },
   {
     "id": "rm-2026-j110-u459",
@@ -592,7 +667,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie majetek_najem"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "rm-2026-j110-u460",
@@ -648,7 +732,20 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "bydleni_pece",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "bydleni_pece": [
+        "název (byty)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie majetek_najem"
+      ]
+    },
+    "okruh": "bydleni_pece"
   },
   {
     "id": "rm-2026-j110-u461",
@@ -778,7 +875,23 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "bydleni_pece",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "bydleni_pece": [
+        "kategorie socialni",
+        "změna zmena-rm-2026-j110-u461",
+        "název (socialni)",
+        "název (byty)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie majetek_najem"
+      ]
+    },
+    "okruh": "bydleni_pece"
   },
   {
     "id": "rm-2026-j110-u462",
@@ -870,7 +983,21 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "skoly",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "skoly": [
+        "název (skoly)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie rozpocet",
+        "kategorie investice"
+      ]
+    },
+    "okruh": "skoly"
   },
   {
     "id": "rm-2026-j110-u463",
@@ -956,7 +1083,22 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "sport_kultura",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "sport_kultura": [
+        "kategorie sport",
+        "karta sportovni-hala-ubytovani",
+        "název (sport)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie investice"
+      ]
+    },
+    "okruh": "sport_kultura"
   },
   {
     "id": "rm-2026-j110-u464",
@@ -1003,7 +1145,21 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "skoly",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "skoly": [
+        "kategorie skolstvi",
+        "název (skoly)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie prispevkove_organizace"
+      ]
+    },
+    "okruh": "skoly"
   },
   {
     "id": "rm-2026-j110-u465",
@@ -1050,7 +1206,21 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "skoly",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "skoly": [
+        "kategorie skolstvi",
+        "název (skoly)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie prispevkove_organizace"
+      ]
+    },
+    "okruh": "skoly"
   },
   {
     "id": "rm-2026-j110-u466",
@@ -1102,7 +1272,21 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": "zm-2026-j31-u88",
       "jistota": "nase_propojeni"
-    }
+    },
+    "okruhy": [
+      "skoly",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "skoly": [
+        "kategorie skolstvi",
+        "název (skoly)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie prispevkove_organizace"
+      ]
+    },
+    "okruh": "skoly"
   },
   {
     "id": "rm-2026-j110-u467",
@@ -1154,7 +1338,21 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "skoly",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "skoly": [
+        "kategorie skolstvi",
+        "název (skoly)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie samosprava"
+      ]
+    },
+    "okruh": "skoly"
   },
   {
     "id": "rm-2026-j110-u468",
@@ -1217,7 +1415,18 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "doprava_prostor"
+    ],
+    "okruhy_podle": {
+      "doprava_prostor": [
+        "kategorie doprava",
+        "změna zmena-rm-2026-j110-u468",
+        "název (doprava)"
+      ]
+    },
+    "okruh": "doprava_prostor"
   },
   {
     "id": "rm-2026-j110-u469",
@@ -1268,7 +1477,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie samosprava"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "rm-2026-j110-u470",
@@ -1395,7 +1613,22 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "spolecnosti",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "spolecnosti": [
+        "kategorie lazne_spolecnosti",
+        "karta lazne-balneo-etapa1",
+        "název (lazne)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie investice"
+      ]
+    },
+    "okruh": "spolecnosti"
   },
   {
     "id": "rm-2026-j110-u471",
@@ -1468,7 +1701,21 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "spolecnosti",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "spolecnosti": [
+        "kategorie lazne_spolecnosti",
+        "název (lazne)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie investice"
+      ]
+    },
+    "okruh": "spolecnosti"
   },
   {
     "id": "rm-2026-j110-u472",
@@ -1535,7 +1782,22 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "spolecnosti",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "spolecnosti": [
+        "kategorie lazne_spolecnosti",
+        "karta lazne-budova-g",
+        "název (lazne)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie verejne_zakazky"
+      ]
+    },
+    "okruh": "spolecnosti"
   },
   {
     "id": "rm-2026-j110-u473",
@@ -1591,7 +1853,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": "zm-2026-j31-u84",
       "jistota": "nase_propojeni"
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie majetek_prevod"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "rm-2026-j110-u474",
@@ -1653,7 +1924,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": "zm-2026-j31-u83",
       "jistota": "nase_propojeni"
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie majetek_prevod"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "rm-2026-j111-u475",
@@ -1699,7 +1979,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie samosprava"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "rm-2026-j111-u476",
@@ -1756,7 +2045,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie majetek_prevod"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "rm-2026-j111-u477",
@@ -1870,7 +2168,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie majetek_najem"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "rm-2026-j111-u478",
@@ -1921,7 +2228,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie majetek_najem"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "rm-2026-j111-u479",
@@ -1972,7 +2288,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie majetek_najem"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "rm-2026-j111-u480",
@@ -2024,7 +2349,21 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "doprava_prostor",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "doprava_prostor": [
+        "kategorie voda_odpady",
+        "název (voda)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie majetek_najem"
+      ]
+    },
+    "okruh": "doprava_prostor"
   },
   {
     "id": "rm-2026-j111-u481",
@@ -2118,7 +2457,22 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "doprava_prostor",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "doprava_prostor": [
+        "kategorie voda_odpady",
+        "změna zmena-rm-2026-j111-u481",
+        "název (voda)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie majetek_najem"
+      ]
+    },
+    "okruh": "doprava_prostor"
   },
   {
     "id": "rm-2026-j111-u482",
@@ -2175,7 +2529,17 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "doprava_prostor"
+    ],
+    "okruhy_podle": {
+      "doprava_prostor": [
+        "kategorie doprava",
+        "název (doprava)"
+      ]
+    },
+    "okruh": "doprava_prostor"
   },
   {
     "id": "rm-2026-j111-u483",
@@ -2241,7 +2605,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie majetek_prevod"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "rm-2026-j111-u484",
@@ -2292,7 +2665,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie ostatni"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "rm-2026-j111-u485",
@@ -2360,7 +2742,17 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie investice",
+        "kategorie verejne_zakazky"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "rm-2026-j111-u486",
@@ -2469,7 +2861,23 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "skoly",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "skoly": [
+        "kategorie skolstvi",
+        "změna zmena-rm-2026-j111-u486",
+        "název (skoly)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie dotace_dary",
+        "kategorie prispevkove_organizace"
+      ]
+    },
+    "okruh": "skoly"
   },
   {
     "id": "rm-2026-j111-u487",
@@ -2573,7 +2981,23 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "doprava_prostor",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "doprava_prostor": [
+        "kategorie doprava",
+        "karta auto-vz-914",
+        "název (doprava)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie investice",
+        "kategorie verejne_zakazky"
+      ]
+    },
+    "okruh": "doprava_prostor"
   },
   {
     "id": "rm-2026-j111-u488",
@@ -2677,7 +3101,23 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "doprava_prostor",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "doprava_prostor": [
+        "kategorie doprava",
+        "karta auto-vz-935",
+        "název (doprava)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie investice",
+        "kategorie verejne_zakazky"
+      ]
+    },
+    "okruh": "doprava_prostor"
   },
   {
     "id": "rm-2026-j111-u489",
@@ -2763,7 +3203,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie majetek_najem"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "rm-2026-j111-u490",
@@ -2846,7 +3295,22 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "sport_kultura",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "sport_kultura": [
+        "kategorie sport",
+        "karta pristavba-telocvicen",
+        "název (sport)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie investice"
+      ]
+    },
+    "okruh": "sport_kultura"
   },
   {
     "id": "rm-2026-j111-u491",
@@ -2929,7 +3393,22 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "sport_kultura",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "sport_kultura": [
+        "kategorie sport",
+        "karta sportovni-hala-ubytovani",
+        "název (sport)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie investice"
+      ]
+    },
+    "okruh": "sport_kultura"
   },
   {
     "id": "rm-2026-j111-u492",
@@ -3009,7 +3488,21 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "doprava_prostor",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "doprava_prostor": [
+        "kategorie voda_odpady",
+        "název (voda)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie investice"
+      ]
+    },
+    "okruh": "doprava_prostor"
   },
   {
     "id": "rm-2026-j111-u493",
@@ -3086,7 +3579,23 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "sport_kultura",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "sport_kultura": [
+        "kategorie sport",
+        "karta pristavba-telocvicen",
+        "karta sportovni-hala-ubytovani",
+        "název (sport)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie rozpocet"
+      ]
+    },
+    "okruh": "sport_kultura"
   },
   {
     "id": "rm-2026-j111-u494",
@@ -3138,7 +3647,21 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "skoly",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "skoly": [
+        "kategorie skolstvi",
+        "název (skoly)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie personalni"
+      ]
+    },
+    "okruh": "skoly"
   },
   {
     "id": "rm-2026-j112-u495",
@@ -3184,7 +3707,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie samosprava"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "rm-2026-j112-u496",
@@ -3299,7 +3831,21 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "sport_kultura",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "sport_kultura": [
+        "kategorie sport",
+        "kategorie kultura"
+      ],
+      "rozvoj_sprava": [
+        "kategorie majetek_najem"
+      ]
+    },
+    "okruh": "sport_kultura"
   },
   {
     "id": "rm-2026-j112-u497",
@@ -3374,7 +3920,21 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "bydleni_pece",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "bydleni_pece": [
+        "kategorie socialni",
+        "změna zmena-rm-2026-j112-u497"
+      ],
+      "rozvoj_sprava": [
+        "kategorie majetek_najem"
+      ]
+    },
+    "okruh": "bydleni_pece"
   },
   {
     "id": "rm-2026-j112-u498",
@@ -3441,7 +4001,21 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "bydleni_pece",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "bydleni_pece": [
+        "název (byty)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie majetek_najem",
+        "kategorie verejne_zakazky"
+      ]
+    },
+    "okruh": "bydleni_pece"
   },
   {
     "id": "rm-2026-j112-u499",
@@ -3533,7 +4107,22 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "bydleni_pece",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "bydleni_pece": [
+        "kategorie socialni",
+        "název (socialni)",
+        "název (byty)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie majetek_najem"
+      ]
+    },
+    "okruh": "bydleni_pece"
   },
   {
     "id": "rm-2026-j112-u500",
@@ -3620,7 +4209,22 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "bydleni_pece",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "bydleni_pece": [
+        "kategorie socialni",
+        "název (socialni)",
+        "název (byty)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie majetek_najem"
+      ]
+    },
+    "okruh": "bydleni_pece"
   },
   {
     "id": "rm-2026-j112-u501",
@@ -3709,7 +4313,22 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "bydleni_pece",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "bydleni_pece": [
+        "kategorie socialni",
+        "název (socialni)",
+        "název (byty)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie majetek_najem"
+      ]
+    },
+    "okruh": "bydleni_pece"
   },
   {
     "id": "rm-2026-j112-u502",
@@ -3760,7 +4379,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie ostatni"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "rm-2026-j112-u503",
@@ -3831,7 +4459,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie majetek_najem"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "rm-2026-j112-u504",
@@ -3901,7 +4538,21 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "sport_kultura",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "sport_kultura": [
+        "kategorie sport",
+        "název (sport)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie prispevkove_organizace"
+      ]
+    },
+    "okruh": "sport_kultura"
   },
   {
     "id": "rm-2026-j112-u505",
@@ -3971,7 +4622,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie rozpocet"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "rm-2026-j112-u506",
@@ -4063,7 +4723,23 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "doprava_prostor",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "doprava_prostor": [
+        "kategorie doprava",
+        "karta mk-hermankova-daskabat",
+        "název (doprava)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie verejne_zakazky",
+        "kategorie investice"
+      ]
+    },
+    "okruh": "doprava_prostor"
   },
   {
     "id": "rm-2026-j112-u507",
@@ -4132,7 +4808,23 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "doprava_prostor",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "doprava_prostor": [
+        "kategorie doprava",
+        "karta mk-sidliste",
+        "název (doprava)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie investice",
+        "kategorie verejne_zakazky"
+      ]
+    },
+    "okruh": "doprava_prostor"
   },
   {
     "id": "rm-2026-j112-u508",
@@ -4220,7 +4912,23 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "skoly",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "skoly": [
+        "kategorie skolstvi",
+        "karta fve-zs-na-sadech",
+        "název (skoly)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie investice",
+        "kategorie verejne_zakazky"
+      ]
+    },
+    "okruh": "skoly"
   },
   {
     "id": "rm-2026-j112-u509",
@@ -4307,7 +5015,21 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "spolecnosti",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "spolecnosti": [
+        "kategorie lazne_spolecnosti",
+        "název (lazne)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie investice"
+      ]
+    },
+    "okruh": "spolecnosti"
   },
   {
     "id": "rm-2026-j112-u510",
@@ -4391,7 +5113,21 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "doprava_prostor",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "doprava_prostor": [
+        "název (zelen)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie majetek_prevod",
+        "kategorie verejne_zakazky"
+      ]
+    },
+    "okruh": "doprava_prostor"
   },
   {
     "id": "rm-2026-j112-u511",
@@ -4470,7 +5206,18 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "sport_kultura"
+    ],
+    "okruhy_podle": {
+      "sport_kultura": [
+        "kategorie kultura",
+        "změna zmena-rm-2026-j112-u511",
+        "název (kultura)"
+      ]
+    },
+    "okruh": "sport_kultura"
   },
   {
     "id": "rm-2026-j112-u512",
@@ -4533,7 +5280,21 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "bydleni_pece",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "bydleni_pece": [
+        "kategorie socialni",
+        "název (byty)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie majetek_najem"
+      ]
+    },
+    "okruh": "bydleni_pece"
   },
   {
     "id": "rm-2026-j112-u513",
@@ -4584,7 +5345,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie ostatni"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "rm-2026-j113-u514",
@@ -4630,7 +5400,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie samosprava"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "rm-2026-j113-u515",
@@ -4722,7 +5501,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie majetek_najem"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "rm-2026-j113-u516",
@@ -4780,7 +5568,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie majetek_prevod"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "rm-2026-j113-u517",
@@ -4841,7 +5638,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie majetek_prevod"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "rm-2026-j113-u518",
@@ -4923,7 +5729,27 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "doprava_prostor",
+      "spolecnosti",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "doprava_prostor": [
+        "kategorie voda_odpady",
+        "název (voda)",
+        "název (doprava)"
+      ],
+      "spolecnosti": [
+        "název (lazne)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie majetek_prevod",
+        "kategorie investice"
+      ]
+    },
+    "okruh": "doprava_prostor"
   },
   {
     "id": "rm-2026-j113-u519",
@@ -4991,7 +5817,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie majetek_najem"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "rm-2026-j113-u520",
@@ -5059,7 +5894,21 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "sport_kultura",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "sport_kultura": [
+        "kategorie kultura",
+        "název (kultura)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie majetek_najem"
+      ]
+    },
+    "okruh": "sport_kultura"
   },
   {
     "id": "rm-2026-j113-u521",
@@ -5139,7 +5988,22 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "sport_kultura",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "sport_kultura": [
+        "kategorie kultura",
+        "změna zmena-rm-2026-j113-u521",
+        "název (kultura)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie dotace_dary"
+      ]
+    },
+    "okruh": "sport_kultura"
   },
   {
     "id": "rm-2026-j113-u522",
@@ -5206,7 +6070,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie majetek_prevod"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "rm-2026-j113-u523",
@@ -5300,7 +6173,22 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "sport_kultura",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "sport_kultura": [
+        "kategorie sport",
+        "název (sport)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie prispevkove_organizace",
+        "kategorie investice"
+      ]
+    },
+    "okruh": "sport_kultura"
   },
   {
     "id": "rm-2026-j113-u524",
@@ -5377,7 +6265,20 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "sport_kultura",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "sport_kultura": [
+        "kategorie kultura"
+      ],
+      "rozvoj_sprava": [
+        "kategorie rozpocet"
+      ]
+    },
+    "okruh": "sport_kultura"
   },
   {
     "id": "rm-2026-j113-u525",
@@ -5470,7 +6371,23 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "skoly",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "skoly": [
+        "kategorie skolstvi",
+        "změna zmena-rm-2026-j113-u525",
+        "název (skoly)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie dotace_dary",
+        "kategorie rozpocet"
+      ]
+    },
+    "okruh": "skoly"
   },
   {
     "id": "rm-2026-j113-u526",
@@ -5532,7 +6449,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie rozpocet"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "rm-2026-j113-u527",
@@ -5632,7 +6558,27 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "bydleni_pece",
+      "sport_kultura",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "bydleni_pece": [
+        "karta dps3-energie"
+      ],
+      "sport_kultura": [
+        "kategorie sport",
+        "karta sportovni-hala-ubytovani",
+        "název (sport)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie rozpocet",
+        "kategorie investice"
+      ]
+    },
+    "okruh": "sport_kultura"
   },
   {
     "id": "rm-2026-j113-u528",
@@ -5733,7 +6679,22 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "doprava_prostor",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "doprava_prostor": [
+        "kategorie doprava",
+        "karta auto-vz-914",
+        "název (doprava)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie investice"
+      ]
+    },
+    "okruh": "doprava_prostor"
   },
   {
     "id": "rm-2026-j113-u529",
@@ -5803,7 +6764,21 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "doprava_prostor",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "doprava_prostor": [
+        "název (voda)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie investice",
+        "kategorie rozpocet"
+      ]
+    },
+    "okruh": "doprava_prostor"
   },
   {
     "id": "rm-2026-j113-u530",
@@ -5888,7 +6863,22 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "sport_kultura",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "sport_kultura": [
+        "kategorie sport",
+        "karta sportovni-hala-ubytovani",
+        "název (sport)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie investice"
+      ]
+    },
+    "okruh": "sport_kultura"
   },
   {
     "id": "rm-2026-j113-u531",
@@ -5951,7 +6941,21 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "bydleni_pece",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "bydleni_pece": [
+        "kategorie socialni",
+        "název (socialni)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie samosprava"
+      ]
+    },
+    "okruh": "bydleni_pece"
   },
   {
     "id": "rm-2026-j113-u532",
@@ -6014,7 +7018,21 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "sport_kultura",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "sport_kultura": [
+        "kategorie kultura",
+        "název (kultura)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie prispevkove_organizace"
+      ]
+    },
+    "okruh": "sport_kultura"
   },
   {
     "id": "rm-2026-j113-u533",
@@ -6109,7 +7127,23 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "bydleni_pece",
+      "sport_kultura"
+    ],
+    "okruhy_podle": {
+      "bydleni_pece": [
+        "kategorie socialni",
+        "název (socialni)"
+      ],
+      "sport_kultura": [
+        "kategorie kultura",
+        "změna zmena-rm-2026-j113-u533",
+        "název (kultura)"
+      ]
+    },
+    "okruh": "sport_kultura"
   },
   {
     "id": "rm-2026-j113-u534",
@@ -6135,29 +7169,12 @@
     "tema": "Žádost o dotaci pro jednotku hasičů Branná",
     "tema_ai": true,
     "kategorie": [
-      "dotace_dary",
-      "socialni"
+      "dotace_dary"
     ],
     "kategorie_ai": true,
     "shrnuti": "Rada schválila podání žádosti o neinvestiční dotaci na odbornou přípravu, zásahy mimo území zřizovatele a vybavení jednotky dobrovolných hasičů Třeboň – Branná za období 1. 8. 2025 až 31. 7. 2026.",
     "shrnuti_ai": true,
-    "stitky": [
-      {
-        "stitek": "socialni",
-        "skupina": "mekka",
-        "zdroj": "kat-socialni",
-        "duvod": "Usnesení je zařazeno do kategorie Sociální služby a zdravotnictví.",
-        "citace": {
-          "dokument_id": "zapis-rm-2026-10-21",
-          "strany": [
-            10
-          ],
-          "text": "podání žádosti o poskytnutí účelové neinvestiční dotace na výdaje za odbornou přípravu"
-        },
-        "stitek_ai": true,
-        "faze": null
-      }
-    ],
+    "stitky": [],
     "citace": {
       "dokument_id": "zapis-rm-2026-10-21",
       "strany": [
@@ -6177,7 +7194,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie dotace_dary"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "rm-2026-j113-u535",
@@ -6234,7 +7260,21 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "spolecnosti",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "spolecnosti": [
+        "kategorie lazne_spolecnosti",
+        "název (lazne)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie majetek_prevod"
+      ]
+    },
+    "okruh": "spolecnosti"
   },
   {
     "id": "rm-2026-j113-u536",
@@ -6280,7 +7320,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie samosprava"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "rm-2026-j113-u537",
@@ -6331,7 +7380,17 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "skoly"
+    ],
+    "okruhy_podle": {
+      "skoly": [
+        "kategorie skolstvi",
+        "název (skoly)"
+      ]
+    },
+    "okruh": "skoly"
   },
   {
     "id": "rm-2026-j113-u538",
@@ -6378,7 +7437,21 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "doprava_prostor",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "doprava_prostor": [
+        "kategorie doprava",
+        "název (doprava)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie samosprava"
+      ]
+    },
+    "okruh": "doprava_prostor"
   },
   {
     "id": "rm-2026-j113-u539",
@@ -6430,7 +7503,25 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "bydleni_pece",
+      "spolecnosti",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "bydleni_pece": [
+        "název (byty)"
+      ],
+      "spolecnosti": [
+        "kategorie lazne_spolecnosti",
+        "název (lazne)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie majetek_prevod"
+      ]
+    },
+    "okruh": "spolecnosti"
   },
   {
     "id": "rm-2026-j113-u540",
@@ -6486,7 +7577,17 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "spolecnosti"
+    ],
+    "okruhy_podle": {
+      "spolecnosti": [
+        "kategorie lazne_spolecnosti",
+        "název (lazne)"
+      ]
+    },
+    "okruh": "spolecnosti"
   },
   {
     "id": "rm-2026-j113-u541",
@@ -6594,7 +7695,23 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "sport_kultura",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "sport_kultura": [
+        "kategorie sport",
+        "změna zmena-rm-2026-j113-u541",
+        "název (sport)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie majetek_najem",
+        "kategorie prispevkove_organizace"
+      ]
+    },
+    "okruh": "sport_kultura"
   },
   {
     "id": "rm-2026-j113-u542",
@@ -6687,7 +7804,23 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "sport_kultura",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "sport_kultura": [
+        "kategorie sport",
+        "karta pristavba-telocvicen",
+        "název (sport)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie rozpocet",
+        "kategorie investice"
+      ]
+    },
+    "okruh": "sport_kultura"
   },
   {
     "id": "rm-2026-j113-u543",
@@ -6750,7 +7883,17 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie rozpocet",
+        "kategorie personalni"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "rm-2026-j113-u544",
@@ -6818,7 +7961,18 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "skoly"
+    ],
+    "okruhy_podle": {
+      "skoly": [
+        "kategorie skolstvi",
+        "změna zmena-rm-2026-j113-u544",
+        "název (skoly)"
+      ]
+    },
+    "okruh": "skoly"
   },
   {
     "id": "rm-2026-j113-u545",
@@ -6886,7 +8040,20 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "sport_kultura",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "sport_kultura": [
+        "kategorie kultura"
+      ],
+      "rozvoj_sprava": [
+        "kategorie samosprava"
+      ]
+    },
+    "okruh": "sport_kultura"
   },
   {
     "id": "rm-2026-j114-u546",
@@ -6932,7 +8099,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie samosprava"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "rm-2026-j114-u547",
@@ -7020,7 +8196,21 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "bydleni_pece",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "bydleni_pece": [
+        "kategorie socialni",
+        "název (socialni)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie dotace_dary"
+      ]
+    },
+    "okruh": "bydleni_pece"
   },
   {
     "id": "rm-2026-j114-u548",
@@ -7132,7 +8322,21 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "sport_kultura",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "sport_kultura": [
+        "kategorie sport",
+        "název (sport)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie dotace_dary"
+      ]
+    },
+    "okruh": "sport_kultura"
   },
   {
     "id": "rm-2026-j114-u549",
@@ -7222,7 +8426,20 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "sport_kultura",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "sport_kultura": [
+        "název (spolky)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie dotace_dary"
+      ]
+    },
+    "okruh": "sport_kultura"
   },
   {
     "id": "rm-2026-j114-u550",
@@ -7292,7 +8509,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie rozpocet"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "rm-2026-j114-u551",
@@ -7378,7 +8604,23 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "sport_kultura",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "sport_kultura": [
+        "kategorie sport",
+        "karta pristavba-telocvicen",
+        "název (sport)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie investice",
+        "kategorie verejne_zakazky"
+      ]
+    },
+    "okruh": "sport_kultura"
   },
   {
     "id": "rm-2026-j114-u552",
@@ -7446,7 +8688,21 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "sport_kultura",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "sport_kultura": [
+        "název (sport)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie personalni",
+        "kategorie prispevkove_organizace"
+      ]
+    },
+    "okruh": "sport_kultura"
   },
   {
     "id": "rm-2026-j114-u553",
@@ -7509,7 +8765,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie ostatni"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "rm-2026-j114-u554",
@@ -7560,7 +8825,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie samosprava"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "rm-2026-j1-u1",
@@ -7606,7 +8880,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie samosprava"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "rm-2026-j1-u2",
@@ -7667,7 +8950,17 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie majetek_prevod",
+        "kategorie verejne_zakazky"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "rm-2026-j1-u3",
@@ -7784,7 +9077,22 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "sport_kultura",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "sport_kultura": [
+        "kategorie sport",
+        "kategorie kultura",
+        "změna zmena-rm-2026-j1-u3"
+      ],
+      "rozvoj_sprava": [
+        "kategorie majetek_najem"
+      ]
+    },
+    "okruh": "sport_kultura"
   },
   {
     "id": "rm-2026-j1-u4",
@@ -7830,7 +9138,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie majetek_najem"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "rm-2026-j1-u5",
@@ -7897,7 +9214,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie majetek_najem"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "rm-2026-j1-u6",
@@ -7960,7 +9286,21 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "sport_kultura",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "sport_kultura": [
+        "kategorie sport",
+        "název (sport)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie prispevkove_organizace"
+      ]
+    },
+    "okruh": "sport_kultura"
   },
   {
     "id": "rm-2026-j1-u7",
@@ -8021,7 +9361,21 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "doprava_prostor",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "doprava_prostor": [
+        "kategorie voda_odpady",
+        "název (voda)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie rozpocet"
+      ]
+    },
+    "okruh": "doprava_prostor"
   },
   {
     "id": "rm-2026-j1-u8",
@@ -8130,7 +9484,23 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "skoly",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "skoly": [
+        "kategorie skolstvi",
+        "změna zmena-rm-2026-j1-u8",
+        "název (skoly)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie dotace_dary",
+        "kategorie prispevkove_organizace"
+      ]
+    },
+    "okruh": "skoly"
   },
   {
     "id": "rm-2026-j1-u9",
@@ -8190,7 +9560,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie rozpocet"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "zm-2026-j31-u73",
@@ -8236,7 +9615,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie samosprava"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "zm-2026-j31-u74",
@@ -8287,7 +9675,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie samosprava"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "zm-2026-j31-u75",
@@ -8333,7 +9730,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie rozpocet"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "zm-2026-j31-u76",
@@ -8379,7 +9785,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie rozpocet"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "zm-2026-j31-u77",
@@ -8457,7 +9872,21 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "spolecnosti",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "spolecnosti": [
+        "kategorie lazne_spolecnosti"
+      ],
+      "rozvoj_sprava": [
+        "kategorie rozpocet",
+        "kategorie investice"
+      ]
+    },
+    "okruh": "spolecnosti"
   },
   {
     "id": "zm-2026-j31-u78",
@@ -8531,7 +9960,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie majetek_prevod"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "zm-2026-j31-u79",
@@ -8599,7 +10037,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie majetek_prevod"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "zm-2026-j31-u80",
@@ -8686,7 +10133,16 @@
       "rada_usneseni_id": "rm-2026-j110-u453",
       "zm_usneseni_id": null,
       "jistota": "nase_propojeni"
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie majetek_prevod"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "zm-2026-j31-u81",
@@ -8758,7 +10214,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie majetek_prevod"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "zm-2026-j31-u82",
@@ -8822,7 +10287,17 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie majetek_prevod",
+        "kategorie dotace_dary"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "zm-2026-j31-u83",
@@ -8914,7 +10389,16 @@
       "rada_usneseni_id": "rm-2026-j110-u474",
       "zm_usneseni_id": null,
       "jistota": "nase_propojeni"
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie majetek_prevod"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "zm-2026-j31-u84",
@@ -8983,7 +10467,16 @@
       "rada_usneseni_id": "rm-2026-j110-u473",
       "zm_usneseni_id": null,
       "jistota": "nase_propojeni"
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie majetek_prevod"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "zm-2026-j31-u85",
@@ -9045,7 +10538,17 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie majetek_prevod",
+        "kategorie samosprava"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "zm-2026-j31-u86",
@@ -9113,7 +10616,18 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie ostatni",
+        "změna zmena-zm-2026-j31-u86",
+        "název (uzemni-plan)"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "zm-2026-j31-u87",
@@ -9216,7 +10730,17 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie ostatni",
+        "název (uzemni-plan)"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "zm-2026-j31-u88",
@@ -9268,7 +10792,21 @@
       "rada_usneseni_id": "rm-2026-j110-u466",
       "zm_usneseni_id": null,
       "jistota": "nase_propojeni"
-    }
+    },
+    "okruhy": [
+      "skoly",
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "skoly": [
+        "kategorie skolstvi",
+        "název (skoly)"
+      ],
+      "rozvoj_sprava": [
+        "kategorie prispevkove_organizace"
+      ]
+    },
+    "okruh": "skoly"
   },
   {
     "id": "zm-2026-j1-u1",
@@ -9314,7 +10852,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie samosprava"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "zm-2026-j1-u2",
@@ -9360,7 +10907,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie samosprava"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "zm-2026-j1-u3",
@@ -9406,7 +10962,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie samosprava"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "zm-2026-j1-u4",
@@ -9452,7 +11017,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie samosprava"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "zm-2026-j1-u5",
@@ -9498,7 +11072,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie samosprava"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "zm-2026-j1-u6",
@@ -9544,7 +11127,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie samosprava"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "zm-2026-j1-u7",
@@ -9591,7 +11183,17 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie samosprava",
+        "kategorie personalni"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "zm-2026-j1-u8",
@@ -9637,7 +11239,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie samosprava"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "zm-2026-j1-u9",
@@ -9683,7 +11294,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie samosprava"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "zm-2026-j1-u10",
@@ -9734,7 +11354,16 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie samosprava"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   },
   {
     "id": "zm-2026-j1-u11",
@@ -9780,6 +11409,15 @@
       "rada_usneseni_id": null,
       "zm_usneseni_id": null,
       "jistota": null
-    }
+    },
+    "okruhy": [
+      "rozvoj_sprava"
+    ],
+    "okruhy_podle": {
+      "rozvoj_sprava": [
+        "kategorie samosprava"
+      ]
+    },
+    "okruh": "rozvoj_sprava"
   }
 ]

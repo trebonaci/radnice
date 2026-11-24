@@ -60,6 +60,9 @@
           ]
         },
         "dodatek": false,
+        "data_smluv": [
+          "2023-03-08"
+        ],
         "zapocteno": true,
         "nezapocteno": null,
         "stupen": "projekt",
@@ -114,7 +117,9 @@
     "zdroj": null,
     "stavby": [],
     "faze": "zasobnik",
-    "sprm": []
+    "sprm": [],
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "typ": "polozka",
@@ -202,7 +207,9 @@
     "zdroj": null,
     "stavby": [],
     "faze": "zasobnik",
-    "sprm": []
+    "sprm": [],
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "typ": "polozka",
@@ -290,7 +297,9 @@
     "zdroj": null,
     "stavby": [],
     "faze": "zasobnik",
-    "sprm": []
+    "sprm": [],
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "typ": "polozka",
@@ -355,8 +364,11 @@
           ]
         },
         "dodatek": false,
+        "data_smluv": [
+          "2024-02-05"
+        ],
         "zapocteno": false,
-        "nezapocteno": "stejná cena jako smlouva rs-27521487",
+        "nezapocteno": "stejná smlouva jako rs-27521487 (cena nebo datum podpisu)",
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       },
@@ -466,7 +478,9 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "typ": "polozka",
@@ -590,7 +604,9 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "typ": "polozka",
@@ -678,7 +694,9 @@
     "zdroj": null,
     "stavby": [],
     "faze": "zasobnik",
-    "sprm": []
+    "sprm": [],
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "typ": "polozka",
@@ -763,8 +781,11 @@
           ]
         },
         "dodatek": false,
+        "data_smluv": [
+          "2024-11-12"
+        ],
         "zapocteno": false,
-        "nezapocteno": "stejná cena jako smlouva rs-30953920",
+        "nezapocteno": "stejná smlouva jako rs-30953920 (cena nebo datum podpisu)",
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       },
@@ -839,7 +860,9 @@
     "zdroj": null,
     "stavby": [],
     "faze": "zasobnik",
-    "sprm": []
+    "sprm": [],
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "typ": "polozka",
@@ -927,7 +950,9 @@
     "zdroj": null,
     "stavby": [],
     "faze": "zasobnik",
-    "sprm": []
+    "sprm": [],
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "typ": "polozka",
@@ -1015,7 +1040,9 @@
     "zdroj": null,
     "stavby": [],
     "faze": "zasobnik",
-    "sprm": []
+    "sprm": [],
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "typ": "polozka",
@@ -1125,7 +1152,9 @@
     "zdroj": null,
     "stavby": [],
     "faze": "zasobnik",
-    "sprm": []
+    "sprm": [],
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "typ": "polozka",
@@ -1213,7 +1242,9 @@
     "zdroj": null,
     "stavby": [],
     "faze": "zasobnik",
-    "sprm": []
+    "sprm": [],
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "typ": "polozka",
@@ -1301,7 +1332,9 @@
     "zdroj": null,
     "stavby": [],
     "faze": "zasobnik",
-    "sprm": []
+    "sprm": [],
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "typ": "polozka",
@@ -1403,7 +1436,9 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "typ": "polozka",
@@ -1517,7 +1552,9 @@
     "zdroj": null,
     "stavby": [],
     "faze": "zasobnik",
-    "sprm": []
+    "sprm": [],
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "typ": "polozka",
@@ -1617,7 +1654,9 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "typ": "polozka",
@@ -1741,7 +1780,9 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "typ": "polozka",
@@ -1843,7 +1884,9 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "typ": "polozka",
@@ -1931,7 +1974,9 @@
     "zdroj": null,
     "stavby": [],
     "faze": "zasobnik",
-    "sprm": []
+    "sprm": [],
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "typ": "polozka",
@@ -2019,7 +2064,9 @@
     "zdroj": null,
     "stavby": [],
     "faze": "zasobnik",
-    "sprm": []
+    "sprm": [],
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "typ": "polozka",
@@ -2107,7 +2154,9 @@
     "zdroj": null,
     "stavby": [],
     "faze": "zasobnik",
-    "sprm": []
+    "sprm": [],
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "typ": "polozka",
@@ -2195,7 +2244,9 @@
     "zdroj": null,
     "stavby": [],
     "faze": "zasobnik",
-    "sprm": []
+    "sprm": [],
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "typ": "polozka",
@@ -2283,7 +2334,9 @@
     "zdroj": null,
     "stavby": [],
     "faze": "zasobnik",
-    "sprm": []
+    "sprm": [],
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "typ": "polozka",
@@ -2371,7 +2424,9 @@
     "zdroj": null,
     "stavby": [],
     "faze": "zasobnik",
-    "sprm": []
+    "sprm": [],
+    "okruh": "rozvoj_sprava",
+    "okruh_podle": "téma"
   },
   {
     "typ": "polozka",
@@ -2414,7 +2469,10 @@
             "<cena_za_rok_bez_dph>346000.00</cena_za_rok_bez_dph>"
           ]
         },
-        "dodatek": false
+        "dodatek": false,
+        "data_smluv": [
+          "2023-04-25"
+        ]
       },
       "jistota": "dolozeno"
     },
@@ -2445,6 +2503,9 @@
           ]
         },
         "dodatek": false,
+        "data_smluv": [
+          "2023-04-25"
+        ],
         "zapocteno": true,
         "nezapocteno": null,
         "stupen": "projekt",
@@ -2477,7 +2538,9 @@
     "zdroj": null,
     "stavby": [],
     "faze": "zasobnik",
-    "sprm": []
+    "sprm": [],
+    "okruh": "bydleni_pece",
+    "okruh_podle": "téma"
   },
   {
     "typ": "polozka",
@@ -2532,8 +2595,11 @@
         },
         "zaplaceno": null,
         "dodatek": false,
+        "data_smluv": [
+          "2026-08-04"
+        ],
         "zapocteno": false,
-        "nezapocteno": "stejná cena jako smlouva rs-39002054",
+        "nezapocteno": "stejná smlouva jako rs-39002054 (cena nebo datum podpisu)",
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       },
@@ -2585,7 +2651,9 @@
     "zdroj": null,
     "stavby": [],
     "faze": "zasobnik",
-    "sprm": []
+    "sprm": [],
+    "okruh": "spolecnosti",
+    "okruh_podle": "téma"
   },
   {
     "typ": "polozka",
@@ -2640,8 +2708,11 @@
         },
         "zaplaceno": null,
         "dodatek": false,
+        "data_smluv": [
+          "2026-11-18"
+        ],
         "zapocteno": false,
-        "nezapocteno": "stejná cena jako smlouva rs-40408421",
+        "nezapocteno": "stejná smlouva jako rs-40408421 (cena nebo datum podpisu)",
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       },
@@ -2693,7 +2764,9 @@
     "zdroj": null,
     "stavby": [],
     "faze": "zasobnik",
-    "sprm": []
+    "sprm": [],
+    "okruh": "spolecnosti",
+    "okruh_podle": "téma"
   },
   {
     "typ": "polozka",
@@ -2776,8 +2849,11 @@
           ]
         },
         "dodatek": false,
+        "data_smluv": [
+          "2024-04-16"
+        ],
         "zapocteno": false,
-        "nezapocteno": "stejná cena jako smlouva rs-28361767",
+        "nezapocteno": "stejná smlouva jako rs-28361767 (cena nebo datum podpisu)",
         "stupen": "studie",
         "jistota": "nase_propojeni"
       },
@@ -2798,8 +2874,11 @@
         },
         "zaplaceno": null,
         "dodatek": false,
+        "data_smluv": [
+          "2025-11-11"
+        ],
         "zapocteno": false,
-        "nezapocteno": "stejná cena jako smlouva rs-35578073",
+        "nezapocteno": "stejná smlouva jako rs-35578073 (cena nebo datum podpisu)",
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       },
@@ -2851,7 +2930,9 @@
     "zdroj": null,
     "stavby": [],
     "faze": "zasobnik",
-    "sprm": []
+    "sprm": [],
+    "okruh": "spolecnosti",
+    "okruh_podle": "téma"
   },
   {
     "typ": "polozka",
@@ -2937,7 +3018,9 @@
     "zdroj": null,
     "stavby": [],
     "faze": "zasobnik",
-    "sprm": []
+    "sprm": [],
+    "okruh": "spolecnosti",
+    "okruh_podle": "téma"
   },
   {
     "typ": "polozka",
@@ -3037,7 +3120,9 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "okruh": "spolecnosti",
+    "okruh_podle": "téma"
   },
   {
     "typ": "polozka",
@@ -3123,7 +3208,9 @@
     "zdroj": null,
     "stavby": [],
     "faze": "zasobnik",
-    "sprm": []
+    "sprm": [],
+    "okruh": "spolecnosti",
+    "okruh_podle": "téma"
   },
   {
     "typ": "polozka",
@@ -3166,11 +3253,36 @@
             "<cena_za_rok_bez_dph>14700.00</cena_za_rok_bez_dph>"
           ]
         },
-        "dodatek": false
+        "dodatek": false,
+        "data_smluv": [
+          "2023-05-03"
+        ]
       },
       "jistota": "dolozeno"
     },
     "doklady": [
+      {
+        "typ": "smlouva",
+        "id": "rs-24311793",
+        "text": "Stavební úpravy MK v ul. Na Chmelnici a části ul. Vrchlického v Třeboni (zpracování PD)",
+        "datum": "2023-05-03",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/24311793",
+        "cena": {
+          "s_dph": 843370.0,
+          "bez_dph": 697000.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"843370\"",
+            "\"hodnotaBezDph\": \"697000\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      },
       {
         "typ": "zakazka",
         "id": "ezak-VZ-699",
@@ -3197,8 +3309,11 @@
           ]
         },
         "dodatek": false,
-        "zapocteno": true,
-        "nezapocteno": null,
+        "data_smluv": [
+          "2023-05-03"
+        ],
+        "zapocteno": false,
+        "nezapocteno": "stejná smlouva jako rs-24311793 (cena nebo datum podpisu)",
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       }
@@ -3224,7 +3339,7 @@
       "bez_ceny": 0,
       "jistota": "nase_propojeni"
     },
-    "prvni_doklad": "2024-01-04",
+    "prvni_doklad": "2023-05-03",
     "odhad": null,
     "zdroj": null,
     "stavby": [
@@ -3251,7 +3366,9 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "typ": "polozka",
@@ -3294,7 +3411,10 @@
             "<cena_za_rok_bez_dph>703900.00</cena_za_rok_bez_dph>"
           ]
         },
-        "dodatek": false
+        "dodatek": false,
+        "data_smluv": [
+          "2023-02-08"
+        ]
       },
       "jistota": "dolozeno"
     },
@@ -3347,6 +3467,9 @@
           ]
         },
         "dodatek": false,
+        "data_smluv": [
+          "2023-01-25"
+        ],
         "zapocteno": true,
         "nezapocteno": null,
         "stupen": "projekt",
@@ -3378,6 +3501,9 @@
           ]
         },
         "dodatek": false,
+        "data_smluv": [
+          "2023-02-08"
+        ],
         "zapocteno": true,
         "nezapocteno": null,
         "stupen": "projekt",
@@ -3439,7 +3565,9 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "typ": "polozka",
@@ -3484,7 +3612,10 @@
             "<cena_za_rok_bez_dph>15000.00</cena_za_rok_bez_dph>"
           ]
         },
-        "dodatek": false
+        "dodatek": false,
+        "data_smluv": [
+          "2023-03-22"
+        ]
       },
       "jistota": "dolozeno"
     },
@@ -3517,6 +3648,9 @@
           ]
         },
         "dodatek": false,
+        "data_smluv": [
+          "2023-03-22"
+        ],
         "zapocteno": true,
         "nezapocteno": null,
         "stupen": "projekt",
@@ -3571,7 +3705,9 @@
         "jistota": "nase_propojeni",
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
-    ]
+    ],
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "typ": "polozka",
@@ -3667,7 +3803,9 @@
       }
     ],
     "faze": "realizovano",
-    "sprm": []
+    "sprm": [],
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "typ": "polozka",
@@ -3732,8 +3870,11 @@
           ]
         },
         "dodatek": false,
+        "data_smluv": [
+          "2024-08-12"
+        ],
         "zapocteno": false,
-        "nezapocteno": "stejná cena jako smlouva rs-29773180",
+        "nezapocteno": "stejná smlouva jako rs-29773180 (cena nebo datum podpisu)",
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       },
@@ -3794,7 +3935,9 @@
       }
     ],
     "faze": "realizovano",
-    "sprm": []
+    "sprm": [],
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "typ": "polozka",
@@ -3888,7 +4031,9 @@
       }
     ],
     "faze": "realizovano",
-    "sprm": []
+    "sprm": [],
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "typ": "kandidat",
@@ -3919,7 +4064,9 @@
       "dodatek": false
     },
     "stupen": "projekt",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "bydleni_pece",
+    "okruh_podle": "název"
   },
   {
     "typ": "kandidat",
@@ -3950,7 +4097,9 @@
       "dodatek": false
     },
     "stupen": "projekt_povoleni",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "sport_kultura",
+    "okruh_podle": "název"
   },
   {
     "typ": "kandidat",
@@ -3981,7 +4130,9 @@
       "dodatek": false
     },
     "stupen": "projekt",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "bydleni_pece",
+    "okruh_podle": "název"
   },
   {
     "typ": "kandidat",
@@ -4011,7 +4162,9 @@
       "dodatek": true
     },
     "stupen": "projekt",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "rozvoj_sprava",
+    "okruh_podle": "bez tématu"
   },
   {
     "typ": "kandidat",
@@ -4042,7 +4195,9 @@
       "dodatek": false
     },
     "stupen": "projekt",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "název"
   },
   {
     "typ": "kandidat",
@@ -4073,12 +4228,14 @@
       "dodatek": false
     },
     "stupen": "projekt_provadeci",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "rozvoj_sprava",
+    "okruh_podle": "bez tématu"
   },
   {
     "typ": "kandidat",
     "id": "kandidat-rs-33013444",
-    "nazev": "Zpracování Projektové dokumentace Snížení energetické náročnosti objektu DPS III, [jméno] 20, Třeboň",
+    "nazev": "Zpracování Projektové dokumentace Snížení energetické náročnosti objektu DPS III, Svatopluka Čecha 20, Třeboň",
     "nositele": [
       {
         "ico": "00247618",
@@ -4088,7 +4245,7 @@
     "doklad": {
       "typ": "smlouva",
       "id": "rs-33013444",
-      "text": "Zpracování Projektové dokumentace Snížení energetické náročnosti objektu DPS III, [jméno] 20, Třeboň",
+      "text": "Zpracování Projektové dokumentace Snížení energetické náročnosti objektu DPS III, Svatopluka Čecha 20, Třeboň",
       "datum": "2025-04-23",
       "ico": "00247618",
       "url": "https://smlouvy.gov.cz/smlouva/33013444",
@@ -4104,7 +4261,9 @@
       "dodatek": false
     },
     "stupen": "projekt",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "bydleni_pece",
+    "okruh_podle": "název"
   },
   {
     "typ": "kandidat",
@@ -4135,7 +4294,9 @@
       "dodatek": false
     },
     "stupen": "studie",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "sport_kultura",
+    "okruh_podle": "název"
   },
   {
     "typ": "kandidat",
@@ -4166,7 +4327,9 @@
       "dodatek": false
     },
     "stupen": "projekt_provadeci",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "rozvoj_sprava",
+    "okruh_podle": "bez tématu"
   },
   {
     "typ": "kandidat",
@@ -4197,7 +4360,9 @@
       "dodatek": false
     },
     "stupen": "projekt",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "rozvoj_sprava",
+    "okruh_podle": "bez tématu"
   },
   {
     "typ": "kandidat",
@@ -4227,7 +4392,9 @@
       "dodatek": false
     },
     "stupen": "projekt",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "bydleni_pece",
+    "okruh_podle": "název"
   },
   {
     "typ": "kandidat",
@@ -4262,10 +4429,15 @@
           "<cena_za_rok_bez_dph>567000.00</cena_za_rok_bez_dph>"
         ]
       },
-      "dodatek": false
+      "dodatek": false,
+      "data_smluv": [
+        "2025-01-09"
+      ]
     },
     "stupen": "projekt",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "spolecnosti",
+    "okruh_podle": "název"
   },
   {
     "typ": "kandidat",
@@ -4295,7 +4467,9 @@
       "dodatek": false
     },
     "stupen": "projekt",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "rozvoj_sprava",
+    "okruh_podle": "bez tématu"
   },
   {
     "typ": "kandidat",
@@ -4325,7 +4499,9 @@
       "dodatek": true
     },
     "stupen": "projekt",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "spolecnosti",
+    "okruh_podle": "název"
   },
   {
     "typ": "kandidat",
@@ -4355,7 +4531,9 @@
       "dodatek": false
     },
     "stupen": "projekt",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "rozvoj_sprava",
+    "okruh_podle": "bez tématu"
   },
   {
     "typ": "kandidat",
@@ -4385,7 +4563,9 @@
       "dodatek": false
     },
     "stupen": "projekt",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "rozvoj_sprava",
+    "okruh_podle": "bez tématu"
   },
   {
     "typ": "kandidat",
@@ -4416,7 +4596,9 @@
       "dodatek": false
     },
     "stupen": "studie",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "název"
   },
   {
     "typ": "kandidat",
@@ -4447,7 +4629,9 @@
       "dodatek": false
     },
     "stupen": "projekt",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "název"
   },
   {
     "typ": "kandidat",
@@ -4478,7 +4662,9 @@
       "dodatek": false
     },
     "stupen": "projekt",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "název"
   },
   {
     "typ": "kandidat",
@@ -4509,7 +4695,9 @@
       "dodatek": false
     },
     "stupen": "projekt",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "název"
   },
   {
     "typ": "kandidat",
@@ -4540,7 +4728,9 @@
       "dodatek": false
     },
     "stupen": "projekt",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "rozvoj_sprava",
+    "okruh_podle": "bez tématu"
   },
   {
     "typ": "kandidat",
@@ -4571,7 +4761,9 @@
       "dodatek": false
     },
     "stupen": "projekt",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "název"
   },
   {
     "typ": "kandidat",
@@ -4602,7 +4794,9 @@
       "dodatek": false
     },
     "stupen": "projekt",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "název"
   },
   {
     "typ": "kandidat",
@@ -4633,7 +4827,9 @@
       "dodatek": false
     },
     "stupen": "projekt",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "rozvoj_sprava",
+    "okruh_podle": "bez tématu"
   },
   {
     "typ": "kandidat",
@@ -4664,7 +4860,9 @@
       "dodatek": false
     },
     "stupen": "studie",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "název"
   },
   {
     "typ": "kandidat",
@@ -4695,7 +4893,9 @@
       "dodatek": false
     },
     "stupen": "projekt",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "rozvoj_sprava",
+    "okruh_podle": "bez tématu"
   },
   {
     "typ": "kandidat",
@@ -4726,7 +4926,9 @@
       "dodatek": false
     },
     "stupen": "projekt",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "název"
   },
   {
     "typ": "kandidat",
@@ -4757,7 +4959,9 @@
       "dodatek": false
     },
     "stupen": "projekt",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "název"
   },
   {
     "typ": "kandidat",
@@ -4788,7 +4992,9 @@
       "dodatek": false
     },
     "stupen": "projekt",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "název"
   },
   {
     "typ": "kandidat",
@@ -4819,7 +5025,9 @@
       "dodatek": false
     },
     "stupen": "projekt",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "název"
   },
   {
     "typ": "kandidat",
@@ -4849,7 +5057,9 @@
       "dodatek": false
     },
     "stupen": "projekt",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "rozvoj_sprava",
+    "okruh_podle": "bez tématu"
   },
   {
     "typ": "kandidat",
@@ -4873,7 +5083,9 @@
       "dodatek": true
     },
     "stupen": "projekt_provadeci",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "bydleni_pece",
+    "okruh_podle": "název"
   },
   {
     "typ": "kandidat",
@@ -4897,7 +5109,9 @@
       "dodatek": false
     },
     "stupen": "projekt_provadeci",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "bydleni_pece",
+    "okruh_podle": "název"
   },
   {
     "typ": "kandidat",
@@ -4921,7 +5135,9 @@
       "dodatek": true
     },
     "stupen": "projekt_provadeci",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "bydleni_pece",
+    "okruh_podle": "název"
   },
   {
     "typ": "kandidat",
@@ -4956,10 +5172,15 @@
           "<cena_za_rok_bez_dph>219000.00</cena_za_rok_bez_dph>"
         ]
       },
-      "dodatek": false
+      "dodatek": false,
+      "data_smluv": [
+        "2023-01-31"
+      ]
     },
     "stupen": "projekt",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "název"
   },
   {
     "typ": "kandidat",
@@ -4990,7 +5211,9 @@
       "dodatek": false
     },
     "stupen": "projekt",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "název"
   },
   {
     "typ": "kandidat",
@@ -5021,7 +5244,9 @@
       "dodatek": false
     },
     "stupen": "projekt",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "název"
   },
   {
     "typ": "kandidat",
@@ -5052,7 +5277,9 @@
       "dodatek": false
     },
     "stupen": "projekt",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "skoly",
+    "okruh_podle": "název"
   },
   {
     "typ": "kandidat",
@@ -5083,7 +5310,9 @@
       "dodatek": false
     },
     "stupen": "projekt",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "rozvoj_sprava",
+    "okruh_podle": "bez tématu"
   },
   {
     "typ": "kandidat",
@@ -5114,7 +5343,9 @@
       "dodatek": false
     },
     "stupen": "projekt",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "název"
   },
   {
     "typ": "kandidat",
@@ -5138,7 +5369,9 @@
       "dodatek": false
     },
     "stupen": "projekt",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "rozvoj_sprava",
+    "okruh_podle": "bez tématu"
   },
   {
     "typ": "kandidat",
@@ -5162,7 +5395,9 @@
       "dodatek": false
     },
     "stupen": "projekt",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "rozvoj_sprava",
+    "okruh_podle": "bez tématu"
   },
   {
     "typ": "kandidat",
@@ -5193,7 +5428,9 @@
       "dodatek": true
     },
     "stupen": "projekt",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "název"
   },
   {
     "typ": "kandidat",
@@ -5224,7 +5461,200 @@
       "dodatek": false
     },
     "stupen": "projekt",
-    "jistota": "nase_propojeni"
+    "jistota": "nase_propojeni",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "název"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-24824627",
+    "nazev": "Parkoviště v Jateční ulici v Třeboni (za Novým dvorem) - zpracování PD - dodatek č. 1",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-24824627",
+      "text": "Parkoviště v Jateční ulici v Třeboni (za Novým dvorem) - zpracování PD - dodatek č. 1",
+      "datum": "2023-06-16",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/24824627",
+      "cena": null,
+      "zaplaceno": null,
+      "dodatek": true
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "název"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-24236917",
+    "nazev": "Zpracování projektové dokumentace Novostavba městského bytového domu v ulici Lázeňská na parcelním čísle 1087/17 v obci a katastrálním území Třeboň",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-24236917",
+      "text": "Zpracování projektové dokumentace Novostavba městského bytového domu v ulici Lázeňská na parcelním čísle 1087/17 v obci a katastrálním území Třeboň",
+      "datum": "2023-04-25",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/24236917",
+      "cena": {
+        "s_dph": 875000.0,
+        "bez_dph": 875000.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"875000\"",
+          "\"hodnotaBezDph\": \"875000\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni",
+    "okruh": "bydleni_pece",
+    "okruh_podle": "název"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-24173545",
+    "nazev": "Studie řešení odvodu dešťových vod z lokality Třeboň západ",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-24173545",
+      "text": "Studie řešení odvodu dešťových vod z lokality Třeboň západ",
+      "datum": "2023-04-20",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/24173545",
+      "cena": {
+        "s_dph": 556600.0,
+        "bez_dph": 460000.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"556600\"",
+          "\"hodnotaBezDph\": \"460000\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
+    },
+    "stupen": "studie",
+    "jistota": "nase_propojeni",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "název"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-24160885",
+    "nazev": "Zpracování PD ve stupni ZDS/PDPS pro úpravu plochy na pozemku parc. č. 767 v k. ú. Třeboň.",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-24160885",
+      "text": "Zpracování PD ve stupni ZDS/PDPS pro úpravu plochy na pozemku parc. č. 767 v k. ú. Třeboň.",
+      "datum": "2023-04-19",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/24160885",
+      "cena": {
+        "s_dph": 106480.0,
+        "bez_dph": 88000.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"106480\"",
+          "\"hodnotaBezDph\": \"88000\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni",
+    "okruh": "rozvoj_sprava",
+    "okruh_podle": "bez tématu"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-24157549",
+    "nazev": "Zpracování PD ve stupni DÚSP a PDPS pro rozšíření části MK v Jateční ulici v Třeboni.",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-24157549",
+      "text": "Zpracování PD ve stupni DÚSP a PDPS pro rozšíření části MK v Jateční ulici v Třeboni.",
+      "datum": "2023-04-19",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/24157549",
+      "cena": {
+        "s_dph": 119790.0,
+        "bez_dph": 99000.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"119790\"",
+          "\"hodnotaBezDph\": \"99000\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "název"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-24156893",
+    "nazev": "Zpracování zjednodušené PD ve stupni ZDS včetně průzkumu inženýrských sítí a vypracování položkového soupisu prací pro stavební úpravy komunikace na pozemku parc. č. 4336 a 4346 v lokalitě Dvorce, k. ú. Břilice.",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-24156893",
+      "text": "Zpracování zjednodušené PD ve stupni ZDS včetně průzkumu inženýrských sítí a vypracování položkového soupisu prací pro stavební úpravy komunikace na pozemku parc. č. 4336 a 4346 v lokalitě Dvorce, k. ú. Břilice.",
+      "datum": "2023-04-19",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/24156893",
+      "cena": {
+        "s_dph": 240185.0,
+        "bez_dph": 198500.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"240185\"",
+          "\"hodnotaBezDph\": \"198500\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "název"
   },
   {
     "typ": "namet",
@@ -5236,7 +5666,9 @@
     "komentar": null,
     "faze": "namet",
     "jistota": "dolozeno",
-    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "osa SPRM"
   },
   {
     "typ": "namet",
@@ -5248,7 +5680,9 @@
     "komentar": null,
     "faze": "namet",
     "jistota": "dolozeno",
-    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "osa SPRM"
   },
   {
     "typ": "namet",
@@ -5260,7 +5694,9 @@
     "komentar": null,
     "faze": "namet",
     "jistota": "dolozeno",
-    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "osa SPRM"
   },
   {
     "typ": "namet",
@@ -5272,7 +5708,9 @@
     "komentar": null,
     "faze": "namet",
     "jistota": "dolozeno",
-    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "osa SPRM"
   },
   {
     "typ": "namet",
@@ -5284,7 +5722,9 @@
     "komentar": null,
     "faze": "namet",
     "jistota": "dolozeno",
-    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "osa SPRM"
   },
   {
     "typ": "namet",
@@ -5296,7 +5736,9 @@
     "komentar": null,
     "faze": "namet",
     "jistota": "dolozeno",
-    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "osa SPRM"
   },
   {
     "typ": "namet",
@@ -5308,7 +5750,9 @@
     "komentar": null,
     "faze": "namet",
     "jistota": "dolozeno",
-    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "osa SPRM"
   },
   {
     "typ": "namet",
@@ -5320,7 +5764,9 @@
     "komentar": null,
     "faze": "namet",
     "jistota": "dolozeno",
-    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "osa SPRM"
   },
   {
     "typ": "namet",
@@ -5332,7 +5778,9 @@
     "komentar": null,
     "faze": "namet",
     "jistota": "dolozeno",
-    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "osa SPRM"
   },
   {
     "typ": "namet",
@@ -5344,7 +5792,9 @@
     "komentar": null,
     "faze": "namet",
     "jistota": "dolozeno",
-    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "osa SPRM"
   },
   {
     "typ": "namet",
@@ -5356,7 +5806,9 @@
     "komentar": null,
     "faze": "namet",
     "jistota": "dolozeno",
-    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "osa SPRM"
   },
   {
     "typ": "namet",
@@ -5368,7 +5820,9 @@
     "komentar": null,
     "faze": "namet",
     "jistota": "dolozeno",
-    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "osa SPRM"
   },
   {
     "typ": "namet",
@@ -5380,7 +5834,9 @@
     "komentar": null,
     "faze": "namet",
     "jistota": "dolozeno",
-    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "osa SPRM"
   },
   {
     "typ": "namet",
@@ -5392,7 +5848,9 @@
     "komentar": null,
     "faze": "namet",
     "jistota": "dolozeno",
-    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+    "okruh": "bydleni_pece",
+    "okruh_podle": "osa SPRM"
   },
   {
     "typ": "namet",
@@ -5404,7 +5862,9 @@
     "komentar": null,
     "faze": "namet",
     "jistota": "dolozeno",
-    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+    "okruh": "bydleni_pece",
+    "okruh_podle": "osa SPRM"
   },
   {
     "typ": "namet",
@@ -5416,7 +5876,9 @@
     "komentar": null,
     "faze": "namet",
     "jistota": "dolozeno",
-    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+    "okruh": "bydleni_pece",
+    "okruh_podle": "osa SPRM"
   },
   {
     "typ": "namet",
@@ -5428,7 +5890,9 @@
     "komentar": null,
     "faze": "namet",
     "jistota": "dolozeno",
-    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+    "okruh": "skoly",
+    "okruh_podle": "osa SPRM"
   },
   {
     "typ": "namet",
@@ -5440,7 +5904,9 @@
     "komentar": null,
     "faze": "namet",
     "jistota": "dolozeno",
-    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+    "okruh": "skoly",
+    "okruh_podle": "osa SPRM"
   },
   {
     "typ": "namet",
@@ -5452,7 +5918,9 @@
     "komentar": null,
     "faze": "namet",
     "jistota": "dolozeno",
-    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+    "okruh": "skoly",
+    "okruh_podle": "osa SPRM"
   },
   {
     "typ": "namet",
@@ -5464,7 +5932,9 @@
     "komentar": null,
     "faze": "namet",
     "jistota": "dolozeno",
-    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+    "okruh": "skoly",
+    "okruh_podle": "osa SPRM"
   },
   {
     "typ": "namet",
@@ -5476,7 +5946,9 @@
     "komentar": null,
     "faze": "namet",
     "jistota": "dolozeno",
-    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+    "okruh": "skoly",
+    "okruh_podle": "osa SPRM"
   },
   {
     "typ": "namet",
@@ -5488,7 +5960,9 @@
     "komentar": null,
     "faze": "namet",
     "jistota": "dolozeno",
-    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+    "okruh": "sport_kultura",
+    "okruh_podle": "osa SPRM"
   },
   {
     "typ": "namet",
@@ -5500,7 +5974,9 @@
     "komentar": null,
     "faze": "namet",
     "jistota": "dolozeno",
-    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+    "okruh": "sport_kultura",
+    "okruh_podle": "osa SPRM"
   },
   {
     "typ": "namet",
@@ -5512,7 +5988,9 @@
     "komentar": null,
     "faze": "namet",
     "jistota": "dolozeno",
-    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+    "okruh": "sport_kultura",
+    "okruh_podle": "osa SPRM"
   },
   {
     "typ": "namet",
@@ -5524,7 +6002,9 @@
     "komentar": null,
     "faze": "namet",
     "jistota": "dolozeno",
-    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+    "okruh": "rozvoj_sprava",
+    "okruh_podle": "osa SPRM"
   },
   {
     "typ": "namet",
@@ -5536,7 +6016,9 @@
     "komentar": null,
     "faze": "namet",
     "jistota": "dolozeno",
-    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+    "okruh": "rozvoj_sprava",
+    "okruh_podle": "osa SPRM"
   },
   {
     "typ": "namet",
@@ -5548,7 +6030,9 @@
     "komentar": null,
     "faze": "namet",
     "jistota": "dolozeno",
-    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+    "okruh": "skoly",
+    "okruh_podle": "osa SPRM"
   },
   {
     "typ": "namet",
@@ -5560,7 +6044,9 @@
     "komentar": null,
     "faze": "namet",
     "jistota": "dolozeno",
-    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+    "okruh": "bydleni_pece",
+    "okruh_podle": "osa SPRM"
   },
   {
     "typ": "namet",
@@ -5572,7 +6058,9 @@
     "komentar": null,
     "faze": "namet",
     "jistota": "dolozeno",
-    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+    "okruh": "rozvoj_sprava",
+    "okruh_podle": "osa SPRM"
   },
   {
     "typ": "namet",
@@ -5584,7 +6072,9 @@
     "komentar": null,
     "faze": "namet",
     "jistota": "dolozeno",
-    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+    "okruh": "rozvoj_sprava",
+    "okruh_podle": "osa SPRM"
   },
   {
     "typ": "namet",
@@ -5596,7 +6086,9 @@
     "komentar": null,
     "faze": "namet",
     "jistota": "dolozeno",
-    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+    "okruh": "spolecnosti",
+    "okruh_podle": "osa SPRM"
   },
   {
     "typ": "namet",
@@ -5608,7 +6100,9 @@
     "komentar": null,
     "faze": "namet",
     "jistota": "dolozeno",
-    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+    "okruh": "spolecnosti",
+    "okruh_podle": "osa SPRM"
   },
   {
     "typ": "namet",
@@ -5620,7 +6114,9 @@
     "komentar": null,
     "faze": "namet",
     "jistota": "dolozeno",
-    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+    "okruh": "sport_kultura",
+    "okruh_podle": "osa SPRM"
   },
   {
     "typ": "namet",
@@ -5632,7 +6128,9 @@
     "komentar": null,
     "faze": "namet",
     "jistota": "dolozeno",
-    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+    "okruh": "sport_kultura",
+    "okruh_podle": "osa SPRM"
   },
   {
     "typ": "namet",
@@ -5644,7 +6142,9 @@
     "komentar": null,
     "faze": "namet",
     "jistota": "dolozeno",
-    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+    "okruh": "sport_kultura",
+    "okruh_podle": "osa SPRM"
   },
   {
     "typ": "namet",
@@ -5656,7 +6156,9 @@
     "komentar": null,
     "faze": "namet",
     "jistota": "dolozeno",
-    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+    "okruh": "sport_kultura",
+    "okruh_podle": "osa SPRM"
   },
   {
     "typ": "namet",
@@ -5668,6 +6170,8 @@
     "komentar": null,
     "faze": "namet",
     "jistota": "dolozeno",
-    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
+    "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "osa SPRM"
   }
 ]

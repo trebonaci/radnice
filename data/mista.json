@@ -37,7 +37,9 @@
         49.003865
       ]
     },
-    "posledni_zmena": "2026-09-09"
+    "posledni_zmena": "2026-09-09",
+    "okruh": "bydleni_pece",
+    "okruh_podle": "téma"
   },
   {
     "id": "dps-3",
@@ -54,9 +56,29 @@
       }
     ],
     "zasobnik": [],
-    "misto": [],
-    "geometrie": null,
-    "posledni_zmena": null
+    "misto": [
+      {
+        "druh": "adresa",
+        "nazev": "Svatopluka Čecha 20",
+        "bod": [
+          14.765423,
+          49.004505
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "RÚIAN",
+        "ruian_kod": "14831945"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.765423,
+        49.004505
+      ]
+    },
+    "posledni_zmena": null,
+    "okruh": "bydleni_pece",
+    "okruh_podle": "téma"
   },
   {
     "id": "sportovni-hala",
@@ -107,7 +129,9 @@
         49.002223
       ]
     },
-    "posledni_zmena": "2026-10-21"
+    "posledni_zmena": "2026-10-21",
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "muzeum",
@@ -119,9 +143,29 @@
     ],
     "investice": [],
     "zasobnik": [],
-    "misto": [],
-    "geometrie": null,
-    "posledni_zmena": "2026-10-07"
+    "misto": [
+      {
+        "druh": "budova",
+        "nazev": "č. p. 1",
+        "bod": [
+          14.771668,
+          49.003786
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "RÚIAN",
+        "ruian_kod": "14718502"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.771668,
+        49.003786
+      ]
+    },
+    "posledni_zmena": "2026-10-07",
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "knihovna",
@@ -133,9 +177,29 @@
     ],
     "investice": [],
     "zasobnik": [],
-    "misto": [],
-    "geometrie": null,
-    "posledni_zmena": "2026-10-21"
+    "misto": [
+      {
+        "druh": "adresa",
+        "nazev": "Chelčického 2",
+        "bod": [
+          14.765701,
+          49.003865
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "RÚIAN",
+        "ruian_kod": "14831767"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.765701,
+        49.003865
+      ]
+    },
+    "posledni_zmena": "2026-10-21",
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "dum-svatopluka-cecha-20",
@@ -167,7 +231,9 @@
         49.004505
       ]
     },
-    "posledni_zmena": "2026-10-07"
+    "posledni_zmena": "2026-10-07",
+    "okruh": "bydleni_pece",
+    "okruh_podle": "téma"
   },
   {
     "id": "zs-na-sadech",
@@ -212,7 +278,9 @@
         49.005369
       ]
     },
-    "posledni_zmena": "2026-09-23"
+    "posledni_zmena": "2026-09-23",
+    "okruh": "skoly",
+    "okruh_podle": "téma"
   },
   {
     "id": "zs-sokolska",
@@ -245,7 +313,9 @@
         49.004744
       ]
     },
-    "posledni_zmena": "2026-11-04"
+    "posledni_zmena": "2026-11-04",
+    "okruh": "skoly",
+    "okruh_podle": "téma"
   },
   {
     "id": "ms-slunicko",
@@ -257,9 +327,29 @@
     ],
     "investice": [],
     "zasobnik": [],
-    "misto": [],
-    "geometrie": null,
-    "posledni_zmena": "2026-10-21"
+    "misto": [
+      {
+        "druh": "adresa",
+        "nazev": "Svobody 1018",
+        "bod": [
+          14.761315,
+          49.002914
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "RÚIAN",
+        "ruian_kod": "14841932"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.761315,
+        49.002914
+      ]
+    },
+    "posledni_zmena": "2026-10-21",
+    "okruh": "skoly",
+    "okruh_podle": "téma"
   },
   {
     "id": "preseka-cp3",
@@ -291,7 +381,9 @@
         49.040255
       ]
     },
-    "posledni_zmena": "2026-11-04"
+    "posledni_zmena": "2026-11-04",
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "verejna-doprava",
@@ -305,6 +397,8 @@
     "zasobnik": [],
     "misto": [],
     "geometrie": null,
-    "posledni_zmena": "2026-09-09"
+    "posledni_zmena": "2026-09-09",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   }
 ]

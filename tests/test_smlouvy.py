@@ -197,6 +197,8 @@ def test_jmeno_bez_titulu_v_predmetu(koren):
     assert zakryj_jmena("Vystoupení – Andrea Kalivodová", o, KOREN) == "Vystoupení – [jméno]"
     assert zakryj_jmena("Koncert Jany Novákové", o, KOREN) == "Koncert [jméno]"
     assert zakryj_jmena("Nájem pro Ondřeje Zbudila", o, KOREN) == "Nájem pro Ondřeje Zbudila"     # zastupitel
+    assert zakryj_jmena("DPS III, Svatopluka Čecha 20, Třeboň", o, KOREN) == "DPS III, Svatopluka Čecha 20, Třeboň"   # ulice (#228)
+    assert zakryj_jmena("Koncert Jan Novák 20", o, KOREN) == "Koncert [jméno] 20"
     assert zakryj_jmena("Dodávka elektřiny 2027", o, KOREN) == "Dodávka elektřiny 2027"
 
 

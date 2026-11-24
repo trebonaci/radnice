@@ -1,12 +1,12 @@
 {
-  "zacatek": "2026-11-22T13:37:31+00:00",
+  "zacatek": "2026-11-23T16:19:56+00:00",
   "stav": "ok",
   "zdroje": [
     {
       "nazev": "zapisy_mesta",
       "stav": "ok",
       "odkazu": 8,
-      "stazeno": 8
+      "stazeno": 0
     }
   ],
   "chyby": [],
@@ -18,23 +18,24 @@
     "usneseni": 139,
     "hlasovani": 153,
     "zakazky": 202,
-    "smlouvy": 2413,
+    "smlouvy": 2605,
     "rozpoctova_opatreni": 35,
     "rozpocet": 343,
     "rozpocet_zmeny": 166,
-    "projekty": 33,
+    "projekty": 35,
     "investice": 1,
     "dotace": 30,
-    "zasobnik": 115,
+    "zasobnik": 123,
     "ukazatele": 8,
     "mapa": 113,
     "mista": 11,
     "zmeny": 15,
     "harmonogram": 67,
-    "prehled": 80
+    "prehled": 80,
+    "terminy": 35
   },
-  "posledni_uspesny": "2026-11-22T13:37:55+00:00",
+  "posledni_uspesny": "2026-11-23T16:20:02+00:00",
   "nove_dokumenty": 0,
   "nove_verze": 0,
-  "konec": "2026-11-22T13:37:55+00:00"
+  "konec": "2026-11-23T16:20:02+00:00"
 }

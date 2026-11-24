@@ -85,3 +85,12 @@ def test_cena_pripravy_zasobniku_po_nositelich():
     assert u["polozek"] == 3
     assert u["celkem"]["s_dph"] == 150.5 and u["celkem"]["bez_dph"] == 310.0
     assert [(r["nazev"], r["s_dph"], r["bez_dph"]) for r in u["hodnota"]] == [("Lázně", None, 300.0), ("Město", 150.5, 10.0)]
+
+
+def test_dotace_bez_oblasti_nezastavi_sestaveni():
+    d = [{"vysledek_hlasovani": "prijato", "oblast": None, "datum": "2026-10-01",
+          "castka": {"hodnota": 1000.0, "druh": "dotace_priznana"}},
+         {"vysledek_hlasovani": "neprijato", "oblast": "sportu", "datum": "2026-10-01",
+          "castka": {"hodnota": 5000.0, "druh": "dotace_priznana"}}]
+    u = ukazatele.dotace(d)
+    assert [(r["nazev"], r["hodnota"]) for r in u["hodnota"]] == [("Oblast neuvedena", 1000.0)]

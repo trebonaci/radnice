@@ -180,11 +180,14 @@ jobs:
                     core.warning(`${kdo}: zavření #${m[1]} selhalo: ${e.message}`);
                   }
                 }
-                // sloučení přes GITHUB_TOKEN nespustí push workflow (#200): web radnice.trebonaci.cz se nasadí přímo
+                // sloučení přes GITHUB_TOKEN nespustí push workflow (#200): do main → nasadit web přímo;
+                // do větve jiného PR → spustit na ní CI, jinak nadřazený PR zůstane bez kontroly i bez review (#233)
+                const cil = pr.base.ref;
                 try {
-                  await github.rest.actions.createWorkflowDispatch({owner, repo, workflow_id: 'web.yml', ref: 'main'});
+                  await github.rest.actions.createWorkflowDispatch({owner, repo,
+                    workflow_id: cil === 'main' ? 'web.yml' : 'ci.yml', ref: cil});
                 } catch (e) {
-                  core.warning(`${kdo}: spuštění web.yml selhalo: ${e.message}`);
+                  core.warning(`${kdo}: spuštění ${cil === 'main' ? 'web.yml' : 'ci.yml'} na ${cil} selhalo: ${e.message}`);
                 }
               } catch (e) {
                 core.warning(`${kdo}: sloučení selhalo: ${e.message}`);

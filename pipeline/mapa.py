@@ -22,6 +22,7 @@ SAMOHLASKY = "aeiouyáéíóúůý"
 RE_UL_PRED = re.compile(r"\b(?:ul\.|ulice|ulici|ulic|MK v ul\.)\s+([A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ][\wáčďéěíňóřšťúůýž.]*(?:\s+[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ][\wáčďéěíňóřšťúůýž]*)?)")
 RE_UL_ZA = re.compile(r"\b([A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ][\wáčďéěíňóřšťúůýž]+)\s+(?:ulici|ulice|ul\.)")
 RE_CP = re.compile(r"\bč\.\s?p\.\s*(\d+)\s*/\s*(I{1,2})\b|\bčp\.\s*(\d+)\s*/\s*(I{1,2})\b")
+RE_BUDOVA = re.compile(r"\b(?:bytov\w* d[oů]m\w*|d[oů]m\w* s pečovatelskou|budov\w*|objekt\w*|novostavb\w*)\b", re.I)
 RE_ADRESA = re.compile(r"\b([A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ][a-záčďéěíňóřšťúůýž]+(?:\s+[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ][a-záčďéěíňóřšťúůýž]+)?)\s+(\d{1,4})\b")
 
 
@@ -58,12 +59,23 @@ class Ruian:
                 return nazev
         return None
 
-    def adresa(self, ulice: str, cislo: str) -> dict | None:
+    def adresa(self, ulice: str, cislo: str, pismeno: str | None = None) -> dict | None:
         for a in self.adresy:
-            # RÚIAN píše „Na sadech“, lidé „Na Sadech“: název ulice se porovnává bez ohledu na velikost písmen
-            if (a.get("ulice") or "").casefold() == (ulice or "").casefold() and cislo in (a.get("cislo_domovni"), a.get("cislo_orientacni")):
+            # RÚIAN píše „Na sadech“, lidé „Na Sadech“: název ulice se porovnává bez ohledu na velikost písmen;
+            # písmeno čísla orientačního („1a“) musí sedět (#179)
+            if ((a.get("ulice") or "").casefold() == (ulice or "").casefold()
+                    and cislo in (a.get("cislo_domovni"), a.get("cislo_orientacni"))
+                    and (a.get("pismeno") or "").casefold() == (pismeno or "").casefold()):
                 return a
         return None
+
+    def stred_casti(self, cast_obce: str) -> list[float] | None:
+        """Přibližný střed části obce: medián definičních bodů jejích budov (RÚIAN)."""
+        body = [b["bod"] for b in self.budovy if b.get("cast_obce") == cast_obce and b.get("bod")]
+        if not body:
+            return None
+        med = lambda xs: sorted(xs)[len(xs) // 2]
+        return [med([b[0] for b in body]), med([b[1] for b in body])]
 
     def budova(self, cp: str, cast_obce: str) -> dict | None:
         for b in self.budovy:
@@ -113,7 +125,18 @@ def vyres_rucni(misto: list[dict], ruian: Ruian, kdo: str) -> tuple[list[dict], 
             if not (48.8 < lat < 49.2 and 14.5 < lon < 15.0):
                 chyby.append(f"mapa {kdo}: bod {m['bod']} není na Třeboňsku (zadávat [šířka, délka])")
                 continue
-            casti.append({"druh": "bod", "nazev": popis, "bod": [lon, lat], "jistota": "dolozeno", "zdroj": "ručně"})
+            cast = {"druh": "bod", "nazev": popis, "bod": [lon, lat],
+                    "jistota": "nase_propojeni" if m.get("priblizne") else "dolozeno", "zdroj": m.get("zdroj") or "ručně"}
+            if m.get("zdroj_url"):
+                cast["zdroj_url"] = m["zdroj_url"]
+            casti.append(cast)
+        elif "cast_obce" in m and "cp" not in m:
+            stred = ruian.stred_casti(m["cast_obce"])
+            if stred:
+                casti.append({"druh": "cast_obce", "nazev": popis or m["cast_obce"], "bod": stred,
+                              "jistota": "nase_propojeni", "zdroj": "RÚIAN – přibližně střed části obce"})
+            elif ruian.k_dispozici:
+                upozorneni.append(f"mapa {kdo}: část obce {m['cast_obce']!r} v RÚIAN není – místo vynecháno")
         elif "ulice" in m:
             for nazev in ([m["ulice"]] if isinstance(m["ulice"], str) else m["ulice"]):
                 u = ruian.ulice.get(nazev)
@@ -125,8 +148,8 @@ def vyres_rucni(misto: list[dict], ruian: Ruian, kdo: str) -> tuple[list[dict], 
                 else:
                     upozorneni.append(f"mapa {kdo}: ulice {nazev!r} – chybí data RÚIAN")
         elif "adresa" in m:
-            shoda = re.fullmatch(r"(.+?)\s+(\d+)\w?", m["adresa"].strip())
-            a = ruian.adresa(shoda.group(1), shoda.group(2)) if shoda else None
+            shoda = re.fullmatch(r"(.+?)\s+(\d+)([a-zA-Z]?)", m["adresa"].strip())
+            a = ruian.adresa(shoda.group(1), shoda.group(2), shoda.group(3) or None) if shoda else None
             if a:
                 casti.append({"druh": "adresa", "nazev": popis or m["adresa"], "bod": a["bod"], "jistota": "dolozeno",
                               "zdroj": "RÚIAN", "ruian_kod": a["kod"]})
@@ -175,7 +198,9 @@ def z_nazvu(text: str, ruian: Ruian) -> list[dict]:
             b = ruian.budova(m.group(2), m.group(1))
             if b:
                 pridej({"druh": "budova", "nazev": f"{m.group(1)} {m.group(2)}", "bod": b["bod"], "ruian_kod": b["kod"]})
-    for rx in (RE_UL_PRED, RE_UL_ZA):
+    # Budova („bytový dům v Lázeňské ulici“) bez čísla není ulice: celá čára ulice by místo zkreslila (#223).
+    budova_bez_cisla = bool(RE_BUDOVA.search(text)) and not casti
+    for rx in (() if budova_bez_cisla else (RE_UL_PRED, RE_UL_ZA)):
         for m in rx.finditer(text):
             kandidat = m.group(1)
             ul = ruian.ulice_podle_tvaru(kandidat) or ruian.ulice_podle_tvaru(kandidat.split()[0])
@@ -183,6 +208,23 @@ def z_nazvu(text: str, ruian: Ruian) -> list[dict]:
                 u = ruian.ulice[ul]
                 pridej({"druh": "ulice", "nazev": ul, "linie": u["linie"], "ruian_kod": u["kod"]})
     return casti
+
+
+def nacti_nazvy(koren: Path) -> list[dict]:
+    """Místa podle názvu (`config/mista_nazvy.yaml`): známá místa, která RÚIAN z názvu akce nenajde."""
+    cesta = koren / "config" / "mista_nazvy.yaml"
+    if not cesta.exists():
+        return []
+    return (yaml.safe_load(cesta.read_text(encoding="utf-8")) or {}).get("mista") or []
+
+
+def podle_nazvu(text: str, nazvy: list[dict], ruian: Ruian) -> tuple[list[dict], list[str]]:
+    """První položka seznamu, jejíž vzor je v textu → místo. Shoda podle názvu je vždy naše propojení."""
+    for polozka in nazvy:
+        if re.search(polozka["vzor"], text or ""):
+            casti, chyby, _ = vyres_rucni(polozka["misto"], ruian, f"název {polozka['vzor']!r}")
+            return [c | {"jistota": "nase_propojeni", "zdroj": f"{c.get('zdroj')} podle názvu akce"} for c in casti], chyby
+    return [], []
 
 
 def _yaml_mista(koren: Path) -> dict[str, list]:
@@ -198,6 +240,7 @@ def sestav(koren: Path, projekty: list[dict], zasobnik: list[dict], zasobnik_yam
            aktivity: dict) -> tuple[list[dict], list[str], list[str]]:
     ruian = Ruian(koren)
     rucni = _yaml_mista(koren) | {p["id"]: p["misto"] for p in zasobnik_yaml if p.get("misto")}
+    nazvy = nacti_nazvy(koren)
     vysledek, chyby, upozorneni = [], [], []
 
     def misto_pro(id_, text):
@@ -206,7 +249,11 @@ def sestav(koren: Path, projekty: list[dict], zasobnik: list[dict], zasobnik_yam
             chyby.extend(ch)
             upozorneni.extend(up)
             return casti
-        return z_nazvu(text, ruian)
+        casti = z_nazvu(text, ruian)
+        if not casti:
+            casti, ch = podle_nazvu(text, nazvy, ruian)
+            chyby.extend(ch)
+        return casti
 
     for p in projekty:
         casti = misto_pro(p["id"], " ".join(filter(None, [p["nazev"], p.get("popis")])))

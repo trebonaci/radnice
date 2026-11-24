@@ -6,6 +6,243 @@
   <ico_zadavatele>00247618</ico_zadavatele>
  </zadavatel>
  <zakazka>
+  <id_objektu>VZ-810</id_objektu>
+  <nazev_vz>Zpracování projektové dokumentace &quot;Ubytovací objekt sportovní haly Třeboň&quot;</nazev_vz>
+  <druh_vz>služby</druh_vz>
+  <rezim_vz>Veřejné zakázky malého rozsahu</rezim_vz>
+  <predmet_vz>Předmětem plnění této veřejné zakázky jsou projekční a inženýrské služby pro vyhotovení projektové dokumentace stavby „&#13;
+Ubytovací objekt sportovní haly, Třeboň“. Projektová dokumentace bude řešit přístavbu ubytovacích kapacit ve sportovní hale v Třeboni. &#13;
+- Ubytování pro minimálně 46 osob ve dvojlůžkových pokojích s dostatečným zázemím pro pobyt sportovních výprav a prostory pro relaxaci (minimálně masérna). &#13;
+- Součástí každého pokoje bude sociální zařízení - společná koupelna (sprchový kout) a WC. &#13;
+- Ubytování bude sloužit pro účastníky sportovních soustředění.&#13;
+- Součástí ubytování nebude stravování.&#13;
+- Stravování formou studené kuchyně případně dovážení hotových jídel bude umožněno ve vestibulu sportovní haly (není součástí zadání tohoto projektu). &#13;
+- Ubytovací objekt požadujeme umístit dle přílohy č. 5 s dopřesněním zastavěné plochy v průběhu zpracování studie.&#13;
+- Ubytovací objekt bude mít svůj hlavní vchod nezávislý na sportovní hale a přilehlých sportovišť.&#13;
+- S vestibulem sportovní haly požadujeme přímé napojení (suchou nohou). Totéž se suterénem sportovní haly a šatnami fotbalového areálu.&#13;
+- Součástí studie bude písemné odsouhlasení navrženého řešení dědičkami autorských práv sportovní haly Ing. arch. Ladislava Konopky (kontakty viz. příloha č. 6)</predmet_vz>
+  <hlavni_cpv>71320000</hlavni_cpv>
+  <delena_na_casti>0</delena_na_casti>
+  <zadavaci_postupy>
+   <zadavaci_postup>
+    <id_objektu>ZP-810</id_objektu>
+   </zadavaci_postup>
+  </zadavaci_postupy>
+  <casti_vz>
+   <cast_zakazky>
+    <id_objektu>810</id_objektu>
+    <id_zadavaciho_postupu_vz>ZP-810</id_zadavaciho_postupu_vz>
+    <nazev_casti_vz>Zpracování projektové dokumentace &quot;Ubytovací objekt sportovní haly Třeboň&quot;</nazev_casti_vz>
+    <druh_casti_vz>služby</druh_casti_vz>
+    <rezim_casti_vz>Veřejné zakázky malého rozsahu</rezim_casti_vz>
+    <predmet_casti_vz>Předmětem plnění této veřejné zakázky jsou projekční a inženýrské služby pro vyhotovení projektové dokumentace stavby „&#13;
+Ubytovací objekt sportovní haly, Třeboň“. Projektová dokumentace bude řešit přístavbu ubytovacích kapacit ve sportovní hale v Třeboni. &#13;
+- Ubytování pro minimálně 46 osob ve dvojlůžkových pokojích s dostatečným zázemím pro pobyt sportovních výprav a prostory pro relaxaci (minimálně masérna). &#13;
+- Součástí každého pokoje bude sociální zařízení - společná koupelna (sprchový kout) a WC. &#13;
+- Ubytování bude sloužit pro účastníky sportovních soustředění.&#13;
+- Součástí ubytování nebude stravování.&#13;
+- Stravování formou studené kuchyně případně dovážení hotových jídel bude umožněno ve vestibulu sportovní haly (není součástí zadání tohoto projektu). &#13;
+- Ubytovací objekt požadujeme umístit dle přílohy č. 5 s dopřesněním zastavěné plochy v průběhu zpracování studie.&#13;
+- Ubytovací objekt bude mít svůj hlavní vchod nezávislý na sportovní hale a přilehlých sportovišť.&#13;
+- S vestibulem sportovní haly požadujeme přímé napojení (suchou nohou). Totéž se suterénem sportovní haly a šatnami fotbalového areálu.&#13;
+- Součástí studie bude písemné odsouhlasení navrženého řešení dědičkami autorských práv sportovní haly Ing. arch. Ladislava Konopky (kontakty viz. příloha č. 6)</predmet_casti_vz>
+    <hlavni_cpv_casti_vz>71320000</hlavni_cpv_casti_vz>
+    <zadavaci_postup_casti>
+     <id_objektu>ZP-810</id_objektu>
+     <lhuty_zadavaciho_postupu>
+      <lhuta>
+       <druh_lhuty>lhůta podání nabídky</druh_lhuty>
+       <datum_konce_lhuty>2024-09-04T12:00:00+02:00</datum_konce_lhuty>
+      </lhuta>
+     </lhuty_zadavaciho_postupu>
+     <stav_zadavaciho_postupu>dokončen</stav_zadavaciho_postupu>
+     <druh_zadavaciho_postupu>uzavřená výzva</druh_zadavaciho_postupu>
+     <ramcova_dohoda>0</ramcova_dohoda>
+     <zavedeni_dns>0</zavedeni_dns>
+     <dokumenty>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_6909.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2024-11-12T15:38:40+01:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_6910.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2024-11-12T15:38:40+01:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_6911.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2024-11-12T15:38:40+01:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8784.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-11-23T15:22:39+01:00</cas_vlozeni_na_profil>
+      </dokument>
+     </dokumenty>
+     <datum_uverejneni>2024-11-12T15:38:40+01:00</datum_uverejneni>
+     <ucastnici>
+      <ucastnik>
+       <subjekt>
+        <ico>67145566</ico>
+        <nazev_subjektu>Ing. Josef Kregl</nazev_subjektu>
+        <bydliste>CZ</bydliste>
+       </subjekt>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+     </ucastnici>
+     <vybrani_dodavatele>
+      <vybrany_dodavatel>
+       <subjekt>
+        <ico>67145566</ico>
+        <nazev_subjektu>Ing. Josef Kregl</nazev_subjektu>
+        <bydliste>CZ</bydliste>
+       </subjekt>
+       <uzavrena_smlouva_nebo_rd>1</uzavrena_smlouva_nebo_rd>
+       <smluvni_cena_s_DPH>873000.00</smluvni_cena_s_DPH>
+       <smluvni_cena_bez_DPH>873000.00</smluvni_cena_bez_DPH>
+       <role_dodavatele>dodavatel bez společné účasti</role_dodavatele>
+       <plneni_dodavateli>
+        <plneni>
+         <rok_smlouvy>2024</rok_smlouvy>
+         <cena_za_rok_bez_dph>85000.00</cena_za_rok_bez_dph>
+         <cena_za_rok_s_dph>85000.00</cena_za_rok_s_dph>
+        </plneni>
+        <plneni>
+         <rok_smlouvy>2025</rok_smlouvy>
+         <cena_za_rok_bez_dph>595000.00</cena_za_rok_bez_dph>
+         <cena_za_rok_s_dph>595000.00</cena_za_rok_s_dph>
+        </plneni>
+       </plneni_dodavateli>
+      </vybrany_dodavatel>
+     </vybrani_dodavatele>
+     <zjisten_stret_zajmu>0</zjisten_stret_zajmu>
+     <datum_uzavreni_smlouvy>2024-09-13T00:00:00+02:00</datum_uzavreni_smlouvy>
+    </zadavaci_postup_casti>
+   </cast_zakazky>
+  </casti_vz>
+ </zakazka>
+ <zakazka>
+  <id_objektu>VZ-877</id_objektu>
+  <nazev_vz>Zpracování projektové dokumentace ve stupni DZS/DPS přístavby dvou tělocvičen - revitalizace a přístavba sportovní haly Třeboň</nazev_vz>
+  <druh_vz>služby</druh_vz>
+  <rezim_vz>Veřejné zakázky malého rozsahu</rezim_vz>
+  <predmet_vz>Předmětem plnění této veřejné zakázky jsou projekční služby pro zpracování  projektové dokumentace ve stupni pro zadání a provedení stavby (dále jen „DZS/DPS“) přístavby dvou tělocvičen – revitalizace a přístavba sportovní haly Třeboň. &#13;
+Stavba obsahuje:&#13;
+- dvoupodlažní přístavbu včetně vstupního schodiště a rampy obsahující dvě tělocvičny, chodbu se schodištěm a výtah,&#13;
+- stavební úpravy stávající sportovní haly v 1. podzemním podlaží, kterými z technické místnosti vzduchotechniky vznikne sociální zařízení a z chodby v 1. podzemním podlaží bude provedený průchod do navržené přístavby. Dále stavební úpravy obsahují odstranění vnitřního schodiště a provedení nového,&#13;
+- odstranění  části terasy před vstupem do sportovní haly včetně postranního schodiště,&#13;
+- zpevněné plochy,&#13;
+- ležatá dešťová kanalizace včetně akumulační jímky,&#13;
+- výtlačná kanalizace.</predmet_vz>
+  <hlavni_cpv>71320000</hlavni_cpv>
+  <delena_na_casti>0</delena_na_casti>
+  <zadavaci_postupy>
+   <zadavaci_postup>
+    <id_objektu>ZP-877</id_objektu>
+   </zadavaci_postup>
+  </zadavaci_postupy>
+  <casti_vz>
+   <cast_zakazky>
+    <id_objektu>877</id_objektu>
+    <id_zadavaciho_postupu_vz>ZP-877</id_zadavaciho_postupu_vz>
+    <nazev_casti_vz>Zpracování projektové dokumentace ve stupni DZS/DPS přístavby dvou tělocvičen - revitalizace a přístavba sportovní haly Třeboň</nazev_casti_vz>
+    <druh_casti_vz>služby</druh_casti_vz>
+    <rezim_casti_vz>Veřejné zakázky malého rozsahu</rezim_casti_vz>
+    <predmet_casti_vz>Předmětem plnění této veřejné zakázky jsou projekční služby pro zpracování  projektové dokumentace ve stupni pro zadání a provedení stavby (dále jen „DZS/DPS“) přístavby dvou tělocvičen – revitalizace a přístavba sportovní haly Třeboň. &#13;
+Stavba obsahuje:&#13;
+- dvoupodlažní přístavbu včetně vstupního schodiště a rampy obsahující dvě tělocvičny, chodbu se schodištěm a výtah,&#13;
+- stavební úpravy stávající sportovní haly v 1. podzemním podlaží, kterými z technické místnosti vzduchotechniky vznikne sociální zařízení a z chodby v 1. podzemním podlaží bude provedený průchod do navržené přístavby. Dále stavební úpravy obsahují odstranění vnitřního schodiště a provedení nového,&#13;
+- odstranění  části terasy před vstupem do sportovní haly včetně postranního schodiště,&#13;
+- zpevněné plochy,&#13;
+- ležatá dešťová kanalizace včetně akumulační jímky,&#13;
+- výtlačná kanalizace.</predmet_casti_vz>
+    <hlavni_cpv_casti_vz>71320000</hlavni_cpv_casti_vz>
+    <zadavaci_postup_casti>
+     <id_objektu>ZP-877</id_objektu>
+     <lhuty_zadavaciho_postupu>
+      <lhuta>
+       <druh_lhuty>lhůta podání nabídky</druh_lhuty>
+       <datum_konce_lhuty>2025-04-28T12:00:00+02:00</datum_konce_lhuty>
+      </lhuta>
+     </lhuty_zadavaciho_postupu>
+     <stav_zadavaciho_postupu>dokončen</stav_zadavaciho_postupu>
+     <druh_zadavaciho_postupu>uzavřená výzva</druh_zadavaciho_postupu>
+     <ramcova_dohoda>0</ramcova_dohoda>
+     <zavedeni_dns>0</zavedeni_dns>
+     <dokumenty>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_7532.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2025-07-28T10:57:59+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_7533.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2025-07-28T10:58:30+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_7534.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2025-07-28T10:59:01+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8785.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-11-23T15:24:11+01:00</cas_vlozeni_na_profil>
+      </dokument>
+     </dokumenty>
+     <datum_uverejneni>2025-07-28T10:52:41+02:00</datum_uverejneni>
+     <ucastnici>
+      <ucastnik>
+       <subjekt>
+        <ico>67145566</ico>
+        <nazev_subjektu>Ing. Josef Kregl</nazev_subjektu>
+        <bydliste>CZ</bydliste>
+       </subjekt>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+     </ucastnici>
+     <vybrani_dodavatele>
+      <vybrany_dodavatel>
+       <subjekt>
+        <ico>67145566</ico>
+        <nazev_subjektu>Ing. Josef Kregl</nazev_subjektu>
+        <bydliste>CZ</bydliste>
+       </subjekt>
+       <uzavrena_smlouva_nebo_rd>1</uzavrena_smlouva_nebo_rd>
+       <smluvni_cena_s_DPH>945000.00</smluvni_cena_s_DPH>
+       <smluvni_cena_bez_DPH>945000.00</smluvni_cena_bez_DPH>
+       <role_dodavatele>dodavatel bez společné účasti</role_dodavatele>
+       <plneni_dodavateli>
+        <plneni>
+         <rok_smlouvy>2025</rok_smlouvy>
+         <cena_za_rok_bez_dph>900000.00</cena_za_rok_bez_dph>
+         <cena_za_rok_s_dph>900000.00</cena_za_rok_s_dph>
+        </plneni>
+       </plneni_dodavateli>
+      </vybrany_dodavatel>
+     </vybrani_dodavatele>
+     <zjisten_stret_zajmu>0</zjisten_stret_zajmu>
+     <datum_uzavreni_smlouvy>2025-05-14T00:00:00+02:00</datum_uzavreni_smlouvy>
+    </zadavaci_postup_casti>
+   </cast_zakazky>
+  </casti_vz>
+ </zakazka>
+ <zakazka>
   <id_objektu>VZ-882</id_objektu>
   <nazev_vz>Stavební úpravy části MK ul. Sídliště v Třeboni - v úseku od silnice III/15512 po čp. 1158</nazev_vz>
   <druh_vz>stavební práce</druh_vz>
@@ -1229,7 +1466,7 @@ Zadavatel upozorňuje, že vymezení Projektové dokumentace ve smyslu zadávac�
        <datum_konce_lhuty>2026-05-06T12:00:00+02:00</datum_konce_lhuty>
       </lhuta>
      </lhuty_zadavaciho_postupu>
-     <stav_zadavaciho_postupu>dokončen</stav_zadavaciho_postupu>
+     <stav_zadavaciho_postupu>ukončeno plnění</stav_zadavaciho_postupu>
      <druh_zadavaciho_postupu>otevřená výzva</druh_zadavaciho_postupu>
      <ramcova_dohoda>0</ramcova_dohoda>
      <zavedeni_dns>0</zavedeni_dns>
@@ -1251,6 +1488,18 @@ Zadavatel upozorňuje, že vymezení Projektové dokumentace ve smyslu zadávac�
        <typ_dokumentu>jiný dokument</typ_dokumentu>
        <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
        <cas_vlozeni_na_profil>2026-07-08T15:11:11+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8786.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-11-23T15:29:34+01:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8787.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-11-23T15:30:19+01:00</cas_vlozeni_na_profil>
       </dokument>
       <dokument>
        <url>https://zakazky.mesto-trebon.cz/document_download_8247.html</url>
@@ -1335,6 +1584,13 @@ Zadavatel upozorňuje, že vymezení Projektové dokumentace ve smyslu zadávac�
        <smluvni_cena_s_DPH>2025961.08</smluvni_cena_s_DPH>
        <smluvni_cena_bez_DPH>1674348.00</smluvni_cena_bez_DPH>
        <role_dodavatele>dodavatel bez společné účasti</role_dodavatele>
+       <plneni_dodavateli>
+        <plneni>
+         <rok_smlouvy>2026</rok_smlouvy>
+         <cena_za_rok_bez_dph>1870997.00</cena_za_rok_bez_dph>
+         <cena_za_rok_s_dph>2263906.37</cena_za_rok_s_dph>
+        </plneni>
+       </plneni_dodavateli>
       </vybrany_dodavatel>
      </vybrani_dodavatele>
      <zjisten_stret_zajmu>0</zjisten_stret_zajmu>
@@ -1594,6 +1850,118 @@ Zadavatel upozorňuje, že vymezení Projektové dokumentace ve smyslu zadávac�
      <datum_uverejneni>2026-05-29T16:18:43+02:00</datum_uverejneni>
      <zjisten_stret_zajmu>0</zjisten_stret_zajmu>
      <datum_zruseni_rizeni>2026-08-06T00:00:00+02:00</datum_zruseni_rizeni>
+    </zadavaci_postup_casti>
+   </cast_zakazky>
+  </casti_vz>
+ </zakazka>
+ <zakazka>
+  <id_objektu>VZ-945</id_objektu>
+  <nazev_vz>Oprava vodovodu v úseku Sádecká ulice - autokemp Třeboňský ráj</nazev_vz>
+  <druh_vz>stavební práce</druh_vz>
+  <rezim_vz>Veřejné zakázky malého rozsahu</rezim_vz>
+  <predmet_vz>Předmětem zakázky jsou stavební práce na opravě vodovodu - výměna vodovodu ve stávající trase. Délka cca 340 m.</predmet_vz>
+  <hlavni_cpv>45232150</hlavni_cpv>
+  <delena_na_casti>0</delena_na_casti>
+  <zadavaci_postupy>
+   <zadavaci_postup>
+    <id_objektu>ZP-945</id_objektu>
+   </zadavaci_postup>
+  </zadavaci_postupy>
+  <casti_vz>
+   <cast_zakazky>
+    <id_objektu>945</id_objektu>
+    <id_zadavaciho_postupu_vz>ZP-945</id_zadavaciho_postupu_vz>
+    <nazev_casti_vz>Oprava vodovodu v úseku Sádecká ulice - autokemp Třeboňský ráj</nazev_casti_vz>
+    <druh_casti_vz>stavební práce</druh_casti_vz>
+    <rezim_casti_vz>Veřejné zakázky malého rozsahu</rezim_casti_vz>
+    <predmet_casti_vz>Předmětem zakázky jsou stavební práce na opravě vodovodu - výměna vodovodu ve stávající trase. Délka cca 340 m.</predmet_casti_vz>
+    <hlavni_cpv_casti_vz>45232150</hlavni_cpv_casti_vz>
+    <zadavaci_postup_casti>
+     <id_objektu>ZP-945</id_objektu>
+     <lhuty_zadavaciho_postupu>
+      <lhuta>
+       <druh_lhuty>lhůta podání nabídky</druh_lhuty>
+       <datum_konce_lhuty>2026-05-18T12:00:00+02:00</datum_konce_lhuty>
+      </lhuta>
+     </lhuty_zadavaciho_postupu>
+     <stav_zadavaciho_postupu>dokončen</stav_zadavaciho_postupu>
+     <druh_zadavaciho_postupu>uzavřená výzva</druh_zadavaciho_postupu>
+     <ramcova_dohoda>0</ramcova_dohoda>
+     <zavedeni_dns>0</zavedeni_dns>
+     <dokumenty>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8404.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-06-01T13:03:43+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8405.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-06-01T13:04:24+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8406.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-06-01T13:32:28+02:00</cas_vlozeni_na_profil>
+      </dokument>
+      <dokument>
+       <url>https://zakazky.mesto-trebon.cz/document_download_8788.html</url>
+       <typ_dokumentu>jiný dokument</typ_dokumentu>
+       <jiny_dokument_nazev>neuvedeno</jiny_dokument_nazev>
+       <cas_vlozeni_na_profil>2026-11-23T15:31:43+01:00</cas_vlozeni_na_profil>
+      </dokument>
+     </dokumenty>
+     <datum_uverejneni>2026-06-01T12:49:58+02:00</datum_uverejneni>
+     <ucastnici>
+      <ucastnik>
+       <subjekt>
+        <ico>25159224</ico>
+        <nazev_subjektu>JIPAMA s.r.o.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+      <ucastnik>
+       <subjekt>
+        <ico>42417473</ico>
+        <nazev_subjektu>Jiří Jokl</nazev_subjektu>
+        <bydliste>CZ</bydliste>
+       </subjekt>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+      <ucastnik>
+       <subjekt>
+        <ico>25174533</ico>
+        <nazev_subjektu>Stavební firma HUKO s.r.o.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <role_ucastnika>dodavatel bez společné účasti</role_ucastnika>
+       <ucastnik_vyloucen>0</ucastnik_vyloucen>
+       <ucastnik_odstoupil>0</ucastnik_odstoupil>
+      </ucastnik>
+     </ucastnici>
+     <vybrani_dodavatele>
+      <vybrany_dodavatel>
+       <subjekt>
+        <ico>25174533</ico>
+        <nazev_subjektu>Stavební firma HUKO s.r.o.</nazev_subjektu>
+        <misto_podnikani>CZ</misto_podnikani>
+       </subjekt>
+       <uzavrena_smlouva_nebo_rd>1</uzavrena_smlouva_nebo_rd>
+       <smluvni_cena_s_DPH>1998729.97</smluvni_cena_s_DPH>
+       <smluvni_cena_bez_DPH>1651842.95</smluvni_cena_bez_DPH>
+       <role_dodavatele>dodavatel bez společné účasti</role_dodavatele>
+      </vybrany_dodavatel>
+     </vybrani_dodavatele>
+     <zjisten_stret_zajmu>0</zjisten_stret_zajmu>
+     <datum_uzavreni_smlouvy>2026-05-29T00:00:00+02:00</datum_uzavreni_smlouvy>
     </zadavaci_postup_casti>
    </cast_zakazky>
   </casti_vz>

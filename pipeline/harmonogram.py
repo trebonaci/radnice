@@ -22,7 +22,7 @@ import yaml
 
 OBLASTI = {"doprava", "voda_odpady", "sport", "skolstvi", "socialni", "bydleni", "kultura", "lazne", "zelen",
            "uzemni_plan", "komunity_spolky", "jine"}
-NAZEV_FAZE = {"priprava": "příprava", "soutez": "výběr dodavatele", "stavba": "stavba", "prubeh": "probíhá"}
+NAZEV_FAZE = {"priprava": "příprava", "soutez": "výběr dodavatele", "stavba": "stavba", "prubeh": "průběh"}
 
 
 def _usek(faze: str, od: str | None, do: str | None, **navic) -> dict | None:

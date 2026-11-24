@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+
+<html lang="cs"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-dim":"#cbdbf5","on-primary-fixed":"#102000","on-surface-variant":"#424936","secondary-fixed":"#dae2fd","background":"#f8f9ff","surface-tint":"#416900","error-container":"#ffdad6","outline":"#727a64","primary-fixed-dim":"#91db2a","tertiary-fixed":"#cce5ff","accent-lime-light":"#ecfccb","on-secondary-fixed":"#131b2e","on-error":"#ffffff","secondary":"#565e74","surface-container":"#e5eeff","on-secondary-fixed-variant":"#3f465c","surface-bright":"#f8f9ff","on-primary-container":"#315200","category-zmena":"#84cc16","category-stavba":"#f59e0b","inverse-surface":"#213145","outline-variant":"#c1cab0","error":"#ba1a1a","primary-fixed":"#acf847","accent-lime":"#94C83D","surface-card":"#ffffff","tertiary-container":"#70bfff","secondary-container":"#dae2fd","surface-dark":"#111827","surface-container-high":"#dce9ff","tertiary-fixed-dim":"#93ccff","on-error-container":"#93000a","on-secondary-container":"#5c647a","on-tertiary":"#ffffff","surface-variant":"#d3e4fe","tertiary":"#006398","on-primary":"#ffffff","inverse-on-surface":"#eaf1ff","secondary-fixed-dim":"#bec6e0","surface-container-highest":"#d3e4fe","on-tertiary-fixed":"#001d31","surface-container-lowest":"#ffffff","surface-dark-subtle":"#1f2937","surface":"#f8f9ff","surface-container-low":"#eff4ff","category-kriticke":"#ef4444","on-secondary":"#ffffff","border-dark":"#334155","on-primary-fixed-variant":"#304f00","primary-container":"#84cc16","on-tertiary-container":"#004d77","on-surface":"#0b1c30","inverse-primary":"#91db2a","border-subtle":"#e2e8f0","category-rozhodnuti":"#3b82f6","surface-light":"#f8fafc","primary":"#416900","accent-lime-dark":"#4d7c0f","on-background":"#0b1c30","on-tertiary-fixed-variant":"#004b73"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-4xl":"6rem",margin:"2rem","space-3xl":"4.5rem","space-3xs":"0.125rem","margin-mobile":"1rem","space-xl":"2rem",gutter:"1.5rem","space-sm":"0.75rem","space-lg":"1.5rem","space-2xs":"0.25rem","space-xs":"0.5rem","space-2xl":"3rem","space-md":"1rem","gutter-mobile":"1rem"},fontFamily:{"body-lg":["Inter"],"body-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"],"label-uppercase":["Inter"],"label-badge":["Inter"],"display-hero":["Plus Jakarta Sans"],"body-sm":["Inter"],"code-data":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"kpi-metric-mobile":["Plus Jakarta Sans"],"kpi-metric":["Plus Jakarta Sans"]},fontSize:{"body-lg":["18px",{lineHeight:"28px",fontWeight:"400"}],"body-md":["15px",{lineHeight:"24px",fontWeight:"400"}],"headline-lg":["36px",{lineHeight:"44px",letterSpacing:"-0.025em",fontWeight:"700"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"700"}],"headline-sm":["18px",{lineHeight:"26px",letterSpacing:"-0.01em",fontWeight:"600"}],"display-hero-mobile":["36px",{lineHeight:"42px",letterSpacing:"-0.02em",fontWeight:"800"}],"label-uppercase":["11px",{lineHeight:"14px",letterSpacing:"0.08em",fontWeight:"700"}],"label-badge":["12px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"600"}],"display-hero":["56px",{lineHeight:"64px",letterSpacing:"-0.03em",fontWeight:"800"}],"body-sm":["13px",{lineHeight:"18px",fontWeight:"400"}],"code-data":["13px",{lineHeight:"18px",fontWeight:"500"}],"headline-lg-mobile":["26px",{lineHeight:"32px",letterSpacing:"-0.02em",fontWeight:"700"}],"kpi-metric-mobile":["36px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"800"}],"kpi-metric":["48px",{lineHeight:"52px",letterSpacing:"-0.03em",fontWeight:"800"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm group" data-path="prehled-deni" href="#"><div class="w-9 h-9 rounded-lg bg-surface-dark flex items-center justify-center"><span class="material-symbols-outlined text-primary-container text-[20px]">account_balance</span></div><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-surface-dark tracking-tight leading-none group-hover:text-primary transition-colors">Třeboňáci</span><span class="px-space-xs py-space-3xs rounded-full bg-accent-lime-light text-accent-lime-dark font-label-uppercase text-label-uppercase">RADNICE &amp; DATA</span></div><span class="font-body-sm text-body-sm text-secondary hidden sm:inline leading-tight">Co se děje na radnici v Třeboni</span></div></a><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-space-2xs rounded-full bg-surface-container-low"><span class="w-2 h-2 rounded-full bg-category-zmena animate-pulse"></span><span class="font-code-data text-code-data text-secondary">Aktualizace: 23. 11. 2026</span><span class="text-outline-variant text-[11px]">•</span><span class="font-label-badge text-label-badge text-tertiary">Otevřená radnice</span></div></div><div class="flex-1 max-w-md hidden md:block"><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-space-sm text-secondary text-[18px]">search</span><input class="w-full pl-9 pr-12 py-space-xs rounded-lg bg-surface-container-lowest font-body-sm text-body-sm text-on-surface placeholder:text-secondary focus:outline-none focus:ring-2 focus:ring-accent-lime shadow-[0_1px_4px_rgba(0,0,0,0.03)]" placeholder="Hledat v usneseních, smlouvách, zakázkách..." type="text"/><kbd class="absolute right-space-xs px-space-2xs py-space-3xs rounded bg-surface-container-high font-code-data text-[10px] text-secondary">⌘K</kbd></div></div><div class="flex items-center gap-space-md"><a class="hidden lg:flex items-center gap-space-3xs font-label-badge text-label-badge text-secondary hover:text-on-surface transition-colors" href="https://trebonaci.cz" rel="noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px]">public</span><span>trebonaci.cz</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="bg-surface-container-low shadow-[0_1px_4px_rgba(0,0,0,0.02)]"><div class="max-w-7xl mx-auto px-margin"><nav class="flex items-center gap-space-xs overflow-x-auto py-space-xs" data-active-classes="bg-primary-container text-on-surface font-headline-sm"><a class="px-space-md py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface whitespace-nowrap transition-colors" data-path="prehled-deni" href="#">Přehled dění</a><a class="px-space-md py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface whitespace-nowrap transition-colors" data-path="stavby-a-opravy" href="#">Stavby a opravy</a><a class="px-space-md py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface whitespace-nowrap transition-colors" data-path="rozhodnuti-rady" href="#">Rozhodnutí rady</a><a class="px-space-md py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface whitespace-nowrap transition-colors" data-path="mista-a-sluzby" href="#">Místa a služby</a><a class="px-space-md py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface whitespace-nowrap transition-colors" data-path="rozpocet" href="#">Rozpočet</a><a class="px-space-md py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface whitespace-nowrap transition-colors" data-path="interaktivni-mapa" href="#">Interaktivní mapa</a></nav></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-200px)]"><div class="flex flex-col w-full">
+<div class="max-w-7xl mx-auto w-full px-margin py-space-xl flex flex-col gap-space-2xl">
+<!-- 1. Záhlaví sekce -->
+<section class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg pt-space-md">
+<div class="flex flex-col gap-space-sm max-w-3xl">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-uppercase text-label-uppercase text-accent-lime-dark">AUDITNÍ STOPA SAMOSPRÁVY • ZÁPISY RADY A ZASTUPITELSTVA</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Rozhodnutí rady a zastupitelstva</h1>
+<p class="font-body-lg text-body-lg text-secondary">
+          139 usnesení (138 přijatých, 1 nepřijaté) z jednání od 9. 9. 2026 do 4. 11. 2026, srozumitelně a s odkazem na stranu zápisu.
+        </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm shrink-0">
+<button class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-label-badge text-label-badge shadow-sm hover:shadow-md hover:bg-surface-container-low transition-all" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">download</span>
+<span>Export CSV</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-dark text-on-primary font-label-badge text-label-badge shadow-sm hover:shadow-md hover:bg-surface-dark-subtle transition-all" type="button">
+<span class="material-symbols-outlined text-[18px] text-accent-lime">picture_as_pdf</span>
+<span>Archiv zápisů (PDF)</span>
+</button>
+</div>
+</section>
+<!-- 2. Přehledová KPI lišta -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- KPI 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-uppercase text-label-uppercase text-secondary">CELKEM USNESENÍ</span>
+<span class="material-symbols-outlined text-[20px] text-tertiary">gavel</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-kpi-metric text-kpi-metric text-on-surface">139</span>
+<span class="font-body-sm text-body-sm text-secondary">usnesení</span>
+</div>
+<div class="flex items-center justify-between gap-space-xs pt-space-2xs">
+<span class="font-body-sm text-body-sm text-secondary">z jednání 9. 9. – 4. 11. 2026</span>
+<svg class="w-16 h-5 text-primary-container shrink-0" fill="none" viewbox="0 0 64 20">
+<path d="M2 16L14 12L26 14L38 6L50 9L62 2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-uppercase text-label-uppercase text-secondary">SCHVÁLENO</span>
+<span class="px-space-xs py-space-3xs rounded-full bg-accent-lime-light text-accent-lime-dark font-code-data text-code-data">99,3 %</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-kpi-metric text-kpi-metric text-on-surface">138</span>
+<span class="font-body-sm text-body-sm text-secondary">přijatých</span>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<div class="w-full h-1.5 rounded-full bg-surface-container-low overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 99.3%"></div>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">schváleno většinou hlasů</span>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-uppercase text-label-uppercase text-secondary">NESCHVÁLENO</span>
+<span class="w-2.5 h-2.5 rounded-full bg-category-stavba"></span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-kpi-metric text-kpi-metric text-on-surface">1</span>
+<span class="font-body-sm text-body-sm text-secondary">nepřijaté</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">neschváleno či odloženo</span>
+</div>
+<!-- KPI 4 (Dark card) -->
+<div class="bg-surface-dark text-on-primary rounded-xl p-space-lg shadow-md flex flex-col justify-between gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-uppercase text-label-uppercase text-accent-lime">OVĚŘENOST DAT</span>
+<span class="material-symbols-outlined text-[20px] text-accent-lime" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-kpi-metric text-kpi-metric text-on-primary">100 %</span>
+<span class="font-body-sm text-body-sm text-secondary-fixed-dim">citací</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary-fixed-dim">každé shrnutí ověřeno proti PDF zápisu</span>
+</div>
+</section>
+<!-- 3. Vyhledávací a filtrační panel -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center gap-space-md">
+<!-- Search input -->
+<div class="relative flex-1 flex items-center">
+<span class="material-symbols-outlined absolute left-space-md text-secondary text-[20px]">search</span>
+<input class="w-full pl-11 pr-14 py-space-sm rounded-lg bg-surface-light font-body-md text-body-md text-on-surface placeholder:text-secondary focus:outline-none focus:bg-surface-container-lowest shadow-sm transition-all" id="decision-search" placeholder="Hledat v rozhodnutích (ulice, budova, téma...)" type="text"/>
+<kbd class="absolute right-space-sm px-space-xs py-space-3xs rounded bg-surface-container-high font-code-data text-code-data text-secondary">⌘K</kbd>
+</div>
+<!-- Organ segmented control -->
+<div class="flex items-center gap-space-2xs p-space-2xs rounded-lg bg-surface-container-low shrink-0 overflow-x-auto" id="organ-filter">
+<button class="organ-btn px-space-md py-space-xs rounded-md bg-surface-dark text-on-primary font-label-badge text-label-badge whitespace-nowrap transition-all" data-organ="all" type="button">Vše</button>
+<button class="organ-btn px-space-md py-space-xs rounded-md text-on-surface-variant hover:text-on-surface font-label-badge text-label-badge whitespace-nowrap transition-all" data-organ="rada" type="button">Rada města (RM)</button>
+<button class="organ-btn px-space-md py-space-xs rounded-md text-on-surface-variant hover:text-on-surface font-label-badge text-label-badge whitespace-nowrap transition-all" data-organ="zastupitelstvo" type="button">Zastupitelstvo (ZM)</button>
+</div>
+</div>
+<!-- Topic filter chips -->
+<div class="flex flex-wrap items-center gap-space-xs" id="topic-filters">
+<button class="topic-chip inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-dark text-on-primary font-label-badge text-label-badge transition-all" data-topic="all" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-accent-lime"></span>
+<span>Vše (139)</span>
+</button>
+<button class="topic-chip inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-badge text-label-badge transition-all" data-topic="doprava" type="button">
+<span>Doprava a veřejný prostor (15)</span>
+</button>
+<button class="topic-chip inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-badge text-label-badge transition-all" data-topic="bydleni" type="button">
+<span>Bydlení a péče (14)</span>
+</button>
+<button class="topic-chip inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-badge text-label-badge transition-all" data-topic="skoly" type="button">
+<span>Školy a školky (13)</span>
+</button>
+<button class="topic-chip inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-badge text-label-badge transition-all" data-topic="sport" type="button">
+<span>Sport, kultura a spolky (25)</span>
+</button>
+<button class="topic-chip inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-badge text-label-badge transition-all" data-topic="spolecnosti" type="button">
+<span>Městské společnosti (9)</span>
+</button>
+<button class="topic-chip inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-badge text-label-badge transition-all" data-topic="rozvoj" type="button">
+<span>Rozvoj a správa města (68)</span>
+</button>
+</div>
+</section>
+<!-- 4. Dvousloupcová mřížka 6 tematických kategorií -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-gutter" id="categories-grid">
+<!-- Karta 1: Doprava a veřejný prostor -->
+<article class="category-card bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between gap-space-md" data-topic="doprava">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px] text-tertiary">directions_car</span>
+</div>
+<div class="flex flex-col gap-space-3xs">
+<div class="flex items-center gap-space-xs">
+<h2 class="font-headline-md text-headline-md text-on-surface">Doprava a veřejný prostor</h2>
+<span class="px-space-xs py-space-3xs rounded-full bg-surface-container-low font-code-data text-code-data text-secondary">15</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">Ulice, chodníky, parkování, cyklostezky, zeleň, voda a odpady</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Item 1 -->
+<div class="decision-item bg-surface-light rounded-lg p-space-md flex flex-col gap-space-xs hover:bg-surface-container-low transition-colors" data-organ="rada">
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-space-3xs rounded-full bg-accent-lime-light text-accent-lime-dark font-label-uppercase text-label-uppercase">ROZHODNUTÍ</span>
+<span class="font-code-data text-code-data text-secondary">4. 11. 2026</span>
+<span class="text-outline-variant">·</span>
+<span class="font-label-badge text-label-badge text-on-surface-variant">Rada</span>
+</div>
+<a class="inline-flex items-center gap-space-3xs font-code-data text-code-data text-tertiary hover:underline" href="#">
+<span class="material-symbols-outlined text-[14px]">picture_as_pdf</span>
+<span>str. 4 zápisu</span>
+</a>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Rozpočtové opatření č. 60 – vzduchování ČOV</h3>
+</div>
+<!-- Item 2 -->
+<div class="decision-item bg-surface-light rounded-lg p-space-md flex flex-col gap-space-xs hover:bg-surface-container-low transition-colors" data-organ="rada">
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-space-3xs rounded-full bg-accent-lime-light text-accent-lime-dark font-label-uppercase text-label-uppercase">ROZHODNUTÍ</span>
+<span class="font-code-data text-code-data text-secondary">21. 10. 2026</span>
+<span class="text-outline-variant">·</span>
+<span class="font-label-badge text-label-badge text-on-surface-variant">Rada</span>
+</div>
+<a class="inline-flex items-center gap-space-3xs font-code-data text-code-data text-tertiary hover:underline" href="#">
+<span class="material-symbols-outlined text-[14px]">picture_as_pdf</span>
+<span>str. 7 zápisu</span>
+</a>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Zápis z jednání Komise ochrany veřejného pořádku a BESIP</h3>
+</div>
+</div>
+</div>
+<button class="expand-btn inline-flex items-center gap-space-xs font-label-badge text-label-badge text-tertiary hover:text-on-tertiary-container transition-colors self-start pt-space-xs" type="button">
+<span>Zobrazit další (13)</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</article>
+<!-- Karta 2: Bydlení a péče -->
+<article class="category-card bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between gap-space-md" data-topic="bydleni">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px] text-tertiary">home_health</span>
+</div>
+<div class="flex flex-col gap-space-3xs">
+<div class="flex items-center gap-space-xs">
+<h2 class="font-headline-md text-headline-md text-on-surface">Bydlení a péče</h2>
+<span class="px-space-xs py-space-3xs rounded-full bg-surface-container-low font-code-data text-code-data text-secondary">14</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">Městské byty, sociální služby, péče o seniory, zdravotní služby</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Item 1 -->
+<div class="decision-item bg-surface-light rounded-lg p-space-md flex flex-col gap-space-xs hover:bg-surface-container-low transition-colors" data-organ="rada">
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-space-3xs rounded-full bg-accent-lime-light text-accent-lime-dark font-label-uppercase text-label-uppercase">ROZHODNUTÍ</span>
+<span class="font-code-data text-code-data text-secondary">30. 10. 2026</span>
+<span class="text-outline-variant">·</span>
+<span class="font-label-badge text-label-badge text-on-surface-variant">Rada</span>
+</div>
+<a class="inline-flex items-center gap-space-3xs font-code-data text-code-data text-tertiary hover:underline" href="#">
+<span class="material-symbols-outlined text-[14px]">picture_as_pdf</span>
+<span>str. 2 zápisu</span>
+</a>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Dotace v oblasti sociálních služeb a zdravotnictví 2026</h3>
+</div>
+<!-- Item 2 -->
+<div class="decision-item bg-surface-light rounded-lg p-space-md flex flex-col gap-space-xs hover:bg-surface-container-low transition-colors" data-organ="rada">
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-space-3xs rounded-full bg-accent-lime-light text-accent-lime-dark font-label-uppercase text-label-uppercase">ROZHODNUTÍ</span>
+<span class="font-code-data text-code-data text-secondary">21. 10. 2026</span>
+<span class="text-outline-variant">·</span>
+<span class="font-label-badge text-label-badge text-on-surface-variant">Rada</span>
+</div>
+<a class="inline-flex items-center gap-space-3xs font-code-data text-code-data text-tertiary hover:underline" href="#">
+<span class="material-symbols-outlined text-[14px]">picture_as_pdf</span>
+<span>str. 5 zápisu</span>
+</a>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Slatinné lázně – převod dvou bytových jednotek</h3>
+</div>
+</div>
+</div>
+<button class="expand-btn inline-flex items-center gap-space-xs font-label-badge text-label-badge text-tertiary hover:text-on-tertiary-container transition-colors self-start pt-space-xs" type="button">
+<span>Zobrazit další (12)</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</article>
+<!-- Karta 3: Školy a školky -->
+<article class="category-card bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between gap-space-md" data-topic="skoly">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px] text-tertiary">school</span>
+</div>
+<div class="flex flex-col gap-space-3xs">
+<div class="flex items-center gap-space-xs">
+<h2 class="font-headline-md text-headline-md text-on-surface">Školy a školky</h2>
+<span class="px-space-xs py-space-3xs rounded-full bg-surface-container-low font-code-data text-code-data text-secondary">13</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">Budovy, jídelny, vybavení a provoz</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Item 1 -->
+<div class="decision-item bg-surface-light rounded-lg p-space-md flex flex-col gap-space-xs hover:bg-surface-container-low transition-colors" data-organ="rada">
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-space-3xs rounded-full bg-accent-lime-light text-accent-lime-dark font-label-uppercase text-label-uppercase">ROZHODNUTÍ</span>
+<span class="font-code-data text-code-data text-secondary">4. 11. 2026</span>
+<span class="text-outline-variant">·</span>
+<span class="font-label-badge text-label-badge text-on-surface-variant">Rada</span>
+</div>
+<a class="inline-flex items-center gap-space-3xs font-code-data text-code-data text-tertiary hover:underline" href="#">
+<span class="material-symbols-outlined text-[14px]">picture_as_pdf</span>
+<span>str. 3 zápisu</span>
+</a>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Dar bruslí pro ZŠ Sokolská</h3>
+</div>
+<!-- Item 2 -->
+<div class="decision-item bg-surface-light rounded-lg p-space-md flex flex-col gap-space-xs hover:bg-surface-container-low transition-colors" data-organ="rada">
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-space-3xs rounded-full bg-accent-lime-light text-accent-lime-dark font-label-uppercase text-label-uppercase">ROZHODNUTÍ</span>
+<span class="font-code-data text-code-data text-secondary">21. 10. 2026</span>
+<span class="text-outline-variant">·</span>
+<span class="font-label-badge text-label-badge text-on-surface-variant">Rada</span>
+</div>
+<a class="inline-flex items-center gap-space-3xs font-code-data text-code-data text-tertiary hover:underline" href="#">
+<span class="material-symbols-outlined text-[14px]">picture_as_pdf</span>
+<span>str. 6 zápisu</span>
+</a>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Výjimka z počtu dětí ve třídách MŠ Sluníčko</h3>
+</div>
+</div>
+</div>
+<button class="expand-btn inline-flex items-center gap-space-xs font-label-badge text-label-badge text-tertiary hover:text-on-tertiary-container transition-colors self-start pt-space-xs" type="button">
+<span>Zobrazit další (11)</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</article>
+<!-- Karta 4: Sport, kultura a spolky -->
+<article class="category-card bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between gap-space-md" data-topic="sport">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px] text-tertiary">theater_comedy</span>
+</div>
+<div class="flex flex-col gap-space-3xs">
+<div class="flex items-center gap-space-xs">
+<h2 class="font-headline-md text-headline-md text-on-surface">Sport, kultura a spolky</h2>
+<span class="px-space-xs py-space-3xs rounded-full bg-surface-container-low font-code-data text-code-data text-secondary">25</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">Sportoviště, kulturní akce, památky, komunitní život</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Item 1 -->
+<div class="decision-item bg-surface-light rounded-lg p-space-md flex flex-col gap-space-xs hover:bg-surface-container-low transition-colors" data-organ="rada">
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-space-3xs rounded-full bg-accent-lime-light text-accent-lime-dark font-label-uppercase text-label-uppercase">ROZHODNUTÍ</span>
+<span class="font-code-data text-code-data text-secondary">4. 11. 2026</span>
+<span class="text-outline-variant">·</span>
+<span class="font-label-badge text-label-badge text-on-surface-variant">Rada</span>
+</div>
+<a class="inline-flex items-center gap-space-3xs font-code-data text-code-data text-tertiary hover:underline" href="#">
+<span class="material-symbols-outlined text-[14px]">picture_as_pdf</span>
+<span>str. 8 zápisu</span>
+</a>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Hospodaření Městské sportovní Třeboň k 30. 9. 2026</h3>
+</div>
+<!-- Item 2 -->
+<div class="decision-item bg-surface-light rounded-lg p-space-md flex flex-col gap-space-xs hover:bg-surface-container-low transition-colors" data-organ="rada">
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-space-3xs rounded-full bg-accent-lime-light text-accent-lime-dark font-label-uppercase text-label-uppercase">ROZHODNUTÍ</span>
+<span class="font-code-data text-code-data text-secondary">4. 11. 2026</span>
+<span class="text-outline-variant">·</span>
+<span class="font-label-badge text-label-badge text-on-surface-variant">Rada</span>
+</div>
+<a class="inline-flex items-center gap-space-3xs font-code-data text-code-data text-tertiary hover:underline" href="#">
+<span class="material-symbols-outlined text-[14px]">picture_as_pdf</span>
+<span>str. 9 zápisu</span>
+</a>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Výpůjčka nebytového prostoru v Přesece na rok 2027</h3>
+</div>
+</div>
+</div>
+<button class="expand-btn inline-flex items-center gap-space-xs font-label-badge text-label-badge text-tertiary hover:text-on-tertiary-container transition-colors self-start pt-space-xs" type="button">
+<span>Zobrazit další (23)</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</article>
+<!-- Karta 5: Městské společnosti -->
+<article class="category-card bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between gap-space-md" data-topic="spolecnosti">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px] text-tertiary">domain</span>
+</div>
+<div class="flex flex-col gap-space-3xs">
+<div class="flex items-center gap-space-xs">
+<h2 class="font-headline-md text-headline-md text-on-surface">Městské společnosti</h2>
+<span class="px-space-xs py-space-3xs rounded-full bg-surface-container-low font-code-data text-code-data text-secondary">9</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">Lázně a další městské firmy – hospodaření, vedení, rozhodnutí o provozu</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Item 1 -->
+<div class="decision-item bg-surface-light rounded-lg p-space-md flex flex-col gap-space-xs hover:bg-surface-container-low transition-colors" data-organ="rada">
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-space-3xs rounded-full bg-accent-lime-light text-accent-lime-dark font-label-uppercase text-label-uppercase">ROZHODNUTÍ</span>
+<span class="font-code-data text-code-data text-secondary">21. 10. 2026</span>
+<span class="text-outline-variant">·</span>
+<span class="font-label-badge text-label-badge text-on-surface-variant">Rada</span>
+</div>
+<a class="inline-flex items-center gap-space-3xs font-code-data text-code-data text-tertiary hover:underline" href="#">
+<span class="material-symbols-outlined text-[14px]">picture_as_pdf</span>
+<span>str. 4 zápisu</span>
+</a>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Slatinné lázně – dodatek ke smlouvě o informačním systému</h3>
+</div>
+<!-- Item 2 -->
+<div class="decision-item bg-surface-light rounded-lg p-space-md flex flex-col gap-space-xs hover:bg-surface-container-low transition-colors" data-organ="rada">
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-space-3xs rounded-full bg-accent-lime-light text-accent-lime-dark font-label-uppercase text-label-uppercase">ROZHODNUTÍ</span>
+<span class="font-code-data text-code-data text-secondary">21. 10. 2026</span>
+<span class="text-outline-variant">·</span>
+<span class="font-label-badge text-label-badge text-on-surface-variant">Rada</span>
+</div>
+<a class="inline-flex items-center gap-space-3xs font-code-data text-code-data text-tertiary hover:underline" href="#">
+<span class="material-symbols-outlined text-[14px]">picture_as_pdf</span>
+<span>str. 5 zápisu</span>
+</a>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Slatinné lázně – převod dvou bytových jednotek</h3>
+</div>
+</div>
+</div>
+<button class="expand-btn inline-flex items-center gap-space-xs font-label-badge text-label-badge text-tertiary hover:text-on-tertiary-container transition-colors self-start pt-space-xs" type="button">
+<span>Zobrazit další (7)</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</article>
+<!-- Karta 6: Rozvoj a správa města -->
+<article class="category-card bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between gap-space-md" data-topic="rozvoj">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px] text-tertiary">account_balance</span>
+</div>
+<div class="flex flex-col gap-space-3xs">
+<div class="flex items-center gap-space-xs">
+<h2 class="font-headline-md text-headline-md text-on-surface">Rozvoj a správa města</h2>
+<span class="px-space-xs py-space-3xs rounded-full bg-surface-container-low font-code-data text-code-data text-secondary">68</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">Územní plán, rozpočet, majetek, fungování radnice</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Item 1 -->
+<div class="decision-item bg-surface-light rounded-lg p-space-md flex flex-col gap-space-xs hover:bg-surface-container-low transition-colors" data-organ="rada">
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-space-3xs rounded-full bg-accent-lime-light text-accent-lime-dark font-label-uppercase text-label-uppercase">ROZHODNUTÍ</span>
+<span class="font-code-data text-code-data text-secondary">4. 11. 2026</span>
+<span class="text-outline-variant">·</span>
+<span class="font-label-badge text-label-badge text-on-surface-variant">Rada</span>
+</div>
+<a class="inline-flex items-center gap-space-3xs font-code-data text-code-data text-tertiary hover:underline" href="#">
+<span class="material-symbols-outlined text-[14px]">picture_as_pdf</span>
+<span>str. 2 zápisu</span>
+</a>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Rozpočtové opatření č. 61 – cestovné</h3>
+</div>
+<!-- Item 2 -->
+<div class="decision-item bg-surface-light rounded-lg p-space-md flex flex-col gap-space-xs hover:bg-surface-container-low transition-colors" data-organ="rada">
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-space-3xs rounded-full bg-accent-lime-light text-accent-lime-dark font-label-uppercase text-label-uppercase">ROZHODNUTÍ</span>
+<span class="font-code-data text-code-data text-secondary">4. 11. 2026</span>
+<span class="text-outline-variant">·</span>
+<span class="font-label-badge text-label-badge text-on-surface-variant">Rada</span>
+</div>
+<a class="inline-flex items-center gap-space-3xs font-code-data text-code-data text-tertiary hover:underline" href="#">
+<span class="material-symbols-outlined text-[14px]">picture_as_pdf</span>
+<span>str. 6 zápisu</span>
+</a>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Pronájem kanceláře v 2. NP domu č. p. 106/II</h3>
+</div>
+</div>
+</div>
+<button class="expand-btn inline-flex items-center gap-space-xs font-label-badge text-label-badge text-tertiary hover:text-on-tertiary-container transition-colors self-start pt-space-xs" type="button">
+<span>Zobrazit další (66)</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</article>
+</section>
+<!-- 5. Spodní metodický blok transparentnosti -->
+<section class="bg-surface-container-low rounded-xl p-space-xl flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-lg">
+<div class="flex items-start gap-space-md max-w-2xl">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[20px] text-primary">fact_check</span>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<span class="font-label-uppercase text-label-uppercase text-secondary">METODIKA A OVĚŘOVÁNÍ</span>
+<p class="font-body-md text-body-md text-on-surface">
+            Názvy a shrnutí připravuje AI; každé shrnutí má doslovnou citaci, kterou kontroluje kód. Závazné je znění usnesení v zápisu.
+          </p>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm shrink-0">
+<a class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-container-lowest text-on-surface font-label-badge text-label-badge shadow-sm hover:shadow-md transition-all" href="#">
+<span class="material-symbols-outlined text-[16px] text-tertiary">timeline</span>
+<span>Časová osa</span>
+</a>
+<a class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-container-lowest text-on-surface font-label-badge text-label-badge shadow-sm hover:shadow-md transition-all" href="#">
+<span class="material-symbols-outlined text-[16px] text-tertiary">map</span>
+<span>Interaktivní mapa</span>
+</a>
+<a class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-container-lowest text-on-surface font-label-badge text-label-badge shadow-sm hover:shadow-md transition-all" href="#">
+<span class="material-symbols-outlined text-[16px] text-tertiary">menu_book</span>
+<span>Metodika ověřování</span>
+</a>
+</div>
+</section>
+</div>
+<script>
+    (function () {
+      const searchInput = document.getElementById('decision-search');
+      const topicChips = document.querySelectorAll('.topic-chip');
+      const organBtns = document.querySelectorAll('.organ-btn');
+      const cards = document.querySelectorAll('.category-card');
+
+      let activeTopic = 'all';
+      let activeOrgan = 'all';
+      let searchQuery = '';
+
+      function applyFilters() {
+        const query = searchQuery.trim().toLowerCase();
+        cards.forEach((card) => {
+          const cardTopic = card.getAttribute('data-topic');
+          const topicMatch = activeTopic === 'all' || cardTopic === activeTopic;
+          const items = card.querySelectorAll('.decision-item');
+          let visibleItems = 0;
+
+          items.forEach((item) => {
+            const organ = item.getAttribute('data-organ');
+            const organMatch = activeOrgan === 'all' || organ === activeOrgan;
+            const textMatch = !query || item.textContent.toLowerCase().includes(query) || card.querySelector('h2').textContent.toLowerCase().includes(query);
+            if (organMatch && textMatch) {
+              item.style.display = '';
+              visibleItems++;
+            } else {
+              item.style.display = 'none';
+            }
+          });
+
+          card.style.display = topicMatch && visibleItems > 0 ? '' : 'none';
+        });
+      }
+
+      topicChips.forEach((chip) => {
+        chip.addEventListener('click', () => {
+          activeTopic = chip.getAttribute('data-topic');
+          topicChips.forEach((c) => {
+            c.classList.remove('bg-surface-dark', 'text-on-primary');
+            c.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+          });
+          chip.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+          chip.classList.add('bg-surface-dark', 'text-on-primary');
+          applyFilters();
+        });
+      });
+
+      organBtns.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          activeOrgan = btn.getAttribute('data-organ');
+          organBtns.forEach((b) => {
+            b.classList.remove('bg-surface-dark', 'text-on-primary');
+            b.classList.add('text-on-surface-variant');
+          });
+          btn.classList.remove('text-on-surface-variant');
+          btn.classList.add('bg-surface-dark', 'text-on-primary');
+          applyFilters();
+        });
+      });
+
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          searchQuery = e.target.value;
+          applyFilters();
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-dark text-on-tertiary mt-space-3xl"><div class="max-w-7xl mx-auto px-margin py-space-2xl"><div class="grid grid-cols-1 md:grid-cols-4 gap-space-xl pb-space-xl"><div class="md:col-span-2 flex flex-col gap-space-sm"><div class="flex items-center gap-space-xs"><span class="w-3 h-3 rounded-full bg-category-zmena"></span><span class="font-headline-md text-headline-md text-surface-lowest text-white">Třeboňáci • Otevřená radnice</span></div><p class="font-body-sm text-body-sm text-secondary-fixed-dim max-w-lg leading-relaxed">Nezávislý občanský portál pro monitoring, analýzu a přehledné zpřístupnění veřejných dat města Třeboně. Usilujeme o maximální transparentnost hospodaření, investic a rozhodovacích procesů samosprávy.</p><div class="flex items-center gap-space-xs pt-space-xs"><span class="px-space-sm py-space-3xs rounded-full bg-surface-dark-subtle text-accent-lime font-code-data text-code-data">Verze datového parseru 3.2.4</span><span class="px-space-sm py-space-3xs rounded-full bg-surface-dark-subtle text-tertiary-fixed font-code-data text-code-data">Aktualizováno: 23. 11. 2026</span></div></div><div class="flex flex-col gap-space-xs"><span class="font-label-uppercase text-label-uppercase text-accent-lime">Zdroje veřejných dat</span><ul class="flex flex-col gap-space-2xs font-body-sm text-body-sm text-secondary-fixed-dim"><li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-accent-lime">verified</span>E-ZAK Město Třeboň</li><li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-accent-lime">verified</span>Registr smluv ČR</li><li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-accent-lime">verified</span>Zápisy a usnesení Rady města</li><li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-accent-lime">verified</span>Úřední deska MěÚ Třeboň</li></ul></div><div class="flex flex-col gap-space-xs"><span class="font-label-uppercase text-label-uppercase text-accent-lime">Metodika a občané</span><ul class="flex flex-col gap-space-2xs font-body-sm text-body-sm text-secondary-fixed-dim"><li><a class="hover:text-white transition-colors" data-path="metodika-a-zdroje" href="#">Metodika párování zakázek</a></li><li><a class="hover:text-white transition-colors" data-path="archiv-zasedani" href="#">Archiv zasedání zastupitelstva</a></li><li><a class="hover:text-accent-lime transition-colors flex items-center gap-space-3xs" href="https://trebonaci.cz" rel="noreferrer" target="_blank"><span>Portál hnutí trebonaci.cz</span><span class="material-symbols-outlined text-[14px]">arrow_outward</span></a></li><li><a class="hover:text-white transition-colors" data-path="zadat-podnet" href="#">Zadat občanský podnět</a></li></ul></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-secondary-fixed-dim"><p>© 2026 Třeboňáci. Veškerá veřejná data jsou publikována v souladu se zákonem č. 106/1999 Sb.</p><div class="flex items-center gap-space-lg"><a class="hover:text-white transition-colors" data-path="podminky-uziti" href="#">Podmínky užití dat</a><a class="hover:text-white transition-colors" data-path="ochrana-soukromi" href="#">Ochrana soukromí</a><a class="hover:text-accent-lime transition-colors" data-path="api-rozhrani" href="#">Otevřené API</a></div></div></div></footer></body></html>

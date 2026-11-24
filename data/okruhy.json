@@ -1,0 +1,108 @@
+[
+  {
+    "id": "doprava_prostor",
+    "nazev": "Doprava a veřejný prostor",
+    "popis": "Ulice, chodníky, parkování, cyklostezky, zeleň, voda a odpady",
+    "temata": [
+      {
+        "id": "doprava",
+        "nazev": "Doprava a ulice"
+      },
+      {
+        "id": "voda_odpady",
+        "nazev": "Voda, kanalizace a odpady"
+      },
+      {
+        "id": "zelen",
+        "nazev": "Zeleň"
+      }
+    ]
+  },
+  {
+    "id": "bydleni_pece",
+    "nazev": "Bydlení a péče",
+    "popis": "Městské byty, sociální služby, péče o seniory, zdravotní služby",
+    "temata": [
+      {
+        "id": "bydleni",
+        "nazev": "Bydlení"
+      },
+      {
+        "id": "socialni",
+        "nazev": "Sociální služby"
+      }
+    ]
+  },
+  {
+    "id": "skoly",
+    "nazev": "Školy a školky",
+    "popis": "Budovy, jídelny, vybavení a provoz",
+    "temata": [
+      {
+        "id": "skolstvi",
+        "nazev": "Školy a školky"
+      }
+    ]
+  },
+  {
+    "id": "sport_kultura",
+    "nazev": "Sport, kultura a spolky",
+    "popis": "Sportoviště, kulturní akce, památky, komunitní život",
+    "temata": [
+      {
+        "id": "sport",
+        "nazev": "Sport"
+      },
+      {
+        "id": "kultura",
+        "nazev": "Kultura a památky"
+      },
+      {
+        "id": "komunity_spolky",
+        "nazev": "Spolky a setkávání"
+      }
+    ]
+  },
+  {
+    "id": "spolecnosti",
+    "nazev": "Městské společnosti",
+    "popis": "Lázně a další městské firmy – hospodaření, vedení, rozhodnutí o provozu",
+    "temata": [
+      {
+        "id": "lazne",
+        "nazev": "Lázně a městské firmy"
+      }
+    ]
+  },
+  {
+    "id": "rozvoj_sprava",
+    "nazev": "Rozvoj a správa města",
+    "popis": "Územní plán, rozpočet, majetek, fungování radnice",
+    "temata": [
+      {
+        "id": "uzemni_plan",
+        "nazev": "Územní plán"
+      },
+      {
+        "id": "urad",
+        "nazev": "Úřad a samospráva"
+      },
+      {
+        "id": "majetek",
+        "nazev": "Majetek města"
+      },
+      {
+        "id": "rozpocet",
+        "nazev": "Rozpočet a dotace"
+      },
+      {
+        "id": "zakazky",
+        "nazev": "Investice a zakázky"
+      },
+      {
+        "id": "jine",
+        "nazev": "Ostatní"
+      }
+    ]
+  }
+]

@@ -5,8 +5,28 @@
     "nazev": "Chodníky u Husovy kaple",
     "faze": "dokonceno",
     "oblast": "doprava",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.7635,
+          49.00661
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "OpenStreetMap podle názvu akce",
+        "zdroj_url": "https://www.openstreetmap.org/way/115619217"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.7635,
+        49.00661
+      ]
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "dps3-energie",
@@ -14,8 +34,28 @@
     "nazev": "Úspory energie v DPS 3",
     "faze": "pripravuje_se",
     "oblast": "socialni",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "adresa",
+        "nazev": "Svatopluka Čecha 20",
+        "bod": [
+          14.765423,
+          49.004505
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "RÚIAN podle názvu akce",
+        "ruian_kod": "14831945"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.765423,
+        49.004505
+      ]
+    },
+    "okruh": "bydleni_pece",
+    "okruh_podle": "téma"
   },
   {
     "id": "fve-cov-brilice",
@@ -23,8 +63,27 @@
     "nazev": "Fotovoltaika na ČOV Břilice",
     "faze": "probiha",
     "oblast": "voda_odpady",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "cast_obce",
+        "nazev": "Břilice",
+        "bod": [
+          14.742471,
+          49.017659
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "RÚIAN – přibližně střed části obce podle názvu akce"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.742471,
+        49.017659
+      ]
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "fve-zs-na-sadech",
@@ -51,7 +110,9 @@
         14.765894,
         49.005369
       ]
-    }
+    },
+    "okruh": "skoly",
+    "okruh_podle": "téma"
   },
   {
     "id": "hrbitov-sv-alzbety",
@@ -59,8 +120,28 @@
     "nazev": "Hřbitov sv. Alžběty – stavební úpravy",
     "faze": "pripravuje_se",
     "oblast": "jine",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.75633,
+          49.00509
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "OpenStreetMap podle názvu akce",
+        "zdroj_url": "https://www.openstreetmap.org/way/227676500"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.75633,
+        49.00509
+      ]
+    },
+    "okruh": "rozvoj_sprava",
+    "okruh_podle": "téma"
   },
   {
     "id": "hriste-kopecek",
@@ -69,7 +150,9 @@
     "faze": "dokonceno",
     "oblast": "sport",
     "misto": [],
-    "geometrie": null
+    "geometrie": null,
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "jiraskova-oprava-vozovky",
@@ -528,7 +611,9 @@
           ]
         ]
       ]
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "lazne-balneo-etapa1",
@@ -536,8 +621,28 @@
     "nazev": "Rozšíření balneo provozu v Lázeňském domě Aurora (1. etapa)",
     "faze": "dokonceno",
     "oblast": "lazne",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "adresa",
+        "nazev": "Lázeňská 1001",
+        "bod": [
+          14.751245,
+          49.002378
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "RÚIAN podle názvu akce",
+        "ruian_kod": "14841746"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.751245,
+        49.002378
+      ]
+    },
+    "okruh": "spolecnosti",
+    "okruh_podle": "téma"
   },
   {
     "id": "lazne-budova-g",
@@ -545,8 +650,28 @@
     "nazev": "Nástavba budovy G v Lázeňském domě Aurora",
     "faze": "probiha",
     "oblast": "lazne",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "adresa",
+        "nazev": "Lázeňská 1001",
+        "bod": [
+          14.751245,
+          49.002378
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "RÚIAN podle názvu akce",
+        "ruian_kod": "14841746"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.751245,
+        49.002378
+      ]
+    },
+    "okruh": "spolecnosti",
+    "okruh_podle": "téma"
   },
   {
     "id": "mk-hermankova-daskabat",
@@ -922,7 +1047,9 @@
           ]
         ]
       ]
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "mk-sidliste",
@@ -1073,7 +1200,9 @@
           ]
         ]
       ]
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "pristavba-telocvicen",
@@ -1100,7 +1229,9 @@
         14.75636,
         49.002223
       ]
-    }
+    },
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "propustek-brilice",
@@ -1108,8 +1239,28 @@
     "nazev": "Větší propustek v Břilicích",
     "faze": "probiha",
     "oblast": "voda_odpady",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": "pozemek p. č. 4203, k. ú. Břilice",
+        "bod": [
+          14.729945,
+          49.014763
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "RÚIAN – definiční bod parcely",
+        "zdroj_url": "https://zakazky.mesto-trebon.cz/contract_display_960.html"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.729945,
+        49.014763
+      ]
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "sportovni-hala-revitalizace",
@@ -1136,7 +1287,9 @@
         14.75636,
         49.002223
       ]
-    }
+    },
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "sportovni-hala-ubytovani",
@@ -1163,7 +1316,9 @@
         14.75636,
         49.002223
       ]
-    }
+    },
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "u-sveta-sportovni",
@@ -1322,7 +1477,9 @@
           ]
         ]
       ]
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "ulice-valy",
@@ -1445,7 +1602,9 @@
           ]
         ]
       ]
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "vo-branna",
@@ -1453,8 +1612,27 @@
     "nazev": "Veřejné osvětlení v Branné",
     "faze": "probiha",
     "oblast": "doprava",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "cast_obce",
+        "nazev": "Branná",
+        "bod": [
+          14.782797,
+          48.9634
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "RÚIAN – přibližně střed části obce podle názvu akce"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.782797,
+        48.9634
+      ]
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "vo-taboritska",
@@ -1553,7 +1731,9 @@
           ]
         ]
       ]
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-961",
@@ -1561,8 +1741,28 @@
     "nazev": "Revitalizace kolonády Bertiných lázní",
     "faze": "probiha",
     "oblast": "kultura",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.77006,
+          49.00618
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "OpenStreetMap podle názvu akce",
+        "zdroj_url": "https://www.openstreetmap.org/relation/1605882"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.77006,
+        49.00618
+      ]
+    },
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-945",
@@ -1709,7 +1909,9 @@
           ]
         ]
       ]
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-941",
@@ -1736,7 +1938,9 @@
         14.766433,
         49.003514
       ]
-    }
+    },
+    "okruh": "bydleni_pece",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-935",
@@ -1855,7 +2059,9 @@
           ]
         ]
       ]
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-930",
@@ -1863,8 +2069,28 @@
     "nazev": "Svět pohybu, Třeboň",
     "faze": "dokonceno",
     "oblast": "sport",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.76737,
+          49.0057
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "OpenStreetMap podle názvu akce",
+        "zdroj_url": "https://www.openstreetmap.org/way/54791284"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.76737,
+        49.0057
+      ]
+    },
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-914",
@@ -2031,7 +2257,9 @@
           ]
         ]
       ]
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-895",
@@ -2058,7 +2286,9 @@
         14.815242,
         49.039032
       ]
-    }
+    },
+    "okruh": "bydleni_pece",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-858",
@@ -2201,7 +2431,9 @@
           ]
         ]
       ]
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-848",
@@ -2209,8 +2441,28 @@
     "nazev": "Rekonstrukce fasády staré budovy ZŠ Na Sadech – západní strana, dvorní část",
     "faze": "dokonceno",
     "oblast": "skolstvi",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "adresa",
+        "nazev": "Na Sadech 375",
+        "bod": [
+          14.765894,
+          49.005369
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "RÚIAN podle názvu akce",
+        "ruian_kod": "14835487"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.765894,
+        49.005369
+      ]
+    },
+    "okruh": "skoly",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-844",
@@ -2389,7 +2641,9 @@
           ]
         ]
       ]
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-838",
@@ -2416,7 +2670,9 @@
         14.771668,
         49.003786
       ]
-    }
+    },
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-835",
@@ -2707,7 +2963,9 @@
           ]
         ]
       ]
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-829",
@@ -2734,7 +2992,9 @@
         14.771868,
         49.004336
       ]
-    }
+    },
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-826",
@@ -2742,8 +3002,27 @@
     "nazev": "Stavební úpravy pro technologii Jordánovy kašny",
     "faze": "dokonceno",
     "oblast": "voda_odpady",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.771195,
+          49.003923
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "RÚIAN – střed adres Masarykova náměstí podle názvu akce"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.771195,
+        49.003923
+      ]
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-824",
@@ -2770,7 +3049,9 @@
         14.764223,
         49.004038
       ]
-    }
+    },
+    "okruh": "bydleni_pece",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-823",
@@ -2778,8 +3059,28 @@
     "nazev": "Oprava hráze rybníka Veský – 3. etapa",
     "faze": "dokonceno",
     "oblast": "voda_odpady",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.7275592,
+          48.8712358
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "OpenStreetMap podle názvu akce",
+        "zdroj_url": "https://www.openstreetmap.org/way/51684609"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.7275592,
+        48.8712358
+      ]
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "parkovaci-dum",
@@ -2788,7 +3089,9 @@
     "faze": "zasobnik",
     "oblast": "doprava",
     "misto": [],
-    "geometrie": null
+    "geometrie": null,
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "jatecni-ulice",
@@ -2967,7 +3270,9 @@
           ]
         ]
       ]
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "stezka-jatecni-nadrazni",
@@ -3275,7 +3580,9 @@
           ]
         ]
       ]
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "nadrazni-ulice",
@@ -3418,7 +3725,9 @@
           ]
         ]
       ]
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "mk-orechova",
@@ -3602,7 +3911,9 @@
           ]
         ]
       ]
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "mk-jiraskova",
@@ -4061,7 +4372,9 @@
           ]
         ]
       ]
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "mk-stara-hlina",
@@ -4069,8 +4382,27 @@
     "nazev": "Místní komunikace ve Staré Hlíně (od I/34 k polní cestě)",
     "faze": "zasobnik",
     "oblast": "doprava",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "cast_obce",
+        "nazev": "Stará Hlína",
+        "bod": [
+          14.810692,
+          49.040127
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "RÚIAN – přibližně střed části obce podle názvu akce"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.810692,
+        49.040127
+      ]
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "mk-dvorecka-brilice",
@@ -4293,7 +4625,9 @@
           ]
         ]
       ]
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "most-vitek",
@@ -4301,8 +4635,28 @@
     "nazev": "Most přes rybník Vítek ve Staré Hlíně",
     "faze": "zasobnik",
     "oblast": "doprava",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.80616,
+          49.03294
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "OpenStreetMap podle názvu akce",
+        "zdroj_url": "https://www.openstreetmap.org/relation/4018884"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.80616,
+        49.03294
+      ]
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "taboritska-stezka",
@@ -5125,7 +5479,9 @@
           ]
         ]
       ]
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "ucelova-komunikace-taboritska",
@@ -5152,7 +5508,9 @@
         14.758133,
         49.008199
       ]
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "podchod-i34",
@@ -5161,7 +5519,9 @@
     "faze": "zasobnik",
     "oblast": "doprava",
     "misto": [],
-    "geometrie": null
+    "geometrie": null,
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "chodnik-sportovni-svobody",
@@ -6141,7 +6501,9 @@
           ]
         ]
       ]
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "vodojem-kopecek",
@@ -6149,8 +6511,28 @@
     "nazev": "Rekonstrukce vodojemu Na Kopečku",
     "faze": "zasobnik",
     "oblast": "voda_odpady",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.78756,
+          49.01207
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "OpenStreetMap podle názvu akce",
+        "zdroj_url": "https://www.openstreetmap.org/node/4217489237"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.78756,
+        49.01207
+      ]
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "kanalizace-taboritska",
@@ -6973,7 +7355,9 @@
           ]
         ]
       ]
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "destova-kanalizace-novy-dvur",
@@ -6981,8 +7365,160 @@
     "nazev": "Páteřní dešťová kanalizace Nový Dvůr – Jablonského",
     "faze": "zasobnik",
     "oblast": "voda_odpady",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "ulice",
+        "nazev": "Jablonského",
+        "linie": [
+          [
+            [
+              14.761722,
+              49.007249
+            ],
+            [
+              14.760787,
+              49.007222
+            ]
+          ],
+          [
+            [
+              14.765517,
+              49.007423
+            ],
+            [
+              14.765392,
+              49.007398
+            ],
+            [
+              14.765237,
+              49.007372
+            ],
+            [
+              14.7631,
+              49.0073
+            ]
+          ],
+          [
+            [
+              14.758959,
+              49.007155
+            ],
+            [
+              14.757742,
+              49.007111
+            ]
+          ],
+          [
+            [
+              14.759881,
+              49.007187
+            ],
+            [
+              14.758959,
+              49.007155
+            ]
+          ],
+          [
+            [
+              14.7631,
+              49.0073
+            ],
+            [
+              14.761722,
+              49.007249
+            ]
+          ],
+          [
+            [
+              14.760787,
+              49.007222
+            ],
+            [
+              14.759881,
+              49.007187
+            ]
+          ]
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "RÚIAN podle názvu akce",
+        "ruian_kod": "180653"
+      }
+    ],
+    "geometrie": {
+      "type": "MultiLineString",
+      "coordinates": [
+        [
+          [
+            14.761722,
+            49.007249
+          ],
+          [
+            14.760787,
+            49.007222
+          ]
+        ],
+        [
+          [
+            14.765517,
+            49.007423
+          ],
+          [
+            14.765392,
+            49.007398
+          ],
+          [
+            14.765237,
+            49.007372
+          ],
+          [
+            14.7631,
+            49.0073
+          ]
+        ],
+        [
+          [
+            14.758959,
+            49.007155
+          ],
+          [
+            14.757742,
+            49.007111
+          ]
+        ],
+        [
+          [
+            14.759881,
+            49.007187
+          ],
+          [
+            14.758959,
+            49.007155
+          ]
+        ],
+        [
+          [
+            14.7631,
+            49.0073
+          ],
+          [
+            14.761722,
+            49.007249
+          ]
+        ],
+        [
+          [
+            14.760787,
+            49.007222
+          ],
+          [
+            14.759881,
+            49.007187
+          ]
+        ]
+      ]
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "kanalizace-pivovar",
@@ -6990,8 +7526,28 @@
     "nazev": "Obnova šachet a potrubí kanalizace pod pivovarem",
     "faze": "zasobnik",
     "oblast": "voda_odpady",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "budova",
+        "nazev": "č. p. 124",
+        "bod": [
+          14.772295,
+          49.002635
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "RÚIAN podle názvu akce",
+        "ruian_kod": "14719738"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.772295,
+        49.002635
+      ]
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "destove-vody-brilice",
@@ -6999,8 +7555,27 @@
     "nazev": "Odvod dešťových vod v Břilicích",
     "faze": "zasobnik",
     "oblast": "voda_odpady",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "cast_obce",
+        "nazev": "Břilice",
+        "bod": [
+          14.742471,
+          49.017659
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "RÚIAN – přibližně střed části obce podle názvu akce"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.742471,
+        49.017659
+      ]
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "sportoviste-hlinik",
@@ -7009,7 +7584,9 @@
     "faze": "zasobnik",
     "oblast": "sport",
     "misto": [],
-    "geometrie": null
+    "geometrie": null,
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "kabiny-brilice",
@@ -7017,8 +7594,27 @@
     "nazev": "Fotbalové kabiny v Břilicích",
     "faze": "zasobnik",
     "oblast": "sport",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "cast_obce",
+        "nazev": "Břilice",
+        "bod": [
+          14.742471,
+          49.017659
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "RÚIAN – přibližně střed části obce podle názvu akce"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.742471,
+        49.017659
+      ]
+    },
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "divadlo-zazemi",
@@ -7026,8 +7622,28 @@
     "nazev": "Hygienické zázemí pro diváky v divadle J. K. Tyla",
     "faze": "zasobnik",
     "oblast": "kultura",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.77206,
+          49.00352
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "OpenStreetMap podle názvu akce",
+        "zdroj_url": "https://www.openstreetmap.org/node/12513881320"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.77206,
+        49.00352
+      ]
+    },
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "stara-radnice-vez-fasada",
@@ -7054,7 +7670,9 @@
         14.771668,
         49.003786
       ]
-    }
+    },
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "kz-branna-prodejna",
@@ -7062,8 +7680,27 @@
     "nazev": "Prodejna smíšeného zboží v kulturním zařízení v Branné",
     "faze": "zasobnik",
     "oblast": "jine",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "cast_obce",
+        "nazev": "Branná",
+        "bod": [
+          14.782797,
+          48.9634
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "RÚIAN – přibližně střed části obce podle názvu akce"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.782797,
+        48.9634
+      ]
+    },
+    "okruh": "rozvoj_sprava",
+    "okruh_podle": "téma"
   },
   {
     "id": "bytovy-dum-lazenska",
@@ -7073,288 +7710,26 @@
     "oblast": "bydleni",
     "misto": [
       {
-        "druh": "ulice",
-        "nazev": "Lázeňská",
-        "linie": [
-          [
-            [
-              14.754893,
-              49.00269
-            ],
-            [
-              14.754569,
-              49.003325
-            ]
-          ],
-          [
-            [
-              14.754569,
-              49.003325
-            ],
-            [
-              14.754352,
-              49.003865
-            ],
-            [
-              14.754328,
-              49.003943
-            ],
-            [
-              14.754282,
-              49.004271
-            ]
-          ],
-          [
-            [
-              14.758384,
-              49.001419
-            ],
-            [
-              14.758334,
-              49.001553
-            ],
-            [
-              14.758281,
-              49.001648
-            ],
-            [
-              14.758224,
-              49.001724
-            ],
-            [
-              14.758156,
-              49.001794
-            ],
-            [
-              14.758076,
-              49.001849
-            ],
-            [
-              14.757972,
-              49.001882
-            ],
-            [
-              14.757871,
-              49.001892
-            ],
-            [
-              14.757799,
-              49.001896
-            ],
-            [
-              14.757664,
-              49.001883
-            ],
-            [
-              14.757422,
-              49.001848
-            ]
-          ],
-          [
-            [
-              14.757422,
-              49.001848
-            ],
-            [
-              14.756383,
-              49.001715
-            ],
-            [
-              14.756262,
-              49.001706
-            ],
-            [
-              14.756169,
-              49.001706
-            ],
-            [
-              14.756073,
-              49.001718
-            ],
-            [
-              14.755889,
-              49.001755
-            ],
-            [
-              14.755711,
-              49.001806
-            ],
-            [
-              14.755523,
-              49.001886
-            ],
-            [
-              14.755402,
-              49.001952
-            ],
-            [
-              14.755273,
-              49.002051
-            ],
-            [
-              14.755188,
-              49.002147
-            ],
-            [
-              14.755108,
-              49.00226
-            ]
-          ],
-          [
-            [
-              14.755108,
-              49.00226
-            ],
-            [
-              14.754893,
-              49.00269
-            ]
-          ]
+        "druh": "bod",
+        "nazev": "pozemek p. č. 1087/17",
+        "bod": [
+          14.755434,
+          49.003963
         ],
-        "ruian_kod": "180491",
-        "jistota": "nase_propojeni",
-        "zdroj": "RÚIAN podle názvu akce"
+        "jistota": "dolozeno",
+        "zdroj": "RÚIAN – definiční bod parcely",
+        "zdroj_url": "https://zakazky.mesto-trebon.cz/contract_display_642.html"
       }
     ],
     "geometrie": {
-      "type": "MultiLineString",
+      "type": "Point",
       "coordinates": [
-        [
-          [
-            14.754893,
-            49.00269
-          ],
-          [
-            14.754569,
-            49.003325
-          ]
-        ],
-        [
-          [
-            14.754569,
-            49.003325
-          ],
-          [
-            14.754352,
-            49.003865
-          ],
-          [
-            14.754328,
-            49.003943
-          ],
-          [
-            14.754282,
-            49.004271
-          ]
-        ],
-        [
-          [
-            14.758384,
-            49.001419
-          ],
-          [
-            14.758334,
-            49.001553
-          ],
-          [
-            14.758281,
-            49.001648
-          ],
-          [
-            14.758224,
-            49.001724
-          ],
-          [
-            14.758156,
-            49.001794
-          ],
-          [
-            14.758076,
-            49.001849
-          ],
-          [
-            14.757972,
-            49.001882
-          ],
-          [
-            14.757871,
-            49.001892
-          ],
-          [
-            14.757799,
-            49.001896
-          ],
-          [
-            14.757664,
-            49.001883
-          ],
-          [
-            14.757422,
-            49.001848
-          ]
-        ],
-        [
-          [
-            14.757422,
-            49.001848
-          ],
-          [
-            14.756383,
-            49.001715
-          ],
-          [
-            14.756262,
-            49.001706
-          ],
-          [
-            14.756169,
-            49.001706
-          ],
-          [
-            14.756073,
-            49.001718
-          ],
-          [
-            14.755889,
-            49.001755
-          ],
-          [
-            14.755711,
-            49.001806
-          ],
-          [
-            14.755523,
-            49.001886
-          ],
-          [
-            14.755402,
-            49.001952
-          ],
-          [
-            14.755273,
-            49.002051
-          ],
-          [
-            14.755188,
-            49.002147
-          ],
-          [
-            14.755108,
-            49.00226
-          ]
-        ],
-        [
-          [
-            14.755108,
-            49.00226
-          ],
-          [
-            14.754893,
-            49.00269
-          ]
-        ]
+        14.755434,
+        49.003963
       ]
-    }
+    },
+    "okruh": "bydleni_pece",
+    "okruh_podle": "téma"
   },
   {
     "id": "lazne-objekt-b",
@@ -7362,8 +7737,28 @@
     "nazev": "Modernizace objektu B Lázeňského domu Aurora",
     "faze": "zasobnik",
     "oblast": "lazne",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "adresa",
+        "nazev": "Lázeňská 1001",
+        "bod": [
+          14.751245,
+          49.002378
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "RÚIAN podle názvu akce",
+        "ruian_kod": "14841746"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.751245,
+        49.002378
+      ]
+    },
+    "okruh": "spolecnosti",
+    "okruh_podle": "téma"
   },
   {
     "id": "lazne-ordinace",
@@ -7371,8 +7766,28 @@
     "nazev": "Přesun ordinací do přízemí objektů D a E Lázeňského domu Aurora",
     "faze": "zasobnik",
     "oblast": "lazne",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "adresa",
+        "nazev": "Lázeňská 1001",
+        "bod": [
+          14.751245,
+          49.002378
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "RÚIAN podle názvu akce",
+        "ruian_kod": "14841746"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.751245,
+        49.002378
+      ]
+    },
+    "okruh": "spolecnosti",
+    "okruh_podle": "téma"
   },
   {
     "id": "lazne-restaurace",
@@ -7380,8 +7795,28 @@
     "nazev": "Přemístění restaurace Lázeňského domu Aurora",
     "faze": "zasobnik",
     "oblast": "lazne",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "adresa",
+        "nazev": "Lázeňská 1001",
+        "bod": [
+          14.751245,
+          49.002378
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "RÚIAN podle názvu akce",
+        "ruian_kod": "14841746"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.751245,
+        49.002378
+      ]
+    },
+    "okruh": "spolecnosti",
+    "okruh_podle": "téma"
   },
   {
     "id": "lazne-olu",
@@ -7390,7 +7825,9 @@
     "faze": "zasobnik",
     "oblast": "lazne",
     "misto": [],
-    "geometrie": null
+    "geometrie": null,
+    "okruh": "spolecnosti",
+    "okruh_podle": "téma"
   },
   {
     "id": "lazne-chodnik-park",
@@ -7398,8 +7835,28 @@
     "nazev": "Chodník v parku lázní Aurora",
     "faze": "zasobnik",
     "oblast": "lazne",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "adresa",
+        "nazev": "Lázeňská 1001",
+        "bod": [
+          14.751245,
+          49.002378
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "RÚIAN podle názvu akce",
+        "ruian_kod": "14841746"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.751245,
+        49.002378
+      ]
+    },
+    "okruh": "spolecnosti",
+    "okruh_podle": "téma"
   },
   {
     "id": "lazne-padel",
@@ -7407,8 +7864,28 @@
     "nazev": "Dva kurty na padel (Bertiny lázně)",
     "faze": "zasobnik",
     "oblast": "lazne",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "bod",
+        "nazev": null,
+        "bod": [
+          14.77006,
+          49.00618
+        ],
+        "jistota": "nase_propojeni",
+        "zdroj": "OpenStreetMap podle názvu akce",
+        "zdroj_url": "https://www.openstreetmap.org/relation/1605882"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.77006,
+        49.00618
+      ]
+    },
+    "okruh": "spolecnosti",
+    "okruh_podle": "téma"
   },
   {
     "id": "sprm-274",
@@ -7437,7 +7914,9 @@
         14.757339967563377,
         49.00828601301289
       ]
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "osa SPRM"
   },
   {
     "id": "sprm-275",
@@ -7466,7 +7945,9 @@
         14.756396743221666,
         49.01315214182864
       ]
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "osa SPRM"
   },
   {
     "id": "sprm-279",
@@ -7495,7 +7976,9 @@
         14.762876432682814,
         49.00433210463685
       ]
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "osa SPRM"
   },
   {
     "id": "sprm-287",
@@ -7524,7 +8007,9 @@
         14.767598833567195,
         49.01104128200971
       ]
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "osa SPRM"
   },
   {
     "id": "sprm-292",
@@ -7553,7 +8038,9 @@
         14.754423272678203,
         49.0024605457948
       ]
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "osa SPRM"
   },
   {
     "id": "sprm-298",
@@ -7582,7 +8069,9 @@
         14.770904829563076,
         49.003911415385126
       ]
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "osa SPRM"
   },
   {
     "id": "sprm-299",
@@ -7611,7 +8100,9 @@
         14.757083967298511,
         49.00555695834294
       ]
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "osa SPRM"
   },
   {
     "id": "sprm-305",
@@ -7640,7 +8131,9 @@
         14.780990037559521,
         48.991369855369776
       ]
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "osa SPRM"
   },
   {
     "id": "sprm-306",
@@ -7669,7 +8162,9 @@
         14.762791571948338,
         49.003948104849016
       ]
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "osa SPRM"
   },
   {
     "id": "sprm-307",
@@ -7698,7 +8193,9 @@
         14.788072079018551,
         48.99936322272173
       ]
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "osa SPRM"
   },
   {
     "id": "sprm-308",
@@ -7727,7 +8224,9 @@
         14.753348982355345,
         49.000180206565354
       ]
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "osa SPRM"
   },
   {
     "id": "sprm-313",
@@ -7756,7 +8255,9 @@
         14.77124738089162,
         49.00394864814714
       ]
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "osa SPRM"
   },
   {
     "id": "sprm-315",
@@ -7785,7 +8286,9 @@
         14.786312555577005,
         49.012080563488425
       ]
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "osa SPRM"
   },
   {
     "id": "sprm-322",
@@ -7814,7 +8317,9 @@
         14.774101713571472,
         49.00527378001522
       ]
-    }
+    },
+    "okruh": "bydleni_pece",
+    "okruh_podle": "osa SPRM"
   },
   {
     "id": "sprm-323",
@@ -7843,7 +8348,9 @@
         14.756568339367798,
         49.00559807044702
       ]
-    }
+    },
+    "okruh": "bydleni_pece",
+    "okruh_podle": "osa SPRM"
   },
   {
     "id": "sprm-325",
@@ -7872,7 +8379,9 @@
         14.765818070835001,
         49.00377016615722
       ]
-    }
+    },
+    "okruh": "bydleni_pece",
+    "okruh_podle": "osa SPRM"
   },
   {
     "id": "sprm-330",
@@ -7901,7 +8410,9 @@
         14.761676022576939,
         49.002743381146516
       ]
-    }
+    },
+    "okruh": "skoly",
+    "okruh_podle": "osa SPRM"
   },
   {
     "id": "sprm-331",
@@ -7930,7 +8441,9 @@
         14.765218166411065,
         49.00527400314958
       ]
-    }
+    },
+    "okruh": "skoly",
+    "okruh_podle": "osa SPRM"
   },
   {
     "id": "sprm-332",
@@ -7959,7 +8472,9 @@
         14.767256738854437,
         49.00504958202542
       ]
-    }
+    },
+    "okruh": "skoly",
+    "okruh_podle": "osa SPRM"
   },
   {
     "id": "sprm-334",
@@ -7988,7 +8503,9 @@
         14.767342209355315,
         49.004741091068034
       ]
-    }
+    },
+    "okruh": "skoly",
+    "okruh_podle": "osa SPRM"
   },
   {
     "id": "sprm-339",
@@ -8017,7 +8534,9 @@
         14.760603995480047,
         49.01143800152834
       ]
-    }
+    },
+    "okruh": "skoly",
+    "okruh_podle": "osa SPRM"
   },
   {
     "id": "sprm-342",
@@ -8046,7 +8565,9 @@
         14.76922169557761,
         49.00737720217561
       ]
-    }
+    },
+    "okruh": "sport_kultura",
+    "okruh_podle": "osa SPRM"
   },
   {
     "id": "sprm-346",
@@ -8075,7 +8596,9 @@
         14.77056118916342,
         49.0037272286066
       ]
-    }
+    },
+    "okruh": "sport_kultura",
+    "okruh_podle": "osa SPRM"
   },
   {
     "id": "sprm-354",
@@ -8104,7 +8627,9 @@
         14.762791838543844,
         49.004064286026995
       ]
-    }
+    },
+    "okruh": "sport_kultura",
+    "okruh_podle": "osa SPRM"
   },
   {
     "id": "sprm-360",
@@ -8133,7 +8658,9 @@
         14.762792042744698,
         49.004298859553685
       ]
-    }
+    },
+    "okruh": "rozvoj_sprava",
+    "okruh_podle": "osa SPRM"
   },
   {
     "id": "sprm-361",
@@ -8162,7 +8689,9 @@
         14.762105170347061,
         49.00424175884509
       ]
-    }
+    },
+    "okruh": "rozvoj_sprava",
+    "okruh_podle": "osa SPRM"
   },
   {
     "id": "sprm-367",
@@ -8191,7 +8720,9 @@
         14.757726857969766,
         49.00941941449655
       ]
-    }
+    },
+    "okruh": "skoly",
+    "okruh_podle": "osa SPRM"
   },
   {
     "id": "sprm-370",
@@ -8220,7 +8751,9 @@
         14.748799122045991,
         49.014648266398034
       ]
-    }
+    },
+    "okruh": "bydleni_pece",
+    "okruh_podle": "osa SPRM"
   },
   {
     "id": "sprm-373",
@@ -8249,7 +8782,9 @@
         14.762533518330581,
         49.01091107265613
       ]
-    }
+    },
+    "okruh": "rozvoj_sprava",
+    "okruh_podle": "osa SPRM"
   },
   {
     "id": "sprm-374",
@@ -8278,7 +8813,9 @@
         14.773650038910919,
         48.99948810814478
       ]
-    }
+    },
+    "okruh": "rozvoj_sprava",
+    "okruh_podle": "osa SPRM"
   },
   {
     "id": "sprm-381",
@@ -8307,7 +8844,9 @@
         14.754678484500918,
         49.00224414531768
       ]
-    }
+    },
+    "okruh": "spolecnosti",
+    "okruh_podle": "osa SPRM"
   },
   {
     "id": "sprm-383",
@@ -8336,7 +8875,9 @@
         14.75193169259659,
         49.00238277931855
       ]
-    }
+    },
+    "okruh": "spolecnosti",
+    "okruh_podle": "osa SPRM"
   },
   {
     "id": "sprm-384",
@@ -8365,7 +8906,9 @@
         14.750214948365416,
         49.00226931079993
       ]
-    }
+    },
+    "okruh": "sport_kultura",
+    "okruh_podle": "osa SPRM"
   },
   {
     "id": "sprm-385",
@@ -8394,7 +8937,9 @@
         14.751159329845194,
         49.00207151643966
       ]
-    }
+    },
+    "okruh": "sport_kultura",
+    "okruh_podle": "osa SPRM"
   },
   {
     "id": "sprm-386",
@@ -8423,7 +8968,9 @@
         14.771418177251114,
         49.00406821522723
       ]
-    }
+    },
+    "okruh": "sport_kultura",
+    "okruh_podle": "osa SPRM"
   },
   {
     "id": "sprm-388",
@@ -8452,7 +8999,9 @@
         14.769271272753935,
         49.0067997185789
       ]
-    }
+    },
+    "okruh": "sport_kultura",
+    "okruh_podle": "osa SPRM"
   },
   {
     "id": "sprm-392",
@@ -8481,7 +9030,9 @@
         14.772963070085096,
         49.004208580754934
       ]
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "osa SPRM"
   },
   {
     "id": "dps-chelcickeho",
@@ -8508,7 +9059,9 @@
         14.765701,
         49.003865
       ]
-    }
+    },
+    "okruh": "bydleni_pece",
+    "okruh_podle": "téma"
   },
   {
     "id": "dps-3",
@@ -8516,8 +9069,28 @@
     "nazev": "Dům s pečovatelskou službou DPS 3",
     "faze": null,
     "oblast": "socialni",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "adresa",
+        "nazev": "Svatopluka Čecha 20",
+        "bod": [
+          14.765423,
+          49.004505
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "RÚIAN",
+        "ruian_kod": "14831945"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.765423,
+        49.004505
+      ]
+    },
+    "okruh": "bydleni_pece",
+    "okruh_podle": "téma"
   },
   {
     "id": "sportovni-hala",
@@ -8544,7 +9117,9 @@
         14.75636,
         49.002223
       ]
-    }
+    },
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "muzeum",
@@ -8552,8 +9127,28 @@
     "nazev": "Muzeum města Třeboně",
     "faze": null,
     "oblast": "kultura",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "budova",
+        "nazev": "č. p. 1",
+        "bod": [
+          14.771668,
+          49.003786
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "RÚIAN",
+        "ruian_kod": "14718502"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.771668,
+        49.003786
+      ]
+    },
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "knihovna",
@@ -8561,8 +9156,28 @@
     "nazev": "Městská knihovna",
     "faze": null,
     "oblast": "kultura",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "adresa",
+        "nazev": "Chelčického 2",
+        "bod": [
+          14.765701,
+          49.003865
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "RÚIAN",
+        "ruian_kod": "14831767"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.765701,
+        49.003865
+      ]
+    },
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "dum-svatopluka-cecha-20",
@@ -8589,7 +9204,9 @@
         14.765423,
         49.004505
       ]
-    }
+    },
+    "okruh": "bydleni_pece",
+    "okruh_podle": "téma"
   },
   {
     "id": "zs-na-sadech",
@@ -8616,7 +9233,9 @@
         14.765894,
         49.005369
       ]
-    }
+    },
+    "okruh": "skoly",
+    "okruh_podle": "téma"
   },
   {
     "id": "zs-sokolska",
@@ -8643,7 +9262,9 @@
         14.76756,
         49.004744
       ]
-    }
+    },
+    "okruh": "skoly",
+    "okruh_podle": "téma"
   },
   {
     "id": "ms-slunicko",
@@ -8651,8 +9272,28 @@
     "nazev": "MŠ Sluníčko",
     "faze": null,
     "oblast": "skolstvi",
-    "misto": [],
-    "geometrie": null
+    "misto": [
+      {
+        "druh": "adresa",
+        "nazev": "Svobody 1018",
+        "bod": [
+          14.761315,
+          49.002914
+        ],
+        "jistota": "dolozeno",
+        "zdroj": "RÚIAN",
+        "ruian_kod": "14841932"
+      }
+    ],
+    "geometrie": {
+      "type": "Point",
+      "coordinates": [
+        14.761315,
+        49.002914
+      ]
+    },
+    "okruh": "skoly",
+    "okruh_podle": "téma"
   },
   {
     "id": "preseka-cp3",
@@ -8679,7 +9320,9 @@
         14.730283,
         49.040255
       ]
-    }
+    },
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "verejna-doprava",
@@ -8688,6 +9331,8 @@
     "faze": null,
     "oblast": "doprava",
     "misto": [],
-    "geometrie": null
+    "geometrie": null,
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   }
 ]

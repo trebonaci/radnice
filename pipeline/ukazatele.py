@@ -60,6 +60,22 @@ def usneseni_oblasti(usneseni: list[dict], jednani: list[dict]) -> dict:
                      celkem=len(usneseni), neprijato=neprijato, kategorie_ai=True)
 
 
+def usneseni_okruhy(usneseni: list[dict], jednani: list[dict], okruhy: list[dict]) -> dict | None:
+    """Usnesení podle hlavního okruhu (pipeline/okruhy.py); každé usnesení se počítá jednou, řada se sčítá."""
+    if not okruhy:
+        return None
+    datum = {j["id"]: j["datum"] for j in jednani}
+    data = sorted(d for d in (datum.get(u["jednani_id"]) for u in usneseni) if d)
+    pocty = Counter(u.get("okruh") for u in usneseni)
+    rada = [{"klic": o["id"], "nazev": o["nazev"], "hodnota": pocty[o["id"]]} for o in okruhy]
+    return _ukazatel("usneseni-okruhy", "Usnesení podle okruhů", rada, "usnesení", data[0] if data else None,
+                     data[-1] if data else None,
+                     "Počet usnesení podle hlavního okruhu. Usnesení s věcným okruhem (místo, služba, stavba) se počítá tam, "
+                     "čistě správní (pozemky, rozpočtová opatření, orgány) v Rozvoji a správě města. Řada se sčítá.",
+                     "usneseni_okruhy", ZDROJ_ZAPISY, "Okruh odvozuje kód z kategorií (AI), odkazů z karet a změn a z názvu.",
+                     celkem=len(usneseni), kategorie_ai=True)
+
+
 def _sledovana(subjekty: dict, s: dict) -> list[str]:
     ica = [s.get("subjekt_ico")] + [st.get("ico") for st in s.get("strany", [])]
     return list(dict.fromkeys(i for i in ica if i in subjekty))
@@ -113,11 +129,12 @@ def dotace(dotace: list[dict]) -> dict:
     if len(druhy) > 1:
         raise ValueError(f"dotace: různé druhy částek {sorted(druhy)} se nesčítají")
     for d in dotace:
-        pocty[d["oblast"]] += 1
+        o = d.get("oblast") or "neuvedena"  # zdroj oblast programu nemusí uvádět (#179)
+        pocty[o] += 1
         if d.get("castka"):
-            soucty[d["oblast"]] += d["castka"]["hodnota"]
+            soucty[o] += d["castka"]["hodnota"]
     data = sorted(d["datum"] for d in dotace if d.get("datum"))
-    rada = [{"klic": o, "nazev": OBLAST_DOTACI.get(o, o[:1].upper() + o[1:]), "pocet": pocty[o], "hodnota": round(soucty[o], 2)}
+    rada = [{"klic": o, "nazev": "Oblast neuvedena" if o == "neuvedena" else OBLAST_DOTACI.get(o, o[:1].upper() + o[1:]), "pocet": pocty[o], "hodnota": round(soucty[o], 2)}
             for o in sorted(pocty, key=lambda o: (-soucty[o], o))]
     return _ukazatel("dotace-oblasti", "Dotace přiznané radou a zastupitelstvem", rada, "Kč", data[0] if data else None,
                      data[-1] if data else None, "Součet dotací přiznaných v usneseních, podle oblasti programu.",
@@ -130,10 +147,14 @@ def investice(investice: list[dict]) -> dict | None:
         return None
     i = investice[-1]
     rezerva = sum(o["schvaleny"] for o in i["oblasti"] if o["oblast"] == "Rezerva")
-    rada = [{"klic": o["oblast"], "nazev": o["oblast"], "schvaleny": o["schvaleny"], "hodnota": o["po_zmenach"]}
-            for o in sorted(i["oblasti"], key=lambda o: -o["po_zmenach"]) if o["oblast"] != "Rezerva"]
+    if i.get("okruhy"):   # šest okruhů webu (pipeline/okruhy.py:oznac_investice), pořadí podle číselníku
+        rada = [{"klic": o["okruh"], "nazev": o["nazev"], "schvaleny": o["schvaleny"], "hodnota": o["po_zmenach"]}
+                for o in i["okruhy"] if o["polozek"]]
+    else:
+        rada = [{"klic": o["oblast"], "nazev": o["oblast"], "schvaleny": o["schvaleny"], "hodnota": o["po_zmenach"]}
+                for o in sorted(i["oblasti"], key=lambda o: -o["po_zmenach"]) if o["oblast"] != "Rezerva"]
     return _ukazatel("investice-rozpocet", f"Investice v rozpočtu {i['rok']}", rada, "Kč", f"{i['rok']}-01-01", f"{i['rok']}-12-31",
-                     "Kapitálové výdaje rozpočtu města po rozpočtových opatřeních, bez rezerv, podle oblastí.",
+                     "Kapitálové výdaje rozpočtu města po rozpočtových opatřeních, bez rezerv, podle okruhů (položka napojená na projekt podle projektu, jinak podle názvu nebo oddílu rozpočtu).",
                      "investice", [ZDROJ_ROZPOCET], i.get("fondy_poznamka"), druh="rozpocet_upraveny", s_dph=None,
                      schvaleny=round(i["schvaleny"] - rezerva, 2), po_zmenach=i["bez_rezervy_po_zmenach"])
 
@@ -192,6 +213,7 @@ def priprava_zasobniku(zasobnik: list[dict], subjekty: dict) -> dict | None:
 
 def sestav(vystup: dict, subjekty: dict) -> list[dict]:
     vysledek = [jednani(vystup["jednani"]), usneseni_oblasti(vystup["usneseni"], vystup["jednani"]),
+                usneseni_okruhy(vystup["usneseni"], vystup["jednani"], vystup.get("okruhy") or []),
                 smlouvy(vystup["smlouvy"], subjekty), zakazky(vystup["zakazky"], subjekty), dotace(vystup["dotace"]),
                 investice(vystup.get("investice") or []), projekty(vystup["projekty"], vystup.get("zasobnik") or []),
                 priprava_zasobniku(vystup.get("zasobnik") or [], subjekty)]

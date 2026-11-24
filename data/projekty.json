@@ -406,7 +406,9 @@
       "url": "https://zakazky.mesto-trebon.cz/contract_display_916.html",
       "zakazka_id": "ezak-VZ-916",
       "jistota": "dolozeno"
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "dps3-energie",
@@ -611,7 +613,9 @@
       }
     ],
     "termin_dokonceni": null,
-    "ukonceni_plneni": null
+    "ukonceni_plneni": null,
+    "okruh": "bydleni_pece",
+    "okruh_podle": "téma"
   },
   {
     "id": "fve-cov-brilice",
@@ -941,7 +945,9 @@
       }
     ],
     "termin_dokonceni": null,
-    "ukonceni_plneni": null
+    "ukonceni_plneni": null,
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "fve-zs-na-sadech",
@@ -1300,7 +1306,9 @@
       }
     ],
     "termin_dokonceni": null,
-    "ukonceni_plneni": null
+    "ukonceni_plneni": null,
+    "okruh": "skoly",
+    "okruh_podle": "téma"
   },
   {
     "id": "hrbitov-sv-alzbety",
@@ -1459,7 +1467,9 @@
     },
     "sprm": [],
     "termin_dokonceni": null,
-    "ukonceni_plneni": null
+    "ukonceni_plneni": null,
+    "okruh": "rozvoj_sprava",
+    "okruh_podle": "téma"
   },
   {
     "id": "hriste-kopecek",
@@ -1940,7 +1950,9 @@
       "url": "https://zakazky.mesto-trebon.cz/contract_display_929.html",
       "zakazka_id": "ezak-VZ-929",
       "jistota": "dolozeno"
-    }
+    },
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "jiraskova-oprava-vozovky",
@@ -2266,14 +2278,26 @@
       "url": "https://smlouvy.gov.cz/smlouva/30709184"
     },
     "sprm": [],
-    "termin_dokonceni": null,
+    "termin_dokonceni": {
+      "zdroj_id": "rs-30709184",
+      "druh": "lhuta",
+      "datum": null,
+      "citace": "Dokončení díla: do 50 kalendářních dnů od předání staveniště",
+      "strana": 2,
+      "url": "https://smlouvy.gov.cz/smlouva/soubor/37552196/SOD%20Jir%C3%A1skova%20s%20p%C5%99%C3%ADl%20RS.pdf#page=2",
+      "smlouva_url": "https://smlouvy.gov.cz/smlouva/30709184",
+      "jistota": "dolozeno",
+      "podle": "smlouva"
+    },
     "ukonceni_plneni": {
       "datum": "2024-12-13",
       "citace": "Plnění smlouvy ukončeno 13.12.2024",
       "url": "https://zakazky.mesto-trebon.cz/contract_display_799.html",
       "zakazka_id": "ezak-VZ-799",
       "jistota": "dolozeno"
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "lazne-balneo-etapa1",
@@ -3061,7 +3085,9 @@
       "url": "https://zakazky.mesto-trebon.cz/contract_display_880.html",
       "zakazka_id": "ezak-VZ-880",
       "jistota": "dolozeno"
-    }
+    },
+    "okruh": "spolecnosti",
+    "okruh_podle": "téma"
   },
   {
     "id": "lazne-budova-g",
@@ -3961,7 +3987,9 @@
       }
     ],
     "termin_dokonceni": null,
-    "ukonceni_plneni": null
+    "ukonceni_plneni": null,
+    "okruh": "spolecnosti",
+    "okruh_podle": "téma"
   },
   {
     "id": "mk-hermankova-daskabat",
@@ -4492,7 +4520,9 @@
       "jistota": "dolozeno",
       "podle": "smlouva"
     },
-    "ukonceni_plneni": null
+    "ukonceni_plneni": null,
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "mk-sidliste",
@@ -5424,8 +5454,20 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
-    "termin_dokonceni": null,
-    "ukonceni_plneni": null
+    "termin_dokonceni": {
+      "zdroj_id": "rs-38566304",
+      "druh": "datum",
+      "datum": "2026-06-16",
+      "citace": "termín dokončení díla: NE Objednatel: Datum: 16.06.2026",
+      "strana": 4,
+      "url": "https://smlouvy.gov.cz/smlouva/soubor/46567344/Dodatek%20%C4%8D.%202%20-%20registr%20smluv.pdf#page=4",
+      "smlouva_url": "https://smlouvy.gov.cz/smlouva/38566304",
+      "jistota": "dolozeno",
+      "podle": "dodatek č. 2"
+    },
+    "ukonceni_plneni": null,
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "pristavba-telocvicen",
@@ -6953,8 +6995,20 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
-    "termin_dokonceni": null,
-    "ukonceni_plneni": null
+    "termin_dokonceni": {
+      "zdroj_id": "rs-40163777",
+      "druh": "datum",
+      "datum": "2026-10-29",
+      "citace": "termín dokončení díla: NE Přílohy: 1 x položkový rozpočet ZL 20 Datum: 29.10.2026",
+      "strana": 4,
+      "url": "https://smlouvy.gov.cz/smlouva/soubor/48386917/Dodatek%20%C4%8D.%205%20-%20registr%20smluv.pdf#page=4",
+      "smlouva_url": "https://smlouvy.gov.cz/smlouva/40163777",
+      "jistota": "dolozeno",
+      "podle": "dodatek č. 5"
+    },
+    "ukonceni_plneni": null,
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "propustek-brilice",
@@ -7240,7 +7294,9 @@
     },
     "sprm": [],
     "termin_dokonceni": null,
-    "ukonceni_plneni": null
+    "ukonceni_plneni": null,
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "sportovni-hala-revitalizace",
@@ -7483,6 +7539,30 @@
         "dodatky_bez_dph": null
       },
       {
+        "role": "projekt",
+        "dodavatel": {
+          "nazev": "JK - STAVPROJEKT, s.r.o.",
+          "jmeno_podnikatele": null
+        },
+        "puvodni": {
+          "bez_dph": 1489000.0,
+          "s_dph": 1801690.0,
+          "zdroj_id": "rs-23967769",
+          "url": "https://smlouvy.gov.cz/smlouva/23967769"
+        },
+        "vazba_dodatku": "dolozeno",
+        "dodatky": [],
+        "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
+        "cena_po_dodatcich": 1489000.0,
+        "neuplne_cena_po_dodatcich": [],
+        "cena_po_dodatcich_s_dph": 1801690.0,
+        "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
+        "souhlas_ezak": null,
+        "dodatky_bez_dph": null
+      },
+      {
         "role": "technicky_dozor",
         "dodavatel": {
           "nazev": "fyzická osoba",
@@ -7612,20 +7692,20 @@
         "jistota": "nevime"
       },
       "smluvni_bez_dph": {
-        "celkem": 83608976.0,
+        "celkem": 85097976.0,
         "druh": "smluvni",
         "s_dph": false,
         "mena": "CZK",
-        "po_dodatcich": 109225835.1,
+        "po_dodatcich": 110714835.1,
         "neuplne": [],
         "jistota": "nase_propojeni"
       },
       "smluvni_s_dph": {
-        "celkem": 101113940.96,
+        "celkem": 102915630.96,
         "druh": "smluvni",
         "s_dph": true,
         "mena": "CZK",
-        "po_dodatcich": 132068984.51,
+        "po_dodatcich": 133870674.51,
         "neuplne": [],
         "jistota": "nase_propojeni"
       },
@@ -7642,8 +7722,8 @@
         {
           "skupina": "priprava",
           "nazev": "Projekt a výběrové řízení",
-          "casti": 3,
-          "castka": 783475.0,
+          "casti": 4,
+          "castka": 2585165.0,
           "nezname": [],
           "druh": "smluvni",
           "s_dph": true
@@ -7659,7 +7739,7 @@
         }
       ],
       "celkova_cena_s_dph": {
-        "castka": 132068984.51,
+        "castka": 133870674.51,
         "neuplne": [],
         "druh": "smluvni",
         "s_dph": true,
@@ -7761,6 +7841,43 @@
       }
     ],
     "smlouvy": [
+      {
+        "id": "rs-23967769",
+        "id_smlouvy": "22348329",
+        "navazuje_na": null,
+        "cislo_smlouvy": "750/7429/23",
+        "predmet": "SOD Revitalizace sportovní haly v Třeboni – projektová dokumentace",
+        "role": "projekt",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2023-03-29",
+        "strany": [
+          {
+            "nazev": "JK - STAVPROJEKT, s.r.o.",
+            "jmeno_podnikatele": null,
+            "ico": "26112779"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 1489000.0,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 1801690.0,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/23967769",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
       {
         "id": "rs-27511667",
         "id_smlouvy": "25695379",
@@ -8547,6 +8664,17 @@
     },
     "udalosti": [
       {
+        "datum": "2023-03-29",
+        "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "projektová dokumentace",
+        "text": "SOD Revitalizace sportovní haly v Třeboni – projektová dokumentace",
+        "role": "projekt",
+        "zdroj_id": "rs-23967769",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/23967769"
+      },
+      {
         "datum": "2024-02-02",
         "typ": "smlouva",
         "kategorie": "smlouva",
@@ -8814,7 +8942,9 @@
       "url": "https://zakazky.mesto-trebon.cz/contract_display_706.html",
       "zakazka_id": "ezak-VZ-706",
       "jistota": "dolozeno"
-    }
+    },
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "sportovni-hala-ubytovani",
@@ -9238,10 +9368,10 @@
           "s_dph": 2025961.08
         },
         "ezak_url": "https://zakazky.mesto-trebon.cz/contract_display_936.html",
-        "ukonceno_plneni": false,
+        "ukonceno_plneni": true,
         "ezak_zaplaceno": {
-          "bez_dph": null,
-          "s_dph": null
+          "bez_dph": 1870997.0,
+          "s_dph": 2263906.37
         },
         "vazba_dodatku": "nase_propojeni",
         "dodatky": [
@@ -9274,7 +9404,7 @@
         "neuplne_cena_po_dodatcich": [],
         "cena_po_dodatcich_s_dph": 2263906.37,
         "neuplne_cena_po_dodatcich_s_dph": [],
-        "souhlas_zaplaceno": null,
+        "souhlas_zaplaceno": true,
         "souhlas_ezak": false,
         "dodatky_bez_dph": 196649.0
       },
@@ -9592,12 +9722,12 @@
         "id": "ezak-VZ-936",
         "nazev": "Sportovní hala Třeboň - nástavba a přístavba ubytování - vybavení interiéru",
         "role": "vybaveni",
-        "stav": "dokončen",
+        "stav": "ukončeno plnění",
         "url": "https://zakazky.mesto-trebon.cz/contract_display_936.html",
         "casti": [
           {
             "nazev": "Sportovní hala Třeboň - nástavba a přístavba ubytování - vybavení interiéru",
-            "stav": "dokončen",
+            "stav": "ukončeno plnění",
             "pocet_nabidek": 5,
             "datum_uverejneni": "2026-04-20",
             "datum_uzavreni_smlouvy": "2026-05-21",
@@ -9623,7 +9753,18 @@
                   }
                 ],
                 "nabidkova": [],
-                "zaplaceno": []
+                "zaplaceno": [
+                  {
+                    "obdobi": "2026",
+                    "hodnota": 2263906.37,
+                    "s_dph": true
+                  },
+                  {
+                    "obdobi": "2026",
+                    "hodnota": 1870997.0,
+                    "s_dph": false
+                  }
+                ]
               }
             ],
             "datum_zruseni": null,
@@ -10781,8 +10922,20 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
-    "termin_dokonceni": null,
-    "ukonceni_plneni": null
+    "termin_dokonceni": {
+      "zdroj_id": "rs-38538892",
+      "druh": "datum",
+      "datum": "2026-06-04",
+      "citace": "termín dokončení stavby: NE Objednatel: Datum: 04.06.2026",
+      "strana": 4,
+      "url": "https://smlouvy.gov.cz/smlouva/soubor/46537020/Dodatek%20%C4%8D.%202%20registr%20smluv.pdf#page=4",
+      "smlouva_url": "https://smlouvy.gov.cz/smlouva/38538892",
+      "jistota": "dolozeno",
+      "podle": "dodatek č. 2"
+    },
+    "ukonceni_plneni": null,
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "u-sveta-sportovni",
@@ -11389,14 +11542,26 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
-    "termin_dokonceni": null,
+    "termin_dokonceni": {
+      "zdroj_id": "rs-34752997",
+      "druh": "lhuta",
+      "datum": null,
+      "citace": "Termín dokončení díla: do 80 kalendářních dnů od předání staveniště",
+      "strana": 3,
+      "url": "https://smlouvy.gov.cz/smlouva/soubor/42220001/SOD%20registr%20smluv.pdf#page=3",
+      "smlouva_url": "https://smlouvy.gov.cz/smlouva/34752997",
+      "jistota": "dolozeno",
+      "podle": "smlouva"
+    },
     "ukonceni_plneni": {
       "datum": "2025-12-17",
       "citace": "Plnění smlouvy ukončeno 17.12.2025",
       "url": "https://zakazky.mesto-trebon.cz/contract_display_872.html",
       "zakazka_id": "ezak-VZ-872",
       "jistota": "dolozeno"
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "ulice-valy",
@@ -12138,14 +12303,26 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
-    "termin_dokonceni": null,
+    "termin_dokonceni": {
+      "zdroj_id": "rs-33408284",
+      "druh": "lhuta",
+      "datum": null,
+      "citace": "Termín dokončení prací: do 105 kalendářních dnů od předání staveniště",
+      "strana": 4,
+      "url": "https://smlouvy.gov.cz/smlouva/soubor/40665832/SOD%20%2B%20rozpo%C4%8Det%2C%20ul.%20Valy%20-%20anonymizovan%C3%A1.pdf#page=4",
+      "smlouva_url": "https://smlouvy.gov.cz/smlouva/33408284",
+      "jistota": "dolozeno",
+      "podle": "smlouva"
+    },
     "ukonceni_plneni": {
       "datum": "2025-12-19",
       "citace": "Plnění smlouvy ukončeno 19.12.2025",
       "url": "https://zakazky.mesto-trebon.cz/contract_display_840.html",
       "zakazka_id": "ezak-VZ-840",
       "jistota": "dolozeno"
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "vo-branna",
@@ -12446,8 +12623,20 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
-    "termin_dokonceni": null,
-    "ukonceni_plneni": null
+    "termin_dokonceni": {
+      "zdroj_id": "rs-40413413",
+      "druh": "datum",
+      "datum": "2026-12-09",
+      "citace": "Dokončení díla: do 09.12.2026",
+      "strana": 2,
+      "url": "https://smlouvy.gov.cz/smlouva/soubor/48670905/VO%20Brann%C3%A1%20dod%202%20RS.pdf#page=2",
+      "smlouva_url": "https://smlouvy.gov.cz/smlouva/40413413",
+      "jistota": "dolozeno",
+      "podle": "dodatek č. 2"
+    },
+    "ukonceni_plneni": null,
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "vo-taboritska",
@@ -12853,7 +13042,9 @@
       "url": "https://zakazky.mesto-trebon.cz/contract_display_918.html",
       "zakazka_id": "ezak-VZ-918",
       "jistota": "dolozeno"
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-961",
@@ -13418,8 +13609,20 @@
       "url": "https://smlouvy.gov.cz/smlouva/40117897"
     },
     "sprm": [],
-    "termin_dokonceni": null,
-    "ukonceni_plneni": null
+    "termin_dokonceni": {
+      "zdroj_id": "rs-40117897",
+      "druh": "datum",
+      "datum": "2026-12-09",
+      "citace": "Dokončení díla: do 09.12.2026",
+      "strana": 2,
+      "url": "https://smlouvy.gov.cz/smlouva/soubor/48334957/Dodatek%20%C4%8D.2%20ke%20SOD%20-%20kolon%C3%A1da%20Bertiny%20l%C3%A1zn%C4%9B_anonymizovan%C3%BD.pdf#page=2",
+      "smlouva_url": "https://smlouvy.gov.cz/smlouva/40117897",
+      "jistota": "dolozeno",
+      "podle": "dodatek č. 2"
+    },
+    "ukonceni_plneni": null,
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-945",
@@ -13722,7 +13925,9 @@
       }
     ],
     "termin_dokonceni": null,
-    "ukonceni_plneni": null
+    "ukonceni_plneni": null,
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-941",
@@ -14029,8 +14234,20 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
-    "termin_dokonceni": null,
-    "ukonceni_plneni": null
+    "termin_dokonceni": {
+      "zdroj_id": "rs-38004673",
+      "druh": "datum",
+      "datum": "2026-08-31",
+      "citace": "Dokončení díla: 31.08.2026",
+      "strana": 2,
+      "url": "https://smlouvy.gov.cz/smlouva/soubor/45926157/Smlouva%20o%20d%C3%ADlo%20-%20kotelny%20DPS%201A%201C_anonymizovan%C3%A1.pdf#page=2",
+      "smlouva_url": "https://smlouvy.gov.cz/smlouva/38004673",
+      "jistota": "dolozeno",
+      "podle": "smlouva"
+    },
+    "ukonceni_plneni": null,
+    "okruh": "bydleni_pece",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-935",
@@ -14733,8 +14950,20 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
-    "termin_dokonceni": null,
-    "ukonceni_plneni": null
+    "termin_dokonceni": {
+      "zdroj_id": "rs-39711481",
+      "druh": "lhuta",
+      "datum": null,
+      "citace": "termínu dokončení díla o 7 kalendářních dnů tedy do 30",
+      "strana": 2,
+      "url": "https://smlouvy.gov.cz/smlouva/soubor/47867377/Dodatek%20%C4%8D.1_anonymizovan%C3%BD.pdf#page=2",
+      "smlouva_url": "https://smlouvy.gov.cz/smlouva/39711481",
+      "jistota": "dolozeno",
+      "podle": "dodatek č. 1"
+    },
+    "ukonceni_plneni": null,
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-930",
@@ -15143,7 +15372,9 @@
       "url": "https://zakazky.mesto-trebon.cz/contract_display_930.html",
       "zakazka_id": "ezak-VZ-930",
       "jistota": "dolozeno"
-    }
+    },
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-914",
@@ -15221,6 +15452,30 @@
         "souhlas_zaplaceno": null,
         "souhlas_ezak": false,
         "dodatky_bez_dph": 193635.07
+      },
+      {
+        "role": "projekt",
+        "dodavatel": {
+          "nazev": "INVENTE, s.r.o.",
+          "jmeno_podnikatele": null
+        },
+        "puvodni": {
+          "bez_dph": 479000.0,
+          "s_dph": 579590.0,
+          "zdroj_id": "rs-24741863",
+          "url": "https://smlouvy.gov.cz/smlouva/24741863"
+        },
+        "vazba_dodatku": "dolozeno",
+        "dodatky": [],
+        "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
+        "cena_po_dodatcich": 479000.0,
+        "neuplne_cena_po_dodatcich": [],
+        "cena_po_dodatcich_s_dph": 579590.0,
+        "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
+        "souhlas_ezak": null,
+        "dodatky_bez_dph": null
       },
       {
         "role": "technicky_dozor",
@@ -15306,20 +15561,20 @@
         "jistota": "nevime"
       },
       "smluvni_bez_dph": {
-        "celkem": 12183677.0,
+        "celkem": 12662677.0,
         "druh": "smluvni",
         "s_dph": false,
         "mena": "CZK",
-        "po_dodatcich": 12377312.07,
+        "po_dodatcich": 12856312.07,
         "neuplne": [],
         "jistota": "nase_propojeni"
       },
       "smluvni_s_dph": {
-        "celkem": 14724399.17,
+        "celkem": 15303989.17,
         "druh": "smluvni",
         "s_dph": true,
         "mena": "CZK",
-        "po_dodatcich": 14958697.6,
+        "po_dodatcich": 15538287.6,
         "neuplne": [],
         "jistota": "nase_propojeni"
       },
@@ -15336,8 +15591,8 @@
         {
           "skupina": "priprava",
           "nazev": "Projekt a výběrové řízení",
-          "casti": 1,
-          "castka": 72600.0,
+          "casti": 2,
+          "castka": 652190.0,
           "nezname": [],
           "druh": "smluvni",
           "s_dph": true
@@ -15353,7 +15608,7 @@
         }
       ],
       "celkova_cena_s_dph": {
-        "castka": 14958697.6,
+        "castka": 15538287.6,
         "neuplne": [],
         "druh": "smluvni",
         "s_dph": true,
@@ -15408,6 +15663,43 @@
       }
     ],
     "smlouvy": [
+      {
+        "id": "rs-24741863",
+        "id_smlouvy": "23085339",
+        "navazuje_na": null,
+        "cislo_smlouvy": "750/7497/23",
+        "predmet": "Stavební úpravy MK v ul. Budějovické v Třeboni – 5. etapa (zpracování PD)",
+        "role": "projekt",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2023-06-08",
+        "strany": [
+          {
+            "nazev": "INVENTE, s.r.o.",
+            "jmeno_podnikatele": null,
+            "ico": "25171232"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 479000.0,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 579590.0,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/24741863",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
       {
         "id": "rs-36682021",
         "id_smlouvy": "34429825",
@@ -15676,6 +15968,17 @@
     },
     "udalosti": [
       {
+        "datum": "2023-06-08",
+        "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "projektová dokumentace",
+        "text": "Stavební úpravy MK v ul. Budějovické v Třeboni – 5. etapa (zpracování PD)",
+        "role": "projekt",
+        "zdroj_id": "rs-24741863",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/24741863"
+      },
+      {
         "datum": "2026-02-05",
         "typ": "smlouva",
         "kategorie": "smlouva",
@@ -15811,8 +16114,20 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
-    "termin_dokonceni": null,
-    "ukonceni_plneni": null
+    "termin_dokonceni": {
+      "zdroj_id": "rs-37540741",
+      "druh": "lhuta",
+      "datum": null,
+      "citace": "Lhůta pro dokončení prací: do 150 kalendářních dnů od převzetí staveniště zhotovitelem",
+      "strana": 8,
+      "url": "https://smlouvy.gov.cz/smlouva/soubor/45396397/SOD%20Budejovicka%20s%20prilohou%20RS.pdf#page=8",
+      "smlouva_url": "https://smlouvy.gov.cz/smlouva/37540741",
+      "jistota": "dolozeno",
+      "podle": "smlouva"
+    },
+    "ukonceni_plneni": null,
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-895",
@@ -16057,14 +16372,26 @@
       "url": "https://smlouvy.gov.cz/smlouva/34569109"
     },
     "sprm": [],
-    "termin_dokonceni": null,
+    "termin_dokonceni": {
+      "zdroj_id": "rs-34569109",
+      "druh": "datum",
+      "datum": "2025-11-14",
+      "citace": "Dokončení díla: 14.11.2025",
+      "strana": 2,
+      "url": "https://smlouvy.gov.cz/smlouva/soubor/42004381/Smlouva%20o%20d%C3%ADlo%20-%20byty%201%20a%206%20St.%20Hl%C3%ADna%2027_anonymizovan%C3%A1.pdf#page=2",
+      "smlouva_url": "https://smlouvy.gov.cz/smlouva/34569109",
+      "jistota": "dolozeno",
+      "podle": "smlouva"
+    },
     "ukonceni_plneni": {
       "datum": "2025-12-15",
       "citace": "Plnění smlouvy ukončeno 15.12.2025",
       "url": "https://zakazky.mesto-trebon.cz/contract_display_895.html",
       "zakazka_id": "ezak-VZ-895",
       "jistota": "dolozeno"
-    }
+    },
+    "okruh": "bydleni_pece",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-858",
@@ -16548,7 +16875,9 @@
       }
     ],
     "termin_dokonceni": null,
-    "ukonceni_plneni": null
+    "ukonceni_plneni": null,
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-848",
@@ -16929,14 +17258,26 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
-    "termin_dokonceni": null,
+    "termin_dokonceni": {
+      "zdroj_id": "rs-33353704",
+      "druh": "datum",
+      "datum": "2025-08-22",
+      "citace": "dokončení díla: 22.08.2025",
+      "strana": 2,
+      "url": "https://smlouvy.gov.cz/smlouva/soubor/40603392/Smlouva%20o%20d%C3%ADlo%2C%20rozpo%C4%8Det.pdf#page=2",
+      "smlouva_url": "https://smlouvy.gov.cz/smlouva/33353704",
+      "jistota": "dolozeno",
+      "podle": "smlouva"
+    },
     "ukonceni_plneni": {
       "datum": "2025-10-17",
       "citace": "Plnění smlouvy ukončeno 17.10.2025",
       "url": "https://zakazky.mesto-trebon.cz/contract_display_848.html",
       "zakazka_id": "ezak-VZ-848",
       "jistota": "dolozeno"
-    }
+    },
+    "okruh": "skoly",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-844",
@@ -17274,7 +17615,9 @@
       "url": "https://zakazky.mesto-trebon.cz/contract_display_844.html",
       "zakazka_id": "ezak-VZ-844",
       "jistota": "dolozeno"
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-838",
@@ -17592,7 +17935,9 @@
       "url": "https://zakazky.mesto-trebon.cz/contract_display_838.html",
       "zakazka_id": "ezak-VZ-838",
       "jistota": "dolozeno"
-    }
+    },
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-835",
@@ -17659,6 +18004,30 @@
         "souhlas_zaplaceno": true,
         "souhlas_ezak": false,
         "dodatky_bez_dph": 110918.82
+      },
+      {
+        "role": "projekt",
+        "dodavatel": {
+          "nazev": "fyzická osoba",
+          "jmeno_podnikatele": "Pavel Dvořák"
+        },
+        "puvodni": {
+          "bez_dph": 57851.24,
+          "s_dph": 70000.0,
+          "zdroj_id": "rs-24699139",
+          "url": "https://smlouvy.gov.cz/smlouva/24699139"
+        },
+        "vazba_dodatku": "dolozeno",
+        "dodatky": [],
+        "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
+        "cena_po_dodatcich": 57851.24,
+        "neuplne_cena_po_dodatcich": [],
+        "cena_po_dodatcich_s_dph": 70000.0,
+        "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
+        "souhlas_ezak": null,
+        "dodatky_bez_dph": null
       }
     ],
     "souhrn": {
@@ -17672,20 +18041,20 @@
         "jistota": "nevime"
       },
       "smluvni_bez_dph": {
-        "celkem": 1887510.65,
+        "celkem": 1945361.89,
         "druh": "smluvni",
         "s_dph": false,
         "mena": "CZK",
-        "po_dodatcich": 1998429.47,
+        "po_dodatcich": 2056280.71,
         "neuplne": [],
         "jistota": "nase_propojeni"
       },
       "smluvni_s_dph": {
-        "celkem": 2283887.89,
+        "celkem": 2353887.89,
         "druh": "smluvni",
         "s_dph": true,
         "mena": "CZK",
-        "po_dodatcich": 2418099.66,
+        "po_dodatcich": 2488099.66,
         "neuplne": [],
         "jistota": "nase_propojeni"
       },
@@ -17698,10 +18067,19 @@
           "nezname": [],
           "druh": "smluvni",
           "s_dph": true
+        },
+        {
+          "skupina": "priprava",
+          "nazev": "Projekt a výběrové řízení",
+          "casti": 1,
+          "castka": 70000.0,
+          "nezname": [],
+          "druh": "smluvni",
+          "s_dph": true
         }
       ],
       "celkova_cena_s_dph": {
-        "castka": 2418099.66,
+        "castka": 2488099.66,
         "neuplne": [],
         "druh": "smluvni",
         "s_dph": true,
@@ -17767,6 +18145,43 @@
       }
     ],
     "smlouvy": [
+      {
+        "id": "rs-24699139",
+        "id_smlouvy": "23044315",
+        "navazuje_na": null,
+        "cislo_smlouvy": "750/7555/23",
+        "predmet": "Zpracování PD ve stupni DÚSP/DPS \"Chodník v Lázeňské ulici v Třeboni\" včetně inženýrské činnosti, soupisu prací a rozpočtu.",
+        "role": "projekt",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2023-06-07",
+        "strany": [
+          {
+            "nazev": "fyzická osoba",
+            "jmeno_podnikatele": "Pavel Dvořák",
+            "ico": null
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 57851.24,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 70000.0,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/24699139",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
       {
         "id": "rs-31995368",
         "id_smlouvy": "29953308",
@@ -17848,6 +18263,17 @@
     },
     "udalosti": [
       {
+        "datum": "2023-06-07",
+        "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "projekt prováděcí",
+        "text": "Zpracování PD ve stupni DÚSP/DPS \"Chodník v Lázeňské ulici v Třeboni\" včetně inženýrské činnosti, soupisu prací a rozpočtu.",
+        "role": "projekt",
+        "zdroj_id": "rs-24699139",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/24699139"
+      },
+      {
         "datum": "2025-01-23",
         "typ": "soutez",
         "text": "Soutěž: Chodník v Lázeňské ulici v Třeboni",
@@ -17913,14 +18339,26 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
-    "termin_dokonceni": null,
+    "termin_dokonceni": {
+      "zdroj_id": "rs-31995368",
+      "druh": "datum",
+      "datum": "2025-04-30",
+      "citace": "Dokončení díla: do 30.04.2025",
+      "strana": 2,
+      "url": "https://smlouvy.gov.cz/smlouva/soubor/39033548/SOD%20Chod%20Laz%20s%20pril%20RS.pdf#page=2",
+      "smlouva_url": "https://smlouvy.gov.cz/smlouva/31995368",
+      "jistota": "dolozeno",
+      "podle": "smlouva"
+    },
     "ukonceni_plneni": {
       "datum": "2025-04-15",
       "citace": "Plnění smlouvy ukončeno 15.04.2025",
       "url": "https://zakazky.mesto-trebon.cz/contract_display_835.html",
       "zakazka_id": "ezak-VZ-835",
       "jistota": "dolozeno"
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-829",
@@ -18714,14 +19152,26 @@
       "url": "https://smlouvy.gov.cz/smlouva/34915761"
     },
     "sprm": [],
-    "termin_dokonceni": null,
+    "termin_dokonceni": {
+      "zdroj_id": "rs-34546249",
+      "druh": "lhuta",
+      "datum": null,
+      "citace": "Dokončení díla: do 184 kalendářních dnů od zahájení díla – 30",
+      "strana": 2,
+      "url": "https://smlouvy.gov.cz/smlouva/soubor/41977509/Dodatek%20%C4%8D.%202%20-%20registr%20smluv.pdf#page=2",
+      "smlouva_url": "https://smlouvy.gov.cz/smlouva/34546249",
+      "jistota": "dolozeno",
+      "podle": "dodatek č. 2"
+    },
     "ukonceni_plneni": {
       "datum": "2025-09-30",
       "citace": "Plnění smlouvy ukončeno 30.09.2025",
       "url": "https://zakazky.mesto-trebon.cz/contract_display_829.html",
       "zakazka_id": "ezak-VZ-829",
       "jistota": "dolozeno"
-    }
+    },
+    "okruh": "sport_kultura",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-826",
@@ -19329,7 +19779,9 @@
       "url": "https://zakazky.mesto-trebon.cz/contract_display_826.html",
       "zakazka_id": "ezak-VZ-826",
       "jistota": "dolozeno"
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-824",
@@ -19581,7 +20033,9 @@
       "url": "https://zakazky.mesto-trebon.cz/contract_display_824.html",
       "zakazka_id": "ezak-VZ-824",
       "jistota": "dolozeno"
-    }
+    },
+    "okruh": "bydleni_pece",
+    "okruh_podle": "téma"
   },
   {
     "id": "auto-vz-823",
@@ -19888,13 +20342,25 @@
       "url": "https://smlouvy.gov.cz/smlouva/30583216"
     },
     "sprm": [],
-    "termin_dokonceni": null,
+    "termin_dokonceni": {
+      "zdroj_id": "rs-29991764",
+      "druh": "datum",
+      "datum": "2024-12-09",
+      "citace": "Dokončení díla: 09.12.2024",
+      "strana": 2,
+      "url": "https://smlouvy.gov.cz/smlouva/soubor/36723752/Smlouva%20o%20d%C3%ADlo%20-%20hr%C3%A1z%20rybn%C3%ADka%20Vesk%C3%BD%203.etapa_anonymizovan%C3%A1.pdf#page=2",
+      "smlouva_url": "https://smlouvy.gov.cz/smlouva/29991764",
+      "jistota": "dolozeno",
+      "podle": "smlouva"
+    },
     "ukonceni_plneni": {
       "datum": "2024-11-26",
       "citace": "Plnění smlouvy ukončeno 26.11.2024",
       "url": "https://zakazky.mesto-trebon.cz/contract_display_823.html",
       "zakazka_id": "ezak-VZ-823",
       "jistota": "dolozeno"
-    }
+    },
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
   }
 ]

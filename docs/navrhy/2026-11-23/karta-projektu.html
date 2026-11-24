@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Návrh: karta investičního projektu – Třeboňáci · Otevřená radnice</title>
+<!-- Návrh karty projektu ve stylu grafických návrhů z 23. 11. 2026 (docs/navrhy/2026-11-23/DESIGN.md).
+     Všechny údaje jsou skutečná data projektu auto-vz-914 z data/projekty.json k 23. 11. 2026.
+     Statický náhled pro grafickou shodu; ve webu se karta skládá z dat funkcí v web/site/sablona.html. -->
+<style>
+:root{
+  --bg:#f8fafc;--card:#fff;--ink:#0f172a;--ink2:#475569;--mute:#64748b;--line:#e2e8f0;
+  --dark:#111827;--dark2:#1f2937;--lime:#84cc16;--lime-d:#4d7c0f;--lime-l:#ecfccb;
+  --stavba:#f59e0b;--stavba-t:#b45309;--zmena:#65a30d;--rozh:#3b82f6;--rozh-t:#1d4ed8;--krit:#ef4444;--tech:#0284c7;
+  --r:8px;--r-lg:16px;--r-xl:24px;--sh:0 4px 20px -2px rgba(15,23,42,.05);
+  --f-h:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",sans-serif;--f-b:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 15px/24px var(--f-b);font-feature-settings:"tnum"}
+a{color:var(--tech);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:1280px;margin:0 auto;padding:0 32px}
+@media(max-width:767px){.wrap{padding:0 16px}}
+/* hlavička */
+.top{background:var(--dark);color:#fff}
+.top .wrap{display:flex;align-items:center;gap:20px;height:60px}
+.logo{display:flex;align-items:center;gap:10px;font:800 17px var(--f-h);color:#fff}
+.logo i{width:30px;height:30px;border-radius:8px;background:var(--lime);color:var(--dark);display:grid;place-items:center;font-style:normal}
+.logo small{display:block;font:600 11px var(--f-b);letter-spacing:.08em;text-transform:uppercase;color:var(--lime)}
+.akt{margin-left:auto;font-size:13px;color:#cbd5e1;display:flex;align-items:center;gap:6px}.akt::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--lime)}
+nav.menu{background:#fff;border-bottom:1px solid var(--line)}
+nav.menu .wrap{display:flex;gap:4px;overflow-x:auto;height:48px;align-items:center}
+nav.menu a{font:600 14px var(--f-b);color:var(--ink2);padding:6px 12px;border-radius:var(--r);white-space:nowrap}
+nav.menu a.on{background:var(--dark);color:#fff}nav.menu a:hover{text-decoration:none;background:#f1f5f9}nav.menu a.on:hover{background:var(--dark)}
+/* hlava karty */
+.dr{font-size:13px;color:var(--mute);margin:22px 0 10px}.dr a{color:var(--mute)}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.pill{display:inline-flex;align-items:center;gap:6px;height:24px;padding:0 10px;border-radius:999px;font:600 12px/16px var(--f-b);background:#f1f5f9;color:var(--ink2);border:1px solid var(--line)}
+.pill::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor}
+.p-stavba{background:rgba(245,158,11,.12);color:var(--stavba-t);border-color:transparent}
+.p-ok{background:rgba(132,204,22,.15);color:#3f6212;border-color:transparent}
+.p-plain::before{display:none}
+h1{font:800 40px/46px var(--f-h);letter-spacing:-.025em;margin:0 0 8px;max-width:26ch}
+@media(max-width:767px){h1{font-size:28px;line-height:34px}}
+.lead{font-size:17px;line-height:27px;color:var(--ink2);max-width:70ch;margin:0 0 22px}
+/* KPI */
+.kpi{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:24px}
+@media(max-width:1000px){.kpi{grid-template-columns:repeat(2,1fr)}}@media(max-width:520px){.kpi{grid-template-columns:1fr}}
+.k{background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);padding:16px 18px;box-shadow:var(--sh)}
+.k .l{font:700 11px/14px var(--f-b);letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+.k .v{font:800 30px/36px var(--f-h);letter-spacing:-.02em;margin:8px 0 2px}.k .v small{font:600 15px var(--f-b);color:var(--ink2);margin-left:4px}
+.k .s{font-size:13px;line-height:18px;color:var(--mute)}
+.k.dark{background:var(--dark);border-color:var(--dark);color:#fff}.k.dark .l{color:var(--lime)}.k.dark .s,.k.dark .v small{color:#cbd5e1}
+/* fáze */
+.faze{display:grid;grid-template-columns:repeat(5,1fr);gap:0;background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);padding:18px 18px 14px;margin-bottom:24px}
+@media(max-width:700px){.faze{grid-template-columns:1fr;gap:10px}}
+.f{position:relative;padding-top:18px}
+.f::before{content:"";position:absolute;top:5px;left:0;right:0;height:4px;background:var(--line)}
+.f.hot::before{background:var(--lime)}.f.ted::before{background:linear-gradient(90deg,var(--stavba) 50%,var(--line) 50%)}
+.f::after{content:"";position:absolute;top:0;left:0;width:14px;height:14px;border-radius:50%;background:#fff;border:3px solid var(--line)}
+.f.hot::after{border-color:var(--lime);background:var(--lime)}.f.ted::after{border-color:var(--stavba)}
+.f b{display:block;font:700 14px var(--f-h)}.f span{font-size:13px;color:var(--mute)}
+/* rozložení */
+.grid{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:24px;align-items:start}
+@media(max-width:1000px){.grid{grid-template-columns:1fr}}
+.box{background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);padding:20px 22px;margin-bottom:24px;box-shadow:var(--sh)}
+.box h2{font:700 20px/28px var(--f-h);letter-spacing:-.015em;margin:0 0 4px}
+.kick{font:700 11px/14px var(--f-b);letter-spacing:.08em;text-transform:uppercase;color:var(--lime-d);margin-bottom:6px}
+.pozn{font-size:13px;line-height:18px;color:var(--mute)}
+/* skladba ceny */
+.bar{display:flex;height:12px;border-radius:6px;overflow:hidden;gap:2px;margin:14px 0 10px}
+.bar span{display:block;height:100%}
+.leg{list-style:none;margin:0;padding:0}.leg li{display:grid;grid-template-columns:14px 1fr auto;gap:10px;align-items:center;padding:7px 0;border-top:1px solid var(--line);font-size:14px}
+.leg i{width:10px;height:10px;border-radius:3px}.leg b{font-weight:600;white-space:nowrap}
+/* dodatky */
+.dod{display:grid;grid-template-columns:auto 1fr auto;gap:4px 14px;align-items:baseline;padding:12px 0;border-top:1px solid var(--line)}
+.dod .n{font:700 13px var(--f-b);color:var(--stavba-t);background:rgba(245,158,11,.12);border-radius:6px;padding:2px 8px}
+.dod .c{font:700 15px var(--f-h);white-space:nowrap}.dod p{margin:0;grid-column:2/4;font-size:14px;color:var(--ink2)}
+/* průběh */
+.ev{list-style:none;margin:0;padding:0;position:relative}
+.ev li{position:relative;padding:0 0 16px 26px}
+.ev li::before{content:"";position:absolute;left:5px;top:20px;bottom:-4px;width:2px;background:var(--line)}.ev li:last-child::before{display:none}
+.ev li::after{content:"";position:absolute;left:0;top:6px;width:12px;height:12px;border-radius:50%;background:#fff;border:3px solid var(--rozh)}
+.ev li.d::after{border-color:var(--stavba)}.ev li.s::after{border-color:var(--lime)}
+.ev .t{font-size:13px;color:var(--mute)}.ev .t b{font:700 11px var(--f-b);letter-spacing:.06em;text-transform:uppercase;margin-right:6px}
+.ev .t b.rozh{color:var(--rozh-t)}.ev .t b.ev-dod{color:var(--stavba-t)}.ev .t b.sml{color:var(--lime-d)}.ev .t b.vr{color:var(--tech)}
+.ev .x{font-weight:600}
+details.st>summary{cursor:pointer;font:600 14px var(--f-b);color:var(--tech);list-style:none;padding:4px 0}details.st>summary::before{content:"＋ "}
+/* boční panel */
+.mapka{border-radius:var(--r);background:#eef2f6;border:1px solid var(--line);display:block;width:100%;height:auto}
+.foto{border:2px dashed var(--line);border-radius:var(--r);padding:18px;text-align:center;color:var(--mute);font-size:13px;line-height:19px}
+.foto b{display:block;color:var(--ink2);font:700 14px var(--f-h);margin-bottom:4px}
+.zdroje{list-style:none;margin:0;padding:0}.zdroje li{padding:9px 0;border-top:1px solid var(--line);font-size:14px;display:flex;gap:10px}
+.zdroje li::before{content:"✓";color:var(--lime-d);font-weight:800}
+.jist{display:flex;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--mute);margin-top:10px}
+.jist span::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px;vertical-align:1px}
+.jist .a::before{background:var(--lime-d)}.jist .b::before{background:transparent;border:2px dashed var(--mute);width:6px;height:6px}
+footer{background:var(--dark);color:#94a3b8;margin-top:40px;padding:26px 0;font-size:13px}
+footer b{color:#fff;font:800 16px var(--f-h)}footer b::before{content:"● ";color:var(--lime)}
+.navrh{background:var(--lime-l);color:#365314;font-size:13px;padding:8px 0;border-bottom:1px solid #d9f99d}
+</style>
+</head>
+<body>
+<div class="navrh"><div class="wrap"><b>Návrh karty projektu</b> · statický náhled ve stylu grafických návrhů 23. 11. 2026 · všechny údaje jsou skutečná data projektu „Budějovická“ k 23. 11. 2026</div></div>
+<header class="top"><div class="wrap">
+  <span class="logo"><i>T</i><span>Třeboňáci<small>Otevřená radnice</small></span></span>
+  <span class="akt">Data k 23. 11. 2026</span>
+</div></header>
+<nav class="menu" aria-label="Sekce"><div class="wrap">
+  <a href="#">Co se děje</a><a href="#" class="on">Investice a opravy</a><a href="#">Projekty</a><a href="#">Usnesení</a><a href="#">Místa a služby</a><a href="#">Mapa</a>
+</div></nav>
+
+<main class="wrap">
+  <p class="dr"><a href="#">Investice a opravy</a> › <a href="#">Doprava a veřejný prostor</a></p>
+  <div class="pills">
+    <span class="pill p-stavba">Staví se</span>
+    <span class="pill p-plain">Doprava a veřejný prostor</span>
+    <span class="pill p-plain">Výběrové řízení VZ 914</span>
+  </div>
+  <h1>Stavební úpravy místní komunikace v ulici Budějovické</h1>
+  <p class="lead">Rekonstrukce místní komunikace v Budějovické ulici. Stavbu provádí K-BUILDING CB, a.s. na základě výběrového řízení se 3 nabídkami; rada schválila dva dodatky ke smlouvě o dílo.</p>
+
+  <section class="kpi" aria-label="Shrnutí">
+    <div class="k dark"><div class="l">Cena podle smluv</div><div class="v">15,54<small>mil. Kč s DPH</small></div><div class="s">po 2 dodatcích; stavba, projekt, výběrové řízení a dozor</div></div>
+    <div class="k"><div class="l">Kdy hotovo</div><div class="v" style="font-size:24px;line-height:30px">150 dní</div><div class="s">od převzetí staveniště podle smlouvy o dílo, str. 8; datum převzetí zatím nemáme</div></div>
+    <div class="k"><div class="l">Kdo staví</div><div class="v" style="font-size:22px;line-height:28px">K-BUILDING CB, a.s.</div><div class="s">vybrán ze 3 nabídek, smlouva o dílo 13. 4. 2026</div></div>
+    <div class="k"><div class="l">V rozpočtu města</div><div class="v" style="font-size:22px;line-height:28px">není samostatně</div><div class="s">položku s touto akcí jsme v rozpočtu 2026 nenašli</div></div>
+  </section>
+
+  <section class="faze" aria-label="Fáze">
+    <div class="f hot"><b>Projekt</b><span>smlouva 8. 6. 2023</span></div>
+    <div class="f hot"><b>Výběrové řízení</b><span>vyhlášeno 9. 2. 2026</span></div>
+    <div class="f hot"><b>Smlouva o dílo</b><span>13. 4. 2026</span></div>
+    <div class="f ted"><b>Staví se</b><span>dodatek č. 2 z 27. 10. 2026</span></div>
+    <div class="f"><b>Hotovo</b><span>zatím ne</span></div>
+  </section>
+
+  <div class="grid">
+    <div>
+      <section class="box">
+        <div class="kick">Kolik to stojí</div>
+        <h2>Cena podle smluv: 15 538 288 Kč s DPH</h2>
+        <p class="pozn">Součet smluv k akci po dodatcích. Smluvní cena není totéž co rozpočet ani to, co už bylo zaplaceno.</p>
+        <div class="bar" role="img" aria-label="Stavba 14,73 mil., projekt a výběrové řízení 0,65 mil., technický dozor a BOZP 0,16 mil. Kč">
+          <span style="flex:14727408;background:var(--stavba)"></span><span style="flex:652190;background:var(--tech)"></span><span style="flex:158689;background:var(--lime)"></span>
+        </div>
+        <ul class="leg">
+          <li><i style="background:var(--stavba)"></i><span>Stavba (smlouva o dílo a 2 dodatky)</span><b>14 727 409 Kč</b></li>
+          <li><i style="background:var(--tech)"></i><span>Projekt a výběrové řízení (2 smlouvy)</span><b>652 190 Kč</b></li>
+          <li><i style="background:var(--lime)"></i><span>Technický dozor a BOZP (2 smlouvy)</span><b>158 689 Kč</b></li>
+        </ul>
+      </section>
+
+      <section class="box">
+        <div class="kick">Změny ceny a termínu</div>
+        <h2>Dodatky ke smlouvě o dílo</h2>
+        <div class="dod"><span class="n">č. 1</span><span>Rada 23. 9. 2026, smlouva 30. 9. 2026</span><span class="c">+100 816 Kč bez DPH</span>
+          <p>Cena díla celkem 12 078 593 Kč bez DPH (14 615 097 Kč s DPH). <a href="#">Usnesení RM 487/2026</a> · <a href="#">Dodatek v registru smluv</a></p></div>
+        <div class="dod"><span class="n">č. 2</span><span>Rada 21. 10. 2026, smlouva 27. 10. 2026</span><span class="c">+92 819 Kč bez DPH</span>
+          <p>Cena díla celkem 12 171 412 Kč bez DPH. <a href="#">Usnesení RM 528/2026</a> · <a href="#">Dodatek v registru smluv</a></p></div>
+        <p class="pozn" style="margin:8px 0 0">Původní smlouva o dílo: 11 977 777 Kč bez DPH (14 493 110 Kč s DPH).</p>
+      </section>
+
+      <section class="box">
+        <div class="kick">Průběh</div>
+        <h2>Co se stalo</h2>
+        <ul class="ev" style="margin-top:12px">
+          <li class="d"><div class="t"><b class="ev-dod">Dodatek</b>27. 10. 2026 · registr smluv</div><div class="x">Dodatek č. 2 ke smlouvě o dílo</div></li>
+          <li><div class="t"><b class="rozh">Usnesení</b>21. 10. 2026 · rada města</div><div class="x">Rada schválila dodatek č. 2</div></li>
+        </ul>
+        <details class="st"><summary>Starší události (8)</summary>
+          <ul class="ev" style="margin-top:10px">
+            <li class="d"><div class="t"><b class="ev-dod">Dodatek</b>30. 9. 2026</div><div class="x">Dodatek č. 1 ke smlouvě o dílo</div></li>
+            <li><div class="t"><b class="rozh">Usnesení</b>23. 9. 2026 · rada města</div><div class="x">Rada schválila dodatek č. 1</div></li>
+            <li class="s"><div class="t"><b class="sml">Smlouva</b>13. 4. 2026</div><div class="x">Smlouva o dílo – K-BUILDING CB, a.s.</div></li>
+            <li class="s"><div class="t"><b class="sml">Smlouva</b>19. 3. 2026</div><div class="x">Technický dozor stavebníka</div></li>
+            <li class="s"><div class="t"><b class="sml">Smlouva</b>19. 3. 2026</div><div class="x">Koordinátor BOZP</div></li>
+            <li><div class="t"><b class="vr">Výběrové řízení</b>9. 2. 2026 · E-ZAK</div><div class="x">Vyhlášeno; 3 nabídky, od vyhlášení do smlouvy 63 dní</div></li>
+            <li class="s"><div class="t"><b class="sml">Smlouva</b>5. 2. 2026</div><div class="x">Administrace výběrového řízení</div></li>
+            <li class="s"><div class="t"><b class="sml">Smlouva</b>8. 6. 2023</div><div class="x">Projektová dokumentace (5. etapa)</div></li>
+          </ul>
+        </details>
+      </section>
+    </div>
+
+    <aside>
+      <section class="box">
+        <div class="kick">Kde</div>
+        <svg class="mapka" viewBox="0 0 320 200" role="img" aria-label="Úsek Budějovické ulice podle RÚIAN">
+          <rect width="320" height="200" fill="#eef2f6"/>
+          <g fill="none" stroke="#f59e0b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="106.9,134.3 113.2,128.7 120.6,121.3 156.2,85.9 161.8,80.9 169.8,76.9 219.4,55.4"/>
+            <polyline points="106.9,134.3 89.4,142.5 48.5,163.3"/><polyline points="48.5,163.3 24.0,176.0"/>
+            <polyline points="219.4,55.4 256.8,41.8 276.6,77.9 296.0,94.1"/>
+          </g>
+        </svg>
+        <p class="pozn" style="margin:8px 0 0">Ulice Budějovická podle RÚIAN (celá ulice, úsek stavby dokumenty neuvádějí). <a href="#">Otevřít na mapě →</a></p>
+      </section>
+      <section class="box">
+        <div class="kick">Fotky</div>
+        <div class="foto"><b>Fotka ze stavby zatím není</b>Fotky přidává redakce Třeboňáků s uvedením autora a data; bez lidí a SPZ.</div>
+      </section>
+      <section class="box">
+        <div class="kick">Odkud to víme</div>
+        <ul class="zdroje">
+          <li><a href="#">Výběrové řízení VZ 914 (E-ZAK města)</a></li>
+          <li><a href="#">Smlouva o dílo, str. 8 – lhůta dokončení (registr smluv)</a></li>
+          <li><a href="#">Dodatky č. 1 a 2 (registr smluv)</a></li>
+          <li><a href="#">Usnesení RM 487/2026 a RM 528/2026 (zápisy rady)</a></li>
+          <li><a href="#">Strategický plán: Komplexní rekonstrukce komunikací vč. sítí</a></li>
+        </ul>
+        <div class="jist"><span class="a">doloženo dokumentem</span><span class="b">naše propojení dokumentů</span></div>
+      </section>
+    </aside>
+  </div>
+</main>
+<footer><div class="wrap"><b>Třeboňáci · Otevřená radnice</b><br>Nezávislý přehled z veřejných zdrojů. Nejde o web Města Třeboň.</div></footer>
+</body>
+</html>

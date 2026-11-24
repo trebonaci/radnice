@@ -1,0 +1,40 @@
+# Známá místa podle názvu akce (pipeline/mapa.py → podle_nazvu).
+# Použije se jen tehdy, když RÚIAN z názvu nenajde ulici, adresu ani číslo popisné.
+# První vzor, který v názvu (a u zásobníku v prvním dokladu) najde shodu, určí místo.
+# Shoda podle názvu je vždy „naše propojení“ (na mapě přerušovaná značka).
+# Pořadí: konkrétní místa dřív než celé části obce.
+mista:
+  - vzor: 'DPS ?(3|III)\b|pečovatelskou službou (3|III)\b'
+    misto: [{adresa: Svatopluka Čecha 20}]   # registr smluv: „DPS III, Svatopluka Čecha 20, Třeboň“
+  - vzor: 'Aurora|\bLDA\b'
+    misto: [{adresa: Lázeňská 1001}]          # Lázeňský dům Aurora, Lázeňská 1001 (kontakt Lázní Aurora)
+  - vzor: 'Z[ŠS] Na Sadech|škol\w* Na Sadech'
+    misto: [{adresa: Na Sadech 375}]          # Základní škola Třeboň, Na Sadech 375 (rejstřík škol)
+  - vzor: '[Pp]ivovar'
+    misto: [{cp: 124, cast_obce: Třeboň I}]   # Pivovar Regent, Trocnovské nám. 124
+  - vzor: 'Husov[ay] kaple'
+    misto: [{bod: [49.00661, 14.76350], zdroj: OpenStreetMap, zdroj_url: 'https://www.openstreetmap.org/way/115619217'}]
+  - vzor: 'Bertin[ýy]ch lázní|Bertiny lázně'
+    misto: [{bod: [49.00618, 14.77006], zdroj: OpenStreetMap, zdroj_url: 'https://www.openstreetmap.org/relation/1605882'}]
+  - vzor: 'divadl\w* J\. ?K\. ?Tyla'
+    misto: [{bod: [49.00352, 14.77206], zdroj: OpenStreetMap, zdroj_url: 'https://www.openstreetmap.org/node/12513881320'}]
+  - vzor: 'Komenského sad|Svět pohybu'
+    misto: [{bod: [49.00570, 14.76737], zdroj: OpenStreetMap, zdroj_url: 'https://www.openstreetmap.org/way/54791284'}]   # VZ 930: cvičiště v Komenského sadech
+  - vzor: '\bVít(ek|ka)\b'
+    misto: [{bod: [49.03294, 14.80616], zdroj: OpenStreetMap, zdroj_url: 'https://www.openstreetmap.org/relation/4018884'}]
+  - vzor: '\bNa Kopečku\b'
+    misto: [{bod: [49.01207, 14.78756], priblizne: true, zdroj: OpenStreetMap, zdroj_url: 'https://www.openstreetmap.org/node/4217489237'}]
+  - vzor: '[Hh]řbitov\w* sv\. Alžběty'
+    misto: [{bod: [49.00509, 14.75633], zdroj: OpenStreetMap, zdroj_url: 'https://www.openstreetmap.org/way/227676500'}]   # upřesnění 23. 11. 2026: hřbitov severně od Svobody 266
+  - vzor: 'Jordánov\w* kašn'
+    misto: [{bod: [49.003923, 14.771195], priblizne: true, zdroj: RÚIAN – střed adres Masarykova náměstí}]   # upřesnění 23. 11. 2026: kašna uprostřed náměstí
+  - vzor: 'rybník\w* Veský'
+    misto: [{bod: [48.8712358, 14.7275592], zdroj: OpenStreetMap, zdroj_url: 'https://www.openstreetmap.org/way/51684609'}]   # upřesnění 23. 11. 2026; rybník leží v k. ú. Jílovice u Trhových Svinů (RÚIAN), mimo území Třeboně
+  - vzor: '\bJablonského\b'
+    misto: [{ulice: Jablonského}]
+  - vzor: 'Břilic'
+    misto: [{cast_obce: Břilice}]
+  - vzor: 'Brann[éáé]'
+    misto: [{cast_obce: Branná}]
+  - vzor: 'Star[áéé] Hlín'
+    misto: [{cast_obce: Stará Hlína}]

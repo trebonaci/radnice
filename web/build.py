@@ -11,7 +11,10 @@ import argparse
 import json
 import re
 import shutil
+from datetime import date
 from pathlib import Path
+
+from web.zpravy import zpravy_pro_web
 
 KOREN = Path(__file__).resolve().parent.parent
 SABLONA = KOREN / "web" / "site" / "sablona.html"
@@ -49,11 +52,45 @@ def usneseni_pro_web(usneseni: list[dict], jednani: list[dict]) -> list[dict]:
             "vysledek": u.get("vysledek_hlasovani"), "tema": u.get("tema"), "tema_ai": u.get("tema_ai"),
             "shrnuti": po.get("text") or u.get("shrnuti"),
             "shrnuti_ai": bool(u.get("pro_obcany_ai") if po.get("text") else u.get("shrnuti_ai")),
-            "kategorie": u.get("kategorie") or ["ostatni"], "strana": strany[0] if strany else None,
+            "kategorie": u.get("kategorie") or ["ostatni"], "okruh": u.get("okruh"), "okruhy": u.get("okruhy") or [],
+            "strana": strany[0] if strany else None,
             "url": f"{url}#page={strany[0]}" if url and strany else url, "zapis": url,
         })
     vysledek.sort(key=lambda x: (x["datum"] or "", x["organ"] or "", x["cislo"] or ""), reverse=True)
     return vysledek
+
+
+def zpravy_stranky(zpravy: list[dict], okruhy: list[dict], beh: dict) -> dict:
+    """Zprávy a KPI pro „Co se děje“; 30 dní se počítá k datu posledního běhu (bez běhu k nejnovější zprávě)."""
+    den = (beh or {}).get("zacatek", "")[:10] or max((z["datum"] for z in zpravy), default=date.today().isoformat())
+    return zpravy_pro_web(zpravy, [o["id"] for o in okruhy], date.fromisoformat(den))
+def kpi_investic(projekty: list, investice: dict | None) -> dict:
+    """KPI stránky Investice a opravy: jen čísla z dat (počty podle fáze, cena podle smluv s DPH
+    u probíhajících akcí, investice v rozpočtu po změnách bez rezervy). Nic se neodhaduje."""
+    pocty = {f: 0 for f in ("probiha", "soutezi_se", "pripravuje_se", "dokonceno")}
+    for p in projekty:
+        if p.get("faze") in pocty:
+            pocty[p["faze"]] += 1
+    pocty["celkem"] = len(projekty)
+    cena, s_cenou, neuplnych, akci = 0.0, 0, 0, 0
+    for p in projekty:
+        if p.get("faze") != "probiha":
+            continue
+        akci += 1
+        c = (p.get("souhrn") or {}).get("celkova_cena_s_dph") or {}
+        if c.get("castka") is None:
+            continue
+        cena += c["castka"]
+        s_cenou += 1
+        neuplnych += 1 if c.get("neuplne") else 0
+    inv = investice or {}
+    return {
+        "pocty": pocty,
+        "cena_probihajicich": {"castka": round(cena, 2), "akci": akci, "akci_s_cenou": s_cenou,
+                               "neuplnych": neuplnych, "druh": "smluvni", "s_dph": True},
+        "rozpocet": {"castka": inv.get("bez_rezervy_po_zmenach"), "rok": inv.get("rok"),
+                     "druh": "rozpocet_upraveny", "s_dph": None},
+    }
 
 
 def sestav(nahled: bool = False) -> str:
@@ -70,10 +107,13 @@ def sestav(nahled: bool = False) -> str:
         "__ZASOBNIK__": _vloz(_json("zasobnik")),
         "__MISTA__": _vloz(_json("mista")),
         "__ZMENY__": _vloz(_json("zmeny")),
+        "__OKRUHY__": _vloz(_json("okruhy")),
+        "__ZPRAVY__": _vloz(zpravy_stranky(_json("zpravy"), _json("okruhy"), beh)),
         "__HARMONOGRAM__": _vloz(_json("harmonogram")),
         "__UKAZATELE__": _vloz(_json("ukazatele")),
         "__USNESENI__": _vloz(usneseni_pro_web(_json("usneseni"), _json("jednani"))),
         "__INVESTICE__": _vloz((investice or [None])[-1]),
+        "__KPI__": _vloz(kpi_investic(_json("projekty") or [], (investice or [None])[-1])),
         "__STITEK__": stitek,
         "__DATUM__": datum,
     }
@@ -96,6 +136,8 @@ def main() -> None:
     (cil / "index.html").write_text(sestav(args.nahled), encoding="utf-8")
     # obrázky šablony (logo Třeboňáků)
     shutil.copytree(SABLONA.parent / "obr", cil / "obr", dirs_exist_ok=True)
+    # písma Plus Jakarta Sans a Inter (licence OFL) – z vlastního webu, ne z Google Fonts
+    shutil.copytree(SABLONA.parent / "fonts", cil / "fonts", dirs_exist_ok=True)
     # knihovna mapy Leaflet (#208) – z vlastního webu, ne z CDN
     shutil.copytree(SABLONA.parent / "leaflet", cil / "leaflet", dirs_exist_ok=True)
     # Cloudflare Pages: bez indexování náhledů, základní bezpečnostní hlavičky
