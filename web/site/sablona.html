@@ -699,9 +699,9 @@ function shrnutiAkce(p,dod,sch,upr){
   const kdy=p.faze==="dokonceno"?(hot?`<b>${hot[1]}</b><small>${hot[0]}</small>`:`<b>Hotovo</b><small>datum nemáme</small>`)
     :p.termin_dokonceni?.datum?`<b>${dat(p.termin_dokonceni.datum)}</b><small>dokončení podle smlouvy${p.termin_dokonceni.datum<DNES?" – termín už uplynul":""}</small>`
     :p.termin_dokonceni?.druh==="lhuta"?`<b>lhůta ve smlouvě</b><small>${esc(p.termin_dokonceni.citace||"")}</small>`:`<b>–</b><small>termín zatím nemáme</small>`;
-  const r=sch?.po_zmenach||sch||(upr.celkem!=null?upr:null);
+  const r=sch||(upr.celkem!=null?upr:null);   // schválený (původní) rozpočet, ne navýšený rozpočtovými opatřeními
   const vede=!r?(p.vlastnik_subjekt_id&&p.vlastnik_subjekt_id!=="00247618"?"Investuje městská společnost, její rozpočet není veřejný.":"V rozpočtu města není jako samostatná položka.")
-    :`V rozpočtu ${sch?.rok??""} jako ${[r.investicni?"kapitálový výdaj (investice) "+kc(r.investicni):"",r.neinvesticni?"běžný výdaj "+kc(r.neinvesticni):""].filter(Boolean).join(" a ")||"položka bez rozlišení"}${sch?.po_zmenach?.zmeneno?" po rozpočtových změnách":""}. <a href="#k-ceny">Rozpočet a smlouvy ↓</a>`;
+    :`Ve schváleném rozpočtu ${sch?.rok??""} jako ${[r.investicni?"kapitálový výdaj (investice) "+kc(r.investicni):"",r.neinvesticni?"běžný výdaj "+kc(r.neinvesticni):""].filter(Boolean).join(" a ")||"položka bez rozlišení"}. <a href="#k-ceny">Rozpočet a smlouvy ↓</a>`;
   return `<div class="shrnuti-akce">
    <div><span>Co</span><b>${esc(stavText(p))}</b><small>${esc(OKN[p.okruh]?.nazev||"")}</small></div>
    <div><span>Kolik</span><b>${kolik||"–"}</b><small>${co}</small></div>
@@ -768,7 +768,7 @@ function karta(p){
   const puv=st?.puvodni?.s_dph;const zmeneno=st?.dodatky.length&&st.cena_po_dodatcich_s_dph!=null&&puv!=null&&Math.abs(st.cena_po_dodatcich_s_dph-puv)>=1;
   const sk=p.souhrn.skladba_s_dph||[];
   const rozpocetText=sch||upr.celkem!=null?kc(sch?.celkem??upr.celkem):"–";
-  const rozpocetPozn=!sch&&upr.celkem==null?(p.vlastnik_subjekt_id&&p.vlastnik_subjekt_id!=="00247618"?"investuje městská společnost, její rozpočet není veřejný":"v rozpočtu 2026 není jako samostatná položka – je součástí širší položky nebo se platí z jiného roku"):sch?.po_zmenach?.zmeneno?`po změnách ${kc(sch.po_zmenach.celkem)} · ${pl([...new Set(p.schvaleny_rozpocet.flatMap(x=>x.zmeny_ro))].filter(x=>x!=null).length,"rozpočtové opatření","rozpočtová opatření","rozpočtových opatření")}`:sch?"beze změn":"";
+  const rozpocetPozn=!sch&&upr.celkem==null?(p.vlastnik_subjekt_id&&p.vlastnik_subjekt_id!=="00247618"?"investuje městská společnost, její rozpočet není veřejný":"v rozpočtu 2026 není jako samostatná položka – je součástí širší položky nebo se platí z jiného roku"):sch?.po_zmenach?.zmeneno?`původní schválený · ${pl([...new Set(p.schvaleny_rozpocet.flatMap(x=>x.zmeny_ro))].filter(x=>x!=null).length,"rozpočtové opatření","rozpočtová opatření","rozpočtových opatření")} ho později upravilo`:sch?"beze změn":"";
   const zak=p.zakazky?.[0];
   return `<article class="karta kv2 o-${esc(p.okruh)}" id="${p.id}">
   ${ilustraceOkruhu(p)}
@@ -785,7 +785,7 @@ function karta(p){
   <h2 class="oddil" id="k-prubeh">Průběh projektu</h2>${historie}
   <h2 class="oddil" id="k-ceny">Smlouvy a ceny</h2>
   <div class="cisla">
-   <div class="cislo"><span>Rozpočet ${sch?.rok??""} (plán města)</span><b>${rozpocetText}</b><small>${esc(rozpocetPozn)}</small></div>
+   <div class="cislo"><span>Schválený rozpočet ${sch?.rok??""} (plán města)</span><b>${rozpocetText}</b><small>${esc(rozpocetPozn)}</small></div>
    <div class="cislo"><span>Cena podle smluv, s DPH</span><b>${kc(cc?.castka??st?.cena_po_dodatcich_s_dph)}</b><small>${zmeneno?`stavba původně ${kc(puv)}, po dodatcích ${kc(st.cena_po_dodatcich_s_dph)} · `:""}${pl(nSml,"smlouva","smlouvy","smluv")}${cc?.neuplne.length?" · některé ceny neúplné":""}${st?.souhlas_zaplaceno?" · souhlasí se zaplacenou cenou v E-ZAK":""}</small></div>
   </div>
   ${rozpadNakladu(p)}
