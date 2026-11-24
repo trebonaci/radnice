@@ -61,6 +61,10 @@ def zapisy_bez_anotace(koren: Path = KOREN) -> list[dict]:
 def telo_zapisu(z: dict, vetev: str | None = None) -> str:
     j = z["jednani_id"]
     organ = ORGAN.get(j.split("-", 1)[0], "Jednání")
+    # historická jednání (staré volební období, před ustavujícím ZM 2. 11. 2026): anotovat jen usnesení
+    # relevantní k investicím a rozpočtu investic (#278) – ostatní se stejně nezobrazí (pipeline/relevance.py)
+    datum = "-".join(j.split("-")[1:4])
+    historicke = bool(datum) and datum < "2026-11-01"
     verze = (z.get("verze") or [{}])[-1]
     texty = verze.get("texty") or f"raw/texty/{j}"
     return (
@@ -68,7 +72,11 @@ def telo_zapisu(z: dict, vetev: str | None = None) -> str:
         f"Běh pipeline stáhl nový zápis ({organ}, jednání `{j}`). Zatím nemá anotaci, proto se nezobrazuje v `data/`.\n\n"
         f"**Úkol:** doplnit `anotace/{j}.yaml` podle `METODIKA.md` a `docs/ANOTACE.md` (doslovné citace, částky podle "
         f"druhu, anonymizace, bez jmen nevolených osob; u usnesení, která mění něco pro lidi, i větu `pro_obcany`), ověřit `python -m pipeline.sestav` a `python -m pytest` a otevřít PR (`Closes #<toto issue>`).\n\n"
-        f"- zdroj: {z['url']}\n- text po stranách: `{texty}/` (verze {verze.get('cislo', 1)}, sha256 `{z['sha256']}`)\n"
+        + ("**Historické jednání (staré volební období):** anotuj jen usnesení relevantní k investicím a rozpočtu "
+           "investic (zakázky a výběr dodavatele, smlouvy o dílo a dodatky, stavby a opravy, rozpočtová opatření k "
+           "investicím, majetek a dotace směřující do investic). Ostatní usnesení se nezobrazují (`pipeline/relevance.py`), "
+           "anotovat je není třeba.\n\n" if historicke else "")
+        + f"- zdroj: {z['url']}\n- text po stranách: `{texty}/` (verze {verze.get('cislo', 1)}, sha256 `{z['sha256']}`)\n"
         f"- stažení: {z.get('stazeno', 'neuvedeno')}\n"
         + (f"- text zápisu zatím není v `main`, je ve větvi `{vetev}` (PR s ním čeká na sloučení): "
            f"`git fetch origin {vetev} && git checkout origin/{vetev} -- raw/ data/`\n" if vetev else "")
