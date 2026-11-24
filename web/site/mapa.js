@@ -237,13 +237,14 @@ function openGis(el) {
     for (const entry of filtered) {
       if (!entry.geometry) continue;
       const color = gisSymbol(entry).color;
+      const iconSize = entry.approx ? 22 : 16;
       const shape = L.geoJSON(entry.geometry,{
         style: {color,weight:6,opacity:1,dashArray:entry.approx ? "7 6" : null,className:"gis-path"},
         pointToLayer: (_,latlng) => L.marker(latlng,{
           title:entry.p.nazev + ' · ' + gisSymbol(entry).label,
           alt:entry.p.nazev + ' · ' + gisSymbol(entry).label,
           icon:L.divIcon({
-            className:"gis-marker",iconSize:[16,16],
+            className:"gis-marker",iconSize:[iconSize,iconSize],
             html:'<span aria-hidden="true" class="gis-pin' + (entry.approx?' approx':'') + (entry.type==="misto"?' gis-service':'') + '" style="--gis-color:' + color + '"></span>',
           }),
         }),
