@@ -28,7 +28,18 @@
 --line:var(--border-subtle);--carp:var(--tertiary);--soft:#f1f5f9;
 --k-smlouva:#2f6db5;--k-dodatek:#6a56b3;--k-soutez:#b45309;--k-rada:#2f7d5b;--k-zm:#1f6b6f;--k-rozpocet:#8a6d12;--k-hotovo:var(--green-dark);
 /* harmonogram: fáze investice jako jednobarevná řada od světlé (příprava) po tmavou (stavba) */
---g-priprava:#9fd3ee;--g-soutez:var(--blue-dark);--g-stavba:var(--primary);--g-prubeh:var(--green-dark)}
+--g-priprava:#9fd3ee;--g-soutez:var(--blue-dark);--g-stavba:var(--primary);--g-prubeh:var(--green-dark);
+/* výchozí barva okruhu, než ji přebije třída .o-<okruh> */
+--ok:var(--tertiary);--ok-tint:var(--surface-low);--ok-ink:var(--tertiary);--ok-tma:var(--accent-lime)}
+/* Barva okruhu (připomínka 24. 11.): jedna paleta pro pruh v heru, hlavičku okruhu i podbarvení boxu se zprávou nebo akcí.
+   Odstupy odstínů prošly kontrolou pro barvosleposti (nejhorší dvojice ΔE 7,7); barva nikdy nenese význam sama –
+   u každého boxu je i název okruhu, ikona nebo štítek. --ok-ink má na bílé kontrast aspoň 4,5:1. */
+.o-doprava_prostor{--ok:#ea580c;--ok-tint:#fdf2ec;--ok-ink:#c2410c;--ok-tma:#fb923c}
+.o-bydleni_pece{--ok:#9333ea;--ok-tint:#f6effd;--ok-ink:#7e22ce;--ok-tma:#c084fc}
+.o-skoly{--ok:#0369a1;--ok-tint:#ebf3f8;--ok-ink:#0369a1;--ok-tma:#38bdf8}
+.o-sport_kultura{--ok:#059669;--ok-tint:#ebf7f3;--ok-ink:#047857;--ok-tma:#34d399}
+.o-spolecnosti{--ok:#be123c;--ok-tint:#faecef;--ok-ink:#be123c;--ok-tma:#fb7185}
+.o-rozvoj_sprava{--ok:#166534;--ok-tint:#ecf3ef;--ok-ink:#166534;--ok-tma:#4ade80}
 *{box-sizing:border-box;min-width:0}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 var(--font)}
 a{color:inherit}
 .band{padding:clamp(28px,4vw,52px) max(4vw,16px)}.wrap{max-width:1180px;margin:0 auto}
@@ -52,7 +63,7 @@ header.band .lead{color:#cbd5e1;font-size:clamp(15px,1.3vw,18px);max-width:62ch;
 .kpi-dny a{background:var(--surface-dark);display:block;padding:11px 13px 12px;text-decoration:none;color:#fff}
 .kpi-dny a:hover,.kpi-dny a.on{background:var(--surface-dark-subtle)}
 .kpi-dny a span{display:block;font-size:12.5px;line-height:1.3;color:#cbd5e1;min-height:2.6em}
-.kpi-dny a span::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--accent-lime);margin-right:6px;vertical-align:1px}
+.kpi-dny a span::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--ok-tma);margin-right:6px;vertical-align:1px}
 .kpi-dny a b{display:block;font:800 clamp(20px,2vw,28px)/1.1 var(--font-h);letter-spacing:-.02em;margin:4px 0 1px}
 .kpi-dny a small{font-size:11.5px;color:#94a3b8}
 @media(max-width:900px){.kpi-dny{grid-template-columns:repeat(3,1fr)}}
@@ -70,7 +81,12 @@ header.band .lead{color:#cbd5e1;font-size:clamp(15px,1.3vw,18px);max-width:62ch;
 .lista b{font:800 16px var(--font-h);letter-spacing:-.02em}.lista .zn span span{font-weight:500;color:#cbd5e1}
 .lista .bd{margin-left:auto;font-size:12px;font-weight:600;color:#e2e8f0;border:1px solid var(--border-dark);background:var(--surface-dark-subtle);border-radius:var(--r-pill);padding:3px 11px;white-space:nowrap}
 .lista .bd::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--accent-lime);margin-right:7px}
-nav#menu{position:sticky;top:0;z-index:10;display:flex;gap:2px;padding:0 max(5vw,16px);background:#fff;border-bottom:1px solid var(--border-subtle);overflow-x:auto;scrollbar-width:none}
+/* menu je lepkavé proti celé stránce; při posunu dolů se schová, při posunu nahoru se vrátí (připomínka 24. 11.) */
+nav#menu{position:sticky;top:0;z-index:1200;display:flex;gap:2px;padding:0 max(5vw,16px);background:#fff;border-bottom:1px solid var(--border-subtle);overflow-x:auto;scrollbar-width:none;transition:transform .22s ease,box-shadow .22s ease}
+nav#menu.plave{box-shadow:0 8px 20px -12px rgba(15,23,42,.45)}
+nav#menu.skryte{transform:translateY(-100%)}
+nav#menu:focus-within{transform:none}
+@media(prefers-reduced-motion:reduce){nav#menu{transition:none}}
 nav#menu::-webkit-scrollbar{display:none}
 nav#menu a{flex:0 0 auto;white-space:nowrap;font:600 14px var(--font);color:var(--mute);text-decoration:none;padding:13px 14px;border-bottom:3px solid transparent}
 nav#menu a:hover{color:var(--ink);background:rgba(15,23,42,.04)}nav#menu a.on{color:var(--ink);border-bottom-color:var(--accent-lime);font-weight:700}
@@ -174,6 +190,9 @@ table.t{width:100%;border-collapse:collapse;font-size:15px}
 .leg{display:flex;flex-wrap:wrap;gap:14px;font-size:14px;color:var(--mute);margin:12px 0 4px}.leg i{display:inline-block;width:22px;height:10px;border-radius:4px;vertical-align:middle;margin-right:6px}
 .leg .md{display:inline-block;width:9px;height:9px;transform:rotate(45deg);background:var(--navy);margin:0 6px 0 4px;vertical-align:middle;border-radius:1px;padding:0;box-shadow:none;border:0}
 .gan{background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);padding:14px 22px 10px;margin-bottom:22px;box-shadow:var(--shadow-card)}
+/* časová osa: panel okruhu nese jeho barvu stejně jako bloky na ostatních stránkách (připomínka 24. 11.) */
+.gan[class*="o-"]{border-top:3px solid var(--ok)}
+.hh .tec{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--ok);margin-right:7px;vertical-align:0}
 .gr{display:grid;grid-template-columns:minmax(0,250px) minmax(0,1fr);gap:14px;align-items:center;padding:7px 0}.gr+.gr{border-top:1px solid var(--line)}
 .gr .n{font-size:14.5px;line-height:1.3}.gr .n a{text-decoration:none;font-weight:600}.gr .n a:hover{text-decoration:underline}.gr .n small{display:block;color:var(--mute);font-size:12.5px}
 .tr{position:relative;height:22px}.tr .rk{position:absolute;top:0;bottom:0;width:1px;background:var(--line)}.tr .dn{position:absolute;top:-4px;bottom:-4px;width:2px;background:var(--green);border-radius:1px}
@@ -263,23 +282,28 @@ h1:focus{outline:none}
 .okruh h2 small{font:400 14px var(--font);color:var(--mute);margin-left:6px}
 .okruh .op{font-size:13.5px;color:var(--mute);margin:0 0 6px}
 .okruh ol{list-style:none;margin:0;padding:0 18px}
-.okruh li a{display:block;padding:8px 0;border-top:1px solid var(--line);text-decoration:none;color:var(--ink)}
+.okruh li a{display:block;padding:8px 0 8px 11px;border-top:1px solid var(--line);border-left:3px solid var(--ok);text-decoration:none;color:var(--ink)}
 .okruh li a:hover b{text-decoration:underline}
 .okruh li small{display:block;font-size:13px;color:var(--mute)}
 .okruh li b{display:block;font-size:15.5px;font-weight:600;line-height:1.35}
-.okruh li .dr{font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:11.5px;color:var(--green-dark)}
+.okruh li .dr{font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:11.5px;color:var(--mute)}
 .okruh li .dr.stavba{color:var(--carp)}.okruh li .dr.zmena{color:var(--blue-dark)}
 .okruh details>summary{font:600 14px var(--font);color:var(--pond);cursor:pointer;padding:8px 0 4px;border-top:1px solid var(--line)}
 .okruh .nic{font-size:14px;color:var(--mute);padding:8px 0;border-top:1px solid var(--line);margin:0}
 @media(max-width:480px){.lista .zn span span{display:none}.lista .bd{margin-left:auto}}
 .okr a{font:500 14px var(--font);border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:99px;padding:5px 12px;text-decoration:none;flex:0 0 auto;white-space:nowrap}
 .okr a.on{background:var(--navy);color:#fff;border-color:var(--navy)}.okr a.on::before{content:"✓ "}
+/* puntík v názvu okruhu je legenda k barvě, kterou má okruh na celém webu */
+.okr a[class*="o-"]::after{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--ok);margin-left:7px;vertical-align:1px}
 .okruh h2 a{color:inherit;text-decoration:none}.okruh h2 a:hover{text-decoration:underline}
 .okruh.cely{padding-bottom:16px}.okruh .hh{margin:16px 0 4px}
 .okruh .sez a{box-shadow:none;margin:0;border:0;border-top:1px solid var(--line);border-left:4px solid var(--carp);border-radius:0;padding:10px 0 10px 12px;background:none}.okruh .us li.box{box-shadow:none}
 .okruh .ms{box-shadow:none;border-left:0;border-right:0;border-radius:0;padding-left:0;padding-right:0}
 .k-stitky{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 10px}
 .pill.p-tich{background:var(--soft);color:var(--ink)}.pill.p-tich::before{display:none}
+/* karta akce nese barvu svého okruhu stejně jako bloky v přehledech (připomínka 24. 11.) */
+.pill.p-okruh{background:var(--ok-tint);color:var(--ok-ink)}.pill.p-okruh::before{background:var(--ok);opacity:1}
+.karta[class*="o-"]{border-top:3px solid var(--ok)}
 .faze-pruh{display:grid;grid-template-columns:repeat(5,1fr);gap:0;list-style:none;margin:14px 0 18px;padding:18px 18px 14px;background:var(--card);border:1px solid var(--border-subtle);border-radius:var(--rounded-lg);box-shadow:var(--shadow-ambient)}
 .faze-pruh li{position:relative;padding-top:18px}
 .faze-pruh li::before{content:"";position:absolute;top:5px;left:0;right:0;height:4px;background:var(--border-subtle)}
@@ -312,13 +336,29 @@ h1:focus{outline:none}
 .okruhy{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,460px),1fr));gap:16px}
 .okruh{padding:0 0 10px}
 .okruh .hlava{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:12px;align-items:start;padding:16px 18px 10px}
-.okruh .ik{width:38px;height:38px;border-radius:var(--rounded-md);display:grid;place-items:center;background:var(--accent-lime-light);color:var(--accent-lime-dark)}
+.okruh .ik{width:38px;height:38px;border-radius:var(--rounded-md);display:grid;place-items:center;background:var(--ok-tint);color:var(--ok-ink)}
+/* okruh si drží svou barvu: proužek nahoře a podbarvené boxy uvnitř (připomínka 24. 11.) */
+.okruh{border-top:3px solid var(--ok)}
+.okruh .pocet-okruhu{background:var(--ok-tint);color:var(--ok-ink)}
+/* tělo bloku má jedno odsazení, aby nadpisy stavů lícovaly s boxy (připomínka 24. 11.) */
+.okruh .telo{padding:0 18px 2px}
+.okruh .telo .hh:first-child{margin-top:4px}
+/* jednotlivé stavy se rozbalují samostatně (připomínka 24. 11.), ne jedním dlouhým seznamem */
+.okruh details.stav{border-top:1px solid var(--line)}
+.okruh details.stav>summary{display:flex;align-items:center;gap:9px;cursor:pointer;list-style:none;padding:11px 0 9px;font:700 12px var(--font);letter-spacing:.06em;text-transform:uppercase;color:var(--mute)}
+.okruh details.stav>summary::-webkit-details-marker{display:none}
+.okruh details.stav>summary::before{content:"";width:0;height:0;border:5px solid transparent;border-left-color:currentColor;transition:transform .15s}
+.okruh details.stav[open]>summary::before{transform:rotate(90deg)}
+.okruh details.stav>summary:hover,.okruh details.stav>summary:focus-visible{color:var(--ink)}
+.okruh details.stav>summary .pc{background:var(--ok-tint);color:var(--ok-ink);border-radius:999px;padding:1px 9px;font:700 12px var(--font);letter-spacing:0}
+.okruh details.stav>summary .pc.dl{background:var(--soft);color:var(--mute);font-weight:600;text-transform:none;letter-spacing:0}
+.okruh details.stav .akgrid{margin:2px 0 14px}.okruh details.stav .sez,.okruh details.stav ul.nm{margin:2px 0 14px}
+.okruh ul.nm{padding-left:18px}.okruh ul.nm li{margin:3px 0}
 .okruh .ik svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .okruh h2{margin:0;font:800 19px/1.25 var(--font-h);letter-spacing:-.015em}
 .okruh .op{margin:2px 0 0;font-size:13px;color:var(--mute)}
 .okruh .pocet-okruhu{font:600 12px var(--font);color:var(--mute);background:var(--soft);border-radius:999px;padding:3px 10px;white-space:nowrap}
-.okruh>ul.zpr,.okruh>details{padding:0 18px}
-.okruh .nic{padding:0 18px 8px}
+.okruh .nic{padding:0 0 8px}
 .okruh h2 a{color:inherit;text-decoration:none}.okruh h2 a:hover{text-decoration:underline}
 /* dlaždice dalších přehledů */
 .prehledy{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,210px),1fr));gap:12px;margin:10px 0 0}
@@ -377,7 +417,10 @@ __GISCSS__
 .pill.rozpoctove_opatreni{background:rgba(71,85,105,.12);color:#334155}.pill.rozpoctove_opatreni::before{background:#64748b;opacity:1}
 /* .kpi-dny: pruh okruhů je v tmavém heru (styl výše) */
 .zp-filtr{margin:0 0 8px}.zp-filtr .jmeno{font:700 11px/14px var(--font);letter-spacing:.08em;text-transform:uppercase;color:var(--mute);margin:10px 0 6px}
-.zpr{list-style:none;margin:0;padding:0}.zpr>li{padding:10px 0;border-top:1px solid var(--line)}
+.zpr{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+/* box se zprávou má stejný tvar jako karta akce na Investicích a barvu svého okruhu (připomínka 24. 11.) */
+.zpr>li{background:var(--ok-tint);border:1px solid var(--border-subtle);border-left:4px solid var(--ok);border-radius:var(--rounded-md);padding:12px 14px}
+.zpr .zpr{gap:0}.zpr .zpr>li{background:none;border:0;border-radius:0;padding:6px 0}
 .zpr .hl2{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;font-size:13px;color:var(--mute)}
 .zpr b.t{display:block;font:600 15.5px/1.35 var(--font);margin:4px 0 2px}
 .zpr p{margin:0 0 4px;font-size:14px;color:var(--ink)}
@@ -396,11 +439,15 @@ __GISCSS__
 .ak-kpi .v{font:800 clamp(26px,2.8vw,34px)/1.1 var(--font-h);letter-spacing:-.025em;margin:8px 0 4px;font-variant-numeric:tabular-nums}
 .ak-kpi .s{font-size:13px;line-height:1.45;color:var(--mute)}
 /* karty okruhů na ostatních stránkách mají stejnou hlavu jako Co se děje */
-.okruhy.ak-str .okruh{padding:0 0 12px}.okruhy.ak-str .akgrid{padding:0 18px}
+.okruhy.ak-str .okruh{padding:0 0 12px}
 .okruhy.ak-str{grid-template-columns:1fr}
 .akgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:14px;margin:8px 0 14px}
-.ak{background:var(--card);border:1px solid var(--border-subtle);border-left:4px solid var(--category-stavba);border-radius:var(--rounded-md);padding:16px 18px;box-shadow:var(--shadow-ambient);display:flex;flex-direction:column;gap:8px}
-.ak.k-soutezi_se{border-left-color:var(--tertiary)}.ak.k-pripravuje_se{border-left-color:var(--border-mid)}.ak.k-dokonceno{border-left-color:var(--accent-lime-dark)}
+.ak{background:var(--ok-tint);border:1px solid var(--border-subtle);border-left:4px solid var(--ok);border-radius:var(--rounded-md);padding:16px 18px;box-shadow:var(--shadow-ambient);display:flex;flex-direction:column;gap:8px}
+/* fázi nese štítek, ne barva okraje – ta patří okruhu */
+.ak.k-probiha .fz{background:rgba(234,88,12,.14);color:#9a3412}
+.ak.k-soutezi_se .fz{background:rgba(3,105,161,.12);color:#0369a1}
+.ak.k-pripravuje_se .fz{background:rgba(71,85,105,.12);color:#334155}
+.ak.k-dokonceno .fz{background:rgba(22,101,52,.14);color:#166534}
 .ak-h{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;font:600 12px var(--font)}
 .ak .fz{background:var(--soft);border-radius:99px;padding:2px 10px;color:var(--ink)}.ak .ok{color:var(--mute)}
 .ak h3{margin:0;font-size:18px;line-height:1.25}.ak h3 a{color:var(--ink);text-decoration:none}.ak h3 a:hover{text-decoration:underline}
@@ -409,13 +456,13 @@ __GISCSS__
 .ak-d dt{font:700 11px/14px var(--font);letter-spacing:.06em;text-transform:uppercase;color:var(--mute)}.ak-d dd{margin:2px 0 0;font-size:15px}
 .ak-d dd.cn{font:800 20px var(--font-h);font-variant-numeric:tabular-nums}
 .ak .po,.ak-d dd.po{color:var(--error);font-weight:600}.ak small.po{display:block;font-size:13px}
-.ak .zm{margin:0;font-size:14px;background:var(--soft);border-radius:var(--rounded);padding:8px 10px}
+.ak .zm{margin:0;font-size:14px;background:var(--card);border:1px solid var(--border-subtle);border-radius:var(--rounded);padding:8px 10px}
 .ak .od,.ak-box .od{display:flex;flex-wrap:wrap;gap:6px 16px;margin:auto 0 0;font-size:14px;font-weight:600}
 .ak.velka{grid-column:1/-1;border-left-width:6px}.ak-nej{margin:14px 0 4px}.ak-nej .ak.velka h3{font-size:24px}
 .ak-box{background:var(--surface-low);border-radius:var(--rounded-lg);padding:18px 22px;margin:26px 0}.ak-box h2{margin:0 0 6px;font-size:20px}.ak-box p{margin:0 0 10px;max-width:70ch}
 </style></head><body>
-<header class="lista"><div class="hl"><a class="zn" href="https://trebonaci.cz"><img src="obr/logo-trebonaci.jpg" alt=""><span><b>Třeboňáci</b> <span>· Otevřená radnice</span></span></a><span class="bd">__STITEK__</span></div>
-<nav id="menu" aria-label="Sekce"><a href="#">Co se děje</a><a href="#investice">Investice a opravy</a><a href="#projekty">Projekty</a><a href="#usneseni">Usnesení</a><a href="#mista">Místa a služby</a><a href="#mapa">Mapa</a></nav></header>
+<header class="lista"><div class="hl"><a class="zn" href="https://trebonaci.cz"><img src="obr/logo-trebonaci.jpg" alt=""><span><b>Třeboňáci</b> <span>· Otevřená radnice</span></span></a><span class="bd">__STITEK__</span></div></header>
+<nav id="menu" aria-label="Sekce"><a href="#">Co se děje</a><a href="#investice">Investice a opravy</a><a href="#projekty">Projekty</a><a href="#usneseni">Usnesení</a><a href="#mista">Místa a služby</a><a href="#mapa">Mapa</a></nav>
 <header class="band"><div class="wrap">
 <div class="hero"><div>
 <span class="eyebrow">Sledujeme pro vás</span><h1>Co se děje na <em>radnici v Třeboni</em></h1><p class="lead">Co se staví, co radnice rozhodla a co se mění ve službách – v šesti okruzích, nejnovější nahoře. U každého údaje je odkaz na dokument.</p></div>
@@ -610,9 +657,9 @@ function karta(p){
   const rozpocetText=sch||upr.celkem!=null?kc(sch?.celkem??upr.celkem):"–";
   const rozpocetPozn=!sch&&upr.celkem==null?(p.vlastnik_subjekt_id&&p.vlastnik_subjekt_id!=="00247618"?"investuje městská společnost, její rozpočet není veřejný":"v rozpočtu 2026 není jako samostatná položka – je součástí širší položky nebo se platí z jiného roku"):sch?.po_zmenach?.zmeneno?`po změnách ${kc(sch.po_zmenach.celkem)} · ${pl([...new Set(p.schvaleny_rozpocet.flatMap(x=>x.zmeny_ro))].filter(x=>x!=null).length,"rozpočtové opatření","rozpočtová opatření","rozpočtových opatření")}`:sch?"beze změn":"";
   const zak=p.zakazky?.[0];
-  return `<article class="karta" id="${p.id}">
+  return `<article class="karta o-${esc(p.okruh)}" id="${p.id}">
   <div class="k-stitky"><span class="pill ${p.faze==="probiha"?"stavba":p.faze==="dokonceno"?"zmena":"rozhodnuti"}">${esc((FAZE[p.faze]||["Akce"])[0])}</span>
-   <span class="pill p-tich">${esc(OKN[p.okruh]?.nazev||"")}</span>${zak?`<span class="pill p-tich">Výběrové řízení ${esc(zak.id.replace(/^ezak-/,""))}</span>`:""}</div>
+   <span class="pill p-okruh">${esc(OKN[p.okruh]?.nazev||"")}</span>${zak?`<span class="pill p-tich">Výběrové řízení ${esc(zak.id.replace(/^ezak-/,""))}</span>`:""}</div>
   <h1 class="st" tabindex="-1">${esc(rozepis(p.nazev))}</h1>
   ${shrnutiAkce(p,dod,sch,upr)}
   ${pruhFazi(p)}
@@ -754,7 +801,7 @@ function harmonogram(){
   // skupiny = okruhy (audit, fáze 4): nejdřív probíhající stavby, pak příprava, dlouhodobé projekty a projektování; dokončené sbalené
   const poradi=r=>r.typ==="investice"?({probiha:0,soutezi_se:0,pripravuje_se:1}[r.faze]??2):r.typ==="aktivita"?3:4;
   const hotovo=r=>r.typ==="investice"&&r.faze==="dokonceno";
-  const sk=vybraneOkruhy().map(o=>{const r=H.filter(x=>x.okruh===o.id);return [o.nazev,r.filter(x=>!hotovo(x)),r.filter(hotovo)];}).filter(([,a,d])=>a.length||d.length);
+  const sk=vybraneOkruhy().map(o=>{const r=H.filter(x=>x.okruh===o.id);return [o.nazev,r.filter(x=>!hotovo(x)),r.filter(hotovo),o.id];}).filter(([,a,d])=>a.length||d.length);
   const tab=H.map(r=>`<tr><td>${esc(r.nazev)}</td><td>${r.useky.map(u=>`${FAZE_G[u.faze]} ${dat(u.od)} – ${u.otevreno?"dosud":dat(u.do)}`).join("<br>")}</td></tr>`).join("");
   const nI=H.filter(r=>r.typ==="investice").length,nZ=H.filter(r=>r.typ==="zasobnik").length,nA=H.filter(r=>r.typ==="aktivita").length;
   const beh=inv.filter(r=>r.faze==="probiha").length,pri=inv.filter(r=>r.faze==="soutezi_se"||r.faze==="pripravuje_se").length;
@@ -769,7 +816,7 @@ function harmonogram(){
   <p class="pozn" style="font-size:15px">${pl(nI,"investice","investice","investic")} · ${pl(nZ,"připravovaný projekt","připravované projekty","připravovaných projektů")} · ${pl(nA,"dlouhodobý projekt","dlouhodobé projekty","dlouhodobých projektů")} · <a href="#projekty-seznam" data-seznam>jako seznam</a></p>
   ${chips}${H.length?"":`<p class="pozn">V tomto okruhu zatím nic.</p>`}
   <div class="leg"><span><i style="background:var(--g-priprava);border:1px solid var(--g-soutez)"></i>příprava (studie, projekt)</span><span><i style="background:var(--g-soutez)"></i>výběr dodavatele</span><span><i style="background:var(--g-stavba)"></i>stavba</span><span><i style="background:var(--g-prubeh)"></i>dlouhodobý projekt</span><span><span class="md"></span>dodatek / usnesení</span><span><i style="background:linear-gradient(90deg,var(--g-stavba),rgba(0,102,132,.3))"></i>stále běží</span><span><span class="md" style="background:#fff;border:2px solid var(--navy)"></span>dokončení podle smlouvy</span></div>
-  ${sk.map(([n,a,d])=>`<div class="hh">${esc(n)} · ${a.length+d.length}</div><div class="gan">${osa}${a.sort((x,y)=>poradi(x)-poradi(y)||zacatek(x).localeCompare(zacatek(y))).map(radek).join("")}${d.length?`<details><summary>Dokončené (${d.length})</summary>${d.sort((x,y)=>zacatek(x).localeCompare(zacatek(y))).map(radek).join("")}</details>`:""}</div>`).join("")}
+  ${sk.map(([n,a,d,oid])=>`<div class="hh o-${oid}"><i class="tec" aria-hidden="true"></i>${esc(n)} · ${a.length+d.length}</div><div class="gan o-${oid}">${osa}${a.sort((x,y)=>poradi(x)-poradi(y)||zacatek(x).localeCompare(zacatek(y))).map(radek).join("")}${d.length?`<details><summary>Dokončené (${d.length})</summary>${d.sort((x,y)=>zacatek(x).localeCompare(zacatek(y))).map(radek).join("")}</details>`:""}</div>`).join("")}
   <p class="pozn" style="margin-top:10px">Dlouhodobé projekty (územní plán a podobně) mají milníky z usnesení rady a zastupitelstva, naše data sahají od září 2026. Projektování začíná první smlouvou nebo zakázkou na studii či projekt. Konec stavby = ukončení plnění stavební smlouvy podle E-ZAK, kde ho máme, jinak poslední doklad ke stavbě.</p>
   <details class="pozn" id="projekty-seznam"><summary>Projekty jako seznam</summary><table class="t"><tr><td class="r">Projekt</td><td>Úseky podle dokumentů</td></tr>${tab}</table></details>
   </section>`;
@@ -901,7 +948,7 @@ function sprmText(p,kratce){const odkaz=`<a href="${SPRM_URL}" target="_blank" r
 }
 function radekPrehledu(p){const f=FAZE[p.faze]||["",""];const [co,kolik]=hlavni(p);const pu=posledniUdalost(p);const z=pu?zmenaVeta(p,pu):null;
   return `<a href="#${p.id}" class="k-${p.faze}"><span><b>${esc(rozepis(p.nazev))}</b>${z?`<small class="pz">${esc(z.kratce)}</small>`:""}<small class="sv"><i class="${f[1]}" aria-hidden="true"></i>${esc(stavText(p))}${p.faze==="probiha"&&p.termin_dokonceni?.datum?` · dokončení podle smlouvy ${dat(p.termin_dokonceni.datum)}`:p.faze==="probiha"&&p.termin_dokonceni?.druh==="lhuta"?` · ${esc(p.termin_dokonceni.citace)}`:""} · ${OBLAST[p.oblast]||"Ostatní"}</small></span><span class="c">${kolik||"–"}<small>${co}</small></span></a>`;}
-// Investice a opravy (audit, fáze 3): 6 okruhů; uvnitř Staví se → Chystá se stavba → Projektuje se, hotové a náměty sbalené
+// Investice a opravy: 6 okruhů; uvnitř se každý stav rozbaluje samostatně (připomínka 24. 11.)
 const FAZE_SL=[["Staví se",p=>p.faze==="probiha"],["Chystá se stavba",p=>p.faze==="soutezi_se"||p.faze==="pripravuje_se"]];
 function radekStavby(p){const [co,kolik]=hlavni(p);const pu=posledniUdalost(p);const z=pu?zmenaVeta(p,pu):null;
   return `<a href="#${p.id}" class="k-${p.faze}"><span><b>${esc(rozepis(p.nazev))}</b>${z?`<small class="pz">${esc(z.kratce)}</small>`:`<small class="sv">${esc(stavText(p))}</small>`}</span><span class="c">${kolik||"–"}<small>${co}</small></span></a>`;}
@@ -914,11 +961,12 @@ function terminAk(p){const t=p.termin_dokonceni;if(!t||p.faze==="dokonceno")retu
 function dodAk(p){const st=p.casti.filter(c=>c.role==="stavba");
   const j=[...new Set(st.map(c=>kdo(c.dodavatel)).filter(n=>n&&n!=="fyzická osoba"))];
   return j.length?j.join(", "):st.length?"fyzická osoba (jméno se neuvádí)":"zatím není vybraný";}
-function kartaAkce(p,velka){const [co,kolik]=hlavni(p);const t=terminAk(p);
+// vBloku = karta je uvnitř bloku svého okruhu, takže se název okruhu neopakuje (nese ho barva a nadpis bloku, připomínka 24. 11.)
+function kartaAkce(p,velka,vBloku){const [co,kolik]=hlavni(p);const t=terminAk(p);
   const sm=(p.casti.find(c=>c.role==="stavba")||p.casti[0])?.puvodni?.url;
   const za=(p.zakazky.find(z=>z.role==="stavba")||p.zakazky[0])?.url;
   const pu=velka?posledniUdalost(p):null;const z=pu?zmenaVeta(p,pu):null;
-  return `<article class="ak k-${p.faze}${velka?" velka":""}"><div class="ak-h"><span class="fz">${esc(FAZE[p.faze]?.[0]||"")}${p.faze_jistota==="nase_propojeni"?" · podle dokladů":""}</span><span class="ok">${esc(OKN[p.okruh]?.nazev||"")}</span></div>
+  return `<article class="ak k-${p.faze} o-${esc(p.okruh)}${velka?" velka":""}"><div class="ak-h"><span class="fz">${esc(FAZE[p.faze]?.[0]||"")}${p.faze_jistota==="nase_propojeni"?" · podle dokladů":""}</span>${vBloku?"":`<span class="ok">${esc(OKN[p.okruh]?.nazev||"")}</span>`}</div>
    <h3><a href="#${p.id}">${esc(rozepis(p.nazev))}</a></h3>
    ${velka&&p.popis?`<p class="pop">${esc(p.popis)}</p>`:""}
    <dl class="ak-d"><div><dt>${esc(co)}</dt><dd class="cn">${kolik||"–"}</dd></div>${t?`<div><dt>${t.k}</dt><dd${t.po?' class="po"':""}>${esc(t.h||t.pozn)}${t.h&&t.pozn?`<small class="po">${esc(t.pozn)}</small>`:""}</dd></div>`:""}
@@ -930,16 +978,17 @@ function stavbyOkruhu(o){
   const prip=zPol().filter(x=>x.okruh===o.id).sort((a,b)=>(STUPEN[b.pripravenost.stupen]-STUPEN[a.pripravenost.stupen])||a.nazev.localeCompare(b.nazev,"cs"));
   const hot=P.filter(p=>p.okruh===o.id&&p.faze==="dokonceno").sort((a,b)=>posledni(b).localeCompare(posledni(a)));
   const nam=zNam().filter(x=>x.okruh===o.id);
-  const pocet=akt.length+prip.length+hot.length;
-  const mrizka=r=>`<div class="akgrid">${r.map(p=>kartaAkce(p)).join("")}</div>`;
-  const prvni=akt.slice(0,2);
-  const nahled=prvni.length?mrizka(prvni):prip.length?`<nav class="sez">${prip.slice(0,2).map(radekPripravy).join("")}</nav>`:hot.length?mrizka(hot.slice(0,2)):`<p class="nic">Zatím jen náměty ze Strategického plánu.</p>`;
-  const cast=(n,html,k)=>k?`<div class="hh">${n} · ${k}</div>${html}`:"";
-  const cely=FAZE_SL.map(([n,f])=>{const r=akt.filter(f);return cast(n,mrizka(r),r.length);}).join("")
-    +cast("Projektuje se",`<nav class="sez">${prip.map(radekPripravy).join("")}</nav>`,prip.length)
-    +(hot.length?`<details class="dalsi"><summary>Hotovo (${hot.length})</summary>${mrizka(hot)}</details>`:"")
-    +(nam.length?`<details class="dalsi"><summary>Náměty ze Strategického plánu (${nam.length})</summary><ul class="nm">${nam.map(x=>`<li>${esc(x.nazev)}</li>`).join("")}</ul></details>`:"");
-  return blokStranky(o,pocet+nam.length,nahled,cely,pocet>2||nam.length>0);}
+  const mrizka=r=>`<div class="akgrid">${r.map(p=>kartaAkce(p,false,true)).join("")}</div>`;
+  const seznam=r=>`<nav class="sez">${r.map(radekPripravy).join("")}</nav>`;
+  const namety=r=>`<ul class="nm">${r.map(x=>`<li>${esc(x.nazev)}</li>`).join("")}</ul>`;
+  const stavy=[...FAZE_SL.map(([n,f])=>[n,mrizka,akt.filter(f)]),
+    ["Projektuje se",seznam,prip],["Hotovo",mrizka,hot],["Náměty ze Strategického plánu",namety,nam]]
+    .filter(([,,r])=>r.length);
+  const pocet=akt.length+prip.length+hot.length+nam.length;
+  // otevřený je první stav (to, co se právě staví); na stránce jednoho okruhu všechny
+  const telo=stavy.map(([n,f,r],i)=>`<details class="stav"${i===0||FO.okruh?" open":""}><summary>${n} <span class="pc">${r.length}</span></summary>${f(r)}</details>`).join("");
+  return `<section class="okruh${FO.okruh?" cely":""} o-${o.id}" id="okruh-${o.id}">${hlavaOkruhu(o,pocet,!FO.okruh)}
+   <div class="telo">${stavy.length?telo:`<p class="nic">Zatím tu nic není.</p>`}</div></section>`;}
 const stavbyBloky=()=>koreny(F.hledat).length?vysledky(filtrovane(),true):`<div class="okruhy ak-str">${vybraneOkruhy().map(stavbyOkruhu).join("")}</div>`;
 // KPI jen z dat: počty podle fáze, cena podle smluv s DPH u probíhajících akcí, rozpočet investic po změnách bez rezervy (počítá web/build.py, test tests/test_web_build.py)
 function kpiInvestic(){const k=KPI,pc=k.pocty,c=k.cena_probihajicich,r=k.rozpocet;
@@ -998,7 +1047,7 @@ function archivProjektu(projekty){
   </section>`;
 }
 
-function okruhChips(str){const a=(id,n)=>{const on=FO.okruh===id;return `<a href="#${str}${id?"/"+id:""}" class="${on?"on":""}"${on?' aria-current="true"':""}>${n}</a>`;};
+function okruhChips(str){const a=(id,n)=>{const on=FO.okruh===id;return `<a href="#${str}${id?"/"+id:""}" class="${on?"on ":""}${id?"o-"+id:""}"${on?' aria-current="true"':""}>${n}</a>`;};
   return `<nav class="chips okr" aria-label="Okruh">${a("","Vše")}${OK.map(o=>a(o.id,esc(o.nazev))).join("")}</nav>`;}
 // blok okruhu na stránce: 2 položky náhledu a „Zobrazit další“; s vybraným okruhem rovnou celý obsah
 // krátký řádek v náhledu okruhu (Usnesení, Místa a služby): druh, datum, název a jeden údaj
@@ -1011,9 +1060,9 @@ function hlavaOkruhu(o,pocet,odkaz){
   return `<div class="hlava">${ikonaOkruhu(o.id)}<div><h2 id="h-${o.id}">${nazev}</h2><p class="op">${esc(o.popis)}</p></div>
    <span class="pocet-okruhu">${pocet?pl(pocet,"položka","položky","položek"):"zatím nic"}</span></div>`;}
 function blokStranky(o,pocet,nahled,cely,vic=pocet>2){
-  if(FO.okruh)return `<section class="okruh cely" id="okruh-${o.id}">${hlavaOkruhu(o,pocet,false)}${pocet?cely:`<p class="nic">Zatím tu nic není.</p>`}</section>`;
-  return `<section class="okruh" id="okruh-${o.id}">${hlavaOkruhu(o,pocet,true)}
-   ${pocet?nahled:`<p class="nic">Zatím tu nic není.</p>`}${vic?`<details><summary>${pocet>2?`Zobrazit další (${pocet-2})`:"Zobrazit vše"}</summary>${cely}</details>`:""}</section>`;}
+  if(FO.okruh)return `<section class="okruh cely o-${o.id}" id="okruh-${o.id}">${hlavaOkruhu(o,pocet,false)}<div class="telo">${pocet?cely:`<p class="nic">Zatím tu nic není.</p>`}</div></section>`;
+  return `<section class="okruh o-${o.id}" id="okruh-${o.id}">${hlavaOkruhu(o,pocet,true)}
+   <div class="telo">${pocet?nahled:`<p class="nic">Zatím tu nic není.</p>`}${vic?`<details><summary>${pocet>2?`Zobrazit další (${pocet-2})`:"Zobrazit vše"}</summary>${cely}</details>`:""}</div></section>`;}
 const vybraneOkruhy=()=>FO.okruh?[OKN[FO.okruh]]:OK;
 
 // Co se děje (#244): zprávy z data/zpravy.json (druh, datum, titulek, věta, částka, zdroj). Slučování a KPI počítá web/zpravy.py.
@@ -1054,22 +1103,23 @@ function zprJednotka(j){if(!j.skupina)return zprava(j.zpravy[0]);
 function blokOkruhu(o,vyber){const v=zprJednotky(vyber.filter(z=>z.okruh===o.id));const pocet=vyber.filter(z=>z.okruh===o.id).length;
   const hlava=FO.okruh?esc(o.nazev):`<a href="#deje/${o.id}">${esc(o.nazev)}</a>`;
   const prvni=v.slice(0,2),dalsi=v.slice(2,FO.okruh?200:22);
-  return `<section class="okruh${FO.okruh?" cely":""}" id="okruh-${o.id}" aria-labelledby="h-${o.id}">
+  return `<section class="okruh${FO.okruh?" cely":""} o-${o.id}" id="okruh-${o.id}" aria-labelledby="h-${o.id}">
    <div class="hlava">${ikonaOkruhu(o.id)}<div><h2 id="h-${o.id}">${hlava}</h2><p class="op">${esc(o.popis)}</p></div>
    <span class="pocet-okruhu">${pocet?pl(pocet,"zpráva","zprávy","zpráv"):"zatím nic"}</span></div>
-   ${v.length?`<ul class="zpr">${prvni.map(zprJednotka).join("")}</ul>`:`<p class="nic">Zatím nic nového.</p>`}
-   ${dalsi.length?`<details><summary>Zobrazit další (${dalsi.length})</summary><ul class="zpr">${dalsi.map(zprJednotka).join("")}</ul>${v.length>dalsi.length+2?`<p class="nic"><a href="#deje/${o.id}">Celý okruh (${v.length}) →</a></p>`:""}${v.length>dalsi.length+2?`<p class="nic">Starší zprávy najdete na stránkách Investice a opravy, Usnesení a Místa a služby.</p>`:""}</details>`:""}
+   <div class="telo">${v.length?`<ul class="zpr">${prvni.map(zprJednotka).join("")}</ul>`:`<p class="nic">Zatím nic nového.</p>`}
+   ${dalsi.length?`<details><summary>Zobrazit další (${dalsi.length})</summary><ul class="zpr">${dalsi.map(zprJednotka).join("")}</ul>${v.length>dalsi.length+2?`<p class="nic"><a href="#deje/${o.id}">Celý okruh (${v.length}) →</a></p>`:""}${v.length>dalsi.length+2?`<p class="nic">Starší zprávy najdete na stránkách Investice a opravy, Usnesení a Místa a služby.</p>`:""}</details>`:""}</div>
   </section>`;}
 // hero: medailon s počtem zpráv za 30 dní a pruh okruhů (návrh 23. 11. 2026)
 function heroMedailon(){const k=ZP.kpi;
   return `<div class="medailon"><span class="l">Aktivní sledování</span><b>${cis(k.celkem)}</b><span>${k.celkem===1?"zpráva":"zpráv"} za ${k.dni} dní</span><span>ze šesti okruhů</span></div>`;}
 function kpiDny(){const k=ZP.kpi;
   return `<h2 class="sr">Zprávy za posledních ${k.dni} dní podle okruhů</h2><div class="kpi-dny" role="list">`+
-   OK.map(o=>`<a role="listitem" href="#deje/${o.id}" class="${FO.okruh===o.id?"on":""}"><span>${esc(o.nazev)}</span><b>${k.okruhy[o.id]??0}</b><small>zpráv za ${k.dni} dní</small></a>`).join("")+
+   OK.map(o=>`<a role="listitem" href="#deje/${o.id}" class="o-${o.id}${FO.okruh===o.id?" on":""}"><span>${esc(o.nazev)}</span><b>${k.okruhy[o.id]??0}</b><small>zpráv za ${k.dni} dní</small></a>`).join("")+
    `</div>`;}
 // pruh rozložení všech zpráv po okruzích: šířka podle počtu, barva podle pořadí okruhu
-const BARVY_OKRUHU=["#f59e0b","#84cc16","#0284c7","#8b5cf6","#14b8a6","#64748b"];
-function rozlozeni(vyber){const po=OK.map((o,i)=>[o,vyber.filter(z=>z.okruh===o.id).length,BARVY_OKRUHU[i]]).filter(([,n])=>n);
+// stejné hodnoty jako třídy .o-<okruh> v CSS výše (hlídá tests/test_web_build.py)
+const BARVY_OKRUHU={doprava_prostor:"#ea580c",bydleni_pece:"#9333ea",skoly:"#0369a1",sport_kultura:"#059669",spolecnosti:"#be123c",rozvoj_sprava:"#166534"};
+function rozlozeni(vyber){const po=OK.map(o=>[o,vyber.filter(z=>z.okruh===o.id).length,BARVY_OKRUHU[o.id]||"var(--tertiary)"]).filter(([,n])=>n);
   if(!po.length)return "";
   return `<div class="rozlozeni" role="img" aria-label="Rozložení zpráv po okruzích: ${po.map(([o,n])=>`${o.nazev} ${n}`).join(", ")}">`+
    po.map(([o,n,b])=>`<span style="flex:${n};background:${b}" title="${esc(o.nazev)}: ${n}"></span>`).join("")+
@@ -1099,10 +1149,21 @@ function coSeDeje(){const vyber=zprVyber();const k=ZP.kpi;
 function coSeDejeOvl(el){
   document.getElementById("hero-medailon").innerHTML=heroMedailon();
   document.getElementById("hero-kpi").innerHTML=kpiDny();
-  el.querySelectorAll("[data-druh]").forEach(b=>b.onclick=()=>{FZ.druh=b.dataset.druh;const y=window.scrollY;render();window.scrollTo(0,y);});}
+  el.querySelectorAll("[data-druh]").forEach(b=>b.onclick=()=>{FZ.druh=b.dataset.druh;render();});}
+// posun stránky: při změně filtru (okruh, druh zprávy) zůstane stránka stát, při přechodu na jinou stránku jde nahoru (připomínka 24. 11.)
+let yPosun=0;
+function posun2(pred,nyni){
+  if(pred!==nyni){window.scrollTo(0,0);return;}
+  // stejná stránka, jen jiný filtr: stránka zůstane stát; když byl filtr nad výřezem, vytáhne se pod menu
+  const f=document.querySelector("#karty .zp-filtr, #karty nav.okr");
+  if(!f){window.scrollTo(0,yPosun);return;}
+  const m=document.getElementById("menu");
+  const horni=Math.max(0,window.scrollY+f.getBoundingClientRect().top-(m?m.offsetHeight:0)-10);
+  window.scrollTo(0,Math.min(yPosun,horni));}
 function render(){
   closeGis?.();
   closeGis = null;
+  yPosun=window.scrollY;
   let h=decodeURIComponent(location.hash.slice(1));const [h0,...hz]=h.split("/");if(Object.hasOwn(ALIAS,h0)){h=[ALIAS[h0],...hz].join("/");history.replaceState(null,"","#"+h);}
   // okruh v adrese: #investice/skoly, #usneseni/skoly, #mista/skoly, #mapa/skoly
   const [str,ok]=h.split("/");
@@ -1110,21 +1171,21 @@ function render(){
   else if(["investice","projekty","usneseni","mista","mapa"].includes(str)){FO.okruh=OKN[ok]?ok:"";h=str;document.body.dataset.cil=str;}
   const el=document.getElementById("karty");
   if(h==="mapa"){openGis(el);return;}
-  if(h==="dokoncene"){zobraz(el,archivProjektu(P),h,"Dokončené projekty");window.scrollTo(0,0);el.querySelectorAll("[data-atema]").forEach(b=>b.onclick=()=>{FA.tema=b.dataset.atema;render();});return;}
-  if(h==="rozpocet"){zobraz(el,investice(INV),h,"Rozpočet");window.scrollTo(0,0);return;}
-  if(h==="mista"||h.startsWith("misto-")){document.body.dataset.cil="mista";if(h.startsWith("misto-"))FO.okruh=M.find(m=>"misto-"+m.id===h)?.okruh||"";zobraz(el,mistaStranka(),"mista","Místa a služby");const t=h.startsWith("misto-")&&document.getElementById(h);t?t.scrollIntoView():window.scrollTo(0,0);return;}
-  if(h==="projekty"){zobraz(el,harmonogram(),h,"Projekty");window.scrollTo(0,0);casovaOsa(el);return;}
-  if(h==="pripravovane"||h.startsWith("priprava-")){if(h.startsWith("priprava-"))FT.zas="";zobraz(el,zasobnik(),"pripravovane","Připravované projekty");el.querySelectorAll("[data-ztema]").forEach(b=>b.onclick=()=>{FT.zas=b.dataset.ztema;history.replaceState(null,"","#pripravovane");render();});const target=document.getElementById(h);target?target.scrollIntoView():window.scrollTo(0,0);return;}
-  if(h==="cisla"){zobraz(el,cisla(),h,"V číslech");window.scrollTo(0,0);return;}
-  if(h==="usneseni"||h.startsWith("usneseni-")){document.body.dataset.cil="usneseni";if(h==="usneseni")FU.kat="";if(h.startsWith("usneseni-")){Object.assign(FU,{organ:"",hledat:"",oblast:"",kat:h.slice(9)});FO.okruh="";}zobraz(el,usneseniStranka(),"usneseni","Usnesení rady a zastupitelstva");usneseniOvl(el);window.scrollTo(0,0);return;}
+  if(h==="dokoncene"){const s=document.body.dataset.str;zobraz(el,archivProjektu(P),h,"Dokončené projekty");posun2(s,h);el.querySelectorAll("[data-atema]").forEach(b=>b.onclick=()=>{FA.tema=b.dataset.atema;render();});return;}
+  if(h==="rozpocet"){const s=document.body.dataset.str;zobraz(el,investice(INV),h,"Rozpočet");posun2(s,h);return;}
+  if(h==="mista"||h.startsWith("misto-")){document.body.dataset.cil="mista";if(h.startsWith("misto-"))FO.okruh=M.find(m=>"misto-"+m.id===h)?.okruh||"";const s=document.body.dataset.str;zobraz(el,mistaStranka(),"mista","Místa a služby");const t=h.startsWith("misto-")&&document.getElementById(h);t?t.scrollIntoView():posun2(s,"mista");return;}
+  if(h==="projekty"){const s=document.body.dataset.str;zobraz(el,harmonogram(),h,"Projekty");posun2(s,h);casovaOsa(el);return;}
+  if(h==="pripravovane"||h.startsWith("priprava-")){const s0=document.body.dataset.str;if(h.startsWith("priprava-"))FT.zas="";zobraz(el,zasobnik(),"pripravovane","Připravované projekty");el.querySelectorAll("[data-ztema]").forEach(b=>b.onclick=()=>{FT.zas=b.dataset.ztema;history.replaceState(null,"","#pripravovane");render();});const target=document.getElementById(h);target?target.scrollIntoView():posun2(s0,"pripravovane");return;}
+  if(h==="cisla"){const s=document.body.dataset.str;zobraz(el,cisla(),h,"V číslech");posun2(s,h);return;}
+  if(h==="usneseni"||h.startsWith("usneseni-")){document.body.dataset.cil="usneseni";if(h==="usneseni")FU.kat="";if(h.startsWith("usneseni-")){Object.assign(FU,{organ:"",hledat:"",oblast:"",kat:h.slice(9)});FO.okruh="";}const s=document.body.dataset.str;zobraz(el,usneseniStranka(),"usneseni","Usnesení rady a zastupitelstva");usneseniOvl(el);posun2(s,"usneseni");return;}
   if(/^(rm|zm)-\d{4}-/.test(h)&&US.some(u=>u.id===h)){Object.assign(FU,{organ:"",oblast:"",hledat:"",kat:""});document.body.dataset.cil="usneseni";FO.okruh=US.find(u=>u.id===h).okruh;zobraz(el,usneseniStranka(),"usneseni","Usnesení rady a zastupitelstva");usneseniOvl(el);const t=document.getElementById(h);t&&t.scrollIntoView();return;}
-  if(h==="jak"){zobraz(el,`<h1 class="st" tabindex="-1">Jak vzniká přehled</h1><div class="karta">${document.getElementById("paticka").innerHTML}</div>`,h,"Jak vzniká přehled");window.scrollTo(0,0);return;}
+  if(h==="jak"){const s=document.body.dataset.str;zobraz(el,`<h1 class="st" tabindex="-1">Jak vzniká přehled</h1><div class="karta">${document.getElementById("paticka").innerHTML}</div>`,h,"Jak vzniká přehled");posun2(s,h);return;}
   const p=P.find(x=>x.id===h);
   if(p){zobraz(el,detail(p),"detail",p.nazev,true);window.scrollTo(0,0);
     el.querySelectorAll("[data-kotva]").forEach(b=>b.onclick=()=>{const t=document.getElementById(b.dataset.kotva);t.scrollIntoView({behavior:"smooth"});});return;}
-  if(h!=="investice"){if(h)history.replaceState(null,"","#");if(str!=="deje")FO.okruh="";document.body.dataset.str="domu";document.title=TITUL;menu("");el.onclick=null;el.innerHTML=coSeDeje();coSeDejeOvl(el);window.scrollTo(0,0);return;}
-  document.body.dataset.str="investice";document.title="Investice a opravy – "+TITUL;menu("investice");
-  el.innerHTML=prehled();window.scrollTo(0,scrollPrehled);
+  if(h!=="investice"){const s0=document.body.dataset.str;if(h)history.replaceState(null,"","#");if(str!=="deje")FO.okruh="";document.body.dataset.str="domu";document.title=TITUL;menu("");el.onclick=null;el.innerHTML=coSeDeje();coSeDejeOvl(el);posun2(s0,"domu");return;}
+  const sI=document.body.dataset.str;document.body.dataset.str="investice";document.title="Investice a opravy – "+TITUL;menu("investice");
+  el.innerHTML=prehled();window.scrollTo(0,sI==="investice"?yPosun:sI==="detail"?scrollPrehled:0);
   const q=el.querySelector("#q");q.oninput=()=>{F.hledat=q.value;el.querySelector("#vysledky").innerHTML=stavbyBloky();};
   el.onclick=e=>{if(e.target.closest("[data-zrusit]")){F.hledat="";scrollPrehled=0;render();el.querySelector("#q").focus();}};
 }
@@ -1138,4 +1199,12 @@ function casovaOsa(el){
 document.addEventListener("click",e=>{const a=e.target.closest('a[href^="#"]');if(a&&location.hash.slice(1).split("/")[0]==="investice"&&!a.getAttribute("href").startsWith("#investice"))scrollPrehled=window.scrollY;});
 window.addEventListener("hashchange",render);
 render();
+// lišta s menu: schová se při posunu dolů, při posunu nahoru je zase vidět (připomínka 24. 11.)
+(function(){const n=document.getElementById("menu"),lista=document.querySelector("header.lista");
+  const prah=()=>(lista?lista.offsetHeight:56)+n.offsetHeight;let y0=window.scrollY,ceka=false;
+  function stav(){ceka=false;const y=Math.max(0,window.scrollY),d=y-y0,p=prah();
+    if(Math.abs(d)<6&&y>p)return;
+    y0=y;n.classList.toggle("plave",y>p);n.classList.toggle("skryte",y>p+90&&d>0);}
+  addEventListener("scroll",()=>{if(!ceka){ceka=true;requestAnimationFrame(stav);}},{passive:true});
+  stav();})();
 </script></body></html>

@@ -157,8 +157,9 @@ function gisNearPoint(L, map, layer, point) {
 
 function openGis(el) {
   const projects = gisProjects();
+  const predchozi = document.body.dataset.str;
   zobraz(el,gisHtml(projects),"mapa","Mapa staveb, oprav a služeb");
-  window.scrollTo(0,0);
+  posun2(predchozi,"mapa");
   const layout = el.querySelector(".gis-layout");
   const frame = el.querySelector(".gis-map-frame");
   const canvas = el.querySelector(".gis-canvas");
@@ -312,7 +313,7 @@ function openGis(el) {
       const v = filtered.filter(p => p.okruh === o.id);
       if (!v.length) return "";
       const bez = v.filter(p => !p.geometry).length;
-      return '<h3 class="gis-okruh">' + esc(o.nazev) + ' <small>' + v.length + (bez ? ' · bez polohy ' + bez : '') + '</small></h3><ul>' +
+      return '<h3 class="gis-okruh o-' + o.id + '">' + esc(o.nazev) + ' <small>' + v.length + (bez ? ' · bez polohy ' + bez : '') + '</small></h3><ul>' +
         [...v.filter(p => p.geometry), ...v.filter(p => !p.geometry)].map(gisRow).join("") + '</ul>';
     }).join("");
     if (!filtered.some(p => p.id === gisFilters.selected)) {

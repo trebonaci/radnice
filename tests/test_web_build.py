@@ -116,3 +116,36 @@ def test_lhuta_ze_smlouvy_se_na_karte_investice_escapuje():
     html = build.sestav()
     radek = re.search(r'<dl class="ak-d">.*?</dl>', html, re.S).group(0)
     assert "${esc(t.h||t.pozn)}" in radek and "${esc(t.pozn)}" in radek
+
+
+def test_barvy_okruhu_jsou_v_css_i_v_js_pro_kazdy_okruh():
+    """Každý okruh má svou barvu v CSS (.o-<id>) i v JS (pruh rozložení) a obě sady se shodují."""
+    import re
+
+    import yaml
+
+    html = build.SABLONA.read_text(encoding="utf-8")
+    okruhy = yaml.safe_load((build.KOREN / "config" / "okruhy.yaml").read_text(encoding="utf-8"))["okruhy"]
+    js = re.search(r"const BARVY_OKRUHU=\{(.*?)\};", html).group(1)
+    barvy_js = dict(re.findall(r"(\w+):\"(#[0-9a-f]{6})\"", js))
+    for o in okruhy:
+        css = re.search(r"\.o-%s\{--ok:(#[0-9a-f]{6});--ok-tint:(#[0-9a-f]{6});--ok-ink:(#[0-9a-f]{6});--ok-tma:(#[0-9a-f]{6})\}" % o["id"], html)
+        assert css, f"okruh {o['id']} nemá v CSS třídu .o-{o['id']}"
+        assert barvy_js.get(o["id"]) == css.group(1), f"okruh {o['id']} má v JS jinou barvu než v CSS"
+    assert len(barvy_js) == len(okruhy)
+    assert len({c for c in barvy_js.values()}) == len(okruhy), "dva okruhy mají stejnou barvu"
+
+
+def test_pripominky_24_11_filtr_menu_a_rozbalovani_stavu():
+    """Připomínky 24. 11.: filtr nemění svislý posun, menu je lepkavé, stavy se rozbalují samostatně."""
+    html = build.sestav()
+    # filtr: render si pamatuje posun a při stejné stránce ho vrací (žádný skok na začátek)
+    assert "yPosun=window.scrollY" in html and "function posun2(pred,nyni)" in html
+    # nahoru se jde jen při přechodu na jinou stránku (posun2) a na kartu akce
+    assert html.count("window.scrollTo(0,0)") == 2
+    # menu je samostatný prvek za hlavičkou, aby lepkavost platila pro celou stránku
+    assert '</header>\n<nav id="menu"' in html
+    assert "nav#menu.skryte{transform:translateY(-100%)}" in html
+    # stavy na Investicích se rozbalují každý zvlášť
+    assert '<details class="stav"' in html and 'Zobrazit další (${pocet-2})' in html
+    assert '["Projektuje se",seznam,prip],["Hotovo",mrizka,hot],["Náměty ze Strategického plánu",namety,nam]' in html
