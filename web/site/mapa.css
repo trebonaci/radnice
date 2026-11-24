@@ -59,3 +59,10 @@ body[data-str=mapa] #karty{max-width:1180px}
 .gis-pin.gis-service,.gis-key i.gis-service{border-radius:3px}
 .gis-card .zm{margin:8px 0}
 .gis-okruh{font:700 15px/1.3 var(--font);margin:16px 0 4px}.gis-okruh:first-child{margin-top:4px}.gis-okruh small{font-weight:400;color:var(--mute);font-size:13px}
+
+/* mapa podle grafického návrhu 23. 11. 2026 */
+.gis-intro{max-width:70ch;color:var(--mute)}
+.gis-okruh{font:700 15px/1.3 var(--font-h)}
+.gis-map-frame{border-radius:var(--rounded-lg);overflow:hidden;border:1px solid var(--border-subtle);box-shadow:var(--shadow-ambient)}
+.gis-controls{background:var(--card);border:1px solid var(--border-subtle);border-radius:var(--rounded-lg);box-shadow:var(--shadow-ambient);padding:12px 14px;margin:0 0 10px}
+.gis-summary{font-size:13px;color:var(--mute)}
