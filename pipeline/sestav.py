@@ -29,6 +29,7 @@ from pipeline import projekty as modul_projekty
 from pipeline import zasobnik as modul_zasobnik
 from pipeline import harmonogram as modul_harmonogram
 from pipeline import terminy as modul_terminy
+from pipeline import relevance as modul_relevance
 from pipeline import ukonceni as modul_ukonceni
 from pipeline import ukazatele as modul_ukazatele
 from pipeline import mapa as modul_mapa
@@ -214,6 +215,9 @@ def zpracuj_jednani(jednani_id: str, manifest: dict, chyby: list[str], osoby: di
         return True
 
     meta = anot["jednani"]
+    # historická jednání (staré volební období, před ustavujícím ZM 2. 11. 2026): bereme jen usnesení
+    # relevantní k investicím a rozpočtu investic (#278); aktuální rada a zastupitelstvo se nefiltrují
+    historicke = (meta.get("datum") or "") < "2026-11-01"
     over(meta["citace"], dokument, "jednani")
     for z in meta.get("pritomnost_zmeny", []):
         over(z["citace"], dokument, "pritomnost")
@@ -227,7 +231,12 @@ def zpracuj_jednani(jednani_id: str, manifest: dict, chyby: list[str], osoby: di
     for u in rozlozeno["usneseni"]:
         a = anot["usneseni"].get(u["id"])
         if a is None:
-            chyby.append(f"{jednani_id}: usnesení {u['id']} nemá anotaci")
+            # U historických jednání (#278) se neinvestiční usnesení neanotují a tiše se vynechají;
+            # chybějící anotace investičního usnesení je chyba i u historie. Aktuální jednání: vždy chyba.
+            if not historicke:
+                chyby.append(f"{jednani_id}: usnesení {u['id']} nemá anotaci")
+            elif modul_relevance.investicni(u["text"])[0]:
+                chyby.append(f"{jednani_id}: investiční usnesení {u['id']} nemá anotaci (historické jednání)")
             continue
         anon = a.get("anonymizace", [])
         ok = over(a["citace"], u["text"], u["id"])
