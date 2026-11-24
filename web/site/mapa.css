@@ -62,7 +62,8 @@ body[data-str=mapa] #karty{max-width:1180px}
 
 /* mapa podle grafického návrhu 23. 11. 2026 */
 .gis-intro{max-width:70ch;color:var(--mute)}
-.gis-okruh{font:700 15px/1.3 var(--font-h)}
+/* okruh si drží svou barvu i v přehledu výsledků na mapě (připomínka 24. 11.) */
+.gis-okruh{font:700 15px/1.3 var(--font-h);border-left:4px solid var(--ok);background:var(--ok-tint);border-radius:var(--rounded);padding:6px 10px}
 .gis-map-frame{border-radius:var(--rounded-lg);overflow:hidden;border:1px solid var(--border-subtle);box-shadow:var(--shadow-ambient)}
 .gis-controls{background:var(--card);border:1px solid var(--border-subtle);border-radius:var(--rounded-lg);box-shadow:var(--shadow-ambient);padding:12px 14px;margin:0 0 10px}
 .gis-summary{font-size:13px;color:var(--mute)}
