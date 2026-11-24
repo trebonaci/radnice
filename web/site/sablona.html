@@ -262,7 +262,7 @@ h1:focus{outline:none}
 .okruh h2{font:800 19px/1.25 var(--font);letter-spacing:-.01em;margin:0 0 2px}
 .okruh h2 small{font:400 14px var(--font);color:var(--mute);margin-left:6px}
 .okruh .op{font-size:13.5px;color:var(--mute);margin:0 0 6px}
-.okruh ol{list-style:none;margin:0;padding:0}
+.okruh ol{list-style:none;margin:0;padding:0 18px}
 .okruh li a{display:block;padding:8px 0;border-top:1px solid var(--line);text-decoration:none;color:var(--ink)}
 .okruh li a:hover b{text-decoration:underline}
 .okruh li small{display:block;font-size:13px;color:var(--mute)}
@@ -278,8 +278,22 @@ h1:focus{outline:none}
 .okruh.cely{padding-bottom:16px}.okruh .hh{margin:16px 0 4px}
 .okruh .sez a{box-shadow:none;margin:0;border:0;border-top:1px solid var(--line);border-left:4px solid var(--carp);border-radius:0;padding:10px 0 10px 12px;background:none}.okruh .us li.box{box-shadow:none}
 .okruh .ms{box-shadow:none;border-left:0;border-right:0;border-radius:0;padding-left:0;padding-right:0}
-.shrnuti-akce{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:10px;margin:8px 0 4px}
-.shrnuti-akce>div{background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);padding:10px 14px}
+.k-stitky{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 10px}
+.pill.p-tich{background:var(--soft);color:var(--ink)}.pill.p-tich::before{display:none}
+.faze-pruh{display:grid;grid-template-columns:repeat(5,1fr);gap:0;list-style:none;margin:14px 0 18px;padding:18px 18px 14px;background:var(--card);border:1px solid var(--border-subtle);border-radius:var(--rounded-lg);box-shadow:var(--shadow-ambient)}
+.faze-pruh li{position:relative;padding-top:18px}
+.faze-pruh li::before{content:"";position:absolute;top:5px;left:0;right:0;height:4px;background:var(--border-subtle)}
+.faze-pruh li.hot::before{background:var(--accent-lime)}
+.faze-pruh li.ted::before{background:linear-gradient(90deg,var(--category-stavba) 50%,var(--border-subtle) 50%)}
+.faze-pruh li::after{content:"";position:absolute;top:0;left:0;width:14px;height:14px;border-radius:50%;background:#fff;border:3px solid var(--border-subtle)}
+.faze-pruh li.hot::after{border-color:var(--accent-lime);background:var(--accent-lime)}
+.faze-pruh li.ted::after{border-color:var(--category-stavba)}
+.faze-pruh b{display:block;font:700 14px var(--font-h)}.faze-pruh span{font-size:13px;color:var(--mute)}
+@media(max-width:700px){.faze-pruh{grid-template-columns:1fr 1fr;gap:10px 0}}
+.shrnuti-akce{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));gap:14px;margin:10px 0 4px}
+.shrnuti-akce>div{background:var(--card);border:1px solid var(--border-subtle);border-radius:var(--rounded-lg);padding:14px 16px 15px;box-shadow:var(--shadow-ambient);position:relative}
+.shrnuti-akce>div::after{content:"";position:absolute;left:16px;right:16px;top:0;height:3px;border-radius:0 0 3px 3px;background:var(--accent-lime)}
+.shrnuti-akce>div:nth-child(2)::after{background:var(--category-stavba)}.shrnuti-akce>div:nth-child(3)::after{background:var(--tertiary)}.shrnuti-akce>div:nth-child(4)::after{background:var(--border-mid)}
 .shrnuti-akce span{display:block;font-size:12.5px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--mute)}
 .shrnuti-akce b{display:block;font-size:18px;line-height:1.3;margin:2px 0}.shrnuti-akce small{display:block;font-size:13px;color:var(--mute)}
 /* karta filtrů nad okruhy */
@@ -374,11 +388,19 @@ __GISCSS__
 .zpr .pri{border-left:3px solid var(--category-stavba);padding-left:10px}
 .mista-data{margin:26px 0 6px}.mista-data h2{margin:0 0 4px}.mista-data p{margin:0 0 10px;max-width:64ch;color:var(--mute)}
 /* Investice a opravy: karty akcí podle návrhu (23. 11. 2026) */
-.ak-kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:14px 0 18px}
+.ak-kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:14px;margin:16px 0 20px}
+.ak-kpi>div{background:var(--card);border:1px solid var(--border-subtle);border-radius:var(--rounded-lg);box-shadow:var(--shadow-ambient);padding:15px 18px 16px;position:relative}
+.ak-kpi>div::after{content:"";position:absolute;left:18px;right:18px;top:0;height:3px;border-radius:0 0 3px 3px;background:var(--accent-lime)}
+.ak-kpi>div:nth-child(2)::after{background:var(--category-stavba)}.ak-kpi>div:nth-child(3)::after{background:var(--tertiary)}
+.ak-kpi dt,.ak-kpi .l{font:700 11px/14px var(--font);letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+.ak-kpi .v{font:800 clamp(26px,2.8vw,34px)/1.1 var(--font-h);letter-spacing:-.025em;margin:8px 0 4px;font-variant-numeric:tabular-nums}
+.ak-kpi .s{font-size:13px;line-height:1.45;color:var(--mute)}
+/* karty okruhů na ostatních stránkách mají stejnou hlavu jako Co se děje */
+.okruhy.ak-str .okruh{padding:0 0 12px}.okruhy.ak-str .akgrid{padding:0 18px}
 .okruhy.ak-str{grid-template-columns:1fr}
 .akgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:14px;margin:8px 0 14px}
-.ak{background:var(--card);border:1px solid var(--border-subtle);border-top:5px solid var(--category-stavba);border-radius:var(--rounded-lg);padding:16px 18px;box-shadow:var(--shadow-ambient);display:flex;flex-direction:column;gap:8px}
-.ak.k-soutezi_se{border-top-color:var(--tertiary)}.ak.k-pripravuje_se{border-top-color:var(--border-mid)}.ak.k-dokonceno{border-top-color:var(--accent-lime-dark)}
+.ak{background:var(--card);border:1px solid var(--border-subtle);border-left:4px solid var(--category-stavba);border-radius:var(--rounded-md);padding:16px 18px;box-shadow:var(--shadow-ambient);display:flex;flex-direction:column;gap:8px}
+.ak.k-soutezi_se{border-left-color:var(--tertiary)}.ak.k-pripravuje_se{border-left-color:var(--border-mid)}.ak.k-dokonceno{border-left-color:var(--accent-lime-dark)}
 .ak-h{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;font:600 12px var(--font)}
 .ak .fz{background:var(--soft);border-radius:99px;padding:2px 10px;color:var(--ink)}.ak .ok{color:var(--mute)}
 .ak h3{margin:0;font-size:18px;line-height:1.25}.ak h3 a{color:var(--ink);text-decoration:none}.ak h3 a:hover{text-decoration:underline}
@@ -389,7 +411,7 @@ __GISCSS__
 .ak .po,.ak-d dd.po{color:var(--error);font-weight:600}.ak small.po{display:block;font-size:13px}
 .ak .zm{margin:0;font-size:14px;background:var(--soft);border-radius:var(--rounded);padding:8px 10px}
 .ak .od,.ak-box .od{display:flex;flex-wrap:wrap;gap:6px 16px;margin:auto 0 0;font-size:14px;font-weight:600}
-.ak.velka{grid-column:1/-1;border-top-width:6px}.ak-nej{margin:14px 0 4px}.ak-nej .ak.velka h3{font-size:24px}
+.ak.velka{grid-column:1/-1;border-left-width:6px}.ak-nej{margin:14px 0 4px}.ak-nej .ak.velka h3{font-size:24px}
 .ak-box{background:var(--surface-low);border-radius:var(--rounded-lg);padding:18px 22px;margin:26px 0}.ak-box h2{margin:0 0 6px;font-size:20px}.ak-box p{margin:0 0 10px;max-width:70ch}
 </style></head><body>
 <header class="lista"><div class="hl"><a class="zn" href="https://trebonaci.cz"><img src="obr/logo-trebonaci.jpg" alt=""><span><b>Třeboňáci</b> <span>· Otevřená radnice</span></span></a><span class="bd">__STITEK__</span></div>
@@ -543,6 +565,21 @@ function radek(e,p){
   <div class="det">${esc(e.text)}${odk?` · ${odk}`:""}</div></details></li>`;
 }
 
+// pruh fází akce (návrh 23. 11. 2026): každý krok je doložený dokladem, nic se neodhaduje
+function pruhFazi(p){
+  const ud=p.udalosti||[];
+  const prvni=t=>ud.filter(e=>e.typ===t).sort((a,b)=>(a.datum||"").localeCompare(b.datum||""))[0];
+  const projekt=ud.filter(e=>e.role==="projekt").sort((a,b)=>(a.datum||"").localeCompare(b.datum||""))[0];
+  const soutez=prvni("soutez");
+  const sod=ud.filter(e=>e.typ==="smlouva"&&/smlouva o dílo|stavb/i.test(e.kratce||"")).map(e=>e.datum).sort()[0]||soutez?.datum;
+  const hotovo=p.dokonceni?.datum||p.ukonceni_plneni?.datum;
+  const posl=posledni(p);
+  const kroky=[["Projekt",projekt?.datum,!!projekt],["Výběrové řízení",soutez?.datum,!!soutez],["Smlouva o dílo",sod,!!sod],
+    ["Staví se",p.faze==="probiha"?posl:(hotovo?sod:null),p.faze==="probiha"||p.faze==="dokonceno"],["Hotovo",hotovo,p.faze==="dokonceno"]];
+  const ted=p.faze==="dokonceno"?4:p.faze==="probiha"?3:kroky.findIndex(k=>!k[2]);
+  return `<ol class="faze-pruh" aria-label="Fáze akce">`+kroky.map(([n,d,ok],i)=>
+    `<li class="${ok&&i<ted?"hot":i===ted?"ted":""}"><b>${n}</b><span>${d?dat(String(d)):(ok?"datum nemáme":"zatím ne")}</span></li>`).join("")+`</ol>`;}
+
 // shrnutí nahoře v detailu stavby (audit, fáze 4): co, kolik, kdy hotovo, kdo + jak akci vede rozpočet
 function shrnutiAkce(p,dod,sch,upr){
   const [co,kolik]=hlavni(p);
@@ -572,9 +609,13 @@ function karta(p){
   const sk=p.souhrn.skladba_s_dph||[];
   const rozpocetText=sch||upr.celkem!=null?kc(sch?.celkem??upr.celkem):"–";
   const rozpocetPozn=!sch&&upr.celkem==null?(p.vlastnik_subjekt_id&&p.vlastnik_subjekt_id!=="00247618"?"investuje městská společnost, její rozpočet není veřejný":"v rozpočtu 2026 není jako samostatná položka – je součástí širší položky nebo se platí z jiného roku"):sch?.po_zmenach?.zmeneno?`po změnách ${kc(sch.po_zmenach.celkem)} · ${pl([...new Set(p.schvaleny_rozpocet.flatMap(x=>x.zmeny_ro))].filter(x=>x!=null).length,"rozpočtové opatření","rozpočtová opatření","rozpočtových opatření")}`:sch?"beze změn":"";
+  const zak=p.zakazky?.[0];
   return `<article class="karta" id="${p.id}">
+  <div class="k-stitky"><span class="pill ${p.faze==="probiha"?"stavba":p.faze==="dokonceno"?"zmena":"rozhodnuti"}">${esc((FAZE[p.faze]||["Akce"])[0])}</span>
+   <span class="pill p-tich">${esc(OKN[p.okruh]?.nazev||"")}</span>${zak?`<span class="pill p-tich">Výběrové řízení ${esc(zak.id.replace(/^ezak-/,""))}</span>`:""}</div>
   <h1 class="st" tabindex="-1">${esc(rozepis(p.nazev))}</h1>
   ${shrnutiAkce(p,dod,sch,upr)}
+  ${pruhFazi(p)}
   <p class="stav">${stavDoklad(p)}</p>
   ${z?`<p class="souhrn1"><span class="pozn" style="font-size:14px;display:block">Poslední událost</span>${esc(z.text)} ${esc(z.cena)}</p>`:""}
   ${z?.url?`<a class="akce" href="${esc(z.url)}" target="_blank" rel="noopener">${esc(z.odkaz)} ↗</a>`:""}
@@ -716,8 +757,15 @@ function harmonogram(){
   const sk=vybraneOkruhy().map(o=>{const r=H.filter(x=>x.okruh===o.id);return [o.nazev,r.filter(x=>!hotovo(x)),r.filter(hotovo)];}).filter(([,a,d])=>a.length||d.length);
   const tab=H.map(r=>`<tr><td>${esc(r.nazev)}</td><td>${r.useky.map(u=>`${FAZE_G[u.faze]} ${dat(u.od)} – ${u.otevreno?"dosud":dat(u.do)}`).join("<br>")}</td></tr>`).join("");
   const nI=H.filter(r=>r.typ==="investice").length,nZ=H.filter(r=>r.typ==="zasobnik").length,nA=H.filter(r=>r.typ==="aktivita").length;
-  return `<section><h1 class="st" tabindex="-1">Projekty</h1>
+  const beh=inv.filter(r=>r.faze==="probiha").length,pri=inv.filter(r=>r.faze==="soutezi_se"||r.faze==="pripravuje_se").length;
+  const kpi=`<div class="kpis ak-kpi">
+   <div class="kpi"><span>Staví se</span><b>${cis(beh)}</b><small>podle dokladů probíhá stavba</small></div>
+   <div class="kpi"><span>V přípravě a projektování</span><b>${cis(pri+nZ)}</b><small>${cis(pri)} před stavbou, ${cis(nZ)} v zásobníku projektů</small></div>
+   <div class="kpi"><span>Dlouhodobé projekty</span><b>${cis(nA)}</b><small>územní plán a podobné</small></div>
+   <div class="kpi"><span>Dokončeno</span><b>${cis(inv.filter(r=>r.faze==="dokonceno").length)}</b><small>stavba podle dokladů skončila</small></div></div>`;
+  return `<section><span class="eyebrow">Fáze podle smluv a úředních dokumentů</span><h1 class="st" tabindex="-1">Projekty</h1>
   <p style="max-width:64ch">Kdy se co připravovalo, soutěžilo a stavělo – podle data dokumentů, ne podle plánů města. Klepnutím na úsek nebo kosočtverec se ukáže doklad.</p>
+  ${kpi}
   <p class="pozn" style="font-size:15px">${pl(nI,"investice","investice","investic")} · ${pl(nZ,"připravovaný projekt","připravované projekty","připravovaných projektů")} · ${pl(nA,"dlouhodobý projekt","dlouhodobé projekty","dlouhodobých projektů")} · <a href="#projekty-seznam" data-seznam>jako seznam</a></p>
   ${chips}${H.length?"":`<p class="pozn">V tomto okruhu zatím nic.</p>`}
   <div class="leg"><span><i style="background:var(--g-priprava);border:1px solid var(--g-soutez)"></i>příprava (studie, projekt)</span><span><i style="background:var(--g-soutez)"></i>výběr dodavatele</span><span><i style="background:var(--g-stavba)"></i>stavba</span><span><i style="background:var(--g-prubeh)"></i>dlouhodobý projekt</span><span><span class="md"></span>dodatek / usnesení</span><span><i style="background:linear-gradient(90deg,var(--g-stavba),rgba(0,102,132,.3))"></i>stále běží</span><span><span class="md" style="background:#fff;border:2px solid var(--navy)"></span>dokončení podle smlouvy</span></div>
@@ -768,10 +816,19 @@ function usneseniBlok(o){const r=US.filter(u=>usnVOkruhu(u,o.id));
   const nahled=`<ol>${r.filter(u=>!PROCEDURALNI.test(u.tema||"")).slice(0,2).map(u=>radekOkruhu({druh:"rozhodnuti",datum:u.datum,nazev:u.tema||u.cislo,pod:u.organ==="zastupitelstvo"?"zastupitelstvo":"rada",href:"#"+u.id})).join("")}</ol>`;
   return blokStranky(o,r.length,nahled,usneseniSeznam(r));}
 const usneseniObsah=()=>FU.hledat||FU.kat?usneseniSeznam():`<div class="okruhy">${vybraneOkruhy().map(usneseniBlok).join("")}</div>`;
+function kpiUsneseni(){
+  const ne=US.filter(u=>u.vysledek==="neprijato").length,ano=US.length-ne;
+  const zm=US.filter(u=>u.organ==="zastupitelstvo").length;
+  return `<div class="kpis ak-kpi">
+   <div class="kpi"><span>Celkem usnesení</span><b>${cis(US.length)}</b><small>ze zápisů rady a zastupitelstva</small></div>
+   <div class="kpi"><span>Přijato</span><b>${cis(ano)}</b><small>${ne?`${pl(ne,"usnesení nebylo přijato","usnesení nebyla přijata","usnesení nebylo přijato")}`:"všechna usnesení byla přijata"}</small></div>
+   <div class="kpi"><span>Zastupitelstvo</span><b>${cis(zm)}</b><small>zbylých ${cis(US.length-zm)} přijala rada města</small></div>
+   <div class="kpi"><span>S doslovnou citací</span><b>${cis(US.filter(u=>u.strana).length)}</b><small>shrnutí ověřené kódem proti zápisu</small></div></div>`;}
 function usneseniStranka(){
   const d=US.map(u=>u.datum).filter(Boolean).sort();
-  return `<section><h1 class="st" tabindex="-1">Usnesení rady a zastupitelstva</h1>
-  <p style="max-width:64ch">${pocetUsneseni()} z jednání od ${dat(d[0])} do ${dat(d.at(-1))}, srozumitelně a s odkazem na stranu zápisu.</p>
+  return `<section><span class="eyebrow">Auditní stopa samosprávy</span><h1 class="st" tabindex="-1">Usnesení rady a zastupitelstva</h1>
+  <p class="pozn" style="max-width:64ch;margin-top:0">${pocetUsneseni()} z jednání od ${dat(d[0])} do ${dat(d.at(-1))}, srozumitelně a s odkazem na stranu zápisu.</p>
+  ${kpiUsneseni()}
   <div class="hledani"><label class="sr" for="uq">Hledat v rozhodnutích</label><input id="uq" type="search" autocomplete="off" placeholder="Hledat v rozhodnutích (ulice, budova, téma…)" value="${esc(FU.hledat)}"></div>
   ${okruhChips("usneseni")}
   ${FU.kat?`<p class="pocet">Kategorie: <b>${esc(USN_NAZEV[FU.kat]||FU.kat)}</b> <button class="tl" data-uzrusit>× zrušit</button></p>`:""}
@@ -804,7 +861,7 @@ function mistaBlok(o){
   const cely=ms.map(kartaMista).join("")+(bez.length?`<div class="hh">Změny bez konkrétního místa</div><div class="ms"><ul class="zm">${bez.map(z=>zmRadek(z,false)).join("")}</ul></div>`:"");
   return blokStranky(o,ms.length+bez.length,`<ol>${nahledPol.slice(0,2).map(radekOkruhu).join("")}</ol>`,cely);}
 function mistaStranka(){
-  return `<section><h1 class="st" tabindex="-1">Místa a služby</h1>
+  return `<section><span class="eyebrow">Co se mění v místech, která lidé používají</span><h1 class="st" tabindex="-1">Místa a služby</h1>
   <p style="max-width:62ch">Co se mění v místech a službách, které lidé používají, a co se v nich staví. <a href="#mapa">Na mapě →</a></p>
   ${okruhChips("mista")}
   <div class="okruhy">${vybraneOkruhy().map(mistaBlok).join("")}</div></section>`;
@@ -893,7 +950,7 @@ function kpiInvestic(){const k=KPI,pc=k.pocty,c=k.cena_probihajicich,r=k.rozpoce
 function zvyraznena(){const r=P.filter(p=>p.faze==="probiha"&&(!FO.okruh||p.okruh===FO.okruh)&&posledni(p)).sort((a,b)=>posledni(b).localeCompare(posledni(a)))[0];
   return r?`<section class="ak-nej" aria-label="Nejnovější změna mezi probíhajícími akcemi"><div class="hh">Nejnovější změna mezi probíhajícími akcemi</div>${kartaAkce(r,true)}</section>`:"";}
 function prehled(){
-  return `<h1 class="st" tabindex="-1">Investice a opravy</h1><p class="pozn" style="max-width:64ch;margin-top:0">Co se v Třeboni staví, opravuje a chystá. Údaje jsou z veřejných dokumentů města, u každé akce je odkaz na zdroj.</p>
+  return `<span class="eyebrow">Investiční akce a stavební údržba města</span><h1 class="st" tabindex="-1">Investice a opravy</h1><p class="pozn" style="max-width:64ch;margin-top:0">Co se v Třeboni staví, opravuje a chystá. Údaje jsou z veřejných dokumentů města, u každé akce je odkaz na zdroj.</p>
   ${kpiInvestic()}
   <div class="hledani"><label class="sr" for="q">Hledat ulici, místo, projekt nebo firmu</label><input id="q" type="search" autocomplete="off" placeholder="Hledat ulici, místo, projekt nebo firmu" value="${esc(F.hledat)}"></div>
   ${okruhChips("investice")}
@@ -949,9 +1006,13 @@ const DRUH={stavba:"stavba",rozhodnuti:"rozhodnutí",zmena:"změna"};
 function radekOkruhu(x){return `<li><a href="${esc(x.href)}"><small><span class="dr ${x.druh}">${DRUH[x.druh]||""}</span> · ${dat(x.datum)}</small><b>${esc(x.nazev)}</b>${x.pod?`<small>${esc(x.pod)}</small>`:""}</a></li>`;}
 // procedurální usnesení se v náhledu okruhu nepřipomínají; stejný výběr jako pipeline/zpravy.py:PROCEDURALNI
 const PROCEDURALNI=/program\w* jednání|ověřovatel|zapisovatel|návrhov\w* komis|volba \w*\s*komis|volba členů \w*\s*komis/i;
+function hlavaOkruhu(o,pocet,odkaz){
+  const nazev=odkaz?`<a href="#${document.body.dataset.cil}/${o.id}">${esc(o.nazev)}</a>`:esc(o.nazev);
+  return `<div class="hlava">${ikonaOkruhu(o.id)}<div><h2 id="h-${o.id}">${nazev}</h2><p class="op">${esc(o.popis)}</p></div>
+   <span class="pocet-okruhu">${pocet?pl(pocet,"položka","položky","položek"):"zatím nic"}</span></div>`;}
 function blokStranky(o,pocet,nahled,cely,vic=pocet>2){
-  if(FO.okruh)return `<section class="okruh cely" id="okruh-${o.id}"><h2>${esc(o.nazev)}<small>${pocet||""}</small></h2><p class="op">${esc(o.popis)}</p>${pocet?cely:`<p class="nic">Zatím tu nic není.</p>`}</section>`;
-  return `<section class="okruh" id="okruh-${o.id}"><h2><a href="#${document.body.dataset.cil}/${o.id}">${esc(o.nazev)}</a><small>${pocet||""}</small></h2><p class="op">${esc(o.popis)}</p>
+  if(FO.okruh)return `<section class="okruh cely" id="okruh-${o.id}">${hlavaOkruhu(o,pocet,false)}${pocet?cely:`<p class="nic">Zatím tu nic není.</p>`}</section>`;
+  return `<section class="okruh" id="okruh-${o.id}">${hlavaOkruhu(o,pocet,true)}
    ${pocet?nahled:`<p class="nic">Zatím tu nic není.</p>`}${vic?`<details><summary>${pocet>2?`Zobrazit další (${pocet-2})`:"Zobrazit vše"}</summary>${cely}</details>`:""}</section>`;}
 const vybraneOkruhy=()=>FO.okruh?[OKN[FO.okruh]]:OK;
 
