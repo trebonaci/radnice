@@ -11,7 +11,10 @@ import argparse
 import json
 import re
 import shutil
+from datetime import date
 from pathlib import Path
+
+from web.zpravy import zpravy_pro_web
 
 KOREN = Path(__file__).resolve().parent.parent
 SABLONA = KOREN / "web" / "site" / "sablona.html"
@@ -57,6 +60,10 @@ def usneseni_pro_web(usneseni: list[dict], jednani: list[dict]) -> list[dict]:
     return vysledek
 
 
+def zpravy_stranky(zpravy: list[dict], okruhy: list[dict], beh: dict) -> dict:
+    """Zprávy a KPI pro „Co se děje“; 30 dní se počítá k datu posledního běhu (bez běhu k nejnovější zprávě)."""
+    den = (beh or {}).get("zacatek", "")[:10] or max((z["datum"] for z in zpravy), default=date.today().isoformat())
+    return zpravy_pro_web(zpravy, [o["id"] for o in okruhy], date.fromisoformat(den))
 def kpi_investic(projekty: list, investice: dict | None) -> dict:
     """KPI stránky Investice a opravy: jen čísla z dat (počty podle fáze, cena podle smluv s DPH
     u probíhajících akcí, investice v rozpočtu po změnách bez rezervy). Nic se neodhaduje."""
@@ -101,6 +108,7 @@ def sestav(nahled: bool = False) -> str:
         "__MISTA__": _vloz(_json("mista")),
         "__ZMENY__": _vloz(_json("zmeny")),
         "__OKRUHY__": _vloz(_json("okruhy")),
+        "__ZPRAVY__": _vloz(zpravy_stranky(_json("zpravy"), _json("okruhy"), beh)),
         "__HARMONOGRAM__": _vloz(_json("harmonogram")),
         "__UKAZATELE__": _vloz(_json("ukazatele")),
         "__USNESENI__": _vloz(usneseni_pro_web(_json("usneseni"), _json("jednani"))),

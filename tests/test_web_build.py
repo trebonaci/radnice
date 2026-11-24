@@ -77,6 +77,11 @@ def test_mapa_po_okruzich():
     assert '["investice","projekty","usneseni","mista","mapa"].includes(str)' in html   # okruh v adrese i pro mapu a časovou osu
 
 
+def test_stranky_okruhu_maji_vsechny_pomocne_funkce():
+    """Usnesení a Místa používají radekOkruhu a PROCEDURALNI; bez nich se stránka nevykreslí."""
+    html = build.sestav()
+    for jmeno in ("function radekOkruhu(", "const PROCEDURALNI=", "function blokStranky("):
+        assert jmeno in html, jmeno
 def test_kpi_investic_jen_z_dat():
     def p(faze, castka, neuplne=()):
         return {"faze": faze, "souhrn": {"celkova_cena_s_dph": {"castka": castka, "neuplne": list(neuplne)}}}
