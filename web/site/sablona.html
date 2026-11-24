@@ -1159,6 +1159,22 @@ function posun2(pred,nyni){
   const horni=Math.max(0,window.scrollY+f.getBoundingClientRect().top-(m?m.offsetHeight:0)-10);
   window.scrollTo(0,Math.min(yPosun,horni));}
 function render(){
+  const stranka=document.body.dataset.str;
+  const pruhy=()=>[...document.querySelectorAll("#karty .chips")];
+  const stav=pruhy().map(pruh=>({
+    posun:pruh.scrollLeft,
+    fokus:[...pruh.children].indexOf(document.activeElement),
+  }));
+  renderObsah();
+  if(stranka!==document.body.dataset.str)return;
+  pruhy().forEach((pruh,i)=>{
+    const pred=stav[i];
+    if(!pred)return;
+    pruh.children[pred.fokus]?.focus({preventScroll:true});
+    pruh.scrollLeft=pred.posun;
+  });
+}
+function renderObsah(){
   closeGis?.();
   closeGis = null;
   yPosun=window.scrollY;

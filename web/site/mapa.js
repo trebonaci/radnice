@@ -1,10 +1,10 @@
 // Mapa používá stejné karty a doklady jako seznam projektů.
 const GIS_STATES = {
-  priprava: { label: "Připravuje se", color: "#795305" },
-  probiha: { label: "Probíhá", color: "#006684" },
-  hotovo: { label: "Dokončeno", color: "#386125" },
+  priprava: { label: "Připravuje se", color: "#8a3c00" },
+  probiha: { label: "Probíhá", color: "#004bb3" },
+  hotovo: { label: "Dokončeno", color: "#14623d" },
 };
-const GIS_SERVICE = { label: "Změny v místech a službách", color: "#68428a" };
+const GIS_SERVICE = { label: "Změny v místech a službách", color: "#790b88" };
 // okruh stejný jako na ostatních stránkách (FO a okruhChips v sablona.html; je v adrese #mapa/<okruh>, 23. 11. 2026)
 const gisFilters = { q: "", state: "", view: "map", selected: "" };
 let closeGis;
@@ -221,7 +221,7 @@ function openGis(el) {
   function emphasize() {
     for (const [id,shape] of shapes) {
       const current = id === gisFilters.selected;
-      shape.setStyle({weight:current ? 8 : 5});
+      shape.setStyle({weight:current ? 9 : 6});
       shape.eachLayer(function mark(layer) {
         const pin = layer.getElement?.()?.querySelector(".gis-pin");
         pin?.classList.toggle("selected",current);
@@ -238,7 +238,7 @@ function openGis(el) {
       if (!entry.geometry) continue;
       const color = gisSymbol(entry).color;
       const shape = L.geoJSON(entry.geometry,{
-        style: {color,weight:5,opacity:.91,dashArray:entry.approx ? "7 6" : null,className:"gis-path"},
+        style: {color,weight:6,opacity:1,dashArray:entry.approx ? "7 6" : null,className:"gis-path"},
         pointToLayer: (_,latlng) => L.marker(latlng,{
           title:entry.p.nazev + ' · ' + gisSymbol(entry).label,
           alt:entry.p.nazev + ' · ' + gisSymbol(entry).label,
