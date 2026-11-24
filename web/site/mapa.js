@@ -62,9 +62,20 @@ function gisProjects() {
     .sort((a,b) => a.p.nazev.localeCompare(b.p.nazev,"cs"));
 }
 
+function gisKpi(projects) {
+  const n = t => projects.filter(p => p.type === "investice" && p.state === t).length;
+  const karta = (l, v, s) => '<div class="kpi"><span>' + l + '</span><b>' + v + '</b><small>' + s + '</small></div>';
+  return '<div class="kpis ak-kpi">' +
+    karta("Celkem v mapě", projects.filter(p => p.geometry).length,
+          "z " + projects.length + " sledovaných akcí a míst") +
+    karta("Staví se", n("probiha"), "stavba podle dokladů probíhá") +
+    karta("V přípravě", n("priprava"), "projektuje se nebo běží výběrové řízení") +
+    karta("Dokončeno", n("hotovo"), "stavba podle dokladů skončila") + '</div>';
+}
 function gisHtml(projects) {
-  return '<section><h1 class="st" tabindex="-1">Mapa staveb, oprav a služeb</h1>' +
+  return '<section><span class="eyebrow">Prostorová data města</span><h1 class="st" tabindex="-1">Mapa staveb, oprav a služeb</h1>' +
     '<p class="gis-intro">Najděte stavby, opravy a změny v místních službách podle ulice nebo okruhu.</p>' +
+    gisKpi(projects) +
     '<div class="gis-controls">' +
     '<label>Hledat<input data-gis-query type="search" placeholder="Ulice, místo nebo název akce" value="' + esc(gisFilters.q) + '"></label>' +
     '<label>Co zobrazit<select data-gis-state><option value="">Vše</option><option value="stavby"' + (gisFilters.state==="stavby"?' selected':'') + '>Všechny stavby a opravy</option>' +
