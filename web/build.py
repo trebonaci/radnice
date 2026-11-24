@@ -64,6 +64,33 @@ def zpravy_stranky(zpravy: list[dict], okruhy: list[dict], beh: dict) -> dict:
     """Zprávy a KPI pro „Co se děje“; 30 dní se počítá k datu posledního běhu (bez běhu k nejnovější zprávě)."""
     den = (beh or {}).get("zacatek", "")[:10] or max((z["datum"] for z in zpravy), default=date.today().isoformat())
     return zpravy_pro_web(zpravy, [o["id"] for o in okruhy], date.fromisoformat(den))
+def kpi_investic(projekty: list, investice: dict | None) -> dict:
+    """KPI stránky Investice a opravy: jen čísla z dat (počty podle fáze, cena podle smluv s DPH
+    u probíhajících akcí, investice v rozpočtu po změnách bez rezervy). Nic se neodhaduje."""
+    pocty = {f: 0 for f in ("probiha", "soutezi_se", "pripravuje_se", "dokonceno")}
+    for p in projekty:
+        if p.get("faze") in pocty:
+            pocty[p["faze"]] += 1
+    pocty["celkem"] = len(projekty)
+    cena, s_cenou, neuplnych, akci = 0.0, 0, 0, 0
+    for p in projekty:
+        if p.get("faze") != "probiha":
+            continue
+        akci += 1
+        c = (p.get("souhrn") or {}).get("celkova_cena_s_dph") or {}
+        if c.get("castka") is None:
+            continue
+        cena += c["castka"]
+        s_cenou += 1
+        neuplnych += 1 if c.get("neuplne") else 0
+    inv = investice or {}
+    return {
+        "pocty": pocty,
+        "cena_probihajicich": {"castka": round(cena, 2), "akci": akci, "akci_s_cenou": s_cenou,
+                               "neuplnych": neuplnych, "druh": "smluvni", "s_dph": True},
+        "rozpocet": {"castka": inv.get("bez_rezervy_po_zmenach"), "rok": inv.get("rok"),
+                     "druh": "rozpocet_upraveny", "s_dph": None},
+    }
 
 
 def sestav(nahled: bool = False) -> str:
@@ -86,6 +113,7 @@ def sestav(nahled: bool = False) -> str:
         "__UKAZATELE__": _vloz(_json("ukazatele")),
         "__USNESENI__": _vloz(usneseni_pro_web(_json("usneseni"), _json("jednani"))),
         "__INVESTICE__": _vloz((investice or [None])[-1]),
+        "__KPI__": _vloz(kpi_investic(_json("projekty") or [], (investice or [None])[-1])),
         "__STITEK__": stitek,
         "__DATUM__": datum,
     }

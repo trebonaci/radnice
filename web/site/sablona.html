@@ -373,6 +373,24 @@ __GISCSS__
 .zpr .sk ul{list-style:none;margin:6px 0 0;padding:0 0 0 12px;border-left:3px solid var(--border-subtle)}.zpr .sk ul li{padding:6px 0}
 .zpr .pri{border-left:3px solid var(--category-stavba);padding-left:10px}
 .mista-data{margin:26px 0 6px}.mista-data h2{margin:0 0 4px}.mista-data p{margin:0 0 10px;max-width:64ch;color:var(--mute)}
+/* Investice a opravy: karty akcí podle návrhu (23. 11. 2026) */
+.ak-kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:14px 0 18px}
+.okruhy.ak-str{grid-template-columns:1fr}
+.akgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:14px;margin:8px 0 14px}
+.ak{background:var(--card);border:1px solid var(--border-subtle);border-top:5px solid var(--category-stavba);border-radius:var(--rounded-lg);padding:16px 18px;box-shadow:var(--shadow-ambient);display:flex;flex-direction:column;gap:8px}
+.ak.k-soutezi_se{border-top-color:var(--tertiary)}.ak.k-pripravuje_se{border-top-color:var(--border-mid)}.ak.k-dokonceno{border-top-color:var(--accent-lime-dark)}
+.ak-h{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;font:600 12px var(--font)}
+.ak .fz{background:var(--soft);border-radius:99px;padding:2px 10px;color:var(--ink)}.ak .ok{color:var(--mute)}
+.ak h3{margin:0;font-size:18px;line-height:1.25}.ak h3 a{color:var(--ink);text-decoration:none}.ak h3 a:hover{text-decoration:underline}
+.ak .pop{margin:0;color:var(--mute);font-size:15px}
+.ak-d{display:grid;grid-template-columns:1fr 1fr;gap:8px 14px;margin:0}.ak-d div{min-width:0}.ak-d .sir{grid-column:1/-1}
+.ak-d dt{font:700 11px/14px var(--font);letter-spacing:.06em;text-transform:uppercase;color:var(--mute)}.ak-d dd{margin:2px 0 0;font-size:15px}
+.ak-d dd.cn{font:800 20px var(--font-h);font-variant-numeric:tabular-nums}
+.ak .po,.ak-d dd.po{color:var(--error);font-weight:600}.ak small.po{display:block;font-size:13px}
+.ak .zm{margin:0;font-size:14px;background:var(--soft);border-radius:var(--rounded);padding:8px 10px}
+.ak .od,.ak-box .od{display:flex;flex-wrap:wrap;gap:6px 16px;margin:auto 0 0;font-size:14px;font-weight:600}
+.ak.velka{grid-column:1/-1;border-top-width:6px}.ak-nej{margin:14px 0 4px}.ak-nej .ak.velka h3{font-size:24px}
+.ak-box{background:var(--surface-low);border-radius:var(--rounded-lg);padding:18px 22px;margin:26px 0}.ak-box h2{margin:0 0 6px;font-size:20px}.ak-box p{margin:0 0 10px;max-width:70ch}
 </style></head><body>
 <header class="lista"><div class="hl"><a class="zn" href="https://trebonaci.cz"><img src="obr/logo-trebonaci.jpg" alt=""><span><b>Třeboňáci</b> <span>· Otevřená radnice</span></span></a><span class="bd">__STITEK__</span></div>
 <nav id="menu" aria-label="Sekce"><a href="#">Co se děje</a><a href="#investice">Investice a opravy</a><a href="#projekty">Projekty</a><a href="#usneseni">Usnesení</a><a href="#mista">Místa a služby</a><a href="#mapa">Mapa</a></nav></header>
@@ -390,6 +408,7 @@ __GISCSS__
 const P=__DATA__;
 const GIS=__MAPA__;
 const INV=__INVESTICE__;
+const KPI=__KPI__;
 const Z=__ZASOBNIK__;
 const M=__MISTA__;
 const ZM=__ZMENY__;
@@ -831,32 +850,63 @@ function radekStavby(p){const [co,kolik]=hlavni(p);const pu=posledniUdalost(p);c
   return `<a href="#${p.id}" class="k-${p.faze}"><span><b>${esc(rozepis(p.nazev))}</b>${z?`<small class="pz">${esc(z.kratce)}</small>`:`<small class="sv">${esc(stavText(p))}</small>`}</span><span class="c">${kolik||"–"}<small>${co}</small></span></a>`;}
 function radekPripravy(x){const s=STUPEN[x.pripravenost.stupen]??0;
   return `<a href="#priprava-${esc(x.id)}" class="k-pripravuje_se"><span><b>${esc(rozepis(x.nazev))}</b><small class="sv">Projektuje se · ${STUPEN_KRATCE[s]}${x.doklady.length?" · první doklad "+dat(x.doklady[0].datum):""}</small></span></a>`;}
+// karta akce podle návrhu investice/ (23. 11. 2026): štítek fáze, okruh, název, cena, termín, dodavatel, odkazy; barevný okraj podle fáze
+function terminAk(p){const t=p.termin_dokonceni;if(!t||p.faze==="dokonceno")return null;
+  if(t.datum){const po=p.faze==="probiha"&&t.datum<DNES;return {k:"Dokončení podle smlouvy",h:dat(t.datum),pozn:po?"termín podle smlouvy uplynul":"",po,url:t.url};}
+  return {k:"Lhůta ve smlouvě",h:"",pozn:"„"+t.citace+"“",po:false,url:t.url};}
+function dodAk(p){const st=p.casti.filter(c=>c.role==="stavba");
+  const j=[...new Set(st.map(c=>kdo(c.dodavatel)).filter(n=>n&&n!=="fyzická osoba"))];
+  return j.length?j.join(", "):st.length?"fyzická osoba (jméno se neuvádí)":"zatím není vybraný";}
+function kartaAkce(p,velka){const [co,kolik]=hlavni(p);const t=terminAk(p);
+  const sm=(p.casti.find(c=>c.role==="stavba")||p.casti[0])?.puvodni?.url;
+  const za=(p.zakazky.find(z=>z.role==="stavba")||p.zakazky[0])?.url;
+  const pu=velka?posledniUdalost(p):null;const z=pu?zmenaVeta(p,pu):null;
+  return `<article class="ak k-${p.faze}${velka?" velka":""}"><div class="ak-h"><span class="fz">${esc(FAZE[p.faze]?.[0]||"")}${p.faze_jistota==="nase_propojeni"?" · podle dokladů":""}</span><span class="ok">${esc(OKN[p.okruh]?.nazev||"")}</span></div>
+   <h3><a href="#${p.id}">${esc(rozepis(p.nazev))}</a></h3>
+   ${velka&&p.popis?`<p class="pop">${esc(p.popis)}</p>`:""}
+   <dl class="ak-d"><div><dt>${esc(co)}</dt><dd class="cn">${kolik||"–"}</dd></div>${t?`<div><dt>${t.k}</dt><dd${t.po?' class="po"':""}>${esc(t.h||t.pozn)}${t.h&&t.pozn?`<small class="po">${esc(t.pozn)}</small>`:""}</dd></div>`:""}
+   <div class="sir"><dt>Dodavatel stavby</dt><dd>${esc(dodAk(p))}</dd></div></dl>
+   ${z?`<p class="zm"><b>Nejnovější změna:</b> ${esc(z.text)}${z.url?` <a href="${esc(z.url)}" target="_blank" rel="noopener">${esc(z.odkaz)}</a>`:""}</p>`:""}
+   <p class="od"><a href="#${p.id}">Karta akce</a>${sm?`<a href="${esc(sm)}" target="_blank" rel="noopener">Smlouva v registru smluv</a>`:""}${za?`<a href="${esc(za)}" target="_blank" rel="noopener">Zakázka v E-ZAK</a>`:""}</p></article>`;}
 function stavbyOkruhu(o){
   const akt=P.filter(p=>p.okruh===o.id&&p.faze!=="dokonceno").sort((a,b)=>posledni(b).localeCompare(posledni(a)));
   const prip=zPol().filter(x=>x.okruh===o.id).sort((a,b)=>(STUPEN[b.pripravenost.stupen]-STUPEN[a.pripravenost.stupen])||a.nazev.localeCompare(b.nazev,"cs"));
   const hot=P.filter(p=>p.okruh===o.id&&p.faze==="dokonceno").sort((a,b)=>posledni(b).localeCompare(posledni(a)));
   const nam=zNam().filter(x=>x.okruh===o.id);
   const pocet=akt.length+prip.length+hot.length;
-  const prvni=[...akt.map(radekStavby),...prip.map(radekPripravy),...hot.map(radekStavby)].slice(0,2);
-  const nahled=prvni.length?`<nav class="sez">${prvni.join("")}</nav>`:`<p class="nic">Zatím jen náměty ze Strategického plánu.</p>`;
-  const cast=(n,html,k)=>k?`<div class="hh">${n} · ${k}</div><nav class="sez">${html}</nav>`:"";
-  const cely=FAZE_SL.map(([n,f])=>{const r=akt.filter(f);return cast(n,r.map(radekStavby).join(""),r.length);}).join("")
-    +cast("Projektuje se",prip.map(radekPripravy).join(""),prip.length)
-    +(hot.length?`<details class="dalsi"><summary>Hotovo (${hot.length})</summary><nav class="sez">${hot.map(radekStavby).join("")}</nav></details>`:"")
+  const mrizka=r=>`<div class="akgrid">${r.map(p=>kartaAkce(p)).join("")}</div>`;
+  const prvni=akt.slice(0,2);
+  const nahled=prvni.length?mrizka(prvni):prip.length?`<nav class="sez">${prip.slice(0,2).map(radekPripravy).join("")}</nav>`:hot.length?mrizka(hot.slice(0,2)):`<p class="nic">Zatím jen náměty ze Strategického plánu.</p>`;
+  const cast=(n,html,k)=>k?`<div class="hh">${n} · ${k}</div>${html}`:"";
+  const cely=FAZE_SL.map(([n,f])=>{const r=akt.filter(f);return cast(n,mrizka(r),r.length);}).join("")
+    +cast("Projektuje se",`<nav class="sez">${prip.map(radekPripravy).join("")}</nav>`,prip.length)
+    +(hot.length?`<details class="dalsi"><summary>Hotovo (${hot.length})</summary>${mrizka(hot)}</details>`:"")
     +(nam.length?`<details class="dalsi"><summary>Náměty ze Strategického plánu (${nam.length})</summary><ul class="nm">${nam.map(x=>`<li>${esc(x.nazev)}</li>`).join("")}</ul></details>`:"");
   return blokStranky(o,pocet+nam.length,nahled,cely,pocet>2||nam.length>0);}
-const stavbyBloky=()=>koreny(F.hledat).length?vysledky(filtrovane(),true):`<div class="okruhy">${vybraneOkruhy().map(stavbyOkruhu).join("")}</div>`;
+const stavbyBloky=()=>koreny(F.hledat).length?vysledky(filtrovane(),true):`<div class="okruhy ak-str">${vybraneOkruhy().map(stavbyOkruhu).join("")}</div>`;
+// KPI jen z dat: počty podle fáze, cena podle smluv s DPH u probíhajících akcí, rozpočet investic po změnách bez rezervy (počítá web/build.py, test tests/test_web_build.py)
+function kpiInvestic(){const k=KPI,pc=k.pocty,c=k.cena_probihajicich,r=k.rozpocet;
+  return `<div class="kpis ak-kpi"><div class="kpi"><span>Akce v evidenci</span><b>${pc.celkem}</b><small>${pc.probiha} se staví · ${pc.soutezi_se+pc.pripravuje_se} se chystá · ${pc.dokonceno} dokončeno</small></div>
+  <div class="kpi"><span>Cena probíhajících akcí</span><b>${kc(c.castka)}</b><small>podle smluv, s DPH · ${c.akci_s_cenou} z ${c.akci} akcí${c.neuplnych?`, u ${c.neuplnych} je součet jen známých částek`:""}</small></div>
+  <div class="kpi"><span>Investice v rozpočtu ${r.rok}</span><b>${kc(r.castka)}</b><small>po změnách, bez nerozdělené rezervy · plán města, ne cena podle smluv</small></div></div>`;}
+// velká karta: akce, která se staví a má nejnovější doloženou změnu
+function zvyraznena(){const r=P.filter(p=>p.faze==="probiha"&&(!FO.okruh||p.okruh===FO.okruh)&&posledni(p)).sort((a,b)=>posledni(b).localeCompare(posledni(a)))[0];
+  return r?`<section class="ak-nej" aria-label="Nejnovější změna mezi probíhajícími akcemi"><div class="hh">Nejnovější změna mezi probíhajícími akcemi</div>${kartaAkce(r,true)}</section>`:"";}
 function prehled(){
-  return `<h1 class="st" tabindex="-1">Investice a opravy</h1><div class="hledani"><label class="sr" for="q">Hledat ulici, místo, projekt nebo firmu</label><input id="q" type="search" autocomplete="off" placeholder="Hledat ulici, místo, projekt nebo firmu" value="${esc(F.hledat)}"></div>
+  return `<h1 class="st" tabindex="-1">Investice a opravy</h1><p class="pozn" style="max-width:64ch;margin-top:0">Co se v Třeboni staví, opravuje a chystá. Údaje jsou z veřejných dokumentů města, u každé akce je odkaz na zdroj.</p>
+  ${kpiInvestic()}
+  <div class="hledani"><label class="sr" for="q">Hledat ulici, místo, projekt nebo firmu</label><input id="q" type="search" autocomplete="off" placeholder="Hledat ulici, místo, projekt nebo firmu" value="${esc(F.hledat)}"></div>
   ${okruhChips("investice")}
-  <p class="pocet"><a href="#mapa">Investice a opravy na mapě →</a> · <a href="#projekty">Projekty →</a></p>
-  <div id="vysledky">${stavbyBloky()}</div>`;
+  ${koreny(F.hledat).length?"":zvyraznena()}
+  <div id="vysledky">${stavbyBloky()}</div>
+  <aside class="ak-box"><h2>Jak evidujeme investice</h2><p>Každá akce je karta složená z veřejných dokumentů: rozpočtu města, registru smluv, výběrových řízení v E-ZAK a usnesení rady a zastupitelstva. Fázi akce a propojení dokladů určuje náš kód, proto je u některých údajů poznámka „podle dokladů“; nejde o stanovisko města.</p>
+  <p class="od"><a href="#projekty">Projekty →</a><a href="#mapa">Investice na mapě →</a><a href="#usneseni">Usnesení →</a></p></aside>`;
 }
 function vysledky(r,filtr){
   const pocet=`<p class="pocet" aria-live="polite">${pl(r.length,"stavba nebo oprava","stavby nebo opravy","staveb a oprav")}${filtr?` odpovídá hledání · <button class="tl" data-zrusit>Zrušit hledání</button>`:""}</p>`;
   const j=jinde();
   if(!r.length&&j)return `<p class="pocet" aria-live="polite">Mezi investicemi nic – našli jsme ale tohle: · <button class="tl" data-zrusit>Zrušit filtry</button></p>`+j;
-  return pocet+(r.length?`<nav class="sez" id="seznam" aria-label="Investice">${r.map(radekPrehledu).join("")}</nav>`:`<div class="sez prazdne"><p style="margin:0 0 10px">Nic neodpovídá výběru.</p><button data-zrusit>Zrušit filtry a hledání</button></div>`)+j;}
+  return pocet+(r.length?`<div class="akgrid" id="seznam" aria-label="Investice">${r.map(p=>kartaAkce(p)).join("")}</div>`:`<div class="sez prazdne"><p style="margin:0 0 10px">Nic neodpovídá výběru.</p><button data-zrusit>Zrušit filtry a hledání</button></div>`)+j;}
 function detail(p){
   const r=filtrovane();const i=r.findIndex(x=>x.id===p.id);
   const pred=i>0?r[i-1]:null, dal=i>=0&&i<r.length-1?r[i+1]:null;

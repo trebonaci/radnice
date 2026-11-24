@@ -82,3 +82,37 @@ def test_stranky_okruhu_maji_vsechny_pomocne_funkce():
     html = build.sestav()
     for jmeno in ("function radekOkruhu(", "const PROCEDURALNI=", "function blokStranky("):
         assert jmeno in html, jmeno
+def test_kpi_investic_jen_z_dat():
+    def p(faze, castka, neuplne=()):
+        return {"faze": faze, "souhrn": {"celkova_cena_s_dph": {"castka": castka, "neuplne": list(neuplne)}}}
+    projekty = [p("probiha", 1000000.5), p("probiha", 2000000.25, ["dodatek"]), p("probiha", None),
+                p("dokonceno", 9999999.0), p("soutezi_se", 5.0), p("pripravuje_se", None)]
+    k = build.kpi_investic(projekty, {"rok": 2026, "bez_rezervy_po_zmenach": 268436840.0})
+    assert k["pocty"] == {"probiha": 3, "soutezi_se": 1, "pripravuje_se": 1, "dokonceno": 1, "celkem": 6}
+    # sečtou se jen probíhající akce, dokončené a chystané ne
+    assert k["cena_probihajicich"] == {"castka": 3000000.75, "akci": 3, "akci_s_cenou": 2, "neuplnych": 1,
+                                       "druh": "smluvni", "s_dph": True}
+    assert k["rozpocet"]["castka"] == 268436840.0 and k["rozpocet"]["rok"] == 2026
+    assert build.kpi_investic([], None)["rozpocet"]["castka"] is None
+
+
+def test_kpi_v_datech_odpovida_projektum():
+    import json
+    projekty = json.loads((build.KOREN / "data" / "projekty.json").read_text(encoding="utf-8"))
+    k = build.kpi_investic(projekty, None)
+    assert k["pocty"]["celkem"] == len(projekty) == sum(k["pocty"][f] for f in ("probiha", "soutezi_se", "pripravuje_se", "dokonceno"))
+
+
+def test_investice_nema_nedolozene_ukazatele():
+    html = build.sestav()
+    for zakazane in ("termínová spolehlivost", "Termínová spolehlivost", "z toho dotace", "zpoždění"):
+        assert zakazane not in html
+    assert "Jak evidujeme investice" in html
+
+
+def test_lhuta_ze_smlouvy_se_na_karte_investice_escapuje():
+    """Review #255 (P1): citace lhůty ze smlouvy je text z dokumentu, do HTML se vkládá přes esc()."""
+    import re
+    html = build.sestav()
+    radek = re.search(r'<dl class="ak-d">.*?</dl>', html, re.S).group(0)
+    assert "${esc(t.h||t.pozn)}" in radek and "${esc(t.pozn)}" in radek
