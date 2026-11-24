@@ -75,3 +75,10 @@ def test_mapa_po_okruzich():
     html = build.sestav()
     assert 'okruhChips("mapa")' in html and "data-gtema" not in html
     assert '["investice","projekty","usneseni","mista","mapa"].includes(str)' in html   # okruh v adrese i pro mapu a časovou osu
+
+
+def test_stranky_okruhu_maji_vsechny_pomocne_funkce():
+    """Usnesení a Místa používají radekOkruhu a PROCEDURALNI; bez nich se stránka nevykreslí."""
+    html = build.sestav()
+    for jmeno in ("function radekOkruhu(", "const PROCEDURALNI=", "function blokStranky("):
+        assert jmeno in html, jmeno

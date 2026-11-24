@@ -894,6 +894,11 @@ function archivProjektu(projekty){
 function okruhChips(str){const a=(id,n)=>{const on=FO.okruh===id;return `<a href="#${str}${id?"/"+id:""}" class="${on?"on":""}"${on?' aria-current="true"':""}>${n}</a>`;};
   return `<nav class="chips okr" aria-label="Okruh">${a("","Vše")}${OK.map(o=>a(o.id,esc(o.nazev))).join("")}</nav>`;}
 // blok okruhu na stránce: 2 položky náhledu a „Zobrazit další“; s vybraným okruhem rovnou celý obsah
+// krátký řádek v náhledu okruhu (Usnesení, Místa a služby): druh, datum, název a jeden údaj
+const DRUH={stavba:"stavba",rozhodnuti:"rozhodnutí",zmena:"změna"};
+function radekOkruhu(x){return `<li><a href="${esc(x.href)}"><small><span class="dr ${x.druh}">${DRUH[x.druh]||""}</span> · ${dat(x.datum)}</small><b>${esc(x.nazev)}</b>${x.pod?`<small>${esc(x.pod)}</small>`:""}</a></li>`;}
+// procedurální usnesení se v náhledu okruhu nepřipomínají; stejný výběr jako pipeline/zpravy.py:PROCEDURALNI
+const PROCEDURALNI=/program\w* jednání|ověřovatel|zapisovatel|návrhov\w* komis|volba \w*\s*komis|volba členů \w*\s*komis/i;
 function blokStranky(o,pocet,nahled,cely,vic=pocet>2){
   if(FO.okruh)return `<section class="okruh cely" id="okruh-${o.id}"><h2>${esc(o.nazev)}<small>${pocet||""}</small></h2><p class="op">${esc(o.popis)}</p>${pocet?cely:`<p class="nic">Zatím tu nic není.</p>`}</section>`;
   return `<section class="okruh" id="okruh-${o.id}"><h2><a href="#${document.body.dataset.cil}/${o.id}">${esc(o.nazev)}</a><small>${pocet||""}</small></h2><p class="op">${esc(o.popis)}</p>
