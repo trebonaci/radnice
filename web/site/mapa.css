@@ -25,7 +25,9 @@ body[data-str=mapa] #karty{max-width:1180px}
 .gis-key li{display:flex;align-items:center;gap:5px}
 .gis-pin,.gis-key i{display:block;width:16px;height:16px;border:2px solid white;border-radius:50%;
   background:var(--gis-color,#004bb3);box-shadow:0 0 0 1px var(--gis-color,#004bb3)}
-.gis-pin.approx{background:white;border:2px dashed var(--gis-color);box-shadow:0 0 0 1px white}
+.gis-pin{width:100%;height:100%;box-sizing:border-box}
+.gis-pin.approx{border:3px dashed white;
+  box-shadow:0 0 0 1px var(--gis-color,#004bb3),0 0 0 2px white,0 1px 4px #222}
 .gis-pin.selected{outline:2px solid var(--navy);outline-offset:3px}
 .gis-map-frame .leaflet-marker-icon{background:none;border:0}
 .gis-path{cursor:pointer;filter:drop-shadow(1px 0 white) drop-shadow(-1px 0 white)
