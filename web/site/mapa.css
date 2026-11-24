@@ -19,16 +19,17 @@ body[data-str=mapa] #karty{max-width:1180px}
 .gis-canvas{height:clamp(360px,60vh,660px);background:var(--blue-bg);border-radius:8px;isolation:isolate}
 .gis-canvas[hidden]{display:none}
 /* OSM podklad méně barevný, popisky ulic zůstávají čitelné; barevné značky a čáry vyniknou */
-.gis-osm{filter:saturate(.35) contrast(1.05) brightness(1.03)}
+.gis-osm{filter:saturate(.12) contrast(1.05) brightness(1.02)}
 .gis-tools{display:flex;flex-wrap:wrap;align-items:center;gap:12px;padding:8px 0 2px}
 .gis-key{display:flex;flex-wrap:wrap;gap:6px 12px;list-style:none;padding:0;margin:6px 0;font-size:.85rem}
 .gis-key li{display:flex;align-items:center;gap:5px}
 .gis-pin,.gis-key i{display:block;width:16px;height:16px;border:2px solid white;border-radius:50%;
-  background:var(--gis-color,#006684);box-shadow:0 0 0 1px var(--gis-color,#006684)}
-.gis-pin.approx{background:white;border:2px dashed var(--gis-color);box-shadow:none}
+  background:var(--gis-color,#004bb3);box-shadow:0 0 0 1px var(--gis-color,#004bb3)}
+.gis-pin.approx{background:white;border:2px dashed var(--gis-color);box-shadow:0 0 0 1px white}
 .gis-pin.selected{outline:2px solid var(--navy);outline-offset:3px}
 .gis-map-frame .leaflet-marker-icon{background:none;border:0}
-.gis-path{cursor:pointer}
+.gis-path{cursor:pointer;filter:drop-shadow(1px 0 white) drop-shadow(-1px 0 white)
+  drop-shadow(0 1px white) drop-shadow(0 -1px white) drop-shadow(0 0 1px #222)}
 .gis-results{padding:12px;min-width:0}
 .gis-results h2,.gis-card h2,.gis-overlap h2{margin:0 0 10px;font-size:1.04rem}
 .gis-results ul,.gis-overlap ul{padding:0;margin:0;list-style:none}
