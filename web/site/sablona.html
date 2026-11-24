@@ -374,11 +374,20 @@ __GISCSS__
 .zpr .pri{border-left:3px solid var(--category-stavba);padding-left:10px}
 .mista-data{margin:26px 0 6px}.mista-data h2{margin:0 0 4px}.mista-data p{margin:0 0 10px;max-width:64ch;color:var(--mute)}
 /* Investice a opravy: karty akcí podle návrhu (23. 11. 2026) */
-.ak-kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:14px 0 18px}
+.ak-kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:14px;margin:16px 0 20px}
+.ak-kpi>.kpi{background:var(--card);border:1px solid var(--border-subtle);border-radius:var(--rounded-lg);box-shadow:var(--shadow-ambient);padding:15px 18px 16px;position:relative}
+.ak-kpi>.kpi::after{content:"";position:absolute;left:18px;right:18px;top:0;height:3px;border-radius:0 0 3px 3px;background:var(--accent-lime)}
+.ak-kpi>.kpi:nth-child(2)::after{background:var(--category-stavba)}.ak-kpi>.kpi:nth-child(3)::after{background:var(--tertiary)}
+.ak-kpi .kpi>span{display:block;font:700 11px/14px var(--font);letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+.ak-kpi .kpi>b{display:block;font:800 clamp(26px,2.8vw,34px)/1.1 var(--font-h);letter-spacing:-.025em;margin:8px 0 4px;font-variant-numeric:tabular-nums}
+.ak-kpi .kpi>small{display:block;font-size:13px;line-height:1.45;color:var(--mute)}
+/* karty okruhů na ostatních stránkách mají stejnou hlavu jako Co se děje */
+.okruhy.ak-str .okruh{padding:0 0 12px}.okruhy.ak-str .akgrid{padding:0 18px}
+.okruhy .akgrid .ak .ok{display:none}  /* název okruhu je v hlavičce bloku */
 .okruhy.ak-str{grid-template-columns:1fr}
 .akgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:14px;margin:8px 0 14px}
-.ak{background:var(--card);border:1px solid var(--border-subtle);border-top:5px solid var(--category-stavba);border-radius:var(--rounded-lg);padding:16px 18px;box-shadow:var(--shadow-ambient);display:flex;flex-direction:column;gap:8px}
-.ak.k-soutezi_se{border-top-color:var(--tertiary)}.ak.k-pripravuje_se{border-top-color:var(--border-mid)}.ak.k-dokonceno{border-top-color:var(--accent-lime-dark)}
+.ak{background:var(--card);border:1px solid var(--border-subtle);border-left:4px solid var(--category-stavba);border-radius:var(--rounded-md);padding:16px 18px;box-shadow:var(--shadow-ambient);display:flex;flex-direction:column;gap:8px}
+.ak.k-soutezi_se{border-left-color:var(--tertiary)}.ak.k-pripravuje_se{border-left-color:var(--border-mid)}.ak.k-dokonceno{border-left-color:var(--accent-lime-dark)}
 .ak-h{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;font:600 12px var(--font)}
 .ak .fz{background:var(--soft);border-radius:99px;padding:2px 10px;color:var(--ink)}.ak .ok{color:var(--mute)}
 .ak h3{margin:0;font-size:18px;line-height:1.25}.ak h3 a{color:var(--ink);text-decoration:none}.ak h3 a:hover{text-decoration:underline}
@@ -389,7 +398,7 @@ __GISCSS__
 .ak .po,.ak-d dd.po{color:var(--error);font-weight:600}.ak small.po{display:block;font-size:13px}
 .ak .zm{margin:0;font-size:14px;background:var(--soft);border-radius:var(--rounded);padding:8px 10px}
 .ak .od,.ak-box .od{display:flex;flex-wrap:wrap;gap:6px 16px;margin:auto 0 0;font-size:14px;font-weight:600}
-.ak.velka{grid-column:1/-1;border-top-width:6px}.ak-nej{margin:14px 0 4px}.ak-nej .ak.velka h3{font-size:24px}
+.ak.velka{grid-column:1/-1;border-left-width:6px}.ak-nej{margin:14px 0 4px}.ak-nej .ak.velka h3{font-size:24px}
 .ak-box{background:var(--surface-low);border-radius:var(--rounded-lg);padding:18px 22px;margin:26px 0}.ak-box h2{margin:0 0 6px;font-size:20px}.ak-box p{margin:0 0 10px;max-width:70ch}
 </style></head><body>
 <header class="lista"><div class="hl"><a class="zn" href="https://trebonaci.cz"><img src="obr/logo-trebonaci.jpg" alt=""><span><b>Třeboňáci</b> <span>· Otevřená radnice</span></span></a><span class="bd">__STITEK__</span></div>
@@ -893,7 +902,7 @@ function kpiInvestic(){const k=KPI,pc=k.pocty,c=k.cena_probihajicich,r=k.rozpoce
 function zvyraznena(){const r=P.filter(p=>p.faze==="probiha"&&(!FO.okruh||p.okruh===FO.okruh)&&posledni(p)).sort((a,b)=>posledni(b).localeCompare(posledni(a)))[0];
   return r?`<section class="ak-nej" aria-label="Nejnovější změna mezi probíhajícími akcemi"><div class="hh">Nejnovější změna mezi probíhajícími akcemi</div>${kartaAkce(r,true)}</section>`:"";}
 function prehled(){
-  return `<h1 class="st" tabindex="-1">Investice a opravy</h1><p class="pozn" style="max-width:64ch;margin-top:0">Co se v Třeboni staví, opravuje a chystá. Údaje jsou z veřejných dokumentů města, u každé akce je odkaz na zdroj.</p>
+  return `<span class="eyebrow">Investiční akce a stavební údržba města</span><h1 class="st" tabindex="-1">Investice a opravy</h1><p class="pozn" style="max-width:64ch;margin-top:0">Co se v Třeboni staví, opravuje a chystá. Údaje jsou z veřejných dokumentů města, u každé akce je odkaz na zdroj.</p>
   ${kpiInvestic()}
   <div class="hledani"><label class="sr" for="q">Hledat ulici, místo, projekt nebo firmu</label><input id="q" type="search" autocomplete="off" placeholder="Hledat ulici, místo, projekt nebo firmu" value="${esc(F.hledat)}"></div>
   ${okruhChips("investice")}
@@ -944,9 +953,13 @@ function archivProjektu(projekty){
 function okruhChips(str){const a=(id,n)=>{const on=FO.okruh===id;return `<a href="#${str}${id?"/"+id:""}" class="${on?"on":""}"${on?' aria-current="true"':""}>${n}</a>`;};
   return `<nav class="chips okr" aria-label="Okruh">${a("","Vše")}${OK.map(o=>a(o.id,esc(o.nazev))).join("")}</nav>`;}
 // blok okruhu na stránce: 2 položky náhledu a „Zobrazit další“; s vybraným okruhem rovnou celý obsah
+function hlavaOkruhu(o,pocet,odkaz){
+  const nazev=odkaz?`<a href="#${document.body.dataset.cil}/${o.id}">${esc(o.nazev)}</a>`:esc(o.nazev);
+  return `<div class="hlava">${ikonaOkruhu(o.id)}<div><h2 id="h-${o.id}">${nazev}</h2><p class="op">${esc(o.popis)}</p></div>
+   <span class="pocet-okruhu">${pocet?pl(pocet,"položka","položky","položek"):"zatím nic"}</span></div>`;}
 function blokStranky(o,pocet,nahled,cely,vic=pocet>2){
-  if(FO.okruh)return `<section class="okruh cely" id="okruh-${o.id}"><h2>${esc(o.nazev)}<small>${pocet||""}</small></h2><p class="op">${esc(o.popis)}</p>${pocet?cely:`<p class="nic">Zatím tu nic není.</p>`}</section>`;
-  return `<section class="okruh" id="okruh-${o.id}"><h2><a href="#${document.body.dataset.cil}/${o.id}">${esc(o.nazev)}</a><small>${pocet||""}</small></h2><p class="op">${esc(o.popis)}</p>
+  if(FO.okruh)return `<section class="okruh cely" id="okruh-${o.id}">${hlavaOkruhu(o,pocet,false)}${pocet?cely:`<p class="nic">Zatím tu nic není.</p>`}</section>`;
+  return `<section class="okruh" id="okruh-${o.id}">${hlavaOkruhu(o,pocet,true)}
    ${pocet?nahled:`<p class="nic">Zatím tu nic není.</p>`}${vic?`<details><summary>${pocet>2?`Zobrazit další (${pocet-2})`:"Zobrazit vše"}</summary>${cely}</details>`:""}</section>`;}
 const vybraneOkruhy=()=>FO.okruh?[OKN[FO.okruh]]:OK;
 
