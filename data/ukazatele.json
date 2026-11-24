@@ -211,21 +211,21 @@
       {
         "klic": "00247618",
         "nazev": "Město Třeboň",
-        "hodnota": 1150,
+        "hodnota": 1151,
         "podle_let": {
           "2024": 363,
           "2025": 423,
-          "2026": 364
+          "2026": 365
         }
       },
       {
         "klic": "25179896",
         "nazev": "Slatinné lázně Třeboň s.r.o.",
-        "hodnota": 503,
+        "hodnota": 509,
         "podle_let": {
           "2024": 179,
           "2025": 200,
-          "2026": 124
+          "2026": 130
         }
       },
       {
@@ -321,7 +321,7 @@
     "jednotka": "smluv",
     "obdobi": {
       "od": "2024-03-01",
-      "do": "2026-11-20"
+      "do": "2026-11-23"
     },
     "definice": "Smlouvy zveřejněné v registru smluv, kde je sledovaná organizace smluvní stranou. Verze téže smlouvy se počítají jednou.",
     "vypocet": "pipeline/ukazatele.py:smlouvy",
@@ -333,7 +333,7 @@
     ],
     "zkontrolovano": null,
     "srovnatelnost": "Registr zpracováváme od března 2024. Do registru se nemusí zveřejňovat smlouvy do 50 000 Kč bez DPH.",
-    "celkem": 1919
+    "celkem": 1926
   },
   {
     "id": "zakazky-organizace",

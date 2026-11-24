@@ -399,7 +399,17 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
-    "termin_dokonceni": null,
+    "termin_dokonceni": {
+      "zdroj_id": "rs-36696441",
+      "druh": "datum",
+      "datum": "2026-05-22",
+      "citace": "Dokončení díla: do 22.05.2026",
+      "strana": 2,
+      "url": "https://smlouvy.gov.cz/smlouva/soubor/44444393/SOD%20Chodn%20u%20Hus%20kaple%20s%20pril%20RS.pdf#page=2",
+      "smlouva_url": "https://smlouvy.gov.cz/smlouva/36696441",
+      "jistota": "dolozeno",
+      "podle": "smlouva"
+    },
     "ukonceni_plneni": {
       "datum": "2026-05-07",
       "citace": "Plnění smlouvy ukončeno 07.05.2026",
@@ -944,7 +954,17 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
-    "termin_dokonceni": null,
+    "termin_dokonceni": {
+      "zdroj_id": "rs-39840721",
+      "druh": "datum",
+      "datum": "2026-11-20",
+      "citace": "dokončení díla: 20.11.2026",
+      "strana": 2,
+      "url": "https://smlouvy.gov.cz/smlouva/soubor/48017665/Smlouva%20o%20d%C3%ADlo%20-%20FVE%20%C4%8COV%20B%C5%99ilice_anonymizovan%C3%A1.pdf#page=2",
+      "smlouva_url": "https://smlouvy.gov.cz/smlouva/39840721",
+      "jistota": "dolozeno",
+      "podle": "smlouva"
+    },
     "ukonceni_plneni": null,
     "okruh": "doprava_prostor",
     "okruh_podle": "téma"
@@ -1943,7 +1963,17 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
-    "termin_dokonceni": null,
+    "termin_dokonceni": {
+      "zdroj_id": "rs-38959598",
+      "druh": "datum",
+      "datum": "2026-07-23",
+      "citace": "termín dokončení stavby prodlužuje do 23. 07. 2026",
+      "strana": 2,
+      "url": "https://smlouvy.gov.cz/smlouva/soubor/47018082/Dodatek%20%C4%8D.%202._v%C4%8Detn%C4%9B%20p%C5%99%C3%ADloh_an.pdf#page=2",
+      "smlouva_url": "https://smlouvy.gov.cz/smlouva/38959598",
+      "jistota": "dolozeno",
+      "podle": "dodatek č. 2"
+    },
     "ukonceni_plneni": {
       "datum": "2026-08-04",
       "citace": "Plnění smlouvy ukončeno 04.08.2026",
@@ -10923,15 +10953,15 @@
       }
     ],
     "termin_dokonceni": {
-      "zdroj_id": "rs-38538892",
-      "druh": "datum",
-      "datum": "2026-06-04",
-      "citace": "termín dokončení stavby: NE Objednatel: Datum: 04.06.2026",
-      "strana": 4,
-      "url": "https://smlouvy.gov.cz/smlouva/soubor/46537020/Dodatek%20%C4%8D.%202%20registr%20smluv.pdf#page=4",
-      "smlouva_url": "https://smlouvy.gov.cz/smlouva/38538892",
+      "zdroj_id": "rs-39520809",
+      "druh": "lhuta",
+      "datum": null,
+      "citace": "termínu dokončení stavby o 35 kalendářních dní",
+      "strana": 2,
+      "url": "https://smlouvy.gov.cz/smlouva/soubor/47651085/Dodatek%20%C4%8D.%204%20registr%20smluv.pdf#page=2",
+      "smlouva_url": "https://smlouvy.gov.cz/smlouva/39520809",
       "jistota": "dolozeno",
-      "podle": "dodatek č. 2"
+      "podle": "dodatek č. 4"
     },
     "ukonceni_plneni": null,
     "okruh": "sport_kultura",
@@ -11661,6 +11691,30 @@
         "dodatky_bez_dph": null
       },
       {
+        "role": "stavba",
+        "dodavatel": {
+          "nazev": "Městská Vodohospodářská s.r.o.",
+          "jmeno_podnikatele": null
+        },
+        "puvodni": {
+          "bez_dph": 85991.0,
+          "s_dph": 104049.0,
+          "zdroj_id": "rs-23823717",
+          "url": "https://smlouvy.gov.cz/smlouva/23823717"
+        },
+        "vazba_dodatku": "dolozeno",
+        "dodatky": [],
+        "chybi_dodatky": [],
+        "obsahuje_dopocet_dph": false,
+        "cena_po_dodatcich": 85991.0,
+        "neuplne_cena_po_dodatcich": [],
+        "cena_po_dodatcich_s_dph": 104049.0,
+        "neuplne_cena_po_dodatcich_s_dph": [],
+        "souhlas_zaplaceno": null,
+        "souhlas_ezak": null,
+        "dodatky_bez_dph": null
+      },
+      {
         "role": "projekt",
         "dodavatel": {
           "nazev": "fyzická osoba",
@@ -11756,22 +11810,22 @@
         "jistota": "nevime"
       },
       "smluvni_bez_dph": {
-        "celkem": 11997565.28,
+        "celkem": 12083556.28,
         "druh": "smluvni",
         "s_dph": false,
         "mena": "CZK",
-        "po_dodatcich": 12042565.28,
+        "po_dodatcich": 12128556.28,
         "neuplne": [
           "stavba"
         ],
         "jistota": "nase_propojeni"
       },
       "smluvni_s_dph": {
-        "celkem": 14503613.99,
+        "celkem": 14607662.99,
         "druh": "smluvni",
         "s_dph": true,
         "mena": "CZK",
-        "po_dodatcich": 13725736.46,
+        "po_dodatcich": 13829785.46,
         "neuplne": [
           "stavba"
         ],
@@ -11781,8 +11835,8 @@
         {
           "skupina": "stavba",
           "nazev": "Stavba",
-          "casti": 1,
-          "castka": 13151116.46,
+          "casti": 2,
+          "castka": 13255165.46,
           "nezname": [
             "stavba"
           ],
@@ -11809,7 +11863,7 @@
         }
       ],
       "celkova_cena_s_dph": {
-        "castka": 13725736.46,
+        "castka": 13829785.46,
         "neuplne": [
           "stavba"
         ],
@@ -11897,6 +11951,43 @@
       }
     ],
     "smlouvy": [
+      {
+        "id": "rs-23823717",
+        "id_smlouvy": "22210893",
+        "navazuje_na": null,
+        "cislo_smlouvy": "750/7411/23",
+        "predmet": "Obnova zemního hydrantu - ulice Valy u č.p. 155",
+        "role": "stavba",
+        "dodatek_cislo": null,
+        "datum_uzavreni": "2023-03-20",
+        "strany": [
+          {
+            "nazev": "Městská Vodohospodářská s.r.o.",
+            "jmeno_podnikatele": null,
+            "ico": "28136853"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 85991.0,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 104049.0,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/23823717",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
+      },
       {
         "id": "rs-27412799",
         "id_smlouvy": "25600851",
@@ -12172,6 +12263,17 @@
     },
     "udalosti": [
       {
+        "datum": "2023-03-20",
+        "typ": "smlouva",
+        "kategorie": "smlouva",
+        "kratce": "smlouva o dílo",
+        "text": "Obnova zemního hydrantu - ulice Valy u č.p. 155",
+        "role": "stavba",
+        "zdroj_id": "rs-23823717",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/23823717"
+      },
+      {
         "datum": "2024-01-26",
         "typ": "smlouva",
         "kategorie": "smlouva",
@@ -12303,17 +12405,7 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
-    "termin_dokonceni": {
-      "zdroj_id": "rs-33408284",
-      "druh": "lhuta",
-      "datum": null,
-      "citace": "Termín dokončení prací: do 105 kalendářních dnů od předání staveniště",
-      "strana": 4,
-      "url": "https://smlouvy.gov.cz/smlouva/soubor/40665832/SOD%20%2B%20rozpo%C4%8Det%2C%20ul.%20Valy%20-%20anonymizovan%C3%A1.pdf#page=4",
-      "smlouva_url": "https://smlouvy.gov.cz/smlouva/33408284",
-      "jistota": "dolozeno",
-      "podle": "smlouva"
-    },
+    "termin_dokonceni": null,
     "ukonceni_plneni": {
       "datum": "2025-12-19",
       "citace": "Plnění smlouvy ukončeno 19.12.2025",
@@ -14303,17 +14395,28 @@
             "datum": "2026-09-29",
             "zdroj_id": "rs-39711481",
             "url": "https://smlouvy.gov.cz/smlouva/39711481"
+          },
+          {
+            "cislo": 2,
+            "bez_dph": 111637.65,
+            "s_dph": 135081.56,
+            "jen_termin": false,
+            "doklad_usneseni": null,
+            "bez_castky": false,
+            "datum": "2026-11-23",
+            "zdroj_id": "rs-40461341",
+            "url": "https://smlouvy.gov.cz/smlouva/40461341"
           }
         ],
         "chybi_dodatky": [],
         "obsahuje_dopocet_dph": false,
-        "cena_po_dodatcich": 9319009.86,
+        "cena_po_dodatcich": 9430647.51,
         "neuplne_cena_po_dodatcich": [],
-        "cena_po_dodatcich_s_dph": 11276001.93,
+        "cena_po_dodatcich_s_dph": 11411083.49,
         "neuplne_cena_po_dodatcich_s_dph": [],
         "souhlas_zaplaceno": null,
         "souhlas_ezak": false,
-        "dodatky_bez_dph": 181382.7
+        "dodatky_bez_dph": 293020.35
       },
       {
         "role": "projekt",
@@ -14441,7 +14544,7 @@
         "druh": "smluvni",
         "s_dph": false,
         "mena": "CZK",
-        "po_dodatcich": 10373909.86,
+        "po_dodatcich": 10485547.51,
         "neuplne": [],
         "jistota": "nase_propojeni"
       },
@@ -14450,7 +14553,7 @@
         "druh": "smluvni",
         "s_dph": true,
         "mena": "CZK",
-        "po_dodatcich": 12538150.93,
+        "po_dodatcich": 12673232.49,
         "neuplne": [],
         "jistota": "nase_propojeni"
       },
@@ -14459,7 +14562,7 @@
           "skupina": "stavba",
           "nazev": "Stavba",
           "casti": 1,
-          "castka": 11276001.93,
+          "castka": 11411083.49,
           "nezname": [],
           "druh": "smluvni",
           "s_dph": true
@@ -14484,7 +14587,7 @@
         }
       ],
       "celkova_cena_s_dph": {
-        "castka": 12538150.93,
+        "castka": 12673232.49,
         "neuplne": [],
         "druh": "smluvni",
         "s_dph": true,
@@ -14778,6 +14881,43 @@
         "url": "https://smlouvy.gov.cz/smlouva/39711481",
         "evidencni_cislo_zakazky": null,
         "jistota": "nase_propojeni"
+      },
+      {
+        "id": "rs-40461341",
+        "id_smlouvy": "38060269",
+        "navazuje_na": "35797357",
+        "cislo_smlouvy": "750/9523/26/2",
+        "predmet": "Dodatek č. 2 ke smlouvě o dílo: Stavební úpravy MK v ul. Souběžná v Třeboni",
+        "role": "stavba",
+        "dodatek_cislo": 2,
+        "datum_uzavreni": "2026-11-23",
+        "strany": [
+          {
+            "nazev": "VKB stavby s.r.o.",
+            "jmeno_podnikatele": null,
+            "ico": "02192012"
+          }
+        ],
+        "castky": [
+          {
+            "hodnota": 111637.65,
+            "s_dph": false,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          },
+          {
+            "hodnota": 135081.56,
+            "s_dph": true,
+            "druh": "smluvni",
+            "mena": "CZK",
+            "jednotka": "Kč"
+          }
+        ],
+        "cena_neuvedena": false,
+        "url": "https://smlouvy.gov.cz/smlouva/40461341",
+        "evidencni_cislo_zakazky": null,
+        "jistota": "nase_propojeni"
       }
     ],
     "usneseni": [
@@ -14802,7 +14942,7 @@
       }
     ],
     "posledni_dodatek": {
-      "stavba": 1
+      "stavba": 2
     },
     "udalosti": [
       {
@@ -14922,18 +15062,29 @@
         "zdroj_id": "rs-39711481",
         "jistota": "nase_propojeni",
         "url": "https://smlouvy.gov.cz/smlouva/39711481"
+      },
+      {
+        "datum": "2026-11-23",
+        "typ": "dodatek",
+        "kategorie": "smlouva",
+        "kratce": "dodatek 2 (smlouva o dílo)",
+        "text": "Dodatek č. 2 ke smlouvě o dílo: Stavební úpravy MK v ul. Souběžná v Třeboni",
+        "role": "stavba",
+        "zdroj_id": "rs-40461341",
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/40461341"
       }
     ],
     "posledni_udalost": {
-      "datum": "2026-09-29",
+      "datum": "2026-11-23",
       "typ": "dodatek",
       "kategorie": "smlouva",
-      "kratce": "dodatek 1 (smlouva o dílo)",
-      "text": "Dodatek č. 1 ke smlouvě o dílo: Stavební úpravy MK v ul. Souběžná v Třeboni",
+      "kratce": "dodatek 2 (smlouva o dílo)",
+      "text": "Dodatek č. 2 ke smlouvě o dílo: Stavební úpravy MK v ul. Souběžná v Třeboni",
       "role": "stavba",
-      "zdroj_id": "rs-39711481",
+      "zdroj_id": "rs-40461341",
       "jistota": "nase_propojeni",
-      "url": "https://smlouvy.gov.cz/smlouva/39711481"
+      "url": "https://smlouvy.gov.cz/smlouva/40461341"
     },
     "sprm": [
       {
@@ -16874,7 +17025,17 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
-    "termin_dokonceni": null,
+    "termin_dokonceni": {
+      "zdroj_id": "rs-33993901",
+      "druh": "lhuta",
+      "datum": null,
+      "citace": "Termín dokončení prací: do 100 kalendářních dnů od předání staveniště",
+      "strana": 3,
+      "url": "https://smlouvy.gov.cz/smlouva/soubor/41339717/SOD%20-%20registr%20smluv.pdf#page=3",
+      "smlouva_url": "https://smlouvy.gov.cz/smlouva/33993901",
+      "jistota": "dolozeno",
+      "podle": "smlouva"
+    },
     "ukonceni_plneni": null,
     "okruh": "doprava_prostor",
     "okruh_podle": "téma"

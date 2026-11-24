@@ -1255,5 +1255,198 @@
    "hodnotaVcetneDph": "81675"
   },
   "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "38052625",
+   "idVerze": "40453457"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/40453457",
+  "casZverejneni": "2026-11-23T12:46:11+01:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "7pehv9f",
+    "nazev": "Slatinné lázně Třeboň s.r.o.",
+    "ico": "25179896",
+    "adresa": "Lázeňská 1001, 37901 Třeboň, CZ"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "36d7kda",
+    "nazev": "TJ Jiskra Třeboň, z.s.",
+    "ico": "00512907",
+    "adresa": "Jiráskova 444, Třeboň II, 37901, Třeboň"
+   },
+   "predmet": "Smlouva o ubytování",
+   "datumUzavreni": "2026-11-03",
+   "cisloSmlouvy": "10SM260309",
+   "schvalil": "prof. JUDr. Vilém Kahoun, Ph.D."
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "38053225",
+   "idVerze": "40454069"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/40454069",
+  "casZverejneni": "2026-11-23T13:03:00+01:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "7pehv9f",
+    "nazev": "Slatinné lázně Třeboň s.r.o.",
+    "ico": "25179896",
+    "adresa": "Lázeňská 1001, 37901 Třeboň, CZ"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "wwmnx32",
+    "nazev": "Prodej pobytů s.r.o.",
+    "ico": "03398951",
+    "adresa": "č.p. 119, 37803, Majdalena"
+   },
+   "predmet": "Smlouva o ubytování penzion Svět",
+   "datumUzavreni": "2026-11-03",
+   "cisloSmlouvy": "10SM260307",
+   "schvalil": "prof. JUDr. Vilém Kahoun, Ph.D."
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "38054697",
+   "idVerze": "40455601"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/40455601",
+  "casZverejneni": "2026-11-23T13:47:12+01:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "7pehv9f",
+    "nazev": "Slatinné lázně Třeboň s.r.o.",
+    "ico": "25179896",
+    "adresa": "Lázeňská 1001, 37901 Třeboň, CZ"
+   },
+   "smluvniStrana": {
+    "nazev": "Miroslav Kříž",
+    "ico": "11322128",
+    "adresa": "Štítného 60, 394 03 Horní Cerekev"
+   },
+   "predmet": "Smlouva o ubytování penzion Rožmberská",
+   "datumUzavreni": "2026-11-03",
+   "cisloSmlouvy": "10SM260301",
+   "schvalil": "prof. JUDr. Vilém Kahoun, Ph.D."
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "38055573",
+   "idVerze": "40456497"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/40456497",
+  "casZverejneni": "2026-11-23T14:06:12+01:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "7pehv9f",
+    "nazev": "Slatinné lázně Třeboň s.r.o.",
+    "ico": "25179896",
+    "adresa": "Lázeňská 1001, 37901 Třeboň, CZ"
+   },
+   "smluvniStrana": {
+    "nazev": "Hana Šmejkalová",
+    "ico": "71932119",
+    "adresa": "Klikov 48, 378 06 Suchdol nad Lužnicí"
+   },
+   "predmet": "Smlouva o ubytování penzion Grácie",
+   "datumUzavreni": "2026-11-03",
+   "cisloSmlouvy": "10SM260302",
+   "schvalil": "prof. JUDr. Vilém Kahoun, Ph.D."
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "38055969",
+   "idVerze": "40456901"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/40456901",
+  "casZverejneni": "2026-11-23T14:19:21+01:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "7pehv9f",
+    "nazev": "Slatinné lázně Třeboň s.r.o.",
+    "ico": "25179896",
+    "adresa": "Lázeňská 1001, 37901 Třeboň, CZ"
+   },
+   "smluvniStrana": {
+    "nazev": "Marie Dvořáková",
+    "ico": "60852046",
+    "adresa": "Jablonského 478, 379 01 Třeboň"
+   },
+   "predmet": "Smlouvy o ubytování penzion U Dvořáků",
+   "datumUzavreni": "2026-11-03",
+   "cisloSmlouvy": "10SM260303",
+   "schvalil": "prof. JUDr. Vilém Kahoun, Ph.D."
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "38056717",
+   "idVerze": "40457685"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/40457685",
+  "casZverejneni": "2026-11-23T14:41:11+01:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "7pehv9f",
+    "nazev": "Slatinné lázně Třeboň s.r.o.",
+    "ico": "25179896",
+    "adresa": "Lázeňská 1001, 37901 Třeboň, CZ"
+   },
+   "smluvniStrana": {
+    "nazev": "Dana Řepová",
+    "ico": "67192572",
+    "adresa": "Zahradní 1082, 379 01 Třeboň"
+   },
+   "predmet": "Smlouva o ubytování penzion U Kubalů",
+   "datumUzavreni": "2026-11-03",
+   "cisloSmlouvy": "10SM260304",
+   "schvalil": "prof. JUDr. Vilém Kahoun, Ph.D."
+  },
+  "platnyZaznam": "1"
+ },
+ {
+  "identifikator": {
+   "idSmlouvy": "38060269",
+   "idVerze": "40461341"
+  },
+  "odkaz": "https://smlouvy.gov.cz/smlouva/40461341",
+  "casZverejneni": "2026-11-23T17:10:38+01:00",
+  "smlouva": {
+   "subjekt": {
+    "datovaSchranka": "4cbbvj4",
+    "nazev": "Město Třeboň",
+    "ico": "00247618",
+    "adresa": "Město Třeboň,  Palackého nám. 46/II,  37901 Třeboň",
+    "utvar": "Neurčeno",
+    "platce": "1"
+   },
+   "smluvniStrana": {
+    "datovaSchranka": "3jq33jj",
+    "nazev": "VKB stavby s.r.o.",
+    "ico": "02192012",
+    "adresa": "Buk 51,  38301 Buk",
+    "prijemce": "1",
+    "identifikace": "PO"
+   },
+   "predmet": "Dodatek č. 2 ke smlouvě o dílo: Stavební úpravy MK v ul. Souběžná v Třeboni",
+   "datumUzavreni": "2026-11-23",
+   "cisloSmlouvy": "750/9523/26/2",
+   "schvalil": "Mgr. Aleš Kolář",
+   "hodnotaBezDph": "111637.65",
+   "hodnotaVcetneDph": "135081.56",
+   "navazanyZaznam": "35797357"
+  },
+  "platnyZaznam": "1",
+  "navazanyZaznam": "https://smlouvy.gov.cz/smlouva/35797357"
  }
 ]
