@@ -30,6 +30,7 @@ from pipeline import zasobnik as modul_zasobnik
 from pipeline import harmonogram as modul_harmonogram
 from pipeline import terminy as modul_terminy
 from pipeline import relevance as modul_relevance
+from pipeline import duvody_dodatku as modul_duvody
 from pipeline import ukonceni as modul_ukonceni
 from pipeline import ukazatele as modul_ukazatele
 from pipeline import mapa as modul_mapa
@@ -432,6 +433,27 @@ def sestav(koren: Path | None = None) -> tuple[dict[str, list], list[str]]:
     podle_id = {t["zdroj_id"]: t for t in vystup["terminy"]}
     for k in vystup["projekty"]:
         k["termin_dokonceni"] = modul_terminy.pro_kartu(k, podle_id)
+    # hlavní důvod dodatku (#274): z týchž úryvků příloh (registr smluv) čte kód druh změny s doslovnou citací;
+    # u dodatku jen o termínu, který nemá úryvek, se důvod doplní z usnesení, jímž byl schválen.
+    vystup["duvody_dodatku"], chyby_dd = modul_duvody.sestav(
+        json.loads(cesta_t.read_text(encoding="utf-8")) if cesta_t.exists() else {})
+    chyby += chyby_dd
+    duvod_id = {x["zdroj_id"]: x for x in vystup["duvody_dodatku"]}
+    usn_id = {u["id"]: u for u in vystup["usneseni"]}
+    for k in vystup["projekty"]:
+        for c in k["casti"]:
+            for dd in c["dodatky"]:
+                d = duvod_id.get(dd.get("zdroj_id"))
+                if d:
+                    dd["duvod"] = {"text": d["text"], "citace": d["citace"], "url": d["url"],
+                                   "jistota": "dolozeno", "duvod_ai": False, "zdroj": "dodatek"}
+                elif dd.get("jen_termin"):
+                    u = usn_id.get(dd.get("doklad_usneseni"))
+                    dd["duvod"] = {"text": "změna termínu dokončení díla",
+                                   "url": (u or {}).get("url") or dd.get("url"),
+                                   "usneseni_cislo": (u or {}).get("cislo"),
+                                   "jistota": "dolozeno", "duvod_ai": False,
+                                   "zdroj": "usnesení" if u else "dodatek"}
     # doložené ukončení plnění stavební smlouvy z E-ZAK (#207): archiv dokončených projektů po letech
     cesta_pl = koren / "raw" / "ezak" / "plneni.json"
     plneni = json.loads(cesta_pl.read_text(encoding="utf-8")) if cesta_pl.exists() else {}
