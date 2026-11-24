@@ -422,7 +422,18 @@ __GISCSS__
 .zpr .hl2{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;font-size:13px;color:var(--mute)}
 .zpr b.t{display:block;font:600 15.5px/1.35 var(--font);margin:4px 0 2px}
 .zpr p{margin:0 0 4px;font-size:14px;color:var(--ink)}
-.zpr .cena{font-size:13.5px;font-weight:600}.zpr .zdr{font-size:13px;margin:0}.zpr .zdr a{margin-right:10px}
+.zpr .cena{font-size:13.5px;font-weight:600}
+.zpr .zdr{display:grid;gap:6px;margin:10px 0 0}
+.okruh .zpr .zdr a{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 8px;align-items:start;
+  width:100%;margin:0;padding:9px 10px;border:0;border-inline-start:3px solid currentColor;
+  border-radius:var(--rounded);background:var(--doklad-bg,#f1f5f9);color:var(--doklad-ink,#334155);
+  font-size:13px;line-height:1.45;overflow-wrap:anywhere}
+.zpr .zdr .smlouva{--doklad-bg:#fff2dc;--doklad-ink:#874006}
+.zpr .zdr .zakazka{--doklad-bg:#e1f4ef;--doklad-ink:#125e50}
+.zpr .zdr .rozhodnuti{--doklad-bg:#eaf0ff;--doklad-ink:#2347a2}
+.zpr .zdr a>span:last-child{grid-column:1/-1;color:var(--ink)}
+.zpr .zdr a:hover>span:last-child,.zpr .zdr a:focus-visible>span:last-child{text-decoration:underline}
+.zpr .zdr a:focus-visible{outline:2px solid currentColor;outline-offset:2px}
 .zpr .ai{font-size:12.5px;color:var(--mute)}
 .zpr .sk>summary,.zpr .sk>.skn{font:700 14.5px var(--font-h);cursor:pointer}
 .zpr .sk ul{list-style:none;margin:6px 0 0;padding:0 0 0 12px;border-left:3px solid var(--border-subtle)}.zpr .sk ul li{padding:6px 0}
@@ -1086,7 +1097,19 @@ function zprCastka(c,zdroj){if(!c)return"";const dph=c.s_dph===true?"s DPH":c.s_
 // rozporné částky ze dvou zdrojů se neslučují ani nesčítají: ukážou se obě s uvedením zdroje (review #257)
 function zprCastky(z){if(z.castky)return `<div class="ceny-rozpor">${z.castky.map(c=>zprCastka(c,c.zdroj)).join("")}<small>Zdroje se liší, částky se nesčítají.</small></div>`;
   return zprCastka(z.castka);}
-function zprZdroje(z){return `<p class="zdr">${z.zdroje.map(x=>`<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.nazev)} ↗</a>`).join("")}</p>`;}
+function zprZdroje(z){
+  const odkazy=z.zdroje.map(({url,nazev})=>{
+    const zdroj=[
+      ["Registr smluv: ","smlouva","Registr smluv"],
+      ["Zadávací profil (E-ZAK): ","zakazka","Zadávací profil (E-ZAK)"],
+      ["Zápis z jednání ","rozhodnuti","Rozhodnutí města"],
+    ].find(([prefix])=>nazev.startsWith(prefix));
+    const [prefix,typ,stit]=zdroj??["","jiny","Dokument"];
+    const popis=typ==="smlouva"||typ==="zakazka"?nazev.slice(prefix.length):nazev;
+    return `<a class="${typ}" href="${esc(url)}" target="_blank" rel="noopener"><strong>${stit}</strong><span aria-hidden="true">↗</span><span>${esc(popis)}</span></a>`;
+  });
+  return odkazy.length?`<div class="zdr">${odkazy.join("")}</div>`:"";
+}
 function zprava(z){
   const pillky=zprDruhy(z).map(d=>`<span class="pill ${d}">${DRUH_NAZEV[d]}</span>`).join(" ");
   const od=z.plati_od?` · platí od ${dat(z.plati_od)}`:"";
