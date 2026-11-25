@@ -23,13 +23,19 @@ from pipeline.zdroje import ChybaZdroje, Dokument, Stazeno, Zdroj
 
 ZAKLAD_RM = "https://www.mesto-trebon.cz/cz/mestsky-urad-trebon/samosprava-mesta/rada-mesta/zapisy-z-jednani-rady-mesta/"
 ZAKLAD_ZM = "https://www.mesto-trebon.cz/cz/mestsky-urad-trebon/samosprava-mesta/zastupitelstvo-mesta/zapisy-zastupitelstva-mesta/"
-# (typ, orgán, výpis zápisů, nejstarší datum jednání nebo None = vše). Období 2022–2026 jen od 1. 9. 2026
-# (rozhodnutí 19. 11. 2026, #38); starší zápisy se zpracovávají jen výběrově (ZADANI.md).
+# (typ, orgán, výpis zápisů, nejstarší datum jednání nebo None = vše). Historii stahujeme zpět do 2020
+# (rozhodnutí Ondřeje 25. 11. 2026, #278); u historických jednání bere sestavení jen usnesení relevantní
+# k investicím (pipeline/relevance.py). URL období 2018–2022 jsou podle vzoru a ověří se při prvním běhu –
+# nedostupný seznam se přeskočí (stahování je po seznamech odolné), nezastaví ostatní.
+# (typ, orgán, URL výpisu, nejstarší datum | None, volitelný). Volitelný = dosud neověřená URL: když chybí,
+# jen se přeskočí (ostatní pokračují); u ověřených (jádrových) výpisů výpadek propadne dál (zachová poslední data).
 STRANKY = (
-    ("zapis_rada", "rm", ZAKLAD_RM + "volebni-obdobi-2026---2030.html", None),
-    ("zapis_zm", "zm", ZAKLAD_ZM + "volebni-obdobi-2026---2030-2.html", None),
-    ("zapis_rada", "rm", ZAKLAD_RM + "volebni-obdobi-2022---2026-2.html", "2026-09-01"),
-    ("zapis_zm", "zm", ZAKLAD_ZM + "volebni-obdobi-2022---2026.html", "2026-09-01"),
+    ("zapis_rada", "rm", ZAKLAD_RM + "volebni-obdobi-2026---2030.html", None, False),
+    ("zapis_zm", "zm", ZAKLAD_ZM + "volebni-obdobi-2026---2030-2.html", None, False),
+    ("zapis_rada", "rm", ZAKLAD_RM + "volebni-obdobi-2022---2026-2.html", "2020-01-01", False),
+    ("zapis_zm", "zm", ZAKLAD_ZM + "volebni-obdobi-2022---2026.html", "2020-01-01", False),
+    ("zapis_rada", "rm", ZAKLAD_RM + "volebni-obdobi-2018---2022-2.html", "2020-01-01", True),
+    ("zapis_zm", "zm", ZAKLAD_ZM + "volebni-obdobi-2018---2022.html", "2020-01-01", True),
 )
 USER_AGENT = "radnice-pipeline/1.0"
 MIN_ZNAKU = 200            # méně textu v celém PDF = pravděpodobně sken nebo prázdný dokument
@@ -128,8 +134,14 @@ class ZapisyMesta(Zdroj):
     def stahni(self, manifest: list[dict], dnes) -> Stazeno:
         nabidka: list[Dokument] = []
         upozorneni: list[str] = []
-        for typ, organ, url, od in self.stranky:
-            html = self.ziskej(url).decode("utf-8", "replace")
+        for typ, organ, url, od, volitelny in self.stranky:
+            try:
+                html = self.ziskej(url).decode("utf-8", "replace")
+            except ChybaZdroje as e:
+                if not volitelny:
+                    raise   # jádrový výpis: výpadek propadne dál (zachová poslední data)
+                upozorneni.append(f"výpis zápisů nedostupný, přeskočeno: {e}")   # neověřená URL staršího období
+                continue
             d, u = parsuj_stranku(html, url, typ, organ)
             nabidka += [x for x in d if od is None or x.jednani_id.split("-", 1)[1] >= od]
             upozorneni += u

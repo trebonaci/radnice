@@ -29,6 +29,8 @@ from pipeline import projekty as modul_projekty
 from pipeline import zasobnik as modul_zasobnik
 from pipeline import harmonogram as modul_harmonogram
 from pipeline import terminy as modul_terminy
+from pipeline import relevance as modul_relevance
+from pipeline import duvody_dodatku as modul_duvody
 from pipeline import ukonceni as modul_ukonceni
 from pipeline import ukazatele as modul_ukazatele
 from pipeline import mapa as modul_mapa
@@ -214,6 +216,9 @@ def zpracuj_jednani(jednani_id: str, manifest: dict, chyby: list[str], osoby: di
         return True
 
     meta = anot["jednani"]
+    # historická jednání (staré volební období, před ustavujícím ZM 2. 11. 2026): bereme jen usnesení
+    # relevantní k investicím a rozpočtu investic (#278); aktuální rada a zastupitelstvo se nefiltrují
+    historicke = (meta.get("datum") or "") < "2026-11-01"
     over(meta["citace"], dokument, "jednani")
     for z in meta.get("pritomnost_zmeny", []):
         over(z["citace"], dokument, "pritomnost")
@@ -227,7 +232,12 @@ def zpracuj_jednani(jednani_id: str, manifest: dict, chyby: list[str], osoby: di
     for u in rozlozeno["usneseni"]:
         a = anot["usneseni"].get(u["id"])
         if a is None:
-            chyby.append(f"{jednani_id}: usnesení {u['id']} nemá anotaci")
+            # U historických jednání (#278) se neinvestiční usnesení neanotují a tiše se vynechají;
+            # chybějící anotace investičního usnesení je chyba i u historie. Aktuální jednání: vždy chyba.
+            if not historicke:
+                chyby.append(f"{jednani_id}: usnesení {u['id']} nemá anotaci")
+            elif modul_relevance.investicni(u["text"])[0]:
+                chyby.append(f"{jednani_id}: investiční usnesení {u['id']} nemá anotaci (historické jednání)")
             continue
         anon = a.get("anonymizace", [])
         ok = over(a["citace"], u["text"], u["id"])
@@ -423,6 +433,32 @@ def sestav(koren: Path | None = None) -> tuple[dict[str, list], list[str]]:
     podle_id = {t["zdroj_id"]: t for t in vystup["terminy"]}
     for k in vystup["projekty"]:
         k["termin_dokonceni"] = modul_terminy.pro_kartu(k, podle_id)
+    # hlavní důvod dodatku (#274): z týchž úryvků příloh (registr smluv) čte kód druh změny s doslovnou citací;
+    # u dodatku jen o termínu, který nemá úryvek, se důvod doplní z usnesení, jímž byl schválen.
+    vystup["duvody_dodatku"], chyby_dd = modul_duvody.sestav(
+        json.loads(cesta_t.read_text(encoding="utf-8")) if cesta_t.exists() else {})
+    chyby += chyby_dd
+    duvod_id = {x["zdroj_id"]: x for x in vystup["duvody_dodatku"]}
+    usn_id = {u["id"]: u for u in vystup["usneseni"]}
+    jednani_dok = {j["id"]: j.get("dokument") for j in jednani}
+    for k in vystup["projekty"]:
+        for c in k["casti"]:
+            for dd in c["dodatky"]:
+                d = duvod_id.get(dd.get("zdroj_id"))
+                if d:
+                    dd["duvod"] = {"text": d["text"], "citace": d["citace"], "url": d["url"],
+                                   "jistota": "dolozeno", "duvod_ai": False, "zdroj": "dodatek"}
+                elif dd.get("jen_termin"):
+                    u = usn_id.get(dd.get("doklad_usneseni"))
+                    dok = (jednani_dok.get((u or {}).get("jednani_id")) or {}) if u else {}
+                    strany = ((u or {}).get("citace") or {}).get("strany") or []
+                    fraze = "změna termínu dokončení díla"
+                    text_u = " ".join(((u or {}).get("text") or "").split())
+                    if u and dok.get("url") and fraze in text_u:
+                        url = dok["url"] + (f"#page={strany[0]}" if strany else "")
+                        dd["duvod"] = {"text": fraze, "citace": fraze, "url": url,
+                                       "usneseni_cislo": u.get("cislo"),
+                                       "jistota": "dolozeno", "duvod_ai": False, "zdroj": "usnesení"}
     # doložené ukončení plnění stavební smlouvy z E-ZAK (#207): archiv dokončených projektů po letech
     cesta_pl = koren / "raw" / "ezak" / "plneni.json"
     plneni = json.loads(cesta_pl.read_text(encoding="utf-8")) if cesta_pl.exists() else {}

@@ -52,7 +52,15 @@
             "bez_castky": false,
             "datum": "2026-05-18",
             "zdroj_id": "rs-38006909",
-            "url": "https://smlouvy.gov.cz/smlouva/38006909"
+            "url": "https://smlouvy.gov.cz/smlouva/38006909",
+            "duvod": {
+              "text": "vícepráce (a méněpráce, změna ceny díla)",
+              "citace": "vající ve změně ceny díla, na základě provedení víceprací a méněprací nutných k dokončení díla, podle specifikace ve schváleném Změnovém listu č",
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/45928693/Dod%201%20s%20prilohami%20RS.pdf#page=1",
+              "jistota": "dolozeno",
+              "duvod_ai": false,
+              "zdroj": "dodatek"
+            }
           }
         ],
         "chybi_dodatky": [],
@@ -1558,7 +1566,15 @@
             "bez_castky": false,
             "datum": "2026-07-15",
             "zdroj_id": "rs-38959598",
-            "url": "https://smlouvy.gov.cz/smlouva/38959598"
+            "url": "https://smlouvy.gov.cz/smlouva/38959598",
+            "duvod": {
+              "text": "změna termínu dokončení",
+              "citace": "Kdy se smluvní strany se dohodly na změně termínu dokončení stavby z důvodu nepříznivých klimatických podmínek, konkrétně vysokých venkovní",
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/47018082/Dodatek%20%C4%8D.%202._v%C4%8Detn%C4%9B%20p%C5%99%C3%ADloh_an.pdf#page=2",
+              "jistota": "dolozeno",
+              "duvod_ai": false,
+              "zdroj": "dodatek"
+            }
           }
         ],
         "chybi_dodatky": [],
@@ -5746,7 +5762,15 @@
             "bez_castky": true,
             "datum": "2026-09-25",
             "zdroj_id": "rs-39681309",
-            "url": "https://smlouvy.gov.cz/smlouva/39681309"
+            "url": "https://smlouvy.gov.cz/smlouva/39681309",
+            "duvod": {
+              "text": "změna termínu dokončení",
+              "citace": "Smlouvy o dílo smluvní strany mezi sebou projednaly a odsouhlasily: prodloužení termínu dokončení stavby venkovních ploch o 15 kalendářních dní",
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/47834229/Dodatek%20%C4%8D.%204%20-%20registr%20smluv.pdf#page=2",
+              "jistota": "dolozeno",
+              "duvod_ai": false,
+              "zdroj": "dodatek"
+            }
           },
           {
             "cislo": 5,
@@ -7384,7 +7408,15 @@
             "bez_castky": false,
             "datum": "2024-11-27",
             "zdroj_id": "rs-31161940",
-            "url": "https://smlouvy.gov.cz/smlouva/31161940"
+            "url": "https://smlouvy.gov.cz/smlouva/31161940",
+            "duvod": {
+              "text": "vícepráce (a méněpráce, změna termínu dokončení)",
+              "citace": "V průběhu realizace díla vznikly nepředvídané vícepráce a méněpráce nutné pro řádné provedení díla",
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/38074140/Dodatek%20%C4%8D.%201%20-%20anonymizovan%C3%BD.pdf#page=1",
+              "jistota": "dolozeno",
+              "duvod_ai": false,
+              "zdroj": "dodatek"
+            }
           },
           {
             "cislo": 2,
@@ -7417,7 +7449,15 @@
             "bez_castky": false,
             "datum": "2025-04-25",
             "zdroj_id": "rs-33042828",
-            "url": "https://smlouvy.gov.cz/smlouva/33042828"
+            "url": "https://smlouvy.gov.cz/smlouva/33042828",
+            "duvod": {
+              "text": "vícepráce (a méněpráce, změna termínu dokončení)",
+              "citace": "V průběhu realizace díla vznikly nepředvídané vícepráce a méněpráce nutné pro řádné provedení díla",
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/40241344/Dodatek%20%C4%8D.%204%20ke%20SOD.pdf#page=1",
+              "jistota": "dolozeno",
+              "duvod_ai": false,
+              "zdroj": "dodatek"
+            }
           },
           {
             "cislo": 5,
@@ -9207,7 +9247,15 @@
             "bez_castky": true,
             "datum": "2026-09-14",
             "zdroj_id": "rs-39520809",
-            "url": "https://smlouvy.gov.cz/smlouva/39520809"
+            "url": "https://smlouvy.gov.cz/smlouva/39520809",
+            "duvod": {
+              "text": "změna termínu dokončení",
+              "citace": "Smlouvy o dílo smluvní strany mezi sebou projednaly a odsouhlasily: prodloužení termínu dokončení stavby o 35 kalendářních dní",
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/47651085/Dodatek%20%C4%8D.%204%20registr%20smluv.pdf#page=2",
+              "jistota": "dolozeno",
+              "duvod_ai": false,
+              "zdroj": "dodatek"
+            }
           },
           {
             "cislo": 5,
@@ -12455,7 +12503,15 @@
             "bez_castky": true,
             "datum": "2026-10-27",
             "zdroj_id": "rs-40109301",
-            "url": "https://smlouvy.gov.cz/smlouva/40109301"
+            "url": "https://smlouvy.gov.cz/smlouva/40109301",
+            "duvod": {
+              "text": "změna termínu dokončení",
+              "citace": "Důvodem změny doby plnění díla je prodloužení průběhu stavebního řízení a z toho vyplývající pozdější nabytí právní",
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/48324433/VO%20Brann%C3%A1%20dod%201%20RS.pdf#page=1",
+              "jistota": "dolozeno",
+              "duvod_ai": false,
+              "zdroj": "dodatek"
+            }
           },
           {
             "cislo": 2,
@@ -12466,7 +12522,15 @@
             "bez_castky": true,
             "datum": "2026-11-19",
             "zdroj_id": "rs-40413413",
-            "url": "https://smlouvy.gov.cz/smlouva/40413413"
+            "url": "https://smlouvy.gov.cz/smlouva/40413413",
+            "duvod": {
+              "text": "změna termínu dokončení",
+              "citace": "1) Tímto dodatkem se smluvní strany dohodly na změně doby plnění díla specifikované",
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/48670905/VO%20Brann%C3%A1%20dod%202%20RS.pdf#page=1",
+              "jistota": "dolozeno",
+              "duvod_ai": false,
+              "zdroj": "dodatek"
+            }
           }
         ],
         "chybi_dodatky": [],
@@ -13191,7 +13255,15 @@
             "bez_castky": false,
             "datum": "2026-08-31",
             "zdroj_id": "rs-39329287",
-            "url": "https://smlouvy.gov.cz/smlouva/39329287"
+            "url": "https://smlouvy.gov.cz/smlouva/39329287",
+            "duvod": {
+              "text": "vícepráce (a méněpráce)",
+              "citace": "1., a to na základě potřeby provedení víceprací a méněprací nutných k dokončení díla (z důvodů skutečností, které se vyskytly během prová",
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/47433943/Dodatek%20%C4%8D.1%20ke%20SOD%20-%20kolon%C3%A1da%20Bertiny%20l%C3%A1zn%C4%9B_anonymizovan%C3%BD.pdf#page=2",
+              "jistota": "dolozeno",
+              "duvod_ai": false,
+              "zdroj": "dodatek"
+            }
           },
           {
             "cislo": 2,
@@ -13202,7 +13274,15 @@
             "bez_castky": false,
             "datum": "2026-10-27",
             "zdroj_id": "rs-40117897",
-            "url": "https://smlouvy.gov.cz/smlouva/40117897"
+            "url": "https://smlouvy.gov.cz/smlouva/40117897",
+            "duvod": {
+              "text": "vícepráce (a rozšíření předmětu díla)",
+              "citace": "1., a to na základě potřeby provedení víceprací nutných k dokončení díla (z důvodu skutečnosti rozšíření rozsahu díla během provádění sta",
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/48334957/Dodatek%20%C4%8D.2%20ke%20SOD%20-%20kolon%C3%A1da%20Bertiny%20l%C3%A1zn%C4%9B_anonymizovan%C3%BD.pdf#page=2",
+              "jistota": "dolozeno",
+              "duvod_ai": false,
+              "zdroj": "dodatek"
+            }
           }
         ],
         "chybi_dodatky": [],
@@ -14074,7 +14154,15 @@
             "bez_castky": false,
             "datum": "2026-08-31",
             "zdroj_id": "rs-39329195",
-            "url": "https://smlouvy.gov.cz/smlouva/39329195"
+            "url": "https://smlouvy.gov.cz/smlouva/39329195",
+            "duvod": {
+              "text": "vícepráce (a méněpráce, změna ceny díla)",
+              "citace": "46440, Pražská 193, 373 67, Borek, je provedení víceprací a méněprací nutných k dokončení díla v celkové ceně - 34.358,00 Kč bez DPH (- 38.481,00 K",
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/47433827/Dodatek%20%C4%8D.1%20ke%20SOD%20-%20kotelny%20DPS%201A%201C_anonymizovan%C3%BD.pdf#page=2",
+              "jistota": "dolozeno",
+              "duvod_ai": false,
+              "zdroj": "dodatek"
+            }
           }
         ],
         "chybi_dodatky": [],
@@ -14394,7 +14482,15 @@
             "bez_castky": false,
             "datum": "2026-09-29",
             "zdroj_id": "rs-39711481",
-            "url": "https://smlouvy.gov.cz/smlouva/39711481"
+            "url": "https://smlouvy.gov.cz/smlouva/39711481",
+            "duvod": {
+              "text": "vícepráce (a změna ceny díla)",
+              "citace": "Důvodem jsou zejména nepředpokládané vícepráce, které nebylo možné před zahájením stavebních prací předvídat",
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/47867377/Dodatek%20%C4%8D.1_anonymizovan%C3%BD.pdf#page=2",
+              "jistota": "dolozeno",
+              "duvod_ai": false,
+              "zdroj": "dodatek"
+            }
           },
           {
             "cislo": 2,
@@ -18153,7 +18249,15 @@
             "bez_castky": false,
             "datum": "2025-04-29",
             "zdroj_id": "rs-33096484",
-            "url": "https://smlouvy.gov.cz/smlouva/33096484"
+            "url": "https://smlouvy.gov.cz/smlouva/33096484",
+            "duvod": {
+              "text": "vícepráce (a změna ceny díla)",
+              "citace": "ající ve změně ceny díla, na základě provedení požadovaných víceprací nutných k dokončení díla podle Změnového listu č",
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/40303548/dod%201%20s%20pril%20RS.pdf#page=1",
+              "jistota": "dolozeno",
+              "duvod_ai": false,
+              "zdroj": "dodatek"
+            }
           }
         ],
         "chybi_dodatky": [],
@@ -18574,7 +18678,15 @@
             "bez_castky": false,
             "datum": "2025-05-30",
             "zdroj_id": "rs-33481692",
-            "url": "https://smlouvy.gov.cz/smlouva/33481692"
+            "url": "https://smlouvy.gov.cz/smlouva/33481692",
+            "duvod": {
+              "text": "vícepráce (a rozšíření předmětu díla, změna ceny díla, změna termínu dokončení)",
+              "citace": "na konci doplňuje o nový text, který zní: c) předmětem díla je dále provedení dodatečných prací a dodávek, jak jsou uvedeny ve Změnovém listu č",
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/40751472/Dodatek%20%C4%8D.%201%20-%20registr%20smluv.pdf#page=2",
+              "jistota": "dolozeno",
+              "duvod_ai": false,
+              "zdroj": "dodatek"
+            }
           },
           {
             "cislo": 2,
@@ -18585,7 +18697,15 @@
             "bez_castky": false,
             "datum": "2025-08-25",
             "zdroj_id": "rs-34546249",
-            "url": "https://smlouvy.gov.cz/smlouva/34546249"
+            "url": "https://smlouvy.gov.cz/smlouva/34546249",
+            "duvod": {
+              "text": "vícepráce (a rozšíření předmětu díla, změna ceny díla, změna termínu dokončení)",
+              "citace": "na konci doplňuje o nový text, který zní: c) předmětem díla je dále provedení dodatečných prací a dodávek, jak jsou uvedeny ve Změnových listech č",
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/41977509/Dodatek%20%C4%8D.%202%20-%20registr%20smluv.pdf#page=2",
+              "jistota": "dolozeno",
+              "duvod_ai": false,
+              "zdroj": "dodatek"
+            }
           },
           {
             "cislo": 3,
@@ -19398,7 +19518,15 @@
             "bez_castky": false,
             "datum": "2025-04-16",
             "zdroj_id": "rs-32937788",
-            "url": "https://smlouvy.gov.cz/smlouva/32937788"
+            "url": "https://smlouvy.gov.cz/smlouva/32937788",
+            "duvod": {
+              "text": "změna termínu dokončení",
+              "citace": "1, dochází ke změně termínu dokončení díla z důvodu navýšení rozsahu stavebních prací, které jsou řešeny tímto Dodatk",
+              "url": "https://smlouvy.gov.cz/smlouva/soubor/40120232/Dodatek%20%C4%8D.%202%20ke%20SOD%20-%20technologick%C3%A1%20%C5%A1achta.pdf#page=1",
+              "jistota": "dolozeno",
+              "duvod_ai": false,
+              "zdroj": "dodatek"
+            }
           }
         ],
         "chybi_dodatky": [],

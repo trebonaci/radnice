@@ -46,7 +46,11 @@ class Web:
         if self.vypadek:
             raise ChybaZdroje(f"{url}: HTTP 503")
         self.stazeno.append(url)
-        return self.stranky[url] if url in self.stranky else self.pdf[url]
+        if url in self.stranky:
+            return self.stranky[url]
+        if url in self.pdf:
+            return self.pdf[url]
+        raise ChybaZdroje(f"{url}: HTTP 404")   # neznámá URL (např. dosud neověřený výpis období) = nedostupná
 
     def extrahuj(self, obsah):
         return self.texty[obsah]
@@ -98,20 +102,20 @@ def test_parsuje_vzorek_stranky():
     assert datum_zapisu("", "https://x/uploads/news/id1/Z-01-26-11-02.pdf") == "2026-11-02"
 
 
-def test_obdobi_2022_2026_jen_od_zari_2026(koren):
-    """Ze stránek minulého období se berou jen jednání od 1. 9. 2026 (#38)."""
+def test_obdobi_2022_2026_od_2020(koren):
+    """Historie: z období 2022–2026 se berou jednání od 2020 (#278), ne jen od 9/2026."""
     web = Web()
     web.stranky[URL_RM_2022] = (
         '<a href="/uploads/news/id15000/Z-109-26-08-26-A.pdf">Z-109-26-08-26-A.pdf</a>'
         '<a href="/uploads/news/id15037/Z-110-26-09-09-A.pdf">Z-110-26-09-09-A.pdf</a>').encode()
     web.stranky[URL_ZM_2022] = b'<a href="/uploads/news/id15066/Z-31-26-09-21-A.pdf">Z-31-26-09-21-A.pdf</a>'
-    for url in ("https://www.mesto-trebon.cz/uploads/news/id15037/Z-110-26-09-09-A.pdf",
+    for url in ("https://www.mesto-trebon.cz/uploads/news/id15000/Z-109-26-08-26-A.pdf",
+                "https://www.mesto-trebon.cz/uploads/news/id15037/Z-110-26-09-09-A.pdf",
                 "https://www.mesto-trebon.cz/uploads/news/id15066/Z-31-26-09-21-A.pdf"):
         web.pdf[url] = PDF["rm-2026-11-04"][1]
     stazeno = web.zdroj().stahni(json.loads(cti(koren, "raw/manifest.json")), DNES)
     jednani = {d.jednani_id for d in stazeno.dokumenty}
-    assert {"rm-2026-09-09", "zm-2026-09-21"} <= jednani and "rm-2026-08-26" not in jednani
-    assert not any("Z-109" in u for u in web.stazeno)
+    assert {"rm-2026-08-26", "rm-2026-09-09", "zm-2026-09-21"} <= jednani
 
 
 def test_beh_beze_zmeny_nic_nemeni_a_posune_plan(koren):
