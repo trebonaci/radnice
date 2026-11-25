@@ -140,10 +140,21 @@ def main() -> None:
     shutil.copytree(SABLONA.parent / "fonts", cil / "fonts", dirs_exist_ok=True)
     # knihovna mapy Leaflet (#208) – z vlastního webu, ne z CDN
     shutil.copytree(SABLONA.parent / "leaflet", cil / "leaflet", dirs_exist_ok=True)
-    # Cloudflare Pages: bez indexování náhledů, základní bezpečnostní hlavičky
+    # Datové JSON pro modul /radnice/ na trebonaci.cz (#177): servírované z Cloudflare,
+    # načítané napříč doménami (CORS níže), aktualizuje je denní běh pipeline automaticky.
+    data_cil = cil / "data"
+    data_cil.mkdir(exist_ok=True)
+    for nazev in ("prehled", "ukazatele", "beh"):
+        zdroj = KOREN / "data" / f"{nazev}.json"
+        if zdroj.exists():
+            shutil.copyfile(zdroj, data_cil / f"{nazev}.json")
+    # Cloudflare Pages: bez indexování náhledů, základní bezpečnostní hlavičky;
+    # /data/* je veřejné JSON pro cizí doménu (trebonaci.cz), proto CORS a bez indexace.
     (cil / "_headers").write_text(
         "/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n"
-        + ("  X-Robots-Tag: noindex\n" if args.nahled else ""), encoding="utf-8")
+        + ("  X-Robots-Tag: noindex\n" if args.nahled else "")
+        + "\n/data/*\n  Access-Control-Allow-Origin: *\n  X-Robots-Tag: noindex\n",
+        encoding="utf-8")
     print(cil / "index.html")
 
 
