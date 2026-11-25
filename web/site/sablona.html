@@ -613,14 +613,14 @@ function stavDoklad(p){
 
 function radkyCasti(c){
   const odkaz=c.puvodni?.url||c.dodatky[0]?.url;
-  const jm=odkaz?`<a href="${odkaz}">${esc(kdo(c.dodavatel))}</a>`:esc(kdo(c.dodavatel));
+  const jm=odkaz?`<a href="${odkaz}" target="_blank" rel="noopener">${esc(kdo(c.dodavatel))}</a>`:esc(kdo(c.dodavatel));
   const zakl=c.puvodni?(c.puvodni.s_dph!=null||c.puvodni.bez_dph!=null?kcs(c.puvodni.s_dph,c.puvodni.bez_dph):"cena neuvedena"):"smlouva zatím v datech není";
   let r=`<tr><td class="r">${ROLE[c.role]||c.role}</td><td>${jm}</td><td class="c">${zakl}</td></tr>`;
   for(const d of c.dodatky){
     const v=d.jen_termin?"jen termín":d.s_dph!=null?plus(d.s_dph):d.bez_dph!=null?plus(d.bez_dph)+" bez DPH":"cena neuvedena";
     const cel=d.castka_je_celkova?`<small>v registru uvedena nová celková cena ${d.celkova_s_dph!=null?kcp(d.celkova_s_dph):kcp(d.celkova_bez_dph)+" bez DPH"}</small>`:"";
     const duv=d.duvod?`<small class="duvod" title="${esc(d.duvod.citace||"")}">důvod: ${esc(d.duvod.text)}${d.duvod.usneseni_cislo?` · ${esc(d.duvod.usneseni_cislo)}`:""}${d.duvod.zdroj==="dodatek"?' <a href="'+esc(d.duvod.url)+'" target="_blank" rel="noopener">doklad</a>':""}</small>`:"";
-    r+=`<tr class="dd"><td></td><td><a href="${d.url}">dodatek č. ${d.cislo}</a> · ${dat(d.datum)}${cel}${duv}</td><td class="c">${v}</td></tr>`;
+    r+=`<tr class="dd"><td></td><td><a href="${d.url}" target="_blank" rel="noopener">dodatek č. ${d.cislo}</a> · ${dat(d.datum)}${cel}${duv}</td><td class="c">${v}</td></tr>`;
   }
   if(c.chybi_dodatky.length) r+=`<tr class="dd"><td></td><td>dodatek č. ${c.chybi_dodatky.join(", ")} zatím v datech není</td><td></td></tr>`;
   if(c.dodatky.length){const s_=c.cena_po_dodatcich_s_dph!=null;const t=s_?kcp(c.cena_po_dodatcich_s_dph):c.cena_po_dodatcich!=null?kcp(c.cena_po_dodatcich)+" bez DPH":"–";
@@ -673,7 +673,7 @@ function cena(e,p){
 }
 function radek(e,p){
   const [kl,kn]=kat(e);const [v,pod]=veta(e,p);const [c,cm]=cena(e,p);
-  const odk=e.url?(e.typ==="usneseni"||e.typ==="rozpocet")?`<a href="${e.url}">usnesení ${esc(e.usneseni_cislo||"")} v zápisu</a>`:`<a href="${e.url}">${e.typ==="soutez"||e.ezak_smlouva?"zakázka v E-ZAK":e.typ==="dokonceni"?"doklad":"smlouva v registru"}</a>`:"";
+  const odk=e.url?(e.typ==="usneseni"||e.typ==="rozpocet")?`<a href="${e.url}" target="_blank" rel="noopener">usnesení ${esc(e.usneseni_cislo||"")} v zápisu</a>`:`<a href="${e.url}" target="_blank" rel="noopener">${e.typ==="soutez"||e.ezak_smlouva?"zakázka v E-ZAK":e.typ==="dokonceni"?"doklad":"smlouva v registru"}</a>`:"";
   const kind=e.typ==="dodatek"?"dodatek":(e.typ==="usneseni"||e.typ==="rozpocet")?"rada":"jine";
   return `<li data-kind="${kind}"><details><summary><span class="d">${dd(e.datum)}</span><span class="k ${kl}">${kn}</span><span class="x">${v}${pod?`<small>${pod}</small>`:""}</span><span class="c ${cm}">${c}</span></summary>
   <div class="det">${esc(e.text)}${odk?` · ${odk}`:""}</div></details></li>`;
