@@ -176,6 +176,13 @@ def test_karta_ma_nahlasit_chybu():
     assert "Našli jste chybu" in html
 
 
+def test_karta_srovnani_vs_plan():
+    """#283 (cesta b): karta akce ukazuje u ceny „X % vs plán" tam, kde je samostatný rozpočet i cena."""
+    html = build.sestav()
+    assert "% vs plán" in html
+    assert ".vp.pod{color" in html and ".vp.nad{color" in html
+
+
 def test_prehled_akce_po_terminu():
     """#283: přehled „Akce po termínu" – stavby po smluvním termínu, co podle dokladů běží, s poctivým
     caveatem (skutečný postup prací v datech nemáme)."""

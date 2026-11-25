@@ -521,6 +521,7 @@ __GISCSS__
 .kv2-postup .ok{color:var(--green-dark)}.kv2-postup .warn{color:var(--error)}
 .kv2-postup a{text-decoration:none}.kv2-postup a:hover{text-decoration:underline}
 .kv2-alert{display:flex;gap:12px;align-items:flex-start;background:var(--ok-tint);border:1px solid var(--line);border-left:4px solid var(--ok);border-radius:var(--rounded-lg);padding:14px 16px;margin:12px 0 4px}
+.vp{font-weight:700}.vp.pod{color:#15803d}.vp.nad{color:#b91c1c}
 /* přehled „Akce po termínu" (#283) – jantarový warning, položky s barvou okruhu */
 /* „Našli jste chybu?" na kartě akce (#283) */
 .nahlasit{margin:18px 0 0;font-size:13.5px}
@@ -796,6 +797,9 @@ function karta(p){
   const N=2;   // audit: 2 poslední události, zbytek sbalený
   const historie=`<div class="kv2-prubeh" data-filtr="vse"><div class="kv2-filtr"><button class="on" type="button" onclick="histFiltr(this,'vse')">Vše (${ud.length})</button><button type="button" onclick="histFiltr(this,'dodatek')">Dodatky</button><button type="button" onclick="histFiltr(this,'rada')">Rada a zastupitelstvo</button></div><ol class="hist">${ud.slice(0,N).map(e=>radek(e,p)).join("")}</ol>${ud.length>N?`<details class="vic"><summary>▸ Starší události (${ud.length-N})</summary><ol class="hist">${ud.slice(N).map(e=>radek(e,p)).join("")}</ol></details>`:""}</div>`;
   const sch=(p.souhrn.schvaleny||[]).at(-1);const upr=p.souhrn.rozpocet;const cc=p.souhrn.celkova_cena_s_dph;
+  // srovnání plán vs skutečnost jen tam, kde je samostatná rozpočtová položka i smluvní cena (#283)
+  const cenaVal=cc?.castka??p.casti.find(c=>c.role==="stavba")?.cena_po_dodatcich_s_dph;
+  const vsPlan=(sch&&sch.celkem!=null&&cenaVal!=null)?Math.round(100*(cenaVal-sch.celkem)/sch.celkem):null;
   const pu=posledniUdalost(p);const z=pu?zmenaVeta(p,pu):null;
   const dod=st?kdo(st.dodavatel):"";
   const nSml=p.casti.length;
@@ -820,7 +824,7 @@ function karta(p){
   <h2 class="oddil" id="k-ceny">Smlouvy a ceny</h2>
   <div class="cisla">
    <div class="cislo"><span>Schválený rozpočet ${sch?.rok??""} (plán města)</span><b>${rozpocetText}</b><small>${esc(rozpocetPozn)}</small></div>
-   <div class="cislo"><span>Cena podle smluv, s DPH</span><b>${kc(cc?.castka??st?.cena_po_dodatcich_s_dph)}</b><small>${zmeneno?`stavba původně ${kc(puv)}, po dodatcích ${kc(st.cena_po_dodatcich_s_dph)} · `:""}${pl(nSml,"smlouva","smlouvy","smluv")}${cc?.neuplne.length?" · některé ceny neúplné":""}${st?.souhlas_zaplaceno?" · souhlasí se zaplacenou cenou v E-ZAK":""}</small></div>
+   <div class="cislo"><span>Cena podle smluv, s DPH</span><b>${kc(cc?.castka??st?.cena_po_dodatcich_s_dph)}</b><small>${zmeneno?`stavba původně ${kc(puv)}, po dodatcích ${kc(st.cena_po_dodatcich_s_dph)} · `:""}${pl(nSml,"smlouva","smlouvy","smluv")}${cc?.neuplne.length?" · některé ceny neúplné":""}${st?.souhlas_zaplaceno?" · souhlasí se zaplacenou cenou v E-ZAK":""}${vsPlan!=null?` · <span class="vp ${vsPlan>0?"nad":"pod"}">${vsPlan>0?"+":""}${vsPlan} % vs plán</span>`:""}</small></div>
   </div>
   ${rozpadNakladu(p)}
   <table class="t">${p.casti.map(radkyCasti).join("")}</table>
