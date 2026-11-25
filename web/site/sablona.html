@@ -533,6 +533,21 @@ __GISCSS__
 .pt-list a:hover{background:var(--soft)}
 .pt-n{font-weight:600}
 .pt-m{font-size:13px;color:#92400e;font-weight:600;white-space:nowrap}
+/* přehled „Dodatky, co zdražují/mění termín" (#283) – info styl; navýšení červeně, posun termínu jantarově */
+.dodatky-zm{background:#f8fafc;border:1px solid var(--line);border-left:4px solid var(--navy);border-radius:var(--rounded-lg);padding:16px 18px;margin:18px 0}
+.dodatky-zm h2{display:flex;align-items:center;gap:8px;margin:0 0 4px;font-size:18px;color:var(--ink)}
+.dodatky-zm h2 svg{width:20px;height:20px;fill:var(--navy);flex:0 0 auto}
+.dz-pocet{font-size:13px;font-weight:700;background:var(--navy);color:#fff;border-radius:99px;padding:1px 9px}
+.dz-pod{margin:0 0 12px;font-size:14px;color:var(--mute);max-width:72ch}
+.dz-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.dz-list li{border:1px solid var(--line);border-left:3px solid var(--ok,var(--navy));border-radius:8px;background:#fff}
+.dz-list a{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;padding:9px 13px;text-decoration:none;color:var(--ink)}
+.dz-list a:hover{background:var(--soft)}
+.dz-n{font-weight:600}
+.dz-m{font-size:13px;color:var(--mute);white-space:nowrap;display:flex;align-items:center;gap:8px}
+.dz-m b{color:#b91c1c;font-size:14px}
+.dz-t{background:#fef3c7;color:#92400e;font-size:11px;font-weight:700;border-radius:4px;padding:1px 6px}
+.dz-vic{margin-top:6px}.dz-vic summary{cursor:pointer;color:var(--pond);font-weight:600;font-size:14px;padding:4px 0}
 .kv2-alert>.icn{width:22px;height:22px;color:var(--ok-ink);margin-top:1px}
 .kv2-al-t{min-width:0}.kv2-al-l{display:block;font:700 11px/1.4 var(--font);letter-spacing:.06em;text-transform:uppercase;color:var(--ok-ink);margin-bottom:2px}
 .kv2-alert p{margin:0 0 8px;font-weight:600}.kv2-alert .akce{margin:0}
@@ -1179,10 +1194,34 @@ function poTerminu(){
    <p class="pt-pod">Stavby, u nichž už uplynul termín dokončení ze smlouvy a podle dokladů stále probíhají. Skutečný postup prací v datech nemáme – akce může být hotová a jen chybí doklad.</p>
    <ul class="pt-list">${akce.map(({p,dni})=>`<li class="o-${esc(p.okruh)}"><a href="#${p.id}"><span class="pt-n">${esc(rozepis(p.nazev))}</span><span class="pt-m">po termínu o ${pl(dni,"den","dny","dní")} · termín ${dat(p.termin_dokonceni.datum)}</span></a></li>`).join("")}</ul></section>`;
 }
+// Přehled „o kolik dodatky zdražily/posunuly akci oproti původní smlouvě" – rollup po akcích.
+// Vícepráce/méněpráce se počítají, jak je uvádí registr smluv (opisujeme, nepočítáme z PDF).
+function dodatkyRadky(projekty){
+  return projekty.map(p=>{
+    let puv=0,po=0,nd=0,term=false,ma=false;
+    for(const c of p.casti){
+      const pv=c.puvodni?.s_dph,pd=c.cena_po_dodatcich_s_dph;
+      if(pv!=null&&pd!=null&&c.dodatky.length){puv+=pv;po+=pd;ma=true;}
+      nd+=c.dodatky.length;
+      if(c.dodatky.some(d=>d.jen_termin))term=true;
+    }
+    return {p,navy:ma?po-puv:0,pct:ma&&puv?Math.round(100*(po-puv)/puv):0,nd,term};
+  }).filter(r=>r.nd&&(r.navy>0||r.term)).sort((a,b)=>b.navy-a.navy);
+}
+function dodatkyZmeny(){
+  const rows=dodatkyRadky(P);
+  if(!rows.length)return "";
+  const N=6;
+  const radek=r=>`<li class="o-${esc(r.p.okruh)}"><a href="#${r.p.id}"><span class="dz-n">${esc(rozepis(r.p.nazev))}</span><span class="dz-m">${r.navy>0?`<b>+${kc(r.navy)} s DPH</b>${r.pct?` · +${r.pct} %`:""}`:""}${r.term?`<span class="dz-t">posun termínu</span>`:""} · ${pl(r.nd,"dodatek","dodatky","dodatků")}</span></a></li>`;
+  return `<section class="dodatky-zm"><h2>${svg("penize")} Dodatky, co zdražují nebo mění termín <span class="dz-pocet">${rows.length}</span></h2>
+   <p class="dz-pod">Akce, u nichž dodatky zvýšily cenu nebo posunuly termín oproti původní smlouvě – a o kolik (částky jsou s DPH). Vícepráce i méněpráce se počítají, jak je uvádí registr smluv.</p>
+   <ul class="dz-list">${rows.slice(0,N).map(radek).join("")}</ul>${rows.length>N?`<details class="vic dz-vic"><summary>▸ Další akce (${rows.length-N})</summary><ul class="dz-list">${rows.slice(N).map(radek).join("")}</ul></details>`:""}</section>`;
+}
 function prehled(){
   return `<span class="eyebrow">Investiční akce a stavební údržba města</span><h1 class="st" tabindex="-1">Investice a opravy</h1><p class="pozn" style="max-width:64ch;margin-top:0">Co se v Třeboni staví, opravuje a chystá. Údaje jsou z veřejných dokumentů města, u každé akce je odkaz na zdroj.</p>
   ${kpiInvestic()}
   ${poTerminu()}
+  ${dodatkyZmeny()}
   <div class="hledani"><label class="sr" for="q">Hledat ulici, místo, projekt nebo firmu</label><input id="q" type="search" autocomplete="off" placeholder="Hledat ulici, místo, projekt nebo firmu" value="${esc(F.hledat)}"></div>
   ${okruhChips("investice")}
   ${koreny(F.hledat).length?"":zvyraznena()}

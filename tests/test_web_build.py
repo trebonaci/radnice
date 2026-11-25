@@ -169,6 +169,52 @@ def test_usneseni_v_okruhu_se_pocita_hlavnim_okruhem_jednou():
     assert "u.okruhy.includes(o)" not in html  # dřívější překrývající se počítání je pryč
 
 
+def test_prehled_dodatky_zmeny():
+    """#283: přehled „Dodatky, co zdražují nebo mění termín" – rollup po akcích (navýšení vs. původní
+    smlouva, posun termínu)."""
+    html = build.sestav()
+    assert "function dodatkyZmeny()" in html
+    assert "Dodatky, co zdražují nebo mění termín" in html
+    assert "oproti původní smlouvě" in html
+    assert "s DPH" in html
+
+
+def test_dodatky_zmeny_pocita_navyseni(tmp_path):
+    """#283: navýšení oproti původní smlouvě (s DPH), snížení, neznámé ceny, termíny."""
+    import json
+    import re
+    import shutil
+    import subprocess
+    import pytest
+    if not shutil.which("node"):
+        pytest.skip("node není k dispozici")
+    html = build.sestav()
+    m = re.search(r"function dodatkyRadky\(projekty\).*?\n\}\n", html, re.S)
+    assert m
+
+    def cast(puv, po, dodatky):
+        return {"puvodni": {"s_dph": puv} if puv is not None else None,
+                "cena_po_dodatcich_s_dph": po, "dodatky": dodatky}
+    projekty = [
+        {"id": "a", "casti": [cast(1000, 1500, [{}]), cast(1000, 1100, [{}])]},  # +600 z 2000 = 30 %
+        {"id": "b", "casti": [cast(1000, 800, [{}])]},                              # snížení
+        {"id": "c", "casti": [cast(None, 500, [{}])]},                              # neznámá původní cena
+        {"id": "d", "casti": [cast(1000, 1000, [{"jen_termin": True}])]},          # jen posun termínu
+        {"id": "e", "casti": [cast(1000, 1200, [])]},                               # bez dodatků
+        {"id": "f", "casti": [cast(1000, 1010, [{}])]},                             # +1 %
+    ]
+    js = (m.group(0) + "console.log(JSON.stringify(dodatkyRadky(" + json.dumps(projekty) + ")"
+          ".map(r=>({id:r.p.id,navy:r.navy,pct:r.pct,nd:r.nd,term:r.term}))));")
+    f = tmp_path / "t.js"
+    f.write_text(js, encoding="utf-8")
+    out = json.loads(subprocess.run(["node", str(f)], capture_output=True, text=True, check=True).stdout)
+    assert out == [
+        {"id": "a", "navy": 600, "pct": 30, "nd": 2, "term": False},
+        {"id": "f", "navy": 10, "pct": 1, "nd": 1, "term": False},
+        {"id": "d", "navy": 0, "pct": 0, "nd": 1, "term": True},
+    ]
+
+
 def test_prehled_akce_po_terminu():
     """#283: přehled „Akce po termínu" – stavby po smluvním termínu, co podle dokladů běží, s poctivým
     caveatem (skutečný postup prací v datech nemáme)."""
