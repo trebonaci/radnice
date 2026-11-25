@@ -133,6 +133,15 @@ def test_lhuta_ze_smlouvy_se_na_karte_investice_escapuje():
     assert "${esc(t.h||t.pozn)}" in radek and "${esc(t.pozn)}" in radek
 
 
+def test_posuvne_pruhy_maji_naznak_pokracovani():
+    """#282: vodorovně posuvné pruhy (menu, hero okruhy, filtry) mají náznak, že pokračují –
+    pravý okraj zeslábne (mask) a tenký posuvník místo úplně skrytého (scrollbar-width:none)."""
+    html = build.sestav()
+    assert "scrollbar-width:none" not in html  # skrytý posuvník bez náhrady je pryč
+    # fade na pravém okraji aspoň u menu a hero pruhu okruhů
+    assert html.count("mask-image:linear-gradient(to right") >= 3
+
+
 def test_usneseni_v_okruhu_se_pocita_hlavnim_okruhem_jednou():
     """#282: stránka Usnesení počítá usnesení v hlavním okruhu (každé jednou), shodně s „V číslech“ –
     ne přes všechny okruhy (překryv dával u Bydlení a péče 11 vs 14, součet 139 vs 144)."""
