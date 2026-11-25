@@ -40,6 +40,9 @@ def _datum(d: str, m: str, r: str) -> str | None:
 
 # dodatky citují i starý termín („dosavadní termín … byl do 14.04.2025“, „ruší věta „Dokončení díla: …“) – ten neplatí
 RE_STARY = re.compile(r"dosavadn|ru[šs][ií]\s+(?:se\s+)?v[ěe]t|p[ůu]vodn|byl[ao]?\s+(?:dle|podle)|se\s+ru[šs][ií]", re.I)
+# tabulka změnového listu: „Dopad na termín dokončení stavby: NE Objednatel: Datum: 4.6.2026“ – to „Datum“
+# je datum podpisu dodatku, ne termín dokončení; shoda končící podpisovým datem neplatí (#288)
+RE_PODPIS = re.compile(r"Datum:\s*" + DATUM_NC + r"\s*$", re.I)
 
 
 def _stary(text: str, m: re.Match) -> bool:
@@ -57,6 +60,8 @@ def z_uryvku(text: str) -> dict | None:
         # „do 120 dnů od předání staveniště dne 1. 4. 2026“: datum je začátek lhůty, ne termín dokončení.
         # Ale „o 7 dnů, tedy do 30. 10. 2026“: datum za „do“ je cílový termín (#282), to se nepřeskakuje.
         if RE_LHUTA_PRED.search(m.group(0)) and not RE_DATUM_JE_CIL.search(m.group(0)):
+            continue
+        if RE_PODPIS.search(m.group(0)):          # datum podpisu („… Datum: 4.6.2026“), ne termín dokončení (#288)
             continue
         nove = RE_NOVE_DATUM.match(text, m.end())
         dt = _datum(*(nove or m).groups()[-3:])
