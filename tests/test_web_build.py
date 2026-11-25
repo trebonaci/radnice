@@ -169,6 +169,15 @@ def test_usneseni_v_okruhu_se_pocita_hlavnim_okruhem_jednou():
     assert "u.okruhy.includes(o)" not in html  # dřívější překrývající se počítání je pryč
 
 
+def test_prehled_dodatky_zmeny():
+    """#283: přehled „Dodatky, co zdražují nebo mění termín" – rollup po akcích (navýšení vs. původní
+    smlouva, posun termínu)."""
+    html = build.sestav()
+    assert "function dodatkyZmeny()" in html
+    assert "Dodatky, co zdražují nebo mění termín" in html
+    assert "oproti původní smlouvě" in html
+
+
 def test_prehled_akce_po_terminu():
     """#283: přehled „Akce po termínu" – stavby po smluvním termínu, co podle dokladů běží, s poctivým
     caveatem (skutečný postup prací v datech nemáme)."""
