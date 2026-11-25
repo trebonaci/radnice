@@ -393,11 +393,14 @@ h1,h2,h3,.cislo b,.souhrn b,.uk .vel,.inv .vel,.rozp .c,.kpi b,.box>h2,.box>h3,.
 .pill.zmena{background:rgba(132,204,22,.15);color:#3f6212}.pill.zmena::before{background:#65a30d;opacity:1}
 .pill.rozhodnuti{background:rgba(59,130,246,.12);color:#1d4ed8}.pill.rozhodnuti::before{background:var(--category-rozhodnuti);opacity:1}
 .pill.kriticke{background:rgba(239,68,68,.12);color:#b91c1c}.pill.kriticke::before{background:var(--category-kriticke);opacity:1}
-/* přepínač okruhů (chips): světlý, aktivní tmavý s limetkovou tečkou; na mobilu se posouvá vodorovně */
+/* přepínač okruhů (chips): světlý; aktivní má plnou výplň + jemné podsvícení (okruh ve své barvě),
+   bez zelené tečky vlevo (připomínka 25. 11.); na mobilu se posouvá vodorovně */
 .chips button,.okr a{font:500 14px var(--font);border:1px solid var(--border-subtle);background:var(--soft);color:var(--mute);border-radius:var(--rounded-full);padding:6px 14px;cursor:pointer}
 .okr a:hover,.chips button:hover{background:#e2e8f0}
-.chips button.on,.okr a.on{background:var(--surface-dark);color:#fff;border-color:var(--surface-dark)}
-.chips button.on::before,.okr a.on::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--accent-lime);margin-right:7px;vertical-align:1px}
+.chips button.on{background:var(--surface-dark);color:#fff;border-color:var(--surface-dark);box-shadow:0 0 0 3px rgba(17,24,39,.14)}
+.okr a.on{background:var(--ok,var(--surface-dark));color:#fff;border-color:var(--ok,var(--surface-dark));box-shadow:0 0 0 3px var(--ok-tint,rgba(17,24,39,.14))}
+.chips button.on::before,.okr a.on::before{content:none}
+.okr a.on::after{display:none}
 .okr{overflow-x:auto;scrollbar-width:thin}
 @media(max-width:640px){.okr{flex-wrap:nowrap;padding-bottom:4px}}
 /* KPI karta */
@@ -483,6 +486,7 @@ __GISCSS__
 .ak .po,.ak-d dd.po{color:var(--error);font-weight:600}.ak small.po{display:block;font-size:13px}
 .ak .zm{margin:0;font-size:14px;background:var(--card);border:1px solid var(--border-subtle);border-radius:var(--rounded);padding:8px 10px}
 .ak .od,.ak-box .od{display:flex;flex-wrap:wrap;gap:6px 16px;margin:auto 0 0;font-size:14px;font-weight:600}
+.od-datum{margin-left:auto;color:var(--mute);font-weight:400;font-size:12.5px;align-self:center}
 .ak.velka{grid-column:1/-1;border-left-width:6px}.ak-nej{margin:14px 0 4px}.ak-nej .ak.velka h3{font-size:24px}
 .ak-box{background:var(--surface-low);border-radius:var(--rounded-lg);padding:18px 22px;margin:26px 0}.ak-box h2{margin:0 0 6px;font-size:20px}.ak-box p{margin:0 0 10px;max-width:70ch}
 /* harmonogram: filtr podle stavu + oddělení stavů v kategorii, živější vzhled (návrh 25. 11. 2026) */
@@ -1130,7 +1134,7 @@ function kartaAkce(p,velka,vBloku){const [co,kolik]=hlavni(p);const t=terminAk(p
    <dl class="ak-d"><div><dt>${esc(co)}</dt><dd class="cn">${kolik||"–"}</dd></div>${t?`<div><dt>${t.k}</dt><dd${t.po?' class="po"':""}>${esc(t.h||t.pozn)}${t.h&&t.pozn?`<small class="po">${esc(t.pozn)}</small>`:""}</dd></div>`:""}
    <div class="sir"><dt>Dodavatel stavby</dt><dd>${esc(dodAk(p))}</dd></div></dl>
    ${z?`<p class="zm"><b>Nejnovější změna:</b> ${esc(z.text)}${z.url?` <a href="${esc(z.url)}" target="_blank" rel="noopener">${esc(z.odkaz)}</a>`:""}</p>`:""}
-   <p class="od"><a href="#${p.id}">Karta akce</a>${sm?`<a href="${esc(sm)}" target="_blank" rel="noopener">Smlouva v registru smluv</a>`:""}${za?`<a href="${esc(za)}" target="_blank" rel="noopener">Zakázka v E-ZAK</a>`:""}</p></article>`;}
+   <p class="od"><a href="#${p.id}">Karta akce</a>${sm?`<a href="${esc(sm)}" target="_blank" rel="noopener">Smlouva v registru smluv</a>`:""}${za?`<a href="${esc(za)}" target="_blank" rel="noopener">Zakázka v E-ZAK</a>`:""}${posledni(p)?`<span class="od-datum" title="Datum nejnovějšího dokladu k akci">Naposledy ${dat(posledni(p))}</span>`:""}</p></article>`;}
 function stavbyOkruhu(o){
   const akt=P.filter(p=>p.okruh===o.id&&p.faze!=="dokonceno").sort((a,b)=>posledni(b).localeCompare(posledni(a)));
   const prip=zPol().filter(x=>x.okruh===o.id).sort((a,b)=>(STUPEN[b.pripravenost.stupen]-STUPEN[a.pripravenost.stupen])||a.nazev.localeCompare(b.nazev,"cs"));
