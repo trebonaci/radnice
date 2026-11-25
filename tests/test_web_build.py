@@ -47,6 +47,15 @@ def test_co_se_deje_ma_sest_okruhu_a_sest_polozek_menu():
     assert "Tailwind" not in html and "fonts.googleapis" not in html and "cdn." not in html
 
 
+def test_hlavicka_ma_podporu_starostu_a_odkaz_na_hlavni_web():
+    """Hlavička jako hlavní web: badge „s podporou Starostů“ (→ starostove.cz) a zpětná navigace na
+    trebonaci.cz přes logo/název."""
+    html = build.sestav()
+    assert 'class="podpora"' in html and "s podporou Starostů" in html
+    assert "https://www.starostove.cz" in html
+    assert 'class="zn-name" href="https://trebonaci.cz"' in html  # zpět na hlavní web
+
+
 def test_stare_adresy_se_presmeruji():
     html = build.sestav()
     assert 'stavby:"investice","casova-osa":"projekty"' in html
