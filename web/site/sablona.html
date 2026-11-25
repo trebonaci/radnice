@@ -799,7 +799,8 @@ function karta(p){
   const sch=(p.souhrn.schvaleny||[]).at(-1);const upr=p.souhrn.rozpocet;const cc=p.souhrn.celkova_cena_s_dph;
   // srovnání plán vs skutečnost jen tam, kde je samostatná rozpočtová položka i smluvní cena (#283)
   const cenaVal=cc?.castka??p.casti.find(c=>c.role==="stavba")?.cena_po_dodatcich_s_dph;
-  const vsPlan=(sch&&sch.celkem!=null&&cenaVal!=null)?Math.round(100*(cenaVal-sch.celkem)/sch.celkem):null;
+  const procVsPlan=(cena,plan)=>(plan!=null&&plan>0&&cena!=null)?Math.round(100*(cena-plan)/plan):null;
+  const vsPlan=procVsPlan(cenaVal,sch?.celkem);
   const pu=posledniUdalost(p);const z=pu?zmenaVeta(p,pu):null;
   const dod=st?kdo(st.dodavatel):"";
   const nSml=p.casti.length;
