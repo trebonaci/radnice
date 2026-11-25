@@ -169,6 +169,13 @@ def test_usneseni_v_okruhu_se_pocita_hlavnim_okruhem_jednou():
     assert "u.okruhy.includes(o)" not in html  # dřívější překrývající se počítání je pryč
 
 
+def test_karta_ma_nahlasit_chybu():
+    """#283: karta akce má odkaz „Našli jste chybu?" – mailto na info@trebonaci.cz s předvyplněným názvem."""
+    html = build.sestav()
+    assert "mailto:info@trebonaci.cz" in html
+    assert "Našli jste chybu" in html
+
+
 def test_prehled_akce_po_terminu():
     """#283: přehled „Akce po termínu" – stavby po smluvním termínu, co podle dokladů běží, s poctivým
     caveatem (skutečný postup prací v datech nemáme)."""
