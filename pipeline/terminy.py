@@ -12,6 +12,7 @@ import re
 from datetime import date
 
 DATUM = r"(\d{1,2})\.\s?(\d{1,2})\.\s?(20\d{2})"
+DATUM_NC = r"\d{1,2}\.\s?\d{1,2}\.\s?20\d{2}"  # nezachytávající datum pro vlečku citace lhůty
 KLIC = (r"(?:term[ií]n\w*\s+(?:dokon[čc]en\w*|p[řr]ed[aá]n[ií]\s+(?:d[ií]la|stavby|prac[ií]|v[šs]ech\s+prac[ií])\b)"
         r"|lh[ůu]ta\s+pro\s+dokon[čc]en[ií]\s+prac[ií]"
         r"|dokon[čc]it\s+(?:d[ií]lo|stavbu)|p[řr]edat\s+(?:d[ií]lo|stavbu)|dokon[čc]en[ií]\s+(?:d[ií]la|stavby))")
@@ -20,9 +21,14 @@ MEZI = r"(?:(?!zah[aá]jen|\.\s+[A-ZČŘŠŽ])[^;]){0,90}?"
 RE_DATUM = re.compile(KLIC + MEZI + DATUM, re.I)
 RE_KLIC_POZICE = re.compile(KLIC, re.I)
 RE_LHUTA_PRED = re.compile(r"\d{1,4}\s+(?:kalend[aá][řr]n[ií]ch\s+|pracovn[ií]ch\s+)?(?:dn[ůuí]|t[ýy]dn[ůu]|m[ěe]s[ií]c[ůu])", re.I)
+# dodatek často píše „prodloužení o 7 dnů, tedy do 30. 10. 2026“ – datum za „(tedy/nejpozději) do“ je cílový
+# termín dokončení, i když je ve větě i lhůta; to platí (na rozdíl od „120 dnů od předání dne 1. 4. 2026“, #282)
+RE_DATUM_JE_CIL = re.compile(r"(?:tedy\s+)?(?:nejpozd[ěe]ji\s+)?do\s+" + DATUM + r"\s*$", re.I)
 RE_NOVE_DATUM = re.compile(r"\s+na\s+" + DATUM, re.I)
 RE_LHUTA = re.compile(KLIC + MEZI + r"(\d{1,4})\s+(?:kalend[aá][řr]n[ií]ch\s+|pracovn[ií]ch\s+)?(?:dn[ůuí]|t[ýy]dn[ůu]|m[ěe]s[ií]c[ůu])"
-                      r"[^.;]{0,80}", re.I)
+                      # vlečka: pohltí celé datum vcelku (1. 4. 2026), ale na jiné tečce (konec věty, číslo
+                      # článku „6.2.2“) se zastaví – citace se tak neuřízne uvnitř data ani nepřeteče dál (#282)
+                      r"(?:" + DATUM_NC + r"|[^.;]){0,80}", re.I)
 
 
 def _datum(d: str, m: str, r: str) -> str | None:
@@ -46,8 +52,11 @@ def z_uryvku(text: str) -> dict | None:
     # shody se hledají od každého klíčového slova zvlášť: přeskočená citace starého termínu nesmí „spolknout“ nové znění za ní
     starty = [k.start() for k in RE_KLIC_POZICE.finditer(text)]
     for m in (x for x in (RE_DATUM.match(text, i) for i in starty) if x):
-        # „do 120 dnů od předání staveniště dne 1. 4. 2026“: datum je začátek lhůty, ne termín dokončení
-        if RE_LHUTA_PRED.search(m.group(0)) or _stary(text, m):
+        if _stary(text, m):
+            continue
+        # „do 120 dnů od předání staveniště dne 1. 4. 2026“: datum je začátek lhůty, ne termín dokončení.
+        # Ale „o 7 dnů, tedy do 30. 10. 2026“: datum za „do“ je cílový termín (#282), to se nepřeskakuje.
+        if RE_LHUTA_PRED.search(m.group(0)) and not RE_DATUM_JE_CIL.search(m.group(0)):
             continue
         nove = RE_NOVE_DATUM.match(text, m.end())
         dt = _datum(*(nove or m).groups()[-3:])
