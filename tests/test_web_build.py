@@ -47,6 +47,16 @@ def test_co_se_deje_ma_sest_okruhu_a_sest_polozek_menu():
     assert "Tailwind" not in html and "fonts.googleapis" not in html and "cdn." not in html
 
 
+def test_ai_je_znacka_ne_opakovana_veta_a_tlacitko_nahoru():
+    """#283: místo opakované věty „…napsala AI, závazné je…“ u položky je kompaktní značka AI
+    (vysvětlení v patičce) a je tu tlačítko „zpět na začátek“."""
+    html = build.sestav()
+    assert "napsala AI, závazné je znění" not in html  # dlouhá věta u položky je pryč
+    assert 'class="ai-znacka"' in html and 'title="' in html
+    assert 'id="nahoru"' in html and "Zpět na začátek" in html
+    assert "U položek se značkou" in html  # vysvětlení AI v patičce
+
+
 def test_hlavicka_ma_podporu_starostu_a_odkaz_na_hlavni_web():
     """Hlavička jako hlavní web: badge „s podporou Starostů“ (→ starostove.cz) a zpětná navigace na
     trebonaci.cz přes logo/název."""

@@ -90,6 +90,12 @@ header.band .lead{color:#cbd5e1;font-size:clamp(15px,1.3vw,18px);max-width:62ch;
 nav#menu{position:sticky;top:0;z-index:1200;display:flex;gap:2px;padding:0 max(5vw,16px);background:#fff;border-bottom:1px solid var(--border-subtle);overflow-x:auto;scrollbar-width:thin;scrollbar-color:rgba(148,163,184,.55) transparent;transition:transform .22s ease,box-shadow .22s ease;-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 26px),transparent);mask-image:linear-gradient(to right,#000 calc(100% - 26px),transparent)}
 nav#menu.plave{box-shadow:0 8px 20px -12px rgba(15,23,42,.45)}
 nav#menu.skryte{transform:translateY(-100%)}
+/* zpět na začátek (připomínka 25. 11.): objeví se po odscrollování, přístupné klávesnicí */
+#nahoru{position:fixed;right:max(4vw,16px);bottom:20px;z-index:1100;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--ink);font:400 22px/1 var(--font);cursor:pointer;box-shadow:0 6px 18px -8px rgba(15,23,42,.45);opacity:0;pointer-events:none;transform:translateY(8px);transition:opacity .2s ease,transform .2s ease}
+#nahoru.show{opacity:1;pointer-events:auto;transform:none}
+#nahoru:hover{background:var(--soft)}
+#nahoru:focus-visible{outline:2px solid var(--pond);outline-offset:2px}
+@media(prefers-reduced-motion:reduce){#nahoru{transition:none}}
 nav#menu:focus-within{transform:none}
 @media(prefers-reduced-motion:reduce){nav#menu{transition:none}}
 nav#menu::-webkit-scrollbar{height:5px}nav#menu::-webkit-scrollbar-thumb{background:rgba(148,163,184,.55);border-radius:3px}
@@ -443,6 +449,8 @@ __GISCSS__
 .zpr .zdr a:hover>span:last-child,.zpr .zdr a:focus-visible>span:last-child{text-decoration:underline}
 .zpr .zdr a:focus-visible{outline:2px solid currentColor;outline-offset:2px}
 .zpr .ai{font-size:12.5px;color:var(--mute)}
+/* kompaktní značka „AI“ místo opakované věty u položky; vysvětlení je v patičce (připomínka 25. 11.) */
+.ai-znacka{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.04em;color:var(--mute);border:1px solid var(--line);border-radius:4px;padding:0 5px;cursor:help;vertical-align:baseline}
 .zpr .sk>summary,.zpr .sk>.skn{font:700 14.5px var(--font-h);cursor:pointer}
 .zpr .sk ul{list-style:none;margin:6px 0 0;padding:0 0 0 12px;border-left:3px solid var(--border-subtle)}.zpr .sk ul li{padding:6px 0}
 .zpr .pri{border-left:3px solid var(--category-stavba);padding-left:10px}
@@ -543,7 +551,8 @@ __GISCSS__
 <footer class="pata"><div class="wrap"><div class="sl-pat"><div><h2>Třeboňáci · Otevřená radnice</h2><p>Co a jak se v Třeboni děje: investice, rozhodnutí a změny ve službách z veřejných dokumentů města.</p><p><a href="https://trebonaci.cz">trebonaci.cz</a></p><p>Sledujte nás: <a href="https://www.facebook.com/trebonaci" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/trebonaci" target="_blank" rel="noopener">Instagram</a></p></div>
 <div><h3>Další přehledy</h3><ul><li><a href="#rozpocet">Rozpočet</a></li><li><a href="#cisla">V číslech</a></li><li><a href="#pripravovane">Připravované projekty</a></li><li><a href="#dokoncene">Dokončené projekty</a></li></ul></div>
 <div><h3>Zdroje dat</h3><ul><li><a href="#paticka" data-paticka>Jak přehled vzniká</a></li><li><a href="https://www.mesto-trebon.cz/cz/mestsky-urad-trebon/samosprava-mesta/rada-mesta/zapisy-z-jednani-rady-mesta/" target="_blank" rel="noopener">Zápisy rady</a></li><li><a href="https://www.mesto-trebon.cz/cz/mestsky-urad-trebon/samosprava-mesta/zastupitelstvo-mesta/zapisy-zastupitelstva-mesta/" target="_blank" rel="noopener">Zápisy zastupitelstva</a></li><li><a href="https://smlouvy.gov.cz/" target="_blank" rel="noopener">Registr smluv</a></li><li><a href="https://zakazky.mesto-trebon.cz/profile_display_2.html" target="_blank" rel="noopener">Profil zadavatele (E-ZAK)</a></li><li><a href="https://www.mesto-trebon.cz/cz/mestsky-urad-trebon/organizacni-struktura/odbor-financni-a-majetkovy/rozpocet.html" target="_blank" rel="noopener">Rozpočet města</a></li></ul></div></div>
-<div class="pozn" id="paticka" tabindex="-1"><p style="margin:0 0 10px"><b>Třeboňáci</b> · přehled radnice · <a href="https://trebonaci.cz">trebonaci.cz</a>. Nejde o web Města Třeboň. Data pocházejí z veřejných zdrojů uvedených u každého údaje.</p>Ceny smluv a dodatků jsou s DPH (rozpočet města počítá s cenou včetně DPH); kde zdroj uvádí jen cenu bez DPH, je to u částky napsáno. Vysoutěžená cena = cena podepsané smlouvy (registr smluv), případně nabídka vítěze v E-ZAK. Dodatek „jen termín“ podle usnesení rady cenu nemění. Zdroje: zápisy rady a zastupitelstva, rozpočet města, profil zadavatele E-ZAK, registr smluv. Přiřazení smluv a rozpočtových položek k akci jsme odvodili z jejich názvů. Přiřazení ke Strategickému plánu rozvoje města 2021–2030 vychází z evidence aktivit na trebonaci.cz; „návrh“ zatím nikdo nepotvrdil.</div></div></footer>
+<div class="pozn" id="paticka" tabindex="-1"><p style="margin:0 0 10px"><b>Třeboňáci</b> · přehled radnice · <a href="https://trebonaci.cz">trebonaci.cz</a>. Nejde o web Města Třeboň. Data pocházejí z veřejných zdrojů uvedených u každého údaje.</p>Ceny smluv a dodatků jsou s DPH (rozpočet města počítá s cenou včetně DPH); kde zdroj uvádí jen cenu bez DPH, je to u částky napsáno. Vysoutěžená cena = cena podepsané smlouvy (registr smluv), případně nabídka vítěze v E-ZAK. Dodatek „jen termín“ podle usnesení rady cenu nemění. Zdroje: zápisy rady a zastupitelstva, rozpočet města, profil zadavatele E-ZAK, registr smluv. Přiřazení smluv a rozpočtových položek k akci jsme odvodili z jejich názvů. Přiřazení ke Strategickému plánu rozvoje města 2021–2030 vychází z evidence aktivit na trebonaci.cz; „návrh“ zatím nikdo nepotvrdil. U položek se značkou <span class="ai-znacka">AI</span> píše název a shrnutí umělá inteligence; doslovnou citaci ověřuje kód a závazné je vždy znění ve zdroji (zápis, smlouva).</div></div></footer>
+<button id="nahoru" type="button" aria-label="Zpět na začátek">↑</button>
 <script>
 const P=__DATA__;
 const GIS=__MAPA__;
@@ -1005,7 +1014,7 @@ function usneseniSeznam(rr){const r=rr||usneseniFiltr();const jd=[...new Set(r.m
   return hl+jd.map(id=>{const us=r.filter(u=>u.jednani_id===id);const a=us[0];const z=a.organ==="zastupitelstvo";
     return `<section class="jd"><h2>${z?"Zastupitelstvo":"Rada"} ${dat(a.datum)}<small>${a.jednani_cislo?`${a.jednani_cislo}. jednání · `:""}${pl(us.length,"usnesení","usnesení","usnesení")}${a.zapis?` · <a href="${esc(a.zapis)}" target="_blank" rel="noopener">zápis (PDF)</a>`:""}</small></h2>
     <ul class="us">${us.map(u=>`<li id="${u.id}" class="box"><span class="tm">${[...new Set(u.okruhy.map(o=>OKN[o]?.nazev).filter(Boolean))].map(esc).join(" · ")}</span><b>${esc(u.tema||u.cislo)}${u.vysledek==="neprijato"?'<span class="np">nepřijato</span>':""}</b>${u.shrnuti?`<p>${esc(u.shrnuti)}</p>`:""}
-     <small>${u.url?`<a href="${esc(u.url)}" target="_blank" rel="noopener">Usnesení ${esc(u.cislo)}${u.strana?`, str. ${u.strana} zápisu`:""} ↗</a>`:esc(u.cislo)}${u.shrnuti_ai||u.tema_ai?" · název a shrnutí napsala AI, závazné je znění v zápisu":""}</small></li>`).join("")}</ul></section>`;}).join("");}
+     <small>${u.url?`<a href="${esc(u.url)}" target="_blank" rel="noopener">Usnesení ${esc(u.cislo)}${u.strana?`, str. ${u.strana} zápisu`:""} ↗</a>`:esc(u.cislo)}${u.shrnuti_ai||u.tema_ai?' <span class="ai-znacka" title="Název a shrnutí píše AI; závazné je znění v zápisu, citaci ověřuje kód">AI</span>':""}</small></li>`).join("")}</ul></section>`;}).join("");}
 // jeden způsob, jak psát počet usnesení, na všech stránkách (#202)
 function pocetUsneseni(){const n=US.filter(u=>u.vysledek==="neprijato").length;return `${pl(US.length,"usnesení","usnesení","usnesení")}${n?` (${US.length-n} přijatých, ${n} nepřijaté)`:""}`;}
 function usneseniBlok(o){const r=US.filter(u=>usnVOkruhu(u,o.id));
@@ -1044,7 +1053,7 @@ function usneseniOvl(el){
 const ZMP=Object.fromEntries(ZM.map(z=>[z.id,z]));
 function zmRadek(z,sMistem){const m=sMistem&&z.misto_id?M.find(x=>x.id===z.misto_id):null;const str=stranaPdf(z.url);
   const kde=`Usnesení ${z.organ==="zastupitelstvo"?"zastupitelstva":"rady"} z ${dat(z.datum)}${str?", str. "+str:""}`;
-  return `<li><span class="d">${dat(z.datum)}</span><span>${m?`<a href="#misto-${m.id}"><b>${esc(m.nazev)}</b></a><br>`:""}${esc(z.text)}<small>${z.plati_od?"<b>Platí od "+dat(z.plati_od)+".</b> ":""}${z.url?`<a href="${esc(z.url)}" target="_blank" rel="noopener">${kde}</a>`:kde} (${esc(z.usneseni_cislo)})${z.pro_obcany_ai?" · shrnutí AI ověřené citací":""}</small></span></li>`;}
+  return `<li><span class="d">${dat(z.datum)}</span><span>${m?`<a href="#misto-${m.id}"><b>${esc(m.nazev)}</b></a><br>`:""}${esc(z.text)}<small>${z.plati_od?"<b>Platí od "+dat(z.plati_od)+".</b> ":""}${z.url?`<a href="${esc(z.url)}" target="_blank" rel="noopener">${kde}</a>`:kde} (${esc(z.usneseni_cislo)})${z.pro_obcany_ai?' <span class="ai-znacka" title="Shrnutí píše AI; citaci ověřuje kód, závazné je znění ve zdroji">AI</span>':""}</small></span></li>`;}
 function kartaMista(m){return `<article class="ms" id="misto-${m.id}"><h3>${esc(rozepis(m.nazev))}</h3>${m.popis?`<p class="po">${esc(m.popis)}</p>`:""}
    ${m.zmeny.length?`<ul class="zm">${m.zmeny.map(i=>zmRadek(ZMP[i],false)).join("")}</ul>`:'<p class="pozn">Zatím žádná změna v usneseních od září 2026.</p>'}
    ${m.investice.length||m.zasobnik.length?`<div class="inv">${m.investice.map(i=>`<a href="#${i.id}"><b>${(FAZE[i.faze]||["Investice"])[0]}</b> · ${esc(i.nazev)}</a>`).join("")}${m.zasobnik.map(i=>`<a href="#priprava-${esc(i.id)}">Projektuje se · ${esc(i.nazev)}</a>`).join("")}</div>`:""}
@@ -1254,7 +1263,7 @@ function zprava(z){
   const pillky=zprDruhy(z).map(d=>`<span class="pill ${d}">${DRUH_NAZEV[d]}</span>`).join(" ");
   const od=z.plati_od?` · platí od ${dat(z.plati_od)}`:"";
   return `<li><div class="hl2">${pillky}<span>${dat(z.datum)}${od}</span>${z.stitek?`<span>${esc(z.stitek)}</span>`:""}${z.jistota==="naše propojení"?`<span>naše propojení</span>`:""}</div>
-   <b class="t">${esc(z.titulek)}</b><p>${esc(z.shrnuti)}</p>${zprCastky(z)}${zprZdroje(z)}${z.shrnuti_ai?`<span class="ai">Větu napsala AI, závazné je znění ve zdroji.</span>`:""}</li>`;}
+   <b class="t">${esc(z.titulek)}</b><p>${esc(z.shrnuti)}</p>${zprCastky(z)}${zprZdroje(z)}${z.shrnuti_ai?`<span class="ai-znacka" title="Větu píše AI; závazné je znění ve zdroji, citaci ověřuje kód">AI</span>`:""}</li>`;}
 // zprávy k jedné akci ve stejný den jsou pod jejím názvem (jedna položka bloku)
 function zprJednotky(v){const out=[];const sk=new Map();
   for(const z of v){if(z.skupina){let g=sk.get(z.skupina.id);if(!g){g={skupina:z.skupina,zpravy:[]};sk.set(z.skupina.id,g);out.push(g);}g.zpravy.push(z);}else out.push({zpravy:[z]});}
@@ -1385,4 +1394,10 @@ render();
     y0=y;n.classList.toggle("plave",y>p);n.classList.toggle("skryte",y>p+90&&d>0);}
   addEventListener("scroll",()=>{if(!ceka){ceka=true;requestAnimationFrame(stav);}},{passive:true});
   stav();})();
+(function(){const b=document.getElementById("nahoru");if(!b)return;
+  const vis=()=>b.classList.toggle("show",window.scrollY>600);
+  addEventListener("scroll",vis,{passive:true});vis();
+  const hladce=!matchMedia("(prefers-reduced-motion: reduce)").matches;
+  b.addEventListener("click",()=>{window.scrollTo({top:0,behavior:hladce?"smooth":"auto"});
+    const cil=document.querySelector("nav#menu a");if(cil)cil.focus({preventScroll:true});});})();
 </script></body></html>
