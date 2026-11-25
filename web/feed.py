@@ -57,6 +57,8 @@ def atom(zpravy_web: dict, okruhy: list[dict], datum_behu: str | None = None) ->
             radky.append(f'    <category term={quoteattr(okruh)} label={quoteattr(nazvy.get(okruh) or okruh)}/>')
         shrnuti = z.get("shrnuti")
         if shrnuti:
+            if z.get("shrnuti_ai"):
+                shrnuti = f"[AI] {shrnuti} (Větu psala AI; závazné je znění ve zdroji.)"
             radky.append(f'    <summary type="text">{escape(shrnuti)}</summary>')
         radky.append("  </entry>")
     radky.append("</feed>")
