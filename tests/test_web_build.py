@@ -176,6 +176,32 @@ def test_karta_ma_nahlasit_chybu():
     assert "Našli jste chybu" in html
 
 
+def test_karta_srovnani_vs_plan():
+    """#283 (cesta b): karta akce ukazuje u ceny „X % vs plán" tam, kde je samostatný rozpočet i cena."""
+    html = build.sestav()
+    assert "% vs plán" in html
+    assert ".vp.pod{color" in html and ".vp.nad{color" in html
+
+
+def test_karta_procento_vs_plan_vypocet():
+    """#283: procento vs plán se skutečně spočítá (znaménko, vynechání při chybějící částce)."""
+    import json
+    import re
+    import shutil
+    import subprocess
+
+    import pytest
+
+    if not shutil.which("node"):
+        pytest.skip("node není k dispozici")
+    html = build.sestav()
+    m = re.search(r"const procVsPlan=.*?;\n", html)
+    assert m, "funkce procVsPlan v šabloně chybí"
+    kod = m.group(0) + "console.log(JSON.stringify([procVsPlan(110,100),procVsPlan(80,100),procVsPlan(100,100),procVsPlan(null,100),procVsPlan(100,null),procVsPlan(100,0)]))"
+    out = subprocess.run(["node", "-e", kod], capture_output=True, text=True, check=True).stdout
+    assert json.loads(out) == [10, -20, 0, None, None, None]
+
+
 def test_prehled_akce_po_terminu():
     """#283: přehled „Akce po termínu" – stavby po smluvním termínu, co podle dokladů běží, s poctivým
     caveatem (skutečný postup prací v datech nemáme)."""
