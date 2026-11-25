@@ -120,6 +120,13 @@ h2{font:800 clamp(22px,2.8vw,30px)/1.15 var(--font);letter-spacing:-.02em;margin
 .cislo{background:var(--soft);border-radius:var(--r-sm);padding:14px 16px}
 .cislo span{font-size:14px;color:var(--mute)}.cislo b{display:block;font:700 28px/1.15 var(--font);font-variant-numeric:tabular-nums}
 .cislo small{display:block;font-size:13px;color:var(--mute);margin-top:4px}
+.dod-list{list-style:none;padding:0;margin:18px 0;display:flex;flex-direction:column;gap:8px}
+.dod-list li{border-left:4px solid var(--ok,var(--border));background:var(--soft);border-radius:var(--r-sm)}
+.dod-list a{display:flex;justify-content:space-between;align-items:baseline;gap:14px;flex-wrap:wrap;padding:11px 14px;text-decoration:none;color:inherit}
+.dod-list a:hover .dl-n{text-decoration:underline}
+.dod-list .dl-n{font-weight:600}
+.dod-list .dl-m{font-size:14px;color:var(--mute);white-space:nowrap;font-variant-numeric:tabular-nums}
+.dod-list .dl-m b{color:var(--ink)}
 .ok{color:var(--k-hotovo);font-weight:600}
 .hh{font:600 13px var(--font);text-transform:uppercase;letter-spacing:.06em;color:var(--mute);margin:24px 0 6px}
 table.t{width:100%;border-collapse:collapse;font-size:15px}
@@ -598,6 +605,16 @@ const ROLE={stavba:"Stavba",projekt:"Projekt",technicky_dozor:"Technický dozor"
 const ROLE_SML={stavba:"smlouvě o dílo",projekt:"smlouvě na projekt",technicky_dozor:"smlouvě s technickým dozorem",bozp:"smlouvě s koordinátorem BOZP",vybaveni:"smlouvě na vybavení",administrace:"smlouvě na výběrové řízení"};
 const FAZE={pripravuje_se:["Příprava","priprava"],soutezi_se:["Soutěž",""],probiha:["Stavba probíhá",""],dokonceno:["Dokončeno","hotovo"]};
 const kdo=x=>x.jmeno_podnikatele||x.nazev;
+// Dodavatelé: index z částí akcí (jméno → akce + součet smluvních cen s DPH). Anonymní FO vynecháme. (#283)
+const dodSlug=s=>s.normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"");
+let _DOD=null;
+function DODget(){if(_DOD)return _DOD;_DOD={};
+  for(const p of P)for(const c of p.casti){const d=c.dodavatel;if(!d)continue;const jm=kdo(d);if(!jm||jm==="fyzická osoba")continue;
+    const slug=dodSlug(jm),cena=c.cena_po_dodatcich_s_dph??c.puvodni?.s_dph??null;
+    (_DOD[slug]??={slug,jmeno:jm,polozky:[],total:0}).polozky.push({pid:p.id,nazev:p.nazev,okruh:p.okruh,role:c.role,cena});
+    if(cena)_DOD[slug].total+=cena;}
+  return _DOD;}
+const dodOdkaz=jm=>!jm||jm==="fyzická osoba"?esc(jm||""):(DODget()[dodSlug(jm)]?`<a href="#dodavatel/${dodSlug(jm)}">${esc(jm)}</a>`:esc(jm));
 // skloňování počtů: pl(1,"smlouva","smlouvy","smluv")
 const pl=(n,a,b,c)=>`${n} ${n===1?a:n>=2&&n<=4?b:c}`;
 const stranaPdf=u=>(String(u||"").match(/#page=(\d+)/)||[])[1];
@@ -741,7 +758,7 @@ function shrnutiAkce(p,dod,sch,upr){
    <div><span>Co</span><b>${esc(stavText(p))}</b><small>${esc(OKN[p.okruh]?.nazev||"")}</small></div>
    <div><span>Kolik</span><b>${kolik||"–"}</b><small>${co}</small></div>
    <div><span>Kdy hotovo</span>${kdy}</div>
-   <div><span>Kdo staví</span><b>${dod?esc(dod):"–"}</b><small>${dod?"dodavatel stavby":"dodavatel zatím není vybraný"}</small></div>
+   <div><span>Kdo staví</span><b>${dod?dodOdkaz(dod):"–"}</b><small>${dod?"dodavatel stavby":"dodavatel zatím není vybraný"}</small></div>
   </div><p class="pozn" style="margin:6px 0 10px">${vede}</p>`;}
 // --- detail investice v2 (návrh karty 24. 11. 2026): bohatší layout nad týmiž doloženými daty ---
 const ICN={
@@ -1136,7 +1153,7 @@ function terminAk(p){const t=p.termin_dokonceni;if(!t||p.faze==="dokonceno")retu
   return {k:"Lhůta ve smlouvě",h:"",pozn:"„"+t.citace+"“",po:false,url:t.url};}
 function dodAk(p){const st=p.casti.filter(c=>c.role==="stavba");
   const j=[...new Set(st.map(c=>kdo(c.dodavatel)).filter(n=>n&&n!=="fyzická osoba"))];
-  return j.length?j.join(", "):st.length?"fyzická osoba (jméno se neuvádí)":"zatím není vybraný";}
+  return j.length?j.map(dodOdkaz).join(", "):st.length?"fyzická osoba (jméno se neuvádí)":"zatím není vybraný";}
 // vBloku = karta je uvnitř bloku svého okruhu, takže se název okruhu neopakuje (nese ho barva a nadpis bloku, připomínka 24. 11.)
 function kartaAkce(p,velka,vBloku){const [co,kolik]=hlavni(p);const t=terminAk(p);
   const sm=(p.casti.find(c=>c.role==="stavba")||p.casti[0])?.puvodni?.url;
@@ -1146,7 +1163,7 @@ function kartaAkce(p,velka,vBloku){const [co,kolik]=hlavni(p);const t=terminAk(p
    <h3><a href="#${p.id}">${esc(rozepis(p.nazev))}</a></h3>
    ${velka&&p.popis?`<p class="pop">${esc(p.popis)}</p>`:""}
    <dl class="ak-d"><div><dt>${esc(co)}</dt><dd class="cn">${kolik||"–"}</dd></div>${t?`<div><dt>${t.k}</dt><dd${t.po?' class="po"':""}>${esc(t.h||t.pozn)}${t.h&&t.pozn?`<small class="po">${esc(t.pozn)}</small>`:""}</dd></div>`:""}
-   <div class="sir"><dt>Dodavatel stavby</dt><dd>${esc(dodAk(p))}</dd></div></dl>
+   <div class="sir"><dt>Dodavatel stavby</dt><dd>${dodAk(p)}</dd></div></dl>
    ${z?`<p class="zm"><b>Nejnovější změna:</b> ${esc(z.text)}${z.url?` <a href="${esc(z.url)}" target="_blank" rel="noopener">${esc(z.odkaz)}</a>`:""}</p>`:""}
    <p class="od"><a href="#${p.id}">Karta akce</a>${sm?`<a href="${esc(sm)}" target="_blank" rel="noopener">Smlouva v registru smluv</a>`:""}${za?`<a href="${esc(za)}" target="_blank" rel="noopener">Zakázka v E-ZAK</a>`:""}</p></article>`;}
 function stavbyOkruhu(o){
@@ -1184,6 +1201,18 @@ function poTerminu(){
   return `<section class="po-termin"><h2>${svg("blesk")} Akce po termínu <span class="pt-pocet">${akce.length}</span></h2>
    <p class="pt-pod">Stavby, u nichž už uplynul termín dokončení ze smlouvy a podle dokladů stále probíhají. Skutečný postup prací v datech nemáme – akce může být hotová a jen chybí doklad.</p>
    <ul class="pt-list">${akce.map(({p,dni})=>`<li class="o-${esc(p.okruh)}"><a href="#${p.id}"><span class="pt-n">${esc(rozepis(p.nazev))}</span><span class="pt-m">po termínu o ${pl(dni,"den","dny","dní")} · termín ${dat(p.termin_dokonceni.datum)}</span></a></li>`).join("")}</ul></section>`;
+}
+const DOD_ROLE={projekt:"projektová dokumentace",stavba:"stavba",technicky_dozor:"technický dozor",bozp:"BOZP",vybaveni:"vybavení",administrace:"administrace"};
+function strankaDodavatele(slug){
+  const d=DODget()[slug];
+  if(!d)return `<div class="zpet"><a href="#investice">← Investice a opravy</a></div><h1 class="st" tabindex="-1">Dodavatel nenalezen</h1><p class="pozn">Tohoto dodavatele v evidovaných investičních akcích nemáme.</p>`;
+  const akci=new Set(d.polozky.map(x=>x.pid)).size;
+  const pol=d.polozky.slice().sort((a,b)=>(b.cena||0)-(a.cena||0));
+  return `<div class="zpet"><a href="#investice">← Investice a opravy</a></div>
+   <span class="eyebrow">Dodavatel města</span><h1 class="st" tabindex="-1">${esc(d.jmeno)}</h1>
+   <div class="cisla"><div class="cislo"><span>Zakázky u města a jeho firem (s DPH)</span><b>${kc(d.total)}</b><small>${pl(d.polozky.length,"část akce","části akcí","částí akcí")} v ${pl(akci,"investiční akci","investičních akcích","investičních akcích")}</small></div></div>
+   <p class="pozn" style="max-width:72ch">Součet smluvních cen (s DPH), kde je tato firma u investiční akce města dodavatelem (projekt, stavba, dozor…). Opsáno z registru smluv a E-ZAK, počítá kód. Malé zakázky mimo evidované akce tu zatím nejsou.</p>
+   <ul class="dod-list">${pol.map(x=>`<li class="o-${esc(x.okruh)}"><a href="#${x.pid}"><span class="dl-n">${esc(rozepis(x.nazev))}</span><span class="dl-m">${DOD_ROLE[x.role]||esc(x.role||"")}${x.cena?` · <b>${kc(x.cena)}</b>`:""}</span></a></li>`).join("")}</ul>`;
 }
 function prehled(){
   return `<span class="eyebrow">Investiční akce a stavební údržba města</span><h1 class="st" tabindex="-1">Investice a opravy</h1><p class="pozn" style="max-width:64ch;margin-top:0">Co se v Třeboni staví, opravuje a chystá. Údaje jsou z veřejných dokumentů města, u každé akce je odkaz na zdroj.</p>
@@ -1387,6 +1416,7 @@ function renderObsah(){
   if(str==="deje"){FO.okruh=OKN[ok]?ok:"";h="";}
   else if(["investice","projekty","usneseni","mista","mapa"].includes(str)){FO.okruh=OKN[ok]?ok:"";h=str;document.body.dataset.cil=str;}
   const el=document.getElementById("karty");
+  if(str==="dodavatel"&&ok){const s=document.body.dataset.str;const d=DODget()[ok];document.body.dataset.cil="";zobraz(el,strankaDodavatele(ok),"dodavatel",d?d.jmeno:"Dodavatel");posun2(s,"dodavatel");return;}
   if(h==="mapa"){openGis(el);return;}
   if(h==="dokoncene"){const s=document.body.dataset.str;zobraz(el,archivProjektu(P),h,"Dokončené projekty");posun2(s,h);el.querySelectorAll("[data-atema]").forEach(b=>b.onclick=()=>{FA.tema=b.dataset.atema;render();});return;}
   if(h==="rozpocet"){const s=document.body.dataset.str;zobraz(el,investice(INV),h,"Rozpočet");posun2(s,h);return;}

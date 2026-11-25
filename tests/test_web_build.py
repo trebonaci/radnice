@@ -287,3 +287,21 @@ def test_detail_investice_v2_jen_dolozena_data():
     assert "function histFiltr" in html and 'data-kind=' in html
     # pořád bez CDN
     assert "cdn." not in html and "fonts.googleapis" not in html and "Tailwind" not in html
+
+
+def test_stranka_dodavatele():
+    """Proklik z jména dodavatele na stránku dodavatele se součtem jeho zakázek (#283, B4).
+    Sčítají se jen smluvní ceny z částí akcí (registr/E-ZAK), odděleně od rozpočtu; fyzické
+    osoby bez jména se do odkazu nedávají (zůstávají anonymní)."""
+    html = build.sestav()
+    # stránka a její směrování
+    assert "function strankaDodavatele(" in html
+    assert 'str==="dodavatel"' in html  # route v renderObsah
+    # agregace z částí akcí, oddělená od rozpočtu
+    assert "function DODget(" in html and "cena_po_dodatcich_s_dph" in html
+    assert "Dodavatel města" in html
+    # proklik z karty i z detailu jde přes dodOdkaz; anonymní FO se nelinkuje
+    assert "const dodOdkaz=" in html and "#dodavatel/" in html
+    assert 'jm==="fyzická osoba"' in html
+    # pořád bez CDN
+    assert "cdn." not in html and "fonts.googleapis" not in html and "Tailwind" not in html
