@@ -77,7 +77,13 @@ header.band .lead{color:#cbd5e1;font-size:clamp(15px,1.3vw,18px);max-width:62ch;
 .lista{background:var(--surface-dark);color:#fff}
 .lista .hl{display:flex;align-items:center;gap:12px;min-height:56px;padding:0 max(5vw,16px)}
 .lista .zn{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff}.lista img{width:36px;height:36px;border-radius:50%}
-.lista b{font:800 16px var(--font-h);letter-spacing:-.02em}.lista .zn span span{font-weight:500;color:#cbd5e1}
+.lista b{font:800 16px var(--font-h);letter-spacing:-.02em}
+/* sloupec: název „Třeboňáci · Otevřená radnice“ a pod ním badge „s podporou Starostů“ – stejně jako hlavní web */
+.lista .zn-col{display:flex;flex-direction:column;align-items:flex-start;gap:3px;min-width:0}
+.lista .zn-name{display:flex;align-items:baseline;gap:6px;text-decoration:none;color:#fff}
+.lista .zn-name span{font-weight:500;color:#cbd5e1}
+.lista .podpora{font-size:10px;font-weight:600;line-height:1;color:#cbd5e1;text-decoration:none;border:1px solid var(--border-dark);background:var(--surface-dark-subtle);border-radius:var(--r-pill);padding:2px 8px;white-space:nowrap}
+.lista .podpora:hover{color:#fff}
 .lista .bd{margin-left:auto;font-size:12px;font-weight:600;color:#e2e8f0;border:1px solid var(--border-dark);background:var(--surface-dark-subtle);border-radius:var(--r-pill);padding:3px 11px;white-space:nowrap}
 .lista .bd::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--accent-lime);margin-right:7px}
 /* menu je lepkavé proti celé stránce; při posunu dolů se schová, při posunu nahoru se vrátí (připomínka 24. 11.) */
@@ -290,7 +296,7 @@ h1:focus{outline:none}
 .okruh li .dr.stavba{color:var(--carp)}.okruh li .dr.zmena{color:var(--blue-dark)}
 .okruh details>summary{font:600 14px var(--font);color:var(--pond);cursor:pointer;padding:8px 0 4px;border-top:1px solid var(--line)}
 .okruh .nic{font-size:14px;color:var(--mute);padding:8px 0;border-top:1px solid var(--line);margin:0}
-@media(max-width:480px){.lista .zn span span{display:none}.lista .bd{margin-left:auto}}
+@media(max-width:480px){.lista .zn-name span{display:none}.lista .bd{margin-left:auto}}
 .okr a{font:500 14px var(--font);border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:99px;padding:5px 12px;text-decoration:none;flex:0 0 auto;white-space:nowrap}
 .okr a.on{background:var(--navy);color:#fff;border-color:var(--navy)}.okr a.on::before{content:"✓ "}
 /* puntík v názvu okruhu je legenda k barvě, kterou má okruh na celém webu */
@@ -526,7 +532,7 @@ __GISCSS__
 .kv2-leg .dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:-1px}
 @media(max-width:600px){.kv2-ilu,.kv2-foto{height:74px}}
 </style></head><body>
-<header class="lista"><div class="hl"><a class="zn" href="https://trebonaci.cz"><img src="obr/logo-trebonaci.jpg" alt=""><span><b>Třeboňáci</b> <span>· Otevřená radnice</span></span></a><span class="bd">__STITEK__</span></div></header>
+<header class="lista"><div class="hl"><a class="zn" href="https://trebonaci.cz" aria-label="Třeboňáci – hlavní web"><img src="obr/logo-trebonaci.jpg" alt=""></a><div class="zn-col"><a class="zn-name" href="https://trebonaci.cz"><b>Třeboňáci</b> <span>· Otevřená radnice</span></a><a class="podpora" href="https://www.starostove.cz" target="_blank" rel="noopener">s podporou Starostů</a></div><span class="bd">__STITEK__</span></div></header>
 <nav id="menu" aria-label="Sekce"><a href="#">Co se děje</a><a href="#investice">Investice a opravy</a><a href="#projekty">Projekty</a><a href="#usneseni">Usnesení</a><a href="#mista">Místa a služby</a><a href="#mapa">Mapa</a></nav>
 <header class="band"><div class="wrap">
 <div class="hero"><div>
