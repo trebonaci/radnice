@@ -1196,8 +1196,8 @@ function poTerminu(){
 }
 // Přehled „o kolik dodatky zdražily/posunuly akci oproti původní smlouvě" – rollup po akcích.
 // Vícepráce/méněpráce se počítají, jak je uvádí registr smluv (opisujeme, nepočítáme z PDF).
-function dodatkyZmeny(){
-  const rows=P.map(p=>{
+function dodatkyRadky(projekty){
+  return projekty.map(p=>{
     let puv=0,po=0,nd=0,term=false,ma=false;
     for(const c of p.casti){
       const pv=c.puvodni?.s_dph,pd=c.cena_po_dodatcich_s_dph;
@@ -1207,11 +1207,14 @@ function dodatkyZmeny(){
     }
     return {p,navy:ma?po-puv:0,pct:ma&&puv?Math.round(100*(po-puv)/puv):0,nd,term};
   }).filter(r=>r.nd&&(r.navy>0||r.term)).sort((a,b)=>b.navy-a.navy);
+}
+function dodatkyZmeny(){
+  const rows=dodatkyRadky(P);
   if(!rows.length)return "";
   const N=6;
-  const radek=r=>`<li class="o-${esc(r.p.okruh)}"><a href="#${r.p.id}"><span class="dz-n">${esc(rozepis(r.p.nazev))}</span><span class="dz-m">${r.navy>0?`<b>+${kc(r.navy)}</b>${r.pct?` · +${r.pct} %`:""}`:""}${r.term?`<span class="dz-t">posun termínu</span>`:""} · ${pl(r.nd,"dodatek","dodatky","dodatků")}</span></a></li>`;
+  const radek=r=>`<li class="o-${esc(r.p.okruh)}"><a href="#${r.p.id}"><span class="dz-n">${esc(rozepis(r.p.nazev))}</span><span class="dz-m">${r.navy>0?`<b>+${kc(r.navy)} s DPH</b>${r.pct?` · +${r.pct} %`:""}`:""}${r.term?`<span class="dz-t">posun termínu</span>`:""} · ${pl(r.nd,"dodatek","dodatky","dodatků")}</span></a></li>`;
   return `<section class="dodatky-zm"><h2>${svg("penize")} Dodatky, co zdražují nebo mění termín <span class="dz-pocet">${rows.length}</span></h2>
-   <p class="dz-pod">Akce, u nichž dodatky zvýšily cenu nebo posunuly termín oproti původní smlouvě – a o kolik. Vícepráce i méněpráce se počítají, jak je uvádí registr smluv.</p>
+   <p class="dz-pod">Akce, u nichž dodatky zvýšily cenu nebo posunuly termín oproti původní smlouvě – a o kolik (částky jsou s DPH). Vícepráce i méněpráce se počítají, jak je uvádí registr smluv.</p>
    <ul class="dz-list">${rows.slice(0,N).map(radek).join("")}</ul>${rows.length>N?`<details class="vic dz-vic"><summary>▸ Další akce (${rows.length-N})</summary><ul class="dz-list">${rows.slice(N).map(radek).join("")}</ul></details>`:""}</section>`;
 }
 function prehled(){
