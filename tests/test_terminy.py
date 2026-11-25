@@ -26,6 +26,22 @@ def test_neplatne_datum():
     assert terminy.z_uryvku("Termín dokončení díla: 31. 11. 2026") is None
 
 
+def test_dodatek_prodlouzeni_o_dny_cilove_datum_je_termin():
+    """#282: dodatek „prodloužení termínu dokončení o 7 dnů, tedy do 30.10.2026“ – datum za „do“ je
+    cílový termín (druh=datum), i když je ve větě lhůta; citace se neuřízne na tečce v datu."""
+    t = terminy.z_uryvku("prodloužení) termínu dokončení díla o 7 kalendářních dnů tedy do 30.10.2026. Důvodem je něco.")
+    assert (t["druh"], t["datum"]) == ("datum", "2026-10-30")
+    assert t["citace"].endswith("30.10.2026") and "tedy do 30.10.2026" in t["citace"]
+
+
+def test_lhuta_od_data_zustava_lhutou_a_citace_se_neurizne():
+    """Protiklad: „120 dnů od předání dne 1. 4. 2026“ – datum je začátek lhůty, zůstává druh=lhuta,
+    a citace nekončí uprostřed data („…dne 1“)."""
+    t = terminy.z_uryvku("dokončit dílo do 120 kalendářních dnů od předání staveniště dne 1. 4. 2026.")
+    assert t["druh"] == "lhuta" and t["datum"] is None
+    assert t["citace"].endswith("1. 4. 2026")
+
+
 def test_sestav_preferuje_datum_a_odkaz_na_stranu():
     raw = {"rs-1": {"url": "https://smlouvy.gov.cz/smlouva/1", "soubory": [
         {"url": "https://smlouvy.gov.cz/smlouva/soubor/9/SOD.pdf", "uryvky": [
