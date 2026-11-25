@@ -471,7 +471,8 @@ def sestav(koren: Path | None = None) -> tuple[dict[str, list], list[str]]:
     chyby += modul_okruhy.oznac(okruhy_cfg, vystup)
     vystup["okruhy"] = modul_okruhy.ciselnik(okruhy_cfg)
     # zprávy pro „Co se děje“ (#243): usnesení, změny, výběrová řízení, smlouvy, dodatky, rozpočtová opatření
-    vystup["zpravy"] = modul_zpravy.sestav(vystup, okruhy_cfg, modul_zasobnik.nacti_subjekty(koren))
+    vystup["zpravy"] = modul_zpravy.sestav(vystup, okruhy_cfg, modul_zasobnik.nacti_subjekty(koren),
+                                           modul_zasobnik.firmy_ico(koren))
     # přehled investic roku (kapitálové výdaje po změnách, #138) – jen když je rozpočet stažený
     roky = sorted({r["rok"] for r in rozpocet})
     vystup["investice"] = [modul_rozpocet_zmeny.prehled_investic(rozpocet, rozpocet_zmeny, vystup["projekty"], r)

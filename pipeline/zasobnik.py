@@ -271,6 +271,15 @@ def nacti_subjekty(koren: Path) -> dict:
     return {str(s["ico"]): s["nazev"] for s in yaml.safe_load(cesta.read_text(encoding="utf-8")) or []}
 
 
+def firmy_ico(koren: Path) -> set[str]:
+    """IČO městských obchodních společností (typ `sro`). Jejich zakázky a smlouvy bez silnějšího
+    věcného okruhu patří do okruhu Městské společnosti, ne do Rozvoje a správy (#131 pozn., Ondřej 25. 11.)."""
+    cesta = koren / "config" / "subjekty.yaml"
+    if not cesta.exists():
+        return set()
+    return {str(s["ico"]) for s in yaml.safe_load(cesta.read_text(encoding="utf-8")) or [] if s.get("typ") == "sro"}
+
+
 def sestav(koren: Path, data: dict, projekty: list[dict]) -> tuple[list[dict], list[str]]:
     aktivity, pravidla = modul_projekty.nacti_sprm(koren)
     rucni = nacti(koren)

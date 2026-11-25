@@ -135,6 +135,28 @@ def test_zadavatel_podle_ico_a_neutralne_bez_nazvu():
     assert z[0]["shrnuti"].startswith("Bylo vyhlášeno výběrové řízení") and "Město" not in z[0]["shrnuti"]
 
 
+def test_zakazka_mestske_firmy_bez_vecneho_okruhu_jde_do_spolecnosti():
+    """Připomínka Ondřeje 25. 11.: zakázka/smlouva městské firmy (typ sro) bez věcného okruhu
+    patří do Městských společností, ne do Rozvoje a správy. S věcným okruhem vyhraje věcný."""
+    zak = lambda nazev: {"id": "ezak-VZ-matrace", "subjekt_ico": "25179896", "nazev": nazev, "url": "u",
+                         "rezim": "VZMR", "datum_zahajeni": "2026-11-09", "casti": []}
+    firmy = {"25179896"}  # Slatinné lázně Třeboň s.r.o.
+    # bez věcného vzoru → Městské společnosti (dřív rozvoj_sprava)
+    z = zpravy.sestav({"jednani": [J], "zakazky": [zak("Dodávka matrací")]}, CFG, None, firmy)
+    assert z[0]["okruh"] == "spolecnosti"
+    # bez seznamu firem zůstává původní chování
+    z0 = zpravy.sestav({"jednani": [J], "zakazky": [zak("Dodávka matrací")]}, CFG)
+    assert z0[0]["okruh"] == "rozvoj_sprava"
+    # věcný okruh z názvu má přednost i u městské firmy
+    zv = zpravy.sestav({"jednani": [J], "zakazky": [zak("Rekonstrukce ZŠ Sokolská")]}, CFG, None, firmy)
+    assert zv[0]["okruh"] == "skoly"
+    # smlouva městské firmy bez věcného okruhu → také Městské společnosti
+    sm = smlouva(9, "Nákup nábytku", 900_000)
+    sm["subjekt_ico"] = "25179896"
+    zs = zpravy.sestav({"jednani": [J], "smlouvy": [sm]}, CFG, None, firmy)
+    assert podle_id(zs, "zprava-rs-9")["okruh"] == "spolecnosti"
+
+
 def test_vicedilna_zakazka_ma_unikatni_id_casti():
     cast = lambda n: {"nazev": f"Část {n}", "datum_uzavreni_smlouvy": "2026-10-19", "datum_zruseni": None,
                       "vitezove": [{"nazev": "Stavby a.s.", "fyzicka_osoba": False, "smlouva_uzavrena": True, "castky": []}]}
