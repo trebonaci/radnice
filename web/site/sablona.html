@@ -836,7 +836,7 @@ function investice(I){
    <ul class="pol"><li class="hl"><span></span><span class="c m">schváleno</span><span class="c">po změnách</span></li>${o.polozky.map(p=>`<li><span>${p.projekt_id?`<a href="#${p.projekt_id}">${esc(p.nazev)}</a>`:esc(p.nazev)}${p.nova?'<span class="nova">přidáno během roku</span>':""}</span><span class="c m">${p.schvaleny?(p.zdroj?.url?`<a href="${esc(p.zdroj.url)}#page=${p.zdroj.strana}" target="_blank" rel="noopener" title="schválený rozpočet, str. ${p.zdroj.strana}">${kcp(p.schvaleny)}</a>`:kcp(p.schvaleny)):"–"}</span><span class="c">${kcp(p.po_zmenach)}${(p.zdroje_ro||[]).length?`<small style="display:block">${p.zdroje_ro.map(r=>`<a href="${esc(r.url)}#page=${r.strana}" target="_blank" rel="noopener">RO ${r.cislo_ro}</a>`).join(", ")}</small>`:""}</span></li>`).join("")}</ul></details>`).join("");
   const rez=I.oblasti.find(o=>o.oblast==="Rezerva");
   return `<h1 class="st" tabindex="-1">Investice v rozpočtu ${I.rok}</h1>
-  <p style="max-width:64ch">Zastupitelstvo schválilo na investice ${kc(I.schvaleny)} včetně rezervy. Po rozpočtových změnách je to ${kc(I.po_zmenach)}${rez?`, z toho ${kc(rez.po_zmenach)} je rezerva, která zatím není rozdělená na konkrétní akce`:""}. Níže je rozpočet po změnách <b>bez rezervy</b>, rozdělený do šesti okruhů podle toho, čeho se položka týká.</p>
+  <p style="max-width:64ch">Zastupitelstvo schválilo na investice ${kc(I.schvaleny)} včetně rezervy.${rez?` Rezerva ${kc(rez.po_zmenach)} zatím není rozdělená na konkrétní akce.`:""} Níže je rozpočet investic po rozpočtových změnách <b>bez rezervy</b>, rozdělený do okruhů podle toho, čeho se položka týká. Investice městských společností mají vlastní rozpočet a nejsou tady.</p>
   <section class="inv">
   <div class="vel">${kc(I.bez_rezervy_po_zmenach)}</div><p class="pozn" style="margin:0 0 14px">rozpočet investic po změnách bez nerozdělené rezervy · plán města, ne smluvní cena ani zaplaceno</p>
   ${ob}<p class="pozn">${esc(I.fondy_poznamka)} Rozpočet neuvádí DPH; město rozpočtuje ceny včetně DPH.</p></section>`;
@@ -1084,7 +1084,7 @@ function jinde(){const t=koreny(F.hledat);if(!t.length||t.join("").length<2)retu
    ${zp.map(x=>`<a href="#pripravovane"><span><b>${esc(x.nazev)}</b><small>připravovaný projekt – zatím bez stavby</small></span></a>`).join("")}</div></div>`;}
 function sprmText(p,kratce){const odkaz=`<a href="${SPRM_URL}" target="_blank" rel="noopener">Strategický plán rozvoje města Třeboň 2021–2030</a>`;
   if(!p.sprm?.length)return kratce?"Strategický plán: vazbu zatím neznáme":`Vazbu na aktivitu v dokumentu ${odkaz} zatím neznáme.`;
-  return (kratce?"":`Podle dokumentu ${odkaz}:<br>`)+p.sprm.map(x=>`${kratce?"Strategický plán: ":""}${esc(x.osa)} › ${esc((x.opatreni||"").replace(/^\d+\.\s*/,""))} › ${esc(x.aktivita)}${x.potvrzeno?"":" <i>(návrh)</i>"}`).join(kratce?"; ":"<br>");
+  return (kratce?"":`Podle dokumentu ${odkaz}:<br>`)+p.sprm.map(x=>`${kratce?"Strategický plán: ":""}${esc(x.osa)} › ${esc((x.opatreni||"").replace(/^\d+\.\s*/,""))} › ${esc(x.aktivita)}${x.potvrzeno?"":" <span style='color:var(--mute);font-style:italic;font-weight:400'>(naše navržené propojení)</span>"}`).join(kratce?"; ":"<br>");
 }
 function radekPrehledu(p){const f=FAZE[p.faze]||["",""];const [co,kolik]=hlavni(p);const pu=posledniUdalost(p);const z=pu?zmenaVeta(p,pu):null;
   return `<a href="#${p.id}" class="k-${p.faze}"><span><b>${esc(rozepis(p.nazev))}</b>${z?`<small class="pz">${esc(z.kratce)}</small>`:""}<small class="sv"><i class="${f[1]}" aria-hidden="true"></i>${esc(stavText(p))}${p.faze==="probiha"&&p.termin_dokonceni?.datum?` · dokončení podle smlouvy ${dat(p.termin_dokonceni.datum)}`:p.faze==="probiha"&&p.termin_dokonceni?.druh==="lhuta"?` · ${esc(p.termin_dokonceni.citace)}`:""} · ${OBLAST[p.oblast]||"Ostatní"}</small></span><span class="c">${kolik||"–"}<small>${co}</small></span></a>`;}
@@ -1279,8 +1279,9 @@ function rozlozeni(vyber){const po=OK.map(o=>[o,vyber.filter(z=>z.okruh===o.id).
 function druhChips(rozl=""){return `<div class="zp-filtr"><div class="jmeno">Druh zprávy</div><nav class="chips" aria-label="Druh zprávy">${DRUHY_ZPRAV.map(([d,n])=>`<button type="button" data-druh="${d}" class="${FZ.druh===d?"on":""}" aria-pressed="${FZ.druh===d}">${n}</button>`).join("")}</nav>
    <div class="jmeno">Okruh</div>${okruhChips("deje")}${rozl}</div>`;}
 function coSeDeje(){const vyber=zprVyber();const k=ZP.kpi;
+  const usnOd=ZP.zpravy.reduce((m,z)=>((z.druh==="usneseni"||(z.druhy||[]).includes("usneseni"))&&z.datum&&(!m||z.datum<m))?z.datum:m,"");
   return druhChips(rozlozeni(vyber))+
-  `<div class="sekce-nadpis"><h2>Šest okruhů samosprávy</h2><p>${pl(vyber.length,"zpráva","zprávy","zpráv")} za posledních 12 měsíců (do ${dat(k.do)}), nejnovější nahoře</p></div>
+  `<div class="sekce-nadpis"><h2>Šest okruhů samosprávy</h2><p>${pl(vyber.length,"zpráva","zprávy","zpráv")} za posledních 12 měsíců (do ${dat(k.do)}), nejnovější nahoře${usnOd?` · usnesení zatím jen od ${dat(usnOd)}`:""}</p></div>
   <div class="okruhy">${vybraneOkruhy().map(o=>blokOkruhu(o,vyber)).join("")}</div>
   <div class="sekce-nadpis"><h2>Data spojená s konkrétními místy</h2></div>
   <p class="pozn" style="margin:0 0 10px">Každá položka může mít své místo: ulici, školu, hřiště nebo městský objekt. Zprávy o místech a službách najdete na stránce Místa a služby, polohu staveb na mapě.</p>

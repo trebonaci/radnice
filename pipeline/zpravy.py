@@ -97,8 +97,18 @@ def _urci_okruh(cfg: dict, nazev: str | None, karta_okruh: str | None, zalozni: 
     return okruh
 
 
-def sestav(vystup: dict, cfg: dict, subjekty: dict[str, str] | None = None) -> list[dict]:
-    """Zprávy ze sestavených výstupů (po označení okruhů). Nejnovější nahoře."""
+OKRUH_FIRMY = "spolecnosti"  # okruh „Městské společnosti" (config/okruhy.yaml); hlídá test SLT→spolecnosti
+
+
+def sestav(vystup: dict, cfg: dict, subjekty: dict[str, str] | None = None,
+           firmy: set[str] | None = None) -> list[dict]:
+    """Zprávy ze sestavených výstupů (po označení okruhů). Nejnovější nahoře.
+    `firmy`: IČO městských obchodních společností – jejich zakázky/smlouvy bez věcného okruhu jdou do Městských společností."""
+    firmy = firmy or set()
+
+    def okruh_firmy(ico) -> str | None:
+        return OKRUH_FIRMY if str(ico or "") in firmy else None
+
     jednani = {j["id"]: j for j in vystup.get("jednani") or []}
     usneseni = {u["id"]: u for u in vystup.get("usneseni") or []}
     karty = {k["id"]: k for k in vystup.get("projekty") or []}
@@ -194,7 +204,7 @@ def sestav(vystup: dict, cfg: dict, subjekty: dict[str, str] | None = None) -> l
                 shrnuti += f" Schválilo ho usnesení {usn['cislo']}."
         zpravy.append({
             "id": f"zprava-{sm['id']}", "druh": druh, "datum": sm["datum_uzavreni"],
-            "okruh": _urci_okruh(cfg, sm["predmet"], okruh_vazby(karta_id, zas_id)),
+            "okruh": _urci_okruh(cfg, sm["predmet"], okruh_vazby(karta_id, zas_id), okruh_firmy(sm.get("subjekt_ico"))),
             "titulek": sm["predmet"], "shrnuti": shrnuti, "castka": castka,
             "projekt_id": karta_id, "zdroje": zdroje, "jistota": jistota,
         } | _jmeno_podnikatele(sm.get("strany") or []))
@@ -245,7 +255,7 @@ def sestav(vystup: dict, cfg: dict, subjekty: dict[str, str] | None = None) -> l
     for z in vystup.get("zakazky") or []:
         karta_id = karta_zakazky.get(z["id"])
         zas_id = zasobnik_zakazky.get(z["id"])
-        okruh = _urci_okruh(cfg, z["nazev"], okruh_vazby(karta_id, zas_id))
+        okruh = _urci_okruh(cfg, z["nazev"], okruh_vazby(karta_id, zas_id), okruh_firmy(z.get("subjekt_ico")))
         jistota = "naše propojení" if (karta_id or zas_id) else "doloženo"
         zdroj = [{"nazev": f"Zadávací profil (E-ZAK): {z['nazev']}", "url": z["url"]}]
 
