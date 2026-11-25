@@ -48,6 +48,10 @@ jobs:
         run: |
           python -m pipeline.zdroje.registr_smluv || echo "::warning::Registr smluv – některé dumpy se nepodařilo zpracovat (viz log)"
 
+      - name: Přílohy smluv na stavbu (PDF pro termíny dokončení, nejvýš 25 za běh; chyba nezastaví běh)
+        run: |
+          python -m pipeline.zdroje.prilohy_smluv || echo "::warning::Přílohy smluv – některé PDF se nepodařilo stáhnout (viz log)"
+
       - name: Rozpočet a přehled rozpočtových opatření (PDF; chyba nezastaví běh)
         run: |
           python -m pipeline.zdroje.rozpocet_mesta || echo "::warning::Rozpočet – některé dokumenty se nepodařilo stáhnout (viz log)"
