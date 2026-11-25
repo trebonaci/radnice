@@ -169,6 +169,15 @@ def test_usneseni_v_okruhu_se_pocita_hlavnim_okruhem_jednou():
     assert "u.okruhy.includes(o)" not in html  # dřívější překrývající se počítání je pryč
 
 
+def test_prehled_akce_po_terminu():
+    """#283: přehled „Akce po termínu" – stavby po smluvním termínu, co podle dokladů běží, s poctivým
+    caveatem (skutečný postup prací v datech nemáme)."""
+    html = build.sestav()
+    assert "function poTerminu()" in html
+    assert "Akce po termínu" in html
+    assert "Skutečný postup prací v datech nemáme" in html
+
+
 def test_barvy_okruhu_jsou_v_css_i_v_js_pro_kazdy_okruh():
     """Každý okruh má svou barvu v CSS (.o-<id>) i v JS (pruh rozložení) a obě sady se shodují."""
     import re

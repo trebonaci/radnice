@@ -521,6 +521,18 @@ __GISCSS__
 .kv2-postup .ok{color:var(--green-dark)}.kv2-postup .warn{color:var(--error)}
 .kv2-postup a{text-decoration:none}.kv2-postup a:hover{text-decoration:underline}
 .kv2-alert{display:flex;gap:12px;align-items:flex-start;background:var(--ok-tint);border:1px solid var(--line);border-left:4px solid var(--ok);border-radius:var(--rounded-lg);padding:14px 16px;margin:12px 0 4px}
+/* přehled „Akce po termínu" (#283) – jantarový warning, položky s barvou okruhu */
+.po-termin{background:#fffbeb;border:1px solid #fde68a;border-left:4px solid #d97706;border-radius:var(--rounded-lg);padding:16px 18px;margin:18px 0}
+.po-termin h2{display:flex;align-items:center;gap:8px;margin:0 0 4px;font-size:18px;color:#92400e}
+.po-termin h2 svg{width:20px;height:20px;fill:#d97706;flex:0 0 auto}
+.pt-pocet{font-size:13px;font-weight:700;background:#d97706;color:#fff;border-radius:99px;padding:1px 9px}
+.pt-pod{margin:0 0 12px;font-size:14px;color:var(--mute);max-width:72ch}
+.pt-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.pt-list li{border:1px solid var(--line);border-left:3px solid var(--ok,#d97706);border-radius:8px;background:#fff}
+.pt-list a{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;padding:9px 13px;text-decoration:none;color:var(--ink)}
+.pt-list a:hover{background:var(--soft)}
+.pt-n{font-weight:600}
+.pt-m{font-size:13px;color:#92400e;font-weight:600;white-space:nowrap}
 .kv2-alert>.icn{width:22px;height:22px;color:var(--ok-ink);margin-top:1px}
 .kv2-al-t{min-width:0}.kv2-al-l{display:block;font:700 11px/1.4 var(--font);letter-spacing:.06em;text-transform:uppercase;color:var(--ok-ink);margin-bottom:2px}
 .kv2-alert p{margin:0 0 8px;font-weight:600}.kv2-alert .akce{margin:0}
@@ -1156,9 +1168,21 @@ function kpiInvestic(){const k=KPI,pc=k.pocty,c=k.cena_probihajicich,r=k.rozpoce
 // velká karta: akce, která se staví a má nejnovější doloženou změnu
 function zvyraznena(){const r=P.filter(p=>p.faze==="probiha"&&(!FO.okruh||p.okruh===FO.okruh)&&posledni(p)).sort((a,b)=>posledni(b).localeCompare(posledni(a)))[0];
   return r?`<section class="ak-nej" aria-label="Nejnovější změna mezi probíhajícími akcemi"><div class="hh">Nejnovější změna mezi probíhajícími akcemi</div>${kartaAkce(r,true)}</section>`:"";}
+// Přehled „co by člověk sám nenašel": stavby po smluvním termínu, které podle dokladů stále běží.
+// Skutečný postup prací v datech nemáme – proto opatrná formulace (může být hotovo, jen chybí doklad).
+function poTerminu(){
+  const akce=P.filter(p=>p.faze==="probiha"&&p.termin_dokonceni?.druh==="datum"&&p.termin_dokonceni.datum<DNES)
+    .map(p=>({p,dni:Math.round((new Date(DNES)-new Date(p.termin_dokonceni.datum))/864e5)}))
+    .sort((a,b)=>b.dni-a.dni);
+  if(!akce.length)return "";
+  return `<section class="po-termin"><h2>${svg("blesk")} Akce po termínu <span class="pt-pocet">${akce.length}</span></h2>
+   <p class="pt-pod">Stavby, u nichž už uplynul termín dokončení ze smlouvy a podle dokladů stále probíhají. Skutečný postup prací v datech nemáme – akce může být hotová a jen chybí doklad.</p>
+   <ul class="pt-list">${akce.map(({p,dni})=>`<li class="o-${esc(p.okruh)}"><a href="#${p.id}"><span class="pt-n">${esc(rozepis(p.nazev))}</span><span class="pt-m">po termínu o ${pl(dni,"den","dny","dní")} · termín ${dat(p.termin_dokonceni.datum)}</span></a></li>`).join("")}</ul></section>`;
+}
 function prehled(){
   return `<span class="eyebrow">Investiční akce a stavební údržba města</span><h1 class="st" tabindex="-1">Investice a opravy</h1><p class="pozn" style="max-width:64ch;margin-top:0">Co se v Třeboni staví, opravuje a chystá. Údaje jsou z veřejných dokumentů města, u každé akce je odkaz na zdroj.</p>
   ${kpiInvestic()}
+  ${poTerminu()}
   <div class="hledani"><label class="sr" for="q">Hledat ulici, místo, projekt nebo firmu</label><input id="q" type="search" autocomplete="off" placeholder="Hledat ulici, místo, projekt nebo firmu" value="${esc(F.hledat)}"></div>
   ${okruhChips("investice")}
   ${koreny(F.hledat).length?"":zvyraznena()}
