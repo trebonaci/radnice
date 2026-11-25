@@ -14,6 +14,7 @@ import shutil
 from datetime import date
 from pathlib import Path
 
+from web.feed import atom as atom_feed
 from web.zpravy import zpravy_pro_web
 
 KOREN = Path(__file__).resolve().parent.parent
@@ -134,6 +135,12 @@ def main() -> None:
     cil = Path(args.vystup)
     cil.mkdir(parents=True, exist_ok=True)
     (cil / "index.html").write_text(sestav(args.nahled), encoding="utf-8")
+    # Atom feed „Co se děje“ (odběr novinek bez serveru): stejné zprávy jako na webu
+    beh_feed = json.loads((KOREN / "data" / "beh.json").read_text(encoding="utf-8")) if (KOREN / "data" / "beh.json").exists() else {}
+    (cil / "feed.xml").write_text(
+        atom_feed(zpravy_stranky(_json("zpravy"), _json("okruhy"), beh_feed), _json("okruhy"),
+                  (beh_feed or {}).get("zacatek", "")[:10] or None),
+        encoding="utf-8")
     # obrázky šablony (logo Třeboňáků)
     shutil.copytree(SABLONA.parent / "obr", cil / "obr", dirs_exist_ok=True)
     # písmo Inter (licence OFL) – z vlastního webu, ne z Google Fonts

@@ -99,6 +99,22 @@ def test_datova_json_a_cors_pro_modul_radnice(tmp_path, monkeypatch):
     assert "/data/*" in hlavicky and "Access-Control-Allow-Origin: *" in hlavicky
 
 
+def test_feed_je_soucasti_buildu(tmp_path, monkeypatch):
+    """Odběr novinek bez serveru (#283): build vystaví feed.xml a stránka na něj odkazuje
+    v hlavičce (autodiscovery) i v patičce."""
+    import sys
+    from xml.dom.minidom import parse
+    monkeypatch.setattr(sys, "argv", ["build", "--vystup", str(tmp_path)])
+    build.main()
+    feed_cesta = tmp_path / "feed.xml"
+    assert feed_cesta.exists()
+    d = parse(str(feed_cesta))  # well-formed XML
+    assert d.documentElement.tagName == "feed"
+    html = (tmp_path / "index.html").read_text(encoding="utf-8")
+    assert 'type="application/atom+xml"' in html  # autodiscovery v <head>
+    assert 'href="feed.xml"' in html  # odkaz v patičce
+
+
 def test_usneseni_pro_web_nese_okruhy():
     from web.build import usneseni_pro_web
     r = usneseni_pro_web([{"id": "u", "jednani_id": "x", "okruh": "skoly", "okruhy": ["skoly", "rozvoj_sprava"]}], [])
