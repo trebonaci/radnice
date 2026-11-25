@@ -64,6 +64,22 @@ def test_pisma_jsou_ve_webu_a_se_kopiruji(tmp_path, monkeypatch):
     assert "url(fonts/inter-latin.woff2)" in html
 
 
+def test_datova_json_a_cors_pro_modul_radnice(tmp_path, monkeypatch):
+    """Modul /radnice/ na trebonaci.cz (#177): build vystaví prehled/ukazatele/beh.json
+    do _site/data/ a _headers je zpřístupní cizí doméně (CORS), aby se denně aktualizovaly
+    automaticky bez ručního uploadu do WordPressu."""
+    import json
+    import sys
+    monkeypatch.setattr(sys, "argv", ["build", "--vystup", str(tmp_path)])
+    build.main()
+    for nazev in ("prehled", "ukazatele", "beh"):
+        cesta = tmp_path / "data" / f"{nazev}.json"
+        assert cesta.exists(), nazev
+        json.loads(cesta.read_text(encoding="utf-8"))  # platné JSON
+    hlavicky = (tmp_path / "_headers").read_text(encoding="utf-8")
+    assert "/data/*" in hlavicky and "Access-Control-Allow-Origin: *" in hlavicky
+
+
 def test_usneseni_pro_web_nese_okruhy():
     from web.build import usneseni_pro_web
     r = usneseni_pro_web([{"id": "u", "jednani_id": "x", "okruh": "skoly", "okruhy": ["skoly", "rozvoj_sprava"]}], [])

@@ -4,13 +4,14 @@
  * Template Post Type: page
  *
  * Datový přehled radnice Třeboň (repozitář trebonaci/radnice, #177, #187).
- * Data se načítají v prohlížeči z JSON v uploads/radnice/ (nezávisle na WP Super Cache).
+ * Data se načítají v prohlížeči z JSON na radnice.trebonaci.cz/data/ (Cloudflare Pages, CORS),
+ * které denně aktualizuje pipeline – žádný ruční upload do WordPressu. Filtrem
+ * `trb_radnice_data_base` lze přepnout zdroj (např. zpět na uploads/radnice/ pro testování).
  * Styl: css/pages/radnice-prehled.css (enqueue jen na této šabloně, viz inc/enqueue.php),
  * skript: js/radnice-prehled.js. Designová pravidla: DESIGNOVA-PRAVIDLA-PREHLED-RADNICE.md.
  */
 defined('ABSPATH') || exit;
-$trb_radnice_uploads = wp_upload_dir();
-$trb_radnice_data = trailingslashit($trb_radnice_uploads['baseurl']) . 'radnice/';
+$trb_radnice_data = trailingslashit(apply_filters('trb_radnice_data_base', 'https://radnice.trebonaci.cz/data'));
 get_header();
 ?>
 <main class="trb-radnice-prehled"
