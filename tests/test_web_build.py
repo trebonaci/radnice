@@ -38,11 +38,11 @@ def test_co_se_deje_ma_sest_okruhu_a_sest_polozek_menu():
     okruhy = re.search(r"const OK=(\[.*?\]);\n", html)
     assert okruhy and okruhy.group(1).count('"popis"') == 6
     menu = re.search(r'<nav id="menu"[^>]*>(.*?)</nav>', html).group(1)
-    assert re.findall(r'href="([^"]*)"', menu) == ["#", "#investice", "#projekty", "#usneseni", "#mista", "#mapa"]
+    assert re.findall(r'href="([^"]*)"', menu) == ["/", "/investice", "/projekty", "/usneseni", "/mista", "/mapa"]
     assert re.findall(r">([^<]+)</a>", menu) == ["Co se děje", "Investice a opravy", "Projekty", "Usnesení", "Místa a služby", "Mapa"]
     # Rozpočet, V číslech, Připravované a Dokončené zůstávají v patičce
     pata = re.search(r"<footer.*?</footer>", html, re.S).group(0)
-    for h in ("#pripravovane", "#dokoncene", "#rozpocet", "#cisla"):
+    for h in ("/pripravovane", "/dokoncene", "/rozpocet", "/cisla"):
         assert f'href="{h}"' in pata
     assert "Tailwind" not in html and "fonts.googleapis" not in html and "cdn." not in html
 
@@ -80,7 +80,7 @@ def test_pisma_jsou_ve_webu_a_se_kopiruji(tmp_path, monkeypatch):
     for f in ("inter-latin.woff2", "inter-latin-ext.woff2", "OFL-Inter.txt"):
         assert (tmp_path / "fonts" / f).stat().st_size > 1000
     html = (tmp_path / "index.html").read_text(encoding="utf-8")
-    assert "url(fonts/inter-latin.woff2)" in html
+    assert "url(/fonts/inter-latin.woff2)" in html  # absolutní cesta kvůli čistým adresám (#283)
 
 
 def test_datova_json_a_cors_pro_modul_radnice(tmp_path, monkeypatch):
@@ -99,6 +99,31 @@ def test_datova_json_a_cors_pro_modul_radnice(tmp_path, monkeypatch):
     assert "/data/*" in hlavicky and "Access-Control-Allow-Origin: *" in hlavicky
 
 
+def test_ciste_adresy_a_spa_fallback(tmp_path, monkeypatch):
+    """Čisté adresy bez # (#283): router čte cestu (pathname), odkazy uvnitř jsou /cesta,
+    #kotva zůstává vnitřní odkaz, a build vystaví _redirects pro SPA fallback na Cloudflare."""
+    import sys
+    monkeypatch.setattr(sys, "argv", ["build", "--vystup", str(tmp_path)])
+    build.main()
+    # SPA fallback: každá neznámá cesta → index.html (skutečné soubory mají přednost)
+    red = (tmp_path / "_redirects").read_text(encoding="utf-8")
+    assert "/index.html" in red and "200" in red
+    html = (tmp_path / "index.html").read_text(encoding="utf-8")
+    # router podle cesty, ne podle #; reakce na popstate (zpět/vpřed)
+    assert "function cesta()" in html and "location.pathname" in html
+    assert 'addEventListener("popstate"' in html
+    # navigační odkazy jsou /cesta
+    assert 'href="/investice"' in html and 'href="/usneseni"' in html and 'href="/mapa"' in html
+    # žádné routovací #odkazy nezůstaly (povolené jsou jen vnitřní kotvy)
+    import re
+    hashe = set(re.findall(r'href="#([a-z-]+)"', html))
+    assert hashe <= {"paticka", "k-ceny", "projekty-seznam"}, hashe
+    # aktiva absolutně, aby fungovala i na hluboké cestě (/investice/skoly)
+    assert 'src="/obr/' in html and 'href="/feed.xml"' in html
+    # pořád bez CDN
+    assert "cdn." not in html and "fonts.googleapis" not in html and "Tailwind" not in html
+
+
 def test_feed_je_soucasti_buildu(tmp_path, monkeypatch):
     """Odběr novinek bez serveru (#283): build vystaví feed.xml a stránka na něj odkazuje
     v hlavičce (autodiscovery) i v patičce."""
@@ -112,7 +137,7 @@ def test_feed_je_soucasti_buildu(tmp_path, monkeypatch):
     assert d.documentElement.tagName == "feed"
     html = (tmp_path / "index.html").read_text(encoding="utf-8")
     assert 'type="application/atom+xml"' in html  # autodiscovery v <head>
-    assert 'href="feed.xml"' in html  # odkaz v patičce
+    assert 'href="/feed.xml"' in html  # odkaz v patičce
 
 
 def test_usneseni_pro_web_nese_okruhy():
@@ -301,7 +326,7 @@ def test_stranka_dodavatele():
     assert "function DODget(" in html and "cena_po_dodatcich_s_dph" in html
     assert "Dodavatel města" in html
     # proklik z karty i z detailu jde přes dodOdkaz; anonymní FO se nelinkuje
-    assert "const dodOdkaz=" in html and "#dodavatel/" in html
+    assert "const dodOdkaz=" in html and "/dodavatel/" in html
     assert 'jm==="fyzická osoba"' in html
     # pořád bez CDN
     assert "cdn." not in html and "fonts.googleapis" not in html and "Tailwind" not in html

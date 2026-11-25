@@ -13,7 +13,7 @@ let leafletAssets;
 function loadLeaflet() {
   if (leafletAssets) return leafletAssets;
   // Leaflet 1.9.4 přibalený k webu (web/site/leaflet, licence BSD-2) – bez načítání z cizího CDN
-  const base = "leaflet/leaflet.";
+  const base = "/leaflet/leaflet.";
   const css = document.createElement("link");
   css.rel = "stylesheet";
   css.href = base + "css";

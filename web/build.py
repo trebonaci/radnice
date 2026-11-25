@@ -162,6 +162,10 @@ def main() -> None:
         + ("  X-Robots-Tag: noindex\n" if args.nahled else "")
         + "\n/data/*\n  Access-Control-Allow-Origin: *\n  X-Robots-Tag: noindex\n",
         encoding="utf-8")
+    # Čisté adresy (#283): jednostránková aplikace s reálnými cestami (/investice, /akce…).
+    # Cloudflare Pages servíruje nejdřív skutečné soubory (/data, /feed.xml, /fonts, /obr,
+    # /leaflet), a každou ostatní cestu obslouží index.html (stav 200), odkud ji přečte router.
+    (cil / "_redirects").write_text("/*  /index.html  200\n", encoding="utf-8")
     print(cil / "index.html")
 
 
