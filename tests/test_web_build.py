@@ -52,8 +52,8 @@ def test_datum_posledniho_dokladu_a_filtr_bez_zelene_tecky():
     výplň + podsvícení (okruh ve své barvě), ne zelenou tečku vlevo."""
     html = build.sestav()
     assert 'class="od-datum"' in html and "Naposledy" in html
-    # zelená (limetková) tečka u aktivního filtru je pryč, aktivní okruh je ve své barvě + podsvícení
-    assert "background:var(--accent-lime);margin-right:7px" not in html
+    # zelená (limetková) tečka u aktivního filtru je potlačená; aktivní okruh je ve své barvě + podsvícení
+    assert ".chips button.on::before,.okr a.on::before{content:none}" in html
     assert ".okr a.on{background:var(--ok" in html and "box-shadow:0 0 0 3px var(--ok-tint" in html
 
 
