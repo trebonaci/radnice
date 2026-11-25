@@ -58,6 +58,11 @@ def _vyber_castku(castky: list[dict], druh: str | None = None) -> dict | None:
     """Částka ke zprávě: smluvní cena s DPH, jinak první uvedená. Opisuje, nepočítá."""
     smluvni = [c for c in castky if c.get("druh") == "smluvni" and c.get("mena", "CZK") == "CZK"]
     s_dph = [c for c in smluvni if c.get("s_dph") is True]
+    bez_dph = [c for c in smluvni if c.get("s_dph") is False]
+    # zdroj uvádí stejnou cenu s DPH i bez (dodavatel neplátce DPH): vezmeme variantu bez DPH –
+    # shoduje se s registrem smluv a se smlouvou pak nevznikne zdánlivý rozpor dvou cen (#282)
+    if s_dph and bez_dph and s_dph[0].get("hodnota") == bez_dph[0].get("hodnota"):
+        return _castka(bez_dph[0], druh)
     return _castka((s_dph or smluvni or [None])[0], druh)
 
 

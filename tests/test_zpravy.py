@@ -135,6 +135,19 @@ def test_zadavatel_podle_ico_a_neutralne_bez_nazvu():
     assert z[0]["shrnuti"].startswith("Bylo vyhlášeno výběrové řízení") and "Město" not in z[0]["shrnuti"]
 
 
+def test_vyber_castku_neplatce_dph_vezme_bez_dph():
+    """#282: když E-ZAK uvádí stejnou smluvní cenu s DPH i bez (dodavatel neplátce), zpráva vezme
+    variantu bez DPH – shodne se s registrem a nevznikne zdánlivý rozpor dvou cen."""
+    stejne = [{"hodnota": 985500.0, "mena": "CZK", "s_dph": True, "druh": "smluvni"},
+              {"hodnota": 985500.0, "mena": "CZK", "s_dph": False, "druh": "smluvni"}]
+    assert zpravy._vyber_castku(stejne)["s_dph"] is False
+    # plátce DPH (různé částky) → beze změny, bere s DPH
+    ruzne = [{"hodnota": 1192455.0, "mena": "CZK", "s_dph": True, "druh": "smluvni"},
+             {"hodnota": 985500.0, "mena": "CZK", "s_dph": False, "druh": "smluvni"}]
+    c = zpravy._vyber_castku(ruzne)
+    assert c["s_dph"] is True and c["hodnota"] == 1192455.0
+
+
 def test_zakazka_mestske_firmy_bez_vecneho_okruhu_jde_do_spolecnosti():
     """Připomínka Ondřeje 25. 11.: zakázka/smlouva městské firmy (typ sro) bez věcného okruhu
     patří do Městských společností, ne do Rozvoje a správy. S věcným okruhem vyhraje věcný."""
