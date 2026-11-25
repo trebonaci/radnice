@@ -67,11 +67,12 @@ header.band .lead{color:#cbd5e1;font-size:clamp(15px,1.3vw,18px);max-width:62ch;
 @media(max-width:900px){.kpi-dny{grid-template-columns:repeat(3,1fr)}}
 /* na mobilu jeden posuvný řádek a bez medailonu, aby se čtenář dostal ke zprávám dřív */
 @media(max-width:560px){header.band{padding-bottom:16px}.medailon{display:none}
-  .kpi-dny{display:flex;overflow-x:auto;scrollbar-width:none;scroll-snap-type:x mandatory}
-  .kpi-dny::-webkit-scrollbar{display:none}
+  /* posuvné pruhy: pravý okraj zeslábne (fade) jako náznak, že obsah pokračuje, + tenký posuvník (připomínka 25. 11.) */
+  .kpi-dny{display:flex;overflow-x:auto;scrollbar-width:thin;scrollbar-color:rgba(148,163,184,.55) transparent;scroll-snap-type:x mandatory;-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 22px),transparent);mask-image:linear-gradient(to right,#000 calc(100% - 22px),transparent)}
+  .kpi-dny::-webkit-scrollbar{height:5px}.kpi-dny::-webkit-scrollbar-thumb{background:rgba(148,163,184,.55);border-radius:3px}
   .kpi-dny a{flex:0 0 46%;scroll-snap-align:start}.kpi-dny a span{min-height:0}
-  .zp-filtr{padding:12px 14px 10px}.zp-filtr .chips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
-  .zp-filtr .chips::-webkit-scrollbar{display:none}}
+  .zp-filtr{padding:12px 14px 10px}.zp-filtr .chips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:thin;scrollbar-color:rgba(148,163,184,.55) transparent;-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 20px),transparent);mask-image:linear-gradient(to right,#000 calc(100% - 20px),transparent)}
+  .zp-filtr .chips::-webkit-scrollbar{height:5px}.zp-filtr .chips::-webkit-scrollbar-thumb{background:rgba(148,163,184,.55);border-radius:3px}}
 /* hlavička: tmavá lišta + menu pod ní (jen menu zůstává při posunu nahoře) */
 .lista{background:var(--surface-dark);color:#fff}
 .lista .hl{display:flex;align-items:center;gap:12px;min-height:56px;padding:0 max(5vw,16px)}
@@ -80,12 +81,12 @@ header.band .lead{color:#cbd5e1;font-size:clamp(15px,1.3vw,18px);max-width:62ch;
 .lista .bd{margin-left:auto;font-size:12px;font-weight:600;color:#e2e8f0;border:1px solid var(--border-dark);background:var(--surface-dark-subtle);border-radius:var(--r-pill);padding:3px 11px;white-space:nowrap}
 .lista .bd::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--accent-lime);margin-right:7px}
 /* menu je lepkavé proti celé stránce; při posunu dolů se schová, při posunu nahoru se vrátí (připomínka 24. 11.) */
-nav#menu{position:sticky;top:0;z-index:1200;display:flex;gap:2px;padding:0 max(5vw,16px);background:#fff;border-bottom:1px solid var(--border-subtle);overflow-x:auto;scrollbar-width:none;transition:transform .22s ease,box-shadow .22s ease}
+nav#menu{position:sticky;top:0;z-index:1200;display:flex;gap:2px;padding:0 max(5vw,16px);background:#fff;border-bottom:1px solid var(--border-subtle);overflow-x:auto;scrollbar-width:thin;scrollbar-color:rgba(148,163,184,.55) transparent;transition:transform .22s ease,box-shadow .22s ease;-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 26px),transparent);mask-image:linear-gradient(to right,#000 calc(100% - 26px),transparent)}
 nav#menu.plave{box-shadow:0 8px 20px -12px rgba(15,23,42,.45)}
 nav#menu.skryte{transform:translateY(-100%)}
 nav#menu:focus-within{transform:none}
 @media(prefers-reduced-motion:reduce){nav#menu{transition:none}}
-nav#menu::-webkit-scrollbar{display:none}
+nav#menu::-webkit-scrollbar{height:5px}nav#menu::-webkit-scrollbar-thumb{background:rgba(148,163,184,.55);border-radius:3px}
 nav#menu a{flex:0 0 auto;white-space:nowrap;font:600 14px var(--font);color:var(--mute);text-decoration:none;padding:13px 14px;border-bottom:3px solid transparent}
 nav#menu a:hover{color:var(--ink);background:rgba(15,23,42,.04)}nav#menu a.on{color:var(--ink);border-bottom-color:var(--accent-lime);font-weight:700}
 nav#menu a:focus-visible{outline:3px solid var(--blue-light);outline-offset:-3px}
