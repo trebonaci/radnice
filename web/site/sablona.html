@@ -493,6 +493,36 @@ __GISCSS__
 .ak-kpi .kpi:nth-child(2)::after{background:var(--g-soutez)}
 .ak-kpi .kpi:nth-child(3)::after{background:var(--g-prubeh)}
 .ak-kpi .kpi:nth-child(4)::after{background:var(--green-dark)}
+/* --- detail investice v2 (návrh karty 24. 11. 2026): bohatší layout, jen doložená data --- */
+.kv2 .icn{width:16px;height:16px;flex:0 0 auto;vertical-align:-3px}
+.kv2-ilu{position:relative;margin:-6px 0 14px;border-radius:var(--rounded-lg);overflow:hidden;height:96px}
+.kv2-ilu svg{display:block;width:100%;height:100%}
+.kv2-foto{margin:-6px 0 14px;background-size:cover;background-position:center}
+.kv2-ilu-cap,.kv2-foto figcaption{position:absolute;left:12px;bottom:10px;display:inline-flex;align-items:center;gap:6px;font:700 11px/1 var(--font);letter-spacing:.04em;text-transform:uppercase;color:var(--ok-ink);background:rgba(255,255,255,.85);border-radius:99px;padding:5px 10px}
+.kv2-foto figcaption{color:#fff;background:rgba(0,0,0,.5)}
+.kv2-postup{display:flex;flex-wrap:wrap;gap:8px 18px;margin:10px 0 2px;font-size:14px}
+.kv2-postup span{display:inline-flex;align-items:center;gap:6px;color:var(--mute)}
+.kv2-postup .ok{color:var(--green-dark)}.kv2-postup .warn{color:var(--error)}
+.kv2-postup a{text-decoration:none}.kv2-postup a:hover{text-decoration:underline}
+.kv2-alert{display:flex;gap:12px;align-items:flex-start;background:var(--ok-tint);border:1px solid var(--line);border-left:4px solid var(--ok);border-radius:var(--rounded-lg);padding:14px 16px;margin:12px 0 4px}
+.kv2-alert>.icn{width:22px;height:22px;color:var(--ok-ink);margin-top:1px}
+.kv2-al-t{min-width:0}.kv2-al-l{display:block;font:700 11px/1.4 var(--font);letter-spacing:.06em;text-transform:uppercase;color:var(--ok-ink);margin-bottom:2px}
+.kv2-alert p{margin:0 0 8px;font-weight:600}.kv2-alert .akce{margin:0}
+.kv2-filtr{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 14px}
+.kv2-filtr button{font:600 13px var(--font);color:var(--mute);background:var(--soft);border:0;border-radius:99px;padding:6px 13px;cursor:pointer}
+.kv2-filtr button.on{background:var(--navy);color:#fff}
+.kv2-prubeh .hist{list-style:none;margin:0 0 0 5px;padding:0 0 0 20px;border-left:2px solid var(--border-subtle)}
+.kv2-prubeh .hist>li{position:relative;border-top:0}
+.kv2-prubeh .hist>li::before{content:"";position:absolute;left:-26px;top:15px;width:9px;height:9px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 3px var(--ok-tint)}
+.kv2-prubeh[data-filtr="dodatek"] .hist>li:not([data-kind="dodatek"]),.kv2-prubeh[data-filtr="rada"] .hist>li:not([data-kind="rada"]){display:none}
+.kv2-prubeh .vic{margin-top:6px}
+.kv2-rozpad{margin:16px 0 6px}
+.kv2-bar{display:flex;height:18px;border-radius:99px;overflow:hidden;background:var(--soft);gap:2px;padding:2px}
+.kv2-bar>span{height:100%;border-radius:99px;min-width:3px}
+.kv2-leg{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));gap:4px 18px;margin:11px 0 0;padding:0;font-size:13.5px;color:var(--mute)}
+.kv2-leg b{color:var(--ink);font-weight:600}
+.kv2-leg .dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:-1px}
+@media(max-width:600px){.kv2-ilu,.kv2-foto{height:74px}}
 </style></head><body>
 <header class="lista"><div class="hl"><a class="zn" href="https://trebonaci.cz"><img src="obr/logo-trebonaci.jpg" alt=""><span><b>Třeboňáci</b> <span>· Otevřená radnice</span></span></a><span class="bd">__STITEK__</span></div></header>
 <nav id="menu" aria-label="Sekce"><a href="#">Co se děje</a><a href="#investice">Investice a opravy</a><a href="#projekty">Projekty</a><a href="#usneseni">Usnesení</a><a href="#mista">Místa a služby</a><a href="#mapa">Mapa</a></nav>
@@ -641,7 +671,8 @@ function cena(e,p){
 function radek(e,p){
   const [kl,kn]=kat(e);const [v,pod]=veta(e,p);const [c,cm]=cena(e,p);
   const odk=e.url?(e.typ==="usneseni"||e.typ==="rozpocet")?`<a href="${e.url}">usnesení ${esc(e.usneseni_cislo||"")} v zápisu</a>`:`<a href="${e.url}">${e.typ==="soutez"||e.ezak_smlouva?"zakázka v E-ZAK":e.typ==="dokonceni"?"doklad":"smlouva v registru"}</a>`:"";
-  return `<li><details><summary><span class="d">${dd(e.datum)}</span><span class="k ${kl}">${kn}</span><span class="x">${v}${pod?`<small>${pod}</small>`:""}</span><span class="c ${cm}">${c}</span></summary>
+  const kind=e.typ==="dodatek"?"dodatek":(e.typ==="usneseni"||e.typ==="rozpocet")?"rada":"jine";
+  return `<li data-kind="${kind}"><details><summary><span class="d">${dd(e.datum)}</span><span class="k ${kl}">${kn}</span><span class="x">${v}${pod?`<small>${pod}</small>`:""}</span><span class="c ${cm}">${c}</span></summary>
   <div class="det">${esc(e.text)}${odk?` · ${odk}`:""}</div></details></li>`;
 }
 
@@ -668,20 +699,68 @@ function shrnutiAkce(p,dod,sch,upr){
   const kdy=p.faze==="dokonceno"?(hot?`<b>${hot[1]}</b><small>${hot[0]}</small>`:`<b>Hotovo</b><small>datum nemáme</small>`)
     :p.termin_dokonceni?.datum?`<b>${dat(p.termin_dokonceni.datum)}</b><small>dokončení podle smlouvy${p.termin_dokonceni.datum<DNES?" – termín už uplynul":""}</small>`
     :p.termin_dokonceni?.druh==="lhuta"?`<b>lhůta ve smlouvě</b><small>${esc(p.termin_dokonceni.citace||"")}</small>`:`<b>–</b><small>termín zatím nemáme</small>`;
-  const r=sch?.po_zmenach||sch||(upr.celkem!=null?upr:null);
+  const r=sch||(upr.celkem!=null?upr:null);   // schválený (původní) rozpočet, ne navýšený rozpočtovými opatřeními
   const vede=!r?(p.vlastnik_subjekt_id&&p.vlastnik_subjekt_id!=="00247618"?"Investuje městská společnost, její rozpočet není veřejný.":"V rozpočtu města není jako samostatná položka.")
-    :`V rozpočtu ${sch?.rok??""} jako ${[r.investicni?"kapitálový výdaj (investice) "+kc(r.investicni):"",r.neinvesticni?"běžný výdaj "+kc(r.neinvesticni):""].filter(Boolean).join(" a ")||"položka bez rozlišení"}${sch?.po_zmenach?.zmeneno?" po rozpočtových změnách":""}. <a href="#k-ceny">Rozpočet a smlouvy ↓</a>`;
+    :`Ve schváleném rozpočtu ${sch?.rok??""} jako ${[r.investicni?"kapitálový výdaj (investice) "+kc(r.investicni):"",r.neinvesticni?"běžný výdaj "+kc(r.neinvesticni):""].filter(Boolean).join(" a ")||"položka bez rozlišení"}. <a href="#k-ceny">Rozpočet a smlouvy ↓</a>`;
   return `<div class="shrnuti-akce">
    <div><span>Co</span><b>${esc(stavText(p))}</b><small>${esc(OKN[p.okruh]?.nazev||"")}</small></div>
    <div><span>Kolik</span><b>${kolik||"–"}</b><small>${co}</small></div>
    <div><span>Kdy hotovo</span>${kdy}</div>
    <div><span>Kdo staví</span><b>${dod?esc(dod):"–"}</b><small>${dod?"dodavatel stavby":"dodavatel zatím není vybraný"}</small></div>
   </div><p class="pozn" style="margin:6px 0 10px">${vede}</p>`;}
+// --- detail investice v2 (návrh karty 24. 11. 2026): bohatší layout nad týmiž doloženými daty ---
+const ICN={
+ stav:'<path d="M3 21h18M5 21V8l7-4 7 4v13M9 21v-6h6v6"/>',
+ penize:'<rect x="2.5" y="6" width="19" height="12" rx="1.5"/><circle cx="12" cy="12" r="2.8"/>',
+ termin:'<rect x="3" y="4.5" width="18" height="16.5" rx="2"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/>',
+ blesk:'<path d="M13 2.5 4.5 13.5H11l-1 8 8.5-11H12z"/>'};
+const svg=n=>`<svg class="icn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICN[n]||""}</svg>`;
+const SKUP_BARVA={stavba:"var(--category-stavba)",priprava:"var(--tertiary)",dozor:"#64748b",vybaveni:"var(--green-dark)"};
+// Doložitelné „kdy/kolik" místo odhadovaného postupu stavby: skluz termínu (ukládá se jen datum s citací, dny se
+// počítají za běhu kvůli nezávislosti na dni sestavení) a zaplaceno podle E-ZAK, ale jen když souhlasí se smluvní
+// cenou – jinak by nízké % budilo dojem malého postupu, a fyzický postup stavby v datech nemáme. Nic se neodhaduje.
+function postupVeta(p){
+  const t=p.termin_dokonceni;const out=[];
+  if(p.faze==="dokonceno"){
+    const h=p.dokonceni?.datum?["dokončeno",dat(String(p.dokonceni.datum))]:p.ukonceni_plneni?.datum?["plnění ukončeno podle E-ZAK",dat(p.ukonceni_plneni.datum)]:null;
+    if(h)out.push(`<span class="ok">${svg("termin")}${h[0]} ${h[1]}</span>`);
+  }else if(t?.datum){
+    const dni=Math.round((new Date(t.datum)-new Date(DNES))/864e5);
+    const txt=dni<0?`termín ${dat(t.datum)} uplynul před ${-dni} dny`:dni===0?`termín dokončení je dnes`:`do termínu ${dat(t.datum)} zbývá ${dni} dní`;
+    out.push(`<span class="${dni<0?"warn":""}">${svg("termin")}<a href="${esc(t.url)}" target="_blank" rel="noopener">${txt}</a></span>`);
+  }else if(t?.citace){
+    out.push(`<span>${svg("termin")}<a href="${esc(t.url)}" target="_blank" rel="noopener">termín podle smlouvy: „${esc(t.citace)}"</a></span>`);
+  }
+  const st=p.casti.find(c=>c.role==="stavba");const zap=st?.ezak_zaplaceno?.s_dph;const sml=st?.cena_po_dodatcich_s_dph;
+  if(zap&&sml&&st.souhlas_zaplaceno){const pct=Math.round(zap/sml*100);
+    out.push(`<span class="ok">${svg("penize")}<a href="${esc(st.ezak_url||"")}" target="_blank" rel="noopener">zaplaceno dle E-ZAK ${kcp(zap)} (${pct} % smluvní ceny)</a></span>`);}
+  return out.length?`<div class="kv2-postup">${out.join("")}</div>`:"";
+}
+// Rozpad celkových nákladů akce podle druhu (stavba / projekt a VŘ / dozor a BOZP / vybavení) ze souhrn.skladba_s_dph.
+function rozpadNakladu(p){
+  const cc=p.souhrn.celkova_cena_s_dph?.castka;const sk=(p.souhrn.skladba_s_dph||[]).filter(x=>x.castka);
+  if(sk.length<2||!cc)return "";
+  const seg=sk.map(x=>({...x,pct:x.castka/cc*100}));const p1=v=>v.toFixed(1).replace(".",",");
+  return `<div class="kv2-rozpad"><div class="kv2-bar" role="img" aria-label="Rozpad nákladů akce podle druhu">`
+   +seg.map(s=>`<span style="width:${s.pct.toFixed(1)}%;background:${SKUP_BARVA[s.skupina]||"var(--border-mid)"}" title="${esc(s.nazev)}: ${p1(s.pct)} %"></span>`).join("")
+   +`</div><ul class="kv2-leg">`+seg.map(s=>`<li><span class="dot" style="background:${SKUP_BARVA[s.skupina]||"var(--border-mid)"}"></span><b>${esc(s.nazev)}</b> ${p1(s.pct)} % · ${kc(s.castka)}</li>`).join("")+`</ul></div>`;
+}
+// Zástupná ilustrace podle okruhu (abstraktní, ne vizualizace stavby); nahradí ji reálné foto z p.foto, až ho budeme mít.
+function ilustraceOkruhu(p){
+  if(p.foto)return `<figure class="kv2-ilu kv2-foto" style="background-image:url('${esc(p.foto)}')"><figcaption>${svg("stav")}foto</figcaption></figure>`;
+  return `<div class="kv2-ilu"><svg viewBox="0 0 400 112" preserveAspectRatio="xMidYMid slice" aria-hidden="true">`
+   +`<rect width="400" height="112" fill="var(--ok-tint)"/><circle cx="330" cy="8" r="78" fill="var(--ok)" opacity=".15"/>`
+   +`<circle cx="372" cy="104" r="52" fill="var(--ok-tma)" opacity=".22"/><path d="M0 92 Q100 68 210 88 T400 82 V112 H0 Z" fill="var(--ok)" opacity=".10"/></svg>`
+   +`<span class="kv2-ilu-cap">${svg("stav")}Zástupná ilustrace · ${esc(OKN[p.okruh]?.nazev||"")}</span></div>`;
+}
+function histFiltr(b,f){const w=b.closest(".kv2-prubeh");if(!w)return;w.dataset.filtr=f;
+  w.querySelectorAll(".kv2-filtr button").forEach(x=>x.classList.toggle("on",x===b));
+  const d=w.querySelector("details.vic");if(d&&f!=="vse")d.open=true;}
 function karta(p){
   const st=p.casti.find(c=>c.role==="stavba");
   const ud=p.udalosti.slice().sort((x,y)=>(y.datum||"").localeCompare(x.datum||"")||(y.typ==="usneseni")-(x.typ==="usneseni"));
   const N=2;   // audit: 2 poslední události, zbytek sbalený
-  const historie=`<ol class="hist">${ud.slice(0,N).map(e=>radek(e,p)).join("")}</ol>${ud.length>N?`<details class="vic"><summary>▸ Starší události (${ud.length-N})</summary><ol class="hist">${ud.slice(N).map(e=>radek(e,p)).join("")}</ol></details>`:""}`;
+  const historie=`<div class="kv2-prubeh" data-filtr="vse"><div class="kv2-filtr"><button class="on" type="button" onclick="histFiltr(this,'vse')">Vše (${ud.length})</button><button type="button" onclick="histFiltr(this,'dodatek')">Dodatky</button><button type="button" onclick="histFiltr(this,'rada')">Rada a zastupitelstvo</button></div><ol class="hist">${ud.slice(0,N).map(e=>radek(e,p)).join("")}</ol>${ud.length>N?`<details class="vic"><summary>▸ Starší události (${ud.length-N})</summary><ol class="hist">${ud.slice(N).map(e=>radek(e,p)).join("")}</ol></details>`:""}</div>`;
   const sch=(p.souhrn.schvaleny||[]).at(-1);const upr=p.souhrn.rozpocet;const cc=p.souhrn.celkova_cena_s_dph;
   const pu=posledniUdalost(p);const z=pu?zmenaVeta(p,pu):null;
   const dod=st?kdo(st.dodavatel):"";
@@ -689,25 +768,27 @@ function karta(p){
   const puv=st?.puvodni?.s_dph;const zmeneno=st?.dodatky.length&&st.cena_po_dodatcich_s_dph!=null&&puv!=null&&Math.abs(st.cena_po_dodatcich_s_dph-puv)>=1;
   const sk=p.souhrn.skladba_s_dph||[];
   const rozpocetText=sch||upr.celkem!=null?kc(sch?.celkem??upr.celkem):"–";
-  const rozpocetPozn=!sch&&upr.celkem==null?(p.vlastnik_subjekt_id&&p.vlastnik_subjekt_id!=="00247618"?"investuje městská společnost, její rozpočet není veřejný":"v rozpočtu 2026 není jako samostatná položka – je součástí širší položky nebo se platí z jiného roku"):sch?.po_zmenach?.zmeneno?`po změnách ${kc(sch.po_zmenach.celkem)} · ${pl([...new Set(p.schvaleny_rozpocet.flatMap(x=>x.zmeny_ro))].filter(x=>x!=null).length,"rozpočtové opatření","rozpočtová opatření","rozpočtových opatření")}`:sch?"beze změn":"";
+  const rozpocetPozn=!sch&&upr.celkem==null?(p.vlastnik_subjekt_id&&p.vlastnik_subjekt_id!=="00247618"?"investuje městská společnost, její rozpočet není veřejný":"v rozpočtu 2026 není jako samostatná položka – je součástí širší položky nebo se platí z jiného roku"):sch?.po_zmenach?.zmeneno?`původní schválený · ${pl([...new Set(p.schvaleny_rozpocet.flatMap(x=>x.zmeny_ro))].filter(x=>x!=null).length,"rozpočtové opatření","rozpočtová opatření","rozpočtových opatření")} ho později upravilo`:sch?"beze změn":"";
   const zak=p.zakazky?.[0];
-  return `<article class="karta o-${esc(p.okruh)}" id="${p.id}">
+  return `<article class="karta kv2 o-${esc(p.okruh)}" id="${p.id}">
+  ${ilustraceOkruhu(p)}
   <div class="k-stitky"><span class="pill ${p.faze==="probiha"?"stavba":p.faze==="dokonceno"?"zmena":"rozhodnuti"}">${esc((FAZE[p.faze]||["Akce"])[0])}</span>
    <span class="pill p-okruh">${esc(OKN[p.okruh]?.nazev||"")}</span>${zak?`<span class="pill p-tich">Výběrové řízení ${esc(zak.id.replace(/^ezak-/,""))}</span>`:""}</div>
   <h1 class="st" tabindex="-1">${esc(rozepis(p.nazev))}</h1>
   ${shrnutiAkce(p,dod,sch,upr)}
   ${pruhFazi(p)}
+  ${postupVeta(p)}
   <p class="stav">${stavDoklad(p)}</p>
-  ${z?`<p class="souhrn1"><span class="pozn" style="font-size:14px;display:block">Poslední událost</span>${esc(z.text)} ${esc(z.cena)}</p>`:""}
-  ${z?.url?`<a class="akce" href="${esc(z.url)}" target="_blank" rel="noopener">${esc(z.odkaz)} ↗</a>`:""}
+  ${z?`<div class="kv2-alert">${svg("blesk")}<div class="kv2-al-t"><span class="kv2-al-l">Poslední evidovaná událost · ${dd(pu.datum)}</span><p>${esc(z.text)} ${z.cena?esc(z.cena):""}</p>${z.url?`<a class="akce" href="${esc(z.url)}" target="_blank" rel="noopener">${esc(z.odkaz)} ↗</a>`:""}</div></div>`:""}
   ${p.popis?`<p class="popis">${esc(p.popis)}</p>`:p.automaticka?`<p class="popis pozn">Karta sestavená automaticky ze zakázky v E-ZAK a smluv se stejným názvem.</p>`:""}
   <div class="kotvy" role="navigation" aria-label="Části stránky"><button data-kotva="k-prubeh">Průběh projektu</button><button data-kotva="k-ceny">Smlouvy a ceny</button><button data-kotva="k-sprm">Vazba na Strategický plán</button></div>
   <h2 class="oddil" id="k-prubeh">Průběh projektu</h2>${historie}
   <h2 class="oddil" id="k-ceny">Smlouvy a ceny</h2>
   <div class="cisla">
-   <div class="cislo"><span>Rozpočet ${sch?.rok??""} (plán města)</span><b>${rozpocetText}</b><small>${esc(rozpocetPozn)}</small></div>
+   <div class="cislo"><span>Schválený rozpočet ${sch?.rok??""} (plán města)</span><b>${rozpocetText}</b><small>${esc(rozpocetPozn)}</small></div>
    <div class="cislo"><span>Cena podle smluv, s DPH</span><b>${kc(cc?.castka??st?.cena_po_dodatcich_s_dph)}</b><small>${zmeneno?`stavba původně ${kc(puv)}, po dodatcích ${kc(st.cena_po_dodatcich_s_dph)} · `:""}${pl(nSml,"smlouva","smlouvy","smluv")}${cc?.neuplne.length?" · některé ceny neúplné":""}${st?.souhlas_zaplaceno?" · souhlasí se zaplacenou cenou v E-ZAK":""}</small></div>
   </div>
+  ${rozpadNakladu(p)}
   <table class="t">${p.casti.map(radkyCasti).join("")}</table>
   ${sk.length>1?cenaAkce(p):`<p class="pozn">Ceny jsou s DPH. Drobné nákupy pod 50 000 Kč bez DPH se do registru smluv nezveřejňují.</p>`}
   <h2 class="oddil" id="k-sprm">Vazba na Strategický plán</h2><p class="stav sp2" style="margin-top:0">${sprmText(p,false)}</p>
