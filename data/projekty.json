@@ -5454,17 +5454,7 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
-    "termin_dokonceni": {
-      "zdroj_id": "rs-38566304",
-      "druh": "datum",
-      "datum": "2026-06-16",
-      "citace": "termín dokončení díla: NE Objednatel: Datum: 16.06.2026",
-      "strana": 4,
-      "url": "https://smlouvy.gov.cz/smlouva/soubor/46567344/Dodatek%20%C4%8D.%202%20-%20registr%20smluv.pdf#page=4",
-      "smlouva_url": "https://smlouvy.gov.cz/smlouva/38566304",
-      "jistota": "dolozeno",
-      "podle": "dodatek č. 2"
-    },
+    "termin_dokonceni": null,
     "ukonceni_plneni": null,
     "okruh": "doprava_prostor",
     "okruh_podle": "téma"
@@ -7005,15 +6995,15 @@
       }
     ],
     "termin_dokonceni": {
-      "zdroj_id": "rs-40163777",
+      "zdroj_id": "rs-39303451",
       "druh": "datum",
-      "datum": "2026-10-29",
-      "citace": "termín dokončení díla: NE Přílohy: 1 x položkový rozpočet ZL 20 Datum: 29.10.2026",
-      "strana": 4,
-      "url": "https://smlouvy.gov.cz/smlouva/soubor/48386917/Dodatek%20%C4%8D.%205%20-%20registr%20smluv.pdf#page=4",
-      "smlouva_url": "https://smlouvy.gov.cz/smlouva/40163777",
+      "datum": "2026-08-20",
+      "citace": "termín dokončení díla: NE Přílohy: 1x položkový rozpočet ZL 11 Datum 20.08.2026",
+      "strana": 7,
+      "url": "https://smlouvy.gov.cz/smlouva/soubor/47404903/Dodatek%20%C4%8D.%203%20registr%20smluv.pdf#page=7",
+      "smlouva_url": "https://smlouvy.gov.cz/smlouva/39303451",
       "jistota": "dolozeno",
-      "podle": "dodatek č. 5"
+      "podle": "dodatek č. 3"
     },
     "ukonceni_plneni": null,
     "okruh": "sport_kultura",
@@ -10956,17 +10946,7 @@
         "zdroj": "https://trebonaci.cz/wp-json/trebonaci/v1/projekty"
       }
     ],
-    "termin_dokonceni": {
-      "zdroj_id": "rs-38538892",
-      "druh": "datum",
-      "datum": "2026-06-04",
-      "citace": "termín dokončení stavby: NE Objednatel: Datum: 04.06.2026",
-      "strana": 4,
-      "url": "https://smlouvy.gov.cz/smlouva/soubor/46537020/Dodatek%20%C4%8D.%202%20registr%20smluv.pdf#page=4",
-      "smlouva_url": "https://smlouvy.gov.cz/smlouva/38538892",
-      "jistota": "dolozeno",
-      "podle": "dodatek č. 2"
-    },
+    "termin_dokonceni": null,
     "ukonceni_plneni": null,
     "okruh": "sport_kultura",
     "okruh_podle": "téma"

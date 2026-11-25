@@ -391,13 +391,7 @@
         "url": "https://smlouvy.gov.cz/smlouva/35522661",
         "jistota": "dolozeno",
         "konec_jistota": null,
-        "planovany_konec": {
-          "datum": "2026-06-16",
-          "druh": "datum",
-          "citace": "termín dokončení díla: NE Objednatel: Datum: 16.06.2026",
-          "url": "https://smlouvy.gov.cz/smlouva/soubor/46567344/Dodatek%20%C4%8D.%202%20-%20registr%20smluv.pdf#page=4",
-          "podle": "dodatek č. 2"
-        }
+        "planovany_konec": null
       }
     ],
     "milniky": [
@@ -762,13 +756,7 @@
         "url": "https://smlouvy.gov.cz/smlouva/36192945",
         "jistota": "dolozeno",
         "konec_jistota": null,
-        "planovany_konec": {
-          "datum": "2026-06-04",
-          "druh": "datum",
-          "citace": "termín dokončení stavby: NE Objednatel: Datum: 04.06.2026",
-          "url": "https://smlouvy.gov.cz/smlouva/soubor/46537020/Dodatek%20%C4%8D.%202%20registr%20smluv.pdf#page=4",
-          "podle": "dodatek č. 2"
-        }
+        "planovany_konec": null
       }
     ],
     "milniky": [
@@ -1359,11 +1347,11 @@
         "jistota": "dolozeno",
         "konec_jistota": null,
         "planovany_konec": {
-          "datum": "2026-10-29",
+          "datum": "2026-08-20",
           "druh": "datum",
-          "citace": "termín dokončení díla: NE Přílohy: 1 x položkový rozpočet ZL 20 Datum: 29.10.2026",
-          "url": "https://smlouvy.gov.cz/smlouva/soubor/48386917/Dodatek%20%C4%8D.%205%20-%20registr%20smluv.pdf#page=4",
-          "podle": "dodatek č. 5"
+          "citace": "termín dokončení díla: NE Přílohy: 1x položkový rozpočet ZL 11 Datum 20.08.2026",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/47404903/Dodatek%20%C4%8D.%203%20registr%20smluv.pdf#page=7",
+          "podle": "dodatek č. 3"
         }
       }
     ],

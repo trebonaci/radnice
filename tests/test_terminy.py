@@ -34,6 +34,15 @@ def test_dodatek_prodlouzeni_o_dny_cilove_datum_je_termin():
     assert t["citace"].endswith("30.10.2026") and "tedy do 30.10.2026" in t["citace"]
 
 
+def test_podpisove_datum_ze_zmenoveho_listu_neni_termin():
+    """#288: v tabulce změnového listu „Dopad na termín dokončení stavby: NE Objednatel: Datum: 4.6.2026“
+    je 4.6.2026 datum podpisu dodatku, ne termín dokončení – nesmí se vzít."""
+    assert terminy.z_uryvku("Dopad na termín dokončení stavby: NE Objednatel: Datum: 04.06.2026 ") is None
+    assert terminy.z_uryvku("Dopad změny na termín dokončení díla: NE Přílohy: 1x rozpočet Datum: 20.08.2026 ") is None
+    # skutečný termín za „Datum:“ se nebere, ale samostatný termín dál funguje
+    assert terminy.z_uryvku("Termín dokončení díla: 14. 10. 2026.")["datum"] == "2026-10-14"
+
+
 def test_lhuta_od_data_zustava_lhutou_a_citace_se_neurizne():
     """Protiklad: „120 dnů od předání dne 1. 4. 2026“ – datum je začátek lhůty, zůstává druh=lhuta,
     a citace nekončí uprostřed data („…dne 1“)."""
