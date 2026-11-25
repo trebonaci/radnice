@@ -82,6 +82,45 @@
     "duvod_ai": false
   },
   {
+    "zdroj_id": "rs-38006909",
+    "text": "vícepráce (a méněpráce, změna ceny díla)",
+    "druh": "vícepráce",
+    "dalsi": [
+      "méněpráce",
+      "změna ceny díla"
+    ],
+    "citace": "vající ve změně ceny díla, na základě provedení víceprací a méněprací nutných k dokončení díla, podle specifikace ve schváleném Změnovém listu č",
+    "strana": 1,
+    "url": "https://smlouvy.gov.cz/smlouva/soubor/45928693/Dod%201%20s%20prilohami%20RS.pdf#page=1",
+    "jistota": "dolozeno",
+    "duvod_ai": false
+  },
+  {
+    "zdroj_id": "rs-38959598",
+    "text": "změna termínu dokončení",
+    "druh": "změna termínu dokončení",
+    "dalsi": [],
+    "citace": "Kdy se smluvní strany se dohodly na změně termínu dokončení stavby z důvodu nepříznivých klimatických podmínek, konkrétně vysokých venkovní",
+    "strana": 2,
+    "url": "https://smlouvy.gov.cz/smlouva/soubor/47018082/Dodatek%20%C4%8D.%202._v%C4%8Detn%C4%9B%20p%C5%99%C3%ADloh_an.pdf#page=2",
+    "jistota": "dolozeno",
+    "duvod_ai": false
+  },
+  {
+    "zdroj_id": "rs-39329195",
+    "text": "vícepráce (a méněpráce, změna ceny díla)",
+    "druh": "vícepráce",
+    "dalsi": [
+      "méněpráce",
+      "změna ceny díla"
+    ],
+    "citace": "46440, Pražská 193, 373 67, Borek, je provedení víceprací a méněprací nutných k dokončení díla v celkové ceně - 34.358,00 Kč bez DPH (- 38.481,00 K",
+    "strana": 2,
+    "url": "https://smlouvy.gov.cz/smlouva/soubor/47433827/Dodatek%20%C4%8D.1%20ke%20SOD%20-%20kotelny%20DPS%201A%201C_anonymizovan%C3%BD.pdf#page=2",
+    "jistota": "dolozeno",
+    "duvod_ai": false
+  },
+  {
     "zdroj_id": "rs-39329287",
     "text": "vícepráce (a méněpráce)",
     "druh": "vícepráce",
@@ -91,6 +130,28 @@
     "citace": "1., a to na základě potřeby provedení víceprací a méněprací nutných k dokončení díla (z důvodů skutečností, které se vyskytly během prová",
     "strana": 2,
     "url": "https://smlouvy.gov.cz/smlouva/soubor/47433943/Dodatek%20%C4%8D.1%20ke%20SOD%20-%20kolon%C3%A1da%20Bertiny%20l%C3%A1zn%C4%9B_anonymizovan%C3%BD.pdf#page=2",
+    "jistota": "dolozeno",
+    "duvod_ai": false
+  },
+  {
+    "zdroj_id": "rs-39520809",
+    "text": "změna termínu dokončení",
+    "druh": "změna termínu dokončení",
+    "dalsi": [],
+    "citace": "Smlouvy o dílo smluvní strany mezi sebou projednaly a odsouhlasily: prodloužení termínu dokončení stavby o 35 kalendářních dní",
+    "strana": 2,
+    "url": "https://smlouvy.gov.cz/smlouva/soubor/47651085/Dodatek%20%C4%8D.%204%20registr%20smluv.pdf#page=2",
+    "jistota": "dolozeno",
+    "duvod_ai": false
+  },
+  {
+    "zdroj_id": "rs-39681309",
+    "text": "změna termínu dokončení",
+    "druh": "změna termínu dokončení",
+    "dalsi": [],
+    "citace": "Smlouvy o dílo smluvní strany mezi sebou projednaly a odsouhlasily: prodloužení termínu dokončení stavby venkovních ploch o 15 kalendářních dní",
+    "strana": 2,
+    "url": "https://smlouvy.gov.cz/smlouva/soubor/47834229/Dodatek%20%C4%8D.%204%20-%20registr%20smluv.pdf#page=2",
     "jistota": "dolozeno",
     "duvod_ai": false
   },

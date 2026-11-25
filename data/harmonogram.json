@@ -75,6 +75,56 @@
   },
   {
     "typ": "investice",
+    "id": "ulice-valy",
+    "nazev": "Ulice Valy – stavební úpravy",
+    "oblast": "doprava",
+    "faze": "dokonceno",
+    "faze_jistota": "nase_propojeni",
+    "useky": [
+      {
+        "faze": "stavba",
+        "nazev": "stavba",
+        "od": "2023-03-20",
+        "do": "2025-12-19",
+        "otevreno": false,
+        "url": "https://smlouvy.gov.cz/smlouva/23823717",
+        "jistota": "dolozeno",
+        "konec_jistota": "ukonceni_plneni",
+        "planovany_konec": null
+      }
+    ],
+    "milniky": [
+      {
+        "datum": "2025-03-03",
+        "typ": "dodatek",
+        "text": "dodatek 1 (projektová dokumentace)",
+        "url": "https://smlouvy.gov.cz/smlouva/32352348"
+      },
+      {
+        "datum": "2025-12-01",
+        "typ": "dodatek",
+        "text": "dodatek 1 (smlouva o dílo)",
+        "url": "https://smlouvy.gov.cz/smlouva/35839173"
+      },
+      {
+        "datum": "2025-12-19",
+        "typ": "dodatek",
+        "text": "dodatek 2 (smlouva o dílo)",
+        "url": "https://smlouvy.gov.cz/smlouva/36172641"
+      },
+      {
+        "datum": "2026-01-29",
+        "typ": "dodatek",
+        "text": "dodatek 3 (smlouva o dílo)",
+        "url": "https://smlouvy.gov.cz/smlouva/36612953"
+      }
+    ],
+    "odkaz": "#ulice-valy",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
+  },
+  {
+    "typ": "investice",
     "id": "sportovni-hala-revitalizace",
     "nazev": "Revitalizace sportovní haly včetně občerstvení",
     "oblast": "sport",
@@ -438,80 +488,6 @@
   },
   {
     "typ": "investice",
-    "id": "ulice-valy",
-    "nazev": "Ulice Valy – stavební úpravy",
-    "oblast": "doprava",
-    "faze": "dokonceno",
-    "faze_jistota": "nase_propojeni",
-    "useky": [
-      {
-        "faze": "priprava",
-        "nazev": "příprava",
-        "od": "2024-01-26",
-        "do": "2025-03-24",
-        "otevreno": false,
-        "url": "https://smlouvy.gov.cz/smlouva/27412799",
-        "jistota": "nase_propojeni"
-      },
-      {
-        "faze": "soutez",
-        "nazev": "výběr dodavatele",
-        "od": "2025-03-24",
-        "do": "2025-05-22",
-        "otevreno": false,
-        "url": "https://zakazky.mesto-trebon.cz/contract_display_840.html",
-        "jistota": "dolozeno"
-      },
-      {
-        "faze": "stavba",
-        "nazev": "stavba",
-        "od": "2025-05-22",
-        "do": "2025-12-19",
-        "otevreno": false,
-        "url": "https://smlouvy.gov.cz/smlouva/33408284",
-        "jistota": "dolozeno",
-        "konec_jistota": "ukonceni_plneni",
-        "planovany_konec": {
-          "datum": null,
-          "druh": "lhuta",
-          "citace": "Termín dokončení prací: do 105 kalendářních dnů od předání staveniště",
-          "url": "https://smlouvy.gov.cz/smlouva/soubor/40665832/SOD%20%2B%20rozpo%C4%8Det%2C%20ul.%20Valy%20-%20anonymizovan%C3%A1.pdf#page=4",
-          "podle": "smlouva"
-        }
-      }
-    ],
-    "milniky": [
-      {
-        "datum": "2025-03-03",
-        "typ": "dodatek",
-        "text": "dodatek 1 (projektová dokumentace)",
-        "url": "https://smlouvy.gov.cz/smlouva/32352348"
-      },
-      {
-        "datum": "2025-12-01",
-        "typ": "dodatek",
-        "text": "dodatek 1 (smlouva o dílo)",
-        "url": "https://smlouvy.gov.cz/smlouva/35839173"
-      },
-      {
-        "datum": "2025-12-19",
-        "typ": "dodatek",
-        "text": "dodatek 2 (smlouva o dílo)",
-        "url": "https://smlouvy.gov.cz/smlouva/36172641"
-      },
-      {
-        "datum": "2026-01-29",
-        "typ": "dodatek",
-        "text": "dodatek 3 (smlouva o dílo)",
-        "url": "https://smlouvy.gov.cz/smlouva/36612953"
-      }
-    ],
-    "odkaz": "#ulice-valy",
-    "okruh": "doprava_prostor",
-    "okruh_podle": "téma"
-  },
-  {
-    "typ": "investice",
     "id": "jiraskova-oprava-vozovky",
     "nazev": "Jiráskova ulice – oprava vozovky",
     "oblast": "doprava",
@@ -763,11 +739,11 @@
         "jistota": "dolozeno",
         "konec_jistota": null,
         "planovany_konec": {
-          "datum": "2026-06-04",
-          "druh": "datum",
-          "citace": "termín dokončení stavby: NE Objednatel: Datum: 04.06.2026",
-          "url": "https://smlouvy.gov.cz/smlouva/soubor/46537020/Dodatek%20%C4%8D.%202%20registr%20smluv.pdf#page=4",
-          "podle": "dodatek č. 2"
+          "datum": null,
+          "druh": "lhuta",
+          "citace": "termínu dokončení stavby o 35 kalendářních dní",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/47651085/Dodatek%20%C4%8D.%204%20registr%20smluv.pdf#page=2",
+          "podle": "dodatek č. 4"
         }
       }
     ],
@@ -1001,6 +977,12 @@
         "typ": "dodatek",
         "text": "dodatek 1 (smlouva o dílo)",
         "url": "https://smlouvy.gov.cz/smlouva/39711481"
+      },
+      {
+        "datum": "2026-11-23",
+        "typ": "dodatek",
+        "text": "dodatek 2 (smlouva o dílo)",
+        "url": "https://smlouvy.gov.cz/smlouva/40461341"
       }
     ],
     "odkaz": "#auto-vz-935",
@@ -1521,7 +1503,13 @@
         "url": "https://smlouvy.gov.cz/smlouva/33993901",
         "jistota": "dolozeno",
         "konec_jistota": null,
-        "planovany_konec": null
+        "planovany_konec": {
+          "datum": null,
+          "druh": "lhuta",
+          "citace": "Termín dokončení prací: do 100 kalendářních dnů od předání staveniště",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/41339717/SOD%20-%20registr%20smluv.pdf#page=3",
+          "podle": "smlouva"
+        }
       }
     ],
     "milniky": [
@@ -1577,7 +1565,13 @@
         "url": "https://smlouvy.gov.cz/smlouva/36696441",
         "jistota": "dolozeno",
         "konec_jistota": "ukonceni_plneni",
-        "planovany_konec": null
+        "planovany_konec": {
+          "datum": "2026-05-22",
+          "druh": "datum",
+          "citace": "Dokončení díla: do 22.05.2026",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/44444393/SOD%20Chodn%20u%20Hus%20kaple%20s%20pril%20RS.pdf#page=2",
+          "podle": "smlouva"
+        }
       }
     ],
     "milniky": [
@@ -1717,7 +1711,13 @@
         "url": "https://smlouvy.gov.cz/smlouva/37415133",
         "jistota": "dolozeno",
         "konec_jistota": "ukonceni_plneni",
-        "planovany_konec": null
+        "planovany_konec": {
+          "datum": "2026-07-23",
+          "druh": "datum",
+          "citace": "termín dokončení stavby prodlužuje do 23. 07. 2026",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/47018082/Dodatek%20%C4%8D.%202._v%C4%8Detn%C4%9B%20p%C5%99%C3%ADloh_an.pdf#page=2",
+          "podle": "dodatek č. 2"
+        }
       }
     ],
     "milniky": [
@@ -1773,7 +1773,13 @@
         "url": "https://smlouvy.gov.cz/smlouva/39840721",
         "jistota": "dolozeno",
         "konec_jistota": null,
-        "planovany_konec": null
+        "planovany_konec": {
+          "datum": "2026-11-20",
+          "druh": "datum",
+          "citace": "dokončení díla: 20.11.2026",
+          "url": "https://smlouvy.gov.cz/smlouva/soubor/48017665/Smlouva%20o%20d%C3%ADlo%20-%20FVE%20%C4%8COV%20B%C5%99ilice_anonymizovan%C3%A1.pdf#page=2",
+          "podle": "smlouva"
+        }
       }
     ],
     "milniky": [],
@@ -2069,6 +2075,48 @@
   },
   {
     "typ": "zasobnik",
+    "id": "parkovaci-dum",
+    "nazev": "Parkovací dům",
+    "oblast": "doprava",
+    "faze": "zasobnik",
+    "faze_jistota": "nase_propojeni",
+    "useky": [
+      {
+        "faze": "priprava",
+        "nazev": "příprava",
+        "od": "2023-03-08",
+        "do": null,
+        "otevreno": true,
+        "jistota": "nase_propojeni",
+        "url": "https://smlouvy.gov.cz/smlouva/23690461"
+      }
+    ],
+    "milniky": [
+      {
+        "datum": "2023-03-08",
+        "typ": "smlouva",
+        "text": "Parkovací dům Třeboň - zpracování PD",
+        "url": "https://smlouvy.gov.cz/smlouva/23690461"
+      },
+      {
+        "datum": "2024-01-04",
+        "typ": "zakazka",
+        "text": "Parkovací dům Třeboň (PD)",
+        "url": "https://zakazky.mesto-trebon.cz/contract_display_698.html"
+      },
+      {
+        "datum": "2026-04-24",
+        "typ": "smlouva",
+        "text": "Úprava projektové dokumentace parkovacího domu v Třeboni.",
+        "url": "https://smlouvy.gov.cz/smlouva/37709985"
+      }
+    ],
+    "odkaz": "#zasobnik",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "téma"
+  },
+  {
+    "typ": "zasobnik",
     "id": "bytovy-dum-lazenska",
     "nazev": "Městský bytový dům v Lázeňské ulici",
     "oblast": "bydleni",
@@ -2095,42 +2143,6 @@
     ],
     "odkaz": "#zasobnik",
     "okruh": "bydleni_pece",
-    "okruh_podle": "téma"
-  },
-  {
-    "typ": "zasobnik",
-    "id": "parkovaci-dum",
-    "nazev": "Parkovací dům",
-    "oblast": "doprava",
-    "faze": "zasobnik",
-    "faze_jistota": "nase_propojeni",
-    "useky": [
-      {
-        "faze": "priprava",
-        "nazev": "příprava",
-        "od": "2024-01-04",
-        "do": null,
-        "otevreno": true,
-        "jistota": "nase_propojeni",
-        "url": "https://zakazky.mesto-trebon.cz/contract_display_698.html"
-      }
-    ],
-    "milniky": [
-      {
-        "datum": "2024-01-04",
-        "typ": "zakazka",
-        "text": "Parkovací dům Třeboň (PD)",
-        "url": "https://zakazky.mesto-trebon.cz/contract_display_698.html"
-      },
-      {
-        "datum": "2026-04-24",
-        "typ": "smlouva",
-        "text": "Úprava projektové dokumentace parkovacího domu v Třeboni.",
-        "url": "https://smlouvy.gov.cz/smlouva/37709985"
-      }
-    ],
-    "odkaz": "#zasobnik",
-    "okruh": "doprava_prostor",
     "okruh_podle": "téma"
   },
   {

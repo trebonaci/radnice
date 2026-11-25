@@ -1,5 +1,26 @@
 [
   {
+    "id": "zprava-rs-40461341",
+    "druh": "dodatek",
+    "datum": "2026-11-23",
+    "okruh": "doprava_prostor",
+    "titulek": "Dodatek č. 2 ke smlouvě o dílo: Stavební úpravy MK v ul. Souběžná v Třeboni",
+    "shrnuti": "Dodatek ke smlouvě z 23. 11. 2026 s dodavatelem VKB stavby s.r.o.",
+    "castka": {
+      "hodnota": 135081.56,
+      "druh": "dodatek",
+      "s_dph": true
+    },
+    "projekt_id": "auto-vz-935",
+    "zdroje": [
+      {
+        "nazev": "Registr smluv: Dodatek č. 2 ke smlouvě o dílo: Stavební úpravy MK v ul. Souběžná v Třeboni",
+        "url": "https://smlouvy.gov.cz/smlouva/40461341"
+      }
+    ],
+    "jistota": "naše propojení"
+  },
+  {
     "id": "zprava-rs-40413413",
     "druh": "dodatek",
     "datum": "2026-11-19",
@@ -23041,6 +23062,27 @@
     "jistota": "doloženo"
   },
   {
+    "id": "zprava-rs-23884553",
+    "druh": "smlouva",
+    "datum": "2023-03-23",
+    "okruh": "spolecnosti",
+    "titulek": "SOD - zvýšení ubytovací kapacity LDA - interiér",
+    "shrnuti": "Smlouva z 23. 3. 2023 s dodavatelem SANTAL spol. s r. o.",
+    "castka": {
+      "hodnota": 15156133.0,
+      "druh": "smluvni",
+      "s_dph": false
+    },
+    "projekt_id": null,
+    "zdroje": [
+      {
+        "nazev": "Registr smluv: SOD - zvýšení ubytovací kapacity LDA - interiér",
+        "url": "https://smlouvy.gov.cz/smlouva/23884553"
+      }
+    ],
+    "jistota": "doloženo"
+  },
+  {
     "id": "zprava-ezak-VZ-595-vyber-2023-03-23",
     "druh": "vyberove_rizeni",
     "datum": "2023-03-23",
@@ -23057,6 +23099,27 @@
       {
         "nazev": "Zadávací profil (E-ZAK): Zvýšení ubytovací kapacity LDA – interiér",
         "url": "https://zakazky.mesto-trebon.cz/contract_display_595.html"
+      }
+    ],
+    "jistota": "doloženo"
+  },
+  {
+    "id": "zprava-rs-23867421",
+    "druh": "smlouva",
+    "datum": "2023-03-22",
+    "okruh": "doprava_prostor",
+    "titulek": "Zpracování projektové dokumentace Stavebních úprav místních komunikací v ulici Šustova a 2. etapy ulice Polní v Třeboni",
+    "shrnuti": "Smlouva z 22. 3. 2023 s dodavatelem INVENTE, s.r.o.",
+    "castka": {
+      "hodnota": 959530.0,
+      "druh": "smluvni",
+      "s_dph": true
+    },
+    "projekt_id": null,
+    "zdroje": [
+      {
+        "nazev": "Registr smluv: Zpracování projektové dokumentace Stavebních úprav místních komunikací v ulici Šustova a 2. etapy ulice Polní v Třeboni",
+        "url": "https://smlouvy.gov.cz/smlouva/23867421"
       }
     ],
     "jistota": "doloženo"
@@ -23083,6 +23146,48 @@
     "jistota": "naše propojení"
   },
   {
+    "id": "zprava-rs-23839945",
+    "druh": "smlouva",
+    "datum": "2023-03-21",
+    "okruh": "spolecnosti",
+    "titulek": "Objednávka rekondičních pobytů pro zaměstnance - Slatinné lázně Třeboň s.r.o.",
+    "shrnuti": "Smlouva z 21. 3. 2023 s dodavatelem Slatinné lázně Třeboň s.r.o.",
+    "castka": {
+      "hodnota": 1577052.0,
+      "druh": "smluvni",
+      "s_dph": true
+    },
+    "projekt_id": null,
+    "zdroje": [
+      {
+        "nazev": "Registr smluv: Objednávka rekondičních pobytů pro zaměstnance - Slatinné lázně Třeboň s.r.o.",
+        "url": "https://smlouvy.gov.cz/smlouva/23839945"
+      }
+    ],
+    "jistota": "doloženo"
+  },
+  {
+    "id": "zprava-rs-23823717",
+    "druh": "smlouva",
+    "datum": "2023-03-20",
+    "okruh": "doprava_prostor",
+    "titulek": "Obnova zemního hydrantu - ulice Valy u č.p. 155",
+    "shrnuti": "Smlouva z 20. 3. 2023 s dodavatelem Městská Vodohospodářská s.r.o.",
+    "castka": {
+      "hodnota": 104049.0,
+      "druh": "smluvni",
+      "s_dph": true
+    },
+    "projekt_id": "ulice-valy",
+    "zdroje": [
+      {
+        "nazev": "Registr smluv: Obnova zemního hydrantu - ulice Valy u č.p. 155",
+        "url": "https://smlouvy.gov.cz/smlouva/23823717"
+      }
+    ],
+    "jistota": "naše propojení"
+  },
+  {
     "id": "zprava-ezak-VZ-610-vyhlaseni-2023-03-14",
     "druh": "vyberove_rizeni",
     "datum": "2023-03-14",
@@ -23098,6 +23203,69 @@
       }
     ],
     "jistota": "doloženo"
+  },
+  {
+    "id": "zprava-rs-23767005",
+    "druh": "smlouva",
+    "datum": "2023-03-13",
+    "okruh": "bydleni_pece",
+    "titulek": "Kompletní výměna výtahu v domu s pečovatelskou službou (DPS) I, Chelčického 1, Třeboň",
+    "shrnuti": "Smlouva z 13. 3. 2023 s dodavatelem Výtahy Line, s.r.o.",
+    "castka": {
+      "hodnota": 2762027.99,
+      "druh": "smluvni",
+      "s_dph": true
+    },
+    "projekt_id": null,
+    "zdroje": [
+      {
+        "nazev": "Registr smluv: Kompletní výměna výtahu v domu s pečovatelskou službou (DPS) I, Chelčického 1, Třeboň",
+        "url": "https://smlouvy.gov.cz/smlouva/23767005"
+      }
+    ],
+    "jistota": "doloženo"
+  },
+  {
+    "id": "zprava-rs-23746517",
+    "druh": "smlouva",
+    "datum": "2023-03-13",
+    "okruh": "rozvoj_sprava",
+    "titulek": "SOD Výměna střešní krytiny a oprava fasády ve dvorku domu č.p. 86/I.",
+    "shrnuti": "Smlouva z 13. 3. 2023 s dodavatelem Renostav Třeboň s.r.o.",
+    "castka": {
+      "hodnota": 671990.98,
+      "druh": "smluvni",
+      "s_dph": true
+    },
+    "projekt_id": null,
+    "zdroje": [
+      {
+        "nazev": "Registr smluv: SOD Výměna střešní krytiny a oprava fasády ve dvorku domu č.p. 86/I.",
+        "url": "https://smlouvy.gov.cz/smlouva/23746517"
+      }
+    ],
+    "jistota": "doloženo"
+  },
+  {
+    "id": "zprava-rs-23690461",
+    "druh": "smlouva",
+    "datum": "2023-03-08",
+    "okruh": "doprava_prostor",
+    "titulek": "Parkovací dům Třeboň - zpracování PD",
+    "shrnuti": "Smlouva z 8. 3. 2023 s dodavatelem JPS J. Hradec s.r.o.",
+    "castka": {
+      "hodnota": 1179750.0,
+      "druh": "smluvni",
+      "s_dph": true
+    },
+    "projekt_id": null,
+    "zdroje": [
+      {
+        "nazev": "Registr smluv: Parkovací dům Třeboň - zpracování PD",
+        "url": "https://smlouvy.gov.cz/smlouva/23690461"
+      }
+    ],
+    "jistota": "naše propojení"
   },
   {
     "id": "zprava-ezak-VZ-698-vyber-2023-03-08",
@@ -23119,6 +23287,69 @@
       }
     ],
     "jistota": "naše propojení"
+  },
+  {
+    "id": "zprava-rs-23669949",
+    "druh": "smlouva",
+    "datum": "2023-03-07",
+    "okruh": "rozvoj_sprava",
+    "titulek": "Technologie vodojemu na Kopečku - úpravy a sanace vodojemu II. etapa (akumulace II. vodojemu)",
+    "shrnuti": "Smlouva z 7. 3. 2023 s dodavatelem Městská Vodohospodářská s.r.o.",
+    "castka": {
+      "hodnota": 2996776.06,
+      "druh": "smluvni",
+      "s_dph": true
+    },
+    "projekt_id": null,
+    "zdroje": [
+      {
+        "nazev": "Registr smluv: Technologie vodojemu na Kopečku - úpravy a sanace vodojemu II. etapa (akumulace II. vodojemu)",
+        "url": "https://smlouvy.gov.cz/smlouva/23669949"
+      }
+    ],
+    "jistota": "doloženo"
+  },
+  {
+    "id": "zprava-rs-23623537",
+    "druh": "smlouva",
+    "datum": "2023-03-02",
+    "okruh": "doprava_prostor",
+    "titulek": "Zpracování PD Stavební úpravy MK v ulici U sv. Petra a Pavla v Třeboni - vodohospodářská infrastruktura.",
+    "shrnuti": "Smlouva z 2. 3. 2023 s dodavatelem WAY project s.r.o.",
+    "castka": {
+      "hodnota": 241879.0,
+      "druh": "smluvni",
+      "s_dph": true
+    },
+    "projekt_id": null,
+    "zdroje": [
+      {
+        "nazev": "Registr smluv: Zpracování PD Stavební úpravy MK v ulici U sv. Petra a Pavla v Třeboni - vodohospodářská infrastruktura.",
+        "url": "https://smlouvy.gov.cz/smlouva/23623537"
+      }
+    ],
+    "jistota": "naše propojení"
+  },
+  {
+    "id": "zprava-rs-23616445",
+    "druh": "smlouva",
+    "datum": "2023-03-01",
+    "okruh": "spolecnosti",
+    "titulek": "Smlouvana dodávku a montáž - Zvýšení ubytovací kapacity LDA-dekorační textil",
+    "shrnuti": "Smlouva z 1. 3. 2023 s dodavatelem TOLLA CZ s.r.o.",
+    "castka": {
+      "hodnota": 639000.0,
+      "druh": "smluvni",
+      "s_dph": false
+    },
+    "projekt_id": null,
+    "zdroje": [
+      {
+        "nazev": "Registr smluv: Smlouvana dodávku a montáž - Zvýšení ubytovací kapacity LDA-dekorační textil",
+        "url": "https://smlouvy.gov.cz/smlouva/23616445"
+      }
+    ],
+    "jistota": "doloženo"
   },
   {
     "id": "zprava-ezak-VZ-605-vyhlaseni-2023-02-17",
@@ -23180,6 +23411,49 @@
     "jistota": "doloženo"
   },
   {
+    "id": "zprava-rs-23209821",
+    "druh": "smlouva",
+    "datum": "2023-01-25",
+    "okruh": "doprava_prostor",
+    "titulek": "PD Stavební úpravy MK v ulici U sv. Petra a Pavla v Třeboni",
+    "shrnuti": "Smlouva z 25. 1. 2023 s dodavatelem WAY project s.r.o.",
+    "castka": {
+      "hodnota": 619520.0,
+      "druh": "smluvni",
+      "s_dph": true
+    },
+    "projekt_id": null,
+    "zdroje": [
+      {
+        "nazev": "Registr smluv: PD Stavební úpravy MK v ulici U sv. Petra a Pavla v Třeboni",
+        "url": "https://smlouvy.gov.cz/smlouva/23209821"
+      }
+    ],
+    "jistota": "naše propojení"
+  },
+  {
+    "id": "zprava-rs-23209541",
+    "druh": "smlouva",
+    "datum": "2023-01-25",
+    "okruh": "rozvoj_sprava",
+    "titulek": "SOD Restaurování Novohradské brány – II. etapa, severní a východní strana",
+    "shrnuti": "Smlouva z 25. 1. 2023 s dodavatelem podnikající fyzická osoba.",
+    "castka": {
+      "hodnota": 1115630.71,
+      "druh": "smluvni",
+      "s_dph": true
+    },
+    "projekt_id": null,
+    "zdroje": [
+      {
+        "nazev": "Registr smluv: SOD Restaurování Novohradské brány – II. etapa, severní a východní strana",
+        "url": "https://smlouvy.gov.cz/smlouva/23209541"
+      }
+    ],
+    "jistota": "doloženo",
+    "jmeno_podnikatele": "Tomáš Franta"
+  },
+  {
     "id": "zprava-ezak-VZ-695-vyber-2023-01-25",
     "druh": "vyberove_rizeni",
     "datum": "2023-01-25",
@@ -23218,6 +23492,69 @@
     "jistota": "doloženo"
   },
   {
+    "id": "zprava-rs-23259617",
+    "druh": "smlouva",
+    "datum": "2023-01-19",
+    "okruh": "rozvoj_sprava",
+    "titulek": "481-004/22  Město Třeboň",
+    "shrnuti": "Smlouva z 19. 1. 2023 s dodavatelem Město Třeboň.",
+    "castka": {
+      "hodnota": 1716000.0,
+      "druh": "smluvni",
+      "s_dph": true
+    },
+    "projekt_id": null,
+    "zdroje": [
+      {
+        "nazev": "Registr smluv: 481-004/22  Město Třeboň",
+        "url": "https://smlouvy.gov.cz/smlouva/23259617"
+      }
+    ],
+    "jistota": "doloženo"
+  },
+  {
+    "id": "zprava-rs-23046781",
+    "druh": "smlouva",
+    "datum": "2023-01-10",
+    "okruh": "rozvoj_sprava",
+    "titulek": "Smlouva o výrobě a zajištění vysílání televizního pořadu a využití práv k němu",
+    "shrnuti": "Smlouva z 10. 1. 2023 s dodavatelem JTV a.s.",
+    "castka": {
+      "hodnota": 500000.0,
+      "druh": "smluvni",
+      "s_dph": true
+    },
+    "projekt_id": null,
+    "zdroje": [
+      {
+        "nazev": "Registr smluv: Smlouva o výrobě a zajištění vysílání televizního pořadu a využití práv k němu",
+        "url": "https://smlouvy.gov.cz/smlouva/23046781"
+      }
+    ],
+    "jistota": "doloženo"
+  },
+  {
+    "id": "zprava-rs-22933193",
+    "druh": "dodatek",
+    "datum": "2023-01-02",
+    "okruh": "doprava_prostor",
+    "titulek": "Smlouva o dílo - Třeboň, Branná – ČOV a kanalizace (1. a 2. etapa) - dodatek č. 8",
+    "shrnuti": "Dodatek ke smlouvě z 2. 1. 2023 s dodavatelem Metrostav DIZ s.r.o.",
+    "castka": {
+      "hodnota": -505511.41,
+      "druh": "dodatek",
+      "s_dph": true
+    },
+    "projekt_id": null,
+    "zdroje": [
+      {
+        "nazev": "Registr smluv: Smlouva o dílo - Třeboň, Branná – ČOV a kanalizace (1. a 2. etapa) - dodatek č. 8",
+        "url": "https://smlouvy.gov.cz/smlouva/22933193"
+      }
+    ],
+    "jistota": "doloženo"
+  },
+  {
     "id": "zprava-ezak-VZ-594-vyber-2022-12-28",
     "druh": "vyberove_rizeni",
     "datum": "2022-12-28",
@@ -23234,6 +23571,237 @@
       {
         "nazev": "Zadávací profil (E-ZAK): Obnova tiskáren Slatinné lázně Třeboň",
         "url": "https://zakazky.mesto-trebon.cz/contract_display_594.html"
+      }
+    ],
+    "jistota": "doloženo"
+  },
+  {
+    "id": "zprava-rs-22831001",
+    "druh": "smlouva",
+    "datum": "2022-12-21",
+    "okruh": "doprava_prostor",
+    "titulek": "Smlouva o veřejných službách ve veřejné linkové dopravě k zajištění dopravní obslužnosti - na rok 2023",
+    "shrnuti": "Smlouva z 21. 12. 2022 s dodavatelem ČSAD Jindřichův Hradec s.r.o.",
+    "castka": {
+      "hodnota": 1927000.0,
+      "druh": "smluvni",
+      "s_dph": true
+    },
+    "projekt_id": null,
+    "zdroje": [
+      {
+        "nazev": "Registr smluv: Smlouva o veřejných službách ve veřejné linkové dopravě k zajištění dopravní obslužnosti - na rok 2023",
+        "url": "https://smlouvy.gov.cz/smlouva/22831001"
+      }
+    ],
+    "jistota": "doloženo"
+  },
+  {
+    "id": "zprava-rs-22801917",
+    "druh": "smlouva",
+    "datum": "2022-12-19",
+    "okruh": "spolecnosti",
+    "titulek": "Smlouva o vypořádání technických zhodnocení - Slatinné lázně Třeboň s.r.o. - 2/2022",
+    "shrnuti": "Smlouva z 19. 12. 2022 s dodavatelem Slatinné lázně Třeboň s.r.o.",
+    "castka": {
+      "hodnota": 2000993.88,
+      "druh": "smluvni",
+      "s_dph": true
+    },
+    "projekt_id": null,
+    "zdroje": [
+      {
+        "nazev": "Registr smluv: Smlouva o vypořádání technických zhodnocení - Slatinné lázně Třeboň s.r.o. - 2/2022",
+        "url": "https://smlouvy.gov.cz/smlouva/22801917"
+      }
+    ],
+    "jistota": "doloženo"
+  },
+  {
+    "id": "zprava-rs-22798873",
+    "druh": "dodatek",
+    "datum": "2022-12-19",
+    "okruh": "doprava_prostor",
+    "titulek": "Dodatek č. 3 ke smlouvě o dílo: Stavební úpravy MK v ul. Komenského a 1. etapy ul. Polní v Třeboni",
+    "shrnuti": "Dodatek ke smlouvě z 19. 12. 2022 s dodavatelem Lesostavby Třeboň a.s.",
+    "castka": {
+      "hodnota": 1088948.04,
+      "druh": "dodatek",
+      "s_dph": true
+    },
+    "projekt_id": null,
+    "zdroje": [
+      {
+        "nazev": "Registr smluv: Dodatek č. 3 ke smlouvě o dílo: Stavební úpravy MK v ul. Komenského a 1. etapy ul. Polní v Třeboni",
+        "url": "https://smlouvy.gov.cz/smlouva/22798873"
+      }
+    ],
+    "jistota": "doloženo"
+  },
+  {
+    "id": "zprava-rs-22790905",
+    "druh": "dodatek",
+    "datum": "2022-12-19",
+    "okruh": "rozvoj_sprava",
+    "titulek": "MIN-servis: N131/17, BH C368: smlouva o pronájmu kopírovacího stroje, dodatek č. 3",
+    "shrnuti": "Dodatek ke smlouvě z 19. 12. 2022 s dodavatelem MIN-servis, spol. s r.o.",
+    "castka": {
+      "hodnota": 773460.0,
+      "druh": "dodatek",
+      "s_dph": true
+    },
+    "projekt_id": null,
+    "zdroje": [
+      {
+        "nazev": "Registr smluv: MIN-servis: N131/17, BH C368: smlouva o pronájmu kopírovacího stroje, dodatek č. 3",
+        "url": "https://smlouvy.gov.cz/smlouva/22790905"
+      }
+    ],
+    "jistota": "doloženo"
+  },
+  {
+    "id": "zprava-rs-22761057",
+    "druh": "dodatek",
+    "datum": "2022-12-12",
+    "okruh": "doprava_prostor",
+    "titulek": "TS smlouva odpady - Dodatek č. 23",
+    "shrnuti": "Dodatek ke smlouvě z 12. 12. 2022 s dodavatelem Technické služby Třeboň, s.r.o.",
+    "castka": {
+      "hodnota": 16887520.0,
+      "druh": "dodatek",
+      "s_dph": true
+    },
+    "projekt_id": null,
+    "zdroje": [
+      {
+        "nazev": "Registr smluv: TS smlouva odpady - Dodatek č. 23",
+        "url": "https://smlouvy.gov.cz/smlouva/22761057"
+      }
+    ],
+    "jistota": "doloženo"
+  },
+  {
+    "id": "zprava-rs-22760945",
+    "druh": "dodatek",
+    "datum": "2022-12-12",
+    "okruh": "rozvoj_sprava",
+    "titulek": "TS smlouva provoz WC - Dodatek č. 22",
+    "shrnuti": "Dodatek ke smlouvě z 12. 12. 2022 s dodavatelem Technické služby Třeboň, s.r.o.",
+    "castka": {
+      "hodnota": 1005505.0,
+      "druh": "dodatek",
+      "s_dph": true
+    },
+    "projekt_id": null,
+    "zdroje": [
+      {
+        "nazev": "Registr smluv: TS smlouva provoz WC - Dodatek č. 22",
+        "url": "https://smlouvy.gov.cz/smlouva/22760945"
+      }
+    ],
+    "jistota": "doloženo"
+  },
+  {
+    "id": "zprava-rs-22745493",
+    "druh": "dodatek",
+    "datum": "2022-12-12",
+    "okruh": "rozvoj_sprava",
+    "titulek": "TS smlouva hřbitov - dodatek č. 24",
+    "shrnuti": "Dodatek ke smlouvě z 12. 12. 2022 s dodavatelem Technické služby Třeboň, s.r.o.",
+    "castka": {
+      "hodnota": 1023800.0,
+      "druh": "dodatek",
+      "s_dph": true
+    },
+    "projekt_id": null,
+    "zdroje": [
+      {
+        "nazev": "Registr smluv: TS smlouva hřbitov - dodatek č. 24",
+        "url": "https://smlouvy.gov.cz/smlouva/22745493"
+      }
+    ],
+    "jistota": "doloženo"
+  },
+  {
+    "id": "zprava-rs-22745461",
+    "druh": "dodatek",
+    "datum": "2022-12-12",
+    "okruh": "doprava_prostor",
+    "titulek": "TS smlouva veřejná zeleň - dodatek č. 26",
+    "shrnuti": "Dodatek ke smlouvě z 12. 12. 2022 s dodavatelem Technické služby Třeboň, s.r.o.",
+    "castka": {
+      "hodnota": 6688360.0,
+      "druh": "dodatek",
+      "s_dph": true
+    },
+    "projekt_id": null,
+    "zdroje": [
+      {
+        "nazev": "Registr smluv: TS smlouva veřejná zeleň - dodatek č. 26",
+        "url": "https://smlouvy.gov.cz/smlouva/22745461"
+      }
+    ],
+    "jistota": "doloženo"
+  },
+  {
+    "id": "zprava-rs-22697985",
+    "druh": "dodatek",
+    "datum": "2022-12-12",
+    "okruh": "doprava_prostor",
+    "titulek": "Technické služby -smlouva správa VO - dodatek č. 20",
+    "shrnuti": "Dodatek ke smlouvě z 12. 12. 2022 s dodavatelem Technické služby Třeboň, s.r.o.",
+    "castka": {
+      "hodnota": 1800000.0,
+      "druh": "dodatek",
+      "s_dph": true
+    },
+    "projekt_id": null,
+    "zdroje": [
+      {
+        "nazev": "Registr smluv: Technické služby -smlouva správa VO - dodatek č. 20",
+        "url": "https://smlouvy.gov.cz/smlouva/22697985"
+      }
+    ],
+    "jistota": "doloženo"
+  },
+  {
+    "id": "zprava-rs-22697969",
+    "druh": "dodatek",
+    "datum": "2022-12-12",
+    "okruh": "sport_kultura",
+    "titulek": "Technické služby - smlouva o údržbě dětských hřišť a laviček - dodatek č. 25",
+    "shrnuti": "Dodatek ke smlouvě z 12. 12. 2022 s dodavatelem Technické služby Třeboň, s.r.o.",
+    "castka": {
+      "hodnota": 2400000.0,
+      "druh": "dodatek",
+      "s_dph": true
+    },
+    "projekt_id": null,
+    "zdroje": [
+      {
+        "nazev": "Registr smluv: Technické služby - smlouva o údržbě dětských hřišť a laviček - dodatek č. 25",
+        "url": "https://smlouvy.gov.cz/smlouva/22697969"
+      }
+    ],
+    "jistota": "doloženo"
+  },
+  {
+    "id": "zprava-rs-22697953",
+    "druh": "dodatek",
+    "datum": "2022-12-12",
+    "okruh": "doprava_prostor",
+    "titulek": "Technické služby - smlouva o čištění města a údržbě komunikací - dodatek č. 24",
+    "shrnuti": "Dodatek ke smlouvě z 12. 12. 2022 s dodavatelem Technické služby Třeboň, s.r.o.",
+    "castka": {
+      "hodnota": 6800000.0,
+      "druh": "dodatek",
+      "s_dph": true
+    },
+    "projekt_id": null,
+    "zdroje": [
+      {
+        "nazev": "Registr smluv: Technické služby - smlouva o čištění města a údržbě komunikací - dodatek č. 24",
+        "url": "https://smlouvy.gov.cz/smlouva/22697953"
       }
     ],
     "jistota": "doloženo"
@@ -23273,6 +23841,27 @@
     "jistota": "doloženo"
   },
   {
+    "id": "zprava-rs-22608437",
+    "druh": "dodatek",
+    "datum": "2022-12-05",
+    "okruh": "doprava_prostor",
+    "titulek": "TS veřejná zeleň - dodatek č. 25",
+    "shrnuti": "Dodatek ke smlouvě z 5. 12. 2022 s dodavatelem Technické služby Třeboň, s.r.o.",
+    "castka": {
+      "hodnota": 800000.0,
+      "druh": "dodatek",
+      "s_dph": true
+    },
+    "projekt_id": null,
+    "zdroje": [
+      {
+        "nazev": "Registr smluv: TS veřejná zeleň - dodatek č. 25",
+        "url": "https://smlouvy.gov.cz/smlouva/22608437"
+      }
+    ],
+    "jistota": "doloženo"
+  },
+  {
     "id": "zprava-rs-25996383",
     "druh": "smlouva",
     "datum": "2022-11-29",
@@ -23289,6 +23878,27 @@
       {
         "nazev": "Registr smluv: rám. RHB pobyt zaměstnanec elektronicky",
         "url": "https://smlouvy.gov.cz/smlouva/25996383"
+      }
+    ],
+    "jistota": "doloženo"
+  },
+  {
+    "id": "zprava-rs-22558013",
+    "druh": "smlouva",
+    "datum": "2022-11-18",
+    "okruh": "doprava_prostor",
+    "titulek": "Darovací smlouva - vodohospodářská infrastruktura Holičky",
+    "shrnuti": "Smlouva z 18. 11. 2022 s dodavatelem fyzická osoba.",
+    "castka": {
+      "hodnota": 1420542.0,
+      "druh": "smluvni",
+      "s_dph": true
+    },
+    "projekt_id": null,
+    "zdroje": [
+      {
+        "nazev": "Registr smluv: Darovací smlouva - vodohospodářská infrastruktura Holičky",
+        "url": "https://smlouvy.gov.cz/smlouva/22558013"
       }
     ],
     "jistota": "doloženo"
@@ -23771,6 +24381,48 @@
       {
         "nazev": "Zadávací profil (E-ZAK): Zpracování projektové dokumentace - vodovody a kanalizace v ul. Vodárenské",
         "url": "https://zakazky.mesto-trebon.cz/contract_display_394.html"
+      }
+    ],
+    "jistota": "doloženo"
+  },
+  {
+    "id": "zprava-rs-22876277",
+    "druh": "smlouva",
+    "datum": "2019-07-12",
+    "okruh": "rozvoj_sprava",
+    "titulek": "Objednávka zajištění rekondičních pobytů 3.Q 2019",
+    "shrnuti": "Smlouva z 12. 7. 2019 s dodavatelem SLATINNÉ LÁZNĚ TŘEBOŇ s.r.o.",
+    "castka": {
+      "hodnota": 637000.0,
+      "druh": "smluvni",
+      "s_dph": false
+    },
+    "projekt_id": null,
+    "zdroje": [
+      {
+        "nazev": "Registr smluv: Objednávka zajištění rekondičních pobytů 3.Q 2019",
+        "url": "https://smlouvy.gov.cz/smlouva/22876277"
+      }
+    ],
+    "jistota": "doloženo"
+  },
+  {
+    "id": "zprava-rs-22875601",
+    "druh": "smlouva",
+    "datum": "2019-03-08",
+    "okruh": "rozvoj_sprava",
+    "titulek": "Objednávka na zajištění rekondičních pobytů",
+    "shrnuti": "Smlouva z 8. 3. 2019 s dodavatelem SLATINNÉ LÁZNĚ TŘEBOŇ s.r.o.",
+    "castka": {
+      "hodnota": 1912950.0,
+      "druh": "smluvni",
+      "s_dph": false
+    },
+    "projekt_id": null,
+    "zdroje": [
+      {
+        "nazev": "Registr smluv: Objednávka na zajištění rekondičních pobytů",
+        "url": "https://smlouvy.gov.cz/smlouva/22875601"
       }
     ],
     "jistota": "doloženo"

@@ -37,6 +37,28 @@
     },
     "doklady": [
       {
+        "typ": "smlouva",
+        "id": "rs-23690461",
+        "text": "Parkovací dům Třeboň - zpracování PD",
+        "datum": "2023-03-08",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/23690461",
+        "cena": {
+          "s_dph": 1179750.0,
+          "bez_dph": 975000.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"1179750\"",
+            "\"hodnotaBezDph\": \"975000\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      },
+      {
         "typ": "zakazka",
         "id": "ezak-VZ-698",
         "text": "Parkovací dům Třeboň (PD)",
@@ -63,8 +85,8 @@
         "data_smluv": [
           "2023-03-08"
         ],
-        "zapocteno": true,
-        "nezapocteno": null,
+        "zapocteno": false,
+        "nezapocteno": "stejná smlouva jako rs-23690461 (cena nebo datum podpisu)",
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       },
@@ -112,7 +134,7 @@
       "bez_ceny": 0,
       "jistota": "nase_propojeni"
     },
-    "prvni_doklad": "2024-01-04",
+    "prvni_doklad": "2023-03-08",
     "odhad": null,
     "zdroj": null,
     "stavby": [],
@@ -3421,6 +3443,50 @@
     "doklady": [
       {
         "typ": "smlouva",
+        "id": "rs-23209821",
+        "text": "PD Stavební úpravy MK v ulici U sv. Petra a Pavla v Třeboni",
+        "datum": "2023-01-25",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/23209821",
+        "cena": {
+          "s_dph": 619520.0,
+          "bez_dph": 512000.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"619520\"",
+            "\"hodnotaBezDph\": \"512000\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "typ": "smlouva",
+        "id": "rs-23623537",
+        "text": "Zpracování PD Stavební úpravy MK v ulici U sv. Petra a Pavla v Třeboni - vodohospodářská infrastruktura.",
+        "datum": "2023-03-02",
+        "ico": "00247618",
+        "url": "https://smlouvy.gov.cz/smlouva/23623537",
+        "cena": {
+          "s_dph": 241879.0,
+          "bez_dph": 199900.0,
+          "citace": [
+            "\"hodnotaVcetneDph\": \"241879\"",
+            "\"hodnotaBezDph\": \"199900\""
+          ]
+        },
+        "zaplaceno": null,
+        "dodatek": false,
+        "zapocteno": true,
+        "nezapocteno": null,
+        "stupen": "projekt",
+        "jistota": "nase_propojeni"
+      },
+      {
+        "typ": "smlouva",
         "id": "rs-26582843",
         "text": "Zpracování PD pro dešťovou kanalizaci v lokalitě U sv. Petra a Pavla v Třeboni.",
         "datum": "2023-11-22",
@@ -3470,8 +3536,8 @@
         "data_smluv": [
           "2023-01-25"
         ],
-        "zapocteno": true,
-        "nezapocteno": null,
+        "zapocteno": false,
+        "nezapocteno": "stejná smlouva jako rs-23209821 (cena nebo datum podpisu)",
         "stupen": "projekt",
         "jistota": "nase_propojeni"
       },
@@ -3513,9 +3579,9 @@
     "cena_pripravy": {
       "druh": "smluvni",
       "smlouvy": {
-        "s_dph": 1701502.0,
+        "s_dph": 1943381.0,
         "bez_dph": null,
-        "pocet": 3
+        "pocet": 4
       },
       "dodatky": {
         "s_dph": null,
@@ -3531,7 +3597,7 @@
       "bez_ceny": 0,
       "jistota": "nase_propojeni"
     },
-    "prvni_doklad": "2023-11-22",
+    "prvni_doklad": "2023-01-25",
     "odhad": null,
     "zdroj": null,
     "stavby": [
@@ -5646,6 +5712,197 @@
         "citace": [
           "\"hodnotaVcetneDph\": \"240185\"",
           "\"hodnotaBezDph\": \"198500\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "název"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-23876701",
+    "nazev": "Aktualizace PD z roku 2013 ve stupni PDPS na stavbu Rekonstrukce ulice Novohradská a Trocnovské náměstí v Třeboni, včetně IČ, výkazu výměr a rozpočtu.",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-23876701",
+      "text": "Aktualizace PD z roku 2013 ve stupni PDPS na stavbu Rekonstrukce ulice Novohradská a Trocnovské náměstí v Třeboni, včetně IČ, výkazu výměr a rozpočtu.",
+      "datum": "2023-03-24",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/23876701",
+      "cena": {
+        "s_dph": 159599.0,
+        "bez_dph": 131900.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"159599\"",
+          "\"hodnotaBezDph\": \"131900\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "název"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-23867421",
+    "nazev": "Zpracování projektové dokumentace Stavebních úprav místních komunikací v ulici Šustova a 2. etapy ulice Polní v Třeboni",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-23867421",
+      "text": "Zpracování projektové dokumentace Stavebních úprav místních komunikací v ulici Šustova a 2. etapy ulice Polní v Třeboni",
+      "datum": "2023-03-22",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/23867421",
+      "cena": {
+        "s_dph": 959530.0,
+        "bez_dph": 793000.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"959530\"",
+          "\"hodnotaBezDph\": \"793000\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "název"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-23767005",
+    "nazev": "Kompletní výměna výtahu v domu s pečovatelskou službou (DPS) I, Chelčického 1, Třeboň",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-23767005",
+      "text": "Kompletní výměna výtahu v domu s pečovatelskou službou (DPS) I, Chelčického 1, Třeboň",
+      "datum": "2023-03-13",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/23767005",
+      "cena": {
+        "s_dph": 2762027.99,
+        "bez_dph": 2401763.47,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"2762027.99\"",
+          "\"hodnotaBezDph\": \"2401763.47\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
+    },
+    "stupen": "projekt_provadeci",
+    "jistota": "nase_propojeni",
+    "okruh": "bydleni_pece",
+    "okruh_podle": "název"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-23672437",
+    "nazev": "Vypracování PD na akci \"Zpevněné chodníky v areálu hřbitova sv. Alžběty\" ve stupních ÚS a DPS, včetně zajištění IS, VV, položkového rozpočtu a AD.",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-23672437",
+      "text": "Vypracování PD na akci \"Zpevněné chodníky v areálu hřbitova sv. Alžběty\" ve stupních ÚS a DPS, včetně zajištění IS, VV, položkového rozpočtu a AD.",
+      "datum": "2023-03-06",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/23672437",
+      "cena": {
+        "s_dph": 120577.0,
+        "bez_dph": 99650.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"120577\"",
+          "\"hodnotaBezDph\": \"99650\""
+        ]
+      },
+      "zaplaceno": null,
+      "dodatek": false
+    },
+    "stupen": "projekt_provadeci",
+    "jistota": "nase_propojeni",
+    "okruh": "doprava_prostor",
+    "okruh_podle": "název"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-23616505",
+    "nazev": "Objednávka - projektová dokumentace na stavbu přístřešků v areálu TVS",
+    "nositele": [
+      {
+        "ico": "25179896",
+        "nazev": "Slatinné lázně Třeboň s.r.o."
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-23616505",
+      "text": "Objednávka - projektová dokumentace na stavbu přístřešků v areálu TVS",
+      "datum": "2023-02-28",
+      "ico": "25179896",
+      "url": "https://smlouvy.gov.cz/smlouva/23616505",
+      "cena": null,
+      "zaplaceno": null,
+      "dodatek": false
+    },
+    "stupen": "projekt",
+    "jistota": "nase_propojeni",
+    "okruh": "rozvoj_sprava",
+    "okruh_podle": "bez tématu"
+  },
+  {
+    "typ": "kandidat",
+    "id": "kandidat-rs-23279929",
+    "nazev": "Parkoviště v Jateční ulici v Třeboni (za Novým dvorem) - zpracování PD",
+    "nositele": [
+      {
+        "ico": "00247618",
+        "nazev": "Město Třeboň"
+      }
+    ],
+    "doklad": {
+      "typ": "smlouva",
+      "id": "rs-23279929",
+      "text": "Parkoviště v Jateční ulici v Třeboni (za Novým dvorem) - zpracování PD",
+      "datum": "2023-01-31",
+      "ico": "00247618",
+      "url": "https://smlouvy.gov.cz/smlouva/23279929",
+      "cena": {
+        "s_dph": 470690.0,
+        "bez_dph": 389000.0,
+        "citace": [
+          "\"hodnotaVcetneDph\": \"470690\"",
+          "\"hodnotaBezDph\": \"389000\""
         ]
       },
       "zaplaceno": null,
