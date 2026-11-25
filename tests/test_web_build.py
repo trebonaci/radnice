@@ -133,6 +133,14 @@ def test_lhuta_ze_smlouvy_se_na_karte_investice_escapuje():
     assert "${esc(t.h||t.pozn)}" in radek and "${esc(t.pozn)}" in radek
 
 
+def test_usneseni_v_okruhu_se_pocita_hlavnim_okruhem_jednou():
+    """#282: stránka Usnesení počítá usnesení v hlavním okruhu (každé jednou), shodně s „V číslech“ –
+    ne přes všechny okruhy (překryv dával u Bydlení a péče 11 vs 14, součet 139 vs 144)."""
+    html = build.sestav()
+    assert "const usnVOkruhu=(u,o)=>u.okruh===o" in html
+    assert "u.okruhy.includes(o)" not in html  # dřívější překrývající se počítání je pryč
+
+
 def test_barvy_okruhu_jsou_v_css_i_v_js_pro_kazdy_okruh():
     """Každý okruh má svou barvu v CSS (.o-<id>) i v JS (pruh rozložení) a obě sady se shodují."""
     import re

@@ -985,7 +985,9 @@ function cisla(){
 // ---------- usnesení rady a zastupitelstva (#usneseni, #198) ----------
 
 const FU={organ:"",oblast:"",hledat:"",kat:""};
-const usnVOkruhu=(u,o)=>o==="rozvoj_sprava"?u.okruh==="rozvoj_sprava":u.okruhy.includes(o);
+// každé usnesení se počítá jednou – ve svém hlavním okruhu, shodně s „V číslech“ (jinak 11 vs 14, #282);
+// všechny okruhy usnesení zůstávají jako štítky u položky, takže se dá dohledat i přes věcný okruh
+const usnVOkruhu=(u,o)=>u.okruh===o;
 function usneseniFiltr(){const t=koreny(FU.hledat);
   return US.filter(u=>(!FU.organ||u.organ===FU.organ)&&(!FO.okruh||usnVOkruhu(u,FO.okruh))&&(!FU.oblast||temataU(u).includes(FU.oblast))&&(!FU.kat||u.kategorie.includes(FU.kat))
     &&(!t.length||t.every(w=>bezDia([u.tema,u.shrnuti,u.cislo].join(" ")).includes(w))));}
