@@ -47,6 +47,16 @@ def test_co_se_deje_ma_sest_okruhu_a_sest_polozek_menu():
     assert "Tailwind" not in html and "fonts.googleapis" not in html and "cdn." not in html
 
 
+def test_datum_posledniho_dokladu_a_filtr_bez_zelene_tecky():
+    """#283: seznamová karta akce ukazuje datum posledního dokladu („Naposledy“); aktivní filtr má
+    výplň + podsvícení (okruh ve své barvě), ne zelenou tečku vlevo."""
+    html = build.sestav()
+    assert 'class="od-datum"' in html and "Naposledy" in html
+    # zelená (limetková) tečka u aktivního filtru je potlačená; aktivní okruh je ve své barvě + podsvícení
+    assert ".chips button.on::before,.okr a.on::before{content:none}" in html
+    assert ".okr a.on{background:var(--ok" in html and "box-shadow:0 0 0 3px var(--ok-tint" in html
+
+
 def test_ai_je_znacka_ne_opakovana_veta_a_tlacitko_nahoru():
     """#283: místo opakované věty „…napsala AI, závazné je…“ u položky je kompaktní značka AI
     (vysvětlení v patičce) a je tu tlačítko „zpět na začátek“."""
